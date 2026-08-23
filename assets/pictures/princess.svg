@@ -1,0 +1,57 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E5FF"/>
+      <stop offset="1" stop-color="#FFE0F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#sky3)"/>
+  <rect y="540" width="600" height="60" fill="#F5C6E0"/>
+
+  <g fill="#FFD166" opacity="0.9">
+    <polygon points="80,90 86,104 101,104 89,113 94,128 80,119 66,128 71,113 59,104 74,104"/>
+    <polygon points="530,140 535,151 547,151 538,158 541,170 530,163 519,170 522,158 513,151 525,151"/>
+    <polygon points="500,320 505,331 517,331 508,338 511,350 500,343 489,350 492,338 483,331 495,331"/>
+    <polygon points="70,380 75,391 87,391 78,398 81,410 70,403 59,410 62,398 53,391 65,391"/>
+  </g>
+  <g fill="#fff" opacity="0.85">
+    <ellipse cx="470" cy="80" rx="45" ry="20"/>
+    <ellipse cx="120" cy="230" rx="36" ry="16"/>
+  </g>
+
+  <!-- 頭髮：飄逸雙側髮絲 + 頭頂髮量 -->
+  <path fill="#8B5A3C" d="M192,232 C156,338 138,450 168,518 L218,518 C192,443 198,330 232,248 Z"/>
+  <path fill="#8B5A3C" d="M408,232 C444,338 462,450 432,518 L382,518 C408,443 402,330 368,248 Z"/>
+  <ellipse fill="#8B5A3C" cx="300" cy="218" rx="120" ry="96"/>
+
+  <!-- 臉 -->
+  <circle fill="#FFDFC0" cx="300" cy="267" r="102"/>
+
+  <!-- 皇冠，緊貼髮際線 -->
+  <polygon fill="#FFD166" stroke="#E6A800" stroke-width="5" stroke-linejoin="round" points="249,174 249,156 270,111 293,147 300,105 308,147 330,111 351,156 351,174"/>
+  <circle fill="#EF5FA7" cx="270" cy="128" r="6"/>
+  <circle fill="#7E57C2" cx="300" cy="120" r="7"/>
+  <circle fill="#42A5F5" cx="330" cy="128" r="6"/>
+
+  <!-- 腮紅、眼睛、笑容 -->
+  <circle fill="#FFAFCB" opacity="0.8" cx="225" cy="300" r="21"/>
+  <circle fill="#FFAFCB" opacity="0.8" cx="375" cy="300" r="21"/>
+  <circle fill="#3a2c1e" cx="264" cy="267" r="12"/>
+  <circle fill="#3a2c1e" cx="336" cy="267" r="12"/>
+  <circle fill="#fff" cx="268" cy="262" r="4"/>
+  <circle fill="#fff" cx="340" cy="262" r="4"/>
+  <path fill="none" stroke="#C2185B" stroke-width="6" stroke-linecap="round" d="M279,309 C291,323 309,323 321,309"/>
+
+  <!-- 袖子 -->
+  <path fill="#F8BBD0" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M222,353 C168,360 138,405 147,458 C171,443 204,398 243,366 Z"/>
+  <path fill="#F8BBD0" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M378,353 C432,360 462,405 453,458 C429,443 396,398 357,366 Z"/>
+
+  <!-- 裙子 -->
+  <path fill="#F48FB1" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M240,387 C173,435 132,510 117,563 L483,563 C468,510 428,435 360,387 L300,417 Z"/>
+  <path fill="none" stroke="#EC7BA0" stroke-width="5" d="M170,470 C230,495 370,495 430,470 M150,520 C240,548 360,548 450,520"/>
+
+  <!-- 領口、蝴蝶結 -->
+  <path fill="#CE93D8" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M252,350 L348,350 L368,387 L300,413 L233,387 Z"/>
+  <path fill="#FFD166" stroke="#E6A800" stroke-width="4" stroke-linejoin="round" d="M300,378 L273,357 C264,351 264,369 273,375 L300,387 L327,375 C336,369 336,351 327,357 Z"/>
+  <circle fill="#E6A800" cx="300" cy="378" r="6"/>
+</svg>

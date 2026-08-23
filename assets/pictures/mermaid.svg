@@ -1,0 +1,53 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sea2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BEEBE9"/>
+      <stop offset="1" stop-color="#1B7A8C"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#sea2)"/>
+  <rect y="565" width="600" height="35" fill="#F4D58D"/>
+
+  <g fill="#fff" opacity="0.55">
+    <circle cx="90" cy="500" r="9"/><circle cx="110" cy="460" r="6"/><circle cx="70" cy="430" r="5"/>
+    <circle cx="520" cy="480" r="10"/><circle cx="500" cy="440" r="6"/><circle cx="540" cy="410" r="5"/>
+    <circle cx="460" cy="120" r="7"/><circle cx="130" cy="150" r="6"/>
+  </g>
+
+  <!-- 尾鰭 -->
+  <path fill="#2FB6A6" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M218,490 C180,513 150,550 143,580 C180,573 218,543 240,505 Z"/>
+  <path fill="#2FB6A6" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M383,490 C420,513 450,550 458,580 C420,573 383,543 360,505 Z"/>
+
+  <!-- 頭髮 -->
+  <path fill="#7A3B4A" d="M195,175 C143,280 120,400 150,490 C173,468 195,400 210,325 C225,265 225,220 240,190 Z"/>
+  <path fill="#7A3B4A" d="M405,175 C458,280 480,400 450,490 C428,468 405,400 390,325 C375,265 375,220 360,190 Z"/>
+  <ellipse fill="#7A3B4A" cx="300" cy="168" rx="120" ry="96"/>
+
+  <!-- 臉 -->
+  <circle fill="#FFDFC0" cx="300" cy="217" r="102"/>
+
+  <!-- 貝殼髮夾 -->
+  <polygon fill="#FFD166" stroke="#E6A800" stroke-width="4" stroke-linejoin="round" points="225,130 234,154 258,154 239,169 246,193 225,178 204,193 212,169 192,154 216,154"/>
+
+  <!-- 腮紅、眼睛、笑容 -->
+  <circle fill="#FFAFCB" opacity="0.8" cx="225" cy="250" r="21"/>
+  <circle fill="#FFAFCB" opacity="0.8" cx="375" cy="250" r="21"/>
+  <circle fill="#3a2c1e" cx="264" cy="217" r="12"/>
+  <circle fill="#3a2c1e" cx="336" cy="217" r="12"/>
+  <circle fill="#fff" cx="268" cy="212" r="4"/>
+  <circle fill="#fff" cx="340" cy="212" r="4"/>
+  <path fill="none" stroke="#C2185B" stroke-width="6" stroke-linecap="round" d="M279,259 C291,273 309,273 321,259"/>
+
+  <!-- 手臂 -->
+  <path fill="#FFDFC0" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M225,303 C180,288 143,310 135,355 C150,385 188,363 233,333 Z"/>
+  <path fill="#FFDFC0" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M375,303 C420,288 458,310 465,355 C450,385 413,363 368,333 Z"/>
+
+  <!-- 尾巴 -->
+  <path fill="#2FB6A6" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M248,337 C210,385 195,445 218,490 C240,460 263,415 278,385 L323,385 C338,415 360,460 383,490 C405,445 390,385 353,337 L300,367 Z"/>
+  <path fill="none" stroke="#1E8F82" stroke-width="4" d="M255,400 C263,408 270,408 278,400 M293,415 C300,423 308,423 315,415 M263,445 C270,453 278,453 285,445 M315,445 C323,453 330,453 338,445"/>
+
+  <!-- 貝殼上衣 -->
+  <path fill="#FF8A80" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M263,288 C240,288 233,318 255,333 C270,340 285,325 278,303 Z"/>
+  <path fill="#FF8A80" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M338,288 C360,288 368,318 345,333 C330,340 315,325 323,303 Z"/>
+  <path fill="none" stroke="#3a3a3a" stroke-width="5" stroke-linecap="round" d="M278,300 C293,286 308,286 323,300"/>
+</svg>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>拼圖 - 小小遊樂園</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="puzzle">
+
+<header class="bar">
+  <a href="index.html" class="icon-btn">🏠</a>
+  <button id="backBtn" class="icon-btn" hidden>🔙</button>
+  <span class="spacer"></span>
+  <div id="diffRow" style="display:flex; gap:10px;">
+    <button class="diff-btn selected" data-n="2">2×2 ⭐</button>
+    <button class="diff-btn" data-n="3">3×3 ⭐⭐</button>
+    <button class="diff-btn" data-n="4">4×4 ⭐⭐⭐</button>
+  </div>
+  <span class="spacer"></span>
+  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
+</header>
+
+<main id="selectScreen">
+  <div class="select-hint">選一張喜歡的圖開始拼吧！</div>
+  <div id="picGrid" class="pic-grid"></div>
+</main>
+
+<main id="gameScreen" hidden>
+  <div id="board"></div>
+</main>
+
+<canvas id="confettiCanvas"></canvas>
+
+<div id="winOverlay" class="overlay" hidden>
+  <div class="win-title">🎉 好棒喔！ 🎉</div>
+  <div class="overlay-row">
+    <button id="againBtn" class="big-btn">再玩一次</button>
+    <button id="newPicBtn" class="big-btn alt">換一張圖</button>
+  </div>
+</div>
+
+<script src="js/sound.js"></script>
+<script src="js/music.js"></script>
+<script src="js/pictures-data.js"></script>
+<script src="js/puzzle.js"></script>
+</body>
+</html>

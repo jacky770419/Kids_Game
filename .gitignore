@@ -1,0 +1,10 @@
+# Claude Code 本機開發設定（跟這台機器綁定，不需要進版本庫）
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# 測試/暫存輸出
+_preview*.png
+_test*.png

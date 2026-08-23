@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>著色 - 小小遊樂園</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="coloring">
+
+<header class="bar">
+  <a href="index.html" class="icon-btn">🏠</a>
+  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
+  <button id="prevBtn" class="icon-btn">◀️</button>
+  <div id="picName" class="bar-title"></div>
+  <button id="nextBtn" class="icon-btn">▶️</button>
+  <span class="spacer"></span>
+  <div class="mode-row">
+    <button id="modeFill" class="icon-btn mode-btn selected" title="填滿">🪣</button>
+    <button id="modeBrush" class="icon-btn mode-btn" title="畫筆">🖌️</button>
+    <button id="modeSpray" class="icon-btn mode-btn" title="潑墨">💦</button>
+  </div>
+  <span class="spacer"></span>
+  <button id="uploadBtn" class="icon-btn" title="上傳照片畫稿">🖼️</button>
+  <button id="deleteBtn" class="icon-btn" title="刪除這張照片" hidden>🗑️</button>
+  <button id="resetBtn" class="icon-btn" title="重新來過">🧽</button>
+  <button id="saveBtn" class="icon-btn" title="存成圖片">📷</button>
+  <input type="file" id="fileInput" accept="image/*" hidden>
+</header>
+
+<main id="svgHolder">
+  <div id="artWrap"></div>
+</main>
+
+<footer id="palette"></footer>
+
+<div id="saveOverlay" class="overlay" hidden>
+  <img id="saveImg" alt="著色作品">
+  <div class="save-hint">長按圖片就可以存到相簿囉！</div>
+  <button id="closeSave" class="big-btn alt">關閉</button>
+</div>
+
+<div id="processingOverlay" class="overlay" hidden>
+  <div class="win-title" style="font-size:34px;">✏️ 畫稿處理中...</div>
+</div>
+
+<script src="js/sound.js"></script>
+<script src="js/music.js"></script>
+<script src="js/lineart-data.js"></script>
+<script src="js/patterns-data.js"></script>
+<script src="js/photo-tool.js"></script>
+<script src="js/coloring.js"></script>
+</body>
+</html>
