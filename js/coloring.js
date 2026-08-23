@@ -1,38 +1,83 @@
-/* 著色遊戲：填滿 / 畫筆 / 潑墨 三種模式，支援一般顏色與花紋顏料，
-   也支援上傳自己的照片自動變成線條畫稿 */
+/* 著色遊戲：
+   選圖畫面（縮圖牆）→ 遊戲畫面（左邊白色畫布 + 右邊木紋直立工具列）。
+   工具列上的「工具」「顏色」兩顆大圓鈕會在左側彈出面板；
+   另外支援橡皮擦、復原（undo）與上傳自己的照片自動變成線條畫稿。 */
 (() => {
+  /* ===== 56 色色盤：8 欄 x 7 列，整體照彩虹順序排 ===== */
   const COLORS = [
-    '#e53935', '#fb8c00', '#fdd835', '#7cb342', '#26a69a',
-    '#42a5f5', '#5c6bc0', '#ab47bc', '#f06292', '#8d6e63',
-    '#455a64', '#ffffff'
+    // 第 1 列：純色
+    '#FF0000', '#FFA500', '#FFFF00', '#228B22', '#00BFFF', '#0000FF', '#7B2FBE', '#555555',
+    // 第 2 列：深色版
+    '#B71C1C', '#C25E00', '#C9A227', '#145A14', '#0077A8', '#00008B', '#4B1D75', '#2B2B2B',
+    // 第 3 列：淺色版
+    '#FF6B6B', '#FFC04D', '#FFF176', '#66BB6A', '#7FDFFF', '#6C7BFF', '#A96FD8', '#8A8A8A',
+    // 第 4 列：粉彩版
+    '#FFC9C9', '#FFE0B2', '#FFF9C4', '#C8E6C9', '#C4EFFF', '#C5CAE9', '#E1BEE7', '#D6D6D6',
+    // 第 5 列：粉紅 / 棕 / 黃綠 延伸
+    '#FF69B4', '#FF1493', '#C71585', '#8B4513', '#A0522D', '#D2A679', '#9ACD32', '#6B8E23',
+    // 第 6 列：青 / 藍綠 / 靛 / 紫羅蘭 延伸
+    '#00CED1', '#20B2AA', '#008080', '#4682B4', '#4169E1', '#6A5ACD', '#8A2BE2', '#DA70D6',
+    // 第 7 列：淺色雜項 + 灰階 + 深棕
+    '#FFFFFF', '#F0E68C', '#FFDAB9', '#E0C097', '#A9A9A9', '#777777', '#5C2E0E', '#333333'
+  ];
+
+  /* ===== 畫圖工具 ===== */
+  const TOOLS = [
+    { id: 'fill',    emoji: '🪣',  name: '填滿' },
+    { id: 'marker',  emoji: '🖍️', name: '粗筆',   width: 34 },
+    { id: 'pencil',  emoji: '✏️', name: '細筆',   width: 12 },
+    { id: 'water',   emoji: '🖌️', name: '水彩',   width: 40, alpha: 0.35 },
+    { id: 'spray',   emoji: '💦', name: '潑墨' },
+    { id: 'glitter', emoji: '✨', name: '亮粉筆', width: 26 }
   ];
 
   const CANVAS_SIZE = 800;   // 畫布內部解析度，跟 photo-tool.js 的 SIZE 一致
-  const BRUSH_WIDTH = 30;    // 畫筆粗細（畫布座標）
   const CUSTOM_KEY = 'kidsCustomPics';
   const MAX_CUSTOM = 12;     // 本機最多保留幾張自己上傳的照片
+  const HISTORY_MAX = 25;    // 復原步數上限
 
+  const selectScreen = document.getElementById('selectScreen');
+  const gameScreen = document.getElementById('gameScreen');
+  const picGrid = document.getElementById('picGrid');
   const holder = document.getElementById('svgHolder');
   const artWrap = document.getElementById('artWrap');
-  const palette = document.getElementById('palette');
-  const picName = document.getElementById('picName');
-  const deleteBtn = document.getElementById('deleteBtn');
+  const toolbar = document.getElementById('toolbar');
+  const toolBtn = document.getElementById('toolBtn');
+  const toolBtnIcon = document.getElementById('toolBtnIcon');
+  const colorBtn = document.getElementById('colorBtn');
+  const eraserBtn = document.getElementById('eraserBtn');
+  const undoBtn = document.getElementById('undoBtn');
+  const clearBtn = document.getElementById('clearBtn');
+  const doneBtn = document.getElementById('doneBtn');
+  const toolPanel = document.getElementById('toolPanel');
+  const colorPanel = document.getElementById('colorPanel');
+  const toolList = document.getElementById('toolList');
+  const colorGrid = document.getElementById('colorGrid');
+  const patternRow = document.getElementById('patternRow');
   const processingOverlay = document.getElementById('processingOverlay');
 
   let galleryIndex = 0;
   let customPics = loadCustomPics();  // [{type:'raster', id, name, dataUrl}]
-  let mode = 'fill';                                // fill | brush | spray
+  let mode = 'fill';                                // TOOLS 裡的 id
+  let eraser = false;                               // 橡皮擦開關（獨立於顏色）
   let paint = { type: 'color', value: COLORS[0] };  // 或 { type:'pattern', id }
   let paintCanvas = null;
   let ctx = null;
   let fillCanvas = null, fillCtx = null;   // 只有上傳照片模式會用到
   let rasterEdgeMask = null;               // 目前這張照片的線條遮罩（填色用）
+  let history = [];                        // 復原用的快照堆疊
+  let openedPanel = null;                  // null | 'tool' | 'color'
+  let swallowStroke = false;               // 這一下點擊只用來關面板，不作畫
 
   function gallery() {
     return [
       ...LINEART.map(x => ({ type: 'vector', name: x.name, svg: x.svg })),
       ...customPics
     ];
+  }
+
+  function currentTool() {
+    return TOOLS.find(t => t.id === mode) || TOOLS[0];
   }
 
   /* ===== 本機儲存自己上傳的照片 ===== */
@@ -81,56 +126,294 @@
   }
 
   function isEraser() {
-    return paint.type === 'color' && paint.value === '#ffffff';
+    return eraser;
   }
 
-  /* ===== 調色盤：一般顏色 + 花紋 ===== */
-  function buildPalette() {
-    COLORS.forEach((color, i) => {
+  /* ===== 復原（undo）：每次動作「開始前」先推一筆快照 ===== */
+  function pushHistory(entry) {
+    history.push(entry);
+    if (history.length > HISTORY_MAX) history.shift();
+    updateButtons();
+  }
+
+  // canvas 快照：整張 ImageData，還原時直接 putImageData 蓋回去
+  function snapshotCanvas(targetCtx) {
+    if (!targetCtx) return null;
+    return { kind: 'canvas', ctx: targetCtx, data: targetCtx.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE) };
+  }
+
+  function undo() {
+    const entry = history.pop();
+    if (!entry) return;
+    if (entry.kind === 'fill') {
+      if (entry.prev === null) entry.el.removeAttribute('fill');
+      else entry.el.setAttribute('fill', entry.prev);
+    } else if (entry.kind === 'canvas') {
+      entry.ctx.putImageData(entry.data, 0, 0);
+    }
+    updateButtons();
+  }
+
+  function clearHistory() {
+    history = [];
+    updateButtons();
+  }
+
+  // history 空 = 沒東西可以復原，也代表這張還沒被畫過
+  function updateButtons() {
+    const empty = history.length === 0;
+    undoBtn.disabled = empty;
+    clearBtn.disabled = empty;
+  }
+
+  /* ===== 彈出面板 ===== */
+  function buildToolPanel() {
+    toolList.innerHTML = '';
+    TOOLS.forEach(t => {
       const b = document.createElement('button');
-      b.className = 'swatch' + (i === 0 ? ' selected' : '');
-      b.style.background = color;
-      if (color === '#ffffff') b.textContent = '🧼'; // 白色兼橡皮擦
-      b.addEventListener('click', () => selectPaint(b, { type: 'color', value: color }));
-      palette.appendChild(b);
+      b.className = 'tool-item' + (t.id === mode ? ' selected' : '');
+      b.dataset.tool = t.id;
+      b.innerHTML = `<span class="tool-emoji">${t.emoji}</span><span>${t.name}</span>`;
+      b.addEventListener('click', () => selectTool(t.id));
+      toolList.appendChild(b);
     });
+  }
+
+  function buildColorPanel() {
+    colorGrid.innerHTML = '';
+    COLORS.forEach(color => {
+      const b = document.createElement('button');
+      b.className = 'color-cell';
+      b.dataset.color = color;
+      b.style.background = color;
+      b.addEventListener('click', () => selectPaint({ type: 'color', value: color }));
+      colorGrid.appendChild(b);
+    });
+
+    patternRow.innerHTML = '';
     PATTERNS.forEach(p => {
       const b = document.createElement('button');
-      b.className = 'swatch pattern-swatch';
+      b.className = 'pattern-cell';
+      b.dataset.pattern = p.id;
+      b.title = p.name;
       b.innerHTML = `<svg viewBox="0 0 40 40">${p.tile}</svg>`;
-      b.addEventListener('click', () => selectPaint(b, { type: 'pattern', id: p.id }));
-      palette.appendChild(b);
+      b.addEventListener('click', () => selectPaint({ type: 'pattern', id: p.id }));
+      patternRow.appendChild(b);
     });
   }
 
-  function selectPaint(btn, newPaint) {
-    paint = newPaint;
-    palette.querySelectorAll('.swatch').forEach(s => s.classList.remove('selected'));
-    btn.classList.add('selected');
+  function markPaintSelection() {
+    colorGrid.querySelectorAll('.color-cell').forEach(c =>
+      c.classList.toggle('selected', paint.type === 'color' && c.dataset.color === paint.value));
+    patternRow.querySelectorAll('.pattern-cell').forEach(c =>
+      c.classList.toggle('selected', paint.type === 'pattern' && c.dataset.pattern === paint.id));
+  }
+
+  // 顏色鈕外觀跟目前顏料同步
+  function syncColorBtn() {
+    if (paint.type === 'color') {
+      colorBtn.innerHTML = '';
+      colorBtn.style.background = paint.value;
+    } else {
+      const p = PATTERNS.find(x => x.id === paint.id);
+      colorBtn.style.background = '#fff';
+      colorBtn.innerHTML = p
+        ? `<svg viewBox="0 0 40 40" preserveAspectRatio="xMidYMid slice">${p.tile}</svg>`
+        : '';
+    }
+  }
+
+  function syncEraserBtn() {
+    eraserBtn.classList.toggle('eraser-on', eraser);
+  }
+
+  function positionPanel(panel, trigger) {
+    // 先歸零，量到的尺寸才不會被上一次的位置影響
+    panel.style.left = '0px';
+    panel.style.top = '0px';
+    const tRect = trigger.getBoundingClientRect();
+    const bRect = toolbar.getBoundingClientRect();
+    const pRect = panel.getBoundingClientRect();
+
+    // 貼在工具列左邊
+    let left = bRect.left - pRect.width - 16;
+    if (left < 8) left = 8;
+
+    // 垂直對齊觸發鈕中心，超出視窗就貼邊
+    let top = tRect.top + tRect.height / 2 - pRect.height / 2;
+    const maxTop = window.innerHeight - pRect.height - 8;
+    if (top > maxTop) top = maxTop;
+    if (top < 8) top = 8;
+
+    panel.style.left = left + 'px';
+    panel.style.top = top + 'px';
+
+    // 箭頭跟著觸發鈕中心走
+    const arrow = panel.querySelector('.panel-arrow');
+    if (arrow) {
+      let ay = tRect.top + tRect.height / 2 - top - 12;
+      ay = Math.max(14, Math.min(pRect.height - 38, ay));
+      arrow.style.top = ay + 'px';
+    }
+  }
+
+  function openPanel(which) {
+    closePanels();
+    const panel = which === 'tool' ? toolPanel : colorPanel;
+    const trigger = which === 'tool' ? toolBtn : colorBtn;
+    panel.hidden = false;
+    positionPanel(panel, trigger);   // 要先顯示才量得到尺寸
+    openedPanel = which;
+  }
+
+  function closePanels() {
+    toolPanel.hidden = true;
+    colorPanel.hidden = true;
+    openedPanel = null;
+  }
+
+  /* 面板開著時，點面板與觸發鈕以外的地方就關掉。
+     用 capture 階段先攔到，但不做 stopPropagation（會連帶擋掉 music.js 掛在
+     document 上的「第一次觸控自動播放」），改用 swallowStroke 旗標讓畫布這一下不作畫。 */
+  document.addEventListener('pointerdown', (e) => {
+    if (!openedPanel) return;
+    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #toolBtn, #colorBtn')) return;
+    closePanels();
+    swallowStroke = true;
+  }, true);
+
+  const releaseSwallow = () => { swallowStroke = false; };
+  document.addEventListener('pointerup', releaseSwallow, true);
+  document.addEventListener('pointercancel', releaseSwallow, true);
+
+  /* ===== 選工具 / 選顏色 / 橡皮擦 ===== */
+  function selectTool(id) {
+    mode = id;
+    const t = currentTool();
+    toolBtnIcon.textContent = t.emoji;
+    toolList.querySelectorAll('.tool-item').forEach(b =>
+      b.classList.toggle('selected', b.dataset.tool === id));
+    if (paintCanvas) paintCanvas.style.pointerEvents = (mode === 'fill') ? 'none' : 'auto';
     Sound.click();
+    closePanels();
   }
 
-  /* ===== 模式切換 ===== */
-  const modeBtns = { fill: 'modeFill', brush: 'modeBrush', spray: 'modeSpray' };
-  Object.entries(modeBtns).forEach(([m, id]) => {
-    document.getElementById(id).addEventListener('click', () => {
-      mode = m;
-      Object.values(modeBtns).forEach(bid =>
-        document.getElementById(bid).classList.toggle('selected', bid === id));
-      if (paintCanvas) paintCanvas.style.pointerEvents = (m === 'fill') ? 'none' : 'auto';
-      Sound.click();
-    });
+  function selectPaint(newPaint) {
+    paint = newPaint;
+    eraser = false;            // 選了任何顏色／花紋就自動關掉橡皮擦
+    syncEraserBtn();
+    markPaintSelection();
+    syncColorBtn();
+    Sound.click();
+    closePanels();
+  }
+
+  toolBtn.addEventListener('click', () => {
+    Sound.click();
+    if (openedPanel === 'tool') closePanels(); else openPanel('tool');
   });
+
+  colorBtn.addEventListener('click', () => {
+    Sound.click();
+    if (openedPanel === 'color') closePanels(); else openPanel('color');
+  });
+
+  eraserBtn.addEventListener('click', () => {
+    eraser = !eraser;
+    syncEraserBtn();
+    Sound.click();
+  });
+
+  undoBtn.addEventListener('click', () => {
+    if (undoBtn.disabled) return;
+    Sound.click();
+    undo();
+  });
+
+  clearBtn.addEventListener('click', () => {
+    if (clearBtn.disabled) return;
+    Sound.click();
+    artWrap.querySelectorAll('svg.art-base .c').forEach(el => el.setAttribute('fill', '#fff'));
+    if (fillCtx) fillCtx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+    if (ctx) ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+    clearHistory();
+  });
+
+  /* ===== 選圖畫面 ===== */
+  function buildPicGrid() {
+    picGrid.innerHTML = '';
+    gallery().forEach((item, idx) => {
+      const cell = document.createElement('div');
+      cell.className = 'pic-cell';
+
+      const b = document.createElement('button');
+      b.className = 'pic-thumb';
+      b.title = item.name;
+      if (item.type === 'vector') {
+        b.innerHTML = `<div class="thumb-svg">${item.svg}</div>`;
+      } else {
+        const im = document.createElement('img');
+        im.src = item.dataUrl;
+        im.alt = item.name;
+        b.appendChild(im);
+      }
+      b.addEventListener('click', () => { Sound.click(); openPic(idx); });
+      cell.appendChild(b);
+
+      // 自訂照片：右上角一顆刪除鈕
+      if (item.type === 'raster') {
+        const del = document.createElement('button');
+        del.className = 'pic-del';
+        del.title = '刪除這張照片';
+        del.textContent = '🗑️';
+        del.addEventListener('click', (e) => {
+          e.stopPropagation();
+          Sound.click();
+          customPics = customPics.filter(p => p.id !== item.id);
+          saveCustomPics();
+          buildPicGrid();
+        });
+        cell.appendChild(del);
+      }
+
+      picGrid.appendChild(cell);
+    });
+
+    // 最後一格：上傳照片
+    const up = document.createElement('button');
+    up.className = 'pic-thumb pic-upload';
+    up.innerHTML = '<span>🖼️</span><span class="pic-upload-txt">上傳照片</span>';
+    up.addEventListener('click', () => { Sound.click(); fileInput.click(); });
+    picGrid.appendChild(up);
+  }
+
+  function openPic(idx) {
+    galleryIndex = idx;
+    closePanels();
+    showCurrent();
+    selectScreen.hidden = true;
+    gameScreen.hidden = false;
+    requestAnimationFrame(sizeArt);
+  }
+
+  function backToSelect() {
+    closePanels();
+    gameScreen.hidden = true;
+    selectScreen.hidden = false;
+    buildPicGrid();   // 自訂照片可能增減，回來時重建
+  }
+
+  doneBtn.addEventListener('click', () => { Sound.click(); backToSelect(); });
 
   /* ===== 顯示目前這張（依類型分流） ===== */
   function showCurrent() {
     const list = gallery();
+    if (!list.length) return;
     galleryIndex = (galleryIndex + list.length) % list.length;
     const item = list[galleryIndex];
-    picName.textContent = item.name;
-    deleteBtn.hidden = item.type !== 'raster';
     artWrap.innerHTML = '';
     fillCanvas = fillCtx = rasterEdgeMask = null;
+    clearHistory();   // 換圖就不能再復原上一張的筆畫
 
     if (item.type === 'vector') loadVector(item);
     else loadRaster(item);
@@ -206,21 +489,35 @@
 
   // 讓作品區維持正方形、置中
   function sizeArt() {
-    const side = Math.floor(Math.min(holder.clientWidth, holder.clientHeight) - 12);
+    // clientWidth/Height 含 padding，要扣掉才是真正能放畫布的空間（直式時左右 padding 會壓到寬度）
+    const cs = getComputedStyle(holder);
+    const w = holder.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const h = holder.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    const side = Math.floor(Math.min(w, h));
+    if (side < 50) return;   // 遊戲畫面還沒顯示時量到 0，先跳過
     artWrap.style.width = side + 'px';
     artWrap.style.height = side + 'px';
   }
-  window.addEventListener('resize', sizeArt);
+  window.addEventListener('resize', () => {
+    sizeArt();
+    closePanels();
+    setTimeout(sizeArt, 120); // iPad 轉向時 resize 有時早於版面更新，晚一點再校正一次
+  });
 
-  /* ===== 填滿模式（點一下整區上色） ===== */
+  /* ===== 填滿工具（點一下整區上色） ===== */
   artWrap.addEventListener('pointerdown', (e) => {
     if (mode !== 'fill') return;
+    if (swallowStroke) return;   // 這一下是用來關面板的
     const item = gallery()[galleryIndex];
 
     if (item.type === 'vector') {
       const region = e.target.closest('.c');
       if (!region) return;
-      region.setAttribute('fill', paint.type === 'color' ? paint.value : `url(#${paint.id})`);
+      pushHistory({ kind: 'fill', el: region, prev: region.getAttribute('fill') });
+      // 橡皮擦：把這一區填回白色
+      region.setAttribute('fill',
+        eraser ? '#fff'
+        : (paint.type === 'color' ? paint.value : `url(#${paint.id})`));
       Sound.pop();
       return;
     }
@@ -231,18 +528,19 @@
       const py = Math.floor((e.clientY - rect.top) / rect.height * CANVAS_SIZE);
       const filled = PhotoTool.floodFillMask(rasterEdgeMask, CANVAS_SIZE, CANVAS_SIZE, px, py);
       if (!filled) return; // 點到線條上，不處理
+      pushHistory(snapshotCanvas(fillCtx));
       applyFloodFill(filled);
       Sound.pop();
     }
   });
 
-  // 把目前選的顏色/花紋蓋到這次疊桶填色算出來的範圍裡
+  // 把目前選的顏色/花紋蓋到這次疊桶填色算出來的範圍裡（橡皮擦時改成挖掉）
   function applyFloodFill(filledMask) {
     const tmp = document.createElement('canvas');
     tmp.width = CANVAS_SIZE;
     tmp.height = CANVAS_SIZE;
     const tctx = tmp.getContext('2d');
-    tctx.fillStyle = paintStyle();
+    tctx.fillStyle = eraser ? '#000' : paintStyle();
     tctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
     const imgData = tctx.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE);
@@ -251,10 +549,16 @@
     }
     tctx.putImageData(imgData, 0, 0);
 
-    fillCtx.drawImage(tmp, 0, 0);
+    if (eraser) {
+      fillCtx.globalCompositeOperation = 'destination-out';
+      fillCtx.drawImage(tmp, 0, 0);
+      fillCtx.globalCompositeOperation = 'source-over';
+    } else {
+      fillCtx.drawImage(tmp, 0, 0);
+    }
   }
 
-  /* ===== 畫筆 / 潑墨模式 ===== */
+  /* ===== 畫筆 / 潑墨 / 水彩 / 亮粉筆 ===== */
   function canvasPos(e) {
     const r = paintCanvas.getBoundingClientRect();
     return {
@@ -270,28 +574,37 @@
 
     paintCanvas.addEventListener('pointerdown', (e) => {
       if (mode === 'fill') return;
+      if (swallowStroke) return;   // 這一下是用來關面板的
       e.preventDefault();
       paintCanvas.setPointerCapture(e.pointerId);
       drawing = true;
       last = canvasPos(e);
 
-      ctx.globalCompositeOperation = isEraser() ? 'destination-out' : 'source-over';
+      // 一筆＝一次復原：下筆前先把整張畫布存起來
+      pushHistory(snapshotCanvas(ctx));
 
-      if (mode === 'brush') {
-        drawSegment(last, last);
-      } else {
+      const tool = currentTool();
+      ctx.globalCompositeOperation = isEraser() ? 'destination-out' : 'source-over';
+      // 水彩用半透明疊出來（橡皮擦時強制不透明，才擦得乾淨）
+      ctx.globalAlpha = (!isEraser() && tool.alpha) ? tool.alpha : 1;
+
+      if (mode === 'spray') {
         splat(last, true);
         sprayTimer = setInterval(() => { if (last) splat(last, false); }, 70);
+      } else {
+        drawSegment(last, last);
+        if (mode === 'glitter' && !isEraser()) sprinkleGlitter(last, last);
       }
     });
 
     paintCanvas.addEventListener('pointermove', (e) => {
       if (!drawing) return;
       const pos = canvasPos(e);
-      if (mode === 'brush') {
-        drawSegment(last, pos);
-      } else {
+      if (mode === 'spray') {
         splat(pos, false);
+      } else {
+        drawSegment(last, pos);
+        if (mode === 'glitter' && !isEraser()) sprinkleGlitter(last, pos);
       }
       last = pos;
     });
@@ -301,6 +614,7 @@
       last = null;
       if (sprayTimer) { clearInterval(sprayTimer); sprayTimer = null; }
       ctx.globalCompositeOperation = 'source-over';
+      ctx.globalAlpha = 1;
     };
     paintCanvas.addEventListener('pointerup', stop);
     paintCanvas.addEventListener('pointercancel', stop);
@@ -308,13 +622,30 @@
 
   function drawSegment(from, to) {
     ctx.strokeStyle = paintStyle();
-    ctx.lineWidth = BRUSH_WIDTH;
+    ctx.lineWidth = currentTool().width || 30;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
     ctx.beginPath();
     ctx.moveTo(from.x, from.y);
     ctx.lineTo(to.x, to.y);
     ctx.stroke();
+  }
+
+  // 亮粉筆：在這一段線上灑 3~5 顆白色／淡黃小點
+  function sprinkleGlitter(from, to) {
+    const saveAlpha = ctx.globalAlpha;
+    ctx.globalAlpha = 1;
+    const n = 3 + Math.floor(Math.random() * 3);
+    for (let i = 0; i < n; i++) {
+      const t = Math.random();
+      const x = from.x + (to.x - from.x) * t + (Math.random() - 0.5) * 24;
+      const y = from.y + (to.y - from.y) * t + (Math.random() - 0.5) * 24;
+      ctx.fillStyle = Math.random() < 0.5 ? '#fff' : '#fff9c4';
+      ctx.beginPath();
+      ctx.arc(x, y, 1.5 + Math.random() * 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalAlpha = saveAlpha;
   }
 
   // 潑墨：一團大小不一的墨點，first=true 時多加幾滴大的
@@ -340,21 +671,8 @@
     }
   }
 
-  /* ===== 上一張 / 下一張 / 重來 ===== */
-  document.getElementById('prevBtn').addEventListener('click', () => { Sound.click(); galleryIndex--; showCurrent(); });
-  document.getElementById('nextBtn').addEventListener('click', () => { Sound.click(); galleryIndex++; showCurrent(); });
-  document.getElementById('resetBtn').addEventListener('click', () => {
-    Sound.click();
-    artWrap.querySelectorAll('svg.art-base .c').forEach(el => el.setAttribute('fill', '#fff'));
-    if (fillCtx) fillCtx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-    if (ctx) ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-  });
-
   /* ===== 上傳照片：本機處理，不會上傳到任何伺服器 ===== */
-  const uploadBtn = document.getElementById('uploadBtn');
   const fileInput = document.getElementById('fileInput');
-
-  uploadBtn.addEventListener('click', () => { Sound.click(); fileInput.click(); });
 
   function loadImageFromFile(file) {
     return new Promise((resolve, reject) => {
@@ -389,22 +707,13 @@
         dataUrl
       });
       saveCustomPics();
-      galleryIndex = gallery().length - 1;
-      showCurrent();
+      buildPicGrid();
+      openPic(gallery().length - 1);   // 傳完直接進遊戲畫面畫新圖
     } catch (err) {
       console.error('照片處理失敗', err);
     } finally {
       processingOverlay.hidden = true;
     }
-  });
-
-  deleteBtn.addEventListener('click', () => {
-    const item = gallery()[galleryIndex];
-    if (item.type !== 'raster') return;
-    Sound.click();
-    customPics = customPics.filter(p => p.id !== item.id);
-    saveCustomPics();
-    showCurrent();
   });
 
   /* ===== 存成圖片 ===== */
@@ -450,6 +759,7 @@
 
   document.getElementById('saveBtn').addEventListener('click', async () => {
     Sound.click();
+    closePanels();
     const item = gallery()[galleryIndex];
     const dataUrl = await composeFinalImage(item);
 
@@ -472,7 +782,13 @@
     saveOverlay.hidden = true;
   });
 
-  buildPalette();
-  showCurrent();
-  requestAnimationFrame(sizeArt); // 版面完成後再校正一次尺寸
+  /* ===== 起始 ===== */
+  buildToolPanel();
+  buildColorPanel();
+  markPaintSelection();
+  syncColorBtn();
+  syncEraserBtn();
+  toolBtnIcon.textContent = currentTool().emoji;
+  buildPicGrid();
+  updateButtons();
 })();

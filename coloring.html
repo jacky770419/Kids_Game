@@ -10,31 +10,75 @@
 </head>
 <body class="coloring">
 
-<header class="bar">
-  <a href="index.html" class="icon-btn">🏠</a>
-  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
-  <button id="prevBtn" class="icon-btn">◀️</button>
-  <div id="picName" class="bar-title"></div>
-  <button id="nextBtn" class="icon-btn">▶️</button>
-  <span class="spacer"></span>
-  <div class="mode-row">
-    <button id="modeFill" class="icon-btn mode-btn selected" title="填滿">🪣</button>
-    <button id="modeBrush" class="icon-btn mode-btn" title="畫筆">🖌️</button>
-    <button id="modeSpray" class="icon-btn mode-btn" title="潑墨">💦</button>
+<!-- ===== 選圖畫面：跟拼圖頁用同一套 .pic-grid / .pic-thumb 風格 ===== -->
+<main id="selectScreen">
+  <header class="bar">
+    <a href="index.html" class="icon-btn">🏠</a>
+    <span class="spacer"></span>
+    <div class="bar-title c-select-title">選一張來著色吧！</div>
+    <span class="spacer"></span>
+    <!-- 這裡刻意不放 🎵：music.js 只認一顆 #musicBtn，統一放在右側工具列 -->
+  </header>
+  <div class="c-select-scroll">
+    <div id="picGrid" class="pic-grid"></div>
   </div>
-  <span class="spacer"></span>
-  <button id="uploadBtn" class="icon-btn" title="上傳照片畫稿">🖼️</button>
-  <button id="deleteBtn" class="icon-btn" title="刪除這張照片" hidden>🗑️</button>
-  <button id="resetBtn" class="icon-btn" title="重新來過">🧽</button>
-  <button id="saveBtn" class="icon-btn" title="存成圖片">📷</button>
-  <input type="file" id="fileInput" accept="image/*" hidden>
-</header>
-
-<main id="svgHolder">
-  <div id="artWrap"></div>
 </main>
 
-<footer id="palette"></footer>
+<!-- ===== 遊戲畫面：左邊白色畫布 + 右邊木紋直立工具列 ===== -->
+<main id="gameScreen" hidden>
+
+  <div id="svgHolder">
+    <div id="artWrap"></div>
+  </div>
+
+  <aside id="toolbar">
+    <!-- 上方：完成 / 存成圖片 -->
+    <div class="tb-row">
+      <button id="doneBtn" class="tb-sq tb-green" title="完成">✅</button>
+      <button id="saveBtn" class="tb-sq tb-blue" title="存成圖片">📷</button>
+    </div>
+
+    <!-- 三顆大圓鈕：工具 / 顏色 / 橡皮擦 -->
+    <button id="toolBtn" class="tb-round" title="工具">
+      <span class="tb-inner" id="toolBtnIcon">🪣</span>
+    </button>
+
+    <button id="colorBtn" class="tb-round tb-color" title="顏色"></button>
+
+    <button id="eraserBtn" class="tb-round" title="橡皮擦">
+      <span class="tb-inner">🧽</span>
+    </button>
+
+    <span class="tb-gap"></span>
+
+    <!-- 音樂（id 必須是 musicBtn，js/music.js 會自動接上） -->
+    <div class="tb-row">
+      <button id="musicBtn" class="tb-sq tb-plain" title="背景音樂">🎵</button>
+    </div>
+
+    <!-- 底部：復原 / 全部清除 -->
+    <div class="tb-row">
+      <button id="undoBtn" class="tb-sq tb-red" title="復原">↩️</button>
+      <button id="clearBtn" class="tb-sq tb-yellow" title="全部清除">🗑️</button>
+    </div>
+  </aside>
+
+  <!-- 彈出面板：工具 -->
+  <div id="toolPanel" class="panel" hidden>
+    <span class="panel-arrow"></span>
+    <div id="toolList" class="tool-list"></div>
+  </div>
+
+  <!-- 彈出面板：色盤（56 色 + 6 種花紋） -->
+  <div id="colorPanel" class="panel" hidden>
+    <span class="panel-arrow"></span>
+    <div id="colorGrid" class="color-grid"></div>
+    <div id="patternRow" class="pattern-row"></div>
+  </div>
+
+</main>
+
+<input type="file" id="fileInput" accept="image/*" hidden>
 
 <div id="saveOverlay" class="overlay" hidden>
   <img id="saveImg" alt="著色作品">

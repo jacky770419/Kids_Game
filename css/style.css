@@ -141,6 +141,95 @@ body.coloring {
   flex-direction: column;
 }
 
+/* 選圖畫面：頂端一列 .bar + 可捲動的縮圖區（共用拼圖頁的 .pic-grid / .pic-thumb） */
+body.coloring #selectScreen {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.c-select-title {
+  font-size: 26px;
+  min-width: auto;
+}
+
+.c-select-scroll {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 6px 20px calc(20px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+  padding-right: calc(20px + env(safe-area-inset-right));
+}
+
+/* 遊戲畫面：左邊畫布、右邊木紋工具列 */
+body.coloring #gameScreen {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  /* 共用規則的 touch-action:none 會連工具列與面板的捲動一起擋掉，
+     這裡放開，改由 #svgHolder / #paintLayer 各自關掉手勢 */
+  touch-action: auto;
+}
+
+/* 內建線稿縮圖：直接把 SVG 字串塞進來，不用 img */
+.pic-thumb .thumb-svg {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.pic-thumb .thumb-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 每一格外面包一層，才放得下右上角的刪除鈕 */
+.pic-cell {
+  position: relative;
+}
+
+.pic-cell .pic-thumb {
+  width: 100%;
+}
+
+.pic-del {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: #FFAAA5;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.pic-del:active { transform: scale(0.9); }
+
+/* 最後一格：上傳照片 */
+.pic-upload {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 64px;
+  line-height: 1;
+  background: linear-gradient(160deg, #FFF3C4, #FFE08A);
+}
+
+.pic-upload-txt {
+  font-size: 22px;
+  font-weight: 800;
+  color: #8a6f4a;
+}
+
 #svgHolder {
   flex: 1;
   display: flex;
@@ -148,6 +237,8 @@ body.coloring {
   justify-content: center;
   padding: 6px 14px;
   min-height: 0;
+  min-width: 0;
+  background: #fff;
   touch-action: none;
 }
 
@@ -210,60 +301,275 @@ body.coloring {
   pointer-events: none;
 }
 
-.mode-row {
-  display: flex;
-  gap: 8px;
-}
-
-.mode-btn.selected {
-  background: #FFD166;
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18);
-}
-
 #svgHolder .c {
   cursor: pointer;
   transition: fill 0.12s ease;
 }
 
-#palette {
+/* ===== 右側木紋直立工具列 ===== */
+#toolbar {
+  flex: 0 0 118px;
+  width: 118px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 10px 12px calc(14px + env(safe-area-inset-bottom));
+  gap: 12px;
+  overflow-y: auto;
+  border-left: 6px solid #B98A4B;
+  /* 木紋：兩層重複漸層做出深淺木理，不用外部圖片 */
+  background:
+    repeating-linear-gradient(180deg, rgba(160, 112, 58, 0.16) 0 3px, rgba(160, 112, 58, 0) 3px 13px),
+    repeating-linear-gradient(180deg, rgba(140, 96, 46, 0.09) 0 1px, rgba(140, 96, 46, 0) 1px 6px),
+    linear-gradient(90deg, #F3E3A8 0%, #E9D18A 46%, #EFDC9C 100%);
+  padding: calc(12px + env(safe-area-inset-top)) 6px calc(12px + env(safe-area-inset-bottom));
+  padding-right: calc(6px + env(safe-area-inset-right));
 }
 
-.swatch {
-  width: clamp(44px, 6.5vw, 64px);
-  height: clamp(44px, 6.5vw, 64px);
+.tb-gap { flex: 1; min-height: 6px; }
+
+.tb-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+/* 小方鈕（52px，圓角 12px） */
+.tb-sq {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18);
+  transition: transform 0.1s ease;
+}
+
+.tb-sq:active { transform: scale(0.9); }
+
+.tb-green  { background: #8BD97F; }
+.tb-blue   { background: #7FC4F5; }
+.tb-red    { background: #FFAFA8; }
+.tb-yellow { background: #FFE083; }
+.tb-plain  { background: #FFFFFF; }
+
+.tb-sq[disabled] {
+  opacity: 0.4;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* 大圓鈕（90px） */
+.tb-round {
+  width: 90px;
+  height: 90px;
+  flex: 0 0 auto;
   border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
-  transition: transform 0.12s ease;
+  border: 3px solid #3F51B5;
+  background: linear-gradient(160deg, #CDE6FB, #8FC4EE);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.16);
+  transition: transform 0.1s ease;
 }
 
-.swatch:active { transform: scale(0.88); }
+.tb-round:active { transform: scale(0.93); }
 
-.pattern-swatch {
+.tb-round .tb-inner {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 1;
+}
+
+/* 顏色鈕：整顆填成目前顏色（或花紋），白色內圈 + 深藍外框 */
+.tb-color {
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 3px #3F51B5, 0 5px 0 rgba(0, 0, 0, 0.16);
+  background: #FF0000;
   overflow: hidden;
   padding: 0;
-  background: #fff;
 }
 
-.pattern-swatch svg {
+.tb-color svg {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.swatch.selected {
-  transform: scale(1.18);
-  border-color: #4a3b2a;
+/* 橡皮擦開啟時：亮橘外框並放大一點 */
+.tb-round.eraser-on {
+  border-color: #FF8A00;
+  transform: scale(1.08);
+  box-shadow: 0 0 0 4px #FFD9A6, 0 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* ===== 彈出面板（工具面板 / 色盤面板共用） ===== */
+.panel {
+  position: fixed;
+  z-index: 60;
+  background: #E8ECF8;
+  border: 3px solid #9AA6D6;
+  border-radius: 22px;
+  padding: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  max-height: calc(100vh - 16px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 指向觸發鈕的三角形小箭頭（旋轉 45 度的方塊，只留上／右邊框） */
+.panel-arrow {
+  position: absolute;
+  right: -14px;
+  width: 24px;
+  height: 24px;
+  background: #E8ECF8;
+  border-top: 3px solid #9AA6D6;
+  border-right: 3px solid #9AA6D6;
+  border-radius: 0 6px 0 0;
+  transform: rotate(45deg);
+}
+
+/* 工具面板：直式一欄 */
+.tool-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 210px;
+}
+
+.tool-item {
+  height: 68px;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 16px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #5a4a38;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.tool-item .tool-emoji { font-size: 34px; line-height: 1; }
+
+.tool-item.selected {
+  background: #FFF0B8;
+  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.tool-item:active { transform: scale(0.96); }
+
+/* 色盤面板：8 欄 x 7 列 */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 56px);
+  gap: 10px;
+  padding: 6px;
+}
+
+.color-cell {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.10) inset;
+  overflow: visible;
+}
+
+.color-cell:active { transform: scale(0.9); }
+
+/* 選中的格子右上角疊一個 ✔ 橘色小圓徽章 */
+.color-cell.selected::after {
+  content: '✔';
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FF8A00;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* 花紋列（沿用把 tile 直接塞進 svg 的作法） */
+.pattern-row {
+  display: grid;
+  grid-template-columns: repeat(6, 56px);
+  gap: 10px;
+  padding: 12px 6px 6px;
+  margin-top: 8px;
+  border-top: 3px dashed #B9C2E4;
+  justify-content: center;
+}
+
+.pattern-cell {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.10) inset;
+}
+
+.pattern-cell svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pattern-cell.selected {
+  overflow: visible;
+  box-shadow: 0 0 0 3px #FF8A00;
+}
+
+.pattern-cell.selected::after {
+  content: '✔';
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FF8A00;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.pattern-cell.selected svg { border-radius: 8px; }
+
+/* 直式視窗：工具列仍在右側，縮窄成一欄 */
+@media (orientation: portrait) {
+  #toolbar {
+    flex-basis: 92px;
+    width: 92px;
+    gap: 10px;
+  }
+  .tb-row { flex-direction: column; }
+  .tb-round { width: 78px; height: 78px; }
+  .tb-round .tb-inner { width: 58px; height: 58px; font-size: 30px; }
 }
 
 /* ===== 拼圖頁 ===== */
