@@ -71,7 +71,8 @@
 
   function gallery() {
     return [
-      ...LINEART.map(x => ({ type: 'vector', name: x.name, svg: x.svg })),
+      ...[...LINEART, ...(window.LINEART_ANIMALS || [])]
+        .map(x => ({ type: 'vector', name: x.name, svg: x.svg })),
       ...customPics
     ];
   }
