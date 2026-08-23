@@ -347,6 +347,7 @@ body.coloring #gameScreen {
   width: 100%;
   height: 100%;
   --sq: 100%;
+  isolation: isolate;   /* art-outline 的 multiply 只在這一層之內混色，不要吃到紙張背景 */
 }
 
 /* 線稿／照片這四層維持正方形並置中，紙比它大的那一邊就是空白紙面 */
@@ -378,10 +379,12 @@ body.coloring #gameScreen {
   z-index: 2;
 }
 
-/* 頂層：線稿外框複本，只留輪廓，永遠蓋在最上面不會被塗到 */
+/* 頂層：線稿外框複本，永遠蓋在最上面不會被塗到。
+   可上色區保留白色填色以維持線稿本身的遮蔽關係，靠 multiply 讓白色不遮住底下的塗鴉。 */
 #artWrap svg.art-outline {
   z-index: 3;
   pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
 /* 上傳照片產生的畫稿：跟 art-base/paintLayer/art-outline 同一套三層邏輯，

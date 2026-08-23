@@ -491,8 +491,11 @@
   /* ===== 內建線稿：三層疊放 =====
      1. art-base    真正的線稿，fill 模式在這層上色
      2. paintLayer  畫筆 / 潑墨畫的透明畫布
-     3. art-outline art-base 的複本，把可上色區域改成無填色、只留外框，
-                    蓋在最上面且不接收觸控，確保外框線永遠不會被塗蓋 */
+     3. art-outline art-base 的複本，蓋在最上面且不接收觸控，確保外框線永遠不會被塗蓋。
+                    可上色區維持白色填色（不能改成 fill="none"）：線稿的分層是靠「後畫的白色
+                    區塊蓋掉前面區塊的線」，拿掉填色會讓被遮住的線全部冒出來，看起來就跟
+                    選圖縮圖不一樣。這層改用 mix-blend-mode: multiply 疊上去——白色乘算等於
+                    不動，底下的塗鴉照樣看得到，只有深色線條會蓋上去。 */
   function loadVector(item) {
     artWrap.innerHTML = item.svg;
 
@@ -509,8 +512,12 @@
     outlineSvg.classList.remove('art-base');
     outlineSvg.classList.add('art-outline');
     outlineSvg.querySelector('defs')?.remove();
-    outlineSvg.querySelectorAll('.c').forEach(el => el.setAttribute('fill', 'none'));
+    // 這裡刻意不動 .c 的填色，理由見上面的分層說明
     artWrap.appendChild(outlineSvg);
+
+    // 線條一律由 outline 層負責：base 層再描一次會讓同一條線疊兩層、看起來比縮圖粗。
+    // 線稿的描邊色都設在根 <svg> 上靠繼承，子元素只會自帶 stroke="none"，所以這樣改不會漏線。
+    baseSvg.setAttribute('stroke', 'none');
 
     sizeArt();
     restoreProgress(item);   // 非同步，會比畫面晚一兩幀
@@ -1049,7 +1056,10 @@
       ]);
       c.drawImage(baseImg, ox, oy, sq, sq);
       c.drawImage(paintCanvas, 0, 0);
+      // 外框層跟畫面上一樣走 multiply（白色填色不遮塗鴉，只留深色線條）
+      c.globalCompositeOperation = 'multiply';
       c.drawImage(outlineImg, ox, oy, sq, sq);
+      c.globalCompositeOperation = 'source-over';
     } else {
       const lineCanvas = artWrap.querySelector('#lineLayer');
       c.drawImage(fillCanvas, ox, oy, sq, sq);
