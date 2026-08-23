@@ -1,78 +1,134 @@
-/* 背景音樂：用 Web Audio 即時合成一段五聲音階旋律循環播放，
-   不需要外部音樂檔案，完全原創、沒有版權問題，也不佔儲存空間。 */
+/* 背景音樂：輪流播放 assets/music/ 底下三首 MP3。
+   純靜態、離線可播，不需要建置流程。
+
+   曲目與授權：
+   - Children's March Theme — Cleyton Kauffman，CC0（公眾領域貢獻）
+   - Fluffing a Duck — Kevin MacLeod (incompetech.com)，CC BY 4.0
+   - Monkeys Spinning Monkeys — Kevin MacLeod (incompetech.com)，CC BY 4.0
+   完整標註（含作者連結與授權條款網址）寫在 assets/CREDITS.md。
+
+   音樂不是必要功能：檔案載不到就安靜，不做合成備援。 */
 const Music = (() => {
-  const STORAGE_KEY = 'kidsMusicOn';
-  let ctx = null;
+  const STORAGE_KEY = 'kidsMusicOn';    // '0' 表示關，其他（含沒存過）都視為開
+  const TRACK_KEY = 'kidsMusicTrack';   // 目前播到第幾首（TRACKS 的索引）
+  const POS_KEY = 'kidsMusicPos';       // 目前這首播到第幾秒，換頁時接著播
+
+  const TRACKS = [
+    'assets/music/childrens-march.mp3',
+    'assets/music/fluffing-a-duck.mp3',
+    'assets/music/monkeys-spinning-monkeys.mp3'
+  ];
+
+  let audio = null;
   let playing = false;
-  let nextNoteTime = 0;
-  let stepIndex = 0;
-  let timerId = null;
+  let index = 0;
+  let failCount = 0;      // 連續載入失敗的首數，三首都失敗就徹底放棄
+  let lastSaved = -99;    // 上次寫入 POS_KEY 時的秒數，用來節流
+  let retryPending = false;
 
-  // C 大調五聲音階，橫跨兩個八度：音階內任意組合都不會刺耳，很適合小孩
-  const SCALE = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 587.33, 659.25, 783.99, 880.00];
-
-  // 手寫的輕快旋律（音階索引，-1 是休止符）+ 簡單的低音襯底，四小節一輪循環
-  const MELODY = [
-    0, 2, 4, 5, 4, 2, 0, -1,
-    2, 4, 5, 7, 5, 4, 2, -1,
-    0, 2, 4, 5, 7, 5, 4, 2,
-    4, 2, 0, -1, 0, -1, -1, -1
-  ];
-  const BASS = [
-    0, -1, -1, -1, -1, -1, -1, -1,
-    3, -1, -1, -1, -1, -1, -1, -1,
-    0, -1, -1, -1, -1, -1, -1, -1,
-    3, -1, -1, -1, 0, -1, -1, -1
-  ];
-  const STEP_DUR = 0.25; // 每格時值（秒），中速、活潑但不吵
-
-  function ac() {
-    if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
-    if (ctx.state === 'suspended') ctx.resume();
-    return ctx;
+  function getNum(key, fallback) {
+    try {
+      const v = parseFloat(localStorage.getItem(key));
+      return isFinite(v) ? v : fallback;
+    } catch (e) { return fallback; }
   }
 
-  function scheduleNote(freq, time, dur, type, vol) {
-    const c = ac();
-    const osc = c.createOscillator();
-    const gain = c.createGain();
-    osc.type = type;
-    osc.frequency.setValueAtTime(freq, time);
-    gain.gain.setValueAtTime(0, time);
-    gain.gain.linearRampToValueAtTime(vol, time + 0.02);
-    gain.gain.exponentialRampToValueAtTime(0.001, time + dur);
-    osc.connect(gain).connect(c.destination);
-    osc.start(time);
-    osc.stop(time + dur + 0.05);
+  function setItem(key, value) {
+    try { localStorage.setItem(key, String(value)); } catch (e) { /* 存不了就算了，不影響播放 */ }
   }
 
-  // 提前排程接下來 0.2 秒內該出現的音符（比 setInterval 本身精準，避免拍子飄）
-  function tick() {
-    const c = ac();
-    while (nextNoteTime < c.currentTime + 0.2) {
-      const m = MELODY[stepIndex % MELODY.length];
-      const b = BASS[stepIndex % BASS.length];
-      if (m >= 0) scheduleNote(SCALE[m], nextNoteTime, STEP_DUR * 0.9, 'triangle', 0.05);
-      if (b >= 0) scheduleNote(SCALE[b] / 2, nextNoteTime, STEP_DUR * 1.8, 'sine', 0.04);
-      nextNoteTime += STEP_DUR;
-      stepIndex++;
+  // 記住「第幾首、第幾秒」，讓 index → puzzle → coloring 換頁時不會從頭播
+  function savePos(force) {
+    if (!audio) return;
+    const t = audio.currentTime;
+    if (!force && Math.abs(t - lastSaved) < 2) return; // 節流：每 2 秒才寫一次
+    lastSaved = t;
+    setItem(TRACK_KEY, index);
+    setItem(POS_KEY, t);
+  }
+
+  // 換下一首（循環），一律從頭播
+  function next() {
+    index = (index + 1) % TRACKS.length;
+    setItem(TRACK_KEY, index);
+    setItem(POS_KEY, 0);
+    lastSaved = 0;
+    if (!audio) return;
+    audio.src = TRACKS[index];
+    try { audio.currentTime = 0; } catch (e) { /* 換 src 後還沒 load 好，忽略 */ }
+    if (playing) start(0, true);
+  }
+
+  function el() {
+    if (audio) return audio;
+    index = Math.min(TRACKS.length - 1, Math.max(0, Math.round(getNum(TRACK_KEY, 0))));
+    audio = new Audio();
+    audio.preload = 'auto';
+    audio.volume = 0.5;
+    audio.loop = false;
+    audio.src = TRACKS[index];
+
+    audio.addEventListener('ended', () => { failCount = 0; next(); });
+
+    audio.addEventListener('error', () => {
+      failCount++;
+      if (failCount >= TRACKS.length) { playing = false; return; } // 三首都載不到就安靜收工
+      next();
+    });
+
+    audio.addEventListener('timeupdate', () => { failCount = 0; savePos(false); });
+
+    return audio;
+  }
+
+  // 真正呼叫 play()。iOS 沒解鎖時 Promise 會被拒絕，吞掉錯誤並等下一次使用者互動再試
+  function start(seekTo, skipSeek) {
+    const a = el();
+    if (!skipSeek && typeof seekTo === 'number' && seekTo > 0) {
+      try { a.currentTime = seekTo; } catch (e) { /* metadata 還沒好就算了，從頭播 */ }
     }
+    const p = a.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(() => {
+        playing = false;
+        armRetry();
+      });
+    }
+  }
+
+  // iOS 要求出聲必須發生在使用者手勢裡。第一次被擋下來時，掛一個一次性的
+  // pointerdown，讓下一次觸控自動再試（不 stopPropagation，不影響其他頁面邏輯）
+  function armRetry() {
+    if (retryPending || !isOn()) return;
+    retryPending = true;
+    const again = () => {
+      retryPending = false;
+      if (isOn() && !playing) play();
+    };
+    document.addEventListener('pointerdown', again, { once: true });
   }
 
   function play() {
     if (playing) return;
     playing = true;
-    const c = ac();
-    nextNoteTime = c.currentTime + 0.1;
-    stepIndex = 0;
-    timerId = setInterval(tick, 100);
-    try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) { /* 存不了就算了，不影響播放 */ }
+    failCount = 0;
+    const a = el();
+    // 同一首才接著播；換過首就從頭
+    const savedTrack = Math.round(getNum(TRACK_KEY, 0));
+    const pos = savedTrack === index ? getNum(POS_KEY, 0) : 0;
+    lastSaved = pos;
+    start(pos, false);
+    setItem(STORAGE_KEY, '1');
+    return a;
   }
 
   function stop() {
     playing = false;
-    if (timerId) { clearInterval(timerId); timerId = null; }
-    try { localStorage.setItem(STORAGE_KEY, '0'); } catch (e) {}
+    if (audio) {
+      savePos(true);
+      audio.pause(); // 只暫停，保留播放位置
+    }
+    setItem(STORAGE_KEY, '0');
   }
 
   function toggle() {
@@ -82,6 +138,9 @@ const Music = (() => {
   function isOn() {
     try { return localStorage.getItem(STORAGE_KEY) !== '0'; } catch (e) { return true; }
   }
+
+  // 偏好是「開」的話先把音檔預載起來，等使用者一碰螢幕就能立刻出聲
+  if (isOn()) { try { el(); } catch (e) {} }
 
   return { play, stop, toggle, isOn, get playing() { return playing; } };
 })();
