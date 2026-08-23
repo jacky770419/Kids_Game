@@ -20,6 +20,11 @@
     <!-- 這裡刻意不放 🎵：music.js 只認一顆 #musicBtn，統一放在右側工具列 -->
   </header>
   <div class="c-select-scroll">
+    <!-- 我的作品：一列橫向捲動的縮圖，一張都沒有時整區隱藏 -->
+    <section id="artworkSection" hidden>
+      <div class="art-sec-title">🖼️ 我的作品</div>
+      <div id="artworkRow" class="artwork-row"></div>
+    </section>
     <div id="picGrid" class="pic-grid"></div>
   </div>
 </main>
@@ -80,6 +85,24 @@
 
 <input type="file" id="fileInput" accept="image/*" hidden>
 
+<!-- 作品檢視：點「我的作品」的縮圖打開。刪除要按兩次（小孩會亂按），
+     不用 confirm()——standalone 模式的 iPad 上體驗很差 -->
+<div id="artOverlay" class="overlay" hidden>
+  <img id="artImg" alt="我的作品">
+  <div class="overlay-row">
+    <button id="artSaveBtn" class="big-btn">📷 存起來</button>
+    <button id="artDelBtn" class="big-btn alt">🗑️ 刪除</button>
+    <button id="artCloseBtn" class="big-btn plain">關閉</button>
+  </div>
+  <div id="artConfirm" class="art-confirm" hidden>
+    <div class="art-confirm-txt">真的要刪掉嗎？</div>
+    <div class="overlay-row">
+      <button id="artDelYes" class="big-btn alt">對，刪掉</button>
+      <button id="artDelNo" class="big-btn">不要</button>
+    </div>
+  </div>
+</div>
+
 <div id="saveOverlay" class="overlay" hidden>
   <img id="saveImg" alt="著色作品">
   <div class="save-hint">長按圖片就可以存到相簿囉！</div>
@@ -94,8 +117,11 @@
 <script src="js/music.js"></script>
 <script src="js/lineart-data.js"></script>
 <script src="js/lineart-animals.js"></script>
+<script src="js/lineart-fantasy.js"></script>
+<script src="js/lineart-food.js"></script>
 <script src="js/patterns-data.js"></script>
 <script src="js/photo-tool.js"></script>
+<script src="js/storage.js"></script>
 <script src="js/coloring.js"></script>
 </body>
 </html>

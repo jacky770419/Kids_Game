@@ -154,6 +154,13 @@ body.coloring #selectScreen {
   min-width: auto;
 }
 
+/* 著色頁的縮圖牆：圖多（39 張），橫向平板要盡量一列多放幾張，不要沿用拼圖頁的 900px 上限 */
+body.coloring .pic-grid {
+  max-width: none;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
 .c-select-scroll {
   flex: 1;
   overflow-y: auto;
@@ -230,45 +237,143 @@ body.coloring #gameScreen {
   color: #8a6f4a;
 }
 
+/* 「畫到一半」角標：縮圖右下角一支小蠟筆，不吃觸控（點下去要開圖） */
+.pic-wip {
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #FFE083;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ===== 我的作品：選圖畫面上方一列橫向捲動的縮圖 ===== */
+#artworkSection {
+  margin: 4px 0 20px;
+}
+
+.art-sec-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #8a6f4a;
+  margin: 0 0 10px 6px;
+}
+
+.artwork-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 4px 10px;
+}
+
+.artwork-thumb {
+  flex: 0 0 auto;
+  width: 132px;
+  height: 132px;
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 0;
+  line-height: 0;
+  background: #fff;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 0.12s ease;
+}
+
+.artwork-thumb:active { transform: scale(0.94); }
+
+.artwork-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+
+/* 作品檢視 overlay：大圖 + 三顆大鈕（沿用 .overlay / .big-btn 的木質童趣風） */
+#artOverlay img {
+  max-width: 78vw;
+  max-height: 54vh;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.big-btn.plain { background: #C9B79B; }
+
+/* 刪除的二次確認小面板（不用 confirm()：standalone 模式的 iPad 上體驗很差） */
+.art-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 28px;
+  border-radius: 26px;
+  background: #FFF7E4;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.art-confirm[hidden] { display: none; }
+
+.art-confirm-txt {
+  font-size: 26px;
+  font-weight: 800;
+  color: #7a6350;
+}
+
+/* 紙 = 整個 #svgHolder：白紙滿版鋪滿可用區，不留邊、不圓角、不陰影 */
 #svgHolder {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 14px;
+  padding: 0;
   min-height: 0;
   min-width: 0;
   background: #fff;
   touch-action: none;
 }
 
+/* 整張紙。--sq 由 js/coloring.js 的 sizeArt() 寫入 = min(紙寬, 紙高) */
 #artWrap {
   position: relative;
-}
-
-#artWrap svg {
-  position: absolute;
-  inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
+  --sq: 100%;
+}
+
+/* 線稿／照片這四層維持正方形並置中，紙比它大的那一邊就是空白紙面 */
+#artWrap svg.art-base,
+#artWrap svg.art-outline,
+#fillLayer,
+#lineLayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: var(--sq);
+  height: var(--sq);
 }
 
 /* 底層：真正的線稿，負責 fill 模式的填色 */
 #artWrap svg.art-base {
-  background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.08);
   z-index: 1;
 }
 
-/* 中層：畫筆 / 潑墨的畫布 */
+/* 中層：畫筆 / 潑墨的畫布，覆蓋整張紙（非正方），小孩在角色以外也畫得到 */
 #paintLayer {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  border-radius: 24px;
   touch-action: none;
   z-index: 2;
 }
@@ -282,21 +387,10 @@ body.coloring #gameScreen {
 /* 上傳照片產生的畫稿：跟 art-base/paintLayer/art-outline 同一套三層邏輯，
    只是底層跟頂層改用 canvas（疊桶填色圖層 + 不可更動的線條圖層） */
 #fillLayer {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.08);
   z-index: 1;
 }
 
 #lineLayer {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
   z-index: 3;
   pointer-events: none;
 }
