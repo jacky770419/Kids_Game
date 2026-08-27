@@ -192,6 +192,94 @@ const LINEART_FANTASY = [
       <circle fill="#3a3a3a" stroke="none" cx="282" cy="146" r="11"/>
       <path fill="none" d="M60,150 L60,180 M45,165 L75,165 M336,132 L336,158 M323,145 L349,145"/>
     </svg>`
+  },
+  {
+    name: '城堡前的小公主',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="3.75" d="M30,374 L370,374"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="40" y="170" width="60" height="204"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="300" y="170" width="60" height="204"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M28,170 L112,170 L70,102 Z M288,170 L372,170 L330,102 Z"/>
+      <rect fill="#3a3a3a" stroke="none" x="58" y="210" width="24" height="36" rx="12"/>
+      <rect fill="#3a3a3a" stroke="none" x="318" y="210" width="24" height="36" rx="12"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M247,246 L247,112 L242,112 L262,84 L282,112 L277,112 L277,246 Z"/>
+      <rect fill="#3a3a3a" stroke="none" x="257" y="114" width="10" height="18" rx="5"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M100,374 L100,244 L124,244 L124,218 L150,218 L150,244 L187,244 L187,218 L213,218 L213,244 L250,244 L250,218 L276,218 L276,244 L300,244 L300,374 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M100,324 L100,312 L110,312 L110,300 L126,300 L126,312 L146,312 L146,300 L162,300 L162,312 L182,312 L182,300 L198,300 L198,312 L218,312 L218,300 L234,300 L234,312 L254,312 L254,300 L270,300 L270,312 L290,312 L290,300 L300,300 L300,324 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M186,190 C186,210 190,220 200,220 C210,220 214,210 214,190 Z"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="200" cy="152" r="48"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M152,132 C138,142 130,162 131,186 C132,212 134,236 142,252 C150,264 164,264 170,254 C161,244 156,226 155,206 C154,182 153,155 152,132 Z M248,132 C262,142 270,162 269,186 C268,212 266,236 258,252 C250,264 236,264 230,254 C239,244 244,226 245,206 C246,182 247,155 248,132 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M200,104 C176,104 158,120 153,144 C151,156 153,166 157,174 C166,156 180,144 200,132 Z M200,104 C224,104 242,120 247,144 C249,156 247,166 243,174 C234,156 220,144 200,132 Z"/>
+      <path fill="none" stroke-width="3" d="M200,88 L200,24"/>
+      <path fill="#3a3a3a" stroke="none" d="M200,24 L226,31 L200,38 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M168,106 L164,74 L182,88 L200,66 L218,88 L236,74 L232,106 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="181" cy="156" r="7.5"/>
+      <circle fill="#3a3a3a" stroke="none" cx="219" cy="156" r="7.5"/>
+      <path fill="none" stroke-width="2.63" d="M188,178 C194,186 206,186 212,178"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M178,228 C186,222 214,222 222,228 L228,292 L172,292 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M172,290 C148,308 112,332 92,354 C85,362 88,368 96,368 L304,368 C312,368 315,362 308,354 C288,332 252,308 228,290 Z"/>
+      <path fill="none" stroke-width="4.5" d="M151,311 C160,344 180,352 200,341 M249,311 C240,344 220,352 200,341"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M144,220 C150,234 162,246 178,254 L186,242 C172,236 160,226 154,214 Z M256,220 C250,234 238,246 222,254 L214,242 C228,236 240,226 246,214 Z"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="150" cy="206" r="19"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="250" cy="206" r="19"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="190" cy="256" rx="11" ry="9"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="210" cy="256" rx="11" ry="9"/>
+      </svg>`
+  },
+  {
+    name: '公主與小狗',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="3.75" d="M130,72 C118,72 113,57 125,50 C125,38 144,33 152,42 C160,31 181,34 183,47 C195,47 199,64 187,70 Z M225,58 C215,58 211,46 221,40 C222,30 237,26 244,34 C251,26 268,29 269,40 C279,41 281,54 271,58 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M198,306 C192,290 202,278 216,280 C222,270 238,270 244,280 C258,278 266,290 260,306 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M30,318 C80,300 140,312 200,306 C260,300 320,312 370,304 L370,370 L30,370 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M150,370 C168,350 204,342 246,344 C236,352 226,358 222,370 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M66,150 C70,200 68,260 62,316 L96,316 C90,260 88,200 92,150 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M85,40 C105,38 120,48 126,62 C142,64 152,80 146,95 C156,106 152,124 138,130 C136,148 118,158 102,152 C92,166 68,166 58,152 C40,158 26,146 28,130 C18,122 16,104 26,94 C22,78 32,64 48,64 C52,48 70,38 85,40 Z"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="58" cy="84" rx="6" ry="9" transform="rotate(-20 58 84)"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="108" cy="66" rx="6" ry="9" transform="rotate(15 108 66)"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="42" cy="118" rx="6" ry="9" transform="rotate(-30 42 118)"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="92" cy="128" rx="6" ry="9" transform="rotate(10 92 128)"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="132" cy="104" rx="6" ry="9" transform="rotate(30 132 104)"/>
+      <path fill="none" stroke-width="2.25" d="M38,352 C36,344 38,338 42,334 M46,352 C46,342 50,336 54,332 M112,348 C110,340 112,334 116,330 M120,348 C120,338 124,332 128,328"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M26,314 C18,302 18,286 28,280 L34,290 L42,278 L50,288 L56,278 C66,284 66,302 58,314 Z M208,326 C200,314 200,298 210,292 L216,302 L224,290 L232,300 L238,290 C248,296 248,314 240,326 Z M82,366 C74,354 74,340 84,334 L90,344 L98,332 L106,342 L112,332 C122,338 122,354 114,366 Z"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="118" cy="298" r="16"/>
+      <path fill="none" stroke-width="2.25" d="M118,298 C122,292 129,294 128,301 C127,306 121,307 118,303"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M140,152 C146,162 153,168 163,172 C170,168 182,168 189,170 C196,164 204,155 210,148 C216,158 221,172 222,186 C227,196 230,208 228,218 L235,223 L227,228 C223,240 216,248 208,252 C215,262 220,276 221,290 C222,306 215,319 206,322 C202,328 194,330 188,327 C184,325 180,325 176,327 C170,331 160,331 154,327 C149,324 146,322 146,320 C136,318 129,308 128,295 C127,280 132,262 136,250 C128,246 121,236 118,228 L109,222 L117,216 C114,205 117,194 122,186 C124,171 131,160 140,152 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="172" cy="288" rx="13" ry="20"/>
+      <ellipse class="c" fill="#fff" stroke-width="3" cx="130" cy="325" rx="11" ry="6.5"/>
+      <ellipse class="c" fill="#fff" stroke-width="3" cx="214" cy="325" rx="11" ry="6.5"/>
+      <path class="c" fill="#fff" stroke-width="3" d="M143,291 L141,318 C141,326 147,330 152,329 C157,328 158,323 156,317 L157,291 M187,291 L186,317 C184,323 185,328 190,329 C195,330 201,326 201,318 L199,291"/>
+      <ellipse class="c" fill="#fff" stroke-width="3" cx="147" cy="326" rx="12" ry="7"/>
+      <ellipse class="c" fill="#fff" stroke-width="3" cx="197" cy="326" rx="12" ry="7"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="172" cy="237" rx="26" ry="15"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="172" cy="229" rx="6.5" ry="5"/>
+      <path fill="none" stroke-width="1.88" d="M172,234 C172,239 168,242 163,240 M172,234 C172,239 176,242 181,240"/>
+      <circle fill="#3a3a3a" stroke="none" cx="146" cy="219" r="5.5"/>
+      <circle fill="#3a3a3a" stroke="none" cx="198" cy="219" r="5.5"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="145" cy="205" rx="5.5" ry="4"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="199" cy="205" rx="5.5" ry="4"/>
+      <path fill="none" stroke-width="1.88" d="M126,183 C137,177 150,173 161,172 M219,183 C209,176 198,171 190,170"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M140,160 L132,174 L152,169 Z"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M208,156 L215,171 L196,165 Z"/>
+      <path class="c" fill="#fff" stroke-width="6" d="M286,174 C260,180 250,198 250,220 C250,242 246,258 234,268 C246,272 260,270 268,262 C266,240 268,218 272,200 C275,188 280,180 286,174 Z"/>
+      <circle class="c" fill="#fff" stroke-width="4.5" cx="302" cy="132" r="40"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M302,78 C330,78 348,98 350,124 C351,148 350,170 354,192 C348,200 336,202 330,196 C333,170 335,146 336,116 C324,128 280,128 268,116 C267,146 269,170 274,196 C268,202 256,200 250,192 C254,170 253,148 254,124 C256,98 274,78 302,78 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M288,88 L286,58 L301,72 L315,52 L329,70 L342,60 L336,98 Z"/>
+      <path fill="none" stroke-width="1.88" d="M284,134 C288,131 293,131 297,134 M311,134 C315,131 320,131 324,134"/>
+      <circle fill="#3a3a3a" stroke="none" cx="290" cy="146" r="6"/>
+      <circle fill="#3a3a3a" stroke="none" cx="318" cy="146" r="6"/>
+      <path fill="none" stroke-width="2.25" d="M300,158 C304,164 312,164 316,158"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M292,178 C300,172 318,172 324,178 L330,204 C342,232 350,264 354,300 C357,326 356,344 352,358 L234,362 C238,330 248,298 260,270 C272,244 280,222 286,204 Z"/>
+      <path fill="none" stroke-width="2.25" d="M286,204 C298,210 318,210 330,204"/>
+      <path fill="none" stroke-width="2.25" d="M293,181 L293,194 L322,194 L322,181"/>
+      <circle class="c" fill="#fff" stroke-width="6" cx="330" cy="198" r="15"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="342" cy="222" rx="10" ry="9"/>
+      <path fill="none" stroke-width="2.25" d="M344,262 C338,292 338,324 342,352"/>
+      <path fill="none" stroke-width="2.25" d="M278,352 C280,334 284,316 290,300 M312,358 C312,340 314,320 318,304"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="272" cy="357" rx="16" ry="9"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M270,178 L244,162 C236,172 238,188 247,193 Z M272,186 L254,212 C262,221 276,220 281,210 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="272" cy="182" r="5"/>
+      </svg>`
   }
 ];
 
