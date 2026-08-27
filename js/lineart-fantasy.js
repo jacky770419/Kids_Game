@@ -9,189 +9,240 @@
    coloring.js 會讀 window.LINEART_FANTASY，接在內建線稿後面。 */
 const LINEART_FANTASY = [
   {
-    name: '糖果城堡',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <line x1="25" y1="364" x2="375" y2="364" stroke-width="6"/>
-      <rect class="c" fill="#fff" x="50" y="200" width="74" height="164"/>
-      <rect class="c" fill="#fff" x="276" y="200" width="74" height="164"/>
-      <circle class="c" fill="#fff" cx="87" cy="186" r="44"/>
-      <circle class="c" fill="#fff" cx="87" cy="126" r="34"/>
-      <circle fill="#3a3a3a" stroke="none" cx="87" cy="84" r="13"/>
-      <circle class="c" fill="#fff" cx="313" cy="176" r="46"/>
-      <circle class="c" fill="#fff" cx="313" cy="176" r="17"/>
-      <path fill="none" d="M290,150 L297,144 M336,152 L343,158 M298,202 L305,208"/>
-      <rect class="c" fill="#fff" x="72" y="250" width="32" height="42" rx="16"/>
-      <rect class="c" fill="#fff" x="296" y="250" width="32" height="42" rx="16"/>
-      <path class="c" fill="#fff" d="M132,364 L132,222 L164,222 L164,246 L192,246 L192,222 L224,222 L224,246 L252,246 L252,222 L284,222 L284,364 Z"/>
-      <path class="c" fill="#fff" d="M186,364 L186,300 A22,22 0 0 1 230,300 L230,364 Z"/>
-      <circle class="c" fill="#fff" cx="152" cy="310" r="26"/>
-      <path fill="none" d="M152,310 C152,301 163,301 163,310 C163,323 145,323 145,310 C145,293 171,293 171,310"/>
-      <line x1="152" y1="336" x2="152" y2="362"/>
-      <circle class="c" fill="#fff" cx="264" cy="310" r="26"/>
-      <path fill="none" d="M264,310 C264,301 253,301 253,310 C253,323 271,323 271,310 C271,293 245,293 245,310"/>
-      <line x1="264" y1="336" x2="264" y2="362"/>
-    </svg>`
+    name: '棒棒糖城堡',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="3.75" d="M28,374 L372,374"/>
+      <path fill="none" stroke-width="3.75" d="M200,150 L200,260"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="200" cy="106" r="48"/>
+      <path fill="none" stroke-width="2.25" d="M200,106 C200,96 213,96 213,106 C213,121 187,121 187,106 C187,86 221,86 221,106 C221,131 179,131 179,106"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="46" y="140" width="66" height="234"/>
+      <polygon class="c" fill="#fff" stroke-width="4.5" points="36,148 122,148 79,72"/>
+      <path fill="none" stroke-width="1.88" d="M62,118 L88,132 M55,132 L96,144"/>
+      <path fill="none" stroke-width="2.25" d="M79,72 L79,24"/>
+      <polygon fill="#3a3a3a" stroke="none" points="79,24 112,34 79,44"/>
+      <rect fill="#3a3a3a" stroke="none" x="66" y="196" width="26" height="40" rx="13"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="288" y="222" width="66" height="152"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M280,226 A41,41 0 0 1 362,226 Z"/>
+      <path fill="none" stroke-width="1.88" d="M305,224 C303,206 308,194 315,188 M337,224 C339,206 334,194 327,188"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="321" cy="178" r="11"/>
+      <rect fill="#3a3a3a" stroke="none" x="308" y="254" width="26" height="36" rx="13"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M112,374 L112,252 L138,252 L138,276 L162,276 L162,252 L188,252 L188,276 L212,276 L212,252 L238,252 L238,276 L262,276 L262,252 L288,252 L288,374 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M112,332 L112,314 L122,314 L122,302 L136,302 L136,314 L152,314 L152,302 L166,302 L166,314 L182,314 L182,302 L196,302 L196,314 L212,314 L212,302 L226,302 L226,314 L242,314 L242,302 L256,302 L256,314 L272,314 L272,302 L282,302 L282,314 L288,314 L288,332 Z"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="140" cy="350" r="14"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="260" cy="350" r="14"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M172,374 L172,318 A28,28 0 0 1 228,318 L228,374 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="216" cy="344" r="5"/>
+      </svg>`
   },
   {
-    name: '雲朵城堡',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M100,44 C44,52 40,134 78,142 C88,110 92,72 100,44 Z"/>
-      <polygon class="c" fill="#fff" points="150,34 156,50 173,51 160,61 164,77 150,68 136,77 141,61 127,51 144,50"/>
-      <polygon class="c" fill="#fff" points="320,56 326,72 343,73 330,83 334,99 320,90 306,99 311,83 297,73 314,72"/>
-      <rect class="c" fill="#fff" x="88" y="190" width="48" height="110"/>
-      <rect class="c" fill="#fff" x="264" y="190" width="48" height="110"/>
-      <polygon class="c" fill="#fff" points="66,216 112,148 158,216"/>
-      <polygon class="c" fill="#fff" points="242,216 288,148 334,216"/>
-      <rect class="c" fill="#fff" x="170" y="170" width="60" height="130"/>
-      <polygon class="c" fill="#fff" points="146,186 200,110 254,186"/>
-      <line x1="200" y1="112" x2="200" y2="86"/>
-      <polygon fill="#3a3a3a" stroke="none" points="200,86 228,97 200,108"/>
-      <rect class="c" fill="#fff" x="97" y="228" width="30" height="40" rx="15"/>
-      <rect class="c" fill="#fff" x="273" y="228" width="30" height="40" rx="15"/>
-      <rect class="c" fill="#fff" x="184" y="206" width="32" height="42" rx="16"/>
-      <path class="c" fill="#fff" d="M80,364 C44,364 36,326 74,314 C86,278 118,262 146,290 C164,258 232,262 246,292 C286,270 336,288 326,314 C356,322 352,364 320,364 Z"/>
-    </svg>`
+    name: '綿綿雲城堡',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <rect class="c" fill="#fff" stroke-width="4.5" x="88" y="180" width="64" height="160"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M82,204 L82,170 L98,170 L98,184 L112,184 L112,170 L128,170 L128,184 L142,184 L142,170 L158,170 L158,204 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M88,240 L88,224 L100,224 L100,214 L112,214 L112,224 L126,224 L126,214 L138,214 L138,224 L152,224 L152,240 Z"/>
+      <rect fill="#3a3a3a" stroke="none" x="106" y="256" width="28" height="40" rx="14"/>
+      <rect class="c" fill="#fff" stroke-width="6.75" x="160" y="128" width="80" height="212"/>
+      <polygon class="c" fill="#fff" stroke-width="4.5" points="148,134 252,134 200,60"/>
+      <path fill="none" stroke-width="2.25" d="M200,60 L200,22"/>
+      <polygon fill="#3a3a3a" stroke="none" points="200,22 228,31 200,40"/>
+      <rect fill="#3a3a3a" stroke="none" x="186" y="210" width="28" height="44" rx="14"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="248" y="208" width="60" height="132"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M244,212 A34,34 0 0 1 312,212 Z"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="278" cy="172" r="10"/>
+      <rect fill="#3a3a3a" stroke="none" x="264" y="262" width="28" height="36" rx="14"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M74,366 C36,366 30,326 62,318 C58,292 86,276 108,288 C118,264 154,260 170,282 C188,256 230,256 248,282 C266,262 298,268 306,292 C332,280 358,296 352,322 C378,330 372,366 338,366 Z"/>
+      <path fill="none" stroke-width="1.88" d="M110,334 C120,324 134,326 138,336 M240,340 C250,330 264,332 268,342"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M46,96 C30,96 28,78 44,74 C46,62 64,58 72,68 C86,62 98,72 94,84 C100,92 92,100 82,98 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M330,122 C314,122 312,104 328,100 C330,88 348,84 356,94 C370,88 382,98 378,110 C384,118 376,126 366,124 Z"/>
+      </svg>`
   },
   {
-    name: 'Q版小公主',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M178,222 L222,222 L232,268 L168,268 Z"/>
-      <path class="c" fill="#fff" d="M166,264 L234,264 C268,300 300,332 312,358 L88,358 C100,332 132,300 166,264 Z"/>
-      <path fill="none" d="M144,296 L112,350 M256,296 L288,350"/>
-      <ellipse class="c" fill="#fff" cx="156" cy="285" rx="20" ry="34" transform="rotate(20 156 285)"/>
-      <ellipse class="c" fill="#fff" cx="244" cy="285" rx="20" ry="34" transform="rotate(-20 244 285)"/>
-      <circle class="c" fill="#fff" cx="200" cy="158" r="72"/>
-      <path class="c" fill="#fff" d="M96,250 C84,166 112,58 200,58 C288,58 316,166 304,250 C296,204 276,172 254,150 C228,170 172,170 146,150 C124,172 106,206 96,250 Z"/>
-      <path class="c" fill="#fff" d="M296,116 C280,100 268,108 272,124 C276,138 290,132 296,122 C302,132 316,138 320,124 C324,108 312,100 296,116 Z"/>
-      <circle fill="#3a3a3a" stroke="none" cx="178" cy="190" r="11"/>
-      <circle fill="#3a3a3a" stroke="none" cx="222" cy="190" r="11"/>
-      <circle fill="#fff" stroke="none" cx="182" cy="186" r="4"/>
-      <circle fill="#fff" stroke="none" cx="226" cy="186" r="4"/>
-      <path fill="none" d="M188,212 C194,221 206,221 212,212"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="266" rx="17" ry="22"/>
-      <ellipse class="c" fill="#fff" cx="170" cy="282" rx="17" ry="22" transform="rotate(-60 170 282)"/>
-      <ellipse class="c" fill="#fff" cx="230" cy="282" rx="17" ry="22" transform="rotate(60 230 282)"/>
-      <ellipse class="c" fill="#fff" cx="172" cy="318" rx="17" ry="22" transform="rotate(-120 172 318)"/>
-      <ellipse class="c" fill="#fff" cx="228" cy="318" rx="17" ry="22" transform="rotate(120 228 318)"/>
-      <circle class="c" fill="#fff" cx="200" cy="300" r="20"/>
-    </svg>`
+    name: '花花小公主',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M180,214 C188,208 212,208 220,214 L228,276 L172,276 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M172,270 C158,300 118,332 68,354 C52,362 56,372 68,372 L332,372 C344,372 348,362 332,354 C282,332 242,300 228,270 Z"/>
+      <path fill="none" stroke-width="2.63" d="M146,298 C158,332 178,344 200,338 M254,298 C242,332 222,344 200,338"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.25" cx="200" cy="298" rx="8" ry="13"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.25" cx="181" cy="312" rx="8" ry="13" transform="rotate(72 181 312)"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.25" cx="188" cy="334" rx="8" ry="13" transform="rotate(144 188 334)"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.25" cx="212" cy="334" rx="8" ry="13" transform="rotate(216 212 334)"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.25" cx="219" cy="312" rx="8" ry="13" transform="rotate(288 219 312)"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="200" cy="318" r="10"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M152,110 C136,122 126,144 127,170 C128,200 130,228 138,246 C146,260 162,260 168,248 C159,236 154,216 153,194 C152,166 151,134 152,110 Z M248,110 C264,122 274,144 273,170 C272,200 270,228 262,246 C254,260 238,260 232,248 C241,236 246,216 247,194 C248,166 249,134 248,110 Z"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="200" cy="132" r="52"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M200,82 C176,82 158,98 153,122 C151,134 153,144 157,152 C166,134 180,122 200,110 Z M200,82 C224,82 242,98 247,122 C249,134 247,144 243,152 C234,134 220,122 200,110 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M170,88 L163,54 L182,70 L200,42 L218,70 L237,54 L230,88 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="258" cy="78" rx="6" ry="10"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="241" cy="90" rx="6" ry="10" transform="rotate(72 241 90)"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="247" cy="110" rx="6" ry="10" transform="rotate(144 247 110)"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="269" cy="110" rx="6" ry="10" transform="rotate(216 269 110)"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="275" cy="90" rx="6" ry="10" transform="rotate(288 275 90)"/>
+      <circle fill="#3a3a3a" stroke="none" cx="258" cy="96" r="7"/>
+      <circle fill="#3a3a3a" stroke="none" cx="182" cy="148" r="8"/>
+      <circle fill="#3a3a3a" stroke="none" cx="218" cy="148" r="8"/>
+      <circle fill="#fff" stroke="none" cx="185" cy="145" r="3"/>
+      <circle fill="#fff" stroke="none" cx="221" cy="145" r="3"/>
+      <path fill="none" stroke-width="1.88" d="M189,168 C194,176 206,176 211,168"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="158" cy="164" r="13"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="242" cy="164" r="13"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M146,222 C152,238 164,250 180,258 L188,246 C174,240 162,230 156,218 Z M254,222 C248,238 236,250 220,258 L212,246 C226,240 238,230 244,218 Z"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="150" cy="214" r="18"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="250" cy="214" r="18"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="190" cy="260" rx="11" ry="9"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="210" cy="260" rx="11" ry="9"/>
+      </svg>`
   },
   {
-    name: '捲髮公主',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M112,250 C86,232 80,208 98,190 C84,168 88,144 110,130 C114,102 128,86 152,88 C162,70 180,62 200,72 C220,62 238,70 248,88 C272,86 286,102 290,130 C312,144 316,168 302,190 C320,208 314,232 288,250 C270,270 250,268 236,252 C220,272 180,272 164,252 C150,268 130,270 112,250 Z"/>
-      <rect class="c" fill="#fff" x="182" y="196" width="36" height="44"/>
-      <path class="c" fill="#fff" d="M184,232 L216,232 C252,272 286,322 296,368 L104,368 C114,322 148,272 184,232 Z"/>
-      <circle class="c" fill="#fff" cx="200" cy="150" r="68"/>
-      <circle fill="#3a3a3a" stroke="none" cx="176" cy="146" r="11"/>
-      <circle fill="#3a3a3a" stroke="none" cx="224" cy="146" r="11"/>
-      <circle fill="#fff" stroke="none" cx="180" cy="142" r="4"/>
-      <circle fill="#fff" stroke="none" cx="228" cy="142" r="4"/>
-      <path fill="none" d="M188,192 C194,201 206,201 212,192"/>
-      <circle class="c" fill="#fff" cx="162" cy="180" r="15"/>
-      <circle class="c" fill="#fff" cx="238" cy="180" r="15"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="332" rx="46" ry="24"/>
-      <polygon class="c" fill="#fff" points="172,260 156,220 198,248"/>
-      <polygon class="c" fill="#fff" points="228,260 244,220 202,248"/>
-      <circle class="c" fill="#fff" cx="200" cy="282" r="38"/>
-      <circle fill="#3a3a3a" stroke="none" cx="186" cy="276" r="7"/>
-      <circle fill="#3a3a3a" stroke="none" cx="214" cy="276" r="7"/>
-      <path fill="#3a3a3a" stroke="none" d="M194,290 L206,290 L200,298 Z"/>
-      <path fill="none" d="M200,298 C200,306 192,308 187,303 M200,298 C200,306 208,308 213,303"/>
-      <path fill="none" d="M162,286 L132,280 M162,298 L132,302 M238,286 L268,280 M238,298 L268,302"/>
-      <ellipse class="c" fill="#fff" cx="162" cy="330" rx="28" ry="16" transform="rotate(-18 162 330)"/>
-      <ellipse class="c" fill="#fff" cx="238" cy="330" rx="28" ry="16" transform="rotate(18 238 330)"/>
-    </svg>`
+    name: '捲捲髮公主',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M144,226 C112,232 88,210 96,184 C74,174 72,142 94,132 C86,106 106,84 130,90 C134,62 164,48 186,62 C192,42 232,44 236,64 C260,50 288,66 290,92 C314,88 332,110 324,134 C346,146 342,176 320,186 C328,212 302,232 272,224 C250,238 154,238 144,226 Z"/>
+      <circle class="c" fill="#fff" stroke-width="4.5" cx="98" cy="214" r="24"/>
+      <circle class="c" fill="#fff" stroke-width="4.5" cx="302" cy="214" r="24"/>
+      <path fill="none" stroke-width="1.88" d="M98,214 C98,207 107,207 107,214 C107,223 89,223 89,214 C89,201 113,201 113,214"/>
+      <path fill="none" stroke-width="1.88" d="M302,214 C302,207 293,207 293,214 C293,223 311,223 311,214 C311,201 287,201 287,214"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M180,216 C188,210 212,210 220,216 L228,278 L172,278 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M172,272 C158,302 118,334 66,356 C52,364 56,374 68,374 L332,374 C344,374 348,364 334,356 C282,334 242,302 228,272 Z"/>
+      <path fill="none" stroke-width="2.63" d="M162,290 C152,322 146,348 143,370 M238,290 C248,322 254,348 257,370"/>
+      <path fill="none" stroke-width="1.88" d="M84,372 C94,358 110,358 118,372 M170,372 C180,358 196,358 204,372 M252,372 C262,358 278,358 286,372"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M200,300 C192,286 170,288 170,304 C170,318 188,330 200,338 C212,330 230,318 230,304 C230,288 208,286 200,300 Z"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="200" cy="142" r="50"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M200,94 C178,94 162,106 156,126 C154,136 156,146 160,152 C164,140 172,132 180,136 C178,122 188,112 200,116 Z M200,94 C222,94 238,106 244,126 C246,136 244,146 240,152 C236,140 228,132 220,136 C222,122 212,112 200,116 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M184,64 L180,38 L194,50 L206,30 L218,50 L232,38 L228,64 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="183" cy="158" r="8"/>
+      <circle fill="#3a3a3a" stroke="none" cx="217" cy="158" r="8"/>
+      <circle fill="#fff" stroke="none" cx="186" cy="155" r="3"/>
+      <circle fill="#fff" stroke="none" cx="220" cy="155" r="3"/>
+      <path fill="none" stroke-width="1.88" d="M190,178 C195,186 205,186 210,178"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="160" cy="174" r="13"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="240" cy="174" r="13"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M148,226 C154,242 166,254 182,262 L190,250 C176,244 164,234 158,222 Z M252,226 C246,242 234,254 218,262 L210,250 C224,244 236,234 242,222 Z"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="152" cy="218" r="18"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="248" cy="218" r="18"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="190" cy="264" rx="11" ry="9"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="210" cy="264" rx="11" ry="9"/>
+      </svg>`
   },
   {
-    name: '南瓜馬車',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <line x1="25" y1="356" x2="375" y2="356" stroke-width="6"/>
-      <polygon class="c" fill="#fff" points="62,84 68,100 85,101 72,111 76,127 62,118 48,127 53,111 39,101 56,100"/>
-      <polygon class="c" fill="#fff" points="344,88 350,104 367,105 354,115 358,131 344,122 330,131 335,115 321,105 338,104"/>
-      <path fill="none" stroke-width="6" d="M112,220 C76,214 46,226 30,244"/>
-      <path fill="none" stroke-width="6" d="M110,240 L28,264"/>
-      <ellipse class="c" fill="#fff" cx="210" cy="230" rx="110" ry="92"/>
-      <path fill="none" d="M172,150 C154,192 154,268 172,310 M248,150 C266,192 266,268 248,310"/>
-      <path fill="none" stroke-width="7" d="M210,140 C206,116 218,102 234,106"/>
-      <line x1="180" y1="142" x2="180" y2="94"/>
-      <polygon fill="#3a3a3a" stroke="none" points="180,94 216,106 180,118"/>
-      <circle class="c" fill="#fff" cx="210" cy="178" r="22"/>
-      <path class="c" fill="#fff" d="M180,308 L180,246 A30,30 0 0 1 240,246 L240,308 Z"/>
-      <circle class="c" fill="#fff" cx="136" cy="308" r="52"/>
-      <circle class="c" fill="#fff" cx="284" cy="308" r="52"/>
-      <path fill="none" d="M136,256 L136,360 M84,308 L188,308 M99,271 L173,345 M99,345 L173,271 M284,256 L284,360 M232,308 L336,308 M247,271 L321,345 M247,345 L321,271"/>
-      <circle class="c" fill="#fff" cx="136" cy="308" r="18"/>
-      <circle class="c" fill="#fff" cx="284" cy="308" r="18"/>
-    </svg>`
+    name: '南瓜小馬車',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="3.75" d="M28,374 L372,374"/>
+      <polygon class="c" fill="#fff" stroke-width="2.63" points="60,36 66,54 84,60 66,66 60,84 54,66 36,60 54,54"/>
+      <polygon class="c" fill="#fff" stroke-width="2.63" points="344,28 350,46 368,52 350,58 344,76 338,58 326,52 338,46"/>
+      <ellipse class="c" fill="#fff" stroke-width="6.75" cx="200" cy="212" rx="126" ry="110"/>
+      <path fill="none" stroke-width="2.63" d="M152,112 C126,162 126,264 152,314 M248,112 C274,162 274,264 248,314"/>
+      <path fill="none" stroke-width="1.88" d="M186,104 C176,160 176,266 186,320 M214,104 C224,160 224,266 214,320"/>
+      <path fill="none" stroke-width="3.75" d="M200,102 C196,76 210,60 228,64"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M204,88 C214,68 236,64 246,78 C236,90 218,94 204,88 Z"/>
+      <path fill="none" stroke-width="1.88" d="M228,64 C242,58 250,66 244,76"/>
+      <path fill="none" stroke-width="1.88" d="M176,96 C164,84 166,70 178,66"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="136" cy="182" r="17"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="264" cy="182" r="17"/>
+      <path fill="none" stroke-width="1.88" d="M136,165 L136,199 M119,182 L153,182 M264,165 L264,199 M247,182 L281,182"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M172,320 L172,246 A28,28 0 0 1 228,246 L228,320 Z"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="200" cy="252" r="12"/>
+      <circle fill="#3a3a3a" stroke="none" cx="216" cy="290" r="5"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="112" cy="314" r="56"/>
+      <path fill="none" stroke-width="2.63" d="M112,258 L112,370 M56,314 L168,314 M72,274 L152,354 M72,354 L152,274"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="112" cy="314" r="16"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="290" cy="302" r="68"/>
+      <path fill="none" stroke-width="2.63" d="M290,234 L290,370 M222,302 L358,302 M242,254 L338,350 M242,350 L338,254"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="290" cy="302" r="19"/>
+      </svg>`
   },
   {
-    name: '獨角獸',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M300,248 C342,252 358,290 340,326 C332,342 320,350 308,352 C320,326 326,296 312,276 C304,264 298,260 292,262 Z"/>
-      <path class="c" fill="#fff" d="M298,226 C336,224 358,256 346,296 C340,314 326,326 312,330 C324,304 332,272 320,252 C312,238 306,232 292,238 Z"/>
-      <path class="c" fill="#fff" d="M158,290 L184,290 L184,344 L188,364 L154,364 L158,344 Z M198,290 L224,290 L224,344 L228,364 L194,364 L198,344 Z M240,290 L266,290 L266,344 L270,364 L236,364 L240,344 Z M280,290 L306,290 L306,344 L310,364 L276,364 L280,344 Z"/>
-      <path fill="none" d="M156,348 L186,348 M196,348 L226,348 M238,348 L268,348 M278,348 L308,348"/>
-      <ellipse class="c" fill="#fff" cx="172" cy="156" rx="32" ry="18" transform="rotate(-40 172 156)"/>
-      <ellipse class="c" fill="#fff" cx="193" cy="187" rx="38" ry="20" transform="rotate(-25 193 187)"/>
-      <ellipse class="c" fill="#fff" cx="204" cy="212" rx="30" ry="17" transform="rotate(-15 204 212)"/>
-      <polygon class="c" fill="#fff" points="110,158 152,150 206,240 152,250"/>
-      <ellipse class="c" fill="#fff" cx="118" cy="86" rx="16" ry="28" transform="rotate(-15 118 86)"/>
-      <ellipse class="c" fill="#fff" cx="154" cy="98" rx="16" ry="28" transform="rotate(12 154 98)"/>
-      <polygon class="c" fill="#fff" points="84,116 72,34 114,104"/>
-      <ellipse class="c" fill="#fff" cx="228" cy="268" rx="88" ry="60"/>
-      <ellipse class="c" fill="#fff" cx="112" cy="146" rx="56" ry="44" transform="rotate(-18 112 146)"/>
-      <ellipse class="c" fill="#fff" cx="72" cy="164" rx="30" ry="24"/>
-      <circle fill="#3a3a3a" stroke="none" cx="104" cy="128" r="10"/>
-      <circle fill="#fff" stroke="none" cx="108" cy="124" r="4"/>
-      <circle fill="#3a3a3a" stroke="none" cx="56" cy="164" r="5"/>
-      <path fill="none" d="M48,176 C54,182 64,182 70,176"/>
-      <path fill="none" d="M84,96 L100,90 M80,76 L92,72 M78,58 L84,56"/>
-    </svg>`
+    name: '彩虹獨角獸',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="3.75" d="M28,374 L372,374"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M334,204 C366,206 378,236 370,276 C364,306 348,324 330,330 C344,298 348,262 336,238 C332,228 326,212 320,208 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M330,230 C352,238 360,264 352,292 C347,308 338,318 329,320 C338,296 340,262 330,244 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M198,176 C158,178 132,204 132,246 C132,294 170,322 234,322 C296,322 338,296 338,250 C338,208 308,182 266,180 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="238" cy="300" rx="44" ry="17"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M146,300 L146,352 C146,366 176,366 176,352 L176,300"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M196,308 L196,356 C196,370 226,370 226,356 L226,308"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M262,308 L262,356 C262,370 292,370 292,356 L292,308"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M312,300 L312,352 C312,366 342,366 342,352 L342,300"/>
+      <path fill="none" stroke-width="1.88" d="M148,346 L174,346 M198,350 L224,350 M264,350 L290,350 M314,346 L340,346"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M148,64 C196,42 242,62 252,104 C259,136 252,172 234,196 C246,208 254,222 256,236 C242,244 228,244 216,240 C214,222 208,206 198,198 C216,168 218,130 202,106 C190,88 168,78 148,78 Z"/>
+      <path fill="none" stroke-width="1.88" d="M224,108 C236,140 234,172 220,196 M240,118 C250,148 248,182 234,206"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M150,66 C186,64 210,88 212,126 C213,158 208,182 216,214 L162,232 C154,202 146,186 128,182 C100,178 84,160 86,138 C88,116 102,106 118,110 C114,86 130,68 150,66 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M120,64 C122,44 142,44 146,62 C140,74 126,76 120,64 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="100" cy="170" rx="28" ry="20"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="88" cy="168" rx="3.5" ry="5"/>
+      <path fill="none" stroke-width="1.88" d="M84,184 C92,191 102,192 110,188"/>
+      <polygon class="c" fill="#fff" stroke-width="3.75" points="152,70 180,66 168,16"/>
+      <path fill="none" stroke-width="1.88" d="M158,48 L174,44 M154,62 L178,58"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M122,82 C134,70 154,70 160,84 C150,94 130,94 122,82 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="134" cy="142" r="9"/>
+      <circle fill="#fff" stroke="none" cx="137" cy="139" r="3.5"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="154" cy="176" r="11"/>
+      </svg>`
   },
   {
-    name: '公主與城堡',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M240,316 L240,150 L262,104 L284,150 L284,316 Z"/>
-      <path class="c" fill="#fff" d="M328,316 L328,150 L350,104 L372,150 L372,316 Z"/>
-      <path class="c" fill="#fff" d="M272,316 L272,140 L288,140 L288,158 L298,158 L298,140 L314,140 L314,158 L324,158 L324,140 L340,140 L340,316 Z"/>
-      <path fill="#3a3a3a" stroke="none" d="M248,180 L264,180 L264,202 L248,202 Z M348,180 L364,180 L364,202 L348,202 Z"/>
-      <circle class="c" fill="#fff" cx="306" cy="216" r="15"/>
-      <path class="c" fill="#fff" d="M286,316 L286,274 A20,20 0 0 1 326,274 L326,316 Z"/>
-      <path class="c" fill="#fff" d="M24,374 L24,318 C90,304 150,312 214,300 C264,290 320,286 376,292 L376,374 Z"/>
-      <path class="c" fill="#fff" d="M98,300 L126,300 C158,316 180,344 188,372 L32,372 C40,344 62,316 98,300 Z"/>
-      <rect class="c" fill="#fff" x="92" y="270" width="36" height="42"/>
-      <path class="c" fill="#fff" d="M164,322 C182,302 192,274 194,242 L216,246 C214,282 202,314 182,338 Z"/>
-      <path class="c" fill="#fff" d="M110,148 C54,148 30,190 30,232 C30,268 36,296 42,320 L80,320 C70,296 66,268 66,240 L154,240 C154,268 150,296 140,320 L178,320 C184,296 190,268 190,232 C190,190 166,148 110,148 Z"/>
-      <circle class="c" fill="#fff" cx="110" cy="222" r="62"/>
-      <polygon class="c" fill="#fff" points="88,172 88,158 97,130 104,152 110,122 116,152 123,130 132,158 132,172"/>
-      <circle fill="#3a3a3a" stroke="none" cx="92" cy="222" r="11"/>
-      <circle fill="#3a3a3a" stroke="none" cx="128" cy="222" r="11"/>
-      <circle fill="#fff" stroke="none" cx="96" cy="218" r="4"/>
-      <circle fill="#fff" stroke="none" cx="132" cy="218" r="4"/>
-      <path fill="none" d="M98,252 C104,261 116,261 122,252"/>
-      <circle class="c" fill="#fff" cx="209" cy="221" r="20"/>
-      <path fill="none" d="M199,203 L195,185 M210,199 L210,179 M221,203 L225,185"/>
-    </svg>`
+    name: '公主的城堡',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="3.75" d="M28,374 L372,374"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="214" y="118" width="56" height="256"/>
+      <polygon class="c" fill="#fff" stroke-width="4.5" points="204,124 284,124 244,54"/>
+      <path fill="none" stroke-width="2.25" d="M244,54 L244,20"/>
+      <polygon fill="#3a3a3a" stroke="none" points="244,20 270,29 244,38"/>
+      <rect fill="#3a3a3a" stroke="none" x="230" y="180" width="24" height="36" rx="12"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="312" y="204" width="52" height="170"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M306,208 A32,32 0 0 1 370,208 Z"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="338" cy="170" r="9"/>
+      <rect fill="#3a3a3a" stroke="none" x="326" y="250" width="24" height="32" rx="12"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M270,374 L270,262 L284,262 L284,276 L298,276 L298,262 L312,262 L312,374 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.25" d="M270,320 L270,304 L280,304 L280,294 L291,294 L291,304 L302,304 L302,294 L312,294 L312,320 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M277,374 L277,336 A14,14 0 0 1 305,336 L305,374 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.63" cx="216" cy="364" rx="18" ry="7"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.63" cx="248" cy="356" rx="15" ry="6"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M70,134 C56,146 49,166 50,190 C51,216 53,240 61,254 C68,266 82,266 88,256 C80,246 76,230 75,212 C74,188 71,158 70,134 Z M154,134 C168,146 175,166 174,190 C173,216 171,240 163,254 C156,266 142,266 136,256 C144,246 148,230 149,212 C150,188 153,158 154,134 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M98,206 C104,200 120,200 126,206 L132,256 L92,256 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M92,252 C84,278 62,312 40,340 C30,354 34,368 46,368 L178,368 C190,368 194,354 184,340 C162,312 140,278 132,252 Z"/>
+      <path fill="none" stroke-width="2.63" d="M72,276 C82,304 96,314 112,310 M152,276 C142,304 128,314 112,310"/>
+      <circle class="c" fill="#fff" stroke-width="6.75" cx="112" cy="162" r="46"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M112,118 C92,118 77,132 73,152 C71,162 73,171 76,178 C84,162 96,152 112,142 Z M112,118 C132,118 147,132 151,152 C153,162 151,171 148,178 C140,162 128,152 112,142 Z"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M90,120 L84,90 L99,103 L112,78 L125,103 L140,90 L134,120 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="98" cy="176" r="7"/>
+      <circle fill="#3a3a3a" stroke="none" cx="126" cy="176" r="7"/>
+      <circle fill="#fff" stroke="none" cx="100.5" cy="173.5" r="2.5"/>
+      <circle fill="#fff" stroke="none" cx="128.5" cy="173.5" r="2.5"/>
+      <path fill="none" stroke-width="1.88" d="M104,194 C108,201 116,201 120,194"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="78" cy="188" r="11"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="146" cy="188" r="11"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M74,214 C79,228 90,238 104,245 L110,234 C98,229 88,220 83,210 Z M150,214 C145,228 134,238 120,245 L114,234 C126,229 136,220 141,210 Z"/>
+      <circle class="c" fill="#fff" stroke-width="4.5" cx="78" cy="208" r="14"/>
+      <circle class="c" fill="#fff" stroke-width="4.5" cx="146" cy="208" r="14"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="105" cy="246" rx="9" ry="8"/>
+      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="119" cy="246" rx="9" ry="8"/>
+      </svg>`
   },
   {
-    name: '皇冠與寶石',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <rect class="c" fill="#fff" x="60" y="286" width="280" height="72" rx="26"/>
-      <path fill="none" d="M78,342 L322,342"/>
-      <path class="c" fill="#fff" d="M118,268 L118,146 L158,196 L200,124 L242,196 L282,146 L282,268 Z"/>
-      <circle class="c" fill="#fff" cx="156" cy="222" r="17"/>
-      <circle class="c" fill="#fff" cx="200" cy="222" r="17"/>
-      <circle class="c" fill="#fff" cx="244" cy="222" r="17"/>
-      <rect class="c" fill="#fff" x="112" y="250" width="176" height="58" rx="10"/>
-      <circle class="c" fill="#fff" cx="150" cy="279" r="15"/>
-      <circle class="c" fill="#fff" cx="200" cy="279" r="20"/>
-      <circle class="c" fill="#fff" cx="250" cy="279" r="15"/>
-      <circle fill="#3a3a3a" stroke="none" cx="118" cy="146" r="11"/>
-      <circle fill="#3a3a3a" stroke="none" cx="200" cy="124" r="11"/>
-      <circle fill="#3a3a3a" stroke="none" cx="282" cy="146" r="11"/>
-      <path fill="none" d="M60,150 L60,180 M45,165 L75,165 M336,132 L336,158 M323,145 L349,145"/>
-    </svg>`
+    name: '閃亮皇冠',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <rect class="c" fill="#fff" stroke-width="6.75" x="48" y="298" width="304" height="72" rx="28"/>
+      <path fill="none" stroke-width="2.63" d="M66,352 L334,352"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="44" cy="306" r="11"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="356" cy="306" r="11"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M100,252 L100,130 C126,168 152,168 164,128 C174,96 186,80 200,74 C214,80 226,96 236,128 C248,168 274,168 300,130 L300,252 Z"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="100" cy="114" r="14"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="200" cy="56" r="15"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="300" cy="114" r="14"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="200" cy="172" r="21"/>
+      <path fill="none" stroke-width="1.88" d="M200,151 L200,193 M179,172 L221,172"/>
+      <circle fill="#3a3a3a" stroke="none" cx="144" cy="180" r="5"/>
+      <circle fill="#3a3a3a" stroke="none" cx="256" cy="180" r="5"/>
+      <rect class="c" fill="#fff" stroke-width="6.75" x="92" y="244" width="216" height="62" rx="16"/>
+      <polygon class="c" fill="#fff" stroke-width="3.75" points="200,248 224,274 200,300 176,274"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="134" cy="274" r="14"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="266" cy="274" r="14"/>
+      <circle fill="#3a3a3a" stroke="none" cx="162" cy="274" r="4"/>
+      <circle fill="#3a3a3a" stroke="none" cx="238" cy="274" r="4"/>
+      <polygon class="c" fill="#fff" stroke-width="2.63" points="56,56 63,77 84,84 63,91 56,112 49,91 28,84 49,77"/>
+      <polygon class="c" fill="#fff" stroke-width="2.63" points="344,56 351,77 372,84 351,91 344,112 337,91 316,84 337,77"/>
+      <polygon class="c" fill="#fff" stroke-width="2.63" points="60,188 65,203 80,208 65,213 60,228 55,213 40,208 55,203"/>
+      <polygon class="c" fill="#fff" stroke-width="2.63" points="340,188 345,203 360,208 345,213 340,228 335,213 320,208 335,203"/>
+      <path fill="none" stroke-width="1.88" d="M200,26 L200,40 M193,33 L207,33 M124,52 L124,64 M118,58 L130,58 M276,44 L276,56 M270,50 L282,50"/>
+      </svg>`
   },
   {
     name: '城堡前的小公主',

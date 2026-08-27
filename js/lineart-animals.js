@@ -8,61 +8,72 @@
    coloring.js 會讀 window.LINEART_ANIMALS，接在內建的 LINEART 後面。 */
 const LINEART_ANIMALS = [
   {
-    name: '小熊',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <circle class="c" fill="#fff" cx="140" cy="95" r="36"/>
-      <circle class="c" fill="#fff" cx="260" cy="95" r="36"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="280" rx="80" ry="85"/>
-      <ellipse class="c" fill="#fff" cx="112" cy="275" rx="26" ry="40"/>
-      <ellipse class="c" fill="#fff" cx="288" cy="275" rx="26" ry="40"/>
-      <ellipse class="c" fill="#fff" cx="155" cy="350" rx="32" ry="22"/>
-      <ellipse class="c" fill="#fff" cx="245" cy="350" rx="32" ry="22"/>
-      <circle class="c" fill="#fff" cx="200" cy="160" r="92"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="195" rx="46" ry="34"/>
-      <circle fill="#3a3a3a" stroke="none" cx="170" cy="140" r="10"/>
-      <circle fill="#3a3a3a" stroke="none" cx="230" cy="140" r="10"/>
-      <ellipse fill="#3a3a3a" stroke="none" cx="200" cy="180" rx="14" ry="10"/>
-      <path fill="none" d="M200,190 C200,202 189,206 182,199 M200,190 C200,202 211,206 218,199"/>
-    </svg>`
+    name: '抱抱熊',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M148,64 C130,34 92,42 96,78 C98,94 108,104 120,108 C98,128 86,154 88,178 C89,198 96,214 108,224 C78,248 62,290 64,322 C66,352 88,368 124,370 L276,370 C312,368 334,352 336,322 C338,290 322,248 292,224 C304,214 311,198 312,178 C314,154 302,128 280,108 C292,104 302,94 304,78 C308,42 270,34 252,64 C236,50 218,44 200,44 C182,44 164,50 148,64 Z"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="118" cy="72" r="15"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="282" cy="72" r="15"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="296" rx="60" ry="52"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="130" cy="346" rx="40" ry="24"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="270" cy="346" rx="40" ry="24"/>
+      <path fill="none" stroke-width="1.88" d="M118,332 C122,338 128,338 132,332 M142,334 C146,340 152,340 156,334 M244,334 C248,340 254,340 258,334 M268,332 C272,338 278,338 282,332"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M112,234 C90,262 98,298 138,308 C150,311 160,306 164,296 C154,296 144,292 138,284 C126,268 126,250 134,238"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M288,234 C310,262 302,298 262,308 C250,311 240,306 236,296 C246,296 256,292 262,284 C274,268 274,250 266,238"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M200,252 C188,232 158,234 158,260 C158,282 184,294 200,306 C216,294 242,282 242,260 C242,234 212,232 200,252 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="184" rx="42" ry="32"/>
+      <circle fill="#3a3a3a" stroke="none" cx="162" cy="156" r="9"/>
+      <circle fill="#3a3a3a" stroke="none" cx="238" cy="156" r="9"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="200" cy="174" rx="13" ry="9"/>
+      <path fill="none" stroke-width="2.25" d="M200,184 C200,196 190,200 183,194 M200,184 C200,196 210,200 217,194"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="126" cy="184" r="13"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="274" cy="184" r="13"/>
+      </svg>`
   },
   {
-    name: '貓熊',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <circle fill="#3a3a3a" stroke="none" cx="134" cy="92" r="34"/>
-      <circle fill="#3a3a3a" stroke="none" cx="266" cy="92" r="34"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="282" rx="78" ry="84"/>
-      <ellipse class="c" fill="#fff" cx="114" cy="272" rx="25" ry="42"/>
-      <ellipse class="c" fill="#fff" cx="286" cy="272" rx="25" ry="42"/>
-      <ellipse class="c" fill="#fff" cx="152" cy="352" rx="32" ry="22"/>
-      <ellipse class="c" fill="#fff" cx="248" cy="352" rx="32" ry="22"/>
-      <circle class="c" fill="#fff" cx="200" cy="162" r="92"/>
-      <ellipse fill="#3a3a3a" stroke="none" cx="164" cy="146" rx="26" ry="32" transform="rotate(-20 164 146)"/>
-      <ellipse fill="#3a3a3a" stroke="none" cx="236" cy="146" rx="26" ry="32" transform="rotate(20 236 146)"/>
-      <circle fill="#fff" stroke="none" cx="166" cy="142" r="11"/>
-      <circle fill="#fff" stroke="none" cx="234" cy="142" r="11"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="210" rx="42" ry="30"/>
-      <ellipse fill="#3a3a3a" stroke="none" cx="200" cy="198" rx="13" ry="9"/>
-      <path fill="none" d="M200,207 C200,219 190,223 183,216 M200,207 C200,219 210,223 217,216"/>
-    </svg>`
+    name: '圓圓貓熊',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <circle fill="#3a3a3a" stroke="none" cx="122" cy="66" r="30"/>
+      <circle fill="#3a3a3a" stroke="none" cx="278" cy="66" r="30"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M116,96 C96,120 84,150 86,176 C87,198 95,215 108,226 C78,250 62,292 64,324 C66,354 90,370 126,370 L274,370 C310,370 334,354 336,324 C338,292 322,250 292,226 C305,215 313,198 314,176 C316,150 304,120 284,96 C260,72 230,60 200,60 C170,60 140,72 116,96 Z"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="156" cy="160" rx="24" ry="30" transform="rotate(-18 156 160)"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="244" cy="160" rx="24" ry="30" transform="rotate(18 244 160)"/>
+      <circle fill="#fff" stroke="none" cx="160" cy="156" r="10"/>
+      <circle fill="#fff" stroke="none" cx="240" cy="156" r="10"/>
+      <circle fill="#3a3a3a" stroke="none" cx="161" cy="158" r="5"/>
+      <circle fill="#3a3a3a" stroke="none" cx="239" cy="158" r="5"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="300" rx="58" ry="50"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="132" cy="348" rx="38" ry="24"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="268" cy="348" rx="38" ry="24"/>
+      <path fill="none" stroke-width="1.88" d="M120,334 C124,340 130,340 134,334 M144,336 C148,342 154,342 158,336 M242,336 C246,342 252,342 256,336 M266,334 C270,340 276,340 280,334"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M112,238 C92,264 98,298 136,310 C148,313 158,308 162,298 C152,298 142,294 136,286 C126,272 126,254 134,242"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M288,238 C308,264 302,298 264,310 C252,313 242,308 238,298 C248,298 258,294 264,286 C274,272 274,254 266,242"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="198" rx="38" ry="28"/>
+      <ellipse fill="#3a3a3a" stroke="none" cx="200" cy="188" rx="12" ry="8"/>
+      <path fill="none" stroke-width="2.25" d="M200,197 C200,208 191,212 184,206 M200,197 C200,208 209,212 216,206"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="120" cy="198" r="12"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="280" cy="198" r="12"/>
+      </svg>`
   },
   {
-    name: '小兔子',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <ellipse class="c" fill="#fff" cx="158" cy="105" rx="30" ry="62" transform="rotate(-14 158 105)"/>
-      <ellipse class="c" fill="#fff" cx="242" cy="105" rx="30" ry="62" transform="rotate(14 242 105)"/>
-      <ellipse class="c" fill="#fff" cx="158" cy="110" rx="15" ry="46" transform="rotate(-14 158 110)"/>
-      <ellipse class="c" fill="#fff" cx="242" cy="110" rx="15" ry="46" transform="rotate(14 242 110)"/>
-      <circle class="c" fill="#fff" cx="292" cy="300" r="26"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="308" rx="76" ry="58"/>
-      <ellipse class="c" fill="#fff" cx="140" cy="356" rx="34" ry="20"/>
-      <ellipse class="c" fill="#fff" cx="260" cy="356" rx="34" ry="20"/>
-      <circle class="c" fill="#fff" cx="200" cy="205" r="88"/>
-      <circle fill="#3a3a3a" stroke="none" cx="172" cy="192" r="10"/>
-      <circle fill="#3a3a3a" stroke="none" cx="228" cy="192" r="10"/>
-      <path fill="#3a3a3a" stroke="none" d="M188,222 L212,222 L200,236 Z"/>
-      <path fill="none" d="M200,236 C200,250 189,254 182,247 M200,236 C200,250 211,254 218,247"/>
-      <path fill="none" d="M132,230 L82,220 M134,246 L86,250 M268,230 L318,220 M266,246 L314,250"/>
-    </svg>`
+    name: '長耳兔',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M152,118 C128,92 112,60 116,42 C119,24 141,22 152,38 C160,50 168,74 172,92 C182,86 218,86 228,92 C232,74 240,50 248,38 C259,22 281,24 284,42 C288,60 272,92 248,118 C266,132 276,152 277,172 C278,192 271,208 259,218 C286,240 300,278 298,310 C296,344 272,366 232,368 L168,368 C128,366 104,344 102,310 C100,278 114,240 141,218 C129,208 122,192 123,172 C124,152 134,132 152,118 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.63" cx="139" cy="70" rx="11" ry="32" transform="rotate(-14 139 70)"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.63" cx="261" cy="70" rx="11" ry="32" transform="rotate(14 261 70)"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="300" rx="52" ry="44"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="146" cy="350" rx="38" ry="20"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="254" cy="350" rx="38" ry="20"/>
+      <path fill="none" stroke-width="1.88" d="M136,338 C140,344 146,344 150,338 M158,340 C162,346 168,346 172,340 M228,340 C232,346 238,346 242,340 M250,338 C254,344 260,344 264,338"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M142,240 C124,262 126,292 152,302 C164,306 174,301 177,292 C168,292 160,288 155,281 C146,268 146,254 153,244"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M258,240 C276,262 274,292 248,302 C236,306 226,301 223,292 C232,292 240,288 245,281 C254,268 254,254 247,244"/>
+      <circle fill="#3a3a3a" stroke="none" cx="166" cy="164" r="9"/>
+      <circle fill="#3a3a3a" stroke="none" cx="234" cy="164" r="9"/>
+      <path fill="#3a3a3a" stroke="none" d="M191,184 L209,184 L200,196 Z"/>
+      <path fill="none" stroke-width="2.25" d="M200,196 C200,207 191,211 184,205 M200,196 C200,207 209,211 216,205"/>
+      <path fill="none" stroke-width="1.88" d="M118,178 L72,170 M120,194 L74,198 M282,178 L328,170 M280,194 L326,198"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="140" cy="190" r="12"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="260" cy="190" r="12"/>
+      </svg>`
   },
   {
     name: '胖小豬',
@@ -90,35 +101,45 @@ const LINEART_ANIMALS = [
       </svg>`
   },
   {
-    name: '青蛙',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <circle class="c" fill="#fff" cx="150" cy="130" r="40"/>
-      <circle class="c" fill="#fff" cx="250" cy="130" r="40"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="248" rx="114" ry="96"/>
-      <circle fill="#3a3a3a" stroke="none" cx="150" cy="122" r="14"/>
-      <circle fill="#3a3a3a" stroke="none" cx="250" cy="122" r="14"/>
-      <ellipse class="c" fill="#fff" cx="146" cy="352" rx="40" ry="22"/>
-      <ellipse class="c" fill="#fff" cx="254" cy="352" rx="40" ry="22"/>
-      <ellipse class="c" fill="#fff" cx="104" cy="316" rx="34" ry="20"/>
-      <ellipse class="c" fill="#fff" cx="296" cy="316" rx="34" ry="20"/>
-      <circle fill="#3a3a3a" stroke="none" cx="182" cy="196" r="5"/>
-      <circle fill="#3a3a3a" stroke="none" cx="218" cy="196" r="5"/>
-      <path fill="none" d="M112,244 C140,296 260,296 288,244"/>
-    </svg>`
+    name: '呱呱蛙',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="200" cy="350" rx="162" ry="22"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M110,132 C86,110 88,70 118,62 C146,54 168,74 166,100 C176,92 186,88 200,88 C214,88 224,92 234,100 C232,74 254,54 282,62 C312,70 314,110 290,132 C318,156 334,192 334,232 C334,300 274,348 200,348 C126,348 66,300 66,232 C66,192 82,156 110,132 Z"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="118" cy="168" r="12"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="282" cy="168" r="12"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="280" rx="84" ry="58"/>
+      <circle fill="#3a3a3a" stroke="none" cx="138" cy="92" r="12"/>
+      <circle fill="#3a3a3a" stroke="none" cx="262" cy="92" r="12"/>
+      <circle fill="#fff" stroke="none" cx="142" cy="88" r="4"/>
+      <circle fill="#fff" stroke="none" cx="266" cy="88" r="4"/>
+      <circle fill="#3a3a3a" stroke="none" cx="188" cy="168" r="3.5"/>
+      <circle fill="#3a3a3a" stroke="none" cx="212" cy="168" r="3.5"/>
+      <path fill="none" stroke-width="3.75" d="M122,196 C152,234 248,234 278,196"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="126" cy="222" r="13"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="274" cy="222" r="13"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M136,306 C118,314 108,332 118,346 C122,340 128,340 132,346 C136,338 142,338 148,346 C152,338 158,338 164,344 C168,330 158,312 148,304"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M264,306 C282,314 292,332 282,346 C278,340 272,340 268,346 C264,338 258,338 252,346 C248,338 242,338 236,344 C232,330 242,312 252,304"/>
+      </svg>`
   },
   {
-    name: '小鴨',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M126,262 L62,238 L92,300 Z"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="286" rx="108" ry="76"/>
-      <path class="c" fill="#fff" d="M164,268 C204,246 258,258 272,290 C248,318 186,314 164,268 Z"/>
-      <path class="c" fill="#fff" d="M154,342 L118,374 L188,374 Z"/>
-      <path class="c" fill="#fff" d="M250,342 L214,374 L284,374 Z"/>
-      <path class="c" fill="#fff" d="M192,110 C182,86 200,74 212,88 C222,72 238,86 226,108 Z"/>
-      <circle class="c" fill="#fff" cx="204" cy="164" r="64"/>
-      <path class="c" fill="#fff" d="M256,146 C296,142 300,182 258,180 Z"/>
-      <circle fill="#3a3a3a" stroke="none" cx="228" cy="148" r="10"/>
-    </svg>`
+    name: '黃色小鴨',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M105,150 C102,96 142,48 200,48 C258,48 298,96 295,150 C293,178 280,200 262,214 C300,238 318,276 314,304 C308,346 262,358 200,358 C138,358 92,346 86,304 C82,276 100,238 138,214 C120,200 107,178 105,150 Z"/>
+      <path fill="none" stroke-width="2.63" d="M200,48 C194,30 208,22 216,32 M186,52 C178,34 164,34 162,46"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M104,258 C74,270 62,300 76,326 C84,318 90,318 94,326 C100,316 106,316 112,322 C118,308 116,284 112,268"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M296,258 C326,270 338,300 324,326 C316,318 310,318 306,326 C300,316 294,316 288,322 C282,308 284,284 288,268"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="308" rx="56" ry="36"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M120,352 C104,362 106,374 124,372 C138,371 148,364 152,354"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M280,352 C296,362 294,374 276,372 C262,371 252,364 248,354"/>
+      <path class="c" fill="#fff" stroke-width="3.75" d="M152,160 C164,150 236,150 248,160 C256,166 254,176 244,179 C216,186 184,186 156,179 C146,176 144,166 152,160 Z"/>
+      <path class="c" fill="#fff" stroke-width="2.25" d="M176,183 C182,193 218,193 224,183 C208,187 192,187 176,183 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="156" cy="140" r="10"/>
+      <circle fill="#3a3a3a" stroke="none" cx="244" cy="140" r="10"/>
+      <circle fill="#fff" stroke="none" cx="159" cy="136" r="3.5"/>
+      <circle fill="#fff" stroke="none" cx="247" cy="136" r="3.5"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="126" cy="168" r="12"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="274" cy="168" r="12"/>
+      </svg>`
   },
   {
     name: '大象寶寶',
@@ -144,90 +165,115 @@ const LINEART_ANIMALS = [
       </svg>`
   },
   {
-    name: '長頸鹿',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M166,130 L226,130 L246,250 L156,250 Z"/>
-      <path fill="none" stroke-width="6" d="M298,278 C326,286 330,312 316,322"/>
-      <ellipse class="c" fill="#fff" cx="210" cy="290" rx="90" ry="62"/>
-      <rect class="c" fill="#fff" x="150" y="330" width="34" height="42" rx="12"/>
-      <rect class="c" fill="#fff" x="238" y="330" width="34" height="42" rx="12"/>
-      <circle class="c" fill="#fff" cx="180" cy="280" r="20"/>
-      <circle class="c" fill="#fff" cx="250" cy="300" r="20"/>
-      <circle class="c" fill="#fff" cx="208" cy="322" r="17"/>
-      <ellipse class="c" fill="#fff" cx="142" cy="102" rx="28" ry="15" transform="rotate(-25 142 102)"/>
-      <ellipse class="c" fill="#fff" cx="254" cy="102" rx="28" ry="15" transform="rotate(25 254 102)"/>
-      <ellipse class="c" fill="#fff" cx="198" cy="112" rx="52" ry="42"/>
-      <path fill="none" d="M180,76 L174,50 M216,76 L222,50"/>
-      <path fill="#3a3a3a" stroke="none" d="M166,46 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 M214,46 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"/>
-      <circle fill="#3a3a3a" stroke="none" cx="182" cy="104" r="9"/>
-      <circle fill="#3a3a3a" stroke="none" cx="214" cy="104" r="9"/>
-      <path fill="none" d="M186,134 C192,142 204,142 210,134"/>
-    </svg>`
+    name: '高高長頸鹿',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="3.75" d="M96,52 L90,26 M126,54 L130,28"/>
+      <circle fill="#3a3a3a" stroke="none" cx="88" cy="22" r="8"/>
+      <circle fill="#3a3a3a" stroke="none" cx="131" cy="24" r="8"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="154" cy="84" rx="26" ry="13" transform="rotate(30 154 84)"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M180,300 L178,352 C178,364 186,368 192,368 C200,368 204,362 204,354 L208,306"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M292,296 L294,352 C294,364 302,368 308,368 C316,368 320,362 320,354 L320,300"/>
+      <path fill="none" stroke-width="3.75" d="M322,254 C348,268 352,296 340,314"/>
+      <path fill="#3a3a3a" stroke="none" d="M340,310 C350,320 350,336 340,340 C332,334 332,320 340,310 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M96,50 C70,52 54,74 56,98 C57,118 68,132 86,136 C120,180 140,220 148,262 C130,268 118,282 116,298 L112,352 C112,366 120,370 128,370 L138,370 C146,370 150,364 150,354 L154,306 C182,314 218,314 246,306 L248,352 C248,366 256,370 264,370 L274,370 C282,370 286,364 286,352 L288,300 C310,290 322,272 320,252 C314,238 300,232 284,234 C258,238 230,238 208,232 C184,196 164,150 152,102 C150,80 136,60 112,52 C106,50 100,50 96,50 Z"/>
+      <path fill="none" stroke-width="2.63" d="M152,106 C162,108 164,118 157,124 M164,130 C174,132 176,142 169,148 M176,154 C186,156 188,166 181,172 M188,178 C198,180 200,190 193,196"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="70" cy="106" rx="24" ry="20"/>
+      <circle fill="#3a3a3a" stroke="none" cx="62" cy="100" r="3.5"/>
+      <path fill="none" stroke-width="2.25" d="M52,116 C58,124 68,126 76,122"/>
+      <circle fill="#3a3a3a" stroke="none" cx="102" cy="94" r="9"/>
+      <circle fill="#fff" stroke="none" cx="105" cy="91" r="3"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="160" cy="188" r="13"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="184" cy="234" r="14"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="220" cy="272" r="17"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="262" cy="264" r="16"/>
+      <circle class="c" fill="#fff" stroke-width="2.25" cx="292" cy="288" r="13"/>
+      <path fill="none" stroke-width="2.63" d="M112,358 L150,358 M248,358 L286,358 M178,356 L204,356 M294,356 L320,356"/>
+      </svg>`
   },
   {
-    name: '企鵝',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M200,66 C136,66 102,132 102,214 C102,300 146,346 200,346 C254,346 298,300 298,214 C298,132 264,66 200,66 Z"/>
-      <path class="c" fill="#fff" d="M200,182 C166,182 150,216 150,254 C150,298 172,320 200,320 C228,320 250,298 250,254 C250,216 234,182 200,182 Z"/>
-      <path class="c" fill="#fff" d="M126,180 C88,196 66,254 84,306 C106,296 118,240 142,198 Z"/>
-      <path class="c" fill="#fff" d="M274,180 C312,196 334,254 316,306 C294,296 282,240 258,198 Z"/>
-      <path class="c" fill="#fff" d="M158,330 L126,364 L188,364 Z"/>
-      <path class="c" fill="#fff" d="M242,330 L212,364 L274,364 Z"/>
-      <path class="c" fill="#fff" d="M180,140 L220,140 L200,172 Z"/>
-      <circle fill="#3a3a3a" stroke="none" cx="162" cy="124" r="11"/>
-      <circle fill="#3a3a3a" stroke="none" cx="238" cy="124" r="11"/>
-    </svg>`
+    name: '搖擺企鵝',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M200,42 C136,42 96,102 96,196 C96,290 136,344 200,344 C264,344 304,290 304,196 C304,102 264,42 200,42 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M102,148 C62,168 44,220 58,266 C64,284 78,286 86,274 C72,242 78,196 98,168"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M298,148 C338,168 356,220 342,266 C336,284 322,286 314,274 C328,242 322,196 302,168"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="168" cy="118" r="34"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="232" cy="118" r="34"/>
+      <ellipse class="c" fill="#fff" stroke-width="2.63" cx="200" cy="232" rx="66" ry="90"/>
+      <circle fill="#3a3a3a" stroke="none" cx="166" cy="120" r="10"/>
+      <circle fill="#3a3a3a" stroke="none" cx="234" cy="120" r="10"/>
+      <circle fill="#fff" stroke="none" cx="169" cy="117" r="3.5"/>
+      <circle fill="#fff" stroke="none" cx="237" cy="117" r="3.5"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M186,140 L214,140 L200,160 Z"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="136" cy="146" r="11"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="264" cy="146" r="11"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="150" cy="342" rx="32" ry="17"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="250" cy="342" rx="32" ry="17"/>
+      <path fill="none" stroke-width="1.88" d="M140,352 L140,340 M156,354 L156,342 M244,354 L244,342 M260,352 L260,340"/>
+      <path fill="none" stroke-width="1.88" d="M176,262 C184,270 216,270 224,262 M182,286 C190,293 210,293 218,286"/>
+      </svg>`
   },
   {
-    name: '小猴子',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path fill="none" stroke-width="6" d="M270,306 C324,312 344,262 314,246 C296,236 284,258 302,266"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="292" rx="74" ry="72"/>
-      <ellipse class="c" fill="#fff" cx="126" cy="292" rx="24" ry="44"/>
-      <ellipse class="c" fill="#fff" cx="274" cy="292" rx="24" ry="44"/>
-      <ellipse class="c" fill="#fff" cx="162" cy="352" rx="32" ry="20"/>
-      <ellipse class="c" fill="#fff" cx="238" cy="352" rx="32" ry="20"/>
-      <circle class="c" fill="#fff" cx="116" cy="150" r="32"/>
-      <circle class="c" fill="#fff" cx="284" cy="150" r="32"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="158" rx="84" ry="78"/>
-      <ellipse class="c" fill="#fff" cx="200" cy="176" rx="56" ry="46"/>
-      <circle fill="#3a3a3a" stroke="none" cx="180" cy="158" r="10"/>
-      <circle fill="#3a3a3a" stroke="none" cx="220" cy="158" r="10"/>
-      <path fill="#3a3a3a" stroke="none" d="M186,190 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 M204,190 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"/>
-      <path fill="none" d="M182,202 C190,214 210,214 218,202"/>
-    </svg>`
+    name: '頑皮小猴',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="none" stroke-width="4.5" d="M278,300 C332,300 354,268 346,236 C340,214 318,212 314,230 C312,244 326,248 334,240"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M132,102 C120,90 100,88 90,102 C78,116 82,138 96,148 C104,154 114,156 122,152 C118,168 118,184 122,198 C130,222 152,236 172,240 C142,258 122,290 122,318 C122,350 152,368 200,368 C248,368 278,350 278,318 C278,290 258,258 228,240 C248,236 270,222 278,198 C282,184 282,168 278,152 C286,156 296,154 304,148 C318,138 322,116 310,102 C300,88 280,90 268,102 C252,84 228,74 200,74 C172,74 148,84 132,102 Z"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="100" cy="122" r="12"/>
+      <circle class="c" fill="#fff" stroke-width="2.63" cx="300" cy="122" r="12"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M200,134 C188,120 164,122 154,138 C145,153 145,172 152,188 C162,209 180,220 200,220 C220,220 238,209 248,188 C255,172 255,153 246,138 C236,122 212,120 200,134 Z"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="310" rx="44" ry="38"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M262,250 C298,242 318,220 324,192 C318,178 306,172 296,178 C290,192 280,204 268,212"/>
+      <circle class="c" fill="#fff" stroke-width="4.5" cx="316" cy="176" r="17"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M138,252 C118,270 112,294 120,314 C124,324 134,326 140,318 C134,304 138,286 150,274"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="158" cy="352" rx="34" ry="20"/>
+      <ellipse class="c" fill="#fff" stroke-width="4.5" cx="242" cy="352" rx="34" ry="20"/>
+      <circle fill="#3a3a3a" stroke="none" cx="176" cy="156" r="9"/>
+      <circle fill="#3a3a3a" stroke="none" cx="224" cy="156" r="9"/>
+      <circle fill="#fff" stroke="none" cx="179" cy="153" r="3"/>
+      <circle fill="#fff" stroke="none" cx="227" cy="153" r="3"/>
+      <circle fill="#3a3a3a" stroke="none" cx="192" cy="186" r="3"/>
+      <circle fill="#3a3a3a" stroke="none" cx="208" cy="186" r="3"/>
+      <path class="c" fill="#fff" stroke-width="2.25" d="M184,200 C190,214 210,214 216,200 C206,204 194,204 184,200 Z"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="160" cy="186" r="10"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="240" cy="186" r="10"/>
+      </svg>`
   },
   {
-    name: '貓頭鷹',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <path class="c" fill="#fff" d="M138,104 L124,52 L180,84 Z"/>
-      <path class="c" fill="#fff" d="M262,104 L276,52 L220,84 Z"/>
-      <path class="c" fill="#fff" d="M200,66 C134,66 100,132 100,216 C100,304 146,348 200,348 C254,348 300,304 300,216 C300,132 266,66 200,66 Z"/>
-      <path class="c" fill="#fff" d="M148,206 C130,246 134,296 156,326 C174,296 168,240 176,216 Z"/>
-      <path class="c" fill="#fff" d="M252,206 C270,246 266,296 244,326 C226,296 232,240 224,216 Z"/>
-      <circle class="c" fill="#fff" cx="160" cy="152" r="34"/>
-      <circle class="c" fill="#fff" cx="240" cy="152" r="34"/>
-      <circle fill="#3a3a3a" stroke="none" cx="160" cy="152" r="12"/>
-      <circle fill="#3a3a3a" stroke="none" cx="240" cy="152" r="12"/>
-      <path class="c" fill="#fff" d="M200,176 L218,200 L200,222 L182,200 Z"/>
-      <line x1="34" y1="362" x2="366" y2="362" stroke-width="6"/>
-      <path fill="none" stroke-width="6" d="M172,342 L172,358 M158,368 L172,358 L172,372 M172,358 L186,368 M228,342 L228,358 M214,368 L228,358 L228,372 M228,358 L242,368"/>
-    </svg>`
+    name: '大眼貓頭鷹',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="6.75" d="M136,80 C120,56 96,48 76,54 C88,66 96,84 100,104 C84,132 76,166 76,204 C76,290 128,340 200,340 C272,340 324,290 324,204 C324,166 316,132 300,104 C304,84 312,66 324,54 C304,48 280,56 264,80 C244,68 222,62 200,62 C178,62 156,68 136,80 Z"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M96,192 C80,238 86,294 110,322 C126,298 122,244 128,208"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M304,192 C320,238 314,294 290,322 C274,298 278,244 272,208"/>
+      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="200" cy="280" rx="66" ry="48"/>
+      <path fill="none" stroke-width="1.88" d="M168,268 C173,276 183,276 188,268 M194,268 C199,276 209,276 214,268 M220,268 C225,276 235,276 240,268 M180,292 C185,300 195,300 200,292 M206,292 C211,300 221,300 226,292"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="154" cy="158" r="45"/>
+      <circle class="c" fill="#fff" stroke-width="3.75" cx="246" cy="158" r="45"/>
+      <circle fill="#3a3a3a" stroke="none" cx="154" cy="158" r="19"/>
+      <circle fill="#3a3a3a" stroke="none" cx="246" cy="158" r="19"/>
+      <circle fill="#fff" stroke="none" cx="161" cy="151" r="6"/>
+      <circle fill="#fff" stroke="none" cx="253" cy="151" r="6"/>
+      <path class="c" fill="#fff" stroke-width="2.63" d="M200,190 L216,210 L200,232 L184,210 Z"/>
+      <rect class="c" fill="#fff" stroke-width="4.5" x="36" y="344" width="328" height="24" rx="12"/>
+      <path fill="none" stroke-width="2.63" d="M60,344 C68,332 82,328 94,332 M320,368 C326,378 338,382 348,378"/>
+      <path fill="none" stroke-width="2.63" d="M164,336 L164,352 M154,358 L164,352 L164,360 M164,352 L174,358 M236,336 L236,352 M226,358 L236,352 L236,360 M236,352 L246,358"/>
+      </svg>`
   },
   {
-    name: '鯨魚',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <circle class="c" fill="#fff" cx="118" cy="96" r="16"/>
-      <circle class="c" fill="#fff" cx="150" cy="60" r="20"/>
-      <circle class="c" fill="#fff" cx="196" cy="44" r="16"/>
-      <path class="c" fill="#fff" d="M300,240 L368,190 C374,216 372,240 364,262 Z"/>
-      <path class="c" fill="#fff" d="M300,258 L364,288 C356,312 342,330 322,344 Z"/>
-      <path class="c" fill="#fff" d="M170,290 C154,340 176,372 214,364 C210,332 194,304 178,288 Z"/>
-      <path class="c" fill="#fff" d="M70,244 C70,180 130,140 200,140 C268,140 316,182 322,248 C316,300 268,330 200,330 C130,330 70,306 70,244 Z"/>
-      <path class="c" fill="#fff" d="M104,288 C146,314 208,318 248,300 C230,282 152,270 104,288 Z"/>
-      <circle fill="#3a3a3a" stroke="none" cx="120" cy="216" r="11"/>
-      <path fill="none" d="M92,254 C104,266 124,268 138,258"/>
-    </svg>`
+    name: '噴水鯨魚',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+      <path class="c" fill="#fff" stroke-width="2.63" d="M172,116 C160,90 140,76 118,74 C110,60 118,44 134,46 C158,50 176,66 182,84 C188,66 206,50 230,46 C246,44 254,60 246,74 C224,76 204,90 192,116 Z"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="106" cy="36" r="10"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="258" cy="34" r="10"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="182" cy="26" r="9"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M30,346 C56,330 82,330 108,342 C134,354 162,354 188,342 C214,330 242,330 268,342 C294,354 322,354 348,342 C356,338 364,336 370,336 L370,372 L30,372 Z"/>
+      <path class="c" fill="#fff" stroke-width="6.75" d="M56,220 C56,160 120,116 200,116 C264,116 314,146 330,192 C334,180 336,168 334,156 C348,130 372,122 386,134 C392,144 388,156 374,162 C386,172 390,190 380,200 C370,210 352,206 342,194 C342,216 338,236 328,252 C300,296 256,322 200,322 C120,322 56,284 56,220 Z"/>
+      <path class="c" fill="#fff" stroke-width="1.88" d="M72,250 C112,300 288,300 326,244 C298,292 252,316 200,316 C142,316 96,290 72,250 Z"/>
+      <path fill="none" stroke-width="1.88" d="M96,264 C150,296 250,296 304,260 M116,282 C164,306 236,306 284,278"/>
+      <path class="c" fill="#fff" stroke-width="4.5" d="M176,262 C164,296 180,318 212,312 C214,292 202,272 190,258"/>
+      <circle fill="#3a3a3a" stroke="none" cx="110" cy="196" r="10"/>
+      <circle fill="#fff" stroke="none" cx="113" cy="193" r="3.5"/>
+      <path fill="none" stroke-width="2.63" d="M74,228 C88,244 110,248 128,240"/>
+      <circle class="c" fill="#fff" stroke-width="1.88" cx="130" cy="222" r="12"/>
+      </svg>`
   }
 ];
 
