@@ -245,6 +245,34 @@ const LINEART_FANTASY = [
       </svg>`
   },
   {
+    name: '城堡前的公主',
+    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+      <line x1="20" y1="382" x2="380" y2="382" stroke-width="6"/>
+      <rect class="c" fill="#fff" x="20" y="230" width="80" height="152"/>
+      <circle class="c" fill="#fff" cx="60" cy="222" r="38"/>
+      <circle fill="#3a3a3a" stroke="none" cx="60" cy="178" r="9"/>
+      <rect class="c" fill="#fff" x="42" y="280" width="30" height="46" rx="15"/>
+      <rect class="c" fill="#fff" x="300" y="230" width="80" height="152"/>
+      <circle class="c" fill="#fff" cx="340" cy="222" r="38"/>
+      <circle fill="#3a3a3a" stroke="none" cx="340" cy="178" r="9"/>
+      <rect class="c" fill="#fff" x="328" y="280" width="30" height="46" rx="15"/>
+      <path class="c" fill="#fff" d="M178,240 L222,240 L232,286 L168,286 Z"/>
+      <path class="c" fill="#fff" d="M168,286 L232,286 C248,320 256,350 260,376 L140,376 C144,350 152,320 168,286 Z"/>
+      <path class="c" fill="#fff" d="M150,296 L168,286 C152,320 144,350 140,376 L60,376 C68,340 92,308 150,296 Z"/>
+      <path class="c" fill="#fff" d="M250,296 L232,286 C248,320 256,350 260,376 L340,376 C332,340 308,308 250,296 Z"/>
+      <circle class="c" fill="#fff" cx="138" cy="298" r="25"/>
+      <circle class="c" fill="#fff" cx="262" cy="298" r="25"/>
+      <circle class="c" fill="#fff" cx="200" cy="178" r="72"/>
+      <path class="c" fill="#fff" d="M110,270 C100,186 124,78 200,78 C276,78 300,186 290,270 C283,224 266,192 247,170 C224,190 176,190 153,170 C134,192 119,226 110,270 Z"/>
+      <path fill="#3a3a3a" stroke="none" d="M168,80 L176,52 L188,68 L200,46 L212,68 L224,52 L232,80 Z"/>
+      <circle fill="#3a3a3a" stroke="none" cx="178" cy="210" r="11"/>
+      <circle fill="#3a3a3a" stroke="none" cx="222" cy="210" r="11"/>
+      <circle fill="#fff" stroke="none" cx="182" cy="206" r="4"/>
+      <circle fill="#fff" stroke="none" cx="226" cy="206" r="4"/>
+      <path fill="none" d="M188,232 C194,241 206,241 212,232"/>
+    </svg>`
+  },
+  {
     name: '城堡前的小公主',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path fill="none" stroke-width="3.75" d="M30,374 L370,374"/>
