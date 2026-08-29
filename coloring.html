@@ -48,6 +48,10 @@
       <span class="tb-inner" id="toolBtnIcon">🪣</span>
     </button>
 
+    <button id="stampBtn" class="tb-round" title="蓋章">
+      <span class="tb-inner">⭐</span>
+    </button>
+
     <button id="colorBtn" class="tb-round tb-color" title="顏色"></button>
 
     <button id="eraserBtn" class="tb-round" title="橡皮擦">
@@ -72,6 +76,13 @@
   <div id="toolPanel" class="panel" hidden>
     <span class="panel-arrow"></span>
     <div id="toolList" class="tool-list"></div>
+  </div>
+
+  <!-- 彈出面板：印章圖案 -->
+  <div id="stampPanel" class="panel" hidden>
+    <span class="panel-arrow"></span>
+    <div id="stampGrid" class="stamp-grid"></div>
+    <div id="stampSizeRow" class="stamp-size-row"></div>
   </div>
 
   <!-- 彈出面板：色盤（56 色 + 6 種花紋） -->
@@ -120,6 +131,7 @@
 <script src="js/lineart-fantasy.js"></script>
 <script src="js/lineart-food.js"></script>
 <script src="js/patterns-data.js"></script>
+<script src="js/stamps-data.js"></script>
 <script src="js/photo-tool.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/coloring.js"></script>

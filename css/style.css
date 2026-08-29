@@ -509,6 +509,13 @@ body.coloring #gameScreen {
   box-shadow: 0 0 0 4px #FFD9A6, 0 5px 0 rgba(0, 0, 0, 0.16);
 }
 
+/* 蓋章模式開啟時：亮綠外框並放大一點（跟橡皮擦同一套視覺語言） */
+.tb-round.stamp-on {
+  border-color: #2E9E5B;
+  transform: scale(1.08);
+  box-shadow: 0 0 0 4px #B6EBC9, 0 5px 0 rgba(0, 0, 0, 0.16);
+}
+
 /* ===== 彈出面板（工具面板 / 色盤面板共用） ===== */
 .panel {
   position: fixed;
@@ -566,6 +573,83 @@ body.coloring #gameScreen {
 }
 
 .tool-item:active { transform: scale(0.96); }
+
+/* 印章面板：3 欄 */
+.stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 84px);
+  gap: 10px;
+  padding: 4px;
+}
+
+.stamp-cell {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.stamp-cell canvas {
+  width: 72px;
+  height: 72px;
+  display: block;
+  pointer-events: none;
+}
+
+.stamp-cell:active { transform: scale(0.94); }
+
+.stamp-cell.selected {
+  background: #FFF0B8;
+  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* 印章大小：面板底下一列「小 / 中 / 大」 */
+.stamp-size-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 3px dashed #C3CBE8;
+}
+
+.stamp-size-cell {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.stamp-size-cell canvas {
+  width: 50px;
+  height: 50px;
+  display: block;
+  pointer-events: none;
+}
+
+.stamp-size-txt {
+  font-size: 17px;
+  font-weight: 800;
+  color: #5a4a38;
+  line-height: 1;
+}
+
+.stamp-size-cell:active { transform: scale(0.94); }
+
+.stamp-size-cell.selected {
+  background: #FFF0B8;
+  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+}
 
 /* 色盤面板：8 欄 x 7 列 */
 .color-grid {

@@ -31,6 +31,17 @@
     { id: 'glitter', emoji: '✨', name: '亮粉筆', width: 26 }
   ];
 
+  /* 蓋章工具不放在工具面板裡（它有自己的圖案面板與工具列按鈕），
+     但 mode 會設成 'stamp'，所以 currentTool() 要認得它 */
+  const STAMP_TOOL = { id: 'stamp', emoji: '⭐', name: '蓋章' };
+  // 印章大小：一顆印章佔紙張短邊的比例，三段可選
+  const STAMP_SIZES = [
+    { id: 'small', name: '小', scale: 0.11 },
+    { id: 'mid',   name: '中', scale: 0.19 },
+    { id: 'big',   name: '大', scale: 0.30 }
+  ];
+  const STAMP_ACCENT = '#FFFFFF';
+
   // 正方線稿／照片的座標系邊長，跟 photo-tool.js 的 SIZE 一致（不可改）
   const CANVAS_SIZE = 800;
   // paintLayer 是非正方的「整張紙」：短邊固定 800，長邊按紙張長寬比等比放大，上限 1600。
@@ -60,6 +71,10 @@
   const toolPanel = document.getElementById('toolPanel');
   const colorPanel = document.getElementById('colorPanel');
   const toolList = document.getElementById('toolList');
+  const stampBtn = document.getElementById('stampBtn');
+  const stampPanel = document.getElementById('stampPanel');
+  const stampGrid = document.getElementById('stampGrid');
+  const stampSizeRow = document.getElementById('stampSizeRow');
   const colorGrid = document.getElementById('colorGrid');
   const patternRow = document.getElementById('patternRow');
   const processingOverlay = document.getElementById('processingOverlay');
@@ -69,6 +84,8 @@
   let galleryIndex = 0;
   let customPics = loadCustomPics();  // [{type:'raster', id, name, dataUrl}]
   let mode = 'fill';                                // TOOLS 裡的 id
+  let stampId = (window.STAMPS && window.STAMPS[0].id) || 'star';  // 目前選的印章圖案
+  let stampSizeId = 'mid';                                         // 目前選的印章大小
   let eraser = false;                               // 橡皮擦開關（獨立於顏色）
   let paint = { type: 'color', value: COLORS[0] };  // 或 { type:'pattern', id }
   let paintCanvas = null;
@@ -99,7 +116,13 @@
   }
 
   function currentTool() {
+    if (mode === 'stamp') return STAMP_TOOL;
     return TOOLS.find(t => t.id === mode) || TOOLS[0];
+  }
+
+  function currentStamp() {
+    const list = window.STAMPS || [];
+    return list.find(x => x.id === stampId) || list[0] || null;
   }
 
   /* 一張圖的識別碼（存進度用）。內建線稿的 name 全部唯一，可以安全當 key；
@@ -218,6 +241,63 @@
     });
   }
 
+  /* 印章面板：每格用一張小 canvas 直接把圖案畫出來，
+     跟畫在紙上的是同一支 draw()，不會有「預覽跟蓋出來不一樣」的問題 */
+  function buildStampPanel() {
+    stampGrid.innerHTML = '';
+    (window.STAMPS || []).forEach(st => {
+      const b = document.createElement('button');
+      b.className = 'stamp-cell' + (st.id === stampId ? ' selected' : '');
+      b.dataset.stamp = st.id;
+      b.title = st.name;
+      b.appendChild(stampPreview(st));
+      b.addEventListener('click', () => selectStamp(st.id));
+      stampGrid.appendChild(b);
+    });
+
+    refreshStampSizeRow();
+  }
+
+  /* 大小那一列：用「目前選的圖案」畫成三種尺寸，小孩看得懂哪一顆比較大。
+     換圖案時要重畫，預覽才跟著變 */
+  function refreshStampSizeRow() {
+    const big = STAMP_SIZES[STAMP_SIZES.length - 1].scale;
+    stampSizeRow.innerHTML = '';
+    STAMP_SIZES.forEach(sz => {
+      const b = document.createElement('button');
+      b.className = 'stamp-size-cell' + (sz.id === stampSizeId ? ' selected' : '');
+      b.dataset.size = sz.id;
+      b.title = sz.name;
+      b.appendChild(stampPreview(currentStamp(), 0.35 + 0.65 * (sz.scale / big)));
+      const cap = document.createElement('span');
+      cap.className = 'stamp-size-txt';
+      cap.textContent = sz.name;
+      b.appendChild(cap);
+      b.addEventListener('click', () => selectStampSize(sz.id));
+      stampSizeRow.appendChild(b);
+    });
+  }
+
+  // ratio < 1 時圖案畫小一點但畫布一樣大，三顆並排才看得出大小差別
+  function stampPreview(st, ratio) {
+    const side = 72;
+    const k = ratio || 1;
+    const c = document.createElement('canvas');
+    c.width = side; c.height = side;
+    const g = c.getContext('2d');
+    if (!st) return c;
+    g.translate(side / 2, side / 2);
+    g.scale(side * 0.88 * k / 100, side * 0.88 * k / 100);
+    g.translate(-50, -50);
+    st.draw(g, '#F2A93B', '#FFFFFF');
+    return c;
+  }
+
+  function stampScale() {
+    const sz = STAMP_SIZES.find(x => x.id === stampSizeId) || STAMP_SIZES[1];
+    return sz.scale;
+  }
+
   function buildColorPanel() {
     colorGrid.innerHTML = '';
     COLORS.forEach(color => {
@@ -296,10 +376,15 @@
     }
   }
 
+  const PANELS = {
+    tool:  () => [toolPanel, toolBtn],
+    color: () => [colorPanel, colorBtn],
+    stamp: () => [stampPanel, stampBtn]
+  };
+
   function openPanel(which) {
     closePanels();
-    const panel = which === 'tool' ? toolPanel : colorPanel;
-    const trigger = which === 'tool' ? toolBtn : colorBtn;
+    const [panel, trigger] = PANELS[which]();
     panel.hidden = false;
     positionPanel(panel, trigger);   // 要先顯示才量得到尺寸
     openedPanel = which;
@@ -308,6 +393,7 @@
   function closePanels() {
     toolPanel.hidden = true;
     colorPanel.hidden = true;
+    stampPanel.hidden = true;
     openedPanel = null;
   }
 
@@ -316,7 +402,7 @@
      document 上的「第一次觸控自動播放」），改用 swallowStroke 旗標讓畫布這一下不作畫。 */
   document.addEventListener('pointerdown', (e) => {
     if (!openedPanel) return;
-    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #toolBtn, #colorBtn')) return;
+    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #stampPanel, #toolBtn, #colorBtn, #stampBtn')) return;
     closePanels();
     swallowStroke = true;
   }, true);
@@ -332,9 +418,41 @@
     toolBtnIcon.textContent = t.emoji;
     toolList.querySelectorAll('.tool-item').forEach(b =>
       b.classList.toggle('selected', b.dataset.tool === id));
+    syncStampBtn();
     if (paintCanvas) paintCanvas.style.pointerEvents = (mode === 'fill') ? 'none' : 'auto';
     Sound.click();
     closePanels();
+  }
+
+  /* 選印章圖案＝同時切到蓋章模式（小孩只要點一下就開始蓋，不用先選工具再選圖案） */
+  function selectStamp(id) {
+    stampId = id;
+    mode = 'stamp';
+    toolList.querySelectorAll('.tool-item').forEach(b => b.classList.remove('selected'));
+    stampGrid.querySelectorAll('.stamp-cell').forEach(b =>
+      b.classList.toggle('selected', b.dataset.stamp === id));
+    refreshStampSizeRow();
+    syncStampBtn();
+    if (paintCanvas) paintCanvas.style.pointerEvents = 'auto';
+    Sound.pop();
+    closePanels();
+  }
+
+  function selectStampSize(id) {
+    stampSizeId = id;
+    stampSizeRow.querySelectorAll('.stamp-size-cell').forEach(b =>
+      b.classList.toggle('selected', b.dataset.size === id));
+    if (mode !== 'stamp') {          // 調大小＝想蓋章，順手切過去
+      mode = 'stamp';
+      toolList.querySelectorAll('.tool-item').forEach(b => b.classList.remove('selected'));
+      syncStampBtn();
+      if (paintCanvas) paintCanvas.style.pointerEvents = 'auto';
+    }
+    Sound.click();                   // 刻意不關面板：可以馬上再換圖案或再調一次
+  }
+
+  function syncStampBtn() {
+    stampBtn.classList.toggle('stamp-on', mode === 'stamp');
   }
 
   function selectPaint(newPaint) {
@@ -350,6 +468,11 @@
   toolBtn.addEventListener('click', () => {
     Sound.click();
     if (openedPanel === 'tool') closePanels(); else openPanel('tool');
+  });
+
+  stampBtn.addEventListener('click', () => {
+    Sound.click();
+    if (openedPanel === 'stamp') closePanels(); else openPanel('stamp');
   });
 
   colorBtn.addEventListener('click', () => {
@@ -864,6 +987,38 @@
     };
   }
 
+  /* ===== 蓋章 =====
+     一顆印章的邊長跟紙張短邊成比例，另外給一點隨機大小與角度，
+     連續蓋出來才不會像複製貼上。座標系換算成 0..100 之後交給 STAMPS 的 draw()。 */
+  function stampSide() {
+    return Math.min(paintCanvas.width, paintCanvas.height) * stampScale();
+  }
+
+  function stampAt(pos) {
+    const st = currentStamp();
+    if (!st) return;
+    const side = stampSide() * (0.88 + Math.random() * 0.24);
+    const rot = (Math.random() - 0.5) * 0.6;   // ±17 度左右
+    const main = isEraser() ? '#000' : stampMain(side);
+    ctx.save();
+    ctx.translate(pos.x, pos.y);
+    ctx.rotate(rot);
+    ctx.scale(side / 100, side / 100);
+    ctx.translate(-50, -50);
+    st.draw(ctx, main, isEraser() ? '#000' : STAMP_ACCENT);
+    ctx.restore();
+  }
+
+  /* 花紋顏料要反向縮放：pattern 是照「當下的 transform」貼的，
+     不補回去的話一顆印章裡只會出現一格花紋，看起來像一團色塊 */
+  function stampMain(side) {
+    const style = paintStyle();
+    if (paint.type === 'pattern' && style && typeof style.setTransform === 'function') {
+      try { style.setTransform(new DOMMatrix().scale(100 / side)); } catch (e) { /* 舊瀏覽器就算了 */ }
+    }
+    return style;
+  }
+
   function bindPaintEvents() {
     let drawing = false;
     let last = null;
@@ -885,7 +1040,10 @@
       // 水彩用半透明疊出來（橡皮擦時強制不透明，才擦得乾淨）
       ctx.globalAlpha = (!isEraser() && tool.alpha) ? tool.alpha : 1;
 
-      if (mode === 'spray') {
+      if (mode === 'stamp') {
+        stampAt(last);
+        Sound.pop();
+      } else if (mode === 'spray') {
         splat(last, true);
         sprayTimer = setInterval(() => { if (last) splat(last, false); }, 70);
       } else {
@@ -897,6 +1055,13 @@
     paintCanvas.addEventListener('pointermove', (e) => {
       if (!drawing) return;
       const pos = canvasPos(e);
+      if (mode === 'stamp') {
+        const d = Math.hypot(pos.x - last.x, pos.y - last.y);
+        if (d < stampSide() * 0.95) return;   // 還沒離開上一顆，先不蓋
+        stampAt(pos);
+        last = pos;
+        return;
+      }
       if (mode === 'spray') {
         splat(pos, false);
       } else {
@@ -1199,9 +1364,11 @@
   /* ===== 起始 ===== */
   buildToolPanel();
   buildColorPanel();
+  buildStampPanel();
   markPaintSelection();
   syncColorBtn();
   syncEraserBtn();
+  syncStampBtn();
   toolBtnIcon.textContent = currentTool().emoji;
   buildPicGrid();
   updateButtons();
