@@ -50,6 +50,15 @@
     { id: 'lg',  name: '粗',   scale: 1.5 }
   ];
 
+  // 橡皮擦大小：獨立於畫筆粗細，不管目前選的是哪支筆都用自己這組
+  const ERASER_BASE_WIDTH = 34;
+  const ERASER_SIZES = [
+    { id: 'xs',  name: '最細', scale: 0.35 },
+    { id: 'sm',  name: '細',   scale: 0.6 },
+    { id: 'mid', name: '中',   scale: 1 },
+    { id: 'lg',  name: '粗',   scale: 1.5 }
+  ];
+
   // 正方線稿／照片的座標系邊長，跟 photo-tool.js 的 SIZE 一致（不可改）
   const CANVAS_SIZE = 800;
   // paintLayer 是非正方的「整張紙」：短邊固定 800，長邊按紙張長寬比等比放大，上限 1600。
@@ -80,6 +89,8 @@
   const colorPanel = document.getElementById('colorPanel');
   const toolList = document.getElementById('toolList');
   const toolSizeRow = document.getElementById('toolSizeRow');
+  const eraserPanel = document.getElementById('eraserPanel');
+  const eraserSizeRow = document.getElementById('eraserSizeRow');
   const stampBtn = document.getElementById('stampBtn');
   const stampPanel = document.getElementById('stampPanel');
   const stampGrid = document.getElementById('stampGrid');
@@ -96,6 +107,7 @@
   let stampId = (window.STAMPS && window.STAMPS[0].id) || 'star';  // 目前選的印章圖案
   let stampSizeId = 'mid';                                         // 目前選的印章大小
   let brushSizeId = 'mid';                                         // 目前選的畫筆粗細
+  let eraserSizeId = 'mid';                                        // 目前選的橡皮擦大小（跟畫筆粗細分開存)
   let eraser = false;                               // 橡皮擦開關（獨立於顏色）
   let paint = { type: 'color', value: COLORS[0] };  // 或 { type:'pattern', id }
   let paintCanvas = null;
@@ -257,7 +269,13 @@
     return (BRUSH_SIZES.find(s => s.id === brushSizeId) || BRUSH_SIZES[2]).scale;
   }
 
+  function eraserScale() {
+    return (ERASER_SIZES.find(s => s.id === eraserSizeId) || ERASER_SIZES[2]).scale;
+  }
+
+  // 橡皮擦大小自成一組，跟目前選的筆完全無關——擦的時候不管換到哪支筆都用這個粗細
   function currentLineWidth() {
+    if (isEraser()) return ERASER_BASE_WIDTH * eraserScale();
     return (currentTool().width || 30) * brushScale();
   }
 
@@ -300,6 +318,33 @@
   function selectBrushSize(id) {
     brushSizeId = id;
     toolSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
+      b.classList.toggle('selected', b.dataset.size === id));
+    Sound.click();
+    // 刻意不關面板：小孩常常要連續調幾次才滿意
+  }
+
+  /* 橡皮擦大小面板：跟畫筆粗細長得一樣（同一套視覺語言），
+     但用自己的 ERASER_BASE_WIDTH，只需要建一次，不必隨目前選的筆重畫 */
+  function buildEraserSizeRow() {
+    eraserSizeRow.innerHTML = '';
+    ERASER_SIZES.forEach(sz => {
+      const b = document.createElement('button');
+      b.className = 'tool-size-cell' + (sz.id === eraserSizeId ? ' selected' : '');
+      b.dataset.size = sz.id;
+      b.title = sz.name;
+      b.appendChild(brushSizePreview(ERASER_BASE_WIDTH, sz.scale));
+      const cap = document.createElement('span');
+      cap.className = 'tool-size-txt';
+      cap.textContent = sz.name;
+      b.appendChild(cap);
+      b.addEventListener('click', () => selectEraserSize(sz.id));
+      eraserSizeRow.appendChild(b);
+    });
+  }
+
+  function selectEraserSize(id) {
+    eraserSizeId = id;
+    eraserSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
     // 刻意不關面板：小孩常常要連續調幾次才滿意
@@ -441,9 +486,10 @@
   }
 
   const PANELS = {
-    tool:  () => [toolPanel, toolBtn],
-    color: () => [colorPanel, colorBtn],
-    stamp: () => [stampPanel, stampBtn]
+    tool:   () => [toolPanel, toolBtn],
+    color:  () => [colorPanel, colorBtn],
+    stamp:  () => [stampPanel, stampBtn],
+    eraser: () => [eraserPanel, eraserBtn]
   };
 
   function openPanel(which) {
@@ -458,6 +504,7 @@
     toolPanel.hidden = true;
     colorPanel.hidden = true;
     stampPanel.hidden = true;
+    eraserPanel.hidden = true;
     openedPanel = null;
   }
 
@@ -466,7 +513,7 @@
      document 上的「第一次觸控自動播放」），改用 swallowStroke 旗標讓畫布這一下不作畫。 */
   document.addEventListener('pointerdown', (e) => {
     if (!openedPanel) return;
-    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #stampPanel, #toolBtn, #colorBtn, #stampBtn')) return;
+    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #stampPanel, #eraserPanel, #toolBtn, #colorBtn, #stampBtn, #eraserBtn')) return;
     closePanels();
     swallowStroke = true;
   }, true);
@@ -549,6 +596,7 @@
     eraser = !eraser;
     syncEraserBtn();
     Sound.click();
+    if (eraser) openPanel('eraser'); else closePanels();
   });
 
   undoBtn.addEventListener('click', () => {
@@ -1430,6 +1478,7 @@
   buildToolPanel();
   buildColorPanel();
   buildStampPanel();
+  buildEraserSizeRow();
   markPaintSelection();
   syncColorBtn();
   syncEraserBtn();
