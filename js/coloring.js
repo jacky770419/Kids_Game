@@ -42,6 +42,14 @@
   ];
   const STAMP_ACCENT = '#FFFFFF';
 
+  // 畫筆粗細：四段可選，scale 乘在每種工具原本的 width 上（小朋友常常想要比預設更細的筆）
+  const BRUSH_SIZES = [
+    { id: 'xs',  name: '最細', scale: 0.35 },
+    { id: 'sm',  name: '細',   scale: 0.6 },
+    { id: 'mid', name: '中',   scale: 1 },
+    { id: 'lg',  name: '粗',   scale: 1.5 }
+  ];
+
   // 正方線稿／照片的座標系邊長，跟 photo-tool.js 的 SIZE 一致（不可改）
   const CANVAS_SIZE = 800;
   // paintLayer 是非正方的「整張紙」：短邊固定 800，長邊按紙張長寬比等比放大，上限 1600。
@@ -71,6 +79,7 @@
   const toolPanel = document.getElementById('toolPanel');
   const colorPanel = document.getElementById('colorPanel');
   const toolList = document.getElementById('toolList');
+  const toolSizeRow = document.getElementById('toolSizeRow');
   const stampBtn = document.getElementById('stampBtn');
   const stampPanel = document.getElementById('stampPanel');
   const stampGrid = document.getElementById('stampGrid');
@@ -86,6 +95,7 @@
   let mode = 'fill';                                // TOOLS 裡的 id
   let stampId = (window.STAMPS && window.STAMPS[0].id) || 'star';  // 目前選的印章圖案
   let stampSizeId = 'mid';                                         // 目前選的印章大小
+  let brushSizeId = 'mid';                                         // 目前選的畫筆粗細
   let eraser = false;                               // 橡皮擦開關（獨立於顏色）
   let paint = { type: 'color', value: COLORS[0] };  // 或 { type:'pattern', id }
   let paintCanvas = null;
@@ -239,6 +249,60 @@
       b.addEventListener('click', () => selectTool(t.id));
       toolList.appendChild(b);
     });
+    refreshToolSizeRow();
+  }
+
+  // 目前粗細的倍率，乘在每種筆原本的 width 上
+  function brushScale() {
+    return (BRUSH_SIZES.find(s => s.id === brushSizeId) || BRUSH_SIZES[2]).scale;
+  }
+
+  function currentLineWidth() {
+    return (currentTool().width || 30) * brushScale();
+  }
+
+  /* 粗細那一列：只有「有 width」的筆（粗筆／細筆／水彩／亮粉筆）才顯示，
+     填滿、潑墨沒有線寬可調。用目前選的筆畫出實際粗細的圓點，小孩才看得出差別 */
+  function refreshToolSizeRow() {
+    const t = currentTool();
+    const supportsSize = typeof t.width === 'number';
+    toolSizeRow.hidden = !supportsSize;
+    if (!supportsSize) return;
+    toolSizeRow.innerHTML = '';
+    BRUSH_SIZES.forEach(sz => {
+      const b = document.createElement('button');
+      b.className = 'tool-size-cell' + (sz.id === brushSizeId ? ' selected' : '');
+      b.dataset.size = sz.id;
+      b.title = sz.name;
+      b.appendChild(brushSizePreview(t.width, sz.scale));
+      const cap = document.createElement('span');
+      cap.className = 'tool-size-txt';
+      cap.textContent = sz.name;
+      b.appendChild(cap);
+      b.addEventListener('click', () => selectBrushSize(sz.id));
+      toolSizeRow.appendChild(b);
+    });
+  }
+
+  function brushSizePreview(baseWidth, scale) {
+    const side = 32;
+    const c = document.createElement('canvas');
+    c.width = side; c.height = side;
+    const g = c.getContext('2d');
+    const r = Math.max(2, Math.min(side / 2 - 2, (baseWidth * scale) / 2));
+    g.fillStyle = '#5a4a38';
+    g.beginPath();
+    g.arc(side / 2, side / 2, r, 0, Math.PI * 2);
+    g.fill();
+    return c;
+  }
+
+  function selectBrushSize(id) {
+    brushSizeId = id;
+    toolSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
+      b.classList.toggle('selected', b.dataset.size === id));
+    Sound.click();
+    // 刻意不關面板：小孩常常要連續調幾次才滿意
   }
 
   /* 印章面板：每格用一張小 canvas 直接把圖案畫出來，
@@ -418,6 +482,7 @@
     toolBtnIcon.textContent = t.emoji;
     toolList.querySelectorAll('.tool-item').forEach(b =>
       b.classList.toggle('selected', b.dataset.tool === id));
+    refreshToolSizeRow();
     syncStampBtn();
     if (paintCanvas) paintCanvas.style.pointerEvents = (mode === 'fill') ? 'none' : 'auto';
     Sound.click();
@@ -1086,7 +1151,7 @@
 
   function drawSegment(from, to) {
     ctx.strokeStyle = paintStyle();
-    ctx.lineWidth = currentTool().width || 30;
+    ctx.lineWidth = currentLineWidth();
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
     ctx.beginPath();

@@ -574,6 +574,51 @@ body.coloring #gameScreen {
 
 .tool-item:active { transform: scale(0.96); }
 
+/* 筆的粗細：工具列表下面加一排「最細／細／中／粗」，四格塞進跟上面一樣的 210px 寬 */
+.tool-size-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  width: 210px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 3px dashed #C3CBE8;
+}
+
+.tool-size-cell {
+  width: 46px;
+  height: 60px;
+  border-radius: 14px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.tool-size-cell canvas {
+  width: 26px;
+  height: 26px;
+  display: block;
+  pointer-events: none;
+}
+
+.tool-size-txt {
+  font-size: 12px;
+  font-weight: 800;
+  color: #5a4a38;
+  line-height: 1;
+}
+
+.tool-size-cell:active { transform: scale(0.94); }
+
+.tool-size-cell.selected {
+  background: #FFF0B8;
+  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+
 /* 印章面板：3 欄 */
 .stamp-grid {
   display: grid;
