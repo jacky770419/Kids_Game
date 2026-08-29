@@ -317,6 +317,7 @@
 
   function selectBrushSize(id) {
     brushSizeId = id;
+    stopErasing();             // 調畫筆粗細＝想畫，不是想擦
     toolSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
@@ -344,6 +345,11 @@
 
   function selectEraserSize(id) {
     eraserSizeId = id;
+    if (!eraser) {             // 調橡皮擦大小＝想擦，順手切過去
+      eraser = true;
+      syncEraserBtn();
+      syncPaintPointerEvents();
+    }
     eraserSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
@@ -455,6 +461,23 @@
     eraserBtn.classList.toggle('eraser-on', eraser);
   }
 
+  /* 填滿工具要讓點擊穿過去打到底下的 SVG 區塊，所以畫布收起來不吃事件；
+     但橡皮擦是獨立工具（不是填滿的變體），開著的時候一定要吃得到事件才擦得動 */
+  function paintLayerHitTest() {
+    return (mode === 'fill' && !eraser) ? 'none' : 'auto';
+  }
+
+  function syncPaintPointerEvents() {
+    if (paintCanvas) paintCanvas.style.pointerEvents = paintLayerHitTest();
+  }
+
+  function stopErasing() {
+    if (!eraser) return;
+    eraser = false;
+    syncEraserBtn();
+    syncPaintPointerEvents();
+  }
+
   function positionPanel(panel, trigger) {
     // 先歸零，量到的尺寸才不會被上一次的位置影響
     panel.style.left = '0px';
@@ -525,13 +548,14 @@
   /* ===== 選工具 / 選顏色 / 橡皮擦 ===== */
   function selectTool(id) {
     mode = id;
+    stopErasing();             // 選了畫圖工具＝不再是擦的狀態
     const t = currentTool();
     toolBtnIcon.textContent = t.emoji;
     toolList.querySelectorAll('.tool-item').forEach(b =>
       b.classList.toggle('selected', b.dataset.tool === id));
     refreshToolSizeRow();
     syncStampBtn();
-    if (paintCanvas) paintCanvas.style.pointerEvents = (mode === 'fill') ? 'none' : 'auto';
+    syncPaintPointerEvents();
     Sound.click();
     closePanels();
   }
@@ -540,25 +564,27 @@
   function selectStamp(id) {
     stampId = id;
     mode = 'stamp';
+    stopErasing();
     toolList.querySelectorAll('.tool-item').forEach(b => b.classList.remove('selected'));
     stampGrid.querySelectorAll('.stamp-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.stamp === id));
     refreshStampSizeRow();
     syncStampBtn();
-    if (paintCanvas) paintCanvas.style.pointerEvents = 'auto';
+    syncPaintPointerEvents();
     Sound.pop();
     closePanels();
   }
 
   function selectStampSize(id) {
     stampSizeId = id;
+    stopErasing();
     stampSizeRow.querySelectorAll('.stamp-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     if (mode !== 'stamp') {          // 調大小＝想蓋章，順手切過去
       mode = 'stamp';
       toolList.querySelectorAll('.tool-item').forEach(b => b.classList.remove('selected'));
       syncStampBtn();
-      if (paintCanvas) paintCanvas.style.pointerEvents = 'auto';
+      syncPaintPointerEvents();
     }
     Sound.click();                   // 刻意不關面板：可以馬上再換圖案或再調一次
   }
@@ -571,6 +597,7 @@
     paint = newPaint;
     eraser = false;            // 選了任何顏色／花紋就自動關掉橡皮擦
     syncEraserBtn();
+    syncPaintPointerEvents();
     markPaintSelection();
     syncColorBtn();
     Sound.click();
@@ -595,6 +622,7 @@
   eraserBtn.addEventListener('click', () => {
     eraser = !eraser;
     syncEraserBtn();
+    syncPaintPointerEvents();
     Sound.click();
     if (eraser) openPanel('eraser'); else closePanels();
   });
@@ -818,7 +846,7 @@
     cv.id = 'paintLayer';
     cv.width = res.w;
     cv.height = res.h;
-    cv.style.pointerEvents = (mode === 'fill') ? 'none' : 'auto';
+    cv.style.pointerEvents = paintLayerHitTest();
     return cv;
   }
 
@@ -1029,7 +1057,7 @@
 
   /* ===== 填滿工具（點一下整區上色） ===== */
   artWrap.addEventListener('pointerdown', (e) => {
-    if (mode !== 'fill') return;
+    if (mode !== 'fill' || eraser) return;   // 橡皮擦是獨立工具，不做「整區填白」
     if (swallowStroke) return;   // 這一下是用來關面板的
     const item = gallery()[galleryIndex];
 
@@ -1037,10 +1065,8 @@
       const region = e.target.closest('.c');
       if (!region) return;
       pushHistory({ kind: 'fill', el: region, prev: region.getAttribute('fill') });
-      // 橡皮擦：把這一區填回白色
       region.setAttribute('fill',
-        eraser ? '#fff'
-        : (paint.type === 'color' ? paint.value : `url(#${paint.id})`));
+        paint.type === 'color' ? paint.value : `url(#${paint.id})`);
       Sound.pop();
       markContent();
       scheduleSave();
@@ -1066,13 +1092,13 @@
     }
   });
 
-  // 把目前選的顏色/花紋蓋到這次疊桶填色算出來的範圍裡（橡皮擦時改成挖掉）
+  // 把目前選的顏色/花紋蓋到這次疊桶填色算出來的範圍裡
   function applyFloodFill(filledMask) {
     const tmp = document.createElement('canvas');
     tmp.width = CANVAS_SIZE;
     tmp.height = CANVAS_SIZE;
     const tctx = tmp.getContext('2d');
-    tctx.fillStyle = eraser ? '#000' : paintStyle();
+    tctx.fillStyle = paintStyle();
     tctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
     const imgData = tctx.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE);
@@ -1081,13 +1107,7 @@
     }
     tctx.putImageData(imgData, 0, 0);
 
-    if (eraser) {
-      fillCtx.globalCompositeOperation = 'destination-out';
-      fillCtx.drawImage(tmp, 0, 0);
-      fillCtx.globalCompositeOperation = 'source-over';
-    } else {
-      fillCtx.drawImage(tmp, 0, 0);
-    }
+    fillCtx.drawImage(tmp, 0, 0);
   }
 
   /* ===== 畫筆 / 潑墨 / 水彩 / 亮粉筆 ===== */
@@ -1112,13 +1132,13 @@
     if (!st) return;
     const side = stampSide() * (0.88 + Math.random() * 0.24);
     const rot = (Math.random() - 0.5) * 0.6;   // ±17 度左右
-    const main = isEraser() ? '#000' : stampMain(side);
+    const main = stampMain(side);
     ctx.save();
     ctx.translate(pos.x, pos.y);
     ctx.rotate(rot);
     ctx.scale(side / 100, side / 100);
     ctx.translate(-50, -50);
-    st.draw(ctx, main, isEraser() ? '#000' : STAMP_ACCENT);
+    st.draw(ctx, main, STAMP_ACCENT);
     ctx.restore();
   }
 
@@ -1138,7 +1158,7 @@
     let sprayTimer = null;
 
     paintCanvas.addEventListener('pointerdown', (e) => {
-      if (mode === 'fill') return;
+      if (mode === 'fill' && !eraser) return;
       if (swallowStroke) return;   // 這一下是用來關面板的
       e.preventDefault();
       paintCanvas.setPointerCapture(e.pointerId);
@@ -1150,10 +1170,14 @@
 
       const tool = currentTool();
       ctx.globalCompositeOperation = isEraser() ? 'destination-out' : 'source-over';
-      // 水彩用半透明疊出來（橡皮擦時強制不透明，才擦得乾淨）
+      // 水彩用半透明疊出來（橡皮擦強制不透明，才擦得乾淨）
       ctx.globalAlpha = (!isEraser() && tool.alpha) ? tool.alpha : 1;
 
-      if (mode === 'stamp') {
+      /* 橡皮擦自成一支工具：一律圓頭筆觸、用自己的粗細，
+         完全不理目前選的是填滿／潑墨／蓋章／哪支筆 */
+      if (isEraser()) {
+        drawSegment(last, last);
+      } else if (mode === 'stamp') {
         stampAt(last);
         Sound.pop();
       } else if (mode === 'spray') {
@@ -1168,6 +1192,11 @@
     paintCanvas.addEventListener('pointermove', (e) => {
       if (!drawing) return;
       const pos = canvasPos(e);
+      if (isEraser()) {
+        drawSegment(last, pos);
+        last = pos;
+        return;
+      }
       if (mode === 'stamp') {
         const d = Math.hypot(pos.x - last.x, pos.y - last.y);
         if (d < stampSide() * 0.95) return;   // 還沒離開上一顆，先不蓋
@@ -1198,7 +1227,8 @@
   }
 
   function drawSegment(from, to) {
-    ctx.strokeStyle = paintStyle();
+    // 擦除時不能用花紋當 strokeStyle：pattern 有透明的格子，會擦得坑坑洞洞
+    ctx.strokeStyle = isEraser() ? '#000' : paintStyle();
     ctx.lineWidth = currentLineWidth();
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
