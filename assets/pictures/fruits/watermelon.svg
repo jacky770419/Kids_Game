@@ -1,4 +1,6 @@
 <svg viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+  <rect width="400" height="400" fill="#C9EFC0"/>
+  <rect x="10" y="10" width="380" height="380" rx="40" fill="#E8F9E2"/>
   <path class="c" fill="#5FBF73" stroke-width="4.5" d="M78,64 L282,44 C282,88 250,128 194,134 C138,140 100,106 78,64 Z" transform="rotate(-4 180 90)"/>
   <path class="c" fill="#7BC96F" stroke-width="2.25" d="M96,72 L264,56 C260,88 234,116 192,120 C150,124 116,100 96,72 Z" transform="rotate(-4 180 90)"/>
   <ellipse fill="#3a3a3a" stroke="none" cx="160" cy="86" rx="5" ry="7" transform="rotate(-14 160 86)"/>

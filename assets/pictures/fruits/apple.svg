@@ -1,4 +1,6 @@
 <svg viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+  <rect width="400" height="400" fill="#F8CFC2"/>
+  <rect x="10" y="10" width="380" height="380" rx="40" fill="#FDEBE3"/>
   <ellipse class="c" fill="#FFB7C5" stroke-width="1.88" cx="68" cy="58" rx="9" ry="15"/>
   <ellipse class="c" fill="#FFB7C5" stroke-width="1.88" cx="85" cy="70" rx="9" ry="15" transform="rotate(72 85 70)"/>
   <ellipse class="c" fill="#FFB7C5" stroke-width="1.88" cx="79" cy="90" rx="9" ry="15" transform="rotate(144 79 90)"/>
