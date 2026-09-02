@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>單字 - 小小遊樂園</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="words">
+
+<!-- 🎵 放在 body 層固定右上角：music.js 只認一顆 #musicBtn，兩個畫面共用同一顆 -->
+<button id="musicBtn" class="icon-btn music-fab" title="背景音樂">🎵</button>
+
+<!-- ===== 模式選擇 ===== -->
+<main id="selectScreen">
+  <header class="bar">
+    <a href="index.html" class="icon-btn">🏠</a>
+    <span class="spacer"></span>
+    <span class="bar-title">要玩哪一種？</span>
+    <span class="spacer"></span>
+    <span class="bar-gap"></span><!-- 讓出 .music-fab 的位置 -->
+  </header>
+
+  <div id="dataError" class="select-hint" hidden>讀不到單字資料</div>
+
+  <div class="mode-row">
+    <div class="mode-col">
+      <button id="matchCard" class="mode-card mode-match">
+        <span class="mode-demo">
+          <span class="demo-word">BEAR</span>
+          <span class="demo-arrow">→</span>
+          <span class="demo-pic"><img src="assets/pictures/animals/bear.svg" alt=""></span>
+        </span>
+        <span class="mode-label">配對</span>
+        <span id="matchResume" class="resume-badge" hidden>▶ 接著玩</span>
+      </button>
+      <div class="mode-foot"></div>
+    </div>
+
+    <div class="mode-col">
+      <button id="memoryCard" class="mode-card mode-memory">
+        <span class="mode-demo">
+          <span class="demo-back">?</span>
+          <span class="demo-pic tall"><img src="assets/pictures/animals/duck.svg" alt=""></span>
+          <span class="demo-text">DUCK</span>
+        </span>
+        <span class="mode-label">翻牌</span>
+        <span id="memoryResume" class="resume-badge" hidden>▶ 接著玩</span>
+      </button>
+      <div class="mode-foot" id="pairsRow">
+        <button class="diff-btn selected" data-pairs="3">3 對 ⭐</button>
+        <button class="diff-btn" data-pairs="6">6 對 ⭐⭐</button>
+        <button class="diff-btn" data-pairs="8">8 對 ⭐⭐⭐</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== 遊戲畫面 ===== -->
+<main id="gameScreen" hidden>
+  <header class="bar">
+    <a href="index.html" class="icon-btn">🏠</a>
+    <button id="backBtn" class="icon-btn">🔙</button>
+    <span class="spacer"></span>
+    <div id="progress"></div>
+    <span class="spacer"></span>
+    <span class="bar-gap"></span><!-- 讓出 .music-fab 的位置 -->
+  </header>
+
+  <div id="playArea">
+    <!-- 配對模式 -->
+    <div id="matchArea" hidden>
+      <div class="word-card">
+        <div class="word-text-col">
+          <div id="wordText"></div>
+          <div id="wordZh"></div>
+        </div>
+        <button id="speakBtn" title="再唸一次">🔊</button>
+      </div>
+      <div id="choices"></div>
+    </div>
+
+    <!-- 翻牌模式 -->
+    <div id="memoryArea" hidden>
+      <div id="memoryGrid"></div>
+    </div>
+  </div>
+</main>
+
+<canvas id="confettiCanvas"></canvas>
+
+<div id="winOverlay" class="overlay" hidden>
+  <div class="win-title">🎉 好棒喔！ 🎉</div>
+  <div class="overlay-row">
+    <button id="againBtn" class="big-btn">再玩一次</button>
+    <button id="menuBtn" class="big-btn alt">換一種玩法</button>
+  </div>
+</div>
+
+<script src="js/sound.js"></script>
+<script src="js/music.js"></script>
+<script src="js/words.js"></script>
+</body>
+</html>

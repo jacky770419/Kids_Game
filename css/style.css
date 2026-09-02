@@ -970,3 +970,317 @@ body.puzzle {
   pointer-events: none;
   z-index: 90;
 }
+
+/* ===== 單字頁 ===== */
+.words-card { background: linear-gradient(160deg, #D9C8FF, #B39DDB); }
+
+body.words {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 兩個畫面的頂列右邊都留一個 58px 空位，避開固定在右上角的 .music-fab */
+body.words .bar-gap {
+  width: 58px;
+  flex: none;
+}
+
+body.words #selectScreen,
+body.words #gameScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+/* --- 模式選擇 --- */
+.mode-row {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: min(60px, 5vw);
+  padding: 0 40px calc(30px + env(safe-area-inset-bottom));
+}
+
+.mode-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.mode-card {
+  position: relative;
+  width: min(400px, 38vw, 52vh);
+  height: min(400px, 38vw, 52vh);
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 0.12s ease;
+}
+
+.mode-card:active { transform: scale(0.95); }
+.mode-match { background: linear-gradient(160deg, #B5E3FF, #7FC4F5); }
+.mode-memory { background: linear-gradient(160deg, #FFE9A8, #FFD166); }
+
+.mode-demo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mode-demo .demo-word,
+.mode-demo .demo-text,
+.mode-demo .demo-pic,
+.mode-demo .demo-back {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #4a3b2a;
+  overflow: hidden;
+}
+
+.mode-demo .demo-word { width: 150px; height: 96px; font-size: 44px; letter-spacing: 3px; }
+.mode-demo .demo-pic { width: 96px; height: 96px; }
+.mode-demo .demo-pic.tall { width: 96px; height: 112px; }
+.mode-demo .demo-pic img { width: 96px; height: 96px; display: block; }
+.mode-demo .demo-text { width: 96px; height: 112px; font-size: 28px; letter-spacing: 2px; }
+.mode-demo .demo-arrow {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  background: none;
+  box-shadow: none;
+}
+.mode-demo .demo-back {
+  width: 96px;
+  height: 112px;
+  border-radius: 18px;
+  background: linear-gradient(160deg, #D9C8FF, #B39DDB);
+  font-size: 56px;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.mode-label {
+  font-size: 46px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+  letter-spacing: 8px;
+  padding-left: 8px;
+  margin-top: 14px;
+}
+
+.resume-badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #FFE083;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  font-size: 22px;
+  font-weight: 800;
+  color: #7a6350;
+}
+
+.mode-foot {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* --- 遊戲區共用 --- */
+#playArea {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 0 20px calc(20px + env(safe-area-inset-bottom));
+}
+
+#progress { display: flex; gap: 8px; align-items: center; }
+.star { font-size: 30px; line-height: 1; opacity: 0.25; }
+.star.on { opacity: 1; }
+
+/* --- 配對 --- */
+#matchArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: min(44px, 5vh);
+}
+
+.word-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 22px 40px;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.word-text-col { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+#wordText {
+  font-size: clamp(44px, 9vw, 110px);
+  font-weight: 900;
+  letter-spacing: 8px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+#wordZh { font-size: 30px; font-weight: 700; color: #a08b76; letter-spacing: 6px; }
+
+#speakBtn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #FFE083;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+  font-size: 60px;
+  flex: none;
+  transition: transform 0.12s ease;
+}
+#speakBtn:active { transform: scale(0.92); }
+
+#choices { display: flex; gap: 40px; justify-content: center; }
+
+.choice {
+  position: relative;
+  width: min(250px, 20vw, 30vh);
+  height: min(250px, 20vw, 30vh);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
+  padding: 14px;
+  transition: transform 0.12s ease, opacity 0.2s ease;
+}
+
+.choice img { width: 100%; height: 100%; display: block; border-radius: 18px; object-fit: contain; }
+.choice.correct {
+  box-shadow: 0 0 0 8px #8BD97F, 0 8px 0 rgba(0, 0, 0, 0.12);
+  transform: scale(1.06);
+}
+.choice.correct::after {
+  content: '✔️';
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #8BD97F;
+  box-shadow: 0 0 0 4px #fff, 0 4px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+}
+.choice.wrong { opacity: 0.45; animation: wordShake 0.4s ease; }
+
+@keyframes wordShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+/* --- 翻牌 --- */
+#memoryGrid {
+  --gap: 18px;
+  --mcard: max(120px, min(
+    (100vw - 40px - (var(--cols) - 1) * var(--gap)) / var(--cols),
+    (100vh - 110px - (var(--rows) - 1) * var(--gap)) / var(--rows)
+  ));
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--mcard));
+  gap: var(--gap);
+  justify-content: center;
+}
+
+.mcard {
+  width: var(--mcard);
+  aspect-ratio: 1;
+  padding: 0;
+  perspective: 800px;
+  background: none;
+}
+
+.mcard-inner {
+  display: block;   /* 是 <span>，不設 block 的話 width/height 不會生效 */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s ease;
+  transform-style: preserve-3d;
+}
+.mcard.flipped .mcard-inner { transform: rotateY(180deg); }
+
+.mcard-back, .mcard-front {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.mcard-back {
+  background: linear-gradient(160deg, #D9C8FF, #B39DDB);
+  font-size: clamp(40px, 8vw, 96px);
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+}
+
+.mcard-front {
+  background: #fff;
+  transform: rotateY(180deg);
+  padding: 10px;
+  /* 字級由 words.js 依單字長度算好塞進 --fs，長字（STRAWBERRY）也不會被切行 */
+  font-size: var(--fs, 32px);
+  font-weight: 900;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.mcard-front img { width: 100%; height: 100%; display: block; border-radius: 16px; object-fit: contain; }
+
+.mcard.matched .mcard-front { box-shadow: 0 0 0 7px #8BD97F, 0 8px 0 rgba(0, 0, 0, 0.12); }
+.mcard.wrong .mcard-front { box-shadow: 0 0 0 7px #FFE083, 0 8px 0 rgba(0, 0, 0, 0.12); }
+
+/* --- 直向 --- */
+@media (orientation: portrait) {
+  .mode-row { flex-direction: column; gap: 24px; }
+  .mode-card { width: min(400px, 70vw, 32vh); height: min(400px, 70vw, 32vh); }
+  #choices {
+    display: grid;
+    grid-template-columns: repeat(2, min(270px, 38vw));
+    gap: 32px;
+    justify-items: center;
+  }
+  .choice { width: min(270px, 38vw); height: min(270px, 38vw); }
+  .choice:nth-child(3) { grid-column: 1 / span 2; }
+}

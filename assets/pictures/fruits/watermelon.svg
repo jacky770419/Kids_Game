@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+  <path class="c" fill="#5FBF73" stroke-width="4.5" d="M78,64 L282,44 C282,88 250,128 194,134 C138,140 100,106 78,64 Z" transform="rotate(-4 180 90)"/>
+  <path class="c" fill="#7BC96F" stroke-width="2.25" d="M96,72 L264,56 C260,88 234,116 192,120 C150,124 116,100 96,72 Z" transform="rotate(-4 180 90)"/>
+  <ellipse fill="#3a3a3a" stroke="none" cx="160" cy="86" rx="5" ry="7" transform="rotate(-14 160 86)"/>
+  <ellipse fill="#3a3a3a" stroke="none" cx="212" cy="84" rx="5" ry="7" transform="rotate(-2 212 84)"/>
+  <path class="c" fill="#5FBF73" stroke-width="6.75" d="M46,154 L354,154 C362,154 364,160 363,168 C356,238 322,306 262,340 C222,362 178,362 138,340 C78,306 44,238 37,168 C36,160 38,154 46,154 Z"/>
+  <path class="c" fill="#D9F2D0" stroke-width="3.75" d="M52,168 L348,168 C340,240 306,300 252,330 C218,349 182,349 148,330 C94,300 60,240 52,168 Z"/>
+  <path class="c" fill="#FF6B6B" stroke-width="2.63" d="M70,184 L150,184 C146,240 138,272 124,300 C96,276 76,232 70,184 Z"/>
+  <path class="c" fill="#FF6B6B" stroke-width="2.63" d="M150,184 L250,184 C254,240 262,272 276,300 C252,320 226,330 200,330 C174,330 148,320 124,300 C138,272 146,240 150,184 Z"/>
+  <path class="c" fill="#FF6B6B" stroke-width="2.63" d="M250,184 L330,184 C324,232 304,276 276,300 C262,272 254,240 250,184 Z"/>
+  <ellipse class="c" fill="#3a3a3a" stroke-width="1.88" cx="110" cy="222" rx="6" ry="9" transform="rotate(-24 110 222)"/>
+  <ellipse class="c" fill="#3a3a3a" stroke-width="1.88" cx="176" cy="238" rx="6" ry="9" transform="rotate(-8 176 238)"/>
+  <ellipse class="c" fill="#3a3a3a" stroke-width="1.88" cx="226" cy="240" rx="6" ry="9" transform="rotate(8 226 240)"/>
+  <ellipse class="c" fill="#3a3a3a" stroke-width="1.88" cx="290" cy="224" rx="6" ry="9" transform="rotate(24 290 224)"/>
+  <ellipse fill="#3a3a3a" stroke="none" cx="142" cy="272" rx="5" ry="8" transform="rotate(-18 142 272)"/>
+  <ellipse fill="#3a3a3a" stroke="none" cx="200" cy="286" rx="5" ry="8"/>
+  <ellipse fill="#3a3a3a" stroke="none" cx="258" cy="272" rx="5" ry="8" transform="rotate(18 258 272)"/>
+  </svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+  <path fill="none" stroke-width="2.25" d="M206,46 C240,40 262,52 264,76 C264,92 250,96 244,84 C240,74 250,68 256,74"/>
+  <path class="c" fill="#8B5A2B" stroke-width="3.75" d="M190,120 L186,44 C186,36 192,32 200,32 C208,32 214,36 214,44 L210,120 Z"/>
+  <path class="c" fill="#7BC96F" stroke-width="4.5" d="M182,92 C150,56 96,48 58,72 C64,120 112,148 164,132 C172,120 178,106 182,92 Z"/>
+  <path fill="none" stroke-width="1.88" d="M170,100 C136,96 100,92 72,80 M150,124 C130,110 112,96 96,84"/>
+  <path class="c" fill="#7BC96F" stroke-width="4.5" d="M218,92 C250,56 304,48 342,72 C336,120 288,148 236,132 C228,120 222,106 218,92 Z"/>
+  <path fill="none" stroke-width="1.88" d="M230,100 C264,96 300,92 328,80 M250,124 C270,110 288,96 304,84"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="108" cy="164" rx="37" ry="39" transform="rotate(-10 108 164)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="172" cy="158" rx="38" ry="40" transform="rotate(6 172 158)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="236" cy="160" rx="38" ry="39" transform="rotate(-6 236 160)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="298" cy="166" rx="36" ry="38" transform="rotate(10 298 166)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="138" cy="226" rx="38" ry="40" transform="rotate(8 138 226)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="204" cy="222" rx="40" ry="41" transform="rotate(-6 204 222)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="268" cy="226" rx="38" ry="39" transform="rotate(8 268 226)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="170" cy="288" rx="39" ry="40" transform="rotate(-8 170 288)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="238" cy="288" rx="39" ry="40" transform="rotate(8 238 288)"/>
+  <ellipse class="c" fill="#9B5DE5" stroke-width="4.5" cx="204" cy="334" rx="35" ry="36"/>
+  </svg>
