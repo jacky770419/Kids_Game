@@ -288,11 +288,13 @@ body.coloring #selectScreen {
   min-width: auto;
 }
 
-/* 著色頁的縮圖牆：圖多（39 張），橫向平板要盡量一列多放幾張，不要沿用拼圖頁的 900px 上限 */
+/* 著色頁的縮圖牆：圖多（42 張），橫向平板要盡量一列多放幾張，不要沿用拼圖頁的 900px 上限。
+   .pic-thumb 本體（白底墨線硬陰影＋微歪）沿用拼圖頁定義，這裡只調欄寬與間距。
+   間距要放得下 6px 硬陰影與 -10px 的刪除鈕，所以比拼圖頁窄、但不能太擠 */
 body.coloring .pic-grid {
   max-width: none;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+  gap: 22px;
 }
 
 .c-select-scroll {
@@ -334,6 +336,7 @@ body.coloring #gameScreen {
   width: 100%;
 }
 
+/* 刪除鈕：粉色圓貼紙，墨線＋硬陰影 */
 .pic-del {
   position: absolute;
   top: -10px;
@@ -342,45 +345,51 @@ body.coloring #gameScreen {
   height: 52px;
   border-radius: 50%;
   font-size: 24px;
-  background: #FFAAA5;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  background: #FF8FA3;
+  border: 4px solid #2b2b2b;
+  box-shadow: 3px 3px 0 #2b2b2b;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.pic-del:active { transform: scale(0.9); }
+.pic-del:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
 
-/* 最後一格：上傳照片 */
+/* 最後一格：上傳照片。它自己也帶 .pic-thumb，白底墨線圓角硬陰影都繼承，只換底色 */
 .pic-upload {
   aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-size: 64px;
+  gap: 6px;
+  font-size: 54px;
   line-height: 1;
-  background: linear-gradient(160deg, #FFF3C4, #FFE08A);
+  background: #FFD93D;
 }
 
 .pic-upload-txt {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
-  color: #8a6f4a;
+  color: #2b2b2b;
 }
 
 /* 「畫到一半」角標：縮圖右下角一支小蠟筆，不吃觸控（點下去要開圖） */
 .pic-wip {
   position: absolute;
-  right: -8px;
-  bottom: -8px;
-  width: 46px;
-  height: 46px;
+  right: -14px;
+  bottom: -14px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: #FFE083;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  background: #FFD93D;
+  border: 4px solid #2b2b2b;
+  box-shadow: 3px 3px 0 #2b2b2b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,35 +404,48 @@ body.coloring #gameScreen {
   margin: 4px 0 20px;
 }
 
+/* 區段標題＝紫色膠囊貼紙（白字＋墨影），要 inline-block 才不會撐滿整列 */
 .art-sec-title {
-  font-size: 26px;
+  display: inline-block;
+  font-size: 24px;
   font-weight: 800;
-  color: #8a6f4a;
-  margin: 0 0 10px 6px;
+  color: #fff;
+  background: #A78BFA;
+  border: 4px solid #2b2b2b;
+  border-radius: 999px;
+  box-shadow: 4px 4px 0 #2b2b2b;
+  text-shadow: 3px 3px 0 #2b2b2b;
+  padding: 6px 18px;
+  margin: 0 0 14px 6px;
 }
 
 .artwork-row {
   display: flex;
-  gap: 14px;
+  gap: 22px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 4px 4px 10px;
+  padding: 6px 8px 16px;
 }
 
+/* 跟選圖牆同一套貼紙：白底墨線＋硬陰影 */
 .artwork-thumb {
   flex: 0 0 auto;
   width: 132px;
   height: 132px;
-  border-radius: 24px;
+  border-radius: 22px;
   overflow: hidden;
   padding: 0;
   line-height: 0;
   background: #fff;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
-  transition: transform 0.12s ease;
+  border: 5px solid #2b2b2b;
+  box-shadow: 6px 6px 0 #2b2b2b;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
-.artwork-thumb:active { transform: scale(0.94); }
+.artwork-thumb:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
 
 .artwork-thumb img {
   width: 100%;
@@ -432,12 +454,14 @@ body.coloring #gameScreen {
   background: #fff;
 }
 
-/* 作品檢視 overlay：大圖 + 三顆大鈕（沿用 .overlay / .big-btn 的木質童趣風） */
+/* 作品檢視 overlay：大圖 + 三顆大鈕（沿用共用的 .overlay / .big-btn） */
 #artOverlay img {
   max-width: 78vw;
   max-height: 54vh;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border: 6px solid #2b2b2b;
+  border-radius: 22px;
+  box-shadow: 10px 10px 0 #2b2b2b;
 }
 
 /* .big-btn.plain → 移到共用元件 */
@@ -449,9 +473,10 @@ body.coloring #gameScreen {
   align-items: center;
   gap: 18px;
   padding: 22px 28px;
-  border-radius: 26px;
-  background: #FFF7E4;
-  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 22px;
+  background: #fff;
+  border: 6px solid #2b2b2b;
+  box-shadow: 10px 10px 0 #2b2b2b;
 }
 
 .art-confirm[hidden] { display: none; }
@@ -459,10 +484,13 @@ body.coloring #gameScreen {
 .art-confirm-txt {
   font-size: 26px;
   font-weight: 800;
-  color: #7a6350;
+  color: #2b2b2b;
 }
 
-/* 紙 = 整個 #svgHolder：白紙滿版鋪滿可用區，不留邊、不圓角、不陰影 */
+/* 紙 = 整個 #svgHolder：白紙滿版鋪滿可用區。
+   墨線走 outline + 負 offset 畫在紙的內緣——不能用 border/padding，
+   js/coloring.js 的 sizeArt() 是量這個元素的外框算 #paintLayer 尺寸，
+   一加內距筆畫座標就會整個偏掉。 */
 #svgHolder {
   flex: 1;
   display: flex;
@@ -472,6 +500,8 @@ body.coloring #gameScreen {
   min-height: 0;
   min-width: 0;
   background: #fff;
+  outline: 6px solid #2b2b2b;
+  outline-offset: -6px;
   touch-action: none;
 }
 
@@ -537,53 +567,56 @@ body.coloring #gameScreen {
   transition: fill 0.12s ease;
 }
 
-/* ===== 右側木紋直立工具列 ===== */
+/* ===== 右側直立工具列 ===== */
+/* 黃色貼紙底 + 左緣一道墨線把紙跟工具列切開（取代原本的木紋）。
+   寬度是 CSS 說了算、JS 不讀：橫向 1194 扣掉 150 還有 1044，紙的正方形取 min = 834；
+   直向 834 扣掉 110 還有 724，正方形 724 ≥ 700，都夠大。 */
 #toolbar {
-  flex: 0 0 118px;
-  width: 118px;
+  flex: 0 0 150px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   overflow-y: auto;
-  border-left: 6px solid #B98A4B;
-  /* 木紋：兩層重複漸層做出深淺木理，不用外部圖片 */
-  background:
-    repeating-linear-gradient(180deg, rgba(160, 112, 58, 0.16) 0 3px, rgba(160, 112, 58, 0) 3px 13px),
-    repeating-linear-gradient(180deg, rgba(140, 96, 46, 0.09) 0 1px, rgba(140, 96, 46, 0) 1px 6px),
-    linear-gradient(90deg, #F3E3A8 0%, #E9D18A 46%, #EFDC9C 100%);
-  padding: calc(12px + env(safe-area-inset-top)) 6px calc(12px + env(safe-area-inset-bottom));
-  padding-right: calc(6px + env(safe-area-inset-right));
+  background: #FFD93D;
+  border-left: 6px solid #2b2b2b;
+  padding: calc(16px + env(safe-area-inset-top)) 8px calc(16px + env(safe-area-inset-bottom));
+  padding-right: calc(8px + env(safe-area-inset-right));
 }
 
 .tb-gap { flex: 1; min-height: 6px; }
 
 .tb-row {
   display: flex;
-  gap: 6px;
+  gap: 8px;
   justify-content: center;
 }
 
-/* 小方鈕（52px，圓角 12px） */
+/* 小方鈕（56px，圓角 14px，墨線＋硬陰影） */
 .tb-sq {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
   font-size: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18);
-  transition: transform 0.1s ease;
+  border: 4px solid #2b2b2b;
+  box-shadow: 4px 4px 0 #2b2b2b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.tb-sq:active { transform: scale(0.9); }
+.tb-sq:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
 
-.tb-green  { background: #8BD97F; }
-.tb-blue   { background: #7FC4F5; }
-.tb-red    { background: #FFAFA8; }
-.tb-yellow { background: #FFE083; }
+.tb-green  { background: #7BE495; }
+.tb-blue   { background: #5DADE2; }
+.tb-red    { background: #FF8FA3; }
+.tb-yellow { background: #FFD93D; }
 .tb-plain  { background: #FFFFFF; }
 
 .tb-sq[disabled] {
@@ -592,42 +625,47 @@ body.coloring #gameScreen {
   cursor: default;
 }
 
-/* 大圓鈕（90px） */
+/* 大圓鈕（104px）：白底墨線＋硬陰影 */
 .tb-round {
-  width: 90px;
-  height: 90px;
+  width: 104px;
+  height: 104px;
   flex: 0 0 auto;
   border-radius: 50%;
-  border: 3px solid #3F51B5;
-  background: linear-gradient(160deg, #CDE6FB, #8FC4EE);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.16);
-  transition: transform 0.1s ease;
-}
-
-.tb-round:active { transform: scale(0.93); }
-
-.tb-round .tb-inner {
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
+  border: 5px solid #2b2b2b;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 34px;
+  box-shadow: 5px 5px 0 #2b2b2b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.tb-round:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
+
+/* 圖示直接放在鈕面上，不再套一層白色內圓 */
+.tb-round .tb-inner {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
   line-height: 1;
 }
 
-/* 顏色鈕：整顆填成目前顏色（或花紋），白色內圈 + 深藍外框 */
+/* 顏色鈕：整顆填成目前顏色（或花紋），永遠帶著「白圈黑圈」表示這是目前色 */
 .tb-color {
-  border: 5px solid #fff;
-  box-shadow: 0 0 0 3px #3F51B5, 0 5px 0 rgba(0, 0, 0, 0.16);
   background: #FF0000;
   overflow: hidden;
   padding: 0;
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px #2b2b2b, 5px 5px 0 10px #2b2b2b;
+}
+
+.tb-color:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px #2b2b2b;
 }
 
 .tb-color svg {
@@ -636,29 +674,30 @@ body.coloring #gameScreen {
   display: block;
 }
 
-/* 橡皮擦開啟時：亮橘外框並放大一點 */
-.tb-round.eraser-on {
-  border-color: #FF8A00;
-  transform: scale(1.08);
-  box-shadow: 0 0 0 4px #FFD9A6, 0 5px 0 rgba(0, 0, 0, 0.16);
+/* 開啟中的模式（工具／印章／橡皮擦）＝外面再套一圈白圈黑圈，
+   位置不動（不再放大），免得跟旁邊的鈕撞在一起 */
+.tb-round.eraser-on,
+.tb-round.stamp-on {
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px #2b2b2b, 5px 5px 0 10px #2b2b2b;
 }
 
-/* 蓋章模式開啟時：亮綠外框並放大一點（跟橡皮擦同一套視覺語言） */
-.tb-round.stamp-on {
-  border-color: #2E9E5B;
-  transform: scale(1.08);
-  box-shadow: 0 0 0 4px #B6EBC9, 0 5px 0 rgba(0, 0, 0, 0.16);
+.tb-round.eraser-on:active,
+.tb-round.stamp-on:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px #2b2b2b;
 }
 
 /* ===== 彈出面板（工具面板 / 色盤面板共用） ===== */
+/* 白底貼紙面板。position:fixed 與箭頭的 right:-14px 是 js/coloring.js
+   positionPanel() 依賴的幾何，只換皮不能換排版機制。 */
 .panel {
   position: fixed;
   z-index: 60;
-  background: #E8ECF8;
-  border: 3px solid #9AA6D6;
+  background: #fff;
+  border: 6px solid #2b2b2b;
   border-radius: 22px;
-  padding: 14px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  padding: 18px;
+  box-shadow: 10px 10px 0 #2b2b2b;
   max-height: calc(100vh - 16px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -670,9 +709,9 @@ body.coloring #gameScreen {
   right: -14px;
   width: 24px;
   height: 24px;
-  background: #E8ECF8;
-  border-top: 3px solid #9AA6D6;
-  border-right: 3px solid #9AA6D6;
+  background: #fff;
+  border-top: 6px solid #2b2b2b;
+  border-right: 6px solid #2b2b2b;
   border-radius: 0 6px 0 0;
   transform: rotate(45deg);
 }
@@ -686,27 +725,30 @@ body.coloring #gameScreen {
 }
 
 .tool-item {
-  height: 68px;
+  height: 70px;
   border-radius: 16px;
   background: #fff;
+  border: 4px solid #2b2b2b;
   display: flex;
   align-items: center;
   gap: 14px;
   padding: 0 16px;
   font-size: 24px;
   font-weight: 800;
-  color: #5a4a38;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+  color: #2b2b2b;
+  box-shadow: 4px 4px 0 #2b2b2b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .tool-item .tool-emoji { font-size: 34px; line-height: 1; }
 
-.tool-item.selected {
-  background: #FFF0B8;
-  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
-}
+/* 選中＝黃底貼紙（跟拼圖／單字頁的選中態同一種黃） */
+.tool-item.selected { background: #FFD93D; }
 
-.tool-item:active { transform: scale(0.96); }
+.tool-item:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
 
 /* 筆的粗細：工具列表下面加一排「最細／細／中／粗」，四格塞進跟上面一樣的 210px 寬 */
 .tool-size-row {
@@ -714,22 +756,24 @@ body.coloring #gameScreen {
   gap: 8px;
   justify-content: center;
   width: 210px;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 3px dashed #C3CBE8;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 4px dashed #2b2b2b;
 }
 
 .tool-size-cell {
   width: 46px;
-  height: 60px;
+  height: 64px;
   border-radius: 14px;
   background: #fff;
+  border: 4px solid #2b2b2b;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+  gap: 4px;
+  box-shadow: 3px 3px 0 #2b2b2b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .tool-size-cell canvas {
@@ -742,16 +786,16 @@ body.coloring #gameScreen {
 .tool-size-txt {
   font-size: 12px;
   font-weight: 800;
-  color: #5a4a38;
+  color: #2b2b2b;
   line-height: 1;
 }
 
-.tool-size-cell:active { transform: scale(0.94); }
-
-.tool-size-cell.selected {
-  background: #FFF0B8;
-  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+.tool-size-cell:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #2b2b2b;
 }
+
+.tool-size-cell.selected { background: #FFD93D; }
 
 /* 印章面板：3 欄 */
 .stamp-grid {
@@ -766,25 +810,27 @@ body.coloring #gameScreen {
   height: 84px;
   border-radius: 16px;
   background: #fff;
+  border: 4px solid #2b2b2b;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 4px 4px 0 #2b2b2b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .stamp-cell canvas {
-  width: 72px;
-  height: 72px;
+  width: 68px;
+  height: 68px;
   display: block;
   pointer-events: none;
 }
 
-.stamp-cell:active { transform: scale(0.94); }
-
-.stamp-cell.selected {
-  background: #FFF0B8;
-  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+.stamp-cell:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 #2b2b2b;
 }
+
+.stamp-cell.selected { background: #FFD93D; }
 
 /* 印章大小：面板底下一列「小 / 中 / 大」 */
 .stamp-size-row {
@@ -793,7 +839,7 @@ body.coloring #gameScreen {
   justify-content: center;
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 3px dashed #C3CBE8;
+  border-top: 4px dashed #2b2b2b;
 }
 
 .stamp-size-cell {
@@ -801,17 +847,19 @@ body.coloring #gameScreen {
   height: 84px;
   border-radius: 16px;
   background: #fff;
+  border: 4px solid #2b2b2b;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+  gap: 4px;
+  box-shadow: 4px 4px 0 #2b2b2b;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .stamp-size-cell canvas {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   display: block;
   pointer-events: none;
 }
@@ -819,74 +867,65 @@ body.coloring #gameScreen {
 .stamp-size-txt {
   font-size: 17px;
   font-weight: 800;
-  color: #5a4a38;
+  color: #2b2b2b;
   line-height: 1;
 }
 
-.stamp-size-cell:active { transform: scale(0.94); }
-
-.stamp-size-cell.selected {
-  background: #FFF0B8;
-  box-shadow: 0 0 0 3px #E9B84A inset, 0 3px 0 rgba(0, 0, 0, 0.12);
+.stamp-size-cell:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 #2b2b2b;
 }
+
+.stamp-size-cell.selected { background: #FFD93D; }
 
 /* 色盤面板：8 欄 x 7 列 */
 .color-grid {
   display: grid;
-  grid-template-columns: repeat(8, 56px);
+  grid-template-columns: repeat(8, 52px);
   gap: 10px;
-  padding: 6px;
+  padding: 4px;
 }
 
 .color-cell {
   position: relative;
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.10) inset;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  border: 4px solid #2b2b2b;
   overflow: visible;
+  transition: transform 0.1s ease;
 }
 
 .color-cell:active { transform: scale(0.9); }
 
-/* 選中的格子右上角疊一個 ✔ 橘色小圓徽章 */
-.color-cell.selected::after {
-  content: '✔';
-  position: absolute;
-  top: -7px;
-  right: -7px;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #FF8A00;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 0 2px #fff;
+/* 選中＝外面套一圈白圈黑圈（取代原本的橘色 ✔ 徽章） */
+.color-cell.selected {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px #2b2b2b;
+  z-index: 1;
 }
+
+.color-cell.selected::after { content: none; }
 
 /* 花紋列（沿用把 tile 直接塞進 svg 的作法） */
 .pattern-row {
   display: grid;
-  grid-template-columns: repeat(6, 56px);
+  grid-template-columns: repeat(6, 52px);
   gap: 10px;
-  padding: 12px 6px 6px;
-  margin-top: 8px;
-  border-top: 3px dashed #B9C2E4;
+  padding: 14px 4px 4px;
+  margin-top: 10px;
+  border-top: 4px dashed #2b2b2b;
   justify-content: center;
 }
 
 .pattern-cell {
   position: relative;
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.10) inset;
+  border: 4px solid #2b2b2b;
+  transition: transform 0.1s ease;
 }
 
 .pattern-cell svg {
@@ -895,41 +934,47 @@ body.coloring #gameScreen {
   display: block;
 }
 
+.pattern-cell:active { transform: scale(0.9); }
+
+/* 選中＝跟色票同一套白圈黑圈 */
 .pattern-cell.selected {
   overflow: visible;
-  box-shadow: 0 0 0 3px #FF8A00;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px #2b2b2b;
+  z-index: 1;
 }
 
-.pattern-cell.selected::after {
-  content: '✔';
-  position: absolute;
-  top: -7px;
-  right: -7px;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #FF8A00;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 0 2px #fff;
-}
+.pattern-cell.selected::after { content: none; }
 
-.pattern-cell.selected svg { border-radius: 8px; }
+.pattern-cell.selected svg { border-radius: 6px; }
 
-/* 直式視窗：工具列仍在右側，縮窄成一欄 */
+/* 直式視窗：工具列仍在右側，縮窄成一欄。
+   110 寬 → 紙還有 834-110=724 寬，正方形 724 ≥ 700，夠大。
+   左右內距歸零、大圓鈕收成 82、外圈收成 4px 白 + 3px 黑（共 96），
+   才不會頂到工具列兩側（可用寬只有 110-6=104）。 */
 @media (orientation: portrait) {
   #toolbar {
-    flex-basis: 92px;
-    width: 92px;
-    gap: 10px;
+    flex-basis: 110px;
+    width: 110px;
+    gap: 12px;
+    padding-left: 0;
+    padding-right: env(safe-area-inset-right);
   }
   .tb-row { flex-direction: column; }
-  .tb-round { width: 78px; height: 78px; }
-  .tb-round .tb-inner { width: 58px; height: 58px; font-size: 30px; }
+  .tb-sq { width: 52px; height: 52px; font-size: 24px; }
+  .tb-round { width: 82px; height: 82px; }
+  .tb-round .tb-inner { font-size: 36px; }
+
+  .tb-color,
+  .tb-round.eraser-on,
+  .tb-round.stamp-on {
+    box-shadow: 0 0 0 4px #fff, 0 0 0 7px #2b2b2b, 5px 5px 0 7px #2b2b2b;
+  }
+
+  .tb-color:active,
+  .tb-round.eraser-on:active,
+  .tb-round.stamp-on:active {
+    box-shadow: 0 0 0 4px #fff, 0 0 0 7px #2b2b2b;
+  }
 }
 
 /* ===== 拼圖頁 ===== */
