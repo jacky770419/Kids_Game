@@ -37,6 +37,8 @@ https://creativecommons.org/licenses/by/4.0/
 |---|---|---|
 | `assets/pictures/animals/*.svg`（拼圖用） | Kenney「Animal Pack Redux」 https://kenney.nl/assets/animal-pack-redux（由向量總表切割） | CC0 |
 | `assets/pictures/*.svg`（其餘） | 本專案自製 | 隨專案 |
+| `assets/pictures/fruits/*.svg`（單字遊戲用） | 本專案自製：由 `js/lineart-food.js` 的水果線稿上色另存 | 隨專案 |
+| `assets/data/words.json` | 本專案自製 | 隨專案 |
 | `js/lineart-data.js`、`js/lineart-animals.js`、`js/lineart-fantasy.js`、`js/lineart-food.js` | 本專案自製 | 隨專案 |
 
 > `js/lineart-animals.js` 早期版本是由 Kenney 的向量總表改作的，但那套用「放大版剪影墊底」
