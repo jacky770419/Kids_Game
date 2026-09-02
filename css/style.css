@@ -305,7 +305,7 @@ body.coloring .pic-grid {
   padding-right: calc(20px + env(safe-area-inset-right));
 }
 
-/* 遊戲畫面：左邊畫布、右邊木紋工具列 */
+/* 遊戲畫面：左邊畫布、右邊黃色貼紙風工具列 */
 body.coloring #gameScreen {
   display: flex;
   flex-direction: row;

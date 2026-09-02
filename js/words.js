@@ -412,7 +412,7 @@
   function launchConfetti() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    const colors = ['#EF476F', '#FFD166', '#06D6A0', '#118AB2', '#F78CB6', '#9B5DE5'];
+    const colors = ['#FF6B6B', '#FFD93D', '#4ECDC4', '#A78BFA', '#7BE495', '#5DADE2', '#FF8FA3']; // 貼紙書主色
     const parts = [];
     for (let i = 0; i < 130; i++) {
       parts.push({
