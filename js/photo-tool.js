@@ -143,14 +143,16 @@ const PhotoTool = (() => {
     return { stencilCanvas: stencil, edgeMask: mask, size: SIZE };
   }
 
-  // 從已存的線稿 PNG（透明底黑線）還原出 edgeMask，重新開啟舊照片時用
+  // 從已存的線稿 PNG（透明底黑線）還原出 edgeMask，重新開啟舊照片時用。
+  // 線稿 PNG 可以比 SIZE 大（內建場景是 1600，顯示才不糊），遮罩一律縮到 SIZE 算；
+  // 線的半透明邊緣（alpha ≤ 128）不算線，所以線條圖層永遠蓋得住遮罩，填色邊緣不會露白圈。
   function maskFromStencil(img) {
     const c = document.createElement('canvas');
-    c.width = img.width; c.height = img.height;
+    c.width = SIZE; c.height = SIZE;
     const ctx = c.getContext('2d');
-    ctx.drawImage(img, 0, 0);
-    const data = ctx.getImageData(0, 0, img.width, img.height).data;
-    const mask = new Uint8Array(img.width * img.height);
+    ctx.drawImage(img, 0, 0, SIZE, SIZE);
+    const data = ctx.getImageData(0, 0, SIZE, SIZE).data;
+    const mask = new Uint8Array(SIZE * SIZE);
     for (let i = 0, p = 0; i < data.length; i += 4, p++) mask[p] = data[i + 3] > 128 ? 1 : 0;
     return mask;
   }

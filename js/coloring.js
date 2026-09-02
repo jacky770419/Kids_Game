@@ -811,10 +811,12 @@
       ctx = paintCanvas.getContext('2d');
       bindPaintEvents();
 
+      // 線條圖層跟著圖片的解析度走（內建場景是 1600，iPad 兩倍像素密度才不糊）；
+      // CSS 尺寸還是 --sq，填色遮罩仍是 CANVAS_SIZE，兩者靠比例對位
       const lineCanvas = document.createElement('canvas');
       lineCanvas.id = 'lineLayer';
-      lineCanvas.width = CANVAS_SIZE;
-      lineCanvas.height = CANVAS_SIZE;
+      lineCanvas.width = img.naturalWidth || CANVAS_SIZE;
+      lineCanvas.height = img.naturalHeight || CANVAS_SIZE;
       lineCanvas.getContext('2d').drawImage(img, 0, 0);
       artWrap.appendChild(lineCanvas);
 
