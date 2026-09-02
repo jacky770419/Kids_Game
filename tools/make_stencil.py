@@ -3,12 +3,15 @@
 # 線條會加粗約 1px（以 800 遮罩座標計），跟 photo-tool 上傳照片時的 dilate 一致。
 # 用法：python tools/make_stencil.py assets/lineart-src/xxx.png assets/lineart/xxx.png [x1,y1,x2,y2 ...補缺口的線段（800 座標）]
 # 跑完會印封閉區數量與天空／雲兩個抽樣點是否分離；只需要 Pillow 與 numpy。
-import sys, numpy as np
+# 加 --debug-regions：另存 <dst>.regions.png，每個封閉區隨機上色（最大區留白），肉眼抓漏色用。
+import sys, random, numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 from collections import deque
 MASK=800
-src,dst=sys.argv[1],sys.argv[2]
-bridges=[tuple(map(int,b.split(','))) for b in sys.argv[3:]]
+args=[a for a in sys.argv[1:] if a!='--debug-regions']
+debug='--debug-regions' in sys.argv
+src,dst=args[0],args[1]
+bridges=[tuple(map(int,b.split(','))) for b in args[2:]]
 img=Image.open(src).convert('L')
 L=1600 if max(img.size)<=1600 else min(max(img.size),2048)
 s=min(L/img.width,L/img.height); w,h=round(img.width*s),round(img.height*s)
@@ -39,3 +42,15 @@ for y in range(MASK):
 sizes=np.array(sizes)
 print('line png',L,'x',L,' mask line ratio',round(m.mean(),3))
 print('regions',n,'>=900:',(sizes>=900).sum(),'sky(600,40)=',lab[40,600],'cloud(700,265)=',lab[265,700],'same' if lab[40,600]==lab[265,700] else 'SEPARATED')
+
+if debug and n>0:
+  biggest=1+int(np.argmax(sizes))
+  rng=random.Random(0)
+  colors={biggest:(255,255,255)}
+  out_rgb=np.full((MASK,MASK,3),40,np.uint8)  # 線條底色深灰，區塊蓋上去
+  for i in range(1,n+1):
+    if i not in colors: colors[i]=tuple(rng.randint(60,255) for _ in range(3))
+  for i,c in colors.items():
+    out_rgb[lab==i]=c
+  Image.fromarray(out_rgb,'RGB').save(dst+'.regions.png')
+  print('debug regions saved:',dst+'.regions.png')
