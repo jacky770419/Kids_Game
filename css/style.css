@@ -948,31 +948,47 @@ body.puzzle {
 
 .select-hint {
   text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  color: #a08b76;
-  margin-bottom: 14px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #8a7f70;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
 }
 
 .pic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
+  gap: 26px;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* 貼紙縮圖：白底墨線＋硬陰影，每張各自歪一點點，像手貼上去的 */
 .pic-thumb {
-  border-radius: 24px;
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
+  border: 5px solid #2b2b2b;
+  box-shadow: 6px 6px 0 #2b2b2b;
   padding: 0;
-  transition: transform 0.12s ease;
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
   line-height: 0;
 }
 
-.pic-thumb:active { transform: scale(0.94); }
+/* 六張一循環的歪法，相鄰兩張不會歪同一邊 */
+.pic-thumb:nth-child(6n + 1) { --rot: -2deg; }
+.pic-thumb:nth-child(6n + 2) { --rot: 1.5deg; }
+.pic-thumb:nth-child(6n + 3) { --rot: -1deg; }
+.pic-thumb:nth-child(6n + 4) { --rot: 2deg; }
+.pic-thumb:nth-child(6n + 5) { --rot: -1.5deg; }
+.pic-thumb:nth-child(6n + 6) { --rot: 1deg; }
+
+/* 按下＝往陰影方向壓下去，歪的角度留著 */
+.pic-thumb:active {
+  transform: rotate(var(--rot, 0deg)) translate(6px, 6px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
 
 .pic-thumb img {
   width: 100%;
@@ -987,11 +1003,15 @@ body.puzzle {
   touch-action: none;
 }
 
+/* 拼圖板：方的白底貼紙。
+   墨線走 outline（畫在框外、不吃版面），不能用 border——
+   puzzle.js 是照 board 的外框尺寸算每一片的落點，border 會把格線與底圖往內推 6px。 */
 #board {
   position: absolute;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 12px;
-  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.8);
+  background: #fff;
+  border-radius: 0;
+  outline: 6px solid #2b2b2b;
+  box-shadow: 12px 12px 0 6px #2b2b2b;
 }
 
 #board .ghost {
@@ -1000,23 +1020,28 @@ body.puzzle {
   width: 100%;
   height: 100%;
   opacity: 0.22;
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 #board .cell {
   position: absolute;
-  border: 2px dashed rgba(120, 100, 80, 0.35);
+  border: 4px dashed rgba(43, 43, 43, 0.35);
 }
 
+/* 拼圖片：同理用 outline 當墨線，left/top 的幾何完全不受影響 */
 .piece {
   position: absolute;
-  border-radius: 8px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  outline: 5px solid #2b2b2b;
+  outline-offset: -5px;
+  box-shadow: 8px 8px 0 #2b2b2b;
   touch-action: none;
   z-index: 5;
 }
 
+/* 拼好就變平：墨線與陰影都收掉，融進拼圖板 */
 .piece.locked {
+  outline: none;
   box-shadow: none;
   border-radius: 0;
   z-index: 1;
@@ -1024,7 +1049,7 @@ body.puzzle {
 }
 
 .piece.dragging {
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.3);
+  box-shadow: 12px 12px 0 #2b2b2b;
   z-index: 50;
 }
 
@@ -1067,9 +1092,9 @@ body.words {
   flex-direction: column;
 }
 
-/* 兩個畫面的頂列右邊都留一個 58px 空位，避開固定在右上角的 .music-fab */
+/* 兩個畫面的頂列右邊都留一個 66px 空位，避開固定在右上角的 .music-fab（跟 .icon-btn 同寬） */
 body.words .bar-gap {
-  width: 58px;
+  width: 66px;
   flex: none;
 }
 
@@ -1091,7 +1116,7 @@ body.words #gameScreen {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: min(60px, 5vw);
+  gap: min(90px, 7vw);
   padding: 0 40px calc(30px + env(safe-area-inset-bottom));
 }
 
@@ -1099,27 +1124,34 @@ body.words #gameScreen {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: 30px;
 }
 
+/* 兩張大貼紙卡：彩色底＋白框＋墨線框＋硬陰影，各自歪一邊 */
 .mode-card {
   position: relative;
   width: min(400px, 38vw, 52vh);
   height: min(400px, 38vw, 52vh);
-  border-radius: 36px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 0;
-  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
-  transition: transform 0.12s ease;
+  border: 6px solid #2b2b2b;
+  box-shadow: 0 0 0 8px #fff, 0 0 0 13px #2b2b2b, 10px 10px 0 13px #2b2b2b;
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
-.mode-card:active { transform: scale(0.95); }
-.mode-match { background: linear-gradient(160deg, #B5E3FF, #7FC4F5); }
-.mode-memory { background: linear-gradient(160deg, #FFE9A8, #FFD166); }
+.mode-card:active {
+  transform: rotate(var(--rot, 0deg)) translate(10px, 10px);
+  box-shadow: 0 0 0 8px #fff, 0 0 0 13px #2b2b2b;
+}
+
+.mode-match { background: #5DADE2; --rot: -2deg; }
+.mode-memory { background: #FFD93D; --rot: 2deg; }
 
 .mode-demo {
   display: flex;
@@ -1127,64 +1159,71 @@ body.words #gameScreen {
   gap: 12px;
 }
 
+/* 卡片裡的示意小卡：一律白底墨線小貼紙 */
 .mode-demo .demo-word,
 .mode-demo .demo-text,
 .mode-demo .demo-pic,
 .mode-demo .demo-back {
-  border-radius: 20px;
+  border-radius: 18px;
   background: #fff;
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
+  border: 5px solid #2b2b2b;
+  box-shadow: 5px 5px 0 #2b2b2b;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  color: #4a3b2a;
+  color: #2b2b2b;
   overflow: hidden;
 }
 
-.mode-demo .demo-word { width: 150px; height: 96px; font-size: 44px; letter-spacing: 3px; }
+.mode-demo .demo-word { width: 150px; height: 96px; font-size: 46px; letter-spacing: 3px; }
 .mode-demo .demo-pic { width: 96px; height: 96px; }
 .mode-demo .demo-pic.tall { width: 96px; height: 112px; }
-.mode-demo .demo-pic img { width: 96px; height: 96px; display: block; }
-.mode-demo .demo-text { width: 96px; height: 112px; font-size: 28px; letter-spacing: 2px; }
+/* 100% 而不是寫死 96px：小卡加了 5px 墨線後內容區只剩 86px，寫死會被框切掉一圈 */
+.mode-demo .demo-pic img { width: 100%; height: auto; display: block; }
+.mode-demo .demo-text { width: 96px; height: 112px; font-size: 28px; letter-spacing: 1px; }
 .mode-demo .demo-arrow {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 900;
   color: #fff;
+  text-shadow: 3px 3px 0 #2b2b2b;
   background: none;
+  border: none;
   box-shadow: none;
 }
 .mode-demo .demo-back {
   width: 96px;
   height: 112px;
-  border-radius: 18px;
-  background: linear-gradient(160deg, #D9C8FF, #B39DDB);
-  font-size: 56px;
+  background: #A78BFA;
+  font-size: 60px;
   color: #fff;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+  text-shadow: 3px 3px 0 #2b2b2b;
 }
 
 .mode-label {
   font-size: 46px;
   font-weight: 800;
   color: #fff;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+  text-shadow: 3px 3px 0 #2b2b2b;
   letter-spacing: 8px;
   padding-left: 8px;
   margin-top: 14px;
 }
 
+/* 「接著玩」＝斜貼在卡片右上角的黃色小貼紙 */
 .resume-badge {
   position: absolute;
-  top: -12px;
-  right: -12px;
+  top: -26px;
+  right: -30px;
   padding: 8px 18px;
   border-radius: 999px;
-  background: #FFE083;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  background: #FFD93D;
+  border: 4px solid #2b2b2b;
+  box-shadow: 4px 4px 0 #2b2b2b;
   font-size: 22px;
   font-weight: 800;
-  color: #7a6350;
+  color: #2b2b2b;
+  transform: rotate(6deg);
 }
 
 .mode-foot {
@@ -1206,7 +1245,7 @@ body.words #gameScreen {
 }
 
 #progress { display: flex; gap: 8px; align-items: center; }
-.star { font-size: 30px; line-height: 1; opacity: 0.25; }
+.star { font-size: 32px; line-height: 1; opacity: 0.25; filter: drop-shadow(2px 2px 0 #2b2b2b); }
 .star.on { opacity: 1; }
 
 /* --- 配對 --- */
@@ -1215,88 +1254,106 @@ body.words #gameScreen {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: min(44px, 5vh);
+  gap: min(50px, 6vh);
 }
 
+/* 題目卡：白底墨線大貼紙，微歪 */
 .word-card {
   display: flex;
   align-items: center;
-  gap: 28px;
-  padding: 22px 40px;
-  border-radius: 36px;
+  gap: 30px;
+  padding: 22px 44px;
+  border-radius: 30px;
   background: #fff;
-  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.12);
+  border: 6px solid #2b2b2b;
+  box-shadow: 12px 12px 0 #2b2b2b;
+  transform: rotate(-1deg);
 }
 
-.word-text-col { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.word-text-col { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 #wordText {
-  font-size: clamp(44px, 9vw, 110px);
+  font-size: clamp(44px, 9vw, 112px);
   font-weight: 900;
   letter-spacing: 8px;
   line-height: 1;
+  color: #2b2b2b;
   text-transform: uppercase;
 }
-#wordZh { font-size: 30px; font-weight: 700; color: #a08b76; letter-spacing: 6px; }
+#wordZh { font-size: 30px; font-weight: 700; color: #8a7f70; letter-spacing: 8px; }
 
 #speakBtn {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  background: #FFE083;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+  background: #FFD93D;
+  border: 6px solid #2b2b2b;
+  box-shadow: 6px 6px 0 #2b2b2b;
   font-size: 60px;
   flex: none;
-  transition: transform 0.12s ease;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
-#speakBtn:active { transform: scale(0.92); }
+#speakBtn:active { transform: translate(6px, 6px); box-shadow: 0 0 0 #2b2b2b; }
 
-#choices { display: flex; gap: 40px; justify-content: center; }
+#choices { display: flex; gap: 46px; justify-content: center; }
 
 .choice {
   position: relative;
   width: min(250px, 20vw, 30vh);
   height: min(250px, 20vw, 30vh);
-  border-radius: 28px;
+  border-radius: 26px;
   background: #fff;
-  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
-  padding: 14px;
-  transition: transform 0.12s ease, opacity 0.2s ease;
+  border: 6px solid #2b2b2b;
+  box-shadow: 10px 10px 0 #2b2b2b;
+  padding: 12px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.2s ease;
 }
 
-.choice img { width: 100%; height: 100%; display: block; border-radius: 18px; object-fit: contain; }
+.choice:not(.correct):active {
+  transform: translate(10px, 10px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
+
+.choice img { width: 100%; height: 100%; display: block; border-radius: 14px; object-fit: contain; }
+
+/* 答對：套上綠色貼紙外框，右上角再貼一枚勾勾徽章 */
 .choice.correct {
-  box-shadow: 0 0 0 8px #8BD97F, 0 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0 8px #7BE495, 0 0 0 14px #2b2b2b, 10px 10px 0 14px #2b2b2b;
   transform: scale(1.06);
 }
 .choice.correct::after {
   content: '✔️';
   position: absolute;
-  top: -18px;
-  right: -18px;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #8BD97F;
-  box-shadow: 0 0 0 4px #fff, 0 4px 0 rgba(0, 0, 0, 0.15);
+  top: -22px;
+  right: -22px;
+  width: 66px;
+  height: 66px;
+  border-radius: 999px;
+  background: #7BE495;
+  border: 5px solid #2b2b2b;
+  box-shadow: 4px 4px 0 #2b2b2b;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 34px;
 }
-.choice.wrong { opacity: 0.45; animation: wordShake 0.4s ease; }
+
+/* 答錯：晃一下，晃完歪著留在那裡（動畫結束後回到 .wrong 自己的 transform） */
+.choice.wrong { opacity: 0.45; transform: rotate(-3deg); animation: wordShake 0.4s ease; }
 
 @keyframes wordShake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-10px); }
-  75% { transform: translateX(10px); }
+  0% { transform: rotate(0deg) translateX(0); }
+  25% { transform: rotate(-3deg) translateX(-10px); }
+  75% { transform: rotate(-3deg) translateX(10px); }
+  100% { transform: rotate(-3deg) translateX(0); }
 }
 
 /* --- 翻牌 --- */
 #memoryGrid {
   --gap: 18px;
+  /* 扣掉的 140px＝頂列 94px（.bar min-height）＋ #playArea 下方留白 20px ＋ 貼紙外框餘裕 */
   --mcard: max(120px, min(
     (100vw - 40px - (var(--cols) - 1) * var(--gap)) / var(--cols),
-    (100vh - 110px - (var(--rows) - 1) * var(--gap)) / var(--rows)
+    (100vh - 140px - (var(--rows) - 1) * var(--gap)) / var(--rows)
   ));
   display: grid;
   grid-template-columns: repeat(var(--cols), var(--mcard));
@@ -1325,28 +1382,32 @@ body.words #gameScreen {
 .mcard-back, .mcard-front {
   position: absolute;
   inset: 0;
-  border-radius: 24px;
+  border-radius: 22px;
+  border: 5px solid #2b2b2b;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 8px 8px 0 #2b2b2b;
   overflow: hidden;
 }
 
 .mcard-back {
-  background: linear-gradient(160deg, #D9C8FF, #B39DDB);
+  background: #A78BFA;
   font-size: clamp(40px, 8vw, 96px);
   font-weight: 900;
   color: #fff;
-  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.18);
+  text-shadow: 4px 4px 0 #2b2b2b;
 }
 
+/* 翻過來的正面：自己再轉 180°，跟外層的 180° 抵銷，所以陰影方向不會被鏡射 */
 .mcard-front {
   background: #fff;
   transform: rotateY(180deg);
-  padding: 10px;
+  /* 5px：墨線邊框已經吃掉左右各 5px，padding 從 10 收到 5 把可用寬度補回來——
+     words.js 的字級算式是照「--mcard - 24px」抓的，不能讓實際可用寬低於它 */
+  padding: 5px;
   /* 字級由 words.js 依單字長度算好塞進 --fs，長字（STRAWBERRY）也不會被切行 */
   font-size: var(--fs, 32px);
   font-weight: 900;
@@ -1354,15 +1415,17 @@ body.words #gameScreen {
   text-align: center;
   white-space: nowrap;
 }
-.mcard-front img { width: 100%; height: 100%; display: block; border-radius: 16px; object-fit: contain; }
+.mcard-front img { width: 100%; height: 100%; display: block; border-radius: 14px; object-fit: contain; }
 
-.mcard.matched .mcard-front { box-shadow: 0 0 0 7px #8BD97F, 0 8px 0 rgba(0, 0, 0, 0.12); }
-.mcard.wrong .mcard-front { box-shadow: 0 0 0 7px #FFE083, 0 8px 0 rgba(0, 0, 0, 0.12); }
+/* 配對成功／猜錯：套綠環／黃環貼紙框 */
+.mcard.matched .mcard-front { box-shadow: 0 0 0 7px #7BE495, 0 0 0 12px #2b2b2b, 8px 8px 0 12px #2b2b2b; }
+.mcard.wrong .mcard-front { box-shadow: 0 0 0 7px #FFD93D, 0 0 0 12px #2b2b2b, 8px 8px 0 12px #2b2b2b; }
 
 /* --- 直向 --- */
 @media (orientation: portrait) {
-  .mode-row { flex-direction: column; gap: 24px; }
+  .mode-row { flex-direction: column; gap: 34px; }
   .mode-card { width: min(400px, 70vw, 32vh); height: min(400px, 70vw, 32vh); }
+  #wordText { font-size: clamp(40px, 9vw, 92px); }
   #choices {
     display: grid;
     grid-template-columns: repeat(2, min(270px, 38vw));

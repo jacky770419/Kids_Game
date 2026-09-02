@@ -220,6 +220,10 @@
         ctx.rotate(p.rot);
         ctx.fillStyle = p.color;
         ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        // 貼紙書風格：每片碎紙都描一圈墨線
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#2b2b2b';
+        ctx.strokeRect(-p.w / 2, -p.h / 2, p.w, p.h);
         ctx.restore();
       });
       if (t - start < 3500) {
