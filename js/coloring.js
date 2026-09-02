@@ -133,6 +133,9 @@
         ...(window.LINEART_ANIMALS || []),
         ...(window.LINEART_FOOD || [])
       ].map(x => ({ type: 'vector', name: x.name, svg: x.svg })),
+      // 場景系列是內建的點陣線稿：跟上傳照片同一套引擎，但不能刪、進度 key 用名字
+      ...(window.LINEART_SCENES || []).map(x =>
+        ({ type: 'raster', builtin: true, id: 's:' + x.name, name: x.name, dataUrl: x.src })),
       ...customPics
     ];
   }
@@ -668,8 +671,8 @@
       b.addEventListener('click', () => { Sound.click(); openPic(idx); });
       cell.appendChild(b);
 
-      // 自訂照片：右上角一顆刪除鈕
-      if (item.type === 'raster') {
+      // 自訂照片：右上角一顆刪除鈕（內建的場景線稿沒有）
+      if (item.type === 'raster' && !item.builtin) {
         const del = document.createElement('button');
         del.className = 'pic-del';
         del.title = '刪除這張照片';

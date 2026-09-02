@@ -1,5 +1,6 @@
 /* 上傳照片 → 線稿工具
-   灰階化 → Sobel 邊緣偵測 → Otsu 自動門檻 → 加粗線條，全部在瀏覽器本機處理，
+   灰階化 → Sobel 邊緣偵測 → Otsu 自動門檻 → 加粗線條，全部在瀏覽器本機處理；
+   輸入本來就是線稿（黑線白底）時跳過 Sobel，直接二值化。
    照片不會上傳到任何伺服器。也提供疊桶填色用的連通區域演算法。 */
 const PhotoTool = (() => {
   const SIZE = 800; // 需跟 coloring.js 的 CANVAS_SIZE 一致
@@ -90,17 +91,39 @@ const PhotoTool = (() => {
     return out;
   }
 
+  /* 判斷輸入是不是已經是線稿：灰階分佈兩極化（幾乎只有黑與白）就是。
+     實測 AI 產的著色頁縮到 800 後中間灰只佔 3%，一般照片遠高於此。 */
+  const LINEART_THRESHOLD = 128;
+  const LINEART_MID_MAX = 0.08;   // 中間灰（64~191）佔比上限
+  const LINEART_DARK_MIN = 0.01;  // 至少要有一點黑，全白的紙不算
+  function isLineArt(gray) {
+    let mid = 0, dark = 0;
+    for (let i = 0; i < gray.length; i++) {
+      const v = gray[i];
+      if (v < 64) dark++;
+      else if (v < 192) mid++;
+    }
+    const n = gray.length;
+    return mid / n < LINEART_MID_MAX && dark / n > LINEART_DARK_MIN;
+  }
+
   /* 主流程：Image -> { stencilCanvas(透明底、只有黑線), edgeMask, size } */
   function process(img) {
     const src = document.createElement('canvas');
     const ctx = drawContain(img, src);
     const imgData = ctx.getImageData(0, 0, SIZE, SIZE);
     const gray = toGray(imgData);
-    const mag = sobelMagnitude(gray, SIZE, SIZE);
-    const t = otsuThreshold(mag);
 
     let mask = new Uint8Array(SIZE * SIZE);
-    for (let i = 0; i < mag.length; i++) mask[i] = mag[i] > t ? 1 : 0;
+    if (isLineArt(gray)) {
+      // 本來就是黑線白底的線稿（AI 產圖、掃描的著色頁）：直接二值化。
+      // 走 Sobel 的話每條黑線會被抽成兩條邊緣、中間空心，再加粗就變成一條粗管子。
+      for (let i = 0; i < gray.length; i++) mask[i] = gray[i] < LINEART_THRESHOLD ? 1 : 0;
+    } else {
+      const mag = sobelMagnitude(gray, SIZE, SIZE);
+      const t = otsuThreshold(mag);
+      for (let i = 0; i < mag.length; i++) mask[i] = mag[i] > t ? 1 : 0;
+    }
     mask = dilate(mask, SIZE, SIZE);
 
     const stencil = document.createElement('canvas');
