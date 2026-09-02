@@ -31,6 +31,12 @@ https://creativecommons.org/licenses/by/4.0/
 | `snap.m4a` | `pluck_002.ogg` | 同上 | CC0 |
 | `win.m4a` | `jingles_PIZZI07.ogg` | Kenney「Music Jingles」 https://kenney.nl/assets/music-jingles | CC0 |
 
+## 字型
+
+| 字型 | 用途 | 來源 | 授權 |
+|---|---|---|---|
+| Lilita One | 英文標題與單字（中文走系統字型） | Google Fonts https://fonts.google.com/specimen/Lilita+One （以 `<link>` 載入，未收進 repo；離線時退回系統字） | SIL Open Font License 1.1 |
+
 ## 圖片
 
 | 位置 | 來源 | 授權 |
