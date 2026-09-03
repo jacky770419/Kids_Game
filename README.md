@@ -4,7 +4,8 @@
 
 ## 玩法
 
-- 🧩 **拼圖**：三種難度（2×2 / 3×3 / 4×4），觸控拖曳拼片、自動吸附定位
+- 🧩 **拼圖**：五種難度（2×2 / 3×3 / 4×4 / 5×5 / 6×6），拼片是有凹凸榫頭的真拼圖形（`js/puzzle-geom.js` 純幾何，canvas 裁形＋墨線），
+  觸控拖曳、放到目標附近就自動吸附，吸附半徑隨難度放大（2×2 是片寬的 35%，6×6 是 55%）遷就小手指；拼完會唸那張圖的英文
 - 🎨 **著色**：先在縮圖牆選一張圖（共 50 張，上方有分類頁籤：全部／動物／公主城堡／水果甜點／大張場景／其他／我的照片），
   進入後整個左邊都是紙、右邊是黃色貼紙風工具列——
   工具（填滿 / 粗筆 / 細筆 / 水彩 / 潑墨 / 亮粉筆）、56 色色盤 + 6 種花紋顏料、橡皮擦、復原、全部清除，
@@ -60,7 +61,7 @@ python -m http.server 8080
 ```
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
-否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js` 分別驗語音挑選、填色膨脹、防誤觸）：
+否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
