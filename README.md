@@ -18,11 +18,14 @@
   場景系列是點陣線稿（`assets/lineart/`，原圖在 `assets/lineart-src/`，用 `tools/make_stencil.py` 轉檔），
   一整張多達兩三百個封閉區，適合用 Apple Pencil 點小區塊。拼圖另有 12 隻 Kenney 動物
 - 🔤 **單字**：18 個英文單字（12 種動物、6 種水果），兩種玩法共用同一份資料——
-  **配對**：上面一張全大寫的單字卡（可點 🔊 重聽），下面三張圖選一張，一輪 8 題；
+  **配對**：上面一張單字卡（預設小寫，頂列 Aa 鈕切大寫；卡片下方是**注音**不是漢字，因為小朋友認注音不識漢字；
+  可點 🔊 重聽；👂 鈕開「只聽不看字」，字卡藏起來只留喇叭），下面三張或四張圖選一張（模式卡下方選 3 張／4 張，下一輪生效），一輪 8 題；
   **翻牌**：圖卡和字卡蓋著配對，3 對／6 對／8 對三段難度。沒有計時、沒有失敗畫面，
   答錯只會把那張卡淡掉晃一下、再唸一次。玩到一半離開會記住進度，模式卡右上角出現「▶ 接著玩」。
-  單字資料在 `assets/data/words.json`（word / zh / image / audio / tags），`audio` 目前留空，
-  發音走系統語音合成；補上音檔後會優先播音檔
+  單字資料在 `assets/data/words.json`（word / zh / bpmf / image / audio / tags），發音走 `js/speech.js`：
+  從系統語音裡挑英文母語音（Samantha → Siri → Google US English → 任一 en），iPad 首次要等 `voiceschanged`。
+  同一支 speech.js 也讓**著色頁點色格時唸顏色英文**（56 格對照成 red／orange／yellow／green／blue／purple／pink／brown／black／white／gray 十一個字）、
+  **拼圖拼完唸那張圖的英文**（`js/pictures-data.js` 的 `word` 欄）
 - 🎵 背景音樂是三首開源曲目輪播（換頁會接著播），音效用 Kenney 的 CC0 音檔；素材來源與授權見 [assets/CREDITS.md](assets/CREDITS.md)
 
 ## 畫面風格
