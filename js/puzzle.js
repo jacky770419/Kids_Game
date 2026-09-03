@@ -186,6 +186,11 @@
     Sound.win();
     launchConfetti();
     winOverlay.hidden = false;
+    // 拼完唸一次這張圖的英文名。等 600ms 是為了讓過關音效先響完——
+    // 音效與語音同時出來會互相蓋住，小孩兩個都聽不清楚。
+    if (currentPic && currentPic.word && window.Speech) {
+      setTimeout(() => Speech.say(currentPic.word), 600);
+    }
   }
 
   /* --- 彩帶 --- */

@@ -21,6 +21,36 @@
     '#FFFFFF', '#F0E68C', '#FFDAB9', '#E0C097', '#A9A9A9', '#777777', '#5C2E0E', '#333333'
   ];
 
+  /* ===== 色盤的英文名：選色時唸出來 =====
+     為什麼只用 11 個幼兒基本色名：使用者五歲，色盤上有四種粉紅、五種藍，
+     照色票名唸「medium violet red」「steel blue」對她沒有任何意義，
+     反而學不起來。同一族的顏色一律唸同一個基本色名（pink、blue…），
+     她點哪一格都在重複同一個字，這才是有效的輸入。
+     tools/check_data.js 會對帳 COLORS 的 56 個 hex 是否每個都有名字。 */
+  const COLOR_NAMES = {
+    // 第 1 列：純色
+    '#FF0000': 'red', '#FFA500': 'orange', '#FFFF00': 'yellow', '#228B22': 'green',
+    '#00BFFF': 'blue', '#0000FF': 'blue', '#7B2FBE': 'purple', '#555555': 'gray',
+    // 第 2 列：深色版
+    '#B71C1C': 'red', '#C25E00': 'orange', '#C9A227': 'yellow', '#145A14': 'green',
+    '#0077A8': 'blue', '#00008B': 'blue', '#4B1D75': 'purple', '#2B2B2B': 'black',
+    // 第 3 列：淺色版
+    '#FF6B6B': 'red', '#FFC04D': 'orange', '#FFF176': 'yellow', '#66BB6A': 'green',
+    '#7FDFFF': 'blue', '#6C7BFF': 'blue', '#A96FD8': 'purple', '#8A8A8A': 'gray',
+    // 第 4 列：粉彩版
+    '#FFC9C9': 'pink', '#FFE0B2': 'orange', '#FFF9C4': 'yellow', '#C8E6C9': 'green',
+    '#C4EFFF': 'blue', '#C5CAE9': 'blue', '#E1BEE7': 'purple', '#D6D6D6': 'gray',
+    // 第 5 列：粉紅 / 棕 / 黃綠 延伸
+    '#FF69B4': 'pink', '#FF1493': 'pink', '#C71585': 'pink', '#8B4513': 'brown',
+    '#A0522D': 'brown', '#D2A679': 'brown', '#9ACD32': 'green', '#6B8E23': 'green',
+    // 第 6 列：青 / 藍綠 / 靛 / 紫羅蘭 延伸
+    '#00CED1': 'blue', '#20B2AA': 'blue', '#008080': 'blue', '#4682B4': 'blue',
+    '#4169E1': 'blue', '#6A5ACD': 'purple', '#8A2BE2': 'purple', '#DA70D6': 'pink',
+    // 第 7 列：淺色雜項 + 灰階 + 深棕
+    '#FFFFFF': 'white', '#F0E68C': 'yellow', '#FFDAB9': 'orange', '#E0C097': 'brown',
+    '#A9A9A9': 'gray', '#777777': 'gray', '#5C2E0E': 'brown', '#333333': 'black'
+  };
+
   /* ===== 畫圖工具 ===== */
   const TOOLS = [
     { id: 'fill',    emoji: '🪣',  name: '填滿' },
@@ -441,7 +471,13 @@
       b.className = 'color-cell';
       b.dataset.color = color;
       b.style.background = color;
-      b.addEventListener('click', () => selectPaint({ type: 'color', value: color }));
+      b.addEventListener('click', () => {
+        selectPaint({ type: 'color', value: color });
+        // 唸出顏色的英文名。只在「使用者親手點色格」時唸——
+        // 程式初始化時選預設色也會走 selectPaint()，所以不能把它放在 selectPaint 裡面，
+        // 否則一進著色頁就會無故出聲。
+        if (window.Speech && COLOR_NAMES[color]) Speech.say(COLOR_NAMES[color]);
+      });
       colorGrid.appendChild(b);
     });
 

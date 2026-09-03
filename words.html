@@ -37,7 +37,10 @@
         <span class="mode-label">配對</span>
         <span id="matchResume" class="resume-badge" hidden>▶ 接著玩</span>
       </button>
-      <div class="mode-foot"></div>
+      <div class="mode-foot" id="choicesRow">
+        <button class="diff-btn selected" data-choices="3">3 張 ⭐</button>
+        <button class="diff-btn" data-choices="4">4 張 ⭐⭐</button>
+      </div>
     </div>
 
     <div class="mode-col">
@@ -64,6 +67,9 @@
   <header class="bar">
     <a href="index.html" class="icon-btn">🏠</a>
     <button id="backBtn" class="icon-btn">🔙</button>
+    <!-- Aa＝字卡大小寫切換；👂＝只聽不看字（把英文字藏起來，只留喇叭） -->
+    <button id="caseBtn" class="icon-btn" title="大小寫">Aa</button>
+    <button id="listenBtn" class="icon-btn" title="只聽不看字">👂</button>
     <span class="spacer"></span>
     <div id="progress"></div>
     <span class="spacer"></span>
@@ -101,6 +107,7 @@
 </div>
 
 <script src="js/sound.js"></script>
+<script src="js/speech.js"></script>
 <script src="js/music.js"></script>
 <script src="js/words.js"></script>
 <script>

@@ -19,11 +19,15 @@
   const dataError = document.getElementById('dataError');
   const matchResume = document.getElementById('matchResume');
   const memoryResume = document.getElementById('memoryResume');
+  const wordTextCol = document.querySelector('#matchArea .word-text-col');
+  const caseBtn = document.getElementById('caseBtn');
+  const listenBtn = document.getElementById('listenBtn');
 
   let WORDS = [];           // 全部單字
   const byId = {};          // id → 單字
   let mode = null;          // 'match' | 'memory'
-  let save = { match: null, memory: null, pairs: 3 };
+  // choices／lower／listenOnly 是家長可調的三個顯示設定，跟進度一起存
+  let save = { match: null, memory: null, pairs: 3, choices: CHOICES, lower: true, listenOnly: false };
   let locked = false;       // 判定期間鎖住點擊
   let flipped = [];         // 翻牌模式目前翻開、還沒判定的卡
 
@@ -46,7 +50,15 @@
       if (raw) {
         const s = JSON.parse(raw);
         if (s && typeof s === 'object') {
-          save = { match: s.match || null, memory: s.memory || null, pairs: s.pairs || 3 };
+          // 舊存檔沒有 choices／lower／listenOnly，一律補上預設值（不要讓舊存檔把畫面弄成空白）
+          save = {
+            match: s.match || null,
+            memory: s.memory || null,
+            pairs: s.pairs || 3,
+            choices: (s.choices === 3 || s.choices === 4) ? s.choices : CHOICES,
+            lower: typeof s.lower === 'boolean' ? s.lower : true,
+            listenOnly: s.listenOnly === true
+          };
         }
       }
     } catch (e) { /* 存檔壞了就當作沒有 */ }
@@ -74,6 +86,9 @@
   }
 
   function speakTTS(item) {
+    // 有共用的 Speech（js/speech.js）就交給它——它會挑一顆英文母語音，
+    // 免得裝置設成中文時把 bear 唸成中文腔。沒載到才退回這裡的土法。
+    if (window.Speech) { Speech.say(item.word.toLowerCase()); return; }
     try {
       if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance !== 'function') return;
       window.speechSynthesis.cancel();
@@ -82,6 +97,41 @@
       u.rate = 0.85;
       window.speechSynthesis.speak(u);
     } catch (e) { /* 沒有語音就安靜 */ }
+  }
+
+  /* ---------- 顯示設定 ---------- */
+
+  // 字卡上要顯示的字面。DWE 教材以小寫為主，但大寫也要能切——
+  // 家裡教材用哪種字形是量測過才知道的，所以做成開關而不是寫死。
+  function wordFace(item) {
+    return save.lower ? item.word.toLowerCase() : item.word.toUpperCase();
+  }
+
+  // 兩顆設定鈕的外觀跟目前狀態同步
+  function syncSettingBtns() {
+    if (caseBtn) caseBtn.textContent = save.lower ? 'Aa' : 'AA';
+    if (listenBtn) listenBtn.classList.toggle('on', !!save.listenOnly);
+    document.querySelectorAll('#choicesRow .diff-btn').forEach(b => {
+      b.classList.toggle('selected', parseInt(b.dataset.choices, 10) === save.choices);
+    });
+  }
+
+  // 切換後只重畫「字面」，不重抽題目，也不重播動畫
+  function refreshFaces() {
+    if (mode === 'match') {
+      const item = currentItem();
+      if (item) {
+        wordText.textContent = wordFace(item);
+        wordZh.textContent = item.bpmf || item.zh;
+        if (wordTextCol) wordTextCol.hidden = !!save.listenOnly;
+      }
+    } else if (mode === 'memory') {
+      memoryGrid.querySelectorAll('.mcard').forEach(btn => {
+        if (btn.dataset.kind !== 'word') return;
+        const front = btn.querySelector('.mcard-front');
+        if (front) front.textContent = wordFace(byId[btn.dataset.id]);
+      });
+    }
   }
 
   /* ---------- 畫面切換 ---------- */
@@ -108,6 +158,8 @@
   /* ---------- 配對模式 ---------- */
 
   function newMatchRound() {
+    // 每輪開始時才鎖定選項數：玩到一半改設定不會打斷這一輪
+    const nChoices = (save.choices === 4) ? 4 : 3;
     const queue = shuffle(WORDS).slice(0, ROUND).map(w => w.id);
     const choices = queue.map(id => {
       const me = byId[id];
@@ -115,7 +167,7 @@
       const others = WORDS.filter(w => w.id !== id && w.tags[0] !== me.tags[0]);
       // 干擾項先從同類挑，同類不夠再補其他類
       const pool = shuffle(sameTag).concat(shuffle(others));
-      return shuffle([id].concat(pool.slice(0, CHOICES - 1).map(w => w.id)));
+      return shuffle([id].concat(pool.slice(0, nChoices - 1).map(w => w.id)));
     });
     save.match = { queue: queue, idx: 0, choices: choices };
     writeSave();
@@ -123,6 +175,7 @@
 
   function startMatch(resume) {
     mode = 'match';
+    if (listenBtn) listenBtn.hidden = false;   // 只聽不看字只對配對的字卡有意義
     if (!resume || !save.match || save.match.idx >= ROUND) newMatchRound();
     matchArea.hidden = false;
     memoryArea.hidden = true;
@@ -149,9 +202,14 @@
   function renderQuestion() {
     const item = currentItem();
     if (!item) return;
-    wordText.textContent = item.word;
-    wordZh.textContent = item.zh;
+    wordText.textContent = wordFace(item);
+    // 中文提示用注音：使用者五歲、幾乎不識漢字但認得注音符號，漢字對她沒有意義
+    wordZh.textContent = item.bpmf || item.zh;
+    // 只聽不看字：把整欄文字藏起來，只留 🔊。進題照樣自動唸（見下面的 speak）
+    if (wordTextCol) wordTextCol.hidden = !!save.listenOnly;
     choicesBox.innerHTML = '';
+    // 四個選項時卡片要縮小才塞得下（直向 iPad），交給 CSS 的 #choices.four 規則
+    choicesBox.classList.toggle('four', save.match.choices[save.match.idx].length >= 4);
     save.match.choices[save.match.idx].forEach(id => {
       const w = byId[id];
       const btn = document.createElement('button');
@@ -211,6 +269,7 @@
 
   function startMemory(resume) {
     mode = 'memory';
+    if (listenBtn) listenBtn.hidden = true;    // 翻牌藏了字卡就沒得玩，這顆鈕在這裡沒作用，收起來
     if (!resume || !save.memory || save.memory.matched.length >= save.memory.pairs) {
       newMemoryRound(save.pairs);
     } else {
@@ -276,7 +335,7 @@
         : '';
       const face = card.kind === 'pic'
         ? '<img src="' + w.image + '" alt="' + w.word + '">'
-        : w.word;
+        : wordFace(w);
       btn.innerHTML = '<span class="mcard-inner">' +
         '<span class="mcard-back">?</span>' +
         '<span class="mcard-front"' + fs + '>' + face + '</span></span>';
@@ -375,6 +434,35 @@
     if (mode === 'match') speak(currentItem());
   });
 
+  // 選項數（3／4）：只影響「下一輪」抽題，不打斷正在玩的這一輪
+  document.querySelectorAll('#choicesRow .diff-btn').forEach(b => {
+    b.addEventListener('click', (e) => {
+      e.stopPropagation();
+      Sound.click();
+      save.choices = parseInt(b.dataset.choices, 10);
+      writeSave();
+      syncSettingBtns();
+    });
+  });
+
+  if (caseBtn) caseBtn.addEventListener('click', () => {
+    Sound.click();
+    save.lower = !save.lower;
+    writeSave();
+    syncSettingBtns();
+    refreshFaces();
+  });
+
+  if (listenBtn) listenBtn.addEventListener('click', () => {
+    Sound.click();
+    save.listenOnly = !save.listenOnly;
+    writeSave();
+    syncSettingBtns();
+    refreshFaces();
+    // 剛切成「只聽不看字」時再唸一次，不然畫面上就只剩圖了
+    if (save.listenOnly && mode === 'match') speak(currentItem());
+  });
+
   document.getElementById('backBtn').addEventListener('click', () => { Sound.click(); showSelect(); });
 
   document.getElementById('againBtn').addEventListener('click', () => {
@@ -391,6 +479,7 @@
 
   loadSave();
   setPairs(save.pairs);
+  syncSettingBtns();
 
   fetch('assets/data/words.json')
     .then(res => { if (!res.ok) throw new Error(res.status); return res.json(); })

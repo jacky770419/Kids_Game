@@ -131,6 +131,17 @@ console.log(`檢查資料檔（root＝${root}）\n`);
         if (typeof w.zh !== 'string' || !w.zh) {
           fail(`${tag}（id=${w.id}）：zh 缺漏或空字串`);
         }
+        // bpmf：注音標註，非空，且只准出現注音符號（U+3105–U+312F）、
+        // 聲調符號（ˊ ˇ ˋ ˙）與音節之間的空格。
+        // 為什麼要驗這麼死：使用者（五歲）不識漢字但認得注音，這欄是她唯一讀得懂的中文提示；
+        // 混進漢字、拉丁字母或全形空白，畫面上就是她看不懂的東西，而且肉眼很難分辨
+        // 「ㄗ」與形近符號。機器逐字元檢查才攔得住。
+        if (typeof w.bpmf !== 'string' || !w.bpmf) {
+          fail(`${tag}（id=${w.id}）：bpmf 缺漏或空字串`);
+        } else if (!/^[ㄅ-ㄯˊˇˋ˙ ]+$/.test(w.bpmf)) {
+          const bad = [...w.bpmf].filter((ch) => !/[ㄅ-ㄯˊˇˋ˙ ]/.test(ch));
+          fail(`${tag}（id=${w.id}）：bpmf="${w.bpmf}" 含非注音字元（${bad.map((c) => `"${c}"(U+${c.codePointAt(0).toString(16).toUpperCase()})`).join('、')}）`);
+        }
         // image：檔案要存在
         if (typeof w.image !== 'string' || !w.image) {
           fail(`${tag}（id=${w.id}）：image 缺漏或空字串`);
@@ -338,6 +349,13 @@ checkVectorLineartFile('js/lineart-food.js', 'LINEART_FOOD');
         } else if (!fileExists(root, item.src)) {
           fail(`${tag}（name=${item.name}）：src="${item.src}" 檔案不存在`); localFail = true;
         }
+        // word：拼完圖之後要用語音唸出來的英文字，必須是全小寫英文字母
+        // （直接餵給 speechSynthesis，混進中文或大寫會唸成奇怪的東西）
+        if (typeof item.word !== 'string' || !item.word) {
+          fail(`${tag}（name=${item.name}）：word 缺漏或空字串`); localFail = true;
+        } else if (!/^[a-z]+$/.test(item.word)) {
+          fail(`${tag}（name=${item.name}）：word="${item.word}" 不是全小寫英文字母`); localFail = true;
+        }
       });
       if (localFail) markGroupFailed(g);
     }
@@ -445,6 +463,66 @@ checkVectorLineartFile('js/lineart-food.js', 'LINEART_FOOD');
   } else {
     group(fileRel, 0);
     markGroupFailed(groups[groups.length - 1]);
+  }
+}
+
+// ===== 5. js/coloring.js 的 COLORS ↔ COLOR_NAMES 對帳 =====
+// 為什麼要對帳：選色時會用語音唸出顏色的英文名，色盤只要新增／改一個 hex 而忘了補名字，
+// 那一格就會變成「點了不出聲」——在開發機上完全看不出來（沒有錯誤、沒有畫面變化）。
+// 另外詞彙鎖在 11 個幼兒基本色名：使用者五歲，唸 "medium violet red" 對她沒有意義，
+// 色盤上四種粉紅一律唸 pink 才學得起來。
+// 不用 loadScript 跑整支 coloring.js（那支開頭就在抓 DOM，Node 裡跑不起來），
+// 改用正規式把兩份字面量抽出來比對。
+{
+  const fileRel = 'js/coloring.js';
+  const BASIC_COLOR_WORDS = new Set([
+    'red', 'orange', 'yellow', 'green', 'blue', 'purple',
+    'pink', 'brown', 'black', 'white', 'gray'
+  ]);
+  let src = null;
+  try {
+    src = fs.readFileSync(path.join(root, fileRel), 'utf8');
+  } catch (e) {
+    fail(`${fileRel}：讀不到檔案（${e.message}）`);
+  }
+  if (src !== null) {
+    const colorsM = src.match(/const\s+COLORS\s*=\s*\[([\s\S]*?)\]\s*;/);
+    const namesM = src.match(/const\s+COLOR_NAMES\s*=\s*\{([\s\S]*?)\}\s*;/);
+    const colors = colorsM
+      ? (colorsM[1].match(/'#[0-9A-Fa-f]{3,8}'/g) || []).map((s) => s.slice(1, -1))
+      : [];
+    const names = {};
+    if (namesM) {
+      const entryRe = /'(#[0-9A-Fa-f]{3,8})'\s*:\s*'([a-z]+)'/g;
+      let m;
+      while ((m = entryRe.exec(namesM[1])) !== null) names[m[1]] = m[2];
+    }
+    const g = group(`${fileRel}（COLORS ↔ COLOR_NAMES）`, colors.length);
+    let localFail = false;
+    if (!colorsM) {
+      fail(`${fileRel}：找不到 \`const COLORS = [ ... ];\` 陣列`); localFail = true;
+    } else if (colors.length !== 56) {
+      fail(`${fileRel}：COLORS 有 ${colors.length} 個 hex，預期 56 個`); localFail = true;
+    }
+    if (!namesM) {
+      fail(`${fileRel}：找不到 \`const COLOR_NAMES = { ... };\` 物件`); localFail = true;
+    } else {
+      colors.forEach((hex) => {
+        if (!Object.prototype.hasOwnProperty.call(names, hex)) {
+          fail(`${fileRel}：COLORS 的 "${hex}" 在 COLOR_NAMES 裡沒有對應的英文名`); localFail = true;
+        } else if (!BASIC_COLOR_WORDS.has(names[hex])) {
+          fail(`${fileRel}：COLOR_NAMES["${hex}"]="${names[hex]}" 不在 11 個幼兒基本色名裡（${[...BASIC_COLOR_WORDS].join('/')}）`);
+          localFail = true;
+        }
+      });
+      const colorSet = new Set(colors);
+      Object.keys(names).forEach((hex) => {
+        if (!colorSet.has(hex)) {
+          fail(`${fileRel}：COLOR_NAMES 列了 "${hex}"，但 COLORS 裡沒有這個顏色`); localFail = true;
+        }
+      });
+    }
+    if (localFail) markGroupFailed(g);
   }
 }
 

@@ -26,7 +26,17 @@ function check(ok, msg) { if (!ok) failures.push(msg); }
 // ---------- 假的 worker 環境 ----------
 
 const deleted = [];                       // 記錄 caches.delete 被呼叫時刪了誰
-const cacheNames = ['kids-v0', 'kids-v1', 'other-cache'];
+/* 本版 cache 名稱從 sw.js 裡的 CACHE_VERSION 讀出來，不要寫死。
+   為什麼：只要改動被快取的檔案就得升版（本 repo 的規則），
+   版本號寫死的話每升一次版這支測試就會假紅一次。 */
+const SW_SRC = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
+const versionMatch = SW_SRC.match(/const\s+CACHE_VERSION\s*=\s*'([^']+)'/);
+if (!versionMatch) {
+  console.error('sw.js 裡找不到 CACHE_VERSION');
+  process.exit(1);
+}
+const CURRENT_CACHE = 'kids-' + versionMatch[1];
+const cacheNames = ['kids-v0', CURRENT_CACHE, 'other-cache'];
 let claimed = false;
 
 // 一份假的快取回應：200 bytes 的可預期內容
@@ -38,13 +48,22 @@ function makeCachedResponse() {
 }
 
 const listeners = {};
+/* sw.js 裡 new Request('js/words.js') 是相對於 SW 所在位置；Node 的 Request 只吃絕對網址，
+   所以包一層把相對路徑補上 origin，行為才跟瀏覽器一致。 */
+class SwRequest extends Request {
+  constructor(input, init) {
+    if (typeof input === 'string' && !/^https?:/.test(input)) input = 'https://example.test/' + input.replace(/^\.\//, '');
+    super(input, init);
+  }
+}
+let precached = null;   // install 時送進 addAll 的清單
 const sandbox = {
   console,
-  Response, Headers, Request, URL, fetch,
+  Response, Headers, Request: SwRequest, URL, fetch,
   Promise, Math, parseInt, isFinite, String, Number, Array, Object, JSON,
   setTimeout, clearTimeout,
   caches: {
-    open: () => Promise.resolve({ addAll: () => Promise.resolve(), put: () => Promise.resolve() }),
+    open: () => Promise.resolve({ addAll: (list) => { precached = list; return Promise.resolve(); }, put: () => Promise.resolve() }),
     keys: () => Promise.resolve(cacheNames.slice()),
     delete: (n) => { deleted.push(n); return Promise.resolve(true); },
     match: () => Promise.resolve(makeCachedResponse())
@@ -57,11 +76,25 @@ sandbox.skipWaiting = () => Promise.resolve();
 sandbox.clients = { claim: () => { claimed = true; return Promise.resolve(); } };
 
 vm.createContext(sandbox);
-vm.runInContext(fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8'), sandbox, { filename: 'sw.js' });
+vm.runInContext(SW_SRC, sandbox, { filename: 'sw.js' });
 
 check(typeof listeners.install === 'function', 'sw.js 沒有註冊 install 事件');
+
 check(typeof listeners.activate === 'function', 'sw.js 沒有註冊 activate 事件');
 check(typeof listeners.fetch === 'function', 'sw.js 沒有註冊 fetch 事件');
+
+// ---------- 測試 0：install 用 cache:'reload' 抓每一筆 ----------
+/* 為什麼：addAll 預設走 HTTP 快取，升版時會把上一版的檔案搬進新 cache
+   （2026-09-03 實測：kids-v2 裡的 words.js 還是舊檔）。 */
+function testInstall() {
+  let installed = null;
+  listeners.install({ waitUntil: (p) => { installed = p; } });
+  return Promise.resolve(installed).then(() => {
+    check(Array.isArray(precached) && precached.length > 0, 'install 沒有把清單送進 addAll');
+    const bad = (precached || []).filter((r) => !(r instanceof Request) || r.cache !== 'reload');
+    check(bad.length === 0, 'install 有 ' + bad.length + ' 筆不是 cache:reload 的 Request（會從 HTTP 快取搬到舊檔）');
+  });
+}
 
 // ---------- 測試 1：activate 的版本汰舊 ----------
 
@@ -70,7 +103,7 @@ function testActivate() {
   listeners.activate({ waitUntil: (p) => { waited = p; } });
   return Promise.resolve(waited).then(() => {
     check(deleted.includes('kids-v0'), 'activate 沒有刪掉舊版 cache kids-v0');
-    check(!deleted.includes('kids-v1'), 'activate 誤刪了本版 cache kids-v1');
+    check(!deleted.includes(CURRENT_CACHE), 'activate 誤刪了本版 cache ' + CURRENT_CACHE);
     check(!deleted.includes('other-cache'), 'activate 刪到了不屬於本站的 cache other-cache');
     check(claimed, 'activate 沒有呼叫 clients.claim()');
   });
@@ -119,11 +152,11 @@ function testPassThrough() {
   return Promise.resolve();
 }
 
-testActivate().then(testRange).then(testPassThrough).then(() => {
+testInstall().then(testActivate).then(testRange).then(testPassThrough).then(() => {
   if (failures.length) {
     console.error('sw.js 單元驗證失敗，共 ' + failures.length + ' 項：');
     failures.forEach((f, i) => console.error('  ' + (i + 1) + '. ' + f));
     process.exit(1);
   }
-  console.log('sw.js 單元驗證通過：版本汰舊只刪 kids-v0、Range bytes=0-99 回 206 且 body 100 bytes、跨網域與 POST 皆不插手。');
+  console.log('sw.js 單元驗證通過：install 全部 cache:reload、版本汰舊只刪 kids-v0、Range bytes=0-99 回 206 且 body 100 bytes、跨網域與 POST 皆不插手。');
 });
