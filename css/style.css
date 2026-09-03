@@ -402,16 +402,16 @@ body.coloring #gameScreen {
 }
 
 /* ===== 分類頁籤：縮圖牆上方一排貼紙 =====
-   圖多到一面牆找不完，先用頁籤篩。橫向可捲動，窄螢幕不換行擠掉縮圖區。
-   sticky 貼在捲動區頂端：往下捲看圖時頁籤還在，隨時可以換一類。 */
+   圖多到一面牆找不完，先用頁籤篩。七顆排開有 1141px，橫放的 iPad 剛好一列，
+   直放（834）或手機就換行——**不要改成橫向捲動**：捲軸看不見，小孩不會去滑，
+   「其他」「我的照片」會等於消失。sticky 貼在捲動區頂端，往下捲看圖時也能換類。 */
 .cat-tabs {
   position: sticky;
   top: -6px;                 /* 抵銷 .c-select-scroll 的上內距，貼齊頂端 */
   z-index: 3;
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   /* 底色跟頁面一樣（含點點），縮圖捲到底下時不會透出來 */
   background-color: #FFF9E8;
   background-image: radial-gradient(#F3E2B8 3px, transparent 3px);
@@ -440,6 +440,14 @@ body.coloring #gameScreen {
 .cat-tab .cat-emoji {
   font-size: 24px;
   line-height: 1;
+}
+
+/* 手機寬度：七顆會排到三四列、把縮圖擠到很下面，字與內距縮一號 */
+@media (max-width: 600px) {
+  .cat-tabs { gap: 8px; padding: 10px 6px 12px; }
+  .cat-tab { font-size: 17px; padding: 6px 12px; gap: 6px; border-width: 3px; box-shadow: 3px 3px 0 #2b2b2b; }
+  .cat-tab .cat-emoji { font-size: 19px; }
+  .cat-tab.on, .cat-tab:active { transform: translate(3px, 3px); }
 }
 
 /* 選中的那一顆：黃色貼紙 + 壓下去（跟工具列選中的按鈕同一套語彙） */
