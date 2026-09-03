@@ -10,6 +10,8 @@
   進入後整個左邊都是紙、右邊是黃色貼紙風工具列——
   工具（填滿 / 粗筆 / 細筆 / 水彩 / 潑墨 / 亮粉筆）、56 色色盤 + 6 種花紋顏料、橡皮擦、復原、全部清除，
   也可以上傳自己的照片自動轉成線條畫稿（上傳的本來就是黑線白底的線稿時會直接沿用線條，不做邊緣偵測）。**紙是滿版的**，線稿以外的空白處一樣可以畫背景
+- ↩️ **復原**：每一筆只記「這次動到的那塊矩形」（`js/undo-rect.js`），不是整張畫布——iPad 直向的畫布是 800×1600，整張存 25 筆要 128 MB，Safari 會把分頁殺掉；
+  改成矩形後 25 筆粗筆實測常駐 7 MB（舊做法 97 MB）
 - 💾 **接著畫**：畫到一半直接關掉也沒關係，下次點同一張圖會接續上次的進度（縮圖右下角有 🖍️ 記號）
 - 🖼️ **我的作品**：按 📷 存起來的成品會收進選圖畫面上方的「我的作品」，隨時可以打開來看或刪掉
 - 🐻 **著色圖分七個頁籤、五個系列檔**：頁籤看的是主題（動物 15、公主城堡 15、水果甜點 10、大張場景 8、其他 2，
@@ -67,7 +69,7 @@ python -m http.server 8080
 ```
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
-否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底）：
+否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
