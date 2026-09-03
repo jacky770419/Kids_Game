@@ -54,8 +54,11 @@ function makeEnv(makeVoices) {
     }
   };
 
-  const window = { speechSynthesis: speechSynthesis, SpeechSynthesisUtterance: SpeechSynthesisUtterance };
-  const sandbox = { window: window, SpeechSynthesisUtterance: SpeechSynthesisUtterance, console: console };
+  // 假 localStorage：驗「唸英文」開關會不會存起來
+  const store = {};
+  const localStorage = { getItem: (k) => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); } };
+  const window = { speechSynthesis: speechSynthesis, SpeechSynthesisUtterance: SpeechSynthesisUtterance, localStorage: localStorage };
+  const sandbox = { window: window, SpeechSynthesisUtterance: SpeechSynthesisUtterance, console: console, localStorage: localStorage };
   sandbox.globalThis = sandbox;
   vm.createContext(sandbox);
   vm.runInContext(SRC, sandbox, { filename: 'js/speech.js' });
@@ -65,6 +68,7 @@ function makeEnv(makeVoices) {
     calls: calls,
     spoken: spoken,
     fire: function (type) { (listeners[type] || []).forEach(fn => fn()); },
+    store: store,
     listeners: listeners
   };
 }
@@ -157,6 +161,27 @@ console.log('== js/speech.js 單元驗證 ==\n');
     window.Speech.cancel();
   } catch (e) { threw = e; }
   check(threw === null, '情境5：沒有 speechSynthesis 時不丟例外（實際＝' + (threw ? threw.message : '無') + '）');
+}
+
+// ---------- 情境 6：唸英文總開關（家長用）----------
+{
+  const env = makeEnv(() => VOICES);
+  check(env.Speech.isOn() === true, '情境6：預設開');
+  env.Speech.setOn(false);
+  check(env.store.kidsSpeechOn === '0', '情境6：關掉會存進 localStorage（實際＝' + env.store.kidsSpeechOn + '）');
+  const n0 = env.spoken.length;
+  env.Speech.say('bear');
+  check(env.spoken.length === n0, '情境6：關掉後自動唸的不出聲');
+  env.Speech.say('bear', { force: true });
+  check(env.spoken.length === n0 + 1, '情境6：關掉後使用者按 🔊（force）照樣唸');
+  check(env.Speech.toggle() === true && env.store.kidsSpeechOn === '1', '情境6：toggle 回到開並存 1');
+  env.Speech.say('bear');
+  check(env.spoken.length === n0 + 2, '情境6：重新打開後又會唸');
+}
+{
+  const env = makeEnv(() => VOICES);
+  delete env.store.kidsSpeechOn;
+  check(env.Speech.isOn() === true, '情境6：localStorage 沒有紀錄時視為開');
 }
 
 console.log('\n== 總結：' + (failures.length === 0 ? '全部通過' : failures.length + ' 項失敗') + ' ==');

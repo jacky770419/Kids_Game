@@ -93,6 +93,14 @@ body.home {
   z-index: 10;
 }
 
+/* 🗣️ 唸英文開關：固定在 🎵 左邊（66px 按鈕＋12px 間距） */
+.speech-fab {
+  position: fixed;
+  top: calc(14px + env(safe-area-inset-top));
+  right: calc(92px + env(safe-area-inset-right));
+  z-index: 10;
+}
+
 /* 標題＝白色貼紙框（貼紙不會飄，所以沒有動畫） */
 .home-title {
   position: relative;
@@ -1260,9 +1268,9 @@ body.words {
   flex-direction: column;
 }
 
-/* 兩個畫面的頂列右邊都留一個 66px 空位，避開固定在右上角的 .music-fab（跟 .icon-btn 同寬） */
+/* 兩個畫面的頂列右邊都留 144px 空位，避開固定在右上角的 .speech-fab＋.music-fab（兩顆 66px 按鈕＋12px 間距） */
 body.words .bar-gap {
-  width: 66px;
+  width: 144px;
   flex: none;
 }
 

@@ -64,7 +64,23 @@
     }
   } catch (e) { /* 接不上就算了，voice() 每次沒挑到本來就會重試 */ }
 
+  /* 唸英文的總開關（給家長用）。預設開；關掉後自動唸的（選色、拼完、貼上、進題）
+     全部安靜，但使用者親手按 🔊 要聽的（opts.force）照樣唸——那是她在要求聽，不是背景噪音。
+     存 localStorage，跟音樂開關同一套做法；存不了就當開著。 */
+  const STORAGE_KEY = 'kidsSpeechOn';
+  function isOn() {
+    try { return localStorage.getItem(STORAGE_KEY) !== '0'; } catch (e) { return true; }
+  }
+  function setOn(v) {
+    try { localStorage.setItem(STORAGE_KEY, v ? '1' : '0'); } catch (e) { /* 存不了就只影響這一頁 */ }
+    if (!v) { try { const s = synth(); if (s) s.cancel(); } catch (e) { /* 略過 */ } }
+  }
+
   window.Speech = {
+    isOn: isOn,
+    setOn: setOn,
+    toggle: function () { setOn(!isOn()); return isOn(); },
+
     /* 唸一段文字。沒有語音合成能力（舊瀏覽器、被政策擋掉）就安靜略過——
        這個網站的所有功能在沒有語音時都要照樣能玩。
        opts.lang  覆寫語系（之後注音教學會用 'zh-TW'；非英文時不套英文語音）
@@ -72,6 +88,7 @@
     say: function (text, opts) {
       if (!text) return;
       const o = opts || {};
+      if (!o.force && !isOn()) return;
       try {
         const s = synth();
         if (!s || typeof SpeechSynthesisUtterance !== 'function') return;
@@ -97,4 +114,19 @@
       } catch (e) { /* 略過 */ }
     }
   };
+  /* 自動接上頁面上的 🗣️ 按鈕（如果有的話），做法跟 music.js 的 #musicBtn 一樣：
+     開＝🗣️、關＝🙊。Node 測試環境沒有 document，直接略過。 */
+  if (typeof document !== 'undefined' && document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('speechBtn');
+      if (!btn) return;
+      const sync = () => { btn.textContent = isOn() ? '🗣️' : '🙊'; };
+      sync();
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.Speech.toggle();
+        sync();
+      });
+    });
+  }
 })();

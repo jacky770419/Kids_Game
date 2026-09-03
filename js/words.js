@@ -72,23 +72,24 @@
 
   // 有錄音就播錄音，否則用系統語音合成；兩者都沒有就安靜略過。
   // iOS 規定出聲要在使用者手勢裡，被擋下來時不要吵。
-  function speak(item) {
+  function speak(item, force) {
     if (!item) return;
     try {
       if (item.audio) {
         const a = new Audio(item.audio);
         const p = a.play();
-        if (p && typeof p.catch === 'function') p.catch(() => speakTTS(item));
+        if (p && typeof p.catch === 'function') p.catch(() => speakTTS(item, force));
         return;
       }
     } catch (e) { /* 落到 TTS */ }
-    speakTTS(item);
+    speakTTS(item, force);
   }
 
-  function speakTTS(item) {
+  // force＝使用者親手按 🔊，就算家長把「唸英文」關掉也要唸
+  function speakTTS(item, force) {
     // 有共用的 Speech（js/speech.js）就交給它——它會挑一顆英文母語音，
     // 免得裝置設成中文時把 bear 唸成中文腔。沒載到才退回這裡的土法。
-    if (window.Speech) { Speech.say(item.word.toLowerCase()); return; }
+    if (window.Speech) { Speech.say(item.word.toLowerCase(), force ? { force: true } : undefined); return; }
     try {
       if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance !== 'function') return;
       window.speechSynthesis.cancel();
@@ -431,7 +432,7 @@
   });
 
   document.getElementById('speakBtn').addEventListener('click', () => {
-    if (mode === 'match') speak(currentItem());
+    if (mode === 'match') speak(currentItem(), true);
   });
 
   // 選項數（3／4）：只影響「下一輪」抽題，不打斷正在玩的這一輪
