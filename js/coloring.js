@@ -161,6 +161,8 @@
   let fillCanvas = null, fillCtx = null;   // 只有上傳照片模式會用到
   let rasterEdgeMask = null;               // 目前這張照片的線條遮罩（填色用）
   let history = [];                        // 復原用的快照堆疊
+  let beforePaint = null;                  // 重複使用的離屏 canvas：這一筆「下筆前」的 paintLayer
+  let strokeAcc = null;                    // 這一筆的影響範圍累積器（UndoRect）
   let openedPanel = null;                  // null | 'tool' | 'color'
   let swallowStroke = false;               // 這一下點擊只用來關面板，不作畫
   let paperW = 0, paperH = 0;              // 上一次量到的紙張尺寸（CSS px），用來短路重複的 resize
@@ -260,14 +262,10 @@
     updateButtons();
   }
 
-  // canvas 快照：整張 ImageData，還原時直接 putImageData 蓋回去。
-  // paintLayer 是動態尺寸，一律讀 canvas 實際解析度，不能寫死 CANVAS_SIZE
-  function snapshotCanvas(targetCtx) {
-    if (!targetCtx) return null;
-    const cv = targetCtx.canvas;
-    return { kind: 'canvas', ctx: targetCtx, data: targetCtx.getImageData(0, 0, cv.width, cv.height) };
-  }
-
+  /* canvas 快照只存「這次動作真正改到的那塊矩形」，不是整張畫布。
+     整張的代價：paintLayer 在 iPad 直向是 800x1600 → 一筆 5.12 MB，25 筆 = 128 MB，
+     Safari 會把分頁殺掉。entry 形狀 { kind:'canvas', ctx, x, y, data }，
+     還原時 putImageData 貼回原本的位置。 */
   function undo() {
     const entry = history.pop();
     if (!entry) return;
@@ -275,9 +273,44 @@
       if (entry.prev === null) entry.el.removeAttribute('fill');
       else entry.el.setAttribute('fill', entry.prev);
     } else if (entry.kind === 'canvas') {
-      entry.ctx.putImageData(entry.data, 0, 0);
+      entry.ctx.putImageData(entry.data, entry.x, entry.y);
     }
     updateButtons();
+  }
+
+  /* ===== 一筆畫的「延後快照」 =====
+     下筆時不再讀整張 ImageData（那是 JS 堆積），改成把現況 drawImage 到一張重複使用的
+     離屏 canvas（GPU 端拷貝，不佔堆積），同時開一個外接矩形累積器；
+     每個繪圖函式把自己的影響範圍加進去，收筆時只從離屏 canvas 抓那塊矩形。 */
+  function beginStroke() {
+    const cv = paintCanvas;
+    if (!cv || !window.UndoRect) return;
+    if (!beforePaint) beforePaint = document.createElement('canvas');
+    if (beforePaint.width !== cv.width || beforePaint.height !== cv.height) {
+      beforePaint.width = cv.width;
+      beforePaint.height = cv.height;
+    }
+    const bctx = beforePaint.getContext('2d');
+    // 尺寸沒變時 canvas 不會自動清空，殘留的上一筆會被當成「下筆前」的樣子
+    bctx.clearRect(0, 0, beforePaint.width, beforePaint.height);
+    bctx.drawImage(cv, 0, 0);
+    strokeAcc = UndoRect.create();
+  }
+
+  function commitStroke() {
+    const cv = paintCanvas;
+    const acc = strokeAcc;
+    strokeAcc = null;
+    if (!cv || !acc || !beforePaint) return;
+    /* 畫到一半轉向：sizeArt() 會重建畫布並 clearHistory()，離屏拷貝的尺寸就對不上了。
+       這時候推進去的 entry 復原起來會把內容貼錯位置，寧可讓這一筆不能復原。 */
+    if (beforePaint.width !== cv.width || beforePaint.height !== cv.height) return;
+    const rect = UndoRect.toRect(acc, cv.width, cv.height);
+    if (!rect) return;   // 這一筆沒碰到畫布（全落在紙外），沒東西可以復原
+    pushHistory({
+      kind: 'canvas', ctx: ctx, x: rect.x, y: rect.y,
+      data: beforePaint.getContext('2d').getImageData(rect.x, rect.y, rect.w, rect.h)
+    });
   }
 
   function clearHistory() {
@@ -1173,7 +1206,14 @@
       if (px < 0 || px >= CANVAS_SIZE || py < 0 || py >= CANVAS_SIZE) return;
       const filled = PhotoTool.floodFillMask(rasterEdgeMask, CANVAS_SIZE, CANVAS_SIZE, px, py);
       if (!filled) return; // 點到線條上，不處理
-      pushHistory(snapshotCanvas(fillCtx));
+      /* 只存這次填到的範圍：applyFloodFill 會用 growIntoEdges 往線條方向膨脹 2px，
+         所以外擴 2 就一定包得住真正被改的像素。算不出範圍（理論上不會）就退回整張。 */
+      const ext = UndoRect.maskExtent(filled, CANVAS_SIZE, CANVAS_SIZE, 2);
+      const box = ext || { x: 0, y: 0, w: CANVAS_SIZE, h: CANVAS_SIZE };
+      pushHistory({
+        kind: 'canvas', ctx: fillCtx, x: box.x, y: box.y,
+        data: fillCtx.getImageData(box.x, box.y, box.w, box.h)
+      });
       applyFloodFill(filled);
       Sound.pop();
       markContent();
@@ -1226,6 +1266,9 @@
   function stampAt(pos) {
     const st = currentStamp();
     if (!st) return;
+    /* 影響範圍：邊長最大 1.12 倍，旋轉後的對角線一半是 side*0.707，
+       1.12*0.707 ≈ 0.79，取 0.85 再加 2px 抗鋸齒餘裕（寧可大一點也不能漏） */
+    if (strokeAcc) UndoRect.addCircle(strokeAcc, pos.x, pos.y, stampSide() * 0.85 + 2);
     const side = stampSide() * (0.88 + Math.random() * 0.24);
     const rot = (Math.random() - 0.5) * 0.6;   // ±17 度左右
     const main = stampMain(side);
@@ -1261,8 +1304,8 @@
       drawing = true;
       last = canvasPos(e);
 
-      // 一筆＝一次復原：下筆前先把整張畫布存起來
-      pushHistory(snapshotCanvas(ctx));
+      // 一筆＝一次復原：下筆前把現況拷到離屏 canvas，收筆時只留真正動到的那塊矩形
+      beginStroke();
 
       const tool = currentTool();
       ctx.globalCompositeOperation = isEraser() ? 'destination-out' : 'source-over';
@@ -1316,7 +1359,8 @@
       if (sprayTimer) { clearInterval(sprayTimer); sprayTimer = null; }
       ctx.globalCompositeOperation = 'source-over';
       ctx.globalAlpha = 1;
-      if (wasDrawing) { markContent(); scheduleSave(); }
+      // 一定要在 sprayTimer 清掉之後才收矩形，否則最後一滴墨會落在矩形外面
+      if (wasDrawing) { commitStroke(); markContent(); scheduleSave(); }
     };
     paintCanvas.addEventListener('pointerup', stop);
     paintCanvas.addEventListener('pointercancel', stop);
@@ -1326,6 +1370,8 @@
     // 擦除時不能用花紋當 strokeStyle：pattern 有透明的格子，會擦得坑坑洞洞
     ctx.strokeStyle = isEraser() ? '#000' : paintStyle();
     ctx.lineWidth = currentLineWidth();
+    // 圓頭線段的影響範圍＝兩端各一個半徑 lineWidth/2 的圓（+1 給抗鋸齒）
+    if (strokeAcc) UndoRect.addSegment(strokeAcc, from, to, ctx.lineWidth / 2 + 1);
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
     ctx.beginPath();
@@ -1336,6 +1382,8 @@
 
   // 亮粉筆：在這一段線上灑 3~5 顆白色／淡黃小點
   function sprinkleGlitter(from, to) {
+    // 影響範圍：沿線段散點，偏移 ±12、半徑最大 3 → 線段外擴 16
+    if (strokeAcc) UndoRect.addSegment(strokeAcc, from, to, 16);
     const saveAlpha = ctx.globalAlpha;
     ctx.globalAlpha = 1;
     const n = 3 + Math.floor(Math.random() * 3);
@@ -1353,6 +1401,8 @@
 
   // 潑墨：一團大小不一的墨點，first=true 時多加幾滴大的
   function splat(pos, first) {
+    // 影響範圍：墨點距離最遠 60、半徑最大 7（first 的大滴是 25+18=43）→ 半徑 70 包得住
+    if (strokeAcc) UndoRect.addCircle(strokeAcc, pos.x, pos.y, 70);
     ctx.fillStyle = paintStyle();
     const drops = first ? 26 : 14;
     for (let i = 0; i < drops; i++) {
