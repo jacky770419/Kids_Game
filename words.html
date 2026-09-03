@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>單字 - 小小遊樂園</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="words">
@@ -103,5 +103,10 @@
 <script src="js/sound.js"></script>
 <script src="js/music.js"></script>
 <script src="js/words.js"></script>
+<script>
+/* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
+   權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
 </body>
 </html>

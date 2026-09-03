@@ -5,7 +5,12 @@
    為什麼不用 localStorage：畫布 PNG 動輒數百 KB，iPad Safari 的 localStorage
    只有 ~5MB，存兩三張就 QuotaExceededError。
    隱私模式／舊瀏覽器開不了 DB 時整組降級成 no-op：方法照樣回 Promise，
-   只是存不進去也讀不出來，呼叫端不用到處寫 try/catch，功能只少了「這次不保存」。 */
+   只是存不進去也讀不出來，呼叫端不用到處寫 try/catch，功能只少了「這次不保存」。
+   為什麼要呼叫 navigator.storage.persist()：WebKit 會在一段時間沒使用後
+   自動清掉網站的 IndexedDB，豁免條件只有兩個——頁面正在使用中，或儲存被標成
+   persistent 模式。「加入主畫面」不在豁免清單裡，所以不主動要 persistent，
+   小孩畫了半個月的作品可能某天開起來就全空了。要不要給由瀏覽器決定，
+   要不到也不影響功能，所以失敗一律靜默。 */
 window.KidsStore = (() => {
   const DB_NAME = 'kidsColoring';
   const DB_VERSION = 1;
@@ -31,7 +36,11 @@ window.KidsStore = (() => {
           db.createObjectStore('artworks', { keyPath: 'id', autoIncrement: true });
         }
       };
-      req.onsuccess = () => resolve(req.result);
+      req.onsuccess = () => {
+        // DB 開起來了才順手要 persistent；不等它，要不要得到都不影響這次操作
+        persist();
+        resolve(req.result);
+      };
       req.onerror = () => resolve(null);
       req.onblocked = () => resolve(null);
     });
@@ -56,6 +65,24 @@ window.KidsStore = (() => {
     });
   }
 
+  /* 要求瀏覽器把這個網站的儲存標成 persistent（不會被自動清掉）。
+     瀏覽器可能直接拒絕、可能不支援、可能丟例外——一律回 false，不吵使用者。 */
+  function persist() {
+    try {
+      if (!navigator.storage || !navigator.storage.persist) return Promise.resolve(false);
+      return navigator.storage.persist().then((ok) => !!ok, () => false);
+    } catch (e) { return Promise.resolve(false); }
+  }
+
+  /* 目前用了多少、配額多少。拿不到就回 null（呼叫端要自己判斷 null＝不知道，
+     不要當成「還很空」也不要當成「快滿了」）。 */
+  function estimate() {
+    try {
+      if (!navigator.storage || !navigator.storage.estimate) return Promise.resolve(null);
+      return navigator.storage.estimate().then((r) => r || null, () => null);
+    } catch (e) { return Promise.resolve(null); }
+  }
+
   return {
     // 讀一筆，沒有就回 null
     get(store, key) {
@@ -76,6 +103,10 @@ window.KidsStore = (() => {
     // 筆數（用來判斷要不要刪掉最舊的）
     count(store) {
       return run(store, 'readonly', (s) => s.count(), 0);
-    }
+    },
+    // 要求 persistent 儲存，回 Promise<boolean>
+    persist,
+    // 用量／配額，回 Promise<{usage, quota}|null>
+    estimate
   };
 })();

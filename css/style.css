@@ -1,3 +1,15 @@
+/* 本地字型：Lilita One（latin 子集，OFL 授權，檔案在 assets/fonts/）。
+   為什麼不用 Google Fonts CDN：那是全站唯一的外連資源，飛機上／沒網路時
+   會退回系統字型，整個畫面的字重與寬度都變了樣。字型只有 10 KB，收進 repo
+   一起被 service worker 預先快取，離線與線上長得一模一樣。 */
+@font-face {
+  font-family: 'Lilita One';
+  src: url('../assets/fonts/lilita-one-latin.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ===== 共用基礎 ===== */
 * {
   margin: 0;
@@ -1542,4 +1554,17 @@ body.words #gameScreen {
   }
   .choice { width: min(270px, 38vw); height: min(270px, 38vw); }
   .choice:nth-child(3) { grid-column: 1 / span 2; }
+}
+
+
+/* 減少動態效果：使用者在系統設定裡開了「減少動態效果」就把動畫與轉場壓到近乎瞬間。
+   為什麼用 0.01ms 而不是 animation: none —— none 會讓動畫根本不執行，
+   任何依賴 animationend / transitionend 的邏輯就永遠等不到事件而卡死。
+   壓成極短時間則照樣觸發事件，只是使用者看不到晃動。 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

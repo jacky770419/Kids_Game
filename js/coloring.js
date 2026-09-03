@@ -1485,9 +1485,19 @@
 
   // 收一張完成的作品，超過上限就丟最舊的
   function addArtwork(item, dataUrl, w, h) {
-    return KidsStore.put('artworks', {
+    /* 存之前先看儲存空間還剩多少。為什麼要提早汰舊：一張作品的 PNG 動輒
+       數百 KB，等到配額真的滿了才處理，那次 put 已經失敗了——小孩按下 📷
+       卻什麼都沒收到。用量超過八成就先把最舊的清掉一些，留出餘裕再存。
+       estimate() 拿不到（回 null）就當作不知道，什麼都不做，維持原本行為。 */
+    return KidsStore.estimate().then(est => {
+      if (!est || !est.quota || !(est.usage / est.quota > 0.8)) return;
+      const keep = Math.max(1, ARTWORK_MAX - 5);
+      return KidsStore.all('artworks').then(list => Promise.all(
+        sortArtworks(list).slice(keep).map(a => KidsStore.del('artworks', a.id))
+      ));
+    }).then(() => KidsStore.put('artworks', {
       name: item.name, png: dataUrl, w, h, createdAt: Date.now()
-    }).then(() => KidsStore.all('artworks')).then(list => {
+    })).then(() => KidsStore.all('artworks')).then(list => {
       sortArtworks(list).slice(ARTWORK_MAX).forEach(a => KidsStore.del('artworks', a.id));
       artworks = list.slice(0, ARTWORK_MAX);
       buildArtworkRow();
