@@ -54,7 +54,9 @@ body.home {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6vh;
+  gap: clamp(20px, 5vh, 48px);
+  min-height: 100vh;
+  box-sizing: border-box;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   position: relative;   /* 裝飾大圓的定位基準 */
 }
@@ -107,22 +109,37 @@ body.home {
   transform: rotate(-2deg);
 }
 
+/* 四張卡：橫向一列四張、直向兩列兩張。
+   卡片邊長同時受「寬度塞得下 N 張」與「高度塞得下 N 列＋標題」限制，
+   否則 iPad 橫向會排成 3＋1 兩列，整體比螢幕高，置中之後標題被頂出上緣、
+   第四張卡被壓出下緣（2026-09-03 實機截圖）。 */
 .menu {
+  --menu-gap: clamp(24px, 3.5vw, 48px);
+  --menu-cols: 4;
+  --menu-rows: 1;
+  /* 26px 是卡片外圈白邊＋黑框＋硬陰影要用的餘裕 */
+  --card: min(290px,
+              calc((100vw - 48px - (var(--menu-cols) - 1) * var(--menu-gap) - var(--menu-cols) * 26px) / var(--menu-cols)),
+              calc((100vh - 200px - (var(--menu-rows) - 1) * var(--menu-gap) - var(--menu-rows) * 26px) / var(--menu-rows) / 1.07));
   position: relative;
   z-index: 1;
-  display: flex;
-  gap: clamp(40px, 5vw, 60px);
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(var(--menu-cols), var(--card));
+  gap: var(--menu-gap);
   justify-content: center;
   /* 貼紙卡外面還有 13px 的白邊＋黑框，左右要留位子，直向才不會被切掉 */
   padding: 0 24px;
   max-width: 100%;
 }
 
+@media (orientation: portrait) {
+  .menu { --menu-cols: 2; --menu-rows: 2; }
+}
+
 /* 貼紙卡：彩色底 + 白邊 + 黑外框 + 硬陰影，各自微歪 */
 .menu-card {
   --rot: 0deg;
-  width: clamp(160px, 26vw, 290px);
+  width: var(--card);
   aspect-ratio: 1 / 1.07;
   border-radius: 30px;
   display: flex;
@@ -148,13 +165,13 @@ body.home {
 .home .words-card { --rot: -2deg; background: #A78BFA; }
 
 .menu-emoji {
-  font-size: clamp(72px, 12vw, 120px);
+  font-size: calc(var(--card) * 0.42);
   line-height: 1;
   filter: drop-shadow(4px 4px 0 #2b2b2b);
 }
 
 .menu-label {
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: calc(var(--card) * 0.15);
   font-weight: 900;
   color: #fff;
   text-shadow: 3px 3px 0 #2b2b2b;
