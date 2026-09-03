@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>語音探針 - 小小遊樂園</title>
+<style>
+  body { font-family: system-ui, sans-serif; padding: 16px; max-width: 520px; margin: auto; }
+  button { display: block; width: 100%; font-size: 20px; padding: 16px; margin: 10px 0; border-radius: 12px; border: 2px solid #333; background: #fff; }
+  #log { font-size: 14px; white-space: pre-wrap; background: #f4f4f4; padding: 10px; border-radius: 8px; min-height: 120px; }
+  p { font-size: 15px; }
+</style>
+</head>
+<body>
+<h2>語音探針（iPad 用）</h2>
+<p>每顆按鈕都會唸 <b>bear</b>。每按一顆，記下「有沒有聽到 bear」，五顆都按完把下面的紀錄框截圖給我。背景音樂請先照平常的狀態（有開就開著）。</p>
+<button data-case="A">A　只唸，不放音效</button>
+<button data-case="B">B　先放音效再唸（＝選色／貼紙現況）</button>
+<button data-case="C">C　先唸再放音效</button>
+<button data-case="D">D　放音效，600ms 後再唸（＝拼圖現況）</button>
+<button data-case="E">E　放音效，暫停 AudioContext 後再唸</button>
+<div id="log"></div>
+<script src="../js/sound.js"></script>
+<script src="../js/speech.js"></script>
+<script>
+(() => {
+  const log = document.getElementById('log');
+  const lines = [];
+  function w(s) { lines.push(new Date().toLocaleTimeString() + ' ' + s); log.textContent = lines.slice(-14).join('\n'); }
+
+  /* 不走 Speech.say（它不回報事件），自己建 utterance 但語音挑選沿用 speech.js 的邏輯：
+     onstart 沒來＝speak 被丟掉；onstart 來了卻沒聲音＝音訊工作階段被音效搶走。 */
+  function say(tag) {
+    const s = window.speechSynthesis;
+    if (!s) { w(tag + ' 沒有 speechSynthesis'); return; }
+    s.cancel();
+    const u = new SpeechSynthesisUtterance('bear');
+    u.lang = 'en-US'; u.rate = 0.85;
+    const voices = s.getVoices().filter(v => /^en/i.test(v.lang));
+    const v = voices.find(v => /^Samantha/i.test(v.name)) || voices.find(v => /Siri/i.test(v.name)) || voices[0];
+    if (v) u.voice = v;
+    u.onstart = () => w(tag + ' onstart（語音有開始）voice=' + (v ? v.name : '系統預設'));
+    u.onend = () => w(tag + ' onend');
+    u.onerror = (e) => w(tag + ' onerror ' + e.error);
+    s.speak(u);
+    w(tag + ' speak() 已呼叫，speaking=' + s.speaking + ' pending=' + s.pending);
+  }
+
+  function sfx() { Sound.click(); w('音效 click 已播'); }
+
+  // sound.js 沒有匯出 AudioContext；用同名建構子抓最近建立的那一個做暫停實驗
+  const OrigAC = window.AudioContext || window.webkitAudioContext;
+  let lastCtx = null;
+  if (OrigAC) {
+    const Wrapped = function (...a) { const c = new OrigAC(...a); lastCtx = c; return c; };
+    Wrapped.prototype = OrigAC.prototype;
+    window.AudioContext = Wrapped; window.webkitAudioContext = Wrapped;
+  }
+
+  const cases = {
+    A() { say('A'); },
+    B() { sfx(); say('B'); },
+    C() { say('C'); sfx(); },
+    D() { sfx(); setTimeout(() => say('D'), 600); },
+    E() {
+      sfx();
+      if (lastCtx && lastCtx.suspend) {
+        lastCtx.suspend().then(() => { w('AudioContext 已 suspend'); say('E'); }, () => { w('suspend 失敗'); say('E'); });
+      } else { w('抓不到 AudioContext'); say('E'); }
+    }
+  };
+  document.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { w('--- 按下 ' + b.dataset.case); cases[b.dataset.case](); }));
+  w('語音數=' + (window.speechSynthesis ? window.speechSynthesis.getVoices().length : 0) + '（iOS 第一次常是 0，按過一次會再載）');
+})();
+</script>
+</body>
+</html>
