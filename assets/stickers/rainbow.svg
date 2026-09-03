@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
+     fill="none" stroke="#3a3a3a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+  <!-- 彩虹（手繪，透明底）。六道色帶 + 兩朵雲。
+       墨線的作法：先用一條「比整組色帶更寬的深灰弧」墊底，色帶疊上去之後
+       只在最外圈與最內圈各露出 6px，等於整條彩虹自動有外框，而色帶之間不會被分割線切碎。 -->
+
+  <!-- 墊底的深灰弧：涵蓋半徑 34～176 -->
+  <path stroke="#3a3a3a" stroke-width="142" stroke-linecap="butt"
+        d="M95,310 A105,105 0 0 1 305,310"/>
+
+  <!-- 六道色帶，由外而內 -->
+  <g stroke-width="20" stroke-linecap="butt">
+    <path stroke="#FF6B6B" d="M40,310 A160,160 0 0 1 360,310"/>
+    <path stroke="#FF9F43" d="M62,310 A138,138 0 0 1 338,310"/>
+    <path stroke="#FFD93D" d="M84,310 A116,116 0 0 1 316,310"/>
+    <path stroke="#6BCB77" d="M106,310 A94,94 0 0 1 294,310"/>
+    <path stroke="#4D96FF" d="M128,310 A72,72 0 0 1 272,310"/>
+    <path stroke="#B388FF" d="M150,310 A50,50 0 0 1 250,310"/>
+  </g>
+
+  <!-- 兩朵雲蓋住彩虹的兩隻腳（union 技法：先畫加粗深色的同一組圖形當外框，再填白） -->
+  <g stroke="#3a3a3a" stroke-width="12" fill="#3a3a3a">
+    <circle cx="66" cy="306" r="34"/>
+    <circle cx="104" cy="292" r="42"/>
+    <circle cx="140" cy="312" r="30"/>
+    <rect x="46" y="306" width="112" height="46" rx="23"/>
+  </g>
+  <g fill="#FFFFFF" stroke="none">
+    <circle cx="66" cy="306" r="34"/>
+    <circle cx="104" cy="292" r="42"/>
+    <circle cx="140" cy="312" r="30"/>
+    <rect x="46" y="306" width="112" height="46" rx="23"/>
+  </g>
+  <g stroke="#3a3a3a" stroke-width="12" fill="#3a3a3a">
+    <circle cx="334" cy="306" r="34"/>
+    <circle cx="296" cy="292" r="42"/>
+    <circle cx="260" cy="312" r="30"/>
+    <rect x="242" y="306" width="112" height="46" rx="23"/>
+  </g>
+  <g fill="#FFFFFF" stroke="none">
+    <circle cx="334" cy="306" r="34"/>
+    <circle cx="296" cy="292" r="42"/>
+    <circle cx="260" cy="312" r="30"/>
+    <rect x="242" y="306" width="112" height="46" rx="23"/>
+  </g>
+</svg>

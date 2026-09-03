@@ -1,0 +1,39 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 由 tools/make_stickers.js 從 assets/pictures/princess.svg 去底產生，請勿手改；要改請改來源圖後重跑 -->
+
+  <!-- 頭髮：飄逸雙側髮絲 + 頭頂髮量 -->
+  <path fill="#8B5A3C" d="M192,232 C156,338 138,450 168,518 L218,518 C192,443 198,330 232,248 Z"/>
+  <path fill="#8B5A3C" d="M408,232 C444,338 462,450 432,518 L382,518 C408,443 402,330 368,248 Z"/>
+  <ellipse fill="#8B5A3C" cx="300" cy="218" rx="120" ry="96"/>
+
+  <!-- 臉 -->
+  <circle fill="#FFDFC0" cx="300" cy="267" r="102"/>
+
+  <!-- 皇冠，緊貼髮際線 -->
+  <polygon fill="#FFD166" stroke="#E6A800" stroke-width="5" stroke-linejoin="round" points="249,174 249,156 270,111 293,147 300,105 308,147 330,111 351,156 351,174"/>
+  <circle fill="#EF5FA7" cx="270" cy="128" r="6"/>
+  <circle fill="#7E57C2" cx="300" cy="120" r="7"/>
+  <circle fill="#42A5F5" cx="330" cy="128" r="6"/>
+
+  <!-- 腮紅、眼睛、笑容 -->
+  <circle fill="#FFAFCB" opacity="0.8" cx="225" cy="300" r="21"/>
+  <circle fill="#FFAFCB" opacity="0.8" cx="375" cy="300" r="21"/>
+  <circle fill="#3a2c1e" cx="264" cy="267" r="12"/>
+  <circle fill="#3a2c1e" cx="336" cy="267" r="12"/>
+  <circle fill="#fff" cx="268" cy="262" r="4"/>
+  <circle fill="#fff" cx="340" cy="262" r="4"/>
+  <path fill="none" stroke="#C2185B" stroke-width="6" stroke-linecap="round" d="M279,309 C291,323 309,323 321,309"/>
+
+  <!-- 袖子 -->
+  <path fill="#F8BBD0" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M222,353 C168,360 138,405 147,458 C171,443 204,398 243,366 Z"/>
+  <path fill="#F8BBD0" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M378,353 C432,360 462,405 453,458 C429,443 396,398 357,366 Z"/>
+
+  <!-- 裙子 -->
+  <path fill="#F48FB1" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M240,387 C173,435 132,510 117,563 L483,563 C468,510 428,435 360,387 L300,417 Z"/>
+  <path fill="none" stroke="#EC7BA0" stroke-width="5" d="M170,470 C230,495 370,495 430,470 M150,520 C240,548 360,548 450,520"/>
+
+  <!-- 領口、蝴蝶結 -->
+  <path fill="#CE93D8" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M252,350 L348,350 L368,387 L300,413 L233,387 Z"/>
+  <path fill="#FFD166" stroke="#E6A800" stroke-width="4" stroke-linejoin="round" d="M300,378 L273,357 C264,351 264,369 273,375 L300,387 L327,375 C336,369 336,351 327,357 Z"/>
+  <circle fill="#E6A800" cx="300" cy="378" r="6"/>
+</svg>

@@ -44,6 +44,10 @@ https://creativecommons.org/licenses/by/4.0/
 | `assets/pictures/animals/*.svg`（拼圖用） | Kenney「Animal Pack Redux」 https://kenney.nl/assets/animal-pack-redux（由向量總表切割） | CC0 |
 | `assets/pictures/*.svg`（其餘） | 本專案自製 | 隨專案 |
 | `assets/pictures/fruits/*.svg`（單字遊戲用） | 本專案自製：由 `js/lineart-food.js` 的水果線稿上色另存 | 隨專案 |
+| `assets/stickers/*.svg`（貼紙場景用，12 隻動物） | 同上，Kenney「Animal Pack Redux」；由 `tools/make_stickers.js` 剝掉底色方框改作 | CC0 |
+| `assets/stickers/*.svg`（其餘：水果、公主、人魚） | 本專案自製；由 `tools/make_stickers.js` 從 `assets/pictures/` 剝掉底色方框改作 | 隨專案 |
+| `assets/stickers/{unicorn,cupcake,icecream,donut,cake,rainbow}.svg` | 本專案自製手繪 | 隨專案 |
+| `assets/backgrounds/*.svg`（貼紙場景背景） | 本專案自製手繪 | 隨專案 |
 | `assets/data/words.json` | 本專案自製 | 隨專案 |
 | `js/lineart-data.js`、`js/lineart-animals.js`、`js/lineart-fantasy.js`、`js/lineart-food.js` | 本專案自製 | 隨專案 |
 

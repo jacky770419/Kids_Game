@@ -1,0 +1,44 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
+     fill="none" stroke="#3a3a3a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+  <!-- 甜甜圈（手繪，透明底）。中間的洞是真的透明——用 fill-rule="evenodd" 的雙圈路徑挖出來，
+       不是拿背景色的圓去蓋。貼到城堡背景上時洞裡會透出城堡，這是「一眼認得出是甜甜圈」的關鍵。
+       畫的順序：麵團（填色＋墨線）→ 粉紅糖霜與垂滴（無墨線）→ 再描一次麵團的墨線疊在最上面，
+       這樣糖霜不會把外圈與洞口的墨線蓋掉。 -->
+
+  <!-- 麵團環 -->
+  <path fill="#E8B07A" fill-rule="evenodd"
+        d="M40,200 a160,160 0 1,0 320,0 a160,160 0 1,0 -320,0 Z
+           M148,200 a52,52 0 1,0 104,0 a52,52 0 1,0 -104,0 Z"/>
+
+  <!-- 糖霜：內圈略小於洞口，外圈留一圈麵團；再加八顆垂滴讓外緣是波浪的 -->
+  <g fill="#FF7EB6" stroke="none">
+    <circle cx="200" cy="66" r="20"/>
+    <circle cx="295" cy="105" r="22"/>
+    <circle cx="334" cy="200" r="20"/>
+    <circle cx="295" cy="295" r="22"/>
+    <circle cx="200" cy="334" r="20"/>
+    <circle cx="105" cy="295" r="22"/>
+    <circle cx="66" cy="200" r="20"/>
+    <circle cx="105" cy="105" r="22"/>
+    <path fill-rule="evenodd"
+          d="M64,200 a136,136 0 1,0 272,0 a136,136 0 1,0 -272,0 Z
+             M144,200 a56,56 0 1,0 112,0 a56,56 0 1,0 -112,0 Z"/>
+  </g>
+
+  <!-- 彩色米 -->
+  <g stroke="none">
+    <rect x="186" y="96" width="10" height="26" rx="5" fill="#FFD93D" transform="rotate(18 191 109)"/>
+    <rect x="252" y="118" width="10" height="26" rx="5" fill="#4D96FF" transform="rotate(-38 257 131)"/>
+    <rect x="286" y="186" width="10" height="26" rx="5" fill="#6BCB77" transform="rotate(70 291 199)"/>
+    <rect x="250" y="252" width="10" height="26" rx="5" fill="#FFFFFF" transform="rotate(30 255 265)"/>
+    <rect x="188" y="278" width="10" height="26" rx="5" fill="#B388FF" transform="rotate(-14 193 291)"/>
+    <rect x="122" y="248" width="10" height="26" rx="5" fill="#FF9F43" transform="rotate(48 127 261)"/>
+    <rect x="100" y="188" width="10" height="26" rx="5" fill="#FFFFFF" transform="rotate(-72 105 201)"/>
+    <rect x="128" y="122" width="10" height="26" rx="5" fill="#6BCB77" transform="rotate(28 133 135)"/>
+  </g>
+
+  <!-- 麵團的墨線再描一次疊在最上面 -->
+  <path fill="none" fill-rule="evenodd"
+        d="M40,200 a160,160 0 1,0 320,0 a160,160 0 1,0 -320,0 Z
+           M148,200 a52,52 0 1,0 104,0 a52,52 0 1,0 -104,0 Z"/>
+</svg>

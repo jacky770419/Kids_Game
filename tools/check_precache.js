@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /* 離線可玩性的對帳測試（零依賴，Node 直跑）。
    為什麼要這支：service worker 的 PRECACHE 是一份「手抄的清單」，
-   而真正會被載入的資產散在四個 HTML、幾支資料檔與 JSON 裡。
+   而真正會被載入的資產散在五個 HTML、幾支資料檔與 JSON 裡。
    兩邊只要有一邊改了、另一邊忘了跟，離線就會缺圖缺音，而且在有網路的
    開發機上完全看不出來——所以用機器做雙向對帳，不靠人眼。
 
    檢查項目：
      A. PRECACHE 裡的每個路徑，磁碟上都要真的存在
      B. 掃描到的每個執行期資產，都要在 PRECACHE 裡
-     C. 四個 HTML 不得再外連 fonts.googleapis.com（外連＝離線就沒字型）
-     D. 四個 HTML 都要註冊 service worker
+     C. 五個 HTML 不得再外連 fonts.googleapis.com（外連＝離線就沒字型）
+     D. 五個 HTML 都要註冊 service worker
 
    跑法：node tools/check_precache.js  → 全綠 exit 0，任一項失敗 exit 1。 */
 
@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const HTML_PAGES = ['index.html', 'coloring.html', 'puzzle.html', 'words.html'];
+const HTML_PAGES = ['index.html', 'coloring.html', 'puzzle.html', 'words.html', 'stickers.html'];
 
 const problems = [];   // 逐筆缺漏，最後一次印出
 function fail(msg) { problems.push(msg); }
@@ -74,7 +74,7 @@ function need(p, why) {
   if (!needed.has(clean)) needed.set(clean, why);
 }
 
-// 2a. 四個 HTML 本身，以及它們的 <script src> 與本地 <link href>
+// 2a. 五個 HTML 本身，以及它們的 <script src> 與本地 <link href>
 for (const page of HTML_PAGES) {
   need(page, 'HTML 頁面本身');
   const html = readFile(page);
@@ -170,4 +170,4 @@ if (problems.length) {
   process.exit(1);
 }
 
-console.log('離線對帳通過：PRECACHE ' + precache.length + ' 筆，掃描到的執行期資產 ' + needed.size + ' 筆，四個 HTML 皆已本地化字型並註冊 service worker。');
+console.log('離線對帳通過：PRECACHE ' + precache.length + ' 筆，掃描到的執行期資產 ' + needed.size + ' 筆，五個 HTML 皆已本地化字型並註冊 service worker。');

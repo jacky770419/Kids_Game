@@ -1,0 +1,68 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
+     fill="none" stroke="#3a3a3a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+  <!-- 獨角獸（手繪，透明底）。側面站姿、大頭、金角、四色鬃毛。
+       刻意不用馬的寫實比例：頭放大到身體的 2/3、腿縮短，才看得出是「可愛獨角獸」而不是馬。
+       彩帶都用「深色粗線墊底 + 彩色細線疊上」畫，這樣每一條鬃毛都自帶墨線。 -->
+
+  <!-- 尾巴：四色彩帶，畫在身體前面所以根部會被身體壓住 -->
+  <g stroke-linecap="round">
+    <path stroke="#3a3a3a" stroke-width="30" d="M300,226 C348,228 372,262 364,306"/>
+    <path stroke="#FF6B9D" stroke-width="20" d="M300,226 C348,228 372,262 364,306"/>
+    <path stroke="#3a3a3a" stroke-width="30" d="M302,252 C348,262 366,296 352,338"/>
+    <path stroke="#B388FF" stroke-width="20" d="M302,252 C348,262 366,296 352,338"/>
+    <path stroke="#3a3a3a" stroke-width="30" d="M300,278 C338,296 348,330 330,364"/>
+    <path stroke="#5FD9C8" stroke-width="20" d="M300,278 C338,296 348,330 330,364"/>
+  </g>
+
+  <!-- 四條短腿（先畫，讓身體壓住上緣） -->
+  <g fill="#FFFFFF">
+    <rect x="246" y="250" width="40" height="104" rx="20"/>
+    <rect x="292" y="246" width="40" height="108" rx="20"/>
+    <rect x="142" y="250" width="40" height="104" rx="20"/>
+    <rect x="190" y="258" width="40" height="96" rx="20"/>
+  </g>
+  <!-- 蹄 -->
+  <g fill="#F6B8D8">
+    <path d="M246,326 h40 v8 a20,20 0 0 1 -20,20 a20,20 0 0 1 -20,-20 Z"/>
+    <path d="M292,326 h40 v8 a20,20 0 0 1 -20,20 a20,20 0 0 1 -20,-20 Z"/>
+    <path d="M142,326 h40 v8 a20,20 0 0 1 -20,20 a20,20 0 0 1 -20,-20 Z"/>
+    <path d="M190,326 h40 v8 a20,20 0 0 1 -20,20 a20,20 0 0 1 -20,-20 Z"/>
+  </g>
+
+  <!-- 脖子（先畫，被頭與身體各壓住一端） -->
+  <path fill="#FFFFFF" d="M204,272 C184,242 172,202 170,164 L228,150 C232,190 240,232 252,266 Z"/>
+
+  <!-- 身體 -->
+  <ellipse cx="232" cy="240" rx="90" ry="56" fill="#FFFFFF"/>
+
+  <!-- 耳朵（藏在頭後面） -->
+  <path fill="#FFFFFF" d="M152,104 L170,50 L198,110 Z"/>
+
+  <!-- 金角：粗短、往上，加兩道螺旋刻痕 -->
+  <polygon fill="#FFD166" stroke="#E6A800" points="96,30 70,108 126,100"/>
+  <path stroke="#E6A800" stroke-width="5" d="M80,86 L118,80 M86,64 L110,60"/>
+
+  <!-- 頭：大圓 -->
+  <ellipse cx="124" cy="140" rx="64" ry="54" fill="#FFFFFF"/>
+  <!-- 口鼻 -->
+  <ellipse cx="76" cy="170" rx="38" ry="27" fill="#FFF0F6"/>
+
+  <!-- 鬃毛：四色彩帶從頭頂往後掃到脖子 -->
+  <g stroke-linecap="round">
+    <path stroke="#3a3a3a" stroke-width="32" d="M112,76 C168,82 196,130 196,192"/>
+    <path stroke="#FFD93D" stroke-width="22" d="M112,76 C168,82 196,130 196,192"/>
+    <path stroke="#3a3a3a" stroke-width="32" d="M130,72 C186,88 210,138 210,198"/>
+    <path stroke="#5FD9C8" stroke-width="22" d="M130,72 C186,88 210,138 210,198"/>
+    <path stroke="#3a3a3a" stroke-width="32" d="M148,80 C200,102 222,148 222,206"/>
+    <path stroke="#B388FF" stroke-width="22" d="M148,80 C200,102 222,148 222,206"/>
+    <path stroke="#3a3a3a" stroke-width="32" d="M164,96 C210,122 232,160 232,212"/>
+    <path stroke="#FF6B9D" stroke-width="22" d="M164,96 C210,122 232,160 232,212"/>
+  </g>
+
+  <!-- 臉：眼睛、腮紅、鼻孔、笑 -->
+  <circle cx="104" cy="128" r="12" fill="#3a3a3a" stroke="none"/>
+  <circle cx="109" cy="123" r="4.5" fill="#FFFFFF" stroke="none"/>
+  <circle cx="130" cy="170" r="15" fill="#FFAFCB" stroke="none" opacity="0.85"/>
+  <ellipse cx="58" cy="164" rx="6" ry="8" fill="#3a3a3a" stroke="none"/>
+  <path stroke="#C2185B" stroke-width="5" d="M62,184 C72,192 86,192 96,184"/>
+</svg>

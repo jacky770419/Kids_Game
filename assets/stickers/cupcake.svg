@@ -1,0 +1,49 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
+     fill="none" stroke="#3a3a3a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+  <!-- 杯子蛋糕（手繪，透明底）。下半是有直紋的紙杯、上半是粉紅奶油球堆、頂上一顆櫻桃。
+       奶油用 union 技法：同一組圓先用加粗深灰畫一次當外框，再填色蓋上去，
+       這樣一堆圓會合成一團有單一墨線的奶油，而不是一顆一顆的泡泡。 -->
+
+  <!-- 紙杯：上寬下窄的梯形 + 直紋 -->
+  <path fill="#F0A0C0" d="M104,244 L296,244 L266,354 C264,362 258,366 250,366 L150,366 C142,366 136,362 134,354 Z"/>
+  <path stroke="#D6799F" stroke-width="5"
+        d="M144,254 L156,358 M176,254 L182,360 M224,254 L218,360 M256,254 L244,358"/>
+  <!-- 杯口 -->
+  <rect x="98" y="228" width="204" height="34" rx="17" fill="#E88AAE"/>
+
+  <!-- 奶油：外框 -->
+  <g stroke="#3a3a3a" stroke-width="12" fill="#3a3a3a">
+    <circle cx="134" cy="204" r="46"/>
+    <circle cx="200" cy="192" r="54"/>
+    <circle cx="266" cy="204" r="46"/>
+    <circle cx="166" cy="140" r="44"/>
+    <circle cx="234" cy="140" r="44"/>
+    <circle cx="200" cy="96" r="40"/>
+    <rect x="94" y="196" width="212" height="46" rx="20"/>
+  </g>
+  <!-- 奶油：填色 -->
+  <g fill="#FFC2DD" stroke="none">
+    <circle cx="134" cy="204" r="46"/>
+    <circle cx="200" cy="192" r="54"/>
+    <circle cx="266" cy="204" r="46"/>
+    <circle cx="166" cy="140" r="44"/>
+    <circle cx="234" cy="140" r="44"/>
+    <circle cx="200" cy="96" r="40"/>
+    <rect x="94" y="196" width="212" height="46" rx="20"/>
+  </g>
+
+  <!-- 彩色米：斜斜的小圓角條 -->
+  <g stroke="none">
+    <rect x="124" y="176" width="9" height="24" rx="4.5" fill="#4D96FF" transform="rotate(-25 128 188)"/>
+    <rect x="186" y="150" width="9" height="24" rx="4.5" fill="#6BCB77" transform="rotate(20 190 162)"/>
+    <rect x="248" y="182" width="9" height="24" rx="4.5" fill="#FFD93D" transform="rotate(35 252 194)"/>
+    <rect x="160" y="204" width="9" height="24" rx="4.5" fill="#FF9F43" transform="rotate(-10 164 216)"/>
+    <rect x="222" y="112" width="9" height="24" rx="4.5" fill="#B388FF" transform="rotate(40 226 124)"/>
+    <rect x="164" y="100" width="9" height="24" rx="4.5" fill="#4D96FF" transform="rotate(-40 168 112)"/>
+  </g>
+
+  <!-- 櫻桃 -->
+  <path stroke="#3E7D3E" stroke-width="6" d="M200,60 C204,44 214,34 228,30"/>
+  <circle cx="200" cy="72" r="26" fill="#E8455E"/>
+  <ellipse cx="191" cy="63" rx="7" ry="5" fill="#FFFFFF" stroke="none" opacity="0.85" transform="rotate(-30 191 63)"/>
+</svg>

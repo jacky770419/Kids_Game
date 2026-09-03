@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 森林背景（手繪，橫式 800×600）。
+       淡綠天空 + 大小不一的圓樹冠樹 + 下 1/3（y≥400）的草地。
+       樹全部靠左右兩側，中間一大片草地是空的，留給貼紙站。 -->
+  <defs>
+    <linearGradient id="forestSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DFF3D2"/>
+      <stop offset="1" stop-color="#F2FBE8"/>
+    </linearGradient>
+    <linearGradient id="forestGrass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9CDB80"/>
+      <stop offset="1" stop-color="#77C462"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空 -->
+  <rect width="800" height="600" fill="url(#forestSky)"/>
+
+  <!-- 太陽與雲 -->
+  <circle cx="404" cy="82" r="42" fill="#FFF0B8"/>
+  <circle cx="404" cy="82" r="30" fill="#FFE07A"/>
+  <g fill="#FFFFFF" opacity="0.85">
+    <ellipse cx="180" cy="72" rx="52" ry="23"/>
+    <ellipse cx="142" cy="80" rx="32" ry="17"/>
+    <ellipse cx="628" cy="96" rx="46" ry="20"/>
+    <ellipse cx="664" cy="102" rx="30" ry="15"/>
+  </g>
+
+  <!-- 遠處的樹叢剪影 -->
+  <g fill="#BEE3A6">
+    <circle cx="100" cy="352" r="66"/>
+    <circle cx="230" cy="366" r="52"/>
+    <circle cx="570" cy="364" r="54"/>
+    <circle cx="700" cy="350" r="68"/>
+  </g>
+
+  <!-- 草地：下 1/3 -->
+  <rect y="400" width="800" height="200" fill="url(#forestGrass)"/>
+  <path fill="#88CF6E" d="M0,400 C130,388 250,412 400,402 C550,392 670,414 800,400 L800,438 L0,438 Z"/>
+
+  <!-- 大樹（左，最大） -->
+  <path fill="#A0703C" d="M118,470 C110,410 112,364 122,330 L166,330 C158,368 158,414 168,470 Z"/>
+  <g fill="#5FBF62">
+    <circle cx="144" cy="286" r="86"/>
+    <circle cx="80" cy="322" r="56"/>
+    <circle cx="208" cy="322" r="56"/>
+    <circle cx="106" cy="228" r="48"/>
+    <circle cx="186" cy="232" r="44"/>
+  </g>
+  <g fill="#FF6B6B"><circle cx="104" cy="290" r="11"/><circle cx="176" cy="266" r="11"/><circle cx="146" cy="330" r="11"/></g>
+
+  <!-- 中樹（右） -->
+  <path fill="#A0703C" d="M652,466 C646,418 648,382 656,354 L692,354 C684,384 684,420 692,466 Z"/>
+  <g fill="#4FAF57">
+    <circle cx="674" cy="314" r="70"/>
+    <circle cx="622" cy="342" r="46"/>
+    <circle cx="726" cy="342" r="46"/>
+    <circle cx="674" cy="256" r="42"/>
+  </g>
+  <g fill="#FFD166"><circle cx="646" cy="312" r="10"/><circle cx="704" cy="296" r="10"/></g>
+
+  <!-- 小樹（右外側） -->
+  <path fill="#A0703C" d="M772,462 C768,428 768,406 772,388 L796,388 L796,462 Z"/>
+  <g fill="#6BC96F">
+    <circle cx="784" cy="356" r="50"/>
+    <circle cx="746" cy="378" r="34"/>
+  </g>
+
+  <!-- 小樹（左外側） -->
+  <path fill="#A0703C" d="M18,458 C16,426 16,404 20,388 L44,388 C40,406 40,428 44,458 Z"/>
+  <g fill="#6BC96F">
+    <circle cx="30" cy="352" r="48"/>
+    <circle cx="66" cy="376" r="32"/>
+  </g>
+
+  <!-- 草地上的小花與草叢，貼在下緣附近 -->
+  <g>
+    <g fill="#FFFFFF"><circle cx="256" cy="548" r="9"/><circle cx="274" cy="536" r="9"/><circle cx="292" cy="548" r="9"/><circle cx="274" cy="560" r="9"/></g>
+    <circle cx="274" cy="548" r="7" fill="#FFD166"/>
+    <g fill="#FFB7D5"><circle cx="514" cy="530" r="9"/><circle cx="532" cy="518" r="9"/><circle cx="550" cy="530" r="9"/><circle cx="532" cy="542" r="9"/></g>
+    <circle cx="532" cy="530" r="7" fill="#FFD166"/>
+    <g fill="#C9A7F0"><circle cx="644" cy="560" r="9"/><circle cx="662" cy="548" r="9"/><circle cx="680" cy="560" r="9"/><circle cx="662" cy="572" r="9"/></g>
+    <circle cx="662" cy="560" r="7" fill="#FFD166"/>
+    <path stroke="#5FAF4E" stroke-width="7" stroke-linecap="round" fill="none"
+          d="M120,586 C120,562 112,550 102,542 M140,586 C140,558 150,548 162,542 M394,578 C394,556 386,544 376,536 M414,578 C414,554 424,544 436,536"/>
+  </g>
+
+  <!-- 蘑菇（左下） -->
+  <rect x="196" y="486" width="20" height="34" rx="8" fill="#FFF3DC"/>
+  <path fill="#E8555F" d="M170,490 C170,462 190,446 206,446 C222,446 242,462 242,490 Z"/>
+  <g fill="#FFFFFF"><circle cx="192" cy="474" r="7"/><circle cx="218" cy="468" r="6"/><circle cx="210" cy="484" r="5"/></g>
+</svg>

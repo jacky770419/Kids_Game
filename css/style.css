@@ -1624,3 +1624,217 @@ body.words #gameScreen {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== 貼紙場景頁 ===== */
+
+/* 首頁的第四張卡：橘色，跟拼圖青、著色紅、單字紫錯開 */
+.home .stickers-card { --rot: 3deg; background: #FFB347; }
+
+body.stickers {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 選背景畫面沿用 #selectScreen / .select-hint / .pic-grid，只把縮圖改成橫式 4:3 */
+body.stickers .pic-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  max-width: 1000px;
+}
+
+.bg-thumb {
+  position: relative;
+  display: block;
+}
+
+.bg-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* 背景名稱＝壓在縮圖左下角的白色膠囊。她不識漢字，這行字是給大人看的，
+   所以做小、不要佔到縮圖本身可辨識的畫面。 */
+.bg-label {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #2b2b2b;
+  background: #fff;
+  border: 4px solid #2b2b2b;
+  border-radius: 999px;
+  padding: 2px 14px;
+  line-height: 1.4;
+  letter-spacing: 3px;
+}
+
+/* --- 遊戲畫面：左邊板面、右邊貼紙匣（直向也一樣，不搬到下緣） --- */
+body.stickers #gameScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 0 12px calc(12px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
+  overflow: hidden;
+}
+
+#boardWrap {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 板面固定 4:3（跟背景 SVG 的 800×600 一致），在直向與橫向都取得下的最大尺寸 */
+#board {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #FFF;
+  border: 6px solid #2b2b2b;
+  box-shadow: 8px 8px 0 #2b2b2b;
+  touch-action: none;
+}
+
+#boardBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#stickerLayer {
+  position: absolute;
+  inset: 0;
+}
+
+/* 貼紙：位置用百分比（比例座標），中心點對齊 */
+.sticker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(3px 3px 0 rgba(43, 43, 43, 0.28));
+}
+
+.sticker.dragging {
+  filter: drop-shadow(8px 8px 0 rgba(43, 43, 43, 0.35));
+  z-index: 20;
+}
+
+/* --- 貼紙匣 --- */
+#tray {
+  flex: 0 0 auto;
+  width: clamp(158px, 21vw, 224px);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #FFFFFF;
+  border: 5px solid #2b2b2b;
+  border-radius: 22px;
+  box-shadow: 6px 6px 0 #2b2b2b;
+  overflow: hidden;
+}
+
+/* 分類頁籤沿用 .cat-tabs / .cat-tab，塞在匣子頂端。
+   排成固定的 2×2 而不是讓它自己換行：匣子只有 160～220px 寬，
+   四顆一列在窄的時候會變成 3+1，看起來像壞掉；2×2 在每個寬度下都一樣。
+   只留 emoji（中文放在 title）——放中文會把每顆撐到塞不下。 */
+body.stickers .cat-tabs {
+  position: static;
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 8px;
+  background: #FFF3C8;
+  background-image: none;
+  border-bottom: 5px solid #2b2b2b;
+  margin-bottom: 0;
+}
+
+body.stickers .cat-tab {
+  justify-content: center;
+  padding: 6px 0;
+  border-width: 3px;
+  box-shadow: 3px 3px 0 #2b2b2b;
+}
+
+body.stickers .cat-tab.on,
+body.stickers .cat-tab:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #2b2b2b;
+}
+
+body.stickers .cat-tab .cat-emoji { font-size: 26px; }
+
+#trayScroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 8px;
+  padding: 10px;
+  align-content: start;
+}
+
+/* 每格至少 72px：五歲的手指按得到，也拖得起來 */
+.tray-item {
+  aspect-ratio: 1 / 1;
+  min-width: 72px;
+  min-height: 72px;
+  border-radius: 16px;
+  background: #FFF9E8;
+  border: 3px solid #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  touch-action: none;
+}
+
+.tray-item:active { background: #FFD93D; }
+
+.tray-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* 跟著手指走的浮動貼紙：不吃事件，永遠在最上面 */
+#ghost {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 200;
+  opacity: 0.9;
+  filter: drop-shadow(8px 8px 0 rgba(43, 43, 43, 0.35));
+}
+
+#ghost[hidden] { display: none; }
+
+/* 直向：板面會變矮，匣子窄一點把寬度讓給板面 */
+@media (orientation: portrait) {
+  body.stickers #gameScreen { gap: 10px; padding-left: 10px; padding-right: 10px; }
+  /* 直向的板面受寬度限制、長不大，匣子維持兩欄比較好按 */
+  #tray { width: clamp(170px, 24vw, 212px); }
+  /* 直向的板面只有畫面一半高，靠上對齊才會跟匣子的頂端切齊；
+     置中會在頂列下面留一大塊空白，看起來像沒載入完 */
+  #boardWrap { align-items: flex-start; }
+}

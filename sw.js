@@ -6,12 +6,12 @@
    音樂也在清單裡——離線沒有背景音樂，對她來說就是壞掉了。
 
    放在 repo 根目錄是必要的：service worker 的 scope 不能超過自己的所在目錄，
-   放在根目錄才能同時涵蓋 index / coloring / puzzle / words 四頁。
+   放在根目錄才能同時涵蓋 index / coloring / puzzle / words / stickers 五頁。
 
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -22,6 +22,7 @@ const PRECACHE = [
   'coloring.html',
   'puzzle.html',
   'words.html',
+  'stickers.html',
   'manifest.json',
   'css/style.css',
   // 程式
@@ -41,6 +42,9 @@ const PRECACHE = [
   'js/sound.js',
   'js/speech.js',
   'js/stamps-data.js',
+  'js/stickers-data.js',
+  'js/stickers-state.js',
+  'js/stickers.js',
   'js/storage.js',
   'js/words.js',
   // 字型與圖示
@@ -85,6 +89,37 @@ const PRECACHE = [
   'assets/pictures/fruits/pineapple.svg',
   'assets/pictures/fruits/strawberry.svg',
   'assets/pictures/fruits/watermelon.svg',
+  // 貼紙場景的背景與貼紙
+  'assets/backgrounds/beach.svg',
+  'assets/backgrounds/castle.svg',
+  'assets/backgrounds/forest.svg',
+  'assets/stickers/apple.svg',
+  'assets/stickers/banana.svg',
+  'assets/stickers/bear.svg',
+  'assets/stickers/cake.svg',
+  'assets/stickers/cupcake.svg',
+  'assets/stickers/donut.svg',
+  'assets/stickers/duck.svg',
+  'assets/stickers/elephant.svg',
+  'assets/stickers/frog.svg',
+  'assets/stickers/giraffe.svg',
+  'assets/stickers/grapes.svg',
+  'assets/stickers/icecream.svg',
+  'assets/stickers/mermaid.svg',
+  'assets/stickers/monkey.svg',
+  'assets/stickers/owl.svg',
+  'assets/stickers/panda.svg',
+  'assets/stickers/penguin.svg',
+  'assets/stickers/pig.svg',
+  'assets/stickers/pineapple.svg',
+  'assets/stickers/princess-braid.svg',
+  'assets/stickers/princess.svg',
+  'assets/stickers/rabbit.svg',
+  'assets/stickers/rainbow.svg',
+  'assets/stickers/strawberry.svg',
+  'assets/stickers/unicorn.svg',
+  'assets/stickers/watermelon.svg',
+  'assets/stickers/whale.svg',
   // 背景音樂
   'assets/music/childrens-march.mp3',
   'assets/music/fluffing-a-duck.mp3',

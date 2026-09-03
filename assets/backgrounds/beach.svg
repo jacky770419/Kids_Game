@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 海邊背景（手繪，橫式 800×600）。
+       上：藍天白雲與太陽；中：兩層藍的海；下 1/3（y≥400）是沙灘，留給貼紙站。
+       右邊放一棵椰子樹、左邊一把陽傘，位置都靠邊，中間大片沙灘保持乾淨。 -->
+  <defs>
+    <linearGradient id="beachSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ED8F8"/>
+      <stop offset="1" stop-color="#D6F1FF"/>
+    </linearGradient>
+    <linearGradient id="beachSand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7E2B0"/>
+      <stop offset="1" stop-color="#EFD08E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空 -->
+  <rect width="800" height="600" fill="url(#beachSky)"/>
+
+  <!-- 太陽 -->
+  <circle cx="668" cy="96" r="52" fill="#FFE9A8"/>
+  <circle cx="668" cy="96" r="38" fill="#FFD54F"/>
+  <!-- 雲 -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <ellipse cx="176" cy="96" rx="60" ry="27"/>
+    <ellipse cx="130" cy="104" rx="38" ry="20"/>
+    <ellipse cx="222" cy="106" rx="42" ry="19"/>
+    <ellipse cx="430" cy="66" rx="46" ry="21"/>
+    <ellipse cx="396" cy="74" rx="30" ry="15"/>
+  </g>
+  <!-- 海鷗 -->
+  <path fill="none" stroke="#6E8FA8" stroke-width="5" stroke-linecap="round"
+        d="M300,150 C310,138 320,138 330,150 M334,168 C344,158 352,158 362,168"/>
+
+  <!-- 海：深藍在後、淺藍在前，中間一條白浪 -->
+  <rect y="238" width="800" height="106" fill="#3EA8DC"/>
+  <rect y="326" width="800" height="86" fill="#5FC6E8"/>
+  <g fill="#FFFFFF" opacity="0.75">
+    <path d="M0,300 C60,292 90,308 150,300 C210,292 240,308 300,300 C360,292 390,308 450,300 C510,292 540,308 600,300 C660,292 690,308 750,300 L800,298 L800,312 L0,314 Z"/>
+    <path d="M0,352 C70,344 104,360 170,352 C236,344 270,360 336,352 C402,344 436,360 502,352 C568,344 602,360 668,352 C724,346 760,356 800,350 L800,364 L0,366 Z"/>
+  </g>
+
+  <!-- 沙灘：下 1/3，上緣是一條浪花線 -->
+  <path fill="url(#beachSand)" d="M0,412 C120,398 220,420 340,410 C460,400 570,422 690,410 C740,405 770,408 800,404 L800,600 L0,600 Z"/>
+  <path fill="#FFFFFF" opacity="0.85"
+        d="M0,412 C120,398 220,420 340,410 C460,400 570,422 690,410 C740,405 770,408 800,404 L800,418 C766,422 738,419 690,424 C570,436 460,414 340,424 C220,434 120,412 0,426 Z"/>
+
+  <!-- 椰子樹（右側） -->
+  <path fill="#B07A3E" d="M694,560 C686,500 690,452 706,420 L730,428 C716,458 712,504 718,560 Z"/>
+  <g fill="#4CAF62">
+    <path d="M718,420 C766,398 796,412 800,438 C770,424 742,428 720,440 Z"/>
+    <path d="M710,414 C740,368 782,362 796,378 C762,382 734,400 718,428 Z"/>
+    <path d="M706,414 C692,366 656,348 634,360 C666,372 688,394 700,428 Z"/>
+    <path d="M704,422 C660,406 626,420 618,442 C650,430 682,434 706,444 Z"/>
+  </g>
+  <g fill="#8B5E2A"><circle cx="708" cy="436" r="12"/><circle cx="730" cy="442" r="11"/></g>
+
+  <!-- 陽傘（左側）：粉白相間的四片扇形半圓罩 -->
+  <path stroke="#B0857A" stroke-width="8" stroke-linecap="round" fill="none" d="M96,428 V546"/>
+  <path fill="#FF8FA3" d="M96,430 L30,430 A66,66 0 0 1 49.3,383.3 Z"/>
+  <path fill="#FFFFFF" d="M96,430 L49.3,383.3 A66,66 0 0 1 96,364 Z"/>
+  <path fill="#FF8FA3" d="M96,430 L96,364 A66,66 0 0 1 142.7,383.3 Z"/>
+  <path fill="#FFFFFF" d="M96,430 L142.7,383.3 A66,66 0 0 1 162,430 Z"/>
+  <ellipse cx="96" cy="430" rx="68" ry="9" fill="#E8677E"/>
+  <circle cx="96" cy="362" r="9" fill="#E8677E"/>
+
+  <!-- 沙灘上的小貝殼與海星（靠下緣，中間留空） -->
+  <g>
+    <path fill="#FFB7D5" stroke="#E58BB0" stroke-width="4"
+          d="M254,566 C254,544 274,530 292,530 C310,530 330,544 330,566 Z"/>
+    <path fill="none" stroke="#E58BB0" stroke-width="4" d="M292,530 V566 M272,536 L278,566 M312,536 L306,566"/>
+    <path fill="#FFA45B" stroke="#E0813C" stroke-width="4"
+          d="M552,506 L565,538 L600,540 L572,562 L582,594 L552,576 L522,594 L532,562 L504,540 L539,538 Z"/>
+  </g>
+</svg>

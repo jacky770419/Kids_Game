@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
+  <!-- 由 tools/make_stickers.js 從 assets/pictures/fruits/pineapple.svg 去底產生，請勿手改；要改請改來源圖後重跑 -->
+  <path class="c" fill="#5FBF73" stroke-width="4.5" d="M162,160 C120,146 92,112 88,74 C120,92 150,120 172,152 Z"/>
+  <path class="c" fill="#5FBF73" stroke-width="4.5" d="M238,160 C280,146 308,112 312,74 C280,92 250,120 228,152 Z"/>
+  <path class="c" fill="#5FBF73" stroke-width="4.5" d="M176,158 C152,120 148,76 166,40 C186,70 198,114 198,154 Z"/>
+  <path class="c" fill="#5FBF73" stroke-width="4.5" d="M224,158 C248,120 252,76 234,40 C214,70 202,114 202,154 Z"/>
+  <path class="c" fill="#5FBF73" stroke-width="4.5" d="M182,158 C176,112 184,66 200,30 C216,66 224,112 218,158 Z"/>
+  <path class="c" fill="#FFC94D" stroke-width="6.75" d="M200,148 C270,148 318,198 320,262 C322,322 268,368 200,370 C132,368 78,322 80,262 C82,198 130,148 200,148 Z"/>
+  <path fill="none" stroke-width="2.25" d="M104,206 L296,342 M88,258 L240,366 M136,178 L318,300 M198,150 L322,240 M296,206 L104,342 M312,258 L160,366 M264,178 L82,300 M202,150 L78,240"/>
+  <path class="c" fill="#F5B227" stroke-width="1.88" d="M200,196 Q214,208 222,220 Q214,232 200,244 Q186,232 178,220 Q186,208 200,196 Z"/>
+  <path class="c" fill="#F5B227" stroke-width="1.88" d="M146,248 Q160,260 168,272 Q160,284 146,296 Q132,284 124,272 Q132,260 146,248 Z"/>
+  <path class="c" fill="#F5B227" stroke-width="1.88" d="M254,248 Q268,260 276,272 Q268,284 254,296 Q246,284 232,272 Q246,260 254,248 Z"/>
+  <path class="c" fill="#F5B227" stroke-width="1.88" d="M200,300 Q214,312 222,324 Q214,336 200,348 Q186,336 178,324 Q186,312 200,300 Z"/>
+  </svg>

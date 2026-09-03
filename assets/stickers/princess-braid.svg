@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 由 tools/make_stickers.js 從 assets/pictures/princess-braid.svg 去底產生，請勿手改；要改請改來源圖後重跑 -->
+
+  <!-- 頭髮頂與辮子 -->
+  <ellipse fill="#F2C572" cx="300" cy="218" rx="120" ry="96"/>
+  <circle fill="#FFDFC0" cx="300" cy="267" r="102"/>
+  <path fill="#F2C572" d="M225,252 C180,288 162,348 177,408 C192,468 174,513 192,558 L246,558 C234,506 255,453 234,399 C219,354 237,294 267,255 Z"/>
+  <path fill="none" stroke="#C9922E" stroke-width="4" stroke-linecap="round" d="M180,303 L249,296 M171,363 L246,360 M177,423 L240,426 M189,483 L243,491"/>
+
+  <!-- 髮上小花 -->
+  <circle fill="#EF5FA7" cx="168" cy="267" r="11"/>
+  <circle fill="#EF5FA7" cx="189" cy="252" r="12"/>
+  <circle fill="#EF5FA7" cx="210" cy="264" r="11"/>
+  <circle fill="#EF5FA7" cx="191" cy="276" r="9"/>
+  <circle fill="#FFD166" cx="189" cy="265" r="6"/>
+
+  <!-- 皇冠 -->
+  <polygon fill="#FFD166" stroke="#E6A800" stroke-width="5" stroke-linejoin="round" points="249,174 249,156 270,111 293,147 300,105 308,147 330,111 351,156 351,174"/>
+  <circle fill="#7E57C2" cx="300" cy="120" r="7"/>
+
+  <!-- 腮紅、眼睛、笑容 -->
+  <circle fill="#FFAFCB" opacity="0.8" cx="225" cy="300" r="21"/>
+  <circle fill="#FFAFCB" opacity="0.8" cx="375" cy="300" r="21"/>
+  <circle fill="#3a2c1e" cx="264" cy="267" r="12"/>
+  <circle fill="#3a2c1e" cx="336" cy="267" r="12"/>
+  <circle fill="#fff" cx="268" cy="262" r="4"/>
+  <circle fill="#fff" cx="340" cy="262" r="4"/>
+  <path fill="none" stroke="#C2185B" stroke-width="6" stroke-linecap="round" d="M279,309 C291,323 309,323 321,309"/>
+
+  <!-- 袖子 -->
+  <path fill="#D1C4E9" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M222,353 C168,360 138,405 147,458 C171,443 204,398 243,366 Z"/>
+  <path fill="#D1C4E9" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M378,353 C432,360 462,405 453,458 C429,443 396,398 357,366 Z"/>
+
+  <!-- 裙子 -->
+  <path fill="#B39DDB" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M240,387 C173,435 132,510 117,563 L483,563 C468,510 428,435 360,387 L300,417 Z"/>
+  <path fill="none" stroke="#9A82CE" stroke-width="5" d="M170,470 C230,495 370,495 430,470 M150,520 C240,548 360,548 450,520"/>
+
+  <!-- 領口、蝴蝶結 -->
+  <path fill="#8667C9" stroke="#3a3a3a" stroke-width="5" stroke-linejoin="round" d="M252,350 L348,350 L368,387 L300,413 L233,387 Z"/>
+  <path fill="#FFD166" stroke="#E6A800" stroke-width="4" stroke-linejoin="round" d="M300,378 L273,357 C264,351 264,369 273,375 L300,387 L327,375 C336,369 336,351 327,357 Z"/>
+  <circle fill="#E6A800" cx="300" cy="378" r="6"/>
+</svg>

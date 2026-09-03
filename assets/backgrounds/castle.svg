@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 城堡背景（手繪，橫式 800×600）。
+       下 1/3（y≥400）刻意留成單純的草地，貼紙才有地方「站」。
+       城堡是遠景剪影、壓在天空上半部：主角是小孩自己貼上去的貼紙，
+       背景不放任何有臉的角色，免得跟貼紙搶注意力。 -->
+  <defs>
+    <linearGradient id="castleSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6E4FF"/>
+      <stop offset="0.6" stop-color="#FFE3F1"/>
+      <stop offset="1" stop-color="#FFF0F6"/>
+    </linearGradient>
+    <linearGradient id="castleGrass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A7E08A"/>
+      <stop offset="1" stop-color="#7FCB6B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空 -->
+  <rect width="800" height="600" fill="url(#castleSky)"/>
+
+  <!-- 太陽與雲 -->
+  <circle cx="118" cy="98" r="46" fill="#FFE9A8"/>
+  <circle cx="118" cy="98" r="34" fill="#FFD966"/>
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="640" cy="92" rx="58" ry="26"/>
+    <ellipse cx="596" cy="100" rx="38" ry="20"/>
+    <ellipse cx="684" cy="102" rx="40" ry="18"/>
+    <ellipse cx="266" cy="160" rx="46" ry="20"/>
+    <ellipse cx="232" cy="166" rx="30" ry="15"/>
+  </g>
+
+  <!-- 遠山 -->
+  <path fill="#E3CDF3" d="M0,404 L118,300 L214,404 Z"/>
+  <path fill="#D8BEEE" d="M560,404 L680,292 L800,404 L800,404 Z"/>
+
+  <!-- 城堡剪影：中央主樓 + 兩側塔樓，淡紫色 -->
+  <g fill="#C9A9E8">
+    <!-- 左塔 -->
+    <rect x="286" y="228" width="58" height="176"/>
+    <polygon points="278,228 315,166 352,228"/>
+    <!-- 右塔 -->
+    <rect x="456" y="228" width="58" height="176"/>
+    <polygon points="448,228 485,166 522,228"/>
+    <!-- 主樓 -->
+    <rect x="344" y="268" width="112" height="136"/>
+    <polygon points="336,268 400,196 464,268"/>
+    <!-- 城牆與雉堞 -->
+    <rect x="236" y="326" width="50" height="78"/>
+    <rect x="514" y="326" width="50" height="78"/>
+    <path d="M236,326 h50 v-18 h-14 v-14 h-22 v14 h-14 Z"/>
+    <path d="M514,326 h50 v-18 h-14 v-14 h-22 v14 h-14 Z"/>
+  </g>
+  <!-- 城堡的門窗（深一點的紫，讓剪影不會糊成一塊） -->
+  <g fill="#A483D0">
+    <path d="M382,404 v-72 a18,18 0 0 1 36,0 v72 Z"/>
+    <rect x="306" y="266" width="18" height="30" rx="9"/>
+    <rect x="476" y="266" width="18" height="30" rx="9"/>
+    <rect x="366" y="300" width="16" height="26" rx="8"/>
+    <rect x="418" y="300" width="16" height="26" rx="8"/>
+  </g>
+  <!-- 旗子 -->
+  <g>
+    <path stroke="#8E6FBF" stroke-width="5" d="M315,166 V132 M485,166 V132 M400,196 V152"/>
+    <path fill="#FF8FA3" d="M315,132 L358,144 L315,158 Z"/>
+    <path fill="#FF8FA3" d="M485,132 L528,144 L485,158 Z"/>
+    <path fill="#FFD166" d="M400,152 L448,166 L400,182 Z"/>
+  </g>
+
+  <!-- 草地：下 1/3 -->
+  <rect y="400" width="800" height="200" fill="url(#castleGrass)"/>
+  <path fill="#8FD474" d="M0,400 C140,384 260,414 400,404 C540,394 660,418 800,400 L800,436 L0,436 Z"/>
+  <!-- 草地上的小花與草叢，全部壓在下緣附近，中間留空給貼紙 -->
+  <g>
+    <g fill="#FFFFFF"><circle cx="86" cy="536" r="9"/><circle cx="104" cy="524" r="9"/><circle cx="122" cy="536" r="9"/><circle cx="104" cy="548" r="9"/></g>
+    <circle cx="104" cy="536" r="7" fill="#FFD166"/>
+    <g fill="#FFB7D5"><circle cx="694" cy="516" r="9"/><circle cx="712" cy="504" r="9"/><circle cx="730" cy="516" r="9"/><circle cx="712" cy="528" r="9"/></g>
+    <circle cx="712" cy="516" r="7" fill="#FFD166"/>
+    <path stroke="#6BB958" stroke-width="7" stroke-linecap="round" fill="none"
+          d="M300,570 C300,548 292,536 282,528 M320,570 C320,544 330,534 342,528 M500,566 C500,546 492,536 482,528 M520,566 C520,544 530,534 542,528"/>
+  </g>
+</svg>
