@@ -59,6 +59,20 @@
     { id: 'lg',  name: '粗',   scale: 1.5 }
   ];
 
+  /* ===== 選圖畫面的分類頁籤 =====
+     50 張圖擠在一面縮圖牆上太難找，改成上面一排貼紙頁籤，按了只留該類。
+     id 要跟 gallery() 給每一筆的 cat 對得起來；'all' 是特例（不篩）。
+     photo 類是自己上傳的照片，即使一張都沒有也要留著——上傳鈕在那一頁。 */
+  const CATS = [
+    { id: 'all',     emoji: '⭐', name: '全部' },
+    { id: 'animal',  emoji: '🐻', name: '動物' },
+    { id: 'fantasy', emoji: '👑', name: '公主城堡' },
+    { id: 'food',    emoji: '🍓', name: '水果甜點' },
+    { id: 'scene',   emoji: '🌈', name: '大張場景' },
+    { id: 'other',   emoji: '🚗', name: '其他' },
+    { id: 'photo',   emoji: '📷', name: '我的照片' }
+  ];
+
   // 正方線稿／照片的座標系邊長，跟 photo-tool.js 的 SIZE 一致（不可改）
   const CANVAS_SIZE = 800;
   // paintLayer 是非正方的「整張紙」：短邊固定 800，長邊按紙張長寬比等比放大，上限 1600。
@@ -75,6 +89,7 @@
   const selectScreen = document.getElementById('selectScreen');
   const gameScreen = document.getElementById('gameScreen');
   const picGrid = document.getElementById('picGrid');
+  const catTabs = document.getElementById('catTabs');
   const holder = document.getElementById('svgHolder');
   const artWrap = document.getElementById('artWrap');
   const toolbar = document.getElementById('toolbar');
@@ -102,6 +117,7 @@
   const artworkRow = document.getElementById('artworkRow');
 
   let galleryIndex = 0;
+  let currentCat = 'all';                           // 目前選的分類頁籤（回選圖畫面時保留）
   let customPics = loadCustomPics();  // [{type:'raster', id, name, dataUrl}]
   let mode = 'fill';                                // TOOLS 裡的 id
   let stampId = (window.STAMPS && window.STAMPS[0].id) || 'star';  // 目前選的印章圖案
@@ -123,20 +139,22 @@
   let saveTimer = null;                    // 進度存檔的 debounce timer
   let artworks = [];                       // 「我的作品」，由新到舊
 
-  /* 選圖畫面的順序：內建手繪 → 城堡公主 → 動物 → 水果甜點 → 自己上傳的照片。
-     各系列的 js 檔都是 classic script，用 window.XXX 取值，缺檔時安全跳過。 */
+  /* 選圖畫面的順序：內建手繪 → 城堡公主 → 動物 → 水果甜點 → 場景 → 自己上傳的照片。
+     各系列的 js 檔都是 classic script，用 window.XXX 取值，缺檔時安全跳過。
+     每一筆都帶 cat（分類頁籤用）：整個系列同一類的就給系列預設值，
+     內建的 LINEART 是混合的，改在資料裡逐筆寫 cat，這裡只當作沒寫時的退路。 */
   function gallery() {
+    const vectors = (list, cat) =>
+      (list || []).map(x => ({ type: 'vector', cat: x.cat || cat, name: x.name, svg: x.svg }));
     return [
-      ...[
-        ...LINEART,
-        ...(window.LINEART_FANTASY || []),
-        ...(window.LINEART_ANIMALS || []),
-        ...(window.LINEART_FOOD || [])
-      ].map(x => ({ type: 'vector', name: x.name, svg: x.svg })),
+      ...vectors(LINEART, 'other'),
+      ...vectors(window.LINEART_FANTASY, 'fantasy'),
+      ...vectors(window.LINEART_ANIMALS, 'animal'),
+      ...vectors(window.LINEART_FOOD, 'food'),
       // 場景系列是內建的點陣線稿：跟上傳照片同一套引擎，但不能刪、進度 key 用名字
       ...(window.LINEART_SCENES || []).map(x =>
-        ({ type: 'raster', builtin: true, id: 's:' + x.name, name: x.name, dataUrl: x.src })),
-      ...customPics
+        ({ type: 'raster', builtin: true, cat: 'scene', id: 's:' + x.name, name: x.name, dataUrl: x.src })),
+      ...customPics.map(x => ({ ...x, cat: 'photo' }))
     ];
   }
 
@@ -650,9 +668,37 @@
   });
 
   /* ===== 選圖畫面 ===== */
+  /* 分類頁籤。每一顆都是一張貼紙，點了只重畫縮圖牆（不重建頁籤本身，
+     只換 .on），空的分類會直接不出現——除了「我的照片」，上傳鈕在那一頁。 */
+  function buildCatTabs() {
+    if (!catTabs) return;
+    catTabs.innerHTML = '';
+    const counts = {};
+    gallery().forEach(x => { counts[x.cat] = (counts[x.cat] || 0) + 1; });
+    CATS.forEach(cat => {
+      if (cat.id !== 'all' && cat.id !== 'photo' && !counts[cat.id]) return;
+      const b = document.createElement('button');
+      b.className = 'cat-tab' + (cat.id === currentCat ? ' on' : '');
+      b.dataset.cat = cat.id;
+      b.innerHTML = `<span class="cat-emoji">${cat.emoji}</span>${cat.name}`;
+      b.addEventListener('click', () => {
+        if (currentCat === cat.id) return;
+        Sound.click();
+        currentCat = cat.id;
+        catTabs.querySelectorAll('.cat-tab').forEach(t =>
+          t.classList.toggle('on', t.dataset.cat === currentCat));
+        buildPicGrid();
+        picGrid.scrollIntoView({ block: 'nearest' });
+      });
+      catTabs.appendChild(b);
+    });
+  }
+
   function buildPicGrid() {
     picGrid.innerHTML = '';
+    // 索引一律用整份 gallery() 的位置：openPic()／進度存檔都認這個號碼，篩選不能動到它
     gallery().forEach((item, idx) => {
+      if (currentCat !== 'all' && item.cat !== currentCat) return;
       const cell = document.createElement('div');
       cell.className = 'pic-cell';
       cell.dataset.key = picKey(item);   // 補「畫到一半」角標時用來對號入座
@@ -682,6 +728,7 @@
           Sound.click();
           customPics = customPics.filter(p => p.id !== item.id);
           saveCustomPics();
+          buildCatTabs();
           buildPicGrid();
         });
         cell.appendChild(del);
@@ -690,7 +737,8 @@
       picGrid.appendChild(cell);
     });
 
-    // 最後一格：上傳照片
+    // 最後一格：上傳照片（只放在會看照片的兩頁，別的分類看到相機格會誤導）
+    if (currentCat !== 'all' && currentCat !== 'photo') { refreshWipBadges(); return; }
     const up = document.createElement('button');
     up.className = 'pic-thumb pic-upload';
     up.innerHTML = '<span>🖼️</span><span class="pic-upload-txt">上傳照片</span>';
@@ -1319,6 +1367,8 @@
         dataUrl
       });
       saveCustomPics();
+      currentCat = 'photo';   // 不切的話新照片會被目前的分類篩掉，回選圖畫面找不到
+      buildCatTabs();
       buildPicGrid();
       openPic(gallery().length - 1);   // 傳完直接進遊戲畫面畫新圖
     } catch (err) {
@@ -1519,6 +1569,7 @@
   syncEraserBtn();
   syncStampBtn();
   toolBtnIcon.textContent = currentTool().emoji;
+  buildCatTabs();
   buildPicGrid();
   updateButtons();
 

@@ -4,6 +4,7 @@
 const LINEART = [
   {
     name: '喵喵貓',
+    cat: 'animal',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path fill="none" stroke-width="4.5" d="M306,296 C352,288 368,254 348,236 C334,224 316,236 328,252"/>
       <path class="c" fill="#fff" stroke-width="6.75" d="M146,226 C110,250 90,290 90,322 C90,357 122,372 200,372 C278,372 310,357 310,322 C310,290 290,250 254,226 Z"/>
@@ -26,6 +27,7 @@ const LINEART = [
   },
   {
     name: '花蝴蝶',
+    cat: 'animal',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path class="c" fill="#fff" stroke-width="6.75" d="M184,188 C162,112 108,50 62,54 C28,58 26,112 46,152 C64,186 122,208 184,210 Z"/>
       <path class="c" fill="#fff" stroke-width="6.75" d="M216,188 C238,112 292,50 338,54 C372,58 374,112 354,152 C336,186 278,208 216,210 Z"/>
@@ -50,6 +52,7 @@ const LINEART = [
   },
   {
     name: '泡泡魚',
+    cat: 'animal',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path class="c" fill="#fff" stroke-width="4.5" d="M198,102 C204,52 240,32 276,46 C270,66 268,88 272,108"/>
       <path class="c" fill="#fff" stroke-width="4.5" d="M168,294 C150,322 160,348 186,350 C202,351 212,340 210,320"/>
@@ -69,6 +72,7 @@ const LINEART = [
   },
   {
     name: '太陽小花',
+    cat: 'other',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path fill="none" stroke-width="4.5" d="M200,280 C204,316 198,344 200,375"/>
       <path class="c" fill="#fff" stroke-width="3.75" d="M198,318 C150,294 100,296 66,328 C100,354 156,348 198,330 Z"/>
@@ -94,6 +98,7 @@ const LINEART = [
   },
   {
     name: '嘟嘟小汽車',
+    cat: 'other',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path fill="none" stroke-width="2.63" d="M30,362 L370,362"/>
       <path class="c" fill="#fff" stroke-width="6.75" d="M50,320 C32,320 26,296 32,276 C36,258 52,250 72,248 L96,182 C108,152 132,134 164,132 L236,132 C268,134 292,152 304,182 L328,248 C348,250 364,258 368,276 C374,296 368,320 350,320 Z"/>
@@ -114,6 +119,7 @@ const LINEART = [
   },
   {
     name: '微笑小公主',
+    cat: 'fantasy',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path class="c" fill="#fff" stroke-width="3.75" d="M186,204 C186,222 191,230 200,230 C209,230 214,222 214,204 Z"/>
       <circle class="c" fill="#fff" stroke-width="6.75" cx="200" cy="150" r="60"/>
@@ -142,6 +148,7 @@ const LINEART = [
   },
   {
     name: '星光城堡',
+    cat: 'fantasy',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path fill="none" stroke-width="2.63" d="M30,374 L370,374"/>
       <rect class="c" fill="#fff" stroke-width="4.5" x="168" y="120" width="64" height="130"/>
@@ -176,6 +183,7 @@ const LINEART = [
   },
   {
     name: '麻花辮公主',
+    cat: 'fantasy',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path class="c" fill="#fff" stroke-width="3.75" d="M186,204 C186,222 191,230 200,230 C209,230 214,222 214,204 Z"/>
       <circle class="c" fill="#fff" stroke-width="6.75" cx="200" cy="148" r="60"/>
@@ -211,6 +219,7 @@ const LINEART = [
   },
   {
     name: '小美人魚',
+    cat: 'fantasy',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path class="c" fill="#fff" stroke-width="4.5" d="M190,54 C140,56 106,88 106,134 C107,174 102,212 90,240 C84,254 86,266 96,266 C90,276 96,286 108,280 C126,270 136,240 139,204 C141,172 144,146 152,128 C160,112 174,104 190,100 Z"/>
       <path class="c" fill="#fff" stroke-width="4.5" d="M196,56 C246,58 278,90 276,132 C275,158 282,184 296,204 C304,216 298,228 286,224 C292,234 286,242 276,238 C260,230 250,206 248,176 C246,148 240,122 228,106 C219,95 208,89 196,85 Z"/>
