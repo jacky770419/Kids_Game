@@ -49,7 +49,21 @@
 <script>
 /* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
    權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+  /* 升版後自動換新：sw.js 有 skipWaiting＋clients.claim，新版一裝好就接管，
+     但「已經開著的頁面」跑的仍是舊 JS——加入主畫面的 App 不會被關掉，
+     結果 iPad 上永遠是舊版（2026-09-03 實機：新加的三處唸英文全部沒聲，重開 App 才好）。
+     所以新版 SW 一接管就把首頁重載一次拿新檔。只在首頁做：著色畫到一半被重載會很糟，
+     而每次進遊戲都會經過首頁，在這裡換就夠了。sessionStorage 旗標防止連續重載。 */
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    try {
+      if (sessionStorage.getItem('swReloaded') === '1') return;
+      sessionStorage.setItem('swReloaded', '1');
+    } catch (e) { /* 沒有 sessionStorage 也照樣重載一次 */ }
+    location.reload();
+  });
+}
 /* 顯示目前生效的快取版本（kids-vN 的 N）。拿不到就留空，不影響任何功能。 */
 if (window.caches && caches.keys) {
   caches.keys().then((names) => {

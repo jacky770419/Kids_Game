@@ -13,7 +13,7 @@
 </head>
 <body>
 <h2>語音探針（iPad 用）</h2>
-<p>每顆按鈕都會唸 <b>bear</b>。每按一顆，記下「有沒有聽到 bear」，五顆都按完把下面的紀錄框截圖給我。背景音樂請先照平常的狀態（有開就開著）。</p>
+<p>A～G 每顆都會唸 <b>bear</b>；H、I 唸注音（聽它是唸「ㄅ」的本音、還是「玻」、還是唸不出來）。每按一顆，記下「有沒有聽到 bear」，五顆都按完把下面的紀錄框截圖給我。背景音樂請先照平常的狀態（有開就開著）。</p>
 <button data-case="A">A　只唸，不放音效</button>
 <button data-case="B">B　先放音效再唸（＝選色／貼紙現況）</button>
 <button data-case="C">C　先唸再放音效</button>
@@ -21,6 +21,8 @@
 <button data-case="E">E　放音效，暫停 AudioContext 後再唸</button>
 <button data-case="F">F　開背景音樂（mp3）再唸</button>
 <button data-case="G">G　音樂播著，放音效後再唸（＝遊戲裡的實況）</button>
+<button data-case="H">H　注音：zh-TW 唸單一符號「ㄅ」</button>
+<button data-case="I">I　注音：zh-TW 唸「ㄅ ㄆ ㄇ ㄈ」</button>
 <div id="log"></div>
 <script src="../js/sound.js"></script>
 <script src="../js/speech.js"></script>
@@ -33,14 +35,14 @@
 
   /* 不走 Speech.say（它不回報事件），自己建 utterance 但語音挑選沿用 speech.js 的邏輯：
      onstart 沒來＝speak 被丟掉；onstart 來了卻沒聲音＝音訊工作階段被音效搶走。 */
-  function say(tag) {
+  function say(tag, text, lang) {
     const s = window.speechSynthesis;
     if (!s) { w(tag + ' 沒有 speechSynthesis'); return; }
     s.cancel();
-    const u = new SpeechSynthesisUtterance('bear');
-    u.lang = 'en-US'; u.rate = 0.85;
-    const voices = s.getVoices().filter(v => /^en/i.test(v.lang));
-    const v = voices.find(v => /^Samantha/i.test(v.name)) || voices.find(v => /Siri/i.test(v.name)) || voices[0];
+    const u = new SpeechSynthesisUtterance(text || 'bear');
+    u.lang = lang || 'en-US'; u.rate = 0.85;
+    const voices = s.getVoices().filter(v => (lang ? v.lang.replace('_', '-').toLowerCase() === lang.toLowerCase() : /^en/i.test(v.lang)));
+    const v = lang ? voices[0] : (voices.find(v => /^Samantha/i.test(v.name)) || voices.find(v => /Siri/i.test(v.name)) || voices[0]);
     if (v) u.voice = v;
     u.onstart = () => w(tag + ' onstart（語音有開始）voice=' + (v ? v.name : '系統預設'));
     u.onend = () => w(tag + ' onend');
@@ -67,6 +69,8 @@
     D() { sfx(); setTimeout(() => say('D'), 600); },
     F() { Music.play(); w('音樂 play() 已呼叫'); say('F'); },
     G() { Music.play(); sfx(); say('G'); },
+    H() { say('H', 'ㄅ', 'zh-TW'); },
+    I() { say('I', 'ㄅ ㄆ ㄇ ㄈ', 'zh-TW'); },
     E() {
       sfx();
       if (lastCtx && lastCtx.suspend) {
