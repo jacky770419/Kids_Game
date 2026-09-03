@@ -35,6 +35,11 @@ Lilita One 英文字）記在 `css/style.css` 的「共用元件（貼紙書）�
 
 用 Safari 打開這個網站的網址，點分享鈕 →「加入主畫面」，就會變成一個全螢幕的 App 圖示。
 
+第一次開啟時 `sw.js`（service worker）會把四頁、程式、圖片、三首音樂一次收進快取（約 4.2 MB），
+之後**完全沒網路也能開**——2026-09-03 之前 README 雖然寫了「離線也能玩」，其實沒有 service worker、
+還外連 Google Fonts，斷網是開不起來的。英文字型 Lilita One 現在放在 `assets/fonts/`（OFL 授權）。
+網站也會請瀏覽器把資料設成 persistent（`navigator.storage.persist()`），減少 iPad 空間不夠時被清掉的機會。
+
 橫向、直向都可以用；轉向時畫到一半的內容會留著（畫在紙面最外緣的背景筆畫會被裁掉）。
 畫到一半的進度與作品集存在瀏覽器的 IndexedDB 裡，單字遊戲的進度存在 localStorage，換裝置或清掉網站資料就會不見。
 
@@ -45,6 +50,17 @@ Lilita One 英文字）記在 `css/style.css` 的「共用元件（貼紙書）�
 ```bash
 python -m http.server 8080
 ```
+
+改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
+否則已加入主畫面的 iPad 會一直用舊版。commit 前跑三支檢查腳本（Node 直跑、零依賴）：
+
+```bash
+node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
+```
+
+- `check_data.js`：單字資料欄位、五個線稿系列的名稱不撞、`cat` 合法、SVG 可上色區都有 `fill`、場景 PNG 尺寸、拼圖／印章／花紋資料完整
+- `check_precache.js`：`sw.js` 的預快取清單與四個 HTML、資料檔實際引用的資產雙向對帳，並確認沒有外連字型
+- `check_sw.js`：service worker 的版本汰舊與 Range（音樂）切片行為
 
 ## 文件
 
