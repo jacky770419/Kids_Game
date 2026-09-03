@@ -204,6 +204,34 @@ body.home {
 }
 
 /* ===== 共用元件（貼紙書） ===== */
+/* 🏠 長按回首頁的進度環（行為在 js/kiosk.js）。
+   為什麼要有這圈：把回首頁改成長按之後，孩子點一下沒反應會以為按鈕壞了。
+   進度環是「你按對了，再撐一下」的回饋——不是罰她按太短，
+   所以未滿就放開只是環消失，沒有提示也沒有聲音。 */
+.home-hold {
+  position: relative;   /* 進度環用絕對定位掛在按鈕外側 */
+}
+
+.home-hold::after {
+  content: '';
+  position: absolute;
+  inset: -9px;               /* 撐到 5px 墨線之外，環不會壓到 🏠 */
+  border-radius: 24px;       /* 按鈕 18px + 外擴 6px，圓角才貼合 */
+  box-sizing: border-box;
+  padding: 5px;              /* 這就是環的粗細，配合下面的 mask 挖空中心 */
+  background: conic-gradient(from -90deg, #4ECDC4 calc(var(--hold, 0) * 360deg), rgba(0, 0, 0, 0) 0);
+  /* 兩層 mask 相減：整塊減去內容區＝只留下 padding 那一圈 */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  pointer-events: none;      /* 環不可以吃掉按鈕自己的觸控 */
+}
+
+/* 只有按住時才看得到；平常這顆就是普通的貼紙書按鈕 */
+.home-hold.holding::after { opacity: 1; }
+
 /* 難度膠囊：拼圖頁與單字頁共用 */
 .diff-btn {
   font-size: 22px;

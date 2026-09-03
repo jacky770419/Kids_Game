@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v2';
+const CACHE_VERSION = 'v3';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -26,6 +26,7 @@ const PRECACHE = [
   'css/style.css',
   // 程式
   'js/coloring.js',
+  'js/kiosk.js',
   'js/lineart-animals.js',
   'js/lineart-data.js',
   'js/lineart-fantasy.js',

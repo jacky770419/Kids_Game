@@ -1183,6 +1183,13 @@
 
   // 把目前選的顏色/花紋蓋到這次疊桶填色算出來的範圍裡
   function applyFloodFill(filledMask) {
+    /* 白縫成因：填色遮罩是把線稿 PNG 縮到 CANVAS_SIZE(800) 判斷 alpha 算出來的
+       （PhotoTool.maskFromStencil），縮圖時線的抗鋸齒半透明邊緣被判成「不是線」而納入
+       可填區；但顯示時線條圖層是疊在填色圖層最上面的原尺寸（1600/2048）PNG，它的抗鋸齒邊
+       只蓋住部分像素，填色沒蓋到的地方就露出畫布底色，看起來像線條內側一圈白縫。
+       解法：填色範圍只往線條像素方向膨脹 2px，讓填色被上層線條蓋住而不外溢到隔壁區域。 */
+    const mask = rasterEdgeMask ? PhotoTool.growIntoEdges(filledMask, rasterEdgeMask, CANVAS_SIZE, CANVAS_SIZE, 2) : filledMask;
+
     const tmp = document.createElement('canvas');
     tmp.width = CANVAS_SIZE;
     tmp.height = CANVAS_SIZE;
@@ -1191,8 +1198,8 @@
     tctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
 
     const imgData = tctx.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-    for (let i = 0; i < filledMask.length; i++) {
-      if (!filledMask[i]) imgData.data[i * 4 + 3] = 0; // 範圍外設成透明
+    for (let i = 0; i < mask.length; i++) {
+      if (!mask[i]) imgData.data[i * 4 + 3] = 0; // 範圍外設成透明
     }
     tctx.putImageData(imgData, 0, 0);
 

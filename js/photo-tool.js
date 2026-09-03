@@ -182,5 +182,35 @@ const PhotoTool = (() => {
     return visited;
   }
 
-  return { SIZE, process, maskFromStencil, floodFillMask };
+  /* 疊桶填色後，把填色範圍往「線條像素」膨脹幾步，蓋掉線稿邊緣的白縫。
+     縫的成因：填色遮罩是把線稿 PNG 縮到 SIZE 判斷 alpha 算出來的（見 maskFromStencil），
+     縮圖時線的抗鋸齒半透明邊緣被判成「不是線」而納入可填區；但顯示時線條圖層是疊在填色
+     圖層最上面的原尺寸 PNG，它的抗鋸齒邊只蓋住部分像素，填色沒蓋到的地方就露出畫布底色。
+     解法只能往「線像素」方向膨脹，不能往任意方向：線在最上層蓋著，滲進線裡看不見；
+     但滲進旁邊的可填像素就等於把顏色塗到隔壁區域，兩色會混在一起。所以每一步只把
+     edgeMask 判定為線（=== 1）的鄰居收進來，非線像素（不管填了沒）一律不動。
+     只做上下左右 4 鄰域，跟顯示用的 dilate() 8 鄰域不同函式、不共用。 */
+  function growIntoEdges(filled, edgeMask, w, h, steps) {
+    let cur = filled;
+    for (let s = 0; s < steps; s++) {
+      const next = cur.slice(); // 不改輸入，每步在拷貝上疊加
+      for (let y = 0; y < h; y++) {
+        const row = y * w;
+        for (let x = 0; x < w; x++) {
+          const i = row + x;
+          if (cur[i]) continue; // 已經填過的不用再判斷
+          // 只有「本身是線像素」才可能被納入；四個方向只要有一個已填的鄰居就收進來
+          if (!edgeMask[i]) continue;
+          if (x > 0 && cur[i - 1]) { next[i] = 1; continue; }
+          if (x < w - 1 && cur[i + 1]) { next[i] = 1; continue; }
+          if (y > 0 && cur[i - w]) { next[i] = 1; continue; }
+          if (y < h - 1 && cur[i + w]) { next[i] = 1; continue; }
+        }
+      }
+      cur = next;
+    }
+    return cur;
+  }
+
+  return { SIZE, process, maskFromStencil, floodFillMask, growIntoEdges };
 })();
