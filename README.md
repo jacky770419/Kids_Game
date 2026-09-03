@@ -36,6 +36,8 @@
   ↩️ 收掉最後一張、🗑️ 全部清空（不問「真的要刪嗎」，她讀不懂確認文字）。位置用比例座標存在 IndexedDB（`s:背景` 進度鍵），直向橫向都還原到同一個位置；
   📷 合成 1600×1200 的 PNG，跟著色頁共用同一個「我的作品」。21 張貼紙是用 `tools/make_stickers.js` 從拼圖／單字圖剝掉底色方框與背景裝飾產生的（可重跑、冪等），
   另 6 張手繪。合成前會先把 SVG 補上 width/height 再畫進 canvas，避開 iPad Safari 對無尺寸 SVG 畫成空白的問題
+- 🗣️ **唸英文開關**：每頁 🎵 旁邊的 🗣️ 可以把自動唸英文（選色、拼完、貼上、進題）整個關掉（變 🙊），設定存在裝置上；
+  單字頁親手按 🔊 不受影響，小孩主動要聽還是聽得到
 - 🎵 背景音樂是三首開源曲目輪播（換頁會接著播），音效用 Kenney 的 CC0 音檔；素材來源與授權見 [assets/CREDITS.md](assets/CREDITS.md)
 
 ## 畫面風格
@@ -69,7 +71,8 @@ python -m http.server 8080
 ```
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
-否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形）：
+否則已加入主畫面的 iPad 會一直用舊版。首頁在新版 service worker 接管時會自動重載一次拿新檔，右下角淡灰的 vN 就是目前生效的快取版本；
+看到版本沒跳就把 App 從多工畫面滑掉重開。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
