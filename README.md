@@ -28,6 +28,12 @@
   從系統語音裡挑英文母語音（Samantha → Siri → Google US English → 任一 en），iPad 首次要等 `voiceschanged`。
   同一支 speech.js 也讓**著色頁點色格時唸顏色英文**（56 格對照成 red／orange／yellow／green／blue／purple／pink／brown／black／white／gray 十一個字）、
   **拼圖拼完唸那張圖的英文**（`js/pictures-data.js` 的 `word` 欄）
+- 🧸 **貼紙**：選一個地方（城堡／海邊／森林，`assets/backgrounds/` 手繪 SVG），從右側貼紙匣把貼紙拖到畫面上，
+  貼上時唸英文（`js/stickers-data.js` 的 `word`；ice cream 另有 `say` 欄給語音斷詞）。四個分類：公主（公主、辮子公主、美人魚、獨角獸、彩虹）、
+  動物 12 隻、水果 6 種、甜點（杯子蛋糕、冰淇淋、甜甜圈、蛋糕）。貼上去的貼紙可以再拖、點一下換大小（小→中→大）並再唸一次、拖回匣子就收掉；
+  ↩️ 收掉最後一張、🗑️ 全部清空（不問「真的要刪嗎」，她讀不懂確認文字）。位置用比例座標存在 IndexedDB（`s:背景` 進度鍵），直向橫向都還原到同一個位置；
+  📷 合成 1600×1200 的 PNG，跟著色頁共用同一個「我的作品」。21 張貼紙是用 `tools/make_stickers.js` 從拼圖／單字圖剝掉底色方框與背景裝飾產生的（可重跑、冪等），
+  另 6 張手繪。合成前會先把 SVG 補上 width/height 再畫進 canvas，避開 iPad Safari 對無尺寸 SVG 畫成空白的問題
 - 🎵 背景音樂是三首開源曲目輪播（換頁會接著播），音效用 Kenney 的 CC0 音檔；素材來源與授權見 [assets/CREDITS.md](assets/CREDITS.md)
 
 ## 畫面風格
@@ -61,14 +67,14 @@ python -m http.server 8080
 ```
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
-否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何）：
+否則已加入主畫面的 iPad 會一直用舊版。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
 ```
 
 - `check_data.js`：單字資料欄位、五個線稿系列的名稱不撞、`cat` 合法、SVG 可上色區都有 `fill`、場景 PNG 尺寸、拼圖／印章／花紋資料完整
-- `check_precache.js`：`sw.js` 的預快取清單與四個 HTML、資料檔實際引用的資產雙向對帳，並確認沒有外連字型
+- `check_precache.js`：`sw.js` 的預快取清單與五個 HTML、資料檔實際引用的資產雙向對帳，並確認沒有外連字型
 - `check_sw.js`：service worker 的版本汰舊與 Range（音樂）切片行為
 
 ## 文件
