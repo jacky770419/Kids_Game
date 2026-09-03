@@ -1838,3 +1838,10 @@ body.stickers .cat-tab .cat-emoji { font-size: 26px; }
      置中會在頂列下面留一大塊空白，看起來像沒載入完 */
   #boardWrap { align-items: flex-start; }
 }
+
+/* 首頁右下角的快取版本號（iPad 實機驗證用），淡到不搶眼 */
+.ver-tag {
+  position: fixed; right: 10px; bottom: 6px;
+  font: 12px/1 system-ui, sans-serif; color: rgba(43, 43, 43, 0.35);
+  pointer-events: none; user-select: none;
+}

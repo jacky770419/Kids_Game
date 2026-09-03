@@ -41,12 +41,22 @@
   </a>
 </div>
 
+<!-- 右下角的小版本號：iPad 實機驗證時用來確認主畫面 App 跑的是不是最新快取，不是給小孩看的 -->
+<div id="ver" class="ver-tag"></div>
+
 <script src="js/kiosk.js"></script>
 <script src="js/music.js"></script>
 <script>
 /* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
    權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+/* 顯示目前生效的快取版本（kids-vN 的 N）。拿不到就留空，不影響任何功能。 */
+if (window.caches && caches.keys) {
+  caches.keys().then((names) => {
+    const k = names.filter((n) => n.startsWith('kids-')).sort().pop();
+    if (k) document.getElementById('ver').textContent = k.replace('kids-', '');
+  }).catch(() => {});
+}
 </script>
 </body>
 </html>

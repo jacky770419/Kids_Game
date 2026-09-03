@@ -19,9 +19,12 @@
 <button data-case="C">C　先唸再放音效</button>
 <button data-case="D">D　放音效，600ms 後再唸（＝拼圖現況）</button>
 <button data-case="E">E　放音效，暫停 AudioContext 後再唸</button>
+<button data-case="F">F　開背景音樂（mp3）再唸</button>
+<button data-case="G">G　音樂播著，放音效後再唸（＝遊戲裡的實況）</button>
 <div id="log"></div>
 <script src="../js/sound.js"></script>
 <script src="../js/speech.js"></script>
+<script src="../js/music.js"></script>
 <script>
 (() => {
   const log = document.getElementById('log');
@@ -62,6 +65,8 @@
     B() { sfx(); say('B'); },
     C() { say('C'); sfx(); },
     D() { sfx(); setTimeout(() => say('D'), 600); },
+    F() { Music.play(); w('音樂 play() 已呼叫'); say('F'); },
+    G() { Music.play(); sfx(); say('G'); },
     E() {
       sfx();
       if (lastCtx && lastCtx.suspend) {
@@ -70,6 +75,7 @@
     }
   };
   document.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { w('--- 按下 ' + b.dataset.case); cases[b.dataset.case](); }));
+  w('standalone=' + !!navigator.standalone + ' UA=' + navigator.userAgent.slice(0, 60));
   w('語音數=' + (window.speechSynthesis ? window.speechSynthesis.getVoices().length : 0) + '（iOS 第一次常是 0，按過一次會再載）');
 })();
 </script>
