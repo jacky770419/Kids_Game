@@ -11,6 +11,23 @@
   let currentPic = null;   // 目前的圖
   let lockedCount = 0;
   let totalPieces = 0;
+  let startSeq = 0;        // 開局序號：圖片載入是非同步的，回來時要確認自己還是最新那一局
+
+  /* 圖片先載入完成才能畫進 canvas。
+     為什麼要快取：切難度會重開同一張圖，每次重新解碼 SVG 會讓小孩看到閃一下。
+     為什麼指定 1200×1200：這些圖是只有 viewBox、沒有 width/height 的 SVG，
+     Safari 對「沒有內建尺寸」的 SVG 做 drawImage 會畫不出來；
+     在 Image 建構時給定尺寸就等於給它內建尺寸，順便拿到夠高的解析度來縮。 */
+  const imgCache = new Map();
+  function loadPicture(src) {
+    if (imgCache.has(src)) return Promise.resolve(imgCache.get(src));
+    return new Promise((resolve, reject) => {
+      const img = new Image(1200, 1200);
+      img.onload = () => { imgCache.set(src, img); resolve(img); };
+      img.onerror = () => reject(new Error('圖片載入失敗：' + src));
+      img.src = src;
+    });
+  }
 
   /* --- 難度切換 --- */
   document.querySelectorAll('.diff-btn').forEach(btn => {
@@ -63,6 +80,16 @@
     lockedCount = 0;
     totalPieces = gridN * gridN;
 
+    // 這一局的序號。載入回來時若已經不是最新的一局（小孩連按了難度或換圖），
+    // 就整個放棄，不然會把上一局的拼片畫進新的一局。
+    const seq = ++startSeq;
+    loadPicture(pic.src).then((img) => {
+      if (seq === startSeq) buildBoard(pic, img);
+    }).catch(() => { /* 圖載不進來就維持空板，不要丟例外嚇到使用者 */ });
+  }
+
+  function buildBoard(pic, img) {
+    const TAB = PuzzleGeom.TAB;
     const areaW = gameScreen.clientWidth;
     const areaH = gameScreen.clientHeight;
 
@@ -83,51 +110,71 @@
     board.appendChild(ghost);
 
     const pieceSize = side / gridN;
+    const margin = pieceSize * TAB;                 // 榫頭凸出去要占的邊距
+    const ink = Math.max(3, pieceSize * 0.03);      // 墨線寬度
+    /* 墨線是畫在路徑正中央的，凸榫的尖端剛好貼在 margin 的邊界上，
+       不多留半條線寬就會被 canvas 邊界切掉一小片，看起來像削平的榫頭。 */
+    const pad = Math.ceil(ink);
+    const elemSize = pieceSize * (1 + 2 * TAB) + 2 * pad;
 
-    // 格線
-    for (let r = 0; r < gridN; r++) {
-      for (let c = 0; c < gridN; c++) {
-        const cell = document.createElement('div');
-        cell.className = 'cell';
-        cell.style.left = (c * pieceSize) + 'px';
-        cell.style.top = (r * pieceSize) + 'px';
-        cell.style.width = pieceSize + 'px';
-        cell.style.height = pieceSize + 'px';
-        board.appendChild(cell);
-      }
-    }
+    // 格線改用「不畫」：榫頭是曲線，方格虛線跟拼片外形對不起來，反而誤導。
+    // 放置提示靠 #board .ghost 那張半透明底圖。
+
+    const dpr = window.devicePixelRatio || 1;
+    const edges = PuzzleGeom.edgeMap(gridN, Math.random);
 
     // 產生拼圖片，隨機散在下方
     const trayTop = boardY + side + 14;
-    const trayH = Math.max(areaH - trayTop - 10, pieceSize + 10);
+    const trayH = Math.max(areaH - trayTop - 10, elemSize + 10);
 
     for (let r = 0; r < gridN; r++) {
       for (let c = 0; c < gridN; c++) {
-        const piece = document.createElement('div');
+        const piece = document.createElement('canvas');
         piece.className = 'piece';
-        piece.style.width = pieceSize + 'px';
-        piece.style.height = pieceSize + 'px';
-        piece.style.backgroundImage = `url("${pic.src}")`;
-        piece.style.backgroundSize = `${side}px ${side}px`;
-        piece.style.backgroundPosition = `${-c * pieceSize}px ${-r * pieceSize}px`;
+        // CSS 尺寸維持邏輯像素，實際像素乘 dpr，Retina 上的墨線才不會糊
+        piece.width = Math.round(elemSize * dpr);
+        piece.height = Math.round(elemSize * dpr);
+        piece.style.width = elemSize + 'px';
+        piece.style.height = elemSize + 'px';
 
-        // 正確位置（相對 gameScreen）
-        piece.dataset.tx = boardX + c * pieceSize;
-        piece.dataset.ty = boardY + r * pieceSize;
+        const g = piece.getContext('2d');
+        g.scale(dpr, dpr);
+        g.translate(pad, pad);   // 之後所有幾何都以「含邊距的拼片框」為原點
 
-        const x = Math.random() * Math.max(areaW - pieceSize - 20, 1) + 10;
-        const y = trayTop + Math.random() * Math.max(trayH - pieceSize, 1);
+        const e = PuzzleGeom.edgesOf(edges, gridN, r, c);
+
+        // 先用外形當裁切遮罩貼圖，再用同一條路徑描墨線
+        g.save();
+        PuzzleGeom.tracePiece(g, pieceSize, e, TAB);
+        g.clip();
+        // 整張圖照這一片的位置偏移畫入：圖上的 (c*pieceSize, r*pieceSize)
+        // 要落在拼片框內側的左上角 (margin, margin)
+        g.drawImage(img, margin - c * pieceSize, margin - r * pieceSize, side, side);
+        g.restore();
+
+        PuzzleGeom.tracePiece(g, pieceSize, e, TAB);
+        g.lineWidth = ink;
+        g.strokeStyle = '#2b2b2b';
+        g.lineJoin = 'round';
+        g.stroke();
+
+        // 正確位置（相對 gameScreen）：canvas 元素的左上角＝格位置再減去邊距與留白
+        piece.dataset.tx = boardX + c * pieceSize - margin - pad;
+        piece.dataset.ty = boardY + r * pieceSize - margin - pad;
+
+        const x = Math.random() * Math.max(areaW - elemSize - 20, 1) + 10;
+        const y = trayTop + Math.random() * Math.max(trayH - elemSize, 1);
         piece.style.left = x + 'px';
         piece.style.top = y + 'px';
 
-        enableDrag(piece, pieceSize);
+        enableDrag(piece, elemSize, pieceSize);
         gameScreen.appendChild(piece);
       }
     }
   }
 
   /* --- 拖曳 --- */
-  function enableDrag(piece, pieceSize) {
+  function enableDrag(piece, elemSize, pieceSize) {
     let offsetX = 0, offsetY = 0;
 
     piece.addEventListener('pointerdown', (e) => {
@@ -143,8 +190,9 @@
       const move = (ev) => {
         let x = ev.clientX - areaRect.left - offsetX;
         let y = ev.clientY - areaRect.top - offsetY;
-        x = Math.max(-pieceSize * 0.3, Math.min(x, areaRect.width - pieceSize * 0.7));
-        y = Math.max(-pieceSize * 0.3, Math.min(y, areaRect.height - pieceSize * 0.7));
+        // 夾限用含邊距的元素尺寸算，拼片才不會有一半被拖出畫面外抓不回來
+        x = Math.max(-elemSize * 0.3, Math.min(x, areaRect.width - elemSize * 0.7));
+        y = Math.max(-elemSize * 0.3, Math.min(y, areaRect.height - elemSize * 0.7));
         piece.style.left = x + 'px';
         piece.style.top = y + 'px';
       };
@@ -169,7 +217,8 @@
     const ty = parseFloat(piece.dataset.ty);
     const x = parseFloat(piece.style.left);
     const y = parseFloat(piece.style.top);
-    const threshold = pieceSize * 0.42;
+    // 吸附半徑隨難度放大：片數愈多、每片愈小，放準愈難
+    const threshold = pieceSize * PuzzleGeom.snapFraction(gridN);
 
     if (Math.abs(x - tx) < threshold && Math.abs(y - ty) < threshold) {
       piece.style.left = tx + 'px';

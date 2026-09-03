@@ -1171,34 +1171,37 @@ body.puzzle {
   border-radius: 0;
 }
 
-#board .cell {
-  position: absolute;
-  border: 4px dashed rgba(43, 43, 43, 0.35);
+/* 難度列：五段難度，窄螢幕擠不下時允許換行而不是被切掉 */
+#diffRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-/* 拼圖片：同理用 outline 當墨線，left/top 的幾何完全不受影響 */
+/* 拼圖片：改成 canvas，外形是有榫頭的曲線。
+   墨線與貼圖都畫在 canvas 裡（同一條路徑先 clip 再 stroke），
+   所以這裡不能再用 outline／border——那會沿著方形的元素框畫，把榫頭外的空白也框起來。
+   陰影改用 filter: drop-shadow，它吃的是不透明像素的輪廓，會順著榫頭走。 */
 .piece {
   position: absolute;
-  border-radius: 12px;
-  outline: 5px solid #2b2b2b;
-  outline-offset: -5px;
-  box-shadow: 8px 8px 0 #2b2b2b;
+  background: none;
+  filter: drop-shadow(6px 6px 0 #2b2b2b);
   touch-action: none;
   z-index: 5;
 }
 
-/* 拼好就變平：墨線與陰影都收掉，融進拼圖板 */
+/* 拼好就變平：陰影收掉融進拼圖板。
+   z-index 壓到最低，後放的鄰片凸榫才會蓋在它上面，不會出現「榫頭被切一半」的錯覺。 */
 .piece.locked {
-  outline: none;
-  box-shadow: none;
-  border-radius: 0;
+  filter: none;
   z-index: 1;
   pointer-events: none;
 }
 
 .piece.dragging {
-  box-shadow: 12px 12px 0 #2b2b2b;
-  z-index: 50;
+  filter: drop-shadow(10px 10px 0 #2b2b2b);
+  z-index: 30;
 }
 
 /* ===== 過關畫面 & 覆蓋層 ===== */

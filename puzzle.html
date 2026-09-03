@@ -15,10 +15,14 @@
   <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
   <button id="backBtn" class="icon-btn" hidden>🔙</button>
   <span class="spacer"></span>
-  <div id="diffRow" style="display:flex; gap:10px;">
-    <button class="diff-btn selected" data-n="2">2×2 ⭐</button>
-    <button class="diff-btn" data-n="3">3×3 ⭐⭐</button>
-    <button class="diff-btn" data-n="4">4×4 ⭐⭐⭐</button>
+  <!-- 五段難度：星星從標籤移到 title。五顆按鈕各帶 1～5 顆星在 834 寬直向會被擠掉，
+       而她認得數字，「N×N」本身就是最直接的難度線索。 -->
+  <div id="diffRow">
+    <button class="diff-btn selected" data-n="2" title="⭐">2×2</button>
+    <button class="diff-btn" data-n="3" title="⭐⭐">3×3</button>
+    <button class="diff-btn" data-n="4" title="⭐⭐⭐">4×4</button>
+    <button class="diff-btn" data-n="5" title="⭐⭐⭐⭐">5×5</button>
+    <button class="diff-btn" data-n="6" title="⭐⭐⭐⭐⭐">6×6</button>
   </div>
   <span class="spacer"></span>
   <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
@@ -48,6 +52,7 @@
 <script src="js/speech.js"></script>
 <script src="js/music.js"></script>
 <script src="js/pictures-data.js"></script>
+<script src="js/puzzle-geom.js"></script>
 <script src="js/puzzle.js"></script>
 <script>
 /* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
