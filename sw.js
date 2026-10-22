@@ -6,12 +6,12 @@
    音樂也在清單裡——離線沒有背景音樂，對她來說就是壞掉了。
 
    放在 repo 根目錄是必要的：service worker 的 scope 不能超過自己的所在目錄，
-   放在根目錄才能同時涵蓋 index / coloring / puzzle / words / stickers 五頁。
+   放在根目錄才能同時涵蓋 index / coloring / puzzle / words / stickers / cake 六頁。
 
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v9';
+const CACHE_VERSION = 'v10';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -23,9 +23,14 @@ const PRECACHE = [
   'puzzle.html',
   'words.html',
   'stickers.html',
+  'cake.html',
   'manifest.json',
   'css/style.css',
   // 程式
+  'js/cake-data.js',
+  'js/cake-draw.js',
+  'js/cake-state.js',
+  'js/cake.js',
   'js/coloring.js',
   'js/kiosk.js',
   'js/lineart-animals.js',

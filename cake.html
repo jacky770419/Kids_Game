@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>蛋糕店 - 小小遊樂園</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cake">
+
+<header class="bar">
+  <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
+  <button id="backBtn" class="icon-btn" hidden title="換一種玩法">🔙</button>
+  <span class="spacer"></span>
+  <!-- 工具都在右側：左手扶著平板時不會被手掌壓到，也不放在畫面下緣（手腕誤觸） -->
+  <button id="listenBtn" class="icon-btn" hidden title="只聽不看">👂</button>
+  <button id="undoBtn" class="icon-btn" hidden title="上一步">↩️</button>
+  <button id="clearBtn" class="icon-btn" hidden title="重新做">🗑️</button>
+  <button id="partyBtn" class="icon-btn" hidden title="慶祝">🎉</button>
+  <button id="saveBtn" class="icon-btn" hidden title="存成圖片">📷</button>
+  <button id="speechBtn" class="icon-btn" title="唸英文">🗣️</button>
+  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
+</header>
+
+<main id="selectScreen">
+  <div class="mode-row">
+    <button id="freeCard" class="mode-card mode-free">
+      <span class="mode-demo"><span id="freeDemo" class="demo-pic demo-scene"></span></span>
+      <span class="mode-label">做蛋糕</span>
+    </button>
+    <button id="orderCard" class="mode-card mode-order">
+      <span class="mode-demo">
+        <span class="demo-pic"><img src="assets/stickers/rabbit.svg" alt=""></span>
+        <span id="orderDemo" class="demo-bubble"></span>
+      </span>
+      <span class="mode-label">客人點餐</span>
+    </button>
+  </div>
+</main>
+
+<main id="gameScreen" hidden>
+  <!-- 板面固定 4:3，跟 cake-draw.js 的 800×600 一致 -->
+  <div id="boardWrap">
+    <div id="board">
+      <div id="cakeSvg"></div>
+      <!-- 點餐模式才出現：左下角的客人、左上角的點餐泡泡、做對之後的「下一位」 -->
+      <img id="customer" alt="" draggable="false" hidden>
+      <button id="bubble" hidden title="再聽一次"></button>
+      <button id="nextBtn" class="big-btn" hidden>下一位 ➡️</button>
+      <div id="fx"></div>
+    </div>
+  </div>
+  <!-- 材料匣：直向也留在右側，不搬到底部（下緣是手腕會壓到的地方） -->
+  <aside id="tray">
+    <div id="catTabs" class="cat-tabs"></div>
+    <div id="trayScroll"></div>
+  </aside>
+</main>
+
+<div id="saveOverlay" class="overlay" hidden>
+  <img id="saveImg" alt="蛋糕作品">
+  <div class="save-hint">長按圖片就可以存到相簿囉！</div>
+  <button id="closeSave" class="big-btn alt">關閉</button>
+</div>
+
+<script src="js/kiosk.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/music.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/cake-data.js"></script>
+<script src="js/cake-state.js"></script>
+<script src="js/cake-draw.js"></script>
+<script src="js/cake.js"></script>
+<script>
+/* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
+   權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

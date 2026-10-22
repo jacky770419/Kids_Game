@@ -36,7 +36,16 @@
   ↩️ 收掉最後一張、🗑️ 全部清空（不問「真的要刪嗎」，她讀不懂確認文字）。位置用比例座標存在 IndexedDB（`s:背景` 進度鍵），直向橫向都還原到同一個位置；
   📷 合成 1600×1200 的 PNG，跟著色頁共用同一個「我的作品」。21 張貼紙是用 `tools/make_stickers.js` 從拼圖／單字圖剝掉底色方框與背景裝飾產生的（可重跑、冪等），
   另 6 張手繪。合成前會先把 SVG 補上 width/height 再畫進 canvas，避開 iPad Safari 對無尺寸 SVG 畫成空白的問題
-- 🗣️ **唸英文開關**：每頁 🎵 旁邊的 🗣️ 可以把自動唸英文（選色、拼完、貼上、進題）整個關掉（變 🙊），設定存在裝置上；
+- 🎂 **蛋糕店**：兩種玩法共用同一個板面與右側材料匣（🍰 蛋糕六色／🍦 奶油五色／🍓 裝飾七種），材料用**點一下**放上去，不用拖——
+  裝飾位置由程式排好（前排三個、後排四個，最多七個），一排一排放她才數得清楚；放的時候會數出來（「two cherries」），點蛋糕上的裝飾就拿掉。
+  **做蛋糕**：自由疊一到三層（滿三層時換最上層的顏色）、淋奶油（同一種再點一次＝拿掉），🎉 慶祝（有蠟燭唸 Happy birthday）、
+  📷 存進跟著色頁共用的「我的作品」，做到一半離開會記住（IndexedDB `k:free`）。
+  **客人點餐**：動物客人說「I want a pink cake with two cherries.」，左上泡泡用圖畫出點的單，做對的那格打勾，兩格都對就上菜、出現「下一位」；
+  點客人或泡泡再聽一次（唸英文開關關著也照唸）；👂 開「只聽不看」，泡泡變成「？」、做對的那格才翻出圖。
+  對答案是「每一層都是點的顏色＋那種裝飾剛好 N 個」，多放別的裝飾不管；數量 1～4，蠟燭不出題。
+  蛋糕不是圖檔，是 `js/cake-draw.js` 現場畫的 SVG（顏色只是參數），存圖時同一份字串補上 width/height 轉 blob 畫進 canvas；
+  資料在 `js/cake-data.js`、純邏輯在 `js/cake-state.js`
+- 🗣️ **唸英文開關**：每頁 🎵 旁邊的 🗣️ 可以把自動唸英文（選色、拼完、貼上、進題、放蛋糕材料、點餐）整個關掉（變 🙊），設定存在裝置上；
   單字頁親手按 🔊 不受影響，小孩主動要聽還是聽得到
 - 🎵 背景音樂是三首開源曲目輪播（換頁會接著播），音效用 Kenney 的 CC0 音檔；素材來源與授權見 [assets/CREDITS.md](assets/CREDITS.md)
 
@@ -54,7 +63,7 @@ Lilita One 英文字）記在 `css/style.css` 的「共用元件（貼紙書）�
 每一頁的 🏠 要**長按約 0.7 秒**才回首頁，按住時按鈕外圈會轉一圈青色進度環，沒按滿放開就什麼都不會發生——
 五歲小孩畫到一半手掌掃到按鈕不會整張畫不見。
 
-第一次開啟時 `sw.js`（service worker）會把四頁、程式、圖片、三首音樂一次收進快取（約 4.2 MB），
+第一次開啟時 `sw.js`（service worker）會把六頁、程式、圖片、三首音樂一次收進快取（約 4.2 MB），
 之後**完全沒網路也能開**——2026-09-03 之前 README 雖然寫了「離線也能玩」，其實沒有 service worker、
 還外連 Google Fonts，斷網是開不起來的。英文字型 Lilita One 現在放在 `assets/fonts/`（OFL 授權）。
 網站也會請瀏覽器把資料設成 persistent（`navigator.storage.persist()`），減少 iPad 空間不夠時被清掉的機會。
@@ -72,14 +81,14 @@ python -m http.server 8080
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
 否則已加入主畫面的 iPad 會一直用舊版。首頁在新版 service worker 接管時會自動重載一次拿新檔，右下角淡灰的 vN 就是目前生效的快取版本；
-看到版本沒跳就把 App 從多工畫面滑掉重開。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形）：
+看到版本沒跳就把 App 從多工畫面滑掉重開。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、蛋糕店的對答案與畫圖）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
 ```
 
 - `check_data.js`：單字資料欄位、五個線稿系列的名稱不撞、`cat` 合法、SVG 可上色區都有 `fill`、場景 PNG 尺寸、拼圖／印章／花紋資料完整
-- `check_precache.js`：`sw.js` 的預快取清單與五個 HTML、資料檔實際引用的資產雙向對帳，並確認沒有外連字型
+- `check_precache.js`：`sw.js` 的預快取清單與六個 HTML、資料檔實際引用的資產雙向對帳，並確認沒有外連字型
 - `check_sw.js`：service worker 的版本汰舊與 Range（音樂）切片行為
 
 ## 文件

@@ -117,31 +117,34 @@ body.home {
   transform: rotate(-2deg);
 }
 
-/* 四張卡：橫向一列四張、直向兩列兩張。
+/* 五張卡：橫向排 3＋2、直向排 2＋2＋1，最後一列置中。
    卡片邊長同時受「寬度塞得下 N 張」與「高度塞得下 N 列＋標題」限制，
-   否則 iPad 橫向會排成 3＋1 兩列，整體比螢幕高，置中之後標題被頂出上緣、
-   第四張卡被壓出下緣（2026-09-03 實機截圖）。 */
+   否則整體比螢幕高，置中之後標題被頂出上緣、最後一列被壓出下緣（2026-09-03 實機截圖）。
+   一列五張不行：iPad 橫向每張只剩 140px，比兩列的 240px 小一大截。
+   用 flex-wrap 而不是 grid：grid 的最後一列會靠左，flex 才能讓落單的卡置中。 */
 .menu {
   --menu-gap: clamp(24px, 3.5vw, 48px);
-  --menu-cols: 4;
-  --menu-rows: 1;
+  --menu-cols: 3;
+  --menu-rows: 2;
   /* 26px 是卡片外圈白邊＋黑框＋硬陰影要用的餘裕 */
   --card: min(290px,
               calc((100vw - 48px - (var(--menu-cols) - 1) * var(--menu-gap) - var(--menu-cols) * 26px) / var(--menu-cols)),
               calc((100vh - 200px - (var(--menu-rows) - 1) * var(--menu-gap) - var(--menu-rows) * 26px) / var(--menu-rows) / 1.07));
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(var(--menu-cols), var(--card));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--menu-gap);
   justify-content: center;
+  /* 寬度剛好放 N 張，第 N+1 張才會換行 */
+  width: calc(var(--menu-cols) * var(--card) + (var(--menu-cols) - 1) * var(--menu-gap) + 48px);
   /* 貼紙卡外面還有 13px 的白邊＋黑框，左右要留位子，直向才不會被切掉 */
   padding: 0 24px;
   max-width: 100%;
 }
 
 @media (orientation: portrait) {
-  .menu { --menu-cols: 2; --menu-rows: 2; }
+  .menu { --menu-cols: 2; --menu-rows: 3; }
 }
 
 /* 貼紙卡：彩色底 + 白邊 + 黑外框 + 硬陰影，各自微歪 */
@@ -1701,7 +1704,8 @@ body.stickers .pic-grid {
 }
 
 /* --- 遊戲畫面：左邊板面、右邊貼紙匣（直向也一樣，不搬到下緣） --- */
-body.stickers #gameScreen {
+body.stickers #gameScreen,
+body.cake #gameScreen {
   flex: 1;
   min-height: 0;
   display: flex;
@@ -1782,7 +1786,8 @@ body.stickers #gameScreen {
    排成固定的 2×2 而不是讓它自己換行：匣子只有 160～220px 寬，
    四顆一列在窄的時候會變成 3+1，看起來像壞掉；2×2 在每個寬度下都一樣。
    只留 emoji（中文放在 title）——放中文會把每顆撐到塞不下。 */
-body.stickers .cat-tabs {
+body.stickers .cat-tabs,
+body.cake .cat-tabs {
   position: static;
   flex: 0 0 auto;
   display: grid;
@@ -1795,7 +1800,8 @@ body.stickers .cat-tabs {
   margin-bottom: 0;
 }
 
-body.stickers .cat-tab {
+body.stickers .cat-tab,
+body.cake .cat-tab {
   justify-content: center;
   padding: 6px 0;
   border-width: 3px;
@@ -1803,12 +1809,15 @@ body.stickers .cat-tab {
 }
 
 body.stickers .cat-tab.on,
-body.stickers .cat-tab:active {
+body.stickers .cat-tab:active,
+body.cake .cat-tab.on,
+body.cake .cat-tab:active {
   transform: translate(3px, 3px);
   box-shadow: 0 0 0 #2b2b2b;
 }
 
-body.stickers .cat-tab .cat-emoji { font-size: 26px; }
+body.stickers .cat-tab .cat-emoji,
+body.cake .cat-tab .cat-emoji { font-size: 26px; }
 
 #trayScroll {
   flex: 1;
@@ -1861,13 +1870,209 @@ body.stickers .cat-tab .cat-emoji { font-size: 26px; }
 
 /* 直向：板面會變矮，匣子窄一點把寬度讓給板面 */
 @media (orientation: portrait) {
-  body.stickers #gameScreen { gap: 10px; padding-left: 10px; padding-right: 10px; }
+  body.stickers #gameScreen,
+  body.cake #gameScreen { gap: 10px; padding-left: 10px; padding-right: 10px; }
   /* 直向的板面受寬度限制、長不大，匣子維持兩欄比較好按 */
   #tray { width: clamp(170px, 24vw, 212px); }
   /* 直向的板面只有畫面一半高，靠上對齊才會跟匣子的頂端切齊；
      置中會在頂列下面留一大塊空白，看起來像沒載入完 */
   #boardWrap { align-items: flex-start; }
 }
+
+/* ===== 蛋糕店 ===== */
+/* 版面（板面＋右側材料匣、分類頁籤）跟貼紙頁共用，上面的 body.stickers 規則都有併 body.cake。 */
+
+/* 首頁的第五張卡：粉紅，跟著色的紅錯開 */
+.home .cake-card { --rot: -2deg; background: #F78FB3; }
+
+body.cake {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 選模式：沿用單字頁的 .mode-row / .mode-card */
+body.cake #selectScreen {
+  display: flex;
+  flex-direction: column;
+}
+
+.mode-free { background: #FF9EC4; --rot: -2deg; }
+.mode-order { background: #4ECDC4; --rot: 2deg; }
+
+.mode-demo .demo-pic.demo-scene {
+  width: min(250px, 23vw, 31vh);
+  height: calc(min(250px, 23vw, 31vh) * 0.75);
+}
+.demo-scene svg { display: block; width: 100%; height: 100%; }
+
+.mode-demo .demo-bubble {
+  display: flex;
+  gap: 4px;
+  padding: 8px 10px;
+  border-radius: 22px;
+  background: #fff;
+  border: 5px solid #2b2b2b;
+  box-shadow: 5px 5px 0 #2b2b2b;
+}
+.demo-bubble .order-icon { width: 54px; height: 54px; }
+
+/* --- 板面 --- */
+/* container：泡泡、客人、按鈕的大小都跟著板面寬（cqw），直向板面變小時一起縮 */
+body.cake #board { container-type: inline-size; }
+
+#cakeSvg { position: absolute; inset: 0; }
+#cakeSvg svg { display: block; width: 100%; height: 100%; }
+#cakeSvg .tp { cursor: pointer; }
+
+/* 蠟燭的火焰輕輕晃（全站的 prefers-reduced-motion 規則會把它關掉） */
+#cakeSvg .flame {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: cakeFlame 0.9s ease-in-out infinite alternate;
+}
+@keyframes cakeFlame {
+  from { transform: scale(1, 1) rotate(-4deg); }
+  to { transform: scale(0.9, 1.12) rotate(4deg); }
+}
+
+/* 點餐的客人：左下角，點一下再聽一次 */
+#customer {
+  position: absolute;
+  left: 2%;
+  bottom: 9%;
+  width: 30%;
+  filter: drop-shadow(4px 4px 0 rgba(43, 43, 43, 0.3));
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+#customer.happy { animation: cakeHop 0.45s ease 3; }
+@keyframes cakeHop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9%); }
+}
+
+/* 點餐泡泡：白色貼紙框，左上角，尾巴指向下面的客人 */
+#bubble {
+  position: absolute;
+  left: 2%;
+  top: 3%;
+  max-width: 52%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2cqw;
+  padding: 1cqw 1.4cqw;
+  border-radius: 3cqw;
+  background: #fff;
+  border: 5px solid #2b2b2b;
+  box-shadow: 5px 5px 0 #2b2b2b;
+  z-index: 3;
+}
+#bubble::after {
+  content: '';
+  position: absolute;
+  left: 18%;
+  bottom: -22px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-right: 5px solid #2b2b2b;
+  border-bottom: 5px solid #2b2b2b;
+  transform: rotate(45deg);
+}
+#bubble:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 #2b2b2b; }
+
+.order-ear { font-size: 3.4cqw; line-height: 1; }
+
+/* 點餐的一格（蛋糕顏色／裝飾×數量）：虛線框，做對了變成綠框打勾 */
+.order-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.4cqw;
+  border-radius: 1.8cqw;
+  border: 3px dashed #C9BFAE;
+  background: #FFF9E8;
+}
+.order-part.ok { border: 3px solid #43A047; background: #E6F6E3; }
+.order-part.ok::after {
+  content: '✓';
+  position: absolute;
+  top: -1.4cqw;
+  right: -1.2cqw;
+  width: 3.2cqw;
+  height: 3.2cqw;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  background: #43A047;
+  color: #fff;
+  border: 3px solid #2b2b2b;
+  font: 900 2.2cqw/1 system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-icon { display: block; width: 7.4cqw; height: 7.4cqw; }
+.order-icon svg { display: block; width: 100%; height: 100%; }
+.order-q {
+  width: 7.4cqw;
+  height: 7.4cqw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.4cqw;
+  color: #A89C88;
+}
+
+/* 做對之後才出現的「下一位」：右上角，不在下緣 */
+#nextBtn {
+  position: absolute;
+  right: 2.5%;
+  top: 3%;
+  z-index: 4;
+  font-size: max(20px, 3.4cqw);
+  padding: 1.4cqw 2.4cqw;
+  animation: cakePopIn 0.35s ease-out;
+}
+@keyframes cakePopIn {
+  from { transform: scale(0.4); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* 慶祝的 emoji：從下面飄上去，不吃點擊 */
+#fx {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+}
+.fx-bit {
+  position: absolute;
+  bottom: -12%;
+  opacity: 0;
+  animation: cakeRise 1.5s ease-out forwards;
+}
+@keyframes cakeRise {
+  0% { bottom: -12%; opacity: 0; transform: scale(0.6); }
+  15% { opacity: 1; }
+  100% { bottom: 92%; opacity: 0; transform: scale(1.15); }
+}
+
+/* --- 材料匣：格子是按鈕（點一下放上去），裡面是 cake-draw.js 畫的小 SVG --- */
+body.cake .tray-item { cursor: pointer; }
+body.cake .tray-item svg { display: block; width: 100%; height: 100%; }
+body.cake .tray-item.wiggle { animation: cakeWiggle 0.35s ease; }
+@keyframes cakeWiggle {
+  25% { transform: translateX(-6px) rotate(-4deg); }
+  75% { transform: translateX(6px) rotate(4deg); }
+}
+body.cake .cat-tabs { grid-template-columns: repeat(3, 1fr); }
+
+#undoBtn.dim { opacity: 0.45; }
 
 /* 首頁右下角的快取版本號（iPad 實機驗證用），淡到不搶眼 */
 .ver-tag {
