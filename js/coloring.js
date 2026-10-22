@@ -72,8 +72,10 @@
   ];
   const STAMP_ACCENT = '#FFFFFF';
 
-  // 畫筆粗細：四段可選，scale 乘在每種工具原本的 width 上（小朋友常常想要比預設更細的筆）
+  // 畫筆粗細：五段可選，scale 乘在每種工具原本的 width 上（小朋友常常想要比預設更細的筆）
+  // 超細配細筆約 2px，是給 Apple Pencil 描小地方用的
   const BRUSH_SIZES = [
+    { id: 'xxs', name: '超細', scale: 0.18 },
     { id: 'xs',  name: '最細', scale: 0.35 },
     { id: 'sm',  name: '細',   scale: 0.6 },
     { id: 'mid', name: '中',   scale: 1 },
@@ -149,7 +151,8 @@
   let galleryIndex = 0;
   let currentCat = 'all';                           // 目前選的分類頁籤（回選圖畫面時保留）
   let customPics = loadCustomPics();  // [{type:'raster', id, name, dataUrl}]
-  let mode = 'fill';                                // TOOLS 裡的 id
+  let mode = 'fill';                                // TOOLS 裡的 id，或 'stamp'
+  let penId = 'fill';                               // 最後選的 TOOLS 工具：蓋章／橡皮擦之後切回畫筆就回到它
   let stampId = (window.STAMPS && window.STAMPS[0].id) || 'star';  // 目前選的印章圖案
   let stampSizeId = 'mid';                                         // 目前選的印章大小
   let brushSizeId = 'mid';                                         // 目前選的畫筆粗細
@@ -193,6 +196,10 @@
   function currentTool() {
     if (mode === 'stamp') return STAMP_TOOL;
     return TOOLS.find(t => t.id === mode) || TOOLS[0];
+  }
+
+  function penTool() {
+    return TOOLS.find(t => t.id === penId) || TOOLS[0];
   }
 
   function currentStamp() {
@@ -339,7 +346,7 @@
     toolList.innerHTML = '';
     TOOLS.forEach(t => {
       const b = document.createElement('button');
-      b.className = 'tool-item' + (t.id === mode ? ' selected' : '');
+      b.className = 'tool-item';
       b.dataset.tool = t.id;
       b.innerHTML = `<span class="tool-emoji">${t.emoji}</span><span>${t.name}</span>`;
       b.addEventListener('click', () => selectTool(t.id));
@@ -364,9 +371,10 @@
   }
 
   /* 粗細那一列：只有「有 width」的筆（粗筆／細筆／水彩／亮粉筆）才顯示，
-     填滿、潑墨沒有線寬可調。用目前選的筆畫出實際粗細的圓點，小孩才看得出差別 */
+     填滿、潑墨沒有線寬可調。用目前選的筆畫出實際粗細的圓點，小孩才看得出差別。
+     看的是 penTool() 不是 currentTool()：蓋章中打開工具面板，這列要是「切回去那支筆」的粗細 */
   function refreshToolSizeRow() {
-    const t = currentTool();
+    const t = penTool();
     const supportsSize = typeof t.width === 'number';
     toolSizeRow.hidden = !supportsSize;
     if (!supportsSize) return;
@@ -391,7 +399,7 @@
     const c = document.createElement('canvas');
     c.width = side; c.height = side;
     const g = c.getContext('2d');
-    const r = Math.max(2, Math.min(side / 2 - 2, (baseWidth * scale) / 2));
+    const r = Math.max(1, Math.min(side / 2 - 2, (baseWidth * scale) / 2));
     g.fillStyle = '#5a4a38';
     g.beginPath();
     g.arc(side / 2, side / 2, r, 0, Math.PI * 2);
@@ -401,7 +409,10 @@
 
   function selectBrushSize(id) {
     brushSizeId = id;
-    stopErasing();             // 調畫筆粗細＝想畫，不是想擦
+    // 調畫筆粗細＝想用筆畫：不管現在是蓋章還是橡皮擦，都切回最後那支筆
+    eraser = false;
+    mode = penId;
+    syncActiveTool();
     toolSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
@@ -429,11 +440,8 @@
 
   function selectEraserSize(id) {
     eraserSizeId = id;
-    if (!eraser) {             // 調橡皮擦大小＝想擦，順手切過去
-      eraser = true;
-      syncEraserBtn();
-      syncPaintPointerEvents();
-    }
+    eraser = true;             // 調橡皮擦大小＝想擦，順手切過去
+    syncActiveTool();
     eraserSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
@@ -547,8 +555,18 @@
     }
   }
 
-  function syncEraserBtn() {
+  /* 工具 / 蓋章 / 橡皮擦三顆鈕同一時間只亮一顆，工具面板裡也只在用筆時標出那支筆。
+     以前各自 toggle，開橡皮擦時蓋章鈕還亮著、工具鈕從來不亮，小孩分不出現在拿的是什麼。
+     所有改 mode / eraser 的地方最後都呼叫這支，不要再各自同步按鈕。 */
+  function syncActiveTool() {
+    const usingPen = !eraser && mode !== 'stamp';
+    toolBtn.classList.toggle('tool-on', usingPen);
+    stampBtn.classList.toggle('stamp-on', !eraser && mode === 'stamp');
     eraserBtn.classList.toggle('eraser-on', eraser);
+    toolBtnIcon.textContent = penTool().emoji;
+    toolList.querySelectorAll('.tool-item').forEach(b =>
+      b.classList.toggle('selected', usingPen && b.dataset.tool === penId));
+    syncPaintPointerEvents();
   }
 
   /* 填滿工具要讓點擊穿過去打到底下的 SVG 區塊，所以畫布收起來不吃事件；
@@ -559,13 +577,6 @@
 
   function syncPaintPointerEvents() {
     if (paintCanvas) paintCanvas.style.pointerEvents = paintLayerHitTest();
-  }
-
-  function stopErasing() {
-    if (!eraser) return;
-    eraser = false;
-    syncEraserBtn();
-    syncPaintPointerEvents();
   }
 
   function positionPanel(panel, trigger) {
@@ -637,15 +648,10 @@
 
   /* ===== 選工具 / 選顏色 / 橡皮擦 ===== */
   function selectTool(id) {
-    mode = id;
-    stopErasing();             // 選了畫圖工具＝不再是擦的狀態
-    const t = currentTool();
-    toolBtnIcon.textContent = t.emoji;
-    toolList.querySelectorAll('.tool-item').forEach(b =>
-      b.classList.toggle('selected', b.dataset.tool === id));
+    mode = penId = id;
+    eraser = false;            // 選了畫圖工具＝不再是擦的狀態
+    syncActiveTool();
     refreshToolSizeRow();
-    syncStampBtn();
-    syncPaintPointerEvents();
     Sound.click();
     closePanels();
   }
@@ -654,40 +660,29 @@
   function selectStamp(id) {
     stampId = id;
     mode = 'stamp';
-    stopErasing();
-    toolList.querySelectorAll('.tool-item').forEach(b => b.classList.remove('selected'));
+    eraser = false;
+    syncActiveTool();
     stampGrid.querySelectorAll('.stamp-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.stamp === id));
     refreshStampSizeRow();
-    syncStampBtn();
-    syncPaintPointerEvents();
     Sound.pop();
     closePanels();
   }
 
   function selectStampSize(id) {
     stampSizeId = id;
-    stopErasing();
+    mode = 'stamp';                  // 調大小＝想蓋章，順手切過去
+    eraser = false;
+    syncActiveTool();
     stampSizeRow.querySelectorAll('.stamp-size-cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
-    if (mode !== 'stamp') {          // 調大小＝想蓋章，順手切過去
-      mode = 'stamp';
-      toolList.querySelectorAll('.tool-item').forEach(b => b.classList.remove('selected'));
-      syncStampBtn();
-      syncPaintPointerEvents();
-    }
     Sound.click();                   // 刻意不關面板：可以馬上再換圖案或再調一次
-  }
-
-  function syncStampBtn() {
-    stampBtn.classList.toggle('stamp-on', mode === 'stamp');
   }
 
   function selectPaint(newPaint) {
     paint = newPaint;
     eraser = false;            // 選了任何顏色／花紋就自動關掉橡皮擦
-    syncEraserBtn();
-    syncPaintPointerEvents();
+    syncActiveTool();
     markPaintSelection();
     syncColorBtn();
     Sound.click();
@@ -709,10 +704,10 @@
     if (openedPanel === 'color') closePanels(); else openPanel('color');
   });
 
+  // 再按一次橡皮擦＝放下它，回到原本拿的筆或印章
   eraserBtn.addEventListener('click', () => {
     eraser = !eraser;
-    syncEraserBtn();
-    syncPaintPointerEvents();
+    syncActiveTool();
     Sound.click();
     if (eraser) openPanel('eraser'); else closePanels();
   });
@@ -1380,20 +1375,28 @@
     ctx.stroke();
   }
 
-  // 亮粉筆：在這一段線上灑 3~5 顆白色／淡黃小點
+  /* 亮粉筆：在這一段線上灑白色／淡黃小點。
+     散開的範圍、顆粒大小、顆數都跟著筆的粗細走（k = 粗細倍率，中號是 1）：
+     以前固定散 ±12、半徑 1.5~3，超細筆的閃粉比線本身還寬，粗筆又稀稀落落 */
   function sprinkleGlitter(from, to) {
-    // 影響範圍：沿線段散點，偏移 ±12、半徑最大 3 → 線段外擴 16
-    if (strokeAcc) UndoRect.addSegment(strokeAcc, from, to, 16);
+    const width = currentLineWidth();
+    const k = brushScale();
+    const spread = width * 0.92;                 // 中號 26 → 24，跟舊版一樣
+    const rMin = Math.max(0.5, 1.5 * k);
+    const rMax = Math.max(0.8, 3 * k);
+    // 影響範圍：偏移最多 spread/2、半徑最大 rMax，再加 1px 抗鋸齒
+    if (strokeAcc) UndoRect.addSegment(strokeAcc, from, to, spread / 2 + rMax + 1);
     const saveAlpha = ctx.globalAlpha;
     ctx.globalAlpha = 1;
-    const n = 3 + Math.floor(Math.random() * 3);
+    // 顆數用 sqrt(k)：粗筆多灑幾顆但不會一片白，細筆至少還有 1 顆
+    const n = Math.max(1, Math.round((3 + Math.random() * 3) * Math.sqrt(k)));
     for (let i = 0; i < n; i++) {
       const t = Math.random();
-      const x = from.x + (to.x - from.x) * t + (Math.random() - 0.5) * 24;
-      const y = from.y + (to.y - from.y) * t + (Math.random() - 0.5) * 24;
+      const x = from.x + (to.x - from.x) * t + (Math.random() - 0.5) * spread;
+      const y = from.y + (to.y - from.y) * t + (Math.random() - 0.5) * spread;
       ctx.fillStyle = Math.random() < 0.5 ? '#fff' : '#fff9c4';
       ctx.beginPath();
-      ctx.arc(x, y, 1.5 + Math.random() * 1.5, 0, Math.PI * 2);
+      ctx.arc(x, y, rMin + Math.random() * (rMax - rMin), 0, Math.PI * 2);
       ctx.fill();
     }
     ctx.globalAlpha = saveAlpha;
@@ -1669,9 +1672,7 @@
   buildEraserSizeRow();
   markPaintSelection();
   syncColorBtn();
-  syncEraserBtn();
-  syncStampBtn();
-  toolBtnIcon.textContent = currentTool().emoji;
+  syncActiveTool();
   buildCatTabs();
   buildPicGrid();
   updateButtons();
