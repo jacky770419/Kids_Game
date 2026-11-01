@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>蛋糕店 - 小小遊樂園</title>
+<title>甜點店 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,7 +29,7 @@
   <div class="mode-row">
     <button id="freeCard" class="mode-card mode-free">
       <span class="mode-demo"><span id="freeDemo" class="demo-pic demo-scene"></span></span>
-      <span class="mode-label">做蛋糕</span>
+      <span class="mode-label">做甜點</span>
     </button>
     <button id="orderCard" class="mode-card mode-order">
       <span class="mode-demo">
@@ -39,6 +39,11 @@
       <span class="mode-label">客人點餐</span>
     </button>
   </div>
+</main>
+
+<!-- 選甜點：卡片由 cake.js 照 CakeData.DESSERTS 產生 -->
+<main id="dessertScreen" hidden>
+  <div id="dessertGrid"></div>
 </main>
 
 <main id="gameScreen" hidden>
@@ -60,8 +65,11 @@
   </aside>
 </main>
 
+<!-- 從材料匣拖配料時跟著手指走的影像 -->
+<div id="ghost" hidden></div>
+
 <div id="saveOverlay" class="overlay" hidden>
-  <img id="saveImg" alt="蛋糕作品">
+  <img id="saveImg" alt="甜點作品">
   <div class="save-hint">長按圖片就可以存到相簿囉！</div>
   <button id="closeSave" class="big-btn alt">關閉</button>
 </div>
@@ -73,6 +81,8 @@
 <script src="js/storage.js"></script>
 <script src="js/cake-data.js"></script>
 <script src="js/cake-state.js"></script>
+<script src="js/cake-toppings.js"></script>
+<script src="js/cake-shapes.js"></script>
 <script src="js/cake-draw.js"></script>
 <script src="js/cake.js"></script>
 <script>

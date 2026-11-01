@@ -1879,7 +1879,7 @@ body.cake .cat-tab .cat-emoji { font-size: 26px; }
   #boardWrap { align-items: flex-start; }
 }
 
-/* ===== 蛋糕店 ===== */
+/* ===== 甜點店 ===== */
 /* 版面（板面＋右側材料匣、分類頁籤）跟貼紙頁共用，上面的 body.stickers 規則都有併 body.cake。 */
 
 /* 首頁的第五張卡：粉紅，跟著色的紅錯開 */
@@ -1894,6 +1894,75 @@ body.cake {
 body.cake #selectScreen {
   display: flex;
   flex-direction: column;
+}
+
+/* 選甜點：橫向 3×2、直向 2×3，卡片撐滿畫面，五歲的手指一定按得到 */
+body.cake #dessertScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#dessertGrid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: min(30px, 3vw);
+  padding: 8px clamp(20px, 4vw, 44px) calc(26px + env(safe-area-inset-bottom));
+}
+
+.dessert-card {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  padding: 1.4vh 10px;
+  border-radius: 24px;
+  border: 5px solid #2b2b2b;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 9px #2b2b2b, 7px 7px 0 9px #2b2b2b;
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: pointer;
+}
+
+.dessert-card:active {
+  transform: rotate(var(--rot, 0deg)) translate(7px, 7px);
+  box-shadow: 0 0 0 5px #fff, 0 0 0 9px #2b2b2b;
+}
+
+.dessert-pic {
+  flex: 1;
+  min-height: 0;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  border: 4px solid #2b2b2b;
+}
+.dessert-pic svg { display: block; width: 100%; height: 100%; }
+
+.dessert-label {
+  flex: 0 0 auto;
+  font-size: clamp(22px, 3.4vw, 38px);
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 3px 3px 0 #2b2b2b;
+  letter-spacing: 3px;
+  line-height: 1.15;
+}
+
+@media (orientation: portrait) {
+  #dessertGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .mode-free { background: #FF9EC4; --rot: -2deg; }
@@ -2063,13 +2132,16 @@ body.cake #board { container-type: inline-size; }
 }
 
 /* --- 材料匣：格子是按鈕（點一下放上去），裡面是 cake-draw.js 畫的小 SVG --- */
-body.cake .tray-item { cursor: pointer; }
+/* pan-y：配料一頁放不下，手指上下滑要能捲匣子；橫向才由 cake.js 接手當拖曳 */
+body.cake .tray-item { cursor: pointer; touch-action: pan-y; }
 body.cake .tray-item svg { display: block; width: 100%; height: 100%; }
+body.cake #ghost svg { display: block; width: 100%; height: 100%; }
 body.cake .tray-item.wiggle { animation: cakeWiggle 0.35s ease; }
 @keyframes cakeWiggle {
   25% { transform: translateX(-6px) rotate(-4deg); }
   75% { transform: translateX(6px) rotate(4deg); }
 }
+/* 頁籤最多六個（顏色／容器／奶油／三種配料），排成 3×2 */
 body.cake .cat-tabs { grid-template-columns: repeat(3, 1fr); }
 
 #undoBtn.dim { opacity: 0.45; }

@@ -1,15 +1,18 @@
-/* 蛋糕店：兩種玩法共用同一個蛋糕板面與材料匣。
-     做蛋糕  自由疊一到三層、淋奶油、放裝飾，🎉 慶祝、📷 存進「我的作品」，做到一半離開會記住
+/* 甜點店：兩種玩法共用同一個板面與材料匣。
+     做甜點  選一種甜點（蛋糕、冰淇淋、杯子蛋糕、甜甜圈、鬆餅、聖代），自由疊層、淋奶油、放配料，
+             🎉 慶祝、📷 存進「我的作品」，每種甜點各自記住做到一半的進度
      客人點餐  動物客人說「I want a pink cake with two cherries.」，照著做出來就上菜
 
    設計上的幾個硬規則（跟其他頁一致，不要改）：
    - 沒有計時、沒有分數、沒有失敗判定，也沒有確認對話框（五歲小孩不會讀確認文字）。
      點餐做錯只是泡泡那一格不打勾，客人不會生氣、也沒有「錯了」的音效。
    - 主要按鈕不放畫面下緣：抱著平板時手腕會壓在下緣。工具全在頂列右側，材料匣在右側。
-   - 用「點一下」放材料而不是拖曳：裝飾位置由程式排好（cake-draw.js 的 SLOTS），
-     一排一排放，她數「兩顆」時才數得清楚；拖曳會疊成一團。
+   - 配料兩種放法並存：點一下由程式排好位置（cake-shapes.js 的 spots），一排一排放，
+     她數「兩顆」時才數得清楚；想放哪裡就從材料匣往左拖出來，放在哪裡就在哪裡。
+     材料匣要能上下捲（配料很多），所以只有橫向拖出去才算拖曳。
+     板面上的配料：點一下拿掉、拖一下搬位置、拖出板面也是拿掉。
    - 出聲一定在使用者手勢的事件處理函式裡呼叫（iOS 規定），所以 Speech.say
-     只出現在 click 裡，不放進 setTimeout 或 Promise 的回呼。 */
+     只出現在 pointerup 與 click 裡，不放進 setTimeout 或 Promise 的回呼。 */
 (() => {
   'use strict';
 
@@ -18,6 +21,8 @@
   const Draw = window.CakeDraw;
 
   const selectScreen = document.getElementById('selectScreen');
+  const dessertScreen = document.getElementById('dessertScreen');
+  const dessertGrid = document.getElementById('dessertGrid');
   const gameScreen = document.getElementById('gameScreen');
   const board = document.getElementById('board');
   const cakeSvg = document.getElementById('cakeSvg');
@@ -27,6 +32,7 @@
   const fx = document.getElementById('fx');
   const catTabs = document.getElementById('catTabs');
   const trayScroll = document.getElementById('trayScroll');
+  const ghost = document.getElementById('ghost');
 
   const backBtn = document.getElementById('backBtn');
   const listenBtn = document.getElementById('listenBtn');
@@ -46,21 +52,16 @@
 
   const ARTWORK_MAX = 24;          // 跟著色頁同一個上限，兩頁共用同一個 store
   const HISTORY_MAX = 40;
-  const FREE_KEY = 'k:free';       // 進度 key：'k:' 前綴，跟著色 'v:'／'r:'、貼紙 's:' 不會撞
+  const TAP_SLOP = 10;             // 手指移動超過這麼多 px 才算拖曳，五歲的手點一下也會抖
   const LISTEN_KEY = 'kidsCakeListen';
-  /* 點餐模式蛋糕往右放，左邊讓給客人與泡泡 */
+  /* 點餐模式甜點往右放，左邊讓給客人與泡泡 */
   const CAKE_CX = { free: 400, order: 530 };
-
-  const CATEGORIES = [
-    { id: 'flavor', name: '蛋糕', emoji: '🍰' },
-    { id: 'cream', name: '奶油', emoji: '🍦' },
-    { id: 'topping', name: '裝飾', emoji: '🍓' }
-  ];
 
   let mode = null;                 // 'free' | 'order'
   let cake = St.empty();
   let history = [];                // 舊的 cake 物件（狀態從不就地修改，直接放回去就是復原）
-  let currentCat = 'flavor';
+  let currentCat = 'base';
+  let trayDragged = false;         // 剛剛是拖出去的，接下來那個 click 不算點一下
   let order = null;
   let served = false;              // 這一張單上過菜了沒（做對之後再亂加，不會重複慶祝）
 
@@ -74,11 +75,12 @@
   }
   function syncListenBtn() { listenBtn.classList.toggle('on', listenOn()); }
 
-  /* ===== 存檔（只有做蛋糕模式存；點餐每位客人都從空盤開始） =====
+  /* ===== 存檔（只有做甜點模式存，每種甜點一筆；點餐每位客人都從空盤開始） =====
+     進度 key 的 'k:' 前綴跟著色 'v:'／'r:'、貼紙 's:' 不會撞。
      ⚠ updatedAt 一定要寫：著色頁的 trimProgress 會照 updatedAt 刪最舊的。 */
   function save() {
     if (mode !== 'free' || !window.KidsStore) return;
-    KidsStore.put('progress', { key: FREE_KEY, updatedAt: Date.now(), cake: St.serialize(cake) });
+    KidsStore.put('progress', { key: St.saveKey(cake.kind), updatedAt: Date.now(), cake: St.serialize(cake) });
   }
 
   /* ===== 畫面 ===== */
@@ -99,11 +101,11 @@
     let tops = '';
     for (let i = 0; i < order.count; i++) tops += '<span class="order-icon">' + Draw.iconTopping(order.topping) + '</span>';
     bubble.innerHTML = '<span class="order-ear">🔊</span>'
-      + part(r.flavor, '<span class="order-icon">' + Draw.iconFlavor(order.flavor) + '</span>')
+      + part(r.flavor, '<span class="order-icon">' + Draw.iconBase(order.dessert, order.flavor) + '</span>')
       + part(r.topping, tops);
   }
 
-  /* 改蛋糕的唯一入口：記歷史、重畫、存檔，點餐模式順便對答案。
+  /* 改甜點的唯一入口：記歷史、重畫、存檔，點餐模式順便對答案。
      回傳 true＝這一下剛好把單做對了（呼叫端決定要唸什麼） */
   function commit(next) {
     if (next === cake) return false;
@@ -123,23 +125,23 @@
     return false;
   }
 
-  /* 數出來：「two cherries」。同一種放了幾個就唸幾個，順便練數數。 */
-  function countPhrase(toppingId, state) {
-    const t = Data.topping(toppingId);
-    let n = 0;
-    state.toppings.forEach((id) => { if (id === toppingId) n++; });
-    if (!t || n === 0) return '';
-    return Data.NUMBERS[n] + ' ' + (n === 1 ? t.word : t.plural);
-  }
-
   function say(text, force) {
     if (text && window.Speech) Speech.say(text, force ? { force: true } : undefined);
   }
 
-  /* ===== 材料匣 ===== */
+  /* ===== 材料匣 =====
+     頁籤跟著甜點走：顏色、容器（聖代沒有）、淋的東西，加上三個配料頁籤。 */
+  function categories() {
+    const d = Data.dessert(cake.kind);
+    const out = [{ id: 'base', name: d.name, emoji: d.tabs.base }];
+    if (d.holders) out.push({ id: 'holder', name: '容器', emoji: d.tabs.holder });
+    out.push({ id: 'cream', name: '奶油', emoji: d.tabs.cream });
+    return out.concat(Data.TOPPING_GROUPS);
+  }
+
   function buildTray() {
     catTabs.innerHTML = '';
-    CATEGORIES.forEach((c) => {
+    categories().forEach((c) => {
       const t = document.createElement('button');
       t.className = 'cat-tab' + (c.id === currentCat ? ' on' : '');
       t.dataset.cat = c.id;
@@ -170,36 +172,57 @@
   }
 
   function buildTrayItems() {
+    trayScroll.scrollTop = 0;
     trayScroll.innerHTML = '';
-    if (currentCat === 'flavor') {
-      Data.FLAVORS.forEach((f) => trayButton(Draw.iconFlavor(f.id), f.word, () => {
-        Sound.pop();
-        if (!commit(St.addTier(cake, f.id))) say(f.word);
-        else say('Yummy! Thank you!');
-      }));
-    } else if (currentCat === 'cream') {
-      Data.CREAMS.forEach((c) => trayButton(Draw.iconCream(c.id), c.say, () => {
-        Sound.pop();
-        const next = St.setCream(cake, c.id);
-        commit(next);
-        if (next.cream) say(c.say);
-      }));
-    } else {
-      Data.TOPPINGS.forEach((t) => {
-        const btn = trayButton(Draw.iconTopping(t.id), t.word, () => {
-          const next = St.addTopping(cake, t.id);
-          if (next === cake) {
-            // 頂上滿了：晃一下就好，不出「錯誤」音效
-            Sound.click();
-            wiggle(btn);
-            return;
-          }
+    const d = Data.dessert(cake.kind);
+    if (currentCat === 'base') {
+      d.flavors.forEach((id) => {
+        const f = Data.flavor(id);
+        trayButton(Draw.iconBase(d.id, id), f.word, () => {
           Sound.pop();
-          if (commit(next)) say('Yummy! Thank you!');
-          else say(countPhrase(t.id, cake));
+          if (!commit(St.addTier(cake, id))) say(f.word);
+          else say('Yummy! Thank you!');
         });
       });
+    } else if (currentCat === 'holder') {
+      d.holders.forEach((h) => trayButton(Draw.iconHolder(d.id, h.id), h.say, () => {
+        Sound.pop();
+        commit(St.setHolder(cake, h.id));
+        say(h.say);
+      }));
+    } else if (currentCat === 'cream') {
+      Data.CREAMS.forEach((c) => {
+        const word = Data.creamSay(d.id, c.id);
+        trayButton(Draw.iconCream(c.id), word, () => {
+          Sound.pop();
+          const next = St.setCream(cake, c.id);
+          commit(next);
+          if (next.cream) say(word);
+        });
+      });
+    } else {
+      Data.TOPPINGS.filter((t) => t.group === currentCat).forEach((t) => {
+        const btn = trayButton(Draw.iconTopping(t.id), t.word, () => {
+          if (trayDragged) { trayDragged = false; return; }
+          placeTopping(t.id, undefined, undefined, btn);
+        });
+        watchTrayDrag(btn, t.id);
+      });
     }
+  }
+
+  /* 放一個配料：不給 x／y＝點一下（程式排位置），給了＝拖到那裡 */
+  function placeTopping(id, x, y, btn) {
+    const next = St.addTopping(cake, id, x, y);
+    if (next === cake) {
+      // 放滿了：晃一下就好，不出「錯誤」音效
+      Sound.click();
+      if (btn) wiggle(btn);
+      return;
+    }
+    Sound.pop();
+    if (commit(next)) say('Yummy! Thank you!');
+    else say(St.countPhrase(cake, id));
   }
 
   function wiggle(el) {
@@ -208,16 +231,110 @@
     el.classList.add('wiggle');
   }
 
-  /* 點蛋糕上的裝飾＝拿掉它（點餐放太多顆時用）。拿掉之後唸剩幾個。 */
-  cakeSvg.addEventListener('click', (e) => {
+  /* 手指在板面上的位置（800×600 座標）。y 往下補半個配料高：手指按著配料中間，
+     存的是配料底部中心，放開時配料才會留在手指底下。 */
+  function boardPoint(ev) {
+    const r = cakeSvg.getBoundingClientRect();
+    return {
+      x: (ev.clientX - r.left) / r.width * Draw.W,
+      y: (ev.clientY - r.top) / r.height * Draw.H + 50 * Draw.DROP_K,
+      inside: ev.clientX >= r.left && ev.clientX <= r.right && ev.clientY >= r.top && ev.clientY <= r.bottom
+    };
+  }
+
+  /* ===== 從材料匣拖出來 =====
+     直向的滑動留給瀏覽器捲材料匣（CSS 的 touch-action: pan-y），橫向才接手。
+     用 window 接事件：滑鼠一拖就離開按鈕了，手指則是系統自動鎖在按鈕上，兩種都收得到。 */
+  function watchTrayDrag(btn, id) {
+    btn.addEventListener('pointerdown', (e) => {
+      if (e.button) return;
+      trayDragged = false;
+      const startX = e.clientX;
+      const startY = e.clientY;
+      let dragging = false;
+
+      const move = (ev) => {
+        if (!dragging) {
+          // 斜斜往下拖也要算（她的手不會走水平線），比這更直的手指滑動瀏覽器會拿去捲匣子
+          const dx = Math.abs(ev.clientX - startX);
+          if (dx < TAP_SLOP || dx * 2 < Math.abs(ev.clientY - startY)) return;
+          dragging = true;
+          showGhost(id);
+        }
+        ghost.style.left = ev.clientX + 'px';
+        ghost.style.top = ev.clientY + 'px';
+      };
+      const end = (ev) => {
+        window.removeEventListener('pointermove', move);
+        window.removeEventListener('pointerup', end);
+        window.removeEventListener('pointercancel', end);
+        if (!dragging) return;
+        trayDragged = true;
+        ghost.hidden = true;
+        if (ev.type === 'pointercancel') return;
+        const p = boardPoint(ev);
+        if (p.inside) placeTopping(id, p.x, p.y, btn);   // 放在板子外＝取消，什麼都不發生
+      };
+      window.addEventListener('pointermove', move);
+      window.addEventListener('pointerup', end);
+      window.addEventListener('pointercancel', end);
+    });
+  }
+
+  /* 跟手的影像：尺寸換算成放到板面上的大小，拖到一半就看得出放上去會多大 */
+  function showGhost(id) {
+    const art = 100 * Draw.DROP_K / 0.78;   // 小圖裡配料縮 0.78 倍，板面上縮 DROP_K 倍
+    const size = cakeSvg.getBoundingClientRect().width * art / Draw.W;
+    ghost.innerHTML = Draw.iconTopping(id);
+    ghost.style.width = size + 'px';
+    ghost.style.height = size + 'px';
+    ghost.hidden = false;
+  }
+
+  /* ===== 板面上的配料：點一下拿掉（拿掉之後唸剩幾個）、拖一下搬位置、拖出板面也是拿掉 =====
+     拖動中只改那一個 <g> 的 transform，放開才 commit：
+     commit 會重畫整個板面，拖到一半重畫，手指底下的元素就不見了。 */
+  cakeSvg.addEventListener('pointerdown', (e) => {
+    if (e.button) return;
     const g = e.target && e.target.closest ? e.target.closest('.tp') : null;
     if (!g) return;
     const i = parseInt(g.getAttribute('data-i'), 10);
     if (!isFinite(i)) return;
-    const id = cake.toppings[i];
-    Sound.click();
-    if (commit(St.removeToppingAt(cake, i))) say('Yummy! Thank you!');
-    else say(countPhrase(id, cake));
+    e.preventDefault();
+    try { cakeSvg.setPointerCapture(e.pointerId); } catch (err) { /* 舊瀏覽器沒有就算了 */ }
+    const startX = e.clientX;
+    const startY = e.clientY;
+    let moved = false;
+
+    const move = (ev) => {
+      if (!moved) {
+        if (Math.abs(ev.clientX - startX) + Math.abs(ev.clientY - startY) < TAP_SLOP) return;
+        moved = true;
+        g.parentNode.appendChild(g);   // 拖動中的配料浮到最上面
+      }
+      const b = boardPoint(ev);
+      const p = St.clampDrop(b.x, b.y);
+      g.setAttribute('transform', Draw.toppingTransform(p.x, p.y, Draw.DROP_K));
+    };
+    const end = (ev) => {
+      cakeSvg.removeEventListener('pointermove', move);
+      cakeSvg.removeEventListener('pointerup', end);
+      cakeSvg.removeEventListener('pointercancel', end);
+      if (ev.type === 'pointercancel') { render(); return; }
+      const id = cake.toppings[i].id;
+      const p = boardPoint(ev);
+      if (moved && p.inside) {
+        Sound.pop();
+        commit(St.moveTopping(cake, i, p.x, p.y));
+        return;
+      }
+      Sound.click();
+      if (commit(St.removeToppingAt(cake, i))) say('Yummy! Thank you!');
+      else say(St.countPhrase(cake, id));
+    };
+    cakeSvg.addEventListener('pointermove', move);
+    cakeSvg.addEventListener('pointerup', end);
+    cakeSvg.addEventListener('pointercancel', end);
   });
 
   /* ===== 慶祝的小特效：一把 emoji 往上飄，一秒半後自己清掉 ===== */
@@ -236,18 +353,33 @@
   }
 
   /* ===== 模式切換 ===== */
+  function hideTools() {
+    ALL_TOOLS.forEach((b) => { b.hidden = true; });
+    if (window.Speech) Speech.cancel();
+  }
+
   function showSelect() {
     mode = null;
     selectScreen.hidden = false;
+    dessertScreen.hidden = true;
     gameScreen.hidden = true;
-    ALL_TOOLS.forEach((b) => { b.hidden = true; });
-    if (window.Speech) Speech.cancel();
+    hideTools();
+  }
+
+  function showDessertPick() {
+    mode = null;
+    selectScreen.hidden = true;
+    dessertScreen.hidden = false;
+    gameScreen.hidden = true;
+    hideTools();
+    backBtn.hidden = false;
   }
 
   function enter(m) {
     mode = m;
     history = [];
     selectScreen.hidden = true;
+    dessertScreen.hidden = true;
     gameScreen.hidden = false;
     ALL_TOOLS.forEach((b) => { b.hidden = TOOLS[m].indexOf(b) < 0; });
     board.classList.toggle('ordering', m === 'order');
@@ -255,19 +387,20 @@
     bubble.hidden = m !== 'order';
     nextBtn.hidden = true;
     fx.innerHTML = '';
-    currentCat = 'flavor';
-    buildTray();
+    currentCat = 'base';
   }
 
-  function startFree() {
+  function startFree(kind) {
+    cake = St.empty(kind);
     enter('free');
-    cake = St.empty();
+    buildTray();
     render();
-    // 還原上次做到一半的蛋糕。讀不到就是空盤子，不擋畫面。
+    // 還原上次做到一半的甜點。讀不到就是空盤子，不擋畫面。
     if (window.KidsStore) {
-      KidsStore.get('progress', FREE_KEY).then((rec) => {
-        if (!rec || mode !== 'free' || history.length) return;   // 讀回來前她已經動手了就不蓋掉
-        cake = St.deserialize(rec.cake);
+      KidsStore.get('progress', St.saveKey(kind)).then((rec) => {
+        // 讀回來前她已經動手或換了甜點就不蓋掉
+        if (!rec || mode !== 'free' || cake.kind !== kind || history.length) return;
+        cake = St.deserialize(rec.cake, kind);
         render();
       });
     }
@@ -278,18 +411,18 @@
     order = St.makeOrder(Math.random, order);
     served = false;
     history = [];
-    cake = St.empty();
+    cake = St.empty(order.dessert);
     const c = Data.customer(order.customer);
     customerImg.src = c ? c.src : '';
     customerImg.classList.remove('happy');
     nextBtn.hidden = true;
-    currentCat = 'flavor';
+    currentCat = 'base';
     buildTray();
     render();
     say(St.sentence(order));
   }
 
-  document.getElementById('freeCard').addEventListener('click', () => { Sound.click(); startFree(); });
+  document.getElementById('freeCard').addEventListener('click', () => { Sound.click(); showDessertPick(); });
   document.getElementById('orderCard').addEventListener('click', () => {
     Sound.click();
     enter('order');
@@ -305,7 +438,12 @@
   customerImg.addEventListener('click', repeatOrder);
 
   /* ===== 頂列工具 ===== */
-  backBtn.addEventListener('click', () => { Sound.click(); showSelect(); });
+  // 做甜點退回選甜點，其他（點餐、選甜點畫面）退回最前面
+  backBtn.addEventListener('click', () => {
+    Sound.click();
+    if (mode === 'free') showDessertPick();
+    else showSelect();
+  });
 
   listenBtn.addEventListener('click', () => {
     Sound.click();
@@ -326,13 +464,13 @@
     // 不問「真的要刪嗎」：她讀不懂確認文字，而且清掉之後 ↩️ 還拿得回來
     Sound.click();
     if (St.isEmpty(cake)) return;
-    commit(St.empty());
+    commit(St.empty(cake.kind));
   });
 
   partyBtn.addEventListener('click', () => {
     if (St.isEmpty(cake)) { Sound.click(); return; }
     Sound.win();
-    const candles = cake.toppings.indexOf('candle') >= 0;
+    const candles = St.hasTopping(cake, 'candle');
     celebrate(candles ? ['🎉', '🎈', '✨'] : ['💖', '✨', '😋']);
     say(candles ? 'Happy birthday!' : 'Yummy!');
   });
@@ -355,7 +493,7 @@
     return new Promise((resolve, reject) => {
       const im = new Image();
       im.onload = () => resolve(im);
-      im.onerror = () => reject(new Error('蛋糕圖載入失敗'));
+      im.onerror = () => reject(new Error('甜點圖載入失敗'));
       im.src = url;
     }).then((im) => {
       const canvas = document.createElement('canvas');
@@ -380,7 +518,7 @@
         sortArtworks(list).slice(keep).map((a) => KidsStore.del('artworks', a.id))
       ));
     }).then(() => KidsStore.put('artworks', {
-      name: '蛋糕', png: dataUrl, w: OUT_W, h: OUT_H, createdAt: Date.now()
+      name: Data.dessert(cake.kind).name, png: dataUrl, w: OUT_W, h: OUT_H, createdAt: Date.now()
     })).then(() => KidsStore.all('artworks')).then((list) => {
       sortArtworks(list).slice(ARTWORK_MAX).forEach((a) => KidsStore.del('artworks', a.id));
     });
@@ -404,11 +542,26 @@
     if (document.visibilityState === 'hidden') save();
   });
 
-  /* ===== 選模式畫面的示意圖 ===== */
-  document.getElementById('freeDemo').innerHTML = Draw.scene(
-    { tiers: ['pink', 'yellow'], cream: 'white', toppings: ['cherry', 'strawberry', 'strawberry'] });
+  /* ===== 選模式、選甜點畫面的示意圖 ===== */
+  const demoOf = (d) => Draw.scene(St.deserialize(d.demo, d.id));
+  document.getElementById('freeDemo').innerHTML = demoOf(Data.dessert('cake'));
   document.getElementById('orderDemo').innerHTML =
     '<span class="order-icon">' + Draw.iconTopping('cherry') + '</span><span class="order-icon">' + Draw.iconTopping('cherry') + '</span>';
+
+  Data.DESSERTS.forEach((d, i) => {
+    const b = document.createElement('button');
+    b.className = 'dessert-card';
+    b.style.background = d.color;
+    b.style.setProperty('--rot', (i % 2 ? 1.5 : -1.5) + 'deg');
+    b.title = d.name;
+    b.innerHTML = '<span class="dessert-pic">' + demoOf(d) + '</span><span class="dessert-label">' + d.name + '</span>';
+    b.addEventListener('click', () => {
+      Sound.click();
+      startFree(d.id);
+      say(d.word);
+    });
+    dessertGrid.appendChild(b);
+  });
 
   syncListenBtn();
   showSelect();
