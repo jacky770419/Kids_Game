@@ -42,9 +42,10 @@ https://creativecommons.org/licenses/by/4.0/
 | 位置 | 來源 | 授權 |
 |---|---|---|
 | `assets/pictures/animals/*.svg`（拼圖用） | Kenney「Animal Pack Redux」 https://kenney.nl/assets/animal-pack-redux（由向量總表切割） | CC0 |
+| `assets/pictures/animals/panda.svg` | 本專案自製手繪，仿上列 Kenney 風格重畫（原 Kenney 版看起來不像貓熊，已替換） | 隨專案 |
 | `assets/pictures/*.svg`（其餘） | 本專案自製 | 隨專案 |
 | `assets/pictures/fruits/*.svg`（單字遊戲用） | 本專案自製：由 `js/lineart-food.js` 的水果線稿上色另存 | 隨專案 |
-| `assets/stickers/*.svg`（貼紙場景用，12 隻動物） | 同上，Kenney「Animal Pack Redux」；由 `tools/make_stickers.js` 剝掉底色方框改作 | CC0 |
+| `assets/stickers/*.svg`（貼紙場景用，12 隻動物） | 同上，Kenney「Animal Pack Redux」（panda 為自製）；由 `tools/make_stickers.js` 剝掉底色方框改作 | CC0 |
 | `assets/stickers/*.svg`（其餘：水果、公主、人魚） | 本專案自製；由 `tools/make_stickers.js` 從 `assets/pictures/` 剝掉底色方框改作 | 隨專案 |
 | `assets/stickers/{unicorn,cupcake,icecream,donut,cake,rainbow}.svg` | 本專案自製手繪 | 隨專案 |
 | `assets/backgrounds/*.svg`（貼紙場景背景） | 本專案自製手繪 | 隨專案 |
@@ -53,6 +54,6 @@ https://creativecommons.org/licenses/by/4.0/
 
 > `js/lineart-animals.js` 早期版本是由 Kenney 的向量總表改作的，但那套用「放大版剪影墊底」
 > 做外框，轉成可上色線稿後會出現大量重疊線，已於 2026-08 整批手繪重畫，現在不含 Kenney 素材。
-> 拼圖用的 `assets/pictures/animals/*.svg` 仍是 Kenney 原作。
+> 拼圖用的 `assets/pictures/animals/*.svg` 除 `panda.svg` 外仍是 Kenney 原作。
 
 Kenney 素材的授權原文（License.txt）：「You may use these assets in personal and commercial projects. Credit (Kenney or www.kenney.nl) would be nice but is not mandatory.」
