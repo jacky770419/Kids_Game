@@ -193,16 +193,16 @@
   /* 點餐的客人：沿用貼紙的動物圖（已在 sw.js 預先快取）。
      src 寫成完整字面而不是拼字串，tools/check_precache.js 才掃得到。 */
   var CUSTOMERS = [
-    { id: 'bear', word: 'bear', src: 'assets/stickers/bear.svg' },
-    { id: 'rabbit', word: 'rabbit', src: 'assets/stickers/rabbit.svg' },
-    { id: 'panda', word: 'panda', src: 'assets/stickers/panda.svg' },
-    { id: 'pig', word: 'pig', src: 'assets/stickers/pig.svg' },
-    { id: 'penguin', word: 'penguin', src: 'assets/stickers/penguin.svg' },
-    { id: 'elephant', word: 'elephant', src: 'assets/stickers/elephant.svg' },
-    { id: 'monkey', word: 'monkey', src: 'assets/stickers/monkey.svg' },
-    { id: 'frog', word: 'frog', src: 'assets/stickers/frog.svg' },
-    { id: 'duck', word: 'duck', src: 'assets/stickers/duck.svg' },
-    { id: 'unicorn', word: 'unicorn', src: 'assets/stickers/unicorn.svg' }
+    { id: 'bear', word: 'bear', src: 'assets/stickers/bear.png' },
+    { id: 'rabbit', word: 'rabbit', src: 'assets/stickers/rabbit.png' },
+    { id: 'panda', word: 'panda', src: 'assets/stickers/panda.png' },
+    { id: 'pig', word: 'pig', src: 'assets/stickers/pig.png' },
+    { id: 'penguin', word: 'penguin', src: 'assets/stickers/penguin.png' },
+    { id: 'elephant', word: 'elephant', src: 'assets/stickers/elephant.png' },
+    { id: 'monkey', word: 'monkey', src: 'assets/stickers/monkey.png' },
+    { id: 'frog', word: 'frog', src: 'assets/stickers/frog.png' },
+    { id: 'duck', word: 'duck', src: 'assets/stickers/duck.png' },
+    { id: 'unicorn', word: 'unicorn', src: 'assets/stickers/unicorn.png' }
   ];
 
   /* 放配料時會數出來（「two cherries」），要數到 CakeState.MAX_TOPPINGS。

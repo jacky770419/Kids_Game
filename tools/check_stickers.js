@@ -13,7 +13,7 @@
 
    檢查項目：
      A. js/stickers-data.js 的 BACKGROUNDS / STICKERS 資料表
-     B. assets/stickers/*.svg 去底成功、無 <image>、無孤兒檔
+     B. assets/stickers/*.svg 去底成功、無 <image>；*.png 帶透明度；無孤兒檔
      C. assets/backgrounds/*.svg 的 viewBox 恰為 0 0 800 600
      D. js/stickers-state.js 的純函式
      E. tools/make_stickers.js 冪等（實際跑一次，比對前後的雜湊）
@@ -152,6 +152,22 @@ if (!fs.existsSync(abs('assets/stickers'))) {
     ok(bad.length === 0, rel + ' 還留著 ' + bad.length + ' 個底色 rect（去底沒成功）：' + bad[0]);
     ok(!/<image\b/.test(src), rel + ' 含有 <image>（貼紙必須是純向量，不能內嵌點陣圖）');
   });
+
+  /* 上色點陣貼紙（tools/make_color_art.py 產出）：要是 PNG、要帶透明度
+     （RGBA，或調色盤＋tRNS），否則白底沒去掉，貼上去就是一塊白方塊。 */
+  const pngFiles = fs.readdirSync(abs('assets/stickers')).filter((f) => f.endsWith('.png')).sort();
+  pngFiles.forEach((f) => {
+    const rel = 'assets/stickers/' + f;
+    const buf = fs.readFileSync(abs(rel));
+    if (buf.readUInt32BE(0) !== 0x89504e47) { fail(rel + ' 不是 PNG'); return; }
+    const colorType = buf[25];
+    const hasTrns = buf.indexOf('tRNS', 33, 'latin1') > 0;
+    ok(colorType === 6 || (colorType === 3 && hasTrns),
+      rel + ' 沒有透明度（色彩型態 ' + colorType + '），白底沒去掉');
+    const w = buf.readUInt32BE(16), h = buf.readUInt32BE(20);
+    ok(Math.max(w, h) <= 1024, rel + ' 太大（' + w + '×' + h + '），貼紙最長邊 512 就夠');
+  });
+  stickerFiles = stickerFiles.concat(pngFiles);
 
   // 孤兒檔：磁碟上有但 STICKERS 沒引用
   if (Data && Array.isArray(Data.STICKERS)) {

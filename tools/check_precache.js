@@ -82,8 +82,8 @@ for (const page of HTML_PAGES) {
   for (const mm of html.matchAll(/<link[^>]+href=["']([^"']+)["']/gi)) need(mm[1], page + ' 的 <link>');
 }
 
-// 2b. 拼圖、點陣線稿（場景、動物、獨角獸）、蛋糕店客人的資料檔
-for (const [file, why] of [['js/pictures-data.js', '拼圖圖片'], ['js/lineart-scenes.js', '場景線稿'], ['js/lineart-animals.js', '動物線稿'], ['js/lineart-fantasy.js', '獨角獸線稿'], ['js/cake-data.js', '蛋糕店客人']]) {
+// 2b. 拼圖、點陣線稿（場景、動物、公主城堡）、蛋糕店客人的資料檔
+for (const [file, why] of [['js/pictures-data.js', '拼圖圖片'], ['js/lineart-scenes.js', '場景線稿'], ['js/lineart-animals.js', '動物線稿'], ['js/lineart-fantasy.js', '公主城堡線稿'], ['js/lineart-data.js', '公主城堡線稿'], ['js/cake-data.js', '蛋糕店客人']]) {
   const src = stripComments(readFile(file));
   for (const mm of src.matchAll(/src\s*:\s*['"]([^'"]+)['"]/g)) need(mm[1], why);
 }

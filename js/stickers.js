@@ -299,6 +299,8 @@
      而是先把 SVG 文字抓下來、在根標籤補上 width/height（＝viewBox 的尺寸），
      再包成 blob URL 給 Image。畫完一定要 revoke，否則每存一次就漏一份記憶體。 */
   function loadSvgForCanvas(url) {
+    // PNG 貼紙本來就有內在尺寸，直接載入
+    if (!/\.svg$/i.test(url)) return loadImage(url).then((img) => ({ img: img, revoke: () => {} }));
     return fetch(url).then((r) => r.text()).then((text) => {
       const vb = text.match(/viewBox\s*=\s*["']\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([-\d.]+)[\s,]+([-\d.]+)\s*["']/);
       const w = vb ? vb[1] : '400';

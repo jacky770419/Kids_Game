@@ -11,13 +11,13 @@
    剝掉三種東西：
      1. 底色矩形：寬或高 ≥ viewBox 75% 的 <rect>（整面底色、內框、地面色帶）
      2. 只被它們引用的 <linearGradient>（底色剝掉後就成了孤兒，留著只是雜訊）
-     3. EXTRA_STRIP 列出的背景裝飾：公主／人魚圖裡的星星、雲、氣泡，
-        以及蘋果圖左上角的小花——它們原本是「畫面裡的背景」，底色一去掉
-        就變成飄在主角旁邊的碎片。這份表是刻意寫死的：規則化的幾何判準
-        （例如「離主體很遠的小圖形」）在這 21 張上只會誤殺，寫明反而好審。
+     3. EXTRA_STRIP 列出的背景裝飾：蘋果圖左上角的小花——它原本是「畫面裡的背景」，
+        底色一去掉就變成飄在主角旁邊的碎片。這份表是刻意寫死的：規則化的幾何判準
+        （例如「離主體很遠的小圖形」）只會誤殺，寫明反而好審。
 
    冪等：輸出只由來源檔決定，重跑不會有差異（check_stickers.js E 項實測比對雜湊）。
-   不刪 assets/stickers/ 裡的其他檔案——手繪的六張貼紙也住在那裡。
+   不刪 assets/stickers/ 裡的其他檔案——手繪的甜點／彩虹貼紙，以及 tools/make_color_art.py
+   產出的上色 PNG 貼紙（動物、公主、人魚、獨角獸，2026-11 起）也住在那裡。
 
    跑法：node tools/make_stickers.js */
 
@@ -32,46 +32,18 @@ const OUT_DIR = path.join(ROOT, 'assets', 'stickers');
 /* 來源清單：[來源相對路徑, 輸出 id]。
    id 就是 assets/stickers/<id>.svg，也是 js/stickers-data.js 裡的 id。 */
 const SOURCES = [
-  // 動物（Kenney Animal Pack Redux, CC0）
-  ['assets/pictures/animals/bear.svg', 'bear'],
-  ['assets/pictures/animals/duck.svg', 'duck'],
-  ['assets/pictures/animals/elephant.svg', 'elephant'],
-  ['assets/pictures/animals/frog.svg', 'frog'],
-  ['assets/pictures/animals/giraffe.svg', 'giraffe'],
-  ['assets/pictures/animals/monkey.svg', 'monkey'],
-  ['assets/pictures/animals/owl.svg', 'owl'],
-  ['assets/pictures/animals/panda.svg', 'panda'],
-  ['assets/pictures/animals/penguin.svg', 'penguin'],
-  ['assets/pictures/animals/pig.svg', 'pig'],
-  ['assets/pictures/animals/rabbit.svg', 'rabbit'],
-  ['assets/pictures/animals/whale.svg', 'whale'],
   // 水果
   ['assets/pictures/fruits/apple.svg', 'apple'],
   ['assets/pictures/fruits/banana.svg', 'banana'],
   ['assets/pictures/fruits/grapes.svg', 'grapes'],
   ['assets/pictures/fruits/pineapple.svg', 'pineapple'],
   ['assets/pictures/fruits/strawberry.svg', 'strawberry'],
-  ['assets/pictures/fruits/watermelon.svg', 'watermelon'],
-  // 公主與人魚
-  ['assets/pictures/princess.svg', 'princess'],
-  ['assets/pictures/princess-braid.svg', 'princess-braid'],
-  ['assets/pictures/mermaid.svg', 'mermaid']
+  ['assets/pictures/fruits/watermelon.svg', 'watermelon']
 ];
 
 /* 背景裝飾的額外剝除規則（來源相對路徑 → 一組正則）。
    每一條都附上剝的是什麼，改動來源圖時要一起看。 */
 const EXTRA_STRIP = {
-  // 天空裡的黃色星星群與白色雲朵群
-  'assets/pictures/princess.svg': [
-    /^[ \t]*<g fill="#(?:FFD166|fff)" opacity="[\d.]+">[\s\S]*?<\/g>\r?\n/gm
-  ],
-  'assets/pictures/princess-braid.svg': [
-    /^[ \t]*<g fill="#(?:FFD166|fff)" opacity="[\d.]+">[\s\S]*?<\/g>\r?\n/gm
-  ],
-  // 海水裡的白色氣泡群
-  'assets/pictures/mermaid.svg': [
-    /^[ \t]*<g fill="#fff" opacity="[\d.]+">[\s\S]*?<\/g>\r?\n/gm
-  ],
   // 左上角的裝飾小花（五片花瓣 + 花心），不是蘋果的一部分
   'assets/pictures/fruits/apple.svg': [
     /^[ \t]*<ellipse class="c" fill="#FFB7C5"[^>]*\/>\r?\n/gm,

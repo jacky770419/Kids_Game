@@ -30,8 +30,16 @@
     { id: 'sweets', name: '甜點', emoji: '🍰' }
   ];
 
+  /* 上色點陣貼紙：Codex 依著色線稿上色、tools/make_color_art.py 去底的 PNG。
+     不在這張表裡的仍是 SVG。 */
+  var PNG = {
+    unicorn: 1, princess: 1, 'princess-braid': 1, mermaid: 1,
+    bear: 1, duck: 1, elephant: 1, frog: 1, giraffe: 1, monkey: 1,
+    owl: 1, panda: 1, penguin: 1, pig: 1, rabbit: 1, whale: 1
+  };
+
   function s(id, word, cat, say) {
-    var o = { id: id, src: 'assets/stickers/' + id + '.svg', word: word, cat: cat };
+    var o = { id: id, src: 'assets/stickers/' + id + (PNG[id] ? '.png' : '.svg'), word: word, cat: cat };
     if (say) o.say = say;
     return o;
   }
