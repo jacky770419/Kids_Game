@@ -50,10 +50,12 @@ https://creativecommons.org/licenses/by/4.0/
 | `assets/stickers/{unicorn,cupcake,icecream,donut,cake,rainbow}.svg` | 本專案自製手繪 | 隨專案 |
 | `assets/backgrounds/*.svg`（貼紙場景背景） | 本專案自製手繪 | 隨專案 |
 | `assets/data/words.json` | 本專案自製 | 隨專案 |
-| `js/lineart-data.js`、`js/lineart-animals.js`、`js/lineart-fantasy.js`、`js/lineart-food.js` | 本專案自製 | 隨專案 |
+| `js/lineart-data.js`、`js/lineart-fantasy.js`、`js/lineart-food.js` | 本專案自製 | 隨專案 |
+| `assets/lineart-src/*.png`、`assets/lineart/*.png`（著色用點陣線稿：場景 8 張、動物 15 隻、彩虹獨角獸） | 本專案以 AI 生圖產出（動物與獨角獸為 2026-11 由 OpenAI Codex 內建生圖），再用 `tools/make_stencil.py` 轉檔 | 隨專案 |
 
 > `js/lineart-animals.js` 早期版本是由 Kenney 的向量總表改作的，但那套用「放大版剪影墊底」
-> 做外框，轉成可上色線稿後會出現大量重疊線，已於 2026-08 整批手繪重畫，現在不含 Kenney 素材。
+> 做外框，轉成可上色線稿後會出現大量重疊線，已於 2026-08 整批手繪重畫；2026-11 再整批換成點陣線稿
+> （手繪版認得出是什麼動物但很不像），現在只是一份 PNG 清單，不含 Kenney 素材。
 > 拼圖用的 `assets/pictures/animals/*.svg` 除 `panda.svg` 外仍是 Kenney 原作。
 
 Kenney 素材的授權原文（License.txt）：「You may use these assets in personal and commercial projects. Credit (Kenney or www.kenney.nl) would be nice but is not mandatory.」

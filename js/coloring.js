@@ -177,18 +177,20 @@
   /* 選圖畫面的順序：內建手繪 → 城堡公主 → 動物 → 水果甜點 → 場景 → 自己上傳的照片。
      各系列的 js 檔都是 classic script，用 window.XXX 取值，缺檔時安全跳過。
      每一筆都帶 cat（分類頁籤用）：整個系列同一類的就給系列預設值，
-     內建的 LINEART 是混合的，改在資料裡逐筆寫 cat，這裡只當作沒寫時的退路。 */
+     內建的 LINEART 是混合的，改在資料裡逐筆寫 cat，這裡只當作沒寫時的退路。
+     每一筆看欄位決定引擎：有 svg 是向量線稿；有 src 是內建的點陣線稿（PNG stencil），
+     跟上傳照片同一套引擎，但不能刪、進度 key 用名字。動物系列與獨角獸是點陣、跟場景同一種。 */
   function gallery() {
-    const vectors = (list, cat) =>
-      (list || []).map(x => ({ type: 'vector', cat: x.cat || cat, name: x.name, svg: x.svg }));
+    const series = (list, cat) =>
+      (list || []).map(x => x.src
+        ? { type: 'raster', builtin: true, cat: x.cat || cat, id: 's:' + x.name, name: x.name, dataUrl: x.src }
+        : { type: 'vector', cat: x.cat || cat, name: x.name, svg: x.svg });
     return [
-      ...vectors(LINEART, 'other'),
-      ...vectors(window.LINEART_FANTASY, 'fantasy'),
-      ...vectors(window.LINEART_ANIMALS, 'animal'),
-      ...vectors(window.LINEART_FOOD, 'food'),
-      // 場景系列是內建的點陣線稿：跟上傳照片同一套引擎，但不能刪、進度 key 用名字
-      ...(window.LINEART_SCENES || []).map(x =>
-        ({ type: 'raster', builtin: true, cat: 'scene', id: 's:' + x.name, name: x.name, dataUrl: x.src })),
+      ...series(LINEART, 'other'),
+      ...series(window.LINEART_FANTASY, 'fantasy'),
+      ...series(window.LINEART_ANIMALS, 'animal'),
+      ...series(window.LINEART_FOOD, 'food'),
+      ...series(window.LINEART_SCENES, 'scene'),
       ...customPics.map(x => ({ ...x, cat: 'photo' }))
     ];
   }

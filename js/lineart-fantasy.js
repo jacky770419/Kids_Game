@@ -149,34 +149,8 @@ const LINEART_FANTASY = [
       <circle class="c" fill="#fff" stroke-width="3.75" cx="290" cy="302" r="19"/>
       </svg>`
   },
-  {
-    name: '彩虹獨角獸',
-    svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
-      <path fill="none" stroke-width="3.75" d="M28,374 L372,374"/>
-      <path class="c" fill="#fff" stroke-width="3.75" d="M334,204 C366,206 378,236 370,276 C364,306 348,324 330,330 C344,298 348,262 336,238 C332,228 326,212 320,208 Z"/>
-      <path class="c" fill="#fff" stroke-width="2.63" d="M330,230 C352,238 360,264 352,292 C347,308 338,318 329,320 C338,296 340,262 330,244 Z"/>
-      <path class="c" fill="#fff" stroke-width="6.75" d="M198,176 C158,178 132,204 132,246 C132,294 170,322 234,322 C296,322 338,296 338,250 C338,208 308,182 266,180 Z"/>
-      <ellipse class="c" fill="#fff" stroke-width="1.88" cx="238" cy="300" rx="44" ry="17"/>
-      <path class="c" fill="#fff" stroke-width="4.5" d="M146,300 L146,352 C146,366 176,366 176,352 L176,300"/>
-      <path class="c" fill="#fff" stroke-width="4.5" d="M196,308 L196,356 C196,370 226,370 226,356 L226,308"/>
-      <path class="c" fill="#fff" stroke-width="4.5" d="M262,308 L262,356 C262,370 292,370 292,356 L292,308"/>
-      <path class="c" fill="#fff" stroke-width="4.5" d="M312,300 L312,352 C312,366 342,366 342,352 L342,300"/>
-      <path fill="none" stroke-width="1.88" d="M148,346 L174,346 M198,350 L224,350 M264,350 L290,350 M314,346 L340,346"/>
-      <path class="c" fill="#fff" stroke-width="4.5" d="M148,64 C196,42 242,62 252,104 C259,136 252,172 234,196 C246,208 254,222 256,236 C242,244 228,244 216,240 C214,222 208,206 198,198 C216,168 218,130 202,106 C190,88 168,78 148,78 Z"/>
-      <path fill="none" stroke-width="1.88" d="M224,108 C236,140 234,172 220,196 M240,118 C250,148 248,182 234,206"/>
-      <path class="c" fill="#fff" stroke-width="6.75" d="M150,66 C186,64 210,88 212,126 C213,158 208,182 216,214 L162,232 C154,202 146,186 128,182 C100,178 84,160 86,138 C88,116 102,106 118,110 C114,86 130,68 150,66 Z"/>
-      <path class="c" fill="#fff" stroke-width="4.5" d="M120,64 C122,44 142,44 146,62 C140,74 126,76 120,64 Z"/>
-      <ellipse class="c" fill="#fff" stroke-width="3.75" cx="100" cy="170" rx="28" ry="20"/>
-      <ellipse fill="#3a3a3a" stroke="none" cx="88" cy="168" rx="3.5" ry="5"/>
-      <path fill="none" stroke-width="1.88" d="M84,184 C92,191 102,192 110,188"/>
-      <polygon class="c" fill="#fff" stroke-width="3.75" points="152,70 180,66 168,16"/>
-      <path fill="none" stroke-width="1.88" d="M158,48 L174,44 M154,62 L178,58"/>
-      <path class="c" fill="#fff" stroke-width="1.88" d="M122,82 C134,70 154,70 160,84 C150,94 130,94 122,82 Z"/>
-      <circle fill="#3a3a3a" stroke="none" cx="134" cy="142" r="9"/>
-      <circle fill="#fff" stroke="none" cx="137" cy="139" r="3.5"/>
-      <circle class="c" fill="#fff" stroke-width="2.25" cx="154" cy="176" r="11"/>
-      </svg>`
-  },
+  // 彩虹獨角獸：點陣線稿（Codex 生圖、tools/make_stencil.py 轉檔），原本的手繪 SVG 太醜換掉
+  { name: '彩虹獨角獸', src: 'assets/lineart/unicorn.png' },
   {
     name: '公主的城堡',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">

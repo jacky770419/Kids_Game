@@ -170,6 +170,30 @@ const LINEART_CATS = new Set(['animal', 'fantasy', 'food', 'scene', 'other']);
 // name 要跨五個檔案全域唯一（進度存檔用 name 當 key）
 const globalLineartNames = new Map(); // name -> '檔名 第N筆'
 
+// 點陣線稿的 src：檔案要在、是 PNG、正方形、邊長 800～2048（場景、動物、獨角獸共用）
+function checkRasterSrc(tag, item) {
+  if (typeof item.src !== 'string' || !item.src) {
+    fail(`${tag}（name=${item.name}）：src 缺漏或空字串`); return false;
+  }
+  const srcAbs = path.join(root, item.src);
+  if (!fs.existsSync(srcAbs)) {
+    fail(`${tag}（name=${item.name}）：src="${item.src}" 檔案不存在`); return false;
+  }
+  const dim = readPngSize(srcAbs);
+  if (!dim) {
+    fail(`${tag}（name=${item.name}）：src="${item.src}" 不是合法 PNG（magic bytes 不符）`); return false;
+  }
+  let ok = true;
+  if (dim.width !== dim.height) {
+    fail(`${tag}（name=${item.name}）：src 不是正方形（${dim.width}x${dim.height}）`); ok = false;
+  }
+  if (dim.width < 800 || dim.width > 2048) {
+    fail(`${tag}（name=${item.name}）：src 邊長 ${dim.width} 不在 800～2048 之間`); ok = false;
+  }
+  return ok;
+}
+
+// 一筆有 src 就是點陣線稿、驗檔案；沒有就是向量線稿、驗 svg（對齊 coloring.js gallery() 的分流）
 function checkVectorLineartFile(fileRel, varName) {
   const absPath = path.join(root, fileRel);
   let list;
@@ -212,6 +236,10 @@ function checkVectorLineartFile(fileRel, varName) {
         fail(`${tag}（name=${item.name}）：cat="${item.cat}" 不在合法集合（${[...LINEART_CATS].join('/')}）`);
         localFail = true;
       }
+    }
+    if (Object.prototype.hasOwnProperty.call(item, 'src')) {
+      if (!checkRasterSrc(tag, item)) localFail = true;
+      return;
     }
     // svg：要有 <svg、viewBox、以 </svg> 收尾，且至少一個 class="c" 元素、每個都要有 fill=
     if (typeof item.svg !== 'string' || !item.svg) {
@@ -283,26 +311,7 @@ checkVectorLineartFile('js/lineart-food.js', 'LINEART_FOOD');
             globalLineartNames.set(item.name, tag);
           }
         }
-        if (typeof item.src !== 'string' || !item.src) {
-          fail(`${tag}（name=${item.name}）：src 缺漏或空字串`); localFail = true;
-        } else {
-          const srcAbs = path.join(root, item.src);
-          if (!fs.existsSync(srcAbs)) {
-            fail(`${tag}（name=${item.name}）：src="${item.src}" 檔案不存在`); localFail = true;
-          } else {
-            const dim = readPngSize(srcAbs);
-            if (!dim) {
-              fail(`${tag}（name=${item.name}）：src="${item.src}" 不是合法 PNG（magic bytes 不符）`); localFail = true;
-            } else {
-              if (dim.width !== dim.height) {
-                fail(`${tag}（name=${item.name}）：src 不是正方形（${dim.width}x${dim.height}）`); localFail = true;
-              }
-              if (dim.width < 800 || dim.width > 2048) {
-                fail(`${tag}（name=${item.name}）：src 邊長 ${dim.width} 不在 800～2048 之間`); localFail = true;
-              }
-            }
-          }
-        }
+        if (!checkRasterSrc(tag, item)) localFail = true;
       });
       if (localFail) markGroupFailed(g);
     }
