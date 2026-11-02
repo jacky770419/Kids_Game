@@ -688,6 +688,16 @@ body.coloring #gameScreen {
   z-index: 1;
 }
 
+/* 填色往兩側空白紙面的延伸（js/coloring.js 的 syncEdgeLayer），整張紙、墊在最底下 */
+#edgeLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
 #lineLayer {
   z-index: 3;
   pointer-events: none;

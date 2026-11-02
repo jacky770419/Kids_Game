@@ -162,6 +162,7 @@
   let paintCanvas = null;
   let ctx = null;
   let fillCanvas = null, fillCtx = null;   // 只有上傳照片模式會用到
+  let edgeCanvas = null, edgeCtx = null;   // 點陣圖：填色圖層往兩側紙面的延伸（見 syncEdgeLayer）
   let rasterEdgeMask = null;               // 目前這張照片的線條遮罩（填色用）
   let history = [];                        // 復原用的快照堆疊
   let beforePaint = null;                  // 重複使用的離屏 canvas：這一筆「下筆前」的 paintLayer
@@ -283,6 +284,7 @@
       else entry.el.setAttribute('fill', entry.prev);
     } else if (entry.kind === 'canvas') {
       entry.ctx.putImageData(entry.data, entry.x, entry.y);
+      if (entry.ctx === fillCtx) syncEdgeLayer();
     }
     updateButtons();
   }
@@ -727,6 +729,7 @@
     // 兩層都用各自的實際解析度清（paintLayer 是非正方的整張紙）
     if (fillCtx) fillCtx.clearRect(0, 0, fillCtx.canvas.width, fillCtx.canvas.height);
     if (ctx) ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    syncEdgeLayer();
     clearHistory();
     hasContent = false;
     updateButtons();
@@ -861,6 +864,7 @@
     const item = list[galleryIndex];
     artWrap.innerHTML = '';
     fillCanvas = fillCtx = rasterEdgeMask = null;
+    edgeCanvas = edgeCtx = null;
     paintCanvas = ctx = null;   // 舊的 canvas 已經跟著 innerHTML 一起丟掉了
     hasContent = false;   // 新的一張，等進度還原回來再說（要先歸零，clearHistory 才算得對）
     clearHistory();       // 換圖就不能再復原上一張的筆畫
@@ -905,6 +909,7 @@
   }
 
   /* ===== 上傳照片產生的畫稿：一樣三層，只是底層跟頂層改用 canvas =====
+     0. edgeLayer  整張紙：填色圖層往兩側空白紙面的延伸（syncEdgeLayer 算出來的，不存檔）
      1. fillLayer  疊桶填色圖層
      2. paintLayer 畫筆 / 潑墨畫的透明畫布
      3. lineLayer  處理好的線條（透明底、只有黑線），不可更動，蓋在最上面 */
@@ -912,6 +917,11 @@
     const img = new Image();
     img.onload = () => {
       rasterEdgeMask = PhotoTool.maskFromStencil(img);
+
+      edgeCanvas = document.createElement('canvas');
+      edgeCanvas.id = 'edgeLayer';
+      artWrap.appendChild(edgeCanvas);
+      edgeCtx = edgeCanvas.getContext('2d');
 
       fillCanvas = document.createElement('canvas');
       fillCanvas.id = 'fillLayer';
@@ -935,6 +945,7 @@
       artWrap.appendChild(lineCanvas);
 
       sizeArt();
+      syncEdgeLayer();   // sizeArt 在紙張尺寸沒變時會直接返回，這裡自己對齊一次
       restoreProgress(item);   // 圖層是在 onload 裡才建好的，還原要接在這裡
     };
     img.src = item.dataUrl;
@@ -1013,12 +1024,40 @@
       resizeCanvasKeepContent(paintCanvas, res.w, res.h);
       ctx = paintCanvas.getContext('2d');   // 改過 width/height 之後繪圖狀態會被重設
     }
+    syncEdgeLayer();   // 轉向後兩側紙面從左右換成上下，延伸要重算
     // fillLayer 永遠是 CANVAS_SIZE 正方（照片座標系），只有 CSS 尺寸跟著 --sq 變，
     // 點陣內容不受影響，所以不需要搬移。
 
     // 尺寸真的變了就清掉復原堆疊：舊快照的 ImageData 尺寸已經對不上了。
     // 畫的東西留著（上面剛等比重畫回去），只是不能再往回復原。
     if (sizeChanged) clearHistory();
+  }
+
+  /* 紙比正方線稿寬（橫向）或高（直向）時，兩側空白紙面不在填色圖層裡，
+     填滿背景只會塗到正方範圍、兩邊一直留白。這裡把填色圖層最外圈那一排像素往外拉滿紙面：
+     碰到正方邊緣的區域（背景、天空、草地）就一路延伸到紙邊，沒碰到邊的區域不受影響。
+     內容完全由填色圖層推得，所以不用另外存檔或復原，填色圖層一變就重算一次。 */
+  function syncEdgeLayer() {
+    if (!edgeCanvas || !fillCanvas || !paintCanvas) return;
+    const w = paintCanvas.width, h = paintCanvas.height;
+    if (edgeCanvas.width !== w || edgeCanvas.height !== h) {
+      edgeCanvas.width = w;   // 改尺寸會順便清空畫布
+      edgeCanvas.height = h;
+    } else {
+      edgeCtx.clearRect(0, 0, w, h);
+    }
+    const sq = Math.min(w, h);
+    const ox = Math.round((w - sq) / 2), oy = Math.round((h - sq) / 2);
+    const S = CANVAS_SIZE;
+    edgeCtx.imageSmoothingEnabled = false;   // 一排像素拉寬，不要跟隔壁色混出漸層
+    if (ox > 0) {
+      edgeCtx.drawImage(fillCanvas, 0, 0, 1, S, 0, oy, ox, sq);
+      edgeCtx.drawImage(fillCanvas, S - 1, 0, 1, S, ox + sq, oy, w - ox - sq, sq);
+    }
+    if (oy > 0) {
+      edgeCtx.drawImage(fillCanvas, 0, 0, S, 1, ox, 0, sq, oy);
+      edgeCtx.drawImage(fillCanvas, 0, S - 1, S, 1, ox, oy + sq, sq, h - oy - sq);
+    }
   }
 
   // 用 ResizeObserver 盯著紙張本身，比 rAF / resize 事件可靠（分頁不可見時 rAF 不會觸發）
@@ -1149,7 +1188,7 @@
       const im = await loadDataUrl(rec.fillPng);
       if (stale() || !fillCtx) return;
       // fillLayer 恆為 CANVAS_SIZE 正方（照片座標系），尺寸不會變，原點貼上就好
-      if (im) { fillCtx.drawImage(im, 0, 0); restored = true; }
+      if (im) { fillCtx.drawImage(im, 0, 0); syncEdgeLayer(); restored = true; }
     }
 
     if (rec.paintPng) {
@@ -1193,14 +1232,13 @@
     }
 
     if (item.type === 'raster' && fillCanvas && rasterEdgeMask) {
-      // fillCanvas 就是那個置中的正方子區域，但紙比它大，點到正方以外要直接忽略，
-      // 否則 px/py 會算出負數或超過 CANVAS_SIZE，floodFillMask 行為未定義
+      /* fillCanvas 是置中的正方子區域，紙比它大。點到正方以外的紙面（橫向的左右、直向的上下）
+         就當成點在最靠近的正方邊緣上：填到的若是碰邊的背景區，syncEdgeLayer 會把顏色延伸回點的那片紙面。
+         夾在 0..CANVAS_SIZE-1 之內，floodFillMask 才不會拿到越界座標。 */
       const rect = fillCanvas.getBoundingClientRect();
-      if (e.clientX < rect.left || e.clientX >= rect.right ||
-          e.clientY < rect.top || e.clientY >= rect.bottom) return;
-      const px = Math.floor((e.clientX - rect.left) / rect.width * CANVAS_SIZE);
-      const py = Math.floor((e.clientY - rect.top) / rect.height * CANVAS_SIZE);
-      if (px < 0 || px >= CANVAS_SIZE || py < 0 || py >= CANVAS_SIZE) return;
+      const clampPx = (v) => Math.max(0, Math.min(CANVAS_SIZE - 1, v));
+      const px = clampPx(Math.floor((e.clientX - rect.left) / rect.width * CANVAS_SIZE));
+      const py = clampPx(Math.floor((e.clientY - rect.top) / rect.height * CANVAS_SIZE));
       const filled = PhotoTool.floodFillMask(rasterEdgeMask, CANVAS_SIZE, CANVAS_SIZE, px, py);
       if (!filled) return; // 點到線條上，不處理
       /* 只存這次填到的範圍：applyFloodFill 會用 growIntoEdges 往線條方向膨脹 2px，
@@ -1241,6 +1279,7 @@
     tctx.putImageData(imgData, 0, 0);
 
     fillCtx.drawImage(tmp, 0, 0);
+    syncEdgeLayer();
   }
 
   /* ===== 畫筆 / 潑墨 / 水彩 / 亮粉筆 ===== */
@@ -1523,6 +1562,7 @@
       c.globalCompositeOperation = 'source-over';
     } else {
       const lineCanvas = artWrap.querySelector('#lineLayer');
+      if (edgeCanvas) c.drawImage(edgeCanvas, 0, 0);   // 跟 paintLayer 同解析度，原點貼上
       c.drawImage(fillCanvas, ox, oy, sq, sq);
       c.drawImage(paintCanvas, 0, 0);
       c.drawImage(lineCanvas, ox, oy, sq, sq);
