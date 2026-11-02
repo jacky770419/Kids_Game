@@ -5,7 +5,7 @@
    tools/check_cake.js 才能 require 進來對帳。
 
    甜點與配料的圖不是圖檔，是 js/cake-shapes.js、js/cake-toppings.js 用顏色現場畫出來的 SVG：
-   一層蛋糕要能換十種顏色、疊一到三層、上面再淋奶油，做成圖檔是幾千種組合。
+   一層蛋糕要能換十幾種顏色、疊一到三層、上面再淋奶油，做成圖檔是幾千種組合。
 
    欄位：
      id    唯一代號，也是進度存檔裡的值
@@ -33,6 +33,11 @@
     { id: 'white', word: 'white', fill: '#FFF4DF', top: '#FFFFFF', dark: '#E6D3B3' },
     { id: 'orange', word: 'orange', fill: '#FFB05C', top: '#FFCE96', dark: '#E58A2E' },
     { id: 'red', word: 'red', fill: '#F4686E', top: '#FA9A9E', dark: '#CF4248' },
+    // 彩虹七色的「靛」（indigo）：跟淺淺的 blue 要一眼分得出來，點餐才不會看錯
+    { id: 'indigo', word: 'indigo', fill: '#5C6FD6', top: '#8F9CEB', dark: '#3E4FB0' },
+    { id: 'mint', word: 'mint', fill: '#7FE0C8', top: '#B2EFDF', dark: '#4FBFA3' },
+    { id: 'gray', word: 'gray', fill: '#B5B9C4', top: '#D4D7DE', dark: '#8C919E' },
+    { id: 'black', word: 'black', fill: '#4A4550', top: '#6E6878', dark: '#2A2630' },
     // 烤出來的金黃色：鬆餅、甜甜圈最像樣的顏色，冰淇淋和聖代不用（見 DESSERTS）
     { id: 'golden', word: 'golden', fill: '#EDB95E', top: '#F7D692', dark: '#C98F35' }
   ];
@@ -50,7 +55,12 @@
     { id: 'purple', word: 'purple', fill: '#D9C8FF' },
     { id: 'green', word: 'green', fill: '#C4F0B8' },
     { id: 'orange', word: 'orange', fill: '#FFC98A' },
-    { id: 'red', word: 'red', fill: '#E5484D' }
+    { id: 'red', word: 'red', fill: '#E5484D' },
+    { id: 'indigo', word: 'indigo', fill: '#7383E0' },
+    { id: 'mint', word: 'mint', fill: '#B8F2E3' },
+    { id: 'black', word: 'black', fill: '#3A3540' },
+    // 焦糖色：鬆餅淋「golden syrup」最像
+    { id: 'golden', word: 'golden', fill: '#E3A43F' }
   ];
 
   /* 容器。shape 決定怎麼畫，顏色只是參數 */
@@ -59,22 +69,36 @@
     { id: 'pink', say: 'pink plate', fill: '#FFD5E5', rim: '#FF9EC4' },
     { id: 'blue', say: 'blue plate', fill: '#CDEBFF', rim: '#7CC8F5' },
     { id: 'yellow', say: 'yellow plate', fill: '#FFF2B8', rim: '#FFD93D' },
-    { id: 'green', say: 'green plate', fill: '#D5F2D2', rim: '#8EDB8A' }
+    { id: 'green', say: 'green plate', fill: '#D5F2D2', rim: '#8EDB8A' },
+    { id: 'purple', say: 'purple plate', fill: '#E6DCFF', rim: '#B79CFF' },
+    { id: 'orange', say: 'orange plate', fill: '#FFE3C2', rim: '#FFB05C' },
+    { id: 'red', say: 'red plate', fill: '#FDD0D2', rim: '#F4686E' },
+    { id: 'indigo', say: 'indigo plate', fill: '#D3D9F7', rim: '#5C6FD6' },
+    { id: 'black', say: 'black plate', fill: '#6E6878', rim: '#4A4550' }
   ];
   var CONES = [
     { id: 'waffle', say: 'waffle cone', shape: 'cone', fill: '#E8B866', dark: '#B9812F' },
     { id: 'chocolate', say: 'chocolate cone', shape: 'cone', fill: '#8B5A36', dark: '#5E3A20' },
     { id: 'pink', say: 'pink cone', shape: 'cone', fill: '#FFB3D1', dark: '#E07AA3' },
     { id: 'blue', say: 'blue cone', shape: 'cone', fill: '#ABDDFA', dark: '#4FA6DB' },
+    { id: 'yellow', say: 'yellow cone', shape: 'cone', fill: '#FFE98A', dark: '#E0B520' },
+    { id: 'green', say: 'green cone', shape: 'cone', fill: '#B6EBB3', dark: '#62BC5D' },
+    { id: 'purple', say: 'purple cone', shape: 'cone', fill: '#D3C2FF', dark: '#9273E6' },
     { id: 'pinkcup', say: 'pink cup', shape: 'cup', fill: '#FFC4DC', dark: '#FF6B9A' },
-    { id: 'bluecup', say: 'blue cup', shape: 'cup', fill: '#CDEBFF', dark: '#4FA6DB' }
+    { id: 'bluecup', say: 'blue cup', shape: 'cup', fill: '#CDEBFF', dark: '#4FA6DB' },
+    { id: 'orangecup', say: 'orange cup', shape: 'cup', fill: '#FFE3C2', dark: '#E58A2E' },
+    { id: 'redcup', say: 'red cup', shape: 'cup', fill: '#FDD0D2', dark: '#CF4248' }
   ];
   var WRAPPERS = [
     { id: 'pink', say: 'pink cup', fill: '#FF9EC4', dark: '#E07AA3' },
     { id: 'blue', say: 'blue cup', fill: '#7CC8F5', dark: '#4FA6DB' },
     { id: 'yellow', say: 'yellow cup', fill: '#FFD93D', dark: '#E0B520' },
     { id: 'green', say: 'green cup', fill: '#8EDB8A', dark: '#62BC5D' },
-    { id: 'purple', say: 'purple cup', fill: '#B79CFF', dark: '#9273E6' }
+    { id: 'purple', say: 'purple cup', fill: '#B79CFF', dark: '#9273E6' },
+    { id: 'orange', say: 'orange cup', fill: '#FFB05C', dark: '#E58A2E' },
+    { id: 'red', say: 'red cup', fill: '#F4686E', dark: '#CF4248' },
+    { id: 'indigo', say: 'indigo cup', fill: '#5C6FD6', dark: '#3E4FB0' },
+    { id: 'white', say: 'white cup', fill: '#FFF4DF', dark: '#E6D3B3' }
   ];
 
   /* 六種甜點。
