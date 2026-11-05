@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v16';
+const CACHE_VERSION = 'v17';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -39,6 +39,7 @@ const PRECACHE = [
   'js/lineart-data.js',
   'js/lineart-fantasy.js',
   'js/lineart-food.js',
+  'js/lineart-vehicles.js',
   'js/lineart-scenes.js',
   'js/music.js',
   'js/patterns-data.js',
@@ -100,6 +101,18 @@ const PRECACHE = [
   'assets/lineart/princess-dog.png',
   'assets/lineart/squirrel-tree.png',
   'assets/lineart/sunflowers.png',
+  'assets/lineart/ambulance.png',
+  'assets/lineart/bus.png',
+  'assets/lineart/cement-mixer.png',
+  'assets/lineart/dump-truck.png',
+  'assets/lineart/excavator.png',
+  'assets/lineart/fire-truck.png',
+  'assets/lineart/garbage-truck.png',
+  'assets/lineart/ice-cream-truck.png',
+  'assets/lineart/police-car.png',
+  'assets/lineart/race-car.png',
+  'assets/lineart/tractor.png',
+  'assets/lineart/train.png',
   // 拼圖與單字卡圖片
   'assets/pictures/bear.svg',
   'assets/pictures/castle.png',
@@ -127,6 +140,18 @@ const PRECACHE = [
   'assets/pictures/fruits/pineapple.svg',
   'assets/pictures/fruits/strawberry.svg',
   'assets/pictures/fruits/watermelon.svg',
+  'assets/pictures/vehicles/ambulance.png',
+  'assets/pictures/vehicles/bus.png',
+  'assets/pictures/vehicles/cement-mixer.png',
+  'assets/pictures/vehicles/dump-truck.png',
+  'assets/pictures/vehicles/excavator.png',
+  'assets/pictures/vehicles/fire-truck.png',
+  'assets/pictures/vehicles/garbage-truck.png',
+  'assets/pictures/vehicles/ice-cream-truck.png',
+  'assets/pictures/vehicles/police-car.png',
+  'assets/pictures/vehicles/race-car.png',
+  'assets/pictures/vehicles/tractor.png',
+  'assets/pictures/vehicles/train.png',
   // 貼紙場景的背景與貼紙
   'assets/backgrounds/beach.svg',
   'assets/backgrounds/castle.svg',
@@ -158,6 +183,18 @@ const PRECACHE = [
   'assets/stickers/unicorn.png',
   'assets/stickers/watermelon.svg',
   'assets/stickers/whale.png',
+  'assets/stickers/ambulance.png',
+  'assets/stickers/bus.png',
+  'assets/stickers/cement-mixer.png',
+  'assets/stickers/dump-truck.png',
+  'assets/stickers/excavator.png',
+  'assets/stickers/fire-truck.png',
+  'assets/stickers/garbage-truck.png',
+  'assets/stickers/ice-cream-truck.png',
+  'assets/stickers/police-car.png',
+  'assets/stickers/race-car.png',
+  'assets/stickers/tractor.png',
+  'assets/stickers/train.png',
   // 背景音樂
   'assets/music/childrens-march.mp3',
   'assets/music/fluffing-a-duck.mp3',

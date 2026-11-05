@@ -16,5 +16,12 @@
   { "id": "pineapple", "word": "PINEAPPLE", "zh": "鳳梨", "bpmf": "ㄈㄥˋ ㄌㄧˊ", "image": "assets/pictures/fruits/pineapple.svg", "audio": "", "tags": ["fruit"] },
   { "id": "apple", "word": "APPLE", "zh": "蘋果", "bpmf": "ㄆㄧㄥˊ ㄍㄨㄛˇ", "image": "assets/pictures/fruits/apple.svg", "audio": "", "tags": ["fruit"] },
   { "id": "banana", "word": "BANANA", "zh": "香蕉", "bpmf": "ㄒㄧㄤ ㄐㄧㄠ", "image": "assets/pictures/fruits/banana.svg", "audio": "", "tags": ["fruit"] },
-  { "id": "grapes", "word": "GRAPES", "zh": "葡萄", "bpmf": "ㄆㄨˊ ˙ㄊㄠ", "image": "assets/pictures/fruits/grapes.svg", "audio": "", "tags": ["fruit"] }
+  { "id": "grapes", "word": "GRAPES", "zh": "葡萄", "bpmf": "ㄆㄨˊ ˙ㄊㄠ", "image": "assets/pictures/fruits/grapes.svg", "audio": "", "tags": ["fruit"] },
+  { "id": "car", "word": "CAR", "zh": "汽車", "bpmf": "ㄑㄧˋ ㄔㄜ", "image": "assets/pictures/vehicles/race-car.png", "audio": "", "tags": ["vehicle"] },
+  { "id": "bus", "word": "BUS", "zh": "公車", "bpmf": "ㄍㄨㄥ ㄔㄜ", "image": "assets/pictures/vehicles/bus.png", "audio": "", "tags": ["vehicle"] },
+  { "id": "truck", "word": "TRUCK", "zh": "卡車", "bpmf": "ㄎㄚˇ ㄔㄜ", "image": "assets/pictures/vehicles/dump-truck.png", "audio": "", "tags": ["vehicle"] },
+  { "id": "train", "word": "TRAIN", "zh": "火車", "bpmf": "ㄏㄨㄛˇ ㄔㄜ", "image": "assets/pictures/vehicles/train.png", "audio": "", "tags": ["vehicle"] },
+  { "id": "tractor", "word": "TRACTOR", "zh": "拖拉機", "bpmf": "ㄊㄨㄛ ㄌㄚ ㄐㄧ", "image": "assets/pictures/vehicles/tractor.png", "audio": "", "tags": ["vehicle"] },
+  { "id": "ambulance", "word": "AMBULANCE", "zh": "救護車", "bpmf": "ㄐㄧㄡˋ ㄏㄨˋ ㄔㄜ", "image": "assets/pictures/vehicles/ambulance.png", "audio": "", "tags": ["vehicle"] },
+  { "id": "excavator", "word": "EXCAVATOR", "zh": "怪手", "bpmf": "ㄍㄨㄞˋ ㄕㄡˇ", "image": "assets/pictures/vehicles/excavator.png", "audio": "", "tags": ["vehicle"] }
 ]

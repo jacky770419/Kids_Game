@@ -165,7 +165,7 @@ console.log(`檢查資料檔（root＝${root}）\n`);
 }
 
 // ===== 2. 五支線稿檔 =====
-const LINEART_CATS = new Set(['animal', 'fantasy', 'food', 'scene', 'other']);
+const LINEART_CATS = new Set(['animal', 'fantasy', 'food', 'vehicle', 'scene', 'other']);
 
 // name 要跨五個檔案全域唯一（進度存檔用 name 當 key）
 const globalLineartNames = new Map(); // name -> '檔名 第N筆'
@@ -277,6 +277,7 @@ checkVectorLineartFile('js/lineart-data.js', 'LINEART');
 checkVectorLineartFile('js/lineart-animals.js', 'LINEART_ANIMALS');
 checkVectorLineartFile('js/lineart-fantasy.js', 'LINEART_FANTASY');
 checkVectorLineartFile('js/lineart-food.js', 'LINEART_FOOD');
+checkVectorLineartFile('js/lineart-vehicles.js', 'LINEART_VEHICLES');
 
 // 場景線稿（點陣 PNG stencil）
 {
@@ -358,12 +359,12 @@ checkVectorLineartFile('js/lineart-food.js', 'LINEART_FOOD');
         } else if (!fileExists(root, item.src)) {
           fail(`${tag}（name=${item.name}）：src="${item.src}" 檔案不存在`); localFail = true;
         }
-        // word：拼完圖之後要用語音唸出來的英文字，必須是全小寫英文字母
+        // word：拼完圖之後要用語音唸出來的英文字，必須是全小寫英文字母，片語用單一空白隔開（fire truck）
         // （直接餵給 speechSynthesis，混進中文或大寫會唸成奇怪的東西）
         if (typeof item.word !== 'string' || !item.word) {
           fail(`${tag}（name=${item.name}）：word 缺漏或空字串`); localFail = true;
-        } else if (!/^[a-z]+$/.test(item.word)) {
-          fail(`${tag}（name=${item.name}）：word="${item.word}" 不是全小寫英文字母`); localFail = true;
+        } else if (!/^[a-z]+( [a-z]+)*$/.test(item.word)) {
+          fail(`${tag}（name=${item.name}）：word="${item.word}" 不是全小寫英文字母（片語用單一空白隔開）`); localFail = true;
         }
       });
       if (localFail) markGroupFailed(g);
@@ -555,7 +556,7 @@ if (errors.length > 0) {
 // （對齊 coloring.js 的規則：lineart-data.js 逐筆自帶 cat；animals 預設 animal、
 // fantasy 預設 fantasy、food 預設 food；scenes 檔全部算 scene）
 {
-  const catCount = { animal: 0, fantasy: 0, food: 0, scene: 0, other: 0 };
+  const catCount = { animal: 0, fantasy: 0, food: 0, vehicle: 0, scene: 0, other: 0 };
   function addFromFile(fileRel, varName, defaultCat) {
     try {
       const list = loadScript(path.join(root, fileRel), varName);
@@ -573,6 +574,7 @@ if (errors.length > 0) {
   addFromFile('js/lineart-animals.js', 'LINEART_ANIMALS', 'animal');
   addFromFile('js/lineart-fantasy.js', 'LINEART_FANTASY', 'fantasy');
   addFromFile('js/lineart-food.js', 'LINEART_FOOD', 'food');
+  addFromFile('js/lineart-vehicles.js', 'LINEART_VEHICLES', 'vehicle');
   try {
     const scenes = loadScript(path.join(root, 'js/lineart-scenes.js'), 'LINEART_SCENES');
     if (Array.isArray(scenes)) catCount.scene += scenes.length;

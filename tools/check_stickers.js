@@ -49,7 +49,7 @@ function done() {
   console.log('貼紙場景檢查全綠：資料表 / 去底 / 背景 viewBox / 純邏輯 / make_stickers 冪等 / HTML 骨架。');
 }
 
-const CATS = ['princess', 'animals', 'fruits', 'sweets'];
+const CATS = ['princess', 'animals', 'fruits', 'sweets', 'vehicles'];
 
 // ---------- A. 資料表 ----------
 

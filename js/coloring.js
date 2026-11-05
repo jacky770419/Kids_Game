@@ -100,8 +100,9 @@
     { id: 'animal',  emoji: '🐻', name: '動物' },
     { id: 'fantasy', emoji: '👑', name: '公主城堡' },
     { id: 'food',    emoji: '🍓', name: '水果甜點' },
+    { id: 'vehicle', emoji: '🚗', name: '車車' },
     { id: 'scene',   emoji: '🌈', name: '大張場景' },
-    { id: 'other',   emoji: '🚗', name: '其他' },
+    { id: 'other',   emoji: '🌻', name: '其他' },
     { id: 'photo',   emoji: '📷', name: '我的照片' }
   ];
 
@@ -191,6 +192,7 @@
       ...series(window.LINEART_FANTASY, 'fantasy'),
       ...series(window.LINEART_ANIMALS, 'animal'),
       ...series(window.LINEART_FOOD, 'food'),
+      ...series(window.LINEART_VEHICLES, 'vehicle'),
       ...series(window.LINEART_SCENES, 'scene'),
       ...customPics.map(x => ({ ...x, cat: 'photo' }))
     ];

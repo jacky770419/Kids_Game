@@ -27,7 +27,8 @@
     { id: 'princess', name: '公主', emoji: '👸' },
     { id: 'animals', name: '動物', emoji: '🐻' },
     { id: 'fruits', name: '水果', emoji: '🍓' },
-    { id: 'sweets', name: '甜點', emoji: '🍰' }
+    { id: 'sweets', name: '甜點', emoji: '🍰' },
+    { id: 'vehicles', name: '車車', emoji: '🚗' }
   ];
 
   /* 上色點陣貼紙：Codex 依著色線稿上色、tools/make_color_art.py 去底的 PNG。
@@ -35,7 +36,8 @@
   var PNG = {
     unicorn: 1, princess: 1, 'princess-braid': 1, mermaid: 1,
     bear: 1, duck: 1, elephant: 1, frog: 1, giraffe: 1, monkey: 1,
-    owl: 1, panda: 1, penguin: 1, pig: 1, rabbit: 1, whale: 1
+    owl: 1, panda: 1, penguin: 1, pig: 1, rabbit: 1, whale: 1,
+    'fire-truck': 1, 'police-car': 1, 'ambulance': 1, 'bus': 1, 'garbage-truck': 1, 'excavator': 1, 'cement-mixer': 1, 'train': 1, 'race-car': 1, 'ice-cream-truck': 1, 'tractor': 1, 'dump-truck': 1
   };
 
   function s(id, word, cat, say) {
@@ -75,7 +77,20 @@
     s('cupcake', 'cupcake', 'sweets'),
     s('icecream', 'icecream', 'sweets', 'ice cream'),
     s('donut', 'donut', 'sweets'),
-    s('cake', 'cake', 'sweets')
+    s('cake', 'cake', 'sweets'),
+    // 車車
+    s('fire-truck', 'firetruck', 'vehicles', 'fire truck'),
+    s('police-car', 'policecar', 'vehicles', 'police car'),
+    s('ambulance', 'ambulance', 'vehicles'),
+    s('bus', 'bus', 'vehicles'),
+    s('garbage-truck', 'garbagetruck', 'vehicles', 'garbage truck'),
+    s('excavator', 'excavator', 'vehicles'),
+    s('cement-mixer', 'cementmixer', 'vehicles', 'cement mixer'),
+    s('train', 'train', 'vehicles'),
+    s('race-car', 'racecar', 'vehicles', 'race car'),
+    s('ice-cream-truck', 'icecreamtruck', 'vehicles', 'ice cream truck'),
+    s('tractor', 'tractor', 'vehicles'),
+    s('dump-truck', 'dumptruck', 'vehicles', 'dump truck')
   ];
 
   var StickersData = {

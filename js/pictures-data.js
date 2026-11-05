@@ -26,5 +26,18 @@ const PICTURES = [
   { name: '企鵝', src: 'assets/pictures/animals/penguin.png', word: 'penguin' },
   { name: '小猴子', src: 'assets/pictures/animals/monkey.png', word: 'monkey' },
   { name: '貓頭鷹', src: 'assets/pictures/animals/owl.png', word: 'owl' },
-  { name: '鯨魚', src: 'assets/pictures/animals/whale.png', word: 'whale' }
+  { name: '鯨魚', src: 'assets/pictures/animals/whale.png', word: 'whale' },
+  /* 車車系列：著色頁的車子線稿由 Codex 上色、tools/make_color_art.py 疊上淡藍底框（2026-11） */
+  { name: '消防車', src: 'assets/pictures/vehicles/fire-truck.png', word: 'fire truck' },
+  { name: '警車', src: 'assets/pictures/vehicles/police-car.png', word: 'police car' },
+  { name: '救護車', src: 'assets/pictures/vehicles/ambulance.png', word: 'ambulance' },
+  { name: '公車', src: 'assets/pictures/vehicles/bus.png', word: 'bus' },
+  { name: '垃圾車', src: 'assets/pictures/vehicles/garbage-truck.png', word: 'garbage truck' },
+  { name: '怪手', src: 'assets/pictures/vehicles/excavator.png', word: 'excavator' },
+  { name: '水泥攪拌車', src: 'assets/pictures/vehicles/cement-mixer.png', word: 'cement mixer' },
+  { name: '小火車', src: 'assets/pictures/vehicles/train.png', word: 'train' },
+  { name: '賽車', src: 'assets/pictures/vehicles/race-car.png', word: 'race car' },
+  { name: '冰淇淋車', src: 'assets/pictures/vehicles/ice-cream-truck.png', word: 'ice cream truck' },
+  { name: '拖拉機', src: 'assets/pictures/vehicles/tractor.png', word: 'tractor' },
+  { name: '砂石車', src: 'assets/pictures/vehicles/dump-truck.png', word: 'dump truck' }
 ];

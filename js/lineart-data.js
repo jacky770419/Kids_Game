@@ -30,7 +30,7 @@ const LINEART = [
   },
   {
     name: '嘟嘟小汽車',
-    cat: 'other',
+    cat: 'vehicle',
     svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#3a3a3a" stroke-width="3.75" stroke-linejoin="round" stroke-linecap="round">
       <path fill="none" stroke-width="2.63" d="M30,362 L370,362"/>
       <path class="c" fill="#fff" stroke-width="6.75" d="M50,320 C32,320 26,296 32,276 C36,258 52,250 72,248 L96,182 C108,152 132,134 164,132 L236,132 C268,134 292,152 304,182 L328,248 C348,250 364,258 368,276 C374,296 368,320 350,320 Z"/>
