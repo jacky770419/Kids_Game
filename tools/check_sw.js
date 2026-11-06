@@ -56,24 +56,38 @@ class SwRequest extends Request {
     super(input, init);
   }
 }
-let precached = null;   // install 時送進 addAll 的清單
+/* install 用的假網路與假 cache：fetched 記下 install 抓了哪些 Request，
+   putKeys 記下寫進本版 cache 的網址；preHave 模擬「上次下載到一半」已經在 cache 裡的檔。 */
+const fetched = [];
+const putKeys = [];
+const preHave = ['index.html', 'js/coloring.js'];
+let failUrl = null;     // 設了就讓這一筆回 404，測「缺一筆就不能裝好」
+let skipped = false;
+const fakeFetch = (req) => {
+  fetched.push(req);
+  const ok = !(failUrl && req.url.endsWith('/' + failUrl));
+  return Promise.resolve(new Response('x', { status: ok ? 200 : 404 }));
+};
 const sandbox = {
   console,
-  Response, Headers, Request: SwRequest, URL, fetch,
+  Response, Headers, Request: SwRequest, URL, fetch: fakeFetch, Set, Error,
   Promise, Math, parseInt, isFinite, String, Number, Array, Object, JSON,
   setTimeout, clearTimeout,
   caches: {
-    open: () => Promise.resolve({ addAll: (list) => { precached = list; return Promise.resolve(); }, put: () => Promise.resolve() }),
+    open: () => Promise.resolve({
+      keys: () => Promise.resolve(preHave.map((u) => new Request('https://example.test/' + u))),
+      put: (u) => { putKeys.push(String(u)); return Promise.resolve(); }
+    }),
     keys: () => Promise.resolve(cacheNames.slice()),
     delete: (n) => { deleted.push(n); return Promise.resolve(true); },
     match: () => Promise.resolve(makeCachedResponse())
   }
 };
 sandbox.self = sandbox;
-sandbox.location = { origin: 'https://example.test' };
+sandbox.location = { origin: 'https://example.test', href: 'https://example.test/sw.js' };
 sandbox.addEventListener = (type, fn) => { listeners[type] = fn; };
-sandbox.skipWaiting = () => Promise.resolve();
-sandbox.clients = { claim: () => { claimed = true; return Promise.resolve(); } };
+sandbox.skipWaiting = () => { skipped = true; return Promise.resolve(); };
+sandbox.clients = { claim: () => { claimed = true; return Promise.resolve(); }, matchAll: () => Promise.resolve([]) };
 
 vm.createContext(sandbox);
 vm.runInContext(SW_SRC, sandbox, { filename: 'sw.js' });
@@ -83,16 +97,33 @@ check(typeof listeners.install === 'function', 'sw.js 沒有註冊 install 事�
 check(typeof listeners.activate === 'function', 'sw.js 沒有註冊 activate 事件');
 check(typeof listeners.fetch === 'function', 'sw.js 沒有註冊 fetch 事件');
 
-// ---------- 測試 0：install 用 cache:'reload' 抓每一筆 ----------
-/* 為什麼：addAll 預設走 HTTP 快取，升版時會把上一版的檔案搬進新 cache
-   （2026-09-03 實測：kids-v2 裡的 words.js 還是舊檔）。 */
-function testInstall() {
+// ---------- 測試 0：install 可續傳、每筆 cache:'reload'、缺一筆就不啟用 ----------
+/* 為什麼：
+   - cache:'reload'：預設走 HTTP 快取，升版時會把上一版的檔案搬進新 cache（2026-09-03 實測：kids-v2 裡的 words.js 還是舊檔）。
+   - 續傳：離線包約 13 MB，iPad 上 App 一切走 install 就被砍；本版 cache 已有的不能重抓，否則永遠下載不完（2026-11-06）。
+   - 缺一筆就不能 skipWaiting：寧可留舊版，也不要半殘快取。 */
+const PRECACHE_LIST = vm.runInContext('PRECACHE', sandbox);
+function runInstall() {
   let installed = null;
   listeners.install({ waitUntil: (p) => { installed = p; } });
-  return Promise.resolve(installed).then(() => {
-    check(Array.isArray(precached) && precached.length > 0, 'install 沒有把清單送進 addAll');
-    const bad = (precached || []).filter((r) => !(r instanceof Request) || r.cache !== 'reload');
+  return Promise.resolve(installed);
+}
+function testInstall() {
+  return runInstall().then(() => {
+    const want = PRECACHE_LIST.filter((u) => preHave.indexOf(u) < 0);
+    check(fetched.length === want.length, 'install 應該只抓 cache 裡還沒有的 ' + want.length + ' 筆，實際抓了 ' + fetched.length + ' 筆');
+    check(!fetched.some((r) => preHave.some((u) => r.url.endsWith('/' + u))), 'install 重抓了 cache 裡已經有的檔（不能續傳）');
+    const bad = fetched.filter((r) => !(r instanceof Request) || r.cache !== 'reload');
     check(bad.length === 0, 'install 有 ' + bad.length + ' 筆不是 cache:reload 的 Request（會從 HTTP 快取搬到舊檔）');
+    check(putKeys.length === want.length, '抓到的檔沒有全部寫進 cache（' + putKeys.length + '/' + want.length + '）');
+    check(skipped, '全部到齊後沒有 skipWaiting');
+    // 缺一筆：install 必須失敗、不能 skipWaiting
+    skipped = false; fetched.length = 0; putKeys.length = 0;
+    failUrl = PRECACHE_LIST[PRECACHE_LIST.length - 1];
+    return runInstall().then(
+      () => check(false, '有一筆 404 時 install 卻成功了（會裝上半殘快取）'),
+      () => check(!skipped, '有一筆 404 時仍然 skipWaiting 了')
+    ).then(() => { failUrl = null; });
   });
 }
 
@@ -158,5 +189,5 @@ testInstall().then(testActivate).then(testRange).then(testPassThrough).then(() =
     failures.forEach((f, i) => console.error('  ' + (i + 1) + '. ' + f));
     process.exit(1);
   }
-  console.log('sw.js 單元驗證通過：install 全部 cache:reload、版本汰舊只刪 kids-v0、Range bytes=0-99 回 206 且 body 100 bytes、跨網域與 POST 皆不插手。');
+  console.log('sw.js 單元驗證通過：install 可續傳且全部 cache:reload、缺一筆不啟用、版本汰舊只刪 kids-v0、Range bytes=0-99 回 206 且 body 100 bytes、跨網域與 POST 皆不插手。');
 });

@@ -1724,6 +1724,9 @@ body.cake #gameScreen {
   padding: 0 12px calc(12px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
   overflow: hidden;
 }
+/* 貼紙頁放開共用的 touch-action:none（跟著色頁同一招），匣子才捲得動；
+   板面 #board 與板上的 .sticker 各自保留 none，拖貼紙不會帶動畫面 */
+body.stickers #gameScreen { touch-action: auto; }
 
 #boardWrap {
   flex: 1;
@@ -1836,6 +1839,10 @@ body.cake .cat-tab .cat-emoji { font-size: 26px; }
   -webkit-overflow-scrolling: touch;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  /* 列高一定要照內容（正方形格子）給：預設 auto 列在放不下時會被壓扁到 min-height，
+     格子本身還是正方形，結果一格疊一格、scrollHeight 跟框一樣高、怎麼滑都不動
+     （2026-11 車車一類 12 張，iPad 上擠成一團才發現；以前每類 ≤6 張剛好塞得下） */
+  grid-auto-rows: max-content;
   gap: 8px;
   padding: 10px;
   align-content: start;
@@ -1853,7 +1860,9 @@ body.cake .cat-tab .cat-emoji { font-size: 26px; }
   align-items: center;
   justify-content: center;
   padding: 4px;
-  touch-action: none;
+  /* pan-y：手指在貼紙上「上下滑」交給瀏覽器捲匣子，「往左拖」才是拖貼紙。
+     以前是 none，貼紙一多佈滿整個匣子，就找不到空白處可以滑。甜點店另外覆寫成 pan-y。 */
+  touch-action: pan-y;
 }
 
 .tray-item:active { background: #FFD93D; }

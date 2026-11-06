@@ -192,15 +192,21 @@
     const size = board.getBoundingClientRect().width * St.SIZES[St.DEFAULT_SIZE];
     ghost.src = def.src;
     ghost.style.width = size + 'px';
-    ghost.hidden = false;
-    moveGhost(e.clientX, e.clientY);
 
-    const move = (ev) => moveGhost(ev.clientX, ev.clientY);
+    /* 浮動影像等手指真的動了才出現：格子是 touch-action: pan-y，
+       上下滑是在捲匣子（瀏覽器接手後會送 pointercancel），按下就冒出來會一閃一閃 */
+    const x0 = e.clientX, y0 = e.clientY;
+    const move = (ev) => {
+      if (ghost.hidden && Math.abs(ev.clientX - x0) + Math.abs(ev.clientY - y0) < 6) return;
+      ghost.hidden = false;
+      moveGhost(ev.clientX, ev.clientY);
+    };
     const up = (ev) => {
       cell.removeEventListener('pointermove', move);
       cell.removeEventListener('pointerup', up);
       cell.removeEventListener('pointercancel', up);
       ghost.hidden = true;
+      if (ev.type === 'pointercancel') return;   // 被捲動接手了＝沒有要貼
       const r = board.getBoundingClientRect();
       const inBoard = ev.clientX >= r.left && ev.clientX <= r.right
         && ev.clientY >= r.top && ev.clientY <= r.bottom;

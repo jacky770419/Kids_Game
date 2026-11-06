@@ -69,13 +69,43 @@ if ('serviceWorker' in navigator) {
     location.reload();
   });
 }
-/* 顯示目前生效的快取版本（kids-vN 的 N）。拿不到就留空，不影響任何功能。 */
-if (window.caches && caches.keys) {
-  caches.keys().then((names) => {
-    const k = names.filter((n) => n.startsWith('kids-')).sort().pop();
-    if (k) document.getElementById('ver').textContent = k.replace('kids-', '');
+/* 右下角版本號：顯示「正在用的」SW 版本（問 SW 本人，不看 cache 名稱——新版一開始下載
+   就會建出空的 kids-vN，看名字會在還沒換好時就顯示新版號，2026-11-06 就這樣誤判過）。
+   新版下載中會收到 sw-progress 廣播，顯示「v17 → v18 下載中 45%」，大人一看就知道要停在首頁等。 */
+(function () {
+  const tag = document.getElementById('ver');
+  if (!('serviceWorker' in navigator)) return;
+  let current = '';
+  let extra = '';
+  const show = () => { tag.textContent = [current, extra].filter(Boolean).join('  '); };
+  const ask = (w) => new Promise((resolve) => {
+    if (!w || typeof MessageChannel !== 'function') return resolve('');
+    const ch = new MessageChannel();
+    ch.port1.onmessage = (e) => resolve(String(e.data || ''));
+    setTimeout(() => resolve(''), 3000);   // v17 以前的 SW 不會回話
+    w.postMessage('version', [ch.port2]);
+  });
+  // 舊版 SW 不會回話時的退路：有內容的 kids- cache 取最舊的那個——新版下載中會同時有兩個，
+  // 正在用的一定是舊的（新版續傳時 cache 裡可能已經有 index.html，不能取最新）
+  const fromCaches = () => (window.caches ? caches.keys() : Promise.resolve([]))
+    .then((names) => Promise.all(names.filter((n) => n.startsWith('kids-')).map((n) =>
+      caches.open(n).then((c) => c.match('index.html')).then((hit) => (hit ? n : '')))))
+    .then((ok) => ok.filter(Boolean).sort((a, b) => parseInt(a.slice(6), 10) - parseInt(b.slice(6), 10))[0] || '')
+    .then((n) => n.replace('kids-', ''))
+    .catch(() => '');
+  navigator.serviceWorker.getRegistration().then((reg) => {
+    if (!reg) return;
+    if (!extra && (reg.installing || reg.waiting)) extra = '更新中…';
+    return ask(reg.active).then((v) => v || fromCaches()).then((v) => { current = v; show(); });
   }).catch(() => {});
-}
+  navigator.serviceWorker.addEventListener('message', (e) => {
+    const d = e.data || {};
+    if (d.type !== 'sw-progress' || !d.total || d.version === current) return;
+    extra = '→ ' + d.version + ' 下載中 ' + Math.floor(d.done * 100 / d.total) + '%';
+    show();
+  });
+  if (navigator.serviceWorker.startMessages) navigator.serviceWorker.startMessages();
+})();
 </script>
 </body>
 </html>

@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v17';
+const CACHE_VERSION = 'v18';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -206,18 +206,64 @@ const PRECACHE = [
   'assets/sfx/win.m4a'
 ];
 
-/* install：把整份清單抓下來。用 addAll 是刻意的——只要有一筆失敗，
-   整個 install 就失敗、這版 SW 不會啟用。寧可維持舊版（或完全沒有離線能力），
-   也不要裝上一個「半殘」的快取，讓小孩在飛機上點開才發現某張圖是破的。
-   每筆都用 cache:'reload' 抓：addAll 預設會走瀏覽器的 HTTP 快取，升版時
-   會把「上一版」的檔案原封不動搬進新 cache（2026-09-03 實測踩到：
-   kids-v2 裡的 words.js 是舊的 13648 bytes，伺服器上已經是 18332 bytes）。 */
+/* install：把整份清單抓下來，全部到齊才 skipWaiting 換新版。
+   - 每筆都用 cache:'reload' 抓：預設會走瀏覽器的 HTTP 快取，升版時會把「上一版」的檔案
+     原封不動搬進新 cache（2026-09-03 實測踩到：kids-v2 裡的 words.js 還是舊檔）。
+   - 可續傳：離線包長到約 13 MB，iPad 上要下載一兩分鐘，App 一被切走 install 就被砍；
+     以前用 addAll 是「全有全無」，每次重開都從零開始，平板可能永遠換不了新版
+     （2026-11-06 車車上線時遇到）。改成逐筆 put，本版 cache 裡已經有的就跳過，
+     下次打開只補缺的。同一版號的檔案內容不會變（改檔就升版），所以留下來的半套是可以信任的。
+   - 仍然要全部到齊才算 install 成功：缺任何一筆就丟錯、這版 SW 不啟用，
+     寧可維持舊版，也不要裝上「半殘」的快取讓小孩離線時點開才發現圖是破的。
+   - 每抓完一筆就廣播進度，首頁右下角的版本號會顯示「下載中 N%」。 */
+const INSTALL_WORKERS = 4;
+
+function broadcast(msg) {
+  if (!self.clients || !self.clients.matchAll) return Promise.resolve();
+  return self.clients.matchAll({ includeUncontrolled: true, type: 'window' })
+    .then((list) => list.forEach((c) => c.postMessage(msg)))
+    .catch(() => {});
+}
+
+function precacheAll(cache) {
+  return cache.keys().then((reqs) => {
+    const have = new Set(reqs.map((r) => new URL(r.url).pathname));
+    const todo = PRECACHE.filter((u) => !have.has(new URL(u, self.location.href).pathname));
+    const total = PRECACHE.length;
+    let done = total - todo.length;
+    let next = 0;
+    const worker = () => {
+      if (next >= todo.length) return Promise.resolve();
+      const url = todo[next++];
+      return fetch(new Request(url, { cache: 'reload' })).then((res) => {
+        if (!res || !res.ok) throw new Error('預快取失敗：' + url + '（' + (res && res.status) + '）');
+        return cache.put(url, res);
+      }).then(() => {
+        done++;
+        broadcast({ type: 'sw-progress', version: CACHE_VERSION, done: done, total: total });
+        return worker();
+      });
+    };
+    const ws = [];
+    for (let i = 0; i < INSTALL_WORKERS; i++) ws.push(worker());
+    return Promise.all(ws);
+  });
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(PRECACHE.map((url) => new Request(url, { cache: 'reload' }))))
+      .then(precacheAll)
       .then(() => self.skipWaiting())
   );
+});
+
+/* 首頁問「你是哪一版」：版本號要顯示「正在用的」SW，不能看 cache 名稱——
+   新版一開始下載就會建出空的 kids-vN，看名字會在還沒換好時就以為是新版。 */
+self.addEventListener('message', (event) => {
+  if (event.data === 'version' && event.ports && event.ports[0]) {
+    event.ports[0].postMessage(CACHE_VERSION);
+  }
 });
 
 /* activate：刪掉所有 kids- 開頭但版本不符的舊 cache，避免舊資產愈積愈多，

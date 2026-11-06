@@ -82,8 +82,8 @@ python -m http.server 8080
 ```
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
-否則已加入主畫面的 iPad 會一直用舊版。首頁在新版 service worker 接管時會自動重載一次拿新檔，右下角淡灰的 vN 就是目前生效的快取版本；
-看到版本沒跳就把 App 從多工畫面滑掉重開。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、甜點店的對答案與畫圖）：
+否則已加入主畫面的 iPad 會一直用舊版。首頁在新版 service worker 接管時會自動重載一次拿新檔，右下角淡灰的 vN 就是目前生效的版本（問 SW 本人，不看 cache 名稱）；
+新版下載中會顯示「v17 → v18 下載中 45%」，離線包約 13 MB，要停在首頁等到跳版本。下載中斷了下次打開會續傳（只補缺的檔）。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、甜點店的對答案與畫圖）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js
