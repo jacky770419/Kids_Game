@@ -50,7 +50,7 @@
   };
   const ALL_TOOLS = [backBtn, listenBtn, undoBtn, clearBtn, partyBtn, saveBtn];
 
-  const ARTWORK_MAX = 24;          // 跟著色頁同一個上限，兩頁共用同一個 store
+  const ARTWORK_MAX = 60;          // 跟著色頁同一個上限，兩頁共用同一個 store
   const HISTORY_MAX = 40;
   const TAP_SLOP = 10;             // 手指移動超過這麼多 px 才算拖曳，五歲的手點一下也會抖
   const LISTEN_KEY = 'kidsCakeListen';

@@ -33,7 +33,7 @@
 
   const TOOL_BTNS = [backBtn, undoBtn, clearBtn, saveBtn];
 
-  const ARTWORK_MAX = 24;          // 跟著色頁同一個上限，兩頁共用同一個 store
+  const ARTWORK_MAX = 60;          // 跟著色頁同一個上限，兩頁共用同一個 store
   const TAP_SLOP = 8;              // 位移小於這個距離就算「點一下」而不是拖曳
   const VALID_IDS = new Set(Data.STICKERS.map((s) => s.id));
 

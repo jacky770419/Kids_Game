@@ -116,7 +116,7 @@
   const MAX_CUSTOM = 12;     // 本機最多保留幾張自己上傳的照片
   const HISTORY_MAX = 25;    // 復原步數上限
   const PROGRESS_MAX = 40;   // 最多保留幾張「畫到一半」的進度
-  const ARTWORK_MAX = 24;    // 「我的作品」最多保留幾張
+  const ARTWORK_MAX = 60;    // 「我的作品」最多保留幾張（著色／貼紙／甜點店共用；2026-11 使用者要求從 24 調高）
   const SAVE_DELAY = 800;    // 停手多久之後才寫進度（toDataURL 不便宜，不能每筆都存）
 
   const selectScreen = document.getElementById('selectScreen');
