@@ -193,11 +193,28 @@
     ghost.src = def.src;
     ghost.style.width = size + 'px';
 
-    /* 浮動影像等手指真的動了才出現：格子是 touch-action: pan-y，
-       上下滑是在捲匣子（瀏覽器接手後會送 pointercancel），按下就冒出來會一閃一閃 */
+    /* 上下滑＝捲匣子、往旁邊拖＝拖貼紙，方向由這裡自己判斷。
+       不能交給 CSS touch-action: pan-y：桌機 Chrome 會照做，但 iPad Safari 一律當成捲動、
+       往左拖也送 pointercancel，貼紙就拉不出來（2026-11-06 實機）。所以格子維持 touch-action: none，
+       手指先動滿 LOCK_PX 再看方向：垂直分量明顯較大就自己改 scrollTop（放手時帶一點慣性），否則開始拖。 */
+    const LOCK_PX = 8;
     const x0 = e.clientX, y0 = e.clientY;
+    const st0 = trayScroll.scrollTop;
+    let mode = '';            // '' 還沒決定、'scroll'、'drag'
+    let lastY = y0, lastT = performance.now(), vel = 0;
     const move = (ev) => {
-      if (ghost.hidden && Math.abs(ev.clientX - x0) + Math.abs(ev.clientY - y0) < 6) return;
+      const dx = ev.clientX - x0, dy = ev.clientY - y0;
+      if (!mode) {
+        if (Math.abs(dx) + Math.abs(dy) < LOCK_PX) return;
+        mode = Math.abs(dy) > Math.abs(dx) * 1.2 ? 'scroll' : 'drag';
+      }
+      if (mode === 'scroll') {
+        trayScroll.scrollTop = st0 - dy;
+        const now = performance.now();
+        if (now > lastT) vel = (ev.clientY - lastY) / (now - lastT);   // px/ms，往下為正
+        lastY = ev.clientY; lastT = now;
+        return;
+      }
       ghost.hidden = false;
       moveGhost(ev.clientX, ev.clientY);
     };
@@ -206,7 +223,11 @@
       cell.removeEventListener('pointerup', up);
       cell.removeEventListener('pointercancel', up);
       ghost.hidden = true;
-      if (ev.type === 'pointercancel') return;   // 被捲動接手了＝沒有要貼
+      if (mode === 'scroll') {
+        if (ev.type === 'pointerup' && performance.now() - lastT < 80) glide(vel);
+        return;
+      }
+      if (mode !== 'drag' || ev.type === 'pointercancel') return;   // 只是點一下，或被系統取消
       const r = board.getBoundingClientRect();
       const inBoard = ev.clientX >= r.left && ev.clientX <= r.right
         && ev.clientY >= r.top && ev.clientY <= r.bottom;
@@ -218,6 +239,20 @@
     cell.addEventListener('pointermove', move);
     cell.addEventListener('pointerup', up);
     cell.addEventListener('pointercancel', up);
+  }
+
+  /* 自己捲的匣子放手後滑一小段：速度每幀乘 0.94 遞減，太慢就停。手指再按下去會被新的 scrollTop 覆蓋，不用特別取消 */
+  function glide(v) {
+    let speed = v * 16;   // px/幀
+    const step = () => {
+      if (Math.abs(speed) < 0.5) return;
+      const before = trayScroll.scrollTop;
+      trayScroll.scrollTop = before - speed;
+      if (trayScroll.scrollTop === before) return;   // 到頂或到底了
+      speed *= 0.94;
+      requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   }
 
   function moveGhost(cx, cy) {

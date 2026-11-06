@@ -1860,9 +1860,10 @@ body.cake .cat-tab .cat-emoji { font-size: 26px; }
   align-items: center;
   justify-content: center;
   padding: 4px;
-  /* pan-y：手指在貼紙上「上下滑」交給瀏覽器捲匣子，「往左拖」才是拖貼紙。
-     以前是 none，貼紙一多佈滿整個匣子，就找不到空白處可以滑。甜點店另外覆寫成 pan-y。 */
-  touch-action: pan-y;
+  /* none：上下滑捲匣子／往旁邊拖貼紙由 stickers.js 自己判斷方向。
+     試過 pan-y 交給瀏覽器：桌機可以，iPad Safari 連往左拖都當成捲動，貼紙拉不出來。
+     甜點店另外覆寫成 pan-y（那邊是點一下，不用拖）。 */
+  touch-action: none;
 }
 
 .tray-item:active { background: #FFD93D; }

@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v18';
+const CACHE_VERSION = 'v19';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -115,11 +115,7 @@ const PRECACHE = [
   'assets/lineart/train.png',
   // 拼圖與單字卡圖片
   'assets/pictures/bear.svg',
-  'assets/pictures/castle.png',
   'assets/pictures/house.svg',
-  'assets/pictures/mermaid.png',
-  'assets/pictures/princess-braid.png',
-  'assets/pictures/princess.png',
   'assets/pictures/rocket.svg',
   'assets/pictures/sea.svg',
   'assets/pictures/animals/bear.png',
@@ -142,16 +138,40 @@ const PRECACHE = [
   'assets/pictures/fruits/watermelon.svg',
   'assets/pictures/vehicles/ambulance.png',
   'assets/pictures/vehicles/bus.png',
-  'assets/pictures/vehicles/cement-mixer.png',
   'assets/pictures/vehicles/dump-truck.png',
   'assets/pictures/vehicles/excavator.png',
-  'assets/pictures/vehicles/fire-truck.png',
-  'assets/pictures/vehicles/garbage-truck.png',
-  'assets/pictures/vehicles/ice-cream-truck.png',
-  'assets/pictures/vehicles/police-car.png',
   'assets/pictures/vehicles/race-car.png',
   'assets/pictures/vehicles/tractor.png',
   'assets/pictures/vehicles/train.png',
+  // 拼圖用的滿版場景（主角圖）
+  'assets/puzzle/ambulance.jpg',
+  'assets/puzzle/bear.jpg',
+  'assets/puzzle/bus.jpg',
+  'assets/puzzle/castle.jpg',
+  'assets/puzzle/cement-mixer.jpg',
+  'assets/puzzle/duck.jpg',
+  'assets/puzzle/dump-truck.jpg',
+  'assets/puzzle/elephant.jpg',
+  'assets/puzzle/excavator.jpg',
+  'assets/puzzle/fire-truck.jpg',
+  'assets/puzzle/frog.jpg',
+  'assets/puzzle/garbage-truck.jpg',
+  'assets/puzzle/giraffe.jpg',
+  'assets/puzzle/ice-cream-truck.jpg',
+  'assets/puzzle/mermaid.jpg',
+  'assets/puzzle/monkey.jpg',
+  'assets/puzzle/owl.jpg',
+  'assets/puzzle/panda.jpg',
+  'assets/puzzle/penguin.jpg',
+  'assets/puzzle/pig.jpg',
+  'assets/puzzle/police-car.jpg',
+  'assets/puzzle/princess-braid.jpg',
+  'assets/puzzle/princess.jpg',
+  'assets/puzzle/rabbit.jpg',
+  'assets/puzzle/race-car.jpg',
+  'assets/puzzle/tractor.jpg',
+  'assets/puzzle/train.jpg',
+  'assets/puzzle/whale.jpg',
   // 貼紙場景的背景與貼紙
   'assets/backgrounds/beach.svg',
   'assets/backgrounds/castle.svg',

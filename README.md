@@ -20,7 +20,7 @@
   （公主與柴犬在草地、熊貓吃竹子、冰淇淋與杯子蛋糕、動物們的下午茶、三朵向日葵、小象與小鳥、水果籃、樹上的小松鼠）。
   場景、動物 15 隻與公主城堡 15 張是點陣線稿（`assets/lineart/`，原圖在 `assets/lineart-src/`，用 `tools/make_stencil.py` 轉檔；
   系列檔裡一筆有 `src` 就走點陣引擎、有 `svg` 就走向量），場景一整張多達兩三百個封閉區，適合用 Apple Pencil 點小區塊。點陣填色會把填好的區域只往線條像素方向多推 2px，
-  讓上層線條蓋住縮圖造成的白縫、又不會滲到隔壁區（`PhotoTool.growIntoEdges`）。拼圖、單字、貼紙、甜點店客人用的彩色動物、公主、美人魚、城堡、獨角獸與 12 台車，是把這些點陣線稿交給 Codex 上色，再用 `tools/make_color_art.py` 去白底（貼紙）或疊淡色底框（拼圖）產生的（上色原圖在 `assets/color-src/`）
+  讓上層線條蓋住縮圖造成的白縫、又不會滲到隔壁區（`PhotoTool.growIntoEdges`）。拼圖、單字、貼紙、甜點店客人用的彩色動物、公主、美人魚、城堡、獨角獸與 12 台車，是把這些點陣線稿交給 Codex 上色，再用 `tools/make_color_art.py` 去白底（貼紙）或疊淡色底框（單字卡）產生的（上色原圖在 `assets/color-src/`）。拼圖不用底框圖：主角留白太多，切成 3×3 好幾片都是同一片空白、小孩拼不出來，所以 28 張主角圖再請 Codex 畫成滿版場景（`assets/puzzle-src/` → `assets/puzzle/*.jpg`，1024、品質 80）
 - 🔤 **單字**：25 個英文單字（12 種動物、6 種水果、7 種車：car／bus／truck／train／tractor／ambulance／excavator），兩種玩法共用同一份資料——
   **配對**：上面一張單字卡（預設小寫，頂列 Aa 鈕切大寫；卡片下方是**注音**不是漢字，因為小朋友認注音不識漢字；
   可點 🔊 重聽；👂 鈕開「只聽不看字」，字卡藏起來只留喇叭），下面三張或四張圖選一張（模式卡下方選 3 張／4 張，下一輪生效），一輪 8 題；
@@ -83,7 +83,7 @@ python -m http.server 8080
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
 否則已加入主畫面的 iPad 會一直用舊版。首頁在新版 service worker 接管時會自動重載一次拿新檔，右下角淡灰的 vN 就是目前生效的版本（問 SW 本人，不看 cache 名稱）；
-新版下載中會顯示「v17 → v18 下載中 45%」，離線包約 13 MB，要停在首頁等到跳版本。下載中斷了下次打開會續傳（只補缺的檔）。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、甜點店的對答案與畫圖）：
+新版下載中會顯示「v17 → v18 下載中 45%」，離線包約 17 MB，要停在首頁等到跳版本。下載中斷了下次打開會續傳（只補缺的檔）。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、甜點店的對答案與畫圖）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js

@@ -41,7 +41,8 @@ https://creativecommons.org/licenses/by/4.0/
 
 | 位置 | 來源 | 授權 |
 |---|---|---|
-| `assets/pictures/animals/*.png`（拼圖、單字用，12 隻）、`assets/pictures/vehicles/*.png`（12 台車）、`assets/pictures/{princess,princess-braid,mermaid,castle}.png` | 本專案以 AI 生圖產出：2026-11 由 OpenAI Codex 內建生圖把著色線稿上色（原圖 `assets/color-src/`），再用 `tools/make_color_art.py` 疊淡色底框 | 隨專案 |
+| `assets/puzzle-src/*.png`、`assets/puzzle/*.jpg`（拼圖用滿版場景 28 張：動物、車、公主、美人魚、城堡） | 本專案以 AI 生圖產出：2026-11 由 OpenAI Codex 內建生圖，依 `assets/color-src/` 的上色圖重畫成滿版場景，再縮成 1024 JPEG | 隨專案 |
+| `assets/pictures/animals/*.png`（單字用，12 隻）、`assets/pictures/vehicles/*.png`（12 台車）、`assets/pictures/{princess,princess-braid,mermaid,castle}.png` | 本專案以 AI 生圖產出：2026-11 由 OpenAI Codex 內建生圖把著色線稿上色（原圖 `assets/color-src/`），再用 `tools/make_color_art.py` 疊淡色底框 | 隨專案 |
 | `assets/pictures/*.svg`（小屋、海底、小熊、火箭） | 本專案自製 | 隨專案 |
 | `assets/pictures/fruits/*.svg`（單字遊戲用） | 本專案自製：由 `js/lineart-food.js` 的水果線稿上色另存 | 隨專案 |
 | `assets/stickers/*.png`（12 隻動物、公主、辮子公主、美人魚、獨角獸、12 台車） | 本專案以 AI 生圖產出：Codex 把著色線稿上色（原圖 `assets/color-src/`），再用 `tools/make_color_art.py` 去白底 | 隨專案 |
