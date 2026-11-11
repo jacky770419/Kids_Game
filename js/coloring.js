@@ -572,17 +572,6 @@
     toolBtnIcon.textContent = penTool().emoji;
     toolList.querySelectorAll('.tool-item').forEach(b =>
       b.classList.toggle('selected', usingPen && b.dataset.tool === penId));
-    syncPaintPointerEvents();
-  }
-
-  /* 填滿工具要讓點擊穿過去打到底下的 SVG 區塊，所以畫布收起來不吃事件；
-     但橡皮擦是獨立工具（不是填滿的變體），開著的時候一定要吃得到事件才擦得動 */
-  function paintLayerHitTest() {
-    return (mode === 'fill' && !eraser) ? 'none' : 'auto';
-  }
-
-  function syncPaintPointerEvents() {
-    if (paintCanvas) paintCanvas.style.pointerEvents = paintLayerHitTest();
   }
 
   function positionPanel(panel, trigger) {
@@ -978,7 +967,6 @@
     cv.id = 'paintLayer';
     cv.width = res.w;
     cv.height = res.h;
-    cv.style.pointerEvents = paintLayerHitTest();
     return cv;
   }
 
@@ -1215,14 +1203,28 @@
     markContent();      // 還原回來的內容要能被「全部清除」清掉
   }
 
-  /* ===== 填滿工具（點一下整區上色） ===== */
-  artWrap.addEventListener('pointerdown', (e) => {
-    if (mode !== 'fill' || eraser) return;   // 橡皮擦是獨立工具，不做「整區填白」
-    if (swallowStroke) return;   // 這一下是用來關面板的
+  /* ===== 填滿工具（點一下整區上色） =====
+     由 paintLayer 的 pointerdown 轉呼叫。paintLayer 永遠蓋在整張紙上、永遠吃觸控：
+     以前填滿時把它設成 pointer-events:none 讓點擊穿到底下的 SVG，換工具再設回 auto，
+     但 iPad Safari 常常沒跟著更新點擊判定，填滿過後畫筆／蓋章／橡皮擦全都點不到畫布。
+     所以改成不切換，向量線稿自己用 elementsFromPoint 找出手指底下是哪一塊。 */
+  function vectorRegionAt(x, y) {
+    const base = artWrap.querySelector('svg.art-base');
+    if (!base) return null;
+    for (const el of document.elementsFromPoint(x, y)) {
+      if (!base.contains(el)) continue;
+      const region = el.closest('.c');
+      if (region) return region;
+    }
+    return null;
+  }
+
+  function fillAt(e) {
     const item = gallery()[galleryIndex];
+    if (!item) return;
 
     if (item.type === 'vector') {
-      const region = e.target.closest('.c');
+      const region = vectorRegionAt(e.clientX, e.clientY);
       if (!region) return;
       pushHistory({ kind: 'fill', el: region, prev: region.getAttribute('fill') });
       region.setAttribute('fill',
@@ -1256,7 +1258,7 @@
       markContent();
       scheduleSave();
     }
-  });
+  }
 
   // 把目前選的顏色/花紋蓋到這次疊桶填色算出來的範圍裡
   function applyFloodFill(filledMask) {
@@ -1335,9 +1337,10 @@
     let sprayTimer = null;
 
     paintCanvas.addEventListener('pointerdown', (e) => {
-      if (mode === 'fill' && !eraser) return;
       if (swallowStroke) return;   // 這一下是用來關面板的
       e.preventDefault();
+      // 橡皮擦是獨立工具，不做「整區填白」
+      if (mode === 'fill' && !eraser) { fillAt(e); return; }
       paintCanvas.setPointerCapture(e.pointerId);
       drawing = true;
       last = canvasPos(e);
