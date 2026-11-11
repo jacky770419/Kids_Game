@@ -8,3 +8,6 @@ Thumbs.db
 # 測試/暫存輸出
 _preview*.png
 _test*.png
+
+# TTS 試聽檔、聲音庫查詢結果、錄音母帶的工作區（不進版本庫）
+_tts/

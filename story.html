@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>故事書 - 小小遊樂園</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/story.css">
+</head>
+<body class="story">
+
+<!-- 這一頁沒有 🎵：故事本身就是聲音，背景音樂會蓋住旁白；回首頁音樂會自己接著播 -->
+<header class="bar">
+  <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
+  <button id="backBtn" class="icon-btn" hidden title="換一個故事">🔙</button>
+  <span class="spacer"></span>
+  <div id="dots" hidden></div>
+  <span class="spacer"></span>
+  <button id="replayBtn" class="icon-btn" hidden title="這一頁再聽一次">🔁</button>
+</header>
+
+<main id="storySelect">
+  <div id="storyRow" class="story-row"></div>
+</main>
+
+<main id="playScreen" hidden>
+  <!-- 翻頁鈕在舞台左右兩側，不放下緣（下緣是手腕會壓到的地方） -->
+  <div id="stageWrap">
+    <button id="stPrev" class="icon-btn nav-btn" title="上一頁">◀</button>
+    <div id="stage">
+      <div id="bg"></div>
+      <div id="tint"></div>
+      <div id="decor"></div>
+      <div id="actors"></div>
+      <div id="stFx"></div>
+    </div>
+    <button id="stNext" class="icon-btn nav-btn" title="下一頁">▶</button>
+  </div>
+  <div id="caption"></div>
+</main>
+
+<div id="endOverlay" class="overlay" hidden>
+  <div class="win-title">🌙 說完了！</div>
+  <div class="overlay-row">
+    <button id="againBtn" class="big-btn">🔁 再聽一次</button>
+    <button id="otherBtn" class="big-btn alt">📚 換一個故事</button>
+  </div>
+</div>
+
+<script src="js/kiosk.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/story-script.js"></script>
+<script src="js/story-data.js"></script>
+<script src="js/story.js"></script>
+<script>
+/* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
+   權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

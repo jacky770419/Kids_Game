@@ -1,0 +1,435 @@
+/* ===== 故事書 =====
+   獨立一支，不寫進 style.css：那支同時有別的工作在改，分開才不會互相蓋到。
+   共用元件（.bar／.icon-btn／.big-btn／.overlay／.win-title）照樣用 style.css 的。
+
+   --u＝舞台寬度的 1%（js/story.js 的 layout() 算好設在 <html> 上），
+   舞台裡的東西和字幕都用它當單位，iPad 橫放、直放、手機都是同一個比例。 */
+
+body.story {
+  display: flex;
+  flex-direction: column;
+}
+
+body.story main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 頁碼圓點：她認得「還有幾頁」，不需要數字 */
+#dots { display: flex; gap: 10px; align-items: center; }
+#dots i {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: #fff; border: 3px solid #2b2b2b;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+#dots i.on { background: #FFD93D; transform: scale(1.5); }
+
+/* ---------- 選故事 ---------- */
+.story-row {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: min(80px, 7vw);
+  padding: 0 40px calc(30px + env(safe-area-inset-bottom));
+}
+
+.story-card {
+  width: min(430px, 40vw, 62vh);
+  padding: 16px 16px 12px;
+  border-radius: 30px;
+  background: var(--card, #FFD93D);
+  border: 6px solid #2b2b2b;
+  box-shadow: 0 0 0 8px #fff, 0 0 0 13px #2b2b2b, 10px 10px 0 13px #2b2b2b;
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.story-card:active {
+  transform: rotate(var(--rot, 0deg)) translate(10px, 10px);
+  box-shadow: 0 0 0 8px #fff, 0 0 0 13px #2b2b2b;
+}
+
+.story-cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 18px;
+  border: 5px solid #2b2b2b;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.story-cover img {
+  height: 78%;
+  margin-bottom: 3%;
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 3px #fff);
+  animation: st-breathe 2.6s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+.cover-star {
+  position: absolute;
+  left: 50%; top: 61%;
+  width: 12%;
+  height: auto !important;
+  transform: translate(-50%, -50%);
+}
+
+.story-title {
+  background: #fff;
+  border: 4px solid #2b2b2b;
+  border-radius: 16px;
+  padding: 6px 14px 6px 16px;
+  --fs: clamp(24px, 3.4vw, 38px);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.story-title .ch { color: #2b2b2b; }
+
+/* ---------- 注音字 ----------
+   一個字＝左邊漢字、右邊直排的注音；聲調在注音右側，輕聲的點在注音上面。
+   她認注音不識漢字，注音不能小到看不清：注音字高是漢字的 0.36 倍。 */
+.ch {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fs);
+  line-height: 1;
+  color: #b9ae9b;
+  transition: color 0.12s linear;
+}
+.ch.on { color: #2b2b2b; }
+.hz { font-weight: 800; }
+
+.zy {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 0.57em;
+  height: 1.2em;
+  margin-left: 0.03em;
+}
+.zy-col {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 0.36em;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+.zy-col.n3 { font-size: 0.33em; }
+.zy-tone {
+  position: absolute;
+  left: 0.36em;
+  top: 50%;
+  transform: translateY(-40%);
+  font-size: 0.36em;
+  font-weight: 700;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+.zy.light::before {
+  content: '˙';
+  position: absolute;
+  left: 0.04em;
+  top: -0.2em;
+  font-size: 0.36em;
+  font-weight: 700;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+.zy.light .zy-col { margin-top: 0.22em; }
+
+.pu {
+  font-size: var(--fs);
+  line-height: 1;
+  color: #b9ae9b;
+  font-weight: 800;
+}
+.pu.on { color: #2b2b2b; }
+
+/* ---------- 舞台 ---------- */
+#playScreen { justify-content: center; }
+
+#stageWrap {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 14px;
+}
+
+#stage {
+  position: relative;
+  flex: none;
+  border: 6px solid #2b2b2b;
+  border-radius: calc(var(--u) * 2.4);
+  box-shadow: 8px 8px 0 #2b2b2b;
+  overflow: hidden;
+  background: #cfeaff;
+  touch-action: none;
+}
+
+/* 翻頁：整個舞台輕輕彈進來，像翻開一頁 */
+#stage.turn { animation: st-turn 0.36s ease-out; }
+@keyframes st-turn {
+  from { opacity: 0.2; transform: scale(0.975) rotate(-0.6deg); }
+  to { opacity: 1; transform: none; }
+}
+
+#bg, #tint, #decor, #actors, #stFx { position: absolute; inset: 0; }
+#bg { background-size: cover; background-position: center; }
+#decor, #stFx, #tint { pointer-events: none; }
+
+/* 色調：同一張海邊，白天、黃昏、晚上各用一層顏色蓋出來（multiply 才會連暗部一起染） */
+#tint {
+  mix-blend-mode: multiply;
+  background: #fff;
+  transition: background 3.2s ease-in-out;
+}
+#stage[data-tint="sunset"] #tint { background: linear-gradient(#FF9E6B, #FFC48A 55%, #FFD9A8); }
+#stage[data-tint="night"] #tint { background: linear-gradient(#27307A, #3A4599 60%, #4A55A8); }
+#stage[data-tint="sunset"] .actor img { filter: var(--outline) brightness(0.96) sepia(0.18); }
+#stage[data-tint="night"] .actor img { filter: var(--outline) brightness(0.74) saturate(0.85); }
+
+.nav-btn { flex: none; font-size: 28px; }
+.nav-btn.dim { opacity: 0.3; }
+.nav-btn.pulse, #replayBtn.pulse {
+  background: #4ECDC4;
+  animation: st-pulse 0.9s ease-in-out infinite;
+}
+@keyframes st-pulse {
+  50% { transform: scale(1.16); }
+}
+
+/* ---------- 角色（紙偶）----------
+   四層各管一件事，動作才不會互相蓋掉：
+     .actor   位置（left／top／height 用 transition 移動）
+     .a-loop  一直持續的動作（呼吸、漂浮、搖）
+     .a-anim  做一次的動作（跳、抖、點頭），以及說話、走路時的晃動
+     .a-art   左右翻面 */
+.actor {
+  --dur: 0s;
+  --outline: drop-shadow(0 0 calc(var(--u) * 0.28) #fff) drop-shadow(0 0 calc(var(--u) * 0.28) #fff);
+  position: absolute;
+  transform: translate(-50%, -100%);
+  transition: left var(--dur) ease-in-out, top var(--dur) ease-in-out, height var(--dur) ease-in-out, opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  touch-action: none;
+}
+.actor.gone { opacity: 0; pointer-events: none; }
+
+.a-loop, .a-anim, .a-art {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transform-origin: 50% 100%;
+}
+
+.a-art img {
+  display: block;
+  height: 100%;
+  width: auto;
+  pointer-events: none;
+  filter: var(--outline);
+}
+
+.a-loop { animation: st-breathe 2.6s ease-in-out infinite; }
+.a-loop.loop-float { animation: st-float 3s ease-in-out infinite; }
+.a-loop.loop-sway { animation: st-sway 1.8s ease-in-out infinite; }
+
+.actor.moving .a-anim { animation: st-walk 0.44s ease-in-out infinite; }
+.actor.talking .a-anim { animation: st-talk 0.34s ease-in-out infinite; }
+.actor .a-anim.do-hop { animation: st-hop 0.62s ease-out; }
+.actor .a-anim.do-wiggle { animation: st-wiggle 0.7s ease-in-out; }
+.actor .a-anim.do-nod { animation: st-nod 0.8s ease-in-out; }
+.actor .a-anim.do-spin { animation: st-spin 0.9s ease-in-out; transform-origin: 50% 50%; }
+.actor .a-anim.do-blink { animation: st-nod 1s ease-in-out; }
+
+@keyframes st-breathe { 50% { transform: scale(1.012, 0.982); } }
+@keyframes st-float { 50% { transform: translateY(-5%) rotate(-1.5deg); } }
+@keyframes st-sway { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+@keyframes st-walk {
+  0%, 100% { transform: rotate(-4deg) translateY(0); }
+  50% { transform: rotate(4deg) translateY(-3%); }
+}
+@keyframes st-talk {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.03, 0.965) rotate(1deg); }
+}
+@keyframes st-hop {
+  0% { transform: scale(1.08, 0.9); }
+  35% { transform: translateY(-22%) scale(0.95, 1.07); }
+  70% { transform: translateY(0) scale(1.07, 0.92); }
+  100% { transform: none; }
+}
+@keyframes st-wiggle {
+  0%, 100% { transform: rotate(0); }
+  20% { transform: rotate(-7deg); }
+  40% { transform: rotate(6deg); }
+  60% { transform: rotate(-5deg); }
+  80% { transform: rotate(3deg); }
+}
+@keyframes st-nod {
+  0%, 100% { transform: rotate(0); }
+  30% { transform: rotate(-5deg) translateY(2%); }
+  65% { transform: rotate(3deg); }
+}
+@keyframes st-spin { to { transform: rotate(360deg); } }
+
+/* ---------- 小星星（程式畫的，才能一段一段變亮） ---------- */
+.a-art.tw-star { aspect-ratio: 1; height: 100%; }
+.a-art.tw-star svg, .cap-face svg { width: 100%; height: 100%; overflow: visible; display: block; }
+.star-body { fill: #FFE98A; stroke: #2b2b2b; stroke-width: 5; transition: fill 0.8s ease; }
+.star-face .eye { fill: #2b2b2b; transform-box: fill-box; transform-origin: center; }
+.star-face .mouth { stroke: #2b2b2b; stroke-width: 3.4; }
+.star-face .blush { fill: #FF9EC4; opacity: 0.8; }
+/* class 叫 tw-star 不叫 star：style.css 的單字頁已經有一個 .star（預設 25% 透明），撞名會整顆變暗 */
+.mouth.sad, .tw-star.s-dim .mouth.happy { display: none; }
+.tw-star.s-dim .mouth.sad { display: inline; }
+.tw-star svg { transition: filter 0.8s ease, opacity 0.8s ease; }
+.tw-star.s-dim .star-body { fill: #D9D2A6; }
+.tw-star.s-dim svg { opacity: 0.9; animation: st-flicker 1.6s ease-in-out infinite; }
+.tw-star.s-glow svg { filter: drop-shadow(0 0 calc(var(--u) * 0.9) #FFF3B0); }
+.tw-star.s-bright .star-body { fill: #FFD93D; }
+.tw-star.s-bright svg {
+  filter: drop-shadow(0 0 calc(var(--u) * 1.2) #FFF3B0) drop-shadow(0 0 calc(var(--u) * 2.6) #FFE98A);
+  animation: st-twinkle 1.5s ease-in-out infinite;
+}
+.do-blink .eye { animation: st-blink 0.5s ease-in-out 2; }
+@keyframes st-flicker { 50% { opacity: 0.6; } }
+@keyframes st-twinkle { 50% { transform: scale(1.1) rotate(4deg); } }
+@keyframes st-blink { 50% { transform: scaleY(0.1); } }
+
+/* ---------- 天上的星星、海浪 ---------- */
+.sky-star {
+  position: absolute;
+  aspect-ratio: 1;
+  background: #FFF6C2;
+  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+  transform: translate(-50%, -50%);
+  opacity: 0.95;
+  transition: opacity 0.5s ease;
+  animation: st-star 2.8s ease-in-out infinite;
+}
+.sky-star.off { opacity: 0; }
+@keyframes st-star { 50% { transform: translate(-50%, -50%) scale(0.55); } }
+
+.waves {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 9%;
+  pointer-events: none;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M0 12 Q15 0 30 12 T60 12 T90 12 T120 12 V40 H0 Z' fill='%2324A5F6'/%3E%3Cpath d='M0 12 Q15 0 30 12 T60 12 T90 12 T120 12' fill='none' stroke='%232b2b2b' stroke-width='2.6'/%3E%3C/svg%3E");
+  animation: st-waves 3.4s ease-in-out infinite;
+}
+@keyframes st-waves { 50% { transform: translateX(-3%); } }
+
+/* ---------- 特效粒子 ---------- */
+.fx-p {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.2);
+  opacity: 0;
+  animation: st-rise 1.5s ease-out forwards;
+}
+.fx-p svg { display: block; width: 100%; height: auto; overflow: visible; }
+.fx-p.burst { animation: st-burst 0.9s ease-out forwards; }
+.fx-p.fall { animation: st-fall 1.2s ease-in forwards; }
+@keyframes st-rise {
+  15% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx) * var(--u)), calc(-50% + var(--dy) * var(--u))) scale(1.1) rotate(12deg);
+  }
+}
+@keyframes st-burst {
+  20% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx) * var(--u)), calc(-50% + var(--dy) * var(--u))) scale(0.4) rotate(90deg);
+  }
+}
+@keyframes st-fall {
+  10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  45% { opacity: 1; transform: translate(calc(-50% + var(--dx) * var(--u) * 0.6), calc(-50% + var(--dy) * var(--u))) scale(1); }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--dx) * var(--u)), calc(-50% + var(--dy) * var(--u) * 0.2)) scale(0.8); }
+}
+
+/* ---------- 字幕 ---------- */
+#caption {
+  --who: #FFD93D;
+  --fs0: min(calc(var(--u) * 5.1), 52px);
+  --fs: var(--fs0);
+  flex: none;
+  align-self: center;
+  width: min(calc(var(--u) * 100 + 12px), 100vw - 28px);
+  height: calc(var(--fs0) * 1.25 + 36px);
+  margin: 16px 0 calc(16px + env(safe-area-inset-bottom));
+  padding: 10px 18px 10px 12px;
+  background: #fff;
+  border: 5px solid #2b2b2b;
+  border-radius: 22px;
+  box-shadow: 6px 6px 0 #2b2b2b, inset 12px 0 0 var(--who);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+#caption:empty { visibility: hidden; }
+
+/* 誰在說話：小圓框裡放那個角色的臉，旁白是一本書 */
+.cap-face {
+  flex: none;
+  width: calc(var(--fs0) * 1.15);
+  height: calc(var(--fs0) * 1.15);
+  margin-left: 12px;
+  border-radius: 50%;
+  border: 4px solid #2b2b2b;
+  background: var(--who);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(var(--fs0) * 0.66);
+  line-height: calc(var(--fs0) * 1.15 - 8px);
+}
+.cap-face img { width: 118%; height: auto; margin-top: 4%; }
+.cap-face svg { padding: 10%; }
+
+.cap-line {
+  --k: 1;
+  --fs: calc(var(--fs0) * var(--k));
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* 直放或手機：翻頁鈕縮小，舞台才夠寬 */
+@media (max-width: 700px), (orientation: portrait) {
+  #stageWrap { gap: 8px; padding: 0 8px; }
+  .nav-btn { width: 50px; height: 50px; font-size: 22px; border-width: 4px; box-shadow: 4px 4px 0 #2b2b2b; }
+  .story-row { flex-direction: column; gap: 44px; }
+  .story-card { width: min(430px, 66vw, 36vh); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a-loop, .sky-star, .waves, .story-cover img { animation: none; }
+}

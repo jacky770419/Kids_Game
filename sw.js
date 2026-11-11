@@ -6,12 +6,12 @@
    音樂也在清單裡——離線沒有背景音樂，對她來說就是壞掉了。
 
    放在 repo 根目錄是必要的：service worker 的 scope 不能超過自己的所在目錄，
-   放在根目錄才能同時涵蓋 index / coloring / puzzle / words / stickers / cake 六頁。
+   放在根目錄才能同時涵蓋 index / coloring / puzzle / words / stickers / cake / story 七頁。
 
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v22';
+const CACHE_VERSION = 'v23';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -24,8 +24,10 @@ const PRECACHE = [
   'words.html',
   'stickers.html',
   'cake.html',
+  'story.html',
   'manifest.json',
   'css/style.css',
+  'css/story.css',
   // 程式
   'js/cake-data.js',
   'js/cake-draw.js',
@@ -55,6 +57,9 @@ const PRECACHE = [
   'js/stickers-state.js',
   'js/stickers.js',
   'js/storage.js',
+  'js/story-data.js',
+  'js/story-script.js',
+  'js/story.js',
   'js/words.js',
   // 字型與圖示
   'assets/fonts/lilita-one-latin.woff2',
@@ -223,7 +228,49 @@ const PRECACHE = [
   'assets/sfx/click.m4a',
   'assets/sfx/pop.m4a',
   'assets/sfx/snap.m4a',
-  'assets/sfx/win.m4a'
+  'assets/sfx/win.m4a',
+  // 故事書：背景、去背的角色、每頁的配音
+  'assets/story/bg/beach.jpg',
+  'assets/story/bg/bedroom-night.jpg',
+  'assets/story/bg/forest-morning.jpg',
+  'assets/story/bg/garden-night.jpg',
+  'assets/story/bg/meadow.jpg',
+  'assets/story/bg/pond.jpg',
+  'assets/story/bg/sky-night.jpg',
+  'assets/story/chars/bear-hug.png',
+  'assets/story/chars/bear-point.png',
+  'assets/story/chars/bear-sad.png',
+  'assets/story/chars/bear-sleep.png',
+  'assets/story/chars/bear-wake.png',
+  'assets/story/chars/bear-walk.png',
+  'assets/story/chars/frog-jump.png',
+  'assets/story/chars/frog-sit.png',
+  'assets/story/chars/giraffe-bend.png',
+  'assets/story/chars/giraffe-stand.png',
+  'assets/story/chars/princess-bed.png',
+  'assets/story/chars/princess-cup.png',
+  'assets/story/chars/princess-lean.png',
+  'assets/story/chars/princess-reach.png',
+  'assets/story/chars/princess-run.png',
+  'assets/story/chars/unicorn-ride.png',
+  'assets/story/chars/unicorn-walk.png',
+  'assets/story/chars/whale-happy.png',
+  'assets/story/audio/bear-hug-1.mp3',
+  'assets/story/audio/bear-hug-2.mp3',
+  'assets/story/audio/bear-hug-3.mp3',
+  'assets/story/audio/bear-hug-4.mp3',
+  'assets/story/audio/bear-hug-5.mp3',
+  'assets/story/audio/bear-hug-6.mp3',
+  'assets/story/audio/bear-hug-7.mp3',
+  'assets/story/audio/bear-hug-8.mp3',
+  'assets/story/audio/princess-star-1.mp3',
+  'assets/story/audio/princess-star-2.mp3',
+  'assets/story/audio/princess-star-3.mp3',
+  'assets/story/audio/princess-star-4.mp3',
+  'assets/story/audio/princess-star-5.mp3',
+  'assets/story/audio/princess-star-6.mp3',
+  'assets/story/audio/princess-star-7.mp3',
+  'assets/story/audio/princess-star-8.mp3'
 ];
 
 /* install：把整份清單抓下來，全部到齊才 skipWaiting 換新版。

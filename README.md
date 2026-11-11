@@ -48,6 +48,15 @@
   甜點不是圖檔，是現場畫的 SVG（顏色只是參數），存圖時同一份字串補上 width/height 轉 blob 畫進 canvas；
   資料在 `js/cake-data.js`、純邏輯在 `js/cake-state.js`、七種甜點的畫法與位置表在 `js/cake-shapes.js`、配料的圖在 `js/cake-toppings.js`、板面組裝在 `js/cake-draw.js`。
   2026-11 起畫面加了立體感：甜點有落在櫃台上的影子、右側暗面、左側白色亮線，蛋糕淋奶油時每層下緣多一圈奶油珍珠邊；店面左右各一層架（糖果罐、盆栽、馬卡龍、牛奶瓶）、牆上小白點、木板櫃台。全部用半透明平塗，**不用 SVG 漸層**：漸層要 id，同一頁好幾張 SVG 會撞 id，定義它的那張被藏起來時別張會畫不出來。選甜點卡片的示意圖只看板面中間一塊（`CakeDraw.DEMO_VIEW`），甜點才夠大
+- 📖 **故事書**：會動的有聲繪本，目前兩本各 8 頁——《小熊的抱抱》《公主和小星星》。每頁是一張背景上疊去背的角色紙偶，
+  跟著配音的時間表走路、換姿勢、跳、抱在一起；誰在說話誰就動。下面是**注音字幕**（她認注音不識漢字），念到哪個字亮到哪個字，
+  字幕框左邊的小圓框是說話的角色。沒有自動翻頁：一頁念完右邊的 ▶ 會跳，她可以先點角色玩（跳一下、冒愛心，鯨魚噴水、小星星轉圈），
+  🔁 這一頁再聽一次。這一頁沒有背景音樂（會蓋住旁白）。
+  配音是 ElevenLabs 預錄的中文多角色對話（旁白 Yui，台灣口音），不是即時語音合成，所以離線也有聲音；
+  圖是 Codex 依現有的小熊、公主、獨角獸造型畫的新姿勢與背景（原圖在 `assets/story-src/`，`tools/make_story_art.py` 去背轉檔）。
+  三份資料：`tools/tts/stories.json`（腳本，同時是錄音輸入）→ `tools/tts/el_story.py record` 錄音 → `tools/tts/build_story.py`
+  產生 `js/story-script.js`（文字與逐字時間）與 `assets/story/audio/`；分鏡、注音表、角色圖表手寫在 `js/story-data.js`。
+  調分鏡用截圖模式：`story.html?shot=bear-hug,2,7.5` 直接擺出第 2 頁第 7.5 秒的畫面。錄音的金鑰不在這個 repo（見 `tools/tts/el_common.py`）
 - 🗣️ **唸英文開關**：每頁 🎵 旁邊的 🗣️ 可以把自動唸英文（選色、拼完、貼上、進題、放甜點材料、點餐）整個關掉（變 🙊），設定存在裝置上；
   單字頁親手按 🔊 不受影響，小孩主動要聽還是聽得到
 - 🎵 背景音樂是三首開源曲目輪播（換頁會接著播），音效用 Kenney 的 CC0 音檔；素材來源與授權見 [assets/CREDITS.md](assets/CREDITS.md)
@@ -66,7 +75,7 @@ Lilita One 英文字）記在 `css/style.css` 的「共用元件（貼紙書）�
 每一頁的 🏠 要**長按約 0.7 秒**才回首頁，按住時按鈕外圈會轉一圈青色進度環，沒按滿放開就什麼都不會發生——
 五歲小孩畫到一半手掌掃到按鈕不會整張畫不見。
 
-第一次開啟時 `sw.js`（service worker）會把六頁、程式、圖片、三首音樂一次收進快取（約 4.2 MB），
+第一次開啟時 `sw.js`（service worker）會把七頁、程式、圖片、故事書配音、三首音樂一次收進快取（約 4.2 MB），
 之後**完全沒網路也能開**——2026-09-03 之前 README 雖然寫了「離線也能玩」，其實沒有 service worker、
 還外連 Google Fonts，斷網是開不起來的。英文字型 Lilita One 現在放在 `assets/fonts/`（OFL 授權）。
 網站也會請瀏覽器把資料設成 persistent（`navigator.storage.persist()`），減少 iPad 空間不夠時被清掉的機會。
@@ -84,7 +93,7 @@ python -m http.server 8080
 
 改動任何會被快取的檔案（HTML／JS／CSS／圖片／音樂）後，**把 `sw.js` 的 `CACHE_VERSION` 加一號**，
 否則已加入主畫面的 iPad 會一直用舊版。首頁在新版 service worker 接管時會自動重載一次拿新檔，右下角淡灰的 vN 就是目前生效的版本（問 SW 本人，不看 cache 名稱）；
-新版下載中會顯示「v17 → v18 下載中 45%」，離線包約 17 MB，要停在首頁等到跳版本。下載中斷了下次打開會續傳（只補缺的檔）。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、甜點店的對答案與畫圖）：
+新版下載中會顯示「v17 → v18 下載中 45%」，離線包約 17 MB，要停在首頁等到跳版本。下載中斷了下次打開會續傳（只補缺的檔）。commit 前跑檢查腳本（Node 直跑、零依賴；另有 `check_speech.js`、`check_fill.js`、`check_kiosk.js`、`check_puzzle.js`、`check_stickers.js`、`check_undo.js`、`check_cake.js`、`check_story.js` 分別驗語音挑選、填色膨脹、防誤觸、拼圖幾何、貼紙資料與去底、復原矩形、甜點店的對答案與畫圖、故事書的注音／分鏡／圖檔音檔對帳）：
 
 ```bash
 node tools/check_data.js && node tools/check_precache.js && node tools/check_sw.js

@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const HTML_PAGES = ['index.html', 'coloring.html', 'puzzle.html', 'words.html', 'stickers.html', 'cake.html'];
+const HTML_PAGES = ['index.html', 'coloring.html', 'puzzle.html', 'words.html', 'stickers.html', 'cake.html', 'story.html'];
 
 const problems = [];   // 逐筆缺漏，最後一次印出
 function fail(msg) { problems.push(msg); }
@@ -86,6 +86,12 @@ for (const page of HTML_PAGES) {
 for (const [file, why] of [['js/pictures-data.js', '拼圖圖片'], ['js/lineart-scenes.js', '場景線稿'], ['js/lineart-animals.js', '動物線稿'], ['js/lineart-fantasy.js', '公主城堡線稿'], ['js/lineart-data.js', '公主城堡線稿'], ['js/cake-data.js', '蛋糕店客人']]) {
   const src = stripComments(readFile(file));
   for (const mm of src.matchAll(/src\s*:\s*['"]([^'"]+)['"]/g)) need(mm[1], why);
+}
+
+// 2b-2. 故事書：分鏡資料裡的背景與角色圖、錄音產生的每頁音檔（都是完整路徑字面）
+for (const [file, why] of [['js/story-data.js', '故事書的圖'], ['js/story-script.js', '故事書的配音']]) {
+  const src = stripComments(readFile(file));
+  for (const mm of src.matchAll(/['"](assets\/[^'"]+\.(?:png|jpg|mp3|svg))['"]/g)) need(mm[1], why);
 }
 
 // 2c. words.json 的單字圖
@@ -170,4 +176,4 @@ if (problems.length) {
   process.exit(1);
 }
 
-console.log('離線對帳通過：PRECACHE ' + precache.length + ' 筆，掃描到的執行期資產 ' + needed.size + ' 筆，六個 HTML 皆已本地化字型並註冊 service worker。');
+console.log('離線對帳通過：PRECACHE ' + precache.length + ' 筆，掃描到的執行期資產 ' + needed.size + ' 筆，' + HTML_PAGES.length + ' 個 HTML 皆已本地化字型並註冊 service worker。');

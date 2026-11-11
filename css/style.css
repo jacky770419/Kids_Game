@@ -117,7 +117,7 @@ body.home {
   transform: rotate(-2deg);
 }
 
-/* 五張卡：橫向排 3＋2、直向排 2＋2＋1，最後一列置中。
+/* 六張卡：橫向排 3＋3、直向排 2＋2＋2（五張的時候是 3＋2／2＋2＋1，最後一列置中）。
    卡片邊長同時受「寬度塞得下 N 張」與「高度塞得下 N 列＋標題」限制，
    否則整體比螢幕高，置中之後標題被頂出上緣、最後一列被壓出下緣（2026-09-03 實機截圖）。
    一列五張不行：iPad 橫向每張只剩 140px，比兩列的 240px 小一大截。
@@ -1904,6 +1904,8 @@ body.cake .cat-tab .cat-emoji { font-size: 26px; }
 
 /* 首頁的第五張卡：粉紅，跟著色的紅錯開 */
 .home .cake-card { --rot: -2deg; background: #F78FB3; }
+/* 首頁的第六張卡：故事書（頁面自己的樣式在 css/story.css），天藍色，補滿 3×2 */
+.home .tale-card { --rot: 2deg; background: #5DADE2; }
 
 body.cake {
   display: flex;
