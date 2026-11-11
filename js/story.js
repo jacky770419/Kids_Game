@@ -6,6 +6,9 @@
      StoryData（js/story-data.js，手寫）          注音、角色的圖、每頁分鏡
      音檔 assets/story/audio/<id>-<頁>.mp3
 
+   中英文切換：每個故事兩種語言各錄一份（文字、時間、音檔都分開），分鏡共用——
+   分鏡是照「第幾句開始後幾秒」寫的，兩種語言句數一樣，英文那句比較長就照比例拉長。
+
    沒有自動翻頁：一頁念完右邊的 ▶ 會跳，她可以先點角色玩，自己決定什麼時候翻。
    翻頁一定是她按的，所以每頁的 audio.play() 都在手勢裡，iPad 不會擋。 */
 (() => {
@@ -30,6 +33,7 @@
   const stPrev = $('stPrev');
   const stNext = $('stNext');
   const endOverlay = $('endOverlay');
+  const langBtn = $('langBtn');
 
   const audio = new Audio();
   audio.preload = 'auto';
@@ -37,7 +41,8 @@
   let story = null;       // STORY_SCRIPT 的一筆
   let staging = null;     // StoryData.STAGING 對應的一筆
   let pageIdx = 0;
-  let page = null;        // 目前這頁的 { audio, lines }
+  let page = null;        // 目前這頁、目前語言的 { audio, dur, lines }
+  let refPage = null;     // 同一頁的中文版：分鏡的秒數是照中文錄音調的，別的語言照它換算
   let plan = null;        // 目前這頁的分鏡
   let cues = [];          // 這頁的分鏡，算好絕對秒數、依時間排序
   let cueAt = 0;          // 下一筆還沒觸發的分鏡
@@ -45,8 +50,20 @@
   let shownChunk = null;  // 字幕目前顯示的那一段
   let talking = null;     // 正在說話的角色元素
   let done = false;       // 這一頁念完了
+  let pageLang = 'zh';    // 這一頁實際播的語言（選了英文但這個故事沒錄英文時是 zh）
   let instant = false;    // 截圖模式：動作一步到位，不播過場
   const actors = new Map();
+
+  /* 語言：存在裝置上（跟音樂、唸英文開關同一套做法）。某個故事還沒錄英文就退回中文。 */
+  const LANG_KEY = 'kidsStoryLang';
+  let lang = 'zh';
+  try { if (localStorage.getItem(LANG_KEY) === 'en') lang = 'en'; } catch (e) { /* 讀不到就用中文 */ }
+  const pageOf = (s, i) => s.pages[i][lang] || s.pages[i].zh;
+  const langOf = (s, i) => (s.pages[i][lang] ? lang : 'zh');
+  const TEXT = {
+    zh: { end: '🌙 說完了！', again: '🔁 再聽一次', other: '📚 換一個故事' },
+    en: { end: '🌙 The End!', again: '🔁 Again', other: '📚 More stories' }
+  };
 
   const click = () => { if (window.Sound) Sound.click(); };
   const pop = () => { if (window.Sound) Sound.pop(); };
@@ -108,6 +125,7 @@
     return out;
   }
 
+  // 回傳每一格 { el, i }：i＝這一格的第一個字元在這一段裡是第幾個（亮字時拿去查時間）
   function renderText(target, text, zy, from) {
     const cells = [];
     for (let i = 0; i < text.length; i++) {
@@ -125,16 +143,61 @@
         cell.textContent = text[i];
       }
       target.appendChild(cell);
-      cells.push(cell);
+      cells.push({ el: cell, i: i });
+    }
+    return cells;
+  }
+
+  /* 英文字幕：一個字一格，念到那個字整個字亮起來。
+     分段先照標點切、短的併起來；沒有標點的長句（例如 52 個字元的一整句）從最靠近中間的空白對半切，
+     不然整行要縮到六成才塞得下。稍微超過一點（兩成以內）就整行縮小，不切。 */
+  const EN_CAP = 34;
+  function splitLong(text, from, out) {
+    if (text.length <= EN_CAP * 1.2) { out.push({ text: text, from: from }); return; }
+    const mid = text.length / 2;
+    let cut = -1;
+    for (let i = 1; i < text.length - 1; i++) {
+      if (text[i] === ' ' && (cut < 0 || Math.abs(i - mid) < Math.abs(cut - mid))) cut = i;
+    }
+    if (cut < 0) { out.push({ text: text, from: from }); return; }
+    splitLong(text.slice(0, cut + 1), from, out);
+    splitLong(text.slice(cut + 1), from + cut + 1, out);
+  }
+  function chunksOfEn(text) {
+    const parts = text.match(/[^,.!?…—]+[,.!?…—]*\s*/g) || [text];
+    const merged = [];
+    let pos = 0;
+    let cur = null;
+    parts.forEach((p) => {
+      if (cur && (cur.text + p).trim().length <= EN_CAP) cur.text += p;
+      else { cur = { text: p, from: pos }; merged.push(cur); }
+      pos += p.length;
+    });
+    const out = [];
+    merged.forEach((c) => splitLong(c.text, c.from, out));
+    return out;
+  }
+
+  function renderWords(target, text) {
+    const cells = [];
+    const re = /\S+/g;
+    let m;
+    while ((m = re.exec(text))) {
+      const w = document.createElement('span');
+      w.className = 'wd';
+      w.textContent = m[0];
+      target.appendChild(w);
+      cells.push({ el: w, i: m.index });
     }
     return cells;
   }
 
   function prepareLines() {
+    const en = pageLang === 'en';
     page.lines.forEach((ln) => {
       if (ln.chunks) return;
-      ln.zy = zhuyinOf(ln.text);
-      ln.chunks = chunksOf(ln.text);
+      if (!en) ln.zy = zhuyinOf(ln.text);
+      ln.chunks = en ? chunksOfEn(ln.text) : chunksOf(ln.text);
       ln.chunks.forEach((c) => { c.s = ln.t[c.from] !== undefined ? ln.t[c.from] : ln.s; });
       ln.chunks[0].s = ln.s;
     });
@@ -155,10 +218,16 @@
     } else face.textContent = '📖';
     captionEl.appendChild(face);
     const line = document.createElement('span');
-    line.className = 'cap-line';
-    // 沒有標點可切的長句（最長 12 個字）整段縮小一點，永遠只有一行，舞台才不會被字幕擠得忽大忽小
-    line.style.setProperty('--k', Math.min(1, LINE_CAP / widthOf(chunk.text)).toFixed(3));
-    chunk.cells = renderText(line, chunk.text, ln.zy, chunk.from);
+    // 沒有標點可切的長句整段縮小一點，永遠只有一行，舞台才不會被字幕擠得忽大忽小
+    if (pageLang === 'en') {
+      line.className = 'cap-line en';
+      line.style.setProperty('--k', Math.min(1, EN_CAP / chunk.text.trim().length).toFixed(3));
+      chunk.cells = renderWords(line, chunk.text);
+    } else {
+      line.className = 'cap-line';
+      line.style.setProperty('--k', Math.min(1, LINE_CAP / widthOf(chunk.text)).toFixed(3));
+      chunk.cells = renderText(line, chunk.text, ln.zy, chunk.from);
+    }
     captionEl.appendChild(line);
   }
 
@@ -169,9 +238,9 @@
     let chunk = ln.chunks[0];
     ln.chunks.forEach((c) => { if (t >= c.s - 0.05) chunk = c; });
     if (chunk !== shownChunk) showChunk(ln, chunk);
-    chunk.cells.forEach((cell, i) => {
-      const at = ln.t[chunk.from + i];
-      cell.classList.toggle('on', at !== undefined && t >= at - 0.03);
+    chunk.cells.forEach((cell) => {
+      const at = ln.t[chunk.from + cell.i];
+      cell.el.classList.toggle('on', at !== undefined && t >= at - 0.03);
     });
     return ln;
   }
@@ -256,8 +325,9 @@
   // 點角色：跳一下、冒愛心（小星星冒星光、鯨魚噴水）。隨時都能點，不打斷故事
   function tapActor(a) {
     pop();
-    oneShot(a, a.id === 'star' ? 'spin' : (a.id === 'whale' || a.id === 'giraffe' ? 'nod' : 'hop'));
-    fxAt(a.id === 'star' ? 'sparkle' : (a.id === 'whale' ? 'spout' : 'hearts'), null, null, a);
+    const tap = (Data.TAPS && Data.TAPS[a.id]) || ['hop', 'hearts'];
+    oneShot(a, tap[0]);
+    fxAt(tap[1], null, null, a);
   }
 
   /* ---------- 特效 ---------- */
@@ -266,7 +336,11 @@
   const NOTE = '<svg viewBox="0 0 30 34"><path d="M11 6 L25 3 L25 22 A5 4.4 0 1 1 21.6 18 L21.6 9 L14.4 10.6 L14.4 25 A5 4.4 0 1 1 11 21 Z" fill="#fff" stroke="#2b2b2b" stroke-width="2.4" stroke-linejoin="round"/></svg>';
   const SPARK = '<svg viewBox="0 0 30 30"><path d="M15 2 L18.5 11.5 L28 15 L18.5 18.5 L15 28 L11.5 18.5 L2 15 L11.5 11.5 Z" fill="#FFE98A" stroke="#2b2b2b" stroke-width="2.2" stroke-linejoin="round"/></svg>';
   const DROP = '<svg viewBox="0 0 22 30"><path d="M11 2 C16 11 20 15 20 20 A9 9 0 0 1 2 20 C2 15 6 11 11 2 Z" fill="#9BDCFF" stroke="#2b2b2b" stroke-width="2.2" stroke-linejoin="round"/></svg>';
+  const PUFF = '<svg viewBox="0 0 40 26"><path d="M10 22 A7 7 0 0 1 9 8 A8 8 0 0 1 24 5 A7 7 0 0 1 34 13 A5 5 0 0 1 32 22 Z" fill="#fff" stroke="#2b2b2b" stroke-width="2.2" stroke-linejoin="round"/></svg>';
+  const ZED = '<svg viewBox="0 0 26 26"><path d="M5 5 H21 L8 20 H21" fill="none" stroke="#2b2b2b" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 5 H21 L8 20 H21" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const FX = {
+    puff: { svg: PUFF, n: 5, spread: 7, rise: 24, size: 6.5, wind: true },
+    zzz: { svg: ZED, n: 3, spread: 3, rise: 16, size: 4, slow: true },
     hearts: { svg: HEART, n: 5, spread: 9, rise: 20, size: 5.2 },
     notes: { svg: NOTE, n: 3, spread: 8, rise: 18, size: 5 },
     sparkle: { svg: SPARK, n: 7, spread: 14, rise: 8, size: 4.4, burst: true },
@@ -283,20 +357,24 @@
       if (!sr.width || !r.width) return;
       x = ((r.left + r.width / 2) - sr.left) / sr.width * 100;
       y = (r.top - sr.top) / sr.height * 100 + (kind === 'spout' ? 4 : 8);
+      if (f.wind) { x = (r.right - sr.left) / sr.width * 100; y += 14; }
     }
     for (let i = 0; i < f.n; i++) {
       const p = document.createElement('span');
       p.className = 'fx-p' + (f.burst ? ' burst' : '') + (f.fall ? ' fall' : '');
       p.innerHTML = f.svg;
       const ang = Math.random() * Math.PI * 2;
-      const dx = f.burst ? Math.cos(ang) * f.spread : (Math.random() - 0.5) * 2 * f.spread;
-      const dy = f.burst ? Math.sin(ang) * f.spread : -(f.rise * (0.6 + Math.random() * 0.6));
+      // wind＝往右吹（大野狼吹氣、兔子起跑的風），其他往上飄或往四周散
+      let dx = f.burst ? Math.cos(ang) * f.spread : (Math.random() - 0.5) * 2 * f.spread;
+      let dy = f.burst ? Math.sin(ang) * f.spread : -(f.rise * (0.6 + Math.random() * 0.6));
+      if (f.wind) { dx = f.rise * (0.7 + Math.random() * 0.6); dy = (Math.random() - 0.5) * 2 * f.spread; }
+      if (f.slow) { dx = (i + 1) * f.spread * 0.8; dy = -(i + 1) * f.rise / f.n; }
       p.style.left = x + '%';
       p.style.top = y + '%';
       p.style.width = (f.size * (0.75 + Math.random() * 0.5)) + '%';
       p.style.setProperty('--dx', dx);
       p.style.setProperty('--dy', dy);
-      p.style.animationDelay = (i * 0.09) + 's';
+      p.style.animationDelay = (i * (f.slow ? 0.45 : 0.09)) + 's';
       p.addEventListener('animationend', () => p.remove());
       fxEl.appendChild(p);
     }
@@ -428,13 +506,27 @@
     document.documentElement.style.setProperty('--u', (sw / 100) + 'px');
   }
 
+  /* 分鏡的 at 是照中文錄音調的「這一句開始後幾秒」。別的語言同一句長度不同，
+     照兩邊那一句的長度比例換算（夾在 0.6～2.5 倍之間），動作才會落在同樣的字上。 */
+  function cueTime(c) {
+    const at = c.at || 0;
+    if (c.l === undefined) return at * (page === refPage ? 1 : clampRatio(page.dur / refPage.dur));
+    const ln = page.lines[c.l];
+    const ref = refPage.lines[c.l];
+    const k = page === refPage ? 1 : clampRatio((ln.e - ln.s) / Math.max(0.2, ref.e - ref.s));
+    return ln.s + at * k;
+  }
+  const clampRatio = (k) => Math.max(0.6, Math.min(2.5, k));
+
   function showPage(i, silent) {
     cancelAnimationFrame(raf);
     raf = 0;
     audio.pause();
     done = false;
     pageIdx = i;
-    page = story.pages[i];
+    page = pageOf(story, i);
+    pageLang = langOf(story, i);
+    refPage = story.pages[i].zh;
     plan = staging.pages[i];
     prepareLines();
 
@@ -451,9 +543,7 @@
     plan.actors.forEach(makeActor);
     buildWaves();
 
-    cues = (plan.cues || []).map((c) => Object.assign({}, c, {
-      time: (c.l !== undefined ? page.lines[c.l].s : 0) + (c.at || 0)
-    })).sort((a, b) => a.time - b.time);
+    cues = (plan.cues || []).map((c) => Object.assign({}, c, { time: cueTime(c) })).sort((a, b) => a.time - b.time);
     cueAt = 0;
 
     [...dotsEl.children].forEach((d, k) => d.classList.toggle('on', k === i));
@@ -467,8 +557,7 @@
     audio.src = page.audio;
     play();
     // 先把下一頁的音檔與圖叫進快取，翻頁才不會等
-    const nx = story.pages[i + 1];
-    if (nx) { fetch(nx.audio).catch(() => {}); preload(staging.pages[i + 1]); }
+    if (story.pages[i + 1]) { fetch(pageOf(story, i + 1).audio).catch(() => {}); preload(staging.pages[i + 1]); }
   }
 
   function play() {
@@ -547,10 +636,11 @@
 
   /* ---------- 選故事 ---------- */
 
-  /* 截圖模式（調分鏡與 tools/check 用，不是給小孩的）：story.html?shot=bear-hug,2,7.5
+  /* 截圖模式（調分鏡與 tools/check 用，不是給小孩的）：story.html?shot=bear-hug,2,7.5 或 …,7.5,en
      直接擺出「第 2 頁第 7.5 秒」的畫面，不出聲、不播過場，無頭瀏覽器截圖才截得到固定的一格。 */
   function showShot(spec) {
-    const [id, pg, sec] = spec.split(',');
+    const [id, pg, sec, lg] = spec.split(',');
+    if (lg === 'en' || lg === 'zh') { lang = lg; applyLang(); }
     openStory(id, true);
     if (!story) return;
     instant = true;
@@ -559,6 +649,7 @@
     step(parseFloat(sec) || 0);
   }
 
+  const titles = [];
   SCRIPT.stories.forEach((s, i) => {
     const st = Data.STAGING[s.id];
     if (!st) return;
@@ -574,12 +665,37 @@
       (st.cover.star ? '<span class="cover-star a-art tw-star s-bright">' + starSvg() + '</span>' : '');
     const title = document.createElement('span');
     title.className = 'story-title';
-    renderText(title, s.title, zhuyinOf(s.title), 0);
+    titles.push({ el: title, story: s });
     card.appendChild(pic);
     card.appendChild(title);
     card.addEventListener('click', () => { click(); openStory(s.id); });
     storyRow.appendChild(card);
   });
+
+  /* 語言鈕：「中｜EN」兩格，亮的那格是現在的語言。選故事和聽故事時都能按；
+     聽到一半按＝這一頁用另一種語言從頭念（按鈕本身就是手勢，iPad 不會擋播放）。 */
+  function applyLang() {
+    [...langBtn.children].forEach((sp) => sp.classList.toggle('on', sp.dataset.l === lang));
+    titles.forEach((t) => {
+      const en = lang === 'en' && t.story.title.en;
+      t.el.innerHTML = '';
+      t.el.classList.toggle('en', !!en);
+      if (en) t.el.textContent = t.story.title.en;
+      else renderText(t.el, t.story.title.zh, zhuyinOf(t.story.title.zh), 0);
+    });
+    const tx = TEXT[lang];
+    $('endTitle').textContent = tx.end;
+    $('againBtn').textContent = tx.again;
+    $('otherBtn').textContent = tx.other;
+  }
+  langBtn.addEventListener('click', () => {
+    click();
+    lang = lang === 'zh' ? 'en' : 'zh';
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* 存不了就只影響這一次 */ }
+    applyLang();
+    if (story && endOverlay.hidden) showPage(pageIdx);
+  });
+  applyLang();
 
   const shot = new URLSearchParams(location.search).get('shot');
   if (shot) showShot(shot);

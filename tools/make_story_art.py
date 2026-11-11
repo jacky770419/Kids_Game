@@ -18,7 +18,9 @@ BG = os.path.join(ROOT, 'assets', 'story', 'bg')
 
 DEFAULT_MAX = 640
 MAX_SIDE = {'giraffe_stand': 960, 'giraffe_bend': 900, 'unicorn_ride': 760, 'princess_bed': 760,
-            'frog_sit': 360, 'frog_jump': 420, 'bear_sleep': 560}
+            'frog_sit': 360, 'frog_jump': 420, 'bear_sleep': 560,
+            'house_straw': 760, 'house_wood': 760, 'house_brick': 760,
+            'tortoise_walk': 520, 'tortoise_cheer': 520}
 BG_SIZE = (1200, 800)
 
 
