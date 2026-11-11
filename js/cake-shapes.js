@@ -1,4 +1,4 @@
-/* 甜點店的六種甜點：每種一組 { draw, spots, iconBase, iconHolder }。
+/* 甜點店的七種甜點：每種一組 { draw, spots, iconBase, iconHolder }。
 
      draw(state, cx)      畫出甜點本體（不含背景與配料），回傳 SVG 字串
      spots(state, cx)     點一下放配料時的位置表，由先放的排到後放的，每筆 { x, y, k }：
@@ -68,10 +68,26 @@
   }
 
   /* ===== 共用的小零件 ===== */
+
+  /* 立體感三件套（2026-11 起）：落在櫃台上的影子、背光那側的暗面、迎光那側的白色亮線。
+     都用半透明的平塗色，不用漸層：漸層要 id，同一頁有好幾張 SVG（選甜點的卡片、材料匣）會撞 id，
+     而且定義漸層的那張 SVG 被藏起來（display:none）時，別張引用到的漸層會畫不出來。 */
+  function shadow(cx, cy, rx, ry) {
+    return '<ellipse cx="' + n1(cx + 10) + '" cy="' + n1(cy + 9) + '" rx="' + n1(rx) + '" ry="' + n1(ry) + '" fill="#8A4B2A" opacity="0.18"/>';
+  }
+
+  function gloss(d, w, op) {
+    return '<path d="' + d + '" fill="none" stroke="#FFFFFF" stroke-width="' + (w || 9) + '" stroke-linecap="round" opacity="' + (op || 0.7) + '"/>';
+  }
+
   function plate(cx, id) {
     var p = Data.holder('cake', id) || Data.PLATES[0];
-    return '<ellipse cx="' + cx + '" cy="' + (PLATE_Y + 4) + '" rx="262" ry="36" fill="' + p.fill + '"' + LINE + '/>'
-      + '<ellipse cx="' + cx + '" cy="' + (PLATE_Y + 2) + '" rx="214" ry="25" fill="none" stroke="' + p.rim + '" stroke-width="5"/>';
+    var y = PLATE_Y + 4;
+    return shadow(cx, y, 262, 36)
+      + '<ellipse cx="' + cx + '" cy="' + y + '" rx="262" ry="36" fill="' + p.fill + '"' + LINE + '/>'
+      + '<ellipse cx="' + cx + '" cy="' + (PLATE_Y + 2) + '" rx="214" ry="25" fill="none" stroke="' + p.rim + '" stroke-width="5"/>'
+      // 盤緣左前方一道反光
+      + gloss('M' + n1(cx - 228) + ',' + n1(y + 12) + ' A244,30 0 0 0 ' + n1(cx - 120) + ',' + n1(y + 27), 6, 0.8);
   }
 
   function iconPlate(p) {
@@ -92,14 +108,45 @@
       + ' L' + x1 + ',' + b.yTop + ' Z" fill="' + fill + '"' + LINE + '/>';
   }
 
+  /* 圓柱右側的暗面：從側面 u＝0.52 的地方垂直切下去，沿下緣彎到右邊（光從左上來） */
+  function sideShade(b, color, op) {
+    var u = 0.52;
+    var xs = n1(b.cx + u * b.rx), x1 = n1(b.cx + b.rx);
+    var ys = n1(b.yBot + b.ry * Math.sqrt(1 - u * u));
+    return '<path d="M' + xs + ',' + b.yTop + ' L' + xs + ',' + ys + ' A' + b.rx + ',' + b.ry + ' 0 0 0 ' + x1 + ',' + b.yBot
+      + ' L' + x1 + ',' + b.yTop + ' Z" fill="' + color + '" opacity="' + op + '"/>';
+  }
+
   function tier(b, f) {
     var x0 = n1(b.cx - b.rx), x1 = n1(b.cx + b.rx);
     var ym = n1(b.yTop + b.h * 0.55);
+    var xl = n1(b.cx - b.rx * 0.8);
+    var yl = n1(b.yBot + b.ry * 0.6 - 10);
     return tierSide(b, f.fill)
+      + sideShade(b, f.dark, 0.45)
       // 腰上一條暗一階的夾心，跟著下緣一樣彎，看起來才是圓的
       + '<path d="M' + n1(x0 + 3) + ',' + ym + ' A' + b.rx + ',' + b.ry + ' 0 0 0 ' + n1(x1 - 3) + ',' + ym
       + '" fill="none" stroke="' + f.dark + '" stroke-width="10" stroke-linecap="round"/>'
-      + '<ellipse cx="' + b.cx + '" cy="' + b.yTop + '" rx="' + b.rx + '" ry="' + b.ry + '" fill="' + f.top + '"' + LINE + '/>';
+      // 左側一道直的亮線（暗面蓋掉了右邊的墨線一半，外框再描一次）
+      + gloss('M' + xl + ',' + n1(b.yTop + b.ry + 8) + ' L' + xl + ',' + yl, Math.max(5, n1(b.rx * 0.05)), 0.55)
+      + tierSide(b, 'none')
+      + '<ellipse cx="' + b.cx + '" cy="' + b.yTop + '" rx="' + b.rx + '" ry="' + b.ry + '" fill="' + f.top + '"' + LINE + '/>'
+      + '<ellipse cx="' + n1(b.cx - b.rx * 0.42) + '" cy="' + n1(b.yTop - b.ry * 0.25) + '" rx="' + n1(b.rx * 0.22) + '" ry="' + n1(b.ry * 0.28)
+      + '" fill="#FFFFFF" opacity="0.5"/>';
+  }
+
+  /* 奶油擠成一圈珍珠邊：沿著每一層的下緣（看得到的前半圈） */
+  function pearls(b, c) {
+    var out = '';
+    var r = n1(Math.max(7, b.h * 0.09));
+    var n = Math.max(7, Math.round(b.rx * 2 / (r * 2.3)));
+    for (var i = 0; i <= n; i++) {
+      var u = -0.97 + 1.94 * i / n;
+      var x = b.cx + u * b.rx;
+      var y = b.yBot + b.ry * Math.sqrt(1 - u * u);
+      out += '<circle cx="' + n1(x) + '" cy="' + n1(y - 2) + '" r="' + r + '"/>';
+    }
+    return '<g fill="' + c.fill + '" stroke="' + INK + '" stroke-width="4">' + out + '</g>';
   }
 
   /* 奶油：蓋住頂面，前緣往下流成一顆一顆的圓弧 */
@@ -116,7 +163,9 @@
     }
     // 收尾走頂面的上半個橢圓回到起點（從右往左、經過上面＝sweep 0）
     d += ' A' + b.rx + ',' + b.ry + ' 0 0 0 ' + n1(x0) + ',' + b.yTop + ' Z';
-    return '<path d="' + d + '" fill="' + c.fill + '"' + LINE + '/>';
+    return '<path d="' + d + '" fill="' + c.fill + '"' + LINE + '/>'
+      + '<ellipse cx="' + n1(b.cx - b.rx * 0.42) + '" cy="' + n1(b.yTop - b.ry * 0.2) + '" rx="' + n1(b.rx * 0.2) + '" ry="' + n1(b.ry * 0.26)
+      + '" fill="#FFFFFF" opacity="0.55"/>';
   }
 
   /* 擠花：一圈一圈往上縮，頂端拉出一個尖（杯子蛋糕、聖代） */
@@ -127,7 +176,9 @@
     for (var i = 0; i < rings; i++) {
       var r = rx * (1 - i * 0.27);
       var y = yBase - i * h * 1.05;
-      out += '<ellipse cx="' + cx + '" cy="' + n1(y) + '" rx="' + n1(r) + '" ry="' + n1(h * 0.78) + '" fill="' + c.fill + '"' + LINE + '/>';
+      out += '<ellipse cx="' + cx + '" cy="' + n1(y) + '" rx="' + n1(r) + '" ry="' + n1(h * 0.78) + '" fill="' + c.fill + '"' + LINE + '/>'
+        + gloss('M' + n1(cx - r * 0.72) + ',' + n1(y - h * 0.18) + ' Q' + n1(cx - r * 0.55) + ',' + n1(y - h * 0.5) + ' ' + n1(cx - r * 0.25) + ',' + n1(y - h * 0.58),
+          n1(Math.max(5, rx * 0.05)), 0.6);
     }
     var r2 = rx * 0.3;
     var yTip = yBase - (rings - 1) * h * 1.05 - h * 0.5;
@@ -171,7 +222,7 @@
         var f = Data.flavor(b.id);
         if (!f) return;
         out += tier(b, f);
-        if (c) out += cream(b, c);
+        if (c) out += cream(b, c) + pearls(b, c);
       });
       return out;
     },
@@ -224,7 +275,14 @@
     var sc = n1(step * 0.54);
     var d = 'M' + n1(cx - r) + ',' + n1(y) + ' A' + r + ',' + r + ' 0 1 1 ' + n1(cx + r) + ',' + n1(y);
     for (var i = 0; i < n; i++) d += ' a' + sc + ',' + sc + ' 0 0 1 ' + n1(-step) + ',0';
+    // 右下的暗面：外圈一段弧，內圈用大一點的半徑往回彎，切出一片月牙
+    var a0 = -40 * Math.PI / 180, a1 = Math.asin(0.3);
+    var p0 = n1(cx + r * Math.cos(a0)) + ',' + n1(cy + r * Math.sin(a0));
+    var p1 = n1(cx + r * Math.cos(a1)) + ',' + n1(y);
+    var shade = '<path d="M' + p0 + ' A' + r + ',' + r + ' 0 0 1 ' + p1 + ' L' + n1(cx + r * 0.25) + ',' + n1(y)
+      + ' Q' + n1(cx + r * 0.72) + ',' + n1(cy - r * 0.05) + ' ' + p0 + ' Z" fill="' + f.dark + '" opacity="0.4"/>';
     return '<path d="' + d + ' Z" fill="' + f.fill + '"' + LINE + '/>'
+      + shade + '<path d="' + d + ' Z" fill="none"' + LINE + '/>'
       + '<ellipse cx="' + n1(cx - r * 0.38) + '" cy="' + n1(cy - r * 0.46) + '" rx="' + n1(r * 0.22) + '" ry="' + n1(r * 0.13)
       + '" fill="' + f.top + '" transform="rotate(-32 ' + n1(cx - r * 0.38) + ' ' + n1(cy - r * 0.46) + ')"/>';
   }
@@ -245,7 +303,8 @@
 
   function cone(cx, h) {
     var t = CONE.top, H = CONE.tip - t, w = CONE.hw;
-    var out = '<ellipse cx="' + cx + '" cy="' + (CONE.tip + 2) + '" rx="56" ry="13" fill="#FFFFFF"' + LINE + '/>'
+    var out = shadow(cx, CONE.tip + 2, 56, 13)
+      + '<ellipse cx="' + cx + '" cy="' + (CONE.tip + 2) + '" rx="56" ry="13" fill="#FFFFFF"' + LINE + '/>'
       + '<path d="M' + (cx - w) + ',' + t + ' L' + cx + ',' + CONE.tip + ' L' + (cx + w) + ',' + t + ' Z" fill="' + h.fill + '"' + LINE + '/>';
     // 格紋：從上緣出發、平行兩側的斜線，碰到另一邊就停
     var d = '';
@@ -254,17 +313,22 @@
       d += 'M' + n1(cx + a * w) + ',' + t + ' L' + n1(cx + (a + p) * w) + ',' + n1(t + p * H) + ' ';
       d += 'M' + n1(cx - a * w) + ',' + t + ' L' + n1(cx - (a + p) * w) + ',' + n1(t + p * H) + ' ';
     });
-    return out + '<path d="' + d + '" fill="none" stroke="' + h.dark + '" stroke-width="5" stroke-linecap="round"/>';
+    // 右半邊暗一階、甜筒口一圈捲邊
+    return out + '<path d="M' + cx + ',' + t + ' L' + cx + ',' + CONE.tip + ' L' + (cx + w) + ',' + t + ' Z" fill="' + h.dark + '" opacity="0.3"/>'
+      + '<path d="' + d + '" fill="none" stroke="' + h.dark + '" stroke-width="5" stroke-linecap="round"/>'
+      + '<path d="M' + (cx - w) + ',' + t + ' L' + cx + ',' + CONE.tip + ' L' + (cx + w) + ',' + t + ' Z" fill="none"' + LINE + '/>'
+      + '<rect x="' + (cx - w - 8) + '" y="' + (t - 6) + '" width="' + (2 * w + 16) + '" height="22" rx="11" fill="' + h.fill + '"' + LINE + '/>'
+      + gloss('M' + (cx - w + 6) + ',' + (t + 5) + ' L' + (cx - w * 0.3) + ',' + (t + 5), 5, 0.75);
   }
 
   function cup(cx, h) {
     var t = CONE.top, b = 536;
-    var out = '<path d="M' + (cx - 104) + ',' + t + ' L' + (cx - 74) + ',' + b + ' Q' + cx + ',' + (b + 18) + ' ' + (cx + 74) + ',' + b
+    var out = shadow(cx, b + 6, 86, 14) + '<path d="M' + (cx - 104) + ',' + t + ' L' + (cx - 74) + ',' + b + ' Q' + cx + ',' + (b + 18) + ' ' + (cx + 74) + ',' + b
       + ' L' + (cx + 104) + ',' + t + ' Z" fill="' + h.fill + '"' + LINE + '/>';
     [-0.6, -0.2, 0.2, 0.6].forEach(function (u) {
       out += '<path d="M' + n1(cx + u * 94) + ',' + (t + 8) + ' L' + n1(cx + u * 68) + ',' + (b + 4) + '" stroke="' + h.dark + '" stroke-width="10" stroke-linecap="round"/>';
     });
-    return out;
+    return out + '<rect x="' + (cx - 112) + '" y="' + (t - 6) + '" width="224" height="22" rx="11" fill="' + h.fill + '"' + LINE + '/>';
   }
 
   var icecream = {
@@ -319,13 +383,16 @@
   var CUP = { top: 372, bot: 532, hwTop: 150, hwBot: 108 };
 
   function wrapper(cx, h) {
-    var out = '<path d="M' + (cx - CUP.hwTop) + ',' + CUP.top + ' L' + (cx - CUP.hwBot) + ',' + CUP.bot + ' L' + (cx + CUP.hwBot) + ',' + CUP.bot
+    var out = shadow(cx, CUP.bot, CUP.hwBot + 20, 14) + '<path d="M' + (cx - CUP.hwTop) + ',' + CUP.top + ' L' + (cx - CUP.hwBot) + ',' + CUP.bot + ' L' + (cx + CUP.hwBot) + ',' + CUP.bot
       + ' L' + (cx + CUP.hwTop) + ',' + CUP.top + ' Z" fill="' + h.fill + '"' + LINE + '/>';
     [-0.75, -0.45, -0.15, 0.15, 0.45, 0.75].forEach(function (u) {
       out += '<path d="M' + n1(cx + u * CUP.hwTop) + ',' + (CUP.top + 6) + ' L' + n1(cx + u * CUP.hwBot) + ',' + (CUP.bot - 6)
         + '" stroke="' + h.dark + '" stroke-width="7" stroke-linecap="round"/>';
     });
-    return out;
+    return out + '<path d="M' + n1(cx + CUP.hwTop * 0.45) + ',' + CUP.top + ' L' + n1(cx + CUP.hwBot * 0.45) + ',' + CUP.bot + ' L' + (cx + CUP.hwBot) + ',' + CUP.bot
+      + ' L' + (cx + CUP.hwTop) + ',' + CUP.top + ' Z" fill="' + h.dark + '" opacity="0.3"/>'
+      + '<path d="M' + (cx - CUP.hwTop) + ',' + CUP.top + ' L' + (cx - CUP.hwBot) + ',' + CUP.bot + ' L' + (cx + CUP.hwBot) + ',' + CUP.bot
+      + ' L' + (cx + CUP.hwTop) + ',' + CUP.top + ' Z" fill="none"' + LINE + '/>';
   }
 
   var cupcake = {
@@ -395,7 +462,8 @@
         out += '<path fill-rule="evenodd" d="' + wavy(cx, d.cy, d.rx * 0.93, d.ry * 0.91, 9, 0.05)
           + wavy(cx, d.cy, d.holeRx * 1.28, d.holeRy * 1.36, 6, 0.05) + '" fill="' + c.fill + '"' + LINE + '/>';
       }
-      return out;
+      return out + gloss('M' + n1(cx - d.rx * 0.78) + ',' + n1(d.cy - d.ry * 0.12) + ' Q' + n1(cx - d.rx * 0.7) + ',' + n1(d.cy - d.ry * 0.6)
+        + ' ' + n1(cx - d.rx * 0.3) + ',' + n1(d.cy - d.ry * 0.78), 10, 0.6);
     },
     spots: function (s, cx) {
       if (!s.tiers.length) return emptyPlateSpots(cx);
@@ -431,7 +499,7 @@
 
   /* 一片：邊緣淡、表面深，跟真的鬆餅一樣 */
   function pancakeLayer(b, f) {
-    return tierSide(b, f.top)
+    return tierSide(b, f.top) + sideShade(b, f.dark, 0.35) + tierSide(b, 'none')
       + '<ellipse cx="' + b.cx + '" cy="' + b.yTop + '" rx="' + b.rx + '" ry="' + b.ry + '" fill="' + f.fill + '"' + LINE + '/>'
       + '<ellipse cx="' + b.cx + '" cy="' + b.yTop + '" rx="' + n1(b.rx * 0.78) + '" ry="' + n1(b.ry * 0.74) + '" fill="' + f.dark + '" opacity="0.45"/>';
   }
@@ -498,7 +566,7 @@
   var sundae = {
     draw: function (s, cx) {
       var g = GLASS;
-      var out = '<ellipse cx="' + cx + '" cy="548" rx="84" ry="15" fill="#E8F6FF"' + LINE + '/>'
+      var out = shadow(cx, 548, 84, 15) + '<ellipse cx="' + cx + '" cy="548" rx="84" ry="15" fill="#E8F6FF"' + LINE + '/>'
         + '<rect x="' + (cx - 11) + '" y="' + (g.bot - 2) + '" width="22" height="78" fill="#E8F6FF"' + LINE + '/>'
         + '<polygon points="' + glassPoints(cx, g.top, g.bot).join(' ') + '" fill="#FFFFFF" fill-opacity="0.6"/>';
       s.tiers.forEach(function (id, i) {
@@ -531,7 +599,202 @@
     iconBase: icecream.iconBase
   };
 
-  var SHAPES = { cake: cake, icecream: icecream, cupcake: cupcake, donut: donut, pancake: pancake, sundae: sundae };
+  /* ===== 餅乾：正面朝前立在盤子上，像一張貼紙 =====
+     「容器」頁籤換成壓模形狀（圓、愛心、星星、花、小熊、薑餅人），所以形狀存在 state.holder：
+     存檔、復原、換甜點都不用另外加欄位。
+     餅乾畫兩次：先往下錯開 thick 畫一片暗色（餅乾的厚度），再畫正面；糖霜是同一個形狀縮小一圈。
+     每個形狀的座標都是「單位半徑」，乘上 R 才是板面的像素。 */
+  var COOKIE = { cy: 336, R: 168, thick: 16, k: 0.55 };
+
+  function pt(x, y) { return n1(x) + ',' + n1(y); }
+  function circ(x, y, r) {
+    return 'M' + pt(x - r, y) + ' A' + n1(r) + ',' + n1(r) + ' 0 1 1 ' + pt(x + r, y) + ' A' + n1(r) + ',' + n1(r) + ' 0 1 1 ' + pt(x - r, y) + ' Z';
+  }
+
+  /* 每個形狀：
+       parts(R)   正面的輪廓（陣列：小熊是兩個耳朵＋頭，各自描邊，耳朵壓在頭後面）
+       icing(R)   糖霜的輪廓
+       face       有臉的形狀（小熊、薑餅人）畫在糖霜上面
+       spots      點一下放配料的位置（單位座標，配料底部中心），避開臉
+       shine      糖霜上的亮線（單位座標，二次曲線三點） */
+  var COOKIE_SHAPES = {
+    circle: {
+      parts: function (R) { return [circ(0, 0, R)]; },
+      icing: function (R) { return [circ(0, 0, R * 0.82)]; },
+      spots: [[0, 0.42], [-0.42, 0.38], [0.42, 0.38], [-0.22, -0.1], [0.22, -0.1], [-0.64, 0], [0.64, 0], [0, -0.46], [-0.42, -0.42], [0.42, -0.42]],
+      shine: [[-0.66, -0.12], [-0.6, -0.46], [-0.3, -0.64]]
+    },
+    heart: {
+      parts: function (R) { return [heartPath(R)]; },
+      icing: function (R) { return [heartPath(R * 0.8)]; },
+      spots: [[0, 0.45], [-0.38, 0.15], [0.38, 0.15], [-0.26, -0.22], [0.26, -0.22], [-0.62, -0.32], [0.62, -0.32], [0, 0.1], [0, 0.74]],
+      shine: [[-0.72, -0.28], [-0.7, -0.56], [-0.44, -0.66]]
+    },
+    star: {
+      parts: function (R) { return [starPath(R)]; },
+      icing: function (R) { return [starPath(R * 0.78)]; },
+      spots: [[0, 0.32], [-0.26, 0.1], [0.26, 0.1], [0, -0.42], [-0.6, -0.1], [0.6, -0.1], [-0.36, 0.62], [0.36, 0.62], [0, -0.1]],
+      shine: [[-0.12, -0.42], [-0.08, -0.6], [-0.03, -0.72]]
+    },
+    flower: {
+      parts: function (R) { return [flowerPath(R)]; },
+      icing: function (R) { return [flowerPath(R * 0.8)]; },
+      spots: [[0, 0.18], [-0.54, -0.18], [0.54, -0.18], [0, -0.5], [-0.54, 0.45], [0.54, 0.45], [0, 0.78], [-0.3, 0.08], [0.3, 0.08]],
+      shine: [[-0.72, -0.2], [-0.68, -0.42], [-0.5, -0.52]]
+    },
+    bear: {
+      parts: function (R) { return [circ(-0.6 * R, -0.55 * R, 0.33 * R), circ(0.6 * R, -0.55 * R, 0.33 * R), circ(0, 0.15 * R, 0.8 * R)]; },
+      icing: function (R) { return [circ(0, 0.15 * R, 0.64 * R)]; },
+      face: function (R, L) {
+        return '<g fill="' + INK + '"><circle cx="' + n1(-0.28 * R) + '" cy="' + n1(0.04 * R) + '" r="' + n1(0.075 * R) + '"/><circle cx="' + n1(0.28 * R) + '" cy="' + n1(0.04 * R) + '" r="' + n1(0.075 * R) + '"/></g>'
+          + '<ellipse cx="0" cy="' + n1(0.4 * R) + '" rx="' + n1(0.3 * R) + '" ry="' + n1(0.22 * R) + '" fill="#FFF4DF"' + L + '/>'
+          + '<ellipse cx="0" cy="' + n1(0.32 * R) + '" rx="' + n1(0.1 * R) + '" ry="' + n1(0.07 * R) + '" fill="' + INK + '"/>'
+          + '<path d="M' + pt(-0.1 * R, 0.46 * R) + ' Q' + pt(0, 0.54 * R) + ' ' + pt(0.1 * R, 0.46 * R) + '" fill="none"' + L + '/>';
+      },
+      cheeks: [[-0.52, 0.3], [0.52, 0.3]],
+      spots: [[0, -0.22], [-0.6, -0.4], [0.6, -0.4], [-0.34, -0.12], [0.34, -0.12], [-0.56, 0.54], [0.56, 0.54], [0, 0.9], [-0.7, 0.18], [0.7, 0.18]],
+      shine: [[-0.52, -0.02], [-0.46, -0.26], [-0.24, -0.36]]
+    },
+    man: {
+      parts: function (R) { return [manPath(R)]; },
+      // 手腳很細，整個形狀等比縮小會讓頭的糖霜往下掉；改成沿著輪廓往內留一樣寬的邊（見 cookieBody）
+      insetIcing: true,
+      face: function (R, L) {
+        return '<g fill="' + INK + '"><circle cx="' + n1(-0.12 * R) + '" cy="' + n1(-0.66 * R) + '" r="' + n1(0.05 * R) + '"/><circle cx="' + n1(0.12 * R) + '" cy="' + n1(-0.66 * R) + '" r="' + n1(0.05 * R) + '"/></g>'
+          + '<path d="M' + pt(-0.12 * R, -0.53 * R) + ' Q' + pt(0, -0.44 * R) + ' ' + pt(0.12 * R, -0.53 * R) + '" fill="none"' + L + '/>';
+      },
+      cheeks: [[-0.22, -0.54], [0.22, -0.54]],
+      // 先排肚子上的一排扣子（數「三顆」最清楚），再排手、腳
+      spots: [[0, -0.02], [0, 0.24], [0, 0.5], [-0.62, -0.08], [0.62, -0.08], [-0.44, 0.88], [0.44, 0.88], [-0.22, 0.14], [0.22, 0.14]],
+      shine: [[-0.17, -0.12], [-0.19, 0.04], [-0.17, 0.2]]
+    }
+  };
+
+  function heartPath(R) {
+    var p = function (x, y) { return pt(x * R, y * R); };
+    return 'M' + p(0, 0.95) + ' C' + p(-0.55, 0.55) + ' ' + p(-1.05, 0.15) + ' ' + p(-1, -0.35)
+      + ' C' + p(-0.95, -0.85) + ' ' + p(-0.3, -1) + ' ' + p(0, -0.55)
+      + ' C' + p(0.3, -1) + ' ' + p(0.95, -0.85) + ' ' + p(1, -0.35)
+      + ' C' + p(1.05, 0.15) + ' ' + p(0.55, 0.55) + ' ' + p(0, 0.95) + ' Z';
+  }
+
+  /* 五角星，尖端用二次曲線磨圓（餅乾壓出來的尖角本來就是圓的）。往下挪 0.08，看起來才置中 */
+  function starPath(R) {
+    var O = [], I = [];
+    for (var k = 0; k < 5; k++) {
+      var a = (-90 + 72 * k) * Math.PI / 180, b = a + 36 * Math.PI / 180;
+      O.push([1.08 * R * Math.cos(a), 1.08 * R * Math.sin(a) + 0.08 * R]);
+      I.push([0.56 * R * Math.cos(b), 0.56 * R * Math.sin(b) + 0.08 * R]);
+    }
+    var lerp = function (p, q, t) { return pt(p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t); };
+    var d = 'M' + pt(I[4][0], I[4][1]);
+    for (var j = 0; j < 5; j++) {
+      var prev = j ? I[j - 1] : I[4];
+      d += ' L' + lerp(prev, O[j], 0.8) + ' Q' + pt(O[j][0], O[j][1]) + ' ' + lerp(O[j], I[j], 0.2) + ' L' + pt(I[j][0], I[j][1]);
+    }
+    return d + ' Z';
+  }
+
+  /* 六片花瓣：每片是半徑 0.42 的圓、圓心離中心 0.62，相鄰兩片的外交點在半徑 0.82 上 */
+  function flowerPath(R) {
+    var r = n1(0.42 * R), t = 0.82 * R;
+    var q = function (k) { var a = (-60 + 60 * k) * Math.PI / 180; return pt(t * Math.cos(a), t * Math.sin(a)); };
+    var d = 'M' + q(-1);
+    for (var k = 0; k < 6; k++) d += ' A' + r + ',' + r + ' 0 1 1 ' + q(k);
+    return d + ' Z';
+  }
+
+  /* 薑餅人：頭、張開的手、兩條腿，一筆畫完（順時針） */
+  function manPath(R) {
+    var p = function (x, y) { return pt(x * R, y * R); };
+    var a = function (r, x, y) { return ' A' + n1(r * R) + ',' + n1(r * R) + ' 0 0 1 ' + p(x, y); };
+    return 'M' + p(0.16, -0.3) + ' L' + p(0.72, -0.34) + a(0.15, 0.74, -0.04) + ' L' + p(0.36, -0.02)
+      + ' L' + p(0.4, 0.38) + ' L' + p(0.58, 0.82) + a(0.17, 0.28, 0.95) + ' L' + p(0.08, 0.55)
+      + ' Q' + p(0, 0.47) + ' ' + p(-0.08, 0.55) + ' L' + p(-0.28, 0.95) + a(0.17, -0.58, 0.82)
+      + ' L' + p(-0.4, 0.38) + ' L' + p(-0.36, -0.02) + ' L' + p(-0.74, -0.04) + a(0.15, -0.72, -0.34)
+      + ' L' + p(-0.16, -0.3) + ' A' + n1(0.36 * R) + ',' + n1(0.36 * R) + ' 0 1 1 ' + p(0.16, -0.3) + ' Z';
+  }
+
+  function cookieShape(id) { return COOKIE_SHAPES[id] || COOKIE_SHAPES.circle; }
+
+  /* 畫一片餅乾（以 (0,0) 為中心，外面再平移）。f 沒給＝還沒放麵糰，只畫虛線的壓模輪廓 */
+  function cookieBody(shape, R, thick, f, c, line) {
+    var L = line || LINE;
+    var out = '';
+    if (!f) {
+      shape.parts(R).forEach(function (d) {
+        out += '<path d="' + d + '" fill="#FFFFFF" fill-opacity="0.6" stroke="#B5B9C4" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>';
+      });
+      return out;
+    }
+    out += '<g transform="translate(0,' + thick + ')">';
+    shape.parts(R).forEach(function (d) { out += '<path d="' + d + '" fill="' + f.dark + '"' + L + '/>'; });
+    out += '</g>';
+    shape.parts(R).forEach(function (d) { out += '<path d="' + d + '" fill="' + f.fill + '"' + L + '/>'; });
+    // 小熊的耳朵裡面暗一圈，頭再蓋一次，暗圈才不會跑到臉上
+    if (shape === COOKIE_SHAPES.bear) {
+      out += '<g fill="' + f.dark + '" opacity="0.55"><circle cx="' + n1(-0.6 * R) + '" cy="' + n1(-0.55 * R) + '" r="' + n1(0.17 * R) + '"/>'
+        + '<circle cx="' + n1(0.6 * R) + '" cy="' + n1(-0.55 * R) + '" r="' + n1(0.17 * R) + '"/></g>'
+        + '<path d="' + circ(0, 0.15 * R, 0.8 * R) + '" fill="' + f.fill + '"' + L + '/>';
+    }
+    if (c && shape.insetIcing) {
+      // 等寬內縮：糖霜填滿整片、描一圈很粗的墨線，再用麵糰色蓋掉墨線外側，最後補回外框，
+      // 留下「一圈麵糰邊＋細墨線＋糖霜」，什麼形狀都一樣寬
+      var ins = n1(R * 0.1);
+      shape.parts(R).forEach(function (d) {
+        out += '<path d="' + d + '" fill="' + c.fill + '" stroke="' + INK + '" stroke-width="' + n1(ins * 2 + 8) + '" stroke-linejoin="round"/>'
+          + '<path d="' + d + '" fill="none" stroke="' + f.fill + '" stroke-width="' + n1(ins * 2) + '" stroke-linejoin="round"/>'
+          + '<path d="' + d + '" fill="none"' + L + '/>';
+      });
+    } else if (c) {
+      shape.icing(R).forEach(function (d) { out += '<path d="' + d + '" fill="' + c.fill + '"' + L + '/>'; });
+    }
+    if (c) {
+      var s = shape.shine;
+      out += gloss('M' + pt(s[0][0] * R, s[0][1] * R) + ' Q' + pt(s[1][0] * R, s[1][1] * R) + ' ' + pt(s[2][0] * R, s[2][1] * R), n1(Math.max(4, R * 0.05)), 0.75);
+    } else {
+      // 沒有糖霜：表面撒幾顆烤出來的小點（用配料位置表後半段，避開臉）
+      var dots = '';
+      shape.spots.slice(3, 9).forEach(function (p, i) {
+        dots += '<ellipse cx="' + n1((p[0] + (i % 2 ? 0.08 : -0.08)) * R) + '" cy="' + n1((p[1] - 0.14) * R) + '" rx="' + n1(0.04 * R) + '" ry="' + n1(0.03 * R) + '"/>';
+      });
+      out += '<g fill="' + f.dark + '" opacity="0.7">' + dots + '</g>';
+    }
+    if (shape.face) {
+      if (shape.cheeks) {
+        out += '<g fill="#FF7A9C" opacity="0.45">' + shape.cheeks.map(function (p) {
+          return '<ellipse cx="' + n1(p[0] * R) + '" cy="' + n1(p[1] * R) + '" rx="' + n1(0.09 * R) + '" ry="' + n1(0.06 * R) + '"/>';
+        }).join('') + '</g>';
+      }
+      out += shape.face(R, L);
+    }
+    return out;
+  }
+
+  var cookie = {
+    draw: function (s, cx) {
+      var f = s.tiers.length ? Data.flavor(s.tiers[0]) : null;
+      var c = s.cream ? Data.cream(s.cream) : null;
+      return plate(cx, 'white')
+        + '<g transform="translate(' + cx + ',' + COOKIE.cy + ')">' + cookieBody(cookieShape(s.holder), COOKIE.R, COOKIE.thick, f, c) + '</g>';
+    },
+    spots: function (s, cx) {
+      if (!s.tiers.length) return emptyPlateSpots(cx);
+      var out = cookieShape(s.holder).spots.map(function (p) { return spot(cx + p[0] * COOKIE.R, COOKIE.cy + p[1] * COOKIE.R, COOKIE.k); });
+      // 餅乾兩旁的盤子
+      out = out.concat(offsets(cx, [[-212, 522], [212, 522], [-160, 540], [160, 540]], 0.4));
+      return out.concat(arc(cx, PLATE_Y + 4, 238, 30, [180, 0], 0.4)).concat(counter(cx));
+    },
+    iconBase: function (f) {
+      return svg100('<g transform="translate(50,48)">' + cookieBody(COOKIE_SHAPES.circle, 38, 5, f, null, ' stroke="' + INK + '" stroke-width="5" stroke-linejoin="round"') + '</g>');
+    },
+    iconHolder: function (h) {
+      var f = Data.flavor('golden');
+      return svg100('<g transform="translate(50,46)">' + cookieBody(cookieShape(h.id), 38, 5, f, null, ' stroke="' + INK + '" stroke-width="4" stroke-linejoin="round"') + '</g>');
+    }
+  };
+
+  var SHAPES = { cake: cake, icecream: icecream, cupcake: cupcake, donut: donut, pancake: pancake, sundae: sundae, cookie: cookie };
 
   var CakeShapes = {
     SHAPES: SHAPES,

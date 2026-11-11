@@ -1916,7 +1916,8 @@ body.cake #selectScreen {
   flex-direction: column;
 }
 
-/* 選甜點：橫向 3×2、直向 2×3，卡片撐滿畫面，五歲的手指一定按得到 */
+/* 選甜點：橫向一排四張、直向一排兩張，最後一排不滿就置中；卡片撐滿畫面，五歲的手指一定按得到。
+   用 flex 不用 grid：七張卡排 4×2 的格子會在右下角空一格，置中比較好看。 */
 body.cake #dessertScreen {
   flex: 1;
   min-height: 0;
@@ -1925,16 +1926,22 @@ body.cake #dessertScreen {
 }
 
 #dessertGrid {
+  --cols: 4;
+  --rows: 2;
+  --gap: min(30px, 3vw);
   flex: 1;
   min-height: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: min(30px, 3vw);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  gap: var(--gap);
   padding: 8px clamp(20px, 4vw, 44px) calc(26px + env(safe-area-inset-bottom));
 }
 
 .dessert-card {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  height: calc((100% - (var(--rows) - 1) * var(--gap)) / var(--rows));
   min-width: 0;
   min-height: 0;
   display: flex;
@@ -1979,10 +1986,7 @@ body.cake #dessertScreen {
 }
 
 @media (orientation: portrait) {
-  #dessertGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
+  #dessertGrid { --cols: 2; --rows: 4; }
 }
 
 .mode-free { background: #FF9EC4; --rot: -2deg; }

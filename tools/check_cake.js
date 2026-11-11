@@ -10,7 +10,7 @@
         新增一種甜點卻沒排位置表，配料全部疊在一起；客人圖檔路徑打錯就是破圖——都不會報錯。
 
    檢查項目：
-     A. js/cake-data.js 資料表（id 不重複、英文字、六種甜點的設定、客人圖檔存在）
+     A. js/cake-data.js 資料表（id 不重複、英文字、七種甜點的設定、客人圖檔存在）
      B. js/cake-state.js 的純函式（上限、不就地修改、拖放範圍、存檔過濾與舊存檔、對答案、點餐句子、出題）
      C. js/cake-draw.js／cake-shapes.js／cake-toppings.js
         （每種配料、甜點、容器都畫得出來，每種狀態的位置表夠多又不出板面，互動標記、存圖尺寸）
@@ -61,7 +61,7 @@ Data.TOPPINGS.forEach((t) => {
 Data.TOPPING_GROUPS.forEach((g) => ok(Data.TOPPINGS.some((t) => t.group === g.id), '頁籤 ' + g.id + ' 沒有配料'));
 ok(Data.TOPPINGS.filter((t) => !t.noOrder).length >= 8, '能出題的配料太少');
 
-ok(Data.DESSERTS.length === 6, '應有六種甜點，實得 ' + Data.DESSERTS.length);
+ok(Data.DESSERTS.length === 7, '應有七種甜點，實得 ' + Data.DESSERTS.length);
 {
   const ids = new Set();
   Data.DESSERTS.forEach((d) => {
@@ -86,6 +86,9 @@ ok(Data.DESSERTS.length === 6, '應有六種甜點，實得 ' + Data.DESSERTS.le
     ok(demo.tiers.length === d.demo.tiers.length && demo.toppings.length === d.demo.toppings.length, 'DESSERTS ' + d.id + ' 的示意圖有不存在的 id');
   });
 }
+// 餅乾的壓模形狀：資料表與畫法對得上，餅乾不會點「兩片餅乾」當配料
+Data.COOKIE_CUTTERS.forEach((h) => ok(Draw.iconHolder('cookie', h.id).indexOf('stroke-dasharray') < 0 && /^<svg/.test(Draw.iconHolder('cookie', h.id)), '餅乾形狀 ' + h.id + ' 的小圖畫不出來'));
+ok(St.empty('cookie').holder === 'heart', '餅乾一開始應是愛心形狀');
 ok(Data.creamSay('icecream', 'chocolate') === 'chocolate sauce', 'creamSay 不對：' + Data.creamSay('icecream', 'chocolate'));
 Data.CUSTOMERS.forEach((c) => ok(exists(c.src), '客人 ' + c.id + ' 的圖檔不存在：' + c.src));
 ok(Data.NUMBERS.length - 1 >= St.MAX_TOPPINGS, 'NUMBERS 要數得到配料上限 ' + St.MAX_TOPPINGS);
@@ -210,6 +213,7 @@ ok(Data.NUMBERS[13] === 'thirteen', 'NUMBERS[13] 應為 thirteen');
     ok(!Data.topping(o.topping).noOrder, '出題不該出 ' + o.topping);
     ok(o.count >= 1 && o.count <= St.MAX_COUNT, '數量超出 1..' + St.MAX_COUNT + '：' + o.count);
     if (prev) ok(o.customer !== prev.customer, '連續兩題是同一位客人');
+    ok(o.topping !== o.dessert, '配料跟甜點同名（' + o.dessert + '）不該出題');
     counts.add(o.count);
     kinds.add(o.dessert);
     prev = o;
@@ -321,4 +325,4 @@ if (problems.length) {
   if (problems.length > 40) console.error('  …還有 ' + (problems.length - 40) + ' 項');
   process.exit(1);
 }
-console.log('甜點店檢查全綠：資料表 / 純邏輯（上限、拖放、存檔、對答案、出題）/ 畫圖（六種甜點的位置、互動、尺寸）/ HTML 骨架。');
+console.log('甜點店檢查全綠：資料表 / 純邏輯（上限、拖放、存檔、對答案、出題）/ 畫圖（七種甜點的位置、互動、尺寸）/ HTML 骨架。');

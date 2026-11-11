@@ -1,5 +1,5 @@
 /* 甜點店：兩種玩法共用同一個板面與材料匣。
-     做甜點  選一種甜點（蛋糕、冰淇淋、杯子蛋糕、甜甜圈、鬆餅、聖代），自由疊層、淋奶油、放配料，
+     做甜點  選一種甜點（蛋糕、冰淇淋、杯子蛋糕、甜甜圈、鬆餅、聖代、餅乾），自由疊層、淋奶油、放配料，
              🎉 慶祝、📷 存進「我的作品」，每種甜點各自記住做到一半的進度
      客人點餐  動物客人說「I want a pink cake with two cherries.」，照著做出來就上菜
 
@@ -134,7 +134,7 @@
   function categories() {
     const d = Data.dessert(cake.kind);
     const out = [{ id: 'base', name: d.name, emoji: d.tabs.base }];
-    if (d.holders) out.push({ id: 'holder', name: '容器', emoji: d.tabs.holder });
+    if (d.holders) out.push({ id: 'holder', name: d.holderName || '容器', emoji: d.tabs.holder });
     out.push({ id: 'cream', name: '奶油', emoji: d.tabs.cream });
     return out.concat(Data.TOPPING_GROUPS);
   }
@@ -543,7 +543,7 @@
   });
 
   /* ===== 選模式、選甜點畫面的示意圖 ===== */
-  const demoOf = (d) => Draw.scene(St.deserialize(d.demo, d.id));
+  const demoOf = (d) => Draw.scene(St.deserialize(d.demo, d.id), { view: Draw.DEMO_VIEW });
   document.getElementById('freeDemo').innerHTML = demoOf(Data.dessert('cake'));
   document.getElementById('orderDemo').innerHTML =
     '<span class="order-icon">' + Draw.iconTopping('cherry') + '</span><span class="order-icon">' + Draw.iconTopping('cherry') + '</span>';

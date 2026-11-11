@@ -167,7 +167,8 @@
         customer: pick(Data.CUSTOMERS, r).id,
         dessert: d.id,
         flavor: pick(d.flavors, r),
-        topping: pick(orderable, r).id,
+        // 「a pink cookie with two cookies」聽起來很怪：配料跟甜點同名的不出
+        topping: pick(orderable.filter(function (t) { return t.id !== d.id; }), r).id,
         count: 1 + Math.floor(r() * MAX_COUNT) % MAX_COUNT
       };
       if (!prev) break;

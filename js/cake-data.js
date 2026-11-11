@@ -1,4 +1,4 @@
-/* 甜點店的資料表：六種甜點、顏色、奶油、容器、配料、來點餐的動物客人。
+/* 甜點店的資料表：七種甜點、顏色、奶油、容器、配料、來點餐的動物客人。
 
    為什麼獨立一支：跟 stickers-data.js 同一個理由——資料表與程式／磁碟容易走鐘
    （客人圖檔路徑打錯就是破圖，唸的英文打錯不會報錯），切成純資料檔，
@@ -44,6 +44,8 @@
 
   var ALL_FLAVORS = FLAVORS.map(function (f) { return f.id; });
   var COLD_FLAVORS = ALL_FLAVORS.filter(function (id) { return id !== 'golden'; });
+  // 餅乾：烤出來的金黃色、巧克力排最前面，其他顏色是「加了色素的麵糰」
+  var COOKIE_FLAVORS = ['golden', 'chocolate'].concat(ALL_FLAVORS.filter(function (id) { return id !== 'golden' && id !== 'chocolate'; }));
 
   /* 淋在上面的東西。各甜點叫法不同（奶油／淋醬／糖霜），由 DESSERTS 的 creamWord 接在顏色後面唸 */
   var CREAMS = [
@@ -101,11 +103,23 @@
     { id: 'white', say: 'white cup', fill: '#FFF4DF', dark: '#E6D3B3' }
   ];
 
-  /* 六種甜點。
+  /* 餅乾的壓模形狀：佔「容器」那一格（state.holder），點了唸形狀的英文。
+     畫法在 cake-shapes.js 的 COOKIE_SHAPES，id 要對得上（check_cake.js 對帳）。 */
+  var COOKIE_CUTTERS = [
+    { id: 'heart', say: 'heart' },
+    { id: 'star', say: 'star' },
+    { id: 'circle', say: 'circle' },
+    { id: 'flower', say: 'flower' },
+    { id: 'bear', say: 'bear' },
+    { id: 'man', say: 'gingerbread man' }
+  ];
+
+  /* 七種甜點。
        word      點餐句子裡的名字（「I want a pink ice cream…」）
        maxTiers  疊幾層：冰淇淋三球、鬆餅五片、聖代杯四層；杯子蛋糕與甜甜圈只有一個，再點＝換顏色
        flavors   有哪些顏色可選
        holders   容器清單（沒有就不出現容器頁籤）；holder 是一開始的預設值
+       holderName  容器頁籤的中文名（餅乾的是「形狀」），沒寫就是「容器」
        creamWord 接在奶油顏色後面唸（「chocolate sauce」）
        tabs      材料匣頁籤的圖示
        color     選甜點畫面的卡片底色
@@ -146,6 +160,12 @@
       holders: null, holder: null, creamWord: 'cream',
       tabs: { base: '🍧', cream: '🍦' }, color: '#8EDB8A',
       demo: { tiers: ['pink', 'white', 'purple'], cream: 'white', toppings: ['cherry', 'wafer'] }
+    },
+    {
+      id: 'cookie', word: 'cookie', name: '餅乾', maxTiers: 1, flavors: COOKIE_FLAVORS,
+      holders: COOKIE_CUTTERS, holder: 'heart', holderName: '形狀', creamWord: 'icing',
+      tabs: { base: '🍪', holder: '🧸', cream: '🍦' }, color: '#E8A85C',
+      demo: { tiers: ['golden'], holder: 'bear', cream: null, toppings: ['bow'] }
     }
   ];
 
@@ -221,6 +241,7 @@
     PLATES: PLATES,
     CONES: CONES,
     WRAPPERS: WRAPPERS,
+    COOKIE_CUTTERS: COOKIE_CUTTERS,
     DESSERTS: DESSERTS,
     TOPPING_GROUPS: TOPPING_GROUPS,
     TOPPINGS: TOPPINGS,
