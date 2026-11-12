@@ -10,51 +10,132 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="icon" href="assets/icon-192.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body class="home">
 
-<!-- 裝飾大圓：左上黃、右下青，只是背景 -->
-<div class="deco deco-1"></div>
-<div class="deco deco-2"></div>
-
-<button id="musicBtn" class="icon-btn music-fab" title="背景音樂">🎵</button>
-<button id="speechBtn" class="icon-btn speech-fab" title="唸英文">🗣️</button>
-
-<h1 class="home-title">🌈 小小遊樂園 🌈</h1>
-
-<div class="menu">
-  <a class="menu-card puzzle-card" href="puzzle.html">
-    <span class="menu-emoji">🧩</span>
-    <span class="menu-label">拼圖</span>
-  </a>
-  <a class="menu-card coloring-card" href="coloring.html">
-    <span class="menu-emoji">🎨</span>
-    <span class="menu-label">著色</span>
-  </a>
-  <a class="menu-card words-card" href="words.html">
-    <span class="menu-emoji">🔤</span>
-    <span class="menu-label">單字</span>
-  </a>
-  <a class="menu-card stickers-card" href="stickers.html">
-    <span class="menu-emoji">🧸</span>
-    <span class="menu-label">貼紙</span>
-  </a>
-  <a class="menu-card cake-card" href="cake.html">
-    <span class="menu-emoji">🎂</span>
-    <span class="menu-label">甜點店</span>
-  </a>
-  <a class="menu-card tale-card" href="story.html">
-    <span class="menu-emoji">📖</span>
-    <span class="menu-label">故事書</span>
-  </a>
+<!-- 背景：天空、雲、草地，都是平的（不能按） -->
+<div class="scene" aria-hidden="true">
+  <span class="cloud c1"></span>
+  <span class="cloud c2"></span>
+  <span class="grass"></span>
 </div>
 
-<!-- 右下角的小版本號：iPad 實機驗證時用來確認主畫面 App 跑的是不是最新快取，不是給小孩看的 -->
-<div id="ver" class="ver-tag"></div>
+<header class="top">
+  <!-- 小熊把「現在要做什麼」唸出來，點泡泡再聽一次 -->
+  <div class="guide" data-guide="今ㄐㄧㄣ 天ㄊㄧㄢ 玩ㄨㄢˊ 什ㄕㄣˊ 麼˙ㄇㄜ"></div>
+  <span class="spacer"></span>
+  <!-- 大人的東西（音樂、唸英文、語言、版本）都收在這顆鎖後面，要按住兩秒 -->
+  <button id="parentBtn" type="button" class="adult" aria-label="大人專區（按住兩秒）"><i data-ic="lock"></i>大人</button>
+</header>
+
+<!-- 六個門：位置跟舊版一樣（拼圖、著色、單字／貼紙、甜點店、故事書），她不用重新認。
+     門上直接放那個遊戲裡的東西，不用讀字也知道是什麼。 -->
+<main class="doors">
+  <a class="door d-puzzle" href="puzzle.html" aria-label="拼圖">
+    <span class="win"><img src="assets/puzzle/rabbit.jpg" alt=""></span>
+    <span class="name" data-zy="拼ㄆㄧㄣ 圖ㄊㄨˊ"></span>
+  </a>
+  <a class="door d-coloring" href="coloring.html" aria-label="著色">
+    <span class="win paper">
+      <img class="fit" src="assets/lineart/panda-bamboo.png" alt="">
+      <span class="dabs"><b style="background:#FF5C5C"></b><b style="background:#FFD84D"></b><b style="background:#4AA8EE"></b></span>
+    </span>
+    <span class="name" data-zy="著ㄓㄨㄛˊ 色ㄙㄜˋ"></span>
+  </a>
+  <a class="door d-words" href="words.html" aria-label="單字">
+    <span class="win">
+      <img class="fit" src="assets/pictures/animals/duck.png" alt="">
+      <span class="tag">duck</span>
+    </span>
+    <span class="name" data-zy="單ㄉㄢ 字ㄗˋ"></span>
+  </a>
+  <a class="door d-stickers" href="stickers.html" aria-label="貼紙">
+    <span class="win">
+      <img class="st s1" src="assets/stickers/unicorn.png" alt="">
+      <img class="st s2" src="assets/stickers/rainbow.svg" alt="">
+      <img class="st s3" src="assets/stickers/princess.png" alt="">
+    </span>
+    <span class="name" data-zy="貼ㄊㄧㄝ 紙ㄓˇ"></span>
+  </a>
+  <a class="door d-cake" href="cake.html" aria-label="甜點店">
+    <span class="win">
+      <img class="st k1" src="assets/stickers/cake.svg" alt="">
+      <img class="st k2" src="assets/stickers/cupcake.svg" alt="">
+      <img class="st k3" src="assets/stickers/donut.svg" alt="">
+    </span>
+    <span class="name" data-zy="甜ㄊㄧㄢˊ 點ㄉㄧㄢˇ 店ㄉㄧㄢˋ"></span>
+  </a>
+  <a class="door d-story" href="story.html" aria-label="故事書">
+    <span class="win">
+      <img src="assets/story/bg/meadow.jpg" alt="">
+      <img class="st t1" src="assets/story/chars/tortoise-cheer.png" alt="">
+      <img class="st t2" src="assets/story/chars/hare-run.png" alt="">
+    </span>
+    <span class="name" data-zy="故ㄍㄨˋ 事ㄕˋ 書ㄕㄨ"></span>
+  </a>
+</main>
+
+<!-- 大人專區：按鈕故意做平的，跟小孩按的「浮起來」分開 -->
+<div id="parentSheet" class="parent" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="parentTitle">
+    <div class="sheet-head">
+      <div class="t">
+        <h1 id="parentTitle">大人專區</h1>
+        <span>首頁右上角的鎖要按住兩秒才會打開，小孩點一下不會進來。</span>
+      </div>
+      <button id="parentClose" type="button" class="adult" aria-label="關閉"><i data-ic="close"></i></button>
+    </div>
+
+    <div class="row">
+      <label class="t" for="pMusic"><b>背景音樂</b><span>三首歌輪流播，故事書那一頁不會播。</span></label>
+      <input class="sw" id="pMusic" type="checkbox">
+    </div>
+    <div class="row">
+      <label class="t" for="pSpeech"><b>自動唸英文</b><span>選顏色、拼完、貼貼紙時唸出英文。她自己按喇叭一樣會唸。</span></label>
+      <input class="sw" id="pSpeech" type="checkbox">
+    </div>
+    <div class="row">
+      <div class="t"><b>故事語言</b><span>中文是注音字幕，英文是一個字一格。</span></div>
+      <div class="seg" role="group" aria-label="故事語言">
+        <input type="radio" name="pLang" id="pLangZh" value="zh"><label for="pLangZh">中文</label>
+        <input type="radio" name="pLang" id="pLangEn" value="en"><label for="pLangEn">English</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="t"><b>單字卡的字</b><span>小寫比較像書上的字，先學小寫。</span></div>
+      <div class="seg en" role="group" aria-label="單字卡的字">
+        <input type="radio" name="pCase" id="pCaseLo" value="lower"><label for="pCaseLo">abc</label>
+        <input type="radio" name="pCase" id="pCaseUp" value="upper"><label for="pCaseUp">ABC</label>
+      </div>
+    </div>
+    <div class="row">
+      <label class="t" for="pListen"><b>單字只聽不看字</b><span>字卡藏起來，只留喇叭。</span></label>
+      <input class="sw" id="pListen" type="checkbox">
+    </div>
+    <div class="row">
+      <label class="t" for="pCakeListen"><b>甜點店點餐只聽不看圖</b><span>客人要什麼用聽的，做對才把圖翻出來。</span></label>
+      <input class="sw" id="pCakeListen" type="checkbox">
+    </div>
+    <div class="row">
+      <div class="t">
+        <b>版本 <span id="ver" class="ver"></span></b>
+        <span>下載新版時請停在首頁等它跑完，中斷了下次打開會接著抓。</span>
+      </div>
+      <div class="bar" id="verBarWrap" hidden>
+        <div class="track" role="progressbar" aria-label="新版下載進度" aria-valuemin="0" aria-valuemax="100"><div id="verBar"></div></div>
+        <span id="verPct" class="pct"></span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/kiosk.js"></script>
+<script src="js/speech.js"></script>
 <script src="js/music.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/home.js"></script>
 <script>
 /* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
    權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
@@ -73,7 +154,7 @@ if ('serviceWorker' in navigator) {
     location.reload();
   });
 }
-/* 右下角版本號：顯示「正在用的」SW 版本（問 SW 本人，不看 cache 名稱——新版一開始下載
+/* 版本號（現在收在大人專區裡）：顯示「正在用的」SW 版本（問 SW 本人，不看 cache 名稱——新版一開始下載
    就會建出空的 kids-vN，看名字會在還沒換好時就顯示新版號，2026-11-06 就這樣誤判過）。
    新版下載中會收到 sw-progress 廣播，顯示「v17 → v18 下載中 45%」，大人一看就知道要停在首頁等。 */
 (function () {
@@ -105,8 +186,14 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.addEventListener('message', (e) => {
     const d = e.data || {};
     if (d.type !== 'sw-progress' || !d.total || d.version === current) return;
-    extra = '→ ' + d.version + ' 下載中 ' + Math.floor(d.done * 100 / d.total) + '%';
+    const pct = Math.floor(d.done * 100 / d.total);
+    extra = '→ ' + d.version + ' 下載中 ' + pct + '%';
     show();
+    // 大人專區裡的進度條
+    document.getElementById('verBarWrap').hidden = false;
+    document.getElementById('verBar').style.width = pct + '%';
+    document.getElementById('verPct').textContent = pct + '%';
+    document.querySelector('#verBarWrap .track').setAttribute('aria-valuenow', String(pct));
   });
   if (navigator.serviceWorker.startMessages) navigator.serviceWorker.startMessages();
 })();

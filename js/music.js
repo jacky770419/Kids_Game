@@ -145,27 +145,28 @@ const Music = (() => {
   return { play, stop, toggle, isOn, get playing() { return playing; } };
 })();
 
-/* 自動接上頁面上的 🎵 按鈕（如果有的話）。手機瀏覽器規定要有使用者互動才能出聲，
-   所以如果偏好是「開」，就借用使用者在頁面上的第一次點擊悄悄把音樂啟動。 */
+/* 新版：🎵 開關收進首頁的大人專區，各頁不再有 #musicBtn。
+   手機瀏覽器規定要有使用者互動才能出聲，所以偏好是「開」的話，
+   就借用使用者在頁面上的第一次點擊悄悄把音樂啟動。
+   （舊版的 #musicBtn 如果還在就照舊接上，方便逐頁搬。） */
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('musicBtn');
-  if (!btn) return;
-
-  const sync = () => { btn.textContent = Music.playing ? '🎵' : '🔇'; };
-  btn.textContent = Music.isOn() ? '🎵' : '🔇';
-
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    Music.toggle();
-    sync();
-  });
+  const sync = () => { if (btn) btn.textContent = Music.playing ? '🎵' : '🔇'; };
+  if (btn) {
+    btn.textContent = Music.isOn() ? '🎵' : '🔇';
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      Music.toggle();
+      sync();
+    });
+  }
 
   if (Music.isOn()) {
     const startOnce = (e) => {
       if (e.target.closest && e.target.closest('#musicBtn')) return; // 按鈕自己的點擊交給上面處理，避免同一下觸控被算兩次
+      if (!Music.isOn()) return;   // 大人專區剛把它關掉
       Music.play();
       sync();
-      document.removeEventListener('pointerdown', startOnce);
     };
     document.addEventListener('pointerdown', startOnce, { once: true });
   }

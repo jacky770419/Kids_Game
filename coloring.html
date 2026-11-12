@@ -7,96 +7,88 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>著色 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/coloring.css">
 </head>
 <body class="coloring">
 
-<!-- ===== 選圖畫面：跟拼圖頁用同一套 .pic-grid / .pic-thumb 風格 ===== -->
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡。
+     著色中這一列會浮在紙的左上角、小熊收起來（css/coloring.css 的 .playing）。
+     上一層＝回到上一個畫面：著色中→選圖、作品檢視→關掉。 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="上一層" hidden><i data-ic="back"></i></button>
+  </div>
+  <div id="guide" class="guide" data-guide="選ㄒㄩㄢˇ 一ㄧˋ 張ㄓㄤ 來ㄌㄞˊ 著ㄓㄨㄛˊ 色ㄙㄜˋ"></div>
+</header>
+
+<!-- ===== 選圖畫面：左邊是圖（上面一列「我的作品」），右邊的盒子選種類 ===== -->
 <main id="selectScreen">
-  <header class="bar">
-    <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-    <span class="spacer"></span>
-    <div class="bar-title c-select-title">選一張來著色吧！</div>
-    <span class="spacer"></span>
-    <!-- 這裡刻意不放 🎵：music.js 只認一顆 #musicBtn，統一放在右側工具列 -->
-  </header>
-  <div class="c-select-scroll">
+  <div class="pick-scroll">
     <!-- 我的作品：一列橫向捲動的縮圖，一張都沒有時整區隱藏 -->
     <section id="artworkSection" hidden>
-      <div class="art-sec-title">🖼️ 我的作品</div>
+      <div class="art-sec-title"><i data-ic="image"></i><span data-zy="我ㄨㄛˇ 的˙ㄉㄜ 作ㄗㄨㄛˋ 品ㄆㄧㄣˇ"></span></div>
       <div id="artworkRow" class="artwork-row"></div>
     </section>
-    <!-- 分類頁籤：50 張圖分成動物／公主城堡／水果甜點／大張場景／其他／我的照片 -->
-    <div id="catTabs" class="cat-tabs"></div>
     <div id="picGrid" class="pic-grid"></div>
   </div>
+  <!-- 種類：全部／動物／公主城堡／水果甜點／車車／大張場景／其他／我的照片。
+       每一顆放一張那一類的線稿小圖，不用讀字（js/coloring.js 的 buildCatTabs） -->
+  <aside id="catTabs" class="box cats" aria-label="圖的種類"></aside>
 </main>
 
-<!-- ===== 遊戲畫面：左邊白色畫布 + 右邊木紋直立工具列 ===== -->
+<!-- ===== 著色中：左邊整塊是紙（平的），右邊的盒子放畫具、顏色、上一步、畫好了 ===== -->
 <main id="gameScreen" hidden>
 
-  <div id="svgHolder">
-    <div id="artWrap"></div>
+  <div class="paper">
+    <div id="svgHolder">
+      <div id="artWrap"></div>
+    </div>
+    <!-- 全部擦掉：紙的右上角一顆小的，要按住一秒（手掌掃到不會整張不見） -->
+    <button id="clearBtn" type="button" class="btn sm" aria-label="全部擦掉（按住）" disabled><i data-ic="trash"></i></button>
   </div>
 
-  <aside id="toolbar">
-    <!-- 上方：完成 / 存成圖片 -->
-    <div class="tb-row">
-      <button id="doneBtn" class="tb-sq tb-green" title="完成">✅</button>
-      <button id="saveBtn" class="tb-sq tb-blue" title="存成圖片">📷</button>
+  <aside id="toolbar" class="box">
+    <!-- 四種畫具：點一下就換。畫筆／蓋章／橡皮擦拿在手上時再點一次，旁邊跳出它的選項 -->
+    <div class="tools" role="group" aria-label="畫具">
+      <button id="fillBtn" type="button" class="btn tool" aria-label="倒顏料"><i data-ic="bucket"></i></button>
+      <button id="brushBtn" type="button" class="btn tool has-more" aria-label="畫筆（再按一次選筆和粗細）"><i data-ic="brush"></i></button>
+      <button id="stampBtn" type="button" class="btn tool has-more" aria-label="蓋章（再按一次選圖案和大小）"><i data-ic="stamp"></i></button>
+      <button id="eraserBtn" type="button" class="btn tool has-more" aria-label="橡皮擦（再按一次選大小）"><i data-ic="eraser"></i></button>
     </div>
 
-    <!-- 三顆大圓鈕：工具 / 顏色 / 橡皮擦 -->
-    <button id="toolBtn" class="tb-round" title="工具">
-      <span class="tb-inner" id="toolBtnIcon">🪣</span>
-    </button>
+    <!-- 她在學的 11 個顏色永遠攤開；第 12 格（彩虹）打開完整色盤與花紋 -->
+    <div id="swatches" class="swatches" role="group" aria-label="顏色"></div>
 
-    <button id="stampBtn" class="tb-round" title="蓋章">
-      <span class="tb-inner">⭐</span>
-    </button>
-
-    <button id="colorBtn" class="tb-round tb-color" title="顏色"></button>
-
-    <button id="eraserBtn" class="tb-round" title="橡皮擦">
-      <span class="tb-inner">🧽</span>
-    </button>
-
-    <span class="tb-gap"></span>
-
-    <!-- 音樂（id 必須是 musicBtn，js/music.js 會自動接上） -->
-    <div class="tb-row">
-      <button id="musicBtn" class="tb-sq tb-plain" title="背景音樂">🎵</button>
-      <button id="speechBtn" class="tb-sq tb-plain" title="唸英文">🗣️</button>
-    </div>
-
-    <!-- 底部：復原 / 全部清除 -->
-    <div class="tb-row">
-      <button id="undoBtn" class="tb-sq tb-red" title="復原">↩️</button>
-      <button id="clearBtn" class="tb-sq tb-yellow" title="全部清除">🗑️</button>
+    <!-- 盒子最下面永遠是：上一步＋綠色的畫好了 -->
+    <div class="box-foot">
+      <button id="undoBtn" type="button" class="btn" aria-label="上一步" disabled><i data-ic="undo"></i></button>
+      <button id="doneBtn" type="button" class="btn go" aria-label="畫好了" disabled><i data-ic="check"></i></button>
     </div>
   </aside>
 
-  <!-- 彈出面板：工具 -->
+  <!-- 彈出面板：畫筆的種類與粗細 -->
   <div id="toolPanel" class="panel" hidden>
     <span class="panel-arrow"></span>
-    <div id="toolList" class="tool-list"></div>
-    <div id="toolSizeRow" class="tool-size-row" hidden></div>
+    <div id="toolList" class="cell-row"></div>
+    <div id="toolSizeRow" class="cell-row sub" hidden></div>
   </div>
 
   <!-- 彈出面板：橡皮擦大小（獨立於畫筆的粗細，不共用 toolSizeRow） -->
   <div id="eraserPanel" class="panel" hidden>
     <span class="panel-arrow"></span>
-    <div id="eraserSizeRow" class="tool-size-row"></div>
+    <div id="eraserSizeRow" class="cell-row"></div>
   </div>
 
-  <!-- 彈出面板：印章圖案 -->
+  <!-- 彈出面板：印章圖案與大小 -->
   <div id="stampPanel" class="panel" hidden>
     <span class="panel-arrow"></span>
     <div id="stampGrid" class="stamp-grid"></div>
-    <div id="stampSizeRow" class="stamp-size-row"></div>
+    <div id="stampSizeRow" class="cell-row sub"></div>
   </div>
 
-  <!-- 彈出面板：色盤（56 色 + 6 種花紋） -->
+  <!-- 彈出面板：完整色盤（56 色 + 6 種花紋） -->
   <div id="colorPanel" class="panel" hidden>
     <span class="panel-arrow"></span>
     <div id="colorGrid" class="color-grid"></div>
@@ -107,38 +99,61 @@
 
 <input type="file" id="fileInput" accept="image/*" hidden>
 
-<!-- 作品檢視：點「我的作品」的縮圖打開。刪除要按兩次（小孩會亂按），
-     不用 confirm()——standalone 模式的 iPad 上體驗很差 -->
-<div id="artOverlay" class="overlay" hidden>
-  <img id="artImg" alt="我的作品">
-  <div class="overlay-row">
-    <button id="artSaveBtn" class="big-btn">📷 存起來</button>
-    <button id="artDelBtn" class="big-btn alt">🗑️ 刪除</button>
-    <button id="artCloseBtn" class="big-btn plain">關閉</button>
+<canvas id="confettiCanvas"></canvas>
+
+<!-- 完成畫面：她畫的那張是主角；兩個選擇都是圖示（繼續畫這張、換一張） -->
+<div id="doneOverlay" class="done" hidden>
+  <div class="done-art">
+    <span class="done-pic"><img id="donePic" alt="畫好的圖"></span>
+    <img class="done-bear" src="assets/stickers/bear.png" alt="">
   </div>
-  <div id="artConfirm" class="art-confirm" hidden>
-    <div class="art-confirm-txt">真的要刪掉嗎？</div>
-    <div class="overlay-row">
-      <button id="artDelYes" class="big-btn alt">對，刪掉</button>
-      <button id="artDelNo" class="big-btn">不要</button>
+  <div class="done-side">
+    <div class="done-title" data-zy="好ㄏㄠˇ 棒ㄅㄤˋ"></div>
+    <div class="done-row">
+      <button id="keepBtn" type="button" class="btn" aria-label="繼續畫這張"><i data-ic="brush"></i></button>
+      <button id="newPicBtn" type="button" class="btn go" aria-label="換一張圖"><i data-ic="grid"></i></button>
     </div>
   </div>
 </div>
 
-<div id="saveOverlay" class="overlay" hidden>
-  <img id="saveImg" alt="著色作品">
-  <div class="save-hint">長按圖片就可以存到相簿囉！</div>
-  <button id="closeSave" class="big-btn alt">關閉</button>
+<!-- 作品檢視：點「我的作品」的縮圖打開，左上的上一層關掉。
+     丟掉要按兩次（小孩會亂按）：垃圾桶 →「真的要丟掉嗎」→ ✗／✓。
+     不用 confirm()——standalone 模式的 iPad 上體驗很差，她也讀不懂。
+     存到相簿會跳出系統的分享選單（全是字），是大人做的事，所以是平的小按鈕。 -->
+<div id="artOverlay" class="overlay art-view" hidden>
+  <img id="artImg" alt="我的作品">
+  <div class="art-side">
+    <div id="artActions" class="art-actions">
+      <button id="artDelBtn" type="button" class="btn xl" aria-label="丟掉這張"><i data-ic="trash"></i></button>
+      <button id="artSaveBtn" type="button" class="adult" aria-label="存到相簿"><i data-ic="download"></i>存到相簿</button>
+    </div>
+    <div id="artConfirm" class="art-confirm" hidden>
+      <div class="art-confirm-txt" data-zy="真ㄓㄣ 的˙ㄉㄜ 要ㄧㄠˋ 丟ㄉㄧㄡ 掉ㄉㄧㄠˋ 嗎˙ㄇㄚ"></div>
+      <div class="overlay-row">
+        <button id="artDelNo" type="button" class="btn xl" aria-label="不要丟"><i data-ic="close"></i></button>
+        <button id="artDelYes" type="button" class="btn xl room" aria-label="對，丟掉"><i data-ic="check"></i></button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="processingOverlay" class="overlay" hidden>
-  <div class="win-title" style="font-size:34px;">✏️ 畫稿處理中...</div>
+<!-- 存圖提示：不支援系統分享的瀏覽器才會看到（長按圖片存檔），左上的上一層關掉 -->
+<div id="saveOverlay" class="overlay save-view" hidden>
+  <img id="saveImg" alt="著色作品">
+  <div class="save-hint" data-zy="長ㄔㄤˊ 按ㄢˋ 圖ㄊㄨˊ 片ㄆㄧㄢˋ 存ㄘㄨㄣˊ 到ㄉㄠˋ 相ㄒㄧㄤˋ 簿ㄅㄨˋ"></div>
+</div>
+
+<!-- 照片轉線稿要一兩秒：一支在動的鉛筆，告訴她「在準備了」 -->
+<div id="processingOverlay" class="overlay busy" hidden>
+  <div class="busy-ic"><i data-ic="pencil"></i></div>
+  <div class="busy-txt" data-zy="準ㄓㄨㄣˇ 備ㄅㄟˋ 中ㄓㄨㄥ"></div>
 </div>
 
 <script src="js/kiosk.js"></script>
 <script src="js/sound.js"></script>
 <script src="js/speech.js"></script>
 <script src="js/music.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/lineart-data.js"></script>
 <script src="js/lineart-animals.js"></script>
 <script src="js/lineart-fantasy.js"></script>

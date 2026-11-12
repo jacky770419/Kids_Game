@@ -1,0 +1,243 @@
+/* 首頁：天空、草地、六個門 */
+body.home {
+  display: flex;
+  flex-direction: column;
+  background: #CDEBFF;
+}
+
+/* --- 背景（平的） --- */
+.scene { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+.scene .grass {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  bottom: 0;
+  height: 30%;
+  background: #9BDB6A;
+  border-radius: 50% 50% 0 0 / 70px 70px 0 0;
+}
+.scene .cloud {
+  position: absolute;
+  height: 52px;
+  border-radius: 26px;
+  background: #fff;
+  opacity: .85;
+}
+.scene .cloud::before, .scene .cloud::after {
+  content: '';
+  position: absolute;
+  bottom: 14px;
+  border-radius: 50%;
+  background: #fff;
+}
+.scene .cloud::before { left: 16%; width: 44%; aspect-ratio: 1; }
+.scene .cloud::after { right: 14%; width: 34%; aspect-ratio: 1; }
+.scene .c1 { width: 170px; left: 46%; top: 34px; }
+.scene .c2 { width: 120px; right: 16%; top: 96px; }
+
+.home .top { position: relative; padding-bottom: 6px; align-items: flex-start; }
+.home .guide-bear { height: 128px; margin-top: -6px; }
+.home .guide { align-items: center; }
+
+/* --- 六個門 --- */
+.doors {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 36px 40px;
+  padding: 10px calc(48px + var(--sr)) calc(40px + var(--sb)) calc(48px + var(--sl));
+}
+
+.door {
+  --c: var(--room);
+  --d: var(--lip);
+  --t: var(--tint);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-height: 0;
+  padding: 14px 14px 12px;
+  border-radius: 40px;
+  background: var(--c);
+  box-shadow: 0 12px 0 var(--d);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.door:active { transform: translateY(9px); box-shadow: 0 3px 0 var(--d); }
+
+.d-puzzle   { --c: #22C3B6; --d: #14968B; --t: #D8F6F2; }
+.d-coloring { --c: #FF5C5C; --d: #D63C43; --t: #FFE4E1; }
+.d-words    { --c: #9A7BF5; --d: #7355D1; --t: #ECE5FF; }
+.d-stickers { --c: #FFA228; --d: #D97F06; --t: #FFEDD0; }
+.d-cake     { --c: #FF7FB0; --d: #DB5890; --t: #FFE3EE; }
+.d-story    { --c: #4AA8EE; --d: #2B82C9; --t: #DCEEFF; }
+
+/* 門上的窗：那個遊戲裡真的東西 */
+.door .win {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border-radius: 28px;
+  background: var(--t);
+  overflow: hidden;
+}
+.door .win.paper { background: #fff; }
+.door .win > img:not(.st) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.door .win > img.fit { object-fit: contain; padding: 6px; }
+
+.door .name {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 18px 6px 22px;
+  border-radius: 22px;
+  background: #fff;
+  font-size: 40px;
+  line-height: 1;
+  flex: none;
+}
+
+/* 著色：角落三坨顏料 */
+.door .dabs { position: absolute; right: 10px; bottom: 10px; display: flex; gap: 6px; }
+.door .dabs b { width: 26px; height: 26px; border-radius: 50%; }
+/* 單字：圖旁邊一張小字卡 */
+.door .tag {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 2px 14px 6px;
+  border-radius: 14px;
+  background: #fff;
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+}
+/* 貼紙、甜點、故事：幾張圖疊在窗裡 */
+.door .st { position: absolute; object-fit: contain; }
+.door .s1 { left: 4%; bottom: 2%; height: 86%; transform: rotate(-8deg); }
+.door .s2 { right: 6%; top: 6%; height: 48%; transform: rotate(8deg); }
+.door .s3 { right: 4%; bottom: -4%; height: 62%; transform: rotate(6deg); }
+.door .k1 { left: 50%; bottom: 4%; height: 88%; transform: translateX(-50%); }
+.door .k2 { left: 4%; bottom: 4%; height: 46%; transform: rotate(-8deg); }
+.door .k3 { right: 4%; bottom: 6%; height: 40%; transform: rotate(10deg); }
+.door .t1 { left: 12%; bottom: 4%; height: 62%; }
+.door .t2 { right: 8%; bottom: 6%; height: 72%; }
+
+@media (orientation: portrait) {
+  .doors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 30px 28px;
+    padding-left: calc(28px + var(--sl));
+    padding-right: calc(28px + var(--sr));
+  }
+  .scene .grass { height: 22%; }
+}
+@media (max-height: 620px) {
+  .home .guide-bear { height: 96px; }
+  .door .name { font-size: 30px; }
+  .doors { gap: 26px 28px; }
+}
+
+/* --- 大人專區 --- */
+.parent {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(51, 39, 79, .5);
+}
+.sheet {
+  width: min(720px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 28px 40px 16px;
+  border-radius: 36px;
+  background: #fff;
+}
+.sheet-head { display: flex; align-items: center; gap: 16px; padding-bottom: 18px; }
+.sheet-head .t { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.sheet-head h1 { font-weight: 400; font-size: 34px; line-height: 1.2; }
+.sheet-head .t span { font-size: 16px; color: var(--muted); }
+.sheet .adult { width: 64px; height: 64px; padding: 0; border-radius: 20px; background: var(--line); color: var(--ink); }
+.sheet .adult .ic { width: 30px; height: 30px; }
+
+.sheet .row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 78px;
+  padding: 10px 0;
+  border-top: 2px solid var(--line);
+}
+.sheet .row .t { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.sheet .row .t b { font-weight: 400; font-size: 24px; line-height: 1.2; }
+.sheet .row .t > span { font-size: 16px; line-height: 1.4; color: var(--muted); }
+.sheet .ver { font-family: var(--num); font-weight: 500; }
+
+.sw {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 76px;
+  height: 44px;
+  border-radius: 22px;
+  background: #C9C3DB;
+  position: relative;
+  cursor: pointer;
+  flex: none;
+  transition: background .15s ease;
+}
+.sw::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  transition: left .15s ease;
+}
+.sw:checked { background: var(--go); }
+.sw:checked::after { left: 37px; }
+
+.seg { display: flex; padding: 4px; border-radius: 18px; background: var(--line); flex: none; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 104px;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 14px;
+  font-size: 19px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.seg.en label { font-family: var(--en); }
+.seg input:checked + label { background: #fff; color: var(--ink); box-shadow: 0 2px 0 #C9C3DB; }
+.sw:focus-visible, .seg input:focus-visible + label, .adult:focus-visible, .btn:focus-visible, .door:focus-visible {
+  outline: 4px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.sheet .bar { width: 216px; display: flex; align-items: center; gap: 12px; flex: none; }
+.sheet .track { flex: 1; height: 14px; border-radius: 7px; background: var(--line); overflow: hidden; }
+.sheet #verBar { width: 0; height: 100%; border-radius: 7px; background: #4AA8EE; }
+.sheet .pct { font-family: var(--num); font-weight: 500; font-size: 20px; font-variant-numeric: tabular-nums; }

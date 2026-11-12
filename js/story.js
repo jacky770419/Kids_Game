@@ -9,8 +9,12 @@
    中英文切換：每個故事兩種語言各錄一份（文字、時間、音檔都分開），分鏡共用——
    分鏡是照「第幾句開始後幾秒」寫的，兩種語言句數一樣，英文那句比較長就照比例拉長。
 
-   沒有自動翻頁：一頁念完右邊的 ▶ 會跳，她可以先點角色玩，自己決定什麼時候翻。
-   翻頁一定是她按的，所以每頁的 audio.play() 都在手勢裡，iPad 不會擋。 */
+   沒有自動翻頁：一頁念完右邊的「下一頁」變綠色跳一下，她可以先點角色玩，自己決定什麼時候翻。
+   翻頁一定是她按的，所以每頁的 audio.play() 都在手勢裡，iPad 不會擋。
+
+   畫面（新版「浮起來的才能按」，樣式在 css/story.css，共用的在 css/base.css、js/ui.js）：
+     舞台、字幕板是平的；按鈕都在左右兩側（回家、換故事、上一頁｜這一頁再聽一次、下一頁）。
+     語言不在這一頁切：首頁的大人專區寫 localStorage kidsStoryLang，這裡載入時讀。 */
 (() => {
   'use strict';
   const SCRIPT = window.STORY_SCRIPT;
@@ -33,7 +37,10 @@
   const stPrev = $('stPrev');
   const stNext = $('stNext');
   const endOverlay = $('endOverlay');
-  const langBtn = $('langBtn');
+  const endCover = $('endCover');
+  const guideEl = $('guide');
+  const guide = (guideEl && guideEl.__uiGuide) || { set() {} };
+  const icon = (name) => (window.UI ? window.UI.icon(name) : '');
 
   const audio = new Audio();
   audio.preload = 'auto';
@@ -48,6 +55,8 @@
   let cueAt = 0;          // 下一筆還沒觸發的分鏡
   let raf = 0;
   let shownChunk = null;  // 字幕目前顯示的那一段
+  let shownLine = null;   // …以及它是哪一句的（轉向、改視窗大小時要重排）
+  let lastT = 0;          // 畫面目前推進到第幾秒
   let talking = null;     // 正在說話的角色元素
   let done = false;       // 這一頁念完了
   let pageLang = 'zh';    // 這一頁實際播的語言（選了英文但這個故事沒錄英文時是 zh）
@@ -60,10 +69,33 @@
   try { if (localStorage.getItem(LANG_KEY) === 'en') lang = 'en'; } catch (e) { /* 讀不到就用中文 */ }
   const pageOf = (s, i) => s.pages[i][lang] || s.pages[i].zh;
   const langOf = (s, i) => (s.pages[i][lang] ? lang : 'zh');
+  /* 畫面上給她看的字只有這兩句（按鈕都是圖示）。中文一律注音，寫法見 js/ui.js。 */
+  const LINE_PICK = '選ㄒㄩㄢˇ 一ㄧˊ 個˙ㄍㄜ 故ㄍㄨˋ 事ㄕˋ';
   const TEXT = {
-    zh: { end: '🌙 說完了！', again: '🔁 再聽一次', other: '📚 換一個故事' },
-    en: { end: '🌙 The End!', again: '🔁 Again', other: '📚 More stories' }
+    zh: { end: '說ㄕㄨㄛ 完ㄨㄢˊ 了˙ㄌㄜ' },
+    en: { end: 'The end' }
   };
+
+  /* 聽完過的故事：選故事畫面右上角給一顆星星。只記故事 id，存不了就算了（星星不影響聽故事）。 */
+  const DONE_KEY = 'kidsStoryDone';
+  let doneSet = new Set();
+  try { doneSet = new Set(JSON.parse(localStorage.getItem(DONE_KEY) || '[]')); } catch (e) { /* 存檔壞了就當沒聽過 */ }
+  const cards = new Map();
+  /* 星星用 base.css 的 .badge-star（一個小 span），卡片本身的 class 叫 heard 不叫 done：
+     base.css 的 .done 是「完成畫面」（position: fixed 蓋滿整個畫面），卡片掛上 done 會整張變成全螢幕。 */
+  function addStar(card) {
+    if (!card || card.classList.contains('heard')) return;
+    card.classList.add('heard');
+    const star = document.createElement('span');
+    star.className = 'badge-star';
+    star.setAttribute('aria-hidden', 'true');
+    card.appendChild(star);
+  }
+  function markDone(id) {
+    doneSet.add(id);
+    try { localStorage.setItem(DONE_KEY, JSON.stringify(Array.from(doneSet))); } catch (e) { /* 略過 */ }
+    addStar(cards.get(id));
+  }
 
   const click = () => { if (window.Sound) Sound.click(); };
   const pop = () => { if (window.Sound) Sound.pop(); };
@@ -86,30 +118,29 @@
     return out;
   }
 
-  // 「˙ㄉㄜ」「ㄒㄧㄥˊ」拆成：輕聲的點、符號、聲調
-  function zyNode(z) {
+  /* 一個字＝國字＋右邊直排的注音，跟全站同一個結構（css/base.css 的 .zy、js/ui.js 的 UI.zy）：
+     <span class="zy">那<i>ㄋㄚ<u>ˋ</u></i></span>。二三四聲的調號放注音右側中間，輕聲的 ˙ 留在最上面。 */
+  function zyCell(han, z) {
     const el = document.createElement('span');
-    el.className = 'zy';
-    let s = z;
-    if (s[0] === '˙') { el.classList.add('light'); s = s.slice(1); }
+    el.className = 'zy ch';
+    let ph = z;
     let tone = '';
-    if ('ˊˇˋ'.indexOf(s[s.length - 1]) >= 0) { tone = s[s.length - 1]; s = s.slice(0, -1); }
-    const col = document.createElement('span');
-    col.className = 'zy-col n' + s.length;
-    col.textContent = s;
-    el.appendChild(col);
+    if ('ˊˇˋ'.indexOf(ph[ph.length - 1]) >= 0) { tone = ph[ph.length - 1]; ph = ph.slice(0, -1); }
+    el.appendChild(document.createTextNode(han));
+    const col = document.createElement('i');
+    col.textContent = ph;
     if (tone) {
-      const t = document.createElement('span');
-      t.className = 'zy-tone';
+      const t = document.createElement('u');
       t.textContent = tone;
-      el.appendChild(t);
+      col.appendChild(t);
     }
+    el.appendChild(col);
     return el;
   }
 
   // 把一句切成一段一段顯示（逗號、句號處切，太短的併起來），每段記得第一個字是全句的第幾個字
-  const CH_W = 1.6;      // 一個帶注音的字有多寬（以字高為單位，跟 story.css 的 .zy 寬度對應）
-  const LINE_CAP = 16;   // 字幕一行放得下多少單位
+  const CH_W = 1.6;      // 一個帶注音的字有多寬（標點算 1；只用來比長短，實際放不放得下是量出來的）
+  const LINE_CAP = 16;   // 一段最多多少單位（字幕板放得下兩行，一段大約十個字）
   const PUNCT = /[，。！？、…—]/;
   const widthOf = (t) => [...t].reduce((n, c) => n + (PUNCT.test(c) ? 1 : CH_W), 0);
   function chunksOf(text) {
@@ -125,35 +156,31 @@
     return out;
   }
 
-  // 回傳每一格 { el, i }：i＝這一格的第一個字元在這一段裡是第幾個（亮字時拿去查時間）
+  // 回傳每一格 { el, i, pu }：i＝這一格的第一個字元在這一段裡是第幾個（亮字時拿去查時間）；pu＝標點
   function renderText(target, text, zy, from) {
     const cells = [];
     for (let i = 0; i < text.length; i++) {
       const z = zy[from + i];
-      const cell = document.createElement('span');
-      if (z) {
-        cell.className = 'ch';
-        const hz = document.createElement('span');
-        hz.className = 'hz';
-        hz.textContent = text[i];
-        cell.appendChild(hz);
-        cell.appendChild(zyNode(z));
-      } else {
+      let cell;
+      if (z) cell = zyCell(text[i], z);
+      else {
+        cell = document.createElement('span');
         cell.className = 'pu';
         cell.textContent = text[i];
       }
       target.appendChild(cell);
-      cells.push({ el: cell, i: i });
+      cells.push({ el: cell, i: i, pu: !z });
     }
     return cells;
   }
 
   /* 英文字幕：一個字一格，念到那個字整個字亮起來。
-     分段先照標點切、短的併起來；沒有標點的長句（例如 52 個字元的一整句）從最靠近中間的空白對半切，
-     不然整行要縮到六成才塞得下。稍微超過一點（兩成以內）就整行縮小，不切。 */
+     分段先照標點切、短的併起來（併到一行的量 EN_CAP 為止）。一段在字幕板上排成一行或兩行（見 showChunk），
+     所以沒有標點的長句只要兩行放得下（EN_TWO）就整句一起出來；再長才從最靠近中間的空白對半切。 */
   const EN_CAP = 34;
+  const EN_TWO = 58;
   function splitLong(text, from, out) {
-    if (text.length <= EN_CAP * 1.2) { out.push({ text: text, from: from }); return; }
+    if (text.trim().length <= EN_TWO) { out.push({ text: text, from: from }); return; }
     const mid = text.length / 2;
     let cut = -1;
     for (let i = 1; i < text.length - 1; i++) {
@@ -203,11 +230,102 @@
     });
   }
 
+  const ONE_LINE_MIN = 0.86;   // 字幕只要縮一點點（到 86%）就放得下，就不為了它多折一行
+
+  /* 一段太長、要排成兩行時從哪裡斷（回傳第二行第一個字元的位置，沒有合適的地方回傳 -1）。
+     不能折出孤字：兩行都至少兩個字（英文至少六個字元）。
+     中文沒有空白，斷在哪裡要自己挑，每個位置算一個分數，挑最低的：
+       標點後面最好（0 分）；詞和詞之間其次（Intl.Segmenter 分的詞，1 分）；詞的中間最差（3 分）；
+       角色的名字、輕聲詞、「木頭屋」這種不能拆（再加 6 分）；
+       「的、了、裡、邊」這種黏著前面的字不放行首，「在、把、一、很」這種黏著後面的字不放行尾（各加 3 分）；
+       比較長的那一行超過 cap（一行放得下的量）要縮字：縮一點點沒關係，要縮很多就罰得很重。 */
+  const seg = (typeof Intl !== 'undefined' && Intl.Segmenter) ? new Intl.Segmenter('zh-Hant', { granularity: 'word' }) : null;
+  const TAIL = /[的得地了著過們子呢吧嗎啊呀囉喔邊裡上下中不]/;
+  const HEAD = /[在把和一好很也都就還小大要沒]/;
+  const KEEP = Object.keys(Data.VOICES).filter((w) => w !== '旁白')
+    .concat(Object.keys(Data.ZY_PHRASES), ['稻草屋', '木頭屋', '磚塊屋']);
+  function insideWord(text) {
+    const inside = new Set();
+    KEEP.forEach((w) => {
+      let i = text.indexOf(w);
+      while (i >= 0) {
+        for (let k = 1; k < w.length; k++) inside.add(i + k);
+        i = text.indexOf(w, i + w.length);
+      }
+    });
+    return inside;
+  }
+  function breakAt(text, en, cap) {
+    const size = en ? (t) => t.trim().length : widthOf;
+    const body = en ? (t) => t.trim().length >= 6 : (t) => [...t].filter((c) => !PUNCT.test(c)).length >= 2;
+    const edges = new Set();
+    if (!en && seg) { for (const p of seg.segment(text)) edges.add(p.index); }
+    const inside = en ? null : insideWord(text);
+    const total = size(text);
+    let best = -1;
+    let bestCost = Infinity;
+    for (let i = 1; i < text.length; i++) {
+      const prev = text[i - 1];
+      if (en ? prev !== ' ' : PUNCT.test(text[i])) continue;       // 英文只在空白後面斷；中文的標點不放行首
+      const a = text.slice(0, i);
+      const b = text.slice(i);
+      if (!body(a) || !body(b)) continue;
+      let pen = 0;
+      if (en) {
+        // 標點後面最好；不要把 the、to 這種字留在行尾
+        pen = /[,.!?…—]\s*$/.test(a) ? 0 : total * (/\b(a|an|the|to|of|and|in|on|at|is)\s*$/i.test(a) ? 0.2 : 0.08);
+      }
+      else if (!PUNCT.test(prev)) {
+        pen = (edges.has(i) ? 1 : 3) + (inside.has(i) ? 6 : 0) + (TAIL.test(text[i]) ? 3 : 0) + (HEAD.test(prev) ? 3 : 0);
+      }
+      const longer = Math.max(size(a), size(b));
+      const cost = Math.max(0, longer - cap) * 0.6 + Math.max(0, longer - cap / ONE_LINE_MIN) * 3 +
+        pen + Math.abs(size(a) - total / 2) * 0.1;
+      if (cost < bestCost) { bestCost = cost; best = i; }
+    }
+    return best;
+  }
+
+  /* 把字幕縮到剛好放進字幕板：先用原本的字級排，量出來太寬或太高就整段等比例縮小（--k）。
+     回傳用了多少倍。字幕不可以超出字幕板，也不可以被切掉。 */
+  function fitCaption() {
+    const box = captionEl.querySelector('.cap-text');
+    const lines = captionEl.querySelector('.cap-lines');
+    if (!box || !lines) return 1;
+    lines.style.setProperty('--k', '1');
+    const need = lines.getBoundingClientRect();
+    const room = box.getBoundingClientRect();
+    if (!need.width || !need.height || !room.width || !room.height) return 1;
+    const k = Math.min(1, room.width / need.width * 0.985, room.height / need.height * 0.985);
+    lines.style.setProperty('--k', k.toFixed(3));
+    return k;
+  }
+
+  // 把一段排進 lines：cut＜0＝一行；否則第二行從第 cut 個字元開始
+  function fillLines(lines, ln, chunk, cut) {
+    const en = pageLang === 'en';
+    const parts = cut > 0 ? [[0, cut], [cut, chunk.text.length]] : [[0, chunk.text.length]];
+    const cells = [];
+    lines.innerHTML = '';
+    parts.forEach(([a, b]) => {
+      const row = document.createElement('span');
+      row.className = 'cap-line';
+      const text = chunk.text.slice(a, b);
+      const got = en ? renderWords(row, text) : renderText(row, text, ln.zy, chunk.from + a);
+      got.forEach((c) => { c.i += a; cells.push(c); });
+      lines.appendChild(row);
+    });
+    return cells;
+  }
+
   function showChunk(ln, chunk) {
     shownChunk = chunk;
+    shownLine = ln;
     captionEl.innerHTML = '';
+    const en = pageLang === 'en';
     const voice = Data.VOICES[ln.who] || {};
-    captionEl.style.setProperty('--who', voice.color || '#fff');
+    captionEl.style.setProperty('--who', voice.color || '#FFD84D');
+    // 誰在說話：圓框裡放那個角色的臉；旁白是一本書（線條圖示）
     const face = document.createElement('span');
     face.className = 'cap-face';
     const sprite = voice.actor && Data.SPRITES[voice.actor];
@@ -215,22 +333,32 @@
     else if (sprite) {
       const first = sprite[Object.keys(sprite)[0]];
       face.innerHTML = '<img alt="" draggable="false" src="' + first.src + '">';
-    } else face.textContent = '📖';
-    captionEl.appendChild(face);
-    const line = document.createElement('span');
-    // 沒有標點可切的長句整段縮小一點，永遠只有一行，舞台才不會被字幕擠得忽大忽小
-    if (pageLang === 'en') {
-      line.className = 'cap-line en';
-      line.style.setProperty('--k', Math.min(1, EN_CAP / chunk.text.trim().length).toFixed(3));
-      chunk.cells = renderWords(line, chunk.text);
     } else {
-      line.className = 'cap-line';
-      line.style.setProperty('--k', Math.min(1, LINE_CAP / widthOf(chunk.text)).toFixed(3));
-      chunk.cells = renderText(line, chunk.text, ln.zy, chunk.from);
+      face.classList.add('narr');
+      face.innerHTML = icon('book');
     }
-    captionEl.appendChild(line);
+    captionEl.appendChild(face);
+    const box = document.createElement('span');
+    box.className = 'cap-text';
+    const lines = document.createElement('span');
+    lines.className = 'cap-lines' + (en ? ' en' : '');
+    box.appendChild(lines);
+    captionEl.appendChild(box);
+
+    // 先排成一行；要縮很多才放得下就改成兩行（兩行還是太長才縮字）
+    chunk.cells = fillLines(lines, ln, chunk, -1);
+    const k1 = fitCaption();
+    if (k1 < ONE_LINE_MIN) {
+      const size = en ? chunk.text.trim().length : widthOf(chunk.text);
+      const cut = breakAt(chunk.text, en, size * k1);
+      if (cut > 0) {
+        chunk.cells = fillLines(lines, ln, chunk, cut);
+        if (fitCaption() < k1) { chunk.cells = fillLines(lines, ln, chunk, -1); fitCaption(); }
+      }
+    }
   }
 
+  /* 念到哪個字：念過的字是深色（.on），還沒念到的淡一點，正在念的那個字底色變黃（.now）。 */
   function updateCaption(t) {
     let ln = null;
     for (let i = 0; i < page.lines.length; i++) if (t >= page.lines[i].s - 0.05) ln = page.lines[i];
@@ -238,10 +366,15 @@
     let chunk = ln.chunks[0];
     ln.chunks.forEach((c) => { if (t >= c.s - 0.05) chunk = c; });
     if (chunk !== shownChunk) showChunk(ln, chunk);
+    let now = null;
     chunk.cells.forEach((cell) => {
       const at = ln.t[chunk.from + cell.i];
-      cell.el.classList.toggle('on', at !== undefined && t >= at - 0.03);
+      const on = at !== undefined && t >= at - 0.03;
+      cell.el.classList.toggle('on', on);
+      if (on && !cell.pu) now = cell;
     });
+    const speaking = t < ln.e + 0.12 && !audio.ended;   // 這一句念完（或整頁念完）黃色就收起來
+    chunk.cells.forEach((cell) => { cell.el.classList.toggle('now', speaking && cell === now); });
     return ln;
   }
 
@@ -465,6 +598,7 @@
   // 把畫面推進到第 t 秒：該觸發的分鏡、字幕、誰在說話。重複呼叫沒有副作用
   function step(t) {
     if (!page) return;
+    lastT = t;
     while (cueAt < cues.length && cues[cueAt].time <= t) fire(cues[cueAt++]);
     setTalking(updateCaption(t), t);
     if (!done && (audio.ended || t >= page.dur - 0.02)) pageDone();
@@ -484,26 +618,43 @@
     done = true;
     while (cueAt < cues.length) fire(cues[cueAt++]);
     setTalking(null, 0);
-    stNext.classList.add('pulse');
+    // 念完了：「下一頁」從白色變綠色、小跳一下（綠色＝可以往下走了；沒念完也能按，只是不提示）
+    stNext.classList.add('go', 'ready');
   }
 
   /* ---------- 翻頁 ---------- */
 
+  /* 算舞台多大（3:2），並把 --u（舞台寬的 1%）設在 <html> 上——舞台裡的東西、字幕板、字幕字級都用它當單位。
+     橫向：左右各一排按鈕，舞台在中間、字幕板（高＝舞台寬的 1/4）在舞台下面，兩個一起要放得下。
+     直向：舞台整排寬；翻頁鈕在字幕板的左右兩邊，但不能低於畫面高度的 70%（下面是手腕會壓到的地方），
+           所以舞台的高度要讓出位置。 */
+  const CAP_K = 0.25;
   function layout() {
-    const wrap = $('stageWrap');
-    const cs = getComputedStyle(wrap);
-    const gap = parseFloat(cs.columnGap) || 0;
-    // 左右各一顆翻頁鈕＋間距＋內距，再留 14px 給舞台和按鈕的硬陰影
-    const w = wrap.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight)
-      - 2 * (stPrev.offsetWidth + gap) - 14;
-    // 高度：整個畫面扣掉字幕（最高 101px）與它上下的間距；舞台＋字幕一起在畫面中間，
-    // 直放時字幕才會貼著舞台，不會掉到螢幕最下面
-    const h = playScreen.clientHeight - 101 - 32 - 12;
+    const cs = getComputedStyle(playScreen);
+    const px = (v) => parseFloat(v) || 0;
+    const colGap = px(cs.columnGap);
+    const rowGap = px(cs.rowGap);
+    const w = playScreen.clientWidth - px(cs.paddingLeft) - px(cs.paddingRight);
+    const h = playScreen.clientHeight - px(cs.paddingTop) - px(cs.paddingBottom);
     if (w <= 0 || h <= 0) return;
-    const sw = Math.floor(Math.min(w, h * 1.5));
+    const btnH = stPrev.offsetHeight + 8;   // 按鈕＋下面那條底邊
+    let sw;
+    if (window.matchMedia('(orientation: portrait)').matches) {
+      const top = playScreen.getBoundingClientRect().top + px(cs.paddingTop);
+      const maxH = Math.min(window.innerHeight * 0.7 - top - rowGap - btnH, h - rowGap - Math.max(btnH, 136));
+      sw = Math.min(w, maxH * 1.5);
+    } else {
+      sw = Math.min(w - 2 * (stPrev.offsetWidth + colGap), (h - rowGap) / (1 / 1.5 + CAP_K));
+    }
+    sw = Math.floor(Math.max(sw, 240));
     stage.style.width = sw + 'px';
     stage.style.height = Math.floor(sw / 1.5) + 'px';
     document.documentElement.style.setProperty('--u', (sw / 100) + 'px');
+    // 字幕板的寬度跟著變了：目前這一段重新排一次
+    if (page && shownChunk && shownLine) {
+      showChunk(shownLine, shownChunk);
+      updateCaption(lastT);
+    }
   }
 
   /* 分鏡的 at 是照中文錄音調的「這一句開始後幾秒」。別的語言同一句長度不同，
@@ -536,6 +687,8 @@
     fxEl.innerHTML = '';
     captionEl.innerHTML = '';
     shownChunk = null;
+    shownLine = null;
+    lastT = 0;
     talking = null;
     bgEl.style.backgroundImage = 'url("' + plan.bg + '")';
     setTint(plan.tint);
@@ -547,8 +700,9 @@
     cueAt = 0;
 
     [...dotsEl.children].forEach((d, k) => d.classList.toggle('on', k === i));
-    stPrev.classList.toggle('dim', i === 0);
-    stNext.classList.remove('pulse');
+    dotsEl.setAttribute('aria-label', '第 ' + (i + 1) + ' 頁，共 ' + story.pages.length + ' 頁');
+    stPrev.disabled = i === 0;                 // 第一頁沒有上一頁：灰的、平的
+    stNext.classList.remove('go', 'ready');    // 還沒念完：白色
     stage.classList.remove('turn');
     if (silent) return;
     void stage.offsetWidth;
@@ -563,7 +717,7 @@
   function play() {
     const p = audio.play();
     if (p && typeof p.catch === 'function') {
-      // 被瀏覽器擋下來（沒有手勢）：讓 🔁 跳，按了就會開始
+      // 被瀏覽器擋下來（沒有手勢）：讓「再聽一次」變黃色跳，按了就會開始
       p.catch(() => replayBtn.classList.add('pulse'));
     }
     if (!raf) raf = requestAnimationFrame(tick);
@@ -591,13 +745,14 @@
     story = SCRIPT.stories.find((s) => s.id === id);
     staging = Data.STAGING[id];
     if (!story || !staging) return;
+    if (window.Speech) window.Speech.cancel();   // 小熊泡泡還在念就停下來，不要跟故事疊在一起
     selectScreen.hidden = true;
     playScreen.hidden = false;
     backBtn.hidden = false;
     replayBtn.hidden = false;
     endOverlay.hidden = true;
+    document.body.classList.add('playing');     // 回家／換故事變成左邊一直排、小熊收起來（css/story.css）
     dotsEl.innerHTML = story.pages.map(() => '<i></i>').join('');
-    dotsEl.hidden = false;
     layout();
     if (shot) return;
     preload(staging.pages[0]);
@@ -609,18 +764,30 @@
     raf = 0;
     audio.pause();
     story = null;
+    page = null;
     playScreen.hidden = true;
     selectScreen.hidden = false;
     backBtn.hidden = true;
     replayBtn.hidden = true;
-    dotsEl.hidden = true;
     endOverlay.hidden = true;
+    document.body.classList.remove('playing');
+    guide.set(LINE_PICK);
+  }
+
+  // 說完了：封面當主角，記一顆星星
+  function showEnd() {
+    audio.pause();
+    endCover.style.backgroundImage = 'url("' + staging.cover.bg + '")';
+    endCover.innerHTML = coverArt(staging);
+    markDone(story.id);
+    endOverlay.hidden = false;
+    if (window.Sound) Sound.win();
   }
 
   stNext.addEventListener('click', () => {
     click();
     if (pageIdx + 1 < story.pages.length) showPage(pageIdx + 1);
-    else { audio.pause(); endOverlay.hidden = false; if (window.Sound) Sound.win(); }
+    else showEnd();
   });
   stPrev.addEventListener('click', () => { if (pageIdx > 0) { click(); showPage(pageIdx - 1); } });
   replayBtn.addEventListener('click', () => { click(); showPage(pageIdx); });
@@ -628,11 +795,15 @@
   $('againBtn').addEventListener('click', () => { click(); endOverlay.hidden = true; showPage(0); });
   $('otherBtn').addEventListener('click', () => { click(); showSelect(); });
 
-  // 切到別的 App、螢幕關掉：故事停下來；回來按 🔁 從這一頁重聽
+  // 切到別的 App、螢幕關掉：故事停下來；回來按「再聽一次」從這一頁重聽
   document.addEventListener('visibilitychange', () => {
     if (document.hidden && story) { audio.pause(); replayBtn.classList.add('pulse'); }
   });
   window.addEventListener('resize', () => { if (story) layout(); });
+  // 字型（粉圓、Andika）比較晚才載好的話字寬會變：載好了把目前這一段字幕重新量一次，才不會超出字幕板
+  if (document.fonts && document.fonts.addEventListener) {
+    document.fonts.addEventListener('loadingdone', () => { if (story) layout(); });
+  }
 
   /* ---------- 選故事 ---------- */
 
@@ -645,56 +816,57 @@
     if (!story) return;
     instant = true;
     showPage(Math.max(0, (parseInt(pg, 10) || 1) - 1), true);
-    done = true;   // 不要因為時間到了就讓 ▶ 跳
+    done = true;   // 不要因為時間到了就讓「下一頁」變綠色
     step(parseFloat(sec) || 0);
   }
 
+  // 封面：那本故事的背景＋主角（公主那本手上多一顆小星星）。選故事的卡片和「說完了」共用
+  function coverArt(st) {
+    const hero = Data.SPRITES[st.cover.actor][st.cover.pose];
+    return '<span class="cover-hero"><img alt="" draggable="false" src="' + hero.src + '">' +
+      (st.cover.star ? '<span class="cover-star a-art tw-star s-bright">' + starSvg() + '</span>' : '') + '</span>';
+  }
+
+  /* 卡片＝浮起來的白色大按鈕（base.css 的 .pic-thumb）：上面封面、下面書名（中文是注音，英文是英文）。
+     聽完過的右上角有一顆星星。 */
   const titles = [];
-  SCRIPT.stories.forEach((s, i) => {
+  SCRIPT.stories.forEach((s) => {
     const st = Data.STAGING[s.id];
     if (!st) return;
     const card = document.createElement('button');
-    card.className = 'story-card';
-    card.style.setProperty('--rot', (i % 2 ? 2 : -2) + 'deg');
-    card.style.setProperty('--card', st.color);
+    card.type = 'button';
+    card.className = 'pic-thumb story-card';
     const pic = document.createElement('span');
     pic.className = 'story-cover';
     pic.style.backgroundImage = 'url("' + st.cover.bg + '")';
-    const hero = Data.SPRITES[st.cover.actor][st.cover.pose];
-    pic.innerHTML = '<img alt="" draggable="false" src="' + hero.src + '">' +
-      (st.cover.star ? '<span class="cover-star a-art tw-star s-bright">' + starSvg() + '</span>' : '');
+    pic.innerHTML = coverArt(st);
     const title = document.createElement('span');
     title.className = 'story-title';
-    titles.push({ el: title, story: s });
+    titles.push({ el: title, story: s, card: card });
     card.appendChild(pic);
     card.appendChild(title);
+    if (doneSet.has(s.id)) addStar(card);
     card.addEventListener('click', () => { click(); openStory(s.id); });
+    cards.set(s.id, card);
     storyRow.appendChild(card);
   });
 
-  /* 語言鈕：「中｜EN」兩格，亮的那格是現在的語言。選故事和聽故事時都能按；
-     聽到一半按＝這一頁用另一種語言從頭念（按鈕本身就是手勢，iPad 不會擋播放）。 */
+  /* 語言：在首頁的大人專區切換（js/home.js 寫 localStorage kidsStoryLang），這一頁只讀。
+     這裡把書名和「說完了」那句換成目前的語言。 */
   function applyLang() {
-    [...langBtn.children].forEach((sp) => sp.classList.toggle('on', sp.dataset.l === lang));
     titles.forEach((t) => {
       const en = lang === 'en' && t.story.title.en;
       t.el.innerHTML = '';
       t.el.classList.toggle('en', !!en);
       if (en) t.el.textContent = t.story.title.en;
       else renderText(t.el, t.story.title.zh, zhuyinOf(t.story.title.zh), 0);
+      t.card.setAttribute('aria-label', en ? t.story.title.en : t.story.title.zh);
     });
-    const tx = TEXT[lang];
-    $('endTitle').textContent = tx.end;
-    $('againBtn').textContent = tx.again;
-    $('otherBtn').textContent = tx.other;
+    const endTitle = $('endTitle');
+    endTitle.classList.toggle('en', lang === 'en');
+    if (lang === 'en') endTitle.textContent = TEXT.en.end;
+    else if (window.UI) endTitle.innerHTML = window.UI.zy(TEXT.zh.end);
   }
-  langBtn.addEventListener('click', () => {
-    click();
-    lang = lang === 'zh' ? 'en' : 'zh';
-    try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* 存不了就只影響這一次 */ }
-    applyLang();
-    if (story && endOverlay.hidden) showPage(pageIdx);
-  });
   applyLang();
 
   const shot = new URLSearchParams(location.search).get('shot');

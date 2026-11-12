@@ -1,13 +1,13 @@
 /* 甜點店的配料圖：每種配料一段 SVG 字串。
 
    每個都畫在「底部中心＝(0,0)、往上約 100 單位高、左右約 ±50」的座標裡，
-   放的時候再由 cake-draw.js 平移縮放；畫風跟全站的「貼紙書」一致：墨線、粗外框、平塗色。
+   放的時候再由 cake-draw.js 平移縮放；畫風：墨線（全站的 --ink）、粗外框、平塗色。
    比 100 單位高出一截的列在 TALL（小圖要縮小才放得進格子，check_cake.js 也用它算頂到遮雨棚沒有）。
    純字串，不碰 DOM。 */
 (function (global) {
   'use strict';
 
-  var INK = '#2b2b2b';
+  var INK = '#33274F';
   var SW = 'stroke="' + INK + '" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"';
   var THIN = 'stroke="' + INK + '" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"';
 

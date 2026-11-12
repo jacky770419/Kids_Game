@@ -1,226 +1,212 @@
 /* ===== 故事書 =====
-   獨立一支，不寫進 style.css：那支同時有別的工作在改，分開才不會互相蓋到。
-   共用元件（.bar／.icon-btn／.big-btn／.overlay／.win-title）照樣用 style.css 的。
+   新版「浮起來的才能按」：共用的東西（按鈕 .btn、注音 .zy、上排 .top、選圖格 .pic-thumb、完成畫面 .done）
+   都在 css/base.css，這支只放故事書自己的版面：選故事的卡片、舞台、紙偶、字幕板。
+
+   誰能按、誰不能按：
+     浮起來的（白色＋底邊）＝卡片、回家、換故事、上一頁、下一頁、這一頁再聽一次。
+     平的＝舞台、字幕板、頁數圓點（舞台上的角色點了會跳一下，那是彩蛋，不是按鈕）。
+     綠色只有一個意思：這一頁念完了，可以往下一頁。
 
    --u＝舞台寬度的 1%（js/story.js 的 layout() 算好設在 <html> 上），
-   舞台裡的東西和字幕都用它當單位，iPad 橫放、直放、手機都是同一個比例。 */
+   舞台裡的東西、字幕板、字幕字級都用它當單位，iPad 橫放、直放都是同一個比例。 */
+
+:root { --u: 7.6px; }   /* layout() 還沒跑之前的預設值（1024×768 的舞台是 760px 寬） */
 
 body.story {
   display: flex;
   flex-direction: column;
 }
 
-body.story main {
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* 頁碼圓點：她認得「還有幾頁」，不需要數字 */
-#dots { display: flex; gap: 10px; align-items: center; }
-#dots i {
-  width: 16px; height: 16px; border-radius: 50%;
-  background: #fff; border: 3px solid #2b2b2b;
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-#dots i.on { background: #FFD93D; transform: scale(1.5); }
-
-/* 語言鈕「中｜EN」：兩格的膠囊，亮的那格是現在的語言 */
-.lang-btn {
-  flex: none;
-  height: 66px;
-  padding: 0;
-  border-radius: 18px;
-  background: #fff;
-  border: 5px solid #2b2b2b;
-  box-shadow: 5px 5px 0 #2b2b2b;
-  display: flex;
-  align-items: stretch;
-  overflow: hidden;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-.lang-btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 #2b2b2b; }
-.lang-btn span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 54px;
-  padding: 0 10px;
-  font-size: 24px;
-  font-weight: 900;
-  color: #b9ae9b;
-}
-.lang-btn span + span { border-left: 4px solid #2b2b2b; }
-.lang-btn span.on { background: #FFD93D; color: #2b2b2b; }
+/* 回家／換故事永遠在最上層：「說完了」蓋上來時也還按得到 */
+.story .top { position: relative; }
+.story .nav { display: flex; gap: 16px; position: relative; z-index: 120; }
 
 /* ---------- 選故事 ----------
-   六本：橫放排 3×2、直放排 2×3（用 grid 固定欄數，才不會因為寬度剛好變成 4＋2）；之後故事再多就往下捲 */
-#storySelect { overflow-y: auto; }
-.story-row {
+   六本：橫放 3×2、直放 2×3，剛好一個畫面放完（畫面太矮才會捲）。
+   卡片＝base.css 的 .pic-thumb（浮起來的白色大按鈕）：上面封面、下面注音書名。 */
+#storySelect {
   flex: 1;
   min-height: 0;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  gap: min(40px, 4.5vh) min(56px, 4.5vw);
-  padding: 20px 40px calc(30px + env(safe-area-inset-bottom));
-  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* 上面留給星星徽章、下面留給底邊，也讓卡片離下緣遠一點 */
+  padding: 14px calc(28px + var(--sr)) calc(40px + var(--sb)) calc(28px + var(--sl));
+}
+#storyRow {
+  height: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 0;
+  grid-template-rows: repeat(2, minmax(210px, 310px));
+  align-content: start;
 }
 
 .story-card {
-  width: min(300px, 26vw, 32vh);
-  padding: 16px 16px 12px;
-  border-radius: 30px;
-  background: var(--card, #FFD93D);
-  border: 6px solid #2b2b2b;
-  box-shadow: 0 0 0 8px #fff, 0 0 0 13px #2b2b2b, 10px 10px 0 13px #2b2b2b;
-  transform: rotate(var(--rot, 0deg));
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
+  gap: 6px;
+  width: 100%;
+  min-height: 0;
+  padding: 10px 10px 6px;
+  line-height: 1;
+  text-align: center;
 }
 
-.story-card:active {
-  transform: rotate(var(--rot, 0deg)) translate(10px, 10px);
-  box-shadow: 0 0 0 8px #fff, 0 0 0 13px #2b2b2b;
-}
-
+/* 封面：那本故事的背景，主角站在下面中間。選故事的卡片和「說完了」共用 */
 .story-cover {
   position: relative;
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  border-radius: 18px;
-  border: 5px solid #2b2b2b;
+  display: block;
+  flex: 1;
+  min-height: 0;
+  border-radius: 22px;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
-
-.story-cover img {
+.cover-hero {
+  position: absolute;
+  left: 50%;
+  bottom: 4.5%;
   height: 78%;
-  margin-bottom: 3%;
+  transform: translateX(-50%);
+}
+.cover-hero img {
+  display: block;
+  height: 100%;
+  width: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  background: none;
   filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 3px #fff);
   animation: st-breathe 2.6s ease-in-out infinite;
   transform-origin: 50% 100%;
 }
-
+/* 公主捧在手心的小星星：位置照主角的高度算，封面變寬變窄都還在手上 */
 .cover-star {
   position: absolute;
-  left: 50%; top: 61%;
-  width: 12%;
-  height: auto !important;
+  left: 50%;
+  top: 55.8%;
+  height: 23% !important;
   transform: translate(-50%, -50%);
 }
 
 .story-title {
-  background: #fff;
-  border: 4px solid #2b2b2b;
-  border-radius: 16px;
-  padding: 6px 14px 6px 16px;
-  --fs: clamp(20px, min(2.7vw, 3.1vh), 30px);
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-.story-title .ch { color: #2b2b2b; }
-.story-title.en {
-  white-space: normal;
-  text-align: center;
-  font-size: clamp(16px, min(2vw, 2.4vh), 22px);
-  line-height: 1.15;
-  min-height: calc(var(--fs) * 1.2);
-}
-
-/* ---------- 注音字 ----------
-   一個字＝左邊漢字、右邊直排的注音；聲調在注音右側，輕聲的點在注音上面。
-   她認注音不識漢字，注音不能小到看不清：注音字高是漢字的 0.36 倍。 */
-.ch {
-  display: inline-flex;
-  align-items: center;
-  font-size: var(--fs);
-  line-height: 1;
-  color: #b9ae9b;
-  transition: color 0.12s linear;
-}
-.ch.on { color: #2b2b2b; }
-.hz { font-weight: 800; }
-
-.zy {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  width: 0.57em;
-  height: 1.2em;
-  margin-left: 0.03em;
-}
-.zy-col {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 0.36em;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  font-weight: 700;
-  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-}
-.zy-col.n3 { font-size: 0.33em; }
-.zy-tone {
-  position: absolute;
-  left: 0.36em;
-  top: 50%;
-  transform: translateY(-40%);
-  font-size: 0.36em;
-  font-weight: 700;
-  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-}
-.zy.light::before {
-  content: '˙';
-  position: absolute;
-  left: 0.04em;
-  top: -0.2em;
-  font-size: 0.36em;
-  font-weight: 700;
-  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-}
-.zy.light .zy-col { margin-top: 0.22em; }
-
-.pu {
-  font-size: var(--fs);
-  line-height: 1;
-  color: #b9ae9b;
-  font-weight: 800;
-}
-.pu.on { color: #2b2b2b; }
-
-/* ---------- 舞台 ---------- */
-#playScreen { justify-content: center; }
-
-#stageWrap {
   flex: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 0 14px;
+  height: 52px;
+  font-size: clamp(22px, 2.7vw, 30px);
+  white-space: nowrap;
+  color: var(--ink);
+}
+.story-title.en {
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: clamp(16px, 1.9vw, 21px);
+  line-height: 1.15;
+  white-space: normal;
+  padding: 0 4px;
 }
 
+/* ---------- 看故事的版面 ----------
+   橫向：左邊一排（回家、換故事、上一頁）｜舞台＋下面的字幕板｜右邊一排（再聽一次、下一頁）。
+   回家／換故事／再聽一次在 <header class="top"> 裡，聽故事時整列浮在最上面那一排；
+   上一頁／下一頁是這個格線的左右兩欄，位置在舞台的中間偏下——不會低於畫面高度的 70%。 */
+#playScreen {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) 96px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "prev stage next"
+    ".    cap   .";
+  column-gap: 16px;
+  row-gap: 20px;
+  align-content: start;
+  justify-items: center;
+  padding: calc(20px + var(--st)) calc(20px + var(--sr)) calc(24px + var(--sb)) calc(20px + var(--sl));
+}
+
+.story.playing .guide { display: none; }
+
+/* 上一頁／下一頁：96×120 的高按鈕。248px＝上面那兩顆（回家、換故事）加間距的高度 */
+.page-btn {
+  width: 96px;
+  height: 120px;
+  border-radius: 28px;
+  align-self: start;
+  margin-top: calc(248px + max(0px, (var(--u) * 66.667 - 376px) / 2));
+}
+.page-btn .ic { stroke-width: 3.2; }
+#stPrev { grid-area: prev; }
+#stNext { grid-area: next; }
+
+/* 這一頁念完了：下一頁變綠色（.go）並小跳兩下，告訴她可以往下了 */
+#stNext.ready { animation: st-ready 0.5s ease-out 2; }
+@keyframes st-ready {
+  0%, 100% { transform: none; }
+  40% { transform: translateY(-16px); }
+  70% { transform: translateY(3px); }
+}
+/* 聲音被瀏覽器擋下來（沒有手勢）、或切出去又回來：再聽一次變黃色一直跳，按了就會開始念 */
+#replayBtn.pulse {
+  background: var(--say);
+  --lip: var(--say-lip);
+  animation: st-nudge 1s ease-in-out infinite;
+}
+@keyframes st-nudge { 50% { transform: translateY(-8px); } }
+
+@media (orientation: landscape) {
+  .story.playing .top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: flex-start;
+    padding: calc(20px + var(--st)) calc(20px + var(--sr)) 0 calc(20px + var(--sl));
+    pointer-events: none;          /* 這一列只是把按鈕擺好，中間是空的，不能擋住舞台 */
+  }
+  .story.playing .nav { flex-direction: column; gap: 24px; pointer-events: auto; }
+  .story.playing #replayBtn { pointer-events: auto; }
+}
+
+/* 直向：上排＝回家、換故事……再聽一次；舞台整排寬；下面一排＝上一頁｜字幕板｜下一頁。
+   舞台的高度由 layout() 讓出來，翻頁鈕才不會掉到畫面高度的 70% 以下。 */
+@media (orientation: portrait) {
+  #playScreen {
+    grid-template-areas:
+      "stage stage stage"
+      "prev  cap   next";
+    row-gap: 16px;
+    padding: 4px calc(16px + var(--sr)) calc(24px + var(--sb)) calc(16px + var(--sl));
+  }
+  .page-btn { margin-top: 0; }
+  #caption {
+    width: 100%;
+    height: max(136px, calc(var(--u) * 25));
+    padding: 0 calc(var(--u) * 2.4);
+  }
+  .cap-face { width: calc(var(--u) * 12); height: calc(var(--u) * 12); }
+  #storyRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 310px));
+  }
+  .story-title { font-size: clamp(22px, 3.8vw, 30px); }
+  .story-title.en { font-size: clamp(16px, 2.6vw, 21px); }
+}
+
+/* ---------- 舞台（平的：不能按） ---------- */
 #stage {
+  grid-area: stage;
   position: relative;
+  isolation: isolate;            /* 角色的 z-index（照站的位置排）只在舞台裡面比，不會蓋到外面的按鈕 */
   flex: none;
-  border: 6px solid #2b2b2b;
-  border-radius: calc(var(--u) * 2.4);
-  box-shadow: 8px 8px 0 #2b2b2b;
+  border-radius: 28px;
   overflow: hidden;
-  background: #cfeaff;
+  background: #8FD3FF;
   touch-action: none;
 }
 
@@ -235,6 +221,37 @@ body.story main {
 #bg { background-size: cover; background-position: center; }
 #decor, #stFx, #tint { pointer-events: none; }
 
+/* 頁數圓點：舞台上方中間。她認得「還有幾頁」，不需要數字；目前這頁大一點、黃色 */
+#dots {
+  position: absolute;
+  left: 50%;
+  top: calc(var(--u) * 2.1);
+  transform: translateX(-50%);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--u) * 1.6);
+  height: calc(var(--u) * 5.8);
+  padding: 0 calc(var(--u) * 2.4);
+  border-radius: calc(var(--u) * 3.2);
+  background: rgba(51, 39, 79, .28);
+  pointer-events: none;
+}
+#dots i {
+  width: calc(var(--u) * 1.85);
+  height: calc(var(--u) * 1.85);
+  border-radius: 50%;
+  background: #fff;
+  opacity: .75;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+#dots i.on {
+  width: calc(var(--u) * 3.2);
+  height: calc(var(--u) * 3.2);
+  opacity: 1;
+  background: var(--say);
+}
+
 /* 色調：同一張海邊，白天、黃昏、晚上各用一層顏色蓋出來（multiply 才會連暗部一起染） */
 #tint {
   mix-blend-mode: multiply;
@@ -245,16 +262,6 @@ body.story main {
 #stage[data-tint="night"] #tint { background: linear-gradient(#27307A, #3A4599 60%, #4A55A8); }
 #stage[data-tint="sunset"] .actor img { filter: var(--outline) brightness(0.96) sepia(0.18); }
 #stage[data-tint="night"] .actor img { filter: var(--outline) brightness(0.74) saturate(0.85); }
-
-.nav-btn { flex: none; font-size: 28px; }
-.nav-btn.dim { opacity: 0.3; }
-.nav-btn.pulse, #replayBtn.pulse {
-  background: #4ECDC4;
-  animation: st-pulse 0.9s ease-in-out infinite;
-}
-@keyframes st-pulse {
-  50% { transform: scale(1.16); }
-}
 
 /* ---------- 角色（紙偶）----------
    四層各管一件事，動作才不會互相蓋掉：
@@ -335,14 +342,14 @@ body.story main {
 }
 @keyframes st-spin { to { transform: rotate(360deg); } }
 
-/* ---------- 小星星（程式畫的，才能一段一段變亮） ---------- */
+/* ---------- 小星星（程式畫的，才能一段一段變亮）----------
+   它是故事裡的角色（跟紙偶一樣有墨線），不是介面圖示，所以不用 .ic 那一套。 */
 .a-art.tw-star { aspect-ratio: 1; height: 100%; }
 .a-art.tw-star svg, .cap-face svg { width: 100%; height: 100%; overflow: visible; display: block; }
 .star-body { fill: #FFE98A; stroke: #2b2b2b; stroke-width: 5; transition: fill 0.8s ease; }
 .star-face .eye { fill: #2b2b2b; transform-box: fill-box; transform-origin: center; }
 .star-face .mouth { stroke: #2b2b2b; stroke-width: 3.4; }
 .star-face .blush { fill: #FF9EC4; opacity: 0.8; }
-/* class 叫 tw-star 不叫 star：style.css 的單字頁已經有一個 .star（預設 25% 透明），撞名會整顆變暗 */
 .mouth.sad, .tw-star.s-dim .mouth.happy { display: none; }
 .tw-star.s-dim .mouth.sad { display: inline; }
 .tw-star svg { transition: filter 0.8s ease, opacity 0.8s ease; }
@@ -416,75 +423,105 @@ body.story main {
   100% { opacity: 0; transform: translate(calc(-50% + var(--dx) * var(--u)), calc(-50% + var(--dy) * var(--u) * 0.2)) scale(0.8); }
 }
 
-/* ---------- 字幕 ---------- */
+/* ---------- 字幕板（平的白板：不能按）----------
+   左邊圓框是正在說話的角色（旁白是一本書），右邊是字幕：一行或兩行。
+   字級 --fs0 跟著舞台縮放；一段太長時 story.js 的 fitCaption() 會把 --k 調小，整段等比例縮，
+   所以字幕不會超出字幕板、也不會折出孤字（要折在哪裡是 story.js 決定的，這裡一律不自動換行）。 */
 #caption {
-  --who: #FFD93D;
-  --fs0: min(calc(var(--u) * 5.1), 52px);
-  --fs: var(--fs0);
-  flex: none;
-  align-self: center;
-  width: min(calc(var(--u) * 100 + 12px), 100vw - 28px);
-  height: calc(var(--fs0) * 1.25 + 36px);
-  margin: 16px 0 calc(16px + env(safe-area-inset-bottom));
-  padding: 10px 18px 10px 12px;
+  --who: #FFD84D;
+  --fs0: calc(var(--u) * 6.05);
+  grid-area: cap;
+  width: calc(var(--u) * 100);
+  max-width: 100%;
+  height: calc(var(--u) * 25);
+  padding: 0 calc(var(--u) * 3.2);
+  border-radius: 32px;
   background: #fff;
-  border: 5px solid #2b2b2b;
-  border-radius: 22px;
-  box-shadow: 6px 6px 0 #2b2b2b, inset 12px 0 0 var(--who);
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: calc(var(--u) * 2.2);
+  overflow: hidden;
 }
-#caption:empty { visibility: hidden; }
 
-/* 誰在說話：小圓框裡放那個角色的臉，旁白是一本書 */
 .cap-face {
   flex: none;
-  width: calc(var(--fs0) * 1.15);
-  height: calc(var(--fs0) * 1.15);
-  margin-left: 12px;
+  width: calc(var(--u) * 14.7);
+  height: calc(var(--u) * 14.7);
   border-radius: 50%;
-  border: 4px solid #2b2b2b;
-  background: var(--who);
+  background: color-mix(in srgb, var(--who) 55%, #fff);
   overflow: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: calc(var(--fs0) * 0.66);
-  line-height: calc(var(--fs0) * 1.15 - 8px);
 }
 .cap-face img { width: 118%; height: auto; margin-top: 4%; }
 .cap-face svg { padding: 10%; }
+/* 旁白：一本書的線條圖示 */
+.cap-face.narr { align-items: center; background: var(--tint); color: var(--lip); }
+.cap-face.narr .ic { width: 56%; height: 56%; padding: 0; }
 
-/* 英文字幕：一個字一格，還沒念到的淡、念到的變黑（跟注音字同一套亮法） */
-.cap-line.en {
-  --fs: calc(var(--fs0) * 1.22 * var(--k));
-  gap: 0.28em;
-  font-size: var(--fs);
-  line-height: 1;
-}
-.wd { color: #b9ae9b; transition: color 0.12s linear; }
-.wd.on { color: #2b2b2b; }
-
-.cap-line {
-  --k: 1;
-  --fs: calc(var(--fs0) * var(--k));
+.cap-text {
+  flex: 1;
+  min-width: 0;
+  align-self: stretch;
+  margin: calc(var(--u) * 1.6) 0;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
-  white-space: nowrap;
 }
+.cap-lines {
+  --k: 1;
+  flex: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .1em;
+  font-size: calc(var(--fs0) * var(--k));
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--ink);
+}
+.cap-line { display: flex; align-items: center; }
 
-/* 直放或手機：翻頁鈕縮小，舞台才夠寬 */
-@media (max-width: 700px), (orientation: portrait) {
-  #stageWrap { gap: 8px; padding: 0 8px; }
-  .nav-btn { width: 50px; height: 50px; font-size: 22px; border-width: 4px; box-shadow: 4px 4px 0 #2b2b2b; }
-  .story-row { grid-template-columns: repeat(2, auto); }
-  .story-card { width: min(320px, 40vw, 25vh); }
-  .lang-btn { height: 56px; }
-  .lang-btn span { min-width: 44px; font-size: 20px; }
+/* 中文：一個字一格（國字＋直排注音）。還沒念到的淡一點、念過的深色、正在念的那個字底色變黃 */
+#caption .zy {
+  padding: .12em .2em .12em .16em;
+  border-radius: .32em;
+  color: #6E6890;
+  transition: color 0.12s linear, background-color 0.12s linear;
+}
+#caption .zy + .zy { margin-left: 0; }
+#caption .zy.on { color: var(--ink); }
+#caption .zy.now { background: var(--say); }
+.pu { color: #6E6890; transition: color 0.12s linear; }
+.pu.on, .story-title .pu { color: var(--ink); }
+
+/* 英文：一個字一格（Andika），亮法跟中文一樣 */
+.cap-lines.en {
+  font-family: var(--en);
+  font-size: calc(var(--fs0) * .9 * var(--k));
+}
+.wd {
+  padding: .14em .17em;
+  border-radius: .3em;
+  color: #6E6890;
+  transition: color 0.12s linear, background-color 0.12s linear;
+}
+.wd.on { color: var(--ink); }
+.wd.now { background: var(--say); }
+
+/* ---------- 說完了（base.css 的 .done）----------
+   主角是這本故事的封面；右邊「說完了」是三個字，比別頁的「好棒」小一點才放得下 */
+.story .done-pic { width: min(36vw, 52vh); }
+.done-pic .story-cover { width: 100%; height: 100%; border-radius: 32px; }
+.done-pic .cover-hero { left: 42%; }   /* 右下角站著小熊，主角往左讓一點 */
+.story .done-title { font-size: clamp(52px, 7vw, 76px); white-space: nowrap; }
+.story .done-title.en { font-family: var(--en); font-weight: 700; font-size: clamp(48px, 6.6vw, 72px); }
+@media (orientation: portrait) {
+  .story .done-pic { width: min(60vw, 40vh); }
+  .story .done-title { font-size: clamp(64px, 11vw, 96px); }
+  .story .done-title.en { font-size: clamp(56px, 10vw, 88px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .a-loop, .sky-star, .waves, .story-cover img { animation: none; }
+  .a-loop, .sky-star, .waves, .cover-hero img, #stNext.ready, #replayBtn.pulse { animation: none; }
 }

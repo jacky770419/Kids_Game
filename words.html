@@ -7,103 +7,107 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>單字 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/words.css">
 </head>
 <body class="words">
 
-<!-- 🎵 放在 body 層固定右上角：music.js 只認一顆 #musicBtn，兩個畫面共用同一顆 -->
-<button id="musicBtn" class="icon-btn music-fab" title="背景音樂">🎵</button>
-<button id="speechBtn" class="icon-btn speech-fab" title="唸英文">🗣️</button>
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡。玩的時候右邊多一排進度星星（平的，不能按）。
+     音樂、唸英文、大小寫、只聽不看字這四個開關都搬到首頁的大人專區了，這一頁沒有。 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="回去選玩法" hidden><i data-ic="back"></i></button>
+  </div>
+  <div id="guide" class="guide" data-guide="要ㄧㄠˋ 玩ㄨㄢˊ 哪ㄋㄚˇ 個˙ㄍㄜ"></div>
+  <span class="spacer"></span>
+  <div id="progress" class="stars" role="img" hidden></div>
+</header>
 
-<!-- ===== 模式選擇 ===== -->
+<!-- ===== 選玩法：兩個大門，門上直接畫出那個玩法的樣子；門下面是「幾張／幾對」 ===== -->
 <main id="selectScreen">
-  <header class="bar">
-    <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-    <span class="spacer"></span>
-    <span class="bar-title">要玩哪一種？</span>
-    <span class="spacer"></span>
-    <span class="bar-gap"></span><!-- 讓出 .music-fab 的位置 -->
-  </header>
-
-  <div id="dataError" class="select-hint" hidden>讀不到單字資料</div>
-
-  <div class="mode-row">
-    <div class="mode-col">
-      <button id="matchCard" class="mode-card mode-match">
-        <span class="mode-demo">
-          <span class="demo-word">BEAR</span>
-          <span class="demo-arrow">→</span>
-          <span class="demo-pic"><img src="assets/pictures/animals/bear.png" alt=""></span>
+  <div class="mode-col">
+    <button id="matchCard" type="button" class="door" aria-label="配對：看字聽音，找出對的圖">
+      <span class="win" aria-hidden="true">
+        <span class="demo-card"><b class="demo-word">duck</b><span class="demo-say"><i data-ic="speaker"></i></span></span>
+        <span class="demo-row">
+          <img src="assets/pictures/animals/frog.png" alt="">
+          <img class="hit" src="assets/pictures/animals/duck.png" alt="">
+          <img src="assets/pictures/animals/pig.png" alt="">
         </span>
-        <span class="mode-label">配對</span>
-        <span id="matchResume" class="resume-badge" hidden>▶ 接著玩</span>
-      </button>
-      <div class="mode-foot" id="choicesRow">
-        <button class="diff-btn selected" data-choices="3">3 張 ⭐</button>
-        <button class="diff-btn" data-choices="4">4 張 ⭐⭐</button>
-      </div>
-    </div>
-
-    <div class="mode-col">
-      <button id="memoryCard" class="mode-card mode-memory">
-        <span class="mode-demo">
-          <span class="demo-back">?</span>
-          <span class="demo-pic tall"><img src="assets/pictures/animals/duck.png" alt=""></span>
-          <span class="demo-text">DUCK</span>
-        </span>
-        <span class="mode-label">翻牌</span>
-        <span id="memoryResume" class="resume-badge" hidden>▶ 接著玩</span>
-      </button>
-      <div class="mode-foot" id="pairsRow">
-        <button class="diff-btn selected" data-pairs="3">3 對 ⭐</button>
-        <button class="diff-btn" data-pairs="6">6 對 ⭐⭐</button>
-        <button class="diff-btn" data-pairs="8">8 對 ⭐⭐⭐</button>
-      </div>
+      </span>
+      <span class="name" data-zy="配ㄆㄟˋ 對ㄉㄨㄟˋ"></span>
+      <!-- 上次玩到一半：綠色＝接著往下走 -->
+      <span id="matchResume" class="resume" hidden><i data-ic="play"></i></span>
+    </button>
+    <!-- 幾張圖選一張：小方塊圖＋數字，她認得數字 -->
+    <div class="lv-row" id="choicesRow" role="group" aria-label="幾張圖選一張">
+      <button type="button" class="btn lv diff-btn selected" data-choices="3" aria-label="3 張圖選一張"><span class="lv-pics"><b></b><b></b><b></b></span><span class="lv-n">3</span></button>
+      <button type="button" class="btn lv diff-btn" data-choices="4" aria-label="4 張圖選一張"><span class="lv-pics"><b></b><b></b><b></b><b></b></span><span class="lv-n">4</span></button>
     </div>
   </div>
+
+  <div class="mode-col">
+    <button id="memoryCard" type="button" class="door" aria-label="翻牌：把圖和字配成一對">
+      <span class="win" aria-hidden="true">
+        <span class="demo-grid">
+          <b class="back"></b>
+          <b class="face"><img src="assets/pictures/animals/duck.png" alt=""></b>
+          <b class="back"></b>
+          <b class="back"></b>
+          <b class="back"></b>
+          <b class="face demo-word">duck</b>
+        </span>
+      </span>
+      <span class="name" data-zy="翻ㄈㄢ 牌ㄆㄞˊ"></span>
+      <span id="memoryResume" class="resume" hidden><i data-ic="play"></i></span>
+    </button>
+    <!-- 幾對牌：兩張牌的圖＋數字 -->
+    <div class="lv-row" id="pairsRow" role="group" aria-label="幾對牌">
+      <button type="button" class="btn lv diff-btn selected" data-pairs="3" aria-label="3 對，最簡單"><i data-ic="cards"></i><span class="lv-n">3</span></button>
+      <button type="button" class="btn lv diff-btn" data-pairs="6" aria-label="6 對"><i data-ic="cards"></i><span class="lv-n">6</span></button>
+      <button type="button" class="btn lv diff-btn" data-pairs="8" aria-label="8 對，最難"><i data-ic="cards"></i><span class="lv-n">8</span></button>
+    </div>
+  </div>
+
+  <!-- 給大人看的錯誤訊息（小孩處理不了），所以是平的小字 -->
+  <div id="dataError" class="data-error" hidden>讀不到單字資料</div>
 </main>
 
 <!-- ===== 遊戲畫面 ===== -->
 <main id="gameScreen" hidden>
-  <header class="bar">
-    <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-    <button id="backBtn" class="icon-btn">🔙</button>
-    <!-- Aa＝字卡大小寫切換；👂＝只聽不看字（把英文字藏起來，只留喇叭） -->
-    <button id="caseBtn" class="icon-btn" title="大小寫">Aa</button>
-    <button id="listenBtn" class="icon-btn" title="只聽不看字">👂</button>
-    <span class="spacer"></span>
-    <div id="progress"></div>
-    <span class="spacer"></span>
-    <span class="bar-gap"></span><!-- 讓出 .music-fab 的位置 -->
-  </header>
-
-  <div id="playArea">
-    <!-- 配對模式 -->
-    <div id="matchArea" hidden>
-      <div class="word-card">
-        <div class="word-text-col">
-          <div id="wordText"></div>
-          <div id="wordZh"></div>
-        </div>
-        <button id="speakBtn" title="再唸一次">🔊</button>
+  <!-- 配對：字卡是平的（不能按），右邊黃色喇叭和下面的圖才按得下去 -->
+  <div id="matchArea" hidden>
+    <div class="word-card">
+      <div class="word-text-col">
+        <div id="wordText"></div>
+        <div id="wordZh"></div>
       </div>
-      <div id="choices"></div>
+      <button id="speakBtn" type="button" class="btn say" aria-label="再唸一次"><i data-ic="speaker"></i></button>
     </div>
+    <div id="choices"></div>
+  </div>
 
-    <!-- 翻牌模式 -->
-    <div id="memoryArea" hidden>
-      <div id="memoryGrid"></div>
-    </div>
+  <!-- 翻牌 -->
+  <div id="memoryArea" hidden>
+    <div id="memoryGrid"></div>
   </div>
 </main>
 
 <canvas id="confettiCanvas"></canvas>
 
-<div id="winOverlay" class="overlay" hidden>
-  <div class="win-title">🎉 好棒喔！ 🎉</div>
-  <div class="overlay-row">
-    <button id="againBtn" class="big-btn">再玩一次</button>
-    <button id="menuBtn" class="big-btn alt">換一種玩法</button>
+<!-- 完成畫面：這一輪學到的圖是主角；兩個選擇都是圖示（再玩一次、回去選玩法） -->
+<div id="winOverlay" class="done" hidden>
+  <div class="done-art">
+    <span id="winPics" class="done-pic"></span>
+    <img class="done-bear" src="assets/stickers/bear.png" alt="">
+  </div>
+  <div class="done-side">
+    <div class="done-title" data-zy="好ㄏㄠˇ 棒ㄅㄤˋ"></div>
+    <div class="done-row">
+      <button id="againBtn" type="button" class="btn" aria-label="再玩一次"><i data-ic="replay"></i></button>
+      <button id="menuBtn" type="button" class="btn go" aria-label="回去選玩法"><i data-ic="grid"></i></button>
+    </div>
   </div>
 </div>
 
@@ -111,6 +115,7 @@
 <script src="js/sound.js"></script>
 <script src="js/speech.js"></script>
 <script src="js/music.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/words.js"></script>
 <script>
 /* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、

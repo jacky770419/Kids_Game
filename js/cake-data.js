@@ -121,8 +121,9 @@
        holders   容器清單（沒有就不出現容器頁籤）；holder 是一開始的預設值
        holderName  容器頁籤的中文名（餅乾的是「形狀」），沒寫就是「容器」
        creamWord 接在奶油顏色後面唸（「chocolate sauce」）
-       tabs      材料匣頁籤的圖示
-       color     選甜點畫面的卡片底色
+       tabs      舊版材料匣頁籤的 emoji。新版畫面不放 emoji，頁籤改用 cake-draw.js 畫的小圖
+                 （js/cake.js 的 categories），這一欄只剩 tools/check_cake.js 在對帳
+       color     舊版選甜點畫面的卡片底色（新版卡片一律白底，沒在用）
        demo      選甜點畫面的示意圖 */
   var DESSERTS = [
     {
@@ -169,10 +170,11 @@
     }
   ];
 
+  /* pic＝頁籤上畫哪一種配料當代表（畫面上不放 emoji，emoji 欄只留給舊資料對帳） */
   var TOPPING_GROUPS = [
-    { id: 'fruit', name: '水果', emoji: '🍓' },
-    { id: 'sweet', name: '糖果', emoji: '🍬' },
-    { id: 'deco', name: '裝飾', emoji: '⭐' }
+    { id: 'fruit', name: '水果', emoji: '🍓', pic: 'strawberry' },
+    { id: 'sweet', name: '糖果', emoji: '🍬', pic: 'candy' },
+    { id: 'deco', name: '裝飾', emoji: '⭐', pic: 'star' }
   ];
 
   /* noOrder 的是不適合出題的：高高的（蠟燭、棒棒糖、餅乾棒、小傘）放四根會擋住甜點顏色，

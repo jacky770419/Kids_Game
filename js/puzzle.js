@@ -13,6 +13,25 @@
   let totalPieces = 0;
   let startSeq = 0;        // 開局序號：圖片載入是非同步的，回來時要確認自己還是最新那一局
 
+  /* 小熊泡泡的台詞（注音寫法見 js/ui.js）。選圖時說「選喜歡的圖」，開始拼就換成「把圖拼回去」。 */
+  const guideEl = document.getElementById('guide');
+  const guide = (guideEl && guideEl.__uiGuide) || { set() {} };
+  const LINE_PICK = '選ㄒㄩㄢˇ 喜ㄒㄧˇ 歡ㄏㄨㄢ 的˙ㄉㄜ 圖ㄊㄨˊ';
+  let playLineSaid = false;
+  const LINE_PLAY = '把ㄅㄚˇ 圖ㄊㄨˊ 拼ㄆㄧㄣ 回ㄏㄨㄟˊ 去ㄑㄩˋ';
+
+  /* 拼完過的圖：選圖畫面右上角給一顆星星。只記圖的路徑，存不了就算了（星星不影響玩）。 */
+  const DONE_KEY = 'kidsPuzzleDone';
+  let doneSet = new Set();
+  try { doneSet = new Set(JSON.parse(localStorage.getItem(DONE_KEY) || '[]')); } catch (e) { /* 存檔壞了就當沒拼過 */ }
+  const thumbs = new Map();
+  function markDone(pic) {
+    doneSet.add(pic.src);
+    try { localStorage.setItem(DONE_KEY, JSON.stringify(Array.from(doneSet))); } catch (e) { /* 略過 */ }
+    const t = thumbs.get(pic.src);
+    if (t) t.classList.add('starred');   // 不能叫 done：base.css 的 .done 是蓋滿畫面的完成畫面
+  }
+
   /* 圖片先載入完成才能畫進 canvas。
      為什麼要快取：切難度會重開同一張圖，每次重新解碼 SVG 會讓小孩看到閃一下。
      為什麼指定 1200×1200：這些圖是只有 viewBox、沒有 width/height 的 SVG，
@@ -44,13 +63,14 @@
   /* --- 選圖畫面 --- */
   PICTURES.forEach(pic => {
     const btn = document.createElement('button');
-    btn.className = 'pic-thumb';
-    btn.innerHTML = `<img src="${pic.src}" alt="${pic.name}">`;
+    btn.className = 'pic-thumb' + (doneSet.has(pic.src) ? ' starred' : '');
+    btn.innerHTML = `<img src="${pic.src}" alt="${pic.name}" loading="lazy">`;
+    thumbs.set(pic.src, btn);
     btn.addEventListener('click', () => { Sound.click(); startGame(pic); });
     picGrid.appendChild(btn);
   });
 
-  backBtn.addEventListener('click', () => { Sound.click(); showSelect(); });
+  backBtn.addEventListener('click', () => { Sound.click(); winOverlay.hidden = true; showSelect(); });
   document.getElementById('againBtn').addEventListener('click', () => {
     Sound.click(); winOverlay.hidden = true; startGame(currentPic);
   });
@@ -62,6 +82,8 @@
     gameScreen.hidden = true;
     selectScreen.hidden = false;
     backBtn.hidden = true;
+    document.body.classList.remove('playing');
+    guide.set(LINE_PICK);
     clearPieces();
   }
 
@@ -76,6 +98,10 @@
     selectScreen.hidden = true;
     gameScreen.hidden = false;
     backBtn.hidden = false;
+    document.body.classList.add('playing');   // 橫向時回家／上一層變成左邊一直排（css/puzzle.css）
+    // 第一次開始拼的時候小熊唸一次（這一下是她點圖的手勢，iPad 才准出聲）；之後想聽再點泡泡
+    guide.set(LINE_PLAY, !playLineSaid);
+    playLineSaid = true;
     clearPieces();
     lockedCount = 0;
     totalPieces = gridN * gridN;
@@ -93,10 +119,33 @@
     const areaW = gameScreen.clientWidth;
     const areaH = gameScreen.clientHeight;
 
-    // 拼圖板尺寸：留下方空間放拼圖片
-    const side = Math.floor(Math.min(areaW * 0.92, areaH * 0.58));
-    const boardX = Math.floor((areaW - side) / 2);
-    const boardY = 10;
+    /* 版面：橫向＝拼圖板在左、拼片盒在右（跟其他頁一樣，東西都在右邊的盒子裡，
+       下緣不放東西——手腕會壓到）；直向放不下左右兩塊，維持板在上、拼片在下。
+       板的邊長要讓 2×2 最大的那一片（含榫頭約 1.44 倍）也放得進盒子。 */
+    const wide = areaW > areaH * 1.1;
+    const tray = document.getElementById('tray');
+    let side, boardX, boardY, trayX, trayY, trayW, trayH;
+    if (wide) {
+      side = Math.floor(Math.min(areaH - 56, areaW * 0.52));
+      boardX = 14;
+      boardY = Math.floor((areaH - side) / 2);
+      trayX = boardX + side + 30;
+      trayY = 20;
+      trayW = areaW - trayX - 20;
+      trayH = areaH - 40;
+    } else {
+      side = Math.floor(Math.min(areaW * 0.9, areaH * 0.56));
+      boardX = Math.floor((areaW - side) / 2);
+      boardY = 14;
+      trayX = 16;
+      trayY = boardY + side + 26;
+      trayW = areaW - 32;
+      trayH = Math.max(areaH - trayY - 16, 120);
+    }
+    tray.style.left = trayX + 'px';
+    tray.style.top = trayY + 'px';
+    tray.style.width = trayW + 'px';
+    tray.style.height = trayH + 'px';
 
     board.style.left = boardX + 'px';
     board.style.top = boardY + 'px';
@@ -111,7 +160,7 @@
 
     const pieceSize = side / gridN;
     const margin = pieceSize * TAB;                 // 榫頭凸出去要占的邊距
-    const ink = Math.max(3, pieceSize * 0.03);      // 墨線寬度
+    const ink = Math.max(2, pieceSize * 0.018);     // 墨線寬度（新版細一點：只是讓拼片的邊看得出來）
     /* 墨線是畫在路徑正中央的，凸榫的尖端剛好貼在 margin 的邊界上，
        不多留半條線寬就會被 canvas 邊界切掉一小片，看起來像削平的榫頭。 */
     const pad = Math.ceil(ink);
@@ -123,9 +172,11 @@
     const dpr = window.devicePixelRatio || 1;
     const edges = PuzzleGeom.edgeMap(gridN, Math.random);
 
-    // 產生拼圖片，隨機散在下方
-    const trayTop = boardY + side + 14;
-    const trayH = Math.max(areaH - trayTop - 10, elemSize + 10);
+    // 產生拼圖片，隨機散在拼片盒裡（盒子比拼片小的時候就置中，允許超出一點）
+    const spreadX = Math.max(trayW - elemSize - 12, 0);
+    const spreadY = Math.max(trayH - elemSize - 12, 0);
+    const baseX = trayX + (trayW - elemSize - spreadX) / 2;
+    const baseY = trayY + (trayH - elemSize - spreadY) / 2;
 
     for (let r = 0; r < gridN; r++) {
       for (let c = 0; c < gridN; c++) {
@@ -154,7 +205,7 @@
 
         PuzzleGeom.tracePiece(g, pieceSize, e, TAB);
         g.lineWidth = ink;
-        g.strokeStyle = '#2b2b2b';
+        g.strokeStyle = '#33274F';
         g.lineJoin = 'round';
         g.stroke();
 
@@ -162,8 +213,8 @@
         piece.dataset.tx = boardX + c * pieceSize - margin - pad;
         piece.dataset.ty = boardY + r * pieceSize - margin - pad;
 
-        const x = Math.random() * Math.max(areaW - elemSize - 20, 1) + 10;
-        const y = trayTop + Math.random() * Math.max(trayH - elemSize, 1);
+        const x = baseX + Math.random() * spreadX;
+        const y = baseY + Math.random() * spreadY;
         piece.style.left = x + 'px';
         piece.style.top = y + 'px';
 
@@ -234,6 +285,10 @@
   function win() {
     Sound.win();
     launchConfetti();
+    if (currentPic) {
+      document.getElementById('winPic').src = currentPic.src;   // 完成畫面的主角：她剛拼好的那張圖
+      markDone(currentPic);
+    }
     winOverlay.hidden = false;
     // 拼完唸一次這張圖的英文名。等 600ms 是為了讓過關音效先響完——
     // 音效與語音同時出來會互相蓋住，小孩兩個都聽不清楚。
@@ -249,7 +304,7 @@
   function launchConfetti() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    const colors = ['#FF6B6B', '#FFD93D', '#4ECDC4', '#A78BFA', '#7BE495', '#5DADE2', '#FF8FA3']; // 貼紙書主色
+    const colors = ['#FF5C5C', '#FFD84D', '#22C3B6', '#9A7BF5', '#FFA228', '#4AA8EE', '#FF7FB0']; // 六個房間的顏色＋黃
     const parts = [];
     for (let i = 0; i < 130; i++) {
       parts.push({
@@ -274,10 +329,6 @@
         ctx.rotate(p.rot);
         ctx.fillStyle = p.color;
         ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
-        // 貼紙書風格：每片碎紙都描一圈墨線
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = '#2b2b2b';
-        ctx.strokeRect(-p.w / 2, -p.h / 2, p.w, p.h);
         ctx.restore();
       });
       if (t - start < 3500) {

@@ -124,9 +124,17 @@ for (const [file, why] of [['js/story-data.js', '故事書的圖'], ['js/story-s
 
 // 2f. CSS 裡的 url(...)（字型就是走這裡進來的）
 {
-  const css = readFile('css/style.css');
-  for (const mm of css.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g)) {
-    need(resolveFrom('css', mm[1]), 'css/style.css 的 url()');
+  /* 新版一頁一支 CSS：HTML 掛了哪幾支就掃哪幾支（上面 2a 已經把 <link> 進來的 CSS 列入必備）。
+     data: 的內嵌圖不是檔案；http(s) 的外連不是離線資產，另外在第 4 節擋。 */
+  for (const file of fs.readdirSync(path.join(ROOT, 'css')).filter((f) => f.endsWith('.css'))) {
+    const css = stripComments(readFile('css/' + file));
+    for (const mm of css.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g)) {
+      if (/^(data:|https?:)/.test(mm[1])) continue;
+      need(resolveFrom('css', mm[1]), 'css/' + file + ' 的 url()');
+    }
+    if (/fonts\.(googleapis|gstatic)\.com/.test(css)) {
+      fail('css/' + file + ' 還在外連 Google Fonts（離線就沒字型，字型要裁成本地 woff2 收進 assets/fonts）');
+    }
   }
 }
 
@@ -157,6 +165,14 @@ for (const [p, why] of needed) {
 }
 
 // ---------- 4. HTML 的外連與 SW 註冊 ----------
+
+/* JS 插進來的外連字型也算：js/ui.js 目前就是這樣拉 Google Fonts 的，
+   字型收進 assets/fonts 之前這一項會一直是紅的（故意留著提醒）。 */
+for (const file of fs.readdirSync(path.join(ROOT, 'js')).filter((f) => f.endsWith('.js'))) {
+  if (/fonts\.(googleapis|gstatic)\.com/.test(stripComments(readFile('js/' + file)))) {
+    fail('js/' + file + ' 還在外連 Google Fonts（離線就沒字型，字型要裁成本地 woff2 收進 assets/fonts）');
+  }
+}
 
 for (const page of HTML_PAGES) {
   const html = readFile(page);

@@ -7,52 +7,64 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>故事書 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/story.css">
 </head>
 <body class="story">
 
-<!-- 這一頁沒有 🎵：故事本身就是聲音，背景音樂會蓋住旁白；回首頁音樂會自己接著播 -->
-<header class="bar">
-  <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-  <button id="backBtn" class="icon-btn" hidden title="換一個故事">🔙</button>
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡。
+     聽故事的時候這一列變成左邊一直排（橫向），右上角多一顆「這一頁再聽一次」。
+     這一頁沒有音樂：故事本身就是聲音，背景音樂會蓋住旁白；回首頁音樂會自己接著播。
+     中文／English 在首頁的大人專區切換（localStorage kidsStoryLang）。 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="換一個故事" hidden><i data-ic="back"></i></button>
+  </div>
+  <div id="guide" class="guide" data-guide="選ㄒㄩㄢˇ 一ㄧˊ 個˙ㄍㄜ 故ㄍㄨˋ 事ㄕˋ"></div>
   <span class="spacer"></span>
-  <div id="dots" hidden></div>
-  <span class="spacer"></span>
-  <button id="langBtn" class="lang-btn" title="中文／English"><span data-l="zh">中</span><span data-l="en">EN</span></button>
-  <button id="replayBtn" class="icon-btn" hidden title="這一頁再聽一次">🔁</button>
+  <button id="replayBtn" type="button" class="btn xl" aria-label="這一頁再聽一次" hidden><i data-ic="replay"></i></button>
 </header>
 
 <main id="storySelect">
-  <div id="storyRow" class="story-row"></div>
+  <div id="storyRow" class="pic-grid"></div>
 </main>
 
 <main id="playScreen" hidden>
-  <!-- 翻頁鈕在舞台左右兩側，不放下緣（下緣是手腕會壓到的地方） -->
-  <div id="stageWrap">
-    <button id="stPrev" class="icon-btn nav-btn" title="上一頁">◀</button>
-    <div id="stage">
-      <div id="bg"></div>
-      <div id="tint"></div>
-      <div id="decor"></div>
-      <div id="actors"></div>
-      <div id="stFx"></div>
-    </div>
-    <button id="stNext" class="icon-btn nav-btn" title="下一頁">▶</button>
+  <!-- 翻頁鈕在舞台左右兩側，不放下緣（下緣是手腕會壓到的地方）。
+       舞台和字幕板是平的（不能按）；下一頁念完才變綠色。 -->
+  <button id="stPrev" type="button" class="btn page-btn" aria-label="上一頁"><i data-ic="left"></i></button>
+  <div id="stage">
+    <div id="bg"></div>
+    <div id="tint"></div>
+    <div id="decor"></div>
+    <div id="actors"></div>
+    <div id="stFx"></div>
+    <div id="dots" role="img" aria-label="頁數"></div>
   </div>
+  <button id="stNext" type="button" class="btn page-btn" aria-label="下一頁"><i data-ic="right"></i></button>
   <div id="caption"></div>
 </main>
 
-<div id="endOverlay" class="overlay" hidden>
-  <div id="endTitle" class="win-title">🌙 說完了！</div>
-  <div class="overlay-row">
-    <button id="againBtn" class="big-btn">🔁 再聽一次</button>
-    <button id="otherBtn" class="big-btn alt">📚 換一個故事</button>
+<!-- 說完了：這本故事的封面是主角；兩個選擇都是圖示（再聽一次、換一個故事） -->
+<div id="endOverlay" class="done" hidden>
+  <div class="done-art">
+    <span class="done-pic"><span id="endCover" class="story-cover"></span></span>
+    <img class="done-bear" src="assets/stickers/bear.png" alt="">
+  </div>
+  <div class="done-side">
+    <div id="endTitle" class="done-title" data-zy="說ㄕㄨㄛ 完ㄨㄢˊ 了˙ㄌㄜ"></div>
+    <div class="done-row">
+      <button id="againBtn" type="button" class="btn" aria-label="再聽一次"><i data-ic="replay"></i></button>
+      <button id="otherBtn" type="button" class="btn go" aria-label="換一個故事"><i data-ic="grid"></i></button>
+    </div>
   </div>
 </div>
 
 <script src="js/kiosk.js"></script>
 <script src="js/sound.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/story-script.js"></script>
 <script src="js/story-data.js"></script>
 <script src="js/story.js"></script>

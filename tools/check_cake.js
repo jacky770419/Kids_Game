@@ -305,11 +305,19 @@ ok(Data.NUMBERS[13] === 'thirteen', 'NUMBERS[13] 應為 thirteen');
   ok(exists('cake.html'), 'cake.html 不存在');
   const html = read('cake.html');
   ['selectScreen', 'dessertScreen', 'dessertGrid', 'gameScreen', 'board', 'cakeSvg', 'customer', 'bubble', 'nextBtn', 'fx', 'tray', 'catTabs', 'trayScroll', 'ghost',
-    'backBtn', 'listenBtn', 'undoBtn', 'clearBtn', 'partyBtn', 'saveBtn', 'speechBtn', 'musicBtn', 'freeCard', 'orderCard',
-    'freeDemo', 'orderDemo', 'saveOverlay', 'saveImg', 'closeSave'].forEach((id) => {
+    'backBtn', 'undoBtn', 'clearBtn', 'saveBtn', 'freeCard', 'orderCard',
+    'freeDemo', 'orderDemo', 'saveOverlay', 'saveImg'].forEach((id) => {
     ok(html.indexOf('id="' + id + '"') >= 0, 'cake.html 少了 #' + id);
   });
-  ok(/class="icon-btn home-hold"/.test(html), 'cake.html 的 🏠 要用 home-hold（長按才回首頁）');
+  /* 新版設計：音樂／唸英文／只聽不看的開關收進首頁的大人專區，這一頁不該再有；
+     慶祝（partyBtn）併進綠色完成鈕（saveBtn），完成畫面（saveOverlay）不再有「關閉」鈕。 */
+  ['musicBtn', 'speechBtn', 'listenBtn', 'partyBtn'].forEach((id) => {
+    ok(html.indexOf('id="' + id + '"') < 0, 'cake.html 不該再有 #' + id + '（新版收進大人專區／併進完成鈕）');
+  });
+  ok(/class="[^"]*home-hold[^"]*"/.test(html), 'cake.html 的回家鈕要用 home-hold（長按才回首頁）');
+  ok(html.indexOf('href="css/base.css"') >= 0 && html.indexOf('href="css/cake.css"') >= 0, 'cake.html 要載入 css/base.css 與 css/cake.css');
+  ok(html.indexOf('css/style.css') < 0, 'cake.html 不該再載入舊的 css/style.css');
+  ok(html.indexOf('src="js/ui.js"') >= 0 && html.indexOf('src="js/ui.js"') < html.indexOf('src="js/cake.js"'), 'cake.html 要在 cake.js 之前載入 js/ui.js');
   const order = ['js/kiosk.js', 'js/sound.js', 'js/speech.js', 'js/storage.js', 'js/cake-data.js', 'js/cake-state.js', 'js/cake-toppings.js', 'js/cake-shapes.js', 'js/cake-draw.js', 'js/cake.js'];
   const pos = order.map((src) => html.indexOf('src="' + src + '"'));
   pos.forEach((p, i) => ok(p >= 0, 'cake.html 沒有載入 ' + order[i]));

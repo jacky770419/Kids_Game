@@ -326,7 +326,11 @@ if (!exists('stickers.html')) {
 } else {
   const html = read('stickers.html');
   ok(/class=["'][^"']*home-hold/.test(html), 'stickers.html 的 🏠 沒有 home-hold class（長按回首頁不會生效）');
-  ok(/id=["']musicBtn["']/.test(html), 'stickers.html 沒有 #musicBtn（music.js 找不到按鈕）');
+  // 新版設計：音樂／唸英文的開關收進首頁的大人專區，這一頁不該再有
+  ok(!/id=["'](musicBtn|speechBtn)["']/.test(html), 'stickers.html 不該再有 #musicBtn／#speechBtn（新版收進大人專區）');
+  ok(html.indexOf('href="css/base.css"') >= 0 && html.indexOf('href="css/stickers.css"') >= 0, 'stickers.html 要載入 css/base.css 與 css/stickers.css');
+  ok(html.indexOf('css/style.css') < 0, 'stickers.html 不該再載入舊的 css/style.css');
+  ok(html.indexOf('src="js/ui.js"') >= 0 && html.indexOf('src="js/ui.js"') < html.indexOf('src="js/stickers.js"'), 'stickers.html 要在 stickers.js 之前載入 js/ui.js');
   ok(/serviceWorker\s*\.\s*register/.test(html), 'stickers.html 沒有註冊 service worker');
 
   const order = ['js/kiosk.js', 'js/sound.js', 'js/speech.js', 'js/music.js',

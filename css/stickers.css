@@ -1,0 +1,241 @@
+/* 貼紙頁（房間色：橘）。共用的按鈕、盒子、注音、完成畫面都在 css/base.css，這裡只放這一頁自己的版面。 */
+body.stickers {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 回家／上一層永遠在最上層：完成畫面蓋上來時回家也還按得到 */
+.stickers .top { position: relative; }
+.stickers .nav { display: flex; gap: 16px; position: relative; z-index: 120; }
+
+/* ===== 選場景：三張大卡片，每張就是那個地方（上面疊著上次貼到一半的貼紙） ===== */
+#selectScreen {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  /* 上面留給外圈、下面留給底邊，不然會被捲動區切掉 */
+  padding: 14px calc(24px + var(--sr)) calc(24px + var(--sb)) calc(24px + var(--sl));
+}
+/* 卡片放在剩下高度的中間偏上：三張一排填不滿整個畫面，貼著頂端會像沒載入完 */
+#selectScreen::before { content: ''; flex: 1 1 0; }
+#selectScreen::after { content: ''; flex: 2 1 0; }
+.stickers .pic-grid { flex: none; }
+
+.scene {
+  display: block;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+}
+.stickers .pic-thumb .scene-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+.scene-minis { position: absolute; inset: 0; pointer-events: none; }
+.stickers .pic-thumb .mini {
+  position: absolute;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  background: none;
+  transform: translate(-50%, -50%);
+}
+
+/* ===== 貼貼紙中：左邊＝上面一列按鈕＋板面，右邊＝整個高度的盒子 ===== */
+.stickers.playing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+.stickers.playing .top {
+  grid-column: 1;
+  grid-row: 1;
+  padding-right: 16px;          /* 垃圾桶的右邊跟板面的右邊切齊 */
+}
+.stickers.playing #gameScreen { display: contents; }
+
+#boardWrap {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: flex-start;      /* 靠上：板面緊接在按鈕列下面，空白留在下緣（手腕壓的地方） */
+  justify-content: center;
+  padding: 0 16px calc(16px + var(--sb)) calc(16px + var(--sl));
+  container-type: size;
+}
+
+/* 板面：平的白紙（不能按），固定 4:3（跟背景 SVG 的 800×600 一致），取放得下的最大尺寸 */
+#board {
+  position: relative;
+  flex: none;
+  width: 100%;
+  max-height: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+  touch-action: none;
+}
+@supports (width: 1cqw) {
+  #board { width: min(100cqw, 100cqh * 4 / 3); max-height: none; }
+}
+
+#boardBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#stickerLayer { position: absolute; inset: 0; }
+
+/* 貼紙：位置用百分比（比例座標），中心點對齊。可以拿起來的東西，所以下面有一點底邊。 */
+.sticker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  touch-action: none;
+  filter: drop-shadow(0 3px 0 rgba(51, 39, 79, .22));
+}
+.sticker.dragging {
+  filter: drop-shadow(0 10px 0 rgba(51, 39, 79, .18));
+  z-index: 20;
+}
+/* 拖到盒子上面：放手就收回去 */
+.sticker.leaving { opacity: .35; }
+.sticker.pop { animation: stickerPop .28s ease-out; }
+@keyframes stickerPop {
+  0% { transform: translate(-50%, -50%) scale(.3); }
+  70% { transform: translate(-50%, -50%) scale(1.12); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* 全部清掉：小顆、要按住（js 的 UI.hold）。放在按鈕列最右邊＝板面右上角的正上方，不蓋住場景。 */
+#clearBtn { align-self: flex-end; margin-bottom: 8px; }
+.stickers .btn.sm.hold:active { box-shadow: 0 6px 0 var(--lip); }
+
+/* ===== 右邊的盒子 ===== */
+#tray {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 264px;
+  min-height: 0;
+  margin: calc(16px + var(--st)) calc(16px + var(--sr)) calc(16px + var(--sb)) 0;
+  transition: box-shadow .12s ease;
+}
+/* 板上的貼紙拖到盒子上面時亮一圈：告訴她「放這裡就收回去」 */
+#tray.drop { box-shadow: inset 0 0 0 8px var(--room); }
+
+/* 分類：一排小的浮起按鈕，每顆是那一類的代表貼紙（五類排成 3＋2） */
+.cats {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(3, 64px);
+  justify-content: space-between;
+  gap: 22px 16px;
+  padding: 4px 0 8px;
+}
+.cat img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* 貼紙格：可上下捲。上面一條淡線把「分類」和「貼紙」分開。 */
+#trayScroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* 列高一定要照內容（正方形格子）給：預設 auto 列在放不下時會被壓扁，
+     格子一格疊一格、怎麼滑都不動（車車一類 12 張，iPad 上擠成一團才發現） */
+  grid-auto-rows: max-content;
+  gap: 22px 16px;
+  align-content: start;
+  padding: 16px 0 12px;
+  border-top: 3px solid var(--line);
+}
+
+/* 每格至少 80px；可以拿的東西所以是浮起來的（淡橘色的面＋底邊） */
+.tray-item {
+  aspect-ratio: 1 / 1;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 22px;
+  background: #FFF6E6;
+  box-shadow: 0 6px 0 #F0CE9C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: transform .08s ease, box-shadow .08s ease;
+  /* none：上下滑捲盒子／往旁邊拖貼紙由 stickers.js 自己判斷方向。
+     試過 pan-y 交給瀏覽器：桌機可以，iPad Safari 連往左拖都當成捲動，貼紙拉不出來。 */
+  touch-action: none;
+}
+.tray-item.pressed {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #F0CE9C;
+}
+.tray-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* 跟著手指走的浮動貼紙：不吃事件，永遠在最上面 */
+#ghost {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 200;
+  opacity: .9;
+  filter: drop-shadow(0 10px 0 rgba(51, 39, 79, .18));
+}
+
+/* ===== 完成畫面：主角是她貼好的那張場景（4:3，不是正方形） ===== */
+.stickers .done-pic {
+  width: min(46vw, 70vh);
+  aspect-ratio: 4 / 3;
+}
+/* 4:3 的圖比正方形矮，小熊縮一點、站外面一點，才不會蓋掉她貼的東西 */
+.stickers .done-bear {
+  right: -96px;
+  bottom: -96px;
+  height: min(220px, 30vh);
+}
+/* 這一頁的完成畫面左上只有一顆回家（圖在它下面），不用像拼圖那樣讓出一整排 */
+@media (orientation: landscape) {
+  .stickers .done { padding-left: calc(40px + var(--sl)); }
+}
+
+/* ===== 直向：盒子還是在右邊（窄一點），板面受寬度限制 ===== */
+@media (orientation: portrait) {
+  .stickers .pic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #tray { width: 232px; }
+  .cats { grid-template-columns: repeat(2, 64px); justify-content: space-evenly; }
+  /* 左邊只剩回家、上一層、垃圾桶放得下，小熊泡泡收起來 */
+  .stickers.playing .guide { display: none; }
+  .stickers .done-pic { width: min(72vw, 52vh); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker.pop { animation: none; }
+  .tray-item, #tray { transition: none; }
+}

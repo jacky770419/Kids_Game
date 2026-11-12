@@ -7,55 +7,73 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>貼紙 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/stickers.css">
 </head>
 <body class="stickers">
 
-<header class="bar">
-  <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-  <button id="backBtn" class="icon-btn" hidden title="換一張背景">🔙</button>
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡。
+     貼貼紙的時候這一列的最右邊（板面右上角的正上方）多一顆小垃圾桶：全部清掉，要按住。 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="換一個地方" hidden><i data-ic="back"></i></button>
+  </div>
+  <div id="guide" class="guide" data-guide="選ㄒㄩㄢˇ 一ㄧˊ 個˙ㄍㄜ 地ㄉㄧˋ 方ㄈㄤ"></div>
   <span class="spacer"></span>
-  <!-- 工具都在右側：左手扶著平板時不會被手掌壓到，也不放在畫面下緣（手腕誤觸） -->
-  <button id="undoBtn" class="icon-btn" hidden title="收回上一張貼紙">↩️</button>
-  <button id="clearBtn" class="icon-btn" hidden title="全部收起來">🗑️</button>
-  <button id="saveBtn" class="icon-btn" hidden title="存成圖片">📷</button>
-  <button id="speechBtn" class="icon-btn" title="唸英文">🗣️</button>
-  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
+  <button id="clearBtn" type="button" class="btn sm" aria-label="全部清掉（按住）" hidden><i data-ic="trash"></i></button>
 </header>
 
 <main id="selectScreen">
-  <div class="select-hint">選一個地方，開始貼貼紙吧！</div>
   <div id="bgGrid" class="pic-grid"></div>
 </main>
 
 <main id="gameScreen" hidden>
-  <!-- 板面固定 4:3，跟背景 SVG 的 800×600 一致，貼紙的比例座標才對得上 -->
+  <!-- 板面固定 4:3，跟背景 SVG 的 800×600 一致，貼紙的比例座標才對得上。板面是平的（不能按）。 -->
   <div id="boardWrap">
     <div id="board">
       <img id="boardBg" alt="" draggable="false">
       <div id="stickerLayer"></div>
     </div>
   </div>
-  <!-- 貼紙匣：直向也留在右側，不搬到底部（下緣是手腕會壓到的地方） -->
-  <aside id="tray">
-    <div id="catTabs" class="cat-tabs"></div>
+  <!-- 右邊的盒子：分類、貼紙、最下面上一步＋綠色完成。
+       直向也留在右側，不搬到底部（下緣是手腕會壓到的地方）。 -->
+  <aside id="tray" class="box">
+    <div id="catTabs" class="cats"></div>
     <div id="trayScroll"></div>
+    <div class="box-foot">
+      <button id="undoBtn" type="button" class="btn" aria-label="收回上一張貼紙"><i data-ic="undo"></i></button>
+      <button id="doneBtn" type="button" class="btn go" aria-label="貼好了"><i data-ic="check"></i></button>
+    </div>
   </aside>
 </main>
 
 <!-- 跟著手指走的浮動貼紙（從匣子拖出來時才出現） -->
 <img id="ghost" alt="" draggable="false" hidden>
 
-<div id="saveOverlay" class="overlay" hidden>
-  <img id="saveImg" alt="貼紙作品">
-  <div class="save-hint">長按圖片就可以存到相簿囉！</div>
-  <button id="closeSave" class="big-btn alt">關閉</button>
+<canvas id="confettiCanvas"></canvas>
+
+<!-- 完成畫面：她貼好的那張場景是主角；兩個選擇都是圖示（繼續貼這張、換一個地方） -->
+<div id="doneOverlay" class="done" hidden>
+  <div class="done-art">
+    <span class="done-pic"><img id="donePic" alt="貼好的圖"></span>
+    <img class="done-bear" src="assets/stickers/bear.png" alt="">
+  </div>
+  <div class="done-side">
+    <div class="done-title" data-zy="好ㄏㄠˇ 棒ㄅㄤˋ"></div>
+    <div class="done-row">
+      <!-- 圖示（一張掀起一角的貼紙）是 stickers.js 自己加的，所以由它填進來 -->
+      <button id="keepBtn" type="button" class="btn" aria-label="繼續貼這張"></button>
+      <button id="newSceneBtn" type="button" class="btn go" aria-label="換一個地方"><i data-ic="grid"></i></button>
+    </div>
+  </div>
 </div>
 
 <script src="js/kiosk.js"></script>
 <script src="js/sound.js"></script>
 <script src="js/speech.js"></script>
 <script src="js/music.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/stickers-data.js"></script>
 <script src="js/stickers-state.js"></script>

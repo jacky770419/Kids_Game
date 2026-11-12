@@ -11,8 +11,8 @@
      say  可省略；語音要唸的字串跟 word 不同時才寫（例如 icecream → ice cream）
      cat  分類：princess / animals / fruits / sweets
 
-   為什麼中文標籤只放在分類頁籤而不放在每張貼紙下面：使用者五歲、不識漢字，
-   貼紙格裡放圖就夠了，字只會佔掉手指要按的面積。 */
+   為什麼畫面上完全沒有中文標籤：使用者五歲、不識漢字，
+   貼紙格與分類頁籤放圖就夠了，字只會佔掉手指要按的面積。 */
 (function (global) {
   'use strict';
 
@@ -22,13 +22,14 @@
     { id: 'forest', name: '森林', src: 'assets/backgrounds/forest.svg' }
   ];
 
-  /* 分類頁籤的顯示順序與標籤。emoji 是主要辨識線索，中文只是給大人看的。 */
+  /* 分類頁籤的顯示順序。rep＝這一類的代表貼紙 id，頁籤上只放那張圖（畫面上不放 emoji、不放字）；
+     name 只給 aria-label 用（她不識漢字）。 */
   var CATEGORIES = [
-    { id: 'princess', name: '公主', emoji: '👸' },
-    { id: 'animals', name: '動物', emoji: '🐻' },
-    { id: 'fruits', name: '水果', emoji: '🍓' },
-    { id: 'sweets', name: '甜點', emoji: '🍰' },
-    { id: 'vehicles', name: '車車', emoji: '🚗' }
+    { id: 'princess', name: '公主', rep: 'princess' },
+    { id: 'animals', name: '動物', rep: 'bear' },
+    { id: 'fruits', name: '水果', rep: 'strawberry' },
+    { id: 'sweets', name: '甜點', rep: 'cupcake' },
+    { id: 'vehicles', name: '車車', rep: 'bus' }
   ];
 
   /* 上色點陣貼紙：Codex 依著色線稿上色、tools/make_color_art.py 去底的 PNG。

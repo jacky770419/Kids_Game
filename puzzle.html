@@ -7,44 +7,53 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>拼圖 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/puzzle.css">
 </head>
 <body class="puzzle">
 
-<header class="bar">
-  <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-  <button id="backBtn" class="icon-btn" hidden>🔙</button>
-  <span class="spacer"></span>
-  <!-- 五段難度：星星從標籤移到 title。五顆按鈕各帶 1～5 顆星在 834 寬直向會被擠掉，
-       而她認得數字，「N×N」本身就是最直接的難度線索。 -->
-  <div id="diffRow">
-    <button class="diff-btn selected" data-n="2" title="⭐">2×2</button>
-    <button class="diff-btn" data-n="3" title="⭐⭐">3×3</button>
-    <button class="diff-btn" data-n="4" title="⭐⭐⭐">4×4</button>
-    <button class="diff-btn" data-n="5" title="⭐⭐⭐⭐">5×5</button>
-    <button class="diff-btn" data-n="6" title="⭐⭐⭐⭐⭐">6×6</button>
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="回去選圖" hidden><i data-ic="back"></i></button>
   </div>
-  <span class="spacer"></span>
-  <button id="speechBtn" class="icon-btn" title="唸英文">🗣️</button>
-  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
+  <div id="guide" class="guide" data-guide="選ㄒㄩㄢˇ 喜ㄒㄧˇ 歡ㄏㄨㄢ 的˙ㄉㄜ 圖ㄊㄨˊ"></div>
 </header>
 
 <main id="selectScreen">
-  <div class="select-hint">選一張喜歡的圖開始拼吧！</div>
-  <div id="picGrid" class="pic-grid"></div>
+  <div class="pick-scroll">
+    <div id="picGrid" class="pic-grid"></div>
+  </div>
+  <!-- 要拼幾片：格子圖＋數字，她認得數字，不用讀「2×2」。放右邊（盒子的位置）。 -->
+  <aside id="diffRow" class="box levels" aria-label="要拼幾片">
+    <button type="button" class="btn lv diff-btn selected" data-n="2" aria-label="2 乘 2，最簡單"><span class="lv-grid" style="--n:2"></span><span class="lv-n">2</span></button>
+    <button type="button" class="btn lv diff-btn" data-n="3" aria-label="3 乘 3"><span class="lv-grid" style="--n:3"></span><span class="lv-n">3</span></button>
+    <button type="button" class="btn lv diff-btn" data-n="4" aria-label="4 乘 4"><span class="lv-grid" style="--n:4"></span><span class="lv-n">4</span></button>
+    <button type="button" class="btn lv diff-btn" data-n="5" aria-label="5 乘 5"><span class="lv-grid" style="--n:5"></span><span class="lv-n">5</span></button>
+    <button type="button" class="btn lv diff-btn" data-n="6" aria-label="6 乘 6，最難"><span class="lv-grid" style="--n:6"></span><span class="lv-n">6</span></button>
+  </aside>
 </main>
 
 <main id="gameScreen" hidden>
+  <div id="tray" aria-hidden="true"></div>
   <div id="board"></div>
 </main>
 
 <canvas id="confettiCanvas"></canvas>
 
-<div id="winOverlay" class="overlay" hidden>
-  <div class="win-title">🎉 好棒喔！ 🎉</div>
-  <div class="overlay-row">
-    <button id="againBtn" class="big-btn">再玩一次</button>
-    <button id="newPicBtn" class="big-btn alt">換一張圖</button>
+<!-- 完成畫面：她拼好的圖是主角；兩個選擇都是圖示（再玩一次、換一張） -->
+<div id="winOverlay" class="done" hidden>
+  <div class="done-art">
+    <span class="done-pic"><img id="winPic" alt="拼好的圖"></span>
+    <img class="done-bear" src="assets/stickers/bear.png" alt="">
+  </div>
+  <div class="done-side">
+    <div class="done-title" data-zy="好ㄏㄠˇ 棒ㄅㄤˋ"></div>
+    <div class="done-row">
+      <button id="againBtn" type="button" class="btn" aria-label="再玩一次"><i data-ic="replay"></i></button>
+      <button id="newPicBtn" type="button" class="btn go" aria-label="換一張圖"><i data-ic="grid"></i></button>
+    </div>
   </div>
 </div>
 
@@ -52,6 +61,7 @@
 <script src="js/sound.js"></script>
 <script src="js/speech.js"></script>
 <script src="js/music.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/pictures-data.js"></script>
 <script src="js/puzzle-geom.js"></script>
 <script src="js/puzzle.js"></script>

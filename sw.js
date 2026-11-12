@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v26';
+const CACHE_VERSION = 'v27';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
@@ -26,9 +26,18 @@ const PRECACHE = [
   'cake.html',
   'story.html',
   'manifest.json',
-  'css/style.css',
+  // 樣式：base 是共用的（按鈕、注音、小熊泡泡、完成畫面），其餘一頁一支
+  'css/base.css',
+  'css/home.css',
+  'css/puzzle.css',
+  'css/coloring.css',
+  'css/words.css',
+  'css/stickers.css',
+  'css/cake.css',
   'css/story.css',
   // 程式
+  'js/ui.js',
+  'js/home.js',
   'js/cake-data.js',
   'js/cake-draw.js',
   'js/cake-shapes.js',
@@ -62,7 +71,6 @@ const PRECACHE = [
   'js/story.js',
   'js/words.js',
   // 字型與圖示
-  'assets/fonts/lilita-one-latin.woff2',
   'assets/icon-192.png',
   'assets/icon-512.png',
   // 單字資料

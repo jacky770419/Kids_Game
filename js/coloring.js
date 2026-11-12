@@ -1,7 +1,10 @@
 /* 著色遊戲：
-   選圖畫面（縮圖牆）→ 遊戲畫面（左邊白色畫布 + 右邊木紋直立工具列）。
-   工具列上的「工具」「顏色」兩顆大圓鈕會在左側彈出面板；
-   另外支援橡皮擦、復原（undo）與上傳自己的照片自動變成線條畫稿。 */
+   選圖畫面（左邊縮圖牆、右邊盒子選種類）→ 著色中（左邊整塊白紙、右邊盒子）。
+   盒子由上到下：四種畫具（倒顏料／畫筆／蓋章／橡皮擦，點一下就換）、
+   她在學的 11 個顏色＋「更多」、最下面一定是 [上一步][綠色的畫好了]。
+   畫筆種類與粗細、印章圖案、橡皮擦大小、完整色盤是從盒子左邊跳出來的面板。
+   另外支援復原（undo）、接著畫、我的作品、上傳自己的照片自動變成線條畫稿。
+   畫面元件（.btn／.box／.done／注音／圖示）在 css/base.css 與 js/ui.js，這一頁的樣式在 css/coloring.css。 */
 (() => {
   /* ===== 56 色色盤：8 欄 x 7 列，整體照彩虹順序排 ===== */
   const COLORS = [
@@ -51,19 +54,39 @@
     '#A9A9A9': 'gray', '#777777': 'gray', '#5C2E0E': 'brown', '#333333': 'black'
   };
 
-  /* ===== 畫圖工具 ===== */
-  const TOOLS = [
-    { id: 'fill',    emoji: '🪣',  name: '填滿' },
-    { id: 'marker',  emoji: '🖍️', name: '粗筆',   width: 34 },
-    { id: 'pencil',  emoji: '✏️', name: '細筆',   width: 12 },
-    { id: 'water',   emoji: '🖌️', name: '水彩',   width: 40, alpha: 0.35 },
-    { id: 'spray',   emoji: '💦', name: '潑墨' },
-    { id: 'glitter', emoji: '✨', name: '亮粉筆', width: 26 }
+  /* ===== 盒子裡常駐的 11 個顏色 =====
+     就是 COLOR_NAMES 會唸的那 11 個字（red／orange／yellow／green／blue／purple／pink／brown／
+     black／white／gray），一個字一格、永遠攤開——她學的是這 11 個字，不用打開面板就按得到。
+     每一格都是 COLORS 裡現成的那一色（不另外發明新色）：完整色盤裡選到同一色時兩邊一起亮，
+     COLOR_NAMES 也不用多一份對照。第 12 格是彩虹色的「更多」，打開完整色盤與花紋。 */
+  const BASIC_COLORS = [
+    '#FF0000', '#FFA500', '#FFFF00',
+    '#228B22', '#0000FF', '#7B2FBE',
+    '#FF69B4', '#8B4513', '#2B2B2B',
+    '#FFFFFF', '#8A8A8A'
   ];
+  // 只給螢幕報讀用的中文名（畫面上不顯示字）
+  const COLOR_ZH = {
+    red: '紅色', orange: '橘色', yellow: '黃色', green: '綠色', blue: '藍色', purple: '紫色',
+    pink: '粉紅色', brown: '咖啡色', black: '黑色', white: '白色', gray: '灰色'
+  };
 
-  /* 蓋章工具不放在工具面板裡（它有自己的圖案面板與工具列按鈕），
+  /* ===== 畫圖工具 =====
+     fill 是盒子上的「倒顏料」；其餘五支是「畫筆」那一顆底下的種類（面板裡用畫出來的筆跡表示）。
+     name 只給螢幕報讀用，畫面上不顯示字。 */
+  const TOOLS = [
+    { id: 'fill',    name: '倒顏料' },
+    { id: 'marker',  name: '粗筆',   width: 34 },
+    { id: 'pencil',  name: '細筆',   width: 12 },
+    { id: 'water',   name: '水彩',   width: 40, alpha: 0.35 },
+    { id: 'spray',   name: '潑墨' },
+    { id: 'glitter', name: '亮粉筆', width: 26 }
+  ];
+  const BRUSHES = TOOLS.filter(t => t.id !== 'fill');
+
+  /* 蓋章有自己的圖案面板與按鈕，不在 TOOLS 裡，
      但 mode 會設成 'stamp'，所以 currentTool() 要認得它 */
-  const STAMP_TOOL = { id: 'stamp', emoji: '⭐', name: '蓋章' };
+  const STAMP_TOOL = { id: 'stamp', name: '蓋章' };
   // 印章大小：一顆印章佔紙張短邊的比例，三段可選
   const STAMP_SIZES = [
     { id: 'small', name: '小', scale: 0.11 },
@@ -91,19 +114,21 @@
     { id: 'lg',  name: '粗',   scale: 1.5 }
   ];
 
-  /* ===== 選圖畫面的分類頁籤 =====
-     50 張圖擠在一面縮圖牆上太難找，改成上面一排貼紙頁籤，按了只留該類。
+  /* ===== 選圖畫面的種類 =====
+     六十幾張圖擠在一面縮圖牆上太難找，右邊盒子裡一顆一類，按了只留該類。
      id 要跟 gallery() 給每一筆的 cat 對得起來；'all' 是特例（不篩）。
-     photo 類是自己上傳的照片，即使一張都沒有也要留著——上傳鈕在那一頁。 */
+     photo 類是自己上傳的照片，即使一張都沒有也要留著——上傳鈕在那一頁。
+     她不識字，所以每一顆放的是「那一類裡的一張線稿」：pick 指定用哪一張（找不到就用該類第一張），
+     全部和我的照片沒有代表圖，用線條圖示（ic）。name 只給螢幕報讀用。 */
   const CATS = [
-    { id: 'all',     emoji: '⭐', name: '全部' },
-    { id: 'animal',  emoji: '🐻', name: '動物' },
-    { id: 'fantasy', emoji: '👑', name: '公主城堡' },
-    { id: 'food',    emoji: '🍓', name: '水果甜點' },
-    { id: 'vehicle', emoji: '🚗', name: '車車' },
-    { id: 'scene',   emoji: '🌈', name: '大張場景' },
-    { id: 'other',   emoji: '🌻', name: '其他' },
-    { id: 'photo',   emoji: '📷', name: '我的照片' }
+    { id: 'all',     name: '全部',     ic: 'grid' },
+    { id: 'animal',  name: '動物',     pick: '抱抱熊' },
+    { id: 'fantasy', name: '公主城堡', pick: '微笑小公主' },
+    { id: 'food',    name: '水果甜點', pick: '甜心草莓' },
+    { id: 'vehicle', name: '車車',     pick: '嘟嘟小汽車' },
+    { id: 'scene',   name: '大張場景', pick: '熊貓吃竹子' },
+    { id: 'other',   name: '其他',     pick: '太陽小花' },
+    { id: 'photo',   name: '我的照片', ic: 'camera' }
   ];
 
   // 正方線稿／照片的座標系邊長，跟 photo-tool.js 的 SIZE 一致（不可改）
@@ -126,10 +151,14 @@
   const holder = document.getElementById('svgHolder');
   const artWrap = document.getElementById('artWrap');
   const toolbar = document.getElementById('toolbar');
-  const toolBtn = document.getElementById('toolBtn');
-  const toolBtnIcon = document.getElementById('toolBtnIcon');
-  const colorBtn = document.getElementById('colorBtn');
+  const fillBtn = document.getElementById('fillBtn');
+  const brushBtn = document.getElementById('brushBtn');
   const eraserBtn = document.getElementById('eraserBtn');
+  const swatches = document.getElementById('swatches');
+  const backBtn = document.getElementById('backBtn');
+  const pickScroll = document.querySelector('.pick-scroll');
+  const doneOverlay = document.getElementById('doneOverlay');
+  const donePic = document.getElementById('donePic');
   const undoBtn = document.getElementById('undoBtn');
   const clearBtn = document.getElementById('clearBtn');
   const doneBtn = document.getElementById('doneBtn');
@@ -153,7 +182,8 @@
   let currentCat = 'all';                           // 目前選的分類頁籤（回選圖畫面時保留）
   let customPics = loadCustomPics();  // [{type:'raster', id, name, dataUrl}]
   let mode = 'fill';                                // TOOLS 裡的 id，或 'stamp'
-  let penId = 'fill';                               // 最後選的 TOOLS 工具：蓋章／橡皮擦之後切回畫筆就回到它
+  let brushId = 'marker';                           // 最後選的那支筆（BRUSHES 裡的 id）：再點「畫筆」就回到它
+  let moreBtn = null;                               // 第 12 格「更多顏色」（buildSwatches 建的）
   let stampId = (window.STAMPS && window.STAMPS[0].id) || 'star';  // 目前選的印章圖案
   let stampSizeId = 'mid';                                         // 目前選的印章大小
   let brushSizeId = 'mid';                                         // 目前選的畫筆粗細
@@ -168,13 +198,15 @@
   let history = [];                        // 復原用的快照堆疊
   let beforePaint = null;                  // 重複使用的離屏 canvas：這一筆「下筆前」的 paintLayer
   let strokeAcc = null;                    // 這一筆的影響範圍累積器（UndoRect）
-  let openedPanel = null;                  // null | 'tool' | 'color'
+  let openedPanel = null;                  // null | 'tool' | 'color' | 'stamp' | 'eraser'
   let swallowStroke = false;               // 這一下點擊只用來關面板，不作畫
   let paperW = 0, paperH = 0;              // 上一次量到的紙張尺寸（CSS px），用來短路重複的 resize
   let hasContent = false;                  // 這張畫過東西，或剛從進度還原回來（跟 history 無關）
   let wipKeys = new Set();                 // 有存進度的圖，選圖畫面用來加「畫到一半」角標
   let saveTimer = null;                    // 進度存檔的 debounce timer
   let artworks = [];                       // 「我的作品」，由新到舊
+  let changedSinceDone = true;             // 上次按「畫好了」之後有沒有再動過（沒動就不重複收一張一樣的）
+  let doneBusy = false;                    // 正在合成完成圖，擋掉連點
 
   /* 選圖畫面的順序：內建手繪 → 城堡公主 → 動物 → 水果甜點 → 場景 → 自己上傳的照片。
      各系列的 js 檔都是 classic script，用 window.XXX 取值，缺檔時安全跳過。
@@ -203,8 +235,8 @@
     return TOOLS.find(t => t.id === mode) || TOOLS[0];
   }
 
-  function penTool() {
-    return TOOLS.find(t => t.id === penId) || TOOLS[0];
+  function brushTool() {
+    return BRUSHES.find(t => t.id === brushId) || BRUSHES[0];
   }
 
   function currentStamp() {
@@ -288,7 +320,9 @@
       entry.ctx.putImageData(entry.data, entry.x, entry.y);
       if (entry.ctx === fillCtx) syncEdgeLayer();
     }
+    changedSinceDone = true;
     updateButtons();
+    scheduleSave();   // 退回去的樣子也要存：不然退完就被系統關掉，下次打開那一筆又回來了
   }
 
   /* ===== 一筆畫的「延後快照」 =====
@@ -339,26 +373,100 @@
     const empty = history.length === 0;
     undoBtn.disabled = empty;
     clearBtn.disabled = empty && !hasContent;
+    // 一筆都還沒畫就沒有「畫好了」可言（灰的、平的）：空白線稿不收進我的作品，也不放彩帶
+    doneBtn.disabled = empty && !hasContent;
   }
 
-  // 畫了東西（或還原回內容）就標記起來，讓「全部清除」可以按
+  // 畫了東西（或還原回內容）就標記起來，讓「全部擦掉」「畫好了」可以按
   function markContent() {
     hasContent = true;
+    changedSinceDone = true;
     updateButtons();
   }
 
-  /* ===== 彈出面板 ===== */
+  /* ===== 彈出面板 =====
+     面板裡的每一格都是浮起來的小按鈕（.cell），裡面放的是「畫出來的東西」——筆跡、圓點、印章，
+     不是字也不是 emoji。選到的那一格外面一圈深色（跟顏色的選法一樣）。 */
+  function makeCell(selected, label) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'cell' + (selected ? ' selected' : '');
+    if (label) b.setAttribute('aria-label', label);
+    return b;
+  }
+
   function buildToolPanel() {
     toolList.innerHTML = '';
-    TOOLS.forEach(t => {
-      const b = document.createElement('button');
-      b.className = 'tool-item';
+    BRUSHES.forEach(t => {
+      const b = makeCell(false, t.name);
       b.dataset.tool = t.id;
-      b.innerHTML = `<span class="tool-emoji">${t.emoji}</span><span>${t.name}</span>`;
+      b.appendChild(brushPreview(t));
       b.addEventListener('click', () => selectTool(t.id));
       toolList.appendChild(b);
     });
     refreshToolSizeRow();
+  }
+
+  /* 每支筆畫一小段它真正的筆跡：粗筆粗、細筆細、水彩半透明會疊色、潑墨是一團點、亮粉筆上面有亮點。
+     固定用房間的紅色畫，不跟著目前的顏色變——選到白色時整排會看不見。 */
+  function brushPreview(t) {
+    const S = 128;                       // 畫 2 倍解析度，CSS 縮小顯示
+    const c = document.createElement('canvas');
+    c.width = S; c.height = S;
+    const g = c.getContext('2d');
+    const wave = () => {
+      g.beginPath();
+      g.moveTo(22, 84);
+      g.bezierCurveTo(46, 20, 80, 110, 106, 44);
+    };
+    g.lineCap = 'round';
+    g.lineJoin = 'round';
+    g.strokeStyle = '#FF5C5C';
+    g.fillStyle = '#FF5C5C';
+
+    if (t.id === 'spray') {
+      // 固定的亂數種子：每次開頁都長得一樣
+      let seed = 7;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+      for (let i = 0; i < 46; i++) {
+        const a = rnd() * Math.PI * 2;
+        const d = rnd() * rnd() * 52;
+        g.beginPath();
+        g.arc(64 + Math.cos(a) * d, 64 + Math.sin(a) * d, 3 + rnd() * 6, 0, Math.PI * 2);
+        g.fill();
+      }
+      g.beginPath();
+      g.arc(60, 66, 15, 0, Math.PI * 2);
+      g.fill();
+      return c;
+    }
+
+    if (t.id === 'water') {
+      g.globalAlpha = t.alpha;
+      g.lineWidth = 34;
+      wave();
+      g.stroke();
+      // 再疊一筆短的：水彩疊起來會變深
+      g.beginPath();
+      g.moveTo(40, 70);
+      g.bezierCurveTo(56, 50, 76, 86, 92, 64);
+      g.stroke();
+      return c;
+    }
+
+    g.lineWidth = t.id === 'pencil' ? 7 : (t.id === 'glitter' ? 22 : 28);
+    wave();
+    g.stroke();
+    if (t.id === 'glitter') {
+      [[30, 70, 4], [44, 50, 5], [58, 62, 3.5], [70, 76, 5], [84, 70, 4], [98, 52, 5], [52, 78, 3], [90, 58, 3]]
+        .forEach((p, i) => {
+          g.fillStyle = i % 2 ? '#FFF9C4' : '#fff';
+          g.beginPath();
+          g.arc(p[0], p[1], p[2], 0, Math.PI * 2);
+          g.fill();
+        });
+    }
+    return c;
   }
 
   // 目前粗細的倍率，乘在每種筆原本的 width 上
@@ -376,39 +484,34 @@
     return (currentTool().width || 30) * brushScale();
   }
 
-  /* 粗細那一列：只有「有 width」的筆（粗筆／細筆／水彩／亮粉筆）才顯示，
-     填滿、潑墨沒有線寬可調。用目前選的筆畫出實際粗細的圓點，小孩才看得出差別。
-     看的是 penTool() 不是 currentTool()：蓋章中打開工具面板，這列要是「切回去那支筆」的粗細 */
+  /* 粗細那一列：只有「有 width」的筆（粗筆／細筆／水彩／亮粉筆）才顯示，潑墨沒有線寬可調。
+     看的是 brushTool() 不是 currentTool()：這列是「畫筆」的粗細，跟現在手上拿什麼無關。 */
   function refreshToolSizeRow() {
-    const t = penTool();
-    const supportsSize = typeof t.width === 'number';
+    const supportsSize = typeof brushTool().width === 'number';
     toolSizeRow.hidden = !supportsSize;
     if (!supportsSize) return;
     toolSizeRow.innerHTML = '';
     BRUSH_SIZES.forEach(sz => {
-      const b = document.createElement('button');
-      b.className = 'tool-size-cell' + (sz.id === brushSizeId ? ' selected' : '');
+      const b = makeCell(sz.id === brushSizeId, sz.name);
       b.dataset.size = sz.id;
-      b.title = sz.name;
-      b.appendChild(brushSizePreview(t.width, sz.scale));
-      const cap = document.createElement('span');
-      cap.className = 'tool-size-txt';
-      cap.textContent = sz.name;
-      b.appendChild(cap);
+      b.appendChild(sizeDot(sz.scale, BRUSH_SIZES));
       b.addEventListener('click', () => selectBrushSize(sz.id));
       toolSizeRow.appendChild(b);
     });
   }
 
-  function brushSizePreview(baseWidth, scale) {
-    const side = 32;
+  /* 粗細用圓點表示，她看的是「哪一顆比較大」：最大那一段剛好塞滿格子，其他照比例縮。
+     不照實際 px 畫——粗筆的「中」和「粗」都會頂到格子邊看不出差別，細筆的五顆又全小到分不出來。 */
+  function sizeDot(scale, sizes) {
+    const S = 96;                        // 畫 2 倍解析度，CSS 縮小顯示
     const c = document.createElement('canvas');
-    c.width = side; c.height = side;
+    c.width = S; c.height = S;
     const g = c.getContext('2d');
-    const r = Math.max(1, Math.min(side / 2 - 2, (baseWidth * scale) / 2));
-    g.fillStyle = '#5a4a38';
+    const max = Math.max.apply(null, sizes.map(s => s.scale));
+    const r = Math.max(4, (S / 2 - 4) * scale / max);
+    g.fillStyle = '#33274F';
     g.beginPath();
-    g.arc(side / 2, side / 2, r, 0, Math.PI * 2);
+    g.arc(S / 2, S / 2, r, 0, Math.PI * 2);
     g.fill();
     return c;
   }
@@ -417,28 +520,21 @@
     brushSizeId = id;
     // 調畫筆粗細＝想用筆畫：不管現在是蓋章還是橡皮擦，都切回最後那支筆
     eraser = false;
-    mode = penId;
+    mode = brushId;
     syncActiveTool();
-    toolSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
+    toolSizeRow.querySelectorAll('.cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
     // 刻意不關面板：小孩常常要連續調幾次才滿意
   }
 
-  /* 橡皮擦大小面板：跟畫筆粗細長得一樣（同一套視覺語言），
-     但用自己的 ERASER_BASE_WIDTH，只需要建一次，不必隨目前選的筆重畫 */
+  /* 橡皮擦大小面板：跟畫筆粗細長得一樣（同一套視覺語言），只需要建一次 */
   function buildEraserSizeRow() {
     eraserSizeRow.innerHTML = '';
     ERASER_SIZES.forEach(sz => {
-      const b = document.createElement('button');
-      b.className = 'tool-size-cell' + (sz.id === eraserSizeId ? ' selected' : '');
+      const b = makeCell(sz.id === eraserSizeId, sz.name);
       b.dataset.size = sz.id;
-      b.title = sz.name;
-      b.appendChild(brushSizePreview(ERASER_BASE_WIDTH, sz.scale));
-      const cap = document.createElement('span');
-      cap.className = 'tool-size-txt';
-      cap.textContent = sz.name;
-      b.appendChild(cap);
+      b.appendChild(sizeDot(sz.scale, ERASER_SIZES));
       b.addEventListener('click', () => selectEraserSize(sz.id));
       eraserSizeRow.appendChild(b);
     });
@@ -448,7 +544,7 @@
     eraserSizeId = id;
     eraser = true;             // 調橡皮擦大小＝想擦，順手切過去
     syncActiveTool();
-    eraserSizeRow.querySelectorAll('.tool-size-cell').forEach(b =>
+    eraserSizeRow.querySelectorAll('.cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();
     // 刻意不關面板：小孩常常要連續調幾次才滿意
@@ -459,10 +555,8 @@
   function buildStampPanel() {
     stampGrid.innerHTML = '';
     (window.STAMPS || []).forEach(st => {
-      const b = document.createElement('button');
-      b.className = 'stamp-cell' + (st.id === stampId ? ' selected' : '');
+      const b = makeCell(st.id === stampId, st.name);
       b.dataset.stamp = st.id;
-      b.title = st.name;
       b.appendChild(stampPreview(st));
       b.addEventListener('click', () => selectStamp(st.id));
       stampGrid.appendChild(b);
@@ -477,15 +571,9 @@
     const big = STAMP_SIZES[STAMP_SIZES.length - 1].scale;
     stampSizeRow.innerHTML = '';
     STAMP_SIZES.forEach(sz => {
-      const b = document.createElement('button');
-      b.className = 'stamp-size-cell' + (sz.id === stampSizeId ? ' selected' : '');
+      const b = makeCell(sz.id === stampSizeId, sz.name);
       b.dataset.size = sz.id;
-      b.title = sz.name;
       b.appendChild(stampPreview(currentStamp(), 0.35 + 0.65 * (sz.scale / big)));
-      const cap = document.createElement('span');
-      cap.className = 'stamp-size-txt';
-      cap.textContent = sz.name;
-      b.appendChild(cap);
       b.addEventListener('click', () => selectStampSize(sz.id));
       stampSizeRow.appendChild(b);
     });
@@ -493,7 +581,7 @@
 
   // ratio < 1 時圖案畫小一點但畫布一樣大，三顆並排才看得出大小差別
   function stampPreview(st, ratio) {
-    const side = 72;
+    const side = 144;                    // 畫 2 倍解析度，CSS 縮小顯示
     const k = ratio || 1;
     const c = document.createElement('canvas');
     c.width = side; c.height = side;
@@ -502,7 +590,7 @@
     g.translate(side / 2, side / 2);
     g.scale(side * 0.88 * k / 100, side * 0.88 * k / 100);
     g.translate(-50, -50);
-    st.draw(g, '#F2A93B', '#FFFFFF');
+    st.draw(g, '#FF5C5C', '#FFFFFF');
     return c;
   }
 
@@ -511,19 +599,68 @@
     return sz.scale;
   }
 
+  /* ===== 顏色 ===== */
+  // 0（黑）～1（白）。夠淺的顏色上面的勾勾要換深色；接近白的還要加一圈灰邊，不然在白盒子上看不到
+  function lightness(hex) {
+    const n = parseInt(hex.slice(1), 16);
+    return (0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
+  }
+
+  function toneClass(hex) {
+    const l = lightness(hex);
+    return (l > 0.62 ? ' lite' : '') + (l > 0.88 ? ' pale' : '');
+  }
+
+  /* 唸出顏色的英文名。只在「她親手點色格」時唸——程式初始化選預設色也會走 selectPaint()，
+     所以不能把它放在 selectPaint 裡面，否則一進著色頁就會無故出聲。 */
+  function sayColor(color) {
+    if (window.Speech && COLOR_NAMES[color]) Speech.say(COLOR_NAMES[color]);
+  }
+
+  /* 盒子裡的 12 格：11 個基本色＋「更多」。選到的那一格外面一圈、裡面一個勾。
+     「更多」平常是彩虹圈＋加號；目前用的是完整色盤裡的顏色或花紋時，中間換成那個顏料、外面也有一圈，
+     她才看得出「現在拿的是這個」。 */
+  function buildSwatches() {
+    swatches.innerHTML = '';
+    BASIC_COLORS.forEach(color => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'sw' + toneClass(color);
+      b.dataset.color = color;
+      b.style.setProperty('--c', color);
+      b.setAttribute('aria-label', COLOR_ZH[COLOR_NAMES[color]] || color);
+      b.innerHTML = UI.icon('check');
+      b.addEventListener('click', () => {
+        selectPaint({ type: 'color', value: color });
+        sayColor(color);
+      });
+      swatches.appendChild(b);
+    });
+
+    moreBtn = document.createElement('button');
+    moreBtn.type = 'button';
+    moreBtn.className = 'sw more';
+    moreBtn.setAttribute('aria-label', '更多顏色和花紋');
+    moreBtn.innerHTML = '<span class="more-dot"></span>';
+    moreBtn.addEventListener('click', () => {
+      Sound.click();
+      if (openedPanel === 'color') closePanels(); else openPanel('color');
+    });
+    swatches.appendChild(moreBtn);
+  }
+
   function buildColorPanel() {
     colorGrid.innerHTML = '';
     COLORS.forEach(color => {
       const b = document.createElement('button');
-      b.className = 'color-cell';
+      b.type = 'button';
+      b.className = 'color-cell' + toneClass(color);
       b.dataset.color = color;
       b.style.background = color;
+      b.setAttribute('aria-label', COLOR_ZH[COLOR_NAMES[color]] || color);
       b.addEventListener('click', () => {
         selectPaint({ type: 'color', value: color });
-        // 唸出顏色的英文名。只在「使用者親手點色格」時唸——
-        // 程式初始化時選預設色也會走 selectPaint()，所以不能把它放在 selectPaint 裡面，
-        // 否則一進著色頁就會無故出聲。
-        if (window.Speech && COLOR_NAMES[color]) Speech.say(COLOR_NAMES[color]);
+        sayColor(color);
       });
       colorGrid.appendChild(b);
     });
@@ -531,9 +668,10 @@
     patternRow.innerHTML = '';
     PATTERNS.forEach(p => {
       const b = document.createElement('button');
+      b.type = 'button';
       b.className = 'pattern-cell';
       b.dataset.pattern = p.id;
-      b.title = p.name;
+      b.setAttribute('aria-label', p.name);
       b.innerHTML = `<svg viewBox="0 0 40 40">${p.tile}</svg>`;
       b.addEventListener('click', () => selectPaint({ type: 'pattern', id: p.id }));
       patternRow.appendChild(b);
@@ -541,39 +679,61 @@
   }
 
   function markPaintSelection() {
+    const isColor = paint.type === 'color';
+    swatches.querySelectorAll('.sw[data-color]').forEach(c => {
+      const on = isColor && c.dataset.color === paint.value;
+      c.classList.toggle('sel', on);
+      c.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
     colorGrid.querySelectorAll('.color-cell').forEach(c =>
-      c.classList.toggle('selected', paint.type === 'color' && c.dataset.color === paint.value));
+      c.classList.toggle('selected', isColor && c.dataset.color === paint.value));
     patternRow.querySelectorAll('.pattern-cell').forEach(c =>
-      c.classList.toggle('selected', paint.type === 'pattern' && c.dataset.pattern === paint.id));
+      c.classList.toggle('selected', !isColor && c.dataset.pattern === paint.id));
+    syncMoreBtn();
   }
 
-  // 顏色鈕外觀跟目前顏料同步
-  function syncColorBtn() {
-    if (paint.type === 'color') {
-      colorBtn.innerHTML = '';
-      colorBtn.style.background = paint.value;
+  // 「更多」那一格跟目前顏料同步（取代舊版那顆整顆變色的顏色鈕）
+  function syncMoreBtn() {
+    if (!moreBtn) return;
+    const dot = moreBtn.querySelector('.more-dot');
+    const basic = paint.type === 'color' && BASIC_COLORS.indexOf(paint.value) >= 0;
+    moreBtn.classList.toggle('sel', !basic);
+    dot.classList.toggle('filled', !basic);
+    dot.style.background = '';
+    if (basic) {
+      dot.innerHTML = UI.icon('plus');
+    } else if (paint.type === 'color') {
+      dot.innerHTML = '';
+      dot.style.background = paint.value;
     } else {
       const p = PATTERNS.find(x => x.id === paint.id);
-      colorBtn.style.background = '#fff';
-      colorBtn.innerHTML = p
+      dot.innerHTML = p
         ? `<svg viewBox="0 0 40 40" preserveAspectRatio="xMidYMid slice">${p.tile}</svg>`
         : '';
     }
   }
 
-  /* 工具 / 蓋章 / 橡皮擦三顆鈕同一時間只亮一顆，工具面板裡也只在用筆時標出那支筆。
-     以前各自 toggle，開橡皮擦時蓋章鈕還亮著、工具鈕從來不亮，小孩分不出現在拿的是什麼。
+  /* 四顆畫具同一時間只亮一顆（.sel＝房間色＋外圈），畫筆面板裡也只在用筆時標出那支筆。
      所有改 mode / eraser 的地方最後都呼叫這支，不要再各自同步按鈕。 */
-  function syncActiveTool() {
-    const usingPen = !eraser && mode !== 'stamp';
-    toolBtn.classList.toggle('tool-on', usingPen);
-    stampBtn.classList.toggle('stamp-on', !eraser && mode === 'stamp');
-    eraserBtn.classList.toggle('eraser-on', eraser);
-    toolBtnIcon.textContent = penTool().emoji;
-    toolList.querySelectorAll('.tool-item').forEach(b =>
-      b.classList.toggle('selected', usingPen && b.dataset.tool === penId));
+  function activeToolKey() {
+    if (eraser) return 'eraser';
+    if (mode === 'stamp') return 'stamp';
+    return mode === 'fill' ? 'fill' : 'brush';
   }
 
+  function syncActiveTool() {
+    const key = activeToolKey();
+    [['fill', fillBtn], ['brush', brushBtn], ['stamp', stampBtn], ['eraser', eraserBtn]].forEach(pair => {
+      const on = pair[0] === key;
+      pair[1].classList.toggle('sel', on);
+      pair[1].setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    toolList.querySelectorAll('.cell').forEach(b =>
+      b.classList.toggle('selected', key === 'brush' && b.dataset.tool === brushId));
+  }
+
+  /* 面板貼在盒子左邊、垂直對齊觸發它的那一顆，小箭頭指著那一顆。
+     position:fixed 與箭頭的 right 是 css/coloring.css 的 .panel／.panel-arrow 給的。 */
   function positionPanel(panel, trigger) {
     // 先歸零，量到的尺寸才不會被上一次的位置影響
     panel.style.left = '0px';
@@ -582,8 +742,8 @@
     const bRect = toolbar.getBoundingClientRect();
     const pRect = panel.getBoundingClientRect();
 
-    // 貼在工具列左邊
-    let left = bRect.left - pRect.width - 16;
+    // 貼在盒子左邊（留 22px 給小箭頭）
+    let left = bRect.left - pRect.width - 22;
     if (left < 8) left = 8;
 
     // 垂直對齊觸發鈕中心，超出視窗就貼邊
@@ -598,15 +758,15 @@
     // 箭頭跟著觸發鈕中心走
     const arrow = panel.querySelector('.panel-arrow');
     if (arrow) {
-      let ay = tRect.top + tRect.height / 2 - top - 12;
-      ay = Math.max(14, Math.min(pRect.height - 38, ay));
+      let ay = tRect.top + tRect.height / 2 - top - 11;
+      ay = Math.max(18, Math.min(pRect.height - 40, ay));
       arrow.style.top = ay + 'px';
     }
   }
 
   const PANELS = {
-    tool:   () => [toolPanel, toolBtn],
-    color:  () => [colorPanel, colorBtn],
+    tool:   () => [toolPanel, brushBtn],
+    color:  () => [colorPanel, moreBtn],
     stamp:  () => [stampPanel, stampBtn],
     eraser: () => [eraserPanel, eraserBtn]
   };
@@ -632,7 +792,7 @@
      document 上的「第一次觸控自動播放」），改用 swallowStroke 旗標讓畫布這一下不作畫。 */
   document.addEventListener('pointerdown', (e) => {
     if (!openedPanel) return;
-    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #stampPanel, #eraserPanel, #toolBtn, #colorBtn, #stampBtn, #eraserBtn')) return;
+    if (e.target.closest && e.target.closest('#toolPanel, #colorPanel, #stampPanel, #eraserPanel, #brushBtn, #stampBtn, #eraserBtn, .sw.more')) return;
     closePanels();
     swallowStroke = true;
   }, true);
@@ -641,10 +801,11 @@
   document.addEventListener('pointerup', releaseSwallow, true);
   document.addEventListener('pointercancel', releaseSwallow, true);
 
-  /* ===== 選工具 / 選顏色 / 橡皮擦 ===== */
+  /* ===== 選畫具 / 選顏色 ===== */
+  // 面板裡選一支筆
   function selectTool(id) {
-    mode = penId = id;
-    eraser = false;            // 選了畫圖工具＝不再是擦的狀態
+    mode = brushId = id;
+    eraser = false;            // 選了筆＝不再是擦的狀態
     syncActiveTool();
     refreshToolSizeRow();
     Sound.click();
@@ -657,7 +818,7 @@
     mode = 'stamp';
     eraser = false;
     syncActiveTool();
-    stampGrid.querySelectorAll('.stamp-cell').forEach(b =>
+    stampGrid.querySelectorAll('.cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.stamp === id));
     refreshStampSizeRow();
     Sound.pop();
@@ -669,53 +830,57 @@
     mode = 'stamp';                  // 調大小＝想蓋章，順手切過去
     eraser = false;
     syncActiveTool();
-    stampSizeRow.querySelectorAll('.stamp-size-cell').forEach(b =>
+    stampSizeRow.querySelectorAll('.cell').forEach(b =>
       b.classList.toggle('selected', b.dataset.size === id));
     Sound.click();                   // 刻意不關面板：可以馬上再換圖案或再調一次
   }
 
   function selectPaint(newPaint) {
     paint = newPaint;
-    eraser = false;            // 選了任何顏色／花紋就自動關掉橡皮擦
+    eraser = false;            // 選了任何顏色／花紋就自動放下橡皮擦
     syncActiveTool();
     markPaintSelection();
-    syncColorBtn();
     Sound.click();
     closePanels();
   }
 
-  toolBtn.addEventListener('click', () => {
+  /* 盒子上的四顆畫具：點一下就拿起來（不跳面板——每換一次畫具都跳面板的話，
+     她要多點一下把面板關掉，而且那一下不會畫）。
+     已經拿在手上的那一顆再點一次，才從旁邊跳出它的選項（哪支筆、多粗、哪個印章、橡皮擦多大）；
+     倒顏料沒有選項。有選項的那幾顆下面有三個小點。 */
+  function pickTool(key) {
     Sound.click();
-    if (openedPanel === 'tool') closePanels(); else openPanel('tool');
-  });
-
-  stampBtn.addEventListener('click', () => {
-    Sound.click();
-    if (openedPanel === 'stamp') closePanels(); else openPanel('stamp');
-  });
-
-  colorBtn.addEventListener('click', () => {
-    Sound.click();
-    if (openedPanel === 'color') closePanels(); else openPanel('color');
-  });
-
-  // 再按一次橡皮擦＝放下它，回到原本拿的筆或印章
-  eraserBtn.addEventListener('click', () => {
-    eraser = !eraser;
+    if (activeToolKey() === key) {
+      const panel = { brush: 'tool', stamp: 'stamp', eraser: 'eraser' }[key];
+      if (!panel || openedPanel === panel) closePanels(); else openPanel(panel);
+      return;
+    }
+    closePanels();
+    eraser = key === 'eraser';
+    if (key === 'fill') mode = 'fill';
+    else if (key === 'brush') mode = brushId;
+    else if (key === 'stamp') mode = 'stamp';
+    // 拿橡皮擦不動 mode：選顏色放下橡皮擦之後，要回到原本拿的那一樣
     syncActiveTool();
-    Sound.click();
-    if (eraser) openPanel('eraser'); else closePanels();
-  });
+  }
+
+  fillBtn.addEventListener('click', () => pickTool('fill'));
+  brushBtn.addEventListener('click', () => pickTool('brush'));
+  stampBtn.addEventListener('click', () => pickTool('stamp'));
+  eraserBtn.addEventListener('click', () => pickTool('eraser'));
 
   undoBtn.addEventListener('click', () => {
     if (undoBtn.disabled) return;
     Sound.click();
+    closePanels();
     undo();
   });
 
-  clearBtn.addEventListener('click', () => {
+  /* 全部擦掉：要按住一秒、外圈轉滿才算（UI.hold）。手掌掃到、好奇點一下都不會整張不見。 */
+  function clearAll() {
     if (clearBtn.disabled) return;
     Sound.click();
+    closePanels();
     artWrap.querySelectorAll('svg.art-base .c').forEach(el => el.setAttribute('fill', '#fff'));
     // 兩層都用各自的實際解析度清（paintLayer 是非正方的整張紙）
     if (fillCtx) fillCtx.clearRect(0, 0, fillCtx.canvas.width, fillCtx.canvas.height);
@@ -723,32 +888,55 @@
     syncEdgeLayer();
     clearHistory();
     hasContent = false;
+    changedSinceDone = true;
     updateButtons();
     scheduleSave();   // 清空也是一種狀態，下次打開要是清空的
-  });
+  }
+  UI.hold(clearBtn, 1000, clearAll);
 
   /* ===== 選圖畫面 ===== */
-  /* 分類頁籤。每一顆都是一張貼紙，點了只重畫縮圖牆（不重建頁籤本身，
-     只換 .on），空的分類會直接不出現——除了「我的照片」，上傳鈕在那一頁。 */
+  /* 種類那一顆上面放什麼：那一類的一張線稿（白色小卡），或線條圖示。 */
+  function catFace(cat, all) {
+    if (cat.ic) return UI.icon(cat.ic);
+    const list = all.filter(x => x.cat === cat.id);
+    const item = list.find(x => x.name === cat.pick) || list[0];
+    if (!item) return UI.icon('image');
+    return item.type === 'vector'
+      ? `<span class="cat-pic">${item.svg}</span>`
+      : `<span class="cat-pic"><img src="${item.dataUrl}" alt=""></span>`;
+  }
+
+  /* 種類（右邊的盒子）。點了只重畫縮圖牆（不重建按鈕本身，只換 .sel），
+     空的種類會直接不出現——除了「我的照片」，上傳鈕在那一頁。 */
   function buildCatTabs() {
     if (!catTabs) return;
     catTabs.innerHTML = '';
+    const all = gallery();
     const counts = {};
-    gallery().forEach(x => { counts[x.cat] = (counts[x.cat] || 0) + 1; });
+    all.forEach(x => { counts[x.cat] = (counts[x.cat] || 0) + 1; });
     CATS.forEach(cat => {
       if (cat.id !== 'all' && cat.id !== 'photo' && !counts[cat.id]) return;
       const b = document.createElement('button');
-      b.className = 'cat-tab' + (cat.id === currentCat ? ' on' : '');
+      b.type = 'button';
+      b.className = 'btn cat-tab' + (cat.id === currentCat ? ' sel' : '');
       b.dataset.cat = cat.id;
-      b.innerHTML = `<span class="cat-emoji">${cat.emoji}</span>${cat.name}`;
+      b.setAttribute('aria-label', cat.name);
+      b.setAttribute('aria-pressed', cat.id === currentCat ? 'true' : 'false');
+      b.innerHTML = catFace(cat, all);
       b.addEventListener('click', () => {
         if (currentCat === cat.id) return;
         Sound.click();
         currentCat = cat.id;
-        catTabs.querySelectorAll('.cat-tab').forEach(t =>
-          t.classList.toggle('on', t.dataset.cat === currentCat));
+        catTabs.querySelectorAll('.cat-tab').forEach(t => {
+          const on = t.dataset.cat === currentCat;
+          t.classList.toggle('sel', on);
+          t.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
         buildPicGrid();
-        picGrid.scrollIntoView({ block: 'nearest' });
+        // 已經捲到下面的話，回到縮圖牆的開頭（上面那列「我的作品」不用再看一次）
+        if (pickScroll && pickScroll.scrollTop > picGrid.offsetTop) {
+          pickScroll.scrollTop = Math.max(0, picGrid.offsetTop - 14);
+        }
       });
       catTabs.appendChild(b);
     });
@@ -764,27 +952,30 @@
       cell.dataset.key = picKey(item);   // 補「畫到一半」角標時用來對號入座
 
       const b = document.createElement('button');
+      b.type = 'button';
       b.className = 'pic-thumb';
-      b.title = item.name;
+      b.setAttribute('aria-label', item.name);
       if (item.type === 'vector') {
         b.innerHTML = `<div class="thumb-svg">${item.svg}</div>`;
       } else {
         const im = document.createElement('img');
+        im.loading = 'lazy';   // 五十幾張 1600px 的線稿，捲到了再載（要寫在 src 前面才算數）
+        im.alt = '';
         im.src = item.dataUrl;
-        im.alt = item.name;
         b.appendChild(im);
       }
       b.addEventListener('click', () => { Sound.click(); openPic(idx); });
       cell.appendChild(b);
 
-      // 自訂照片：右上角一顆刪除鈕（內建的場景線稿沒有）
+      /* 自訂照片：右上角一顆垃圾桶（內建線稿沒有）。要按住一秒才丟——
+         它就疊在縮圖的角落，點縮圖時手指一偏就會碰到。 */
       if (item.type === 'raster' && !item.builtin) {
         const del = document.createElement('button');
-        del.className = 'pic-del';
-        del.title = '刪除這張照片';
-        del.textContent = '🗑️';
-        del.addEventListener('click', (e) => {
-          e.stopPropagation();
+        del.type = 'button';
+        del.className = 'btn sm pic-del';
+        del.setAttribute('aria-label', '丟掉這張照片（按住）');
+        del.innerHTML = UI.icon('trash');
+        UI.hold(del, 1000, () => {
           Sound.click();
           customPics = customPics.filter(p => p.id !== item.id);
           saveCustomPics();
@@ -797,18 +988,21 @@
       picGrid.appendChild(cell);
     });
 
-    // 最後一格：上傳照片（只放在會看照片的兩頁，別的分類看到相機格會誤導）
+    // 最後一格：用自己的照片（只放在會看照片的兩頁，別的種類看到相機格會誤導）
     if (currentCat !== 'all' && currentCat !== 'photo') { refreshWipBadges(); return; }
     const up = document.createElement('button');
+    up.type = 'button';
     up.className = 'pic-thumb pic-upload';
-    up.innerHTML = '<span>🖼️</span><span class="pic-upload-txt">上傳照片</span>';
+    up.setAttribute('aria-label', '用自己的照片');
+    up.innerHTML = '<span class="up-face">' + UI.icon('camera') +
+      '<span class="up-plus">' + UI.icon('plus') + '</span></span>';
     up.addEventListener('click', () => { Sound.click(); fileInput.click(); });
     picGrid.appendChild(up);
 
     refreshWipBadges();
   }
 
-  /* 「畫到一半」角標。buildPicGrid() 是同步的，開頁時 wipKeys 還是空的，
+  /* 「畫到一半」角標（右下角一支小畫筆）。buildPicGrid() 是同步的，開頁時 wipKeys 還是空的，
      等 IndexedDB 回來再呼叫一次補上角標——不為了角標把整個 buildPicGrid() 改成非同步。
      用 dataset 逐格比對而不是 querySelector：線稿名稱是中文，塞進屬性選擇器要跳脫。 */
   function refreshWipBadges() {
@@ -818,12 +1012,17 @@
       if (want && !badge) {
         const b = document.createElement('span');
         b.className = 'pic-wip';
-        b.textContent = '🖍️';
+        b.innerHTML = UI.icon('brush');
         cell.appendChild(b);
       } else if (!want && badge) {
         badge.remove();
       }
     });
+  }
+
+  /* 左上的「上一層」只有在有上一層的時候才出現：著色中（回選圖）、作品檢視與存圖提示（關掉）。 */
+  function syncBack() {
+    backBtn.hidden = gameScreen.hidden && artOverlay.hidden && saveOverlay.hidden;
   }
 
   function openPic(idx) {
@@ -833,19 +1032,126 @@
     // （舊寫法用 requestAnimationFrame，分頁不可見時不會觸發，#artWrap 會卡在 0x0）
     selectScreen.hidden = true;
     gameScreen.hidden = false;
+    document.body.classList.add('playing');   // 回家／上一層浮到紙的左上角、小熊收起來（css/coloring.css）
+    syncBack();
+    changedSinceDone = true;
     showCurrent();
     sizeArt();
   }
 
   function backToSelect() {
     closePanels();
+    doneOverlay.hidden = true;
+    stopConfetti();
     gameScreen.hidden = true;
     selectScreen.hidden = false;
+    document.body.classList.remove('playing');
+    syncBack();
     buildPicGrid();   // 自訂照片可能增減，回來時重建
   }
 
-  // 回選圖前立刻存一次（不等 debounce）：小孩常常按完就直接把 App 關掉
-  doneBtn.addEventListener('click', () => { Sound.click(); saveProgressNow(); backToSelect(); });
+  /* 上一層：由上往下一層一層關——存圖提示 → 作品檢視 → 著色中（完成畫面開著也一樣回選圖）。
+     回選圖前立刻存一次（不等 debounce）：小孩常常按完就直接把 App 關掉。 */
+  backBtn.addEventListener('click', () => {
+    Sound.click();
+    if (!saveOverlay.hidden) { saveOverlay.hidden = true; syncBack(); return; }
+    if (!artOverlay.hidden) { closeArtwork(); return; }
+    if (!gameScreen.hidden) { saveProgressNow(); backToSelect(); }
+  });
+
+  /* 綠色的「畫好了」：存進度、把這張收進「我的作品」、出現完成畫面（她畫的圖＋小熊＋彩帶）。
+     完成畫面上兩個選擇：繼續畫這張（關掉完成畫面）、換一張（回選圖）。
+     連按兩次、或按了「繼續畫」什麼都沒動又按一次，不會多收一張一模一樣的。 */
+  doneBtn.addEventListener('click', async () => {
+    if (doneBtn.disabled || doneBusy) return;
+    const item = gallery()[galleryIndex];
+    if (!item || !paintCanvas) return;
+    doneBusy = true;
+    Sound.click();
+    closePanels();
+    try {
+      saveProgressNow();
+      const w = paintCanvas.width;
+      const h = paintCanvas.height;
+      const dataUrl = await composeFinalImage(item);
+      donePic.src = dataUrl;
+      doneOverlay.hidden = false;
+      Sound.win();
+      launchConfetti();
+      if (changedSinceDone) {
+        changedSinceDone = false;
+        await addArtwork(item, dataUrl, w, h);
+      }
+    } catch (err) {
+      console.error('完成圖合成失敗', err);
+    } finally {
+      doneBusy = false;
+    }
+  });
+
+  document.getElementById('keepBtn').addEventListener('click', () => {
+    Sound.click();
+    doneOverlay.hidden = true;
+    stopConfetti();
+  });
+
+  document.getElementById('newPicBtn').addEventListener('click', () => {
+    Sound.click();
+    backToSelect();   // 進度在按「畫好了」的時候已經存過了
+  });
+
+  /* 彩帶（跟拼圖頁同一套：六個房間的顏色＋黃） */
+  const confettiCanvas = document.getElementById('confettiCanvas');
+  let confettiRun = 0;   // 每放一次加一號：離開完成畫面時加一號，還在飄的那一批就停下來
+
+  function stopConfetti() {
+    confettiRun++;
+    if (confettiCanvas) confettiCanvas.getContext('2d').clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+  }
+
+  function launchConfetti() {
+    if (!confettiCanvas) return;
+    const run = ++confettiRun;
+    const cv = confettiCanvas;
+    const g = cv.getContext('2d');
+    cv.width = window.innerWidth;
+    cv.height = window.innerHeight;
+    const colors = ['#FF5C5C', '#FFD84D', '#22C3B6', '#9A7BF5', '#FFA228', '#4AA8EE', '#FF7FB0'];
+    const parts = [];
+    for (let i = 0; i < 130; i++) {
+      parts.push({
+        x: Math.random() * cv.width,
+        y: -20 - Math.random() * cv.height * 0.5,
+        w: 8 + Math.random() * 8,
+        h: 6 + Math.random() * 6,
+        vy: 2 + Math.random() * 3.5,
+        vx: (Math.random() - 0.5) * 2,
+        rot: Math.random() * Math.PI,
+        vr: (Math.random() - 0.5) * 0.2,
+        color: colors[Math.floor(Math.random() * colors.length)]
+      });
+    }
+    const start = performance.now();
+    function frame(t) {
+      if (run !== confettiRun) return;   // 已經離開完成畫面（stopConfetti 清過了）
+      g.clearRect(0, 0, cv.width, cv.height);
+      parts.forEach(p => {
+        p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+        g.save();
+        g.translate(p.x, p.y);
+        g.rotate(p.rot);
+        g.fillStyle = p.color;
+        g.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        g.restore();
+      });
+      if (t - start < 3500) {
+        requestAnimationFrame(frame);
+      } else {
+        g.clearRect(0, 0, cv.width, cv.height);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
 
   /* ===== 顯示目前這張（依類型分流） ===== */
   function showCurrent() {
@@ -1114,6 +1420,9 @@
     if (gameScreen.hidden) return;   // 不在遊戲畫面就沒東西要存
     const item = gallery()[galleryIndex];
     if (!item) return;
+    /* 打開來看一眼、什麼都沒畫就按上一層：不存。存了縮圖上會多一個「畫到一半」的記號，其實是空白的。
+       以前存過進度的（wipKeys 裡有）照存——她可能是把舊的全部擦掉，下次打開要是擦掉的樣子。 */
+    if (!hasContent && !wipKeys.has(picKey(item))) return;
     const rec = collectProgress(item);
     if (!rec) return;
     wipKeys.add(rec.key);   // 先更新角標用的集合，回選圖畫面才來得及畫出來
@@ -1576,7 +1885,8 @@
   }
 
   /* 存到裝置：iPad 上優先用系統分享（可以直接儲存到相簿），
-     不支援才顯示長按存檔畫面。作品檢視的「📷 存起來」也走這一條。 */
+     不支援才顯示長按存檔畫面。只有作品檢視的「存到相簿」會走到這裡——
+     著色畫面上不再有存圖鈕（綠色的「畫好了」會把圖收進我的作品）。 */
   async function shareOrSaveImage(dataUrl, name) {
     if (navigator.share && navigator.canShare) {
       try {
@@ -1590,27 +1900,13 @@
     }
     saveImg.src = dataUrl;
     saveOverlay.hidden = false;
+    syncBack();   // 存圖提示用左上的「上一層」關掉
   }
-
-  document.getElementById('saveBtn').addEventListener('click', async () => {
-    Sound.click();
-    closePanels();
-    const item = gallery()[galleryIndex];
-    const w = paintCanvas ? paintCanvas.width : 0;
-    const h = paintCanvas ? paintCanvas.height : 0;
-    const dataUrl = await composeFinalImage(item);
-    // 除了存到裝置，同時收進「我的作品」，回選圖畫面就能再打開
-    addArtwork(item, dataUrl, w, h);
-    await shareOrSaveImage(dataUrl, item.name);
-  });
-
-  document.getElementById('closeSave').addEventListener('click', () => {
-    saveOverlay.hidden = true;
-  });
 
   /* ===== 我的作品：存進 IndexedDB 的完成作品，選圖畫面上方一列縮圖 ===== */
   const artOverlay = document.getElementById('artOverlay');
   const artImg = document.getElementById('artImg');
+  const artActions = document.getElementById('artActions');
   const artConfirm = document.getElementById('artConfirm');
   let viewingArt = null;   // 目前在檢視 overlay 裡的那一筆
 
@@ -1629,7 +1925,7 @@
   // 收一張完成的作品，超過上限就丟最舊的
   function addArtwork(item, dataUrl, w, h) {
     /* 存之前先看儲存空間還剩多少。為什麼要提早汰舊：一張作品的 PNG 動輒
-       數百 KB，等到配額真的滿了才處理，那次 put 已經失敗了——小孩按下 📷
+       數百 KB，等到配額真的滿了才處理，那次 put 已經失敗了——小孩按下「畫好了」
        卻什麼都沒收到。用量超過八成就先把最舊的清掉一些，留出餘裕再存。
        estimate() 拿不到（回 null）就當作不知道，什麼都不做，維持原本行為。 */
     return KidsStore.estimate().then(est => {
@@ -1652,28 +1948,37 @@
     artworkSection.hidden = artworks.length === 0;   // 一張都沒有就整區隱藏，不要留空標題
     artworks.forEach(a => {
       const b = document.createElement('button');
+      b.type = 'button';
       b.className = 'artwork-thumb';
-      b.title = a.name || '我的作品';
+      b.setAttribute('aria-label', a.name || '我的作品');
       const im = document.createElement('img');
       im.src = a.png;
-      im.alt = a.name || '我的作品';
+      im.alt = '';
       b.appendChild(im);
       b.addEventListener('click', () => { Sound.click(); openArtwork(a); });
       artworkRow.appendChild(b);
     });
   }
 
+  // 丟掉的第二步（「真的要丟掉嗎」＋✗／✓）開或關；開的時候原本那兩顆先收起來
+  function showArtConfirm(on) {
+    artConfirm.hidden = !on;
+    artActions.hidden = on;
+  }
+
   function openArtwork(a) {
     viewingArt = a;
     artImg.src = a.png;
-    artConfirm.hidden = true;   // 每次打開都收起刪除確認
+    showArtConfirm(false);   // 每次打開都收起刪除確認
     artOverlay.hidden = false;
+    syncBack();              // 用左上的「上一層」關掉
   }
 
   function closeArtwork() {
     artOverlay.hidden = true;
-    artConfirm.hidden = true;
+    showArtConfirm(false);
     viewingArt = null;
+    syncBack();
   }
 
   document.getElementById('artSaveBtn').addEventListener('click', () => {
@@ -1681,15 +1986,18 @@
     if (viewingArt) shareOrSaveImage(viewingArt.png, viewingArt.name || '我的作品');
   });
 
-  // 刪除要按兩次：5 歲小孩會亂按
+  /* 丟掉要按兩次：5 歲小孩會亂按。第一下（垃圾桶）只是問「真的要丟掉嗎」——
+     字有注音，而且唸出來給她聽（她讀得慢）；✗ 是不要、✓ 才真的丟。 */
+  const DEL_LINE = '真ㄓㄣ 的˙ㄉㄜ 要ㄧㄠˋ 丟ㄉㄧㄡ 掉ㄉㄧㄠˋ 嗎˙ㄇㄚ';
   document.getElementById('artDelBtn').addEventListener('click', () => {
     Sound.click();
-    artConfirm.hidden = false;
+    showArtConfirm(true);
+    UI.say(UI.plain(DEL_LINE));
   });
 
   document.getElementById('artDelNo').addEventListener('click', () => {
     Sound.click();
-    artConfirm.hidden = true;
+    showArtConfirm(false);
   });
 
   document.getElementById('artDelYes').addEventListener('click', () => {
@@ -1702,11 +2010,6 @@
     KidsStore.del('artworks', a.id);
   });
 
-  document.getElementById('artCloseBtn').addEventListener('click', () => {
-    Sound.click();
-    closeArtwork();
-  });
-
   /* iPad 上小孩常常直接切走或關掉 App，切到背景時立刻存一次不等 debounce */
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) saveProgressNow();
@@ -1714,11 +2017,11 @@
 
   /* ===== 起始 ===== */
   buildToolPanel();
+  buildSwatches();
   buildColorPanel();
   buildStampPanel();
   buildEraserSizeRow();
   markPaintSelection();
-  syncColorBtn();
   syncActiveTool();
   buildCatTabs();
   buildPicGrid();

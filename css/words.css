@@ -1,0 +1,573 @@
+/* 單字頁（配對＋翻牌）。共用的按鈕、注音、小熊泡泡、完成畫面都在 css/base.css。
+   規則跟全站一樣：浮起來的（有底邊）才能按；字卡、進度星星、配好的牌都是平的。 */
+body.words {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 回家／上一層永遠在最上層：完成畫面蓋上來時也還按得到 */
+.words .top { position: relative; }
+.words .nav { display: flex; gap: 16px; position: relative; z-index: 120; }
+
+/* 泡泡裡的全形逗號兩邊收一點（粉圓的逗號在格子正中間，本來就有留白），上面那一列才擠得下星星 */
+.words .bubble .zy-plain { margin: 0 -.12em; }
+
+/* ===== 進度星星：平的小牌子，做過的亮起來 ===== */
+.stars {
+  display: grid;
+  grid-template-columns: repeat(var(--half, 4), var(--star, 36px));
+  gap: 6px 8px;
+  flex: none;
+  padding: 8px 16px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, .6);
+}
+.stars svg {
+  width: var(--star, 36px);
+  height: var(--star, 36px);
+  fill: #fff;
+  stroke: var(--lip);
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+  display: block;
+}
+.stars svg.on { fill: var(--say); stroke: var(--ink); }
+.stars svg.pop { animation: wStarPop .6s ease; }
+@keyframes wStarPop {
+  0% { transform: scale(.4) rotate(-30deg); }
+  55% { transform: scale(1.5) rotate(10deg); }
+  100% { transform: none; }
+}
+
+/* ===== 選玩法 ===== */
+#selectScreen {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 6px calc(32px + var(--sr)) calc(72px + var(--sb)) calc(32px + var(--sl));
+}
+.mode-col {
+  flex: 1;
+  min-width: 0;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+
+/* 門：跟首頁的門同一個做法（房間色的面＋厚底邊），窗裡畫的是那個玩法的樣子 */
+.door {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  max-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px 12px;
+  border-radius: 40px;
+  background: var(--room);
+  box-shadow: 0 12px 0 var(--lip);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.door:active { transform: translateY(9px); box-shadow: 0 3px 0 var(--lip); }
+.door:focus-visible, .words .btn:focus-visible, .choice:focus-visible, .mcard:focus-visible {
+  outline: 4px solid var(--ink);
+  outline-offset: 3px;
+}
+.door .win {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 28px;
+  background: var(--tint);
+  overflow: hidden;
+  container-type: size;
+}
+.door .name {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 18px 6px 22px;
+  border-radius: 22px;
+  background: #fff;
+  font-size: 40px;
+  line-height: 1;
+  flex: none;
+}
+
+/* 配對的窗：一張小字卡＋三張圖，對的那張有綠框（都是平的示意圖） */
+.demo-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px 0 22px;
+  height: 64px;
+  height: 30cqh;
+  border-radius: 18px;
+  background: #fff;
+}
+.demo-word {
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: 40px;
+  font-size: min(13cqw, 20cqh);
+  line-height: 1.1;
+  color: var(--ink);
+}
+.demo-say {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  width: min(11cqw, 18cqh);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--say);
+  color: var(--ink);
+  flex: none;
+}
+.demo-row { display: flex; gap: 12px; gap: 3.5cqw; }
+.demo-row img {
+  width: 100px;
+  width: min(28cqw, 48cqh);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+.demo-row img.hit { box-shadow: 0 0 0 5px var(--go); }
+
+/* 翻牌的窗：六張小牌，兩張翻開（一張圖、一張字） */
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, min(27cqw, 42cqh));
+  gap: 10px;
+  gap: min(3.5cqw, 5cqh);
+}
+.demo-grid b {
+  aspect-ratio: 1;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-weight: 700;
+}
+.demo-grid .back { background: var(--room); }
+.demo-grid .back::after {
+  content: '';
+  width: 46%;
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, .85);
+  -webkit-mask: var(--w-star) center / contain no-repeat;
+          mask: var(--w-star) center / contain no-repeat;
+}
+.demo-grid .face { background: #fff; }
+.demo-grid .face img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.demo-grid .demo-word { font-size: 24px; font-size: min(7.5cqw, 11cqh); }
+
+body.words {
+  --w-star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E");
+}
+
+/* 上次玩到一半：門的右上角浮一顆綠色的「接著玩」（綠色＝往下走）。它是門的一部分，按哪裡都是接著玩。 */
+.resume {
+  position: absolute;
+  right: -12px;
+  top: -16px;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--go);
+  color: #fff;
+  box-shadow: 0 6px 0 var(--go-lip), 0 0 0 5px var(--tint);
+}
+
+/* 幾張／幾對：圖＋數字（跟拼圖頁的 .lv 同一個樣子） */
+.lv-row { display: flex; gap: 20px; flex: none; padding-bottom: 8px; }
+.lv {
+  width: 112px;
+  height: 80px;
+  gap: 10px;
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+}
+.lv .ic { width: 40px; height: 40px; }
+.lv-n { width: 24px; text-align: center; }
+.lv-pics { display: flex; gap: 3px; flex: none; }
+.lv-pics b {
+  width: 12px;
+  height: 15px;
+  border: 2.5px solid currentColor;
+  border-radius: 4px;
+}
+
+.data-error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(20px + var(--sb));
+  text-align: center;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+/* ===== 遊戲畫面 ===== */
+#gameScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 calc(24px + var(--sr)) calc(56px + var(--sb)) calc(24px + var(--sl));
+}
+
+/* --- 配對 --- */
+#matchArea {
+  /* 上面那一列的高度（橫向一排、直向兩排），算圖卡大小要扣掉 */
+  --toph: 130px;
+  --cardh: clamp(150px, 27vh, 208px);
+  --gapv: clamp(20px, 4vh, 40px);
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gapv);
+  padding-top: 6px;
+}
+
+/* 字卡：不是按鈕所以是平的；右邊的黃色喇叭才按得下去 */
+.word-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex: none;
+  min-width: min(680px, 100%);
+  max-width: 100%;
+  height: var(--cardh);
+  padding: 0 36px 0 56px;
+  border-radius: 40px;
+  background: #fff;
+}
+.word-text-col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+/* 字級：平常 112px；長的字（watermelon）照字數縮，--len／--cwf 由 words.js 給 */
+#wordText {
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: min(112px, 15vh, calc((min(100vw, 1100px) - 300px) / (var(--len, 4) * var(--cwf, .6))));
+  line-height: 1.05;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+#wordZh {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--muted);
+}
+#speakBtn {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+}
+/* 只聽不看字：字藏起來，卡片縮成只包住喇叭 */
+.word-card.listen { min-width: 0; padding: 0 48px; }
+.word-card.listen #speakBtn { width: 128px; height: 128px; }
+
+/* 圖卡：浮起來的，可以按 */
+#choices {
+  --n: 3;
+  --g: 40px;
+  --s: min(260px, calc((100vw - 48px - 2 * var(--g)) / 3), calc(100vh - var(--toph) - 72px - var(--cardh) - var(--gapv)));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--g);
+  flex: none;
+}
+#choices.four {
+  --g: 24px;
+  --s: min(260px, calc((100vw - 48px - 3 * var(--g)) / 4), calc(100vh - var(--toph) - 72px - var(--cardh) - var(--gapv)));
+}
+.choice {
+  display: block;
+  width: var(--s);
+  height: var(--s);
+  padding: 10px;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0 10px 0 var(--lip);
+  line-height: 0;
+  transition: transform .08s ease, box-shadow .08s ease, opacity .2s ease;
+}
+.choice:active { transform: translateY(8px); box-shadow: 0 2px 0 var(--lip); }
+.choice img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 26px;
+  display: block;
+  pointer-events: none;
+}
+/* 答錯：那張輕輕搖一下、變淡、沉下去，不能再按。沒有叉叉。 */
+.choice.wrong, #choices.answered .choice:not(.correct) {
+  opacity: .38;
+  box-shadow: none;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+.choice.wrong { animation: wShake .4s ease; }
+@keyframes wShake {
+  0%, 100% { transform: translate(0, 10px); }
+  25% { transform: translate(-9px, 10px); }
+  75% { transform: translate(9px, 10px); }
+}
+/* 答對：綠色的框＋跳一下 */
+.choice.correct {
+  pointer-events: none;
+  transform: translateY(6px);
+  box-shadow: 0 0 0 5px var(--tint), 0 0 0 13px var(--go);
+  animation: wYes .5s ease;
+}
+@keyframes wYes {
+  0% { transform: translateY(6px) scale(1); }
+  45% { transform: translateY(6px) scale(1.08); }
+  100% { transform: translateY(6px) scale(1); }
+}
+
+/* --- 翻牌 --- */
+#memoryArea {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* --cols／--cw／--ch 由 words.js 照畫面大小算（applyGridShape） */
+#memoryGrid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 3), var(--cw, 200px));
+  grid-auto-rows: var(--ch, 200px);
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.mcard {
+  position: relative;
+  display: block;
+  border-radius: 26px;
+  -webkit-perspective: 900px;
+          perspective: 900px;
+  transition: transform .08s ease;
+}
+.mcard-inner {
+  position: absolute;
+  inset: 0;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: transform .35s ease;
+}
+.mcard.flipped .mcard-inner { transform: rotateY(180deg); }
+.mcard-back, .mcard-front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: box-shadow .15s ease, background .3s ease;
+}
+/* 牌背：房間色＋一顆星星。圖案是平的，整張牌是浮起來的（可以翻） */
+.mcard-back {
+  background: var(--room);
+  box-shadow: 0 8px 0 var(--lip);
+}
+.mcard-back::before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 3px solid rgba(255, 255, 255, .35);
+  border-radius: 17px;
+}
+.mcard-back::after {
+  content: '';
+  height: 44%;
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, .9);
+  -webkit-mask: var(--w-star) center / contain no-repeat;
+          mask: var(--w-star) center / contain no-repeat;
+}
+.mcard:active:not(.flipped) { transform: translateY(6px); }
+.mcard:active:not(.flipped) .mcard-back { box-shadow: 0 2px 0 var(--lip); }
+
+/* 牌面：白底，圖或英文字 */
+.mcard-front {
+  transform: rotateY(180deg);
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 8px 0 #C9C3DB;
+  overflow: hidden;
+  color: var(--ink);
+}
+.mcard-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  display: block;
+}
+.mcard-front.word {
+  font-family: var(--en);
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  font-size: min(96px, calc(var(--ch, 200px) * .36), calc((var(--cw, 200px) - 28px) / var(--k, 3)));
+}
+/* 翻開、還在等另一張：按下去了（不浮）＋外圈，跟全站「選到的」同一個樣子 */
+.mcard.flipped { transform: translateY(4px); pointer-events: none; }
+.mcard.flipped .mcard-front { box-shadow: 0 0 0 4px var(--tint), 0 0 0 8px var(--ink); }
+/* 兩張不一樣：輕輕搖一下再蓋回去 */
+.mcard.wrong { animation: wNope .4s ease .25s; }
+@keyframes wNope {
+  0%, 100% { transform: translate(0, 4px); }
+  25% { transform: translate(-8px, 4px); }
+  75% { transform: translate(8px, 4px); }
+}
+/* 配成一對：綠框閃一下，然後變平、融進背景（不能再按） */
+.mcard.matched { transform: translateY(8px); }
+.mcard.matched .mcard-front {
+  background: rgba(255, 255, 255, .55);
+  box-shadow: none;
+}
+.mcard.matched.just .mcard-front { animation: wPair .9s ease; }
+@keyframes wPair {
+  0%, 60% { background: #fff; box-shadow: 0 0 0 4px var(--tint), 0 0 0 10px var(--go); }
+  100% { background: rgba(255, 255, 255, .55); box-shadow: 0 0 0 4px transparent, 0 0 0 10px transparent; }
+}
+
+/* ===== 完成畫面：這一輪的圖拼成一張 ===== */
+.words .done-pic {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.words .done-pic .wp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 26px;
+  overflow: hidden;
+}
+.words .done-pic .wp img { border-radius: 0; }
+.words .done-pic .wp b {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  max-width: calc(100% - 12px);
+  padding: 1px 12px 4px;
+  border-radius: 12px;
+  background: #fff;
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: clamp(15px, 2.3vw, 24px);
+  line-height: 1.25;
+  white-space: nowrap;
+}
+/* 右下那格是星星：小熊站在這格的右下角前面，所以星星靠左上 */
+.words .done-pic .wp-star {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7%;
+  background: var(--tint);
+}
+.words .done-pic .wp-star svg {
+  width: 60%;
+  height: 60%;
+  fill: var(--say);
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+}
+
+/* ===== 橫向：上面那一列要同時放下回家／上一層、小熊泡泡、星星 ===== */
+@media (orientation: landscape) {
+  .words.playing .bubble { font-size: 30px; }
+}
+/* 橫向但比 iPad 窄（分割畫面）：小熊收起來，泡泡和星星才不會撞在一起 */
+@media (orientation: landscape) and (max-width: 1000px) {
+  .words.playing .guide-bear { display: none; }
+  .words.playing .bubble::before { display: none; }
+}
+
+/* ===== 直向（768×1024） ===== */
+@media (orientation: portrait) {
+  /* 玩的時候上面排兩列：回家／上一層＋星星一列，小熊泡泡自己一列 */
+  .words.playing .top { flex-wrap: wrap; row-gap: 14px; }
+  .words.playing .guide { order: 5; flex-basis: 100%; }
+  .stars { --star: 40px; grid-template-columns: repeat(var(--n, 8), var(--star)); }
+
+  #selectScreen { gap: 28px; padding-left: calc(24px + var(--sl)); padding-right: calc(24px + var(--sr)); }
+  .door { max-height: 460px; }
+  .lv-row { gap: 16px; }
+  .lv { width: 96px; gap: 8px; }
+  .lv .ic { width: 34px; height: 34px; }
+  .lv-pics b { width: 10px; }
+
+  #matchArea {
+    --toph: 240px;
+    --cardh: clamp(150px, 18vh, 190px);
+    --gapv: clamp(20px, 3.4vh, 36px);
+    padding-top: 2vh;
+  }
+  #choices {
+    --g: 24px;
+    --s: min(260px, calc((100vw - 48px - 2 * var(--g)) / 3), calc(100vh - var(--toph) - 96px - 2vh - var(--cardh) - var(--gapv)));
+  }
+  /* 四張圖排成兩排 */
+  #choices.four {
+    --g: 28px;
+    --s: min(300px, calc((100vw - 48px - var(--g)) / 2), calc((100vh - var(--toph) - 96px - 2vh - var(--cardh) - var(--gapv) - var(--g) - 10px) / 2));
+    max-width: calc(2 * var(--s) + var(--g));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .door, .choice, .mcard { transition: none; }
+  .choice.wrong, .choice.correct, .mcard.wrong, .stars svg.pop { animation: none; }
+  .mcard-inner { transition: none; }
+}

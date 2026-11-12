@@ -1,0 +1,619 @@
+/* 著色頁（共用元件在 css/base.css：.btn／.box／.top／.pic-grid／.overlay／.done）
+
+   兩個畫面：
+   - 選圖：上面一列回家＋小熊泡泡；左邊是圖（最上面一列「我的作品」），右邊的盒子選種類。
+   - 著色中：左邊整塊是白紙（平的），回家／上一層浮在紙的左上角；右邊的盒子由上到下是
+     四種畫具、12 格顏色、[上一步][綠色的畫好了]。畫面下緣不放能按的東西（手腕會壓到）。 */
+body.coloring {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 回家／上一層永遠在最上層：完成畫面、作品檢視蓋上來時也還按得到 */
+.coloring .top { position: relative; }
+.coloring .nav { display: flex; gap: 16px; position: relative; z-index: 120; }
+
+/* ===== 選圖 ===== */
+#selectScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 24px;
+  padding: 0 calc(24px + var(--sr)) 0 calc(24px + var(--sl));
+}
+.pick-scroll {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* 上面留給角落的垃圾桶、下面留給底邊，不然會被捲動區切掉 */
+  padding: 14px 14px calc(24px + var(--sb)) 4px;
+}
+
+/* --- 種類：右邊的盒子，兩欄。每一顆是一張那一類的線稿小圖 --- */
+.cats {
+  flex: none;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  gap: 16px;
+  padding: 16px 16px 24px;
+  margin-top: 4px;
+}
+/* 盒子是白的，按鈕用淡粉紅的面，才看得出一顆一顆（選到的照舊是房間色＋外圈） */
+.coloring .cat-tab { background: #FFF3F1; --lip: #F0B9B4; }
+.coloring .cat-tab.sel { background: var(--room); }
+.cat-tab .ic { width: 44px; height: 44px; }
+.cat-pic {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  pointer-events: none;
+}
+.cat-pic img, .cat-pic svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- 我的作品：最上面一列橫向捲動的縮圖（浮起來的，點了打開來看） --- */
+#artworkSection { margin: 0 0 20px; }
+.art-sec-title {                 /* 說明，平的 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px 6px;
+  font-size: 30px;
+  line-height: 1;
+}
+.art-sec-title .ic { width: 34px; height: 34px; }
+.artwork-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 6px 14px;
+}
+.artwork-thumb {
+  flex: none;
+  width: 128px;
+  height: 128px;
+  padding: 8px;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 8px 0 var(--lip);
+  line-height: 0;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.artwork-thumb:active { transform: translateY(6px); box-shadow: 0 2px 0 var(--lip); }
+.artwork-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #fff;
+}
+
+/* --- 縮圖牆 --- */
+/* 每一格外面包一層，才放得下角落的垃圾桶和「畫到一半」的記號 */
+.pic-cell { position: relative; }
+.pic-cell .pic-thumb { width: 100%; }
+
+/* 手繪的向量線稿：直接把 SVG 塞進來，不用 img */
+.pic-thumb .thumb-svg {
+  aspect-ratio: 1;
+  border-radius: 22px;
+  background: #fff;
+  overflow: hidden;
+}
+.pic-thumb .thumb-svg svg { display: block; width: 100%; height: 100%; }
+
+/* 自己的照片：右上角的垃圾桶（要按住） */
+.pic-del {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  z-index: 2;
+}
+.pic-del::after { border-radius: 29px; }
+.btn.sm.hold:active { box-shadow: 0 6px 0 var(--lip); }
+
+/* 「畫到一半」：右下角一支小畫筆。是記號不是按鈕，所以是平的、不吃觸控（點下去要開圖） */
+.pic-wip {
+  position: absolute;
+  right: -8px;
+  bottom: -2px;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--room);
+  color: #fff;
+  box-shadow: 0 0 0 5px var(--tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.pic-wip .ic { width: 30px; height: 30px; }
+
+/* 最後一格：用自己的照片（相機＋加號） */
+.pic-upload .up-face {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 22px;
+  background: var(--tint);
+  color: var(--lip);
+}
+.pic-upload .up-face > .ic { width: 46%; height: 46%; }
+.up-plus {
+  position: absolute;
+  right: 14%;
+  top: 14%;
+  width: 26%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--room);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.up-plus .ic { width: 62%; height: 62%; stroke-width: 3.4; }
+
+/* ===== 著色中 ===== */
+#gameScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 16px;
+  padding: calc(16px + var(--st)) calc(16px + var(--sr)) calc(16px + var(--sb)) calc(16px + var(--sl));
+}
+
+/* 回家／上一層浮在紙的左上角（小一號，少蓋一點紙），小熊收起來 */
+.coloring.playing .top {
+  position: absolute;
+  left: calc(16px + var(--sl));
+  top: calc(16px + var(--st));
+  padding: 16px 0 0 16px;
+}
+.coloring.playing .guide { display: none; }
+/* 紙是白的，白色按鈕放上去只剩一條底邊——面換成淡粉紅，才看得出是一顆按鈕 */
+.coloring.playing .nav .btn { width: 80px; height: 80px; border-radius: 24px; background: #FFF3F1; }
+
+.paper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
+/* 紙 = 整個 #svgHolder：白紙鋪滿可用區，平的（不能按的東西沒有底邊）。
+   不能加 border／padding——js/coloring.js 的 sizeArt() 是量這個元素算 #paintLayer 的尺寸，
+   一加內距筆畫座標就會整個偏掉。圓角靠 overflow:hidden 切。 */
+#svgHolder {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* 整張紙。--sq 由 js/coloring.js 的 sizeArt() 寫入 = min(紙寬, 紙高) */
+#artWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  --sq: 100%;
+  isolation: isolate;   /* art-outline 的 multiply 只在這一層之內混色，不要吃到紙張背景 */
+}
+
+/* 線稿／照片這四層維持正方形並置中，紙比它大的那一邊就是空白紙面 */
+#artWrap svg.art-base,
+#artWrap svg.art-outline,
+#fillLayer,
+#lineLayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: var(--sq);
+  height: var(--sq);
+}
+
+/* 底層：真正的線稿，負責倒顏料的填色 */
+#artWrap svg.art-base { z-index: 1; }
+
+/* 中層：畫筆／潑墨的畫布，覆蓋整張紙（非正方），小孩在角色以外也畫得到 */
+#paintLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  z-index: 2;
+}
+
+/* 頂層：線稿外框複本，永遠蓋在最上面不會被塗到。
+   可上色區保留白色填色以維持線稿本身的遮蔽關係，靠 multiply 讓白色不遮住底下的塗鴉。 */
+#artWrap svg.art-outline {
+  z-index: 3;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* 點陣線稿與上傳照片：同一套三層，只是底層跟頂層改用 canvas */
+#fillLayer { z-index: 1; }
+
+/* 填色往兩側空白紙面的延伸（js/coloring.js 的 syncEdgeLayer），整張紙、墊在最底下 */
+#edgeLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#lineLayer {
+  z-index: 3;
+  pointer-events: none;
+}
+
+#svgHolder .c { transition: fill .12s ease; }
+
+/* 全部擦掉：紙的右上角一顆小的，要按住一秒。沒東西可擦的時候是灰的、平的 */
+#clearBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+}
+#clearBtn:not(:disabled) { background: #FFF3F1; --lip: #F0B9B4; }
+#clearBtn::after { border-radius: 29px; }
+
+/* --- 右邊的盒子 --- */
+#toolbar {
+  flex: none;
+  width: 264px;
+  gap: 0;
+  justify-content: space-between;
+  padding: 20px 16px 16px;
+  border-radius: 28px;
+}
+
+/* 盒子是白的，裡面的按鈕用淡粉紅的面，才看得出一顆一顆 */
+.coloring .tool,
+.coloring .box-foot .btn {
+  background: #FFF3F1;
+  --lip: #F0B9B4;
+}
+.coloring .tool.sel { background: var(--room); }
+.coloring .box-foot .btn.go { background: var(--go); --lip: var(--go-lip); }
+.coloring .box-foot .btn:disabled { background: var(--flat); }
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2.6vh, 20px) 16px;
+}
+.tool {
+  width: auto;
+  height: clamp(64px, 10.9vh, 84px);
+  border-radius: 26px;
+}
+.tool .ic { width: 46px; height: 46px; }
+
+/* 有選項的畫具（畫筆、蓋章、橡皮擦）下面三個小點：拿在手上時再點一次會跳出選項 */
+.tool.has-more::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  width: 30px;
+  height: 6px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, currentColor 2.4px, transparent 3px) 0 0 / 10px 6px repeat-x;
+  opacity: .3;
+  pointer-events: none;
+}
+.tool.has-more.sel::before { opacity: .95; }
+
+/* 12 格顏色：圓的、浮起來的。選到的那一格外面一圈、裡面一個勾 */
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(3, 64px);
+  justify-content: space-between;
+  row-gap: clamp(10px, 2.3vh, 18px);
+}
+.sw {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 6px 0 rgba(51, 39, 79, .28);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.sw.pale { box-shadow: inset 0 0 0 3px #C9C3DB, 0 6px 0 rgba(51, 39, 79, .28); }
+.sw:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(51, 39, 79, .28); }
+.sw.pale:active { box-shadow: inset 0 0 0 3px #C9C3DB, 0 2px 0 rgba(51, 39, 79, .28); }
+.sw.sel, .sw.sel:active {
+  transform: none;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 10px var(--ink);
+}
+.sw.pale.sel, .sw.pale.sel:active {
+  box-shadow: inset 0 0 0 3px #C9C3DB, 0 0 0 5px #fff, 0 0 0 10px var(--ink);
+}
+.sw > .ic {
+  width: 34px;
+  height: 34px;
+  stroke: #fff;
+  stroke-width: 3.2;
+  opacity: 0;
+}
+.sw.lite > .ic { stroke: var(--ink); }
+.sw.sel > .ic { opacity: 1; }
+
+/* 第 12 格「更多」：彩虹圈＋加號；用的是完整色盤裡的顏料時，中間換成那個顏料 */
+.sw.more {
+  background: conic-gradient(#FF0000, #FFA500, #FFFF00, #228B22, #0000FF, #7B2FBE, #FF69B4, #FF0000);
+}
+.more-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  overflow: hidden;
+  pointer-events: none;
+}
+.more-dot .ic { width: 22px; height: 22px; stroke-width: 3.4; }
+.more-dot.filled { width: 46px; height: 46px; box-shadow: 0 0 0 3px #fff; }
+.more-dot svg:not(.ic) { display: block; width: 100%; height: 100%; }
+
+#toolbar .box-foot { margin-top: 0; }
+#toolbar .box-foot .btn { height: clamp(68px, 11.4vh, 88px); border-radius: 26px; }
+#toolbar .box-foot .btn.go .ic { stroke-width: 3.2; }
+
+/* ===== 彈出面板（從盒子左邊跳出來） =====
+   position:fixed 與箭頭的 right 是 js/coloring.js positionPanel() 依賴的幾何，改樣子不能改排版機制。
+   面板本身是平的（一圈房間色的邊，蓋在白紙上才看得出範圍），裡面一格一格才是浮起來的。 */
+.panel {
+  --ring-bg: #fff;
+  position: fixed;
+  z-index: 60;
+  padding: 20px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 0 0 5px var(--room);
+}
+
+/* 指向觸發鈕的小箭頭（旋轉 45 度的方塊，只留上／右兩邊） */
+.panel-arrow {
+  position: absolute;
+  right: -13px;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-top: 5px solid var(--room);
+  border-right: 5px solid var(--room);
+  border-radius: 0 6px 0 0;
+  transform: rotate(45deg);
+}
+
+/* 面板裡的一格：浮起來的小按鈕，裡面是畫出來的筆跡／圓點／印章 */
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  background: #FFF3F1;
+  box-shadow: 0 6px 0 #F0B9B4;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.cell:active { transform: translateY(4px); box-shadow: 0 2px 0 #F0B9B4; }
+.cell.selected, .cell.selected:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--ink);
+}
+.cell canvas {
+  display: block;
+  width: 56px;
+  height: 56px;
+  pointer-events: none;
+}
+
+.cell-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 6px;
+}
+/* 第二列（粗細／大小）跟上面隔一條平的線 */
+.cell-row.sub {
+  margin-top: 16px;
+  padding-top: 20px;
+  border-top: 3px solid var(--line);
+}
+.cell-row.sub .cell canvas { width: 48px; height: 48px; }
+
+/* 印章：4 欄 */
+.stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 72px);
+  gap: 18px 16px;
+  padding-bottom: 6px;
+}
+#stampSizeRow .cell canvas { width: 56px; height: 56px; }
+
+/* 完整色盤：8 欄 x 7 列，下面一列花紋。格子大小跟著畫面高度縮：
+   整個面板要放得進畫面，而且不要頂到左上角的回家／上一層（768 高時一格 60） */
+#colorPanel { --cc: clamp(46px, 7.8vh, 60px); }
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(8, var(--cc));
+  gap: 12px;
+}
+.color-cell, .pattern-cell {
+  position: relative;
+  width: var(--cc);
+  height: var(--cc);
+  border-radius: 16px;
+  box-shadow: 0 4px 0 rgba(51, 39, 79, .28);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.color-cell.pale { box-shadow: inset 0 0 0 3px #C9C3DB, 0 4px 0 rgba(51, 39, 79, .28); }
+.color-cell:active, .pattern-cell:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(51, 39, 79, .28); }
+.color-cell.selected, .pattern-cell.selected {
+  z-index: 1;
+  transform: none;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 7px var(--ink);
+}
+.color-cell.pale.selected { box-shadow: inset 0 0 0 3px #C9C3DB, 0 0 0 3px #fff, 0 0 0 7px var(--ink); }
+
+.pattern-row {
+  display: grid;
+  grid-template-columns: repeat(6, var(--cc));
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 18px 0 4px;
+  border-top: 3px solid var(--line);
+}
+.pattern-cell { background: #fff; }
+.pattern-cell svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+/* ===== 完成畫面 ===== */
+/* 她畫的是整張紙（不一定是正方），整張都要看得到，不裁切 */
+.coloring .done-pic img { object-fit: contain; background: #fff; }
+
+/* ===== 作品檢視／存圖提示 ===== */
+/* 圖是平的（只是給她看）；按鈕在圖的右邊，不放在下緣。上面讓出回家／上一層的位置 */
+.art-view, .save-view {
+  flex-direction: row;
+  gap: 36px;
+  padding: calc(132px + var(--st)) calc(28px + var(--sr)) calc(28px + var(--sb)) calc(28px + var(--sl));
+}
+#artImg, #saveImg {
+  flex: none;
+  max-width: 56vw;
+  max-height: calc(100vh - 176px);
+  padding: 12px;
+  border-radius: 36px;
+  background: #fff;
+}
+#saveImg { -webkit-touch-callout: default; }   /* 要能長按存到相簿 */
+.save-view { background: var(--tint); }        /* 疊在作品檢視上面，不要透出底下那兩顆按鈕 */
+
+/* 寬度固定：按垃圾桶換成「真的要丟掉嗎」的時候，左邊的圖不會跟著跳 */
+.art-side {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  min-height: 240px;
+}
+.art-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+.art-actions .adult { background: rgba(255, 255, 255, .7); }
+.art-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.art-confirm-txt, .save-hint, .busy-txt {
+  display: flex;
+  font-size: 36px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.save-hint { font-size: 30px; }
+
+/* ===== 準備中（照片轉線稿） ===== */
+.busy { z-index: 130; }          /* 連回家／上一層都蓋住：處理那一兩秒不要讓她按走 */
+.busy-ic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--room);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: busyDraw 1s ease-in-out infinite;
+}
+.busy-ic .ic { width: 56%; height: 56%; }
+@keyframes busyDraw {
+  0%, 100% { transform: rotate(-10deg) translateX(-10px); }
+  50% { transform: rotate(10deg) translateX(10px); }
+}
+
+/* ===== 直向：盒子還是在右邊，只是變窄（兩欄） ===== */
+@media (orientation: portrait) {
+  .pic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  #toolbar { width: 176px; }
+  .tools { gap: 18px 16px; }
+  .tool { height: 64px; border-radius: 20px; }
+  .tool .ic { width: 38px; height: 38px; }
+  .swatches { grid-template-columns: repeat(2, 64px); row-gap: 16px; }
+  #toolbar .box-foot { gap: 16px; }
+  #toolbar .box-foot .btn { height: 80px; border-radius: 22px; }
+
+  #colorPanel { --cc: 50px; }
+  .color-grid, .pattern-row { gap: 10px; }
+  .cell { width: 64px; height: 64px; border-radius: 20px; }
+  .cell canvas { width: 50px; height: 50px; }
+  .cell-row { gap: 14px; }
+  .stamp-grid { grid-template-columns: repeat(4, 64px); gap: 16px 14px; }
+  #stampSizeRow .cell canvas { width: 50px; height: 50px; }
+
+  .coloring .done { gap: 64px; padding-top: calc(140px + var(--st)); }
+
+  .art-view, .save-view { flex-direction: column; gap: 36px; }
+  #artImg, #saveImg { max-width: 84vw; max-height: 52vh; }
+  .art-side { width: auto; min-height: 200px; }
+  .art-actions { flex-direction: row; gap: 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .artwork-thumb, .sw, .cell, .color-cell, .pattern-cell { transition: none; }
+  .busy-ic { animation: none; }
+}

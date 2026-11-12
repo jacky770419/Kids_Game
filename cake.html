@@ -7,77 +7,93 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>甜點店 - 小小遊樂園</title>
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/cake.css">
 </head>
 <body class="cake">
 
-<header class="bar">
-  <a href="index.html" class="icon-btn home-hold" title="長按回首頁">🏠</a>
-  <button id="backBtn" class="icon-btn" hidden title="換一種玩法">🔙</button>
-  <span class="spacer"></span>
-  <!-- 工具都在右側：左手扶著平板時不會被手掌壓到，也不放在畫面下緣（手腕誤觸） -->
-  <button id="listenBtn" class="icon-btn" hidden title="只聽不看">👂</button>
-  <button id="undoBtn" class="icon-btn" hidden title="上一步">↩️</button>
-  <button id="clearBtn" class="icon-btn" hidden title="重新做">🗑️</button>
-  <button id="partyBtn" class="icon-btn" hidden title="慶祝">🎉</button>
-  <button id="saveBtn" class="icon-btn" hidden title="存成圖片">📷</button>
-  <button id="speechBtn" class="icon-btn" title="唸英文">🗣️</button>
-  <button id="musicBtn" class="icon-btn" title="背景音樂">🎵</button>
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡。
+     做甜點／點餐中這一列浮在店面的左上角，小熊收起來（css/cake.css 的 .playing）。 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="回上一層" hidden><i data-ic="back"></i></button>
+  </div>
+  <div id="guide" class="guide" data-guide="要ㄧㄠˋ 玩ㄨㄢˊ 哪ㄋㄚˇ 個˙ㄍㄜ"></div>
 </header>
 
+<!-- 選玩法：兩張大卡片，卡片上直接畫出那個玩法 -->
 <main id="selectScreen">
   <div class="mode-row">
-    <button id="freeCard" class="mode-card mode-free">
-      <span class="mode-demo"><span id="freeDemo" class="demo-pic demo-scene"></span></span>
-      <span class="mode-label">做甜點</span>
+    <button id="freeCard" type="button" class="mode-card" aria-label="做甜點">
+      <span class="win"><span id="freeDemo" class="demo-scene"></span></span>
+      <span class="name" data-zy="做ㄗㄨㄛˋ 甜ㄊㄧㄢˊ 點ㄉㄧㄢˇ"></span>
     </button>
-    <button id="orderCard" class="mode-card mode-order">
-      <span class="mode-demo">
-        <span class="demo-pic"><img src="assets/stickers/rabbit.png" alt=""></span>
+    <button id="orderCard" type="button" class="mode-card" aria-label="客人點餐">
+      <span class="win">
+        <img class="demo-customer" src="assets/stickers/rabbit.png" alt="">
         <span id="orderDemo" class="demo-bubble"></span>
       </span>
-      <span class="mode-label">客人點餐</span>
+      <span class="name" data-zy="客ㄎㄜˋ 人ㄖㄣˊ 點ㄉㄧㄢˇ 餐ㄘㄢ"></span>
     </button>
   </div>
 </main>
 
-<!-- 選甜點：卡片由 cake.js 照 CakeData.DESSERTS 產生 -->
+<!-- 選甜點：卡片由 cake.js 照 CakeData.DESSERTS 產生（卡片上是那種甜點真的畫出來的樣子） -->
 <main id="dessertScreen" hidden>
-  <div id="dessertGrid"></div>
+  <div id="dessertGrid" class="pic-grid"></div>
 </main>
 
 <main id="gameScreen" hidden>
-  <!-- 板面固定 4:3，跟 cake-draw.js 的 800×600 一致 -->
-  <div id="boardWrap">
-    <div id="board">
-      <div id="cakeSvg"></div>
-      <!-- 點餐模式才出現：左下角的客人、左上角的點餐泡泡、做對之後的「下一位」 -->
-      <img id="customer" alt="" draggable="false" hidden>
-      <button id="bubble" hidden title="再聽一次"></button>
-      <button id="nextBtn" class="big-btn" hidden>下一位 ➡️</button>
-      <div id="fx"></div>
-    </div>
+  <!-- 店面：平的（牆、櫃台、甜點、客人都不是按鈕）。大小跟著畫面走，
+       cake.js 會照這一塊的長寬比把 800×600 的板面往上下（或左右）多畫一點補滿。 -->
+  <div id="board">
+    <div id="cakeSvg"></div>
+    <!-- 點餐模式才出現：左下角的客人、他頭上的點餐泡泡（整顆可以按＝再聽一次） -->
+    <img id="customer" alt="" draggable="false" hidden>
+    <button id="bubble" type="button" aria-label="再聽一次客人要什麼" hidden></button>
+    <div id="fx"></div>
+    <!-- 全部重來：小小一顆放右上角，要按住一秒 -->
+    <button id="clearBtn" type="button" class="btn sm" aria-label="全部重來（按住）"><i data-ic="trash"></i></button>
   </div>
-  <!-- 材料匣：直向也留在右側，不搬到底部（下緣是手腕會壓到的地方） -->
-  <aside id="tray">
+  <!-- 右邊的盒子：材料都在這。直向也留在右邊，不搬到底部（下緣是手腕會壓到的地方）。
+       最下面永遠是 [上一步][綠色]：做甜點＝完成，點餐＝下一位（做對了才浮起來）。 -->
+  <aside id="tray" class="box">
     <div id="catTabs" class="cat-tabs"></div>
     <div id="trayScroll"></div>
+    <div class="box-foot">
+      <button id="undoBtn" type="button" class="btn" aria-label="上一步" disabled><i data-ic="undo"></i></button>
+      <button id="saveBtn" type="button" class="btn go" aria-label="做好了" disabled><i data-ic="check"></i></button>
+      <button id="nextBtn" type="button" class="btn go" aria-label="下一位客人（做對才能按）" disabled hidden><i data-ic="next"></i></button>
+    </div>
   </aside>
 </main>
 
 <!-- 從材料匣拖配料時跟著手指走的影像 -->
 <div id="ghost" hidden></div>
 
-<div id="saveOverlay" class="overlay" hidden>
-  <img id="saveImg" alt="甜點作品">
-  <div class="save-hint">長按圖片就可以存到相簿囉！</div>
-  <button id="closeSave" class="big-btn alt">關閉</button>
+<canvas id="confettiCanvas"></canvas>
+
+<!-- 完成畫面（做甜點按綠色勾勾之後）：她做的甜點是主角，已經存進「我的作品」 -->
+<div id="saveOverlay" class="done" hidden>
+  <div class="done-art">
+    <span class="done-pic"><img id="saveImg" alt="做好的甜點"></span>
+    <img class="done-bear" src="assets/stickers/bear.png" alt="">
+  </div>
+  <div class="done-side">
+    <div class="done-title" data-zy="好ㄏㄠˇ 棒ㄅㄤˋ"></div>
+    <div class="done-row">
+      <button id="againBtn" type="button" class="btn" aria-label="再做一個"><i data-ic="replay"></i></button>
+      <button id="pickBtn" type="button" class="btn go" aria-label="回去選甜點"><i data-ic="grid"></i></button>
+    </div>
+  </div>
 </div>
 
 <script src="js/kiosk.js"></script>
 <script src="js/sound.js"></script>
 <script src="js/speech.js"></script>
 <script src="js/music.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/cake-data.js"></script>
 <script src="js/cake-state.js"></script>

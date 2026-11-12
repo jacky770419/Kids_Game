@@ -1,0 +1,416 @@
+/* 甜點店（房間色：粉紅，css/base.css 的 body.cake）
+
+   三個畫面：選玩法（兩張大卡片）→ 選甜點（七張圖卡，只有「做甜點」會經過）→ 店面。
+   店面＝左邊平的場景（牆、櫃台、甜點、客人）＋右邊白色的材料盒。
+   「浮起來的才能按」：場景裡只有三樣東西是浮的——左上的回家／上一層、右上的小垃圾桶（要按住）、
+   點餐客人的泡泡（點了再聽一次）。 */
+body.cake {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 回家／上一層永遠在最上層：完成畫面蓋上來時也還按得到 */
+.cake .top { position: relative; }
+.cake .nav { display: flex; gap: 16px; position: relative; z-index: 120; }
+
+/* ===== 選玩法：兩張像首頁「門」的大卡片 ===== */
+#selectScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px calc(48px + var(--sr)) calc(44px + var(--sb)) calc(48px + var(--sl));
+}
+.mode-row {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: 960px;
+  height: min(100%, 540px);
+}
+.mode-card {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px 12px;
+  border-radius: 40px;
+  background: var(--room);
+  box-shadow: 0 12px 0 var(--lip);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.mode-card:active { transform: translateY(9px); box-shadow: 0 3px 0 var(--lip); }
+.mode-card:focus-visible, .cake .btn:focus-visible, .cake .pic-thumb:focus-visible, #bubble:focus-visible {
+  outline: 4px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* 卡片上的窗：直接畫出那個玩法 */
+.mode-card .win {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border-radius: 28px;
+  background: var(--tint);
+  overflow: hidden;
+}
+.mode-card .name {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  padding: 6px 18px 6px 22px;
+  border-radius: 22px;
+  background: #fff;
+  font-size: 40px;
+  line-height: 1;
+}
+/* 做甜點：店裡一個做好的蛋糕 */
+.demo-scene { position: absolute; inset: 0; }
+.demo-scene svg { display: block; width: 100%; height: 100%; }
+/* 客人點餐：客人＋他頭上的點餐泡泡（卡片裡的泡泡只是圖，平的） */
+.demo-customer {
+  position: absolute;
+  left: 9%;
+  bottom: 0;
+  height: 76%;
+  max-width: 46%;
+  object-fit: contain;
+  object-position: left bottom;
+}
+.demo-bubble {
+  position: absolute;
+  right: 6%;
+  top: 9%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 14px;
+  border-radius: 28px;
+  background: #fff;
+}
+.demo-bubble::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  bottom: -11px;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.demo-bubble .order-icon { position: relative; z-index: 1; width: 62px; height: 62px; }
+.demo-bubble .order-icon:first-child { width: 84px; height: 84px; margin-right: 6px; }
+
+/* ===== 選甜點：七張圖卡（.pic-thumb），圖是那種甜點真的畫出來的樣子 ===== */
+#dessertScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px calc(28px + var(--sr)) calc(28px + var(--sb)) calc(28px + var(--sl));
+}
+/* 七張排 4＋3：用 flex 換行置中，最後一排不滿不會靠左空一格 */
+#dessertGrid {
+  --cols: 4;
+  --gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px var(--gap);
+  width: 100%;
+  max-width: 1040px;
+  margin: auto;
+}
+.dessert-card {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  min-width: 0;
+}
+.dessert-pic {
+  display: block;
+  aspect-ratio: 4 / 3;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.dessert-pic svg { display: block; width: 100%; height: 100%; pointer-events: none; }
+
+/* ===== 店面＋材料盒 ===== */
+#gameScreen {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 16px;
+  padding: calc(16px + var(--st)) calc(16px + var(--sr)) calc(16px + var(--sb)) calc(16px + var(--sl));
+}
+
+/* 做甜點／點餐中：回家／上一層浮在店面左上角，小熊收起來，整個高度都給店面 */
+.cake.playing .top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 120;
+  padding: calc(32px + var(--st)) 0 0 calc(32px + var(--sl));
+}
+.cake.playing .guide { display: none; }
+
+/* 店面：平的。裡面的 SVG 由 cake.js 照這一塊的長寬比畫滿（牆往上長、櫃台往下長）。 */
+#board {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #FFF6E9;
+  touch-action: none;
+}
+#cakeSvg { position: absolute; inset: 0; }
+#cakeSvg svg { display: block; width: 100%; height: 100%; }
+#cakeSvg .tp { cursor: pointer; }
+
+/* 蠟燭的火焰輕輕晃 */
+#cakeSvg .flame {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: cakeFlame 0.9s ease-in-out infinite alternate;
+}
+@keyframes cakeFlame {
+  from { transform: scale(1, 1) rotate(-4deg); }
+  to { transform: scale(0.9, 1.12) rotate(4deg); }
+}
+
+/* 全部重來：右上角小小一顆，要按住（UI.hold 的外圈） */
+#clearBtn {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  z-index: 4;
+}
+#clearBtn.hold:active { box-shadow: 0 6px 0 var(--lip); }
+#clearBtn::after { border-radius: 29px; }
+
+/* 點餐的客人：站在左下角（平的；點他也會再唸一次，但主要是按泡泡） */
+#customer {
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+  width: 34%;
+  height: 38%;
+  object-fit: contain;
+  object-position: left bottom;
+  z-index: 2;
+}
+#customer.happy { animation: cakeHop 0.45s ease 3; }
+@keyframes cakeHop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9%); }
+}
+
+/* 點餐泡泡：整顆是按鈕（浮起來的），在回家／上一層下面，尾巴指向下面的客人。
+   裡面：兩格圖（做對的打勾）＋一顆黃色喇叭。 */
+#bubble {
+  position: absolute;
+  left: 24px;
+  top: 138px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 140px;
+  padding: 0 18px 0 20px;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0 8px 0 #F3BCD2;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+#bubble::after {
+  content: '';
+  position: absolute;
+  left: 70px;
+  bottom: -14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: 6px 6px 0 #F3BCD2;
+  transition: box-shadow .08s ease;
+}
+#bubble:active { transform: translateY(6px); box-shadow: 0 2px 0 #F3BCD2; }
+#bubble:active::after { box-shadow: 2px 2px 0 #F3BCD2; }
+
+.order-part {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 2px;
+  flex: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 22px;
+  background: #FFF1F6;
+  pointer-events: none;
+}
+.order-icon { display: block; width: 84px; height: 84px; }
+.order-icon svg { display: block; width: 100%; height: 100%; }
+.order-part.many .order-icon { width: 46px; height: 46px; }
+/* 只聽不看：還沒做對的那格是問號 */
+.order-q { display: flex; align-items: center; justify-content: center; width: 84px; height: 84px; color: var(--flat-ink); }
+.order-q .ic { width: 56px; height: 56px; stroke-width: 2.4; }
+/* 做對了：右上角綠色勾勾 */
+.order-ok {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background: var(--go);
+  color: #fff;
+}
+.order-ok.new { animation: cakePopIn 0.3s ease-out; }
+.order-ok .ic { width: 24px; height: 24px; stroke-width: 3.6; }
+.order-say {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--say);
+  pointer-events: none;
+}
+.order-say .ic { width: 32px; height: 32px; stroke-width: 2.4; }
+
+@keyframes cakePopIn {
+  from { transform: scale(0.4); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* 慶祝：愛心、星星從下面飄上去，不吃點擊 */
+#fx {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+}
+.fx-bit {
+  position: absolute;
+  bottom: -12%;
+  height: auto;
+  aspect-ratio: 1;
+  opacity: 0;
+  animation: cakeRise 1.5s ease-out forwards;
+}
+@keyframes cakeRise {
+  0% { bottom: -12%; opacity: 0; transform: scale(0.6); }
+  15% { opacity: 1; }
+  100% { bottom: 92%; opacity: 0; transform: scale(1.15); }
+}
+
+/* ===== 右邊的盒子：分類頁籤、材料格子、[上一步][綠色] ===== */
+#tray {
+  flex: none;
+  width: 264px;
+  min-height: 0;
+  padding: 20px 16px 16px;
+  border-radius: 28px;
+}
+/* 盒子裡的按鈕是淡粉紅的面＋粉紅底邊（白盒子上的白按鈕看不出是按鈕） */
+.cake .box .btn:not(.go):not(.sel):not(:disabled) { background: #FFF1F6; --lip: #F3BCD2; }
+
+/* 頁籤最多六個（顏色／容器／淋的／三種配料），橫向排 3×2。上面畫的是那一類的東西，不放字。 */
+.cat-tabs {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 16px;
+  padding-bottom: 6px;
+}
+.cat-tabs .cat-tab { width: auto; }
+.cat-tab svg { display: block; width: 46px; height: 46px; pointer-events: none; }
+
+/* 材料格子：每格 88 高、兩欄。配料多的時候上下捲（下面露出半排，看得出還有）。
+   左右各多留 10px 再用負 margin 拉回來：「選到的」外圈才不會被捲動區切掉。 */
+#trayScroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* 列高照內容給：auto 列在放不下時會被壓扁，一格疊一格、怎麼滑都不動（貼紙頁踩過） */
+  grid-auto-rows: max-content;
+  gap: 22px 16px;
+  align-content: start;
+  margin: 0 -10px;
+  padding: 10px 10px 18px;
+}
+/* pan-y：手指上下滑要能捲盒子；橫向才由 cake.js 接手當拖曳 */
+.tray-item {
+  width: auto;
+  height: 88px;
+  touch-action: pan-y;
+}
+.tray-item svg { display: block; width: 68px; height: 68px; pointer-events: none; }
+.tray-item.wiggle { animation: cakeWiggle 0.35s ease; }
+@keyframes cakeWiggle {
+  25% { transform: translateX(-6px) rotate(-4deg); }
+  75% { transform: translateX(6px) rotate(4deg); }
+}
+
+#tray .box-foot .btn { height: 88px; }
+/* 做對了，綠色的「下一位」浮起來的那一下 */
+#nextBtn.pop:not(:disabled) { animation: cakePopIn 0.35s ease-out; }
+
+/* 從材料盒拖配料時跟著手指走的影像：不吃事件，永遠在最上面 */
+#ghost {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 200;
+  opacity: 0.9;
+  filter: drop-shadow(0 8px 0 rgba(51, 39, 79, 0.22));
+}
+#ghost svg { display: block; width: 100%; height: 100%; }
+
+/* ===== 直向：盒子還是在右邊（窄一點），頁籤改 2×3 ===== */
+@media (orientation: portrait) {
+  #selectScreen { padding-left: calc(40px + var(--sl)); padding-right: calc(40px + var(--sr)); }
+  .mode-row { flex-direction: column; gap: 44px; max-width: 560px; height: min(100%, 820px); }
+  #dessertGrid { --cols: 3; }
+  #tray { width: 216px; }
+  .cat-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #customer { bottom: 14%; width: 44%; height: 26%; }
+}
+
+@media (max-height: 620px) {
+  .mode-card .name { font-size: 30px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mode-card, #bubble, #bubble::after { transition: none; }
+  #cakeSvg .flame, #customer.happy, .order-ok.new, .tray-item.wiggle, #nextBtn.pop:not(:disabled) { animation: none; }
+  .fx-bit { animation-duration: 0.01s; }
+}
+
+/* 完成畫面：小熊往右下挪一點、小一點——她做的甜點在圖的正中間，不要被小熊擋住 */
+.cake .done-bear { right: -92px; bottom: -88px; height: min(200px, 27vh); }

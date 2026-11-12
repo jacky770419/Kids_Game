@@ -17,7 +17,7 @@
 
   var Data = global.CakeData || (typeof require === 'function' ? require('./cake-data.js') : null);
 
-  var INK = '#2b2b2b';
+  var INK = '#33274F';
   var LINE = ' stroke="' + INK + '" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"';
   var PLATE_Y = 516;            // 盤子中心＝最下層的底
 
