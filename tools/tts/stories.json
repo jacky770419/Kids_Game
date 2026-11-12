@@ -58,6 +58,37 @@
   "大野狼": {
    "find": "Zhile",
    "en": "Callum"
+  },
+  "爺爺": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "奶奶": {
+   "find": "Jui",
+   "en": "Clara",
+   "note": "2026-11-12 新選：中文 tdj_冰璃_Jui（台灣口音、溫和中年女聲），英文 Clara（試聽過的說故事女聲）"
+  },
+  "孫女": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小狗": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小貓": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小老鼠": {
+   "find": "Stacy",
+   "en": "Macy",
+   "note": "2026-11-12 新選：中文 kids_Stacy（台灣口音、可愛女聲），英文 Macy（開朗活潑）；兩本共用同一隻小老鼠"
+  },
+  "獅子": {
+   "find": "YCHuang",
+   "en": "Brian",
+   "note": "溫和的大獅子，用跟大鯨魚一樣溫暖低沉的聲音，不要兇"
   }
  },
  "stories": [
@@ -756,6 +787,410 @@
        "tag": "warm, slowly",
        "text": "三隻小豬住在磚塊屋裡，每天都很開心。",
        "en": "The three little pigs live in the brick house, happy every day."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "turnip",
+   "title": "拔蘿蔔",
+   "title_en": "The Enormous Turnip",
+   "pages": [
+    {
+     "scene": "菜園",
+     "act": "爺爺站在菜園裡，土裡的蘿蔔葉子越長越大；爺爺看到嚇一跳、跳起來",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "warm, storytelling",
+       "text": "爺爺在菜園裡種了一顆蘿蔔。",
+       "en": "Grandpa plants a turnip in his garden."
+      },
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "蘿蔔長呀長，長得好大、好大！",
+       "en": "It grows and grows. It grows so big!"
+      },
+      {
+       "who": "爺爺",
+       "tag": "surprised, happy",
+       "text": "哇，好大的蘿蔔！我來把它拔起來。",
+       "en": "Wow, what a big turnip! I will pull it up."
+      }
+     ]
+    },
+    {
+     "scene": "菜園",
+     "act": "爺爺拉蘿蔔，嘿咻時身體往後晃；拔不起來，爺爺回頭喊奶奶",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "爺爺抓住蘿蔔葉子，用力拉。",
+       "en": "Grandpa holds the leaves and pulls."
+      },
+      {
+       "who": "旁白",
+       "tag": "energetic, chanting",
+       "text": "嘿咻！嘿咻！",
+       "en": "Heave-ho! Heave-ho!"
+      },
+      {
+       "who": "旁白",
+       "tag": "puzzled",
+       "text": "拔不起來。",
+       "en": "It won't come up!"
+      },
+      {
+       "who": "爺爺",
+       "tag": "calling out",
+       "text": "奶奶，快來幫忙！",
+       "en": "Grandma! Come and help!"
+      }
+     ]
+    },
+    {
+     "scene": "菜園",
+     "act": "奶奶從左邊走進來，拉著爺爺；兩個一起晃",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "奶奶拉著爺爺，爺爺拉著蘿蔔。",
+       "en": "Grandma pulls Grandpa. Grandpa pulls the turnip."
+      },
+      {
+       "who": "旁白",
+       "tag": "energetic, chanting",
+       "text": "嘿咻！嘿咻！",
+       "en": "Heave-ho! Heave-ho!"
+      },
+      {
+       "who": "旁白",
+       "tag": "puzzled",
+       "text": "還是拔不起來。",
+       "en": "It still won't come up!"
+      },
+      {
+       "who": "奶奶",
+       "tag": "calling out, warm",
+       "text": "小孫女，快來幫忙！",
+       "en": "Granddaughter! Come and help!"
+      }
+     ]
+    },
+    {
+     "scene": "菜園",
+     "act": "孫女跑進來拉奶奶",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "孫女拉著奶奶，奶奶拉著爺爺，爺爺拉著蘿蔔。",
+       "en": "Granddaughter pulls Grandma. Grandma pulls Grandpa. Grandpa pulls the turnip."
+      },
+      {
+       "who": "旁白",
+       "tag": "energetic, chanting",
+       "text": "嘿咻！嘿咻！",
+       "en": "Heave-ho! Heave-ho!"
+      },
+      {
+       "who": "旁白",
+       "tag": "puzzled",
+       "text": "還是拔不起來。",
+       "en": "It still won't come up!"
+      },
+      {
+       "who": "孫女",
+       "tag": "calling out, cheerful",
+       "text": "小狗，快來幫忙！",
+       "en": "Puppy! Come and help!"
+      }
+     ]
+    },
+    {
+     "scene": "菜園",
+     "act": "小狗跑進來拉孫女",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "小狗拉著孫女，孫女拉著奶奶，奶奶拉著爺爺，爺爺拉著蘿蔔。",
+       "en": "Puppy pulls Granddaughter. Granddaughter pulls Grandma. Grandma pulls Grandpa. Grandpa pulls the turnip."
+      },
+      {
+       "who": "旁白",
+       "tag": "energetic, chanting",
+       "text": "嘿咻！嘿咻！",
+       "en": "Heave-ho! Heave-ho!"
+      },
+      {
+       "who": "旁白",
+       "tag": "puzzled",
+       "text": "還是拔不起來。",
+       "en": "It still won't come up!"
+      },
+      {
+       "who": "小狗",
+       "tag": "barking, cheerful",
+       "text": "汪汪！小貓，快來幫忙！",
+       "en": "Woof woof! Kitty! Come and help!"
+      }
+     ]
+    },
+    {
+     "scene": "菜園",
+     "act": "小貓跳進來拉小狗",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "小貓拉著小狗，大家一起拉。",
+       "en": "Kitty pulls Puppy. Everyone pulls together."
+      },
+      {
+       "who": "旁白",
+       "tag": "energetic, chanting",
+       "text": "嘿咻！嘿咻！",
+       "en": "Heave-ho! Heave-ho!"
+      },
+      {
+       "who": "旁白",
+       "tag": "puzzled",
+       "text": "還是拔不起來！",
+       "en": "It still won't come up!"
+      },
+      {
+       "who": "小貓",
+       "tag": "meowing, calling out",
+       "text": "喵喵！小老鼠，快來幫忙！",
+       "en": "Meow! Little Mouse! Come and help!"
+      }
+     ]
+    },
+    {
+     "scene": "菜園",
+     "act": "小老鼠跑進來拉小貓；大家用力，蘿蔔「啵」一聲拔出來，大家開心跳起來",
+     "lines": [
+      {
+       "who": "小老鼠",
+       "tag": "tiny, eager",
+       "text": "我來了！我也要幫忙！",
+       "en": "I'm here! I can help, too!"
+      },
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "小老鼠拉著小貓。大家一起用力。",
+       "en": "Little Mouse pulls Kitty. Everyone pulls hard."
+      },
+      {
+       "who": "旁白",
+       "tag": "energetic, loud",
+       "text": "嘿咻！嘿咻！",
+       "en": "Heave-ho! Heave-ho!"
+      },
+      {
+       "who": "旁白",
+       "tag": "excited",
+       "text": "啵！蘿蔔拔起來了！大家開心得跳起來。",
+       "en": "Pop! Up comes the turnip! Everyone jumps for joy."
+      }
+     ]
+    },
+    {
+     "scene": "菜園，黃昏",
+     "act": "大家圍著一大鍋蘿蔔湯，跳一跳、冒愛心",
+     "lines": [
+      {
+       "who": "爺爺",
+       "tag": "grateful, warm",
+       "text": "謝謝大家！小老鼠也幫了大忙！",
+       "en": "Thank you, everyone! Little Mouse helped a lot, too!"
+      },
+      {
+       "who": "旁白",
+       "tag": "warm",
+       "text": "大家一起煮了一大鍋蘿蔔湯。",
+       "en": "Everyone makes a big pot of turnip soup."
+      },
+      {
+       "who": "旁白",
+       "tag": "warm, slowly",
+       "text": "一起拉，一起吃，真開心！",
+       "en": "Pull together, eat together. So happy!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lion-mouse",
+   "title": "獅子和老鼠",
+   "title_en": "The Lion and the Mouse",
+   "pages": [
+    {
+     "scene": "草原的大樹下",
+     "act": "獅子在樹下睡覺冒 zzz；小老鼠從左邊跑進來，咚一下碰到獅子的鼻子",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "warm, storytelling",
+       "text": "大獅子在大樹下睡午覺。呼——呼——",
+       "en": "Big Lion is taking a nap under a tree. Snore... snore..."
+      },
+      {
+       "who": "旁白",
+       "tag": "playful",
+       "text": "一隻小老鼠跑過來，跑呀跑，咚！碰到了獅子的鼻子。",
+       "en": "A little mouse runs by, and bump! She bumps into Lion's nose."
+      }
+     ]
+    },
+    {
+     "scene": "草原的大樹下",
+     "act": "獅子打噴嚏醒來、坐起來；小老鼠嚇一跳",
+     "lines": [
+      {
+       "who": "獅子",
+       "tag": "sleepy, grumpy",
+       "text": "哈啾！是誰吵醒我？",
+       "en": "Achoo! Who woke me up?"
+      },
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "獅子張開眼睛，看見了小老鼠。",
+       "en": "Lion opens his eyes and sees the little mouse."
+      }
+     ]
+    },
+    {
+     "scene": "草原的大樹下",
+     "act": "小老鼠雙手合十拜託",
+     "lines": [
+      {
+       "who": "小老鼠",
+       "tag": "nervous, polite",
+       "text": "對不起，對不起！我不是故意的。",
+       "en": "I'm sorry, I'm sorry! I didn't mean to."
+      },
+      {
+       "who": "小老鼠",
+       "tag": "sincere",
+       "text": "請讓我回家。有一天，我也會幫你的忙！",
+       "en": "Please let me go home. One day, I will help you, too!"
+      }
+     ]
+    },
+    {
+     "scene": "草原的大樹下",
+     "act": "獅子哈哈大笑；小老鼠開心跑走",
+     "lines": [
+      {
+       "who": "獅子",
+       "tag": "laughing heartily",
+       "text": "哈哈哈！你這麼小，怎麼幫我呀？",
+       "en": "Ha ha ha! You are so small. How can you help me?"
+      },
+      {
+       "who": "旁白",
+       "tag": "warm",
+       "text": "獅子笑一笑，讓小老鼠回家了。",
+       "en": "Lion smiles and lets the little mouse go home."
+      },
+      {
+       "who": "小老鼠",
+       "tag": "relieved, happy",
+       "text": "謝謝你，獅子！",
+       "en": "Thank you, Lion!"
+      }
+     ]
+    },
+    {
+     "scene": "森林",
+     "act": "獅子在森林散步；網子從上面掉下來罩住獅子，獅子坐在網子裡",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "過了幾天，獅子在森林裡散步。",
+       "en": "A few days later, Lion takes a walk in the forest."
+      },
+      {
+       "who": "旁白",
+       "tag": "surprised",
+       "text": "唰！一張大網子掉下來，罩住了獅子。",
+       "en": "Swish! A big net falls down on Lion."
+      },
+      {
+       "who": "獅子",
+       "tag": "worried, calling out",
+       "text": "哎呀，我出不去了！誰來幫幫我？",
+       "en": "Oh no, I can't get out! Can someone help me?"
+      }
+     ]
+    },
+    {
+     "scene": "森林",
+     "act": "小老鼠從左邊跑過來，跳一跳",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "小老鼠聽見了，趕快跑過來。",
+       "en": "The little mouse hears him. She runs over, quick, quick!"
+      },
+      {
+       "who": "小老鼠",
+       "tag": "brave, cheerful",
+       "text": "獅子不要怕，我來幫你！",
+       "en": "Don't worry, Lion! I will help you!"
+      }
+     ]
+    },
+    {
+     "scene": "森林",
+     "act": "小老鼠咬網子；網子破了，獅子出來、跳一跳",
+     "lines": [
+      {
+       "who": "旁白",
+       "tag": "storytelling",
+       "text": "小老鼠用小小的牙齒，咬呀咬、咬呀咬。",
+       "en": "With her tiny teeth, she chews and chews and chews."
+      },
+      {
+       "who": "旁白",
+       "tag": "excited",
+       "text": "網子破了一個大洞，獅子出來了！",
+       "en": "The net breaks open. Lion is free!"
+      }
+     ]
+    },
+    {
+     "scene": "森林",
+     "act": "獅子和小老鼠站在一起，冒愛心",
+     "lines": [
+      {
+       "who": "獅子",
+       "tag": "grateful, warm",
+       "text": "謝謝你，小老鼠！你好厲害！",
+       "en": "Thank you, little mouse! You are amazing!"
+      },
+      {
+       "who": "小老鼠",
+       "tag": "happy, proud",
+       "text": "小小的我，也能幫大忙！",
+       "en": "Even little me can help a lot!"
+      },
+      {
+       "who": "旁白",
+       "tag": "warm, slowly",
+       "text": "從那天起，獅子和小老鼠變成了好朋友。",
+       "en": "From that day on, Lion and the little mouse are best friends."
       }
      ]
     }

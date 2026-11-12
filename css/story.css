@@ -55,26 +55,25 @@ body.story main {
 .lang-btn span.on { background: #FFD93D; color: #2b2b2b; }
 
 /* ---------- 選故事 ----------
-   四本排 2×2（橫放、直放都是）；之後故事再多就往下捲 */
+   六本：橫放排 3×2、直放排 2×3（用 grid 固定欄數，才不會因為寬度剛好變成 4＋2）；之後故事再多就往下捲 */
 #storySelect { overflow-y: auto; }
 .story-row {
   flex: 1;
   min-height: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   align-items: center;
   align-content: center;
   justify-content: center;
-  gap: min(44px, 5vh) min(64px, 6vw);
+  justify-items: center;
+  gap: min(40px, 4.5vh) min(56px, 4.5vw);
   padding: 20px 40px calc(30px + env(safe-area-inset-bottom));
-  /* 寬度只夠放兩張：第三張自己換行，才會是 2×2 而不是 3＋1 */
   width: 100%;
-  max-width: 900px;
   margin: 0 auto;
 }
 
 .story-card {
-  width: min(340px, 36vw, 36vh);
+  width: min(300px, 26vw, 32vh);
   padding: 16px 16px 12px;
   border-radius: 30px;
   background: var(--card, #FFD93D);
@@ -480,7 +479,8 @@ body.story main {
 @media (max-width: 700px), (orientation: portrait) {
   #stageWrap { gap: 8px; padding: 0 8px; }
   .nav-btn { width: 50px; height: 50px; font-size: 22px; border-width: 4px; box-shadow: 4px 4px 0 #2b2b2b; }
-  .story-card { width: min(340px, 40vw, 30vh); }
+  .story-row { grid-template-columns: repeat(2, auto); }
+  .story-card { width: min(320px, 40vw, 25vh); }
   .lang-btn { height: 56px; }
   .lang-btn span { min-width: 44px; font-size: 20px; }
 }

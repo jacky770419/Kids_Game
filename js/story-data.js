@@ -56,7 +56,15 @@
     '牢': 'ㄌㄠˊ', '狼': 'ㄌㄤˊ', '玩': 'ㄨㄢˊ', '用': 'ㄩㄥˋ', '疊': 'ㄉㄧㄝˊ', '看': 'ㄎㄢˋ', '真': 'ㄓㄣ', '磚': 'ㄓㄨㄢ',
     '稻': 'ㄉㄠˋ', '糕': 'ㄍㄠ', '糟': 'ㄗㄠ', '紅': 'ㄏㄨㄥˊ', '經': 'ㄐㄧㄥ', '自': 'ㄗˋ', '草': 'ㄘㄠˇ', '蓋': 'ㄍㄞˋ',
     '豬': 'ㄓㄨ', '賽': 'ㄙㄞˋ', '贏': 'ㄧㄥˊ', '趕': 'ㄍㄢˇ', '身': 'ㄕㄣ', '遠': 'ㄩㄢˇ', '野': 'ㄧㄝˇ', '門': 'ㄇㄣˊ',
-    '隻': 'ㄓ', '靠': 'ㄎㄠˋ', '預': 'ㄩˋ', '齊': 'ㄑㄧˊ', '龜': 'ㄍㄨㄟ'
+    '隻': 'ㄓ', '靠': 'ㄎㄠˋ', '預': 'ㄩˋ', '齊': 'ㄑㄧˊ', '龜': 'ㄍㄨㄟ',
+    // 拔蘿蔔、獅子和老鼠
+    '午': 'ㄨˇ', '吃': 'ㄔ', '咚': 'ㄉㄨㄥ', '咬': 'ㄧㄠˇ', '咻': 'ㄒㄧㄡ', '唰': 'ㄕㄨㄚ', '啵': 'ㄅㄛ', '啾': 'ㄐㄧㄡ',
+    '喵': 'ㄇㄧㄠ', '嘿': 'ㄏㄟ', '女': 'ㄋㄩˇ', '奶': 'ㄋㄞˇ', '孫': 'ㄙㄨㄣ', '幾': 'ㄐㄧˇ', '忙': 'ㄇㄤˊ', '意': 'ㄧˋ',
+    '成': 'ㄔㄥˊ', '抓': 'ㄓㄨㄚ', '拉': 'ㄌㄚ', '拔': 'ㄅㄚˊ', '故': 'ㄍㄨˋ', '散': 'ㄙㄢˋ', '林': 'ㄌㄧㄣˊ', '森': 'ㄙㄣ',
+    '汪': 'ㄨㄤ', '洞': 'ㄉㄨㄥˋ', '湯': 'ㄊㄤ', '煮': 'ㄓㄨˇ', '爺': 'ㄧㄝˊ', '牙': 'ㄧㄚˊ', '狗': 'ㄍㄡˇ', '獅': 'ㄕ',
+    '破': 'ㄆㄛˋ', '種': 'ㄓㄨㄥˋ', '笑': 'ㄒㄧㄠˋ', '網': 'ㄨㄤˇ', '罩': 'ㄓㄠˋ', '老': 'ㄌㄠˇ', '能': 'ㄋㄥˊ', '菜': 'ㄘㄞˋ',
+    '葉': 'ㄧㄝˋ', '蔔': 'ㄅㄛˊ', '蘿': 'ㄌㄨㄛˊ', '覺': 'ㄐㄩㄝˊ', '請': 'ㄑㄧㄥˇ', '讓': 'ㄖㄤˋ', '貓': 'ㄇㄠ', '鍋': 'ㄍㄨㄛ',
+    '鼠': 'ㄕㄨˇ', '鼻': 'ㄅㄧˊ', '齒': 'ㄔˇ'
   };
 
   var ZY_PHRASES = {
@@ -74,7 +82,13 @@
     '厲害': ['ㄌㄧˋ', '˙ㄏㄞ'],
     '力氣': ['ㄌㄧˋ', '˙ㄑㄧ'],
     '地方': ['ㄉㄧˋ', '˙ㄈㄤ'],                // 單字表的「地」是「輕輕地」的˙ㄉㄜ
-    '木頭': ['ㄇㄨˋ', '˙ㄊㄡ']
+    '木頭': ['ㄇㄨˋ', '˙ㄊㄡ'],
+    '蘿蔔': ['ㄌㄨㄛˊ', '˙ㄅㄛ'],
+    '爺爺': ['ㄧㄝˊ', '˙ㄧㄝ'],
+    '奶奶': ['ㄋㄞˇ', '˙ㄋㄞ'],
+    '長呀長': ['ㄓㄤˇ', '˙ㄧㄚ', 'ㄓㄤˇ'],     // 「蘿蔔長呀長」是長大的長
+    '長得': ['ㄓㄤˇ', '˙ㄉㄜ'],
+    '午覺': ['ㄨˇ', 'ㄐㄧㄠˋ']                 // 單字表的「覺」念ㄐㄩㄝˊ
   };
 
   /* 角色的圖。k＝這個姿勢相對站姿的高度（坐著、躺著比較矮）；left:true＝這張圖本來就面朝左。
@@ -153,6 +167,56 @@
     },
     brick: {
       up: { src: 'assets/story/chars/house-brick.png' }
+    },
+
+    // 拔蘿蔔：拉的姿勢一律朝右（蘿蔔在右邊），一個拉一個往左排；蘿蔔、湯鍋是道具
+    grandpa: {
+      cheer: { src: 'assets/story/chars/grandpa-cheer.png' },
+      pull: { src: 'assets/story/chars/grandpa-pull.png' }
+    },
+    grandma: {
+      cheer: { src: 'assets/story/chars/grandma-cheer.png' },
+      pull: { src: 'assets/story/chars/grandma-pull.png' }
+    },
+    girl: {
+      cheer: { src: 'assets/story/chars/girl-cheer.png' },
+      pull: { src: 'assets/story/chars/girl-pull.png' }
+    },
+    dog: {
+      cheer: { src: 'assets/story/chars/dog-cheer.png' },
+      pull: { src: 'assets/story/chars/dog-pull.png' }
+    },
+    cat: {
+      cheer: { src: 'assets/story/chars/cat-cheer.png' },
+      pull: { src: 'assets/story/chars/cat-pull.png' }
+    },
+    // 小老鼠兩本共用（拔蘿蔔最後來幫忙的、獅子和老鼠的主角）
+    mouse: {
+      cheer: { src: 'assets/story/chars/mouse-cheer.png' },
+      pull: { src: 'assets/story/chars/mouse-pull.png' },
+      run: { src: 'assets/story/chars/mouse-run.png' },
+      plead: { src: 'assets/story/chars/mouse-plead.png' },
+      chew: { src: 'assets/story/chars/mouse-chew.png' }
+    },
+    turnip: {
+      ground: { src: 'assets/story/chars/turnip-ground.png' },
+      big: { src: 'assets/story/chars/turnip-big.png', k: 1.3 }
+    },
+    soup: {
+      pot: { src: 'assets/story/chars/soup-pot.png' }
+    },
+
+    // 獅子和老鼠：獅子是溫和版，被網子罩住的那張連網子一起畫；咬破的網子是另一個道具
+    lion: {
+      happy: { src: 'assets/story/chars/lion-happy.png' },
+      sleep: { src: 'assets/story/chars/lion-sleep.png', left: true, k: 0.55 },
+      wake: { src: 'assets/story/chars/lion-wake.png', left: true },
+      laugh: { src: 'assets/story/chars/lion-laugh.png', left: true },
+      walk: { src: 'assets/story/chars/lion-walk.png', k: 0.85 },
+      net: { src: 'assets/story/chars/lion-net.png', k: 1.05 }
+    },
+    net: {
+      torn: { src: 'assets/story/chars/net-torn.png' }
     }
   };
 
@@ -165,7 +229,11 @@
     tortoise: ['nod', 'hearts'],
     straw: ['wiggle', 'sparkle'],
     wood: ['wiggle', 'sparkle'],
-    brick: ['wiggle', 'sparkle']
+    brick: ['wiggle', 'sparkle'],
+    turnip: ['wiggle', 'sparkle'],
+    soup: ['wiggle', 'hearts'],
+    lion: ['nod', 'hearts'],
+    net: ['wiggle', 'sparkle']
   };
 
   /* 說話的人 → 畫面上哪個角色跟著動、字幕框用什麼顏色 */
@@ -183,7 +251,14 @@
     '豬大哥': { actor: 'pig1', color: '#FFE98A' },
     '豬二哥': { actor: 'pig2', color: '#8EC5FF' },
     '豬小妹': { actor: 'pig3', color: '#FF9EA5' },
-    '大野狼': { actor: 'wolf', color: '#C9CDD6' }
+    '大野狼': { actor: 'wolf', color: '#C9CDD6' },
+    '爺爺': { actor: 'grandpa', color: '#8EC5FF' },
+    '奶奶': { actor: 'grandma', color: '#8EDB8A' },
+    '孫女': { actor: 'girl', color: '#FF9EC4' },
+    '小狗': { actor: 'dog', color: '#E8A85C' },
+    '小貓': { actor: 'cat', color: '#FFB05C' },
+    '小老鼠': { actor: 'mouse', color: '#D9D3FF' },
+    '獅子': { actor: 'lion', color: '#FFC14D' }
   };
 
   var STAGING = {
@@ -699,6 +774,251 @@
           { l: 2, at: 0.6, fx: 'hearts', x: 33, y: 52 },
           { l: 2, at: 2.4, fx: 'hearts', x: 51, y: 52 },
           { l: 2, at: 3.6, fx: 'sparkle', x: 76, y: 36 }
+        ]
+      }
+    ]
+  };
+
+  /* 拔蘿蔔：一個拉一個，從蘿蔔往左排。每頁開頭前面幾個已經在拉，新來的從左邊走進來接在最後面；
+     「嘿咻！嘿咻！」那一句（每頁的第 2 句）大家跟著喊的節奏一起晃、蘿蔔也晃。
+     站得愈左邊 y 愈大（愈靠前），後面的人伸出來的手才會蓋在前面那個人的背上。 */
+  var CHAIN = [
+    { id: 'grandpa', x: 63, y: 90, h: 38 },
+    { id: 'grandma', x: 48.5, y: 90.6, h: 35 },
+    { id: 'girl', x: 35, y: 91.2, h: 29 },
+    { id: 'dog', x: 24.5, y: 91.8, h: 22 },
+    { id: 'cat', x: 15.5, y: 92.4, h: 18 },
+    { id: 'mouse', x: 8.5, y: 93, h: 11 }
+  ];
+  var TURNIP = { id: 'turnip', pose: 'ground', x: 82, y: 93, h: 48, loop: 'still' };
+
+  // 第 n 頁的舞台：前 n−1 個已經在拉，第 n 個（新來的）先站在畫面外左邊
+  function chainActors(n) {
+    var list = [TURNIP];
+    CHAIN.slice(0, n).forEach(function (c, i) {
+      var newcomer = i === n - 1 && n > 1;
+      list.push({ id: c.id, pose: newcomer ? 'cheer' : 'pull', x: newcomer ? -14 : c.x, y: c.y, h: c.h });
+    });
+    return list;
+  }
+  // 新來的走進來、接上去開始拉（走的時候是歡呼的樣子，到了才換成拉）
+  function comeIn(n, dur) {
+    var c = CHAIN[n - 1];
+    return [
+      { l: 0, at: 0.1, id: c.id, x: c.x, dur: dur },
+      { l: 0, at: dur + 0.2, id: c.id, pose: 'pull' }
+    ];
+  }
+  // 「嘿咻！嘿咻！」：兩聲各晃一次（第 l 句開始後 0 秒與 0.6 秒）
+  function heave(n, l) {
+    var out = [];
+    [0, 0.6].forEach(function (at) {
+      out.push({ l: l, at: at + 0.1, id: 'turnip', anim: 'wiggle' });
+      CHAIN.slice(0, n).forEach(function (c) { out.push({ l: l, at: at, id: c.id, anim: 'wiggle' }); });
+    });
+    return out;
+  }
+  // 一頁「誰拉誰、嘿咻、還是拔不起來、誰喊下一個」的分鏡
+  function pullPage(n, dur) {
+    return {
+      bg: 'assets/story/bg/farm.jpg',
+      actors: chainActors(n),
+      cues: (n > 1 ? comeIn(n, dur) : []).concat(heave(n, 1), [
+        { l: 2, id: 'turnip', anim: 'nod' },
+        { l: 3, id: CHAIN[n - 1].id, anim: 'hop' }
+      ])
+    };
+  }
+
+  STAGING['turnip'] = {
+    color: '#FFB05C',
+    cover: { bg: 'assets/story/bg/farm.jpg', actor: 'turnip', pose: 'big' },
+    pages: [
+      { // 1 爺爺種的蘿蔔長得好大
+        bg: 'assets/story/bg/farm.jpg',
+        actors: [
+          { id: 'turnip', pose: 'ground', x: 82, y: 93, h: 12, loop: 'still' },
+          { id: 'grandpa', pose: 'cheer', x: 40, y: 93, h: 38 }
+        ],
+        cues: [
+          { l: 0, at: 1.4, id: 'grandpa', anim: 'nod' },
+          { l: 1, at: 0.3, id: 'turnip', h: 22, dur: 0.6 },
+          { l: 1, at: 1.3, id: 'turnip', h: 35, dur: 0.6 },
+          { l: 1, at: 2.3, id: 'turnip', h: 48, dur: 0.6 },
+          { l: 1, at: 2.9, fx: 'sparkle', x: 82, y: 56 },
+          { l: 2, id: 'grandpa', anim: 'hop' },
+          { l: 2, at: 1.7, id: 'grandpa', x: 56, dur: 1.2 }
+        ]
+      },
+      pullPage(1),          // 2 爺爺拉
+      pullPage(2, 1.6),     // 3 奶奶來了
+      pullPage(3, 1.4),     // 4 孫女來了
+      pullPage(4, 1.2),     // 5 小狗來了
+      pullPage(5, 1.0),     // 6 小貓來了
+      { // 7 小老鼠來了，啵！拔起來了
+        bg: 'assets/story/bg/farm.jpg',
+        actors: chainActors(6).map(function (a) { return a.id === 'mouse' ? Object.assign({}, a, { pose: 'run' }) : a; }),
+        cues: [
+          { l: 0, id: 'mouse', x: CHAIN[5].x, dur: 1.2 },
+          { l: 0, at: 1.3, id: 'mouse', pose: 'pull', anim: 'hop' }
+        ].concat(heave(6, 2), [
+          { l: 3, id: 'turnip', pose: 'big', y: 78, dur: 0.25, anim: 'hop' },
+          { l: 3, at: 0.1, fx: 'sparkle', x: 82, y: 50 },
+          { l: 3, at: 0.35, id: 'turnip', y: 93, dur: 0.35 }
+        ], CHAIN.map(function (c, i) {
+          return { l: 3, at: 0.05, id: c.id, x: c.x - 4, dur: 0.3 };
+        }), CHAIN.map(function (c, i) {
+          return { l: 3, at: 1.3 + i * 0.12, id: c.id, pose: 'cheer', anim: 'hop' };
+        }))
+      },
+      { // 8 大家一起喝蘿蔔湯
+        bg: 'assets/story/bg/farm.jpg',
+        tint: 'sunset',
+        actors: [
+          { id: 'grandma', pose: 'cheer', x: 13, y: 94, h: 35 },
+          { id: 'girl', pose: 'cheer', x: 26, y: 95, h: 29 },
+          { id: 'dog', pose: 'cheer', x: 37.5, y: 95.5, h: 22 },
+          { id: 'soup', pose: 'pot', x: 51, y: 96, h: 30, loop: 'still' },
+          { id: 'cat', pose: 'cheer', x: 63, y: 95.5, h: 18 },
+          { id: 'mouse', pose: 'cheer', x: 72, y: 96, h: 11 },
+          { id: 'grandpa', pose: 'cheer', x: 85, y: 94, h: 38 }
+        ],
+        cues: [
+          { l: 0, id: 'grandpa', anim: 'nod' },
+          { l: 0, at: 1.5, id: 'mouse', anim: 'hop' },
+          { l: 0, at: 1.7, fx: 'hearts', id: 'mouse' },
+          { l: 1, at: 1.6, id: 'soup', anim: 'wiggle' },
+          { l: 1, at: 1.8, fx: 'sparkle', x: 51, y: 70 },
+          { l: 2, id: 'grandma', anim: 'hop' },
+          { l: 2, at: 0.15, id: 'girl', anim: 'hop' },
+          { l: 2, at: 0.3, id: 'dog', anim: 'hop' },
+          { l: 2, at: 0.45, id: 'cat', anim: 'hop' },
+          { l: 2, at: 0.6, id: 'mouse', anim: 'hop' },
+          { l: 2, at: 0.75, id: 'grandpa', anim: 'hop' },
+          { l: 2, at: 1.4, fx: 'hearts', x: 51, y: 56 }
+        ]
+      }
+    ]
+  };
+
+  /* 獅子和老鼠：前四頁在草原的大樹下（獅子在右、小老鼠從左邊來），後四頁在森林。
+     網子那段要溫和：網子一罩上獅子是「哎呀卡住了」的表情，小老鼠一咬就破，不拖。 */
+  STAGING['lion-mouse'] = {
+    color: '#7CC8F5',
+    cover: { bg: 'assets/story/bg/savanna.jpg', actor: 'lion', pose: 'happy' },
+    pages: [
+      { // 1 獅子睡午覺，小老鼠撞到他的鼻子
+        bg: 'assets/story/bg/savanna.jpg',
+        actors: [
+          { id: 'lion', pose: 'sleep', x: 66, y: 92, h: 46 },
+          { id: 'mouse', pose: 'run', x: -8, y: 94, h: 16 }
+        ],
+        cues: [
+          { l: 0, at: 0.6, fx: 'zzz', id: 'lion' },
+          { l: 0, at: 3.0, fx: 'zzz', id: 'lion' },
+          { l: 1, at: 0.2, id: 'mouse', x: 44, dur: 2.0 },
+          { l: 1, at: 2.35, id: 'mouse', x: 47, dur: 0.15, anim: 'hop' },
+          { l: 1, at: 2.45, id: 'lion', anim: 'wiggle' },
+          { l: 1, at: 2.5, fx: 'sparkle', x: 50, y: 74 }
+        ]
+      },
+      { // 2 哈啾！獅子醒了
+        bg: 'assets/story/bg/savanna.jpg',
+        actors: [
+          { id: 'lion', pose: 'wake', x: 68, y: 92, h: 46 },
+          { id: 'mouse', pose: 'plead', x: 42, y: 94, h: 16 }
+        ],
+        cues: [
+          { l: 0, id: 'lion', anim: 'wiggle' },
+          { l: 0, at: 0.2, id: 'mouse', anim: 'hop' },
+          { l: 1, at: 0.6, id: 'lion', anim: 'nod' }
+        ]
+      },
+      { // 3 小老鼠說對不起
+        bg: 'assets/story/bg/savanna.jpg',
+        actors: [
+          { id: 'lion', pose: 'wake', x: 68, y: 92, h: 46 },
+          { id: 'mouse', pose: 'plead', x: 42, y: 94, h: 16 }
+        ],
+        cues: [
+          { l: 0, id: 'mouse', anim: 'nod' },
+          { l: 0, at: 1.0, id: 'mouse', anim: 'nod' },
+          { l: 1, at: 1.4, id: 'mouse', anim: 'hop' }
+        ]
+      },
+      { // 4 獅子哈哈大笑，讓小老鼠回家
+        bg: 'assets/story/bg/savanna.jpg',
+        actors: [
+          { id: 'lion', pose: 'laugh', x: 68, y: 92, h: 46 },
+          { id: 'mouse', pose: 'plead', x: 42, y: 94, h: 16 }
+        ],
+        cues: [
+          { l: 0, at: 0.1, id: 'lion', anim: 'wiggle' },
+          { l: 0, at: 1.0, id: 'lion', anim: 'wiggle' },
+          { l: 1, at: 0.2, id: 'lion', pose: 'happy' },
+          { l: 1, at: 1.2, id: 'mouse', pose: 'cheer', anim: 'hop' },
+          { l: 2, id: 'mouse', anim: 'hop' },
+          { l: 2, at: 0.3, fx: 'hearts', id: 'mouse' },
+          { l: 2, at: 1.1, id: 'mouse', pose: 'run', flip: true },
+          { l: 2, at: 1.2, id: 'mouse', x: -12, dur: 1.6 }
+        ]
+      },
+      { // 5 森林裡，網子罩住了獅子
+        bg: 'assets/story/bg/forest.jpg',
+        actors: [
+          { id: 'lion', pose: 'walk', x: -16, y: 93, h: 46 }
+        ],
+        cues: [
+          { l: 0, at: 0.2, id: 'lion', x: 54, dur: 2.8 },
+          { l: 1, at: 0.1, id: 'lion', pose: 'net', anim: 'hop' },
+          { l: 1, at: 0.2, fx: 'sparkle', id: 'lion' },
+          { l: 2, at: 0.2, id: 'lion', anim: 'wiggle' },
+          { l: 2, at: 1.4, id: 'lion', anim: 'wiggle' }
+        ]
+      },
+      { // 6 小老鼠跑來幫忙
+        bg: 'assets/story/bg/forest.jpg',
+        actors: [
+          { id: 'lion', pose: 'net', x: 60, y: 93, h: 46 },
+          { id: 'mouse', pose: 'run', x: -10, y: 95, h: 16 }
+        ],
+        cues: [
+          { l: 0, at: 0.3, id: 'mouse', x: 36, dur: 1.8 },
+          { l: 1, id: 'mouse', pose: 'cheer', anim: 'hop' },
+          { l: 1, at: 1.0, id: 'lion', anim: 'nod' }
+        ]
+      },
+      { // 7 咬呀咬，網子破了
+        bg: 'assets/story/bg/forest.jpg',
+        actors: [
+          { id: 'net', pose: 'torn', x: 60, y: 96, h: 13, hidden: true, loop: 'still' },
+          { id: 'lion', pose: 'net', x: 60, y: 93, h: 46 },
+          { id: 'mouse', pose: 'chew', x: 47, y: 95, h: 16 }
+        ],
+        cues: [
+          { l: 0, at: 2.2, id: 'mouse', anim: 'wiggle' },
+          { l: 0, at: 3.1, id: 'mouse', anim: 'wiggle' },
+          { l: 1, at: 0.2, id: 'lion', pose: 'happy', anim: 'hop' },
+          { l: 1, at: 0.2, id: 'net', show: true },
+          { l: 1, at: 0.3, fx: 'sparkle', id: 'lion' },
+          { l: 1, at: 0.6, id: 'mouse', pose: 'cheer', anim: 'hop' }
+        ]
+      },
+      { // 8 變成好朋友
+        bg: 'assets/story/bg/forest.jpg',
+        actors: [
+          { id: 'net', pose: 'torn', x: 86, y: 97, h: 10, loop: 'still' },
+          { id: 'lion', pose: 'happy', x: 62, y: 93, h: 46 },
+          { id: 'mouse', pose: 'cheer', x: 44, y: 95, h: 16 }
+        ],
+        cues: [
+          { l: 0, id: 'lion', anim: 'nod' },
+          { l: 1, id: 'mouse', anim: 'hop' },
+          { l: 1, at: 1.2, id: 'mouse', anim: 'hop' },
+          { l: 2, at: 1.0, fx: 'hearts', x: 51, y: 52 },
+          { l: 2, at: 2.0, id: 'lion', anim: 'hop' },
+          { l: 2, at: 2.2, id: 'mouse', anim: 'hop' },
+          { l: 2, at: 3.0, fx: 'hearts', x: 51, y: 52 }
         ]
       }
     ]
