@@ -1,0 +1,502 @@
+{
+ "id": "red-hood",
+ "title": "小紅帽",
+ "title_en": "Little Red Riding Hood",
+ "size": "中",
+ "roles": {
+  "小紅帽": "五歲左右的小女孩，天真活潑、聲音甜甜亮亮，說話一蹦一跳的",
+  "媽媽": "三十多歲的溫柔媽媽，說話慢、很親切，叮嚀時會認真起來",
+  "大野狼": "有點狡猾又愛裝甜聲音的大野狼，滑稽、好笑，不可怕",
+  "奶奶": "慈祥溫和的奶奶，說話慢慢的、很疼孫女",
+  "獵人": "高大爽朗的叔叔，聲音宏亮、可靠，像英雄但很親切"
+ },
+ "polyphones": [],
+ "pages": [
+  {
+   "scene": "森林旁邊一間紅屋頂的小木屋，屋前有花圃，一條小路從門口通往森林，早上陽光很亮",
+   "act": "小紅帽戴著紅色帽子和紅披風站在屋前，開心地轉一圈、向大家揮手",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "森林旁邊，住著一個小女孩。",
+     "en": "Near the forest, there lives a little girl."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "她最愛戴紅色的帽子。",
+     "en": "She loves to wear her little red hood."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm",
+     "text": "所以，大家都叫她小紅帽。",
+     "en": "So everyone calls her Little Red Riding Hood."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "happy, bright",
+     "text": "我是小紅帽！",
+     "en": "I'm Little Red Riding Hood!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的廚房，木頭餐桌上放著一個藤編籃子，籃子裡有一塊蛋糕和幾顆紅蘋果，上面蓋著紅白格子布",
+   "act": "媽媽彎腰把籃子交給小紅帽；小紅帽雙手接過籃子，笑得眼睛彎彎的",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "gentle, warm",
+     "text": "小紅帽，奶奶生病了。",
+     "en": "Little Red, Grandma is sick."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "請妳把蛋糕和蘋果，送去給奶奶。",
+     "en": "Please take this cake and these apples to Grandma."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "happy, eager",
+     "text": "好呀！我最愛奶奶了！",
+     "en": "Okay! I love Grandma so much!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "warm",
+     "text": "奶奶看到妳，一定很開心。",
+     "en": "Grandma will be so happy to see you."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，門外就是通往森林的小路，路邊立著一塊小木牌",
+   "act": "媽媽蹲下來，豎起一根手指認真叮嚀；小紅帽挺直身體，一邊點頭一邊跟著說",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "gentle, serious",
+     "text": "記住喔，要走小路，不要離開小路。",
+     "en": "Remember, stay on the path. Don't leave the path."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle, serious",
+     "text": "也不要跟陌生人說話。",
+     "en": "And don't talk to strangers."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "cheerful, chanting",
+     "text": "走小路，不離開小路！",
+     "en": "Stay on the path! Don't leave the path!"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "cheerful, chanting",
+     "text": "不跟陌生人說話！",
+     "en": "Don't talk to strangers!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "warm, proud",
+     "text": "真乖！路上小心喔。",
+     "en": "Good girl! Be careful on the way."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡一條彎彎的泥土小路，兩旁是高高的綠色大樹，樹枝上停著小鳥，路邊開著小黃花",
+   "act": "小紅帽拿著籃子，沿著小路一蹦一跳往前走；小鳥張嘴唱歌，小花左右搖擺",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小紅帽拿著籃子，走進森林。",
+     "en": "Little Red takes her basket and walks into the forest."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, cheerful",
+     "text": "小鳥在唱歌，小花在點頭。",
+     "en": "The birds are singing. The flowers are nodding."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "singing, happy",
+     "text": "啦啦啦，我要去看奶奶！",
+     "en": "La la la, I'm going to see Grandma!"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "singing, happy",
+     "text": "走小路，走小路，我走小路去奶奶家！",
+     "en": "On the path, on the path, I stay on the path to Grandma's!"
+    }
+   ]
+  },
+  {
+   "scene": "森林小路旁一棵很粗的老橡樹，樹幹後面有一大片陰影",
+   "act": "大野狼從大樹後面探出頭，瞇著眼睛笑咪咪地揮手；小紅帽停下腳步，歪著頭看牠",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "suspenseful, playful",
+     "text": "這時候，大樹後面走出一隻大野狼。",
+     "en": "Just then, a big bad wolf steps out from behind a tree."
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly, sweet",
+     "text": "嗨，可愛的小妹妹，妳要去哪裡呀？",
+     "en": "Hello, sweet little girl. Where are you going?"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "innocent, cheerful",
+     "text": "我要去奶奶家，送點心給她。",
+     "en": "I'm going to Grandma's house to bring her some treats."
+    },
+    {
+     "who": "旁白",
+     "tag": "gently worried",
+     "text": "哎呀，小紅帽忘了媽媽說的話。",
+     "en": "Oh no! Little Red forgot what Mom said."
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly, whispering",
+     "text": "嘿嘿，那籃點心看起來好好吃。",
+     "en": "Heh heh. Those treats look so yummy."
+    }
+   ]
+  },
+  {
+   "scene": "小路旁邊一大片草地，開滿紅色、黃色、紫色的花，小路在畫面邊緣",
+   "act": "大野狼用爪子指著花海；小紅帽放下籃子，跑進花叢彎腰摘花；大野狼踮著腳，偷偷往另一邊溜走",
+   "lines": [
+    {
+     "who": "大野狼",
+     "tag": "sly, sweet",
+     "text": "妳看，那邊有好多漂亮的花！",
+     "en": "Look! There are so many pretty flowers over there!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly, coaxing",
+     "text": "摘一些花送奶奶，奶奶一定很開心。",
+     "en": "Pick some for Grandma. She will love them."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "excited",
+     "text": "對耶！奶奶最愛花了！",
+     "en": "Yes! Grandma loves flowers!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小紅帽離開小路，跑去摘花。",
+     "en": "Little Red leaves the path to pick flowers."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, sneaky",
+     "text": "大野狼呢？牠偷偷跑去奶奶家了。",
+     "en": "And the wolf? He sneaks off to Grandma's house."
+    }
+   ]
+  },
+  {
+   "scene": "森林深處的奶奶家，一間小石頭屋，有綠色木門、圓圓的小窗戶，屋旁有一棵蘋果樹",
+   "act": "大野狼站在門口，舉起爪子敲門，捏著鼻子假裝小紅帽的聲音；窗戶裡看得到奶奶躺在床上",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "叩叩叩！大野狼敲敲奶奶家的門。",
+     "en": "Knock, knock, knock! The wolf knocks on Grandma's door."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle, tired",
+     "text": "是誰呀？",
+     "en": "Who is it?"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, sneaky",
+     "text": "大野狼捏著鼻子，學小紅帽說話。",
+     "en": "The wolf pinches his nose and talks like Little Red."
+    },
+    {
+     "who": "大野狼",
+     "tag": "fake sweet, high-pitched",
+     "text": "是我，小紅帽！",
+     "en": "It's me, Little Red Riding Hood!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "warm, gentle",
+     "text": "門沒有鎖，進來吧。",
+     "en": "The door is open, dear. Come on in."
+    }
+   ]
+  },
+  {
+   "scene": "奶奶的臥室，有一張蓋著碎花被子的木頭床、一個大大的木頭衣櫃、一張放著眼鏡的小桌子",
+   "act": "大野狼把奶奶推進衣櫃、關上門，奶奶在裡面拍門；接著大野狼戴上奶奶的睡帽，躺進被子裡偷笑",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling, playful",
+     "text": "大野狼一進門，就把奶奶推進衣櫃。",
+     "en": "The wolf comes in and pushes Grandma into the closet."
+    },
+    {
+     "who": "奶奶",
+     "tag": "surprised, upset",
+     "text": "哎呀！放我出去！放我出去！",
+     "en": "Oh my! Let me out! Let me out!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly, chuckling",
+     "text": "嘿嘿，奶奶，妳先在裡面休息一下。",
+     "en": "Heh heh. Grandma, you rest in there for a while."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "大野狼戴上奶奶的睡帽，躺到床上。",
+     "en": "The wolf puts on Grandma's nightcap and climbs into her bed."
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly, pleased",
+     "text": "嘿嘿，現在，我是奶奶了！",
+     "en": "Heh heh. Now I am Grandma!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家的綠色木門口，門半開著，可以看到裡面的臥室",
+   "act": "小紅帽一手拿籃子、一手抱著一大束花，推門走進來；床上的大野狼戴著睡帽、拉高被子遮住臉",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小紅帽抱著花，來到奶奶家。",
+     "en": "Little Red comes to Grandma's house with her flowers."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "cheerful, calling out",
+     "text": "奶奶，奶奶，我來了！",
+     "en": "Grandma, Grandma, I'm here!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "fake sweet, high-pitched",
+     "text": "是小紅帽呀，快過來床邊。",
+     "en": "Oh, Little Red. Come over here, by the bed."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "puzzled",
+     "text": "咦？奶奶的聲音，怎麼怪怪的？",
+     "en": "Hmm? Grandma's voice sounds funny."
+    },
+    {
+     "who": "大野狼",
+     "tag": "fake sweet, coughing",
+     "text": "奶奶感冒了，喉嚨不舒服呀。",
+     "en": "Grandma has a cold. My throat is sore."
+    }
+   ]
+  },
+  {
+   "scene": "奶奶臥室的床邊，窗簾拉了一半，房間有點暗",
+   "act": "小紅帽站在床邊，先看「奶奶」的大耳朵，再看大眼睛；大野狼從被子裡露出頭，眼睛眨呀眨",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling, curious",
+     "text": "小紅帽走近一點，看了又看。",
+     "en": "Little Red steps closer. She looks and looks."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "curious",
+     "text": "奶奶，妳的耳朵怎麼這麼大？",
+     "en": "Grandma, what big ears you have!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "fake sweet",
+     "text": "這樣才聽得清楚妳說話呀！",
+     "en": "All the better to hear you with!"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "curious",
+     "text": "奶奶，妳的眼睛怎麼這麼大？",
+     "en": "Grandma, what big eyes you have!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "fake sweet",
+     "text": "這樣才看得清楚妳呀！",
+     "en": "All the better to see you with!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶臥室的床邊，同一個房間",
+   "act": "大野狼伸出毛茸茸的大手，張開大嘴巴露出牙齒笑；小紅帽往後退一步，眼睛睜得圓圓的",
+   "lines": [
+    {
+     "who": "小紅帽",
+     "tag": "curious, unsure",
+     "text": "奶奶，妳的手怎麼這麼大？",
+     "en": "Grandma, what big hands you have!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "fake sweet",
+     "text": "這樣才可以抱抱妳呀！",
+     "en": "All the better to hug you with!"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "nervous",
+     "text": "奶奶，妳的嘴巴怎麼這麼大？",
+     "en": "Grandma, what a big mouth you have!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly, gleeful",
+     "text": "這樣才可以，大口吃掉妳的點心呀！",
+     "en": "All the better to eat up your treats!"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "surprised, loud",
+     "text": "你不是奶奶！你是大野狼！",
+     "en": "You're not Grandma! You're the big bad wolf!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶的臥室，房門被打開，陽光從門口照進來",
+   "act": "大野狼跳下床、睡帽歪一邊，伸手要搶籃子；小紅帽抱緊籃子大喊；戴帽子、穿綠色外套的獵人衝進門口，雙手叉腰大聲喝止；大野狼抱著頭，從窗戶跳出去",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "suspenseful, playful",
+     "text": "大野狼跳下床，伸手搶籃子！",
+     "en": "The wolf jumps out of bed and grabs for the basket!"
+    },
+    {
+     "who": "小紅帽",
+     "tag": "shouting, scared",
+     "text": "救命呀！救命呀！",
+     "en": "Help! Help!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling, excited",
+     "text": "這時候，獵人叔叔剛好經過。",
+     "en": "Just then, a hunter is walking by."
+    },
+    {
+     "who": "獵人",
+     "tag": "loud, firm",
+     "text": "大野狼，不准欺負人！走開！",
+     "en": "Wolf! Leave them alone! Go away!"
+    },
+    {
+     "who": "旁白",
+     "tag": "amused, storytelling",
+     "text": "咻！大野狼跑回森林，再也不敢來了。",
+     "en": "Whoosh! The wolf runs back into the forest and never comes back."
+    }
+   ]
+  },
+  {
+   "scene": "奶奶臥室的大木頭衣櫃前",
+   "act": "衣櫃門被裡面拍得咚咚響；獵人拉開衣櫃門，奶奶走出來，小紅帽張開雙手撲過去抱住奶奶",
+   "lines": [
+    {
+     "who": "小紅帽",
+     "tag": "worried",
+     "text": "奶奶呢？奶奶在哪裡？",
+     "en": "Where's Grandma? Where is she?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "muffled, calling out",
+     "text": "咚咚咚！我在這裡！在衣櫃裡！",
+     "en": "Bang, bang, bang! I'm in here! In the closet!"
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, relieved",
+     "text": "獵人打開衣櫃，奶奶走出來了。",
+     "en": "The hunter opens the closet, and out comes Grandma."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "happy, teary",
+     "text": "奶奶！奶奶！",
+     "en": "Grandma! Grandma!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "warm, soothing",
+     "text": "小紅帽，奶奶沒事，別擔心。",
+     "en": "Little Red, I'm all right. Don't worry."
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家的小餐桌，桌上有切好的蛋糕、紅蘋果，還有插在花瓶裡的那束花，窗外是傍晚的森林",
+   "act": "奶奶、小紅帽和獵人圍著餐桌吃點心；小紅帽豎起一根手指，學媽媽認真地說話，大家一起笑",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm",
+     "text": "大家坐在一起，開心地吃蛋糕和蘋果。",
+     "en": "Everyone sits together and enjoys the cake and apples."
+    },
+    {
+     "who": "奶奶",
+     "tag": "warm, grateful",
+     "text": "謝謝獵人叔叔，也謝謝小紅帽的花。",
+     "en": "Thank you, Mr. Hunter. And thank you for the flowers, Little Red."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "thoughtful, sweet",
+     "text": "我知道了。媽媽說，不要跟陌生人說話。",
+     "en": "Now I know. Mom said, don't talk to strangers."
+    },
+    {
+     "who": "小紅帽",
+     "tag": "thoughtful, sweet",
+     "text": "也不要離開小路！",
+     "en": "And don't leave the path!"
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, slowly",
+     "text": "小紅帽笑了。下次，她一定會記住。",
+     "en": "Little Red smiles. Next time, she will remember."
+    }
+   ]
+  }
+ ]
+}

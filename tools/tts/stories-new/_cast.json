@@ -1,0 +1,44 @@
+{
+ "_說明": "新故事的聲音表，疊在 stories.json 的 cast 上面（同名角色以這裡為準；某本要另外換聲音就在那本檔裡寫 \"cast\"）。find＝中文聲音、en＝英文聲音（帳號內或聲音庫名字的一段，要能唯一對到）。新角色八型是使用者 2026-11-13 聽官方試音檔後選的（照推薦）：國王老爺爺 Hardy／Grandfather Joe、王后巫婆 Stella Gu／Daria、王子 Yao Yuan Wu／Arthur、仙女媽媽 Nydia／Linda、巨人怪獸 WangSong／Austin、小男孩 Xiaobao／Ryan Quin、神仙 Neil Chuang／Myrrdin、少女 Yu-Ting／Libby。",
+ "大野狼": {"find": "Long - Podcast", "en": "Callum", "note": "原本的 Zhile 在帳號裡已改名成 Long - Podcast & Advertisement"},
+ "奶奶": {"find": "冰璃_Jui", "en": "Clara"},
+ "小老鼠": {"find": "Stacy", "en": "kids_Macy"},
+
+ "灰姑娘": {"find": "Yu-Ting", "en": "Libby - Animated", "note": "少女主角型"},
+ "大姊": {"find": "Anna Su", "en": "Ditzy - Young, Spoiled", "note": "愛打扮、嬌嬌的；中文 Anna Su 是少女型的 B 候選，英文 Ditzy 是新加的（被寵壞的小公主）"},
+ "二姊": {"find": "Lulu", "en": "Hope - Vibrant", "note": "比大姊高、孩子氣"},
+ "繼母": {"find": "Stella Gu", "en": "Daria - Funny", "note": "王后巫婆型；愛使喚人、不兇"},
+ "仙女": {"find": "Nydia", "en": "Linda – Gentle Mom", "note": "仙女媽媽型"},
+ "王子": {"find": "Yao Yuan Wu", "en": "Arthur - Deep and Powerful", "note": "王子型"},
+
+ "玉皇大帝": {"find": "Neil Chuang", "en": "Myrrdin", "note": "神仙型"},
+ "老鼠": {"find": "Stacy", "en": "Teddy Twinkle", "note": "十二生肖的老鼠：中文沿用小老鼠的聲音；英文稿用 he，所以用男孩卡通聲"},
+ "牛": {"find": "YCHuang", "en": "Brian"},
+ "老虎": {"find": "WangSong", "en": "Austin - Deep, Raspy", "note": "巨人怪獸型"},
+ "龍": {"find": "Hardy", "en": "Grandfather Joe", "note": "國王老爺爺型"},
+ "蛇": {"find": "Lulu", "en": "Daria - Funny"},
+ "馬": {"find": "Xiaobao", "en": "Arthur - Deep and Powerful"},
+ "羊": {"find": "童_女", "en": "Tilly"},
+ "猴子": {"find": "童_男", "en": "Cherry Twinkle"},
+ "雞": {"find": "Yu-Ting", "en": "Hope - Vibrant"},
+ "狗": {"find": "Yao Yuan Wu", "en": "Ryan Quin"},
+ "豬": {"find": "Long - Podcast", "en": "Spuds Oxley"},
+ "貓": {"find": "Lee Ting Ting", "en": "Libby - Animated"},
+
+ "小水滴": {"find": "Xiaobao", "en": "Ryan Quin", "note": "小男孩型"},
+ "小魚": {"find": "童_男", "en": "Teddy Twinkle"},
+ "太陽公公": {"find": "Hardy", "en": "Grandfather Joe"},
+ "水滴妹妹": {"find": "Lulu", "en": "Cherry Twinkle"},
+ "小花": {"find": "童_女", "en": "Tilly"},
+
+ "小紅帽": {"find": "Yu-Ting", "en": "Libby - Animated"},
+ "媽媽": {"find": "Nydia", "en": "Linda – Gentle Mom"},
+ "獵人": {"find": "WangSong", "en": "Austin - Deep, Raspy"},
+
+ "北風": {"find": "WangSong", "en": "Austin - Deep, Raspy"},
+ "太陽": {"find": "Nydia", "en": "Linda – Gentle Mom"},
+ "旅人": {"find": "YCHuang", "en": "Brian"},
+
+ "熊媽媽": {"find": "Nydia", "en": "Linda – Gentle Mom"},
+ "月亮": {"find": "Lee Ting Ting", "en": "Hope - Vibrant"}
+}

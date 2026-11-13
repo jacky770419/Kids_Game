@@ -1,0 +1,530 @@
+{
+ "id": "water-drop",
+ "title": "小水滴的旅行",
+ "title_en": "The Little Water Drop",
+ "size": "中",
+ "roles": {
+  "小水滴": "主角，大約四五歲的小孩，好奇、活潑、愛冒險，說話又快又開心，常常大聲喊出口頭禪。",
+  "小魚": "小水滴在海裡的好朋友，跟小水滴差不多大的小孩，開朗愛玩，送別和迎接時很熱情。",
+  "太陽公公": "慈祥的老爺爺，聲音溫暖低沉、慢慢說，笑咪咪的，像在照顧孫子。",
+  "水滴妹妹": "在天上認識的新朋友，比小水滴小一點的小女生，聲音清脆甜甜的，有點調皮愛笑。",
+  "小花": "花園裡的小花，溫柔的小女生，一開始口渴沒力氣、聲音小小的，喝了水之後變得開心有精神。"
+ },
+ "polyphones": [
+  {
+   "char": "行",
+   "where": "書名；第3、7、9、10、14頁小水滴的「我要去旅行囉」；第4頁「來旅行」；第12、13頁「旅行」",
+   "read": "xíng"
+  },
+  {
+   "char": "答",
+   "where": "第7頁、第14頁「滴答滴答」",
+   "read": "dā"
+  },
+  {
+   "char": "嘩",
+   "where": "第11頁「嘩啦嘩啦」",
+   "read": "huā"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上的大海。藍藍的海水，一波一波的小海浪，水面下有彩色的珊瑚和綠綠的海草。",
+   "act": "小水滴（圓圓、透明、有眼睛和笑臉）在海浪上跳來跳去；小魚在旁邊游來游去，跟小水滴玩。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "藍色的大海裡，住著一顆小水滴。",
+     "en": "In the big blue sea, there lives a little water drop."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小水滴每天都和小魚一起玩。",
+     "en": "Every day, Little Drop plays with Little Fish."
+    },
+    {
+     "who": "小魚",
+     "tag": "cheerful",
+     "text": "小水滴，來跟我游泳！",
+     "en": "Little Drop, come and swim with me!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "dreamy, curious",
+     "text": "小魚，我想去好遠好遠的地方看看。",
+     "en": "Little Fish, I want to see places far, far away."
+    },
+    {
+     "who": "小魚",
+     "tag": "curious",
+     "text": "好遠的地方？那是哪裡呀？",
+     "en": "Far away? Where is that?"
+    }
+   ]
+  },
+  {
+   "scene": "中午的海面。天上掛著大大的、金黃色的太陽公公，陽光把海面照得亮晶晶的。",
+   "act": "太陽公公笑咪咪地照著大海；小水滴臉紅紅的、擦擦汗，跟著說「熱熱的」。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "太陽公公出來了，大海變得暖呼呼。",
+     "en": "Here comes Grandpa Sun. The sea gets nice and warm."
+    },
+    {
+     "who": "太陽公公",
+     "tag": "warm, kind",
+     "text": "小水滴，我來幫你曬一曬。",
+     "en": "Little Drop, let me warm you up."
+    },
+    {
+     "who": "小水滴",
+     "tag": "giggling",
+     "text": "好熱喔！熱熱的，熱熱的！",
+     "en": "So warm! Warm, warm, warm!"
+    },
+    {
+     "who": "太陽公公",
+     "tag": "gently, knowing",
+     "text": "熱熱的，你就會變得輕飄飄，飛上天喔。",
+     "en": "When you get warm, you get light, light, light, and float up high."
+    },
+    {
+     "who": "小水滴",
+     "tag": "surprised, curious",
+     "text": "咦？我的身體，好像變輕了！",
+     "en": "Huh? My body feels so light!"
+    }
+   ]
+  },
+  {
+   "scene": "海面上方。陽光下有一縷一縷淡淡的、透明的水氣往上飄，下面是亮晶晶的大海。",
+   "act": "小水滴變得淡淡的、透明的，從海面往上飄；小魚從水裡探出頭，揮著魚鰭說再見。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小水滴變成看不見的水氣，輕輕地飄起來。",
+     "en": "Little Drop turns into vapor, too tiny to see. Up he floats."
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy, excited",
+     "text": "我要去旅行囉！",
+     "en": "I'm going on a trip!"
+    },
+    {
+     "who": "小魚",
+     "tag": "waving, cheerful",
+     "text": "小水滴，再見！要回來喔！",
+     "en": "Bye bye, Little Drop! Come back soon!"
+    },
+    {
+     "who": "旁白",
+     "tag": "rhythmic, chanting",
+     "text": "飄呀飄，飄呀飄，飄到天上去。",
+     "en": "Float, float, float away, up into the sky."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "小魚變得好小好小，看不見了。",
+     "en": "Little Fish gets smaller and smaller, and then he is gone."
+    }
+   ]
+  },
+  {
+   "scene": "高高的天上。四周飄著好多小小的水滴，遠遠的下面是藍色的大海和綠色的小島，冷風吹過。",
+   "act": "小水滴抱著自己發抖；一顆戴小蝴蝶結的水滴妹妹飛過來，揮手打招呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "天上好高好高，冷冷的風吹過來。",
+     "en": "The sky is high, high up. A cold wind blows."
+    },
+    {
+     "who": "小水滴",
+     "tag": "shivering",
+     "text": "好冷喔！冷冷的，冷冷的！",
+     "en": "So cold! Cold, cold, cold!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "冷冷的，小水滴又變回一顆小小的水滴。",
+     "en": "In the cold, Little Drop turns back into a tiny drop."
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "friendly, bright",
+     "text": "嗨！你也是來旅行的嗎？",
+     "en": "Hi! Are you going on a trip, too?"
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy",
+     "text": "對呀！我們一起去！",
+     "en": "Yes! Let's go together!"
+    }
+   ]
+  },
+  {
+   "scene": "藍藍的天上，一朵白白軟軟、像棉花糖的大白雲，雲裡面擠滿了有笑臉的小水滴。",
+   "act": "小水滴、水滴妹妹和好多水滴手牽手、肩靠肩擠在一起，大家笑成一團。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "好多好多小水滴，也都從大海飛上來了。",
+     "en": "Lots and lots of little drops float up from the sea, too."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "大家擠呀擠，擠在一起，變成一朵白白的雲。",
+     "en": "They squeeze and squeeze, all close together. They make a fluffy white cloud."
+    },
+    {
+     "who": "小水滴",
+     "tag": "giggling",
+     "text": "擠一擠，好好玩！",
+     "en": "Squeeze, squeeze! This is fun!"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "cheerful",
+     "text": "我們手牽手，誰都不要放開喔！",
+     "en": "Let's hold hands. Nobody let go!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "curious",
+     "text": "下一站是哪裡呢？",
+     "en": "Where do we go next?"
+    }
+   ]
+  },
+  {
+   "scene": "天上，白雲變成又大又黑、鼓鼓的烏雲，像一個灰黑色的大枕頭；下面是綠綠的山坡和花園。",
+   "act": "雲裡的小水滴兩顆兩顆抱在一起，變成大水滴；小水滴和水滴妹妹緊緊抱著，雲往下垂。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "水滴越來越多，雲變得黑黑的、鼓鼓的。",
+     "en": "More and more drops come. The cloud gets dark and puffy."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小水滴們抱在一起，變成大大的水滴。",
+     "en": "The little drops hug together and grow into big drops."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "雲好像快要裝不下了。",
+     "en": "The cloud can hardly hold them all."
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "surprised, giggling",
+     "text": "哎呀，我們太大了，飄不動了！",
+     "en": "Oh my! We're too big! We can't float anymore!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "excited",
+     "text": "抓緊喔，我們要掉下去了！",
+     "en": "Hold on tight! Here we go, down, down!"
+    }
+   ]
+  },
+  {
+   "scene": "下雨的天上。灰灰的雲下面，一條一條的雨絲往下掉，下面是綠色的草地和花園。",
+   "act": "小水滴和水滴妹妹張開手，像溜滑梯一樣往下掉，一邊大叫一邊笑，好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "rhythmic, chanting",
+     "text": "滴答滴答，滴答滴答！",
+     "en": "Pitter-patter, pitter-patter!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小水滴從雲裡掉下來，變成了雨。",
+     "en": "Little Drop falls from the cloud. Now he is rain!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "thrilled, shouting",
+     "text": "哇！我變成雨了！",
+     "en": "Wow! I'm rain!"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "laughing",
+     "text": "滴答滴答，好好玩喔！",
+     "en": "Pitter-patter! This is so much fun!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy, excited",
+     "text": "我要去旅行囉！",
+     "en": "I'm going on a trip!"
+    }
+   ]
+  },
+  {
+   "scene": "下著小雨的花園。一朵粉紅色的小花，花瓣垂下來，葉子乾乾、軟軟的。",
+   "act": "小水滴咚一聲掉在小花的花瓣上；小花慢慢抬起頭，張開嘴喝水，臉上露出笑容。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "咚！小水滴掉在一朵小花上。",
+     "en": "Plop! Little Drop lands on a little flower."
+    },
+    {
+     "who": "小花",
+     "tag": "tired, thirsty",
+     "text": "我好渴喔，頭都抬不起來。",
+     "en": "I'm so thirsty. I can't even lift my head."
+    },
+    {
+     "who": "小水滴",
+     "tag": "kind, cheerful",
+     "text": "小花，請你喝水！",
+     "en": "Here, Little Flower. Have a drink!"
+    },
+    {
+     "who": "旁白",
+     "tag": "gently",
+     "text": "小花喝了一口水，慢慢抬起頭來。",
+     "en": "Little Flower takes a sip. Slowly, she lifts her head."
+    },
+    {
+     "who": "小花",
+     "tag": "happy, grateful",
+     "text": "謝謝你，小水滴！好舒服喔！",
+     "en": "Thank you, Little Drop! I feel so much better!"
+    }
+   ]
+  },
+  {
+   "scene": "雨停了的花園。天上出現一道彩虹，草地和葉子上掛著亮晶晶的水珠，旁邊有一條小溪。",
+   "act": "小水滴從花瓣滑到葉子上，再咻一聲滑進旁邊的小溪；小花揮著葉子說再見。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "雨停了，天上出現一道彎彎的彩虹。",
+     "en": "The rain stops. A curvy rainbow comes out."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "小水滴從葉子上滑下來，咻！",
+     "en": "Little Drop slides down a leaf. Wheee!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "curious",
+     "text": "下一站是哪裡呢？",
+     "en": "Where do we go next?"
+    },
+    {
+     "who": "小花",
+     "tag": "cheerful",
+     "text": "是小溪！小溪會帶你走喔！",
+     "en": "The little stream! It will carry you along!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy, waving",
+     "text": "小花，再見！我要去旅行囉！",
+     "en": "Bye, Little Flower! I'm going on a trip!"
+    }
+   ]
+  },
+  {
+   "scene": "山邊的小溪。溪水清清的，流過一顆一顆圓圓的石頭，岸邊有青草和小樹。",
+   "act": "小水滴在溪水裡又碰到水滴妹妹，兩個開心地抱一下，一起順著溪水往下流，在石頭上跳一跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小水滴在小溪裡，又見到了水滴妹妹。",
+     "en": "In the stream, Little Drop finds Sister Drop again."
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "happy, surprised",
+     "text": "小水滴！我們又在一起了！",
+     "en": "Little Drop! We're together again!"
+    },
+    {
+     "who": "旁白",
+     "tag": "rhythmic, chanting",
+     "text": "小溪流呀流，咕嚕咕嚕，咕嚕咕嚕。",
+     "en": "The stream flows and flows. Gurgle, gurgle, gurgle."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, bouncy",
+     "text": "溪水跳過石頭，一跳，一跳，又一跳。",
+     "en": "The water hops over the rocks. Hop, hop, and hop again."
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy, excited",
+     "text": "我要去旅行囉！",
+     "en": "I'm going on a trip!"
+    }
+   ]
+  },
+  {
+   "scene": "寬寬的大河。河上有一座紅色的橋，岸邊有房子和大樹，好幾條小溪從山上流進大河裡。",
+   "act": "小水滴和水滴妹妹在河面的水波上一跳一跳，好多小溪的水滴一起加進來；水滴妹妹抬起頭聞一聞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "好多小溪流在一起，變成一條大河。",
+     "en": "Lots of little streams flow together. They make a big river."
+    },
+    {
+     "who": "旁白",
+     "tag": "rhythmic, chanting",
+     "text": "大河流呀流，嘩啦嘩啦，嘩啦嘩啦。",
+     "en": "The river flows and flows. Swish, swoosh, swish, swoosh."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "流過紅色的橋，流過好多房子。",
+     "en": "Under the red bridge, past lots of houses."
+    },
+    {
+     "who": "小水滴",
+     "tag": "curious",
+     "text": "下一站是哪裡呢？",
+     "en": "Where do we go next?"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "sniffing, excited",
+     "text": "你聞，鹹鹹的味道，大海就在前面！",
+     "en": "Sniff, sniff! It smells salty. The sea is just ahead!"
+    }
+   ]
+  },
+  {
+   "scene": "黃昏的河口。大河流進藍藍的大海，海面被太陽照成橘色，遠遠有小海浪。",
+   "act": "小水滴從河口跳回大海；小魚游過來，繞著小水滴開心地游；小水滴比手畫腳講他的旅行。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "大河流呀流，流回了大海。",
+     "en": "The river flows on, all the way back to the sea."
+    },
+    {
+     "who": "小魚",
+     "tag": "happy, excited",
+     "text": "小水滴，歡迎回家！",
+     "en": "Little Drop! Welcome home!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "excited, proud",
+     "text": "小魚，我去了好遠好遠的地方！",
+     "en": "Little Fish, I went so far, far away!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "excited, fast",
+     "text": "我變成雲，變成雨，請小花喝水，又跟著大河回家！",
+     "en": "I was a cloud. I was rain. I gave a flower a drink. Then I rode the river home!"
+    },
+    {
+     "who": "小魚",
+     "tag": "amazed",
+     "text": "哇，好棒的旅行！",
+     "en": "Wow! What a great trip!"
+    }
+   ]
+  },
+  {
+   "scene": "傍晚的大海。太陽公公一半在海面下，天上出現幾顆星星，海浪輕輕地起伏。",
+   "act": "太陽公公眨眨眼睛說晚安；小水滴躺在海浪上打哈欠，小魚靠在旁邊閉上眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "softly, storytelling",
+     "text": "太陽公公要下山了，天上亮起星星。",
+     "en": "Grandpa Sun is going down. The stars begin to shine."
+    },
+    {
+     "who": "太陽公公",
+     "tag": "warm, kind",
+     "text": "小水滴，今天的旅行好玩嗎？",
+     "en": "Little Drop, was your trip fun today?"
+    },
+    {
+     "who": "小水滴",
+     "tag": "sleepy, happy",
+     "text": "好好玩！明天，我要再去旅行！",
+     "en": "So much fun! Tomorrow, I want to go on a trip again!"
+    },
+    {
+     "who": "太陽公公",
+     "tag": "warm, chuckling",
+     "text": "好呀，明天我再來幫你曬一曬。",
+     "en": "All right. Tomorrow, I'll come and warm you up again."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "晚安，小水滴。晚安，小魚。",
+     "en": "Good night, Little Drop. Good night, Little Fish."
+    }
+   ]
+  },
+  {
+   "scene": "下小雨的窗邊。屋子裡暖暖的，玻璃窗上有一顆一顆的雨滴，外面是灰灰的天。",
+   "act": "窗戶上的一顆雨滴眨眨眼睛、揮揮手，就是小水滴；最後兩句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "softly, asking",
+     "text": "下次下雨的時候，你也往窗外看一看。",
+     "en": "Next time it rains, take a look out the window."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly, playful",
+     "text": "說不定，那就是小水滴，來跟你說嗨喔！",
+     "en": "Maybe it's Little Drop, coming to say hi to you!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "whispering, cheerful",
+     "text": "嗨！我要去旅行囉！",
+     "en": "Hi there! I'm going on a trip!"
+    },
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "滴答滴答，小水滴又出發了。",
+     "en": "Pitter-patter. Off goes Little Drop again."
+    }
+   ]
+  }
+ ]
+}

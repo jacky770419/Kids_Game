@@ -1,0 +1,771 @@
+{
+ "id": "zodiac",
+ "title": "十二生肖的故事",
+ "title_en": "The Great Race",
+ "size": "長",
+ "roles": {
+  "玉皇大帝": "慈祥又有威嚴的老爺爺，聲音宏亮溫暖、帶笑意，宣布名次時像運動會司儀一樣有精神。",
+  "老鼠": "小小的男生老鼠，聲音尖尖細細、又快又興奮，腦筋動得很快，像五歲的小機靈鬼。",
+  "牛": "憨厚的大哥哥，聲音低沉渾厚，說話慢吞吞、一個字一個字說，脾氣好、從不生氣。",
+  "老虎": "壯壯的年輕大哥，聲音又大又響亮，愛逞強，講話像在吼，但其實不兇。",
+  "兔子": "活潑的年輕男生，聲音輕快有彈性，像一邊說話一邊蹦蹦跳。",
+  "龍": "溫柔的老爺爺，聲音低沉溫暖、說話慢慢的，善良又謙虛。",
+  "蛇": "細細的女生聲音，帶嘶嘶的氣音，愛偷笑、有點小聰明但不壞。",
+  "馬": "神氣的少年，說話快、很有精神，有點愛炫耀。",
+  "羊": "害羞的小女生，聲音軟軟的、小小聲，很溫柔。",
+  "猴子": "調皮的小男生，愛笑，說話嘻嘻哈哈、跳來跳去。",
+  "雞": "嗓門大的公雞，聲音高高亮亮、很有朝氣，有點愛指揮別人。",
+  "狗": "熱情的小男生，興奮得停不下來，說話帶點喘、很開心。",
+  "豬": "愛吃愛睡的胖叔叔，聲音懶洋洋、含含糊糊、慢慢的，像剛睡醒。",
+  "貓": "愛睡的女生，平常慵懶撒嬌、拖長音；著急或生氣時變得又急又尖，誇張得好笑。"
+ },
+ "polyphones": [
+  {
+   "char": "肖",
+   "where": "書名『十二生肖』",
+   "read": "xiào"
+  },
+  {
+   "char": "屬",
+   "where": "第20頁『你屬什麼』",
+   "read": "shǔ"
+  },
+  {
+   "char": "喔",
+   "where": "第14頁公雞叫『喔喔喔』",
+   "read": "ō"
+  },
+  {
+   "char": "吱",
+   "where": "第19頁老鼠叫『吱吱』",
+   "read": "zhī"
+  },
+  {
+   "char": "誰",
+   "where": "第8、9、12、15頁『下一個，是誰呢』、第13頁『你是誰呀』、第16頁『誰會來呢』",
+   "read": "shéi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "天上的宮殿：金色屋頂、紅柱子，四周都是白白軟軟的雲，從雲縫可以看到地上的青山和一條大河",
+   "act": "玉皇大帝是白鬍子、慈祥的老爺爺，穿黃袍戴帝冠，坐在寶座上，一手摸鬍子、歪頭想事情，頭上冒出一個問號；接著眼睛一亮、舉起一根手指",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "很久很久以前，天上住著玉皇大帝。",
+     "en": "Long, long ago, the Jade Emperor lived up in the sky."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "他想讓每一年，都有一隻動物來陪大家。",
+     "en": "He wanted each year to have its own animal friend."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling, playful",
+     "text": "玉皇大帝想呀想，想呀想。",
+     "en": "The Jade Emperor thinks and thinks."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "thoughtful, kind",
+     "text": "要選哪十二隻動物呢？",
+     "en": "Which twelve animals should I pick?"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "cheerful, excited",
+     "text": "有了！我們來比賽吧！",
+     "en": "I know! Let's have a race!"
+    }
+   ]
+  },
+  {
+   "scene": "一條好寬的大河，這一邊是綠油油的草地，對岸遠遠插著一面紅旗子；白天，天空很藍",
+   "act": "玉皇大帝坐在一朵白雲上，飄在河的上方，張開雙手宣布；草地上一大群動物抬頭聽，有老鼠、牛、老虎、兔子、龍、蛇、馬、羊、猴子、雞、狗、豬、貓，有的蹦蹦跳、有的舉手",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "玉皇大帝坐著白雲，來到大河邊。",
+     "en": "The Jade Emperor rides a white cloud down to a big river."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "loud, announcing",
+     "text": "明天早上，大家來游過這條大河！",
+     "en": "Tomorrow morning, everyone will cross this river!"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "loud, announcing",
+     "text": "最先到對岸的十二隻動物，每一隻都有自己的一年！",
+     "en": "The first twelve animals to reach the other side will each get their very own year!"
+    },
+    {
+     "who": "旁白",
+     "tag": "excited",
+     "text": "動物們聽了，開心得跳起來。",
+     "en": "The animals jump for joy."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "大家都說：「我要去！我要去！」",
+     "en": "Everyone shouts, \"Me! Me! I want to go!\""
+    }
+   ]
+  },
+  {
+   "scene": "河邊的一棵大樹下，晚上，天上有彎彎的月亮和星星，樹根旁邊有兩個小小的草窩",
+   "act": "橘白色的貓揉著眼睛打哈欠，拉著灰色小老鼠的手拜託；老鼠拍拍胸口；最後貓在草窩裡捲成一團睡著，頭上冒 zzz",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "貓和老鼠是好朋友。",
+     "en": "Cat and Mouse are good friends."
+    },
+    {
+     "who": "貓",
+     "tag": "sleepy, yawning",
+     "text": "我好想睡喔。明天早上，你叫我起床，好嗎？",
+     "en": "I'm so sleepy. Will you wake me up tomorrow morning?"
+    },
+    {
+     "who": "老鼠",
+     "tag": "cheerful, squeaky",
+     "text": "好啊！包在我身上！",
+     "en": "Sure! Leave it to me!"
+    },
+    {
+     "who": "貓",
+     "tag": "sleepy, pleading",
+     "text": "一定、一定要叫我喔！",
+     "en": "Don't forget, okay? Promise?"
+    },
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "貓放心地睡著了。呼，呼。",
+     "en": "Cat curls up and falls asleep. Zzz, zzz."
+    }
+   ]
+  },
+  {
+   "scene": "河邊的草地，清晨，太陽剛從山後面出來，河面上有一點白白的霧，對岸的紅旗子在遠方",
+   "act": "牛、老虎、兔子、龍、蛇、馬、羊、猴子、雞、狗、豬在河邊排成一排，個個精神抖擻，裡面沒有貓；最前面小小的老鼠看著好寬的大河，一臉煩惱、抓抓頭",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "第二天一早，動物們都來到河邊。",
+     "en": "The next morning, the animals all come to the river."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "牛來了，老虎來了，兔子也來了。",
+     "en": "Ox is here. Tiger is here. Rabbit is here, too."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "龍、蛇、馬、羊、猴子、雞、狗、豬，都來了！",
+     "en": "Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, and Pig are here, too!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, light",
+     "text": "老鼠太開心了，忘了去叫貓。",
+     "en": "Mouse is so excited, he forgets to wake up Cat."
+    },
+    {
+     "who": "老鼠",
+     "tag": "worried, squeaky",
+     "text": "哇，河好寬喔！可是，我不會游泳啊。",
+     "en": "Wow, the river is so wide! But I can't swim."
+    }
+   ]
+  },
+  {
+   "scene": "河邊的草地，清晨",
+   "act": "老鼠站在牛的腳邊，拉拉牛的尾巴；高大的黑牛慢慢低下頭，笑咪咪的；老鼠沿著牛的腳爬上去，坐在牛的身上，兩手抓緊牛毛",
+   "lines": [
+    {
+     "who": "老鼠",
+     "tag": "polite, hopeful",
+     "text": "牛大哥，我可以坐在你身上嗎？",
+     "en": "Big Brother Ox, may I ride on you?"
+    },
+    {
+     "who": "牛",
+     "tag": "slow, deep, gentle",
+     "text": "好啊，上來吧。不要急，慢慢來。",
+     "en": "Sure. Climb on up. No rush. Take your time."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "老鼠爬呀爬，坐在牛的身上。",
+     "en": "Mouse climbs and climbs, and sits on top of Ox."
+    },
+    {
+     "who": "牛",
+     "tag": "slow, deep, gentle",
+     "text": "坐好喔，抓緊喔，等一下就出發。",
+     "en": "Sit tight and hold on. We go soon."
+    },
+    {
+     "who": "老鼠",
+     "tag": "happy, squeaky",
+     "text": "謝謝牛大哥！你真好！",
+     "en": "Thank you, Big Brother Ox! You are so nice!"
+    }
+   ]
+  },
+  {
+   "scene": "寬寬的大河，玉皇大帝在半空中的白雲上，手裡揮著一面紅旗子；河水一圈一圈的波紋，遠方是對岸的紅旗子",
+   "act": "動物們撲通撲通跳進河裡，水花濺得好高；畫面前面，牛只露出頭和身體慢慢往前游，老鼠坐在牛身上揮著小拳頭幫牛加油",
+   "lines": [
+    {
+     "who": "玉皇大帝",
+     "tag": "loud, counting",
+     "text": "預備！一、二、三，開始！",
+     "en": "Ready? One, two, three, go!"
+    },
+    {
+     "who": "旁白",
+     "tag": "excited",
+     "text": "撲通！撲通！大家都跳進河裡。",
+     "en": "Splash! Splash! Everyone jumps into the river."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "牛游得好慢，可是牠一直往前游。",
+     "en": "Ox swims slowly. But he keeps going and going."
+    },
+    {
+     "who": "牛",
+     "tag": "slow, deep, steady",
+     "text": "嘿咻，嘿咻，慢慢游。",
+     "en": "Heave-ho, heave-ho. Slow and steady."
+    },
+    {
+     "who": "老鼠",
+     "tag": "cheering, squeaky",
+     "text": "牛大哥，加油！加油！",
+     "en": "Go, Big Brother Ox! Go, go!"
+    }
+   ]
+  },
+  {
+   "scene": "對岸的終點：草地上插著紅旗子，玉皇大帝坐在低低的白雲上等著",
+   "act": "牛快游到岸邊，老鼠跑到牛的頭上用力一跳，在半空中張開手腳，比牛先踩到草地；玉皇大帝舉手宣布；牛爬上岸，甩著水、慢慢地笑，一點也不生氣",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "excited, storytelling",
+     "text": "快到岸邊了！老鼠爬到牛的頭上。",
+     "en": "Almost there! Mouse runs up onto Ox's head."
+    },
+    {
+     "who": "老鼠",
+     "tag": "excited, squeaky",
+     "text": "一、二、三，跳！",
+     "en": "One, two, three, jump!"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, delighted",
+     "text": "第一名，是老鼠！",
+     "en": "Number one is Mouse!"
+    },
+    {
+     "who": "牛",
+     "tag": "slow, deep, amused",
+     "text": "哞！小老鼠，你好聰明喔。",
+     "en": "Moo! Little Mouse, you are so clever."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, warm",
+     "text": "第二名，是牛！",
+     "en": "Number two is Ox!"
+    }
+   ]
+  },
+  {
+   "scene": "大河裡水流很快，白色浪花一波一波，河邊有大石頭；對岸的紅旗子就在前面",
+   "act": "橘色黑條紋的老虎在浪裡用力划水，被水推得歪歪的，還是張大嘴巴吼；最後爬上岸，全身溼答答，挺起胸膛",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, playful",
+     "text": "下一個，是誰呢？猜猜看！",
+     "en": "Who's next? Can you guess?"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling, dramatic",
+     "text": "河水好快好快，把老虎推得好遠。",
+     "en": "The water is fast. It pushes Tiger far away."
+    },
+    {
+     "who": "老虎",
+     "tag": "loud, roaring, brave",
+     "text": "吼！我不怕！我最有力氣！",
+     "en": "Roar! I'm not scared! I'm super strong!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "老虎用力游，終於爬上岸了。",
+     "en": "Tiger swims hard. At last, he climbs onto the shore."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, impressed",
+     "text": "第三名，是老虎！",
+     "en": "Number three is Tiger!"
+    }
+   ]
+  },
+  {
+   "scene": "大河裡露出一排圓圓的石頭，石頭的盡頭有一根浮在水上的大木頭，大木頭靠近對岸",
+   "act": "白兔子在石頭上一顆一顆跳過去，長耳朵飛起來；石頭沒了，牠跳上浮木坐好，風把浮木吹向岸邊，兔子開心揮手",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, playful",
+     "text": "下一個，是誰呢？猜猜看！",
+     "en": "Who's next? Can you guess?"
+    },
+    {
+     "who": "兔子",
+     "tag": "bouncy, cheerful",
+     "text": "跳一跳！一顆、兩顆、三顆、四顆石頭！",
+     "en": "Hop, hop! One stone, two stones, three stones, four!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "石頭沒有了。兔子跳到一根浮木上。",
+     "en": "No more stones! Rabbit hops onto a floating log."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly, storytelling",
+     "text": "風輕輕吹，把浮木吹到岸邊。",
+     "en": "The wind blows gently and pushes the log to the shore."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, cheerful",
+     "text": "第四名，是兔子！",
+     "en": "Number four is Rabbit!"
+    }
+   ]
+  },
+  {
+   "scene": "河的另一邊有一個小村子：幾間小房子，田裡的小苗都彎下頭，地上乾乾的有裂縫，天上一個好大的太陽",
+   "act": "綠色的龍在村子上方飛，低頭看到彎彎的小苗，停下來，從嘴裡吹出一大片烏雲，雨嘩啦啦下；小苗抬起頭，村子裡的小朋友在雨裡開心跳舞",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, storytelling",
+     "text": "龍會飛，怎麼沒有來呢？",
+     "en": "Dragon can fly. So where is he?"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "原來，龍看到一個小村子。",
+     "en": "Dragon has found a little village."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling, gentle",
+     "text": "村子好久好久，都沒有下雨了。",
+     "en": "It has not rained there for a long, long time."
+    },
+    {
+     "who": "龍",
+     "tag": "deep, gentle, kind",
+     "text": "小苗好渴喔。不要怕，我來下雨！",
+     "en": "The little plants are so thirsty. Don't worry, I will make rain!"
+    },
+    {
+     "who": "旁白",
+     "tag": "happy, storytelling",
+     "text": "滴答滴答！滴答滴答！小苗都抬起頭來了。",
+     "en": "Pitter-patter! The little plants lift up their heads."
+    }
+   ]
+  },
+  {
+   "scene": "對岸的終點，紅旗子旁邊；天上掛著一道小彩虹，老鼠、牛、老虎、兔子在旁邊看",
+   "act": "龍從天上飛下來，降落在玉皇大帝前面，有點不好意思地低頭；玉皇大帝笑著拍拍龍的頭",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "龍飛呀飛，終於飛到岸邊。",
+     "en": "Dragon flies and flies, all the way to the shore."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "curious, kind",
+     "text": "龍，你怎麼這麼慢？",
+     "en": "Dragon, what took you so long?"
+    },
+    {
+     "who": "龍",
+     "tag": "deep, gentle, humble",
+     "text": "我去幫一個村子下雨了。",
+     "en": "I stopped to make rain for a village."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "warm, proud",
+     "text": "你幫助別人，真是一隻好心的龍！",
+     "en": "You helped others. You are a kind dragon!"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, warm",
+     "text": "第五名，是龍！",
+     "en": "Number five is Dragon!"
+    }
+   ]
+  },
+  {
+   "scene": "河邊淺淺的水，水花四濺；對岸的紅旗子就在前面不遠",
+   "act": "棕色的馬抬高腳快快跑過淺水，鬃毛飛起來，一臉神氣；馬的前腳上纏著一條綠色的小蛇，小蛇瞇著眼睛偷偷地笑，馬沒有發現",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, playful",
+     "text": "下一個，是誰呢？猜猜看！",
+     "en": "Who's next? Can you guess?"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, rhythmic",
+     "text": "噠噠噠，噠噠噠，馬跑過來了。",
+     "en": "Clip-clop, clip-clop! Here comes Horse."
+    },
+    {
+     "who": "馬",
+     "tag": "proud, energetic",
+     "text": "我跑得最快！下一名一定是我！",
+     "en": "I'm the fastest! The next place is mine!"
+    },
+    {
+     "who": "旁白",
+     "tag": "whispering, playful",
+     "text": "可是，馬的腳上，纏著一條小蛇。",
+     "en": "But a little snake is curled around Horse's leg."
+    },
+    {
+     "who": "蛇",
+     "tag": "whispering, hissing, giggly",
+     "text": "嘶嘶，我躲在這裡，好舒服。",
+     "en": "Hiss, hiss. I'm hiding here. So comfy."
+    }
+   ]
+  },
+  {
+   "scene": "對岸的終點，草地邊緣，紅旗子旁",
+   "act": "小蛇從馬的腳上滑下來，先溜到草地上，吐著舌頭笑；馬兩隻前腳抬起來往後退一步，眼睛睜得好大；玉皇大帝在雲上忍不住笑",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "excited, storytelling",
+     "text": "快到岸邊了！小蛇滑下來。",
+     "en": "Almost there! Little Snake slides down."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小蛇比馬先到了岸上。",
+     "en": "Little Snake reaches the shore before Horse."
+    },
+    {
+     "who": "蛇",
+     "tag": "sly, hissing, giggly",
+     "text": "嘶嘶，謝謝你帶我過河！",
+     "en": "Hiss, hiss! Thanks for the ride!"
+    },
+    {
+     "who": "馬",
+     "tag": "startled, neighing",
+     "text": "咦！你是誰呀？你從哪裡來的？",
+     "en": "Whoa! Who are you? Where did you come from?"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, amused",
+     "text": "第六名，是蛇！第七名，是馬！",
+     "en": "Number six is Snake! Number seven is Horse!"
+    }
+   ]
+  },
+  {
+   "scene": "大河上，一個用木頭綁成的小木筏，快靠到對岸；岸上有紅旗子和玉皇大帝",
+   "act": "公雞站在木筏最前面，抬頭大聲啼叫；白色的羊拿著竹竿撐木筏；猴子趴在木筏邊，用一片大葉子划水，笑得好開心；三隻一起到岸邊",
+   "lines": [
+    {
+     "who": "雞",
+     "tag": "bright, crowing, bossy",
+     "text": "喔喔喔！羊，猴子，我們一起坐木筏！",
+     "en": "Cock-a-doodle-doo! Goat! Monkey! Let's ride the raft together!"
+    },
+    {
+     "who": "羊",
+     "tag": "soft, shy, gentle",
+     "text": "咩，好呀。我來撐竹竿。",
+     "en": "Baa. Okay. I'll push with the pole."
+    },
+    {
+     "who": "猴子",
+     "tag": "playful, giggly",
+     "text": "嘻嘻！我來划水！划呀划！",
+     "en": "Hee hee! I'll paddle! Paddle, paddle!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "大家一起用力，木筏到岸邊了。",
+     "en": "They all work together, and the raft reaches the shore."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, cheerful",
+     "text": "第八名，是羊！第九名，是猴子！第十名，是雞！",
+     "en": "Number eight is Goat! Number nine is Monkey! Number ten is Rooster!"
+    }
+   ]
+  },
+  {
+   "scene": "大河靠岸的淺水，有小魚游來游去，水花亂飛；岸上已經有十隻動物在看",
+   "act": "咖啡色的狗在水裡追小魚、潑水、玩得好開心；後來爬上岸，用力甩身上的水，水珠噴到旁邊的動物，大家笑著躲開",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, playful",
+     "text": "下一個，是誰呢？猜猜看！",
+     "en": "Who's next? Can you guess?"
+    },
+    {
+     "who": "狗",
+     "tag": "happy, bouncy, barking",
+     "text": "汪汪！水好好玩！我再游一下！",
+     "en": "Woof woof! The water is so fun! Just a little more!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, storytelling",
+     "text": "狗在水裡玩了好久，才爬上岸。",
+     "en": "Dog plays in the water for a long time. Then he climbs out."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "甩一甩，甩一甩，水花亂飛！",
+     "en": "Shake, shake, shake! Water flies everywhere!"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, amused",
+     "text": "第十一名，是狗！",
+     "en": "Number eleven is Dog!"
+    }
+   ]
+  },
+  {
+   "scene": "河中間的一個小沙洲上有一棵大樹，樹下有吃完的西瓜皮和果子；午後陽光",
+   "act": "粉紅色的豬吃得圓滾滾，靠著大樹睡著，鼻子冒泡泡；接著豬突然醒來，眼睛睜大，搖搖擺擺跳下水往對岸游，最後一個爬上岸",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, storytelling",
+     "text": "剩下最後一名了！誰會來呢？",
+     "en": "Only one place is left! Who will it be?"
+    },
+    {
+     "who": "旁白",
+     "tag": "softly, amused",
+     "text": "原來，豬吃飽飽，在半路睡著了。",
+     "en": "Pig ate a big snack and fell asleep on the way."
+    },
+    {
+     "who": "豬",
+     "tag": "sleepy, slow, content",
+     "text": "呼嚕呼嚕。吃飽飽，好想睡。",
+     "en": "Oink, oink. So full. So sleepy."
+    },
+    {
+     "who": "豬",
+     "tag": "surprised, sleepy",
+     "text": "啊！比賽！我來了！",
+     "en": "Oh! The race! Here I come!"
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "announcing, laughing",
+     "text": "第十二名，是豬！",
+     "en": "Number twelve is Pig!"
+    }
+   ]
+  },
+  {
+   "scene": "第三頁那棵河邊的大樹下，現在是下午，太陽已經好高好亮，草窩旁邊空空的",
+   "act": "貓還在草窩裡呼呼大睡；接著貓猛然睜開眼睛、全身的毛豎起來，跳起來往河邊衝，邊跑邊喊",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "curious, storytelling",
+     "text": "這時候，貓在哪裡呢？",
+     "en": "And where is Cat?"
+    },
+    {
+     "who": "旁白",
+     "tag": "softly, amused",
+     "text": "貓在大樹下，睡得好香。呼，呼。",
+     "en": "Cat is under the big tree, sound asleep. Zzz, zzz."
+    },
+    {
+     "who": "貓",
+     "tag": "waking, alarmed",
+     "text": "嗯？太陽好高了！老鼠沒有叫我！",
+     "en": "Hmm? The sun is so high! Mouse didn't wake me up!"
+    },
+    {
+     "who": "旁白",
+     "tag": "excited, storytelling",
+     "text": "貓跳起來，拼命跑，拼命游。",
+     "en": "Cat jumps up. She runs and runs, and swims and swims."
+    },
+    {
+     "who": "貓",
+     "tag": "panicked, meowing",
+     "text": "喵！等等我！等等我！",
+     "en": "Meow! Wait for me! Wait for me!"
+    }
+   ]
+  },
+  {
+   "scene": "對岸的終點，傍晚，天空變成橘色；十二隻動物圍在玉皇大帝旁邊",
+   "act": "貓全身溼答答地爬上岸，毛炸開像一顆毛球，氣鼓鼓地瞪著老鼠；老鼠躲在牛的腳後面，不好意思地抓頭；玉皇大帝溫柔地彎下腰",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "太陽下山了，貓終於到了。",
+     "en": "The sun is setting when Cat finally arrives."
+    },
+    {
+     "who": "玉皇大帝",
+     "tag": "gentle, sorry",
+     "text": "貓，對不起，十二隻動物都到了。",
+     "en": "I'm sorry, Cat. All twelve animals are already here."
+    },
+    {
+     "who": "貓",
+     "tag": "grumpy, funny",
+     "text": "喵嗚！老鼠，你忘了叫我！",
+     "en": "Mee-ow! Mouse, you forgot to wake me!"
+    },
+    {
+     "who": "老鼠",
+     "tag": "sheepish, squeaky",
+     "text": "對不起！我太開心，就忘了嘛！",
+     "en": "Sorry! I was so excited, I forgot!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, amused",
+     "text": "貓氣得毛都豎起來了！",
+     "en": "Cat is so cross, her fur stands straight up!"
+    }
+   ]
+  },
+  {
+   "scene": "草地上，傍晚，有幾朵小花和一棵小樹",
+   "act": "貓追著老鼠繞著小樹跑圈圈，揚起一陣陣小灰塵，兩隻都是好笑的表情，不是真的很兇；其他動物坐在旁邊看，笑得東倒西歪",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "playful, storytelling",
+     "text": "從那天起，貓看到老鼠，就要追。",
+     "en": "From that day on, whenever Cat sees Mouse, she chases him."
+    },
+    {
+     "who": "貓",
+     "tag": "playful, mock angry",
+     "text": "喵！你給我站住！",
+     "en": "Meow! Come back here!"
+    },
+    {
+     "who": "老鼠",
+     "tag": "squeaky, giggling",
+     "text": "吱吱！下次我一定叫你啦！",
+     "en": "Squeak! Next time I'll wake you, I promise!"
+    },
+    {
+     "who": "旁白",
+     "tag": "amused, laughing",
+     "text": "大家看了，都哈哈大笑。",
+     "en": "Everyone laughs and laughs."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, amused",
+     "text": "直到今天，貓看到老鼠，都會追過去喔。",
+     "en": "And even today, when cats see mice, they still chase them."
+    }
+   ]
+  },
+  {
+   "scene": "深藍色的夜空，十二隻動物圍成一個大圓，像時鐘一樣，每一隻頭上有一顆亮亮的星星；玉皇大帝在圓的正中間微笑",
+   "act": "十二隻動物照順時鐘排好：老鼠、牛、老虎、兔子、龍、蛇、馬、羊、猴子、雞、狗、豬，一起朝讀者揮手；貓在圓圈外面趴著，偷偷看老鼠，表情好笑",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, inviting",
+     "text": "我們一起來念一念！",
+     "en": "Let's say it all together!"
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, rhythmic",
+     "text": "鼠、牛、虎、兔、龍、蛇，",
+     "en": "Rat, Ox, Tiger, Rabbit, Dragon, Snake,"
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, rhythmic",
+     "text": "馬、羊、猴、雞、狗、豬。",
+     "en": "Horse, Goat, Monkey, Rooster, Dog, Pig."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "每一年，輪到一隻動物，那一年就是牠的年。",
+     "en": "Each year, one animal takes a turn. That year is its very own year."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, curious",
+     "text": "你是哪一年生的呢？你屬什麼？",
+     "en": "What year were you born? Which animal are you?"
+    }
+   ]
+  }
+ ]
+}

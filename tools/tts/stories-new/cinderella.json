@@ -1,0 +1,759 @@
+{
+ "id": "cinderella",
+ "title": "灰姑娘",
+ "title_en": "Cinderella",
+ "size": "長",
+ "roles": {
+  "灰姑娘": "十多歲的溫柔女孩，聲音甜、有禮貌，開心時輕快，難過時小小聲。",
+  "大姊": "愛打扮的大姊姊，說話嬌嬌的、愛使喚人但不兇，結尾真心道歉、變得親切。",
+  "二姊": "跟著大姊起鬨的二姊姊，聲音比大姊高一點、更孩子氣，不兇。",
+  "繼母": "中年女性，說話俐落、愛交代事情、有點囉嗦，但不兇不罵，結尾語氣柔和。",
+  "仙女": "慈祥的老奶奶仙女，聲音溫暖柔和、帶點俏皮，念口訣時歡快又神奇。",
+  "王子": "年輕的王子，聲音明亮溫和、有禮貌，找人時認真又期待。",
+  "小老鼠": "灰姑娘的小老鼠好朋友，聲音又小又尖、熱心開朗，句首常加「吱吱」。"
+ },
+ "polyphones": [
+  {
+   "char": "姊",
+   "where": "全書『大姊、二姊、姊姊們』",
+   "read": "jiě"
+  },
+  {
+   "char": "會",
+   "where": "第3、4、6、7頁『舞會』，第11頁『鐘聲會』『都會』，第19頁『也會』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第4、6、12、13、16、17頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第14頁『什麼名字』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一間舊舊的小木屋裡的廚房，早上。左邊有一個磚砌的火爐，爐裡有一點小火和灰；牆邊靠著掃把和木水桶；窗外有陽光。牆角有一個小老鼠洞。",
+   "act": "灰姑娘穿著有補丁的灰色舊衣服、繫著圍裙，蹲在火爐邊掃灰，臉頰沾著一點灰，笑咪咪的；一隻灰色小老鼠從洞口探出頭，舉起小手跟她打招呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "從前從前，有一個好心的女孩。",
+     "en": "Once upon a time, there was a kind girl."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "她常常坐在火爐邊，身上沾滿了灰。",
+     "en": "She often sat by the fireplace, all covered in ash."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "所以，大家都叫她灰姑娘。",
+     "en": "So everyone called her Cinderella."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "tiny, cheerful",
+     "text": "吱吱！灰姑娘，早安！今天天氣真好！",
+     "en": "Squeak squeak! Good morning, Cinderella! What a nice day!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "sweet, cheerful",
+     "text": "早安，小老鼠！我們一起加油吧！",
+     "en": "Good morning, Little Mouse! Let's do our best today!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間房子的客廳，早上。有一張粉紅色的沙發、一面大鏡子、一張小桌子，地上有一些灰塵。",
+   "act": "繼母坐在沙發上指著地板；大姊坐在鏡子前指著自己亂翹的頭髮；二姊舉著一件衣服揮來揮去；灰姑娘一手拿掃把、一手抱著衣服，忙得跑來跑去。",
+   "lines": [
+    {
+     "who": "繼母",
+     "tag": "bossy, sing-song",
+     "text": "灰姑娘，灰姑娘，快來掃地！",
+     "en": "Cinderella, Cinderella, come and sweep the floor!"
+    },
+    {
+     "who": "大姊",
+     "tag": "bossy, whiny",
+     "text": "灰姑娘，灰姑娘，快來幫我梳頭！",
+     "en": "Cinderella, Cinderella, come and brush my hair!"
+    },
+    {
+     "who": "二姊",
+     "tag": "bossy, whiny",
+     "text": "灰姑娘，灰姑娘，快來幫我洗衣服！",
+     "en": "Cinderella, Cinderella, come and wash my clothes!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "busy, cheerful",
+     "text": "好，我來了！一個一個來喔！",
+     "en": "Okay, I'm coming! One at a time!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, storytelling",
+     "text": "掃地、梳頭、洗衣服，灰姑娘好忙好忙！",
+     "en": "Sweeping, brushing, washing. Cinderella was so very busy!"
+    }
+   ]
+  },
+  {
+   "scene": "房子的大門口，白天，陽光很好。門外的小路上，遠遠看得到山丘上的白色王宮。",
+   "act": "一個穿紅色制服的送信人遞來一封有金色封印的信；繼母拿著信，兩個姊姊湊過來看，興奮得跳起來；灰姑娘站在後面，手裡抱著掃把，眼睛亮亮的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "有一天，王宮送來一封金色的信。",
+     "en": "One day, a golden letter came from the palace."
+    },
+    {
+     "who": "繼母",
+     "tag": "excited, proud",
+     "text": "國王要辦舞會！全國的女孩都可以去！",
+     "en": "The king is having a ball! Every girl in the land may come!"
+    },
+    {
+     "who": "大姊",
+     "tag": "excited, giddy",
+     "text": "哇！我要穿紅裙子，戴紅花！",
+     "en": "Ooh! I will wear a red dress and a red flower!"
+    },
+    {
+     "who": "二姊",
+     "tag": "excited, giddy",
+     "text": "我要穿藍裙子，戴藍花！",
+     "en": "I will wear a blue dress and a blue flower!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "hopeful, shy",
+     "text": "我也好想去。請問，我也可以去嗎？",
+     "en": "I want to go, too. Please, may I go, too?"
+    }
+   ]
+  },
+  {
+   "scene": "客廳，傍晚前，窗外天色變成淡橘色。沙發上堆滿了紅裙子、藍裙子、鞋子和項鍊；廚房門口看得到水槽裡疊著髒碗。",
+   "act": "繼母輕輕搖頭，指一指廚房的髒碗；大姊抬起一隻腳要灰姑娘幫她穿鞋，二姊拿著項鍊等著；灰姑娘一下幫這個、一下幫那個，把兩個姊姊打扮得好美。",
+   "lines": [
+    {
+     "who": "繼母",
+     "tag": "matter-of-fact",
+     "text": "灰姑娘，妳沒有舞會的裙子呀。",
+     "en": "Cinderella, you don't have a dress for the ball."
+    },
+    {
+     "who": "繼母",
+     "tag": "matter-of-fact",
+     "text": "而且，家裡的碗也沒有洗呢。",
+     "en": "And the dishes aren't washed yet."
+    },
+    {
+     "who": "大姊",
+     "tag": "bossy, whiny",
+     "text": "灰姑娘，灰姑娘，快來幫我穿鞋！",
+     "en": "Cinderella, Cinderella, come and help with my shoes!"
+    },
+    {
+     "who": "二姊",
+     "tag": "bossy, whiny",
+     "text": "灰姑娘，灰姑娘，快來幫我戴項鍊！",
+     "en": "Cinderella, Cinderella, come and put on my necklace!"
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "灰姑娘把兩個姊姊打扮得好美好美。",
+     "en": "Cinderella helped her sisters look so very lovely."
+    }
+   ]
+  },
+  {
+   "scene": "房子大門口，傍晚，天空是橘紅色的。門口停著一輛普通的黑色馬車，前面有一匹棕色的馬，車上點著小燈。",
+   "act": "繼母和兩個姊姊穿著紅、藍禮服坐在馬車上，大姊開心地揮手，繼母回頭交代事情；馬車往右邊走遠；灰姑娘一個人站在門口，輕輕揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "天黑了，繼母和姊姊們坐上馬車。",
+     "en": "When night came, the stepmother and the sisters got into a carriage."
+    },
+    {
+     "who": "大姊",
+     "tag": "excited, giddy",
+     "text": "王子，王子，我們來囉！",
+     "en": "Prince, oh Prince, here we come!"
+    },
+    {
+     "who": "繼母",
+     "tag": "bossy, light",
+     "text": "灰姑娘，記得把碗洗好喔！",
+     "en": "Cinderella, don't forget to wash the dishes!"
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "馬車走了。灰姑娘一個人站在門口。",
+     "en": "Off went the carriage. Cinderella stood at the door all alone."
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, wistful",
+     "text": "她看著馬車越走越遠，越走越遠。",
+     "en": "She watched it go far away, far, far away."
+    }
+   ]
+  },
+  {
+   "scene": "廚房，晚上。窗外有彎彎的月亮和星星，火爐裡只剩一點點小火，屋裡暗暗的；水槽邊的碗已經洗好疊整齊。",
+   "act": "灰姑娘坐在火爐邊的小木凳上，低著頭，用手擦眼淚；小老鼠爬到她的手掌上，抬頭看她，用小手拍拍她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "灰姑娘回到廚房，坐在火爐邊。",
+     "en": "Cinderella went back to the kitchen and sat by the fire."
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "sad, quiet",
+     "text": "我也好想去舞會，好想跳舞喔。",
+     "en": "I wish I could go to the ball. I wish I could dance."
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, soft",
+     "text": "一滴、兩滴，眼淚掉了下來。",
+     "en": "Drip, drop. Her tears fell down."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "tiny, comforting",
+     "text": "吱吱！灰姑娘，別哭，別哭！我陪妳。",
+     "en": "Squeak squeak! Don't cry, Cinderella! I'm here with you."
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "sad, gentle",
+     "text": "謝謝你，小老鼠。可是我沒有裙子呀。",
+     "en": "Thank you, Little Mouse. But I don't have a dress."
+    }
+   ]
+  },
+  {
+   "scene": "廚房，晚上。整個廚房飄滿亮晶晶的金色光點，好像下起了星星雨。",
+   "act": "一位穿淺藍色長袍、背上有一對透明小翅膀、白頭髮的老奶奶仙女，拿著頂端有星星的魔法棒，從光裡走出來，對灰姑娘微笑；灰姑娘睜大眼睛站起來，小老鼠躲在她腳邊偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "wonder, hushed",
+     "text": "忽然，廚房裡亮起一道金色的光。",
+     "en": "Suddenly, a golden light filled the kitchen."
+    },
+    {
+     "who": "仙女",
+     "tag": "warm, gentle",
+     "text": "好孩子，別哭了。我是來幫妳的仙女。",
+     "en": "Don't cry, dear child. I am a fairy, and I am here to help you."
+    },
+    {
+     "who": "仙女",
+     "tag": "warm, kind",
+     "text": "妳每天都好用心，對大家都好善良。",
+     "en": "You work so hard every day, and you are kind to everyone."
+    },
+    {
+     "who": "仙女",
+     "tag": "warm, playful",
+     "text": "今天晚上，妳也可以去舞會！",
+     "en": "Tonight, you can go to the ball, too!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "surprised, breathless",
+     "text": "真的嗎？我真的可以去嗎？",
+     "en": "Really? Can I really go?"
+    }
+   ]
+  },
+  {
+   "scene": "屋子後面的菜園，晚上，月光照著。泥土上長著藤蔓，有一顆圓圓的、好大的橘色南瓜。",
+   "act": "灰姑娘雙手抱著大南瓜，放到仙女面前；仙女揮動魔法棒，星星光點繞著南瓜飛，南瓜變成一輛金色、圓圓的南瓜馬車，車門上有捲捲的花紋。",
+   "lines": [
+    {
+     "who": "仙女",
+     "tag": "cheerful",
+     "text": "灰姑娘，去拿一顆大南瓜來！",
+     "en": "Cinderella, go and bring me a big pumpkin!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "灰姑娘抱來一顆又圓又大的南瓜。",
+     "en": "Cinderella brought back a big, round pumpkin."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "仙女笑一笑，揮一揮魔法棒。",
+     "en": "The fairy smiled and waved her magic wand."
+    },
+    {
+     "who": "仙女",
+     "tag": "magical, chanting",
+     "text": "亮晶晶，亮晶晶，變！",
+     "en": "Twinkle, twinkle, change!"
+    },
+    {
+     "who": "旁白",
+     "tag": "excited, amazed",
+     "text": "哇！南瓜變成了一輛金色的大馬車！",
+     "en": "Wow! The pumpkin turned into a big golden carriage!"
+    }
+   ]
+  },
+  {
+   "scene": "屋子後面的菜園，晚上，月光下停著金色的南瓜馬車。",
+   "act": "小老鼠和四隻老鼠朋友排成一排，被光點圍住；四隻老鼠朋友變成四匹白馬，小老鼠變成戴高帽子、穿紅外套、還留著老鼠鬍鬚和圓耳朵的小車夫；灰姑娘拍手大笑。",
+   "lines": [
+    {
+     "who": "小老鼠",
+     "tag": "tiny, eager",
+     "text": "吱吱！我和好朋友們，也要幫忙！",
+     "en": "Squeak squeak! My friends and I want to help, too!"
+    },
+    {
+     "who": "仙女",
+     "tag": "magical, chanting",
+     "text": "亮晶晶，亮晶晶，變！",
+     "en": "Twinkle, twinkle, change!"
+    },
+    {
+     "who": "旁白",
+     "tag": "excited, amazed",
+     "text": "四隻老鼠朋友，變成了四匹白馬！",
+     "en": "The four mouse friends turned into four white horses!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, amused",
+     "text": "小老鼠變成了車夫，戴著高高的帽子。",
+     "en": "Little Mouse became the driver, with a tall, tall hat."
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "delighted, laughing",
+     "text": "哇！小老鼠，你好神氣喔！",
+     "en": "Wow! Little Mouse, you look so grand!"
+    }
+   ]
+  },
+  {
+   "scene": "菜園，晚上，金色南瓜馬車和四匹白馬在旁邊等著，滿天星星。",
+   "act": "仙女對著灰姑娘揮魔法棒；灰姑娘的灰色舊衣服變成閃閃發亮的淡藍色長禮服，腳上是一雙透明、會反光的玻璃鞋；灰姑娘低頭看裙子和鞋子，雙手捧著臉，好開心。",
+   "lines": [
+    {
+     "who": "仙女",
+     "tag": "playful, warm",
+     "text": "最後，輪到妳了，灰姑娘！",
+     "en": "And last of all, it's your turn, Cinderella!"
+    },
+    {
+     "who": "仙女",
+     "tag": "magical, chanting",
+     "text": "亮晶晶，亮晶晶，變！",
+     "en": "Twinkle, twinkle, change!"
+    },
+    {
+     "who": "旁白",
+     "tag": "wonder, storytelling",
+     "text": "灰灰的舊衣服，變成了亮亮的藍裙子。",
+     "en": "Her old gray clothes became a shining blue dress."
+    },
+    {
+     "who": "旁白",
+     "tag": "wonder, storytelling",
+     "text": "腳上，多了一雙亮晶晶的玻璃鞋！",
+     "en": "And on her feet, a pair of sparkly glass slippers!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "happy, grateful",
+     "text": "好美喔！我好喜歡！謝謝妳，仙女！",
+     "en": "It's so beautiful! I love it! Thank you, Fairy!"
+    }
+   ]
+  },
+  {
+   "scene": "房子門口的小路，晚上，滿天星星。金色南瓜馬車停著，四匹白馬在前面，車夫小老鼠坐在前座。",
+   "act": "仙女舉起一根手指，認真地叮嚀；穿藍禮服的灰姑娘點點頭，一隻腳踏上馬車；車夫小老鼠舉起高帽子揮一揮。",
+   "lines": [
+    {
+     "who": "仙女",
+     "tag": "gentle, serious",
+     "text": "可是，灰姑娘，妳一定要記住喔。",
+     "en": "But Cinderella, you must remember this."
+    },
+    {
+     "who": "仙女",
+     "tag": "slow, chanting",
+     "text": "半夜十二點，鐘聲會噹、噹、噹地響。",
+     "en": "At midnight, the clock will go ding, dong, ding."
+    },
+    {
+     "who": "仙女",
+     "tag": "gentle, serious",
+     "text": "馬車和裙子，都會不見喔！",
+     "en": "Then the carriage and the dress will be gone!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "earnest, cheerful",
+     "text": "我記住了！十二點以前，一定回家！",
+     "en": "I'll remember! I will be home before midnight!"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "tiny, excited",
+     "text": "吱吱！灰姑娘，坐好了，出發囉！",
+     "en": "Squeak squeak! Hold on tight, Cinderella! Off we go!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，晚上。天花板掛著亮晶晶的大吊燈，到處擺著花，地板亮得像鏡子，好多穿禮服的客人，後面有一座又寬又大的樓梯。",
+   "act": "灰姑娘穿著藍色禮服走進大廳，客人們都回頭看她；大姊和二姊穿著紅、藍禮服站在人群裡，張大嘴巴看呆了，完全沒認出她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "wonder, storytelling",
+     "text": "南瓜馬車跑呀跑，來到了好大的王宮。",
+     "en": "The pumpkin carriage rolled along to the great big palace."
+    },
+    {
+     "who": "旁白",
+     "tag": "wonder, storytelling",
+     "text": "大廳裡好多燈，好多花，好多人。",
+     "en": "The hall was full of lights, full of flowers, and full of people."
+    },
+    {
+     "who": "大姊",
+     "tag": "amazed, whispering",
+     "text": "那個女孩是誰呀？好美喔！",
+     "en": "Who is that girl? She is so pretty!"
+    },
+    {
+     "who": "二姊",
+     "tag": "amazed, whispering",
+     "text": "我不知道！她的裙子，像星星一樣亮！",
+     "en": "I don't know! Her dress shines like a star!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, storytelling",
+     "text": "姊姊們都沒有認出來，那就是灰姑娘。",
+     "en": "The sisters did not know that it was Cinderella."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳的正中央，晚上，大吊燈下面，客人們圍在旁邊看。",
+   "act": "王子穿著白色外套、戴著小金冠，彎腰向灰姑娘伸出手；灰姑娘害羞地微笑，把手放在他手上；兩個人手牽手跳舞，藍裙子像花一樣飄起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "王子看到灰姑娘，馬上走過來，伸出手。",
+     "en": "The prince saw Cinderella. He walked right over and held out his hand."
+    },
+    {
+     "who": "王子",
+     "tag": "warm, polite",
+     "text": "妳好！可以請妳跳一支舞嗎？",
+     "en": "Hello! May I have this dance?"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "shy, happy",
+     "text": "好呀！我好想跳舞喔！",
+     "en": "Yes, please! I'd love to dance!"
+    },
+    {
+     "who": "旁白",
+     "tag": "light, dreamy",
+     "text": "他們跳呀跳，笑呀笑，跳了一支又一支。",
+     "en": "They danced and laughed, one dance after another."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, dreamy",
+     "text": "灰姑娘從來沒有這麼開心過。",
+     "en": "Cinderella had never been so happy."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，晚上。牆上有一座好大的金色時鐘，兩根指針都指著十二。",
+   "act": "大鐘響起來；灰姑娘嚇一跳，用手摀住嘴巴，拉起裙子往門口跑；王子回頭伸手想留住她，客人們都轉頭看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "suspenseful",
+     "text": "跳著跳著，牆上的大鐘響了。",
+     "en": "As they danced, the big clock on the wall began to ring."
+    },
+    {
+     "who": "旁白",
+     "tag": "chanting, suspenseful",
+     "text": "噹、噹、噹！噹、噹、噹！",
+     "en": "Ding, dong, ding! Ding, dong, ding!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "startled, worried",
+     "text": "糟糕！十二點了！我要回家了！",
+     "en": "Oh no! It's midnight! I have to go home!"
+    },
+    {
+     "who": "王子",
+     "tag": "calling out",
+     "text": "等一等！請等一等！妳叫什麼名字？",
+     "en": "Wait! Please wait! What is your name?"
+    },
+    {
+     "who": "旁白",
+     "tag": "hurried",
+     "text": "灰姑娘來不及說，拉起裙子就跑。",
+     "en": "Cinderella had no time to tell him. She picked up her dress and ran."
+    }
+   ]
+  },
+  {
+   "scene": "王宮門外又寬又長的白色石頭樓梯，晚上，月光照著台階。",
+   "act": "灰姑娘拉著裙子往下跑，一隻玻璃鞋掉在台階上，閃閃發亮；王子站在樓梯最上面，彎腰撿起玻璃鞋，捧在手上看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "chanting, hurried",
+     "text": "噹、噹、噹！灰姑娘趕快跑下樓梯。",
+     "en": "Ding, dong, ding! Cinderella hurried down the stairs."
+    },
+    {
+     "who": "旁白",
+     "tag": "surprised",
+     "text": "哎呀，一隻玻璃鞋掉在樓梯上了！",
+     "en": "Oh dear! One glass slipper fell off on the stairs!"
+    },
+    {
+     "who": "旁白",
+     "tag": "hurried",
+     "text": "灰姑娘不敢停，一直跑，一直跑。",
+     "en": "Cinderella did not stop. She ran and ran."
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "王子撿起玻璃鞋，看了好久。",
+     "en": "The prince picked up the glass slipper and looked at it for a long time."
+    },
+    {
+     "who": "王子",
+     "tag": "determined, gentle",
+     "text": "好小的鞋子！我一定要找到她！",
+     "en": "What a tiny shoe! I must find her!"
+    }
+   ]
+  },
+  {
+   "scene": "回家的鄉間小路，半夜，天上一輪月亮。路邊滾著一顆普通的橘色南瓜。",
+   "act": "灰姑娘又穿回灰色舊衣服，一隻腳上穿著玻璃鞋，另一隻腳光著；四隻老鼠在南瓜旁邊跑來跑去；小老鼠站在她手掌上，指著那隻玻璃鞋，兩個一起偷偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "噹！十二點的鐘聲，響完了。",
+     "en": "Ding! The midnight bells were done."
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "馬車變回南瓜，白馬變回小老鼠。",
+     "en": "The carriage turned back into a pumpkin. The horses turned back into mice."
+    },
+    {
+     "who": "旁白",
+     "tag": "gentle, storytelling",
+     "text": "灰姑娘又穿回灰灰的舊衣服了。",
+     "en": "Cinderella was in her old gray clothes again."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "tiny, excited",
+     "text": "吱吱！妳看，這隻玻璃鞋沒有不見！",
+     "en": "Squeak squeak! Look, this glass slipper did not disappear!"
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "whispering, smiling",
+     "text": "嘻嘻，這是我們的祕密喔。",
+     "en": "Hee hee. It's our little secret."
+    }
+   ]
+  },
+  {
+   "scene": "灰姑娘家的客廳，第二天白天。王子拿著一個紅色絨布小枕頭，上面放著玻璃鞋；繼母站在旁邊看。",
+   "act": "大姊坐在椅子上，用力把大腳擠進玻璃鞋，臉都脹紅了；二姊在旁邊等不及，也伸出腳來試，一樣擠不進去；王子蹲著扶著鞋子，有點為難地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "第二天，王子找呀找，來到灰姑娘家。",
+     "en": "The next day, the prince searched and searched, and came to Cinderella's house."
+    },
+    {
+     "who": "王子",
+     "tag": "clear, hopeful",
+     "text": "誰穿得下這隻鞋，就是那個女孩！",
+     "en": "Whoever this shoe fits is the girl from the ball!"
+    },
+    {
+     "who": "大姊",
+     "tag": "straining, comic",
+     "text": "我先試！我的腳最美！嗯，嗯，穿不下！",
+     "en": "Me first! My feet are the prettiest! Ugh, ugh, it doesn't fit!"
+    },
+    {
+     "who": "二姊",
+     "tag": "straining, comic",
+     "text": "換我！我的腳最小！嗯，嗯，也穿不下！",
+     "en": "My turn! My feet are the smallest! Ugh, ugh, it doesn't fit me, either!"
+    },
+    {
+     "who": "王子",
+     "tag": "gentle, hopeful",
+     "text": "這個家裡，有沒有別的女孩？",
+     "en": "Is there any other girl in this house?"
+    }
+   ]
+  },
+  {
+   "scene": "灰姑娘家的客廳，白天，陽光從窗戶照進來。",
+   "act": "灰姑娘穿著舊衣服和圍裙從廚房走出來，坐在椅子上把腳伸進玻璃鞋，剛剛好；她從圍裙口袋拿出另一隻玻璃鞋；王子開心地站起來，繼母和兩個姊姊驚訝得張大嘴巴。",
+   "lines": [
+    {
+     "who": "灰姑娘",
+     "tag": "shy, hopeful",
+     "text": "王子，我也可以試試看嗎？",
+     "en": "Prince, may I try it on, too?"
+    },
+    {
+     "who": "旁白",
+     "tag": "hushed, storytelling",
+     "text": "灰姑娘輕輕把小腳伸進玻璃鞋。",
+     "en": "Cinderella gently slipped her little foot into the glass slipper."
+    },
+    {
+     "who": "旁白",
+     "tag": "delighted",
+     "text": "不大也不小，剛剛好！",
+     "en": "Not too big, not too small. It fit just right!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "她又從口袋裡，拿出另一隻玻璃鞋。",
+     "en": "Then she took the other glass slipper out of her pocket."
+    },
+    {
+     "who": "王子",
+     "tag": "joyful, warm",
+     "text": "原來是妳！我終於找到妳了！",
+     "en": "It's you! I found you at last!"
+    }
+   ]
+  },
+  {
+   "scene": "灰姑娘家的客廳，白天，陽光從窗戶照進來。",
+   "act": "大姊、二姊和繼母低著頭走到灰姑娘面前，不好意思地道歉；灰姑娘笑著牽起她們的手；王子站在一旁微笑，小老鼠在桌上拍手。",
+   "lines": [
+    {
+     "who": "大姊",
+     "tag": "sorry, sheepish",
+     "text": "灰姑娘，對不起，以前一直叫妳做事。",
+     "en": "Cinderella, I'm sorry. We always made you do all the work."
+    },
+    {
+     "who": "二姊",
+     "tag": "sorry, sincere",
+     "text": "對不起！以後家裡的事，我們一起做！",
+     "en": "I'm sorry! From now on, we will do the chores together!"
+    },
+    {
+     "who": "繼母",
+     "tag": "softly, sincere",
+     "text": "辛苦妳了。以後，我們也會好好對妳。",
+     "en": "You worked so hard. From now on, we will be good to you, too."
+    },
+    {
+     "who": "灰姑娘",
+     "tag": "warm, forgiving",
+     "text": "我不生氣。我們和好，好不好？",
+     "en": "I'm not angry. Let's be friends, okay?"
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "大家手牽著手，一起笑了起來。",
+     "en": "Everyone held hands and smiled together."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，晴朗的白天。綠草地、開滿花的花圃、白色涼亭，一張長桌上擺著蛋糕、水果和茶壺。",
+   "act": "灰姑娘穿著淡藍色裙子，牽著王子的手走過來；大姊和二姊坐在桌邊，開心地向她招手，繼母在幫大家倒茶；小老鼠和四隻老鼠朋友在桌角啃餅乾。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "後來，灰姑娘和王子住進了王宮。",
+     "en": "Later, Cinderella and the prince lived in the palace."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "她常常請繼母和姊姊們來花園玩。",
+     "en": "She often invited her stepmother and sisters to the garden."
+    },
+    {
+     "who": "大姊",
+     "tag": "cheerful, friendly",
+     "text": "灰姑娘，灰姑娘，快來一起吃蛋糕！",
+     "en": "Cinderella, Cinderella, come and have some cake with us!"
+    },
+    {
+     "who": "二姊",
+     "tag": "cheerful, friendly",
+     "text": "灰姑娘，灰姑娘，快來一起玩！",
+     "en": "Cinderella, Cinderella, come and play with us!"
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, slowly",
+     "text": "從此，大家一起開開心心，過著好日子。",
+     "en": "And from then on, everyone was happy together, every day."
+    }
+   ]
+  }
+ ]
+}

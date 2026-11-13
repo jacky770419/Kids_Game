@@ -1,0 +1,320 @@
+{
+ "id": "bear-bedtime",
+ "title": "小熊不想睡覺",
+ "title_en": "Little Bear Won't Sleep",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊的抱抱》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌、愛抱抱，嘴硬說不想睡，越到後面越想睡、聲音越小越慢。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，像在哄小孩睡覺。",
+  "月亮": "窗外的圓月亮，聲音輕柔、像在說悄悄話的姊姊，有點夢幻，只在快睡著時出來說一句晚安。"
+ },
+ "polyphones": [],
+ "pages": [
+  {
+   "scene": "晚上，小熊的房間：窗外黑黑的天空有一個圓圓的月亮和好多星星；房間裡有小床、軟枕頭、小兔玩偶、紅色小火車、一雙小拖鞋、一盞小夜燈。",
+   "act": "小熊坐在地毯上推著紅色小火車玩得很開心；熊媽媽站在門口，溫柔地叫他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, soft storytelling",
+     "text": "天黑了，月亮出來了。",
+     "en": "It's dark outside. The moon is out."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "小熊在地上玩小火車，嘟嘟嘟！",
+     "en": "Little Bear is playing with his train. Choo, choo!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle, warm",
+     "text": "小熊，該上床囉。",
+     "en": "Little Bear, it's time for bed."
+    },
+    {
+     "who": "小熊",
+     "tag": "playful, protesting",
+     "text": "我才不要睡！我要玩小火車！",
+     "en": "I don't want to sleep! I want to play with my train!"
+    }
+   ]
+  },
+  {
+   "scene": "浴室：小小的洗手台、鏡子、一張小板凳、藍色的小牙刷和牙膏。",
+   "act": "小熊站在小板凳上刷牙，嘴邊都是白白的泡泡；熊媽媽蹲在旁邊笑著幫忙。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "先來刷刷牙。",
+     "en": "First, let's brush your teeth."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "小熊踩上小板凳，拿起小牙刷。",
+     "en": "Little Bear climbs onto his stool and picks up his toothbrush."
+    },
+    {
+     "who": "旁白",
+     "tag": "playful, rhythmic",
+     "text": "刷刷刷，刷刷刷，牙齒白白亮亮。",
+     "en": "Brush, brush, brush. Brush, brush, brush. Bright white teeth!"
+    },
+    {
+     "who": "小熊",
+     "tag": "giggling, stubborn",
+     "text": "牙齒刷好了，可是我才不要睡！",
+     "en": "My teeth are clean. But I don't want to sleep!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊的房間，床邊；床上放著一套黃色、印著小星星的睡衣。",
+   "act": "小熊的頭卡在睡衣裡，兩隻手在外面揮來揮去，然後頭「啵」一下鑽出來，笑嘻嘻的；熊媽媽拍手。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "換上睡衣吧。",
+     "en": "Let's put on your pajamas."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "cheerful",
+     "text": "星星睡衣，好可愛喔！",
+     "en": "Star pajamas. So cute!"
+    },
+    {
+     "who": "旁白",
+     "tag": "playful",
+     "text": "一隻手，兩隻手，頭鑽出來，哇！",
+     "en": "One arm, two arms, and pop! Out comes your head!"
+    },
+    {
+     "who": "小熊",
+     "tag": "giggling, stubborn",
+     "text": "睡衣穿好了，可是我才不要睡！",
+     "en": "My pajamas are on. But I don't want to sleep!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊的床上：小夜燈亮著黃黃的光，熊媽媽坐在床邊，手上拿著一本故事書。",
+   "act": "小熊抱著小兔玩偶靠在枕頭上，眼睛睜得大大的聽故事；熊媽媽翻著書。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "warm",
+     "text": "我們來說一個故事。",
+     "en": "Let's read a story."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "故事裡，小兔子跳呀跳，跳到了月亮上。",
+     "en": "In the story, a little bunny hops and hops, all the way to the moon."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "媽媽講了一個故事，小熊聽得好開心。",
+     "en": "Mama tells a story. Little Bear loves it."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited, wide awake",
+     "text": "故事好好聽！可是我才不要睡！",
+     "en": "What a good story! But I don't want to sleep!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊的床上，故事書闔起來放在一邊。",
+   "act": "熊媽媽想到一個好主意，眨眨眼、比出「噓」的手勢；小熊歪著頭，好奇地看著媽媽。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "soft, a good idea",
+     "text": "那我們一起跟房間說晚安，好不好？",
+     "en": "Then let's say good night to your room, okay?"
+    },
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "跟房間說晚安？",
+     "en": "Say good night to my room?"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "whispering",
+     "text": "對，一樣一樣說。",
+     "en": "Yes. One thing at a time."
+    },
+    {
+     "who": "小熊",
+     "tag": "eager",
+     "text": "好！我先說！",
+     "en": "Okay! Me first!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊房間的窗邊：窗外是圓圓的大月亮和一閃一閃的星星。",
+   "act": "熊媽媽抱著小熊站在窗邊，小熊對月亮和星星揮手；月亮對小熊眨眨眼、微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "小熊和媽媽走到窗戶邊。",
+     "en": "Little Bear and Mama go to the window."
+    },
+    {
+     "who": "小熊",
+     "tag": "softly",
+     "text": "晚安，圓圓的月亮。",
+     "en": "Good night, big round moon."
+    },
+    {
+     "who": "小熊",
+     "tag": "softly",
+     "text": "晚安，亮亮的星星。",
+     "en": "Good night, twinkly stars."
+    },
+    {
+     "who": "月亮",
+     "tag": "soft, dreamy",
+     "text": "晚安，小熊。",
+     "en": "Good night, Little Bear."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "whispering, smiling",
+     "text": "月亮也跟你說晚安呢。",
+     "en": "The moon says good night to you, too."
+    }
+   ]
+  },
+  {
+   "scene": "小熊房間的地毯上：紅色小火車、一雙小拖鞋、一顆藍色小皮球排在一起。",
+   "act": "小熊蹲下來，一樣一樣摸摸它們、揮手說晚安；說到一半張大嘴巴打了一個大呵欠。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "softly",
+     "text": "晚安，小火車。",
+     "en": "Good night, little train."
+    },
+    {
+     "who": "小熊",
+     "tag": "softly",
+     "text": "晚安，小拖鞋。",
+     "en": "Good night, little slippers."
+    },
+    {
+     "who": "小熊",
+     "tag": "softly",
+     "text": "晚安，小皮球。",
+     "en": "Good night, little ball."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "小熊打了一個大大的呵欠。",
+     "en": "Little Bear gives a big, big yawn."
+    },
+    {
+     "who": "小熊",
+     "tag": "yawning, stubborn",
+     "text": "哈啊……我才不要睡！",
+     "en": "Haaah… I don't want to sleep!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊的床：軟軟的白枕頭、蓬蓬的被子；小夜燈發出淡淡的光。",
+   "act": "小熊爬上床躺好，熊媽媽幫他蓋好被子；小熊的眼睛半閉半開，快要張不開了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "小熊爬上床，媽媽幫他蓋好被子。",
+     "en": "Little Bear climbs into bed. Mama tucks him in."
+    },
+    {
+     "who": "小熊",
+     "tag": "sleepy",
+     "text": "晚安，軟軟的枕頭。",
+     "en": "Good night, soft pillow."
+    },
+    {
+     "who": "小熊",
+     "tag": "sleepy",
+     "text": "晚安，暖暖的被子。",
+     "en": "Good night, warm blanket."
+    },
+    {
+     "who": "小熊",
+     "tag": "sleepy, yawning",
+     "text": "可是……我才不要……睡……",
+     "en": "But… I don't… want to… sleep…"
+    }
+   ]
+  },
+  {
+   "scene": "小熊的床邊，房間暗暗的，只剩小夜燈和窗外的月光。",
+   "act": "小熊閉著眼睛、緊緊抱著小兔玩偶；熊媽媽彎下身親小熊的額頭，再輕輕抱一下。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "sleepy, mumbling",
+     "text": "晚安，小兔。",
+     "en": "Good night, Bunny."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "whispering, tender",
+     "text": "晚安，我的小熊。親一下，抱一下。",
+     "en": "Good night, my Little Bear. A kiss, and a hug."
+    },
+    {
+     "who": "小熊",
+     "tag": "very sleepy, whispering",
+     "text": "晚安……媽媽……",
+     "en": "Good night… Mama…"
+    }
+   ]
+  },
+  {
+   "scene": "夜晚的房間，月光從窗戶照在小床上，星星在窗外一閃一閃；熊媽媽輕輕關上門。",
+   "act": "小熊抱著小兔玩偶睡得好香，肚子一起一伏，頭上冒出小小的 zzz；月亮在窗外微笑。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "小熊閉上眼睛，睡得好香好香。",
+     "en": "Little Bear closes his eyes, sleeping sweet and sound."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly",
+     "text": "月亮在窗外，輕輕地守著他。",
+     "en": "Outside, the moon softly watches over him."
+    },
+    {
+     "who": "旁白",
+     "tag": "whispering",
+     "text": "晚安，小熊。",
+     "en": "Good night, Little Bear."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly, asking",
+     "text": "那你呢？你想跟誰說晚安？",
+     "en": "And you? Who will you say good night to?"
+    }
+   ]
+  }
+ ]
+}

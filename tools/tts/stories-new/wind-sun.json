@@ -1,0 +1,308 @@
+{
+ "id": "wind-sun",
+ "title": "北風與太陽",
+ "title_en": "The North Wind and the Sun",
+ "size": "短",
+ "roles": {
+  "北風": "愛逞強但不壞的大哥哥，大約二十歲的男聲，聲音宏亮、有點驕傲，吹風時鼓足了氣，最後變得不好意思又真心。",
+  "太陽": "溫暖慈祥的阿姨，中年女聲，說話慢、輕柔、帶著笑意，從不生氣。",
+  "旅人": "趕路的中年叔叔，聲音樸實親切，冷的時候發抖、熱的時候喘氣搧風，情緒很好懂。"
+ },
+ "polyphones": [
+  {
+   "char": "更",
+   "where": "第9頁『更有用』",
+   "read": "gèng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "藍藍的天空上，飄著幾朵白雲；北風是一團灰藍色、鼓著臉頰的雲朵臉，太陽是圓圓的金黃色笑臉，兩個並排在天上。",
+   "act": "北風挺起胸膛、鼓著臉頰得意地說話；太陽笑咪咪地看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, storytelling",
+     "text": "天上住著北風和太陽。",
+     "en": "The North Wind and the Sun live up in the sky."
+    },
+    {
+     "who": "北風",
+     "tag": "proud, boastful",
+     "text": "我的力氣最大，我最厲害！",
+     "en": "I'm the strongest! I'm the best!"
+    },
+    {
+     "who": "北風",
+     "tag": "proud, boastful",
+     "text": "我一吹，大樹都會搖來搖去！",
+     "en": "When I blow, big trees shake and sway!"
+    },
+    {
+     "who": "太陽",
+     "tag": "calm, gentle smile",
+     "text": "是嗎？那我們來比一比吧。",
+     "en": "Are you? Then let's have a little contest."
+    }
+   ]
+  },
+  {
+   "scene": "從天上往下看：綠色的山坡中間有一條彎彎的小路，路邊有一棵大樹；一個戴帽子、穿咖啡色厚外套的旅人在路上走。",
+   "act": "北風和太陽從雲邊探出頭，一起往下看著旅人；太陽伸出一道光指著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "這時候，有一個旅人走在小路上。",
+     "en": "Just then, a traveler comes walking down the road."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "他穿著一件厚厚的外套。",
+     "en": "He is wearing a big, thick coat."
+    },
+    {
+     "who": "太陽",
+     "tag": "playful, gentle",
+     "text": "誰能讓他把外套脫下來，誰就贏了。",
+     "en": "Whoever can get his coat off wins."
+    },
+    {
+     "who": "北風",
+     "tag": "confident, eager",
+     "text": "太簡單了！看我的！",
+     "en": "That's easy! Watch me!"
+    }
+   ]
+  },
+  {
+   "scene": "山坡上的小路，大樹的葉子被風吹得往一邊倒；天空變得灰灰的。",
+   "act": "北風鼓起臉頰用力吹出一道風；旅人的帽子被吹飛到天上，他縮起身子、兩手抓住外套。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "北風鼓起臉，用力一吹。",
+     "en": "North Wind puffs up his cheeks and blows."
+    },
+    {
+     "who": "北風",
+     "tag": "blowing hard",
+     "text": "呼呼呼！",
+     "en": "Whoosh, whoosh, whoosh!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "樹葉沙沙響，旅人的帽子飛走了。",
+     "en": "The leaves rustle. Off flies the traveler's hat!"
+    },
+    {
+     "who": "旅人",
+     "tag": "shivering",
+     "text": "好冷好冷，我要把外套抓緊！",
+     "en": "So cold, so cold! I'll hold my coat tight!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，風更大了，路邊的小草和小花全都彎下腰，幾片樹葉在空中打轉。",
+   "act": "北風把臉頰鼓得更大、皺著眉頭吹；旅人彎著腰，把外套拉得更緊，牙齒打顫。",
+   "lines": [
+    {
+     "who": "北風",
+     "tag": "determined",
+     "text": "再來一次！",
+     "en": "One more time!"
+    },
+    {
+     "who": "北風",
+     "tag": "blowing harder",
+     "text": "呼呼呼！",
+     "en": "Whoosh, whoosh, whoosh!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "風好大好大，小草都彎下腰。",
+     "en": "The wind is so strong. The grass bends low."
+    },
+    {
+     "who": "旅人",
+     "tag": "shivering, teeth chattering",
+     "text": "好冷好冷，我要把外套抓緊！",
+     "en": "So cold, so cold! I'll hold my coat tight!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，天空灰暗，大風把大樹吹得歪向一邊。",
+   "act": "北風脹得滿臉通紅、使出全身力氣吹；旅人蹲在地上，整個人縮在外套裡，兩手抱得緊緊的。",
+   "lines": [
+    {
+     "who": "北風",
+     "tag": "huffing, straining",
+     "text": "我要吹最大的風！",
+     "en": "I'll blow my biggest wind ever!"
+    },
+    {
+     "who": "北風",
+     "tag": "blowing very hard",
+     "text": "呼呼呼！",
+     "en": "Whoosh, whoosh, whoosh!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "北風吹得越用力，旅人就抓得越緊。",
+     "en": "The harder North Wind blows, the tighter the traveler holds on."
+    },
+    {
+     "who": "旅人",
+     "tag": "freezing, desperate",
+     "text": "好冷好冷，我要把外套抓緊！",
+     "en": "So cold, so cold! I'll hold my coat tight!"
+    }
+   ]
+  },
+  {
+   "scene": "天上，北風變得小小的、軟軟的，靠在一朵雲上；太陽在旁邊。",
+   "act": "北風滿頭大汗、喘著氣、累得趴在雲上；太陽溫柔地拍拍他，準備換自己上場。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "北風吹了好久，外套都沒有脫下來。",
+     "en": "North Wind blew and blew, but the coat stayed on."
+    },
+    {
+     "who": "北風",
+     "tag": "out of breath, tired",
+     "text": "哎呀，我好累，吹不動了。",
+     "en": "Oh my, I'm so tired. I can't blow anymore."
+    },
+    {
+     "who": "太陽",
+     "tag": "kind, gentle",
+     "text": "沒關係，你休息一下。",
+     "en": "That's okay. You take a rest."
+    },
+    {
+     "who": "太陽",
+     "tag": "kind, gentle",
+     "text": "換我來試試看吧。",
+     "en": "Now let me try."
+    }
+   ]
+  },
+  {
+   "scene": "雲散開了，天空變回藍藍的；陽光灑在山坡和小路上，一切都亮起來。",
+   "act": "太陽從雲後面露出笑臉、灑下金色的光；旅人站起來，鬆開手，抬頭看天空。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, soft",
+     "text": "太陽從雲裡出來，暖暖地照著。",
+     "en": "The Sun comes out from the clouds and shines, warm and bright."
+    },
+    {
+     "who": "太陽",
+     "tag": "soft, soothing",
+     "text": "暖暖的，暖暖的。",
+     "en": "Nice and warm, nice and warm."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "旅人慢慢鬆開了手。",
+     "en": "Slowly, the traveler lets go of his coat."
+    },
+    {
+     "who": "旅人",
+     "tag": "relieved, relaxing",
+     "text": "咦，風停了，好舒服喔。",
+     "en": "Oh! The wind has stopped. That feels nice."
+    }
+   ]
+  },
+  {
+   "scene": "陽光更亮更暖的小路，路邊的大樹下有一片涼涼的樹蔭。",
+   "act": "旅人滿頭大汗、用手搧風，脫下外套掛在手臂上，走到大樹下坐著休息；太陽笑得更開心。",
+   "lines": [
+    {
+     "who": "太陽",
+     "tag": "gentle, smiling",
+     "text": "再暖一點，再暖一點。",
+     "en": "A little warmer, a little warmer."
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "旅人走呀走，流了好多汗。",
+     "en": "The traveler walks and walks. He's getting sweaty."
+    },
+    {
+     "who": "旅人",
+     "tag": "hot",
+     "text": "好熱好熱，我要把外套脫下來！",
+     "en": "So hot, so hot! I'll take my coat off!"
+    },
+    {
+     "who": "旁白",
+     "tag": "storytelling",
+     "text": "旅人脫下外套，坐在大樹下休息。",
+     "en": "The traveler takes off his coat and rests under the big tree."
+    }
+   ]
+  },
+  {
+   "scene": "天上，北風和太陽面對面，背景是藍天白雲。",
+   "act": "北風睜大眼睛、張大嘴巴，很驚訝；太陽眨眨眼溫柔地笑；接著北風搔搔頭，不好意思地笑了。",
+   "lines": [
+    {
+     "who": "北風",
+     "tag": "amazed",
+     "text": "哇！你怎麼辦到的？",
+     "en": "Wow! How did you do that?"
+    },
+    {
+     "who": "太陽",
+     "tag": "warm, wise",
+     "text": "有時候，溫柔比用力更有用喔。",
+     "en": "Sometimes, being gentle works better than being rough."
+    },
+    {
+     "who": "北風",
+     "tag": "thoughtful, a little shy",
+     "text": "我懂了。下次我要輕輕地吹。",
+     "en": "I see. Next time, I'll blow softly."
+    }
+   ]
+  },
+  {
+   "scene": "傍晚前的山坡，天空是淡淡的橘色和藍色；旅人在小路上慢慢走遠，風車和小花在路邊。",
+   "act": "北風輕輕吹出一道彎彎的微風，太陽暖暖地照，兩個手牽手一起笑；旅人回頭揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "tag": "warm, slowly",
+     "text": "從那天起，北風和太陽變成了好朋友。",
+     "en": "From that day on, North Wind and the Sun are good friends."
+    },
+    {
+     "who": "旁白",
+     "tag": "warm, gentle",
+     "text": "北風輕輕地吹，太陽暖暖地照。",
+     "en": "North Wind blows a soft breeze, and the Sun shines warm."
+    },
+    {
+     "who": "旁白",
+     "tag": "softly, asking",
+     "text": "你也來試試看，輕輕地吹一口氣吧！",
+     "en": "Can you blow a soft, gentle breeze too? Try it!"
+    }
+   ]
+  }
+ ]
+}
