@@ -1,0 +1,247 @@
+{
+ "id": "waiting-tree",
+ "title": "守株待兔",
+ "title_en": "Waiting by the Stump",
+ "size": "短",
+ "roles": {
+  "農夫": "胖胖的鄉下農夫爸爸，聲音憨厚、慢吞吞的，有點偷懶但很好笑，最後真心想通。",
+  "女兒": "農夫五歲左右的女兒，聲音甜、懂事，會溫柔地提醒爸爸。",
+  "兔子": "跑很快的小白兔，聲音細細可愛，撞到樹樁時頭昏眼花，好笑不可憐。"
+ },
+ "cast": {
+  "農夫": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "女兒": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "兔子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "待",
+   "where": "書名『守株待兔』（如果書名會念）",
+   "read": "dài"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『兔子會天天來嗎』、第6頁『兔子不會天天來』、第8頁『好事不會自己跑來』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁、第6頁『沒有來』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的一片菜田，早上，田裡一排一排綠色的菜，田邊有一個矮矮的大樹樁，旁邊是草叢；遠處有一間小木屋和綠色的山。",
+   "act": "農夫出場：圓臉、胖胖的大叔，留短短的鬍子，戴草帽，穿藍色上衣，褲管捲起來，拿著鋤頭在田裡拔草，額頭流汗。女兒出場：大約五歲，綁兩條辮子，穿粉紅色連身裙，提著一個竹籃子從小路跑過來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一個農夫，天天在田裡工作。",
+     "en": "Once upon a time, there was a farmer who worked in his field every day."
+    },
+    {
+     "who": "農夫",
+     "tag": "happy",
+     "text": "拔草，澆水，今天也要加油！",
+     "en": "Pull the weeds, water the plants. Let's work hard today!"
+    },
+    {
+     "who": "女兒",
+     "tag": "happy",
+     "text": "爸爸，吃午飯囉！",
+     "en": "Daddy, it's lunchtime!"
+    },
+    {
+     "who": "旁白",
+     "text": "農夫坐在田邊的樹樁旁，吃午飯。",
+     "en": "The farmer sat by the tree stump at the edge of the field and ate his lunch."
+    }
+   ]
+  },
+  {
+   "scene": "同一片菜田的田邊，中午，大樹樁旁邊。",
+   "act": "兔子出場：一隻白色小兔子，粉紅色耳朵，脖子上有一個小鈴鐺，嘴裡咬著一根橘色紅蘿蔔。畫兔子剛撞上樹樁的那一刻，頭上冒出小星星；旁邊的農夫和女兒拿著飯糰，嚇一跳張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "忽然，一隻兔子咬著紅蘿蔔，飛快地跑過來。",
+     "en": "Suddenly, a rabbit came running with a carrot in its mouth."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！牠撞到了樹樁。",
+     "en": "Bonk! It bumped right into the tree stump."
+    },
+    {
+     "who": "兔子",
+     "tag": "surprised",
+     "text": "哎呀！頭好昏喔！",
+     "en": "Ouch! My head is spinning!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片菜田的田邊，中午。",
+   "act": "兔子已經跳進草叢，只露出一截白色尾巴；紅蘿蔔掉在樹樁旁，農夫撿起來，眼睛發亮，好像想到好主意；女兒歪著頭看爸爸。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兔子坐了一下，丟下紅蘿蔔就跳走了。",
+     "en": "The rabbit sat for a moment, dropped the carrot, and hopped away."
+    },
+    {
+     "who": "農夫",
+     "tag": "surprised",
+     "text": "哇，兔子送我一根紅蘿蔔耶！",
+     "en": "Wow, the rabbit gave me a carrot!"
+    },
+    {
+     "who": "農夫",
+     "tag": "excited",
+     "text": "天天有兔子撞過來，我就不用工作了！",
+     "en": "If a rabbit bumps into my stump every day, I won't have to work!"
+    },
+    {
+     "who": "女兒",
+     "tag": "surprised",
+     "text": "爸爸，兔子會天天來嗎？",
+     "en": "Daddy, will a rabbit really come every day?"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，菜田邊的大樹樁旁。",
+   "act": "農夫把鋤頭丟在一邊，坐在樹樁旁的小板凳上，雙手撐著下巴，盯著草叢等兔子；女兒站在田裡，回頭看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，農夫不去田裡了。",
+     "en": "The next day, the farmer did not go out to his field."
+    },
+    {
+     "who": "旁白",
+     "text": "他坐在樹樁旁邊，等兔子。",
+     "en": "He sat by the tree stump and waited for a rabbit."
+    },
+    {
+     "who": "農夫",
+     "tag": "happy",
+     "text": "兔子，兔子，快來撞樹樁吧！",
+     "en": "Rabbit, rabbit, come bump into the stump!"
+    }
+   ]
+  },
+  {
+   "scene": "好幾天以後，同一片菜田：田裡的雜草比菜還高，菜葉子變成黃色。",
+   "act": "農夫坐在樹樁邊打瞌睡，草帽歪了一邊；女兒站在田裡，指著滿地的雜草，皺著眉頭叫爸爸。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一天，兩天，好多天，兔子都沒有來。",
+     "en": "One day, two days, many days went by. No rabbit came."
+    },
+    {
+     "who": "旁白",
+     "text": "田裡都是草，菜都黃了。",
+     "en": "The field was full of weeds, and the plants turned yellow."
+    },
+    {
+     "who": "女兒",
+     "tag": "worried",
+     "text": "爸爸，田裡都是草了！",
+     "en": "Daddy, the field is full of weeds!"
+    },
+    {
+     "who": "農夫",
+     "tag": "sleepy",
+     "text": "再等一下，兔子明天就來了。",
+     "en": "Just wait a little. A rabbit will come tomorrow."
+    }
+   ]
+  },
+  {
+   "scene": "傍晚，菜田邊的大樹樁旁，天邊是橘紅色的夕陽。",
+   "act": "農夫站起來，看著一大片變黃、都是雜草的田，抓著頭，一臉難過；女兒輕輕拉著他的衣角，抬頭看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "等啊等，兔子再也沒有來。",
+     "en": "He waited and waited, but the rabbit never came back."
+    },
+    {
+     "who": "農夫",
+     "tag": "sad",
+     "text": "我的菜，怎麼都黃了？",
+     "en": "Oh no, why have all my plants turned yellow?"
+    },
+    {
+     "who": "女兒",
+     "tag": "gentle",
+     "text": "爸爸，兔子不會天天來撞樹樁啦。",
+     "en": "Daddy, rabbits don't bump into stumps every day."
+    }
+   ]
+  },
+  {
+   "scene": "又一天早上，同一片菜田，陽光很好。",
+   "act": "農夫戴好草帽、捲起袖子，拿著鋤頭彎腰拔草；女兒提著一個小水壺，在旁邊幫菜澆水；兩個人都笑著，額頭有汗。樹樁還在田邊。",
+   "lines": [
+    {
+     "who": "農夫",
+     "tag": "gentle",
+     "text": "你說對了。我要自己努力！",
+     "en": "You're right. I need to work hard myself!"
+    },
+    {
+     "who": "旁白",
+     "text": "農夫回去照顧菜田，拔草，澆水。",
+     "en": "The farmer went back to caring for his field. He pulled weeds and watered the plants."
+    },
+    {
+     "who": "女兒",
+     "tag": "happy",
+     "text": "我也來幫忙！",
+     "en": "I'll help too!"
+    }
+   ]
+  },
+  {
+   "scene": "秋天，同一片菜田，田裡都是又大又綠的大白菜，還有一排長著綠葉的橘色紅蘿蔔，天很藍。",
+   "act": "農夫抱著一顆好大的白菜，女兒抱著一大把紅蘿蔔，兩個人笑得好開心；旁邊的竹籃子裝滿了菜；樹樁還在田邊，上面停著一隻小鳥。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天到了，菜田收成很好。",
+     "en": "When autumn came, the field gave a wonderful harvest."
+    },
+    {
+     "who": "農夫",
+     "tag": "happy",
+     "text": "自己照顧的菜，最好吃了！",
+     "en": "Vegetables we take care of ourselves taste the best!"
+    },
+    {
+     "who": "女兒",
+     "tag": "laughing",
+     "text": "好大的白菜！",
+     "en": "What a big cabbage!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，好事不會自己跑來，要自己努力喔！",
+     "en": "Good things don't come running to you. You have to work for them!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,381 @@
+{
+ "id": "nuwa",
+ "title": "女媧補天",
+ "title_en": "Nüwa Mends the Sky",
+ "size": "中",
+ "roles": {
+  "女媧": "捏泥土造人的女神仙，像溫柔的媽媽，聲音溫暖柔和、慢慢說，天破了也很鎮定，讓人安心。",
+  "小男孩": "六歲左右的小男孩，聲音清亮、很有精神，看到天破了會害怕，幫忙找石頭時好興奮。",
+  "小女孩": "五歲左右的小女孩，聲音細細甜甜的，淋雨時可憐兮兮，看到彩雲時開心得拍手。"
+ },
+ "cast": {
+  "女媧": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "媧",
+   "where": "全書『女媧』",
+   "read": "wā"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久很久以前，一片綠色的大草原，旁邊有一條清澈的小河，河邊是黃色的泥土；遠處有圓圓的小山，天上是藍色的天和白雲。",
+   "act": "女媧是美麗溫柔的女神仙：黑色長頭髮盤成高高的髮髻、插一支金色髮簪，穿淡黃色長裙，肩上披一條飄動的橘色長絲帶；她坐在河邊，用黃泥土捏出一個一個小泥人，小泥人一放到地上就活起來，開心地跑來跑去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，有一位女神仙，叫做女媧。",
+     "en": "Long ago, there was a goddess named Nüwa."
+    },
+    {
+     "who": "旁白",
+     "text": "她用黃色的泥土，捏出好多小泥人。",
+     "en": "She shaped lots of little clay people out of yellow mud."
+    },
+    {
+     "who": "旁白",
+     "text": "小泥人一放到地上，就跑來跑去！",
+     "en": "As soon as she set them down, they ran all around!"
+    },
+    {
+     "who": "旁白",
+     "text": "小泥人們好喜歡她，叫她女媧媽媽。",
+     "en": "The little clay people loved her and called her Mother Nüwa."
+    },
+    {
+     "who": "女媧",
+     "tag": "happy",
+     "text": "孩子們，你們好！",
+     "en": "Hello, my children!"
+    }
+   ]
+  },
+  {
+   "scene": "幾年後，小河邊有一個小村子：草屋頂的小房子，田邊開滿小花，天上有太陽。",
+   "act": "村民們在田裡工作、在河邊洗衣服；小男孩（約六歲，黑色短頭髮、穿紅色短衣）在追蝴蝶；小女孩（約五歲，綁兩條小辮子、穿綠色衣服）手裡拿著一朵黃色小花，跑向女媧；女媧蹲下來，笑著接過小花。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家住在河邊，每天都好開心。",
+     "en": "Everyone lived by the river, happy every day."
+    },
+    {
+     "who": "旁白",
+     "text": "女媧每天都來看大家。",
+     "en": "Nüwa came to see them every day."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "女媧媽媽，送妳一朵花！",
+     "en": "Mother Nüwa, this flower is for you!"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "謝謝妳，真漂亮。",
+     "en": "Thank you. It's so pretty."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "女媧媽媽，來跟我們玩！",
+     "en": "Mother Nüwa, come and play with us!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個村子，天上突然變暗，烏雲一團一團，天的正中間裂開一個好大的洞，洞裡是深灰色的，大雨從洞裡落下來；遠遠的地方有一道小小的閃電。",
+   "act": "女媧抬頭看著天上的大洞，眉頭皺起來，手上的黃色小花掉到地上；小男孩嚇得抱住女媧的腿；小女孩躲在女媧身後；村民們都抬頭看，張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，轟隆！轟隆！",
+     "en": "Then one day, crash! Boom!"
+    },
+    {
+     "who": "旁白",
+     "text": "天上破了一個大洞！",
+     "en": "A big hole broke open in the sky!"
+    },
+    {
+     "who": "旁白",
+     "text": "天黑了，風呼呼地吹。",
+     "en": "The sky went dark, and the wind went whoo, whoo."
+    },
+    {
+     "who": "小男孩",
+     "tag": "scared",
+     "text": "女媧媽媽，天破掉了！",
+     "en": "Mother Nüwa, the sky is broken!"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "哎呀，好大的洞！",
+     "en": "Oh my! What a big hole!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡下著好大的雨，雨從天上的大洞一直往下倒，河水漫到河邊的小路上；村子後面有一座小山。",
+   "act": "村民們頂著大葉子當傘，牽著小孩、抱著雞鴨，往小山上走去，躲開漲起來的河水；小女孩全身濕透，縮著肩膀發抖，小男孩把一片大葉子舉在她頭上；女媧站在雨裡，張開橘色長絲帶替大家擋雨。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大雨從洞裡一直下，一直下。",
+     "en": "Rain poured down from the hole, on and on."
+    },
+    {
+     "who": "旁白",
+     "text": "河水越來越多，大家跑到小山上。",
+     "en": "The river rose higher and higher, so everyone ran up the hill to stay safe."
+    },
+    {
+     "who": "小女孩",
+     "tag": "crying",
+     "text": "好冷喔！我的家都濕了！",
+     "en": "I'm so cold! Our house is all wet!"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "別怕，我來把天補好。",
+     "en": "Don't be afraid. I will mend the sky."
+    }
+   ]
+  },
+  {
+   "scene": "雨中的小山上，草地上有好多石頭，其中有幾顆在雨裡閃著彩色的光；山下遠遠看得到漲水的小河和村子。",
+   "act": "女媧蹲在草地上，撿起一顆紅色的石頭，舉起來對著光看；小男孩和小女孩頭上頂著大葉子，跟在女媧後面，好奇地探頭看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天破了洞，要怎麼補呢？",
+     "en": "But how do you fix a hole in the sky?"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "要用最美、最亮的石頭。",
+     "en": "With the brightest, most beautiful stones."
+    },
+    {
+     "who": "女媧",
+     "text": "孩子們，來幫我找石頭吧！",
+     "en": "Children, come and help me find stones!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "好！我們來幫忙！",
+     "en": "Okay! We'll help!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "我也要幫忙！",
+     "en": "Me too! I want to help!"
+    }
+   ]
+  },
+  {
+   "scene": "小山上的草地，雨小了一點，地上有好多石頭，有幾顆閃著彩色的光；旁邊排著一堆一堆不同顏色的石頭。",
+   "act": "小男孩高高舉起一顆紅色的石頭，小女孩雙手捧著一顆藍色的石頭，兩個人笑得好開心；女媧把石頭排成五堆：紅色、黃色、綠色、藍色、紫色，每一堆都在發光。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家在山上，找呀找。",
+     "en": "Everyone searched and searched on the hill."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "我找到紅色的！",
+     "en": "I found a red one!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "我找到藍色的！",
+     "en": "I found a blue one!"
+    },
+    {
+     "who": "旁白",
+     "text": "紅色、黃色、綠色、藍色、紫色。",
+     "en": "Red, yellow, green, blue, and purple."
+    },
+    {
+     "who": "女媧",
+     "tag": "happy",
+     "text": "五彩石，都找齊了！",
+     "en": "We found all the colorful stones!"
+    }
+   ]
+  },
+  {
+   "scene": "小山上的草地，堆起一大堆木頭，燒著好大的火，火光把四周照得紅通通的。",
+   "act": "女媧把五個顏色的石頭放進一口大鍋，架在火上，用一根長木棒慢慢攪拌；石頭融化成會發光的彩色石漿，像彩虹在鍋裡流動；小男孩和小女孩站在遠一點的地方，睜大眼睛看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "女媧點起大火，把石頭放進大鍋裡燒。",
+     "en": "Nüwa built a big fire and melted the stones in a big pot."
+    },
+    {
+     "who": "旁白",
+     "text": "石頭慢慢變軟，變成發光的彩色石漿。",
+     "en": "Slowly the stones grew soft and turned into glowing, colorful goo."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "哇！石頭在發光！",
+     "en": "Wow! The stones are glowing!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "好像彩虹喔！",
+     "en": "It looks like a rainbow!"
+    }
+   ]
+  },
+  {
+   "scene": "天上，大黑洞的旁邊，烏雲和閃電；下面遠遠看得到小小的村子和小山。",
+   "act": "女媧的橘色長絲帶和淡黃色長裙飄起來，她飛在天上，雙手捧著一大團發光的彩色石漿，一塊一塊地抹在大洞上；洞的邊邊已經補上紅色、黃色、綠色的光。下面的小山上，小男孩和小女孩抬頭揮手替她加油。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "女媧捧著彩色石漿，飛到天上。",
+     "en": "Nüwa carried the glowing goo and flew up into the sky."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "女媧媽媽，加油！",
+     "en": "Go, Mother Nüwa, go!"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "補一補，補一補，把天補好。",
+     "en": "Patch it here, patch it there. Let's mend the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "她一塊接一塊，把大洞補起來。",
+     "en": "Piece by piece, she filled in the big hole."
+    }
+   ]
+  },
+  {
+   "scene": "天上的洞已經補好，補過的地方發出淡淡的五彩光，烏雲散開，太陽出來了。",
+   "act": "女媧把最後一塊石漿按上去，拍拍手笑了；雨停了，小山上的村民們放下大葉子，抬頭歡呼；小男孩和小女孩手牽手跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最後一塊補上去，大洞不見了！",
+     "en": "She patched in the very last piece, and the hole was gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "雨停了，太陽出來了。",
+     "en": "The rain stopped. The sun came out."
+    },
+    {
+     "who": "旁白",
+     "text": "天又變成藍色了。",
+     "en": "The sky was blue again."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "雨停了！天補好了！",
+     "en": "The rain stopped! The sky is fixed!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "女媧媽媽好厲害！",
+     "en": "Mother Nüwa, you're amazing!"
+    }
+   ]
+  },
+  {
+   "scene": "雨後的村子，河水退回河裡，地上有小水窪，小房子都好好的。",
+   "act": "村民們從小山上走下來回家；女媧從天上輕輕飄下來，站在村子口；小女孩撿起地上的黃色小花，再送給女媧一次；小男孩抱住女媧。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "河水退回去了，大家都回家了。",
+     "en": "The river went back down, and everyone went home."
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "我們的房子都在！",
+     "en": "Our houses are all still here!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "謝謝女媧媽媽！",
+     "en": "Thank you, Mother Nüwa!"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "天補好了，大家放心吧。",
+     "en": "The sky is mended. You're all safe now."
+    }
+   ]
+  },
+  {
+   "scene": "傍晚的村子，太陽快下山了，天邊一大片彩色的雲：紅色、黃色、綠色、藍色、紫色，閃閃發光。",
+   "act": "女媧和村民們坐在河邊的草地上，一起看天邊的彩雲；小男孩指著天上，小女孩靠在女媧身邊，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽下山前，天邊出現好多彩色的雲。",
+     "en": "In the evening, colorful clouds filled the sky."
+    },
+    {
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "看！紅色、黃色、綠色，好漂亮！",
+     "en": "Look! Red, yellow, green! So pretty!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "藍色和紫色，也在發光！",
+     "en": "Blue and purple are shining too!"
+    },
+    {
+     "who": "女媧",
+     "tag": "gentle",
+     "text": "那是補天的石頭，在天上發光呢。",
+     "en": "Those are the stones that mended the sky, shining up there."
+    },
+    {
+     "who": "旁白",
+     "text": "下次看到彩雲，跟女媧說謝謝吧！",
+     "en": "Next time you see colorful clouds, say thank you to Nüwa!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,378 @@
+{
+ "id": "frog-prince",
+ "title": "青蛙王子",
+ "title_en": "The Frog Prince",
+ "size": "中",
+ "roles": {
+  "公主": "七歲左右的小公主，聲音甜甜的、有點嬌氣，開心時活潑，被提醒後變得懂事溫柔。",
+  "青蛙": "圓滾滾的綠青蛙，聲音年輕活潑、有點逗趣，很熱心，說話常帶「呱呱」。",
+  "國王": "慈祥的老國王，聲音低沉溫暖、慢慢說，提醒女兒時溫和但認真。",
+  "王子": "魔法解除後的年輕王子，聲音明亮溫和、有禮貌，充滿感謝。"
+ },
+ "cast": {
+  "公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "青蛙": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "王子": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [],
+ "pages": [
+  {
+   "scene": "王宮後面的花園，晴朗的白天。草地上開滿紅花和黃花，花園中間有一口用灰色石頭砌的圓形老井，井上有小木頭屋頂，旁邊有一棵大樹。",
+   "act": "公主（約七歲，金色捲髮、戴一頂小金冠、穿粉紅色蓬蓬裙）站在井邊，把一顆閃亮的金球往上丟，抬頭笑著準備接住。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位小公主。",
+     "en": "Once upon a time, there was a little princess."
+    },
+    {
+     "who": "旁白",
+     "text": "她最喜歡一顆金色的球。",
+     "en": "Her favorite thing was a golden ball."
+    },
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "金球，金球，你最漂亮了！",
+     "en": "Golden ball, golden ball, you are the prettiest!"
+    },
+    {
+     "who": "旁白",
+     "text": "她常常在花園的井邊，丟球玩。",
+     "en": "She often tossed her ball by the well in the garden."
+    }
+   ]
+  },
+  {
+   "scene": "花園的老井邊，白天。從井口往下看，井裡黑黑的、深深的，水面上有一圈一圈的水波。",
+   "act": "金球從公主的手邊飛過，掉進井裡，水花濺起來；公主趴在井邊往下看，眼淚掉下來，張嘴大哭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，金球丟太高了。",
+     "en": "One day, she threw the ball too high."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！金球掉進了井裡。",
+     "en": "Splash! The golden ball fell into the well."
+    },
+    {
+     "who": "公主",
+     "tag": "crying",
+     "text": "我的金球！我的金球不見了！",
+     "en": "My golden ball! My golden ball is gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "井好深，好深，公主好傷心。",
+     "en": "The well was deep, so very deep. The princess was so sad."
+    }
+   ]
+  },
+  {
+   "scene": "花園的老井邊，白天。井口的石頭上長著一點青苔。",
+   "act": "一隻綠色的胖青蛙（大大的圓眼睛、寬寬的嘴巴、肚子是淺黃色）從井口跳上來，坐在石頭邊上，歪著頭看公主；公主一邊擦眼淚，一邊指著井裡。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，一隻綠色的青蛙跳了出來。",
+     "en": "Just then, a green frog hopped out."
+    },
+    {
+     "who": "青蛙",
+     "tag": "gentle",
+     "text": "呱呱！公主，妳怎麼哭了？",
+     "en": "Ribbit! Princess, why are you crying?"
+    },
+    {
+     "who": "公主",
+     "tag": "sad",
+     "text": "我的金球，掉進井裡了。",
+     "en": "My golden ball fell into the well."
+    },
+    {
+     "who": "青蛙",
+     "tag": "proud",
+     "text": "我會游泳，我幫妳撿！",
+     "en": "I can swim. I'll get it for you!"
+    }
+   ]
+  },
+  {
+   "scene": "花園的老井邊，白天。",
+   "act": "青蛙坐在井邊的石頭上，和公主伸出小指打勾勾；青蛙認真地看著公主，公主用力點頭。",
+   "lines": [
+    {
+     "who": "青蛙",
+     "tag": "gentle",
+     "text": "可是，妳要跟我說好一件事。",
+     "en": "But first, you must make me a promise."
+    },
+    {
+     "who": "青蛙",
+     "text": "我想跟妳做朋友，一起吃飯，一起玩。",
+     "en": "Let me be your friend. Let me eat with you and play with you."
+    },
+    {
+     "who": "公主",
+     "tag": "excited",
+     "text": "好，好！我說好了！",
+     "en": "Yes, yes! I promise!"
+    },
+    {
+     "who": "旁白",
+     "text": "青蛙一下就跳進了井裡。",
+     "en": "In jumped the frog, right into the well."
+    }
+   ]
+  },
+  {
+   "scene": "花園的老井邊，白天。",
+   "act": "公主抱著金球，提著裙子往王宮跑，開心地大笑；青蛙全身濕濕的坐在井邊，伸出一隻手喊她，看起來好著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "青蛙游呀游，把金球頂了上來。",
+     "en": "The frog swam and swam, and pushed the golden ball up to the top."
+    },
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "我的金球回來了！",
+     "en": "My golden ball is back!"
+    },
+    {
+     "who": "旁白",
+     "text": "公主抱著金球，開心地跑回王宮。",
+     "en": "The princess hugged her ball and ran happily back to the palace."
+    },
+    {
+     "who": "青蛙",
+     "tag": "sad",
+     "text": "公主，等一下！我跳不快呀！",
+     "en": "Princess, wait! I can't hop that fast!"
+    },
+    {
+     "who": "旁白",
+     "text": "公主一下就把青蛙忘了。",
+     "en": "The princess forgot all about the frog."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，晚上。一張鋪著白桌布的長桌，桌上有金色的盤子、湯碗和蠟燭；後面是一扇高高的木門。",
+   "act": "國王（白鬍子、戴金色大皇冠、穿紅色長袍）和公主坐在桌邊吃晚飯；木門被敲響，門縫底下露出青蛙的綠色小腳；公主轉頭看門，嘟起嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，國王和公主在吃晚飯。",
+     "en": "That evening, the king and the princess sat down to dinner."
+    },
+    {
+     "who": "旁白",
+     "text": "咚咚！咚咚！有人在敲門。",
+     "en": "Knock, knock! Knock, knock! Someone was at the door."
+    },
+    {
+     "who": "青蛙",
+     "tag": "happy",
+     "text": "公主，公主，我來了！",
+     "en": "Princess, princess, here I am!"
+    },
+    {
+     "who": "青蛙",
+     "tag": "gentle",
+     "text": "妳說好的事，忘了嗎？",
+     "en": "Did you forget your promise?"
+    },
+    {
+     "who": "公主",
+     "tag": "grumpy",
+     "text": "哎呀，是那隻青蛙！我不要！",
+     "en": "Oh no, it's that frog! I don't want to!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，晚上，蠟燭的光暖暖的。",
+   "act": "國王放下湯匙，溫和地看著公主；公主低著頭，手指捏著裙子，臉紅紅的，想了一想，慢慢點頭。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "女兒，這是怎麼回事呀？",
+     "en": "My dear, what is this all about?"
+    },
+    {
+     "who": "公主",
+     "tag": "shy",
+     "text": "牠幫我撿金球，我說好跟牠做朋友。",
+     "en": "The frog got my golden ball. I promised to be his friend."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "說好的事，就要做到。",
+     "en": "When you make a promise, you must keep it."
+    },
+    {
+     "who": "國王",
+     "text": "牠幫了妳，妳也要說到做到喔。",
+     "en": "The frog helped you. Now you must do what you said."
+    },
+    {
+     "who": "公主",
+     "tag": "shy",
+     "text": "嗯，我知道了。",
+     "en": "Okay. I understand."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，晚上。",
+   "act": "公主打開木門，讓青蛙跳進來；青蛙坐在公主的金盤子旁邊，伸出長舌頭捲走一顆綠色豌豆；公主捂著嘴巴笑；國王在旁邊微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "公主打開門，讓青蛙進來。",
+     "en": "The princess opened the door and let the frog in."
+    },
+    {
+     "who": "旁白",
+     "text": "青蛙坐在公主的盤子邊，一起吃晚飯。",
+     "en": "The frog sat by her plate, and they ate dinner together."
+    },
+    {
+     "who": "青蛙",
+     "tag": "happy",
+     "text": "呱呱！豌豆湯，真好喝！",
+     "en": "Ribbit! This pea soup is delicious!"
+    },
+    {
+     "who": "旁白",
+     "text": "青蛙伸出舌頭，一口吃掉一顆豆子。",
+     "en": "The frog stuck out his tongue and gobbled up a pea."
+    },
+    {
+     "who": "公主",
+     "tag": "laughing",
+     "text": "哈哈，青蛙，你好可愛！",
+     "en": "Ha ha! Frog, you're so cute!"
+    }
+   ]
+  },
+  {
+   "scene": "公主的臥室，晚上。一張有粉紅色床帳的小床，窗外有月亮和星星，床邊的小桌上點著一盞小燈。",
+   "act": "公主穿著白色睡衣，在床邊放了一個藍色小枕頭；青蛙坐在小枕頭上，揉著眼睛打哈欠；公主蹲下來，對青蛙溫柔地微笑。",
+   "lines": [
+    {
+     "who": "青蛙",
+     "tag": "sleepy",
+     "text": "公主，我好睏。我可以陪著妳嗎？",
+     "en": "Princess, I'm sleepy. May I stay with you?"
+    },
+    {
+     "who": "旁白",
+     "text": "公主拿來一個小枕頭，放在床邊。",
+     "en": "The princess brought a little pillow and set it by her bed."
+    },
+    {
+     "who": "公主",
+     "tag": "gentle",
+     "text": "你就睡在這裡，陪著我吧。",
+     "en": "You can sleep right here, next to me."
+    },
+    {
+     "who": "公主",
+     "text": "晚安，青蛙。謝謝你幫我撿金球。",
+     "en": "Good night, Frog. Thank you for getting my ball."
+    },
+    {
+     "who": "公主",
+     "text": "你是我的好朋友。",
+     "en": "You are my good friend."
+    }
+   ]
+  },
+  {
+   "scene": "公主的臥室，晚上。整個房間被金色的光照亮，到處飄著小光點。",
+   "act": "藍色小枕頭上，青蛙被一團金光包住；金光裡站起來一位王子（少年，棕色頭髮、穿綠色外套、戴一頂小金冠），彎腰向公主行禮；公主驚訝地睜大眼睛，雙手捧著臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "忽然，青蛙身上亮起一道金光。",
+     "en": "Suddenly, a golden light shone around the frog."
+    },
+    {
+     "who": "旁白",
+     "text": "青蛙變成了一個王子！",
+     "en": "The frog turned into a prince!"
+    },
+    {
+     "who": "王子",
+     "tag": "happy",
+     "text": "謝謝妳，公主！",
+     "en": "Thank you, Princess!"
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "有個巫婆，把我變成了青蛙。",
+     "en": "A witch once turned me into a frog."
+    },
+    {
+     "who": "王子",
+     "text": "要有人說到做到，魔法才會解開。",
+     "en": "The spell could only break when someone kept a promise to me."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，晴朗的白天，老井邊開滿了花。",
+   "act": "公主和穿綠色外套的王子在井邊，一個丟金球、一個接；國王坐在大樹下的長椅上，開心地拍手；樹枝上停著兩隻小鳥。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "proud",
+     "text": "女兒，妳做到了！",
+     "en": "My dear, you kept your promise!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，公主和王子成了好朋友。",
+     "en": "From then on, the princess and the prince were good friends."
+    },
+    {
+     "who": "旁白",
+     "text": "他們常常一起在井邊，丟金球玩。",
+     "en": "They often played catch together by the well."
+    },
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "說好的事，就要做到！",
+     "en": "When you make a promise, you keep it!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，跟著說：說好的事，就要做到！",
+     "en": "Now you say it too: When you make a promise, you keep it!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "id": "moon-phases",
+ "title": "月亮為什麼會變形",
+ "title_en": "Why the Moon Changes Shape",
+ "size": "中",
+ "roles": {
+  "小兔": "四歲左右的小兔子，聲音小小甜甜、充滿好奇，常常問問題，擔心時聲音發抖，懂了以後很得意。",
+  "貓頭鷹爺爺": "住在大樹上的老貓頭鷹，聲音低沉慈祥、慢慢說，愛笑，喜歡讓小兔自己找答案。",
+  "兔媽媽": "小兔的媽媽，溫柔有耐心的女聲，講道理時清楚慢慢說，玩遊戲時帶著笑。"
+ },
+ "cast": {
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "貓頭鷹爺爺": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "兔媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "為",
+   "where": "書名『為什麼』（內文沒有用）",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "書名『為什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第7頁『不會發光』『才會亮』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第6頁『沒有不見』，第9頁『沒對著』，第10頁『沒有生病』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林邊的小山坡，太陽剛下山，西邊天上還有一點橘色。低低的西邊天上，有一彎很細的月亮斜斜地躺著，亮的那一邊在右下方，像一根香蕉或一條小船。山坡上有一棵大樹。",
+   "act": "小兔第一次出場：白色小兔子，耳朵裡面是粉紅色，脖子圍一條黃色小圍巾，坐在草地上抬頭看月亮，歪著頭。貓頭鷹爺爺第一次出場：棕色羽毛、戴一副圓眼鏡，站在大樹的樹枝上，笑咪咪地低頭看小兔。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔最喜歡晚上看月亮。",
+     "en": "Little Bunny loved to look at the moon at night."
+    },
+    {
+     "who": "旁白",
+     "text": "今天的月亮，像一根香蕉。",
+     "en": "Tonight, the moon looked like a banana."
+    },
+    {
+     "who": "小兔",
+     "tag": "curious",
+     "text": "月亮被誰咬了一口嗎？",
+     "en": "Did somebody take a bite out of the moon?"
+    },
+    {
+     "who": "貓頭鷹爺爺",
+     "tag": "laughing",
+     "text": "呵呵，每天晚上都來看看吧！",
+     "en": "Ho ho! Come and look every night!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個山坡，幾天後的晚上，天上有星星。月亮在比較高的地方，是右半邊亮、左半邊看不見的半個圓。",
+   "act": "小兔雙手比出一個半圓，對照天上的月亮；貓頭鷹爺爺在樹枝上眨眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，月亮變胖了。",
+     "en": "A few days later, the moon got fatter."
+    },
+    {
+     "who": "旁白",
+     "text": "它變成了半個圓。",
+     "en": "It became half a circle."
+    },
+    {
+     "who": "小兔",
+     "tag": "surprised",
+     "text": "月亮吃了好多東西嗎？",
+     "en": "Did the moon eat lots of food?"
+    },
+    {
+     "who": "貓頭鷹爺爺",
+     "tag": "gentle",
+     "text": "再看幾天吧！",
+     "en": "Keep watching for a few more days!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個山坡，又過幾天的晚上。東邊天上掛著一個好大、全部都亮的圓月亮，草地和大樹被月光照成淡淡的銀色。",
+   "act": "小兔高興得跳起來，張開雙手；貓頭鷹爺爺張開翅膀，指著月亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "又過了幾天，月亮變成一整個圓！",
+     "en": "A few more days passed. The moon became a whole circle!"
+    },
+    {
+     "who": "旁白",
+     "text": "月光把草地照亮了。",
+     "en": "The moonlight made the grass shine."
+    },
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "哇！月亮好圓，好亮，像一個大月餅！",
+     "en": "Wow! The moon is so round and so bright, like a big mooncake!"
+    },
+    {
+     "who": "貓頭鷹爺爺",
+     "tag": "gentle",
+     "text": "這叫做滿月。",
+     "en": "This is called a full moon."
+    }
+   ]
+  },
+  {
+   "scene": "左半邊：早上，小兔家門口的花園，藍色的天上有一個淡白色、左半邊亮的半圓月亮。右半邊：幾天後的清晨，東邊快要日出的低空有一彎很細的月亮，亮的那一邊在左下方。",
+   "act": "小兔穿著睡衣、揉著眼睛站在門口，抬頭看月亮；右半邊的小兔皺著眉頭，耳朵垂下來，很擔心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，過了幾天，月亮又變瘦了。",
+     "en": "But a few days later, the moon got thinner again."
+    },
+    {
+     "who": "旁白",
+     "text": "早上起床，小兔看到天上有半個月亮。",
+     "en": "One morning, Little Bunny saw half a moon in the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "再過幾天，它又變回香蕉月亮。",
+     "en": "A few days after that, it was a banana moon again."
+    },
+    {
+     "who": "小兔",
+     "tag": "worried",
+     "text": "月亮越來越小，是不是生病了？",
+     "en": "The moon keeps getting smaller. Is it sick?"
+    }
+   ]
+  },
+  {
+   "scene": "晚上的山坡，滿天星星，但是天上找不到月亮。",
+   "act": "小兔站在山坡上東張西望，耳朵豎得高高的，好著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，小兔晚上找月亮，早上也找。",
+     "en": "One day, Little Bunny looked for the moon at night, and in the morning, too."
+    },
+    {
+     "who": "小兔",
+     "tag": "worried",
+     "text": "月亮！月亮，你去哪裡了？",
+     "en": "Moon! Oh, Moon, where did you go?"
+    },
+    {
+     "who": "旁白",
+     "text": "小兔跑回家，去找媽媽。",
+     "en": "Little Bunny ran home to find Mom."
+    }
+   ]
+  },
+  {
+   "scene": "兔子的家，在大樹根下面的小屋，晚上。屋裡有木頭桌子、小椅子、一盞小檯燈，桌上放著一支手電筒和一顆白色的球。",
+   "act": "兔媽媽第一次出場：灰白色的大兔子，穿淡紫色圍裙，蹲下來摸摸小兔的頭；桌上放著手電筒和白球。",
+   "lines": [
+    {
+     "who": "兔媽媽",
+     "tag": "gentle",
+     "text": "別擔心，月亮沒有不見。",
+     "en": "Don't worry. The moon isn't lost."
+    },
+    {
+     "who": "兔媽媽",
+     "tag": "cheerful",
+     "text": "我們來玩一個遊戲，你就知道了。",
+     "en": "Let's play a game, and you'll see."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽關上燈，拿出手電筒和一顆白色的球。",
+     "en": "Mom turned off the light and took out a flashlight and a white ball."
+    }
+   ]
+  },
+  {
+   "scene": "兔子的家，檯燈關了，屋裡暗暗的，只有窗外一點微光；兔媽媽手上拿著還沒打開的手電筒。",
+   "act": "兔媽媽一手拿手電筒、一手指著白球；小兔雙手捧著白球，抬頭問媽媽，再指指自己；畫面旁邊可以畫小小的對照：手電筒＝太陽、白球＝月亮、小兔＝地球。",
+   "lines": [
+    {
+     "who": "兔媽媽",
+     "tag": "gentle",
+     "text": "月亮自己不會發光。",
+     "en": "The moon doesn't make its own light."
+    },
+    {
+     "who": "兔媽媽",
+     "text": "是太陽照著月亮，月亮才會亮。",
+     "en": "The sun shines on the moon. That's why the moon looks bright."
+    },
+    {
+     "who": "兔媽媽",
+     "text": "手電筒是太陽，這顆球是月亮。",
+     "en": "The flashlight is the sun. This ball is the moon."
+    },
+    {
+     "who": "小兔",
+     "tag": "curious",
+     "text": "那我呢？",
+     "en": "What about me?"
+    },
+    {
+     "who": "兔媽媽",
+     "tag": "happy",
+     "text": "你就是我們住的地球。",
+     "en": "You are the Earth, where we live."
+    }
+   ]
+  },
+  {
+   "scene": "兔子的暗暗的屋裡，兔媽媽站在一邊，手電筒的光一直照向屋子中間。",
+   "act": "小兔站在屋子中間，伸直手臂把白球舉在臉前面，照到光的那一半是亮的、另一半是暗的；小兔在原地小步慢慢繞圈，眼睛一直看著球。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "媽媽打開手電筒，照著小兔手上的球。",
+     "en": "Mom turned on the flashlight and shined it on the ball in Little Bunny's hands."
+    },
+    {
+     "who": "旁白",
+     "text": "球的一半亮了，另一半是暗的。",
+     "en": "Half of the ball lit up. The other half stayed dark."
+    },
+    {
+     "who": "兔媽媽",
+     "tag": "gentle",
+     "text": "月亮也一樣，一直都是一顆圓球喔。",
+     "en": "The moon is the same. It's always a round ball."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔舉著球，在原地慢慢繞一圈。",
+     "en": "Little Bunny held up the ball and slowly turned all the way around."
+    }
+   ]
+  },
+  {
+   "scene": "同一間暗暗的屋子，用四格小圖畫出小兔繞圈時看到的球。",
+   "act": "小兔往左轉（逆時針）繞圈，第二、三格亮的那一邊在右邊，跟傍晚天上的月亮一樣。第一格：球在小兔和手電筒中間，小兔只看到暗的那一面。第二格：小兔走一點，看到球邊邊一彎亮的。第三格：再走，看到球亮一半。第四格：小兔背對手電筒，球在前面（舉高一點、不擋到光），整顆球都亮了，小兔開心地大叫。",
+   "lines": [
+    {
+     "who": "小兔",
+     "tag": "surprised",
+     "text": "球在我和手電筒中間，我看不到亮的地方！",
+     "en": "When the ball is between me and the flashlight, I can't see the bright side!"
+    },
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "再走一點，球變成香蕉月亮！",
+     "en": "A little more, and it's a banana moon!"
+    },
+    {
+     "who": "小兔",
+     "text": "再走，變成半個圓！",
+     "en": "A little more, and it's half a circle!"
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "走到這裡，整個球都亮了，是滿月！",
+     "en": "And here, the whole ball is bright. A full moon!"
+    },
+    {
+     "who": "兔媽媽",
+     "tag": "gentle",
+     "text": "看不到月亮，是亮的那一面沒對著我們。",
+     "en": "When the moon seems to disappear, its bright side is just facing away from us."
+    }
+   ]
+  },
+  {
+   "scene": "兔子的家，檯燈又打開了，暖黃色的燈光；窗外是滿天星星。",
+   "act": "兔媽媽抱著小兔坐在小床邊，用手指在空中畫一個大圈，表示月亮繞著地球走；小兔恍然大悟，笑開了嘴。",
+   "lines": [
+    {
+     "who": "兔媽媽",
+     "tag": "gentle",
+     "text": "月亮繞著地球，慢慢走一大圈。",
+     "en": "The moon slowly travels all the way around the Earth."
+    },
+    {
+     "who": "兔媽媽",
+     "text": "走一圈，大約要一個月。",
+     "en": "One trip around takes about a month."
+    },
+    {
+     "who": "兔媽媽",
+     "text": "我們看到亮的地方多，月亮看起來就胖。",
+     "en": "When we see more of the bright side, the moon looks fat."
+    },
+    {
+     "who": "兔媽媽",
+     "text": "看到亮的地方少，月亮看起來就瘦。",
+     "en": "When we see less of it, the moon looks thin."
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "原來月亮沒有生病，它在繞著我們走路！",
+     "en": "So the moon isn't sick. It's just walking around us!"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的小山坡，幾天後，太陽剛下山。低低的西邊天上又出現一彎很細的月亮，斜斜地躺著，亮的那一邊在右下方，跟第一頁一樣。",
+   "act": "小兔圍著黃色圍巾，站在草地上對月亮揮手；貓頭鷹爺爺站在樹枝上點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，小兔又看到香蕉月亮。",
+     "en": "A few days later, Little Bunny saw the banana moon again."
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "月亮，歡迎回來！",
+     "en": "Welcome back, Moon!"
+    },
+    {
+     "who": "貓頭鷹爺爺",
+     "tag": "gentle",
+     "text": "小兔，你知道月亮怎麼變的嗎？",
+     "en": "Little Bunny, now do you know why the moon changes?"
+    },
+    {
+     "who": "小兔",
+     "tag": "proud",
+     "text": "知道！太陽照著它，它繞著地球走一圈！",
+     "en": "Yes! The sun shines on it, and it goes around the Earth!"
+    },
+    {
+     "who": "旁白",
+     "text": "晚安，月亮。晚安，小兔。",
+     "en": "Good night, Moon. Good night, Little Bunny."
+    }
+   ]
+  }
+ ]
+}

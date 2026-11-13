@@ -1,0 +1,271 @@
+{
+ "id": "bear-dentist",
+ "title": "小熊看牙醫",
+ "title_en": "Little Bear at the Dentist",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊的抱抱》《小熊不想睡覺》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌，牙痛時委屈，怕看牙醫，後來放心、得意。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，教小熊刷牙時輕快。",
+  "河馬醫生": "溫和的大河馬牙醫，中年男聲，低沉溫暖、說話慢，愛逗小孩笑，一點也不嚴肅。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "河馬醫生": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第2頁『會不會』、第8頁『不會痛』",
+   "read": "huì"
+  },
+  {
+   "char": "乾",
+   "where": "第1頁『餅乾』、第5頁『清乾淨』、第7頁『好乾淨』",
+   "read": "gān"
+  },
+  {
+   "char": "少",
+   "where": "第8頁『少吃甜的』",
+   "read": "shǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "白天，小熊家的客廳：木頭地板、綠色地毯、矮矮的木桌；桌上有一盤餅乾、一個裝滿彩色糖果的玻璃罐、一塊草莓蛋糕。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。小熊坐在地毯上，一手拿糖果、一手拿餅乾，嘴邊沾著蛋糕奶油，吃得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊最愛吃甜的。",
+     "en": "Little Bear loves sweet things."
+    },
+    {
+     "who": "旁白",
+     "text": "糖果、餅乾、蛋糕，他吃個不停。",
+     "en": "Candy, cookies, cake. He can't stop eating!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "好甜喔，真好吃！",
+     "en": "So sweet! So yummy!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊的房間：小床、軟枕頭、小兔玩偶、一盞小夜燈；窗外有月亮。",
+   "act": "小熊坐在床邊，一手摀著右邊臉頰、皺著眉頭，快哭了。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著淡黃色圍裙，她坐在小熊旁邊，溫柔地摸摸他的頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，小熊摸著臉，眉頭皺起來。",
+     "en": "At night, Little Bear holds his cheek and frowns."
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "媽媽，我的牙齒好痛。",
+     "en": "Mama, my tooth hurts."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "不怕，明天我們去看牙醫。",
+     "en": "Don't worry. Tomorrow we'll go see the dentist."
+    },
+    {
+     "who": "小熊",
+     "tag": "scared",
+     "text": "牙醫？會不會很可怕？",
+     "en": "The dentist? Is it scary?"
+    }
+   ]
+  },
+  {
+   "scene": "牙醫診所，明亮乾淨：白色的牆上貼著一張笑臉牙齒的海報，中間有一張可以躺下來的藍色大椅子，椅子上方有一盞燈。",
+   "act": "河馬醫生是一隻淡紫灰色的大河馬，穿白色醫生袍、戴圓眼鏡，胸前口袋插著一支大牙刷；他張大嘴巴笑著揮手，露出大大的牙齒；牙齒畫成方方的、白色圓鈍的大門牙，不要畫尖牙或獠牙。小熊從熊媽媽身後探出頭，被逗得笑出來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "牙醫是一隻大河馬。",
+     "en": "The dentist is a big hippo."
+    },
+    {
+     "who": "河馬醫生",
+     "tag": "gentle",
+     "text": "你好，小熊。我是河馬醫生。",
+     "en": "Hello, Little Bear. I'm Doctor Hippo."
+    },
+    {
+     "who": "河馬醫生",
+     "tag": "happy",
+     "text": "你看，我的嘴巴好大，牙齒也好大！",
+     "en": "Look! My mouth is so big, and so are my teeth!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊笑了，不怕了。",
+     "en": "Little Bear giggles. He isn't scared anymore."
+    }
+   ]
+  },
+  {
+   "scene": "牙醫診所，藍色大椅子上方的燈亮著。",
+   "act": "小熊躺在藍色大椅子上，戴著一副擋燈光的小墨鏡，張大嘴巴；河馬醫生坐在旁邊，拿著一面小鏡子，輕輕地一顆一顆看小熊的牙齒；熊媽媽站在椅子旁邊。",
+   "lines": [
+    {
+     "who": "河馬醫生",
+     "tag": "gentle",
+     "text": "來，嘴巴張開，說「啊」。",
+     "en": "Okay, open wide and say \"ah.\""
+    },
+    {
+     "who": "小熊",
+     "text": "好，啊！",
+     "en": "Okay. Ahh!"
+    },
+    {
+     "who": "河馬醫生",
+     "text": "我來看一看，一顆、兩顆、三顆……",
+     "en": "Let me look. One tooth, two teeth, three teeth…"
+    },
+    {
+     "who": "河馬醫生",
+     "tag": "happy",
+     "text": "哇，二十顆小牙齒，都在這裡！",
+     "en": "Wow, twenty little teeth, all right here!"
+    }
+   ]
+  },
+  {
+   "scene": "牙醫診所，藍色大椅子上方的燈亮著。",
+   "act": "小熊戴著小墨鏡躺在藍色大椅子上；河馬醫生用小鏡子照著小熊一顆有小洞的牙齒，用小小的工具輕輕地補；小熊握著熊媽媽的手，表情放鬆、有點驚喜。",
+   "lines": [
+    {
+     "who": "河馬醫生",
+     "tag": "gentle",
+     "text": "這顆牙齒有一個小洞，吃太多糖了。",
+     "en": "This tooth has a tiny hole. Too much candy."
+    },
+    {
+     "who": "河馬醫生",
+     "text": "我把它清乾淨，再補起來。",
+     "en": "I'll clean it and fill it in."
+    },
+    {
+     "who": "旁白",
+     "text": "醫生輕輕地補，一下子就好了。",
+     "en": "Doctor Hippo works gently. Soon, it's all done."
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "哇，好快喔！",
+     "en": "Wow, that was quick!"
+    }
+   ]
+  },
+  {
+   "scene": "牙醫診所，桌上放著一副好大的牙齒模型和一支大牙刷。",
+   "act": "小熊坐在藍色大椅子上，手上拿著剛收到的藍色新牙刷，跟著河馬醫生在牙齒模型旁邊比畫小圈圈的刷牙動作；醫生笑著拿大牙刷示範。",
+   "lines": [
+    {
+     "who": "河馬醫生",
+     "tag": "gentle",
+     "text": "吃完東西，別忘了刷牙喔。",
+     "en": "After you eat, don't forget to brush your teeth."
+    },
+    {
+     "who": "河馬醫生",
+     "tag": "happy",
+     "text": "跟我一起說：畫小圈圈，慢慢刷！",
+     "en": "Say it with me: little circles, brush slowly!"
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "畫小圈圈，慢慢刷！",
+     "en": "Little circles, brush slowly!"
+    },
+    {
+     "who": "旁白",
+     "text": "醫生送小熊一支新牙刷。",
+     "en": "Doctor Hippo gives Little Bear a new toothbrush."
+    },
+    {
+     "who": "河馬醫生",
+     "tag": "happy",
+     "text": "下次再來，讓我看看喔！",
+     "en": "Come back soon, and I'll check your teeth again!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊家的浴室：小小的洗手台、鏡子、一張小板凳；洗手台上有藍色的新牙刷、熊媽媽的黃色牙刷和牙膏。",
+   "act": "小熊站在小板凳上看著鏡子，嘴邊都是白色泡泡；熊媽媽站在他後面，握著藍色牙刷，幫小熊再刷一次。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回到家，小熊拿起新牙刷。",
+     "en": "Back home, Little Bear picks up his new toothbrush."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "外面的牙齒，畫小圈圈。",
+     "en": "The outside of your teeth, little circles."
+    },
+    {
+     "who": "小熊",
+     "text": "裡面的牙齒，也畫小圈圈。",
+     "en": "The inside of my teeth, little circles too."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "最後，媽媽再幫你刷一次。",
+     "en": "Last, Mama will brush them once more for you."
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "哇，好乾淨！",
+     "en": "Wow, all clean!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊家的浴室，鏡子前面。",
+   "act": "小熊對著鏡子咧嘴大笑，露出白白亮亮的牙齒，牙齒旁邊畫幾顆小星星閃光；熊媽媽從後面抱著他，一起笑。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "媽媽妳看，我的牙齒好白、好亮！",
+     "en": "Look, Mama! My teeth are so white and shiny!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "少吃甜的，常常刷牙，牙齒就不會痛了。",
+     "en": "Fewer sweets and lots of brushing keep your teeth from hurting."
+    },
+    {
+     "who": "旁白",
+     "text": "你也來試試看，畫小圈圈，慢慢刷！",
+     "en": "Now you try! Little circles, brush slowly!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,399 @@
+{
+ "id": "dinosaurs",
+ "title": "恐龍去哪裡了",
+ "title_en": "Where Did the Dinosaurs Go?",
+ "size": "中",
+ "roles": {
+  "小安": "五歲的小女生，聲音清脆、好奇心很強，看到新東西會大叫「哇」，問問題時尾音往上揚。",
+  "博士爺爺": "博物館裡研究恐龍的老爺爺，聲音慈祥、慢慢說，很有耐心，講到祕密時故意小聲。",
+  "暴龍": "大嗓門的暴龍，聲音低沉沙啞、愛吼愛炫耀，其實很好笑，抱怨手短時像個大孩子。",
+  "三角龍": "愛吃草的三角龍，溫和的大叔聲，說話慢吞吞、很友善，天冷時有點委屈。",
+  "腕龍": "脖子很高的腕龍，溫柔的阿姨聲，說話輕輕慢慢、很親切。",
+  "小鳥": "窗外的小麻雀，聲音又小又亮、很活潑，說話前先「啾啾」。"
+ },
+ "cast": {
+  "小安": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "博士爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "暴龍": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "三角龍": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "腕龍": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小鳥": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "角",
+   "where": "第5頁『三角龍』『三根角』『你的角』",
+   "read": "jiǎo"
+  },
+  {
+   "char": "什",
+   "where": "第1頁、第6頁『是什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『牠會吃我嗎』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『都沒有』，第9頁『沒有喔』",
+   "read": "méi"
+  },
+  {
+   "char": "行",
+   "where": "第4頁『旅行』",
+   "read": "xíng"
+  },
+  {
+   "char": "空",
+   "where": "第6頁『太空』",
+   "read": "kōng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "博物館的恐龍大廳，白天。挑高的天花板、大窗戶，大廳中間站著三副好大的恐龍骨頭：一副暴龍、一副三角龍、一副脖子很高、頭快碰到天花板的腕龍。",
+   "act": "小安第一次出場：五歲女孩，綁兩個短馬尾，穿黃色上衣、綠色吊帶褲、紅色布鞋，背著小背包，抬頭張大嘴巴。博士爺爺第一次出場：白頭髮、白鬍子、圓眼鏡，穿咖啡色背心和白襯衫，胸前掛著名牌，彎腰對小安笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "星期天，小安來到恐龍博物館。",
+     "en": "On Sunday, Ann went to the dinosaur museum."
+    },
+    {
+     "who": "小安",
+     "tag": "excited",
+     "text": "哇！好大的骨頭！",
+     "en": "Wow! Look at those big bones!"
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "happy",
+     "text": "小朋友好，這些是恐龍的化石。",
+     "en": "Hello there! These are dinosaur fossils."
+    },
+    {
+     "who": "小安",
+     "tag": "curious",
+     "text": "化石是什麼呀？",
+     "en": "What is a fossil?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個恐龍大廳，旁邊的玻璃櫃裡放著一顆像石頭一樣的恐龍牙齒和一塊骨頭化石。",
+   "act": "小安和博士爺爺一起閉上眼睛，身邊開始冒出綠色的光點和樹葉；玻璃櫃在背景。",
+   "lines": [
+    {
+     "who": "博士爺爺",
+     "tag": "gentle",
+     "text": "化石，是好久以前的恐龍骨頭。",
+     "en": "Fossils are dinosaur bones from long, long ago."
+    },
+    {
+     "who": "博士爺爺",
+     "text": "它們變成了石頭，好硬喔。",
+     "en": "They have turned into stone, so they are very hard."
+    },
+    {
+     "who": "小安",
+     "tag": "curious",
+     "text": "那恐龍現在在哪裡呢？",
+     "en": "So where are the dinosaurs now?"
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "whispering",
+     "text": "閉上眼睛，我們回到好久，好久以前。",
+     "en": "Close your eyes. Let's go back to a long, long time ago."
+    }
+   ]
+  },
+  {
+   "scene": "好久以前的大地：很高的針葉樹（像南洋杉）、蘇鐵和蕨類植物，遠方有冒煙的火山，天上沒有飛機、地上沒有房子和人。",
+   "act": "一隻腕龍：灰綠色的皮膚、脖子很高很高，正在吃大樹頂端的葉子，低下頭對小安眨眼睛；小安和博士爺爺站在牠腳邊，只到牠的腳那麼高。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "那時候，世界上一個人都沒有。",
+     "en": "Back then, there were no people at all."
+    },
+    {
+     "who": "旁白",
+     "text": "這是腕龍，牠的頭好高，好高。",
+     "en": "This is Brachiosaurus. Her neck goes up, up, up."
+    },
+    {
+     "who": "腕龍",
+     "tag": "gentle",
+     "text": "嗨！我最愛吃大樹最上面的葉子。",
+     "en": "Hi there! I love to eat the leaves at the very top of the trees."
+    },
+    {
+     "who": "小安",
+     "tag": "surprised",
+     "text": "哇！牠跟四層樓一樣高！",
+     "en": "Wow! She is as tall as a four-story building!"
+    },
+    {
+     "who": "腕龍",
+     "tag": "happy",
+     "text": "歡迎你們，小客人！",
+     "en": "Welcome, little visitors!"
+    }
+   ]
+  },
+  {
+   "scene": "過了好多年以後的大地：長滿蕨類和矮樹叢的平原，遠處有樹林和一條小河，天氣很好。",
+   "act": "暴龍：棕綠色的皮膚、頭好大、嘴裡一排尖牙，兩隻前手好短，每隻手只有兩根手指；牠張大嘴巴吼，但表情有點好笑，正想用短短的手抓背卻抓不到；小安躲在博士爺爺身後偷看，博士爺爺笑著拍拍她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了好多年，暴龍出現了。",
+     "en": "Many, many years later, along came T. rex."
+    },
+    {
+     "who": "暴龍",
+     "tag": "proud",
+     "text": "吼！我是暴龍！我的牙齒又大又尖！",
+     "en": "Roar! I'm T. rex! My teeth are big and sharp!"
+    },
+    {
+     "who": "小安",
+     "tag": "scared",
+     "text": "牠會吃我嗎？",
+     "en": "Will he eat me?"
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "gentle",
+     "text": "別怕，這是想像的旅行，我們很安全。",
+     "en": "Don't worry. This is a pretend trip. We're safe."
+    },
+    {
+     "who": "暴龍",
+     "tag": "sad",
+     "text": "唉，我的手好短，抓不到癢！",
+     "en": "Oh, my arms are so short. I can't scratch my itch!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片長滿蕨類和矮樹叢的平原，三角龍在小河邊吃植物，旁邊有幾隻小三角龍。",
+   "act": "三角龍：橘棕色的皮膚，頭上有三根角，脖子後面有一大片像盾牌的骨頭；牠嘴裡嚼著蕨類的葉子，慢慢轉頭對小安微笑；小安蹲在旁邊，伸出手指比「三」。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "三角龍的頭上，有三根角。",
+     "en": "Triceratops has three horns on his head."
+    },
+    {
+     "who": "旁白",
+     "text": "牠的脖子後面，有一片像盾牌的骨頭。",
+     "en": "Behind his head is a big bony frill, like a shield."
+    },
+    {
+     "who": "三角龍",
+     "tag": "gentle",
+     "text": "我喜歡吃草，不喜歡打架。",
+     "en": "I like to eat plants. I don't like to fight."
+    },
+    {
+     "who": "小安",
+     "tag": "happy",
+     "text": "一、二、三！你的角好酷！",
+     "en": "One, two, three! Your horns are so cool!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片平原，傍晚。天上有一顆拖著亮光尾巴的大石頭，往好遠好遠的地平線飛去；遠方地平線亮了一下。",
+   "act": "暴龍和三角龍都抬頭看天上；小安和博士爺爺也抬頭，小安睜大眼睛、手指著天上；畫面是好奇，不是驚嚇，大石頭離他們很遠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，天上飛來一顆好大的石頭。",
+     "en": "One day, a giant rock came flying from the sky."
+    },
+    {
+     "who": "暴龍",
+     "tag": "surprised",
+     "text": "咦？天上那個好亮的，是什麼？",
+     "en": "Huh? What's that bright thing in the sky?"
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆！它掉在好遠的地方。",
+     "en": "Boom! It landed very, very far away."
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "gentle",
+     "text": "從太空掉下來的大石頭，叫做隕石。",
+     "en": "A big rock that falls from space is called a meteorite."
+    }
+   ]
+  },
+  {
+   "scene": "同一片平原，天色灰灰的，天上一層厚厚的灰色雲，看不到太陽；樹葉變少，蕨類和矮樹叢都變黃了。",
+   "act": "三角龍縮著身體、低頭找植物吃；遠處的恐龍慢慢走遠，變得模糊；小安抱著博士爺爺的手臂，有點難過，博士爺爺摸摸她的頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "好多灰塵飛上天，把太陽遮住了。",
+     "en": "Lots of dust flew up into the sky and covered the sun."
+    },
+    {
+     "who": "旁白",
+     "text": "天氣變冷了，草和樹都變少了。",
+     "en": "The weather turned cold, and there were fewer plants."
+    },
+    {
+     "who": "三角龍",
+     "tag": "sad",
+     "text": "好冷喔，我找不到草吃。",
+     "en": "Brr, it's so cold. I can't find any plants to eat."
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "gentle",
+     "text": "後來，恐龍就不見了。",
+     "en": "After a while, the dinosaurs were gone."
+    }
+   ]
+  },
+  {
+   "scene": "地底的剖面圖：一層一層不同顏色的泥土和石頭，最下面有一副恐龍骨頭化石；地面上，穿工作服的人拿著小刷子和小鏟子在挖。",
+   "act": "左邊是骨頭慢慢被泥土和沙子蓋住；右邊是現在，挖化石的人小心刷出骨頭；小安和博士爺爺蹲在旁邊看，小安開心得拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "恐龍的骨頭，被泥土和沙子蓋起來。",
+     "en": "The dinosaur bones were covered by mud and sand."
+    },
+    {
+     "who": "旁白",
+     "text": "過了好久，好久，骨頭變成了化石。",
+     "en": "After a long, long time, the bones turned into fossils."
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "proud",
+     "text": "我們挖出化石，就知道恐龍的樣子。",
+     "en": "When we dig up fossils, we learn what dinosaurs looked like."
+    },
+    {
+     "who": "小安",
+     "tag": "excited",
+     "text": "所以，我們才能看到恐龍！",
+     "en": "So that's how we get to see dinosaurs!"
+    }
+   ]
+  },
+  {
+   "scene": "回到博物館的恐龍大廳，白天，三副恐龍骨頭還站在那裡；大窗戶外面有一棵大樹。",
+   "act": "小安睜開眼睛，有點捨不得；博士爺爺彎下腰，把手指放在嘴邊，另一手指向窗外。",
+   "lines": [
+    {
+     "who": "小安",
+     "tag": "sad",
+     "text": "恐龍全部都不見了嗎？",
+     "en": "Are all the dinosaurs gone?"
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "whispering",
+     "text": "沒有喔，恐龍的親戚，現在就在窗外。",
+     "en": "Not quite. Some dinosaur relatives are right outside the window."
+    },
+    {
+     "who": "小安",
+     "tag": "surprised",
+     "text": "真的嗎？在哪裡？",
+     "en": "Really? Where?"
+    }
+   ]
+  },
+  {
+   "scene": "博物館的大窗戶，窗外的大樹枝上停著一隻棕色小麻雀；窗邊放著暴龍腳印的模型。",
+   "act": "小麻雀歪著頭看小安；小安趴在窗邊，一手指著小鳥的腳，一手指著暴龍腳印模型，小鳥的腳和暴龍腳印都是三根腳趾朝前（小鳥另外還有一根朝後）；博士爺爺在旁邊點頭。",
+   "lines": [
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "嗨！我是恐龍的親戚喔！",
+     "en": "Hi! I'm a dinosaur relative!"
+    },
+    {
+     "who": "博士爺爺",
+     "tag": "gentle",
+     "text": "在暴龍以前，有一些小恐龍，身上有羽毛。",
+     "en": "Even before T. rex, some little dinosaurs had feathers."
+    },
+    {
+     "who": "博士爺爺",
+     "text": "牠們慢慢變成了小鳥。",
+     "en": "Little by little, they became birds."
+    },
+    {
+     "who": "小安",
+     "tag": "surprised",
+     "text": "小鳥的腳，跟暴龍的腳好像！",
+     "en": "A bird's feet look a lot like T. rex's feet!"
+    }
+   ]
+  },
+  {
+   "scene": "博物館外面的公園，傍晚，天空橘色的。樹上、草地上、路燈上停著好多小鳥。",
+   "act": "小安背著小背包，對著樹上的小鳥用力揮手；一群小鳥飛起來繞著她；博士爺爺站在博物館門口揮手說再見。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回家的路上，小安看到好多小鳥。",
+     "en": "On the way home, Ann saw lots of birds."
+    },
+    {
+     "who": "小安",
+     "tag": "happy",
+     "text": "嗨！恐龍的親戚們，你們好！",
+     "en": "Hi, dinosaur relatives! Hello!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "嗨！小安，你好！",
+     "en": "Hi, Ann! Nice to see you!"
+    },
+    {
+     "who": "旁白",
+     "text": "恐龍去哪裡了？",
+     "en": "Where did the dinosaurs go?"
+    },
+    {
+     "who": "旁白",
+     "text": "大恐龍變成化石，小鳥親戚在天上飛。",
+     "en": "The big dinosaurs became fossils, and their bird relatives fly in the sky."
+    }
+   ]
+  }
+ ]
+}

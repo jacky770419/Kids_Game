@@ -1,0 +1,383 @@
+{
+ "id": "nian",
+ "title": "年獸來了",
+ "title_en": "Nian the New Year Monster",
+ "size": "中",
+ "roles": {
+  "年獸": "好大的傻怪獸，聲音低沉沙啞、嗓門很大，愛吃又愛吵，其實很膽小，被嚇到時叫得又慌又好笑。",
+  "老爺爺": "白鬍子的慈祥老爺爺，聲音穩重溫暖、慢慢說，一點也不怕，講到年獸的弱點時帶著笑意。",
+  "阿福": "六歲左右的小男孩，聲音清亮、很有精神，勇敢又熱心。",
+  "小美": "五歲左右的小女孩，聲音細細甜甜的，一開始有點怕，後來笑得最開心。",
+  "奶奶": "村子裡的老奶奶，聲音慈祥溫和、笑咪咪的。"
+ },
+ "cast": {
+  "年獸": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "老爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "阿福": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小美": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "樂",
+   "where": "第11頁『新年快樂』兩句，第12頁『新年快樂』",
+   "read": "lè"
+  },
+  {
+   "char": "劈",
+   "where": "第8頁『劈哩啪啦』兩次",
+   "read": "pī"
+  },
+  {
+   "char": "哩",
+   "where": "第8頁『劈哩啪啦』兩次",
+   "read": "lī"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，冬天的山腳下，一個小村子：幾間灰瓦白牆的矮房子，屋頂上有一點白雪。後面是又黑又高的大山，傍晚，天邊是紫色的。",
+   "act": "年獸從大山後面走出來：比房子還高、全身藍綠色的毛、頭上有兩支彎彎的小角、圓滾滾的大眼睛、大嘴巴露出兩顆大門牙、圓肚子、毛茸茸的長尾巴，樣子傻呼呼的；牠張大嘴巴吼叫，雙手叉腰，很得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，山腳下有一個小村子。",
+     "en": "A long, long time ago, there was a little village at the foot of a mountain."
+    },
+    {
+     "who": "旁白",
+     "text": "有一隻大怪獸，住在山上。",
+     "en": "A big monster lived up on the mountain."
+    },
+    {
+     "who": "旁白",
+     "text": "每年過年前一天，牠就跑下山。",
+     "en": "Every year, the night before New Year, he came down."
+    },
+    {
+     "who": "年獸",
+     "tag": "proud",
+     "text": "吼！我是年獸！我最大！",
+     "en": "Roar! I'm Nian! I'm the biggest!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡的小路，傍晚，家家戶戶的門口擺著一盤一盤的年糕。",
+   "act": "年獸咚咚地走在小路上，一手抓著一大塊年糕往嘴裡塞，嘴邊黏著年糕屑；村民們穿著棉襖，抱著小孩和雞鴨，往山坡上跑去躲。",
+   "lines": [
+    {
+     "who": "年獸",
+     "tag": "excited",
+     "text": "年糕在哪裡？我要吃年糕！",
+     "en": "Where's the rice cake? I want rice cake!"
+    },
+    {
+     "who": "旁白",
+     "text": "年獸一走路，地就咚咚地搖。",
+     "en": "When Nian walked, the ground went boom, boom, and shook."
+    },
+    {
+     "who": "旁白",
+     "text": "牠把大家的年糕，都吃光了。",
+     "en": "He gobbled up everyone's New Year rice cakes."
+    },
+    {
+     "who": "旁白",
+     "text": "村子裡的人，都躲到山上去了。",
+     "en": "So all the people in the village ran up the hill to hide."
+    }
+   ]
+  },
+  {
+   "scene": "村子口的大樹下，第二年的過年前一天，白天。",
+   "act": "一位老爺爺（長長的白鬍子、穿灰色長袍、拿著木頭拐杖）笑咪咪地站在樹下；阿福（約六歲男孩，黑色短頭髮、穿藍色棉襖）拉著老爺爺的袖子；小美（約五歲女孩，綁兩個包包頭、穿粉紅色棉襖）躲在阿福後面，緊張地抓著他的衣服。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這一年，村子裡來了一個老爺爺。",
+     "en": "One year, an old man came to the village."
+    },
+    {
+     "who": "旁白",
+     "text": "他留著白色的大鬍子。",
+     "en": "He had a big white beard."
+    },
+    {
+     "who": "阿福",
+     "tag": "worried",
+     "text": "老爺爺，快跟我們一起躲起來！",
+     "en": "Grandpa, hurry! Come and hide with us!"
+    },
+    {
+     "who": "小美",
+     "tag": "scared",
+     "text": "年獸要來了！",
+     "en": "Nian is coming!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "不怕，不怕。我知道年獸怕什麼。",
+     "en": "Don't worry, don't worry. I know what Nian is afraid of."
+    }
+   ]
+  },
+  {
+   "scene": "村子口的大樹下，白天。",
+   "act": "老爺爺伸出三根手指頭，一根一根地數給孩子們看；阿福和小美睜大眼睛，跟著扳手指；旁邊幾個村民也湊過來聽。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "年獸怕紅色，怕響聲，也怕火光。",
+     "en": "Nian is afraid of the color red, loud noises, and bright lights."
+    },
+    {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "紅色、響聲、火光？",
+     "en": "Red, loud noises, and bright lights?"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "laughing",
+     "text": "對！紅色、響聲、火光！",
+     "en": "That's right! Red, loud noises, and bright lights!"
+    },
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "那我們快來準備吧！",
+     "en": "Then let's get ready!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡，同一天下午。每一戶人家的門上，都貼了紅色的春聯，屋簷下掛著紅燈籠，窗台上擺著蠟燭。",
+   "act": "大人們拿毛筆在紅紙上寫字、往門上貼；阿福和小美蹲在地上，把一串一串紅色的鞭炮排整齊；奶奶（灰白頭髮梳成髮髻、穿深綠色棉襖）在旁邊掛燈籠，笑咪咪的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家拿出紅紙，寫上春聯，貼在門上。",
+     "en": "Everyone took out red paper, wrote New Year wishes, and stuck them on their doors."
+    },
+    {
+     "who": "旁白",
+     "text": "每一家，都掛起了紅燈籠。",
+     "en": "Every house hung up red lanterns."
+    },
+    {
+     "who": "旁白",
+     "text": "阿福和小美，把鞭炮排好了。",
+     "en": "Afu and Mei lined up the firecrackers neatly."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "到處都是紅色，真漂亮！",
+     "en": "Red everywhere! How pretty!"
+    }
+   ]
+  },
+  {
+   "scene": "村子的小路，晚上，天全黑了，天上有星星。家家戶戶的門上貼著紅春聯，燈籠還沒點亮。",
+   "act": "年獸咚咚地從山上走下來，口水流出來，張開手要抓年糕；阿福、小美、老爺爺和村民們躲在一間房子的轉角，偷偷往外看；幾個大人手裡拿著鞭炮和火柴，阿福和小美躲在大人身後。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天黑了。咚！咚！咚！年獸來了！",
+     "en": "Night came. Boom! Boom! Boom! Here came Nian!"
+    },
+    {
+     "who": "年獸",
+     "tag": "excited",
+     "text": "吼！年糕，年糕，我來囉！",
+     "en": "Roar! Rice cake, rice cake, here I come!"
+    },
+    {
+     "who": "旁白",
+     "text": "年獸走到第一家門口，愣住了。",
+     "en": "Nian came to the first house and froze."
+    }
+   ]
+  },
+  {
+   "scene": "一戶人家的門口，晚上，門上貼著大大的紅色春聯。",
+   "act": "年獸用兩隻大手遮住眼睛，從指縫偷看，嚇得往後退，一隻腳抬起來；尾巴縮起來發抖；躲在轉角的小美指著年獸，捂著嘴偷笑。",
+   "lines": [
+    {
+     "who": "年獸",
+     "tag": "scared",
+     "text": "哇！紅色的！好可怕！",
+     "en": "Whoa! Red! How scary!"
+    },
+    {
+     "who": "旁白",
+     "text": "年獸遮住眼睛，往後退了一步。",
+     "en": "Nian covered his eyes and took a step back."
+    },
+    {
+     "who": "小美",
+     "tag": "laughing",
+     "text": "年獸怕紅色！真的耶！",
+     "en": "Nian is afraid of red! It's true!"
+    }
+   ]
+  },
+  {
+   "scene": "村子的小路，晚上。地上的鞭炮爆出一團一團黃色和紅色的火花和煙。",
+   "act": "老爺爺舉起拐杖下命令；一個大人彎腰點鞭炮，阿福和小美站在遠遠的屋簷下摀著耳朵看；鞭炮在年獸腳邊炸開；年獸摀著耳朵，兩隻腳輪流跳起來，表情好慌張，好好笑。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "excited",
+     "text": "大家，放鞭炮！",
+     "en": "Everyone, light the firecrackers!"
+    },
+    {
+     "who": "旁白",
+     "text": "劈哩啪啦！劈哩啪啦！",
+     "en": "Pop, pop, bang! Pop, pop, bang!"
+    },
+    {
+     "who": "年獸",
+     "tag": "scared",
+     "text": "好吵，好吵！我的耳朵！",
+     "en": "So loud, so loud! My ears!"
+    },
+    {
+     "who": "旁白",
+     "text": "年獸摀住耳朵，跳來跳去。",
+     "en": "Nian covered his ears and hopped around."
+    }
+   ]
+  },
+  {
+   "scene": "整個村子，晚上。所有的紅燈籠和蠟燭都點亮了，村子像白天一樣亮，照得雪地發光。",
+   "act": "村民們舉著燈籠和火把，從各個房子走出來；阿福舉起一盞紅燈籠大喊；年獸瞇著眼睛，用手擋光，舌頭吐出來，樣子好狼狽。",
+   "lines": [
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "點燈！大家快點燈！",
+     "en": "Lights! Everyone, light the lanterns!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家把燈籠和蠟燭，都點亮了。",
+     "en": "Everyone lit up all the lanterns and candles."
+    },
+    {
+     "who": "旁白",
+     "text": "整個村子，像白天一樣亮！",
+     "en": "The whole village was as bright as day!"
+    },
+    {
+     "who": "年獸",
+     "tag": "scared",
+     "text": "好亮！我的眼睛睜不開了！",
+     "en": "Too bright! I can't open my eyes!"
+    }
+   ]
+  },
+  {
+   "scene": "村子外面通往大山的小路，晚上，背後是燈火通明的村子。",
+   "act": "年獸垂著頭、拖著尾巴，抱著頭往山裡跑，跑得歪歪扭扭，頭上冒著汗珠；阿福和小美站在村子口，叉著腰哈哈大笑。",
+   "lines": [
+    {
+     "who": "年獸",
+     "tag": "crying",
+     "text": "紅色、響聲、火光，我都怕啦！",
+     "en": "Red, loud noises, bright lights! I'm scared of them all!"
+    },
+    {
+     "who": "年獸",
+     "text": "我不要吃年糕了！我要回家！",
+     "en": "I don't want rice cake anymore! I'm going home!"
+    },
+    {
+     "who": "旁白",
+     "text": "年獸低著頭，咚、咚、咚地跑回山裡去了。",
+     "en": "Nian hung his head and ran, thump, thump, thump, back into the mountains."
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "我們不怕了！",
+     "en": "We're not scared anymore!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡，第二天早上，太陽出來了，雪地亮亮的。門上的紅春聯在陽光下好鮮豔，地上有一點紅色的鞭炮紙屑。",
+   "act": "村民們都穿著新衣服走出家門，互相拱手拜年；阿福和小美向奶奶和老爺爺彎腰拱手，笑得好開心；奶奶摸摸小美的頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，太陽出來了。",
+     "en": "The next morning, the sun came up."
+    },
+    {
+     "who": "旁白",
+     "text": "大家走出家門，每個人都平安。",
+     "en": "Everyone came out of their houses, safe and sound."
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "恭喜，恭喜！新年快樂！",
+     "en": "Best wishes, best wishes! Happy New Year!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "新年快樂！",
+     "en": "Happy New Year!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡，後來每一年過年。門上貼著紅春聯，屋簷下掛滿紅燈籠，遠處有大人在放鞭炮，小朋友站在遠遠的地方摀著耳朵看；一家人穿著紅衣服站在門口。",
+   "act": "阿福和小美面對畫面外的小讀者，笑著拱手拜年；遠遠的山頂上，年獸小小的身影探出頭，看到紅燈籠，又趕快縮回去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從此，大家過年都貼春聯、放鞭炮、點燈。",
+     "en": "Ever since then, at New Year, people hang red banners, set off firecrackers, and light lanterns."
+    },
+    {
+     "who": "旁白",
+     "text": "見面的時候，大家都說一句話。",
+     "en": "And when they meet, everyone says the same thing."
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，我們一起說：",
+     "en": "Come on, everyone, let's say it together:"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "新年快樂！",
+     "en": "Happy New Year!"
+    }
+   ]
+  }
+ ]
+}

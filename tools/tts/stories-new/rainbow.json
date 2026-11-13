@@ -1,0 +1,224 @@
+{
+ "id": "rainbow",
+ "title": "彩虹從哪裡來",
+ "title_en": "Where Rainbows Come From",
+ "size": "短",
+ "roles": {
+  "小晴": "主角，五歲左右的小女孩，好奇愛問，看到彩虹會開心大叫，自己做出彩虹時很得意。",
+  "爸爸": "小晴的爸爸，溫和有耐心的大叔聲音，慢慢解釋，說話帶著笑，喜歡陪女兒動手試。"
+ },
+ "cast": {
+  "小晴": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "種",
+   "where": "第5頁『七種顏色』",
+   "read": "zhǒng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "下午，小晴家客廳的大窗戶邊。窗外的院子剛下完雨，草地和樹葉上都是水珠；灰色的雲正在散開，西邊的雲後面露出太陽。",
+   "act": "小晴第一次出場：五歲左右的小女孩，黑色頭髮綁兩條短辮子，已經穿好黃色雨衣、紅色雨鞋，等不及要出門，趴在窗邊開心地往外看。爸爸第一次出場：短頭髮、戴黑框圓眼鏡、穿綠色格子襯衫和卡其褲，站在她旁邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "下了一整個早上的雨，終於停了。",
+     "en": "It has rained all morning. At last, the rain stops."
+    },
+    {
+     "who": "旁白",
+     "text": "太陽從雲裡跑出來了。",
+     "en": "The sun peeks out from behind the clouds."
+    },
+    {
+     "who": "小晴",
+     "tag": "excited",
+     "text": "爸爸，我們去外面玩！",
+     "en": "Daddy, let's go play outside!"
+    }
+   ]
+  },
+  {
+   "scene": "小晴家門口的院子，下午。東邊天上有灰色的雨雲，雨雲下面還有一條一條的雨絲，雨雲前面掛著一道好大的彩虹。太陽在西邊，從小晴和爸爸的後面照過來，他們的影子往前倒在地上。",
+   "act": "小晴站在一個小水窪旁邊，張大嘴巴、伸手指著彩虹；爸爸站在她後面笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小晴跑出門，看到一道好大的彩虹。",
+     "en": "Lily runs outside and sees a great big rainbow."
+    },
+    {
+     "who": "小晴",
+     "tag": "surprised",
+     "text": "哇！是彩虹！",
+     "en": "Wow! A rainbow!"
+    },
+    {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "爸爸，彩虹從哪裡來的呀？",
+     "en": "Daddy, where do rainbows come from?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子。畫面上半是彩虹和遠方的雨雲，雨雲下面的雨滴可以畫成一顆一顆有笑臉的小水滴。太陽不入鏡，不要畫在彩虹旁邊的天上，只畫從畫面外、小晴背後照過來的黃色光線。",
+   "act": "爸爸蹲下來，跟小晴一樣高，一手指著身後的太陽，一手指著遠方的雨；小晴認真地聽。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "彩虹要有兩個好朋友。",
+     "en": "A rainbow needs two good friends."
+    },
+    {
+     "who": "爸爸",
+     "text": "一個是陽光，一個是小水滴。",
+     "en": "One is sunlight. The other is lots of tiny drops of water."
+    },
+    {
+     "who": "旁白",
+     "text": "那邊的天上，有好多小雨滴。",
+     "en": "Over there in the sky, there are lots of tiny raindrops."
+    }
+   ]
+  },
+  {
+   "scene": "一張簡單的說明圖：一道白色的陽光照進一顆放大的、透明的圓形雨滴，從雨滴同一邊出來的時候，分開成紅、橘、黃、綠、藍、深藍、紫七條彩色的光，往小晴的眼睛照過去。",
+   "act": "小晴瞇著眼睛、張大嘴巴看著七條彩色的光；角落畫小小的爸爸，舉起手指在解說。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "text": "陽光看起來是白色的。",
+     "en": "Sunlight looks white."
+    },
+    {
+     "who": "爸爸",
+     "tag": "happy",
+     "text": "可是裡面，有好多顏色喔！",
+     "en": "But there are lots of colors inside!"
+    },
+    {
+     "who": "旁白",
+     "text": "陽光照進小雨滴，顏色就分開了。",
+     "en": "When sunlight shines into a raindrop, the colors spread apart."
+    },
+    {
+     "who": "旁白",
+     "text": "顏色在雨滴裡碰一下，又跑回來，跑進我們的眼睛。",
+     "en": "The colors bounce inside the drop and come back out, right into our eyes."
+    }
+   ]
+  },
+  {
+   "scene": "院子，天上的彩虹又大又清楚，從外圈到內圈是紅、橘、黃、綠、藍、深藍、紫七種顏色。",
+   "act": "小晴伸出手指，一個顏色接一個顏色指著彩虹念；爸爸在旁邊笑著豎起七根手指。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "text": "我們一起來念彩虹的顏色！",
+     "en": "Let's say the rainbow colors together!"
+    },
+    {
+     "who": "小晴",
+     "tag": "excited",
+     "text": "紅色、橘色、黃色、綠色！",
+     "en": "Red, orange, yellow, green!"
+    },
+    {
+     "who": "小晴",
+     "text": "藍色、深藍色、紫色！",
+     "en": "Blue, dark blue, purple!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "happy",
+     "text": "對！彩虹有七種顏色。",
+     "en": "That's right! A rainbow has seven colors."
+    }
+   ]
+  },
+  {
+   "scene": "院子，側面的寬景：畫面最左邊是西邊天上低低的太陽，中間是小晴和爸爸，他們的影子往右倒在草地上，畫面最右邊的東邊天上是彩虹。",
+   "act": "小晴回頭看太陽的方向，用手遮住眼睛，眼睛不要正對太陽；爸爸一手指指後面的太陽，一手指指前面的彩虹。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小晴回頭一看，太陽在她的後面。",
+     "en": "Lily looks behind her. The sun is at her back."
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "要看彩虹，太陽要在你的後面。",
+     "en": "To see a rainbow, the sun has to be behind you."
+    },
+    {
+     "who": "小晴",
+     "tag": "surprised",
+     "text": "太陽在後面，彩虹在前面！",
+     "en": "The sun is behind me, and the rainbow is in front of me!"
+    }
+   ]
+  },
+  {
+   "scene": "院子，東邊的雨停了，天上的彩虹變淡，快要看不見了；院子角落的水龍頭旁邊，捲著一條綠色的水管。",
+   "act": "小晴有點捨不得地看著淡掉的彩虹，再拉拉爸爸的袖子；爸爸笑著拿起綠色水管。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了一下子，那邊的雨停了，彩虹也不見了。",
+     "en": "After a little while, the rain over there stops, and the rainbow fades away."
+    },
+    {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "爸爸，我們可以自己做彩虹嗎？",
+     "en": "Daddy, can we make our own rainbow?"
+    },
+    {
+     "who": "爸爸",
+     "text": "可以呀！我們用水管來試試看。",
+     "en": "Sure! Let's try with the garden hose."
+    }
+   ]
+  },
+  {
+   "scene": "院子，下午的陽光從西邊照過來。爸爸用大拇指壓住水管口，噴出一大片很細的水霧，水霧裡出現一道小彩虹。",
+   "act": "小晴和爸爸背對太陽站著，兩個人的影子在前面；小晴拍手跳起來，眼睛發亮；爸爸笑著噴水。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽在後面，爸爸把水噴向前面。",
+     "en": "With the sun behind them, Daddy sprays the water out in front."
+    },
+    {
+     "who": "旁白",
+     "text": "水變成小水滴，出現一道小彩虹！",
+     "en": "The water turns into tiny drops. A little rainbow appears!"
+    },
+    {
+     "who": "小晴",
+     "tag": "excited",
+     "text": "我們做出彩虹了！",
+     "en": "We made a rainbow!"
+    },
+    {
+     "who": "小晴",
+     "tag": "proud",
+     "text": "陽光加上小水滴，就是彩虹！",
+     "en": "Sunlight plus tiny water drops makes a rainbow!"
+    }
+   ]
+  }
+ ]
+}

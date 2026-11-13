@@ -1,0 +1,562 @@
+{
+ "id": "aladdin",
+ "title": "阿拉丁和神燈",
+ "title_en": "Aladdin and the Magic Lamp",
+ "size": "長",
+ "roles": {
+  "阿拉丁": "十二歲左右的男孩，聲音明亮、善良又勇敢，興奮時說話快，害怕時小小聲。",
+  "媽媽": "阿拉丁的媽媽，溫柔的中年女聲，說話慢、很疼孩子，擔心時語氣急一點。",
+  "魔法師": "愛騙人的壞魔法師，中年男聲，裝好人時甜甜的，生氣時哼哼叫，好笑不可怕，最後垂頭喪氣。",
+  "燈精靈": "住在神燈裡的老精靈，聲音低沉溫暖、帶點神祕和俏皮，開心時笑呵呵。",
+  "公主": "十多歲的公主，聲音清亮甜美、大方有主意，看到星星時興奮，想辦法時壓低聲音。"
+ },
+ "cast": {
+  "阿拉丁": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "魔法師": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "燈精靈": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第2頁『什麼忙』，第9頁『什麼名字』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第10頁『會飛的毯子』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第7、10頁『沒問題』，第15頁『沒有受傷』",
+   "read": "méi"
+  },
+  {
+   "char": "假",
+   "where": "第12頁『假裝成』",
+   "read": "jiǎ"
+  },
+  {
+   "char": "喝",
+   "where": "第16頁『清水喝』",
+   "read": "hē"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "沙漠旁邊的一座小城，早上。土黃色的方形房子、圓頂屋頂，城外是一片金色的沙漠；城門外有一口石頭水井，井邊有人排隊提水。",
+   "act": "阿拉丁第一次出場：十二歲左右的男孩，黑色捲髮，穿白色上衣、紅色背心、藍色燈籠褲、棕色涼鞋。媽媽第一次出場：綠色頭巾、棕色長裙、溫柔的笑臉。阿拉丁跑過來，和媽媽一起提一個很重的木水桶，媽媽笑著看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，沙漠旁邊有一座小城。",
+     "en": "Once upon a time, there was a little town next to a big desert."
+    },
+    {
+     "who": "旁白",
+     "text": "城裡住著一個男孩，叫做阿拉丁。",
+     "en": "In the town lived a boy named Aladdin."
+    },
+    {
+     "who": "旁白",
+     "text": "城裡的水好少，媽媽每天要走好遠去提水。",
+     "en": "Water was hard to find, so every day his mom walked a long way to fetch it."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "happy",
+     "text": "媽媽，我來幫妳提！",
+     "en": "Mom, let me help you carry it!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "謝謝你，阿拉丁，你真貼心。",
+     "en": "Thank you, Aladdin. You are so sweet."
+    }
+   ]
+  },
+  {
+   "scene": "城裡熱鬧的市場，白天。有賣水果、地毯、陶罐的攤子，頭上掛著紅黃條紋的布棚。",
+   "act": "魔法師第一次出場：瘦高的叔叔，穿紫色斗篷、戴尖尖的紫色高帽子、留著捲捲的黑鬍子；他彎著腰，捏著一枚金幣對阿拉丁笑；阿拉丁抬頭看他，有點好奇。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，市場來了一個穿紫色斗篷的人。",
+     "en": "One day, a man in a purple cape came to the market."
+    },
+    {
+     "who": "旁白",
+     "text": "他是一個壞心的魔法師。",
+     "en": "He was a sneaky magician."
+    },
+    {
+     "who": "魔法師",
+     "tag": "happy",
+     "text": "小朋友，幫我一個忙，我送你一枚金幣！",
+     "en": "Young man, do me a favor, and I'll give you a gold coin!"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "curious",
+     "text": "好呀，要幫什麼忙呢？",
+     "en": "Sure! What do you need?"
+    },
+    {
+     "who": "魔法師",
+     "text": "跟我去沙漠，你就知道了。",
+     "en": "Come with me to the desert, and you'll see."
+    }
+   ]
+  },
+  {
+   "scene": "沙漠中間的一座小石頭山，下午，太陽很大。山腳有一個圓形的小洞口，剛好夠一個小孩爬進去，洞口旁邊有一塊大圓石。",
+   "act": "魔法師蹲在洞口邊，伸手指著洞裡；阿拉丁拿著一支小火把，坐在洞口，準備往下爬。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們走呀走，走到沙漠裡的一個山洞前。",
+     "en": "They walked and walked until they came to a cave in the desert."
+    },
+    {
+     "who": "魔法師",
+     "text": "洞口好小，我進不去。",
+     "en": "The opening is too small. I can't fit."
+    },
+    {
+     "who": "魔法師",
+     "text": "你下去，幫我拿一盞舊油燈上來。",
+     "en": "Go down and bring me an old oil lamp."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "brave",
+     "text": "好，我去！",
+     "en": "Okay, I'll go!"
+    }
+   ]
+  },
+  {
+   "scene": "山洞裡面，地上和石壁上堆滿紅色、綠色、藍色的寶石和金幣，被火把照得亮晶晶的。",
+   "act": "阿拉丁張大嘴巴看著滿地寶石，但是一顆也沒拿；他在一塊大石頭後面，找到一盞灰撲撲、有彎彎壺嘴的舊油燈，雙手捧起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山洞裡好亮，滿地都是寶石。",
+     "en": "The cave was bright and full of jewels."
+    },
+    {
+     "who": "旁白",
+     "text": "紅色、綠色、藍色，亮晶晶的。",
+     "en": "Red ones, green ones, blue ones, all sparkling."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "surprised",
+     "text": "哇！好美！可是，我要找的是舊油燈。",
+     "en": "Wow! So pretty! But I'm here for the old lamp."
+    },
+    {
+     "who": "旁白",
+     "text": "阿拉丁在石頭後面，找到了舊油燈。",
+     "en": "Behind a rock, Aladdin found the old lamp."
+    }
+   ]
+  },
+  {
+   "scene": "山洞口，從洞裡往上看，可以看到一圈藍天和魔法師的臉，洞口旁邊放著大圓石。",
+   "act": "阿拉丁站在洞底，一手抱著舊油燈，一手往上伸；魔法師趴在洞口，皺著眉頭伸手要燈，大圓石就在他旁邊。",
+   "lines": [
+    {
+     "who": "阿拉丁",
+     "tag": "happy",
+     "text": "我找到了！請拉我上去！",
+     "en": "I found it! Please pull me up!"
+    },
+    {
+     "who": "魔法師",
+     "tag": "angry",
+     "text": "先把燈給我！快一點！",
+     "en": "Give me the lamp first! Hurry!"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "worried",
+     "text": "先拉我上去，我再給你。",
+     "en": "Pull me up first. Then I'll give it to you."
+    },
+    {
+     "who": "魔法師",
+     "tag": "angry",
+     "text": "哼！那你就留在下面吧！",
+     "en": "Hmph! Then stay down there!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！一塊大石頭，把洞口堵住了。",
+     "en": "Thud! A big rock blocked the opening."
+    }
+   ]
+  },
+  {
+   "scene": "山洞裡變暗了，只剩火把一點小光；舊油燈被擦過的地方發出金光。",
+   "act": "阿拉丁坐在地上，抱著膝蓋有點想哭；他用白色上衣的袖子擦油燈，燈嘴冒出一團金色的煙，捲成一圈一圈。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山洞裡變暗了，阿拉丁有一點害怕。",
+     "en": "The cave grew dark. Aladdin felt a little scared."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "sad",
+     "text": "媽媽，我好想回家。",
+     "en": "Mom, I want to go home."
+    },
+    {
+     "who": "旁白",
+     "text": "他用袖子，擦一擦舊油燈。",
+     "en": "He rubbed the old lamp with his sleeve."
+    },
+    {
+     "who": "旁白",
+     "text": "咻！一團金色的煙，從燈裡冒出來！",
+     "en": "Whoosh! A puff of golden smoke came out of the lamp!"
+    }
+   ]
+  },
+  {
+   "scene": "山洞裡，金色的煙把整個洞照亮了。",
+   "act": "燈精靈第一次出場：整個身體飄在一朵金色的雲上面，雲和燈嘴之間只連著一縷細細的金煙；圓圓的臉、白色眉毛和白色大鬍子、戴橘色頭巾、笑咪咪的，飄在阿拉丁面前；阿拉丁瞪大眼睛，再舉起一根手指許願。",
+   "lines": [
+    {
+     "who": "燈精靈",
+     "tag": "cheerful",
+     "text": "你好！我是燈精靈，住在這盞燈裡。",
+     "en": "Hello! I am the lamp spirit. I live in this lamp."
+    },
+    {
+     "who": "燈精靈",
+     "text": "你把我叫醒了，可以許三個願望！",
+     "en": "You woke me up, so you may make three wishes!"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "surprised",
+     "text": "三個願望？真的嗎？",
+     "en": "Three wishes? Really?"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "excited",
+     "text": "第一個願望：我想回家找媽媽！",
+     "en": "My first wish: I want to go home to my mom!"
+    },
+    {
+     "who": "燈精靈",
+     "tag": "happy",
+     "text": "沒問題！閉上眼睛，一、二、三！",
+     "en": "No problem! Close your eyes. One, two, three!"
+    }
+   ]
+  },
+  {
+   "scene": "阿拉丁家，傍晚。小小的土黃色房子，屋裡有一張矮桌、坐墊和一個木頭架子。",
+   "act": "阿拉丁抱著油燈站在家門口，媽媽衝過來緊緊抱住他，阿拉丁低著頭，很不好意思。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一眨眼，阿拉丁就回到了家門口。",
+     "en": "In the blink of an eye, Aladdin was back at his front door."
+    },
+    {
+     "who": "媽媽",
+     "tag": "worried",
+     "text": "阿拉丁！你去哪裡了？媽媽好擔心！",
+     "en": "Aladdin! Where did you go? I was so worried!"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "sad",
+     "text": "媽媽，對不起，我不該跟陌生人走。",
+     "en": "I'm sorry, Mom. I shouldn't have gone with a stranger."
+    },
+    {
+     "who": "旁白",
+     "text": "阿拉丁把神燈，放在家裡的架子上。",
+     "en": "Aladdin put the magic lamp on a shelf at home."
+    }
+   ]
+  },
+  {
+   "scene": "市場，晴天，風有點大，水果攤的布棚被吹得鼓起來。",
+   "act": "公主第一次出場：十多歲的女孩，頭上綁著兩個圓圓的髮髻、穿黃色長裙、頭上戴小小的金冠和粉紅色頭巾；她手上提著一籃水果，粉紅頭巾被風吹走；阿拉丁跳起來抓住頭巾，交給她，兩個人都在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，公主來市場買水果。",
+     "en": "One day, the princess came to the market to buy fruit."
+    },
+    {
+     "who": "旁白",
+     "text": "一陣風吹來，公主的頭巾飛走了！",
+     "en": "A gust of wind blew, and her scarf flew away!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿拉丁跳起來，一把抓住頭巾。",
+     "en": "Aladdin jumped up and caught it."
+    },
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "謝謝你！你叫什麼名字？",
+     "en": "Thank you! What is your name?"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "shy",
+     "text": "我叫阿拉丁。",
+     "en": "I'm Aladdin."
+    }
+   ]
+  },
+  {
+   "scene": "左半邊：市場上，公主抬頭看天上飛過的小鳥。右半邊：同一天下午，阿拉丁家，窗外陽光斜斜的。",
+   "act": "公主望著天空、雙手合在胸前；阿拉丁在家擦神燈，燈精靈從煙裡出現，手一揮，一張紅底黃花紋、四角有黃色流蘇的毯子飄在半空中。",
+   "lines": [
+    {
+     "who": "公主",
+     "tag": "dreamy",
+     "text": "我真希望，能像小鳥一樣飛上天。",
+     "en": "I wish I could fly up high like a bird."
+    },
+    {
+     "who": "旁白",
+     "text": "那天，阿拉丁拿出神燈，擦一擦。",
+     "en": "That day, Aladdin took out the lamp and gave it a rub."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "excited",
+     "text": "第二個願望：我想要一張會飛的毯子！",
+     "en": "My second wish: I want a carpet that can fly!"
+    },
+    {
+     "who": "燈精靈",
+     "tag": "happy",
+     "text": "沒問題！咻，飛毯來了！",
+     "en": "No problem! Whoosh, here comes a flying carpet!"
+    }
+   ]
+  },
+  {
+   "scene": "黃昏的城市上空，天空是橘色的。下面是土黃色的房子、圓頂和王宮的高塔；城門外的水井邊，一排人提著水桶，走在好遠的沙路上。",
+   "act": "阿拉丁和公主坐在紅色飛毯上，公主的頭巾被風吹起來，她開心地往下看；阿拉丁一手抓著飛毯，一手指著下面提水的人，表情有點難過。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿拉丁和公主，坐上紅色的飛毯。",
+     "en": "Aladdin and the princess sat on the red flying carpet."
+    },
+    {
+     "who": "旁白",
+     "text": "飛過屋頂，飛過高塔，飛過沙漠。",
+     "en": "Over the rooftops, over the towers, over the desert."
+    },
+    {
+     "who": "公主",
+     "tag": "excited",
+     "text": "好高喔！房子好小，好可愛！",
+     "en": "So high! The houses look so tiny!"
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "sad",
+     "text": "你看，大家要走好遠去提水。",
+     "en": "Look, everyone has to walk so far for water."
+    }
+   ]
+  },
+  {
+   "scene": "阿拉丁家門口的小路，白天。魔法師推著一台堆滿亮晶晶新油燈的小木車。",
+   "act": "魔法師戴假的白鬍子、駝著背，假裝成賣燈的老伯伯，但還是穿著紫色斗篷；媽媽站在門口，把架子上的舊神燈遞給他，換一盞新燈；魔法師偷偷笑。阿拉丁不在家。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，壞心的魔法師回來了。",
+     "en": "But the sneaky magician came back."
+    },
+    {
+     "who": "旁白",
+     "text": "他假裝成賣燈的老伯伯，在路上大聲喊。",
+     "en": "He pretended to be an old lamp seller and called out in the street."
+    },
+    {
+     "who": "魔法師",
+     "tag": "cheerful",
+     "text": "舊燈換新燈！舊燈換新燈！",
+     "en": "New lamps for old! New lamps for old!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "happy",
+     "text": "真好！我用這盞舊燈，跟你換新的。",
+     "en": "How nice! I'll trade you this old lamp for a new one."
+    },
+    {
+     "who": "魔法師",
+     "tag": "laughing",
+     "text": "嘿嘿，神燈是我的了！",
+     "en": "Hee hee! The magic lamp is mine!"
+    }
+   ]
+  },
+  {
+   "scene": "城外沙丘上，白天。魔法師腳邊有好多鼓鼓的布袋，袋口露出金子。",
+   "act": "魔法師撕掉假鬍子，舉著神燈得意大笑；燈精靈從燈裡出來，皺著眉、垂著頭，很不開心；一袋一袋金子從城裡飛過來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "魔法師擦一擦神燈，燈精靈又出來了。",
+     "en": "The magician rubbed the lamp, and the lamp spirit came out again."
+    },
+    {
+     "who": "魔法師",
+     "tag": "excited",
+     "text": "燈精靈，把城裡的金子，全都給我！",
+     "en": "Lamp spirit, give me all the gold in town!"
+    },
+    {
+     "who": "燈精靈",
+     "tag": "sad",
+     "text": "唉，誰拿著燈，我就要聽誰的。",
+     "en": "Oh dear. I must listen to whoever holds the lamp."
+    },
+    {
+     "who": "旁白",
+     "text": "好多袋金子，飛到魔法師的腳邊。",
+     "en": "Bag after bag of gold flew to the magician's feet."
+    }
+   ]
+  },
+  {
+   "scene": "同一片沙丘，白天。魔法師背對著畫面外，正忙著數金子。",
+   "act": "阿拉丁和公主坐在紅色飛毯上，從魔法師後面悄悄飛過來；公主把手指放在嘴邊說小聲；阿拉丁伸手一把拿走魔法師手上的神燈；魔法師回頭，嚇得帽子都歪了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "金子飛出城了！阿拉丁和公主坐飛毯去追。",
+     "en": "The gold was flying out of town! Aladdin and the princess chased it on the flying carpet."
+    },
+    {
+     "who": "公主",
+     "tag": "whispering",
+     "text": "阿拉丁，我們從後面飛過去！",
+     "en": "Aladdin, let's sneak up behind him!"
+    },
+    {
+     "who": "旁白",
+     "text": "飛毯輕輕地飛，飛到魔法師的後面。",
+     "en": "The carpet flew quietly up behind the magician."
+    },
+    {
+     "who": "旁白",
+     "text": "阿拉丁一伸手，就把神燈拿回來了！",
+     "en": "Aladdin reached out and took the lamp back!"
+    },
+    {
+     "who": "魔法師",
+     "tag": "surprised",
+     "text": "哎呀！我的神燈！",
+     "en": "Oh no! My lamp!"
+    }
+   ]
+  },
+  {
+   "scene": "左邊：沙丘上颳起一陣金色的風。右邊：好遠好遠的沙漠中間，一座很軟的大沙堆，旁邊有一棵小椰子樹。",
+   "act": "左邊：燈精靈雙手叉腰，對魔法師吹一口氣，魔法師像陀螺一樣被風吹走。右邊：魔法師坐在大沙堆裡摸著頭，一點也沒受傷，一臉不好意思；遠方天上有一排金色布袋往城裡飛。",
+   "lines": [
+    {
+     "who": "燈精靈",
+     "tag": "serious",
+     "text": "這次不算願望！魔法師，回沙漠去吧！",
+     "en": "This one isn't a wish! Magician, back to the desert you go!"
+    },
+    {
+     "who": "旁白",
+     "text": "呼呼！一陣風，把魔法師吹回了沙漠。",
+     "en": "Whoosh! A wind blew the magician all the way back to the desert."
+    },
+    {
+     "who": "旁白",
+     "text": "他掉進很軟的沙堆裡，一點也沒有受傷。",
+     "en": "He landed in a soft pile of sand, not hurt one bit."
+    },
+    {
+     "who": "魔法師",
+     "tag": "sad",
+     "text": "唉，我再也不騙人了。",
+     "en": "Oh dear. I won't trick anyone ever again."
+    },
+    {
+     "who": "旁白",
+     "text": "那些金子，也都飛回了城裡。",
+     "en": "And all the gold flew back to the town."
+    }
+   ]
+  },
+  {
+   "scene": "城中央的廣場，傍晚，天空是橘色的。廣場正中間新冒出一口石頭水井，清清的水滿到井邊，旁邊開出小花。",
+   "act": "阿拉丁捧著神燈，燈精靈飄在旁邊開心地拍手；媽媽、公主和城裡的大人小孩拿著水桶、陶罐排隊裝水，大家都在笑；紅色飛毯載著兩個小孩在上面飛。",
+   "lines": [
+    {
+     "who": "燈精靈",
+     "tag": "gentle",
+     "text": "阿拉丁，你剩下最後一個願望。",
+     "en": "Aladdin, you have one wish left."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "gentle",
+     "text": "城裡的人，每天都要走好遠去提水。",
+     "en": "The people in town walk so far every day to get water."
+    },
+    {
+     "who": "阿拉丁",
+     "tag": "happy",
+     "text": "最後一個願望：在城裡變出一口井！",
+     "en": "My last wish: a well right here in town!"
+    },
+    {
+     "who": "燈精靈",
+     "tag": "happy",
+     "text": "這是我聽過最好的願望！",
+     "en": "That is the best wish I have ever heard!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，城裡的大家，每天都有清水喝。",
+     "en": "And from then on, everyone in town had clean water every day."
+    }
+   ]
+  }
+ ]
+}

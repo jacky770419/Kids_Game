@@ -1,0 +1,245 @@
+{
+ "id": "fox-crow",
+ "title": "狐狸和烏鴉",
+ "title_en": "The Fox and the Crow",
+ "size": "短",
+ "roles": {
+  "烏鴉": "愛美的烏鴉小姐，聲音嬌嬌的，被誇獎時很陶醉，肉掉了時懊惱，最後學到一課、大方原諒。",
+  "狐狸": "狡猾的狐狸，聲音甜甜的、很會說好話，好笑不可怕，肉被沖走時垮著臉，最後被烏鴉的關心感動，真心道歉。"
+ },
+ "cast": {
+  "烏鴉": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第8頁『沒關係』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林邊的一棵大樹，早上，陽光很亮，樹下是綠色草地，不遠處有一條小河。",
+   "act": "烏鴉第一次出場：全身黑色發亮的羽毛、黑色的嘴巴，頭上別一朵小黃花；她嘴裡咬著一大塊肉，正從草地飛上大樹，開心地瞇著眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "烏鴉找到一大塊肉。",
+     "en": "The crow found a big piece of meat."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "excited",
+     "text": "哇，好大一塊肉！我要帶到樹上吃。",
+     "en": "Wow, what a big piece of meat! I'll take it up to the tree."
+    },
+    {
+     "who": "旁白",
+     "text": "她咬著肉，飛到大樹上。",
+     "en": "She held it in her beak and flew up into a big tree."
+    },
+    {
+     "who": "旁白",
+     "text": "她好開心，想在樹上大口吃肉。",
+     "en": "She was so happy. She wanted to sit in the tree and gobble it up."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下的草地。",
+   "act": "狐狸第一次出場：橘色的狐狸、尖耳朵、尾巴蓬蓬的、尾巴尖是白色，脖子上圍一條紫色圍巾；他坐在樹下抬頭看著肉，口水快流出來，眼珠子轉來轉去在想辦法。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樹下，走來一隻狐狸。",
+     "en": "A fox came walking by, under the tree."
+    },
+    {
+     "who": "狐狸",
+     "tag": "whispering",
+     "text": "好香的肉！我也想吃。",
+     "en": "Mmm, what yummy meat! I want some too."
+    },
+    {
+     "who": "狐狸",
+     "text": "嗯，我來想個辦法。",
+     "en": "Hmm, let me think of a plan."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹，樹上和樹下。",
+   "act": "狐狸站起來，對著樹上的烏鴉彎腰揮手，笑得甜甜的；烏鴉咬著肉低頭看他，翹起尾巴，很得意的樣子。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "gentle",
+     "text": "烏鴉小姐，妳好！",
+     "en": "Hello, Miss Crow!"
+    },
+    {
+     "who": "狐狸",
+     "text": "妳的羽毛又黑又亮，真美！",
+     "en": "Your feathers are so black and shiny. How lovely!"
+    },
+    {
+     "who": "旁白",
+     "text": "烏鴉聽了，好開心。",
+     "en": "The crow was very pleased."
+    },
+    {
+     "who": "旁白",
+     "text": "可是她咬著肉，不能說話。",
+     "en": "But she had meat in her beak, so she could not talk."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹，樹上和樹下。",
+   "act": "狐狸雙手合在胸前，用拜託的眼神看著烏鴉；烏鴉咬著肉，抬起頭、挺起胸膛，準備張嘴唱歌。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "text": "妳的聲音，一定最好聽了！",
+     "en": "And your voice must be the most beautiful of all!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "gentle",
+     "text": "可以唱一首歌，讓我聽聽嗎？",
+     "en": "Would you sing a song for me, please?"
+    },
+    {
+     "who": "旁白",
+     "text": "烏鴉抬起頭，好驕傲。",
+     "en": "The crow lifted her head proudly."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹，樹上和樹下。",
+   "act": "烏鴉張大嘴巴唱歌，閉著眼睛很陶醉；那塊肉從她嘴裡掉下去；樹下的狐狸跳起來，用兩隻前腳接住肉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "烏鴉張開嘴巴，大聲唱歌。",
+     "en": "The crow opened her beak and sang out loud."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！肉掉下去了！",
+     "en": "Plop! Down fell the meat!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "laughing",
+     "text": "謝謝妳的肉！",
+     "en": "Thank you for the meat!"
+    },
+    {
+     "who": "烏鴉",
+     "tag": "surprised",
+     "text": "哎呀，我的肉！",
+     "en": "Oh no, my meat!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹，樹上和樹下。",
+   "act": "狐狸用前腳抱著肉站在樹下，抬頭對烏鴉眨眼睛；烏鴉在樹枝上垂下翅膀，低著頭很難過；狐狸的身體已經轉向小河那邊，準備跑走。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "text": "有人誇獎妳的時候，要先想一想喔。",
+     "en": "When someone says nice things about you, stop and think first."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "sad",
+     "text": "原來，你是想要我的肉。",
+     "en": "Oh. So you just wanted my meat."
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸咬著肉，開心地跑走了。",
+     "en": "The fox ran off happily with the meat."
+    }
+   ]
+  },
+  {
+   "scene": "大樹旁邊的小河邊，河水清清的，岸邊有一顆圓圓的大石頭。",
+   "act": "狐狸被大石頭絆到，摔得四腳朝天，樣子很好笑，沒有受傷；那塊肉掉進小河，被河水沖走；烏鴉從空中飛過來，擔心地看著狐狸。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸跑到小河邊，咚！絆了一跤。",
+     "en": "The fox ran to the stream. Thump! He tripped over a stone."
+    },
+    {
+     "who": "旁白",
+     "text": "肉掉進小河，被河水沖走了。",
+     "en": "The meat fell into the stream and floated away."
+    },
+    {
+     "who": "狐狸",
+     "tag": "sad",
+     "text": "唉，肉不見了。",
+     "en": "Oh dear. The meat is gone."
+    },
+    {
+     "who": "旁白",
+     "text": "烏鴉飛過來看。",
+     "en": "The crow flew over to look."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "gentle",
+     "text": "狐狸，你痛不痛？",
+     "en": "Fox, are you hurt?"
+    }
+   ]
+  },
+  {
+   "scene": "小河邊的草地，下午，旁邊有一叢結滿紅色莓果的小樹。",
+   "act": "狐狸坐在草地上，耳朵垂下來，一臉感動又不好意思，向烏鴉道歉；烏鴉停在他旁邊的草地上，溫柔地看著他；後面是一叢紅色莓果。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "gentle",
+     "text": "我不痛。妳對我真好！",
+     "en": "I'm not hurt. You're so kind to me!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "sad",
+     "text": "對不起，我不該騙妳。",
+     "en": "I'm sorry. I shouldn't have tricked you."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "gentle",
+     "text": "沒關係。我也學到了，要先想一想。",
+     "en": "That's okay. I learned something too. I'll stop and think."
+    },
+    {
+     "who": "狐狸",
+     "tag": "happy",
+     "text": "我們一起去摘莓果吧！",
+     "en": "Let's go pick berries together!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，說好聽話、又想要你東西的人，要小心喔！",
+     "en": "Be careful when someone says sweet words and wants something from you!"
+    }
+   ]
+  }
+ ]
+}

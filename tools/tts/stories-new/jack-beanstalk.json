@@ -1,0 +1,580 @@
+{
+ "id": "jack-beanstalk",
+ "title": "傑克與魔豆",
+ "title_en": "Jack and the Beanstalk",
+ "size": "長",
+ "roles": {
+  "傑克": "八歲左右的男孩，聲音明亮有精神，好奇、勇敢、有禮貌，開心時講話快快的。",
+  "媽媽": "溫柔的年輕媽媽，聲音柔和，家裡窮時有點憂愁，後來鬆一口氣、笑得很開心。",
+  "老爺爺": "神祕又慈祥的白鬍子老爺爺，說話慢、帶點神奇的笑意。",
+  "巨人": "好大的胖巨人叔叔，嗓門超大、聲音低沉沙啞，其實很寂寞、很好心，念口訣時像在唱歌，想睡時含含糊糊。",
+  "巨人太太": "熱心的巨人太太，聲音宏亮、說話快、愛笑，有點好笑的大嬸口氣，一點也不兇。",
+  "母雞": "會生金蛋的小母雞，聲音高高的、可愛又得意，愛咕咕叫。"
+ },
+ "cast": {
+  "傑克": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "老爺爺": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "巨人": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "巨人太太": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "母雞": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "哩",
+   "where": "第8頁『嘰哩咕嚕』兩次",
+   "read": "lī"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "山腳下一間舊舊的小木屋，屋頂有破洞補了木板，門口有一小塊菜園，旁邊的木欄裡站著一頭全身白色、粉紅鼻子、脖子掛著小鈴鐺的乳牛。白天，天氣晴朗。",
+   "act": "傑克（約八歲的男孩，棕色短頭髮、穿藍色上衣和咖啡色短褲、光著腳）摸著乳牛的頭；媽媽（綁著一個髮髻、穿綠色舊裙子和白圍裙）拿著空空的米缸，皺著眉頭看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一個男孩叫傑克。",
+     "en": "Once upon a time, there was a boy named Jack."
+    },
+    {
+     "who": "旁白",
+     "text": "傑克和媽媽住在小木屋裡，家裡很窮。",
+     "en": "Jack and his mother lived in a little cottage. They were very poor."
+    },
+    {
+     "who": "旁白",
+     "text": "家裡就剩下一頭白色的乳牛。",
+     "en": "All they had left was one white cow."
+    },
+    {
+     "who": "媽媽",
+     "tag": "sad",
+     "text": "傑克，家裡沒有東西吃了。",
+     "en": "Jack, there is no food left in the house."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "你把乳牛牽去鎮上賣掉吧。",
+     "en": "Please take the cow to town and sell her."
+    }
+   ]
+  },
+  {
+   "scene": "鄉下的泥土小路，兩邊是綠色草地和野花，路邊有一棵大樹，樹下有一顆大石頭。白天。",
+   "act": "傑克牽著白色乳牛走在路上；大樹下的石頭上坐著一位老爺爺（長長的白鬍子、穿紫色斗篷、戴尖尖的紫色帽子、拿著木頭手杖），他攤開手掌，掌心裡有五顆發著綠光的豆子，對傑克眨眼睛；傑克彎腰看，眼睛睜好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "傑克牽著乳牛，走在小路上。",
+     "en": "Jack led the cow down the road."
+    },
+    {
+     "who": "旁白",
+     "text": "路邊坐著一個白鬍子老爺爺。",
+     "en": "An old man with a white beard sat by the road."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "小朋友，我跟你換這頭牛，好嗎？",
+     "en": "Little boy, will you trade me your cow?"
+    },
+    {
+     "who": "老爺爺",
+     "text": "我有五顆魔豆，神奇的魔豆喔！",
+     "en": "I have five magic beans. Very special beans!"
+    },
+    {
+     "who": "傑克",
+     "tag": "excited",
+     "text": "魔豆？哇，我要換！",
+     "en": "Magic beans? Wow, yes, let's trade!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡面，傍晚。屋裡有一張舊木桌、一個小火爐，牆上有一扇打開的小窗戶，窗外是橘紅色的天。",
+   "act": "媽媽嘆了一口氣，把五顆綠色豆子往窗外丟，豆子在窗外的空中飛；傑克站在旁邊，低著頭、手指互相捏著，有點不好意思。",
+   "lines": [
+    {
+     "who": "傑克",
+     "tag": "excited",
+     "text": "媽媽，妳看！我換到五顆魔豆！",
+     "en": "Mom, look! I got five magic beans!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "sad",
+     "text": "唉，五顆豆子，吃不飽呀。",
+     "en": "Oh, Jack. Five beans won't fill our tummies."
+    },
+    {
+     "who": "傑克",
+     "tag": "sad",
+     "text": "對不起，媽媽。",
+     "en": "I'm sorry, Mom."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽把豆子往窗外一丟。",
+     "en": "Mother tossed the beans out the window."
+    },
+    {
+     "who": "旁白",
+     "text": "那天晚上，傑克和媽媽什麼也沒吃。",
+     "en": "That night, Jack and his mother had nothing to eat."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋外面，清晨，天剛亮。窗戶外面，一根又粗又綠的豆莖從菜園的泥土裡冒出來，上面有好多大葉子，一直往上，穿進天上的白雲裡，看不到頂。",
+   "act": "傑克穿著藍色上衣，從窗戶探出頭，張大嘴巴往上看，雙手抓著窗框；豆莖的大葉子在他旁邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，傑克打開窗戶。",
+     "en": "The next morning, Jack opened the window."
+    },
+    {
+     "who": "傑克",
+     "tag": "surprised",
+     "text": "哇！好高，好高的豆莖！",
+     "en": "Wow! What a tall, tall beanstalk!"
+    },
+    {
+     "who": "旁白",
+     "text": "豆莖一直往上冒，冒進了白雲裡。",
+     "en": "It went up and up, right into the clouds."
+    },
+    {
+     "who": "旁白",
+     "text": "豆莖的葉子，好像大雨傘一樣。",
+     "en": "Its leaves were as big as umbrellas."
+    },
+    {
+     "who": "傑克",
+     "tag": "excited",
+     "text": "雲上面有什麼呢？媽媽，我去看看就回來！",
+     "en": "What's above the clouds? Mom, I'll go take a look and come right back!"
+    }
+   ]
+  },
+  {
+   "scene": "半空中，粗粗的綠色豆莖往上伸，四周是白雲和飛過的小鳥；往下看得到很小很小的小木屋和菜園。",
+   "act": "傑克抓著大葉子往上爬，一隻腳踩在葉子上，回頭往下看，笑得好開心；一隻小鳥停在旁邊的葉子上看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "傑克抓著綠色的葉子，往上爬。",
+     "en": "Jack held on to the green leaves and climbed."
+    },
+    {
+     "who": "旁白",
+     "text": "爬呀爬，爬呀爬，越爬越高。",
+     "en": "Up and up, up and up, higher and higher."
+    },
+    {
+     "who": "傑克",
+     "tag": "happy",
+     "text": "哇，我家看起來好小喔！",
+     "en": "Wow, my house looks so tiny!"
+    },
+    {
+     "who": "旁白",
+     "text": "終於，傑克爬到了雲上面。",
+     "en": "At last, Jack reached the top of the clouds."
+    },
+    {
+     "who": "傑克",
+     "tag": "surprised",
+     "text": "白雲踩起來，好像棉花糖！",
+     "en": "The clouds feel like cotton candy!"
+    }
+   ]
+  },
+  {
+   "scene": "白雲上面，雲朵軟軟的像棉花地。雲上有一棟好大好大的石頭房子，木頭大門比大樹還高，門把像車輪那麼大。",
+   "act": "大門打開一條縫，巨人太太（好大的胖阿姨，紅臉頰、綁兩條粗辮子、穿粉紅色圍裙）彎腰低頭往下看；傑克站在她的大鞋子旁邊，只到她的鞋子那麼高，抬頭揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雲上有一棟好大，好大的房子。",
+     "en": "On the clouds stood a great, big house."
+    },
+    {
+     "who": "旁白",
+     "text": "一位巨人太太打開門，低頭一看。",
+     "en": "A giant lady opened the door and looked down."
+    },
+    {
+     "who": "巨人太太",
+     "tag": "surprised",
+     "text": "哎呀，好小的客人！你餓了嗎？",
+     "en": "Oh my, what a tiny guest! Are you hungry?"
+    },
+    {
+     "who": "傑克",
+     "tag": "shy",
+     "text": "嗯，我好餓喔。",
+     "en": "Yes, I'm very hungry."
+    },
+    {
+     "who": "巨人太太",
+     "tag": "happy",
+     "text": "進來吧，我拿東西給你吃。",
+     "en": "Come on in. I'll get you something to eat."
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房，白天。一張好大的木頭桌子，桌上有一個比傑克還大的茶杯、一個大茶壺，爐子上有一疊好高的鬆餅在冒熱氣。",
+   "act": "地板震動，桌上的湯匙跳起來；巨人太太一手指著門，一手捏起傑克，把他放進大茶杯裡；傑克手上還抱著一塊比他的頭還大的麵包，嘴邊沾著麵包屑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人太太給傑克一塊好大的麵包。",
+     "en": "The giant lady gave Jack a great big piece of bread."
+    },
+    {
+     "who": "傑克",
+     "tag": "happy",
+     "text": "謝謝妳！真好吃！",
+     "en": "Thank you! It's so yummy!"
+    },
+    {
+     "who": "旁白",
+     "text": "忽然，地板咚咚地搖了起來。",
+     "en": "Suddenly, the floor went boom, boom, and shook."
+    },
+    {
+     "who": "巨人太太",
+     "tag": "excited",
+     "text": "我先生回來了！",
+     "en": "My husband is home!"
+    },
+    {
+     "who": "巨人太太",
+     "tag": "whispering",
+     "text": "他嗓門好大，你先躲進茶杯裡！",
+     "en": "He's very loud. Hide in the teacup first!"
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房。門口站著巨人，頭快碰到天花板。",
+   "act": "巨人（胖胖的大巨人叔叔，紅色大鬍子、圓圓的大鼻子、穿黃色格子背心和綠色褲子）彎著腰，用大鼻子到處聞；茶杯邊緣露出傑克的兩隻眼睛；巨人太太端著一大盤鬆餅，笑著搖頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人走進來，用鼻子聞一聞。",
+     "en": "The giant came in. Sniff, sniff, went his nose."
+    },
+    {
+     "who": "巨人",
+     "tag": "shouting",
+     "text": "嘰哩咕嚕，咚！我聞到小客人的味道！",
+     "en": "Fee-fi-fo-fum! I smell a little visitor!"
+    },
+    {
+     "who": "巨人",
+     "text": "嘰哩咕嚕，咚！小客人，你在哪裡？",
+     "en": "Fee-fi-fo-fum! Little visitor, where are you?"
+    },
+    {
+     "who": "巨人太太",
+     "tag": "laughing",
+     "text": "先吃鬆餅吧！我烤了好多喔！",
+     "en": "Pancakes first! I made lots and lots!"
+    },
+    {
+     "who": "巨人",
+     "tag": "happy",
+     "text": "喔，鬆餅！我最愛吃鬆餅了！",
+     "en": "Oh, pancakes! I love pancakes!"
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房，桌上是吃光的大盤子。",
+   "act": "巨人坐在大椅子上，把一隻棕色的母雞（紅色雞冠、胖胖圓圓）放在桌上；母雞挺起胸膛，身邊滾出一顆閃閃發亮的金蛋；茶杯裡的傑克看呆了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人吃完了一大盤鬆餅。",
+     "en": "The giant gobbled up a big plate of pancakes."
+    },
+    {
+     "who": "旁白",
+     "text": "然後，他抱出一隻棕色的母雞。",
+     "en": "Then he brought out a brown hen."
+    },
+    {
+     "who": "巨人",
+     "tag": "happy",
+     "text": "母雞，母雞，生一顆金蛋！",
+     "en": "Hen, hen, lay a golden egg!"
+    },
+    {
+     "who": "母雞",
+     "tag": "proud",
+     "text": "咕咕！咕咕！",
+     "en": "Cluck, cluck! Cluck, cluck!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！一顆金蛋滾到了桌上。",
+     "en": "Plop! A golden egg rolled onto the table."
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房，下午，陽光從大窗戶照進來。",
+   "act": "巨人把一把金色的豎琴（琴頭雕著一張微笑的臉）放在桌上，豎琴自己唱歌，飄出金色的音符；巨人靠在椅子上，閉著眼睛、張大嘴巴打呼，鬍子被呼氣吹得飄起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人又拿出一把金色的豎琴。",
+     "en": "Then the giant took out a golden harp."
+    },
+    {
+     "who": "巨人",
+     "tag": "sleepy",
+     "text": "豎琴，豎琴，唱歌給我聽。",
+     "en": "Harp, harp, sing me a song."
+    },
+    {
+     "who": "旁白",
+     "text": "豎琴唱起好聽的歌。",
+     "en": "The harp sang a lovely song."
+    },
+    {
+     "who": "旁白",
+     "text": "巨人閉上眼睛，睡著了。",
+     "en": "The giant closed his eyes and fell asleep."
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆！轟隆！巨人打起呼來，好像打雷！",
+     "en": "Rumble! Rumble! His snores sounded like thunder!"
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房，桌上的大茶杯被打呼聲震得往旁邊倒。",
+   "act": "傑克從倒下的茶杯裡滾出來，坐在桌上打了一個大噴嚏；巨人睜開一隻眼睛，彎腰盯著傑克看；傑克用雙手摀住耳朵。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "打呼聲好大，茶杯搖來搖去。",
+     "en": "The snores were so loud, the teacup rocked back and forth."
+    },
+    {
+     "who": "旁白",
+     "text": "傑克從茶杯裡滾了出來。",
+     "en": "Out of the teacup tumbled Jack."
+    },
+    {
+     "who": "傑克",
+     "text": "哈啾！",
+     "en": "Achoo!"
+    },
+    {
+     "who": "巨人",
+     "tag": "shouting",
+     "text": "嗯？你是誰呀？",
+     "en": "Hmm? Who are you?"
+    },
+    {
+     "who": "傑克",
+     "tag": "surprised",
+     "text": "巨人先生，你的聲音好大喔！",
+     "en": "Mister Giant, your voice is so loud!"
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房。",
+   "act": "巨人把大手放在嘴巴旁邊，努力小聲說話，臉頰鼓起來；桌上的盤子還是被震得跳起來；傑克笑著放下手；後來巨人低著頭，看起來有點寂寞。",
+   "lines": [
+    {
+     "who": "巨人",
+     "tag": "whispering",
+     "text": "對不起，我小聲一點。",
+     "en": "Sorry. I'll try to talk softly."
+    },
+    {
+     "who": "旁白",
+     "text": "可是巨人的小聲，也像打雷一樣！",
+     "en": "But even the giant's soft voice sounded like thunder!"
+    },
+    {
+     "who": "傑克",
+     "tag": "laughing",
+     "text": "哈哈，好一點了！我叫傑克。",
+     "en": "Ha ha, that's a little better! My name is Jack."
+    },
+    {
+     "who": "巨人",
+     "tag": "sad",
+     "text": "大家都怕我的大嗓門。",
+     "en": "Everyone is afraid of my big, loud voice."
+    },
+    {
+     "who": "巨人",
+     "text": "都沒有人來找我玩。",
+     "en": "Nobody ever comes to play with me."
+    }
+   ]
+  },
+  {
+   "scene": "巨人家的大廚房，桌上坐著傑克和母雞。",
+   "act": "傑克坐在桌邊跟巨人說話，比手畫腳說家裡的事；巨人用大手指輕輕把母雞推到傑克面前，笑出大白牙；母雞開心地拍翅膀，靠在傑克身上。",
+   "lines": [
+    {
+     "who": "傑克",
+     "tag": "gentle",
+     "text": "我陪你玩！可是，媽媽在家裡等我。",
+     "en": "I'll play with you! But my mom is waiting for me at home."
+    },
+    {
+     "who": "傑克",
+     "tag": "sad",
+     "text": "我們家好窮，沒有東西吃。",
+     "en": "We are very poor. We have no food."
+    },
+    {
+     "who": "巨人",
+     "tag": "gentle",
+     "text": "那，這隻母雞送給你和媽媽吧！",
+     "en": "Then this hen is for you and your mom!"
+    },
+    {
+     "who": "巨人",
+     "tag": "laughing",
+     "text": "金蛋，我已經有一大堆了！",
+     "en": "I already have a great big pile of golden eggs!"
+    },
+    {
+     "who": "母雞",
+     "tag": "happy",
+     "text": "咕咕！我想跟傑克回家！",
+     "en": "Cluck, cluck! I want to go home with Jack!"
+    }
+   ]
+  },
+  {
+   "scene": "巨人家門口的雲上，豆莖的頂端從雲裡冒出來。傍晚，天邊是粉紅色的。",
+   "act": "巨人坐在門口的大石階上打哈欠、揉眼睛；傑克一手抱著母雞，一手跟巨人揮手說再見；巨人太太站在門邊揮著圍裙。",
+   "lines": [
+    {
+     "who": "傑克",
+     "tag": "happy",
+     "text": "謝謝你，巨人先生！我會再來找你玩！",
+     "en": "Thank you, Mister Giant! I'll come back to play!"
+    },
+    {
+     "who": "巨人",
+     "tag": "sleepy",
+     "text": "好，好。我好睏，又想睡了。",
+     "en": "Okay, okay. I'm so sleepy again."
+    },
+    {
+     "who": "旁白",
+     "text": "豎琴又唱起歌，巨人又打起呼來。",
+     "en": "The harp sang again, and the giant began to snore."
+    },
+    {
+     "who": "旁白",
+     "text": "傑克抱著母雞，小心地爬下豆莖。",
+     "en": "Jack held the hen tight and carefully climbed down the beanstalk."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋前面的菜園，傍晚，豆莖底下。",
+   "act": "媽媽張開雙手抱住傑克；母雞站在地上，旁邊有一顆閃亮的金蛋。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "surprised",
+     "text": "傑克，你回來了！這是什麼？",
+     "en": "Jack, you're home! What's this?"
+    },
+    {
+     "who": "母雞",
+     "tag": "proud",
+     "text": "咕咕！",
+     "en": "Cluck, cluck!"
+    },
+    {
+     "who": "旁白",
+     "text": "一顆金色的蛋，生出來了！",
+     "en": "Out came a shiny golden egg!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們用金蛋，向老爺爺買回了乳牛。",
+     "en": "With the golden egg, they bought their cow back from the old man."
+    },
+    {
+     "who": "媽媽",
+     "tag": "happy",
+     "text": "太好了！我們再也不會餓了！",
+     "en": "Hooray! We'll never be hungry again!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋外面，晚上，天上有月亮和好多星星，雲朵上隱約看得到巨人房子的屋頂。豆莖正在縮小，葉子都變黃了。",
+   "act": "豆莖越縮越小，變回一顆豆子，落在傑克手心；傑克和媽媽站在窗邊抬頭看天，兩個人捂著嘴笑；母雞在窗台上打盹。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "那天晚上，豆莖越縮越小。",
+     "en": "That night, the beanstalk shrank smaller and smaller."
+    },
+    {
+     "who": "旁白",
+     "text": "變回一顆小豆子，傑克把它收好了。",
+     "en": "It became one little bean again, and Jack kept it safe."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，天上響起轟隆，轟隆的聲音。",
+     "en": "Just then, a rumble, rumble came from the sky."
+    },
+    {
+     "who": "媽媽",
+     "tag": "surprised",
+     "text": "咦？打雷了嗎？",
+     "en": "Oh? Is that thunder?"
+    },
+    {
+     "who": "傑克",
+     "tag": "laughing",
+     "text": "不是啦！是巨人在打呼！",
+     "en": "No, Mom! It's the giant snoring!"
+    }
+   ]
+  }
+ ]
+}

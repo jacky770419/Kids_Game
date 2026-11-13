@@ -1,0 +1,365 @@
+{
+ "id": "midas",
+ "title": "米達斯國王的金手指",
+ "title_en": "King Midas and the Golden Touch",
+ "size": "中",
+ "roles": {
+  "國王": "愛金子的老國王，聲音低沉、有點貪心又好笑，得意時哈哈笑，後悔時哭著說，最後變得溫柔慈祥。",
+  "小玫": "國王五歲左右的小女兒，聲音甜甜的、很貼心，說話慢慢的，看到花變硬會難過。",
+  "精靈": "肚子餓的老精靈，聲音低沉溫和、帶點神祕，擔心國王時語氣認真，給建議時很溫柔。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小玫": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "精靈": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "喝",
+   "where": "第7頁『喝一口水』『也不能喝』",
+   "read": "hē"
+  },
+  {
+   "char": "角",
+   "where": "第8、11頁『裙角』",
+   "read": "jiǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "米達斯國王的寶物室，白天。地上堆滿金幣、金杯和打開的金色箱子，亮晶晶的；大窗戶外面是一座開滿紅玫瑰的花園。",
+   "act": "國王第一次出場：圓圓的肚子、棕色捲鬍子、戴一頂很大的金皇冠、穿紫色長袍，袍子邊是金色的；他坐在金幣堆上，雙手捧起金幣，開心地笑。小玫第一次出場：五歲左右的女孩，黑頭髮綁兩條辮子、繫紅色蝴蝶結、穿粉紅色裙子；她站在門口，手裡拿著一朵紅玫瑰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位米達斯國王。",
+     "en": "Once upon a time, there was a king named Midas."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "金子，金子，我最愛金子了！",
+     "en": "Gold, gold, I love gold the most!"
+    },
+    {
+     "who": "旁白",
+     "text": "他有好多金子，可是，他想要再多一點。",
+     "en": "He had lots of gold, but he always wanted a little more."
+    },
+    {
+     "who": "旁白",
+     "text": "國王有一個小女兒，叫做小玫。",
+     "en": "The king had a little daughter named Rosie."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，下午。紅玫瑰花叢旁邊有一張圓形的石頭桌子，桌上有一盤麵包和一串紫葡萄。",
+   "act": "精靈第一次出場：個子很小的老精靈，白色長鬍子垂到肚子、戴綠色尖帽子、穿綠色外套，背上有一對透明的小翅膀，手拿一根木頭手杖；他坐在花叢邊，摸著肚子，一臉肚子餓的樣子。國王彎著腰，把那盤麵包遞給他，笑咪咪的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，花園裡來了一個肚子餓的老精靈。",
+     "en": "One day, a hungry old elf wandered into the garden."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "別怕，先吃點東西吧。",
+     "en": "Don't be afraid. Have something to eat."
+    },
+    {
+     "who": "精靈",
+     "tag": "happy",
+     "text": "謝謝你！我送你一個願望。",
+     "en": "Thank you! I will grant you one wish."
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "我希望，我摸到的東西，都變成金子！",
+     "en": "I wish that everything I touch turns to gold!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，下午，同一張石頭桌子旁邊。",
+   "act": "精靈皺著眉頭，抬頭看國王；接著揮一揮木頭手杖，國王的兩隻手被一圈金色的小光點包住；國王舉起雙手，興奮地看著。",
+   "lines": [
+    {
+     "who": "精靈",
+     "tag": "worried",
+     "text": "你真的要這個願望嗎？",
+     "en": "Are you sure you want this wish?"
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "對！我要好多金子！",
+     "en": "Yes! I want lots and lots of gold!"
+    },
+    {
+     "who": "精靈",
+     "text": "好吧。明天一早，你就知道了。",
+     "en": "Very well. Tomorrow morning, you will see."
+    },
+    {
+     "who": "旁白",
+     "text": "精靈揮一揮手杖，就不見了。",
+     "en": "The elf waved his staff and disappeared."
+    }
+   ]
+  },
+  {
+   "scene": "國王的臥室，早上，陽光從窗戶照進來。窗邊的花瓶裡插著紅玫瑰，旁邊有木頭桌子和木頭椅子。",
+   "act": "國王穿著紫色長袍、戴金皇冠，用一根手指碰一朵紅玫瑰，玫瑰從手指碰到的地方變成金色；旁邊的木頭桌子和椅子還是木頭色，國王的另一隻手正要伸向桌子；國王張大嘴巴，眼睛發亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，國王摸了一朵玫瑰花。",
+     "en": "The next morning, the king touched a rose."
+    },
+    {
+     "who": "旁白",
+     "text": "叮！玫瑰花變成了金子！",
+     "en": "Ding! The rose turned to gold!"
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "哇！我的願望成真了！",
+     "en": "Wow! My wish came true!"
+    },
+    {
+     "who": "旁白",
+     "text": "他摸摸桌子，摸摸椅子，都變成了金子。",
+     "en": "He touched the table and the chair, and they turned to gold too."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，早上。整片花園的花、葉子和樹都變成了金色，亮得刺眼，一隻蝴蝶停不下來，在空中飛。",
+   "act": "國王得意地張開雙手站在金色花園中間；小玫拿著一朵變成金子的玫瑰，嘟著嘴，把鼻子湊近聞，眉頭皺起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王把整個花園，都變成了金子。",
+     "en": "The king turned the whole garden to gold."
+    },
+    {
+     "who": "小玫",
+     "tag": "sad",
+     "text": "爸爸，我的玫瑰花，怎麼變硬了？",
+     "en": "Daddy, why did my rose get so hard?"
+    },
+    {
+     "who": "小玫",
+     "tag": "sad",
+     "text": "而且，一點也不香。",
+     "en": "And it doesn't smell sweet at all."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "金色的花，很漂亮呀！",
+     "en": "But golden flowers are so pretty!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，早上。一張長桌鋪著白桌布，桌上有一籃麵包、一壺水和一個玻璃杯。",
+   "act": "國王坐在長桌前，拿起一個麵包，麵包變成金塊；他張嘴咬下去，牙齒咬到硬硬的金子，痛得眼睛瞇起來，皇冠都歪了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王餓了，拿起一個麵包。",
+     "en": "The king was hungry, so he picked up a bread roll."
+    },
+    {
+     "who": "旁白",
+     "text": "叮！麵包也變成了金子。",
+     "en": "Ding! The bread turned to gold too."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "哎喲，好硬！我咬不下去！",
+     "en": "Ouch, it's so hard! I can't bite it!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，早上，同一張長桌。桌上的麵包籃裡，麵包全是金塊。",
+   "act": "國王舉著玻璃杯，杯子和裡面的水都變成了金色的一整塊，倒不出來；國王垂著肩膀，看著杯子，一臉難過。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "tired",
+     "text": "我好渴，喝一口水吧。",
+     "en": "I'm so thirsty. Let me have a sip of water."
+    },
+    {
+     "who": "旁白",
+     "text": "叮！杯子裡的水，也變成了金子。",
+     "en": "Ding! The water in the cup turned to gold too."
+    },
+    {
+     "who": "國王",
+     "tag": "sad",
+     "text": "不能吃，也不能喝，怎麼辦呀？",
+     "en": "I can't eat, and I can't drink. What do I do?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，早上。",
+   "act": "小玫張開雙手，笑著跑向國王要抱抱；國王的指尖剛碰到小玫的裙角，正要把手縮回來，一臉著急；被碰到的那一小塊粉紅色裙角正變成金色，小玫低頭看裙角，嚇了一跳，但人好好的。",
+   "lines": [
+    {
+     "who": "小玫",
+     "tag": "gentle",
+     "text": "爸爸，別難過，我抱抱你！",
+     "en": "Don't be sad, Daddy. I'll give you a hug!"
+    },
+    {
+     "who": "國王",
+     "tag": "scared",
+     "text": "等一下！別碰我的手！",
+     "en": "Wait! Don't touch my hands!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王趕快把手縮回來。",
+     "en": "The king quickly pulled his hands away."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，小玫的裙角，已經變成金子了。",
+     "en": "But the edge of Rosie's dress had already turned to gold."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，早上。窗邊飄進一圈綠色的小光點。",
+   "act": "國王跪坐在地上，雙手放在膝蓋上，眼淚一顆一顆掉下來；小玫站在旁邊，摸摸自己的金裙角；老精靈從綠色光點裡飄出來，拄著手杖，溫和地看著國王。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "crying",
+     "text": "我不要金子了！我想抱抱小玫！",
+     "en": "I don't want gold anymore! I just want to hug Rosie!"
+    },
+    {
+     "who": "旁白",
+     "text": "一道綠光，老精靈又出現了。",
+     "en": "In a flash of green light, the old elf appeared."
+    },
+    {
+     "who": "國王",
+     "tag": "sad",
+     "text": "老精靈，請你幫幫我！",
+     "en": "Old elf, please help me!"
+    },
+    {
+     "who": "精靈",
+     "tag": "gentle",
+     "text": "去河邊，把手洗一洗吧。",
+     "en": "Go to the river and wash your hands."
+    },
+    {
+     "who": "精靈",
+     "tag": "gentle",
+     "text": "再拿河水，灑在變成金子的東西上。",
+     "en": "Then sprinkle river water on everything that turned to gold."
+    }
+   ]
+  },
+  {
+   "scene": "王宮旁邊的小河邊，白天。河水很清，河邊有綠草和石頭。",
+   "act": "國王蹲在河邊，把雙手放進河水裡；一道一道金光從他的手上流進河裡，河底的小石頭變得金閃閃；國王看著自己的手，開心地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王跑到河邊，把手放進河水裡。",
+     "en": "The king ran to the river and put his hands in the water."
+    },
+    {
+     "who": "旁白",
+     "text": "金光順著河水，流走了。",
+     "en": "The golden glow washed away down the river."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "我的手變回來了！",
+     "en": "My hands are back to normal!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，白天。大窗戶外看得到花園，花園的花又變回紅色、綠色，蝴蝶停在花上；桌上的花瓶插著玫瑰。",
+   "act": "國王提著一桶河水，用手把水灑出去；花瓶裡的金玫瑰變回紅色，桌上的金麵包變回咖啡色的軟麵包，小玫的裙角變回粉紅色；小玫張開雙手跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王提著一桶河水，跑回王宮。",
+     "en": "The king hurried back to the palace with a bucket of river water."
+    },
+    {
+     "who": "旁白",
+     "text": "他灑一灑，玫瑰花又香了，麵包又軟了。",
+     "en": "He sprinkled the water, and the roses smelled sweet again. The bread was soft again."
+    },
+    {
+     "who": "旁白",
+     "text": "小玫的裙角，也變回了粉紅色。",
+     "en": "And Rosie's dress was pink again."
+    },
+    {
+     "who": "小玫",
+     "tag": "happy",
+     "text": "爸爸，抱抱！",
+     "en": "Daddy, hug me!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，晚上，窗外有月亮和星星。長桌上有一籃熱麵包、一壺水，桌上的花瓶插著紅玫瑰。",
+   "act": "國王和小玫坐在桌邊，國王把一個熱麵包撕一半給小玫，兩個人都在笑。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "小玫，來，抱抱！",
+     "en": "Come here, Rosie. A big hug!"
+    },
+    {
+     "who": "旁白",
+     "text": "晚上，國王和小玫，一起吃熱麵包。",
+     "en": "That evening, the king and Rosie ate warm bread together."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "原來，抱抱和熱麵包，比金子好多了！",
+     "en": "Now I know. Hugs and warm bread are so much better than gold!"
+    },
+    {
+     "who": "小玫",
+     "tag": "happy",
+     "text": "爸爸，我最愛你了！",
+     "en": "Daddy, I love you the most!"
+    }
+   ]
+  }
+ ]
+}

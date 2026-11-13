@@ -1,0 +1,377 @@
+{
+ "id": "caterpillar",
+ "title": "毛毛蟲的祕密",
+ "title_en": "The Caterpillar's Secret",
+ "size": "中",
+ "roles": {
+  "毛毛蟲": "主角，像四五歲的小女生，聲音可愛、天真，愛吃東西、說話開心有精神；後來變成蝴蝶也是同一個聲音，多了一點驕傲。",
+  "瓢蟲": "毛毛蟲的好朋友，像五六歲的小男孩，好奇愛問、熱心，會擔心朋友，看到蝴蝶時驚喜大叫。",
+  "蝴蝶阿姨": "溫柔的年輕阿姨，聲音輕柔明亮，說祕密時神祕地小聲。"
+ },
+ "cast": {
+  "毛毛蟲": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "瓢蟲": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "蝴蝶阿姨": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "祕",
+   "where": "書名；第5、10、11頁『祕密』",
+   "read": "mì"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『好會吃』，第5頁『妳會知道』，第7頁『不太會動』，第11頁『會變成』『也會知道』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『什麼祕密』，第6頁『做什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "膀",
+   "where": "第10頁『翅膀』『翅膀變乾』",
+   "read": "bǎng"
+  },
+  {
+   "char": "乾",
+   "where": "第10頁『變乾』",
+   "read": "gān"
+  },
+  {
+   "char": "殼",
+   "where": "第2頁『卵殼』",
+   "read": "ké"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一棵橘子樹的樹枝特寫，早上，陽光很亮。綠色的葉子上，有一顆像小珍珠的淡黃色圓形卵；樹枝上開著幾朵白色的橘子花。",
+   "act": "卵的裡面隱約看得到一個小影子在動；一隻紅色、背上有七個黑點的小瓢蟲（全書同一隻）站在旁邊的葉子上，歪著頭好奇地看；最後卵的頂端破了一個小洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "橘子樹的葉子上，有一顆很小的蛋。",
+     "en": "On a leaf of an orange tree, there was a tiny egg."
+    },
+    {
+     "who": "旁白",
+     "text": "那是蝴蝶媽媽留下來的。",
+     "en": "A mother butterfly had left it there."
+    },
+    {
+     "who": "旁白",
+     "text": "小瓢蟲飛過來，看了一看。",
+     "en": "A little ladybug flew over to take a look."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "curious",
+     "text": "咦？蛋裡面有東西在動，是誰呀？",
+     "en": "Huh? Something is moving in the egg. Who's inside?"
+    },
+    {
+     "who": "旁白",
+     "text": "忽然，蛋破了一個小洞。",
+     "en": "Suddenly, a little hole opened in the egg."
+    }
+   ]
+  },
+  {
+   "scene": "同一片橘子葉上，早上。",
+   "act": "一隻好小、黑褐色、身上有一點白斑的小毛毛蟲從卵裡爬出來，張開嘴巴咬著空空的卵殼；瓢蟲在旁邊捧著肚子笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一隻好小的毛毛蟲，爬了出來。",
+     "en": "Out crawled a teeny tiny caterpillar."
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "happy",
+     "text": "哈囉！我好餓喔！",
+     "en": "Hello! I'm so hungry!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠先吃掉蛋殼，再吃葉子。",
+     "en": "First she ate her eggshell. Then she ate the leaf."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "laughing",
+     "text": "妳好小，可是好會吃喔！",
+     "en": "You're so tiny, but you sure can eat!"
+    }
+   ]
+  },
+  {
+   "scene": "橘子樹上，好幾天以後，白天。葉子邊緣被咬出一個一個半圓形的缺口。",
+   "act": "毛毛蟲變大了一點，從葉子邊邊一口一口往裡面啃，臉頰鼓鼓的；瓢蟲坐在旁邊的葉子上，兩手撐著下巴看她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "毛毛蟲每天吃葉子，一口，一口，又一口。",
+     "en": "Every day, the caterpillar ate leaves. Munch, munch, and munch again."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "curious",
+     "text": "毛毛蟲，妳怎麼一直吃呀？",
+     "en": "Caterpillar, why do you eat all the time?"
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "happy",
+     "text": "我要變大，變胖呀！",
+     "en": "I want to get big and fat!"
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "excited",
+     "text": "這片吃完了，下一片！",
+     "en": "This leaf is done. Next one!"
+    }
+   ]
+  },
+  {
+   "scene": "橘子樹的樹枝上，白天。",
+   "act": "毛毛蟲身體鼓鼓的、皮繃得緊緊的，用力扭動，從一層皺皺的舊皮裡鑽出來，舊皮留在葉子上；鑽出來的她變成亮綠色、身上有淡淡的花紋；瓢蟲拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "毛毛蟲越吃越大，皮變太緊了。",
+     "en": "The more she ate, the bigger she got, until her skin was too tight."
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "surprised",
+     "text": "哎呀，我的衣服好緊！",
+     "en": "Oh my, my clothes are so tight!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠脫掉舊的皮，裡面是一層新的皮。",
+     "en": "She wiggled out of her old skin. Underneath was a brand new one."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "surprised",
+     "text": "哇，妳換新衣服了！",
+     "en": "Wow! You have new clothes!"
+    },
+    {
+     "who": "旁白",
+     "text": "毛毛蟲一邊吃，一邊脫皮，脫了好幾次。",
+     "en": "She kept eating and shedding her skin, again and again."
+    }
+   ]
+  },
+  {
+   "scene": "橘子樹旁邊開滿花的草地，晴天，天空很藍。",
+   "act": "一隻黑色翅膀上有黃色花紋的大蝴蝶（蝴蝶阿姨）輕輕停在橘子花上，對毛毛蟲微笑；亮綠色的毛毛蟲抬起頭，看得好入迷；最後蝴蝶阿姨把翅膀靠近毛毛蟲，像在說悄悄話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，一隻漂亮的蝴蝶飛過來。",
+     "en": "One day, a beautiful butterfly flew by."
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "happy",
+     "text": "好美喔！我也好想飛。",
+     "en": "How pretty! I wish I could fly, too."
+    },
+    {
+     "who": "蝴蝶阿姨",
+     "tag": "gentle",
+     "text": "小毛毛蟲，多吃葉子，多休息。",
+     "en": "Little caterpillar, eat lots of leaves and get lots of rest."
+    },
+    {
+     "who": "蝴蝶阿姨",
+     "tag": "whispering",
+     "text": "以後，妳會知道一個大祕密喔！",
+     "en": "Someday, you will find out a big secret!"
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "curious",
+     "text": "祕密？是什麼祕密呢？",
+     "en": "A secret? What secret?"
+    }
+   ]
+  },
+  {
+   "scene": "橘子樹的一根細樹枝，傍晚，天空是橘色的。",
+   "act": "毛毛蟲已經又大又胖，不再吃葉子，慢慢爬到一根直直的細樹枝側面，頭朝上，用白色的細絲把尾巴黏在樹枝上，再用一圈絲像安全帶一樣繞過背，把自己綁好；瓢蟲在旁邊歪頭看，有點擔心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "毛毛蟲又大又胖了。有一天，牠不吃了。",
+     "en": "The caterpillar was big and fat now. One day, she stopped eating."
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "sleepy",
+     "text": "我吃飽了，想要安靜一下。",
+     "en": "I'm full. I want some quiet time."
+    },
+    {
+     "who": "旁白",
+     "text": "牠爬到樹枝上，用絲把自己綁好。",
+     "en": "She crawled onto a branch and tied herself on with silk."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "worried",
+     "text": "毛毛蟲，妳要做什麼呀？",
+     "en": "Caterpillar, what are you doing?"
+    }
+   ]
+  },
+  {
+   "scene": "同一根樹枝，第二天早上。",
+   "act": "樹枝側面有一個綠色、有稜角、像小葉子形狀的蛹，頭朝上斜靠在樹枝上，腰上繞著一圈白絲，不是倒掛，看不到毛毛蟲的頭和腳了；旁邊留著一小團脫下來的舊皮；瓢蟲把耳朵貼在蛹上聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "毛毛蟲最後一次脫皮，變成了一個蛹。",
+     "en": "She shed her skin one last time and became a chrysalis."
+    },
+    {
+     "who": "旁白",
+     "text": "蛹不吃東西，也不太會動。",
+     "en": "The chrysalis did not eat, and it hardly moved."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "worried",
+     "text": "毛毛蟲，妳在裡面嗎？",
+     "en": "Caterpillar, are you in there?"
+    },
+    {
+     "who": "旁白",
+     "text": "在蛹的裡面，毛毛蟲正在慢慢地變。",
+     "en": "Inside the chrysalis, the caterpillar was slowly changing."
+    }
+   ]
+  },
+  {
+   "scene": "同一根樹枝，好多天以後的早上。",
+   "act": "蛹的顏色變深，隱約透出黑色和黃色的翅膀花紋；瓢蟲拿著一朵小花來看蛹，揮手說早安。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了一天，又一天，瓢蟲天天來看蛹。",
+     "en": "Day after day, the ladybug came to visit the chrysalis."
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "gentle",
+     "text": "蛹，早安！妳今天好嗎？",
+     "en": "Good morning, chrysalis! How are you today?"
+    },
+    {
+     "who": "旁白",
+     "text": "蛹的顏色變深了，好像有漂亮的花紋。",
+     "en": "The chrysalis turned darker. Pretty patterns showed through."
+    }
+   ]
+  },
+  {
+   "scene": "同一根樹枝，早上，陽光照在樹枝上。",
+   "act": "蛹的前端裂開，一隻蝴蝶從裡面爬出來，抓著空空的蛹殼；牠的翅膀又小又皺、濕濕的，還沒打開；瓢蟲嚇一跳往後退，接著瞪大眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天早上，蛹裂開了。",
+     "en": "One morning, the chrysalis split open."
+    },
+    {
+     "who": "旁白",
+     "text": "一隻蝴蝶，從裡面爬了出來！",
+     "en": "A butterfly crawled out!"
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "surprised",
+     "text": "咦？妳是誰呀？",
+     "en": "Huh? Who are you?"
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "happy",
+     "text": "是我呀！我是毛毛蟲！",
+     "en": "It's me! I'm the caterpillar!"
+    }
+   ]
+  },
+  {
+   "scene": "同一根樹枝，上午，陽光暖暖的。",
+   "act": "蝴蝶（就是毛毛蟲，翅膀是黑色的，上面有黃色花紋，和蝴蝶阿姨一樣）攀在空蛹殼上，翅膀從皺皺的慢慢撐開、變乾；最後翅膀完全張開，又大又漂亮；瓢蟲張大嘴巴拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "剛出來的翅膀，又濕又皺。",
+     "en": "Her brand new wings were wet and crumpled."
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "gentle",
+     "text": "別急，我要等翅膀變乾。",
+     "en": "No rush. I need to wait for my wings to dry."
+    },
+    {
+     "who": "旁白",
+     "text": "等了一下，翅膀打開了，又大又美！",
+     "en": "After a while, her wings opened up, big and beautiful!"
+    },
+    {
+     "who": "瓢蟲",
+     "tag": "excited",
+     "text": "原來，這就是妳的祕密！",
+     "en": "So this is your secret!"
+    }
+   ]
+  },
+  {
+   "scene": "橘子樹旁邊的花園，晴天，開滿紅色、黃色的花，遠遠看得到那棵橘子樹。",
+   "act": "蝴蝶停在一朵紅花上，伸出又細又長、像吸管的嘴巴喝花蜜；瓢蟲坐在旁邊的花瓣上；最後一個畫面：蝴蝶停在橘子葉上，葉子上有一顆像小珍珠的卵，蝴蝶對卵微笑。",
+   "lines": [
+    {
+     "who": "毛毛蟲",
+     "tag": "proud",
+     "text": "對！我的祕密，就是會變成蝴蝶！",
+     "en": "Yes! My secret is that I turn into a butterfly!"
+    },
+    {
+     "who": "旁白",
+     "text": "蝴蝶飛到花上，用像吸管的嘴巴喝花蜜。",
+     "en": "The butterfly flew to a flower and sipped nectar with her straw-like mouth."
+    },
+    {
+     "who": "旁白",
+     "text": "後來，牠也在橘子葉上，留下很小的蛋。",
+     "en": "Later, she left tiny eggs on the leaves of the orange tree, too."
+    },
+    {
+     "who": "毛毛蟲",
+     "tag": "whispering",
+     "text": "小寶寶，以後，你們也會知道這個祕密喔！",
+     "en": "Little ones, someday you will find out the secret, too!"
+    }
+   ]
+  }
+ ]
+}

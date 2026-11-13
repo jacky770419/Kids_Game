@@ -1,0 +1,234 @@
+{
+ "id": "ant-grasshopper",
+ "title": "螞蟻和蚱蜢",
+ "title_en": "The Ant and the Grasshopper",
+ "size": "短",
+ "roles": {
+  "螞蟻": "勤勞的小螞蟻，聲音像五六歲的小女孩，認真、做事有計畫，對朋友溫柔大方。",
+  "蚱蜢": "愛唱歌的蚱蜢，聲音是活潑的年輕男生，夏天輕鬆愛玩，冬天又冷又餓，最後真心道謝、想一起努力。"
+ },
+ "cast": {
+  "螞蟻": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "蚱蜢": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "行",
+   "where": "第3頁『不行喔』",
+   "read": "xíng"
+  },
+  {
+   "char": "給",
+   "where": "第7頁『送給妳』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "夏天的大草地，中午，太陽很大，青草很綠。草地中間有一條泥土小路，路邊有一個小土丘，土丘上有一個圓形小洞，是螞蟻的家。",
+   "act": "小螞蟻第一次出場：小小的黑色螞蟻，頭上綁一條紅色小頭巾；她背上扛著一顆金黃色的麥粒，滿頭大汗，卻笑咪咪地往家裡走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天到了，太陽好大。",
+     "en": "Summer had come, and the sun was big and bright."
+    },
+    {
+     "who": "旁白",
+     "text": "小螞蟻扛著麥子，努力走回家。",
+     "en": "The little ant carried a grain of wheat, working hard all the way home."
+    },
+    {
+     "who": "螞蟻",
+     "tag": "happy",
+     "text": "加油！加油！我要搬食物。",
+     "en": "Heave-ho! Heave-ho! I'm carrying food!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片夏天的草地，一棵高大的向日葵，大葉子下面有一片陰影。",
+   "act": "蚱蜢第一次出場：綠色的蚱蜢，後腿長長的，戴一頂黃色小草帽，抱著一把小吉他；他躺在向日葵的大葉子下面，翹著腳彈吉他唱歌。小螞蟻扛著麥粒從旁邊經過。全書把小螞蟻和蚱蜢畫成差不多大的卡通比例。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "草地上，一隻蚱蜢在唱歌。",
+     "en": "In the grass, a grasshopper was singing."
+    },
+    {
+     "who": "蚱蜢",
+     "tag": "happy",
+     "text": "我愛唱歌，我愛跳舞，夏天真好玩！",
+     "en": "I love to sing! I love to dance! Summer is so much fun!"
+    },
+    {
+     "who": "蚱蜢",
+     "text": "小螞蟻，來跟我一起玩嘛！",
+     "en": "Little Ant, come and play with me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片夏天的草地，向日葵下面。",
+   "act": "小螞蟻停下腳步，扛著麥粒搖搖頭，用手指著遠方；蚱蜢抱著吉他哈哈大笑，在草上跳得高高的。",
+   "lines": [
+    {
+     "who": "螞蟻",
+     "tag": "gentle",
+     "text": "不行喔，冬天快來了。",
+     "en": "Not now. Winter is coming soon."
+    },
+    {
+     "who": "螞蟻",
+     "text": "我要先把食物搬回家。",
+     "en": "I need to carry food home first."
+    },
+    {
+     "who": "蚱蜢",
+     "tag": "laughing",
+     "text": "冬天？那是很久以後的事啦！",
+     "en": "Winter? That's a long, long way off!"
+    },
+    {
+     "who": "旁白",
+     "text": "蚱蜢又跳又唱，玩了一整個夏天。",
+     "en": "So the grasshopper jumped and sang all summer long."
+    }
+   ]
+  },
+  {
+   "scene": "秋天的草地，樹葉變成黃色和紅色，被風吹得滿天飛。畫面下半部是地底下螞蟻家的剖面，有好幾間小房間。",
+   "act": "地底下的小房間裡堆滿麥粒、豆子和紅色果子；小螞蟻戴著紅色小頭巾，站在食物堆旁邊，雙手叉腰，很驕傲地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天，樹葉黃了，風呼呼地吹。",
+     "en": "Autumn came. The leaves turned yellow, and the wind went whoosh."
+    },
+    {
+     "who": "旁白",
+     "text": "小螞蟻的家，堆滿了食物。",
+     "en": "The little ant's home was full of food."
+    },
+    {
+     "who": "螞蟻",
+     "tag": "proud",
+     "text": "冬天的食物，準備好了！",
+     "en": "My winter food is ready!"
+    }
+   ]
+  },
+  {
+   "scene": "冬天的草地蓋滿白雪，天空是灰色的，還在下雪。向日葵枯掉了，垂著頭。",
+   "act": "蚱蜢縮在枯掉的向日葵下面，黃色草帽上積著雪，抱著小吉他發抖，肚子扁扁的，一臉難過。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天來了，下大雪了。",
+     "en": "Winter came, and snow fell everywhere."
+    },
+    {
+     "who": "蚱蜢",
+     "tag": "sad",
+     "text": "好冷，好冷！",
+     "en": "So cold! So cold!"
+    },
+    {
+     "who": "蚱蜢",
+     "text": "肚子好餓，草地上找不到吃的。",
+     "en": "I'm so hungry. There's nothing to eat in the grass."
+    }
+   ]
+  },
+  {
+   "scene": "雪地裡，小土丘上螞蟻家的圓形小門，門旁掛著一盞小燈，門縫透出黃色的光。",
+   "act": "蚱蜢站在門口舉手敲門，身上沾著雪、抱著小吉他，螞蟻家的門剛好夠他彎腰進去；小螞蟻戴著紅色小頭巾打開門探出頭，看到蚱蜢，睜大眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "蚱蜢走到小螞蟻家，咚咚！咚咚！",
+     "en": "The grasshopper went to the little ant's home. Knock, knock! Knock, knock!"
+    },
+    {
+     "who": "蚱蜢",
+     "tag": "sad",
+     "text": "小螞蟻，我又冷又餓，可以幫幫我嗎？",
+     "en": "Little Ant, I'm cold and hungry. Can you help me?"
+    },
+    {
+     "who": "旁白",
+     "text": "小螞蟻打開門，看到發抖的蚱蜢。",
+     "en": "The little ant opened the door and saw the shivering grasshopper."
+    }
+   ]
+  },
+  {
+   "scene": "螞蟻家溫暖的小房間，牆上有一盞小燈，地上鋪著樹葉做的地毯，木桌上擺著麥粒、豆子和紅色果子。",
+   "act": "小螞蟻把一盤食物推到蚱蜢面前，笑著請他吃；蚱蜢把黃色草帽拿在手上，感動得眼睛閃閃發亮。",
+   "lines": [
+    {
+     "who": "螞蟻",
+     "tag": "gentle",
+     "text": "快進來！我們一起吃。",
+     "en": "Come in, quick! Let's eat together."
+    },
+    {
+     "who": "旁白",
+     "text": "小螞蟻拿出麥子和豆子，請蚱蜢吃。",
+     "en": "The little ant brought out wheat and beans for the grasshopper."
+    },
+    {
+     "who": "蚱蜢",
+     "tag": "happy",
+     "text": "謝謝妳！妳真好心。",
+     "en": "Thank you! You're so kind."
+    },
+    {
+     "who": "蚱蜢",
+     "text": "我來唱一首歌，送給妳！",
+     "en": "Let me sing a song just for you!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個溫暖的小房間，晚上，圓形小窗外下著雪。",
+   "act": "蚱蜢坐在小凳子上彈吉他唱歌；小螞蟻坐在旁邊拍手，跟著搖頭晃腦；兩個都笑得很開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "屋子好溫暖，小螞蟻好開心。",
+     "en": "The room was warm and cozy. The little ant was so happy."
+    },
+    {
+     "who": "螞蟻",
+     "tag": "happy",
+     "text": "你的歌，真好聽！",
+     "en": "Your song is so lovely!"
+    },
+    {
+     "who": "蚱蜢",
+     "tag": "excited",
+     "text": "明年夏天，我也來搬食物！",
+     "en": "Next summer, I'll carry food too!"
+    },
+    {
+     "who": "螞蟻",
+     "tag": "happy",
+     "text": "好呀！一起搬食物，一起唱歌！",
+     "en": "Okay! We'll carry food together, and sing together!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，先準備好，再去玩，就不怕冬天囉！",
+     "en": "Get ready first, then go and play. That way, winter won't be scary!"
+    }
+   ]
+  }
+ ]
+}

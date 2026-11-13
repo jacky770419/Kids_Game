@@ -1,0 +1,289 @@
+{
+ "id": "goldilocks",
+ "title": "金髮女孩與三隻熊",
+ "title_en": "Goldilocks and the Three Bears",
+ "size": "短",
+ "roles": {
+  "金髮女孩": "六歲左右的小女孩，聲音甜、好奇心很強，嚐粥和試床時認真又可愛，被發現時嚇一跳，道歉時真誠。",
+  "熊爸爸": "大大的熊爸爸，聲音低沉溫和、慢慢說，發現東西被動過時很驚訝，教金髮女孩時和氣。",
+  "熊媽媽": "熊媽媽，聲音溫柔、像媽媽一樣體貼，說話輕輕的。",
+  "小熊": "最小的小熊，聲音像五六歲小男孩，天真活潑，粥被吃光時會哭，最後開心交朋友。"
+ },
+ "cast": {
+  "金髮女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "熊爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第2頁『門沒有關』『她沒有敲門』，第7頁『我沒有敲門』『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "間",
+   "where": "第2頁『一間小木屋』",
+   "read": "jiān"
+  },
+  {
+   "char": "中",
+   "where": "第3頁『中碗』兩處，第4頁『中床』",
+   "read": "zhōng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林裡的小木屋裡，早上。屋子有圓窗戶和紅色木門，餐桌上擺著三個冒著熱氣的木碗：大碗、中碗、小碗。",
+   "act": "三隻熊出場：熊爸爸最高大，深棕色，穿綠色格子襯衫；熊媽媽中等身材，淺棕色，繫一條黃色小花圍裙；小熊小小的，淺棕色，穿紅色吊帶褲。熊媽媽對著熱粥搧風，小熊拉著熊爸爸的手往門口走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林裡，住著熊爸爸、熊媽媽和小熊。",
+     "en": "In the forest lived Papa Bear, Mama Bear, and Little Bear."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "粥太燙了。我們出去走走，回來再吃吧！",
+     "en": "The porridge is too hot. Let's go for a walk and eat when we come back!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "好耶！出去玩囉！",
+     "en": "Yay! Let's go out!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小木屋外面，早上，門前有一條小石子路，路邊開滿野花。紅色木門開著一條縫。",
+   "act": "金髮女孩出場：大約六歲，金色捲髮綁著藍色緞帶，穿藍色洋裝、白色圍裙，手上拿著一小束野花。她踮著腳從門縫往裡面看，鼻子聞著香味，沒有敲門就推門走進去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有個金髮女孩，在森林裡採花。",
+     "en": "A girl named Goldilocks was picking flowers in the forest."
+    },
+    {
+     "who": "旁白",
+     "text": "她看到一間小木屋，門沒有關。",
+     "en": "She saw a little wooden house. The door was open."
+    },
+    {
+     "who": "金髮女孩",
+     "tag": "curious",
+     "text": "好香喔！我進去看看。",
+     "en": "Mmm, it smells good! I'll go in and take a look."
+    },
+    {
+     "who": "旁白",
+     "text": "她沒有敲門，就走進去了。",
+     "en": "She did not knock. She just walked right in."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的餐桌旁，早上。桌上排著三個木碗，大碗、中碗、小碗，每碗都裝著粥。",
+   "act": "畫最後這一刻：金髮女孩坐在小椅子上，捧著吃空的小碗，拿著木湯匙，滿足地笑瞇瞇；旁邊的大碗還冒著熱氣、中碗沒有熱氣，碗裡都插著湯匙、各被吃了一口；她帶來的那束野花放在桌上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "桌上有三碗粥：大碗、中碗、小碗。",
+     "en": "On the table were three bowls of porridge: a big one, a middle one, and a little one."
+    },
+    {
+     "who": "金髮女孩",
+     "tag": "surprised",
+     "text": "大碗，太燙了！",
+     "en": "Big bowl, too hot!"
+    },
+    {
+     "who": "金髮女孩",
+     "text": "中碗，太冷了！",
+     "en": "Middle bowl, too cold!"
+    },
+    {
+     "who": "金髮女孩",
+     "tag": "happy",
+     "text": "小碗，剛剛好！",
+     "en": "Little bowl, just right!"
+    },
+    {
+     "who": "旁白",
+     "text": "她把小碗的粥，全部吃完了。",
+     "en": "She ate up all the porridge in the little bowl."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋樓上的臥室，早上，窗邊有陽光。房間裡並排三張床：大床、中床、小床，小床上有一條紅色格子被子。",
+   "act": "畫最後這一刻：金髮女孩躺在小床上，抱著枕頭睡得好香；旁邊的大床和中床被子都弄皺了，看得出她躺過。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "吃飽了，她想睡一下。",
+     "en": "With a full tummy, she wanted a little nap."
+    },
+    {
+     "who": "金髮女孩",
+     "text": "大床，太硬了！",
+     "en": "Big bed, too hard!"
+    },
+    {
+     "who": "金髮女孩",
+     "text": "中床，太軟了！",
+     "en": "Middle bed, too soft!"
+    },
+    {
+     "who": "金髮女孩",
+     "tag": "sleepy",
+     "text": "小床，剛剛好！",
+     "en": "Little bed, just right!"
+    },
+    {
+     "who": "旁白",
+     "text": "她躺在小床上，呼呼大睡。",
+     "en": "She lay down on the little bed and fell fast asleep."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的餐桌旁，中午。",
+   "act": "三隻熊剛進門，圍在餐桌邊：熊爸爸拿起大碗，驚訝地張大嘴巴；熊媽媽看著中碗，手放在臉頰上；小熊捧著空空的小碗，眼淚汪汪。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "三隻熊回家了。",
+     "en": "The three bears came home."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "surprised",
+     "text": "咦，有人動了我的粥！",
+     "en": "Hmm? Someone's been eating my porridge!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "surprised",
+     "text": "有人動了我的粥！",
+     "en": "Someone's been eating my porridge!"
+    },
+    {
+     "who": "小熊",
+     "tag": "crying",
+     "text": "我的粥，被吃光了！",
+     "en": "Someone ate up all my porridge!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋樓上的臥室，中午。",
+   "act": "熊爸爸看著被壓皺的大床，熊媽媽看著亂亂的中床；小熊指著自己的小床，上面躺著金髮女孩；金髮女孩剛醒來，坐起身，嚇得睜大眼睛、雙手抓著被子。",
+   "lines": [
+    {
+     "who": "熊爸爸",
+     "text": "有人躺過我的床！",
+     "en": "Someone's been lying in my bed!"
+    },
+    {
+     "who": "熊媽媽",
+     "text": "有人躺過我的床！",
+     "en": "Someone's been lying in my bed!"
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "有人在我的床上，呼呼大睡！",
+     "en": "Someone's sleeping in my bed!"
+    },
+    {
+     "who": "旁白",
+     "text": "金髮女孩醒了，看到三隻熊。",
+     "en": "Goldilocks woke up and saw the three bears."
+    },
+    {
+     "who": "金髮女孩",
+     "tag": "scared",
+     "text": "啊！是熊！",
+     "en": "Oh! Bears!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋樓上的臥室，中午。",
+   "act": "金髮女孩站在小床邊，低著頭、手指捏著圍裙道歉；熊爸爸彎下腰，溫和地看著她；熊媽媽輕輕拍她的肩膀；小熊從熊媽媽身後走出來，對她笑。",
+   "lines": [
+    {
+     "who": "金髮女孩",
+     "tag": "sad",
+     "text": "對不起，我沒有敲門，就跑進來了。",
+     "en": "I'm sorry. I didn't knock. I just came right in."
+    },
+    {
+     "who": "金髮女孩",
+     "text": "小熊，我吃了你的粥，對不起。",
+     "en": "Little Bear, I ate your porridge. I'm sorry."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "gentle",
+     "text": "進別人的家，要先敲門喔。",
+     "en": "When you visit someone's home, knock first."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "要等主人說好，才可以進來。",
+     "en": "Then wait until they say yes before you come in."
+    },
+    {
+     "who": "小熊",
+     "tag": "gentle",
+     "text": "沒關係！",
+     "en": "That's okay!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，小木屋的紅色木門外，陽光很好。",
+   "act": "金髮女孩站在門口舉手敲門，另一手提著一籃紅色莓果；小熊打開門，開心地張開雙手歡迎她；熊爸爸和熊媽媽在屋裡笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，咚咚！咚咚！有人敲門。",
+     "en": "The next day, knock, knock! Knock, knock! Someone was at the door."
+    },
+    {
+     "who": "金髮女孩",
+     "tag": "gentle",
+     "text": "小熊，我可以進去玩嗎？",
+     "en": "Little Bear, may I come in and play?"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "可以！我們做好朋友吧！",
+     "en": "Yes! Let's be good friends!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，要先敲門，等主人說好喔！",
+     "en": "Remember: Knock first, and wait for a yes before you go in!"
+    }
+   ]
+  }
+ ]
+}

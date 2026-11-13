@@ -1,0 +1,412 @@
+{
+ "id": "food-journey",
+ "title": "食物的旅行",
+ "title_en": "Where Does My Food Go?",
+ "size": "中",
+ "roles": {
+  "小宇": "五歲的小男孩，愛吃、活潑，常常大聲說話，打嗝時有點不好意思。",
+  "小蘋果": "一小塊會說話的蘋果，可愛的小不點，愛冒險、膽子大，什麼都覺得好玩，聲音小小的、很興奮。",
+  "牙齒": "一排白白的牙齒，像一隊有精神的年輕大哥哥，說話有節奏、很有幹勁。",
+  "胃": "胖胖的大叔，聲音低沉溫和、愛笑，像在開洗衣機的老闆。",
+  "媽媽": "小宇的媽媽，溫柔有耐心，提醒事情時笑咪咪的。"
+ },
+ "cast": {
+  "小宇": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小蘋果": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "牙齒": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "胃": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "行",
+   "where": "書名；第1、10、11頁『旅行』",
+   "read": "xíng"
+  },
+  {
+   "char": "便",
+   "where": "第9、10頁『便便』",
+   "read": "biàn"
+  },
+  {
+   "char": "切",
+   "where": "第2頁『前面的牙齒切』",
+   "read": "qiē"
+  },
+  {
+   "char": "磨",
+   "where": "第2頁『磨碎』",
+   "read": "mó"
+  },
+  {
+   "char": "暈",
+   "where": "第5頁『頭好暈』",
+   "read": "yūn"
+  },
+  {
+   "char": "咖",
+   "where": "第9頁『咖啡色』",
+   "read": "kā"
+  },
+  {
+   "char": "乾",
+   "where": "第11頁『洗乾淨』",
+   "read": "gān"
+  },
+  {
+   "char": "肚",
+   "where": "第1頁『肚子』",
+   "read": "dù"
+  },
+  {
+   "char": "會",
+   "where": "第3、5、7頁『會』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第11頁『吃了什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "嗝",
+   "where": "第6頁『打了一個嗝』『嗝』",
+   "read": "gé"
+  },
+  {
+   "char": "咻",
+   "where": "第4頁『咻』",
+   "read": "xiū"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "中午，家裡的餐桌，桌上有一盤切成小塊的紅蘋果，窗外有陽光",
+   "act": "小宇是五歲的男孩，短頭髮，穿藍白條紋上衣，全書都是這個打扮；他摸著肚子，拿起一塊蘋果；這塊小蘋果是黃白色果肉、紅色果皮，有一雙小眼睛和笑臉，舉起小手打招呼",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小宇的肚子餓了，咕嚕，咕嚕。",
+     "en": "Leo's tummy is hungry. Rumble, rumble."
+    },
+    {
+     "who": "小宇",
+     "tag": "happy",
+     "text": "我要吃蘋果！",
+     "en": "I want an apple!"
+    },
+    {
+     "who": "小蘋果",
+     "tag": "excited",
+     "text": "嗨，小宇！我要去你的身體裡旅行囉！",
+     "en": "Hi, Leo! I'm going on a trip inside your body!"
+    },
+    {
+     "who": "旁白",
+     "text": "啊嗚！小蘋果進到嘴巴裡了。",
+     "en": "Chomp! Little Apple goes into his mouth."
+    }
+   ]
+  },
+  {
+   "scene": "嘴巴裡面：粉紅色的舌頭像一張軟軟的地毯，上面和下面各有一排白色的牙齒",
+   "act": "牙齒們像一排戴小頭盔的白色小士兵，正用力往下咬；已經咬下來的小蘋果碎塊，每一小塊都有小笑臉，在舌頭上笑著打滾",
+   "lines": [
+    {
+     "who": "牙齒",
+     "tag": "excited",
+     "text": "我們是牙齒！咬一咬，咬一咬！",
+     "en": "We are the teeth! Chomp, chomp! Chomp, chomp!"
+    },
+    {
+     "who": "旁白",
+     "text": "牙齒用力咬，小蘋果變成好多小塊。",
+     "en": "The teeth bite hard. Little Apple breaks into lots of tiny pieces."
+    },
+    {
+     "who": "牙齒",
+     "text": "前面的牙齒切，後面的牙齒磨碎！",
+     "en": "Front teeth cut! Back teeth grind!"
+    },
+    {
+     "who": "小蘋果",
+     "tag": "laughing",
+     "text": "哈哈，好癢！我變小了！",
+     "en": "Ha ha, that tickles! I'm getting smaller!"
+    }
+   ]
+  },
+  {
+   "scene": "嘴巴裡面，舌頭下面冒出透明的口水，像小噴泉",
+   "act": "口水像下小雨一樣淋在小蘋果碎塊身上，小蘋果撐著一片小葉子當雨傘；後面的舌頭微微往後抬起，像一座溜滑梯",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "口水流出來，讓小蘋果變軟，變滑。",
+     "en": "Spit comes out and makes Little Apple soft and slippery."
+    },
+    {
+     "who": "小蘋果",
+     "tag": "surprised",
+     "text": "哇，好多口水，好像在下雨！",
+     "en": "Whoa, so much spit! It's like rain!"
+    },
+    {
+     "who": "旁白",
+     "text": "口水也會幫忙，開始消化食物。",
+     "en": "Spit helps, too. It starts breaking down the food."
+    },
+    {
+     "who": "旁白",
+     "text": "舌頭往後一推，咕嚕，吞下去了！",
+     "en": "The tongue pushes back. Gulp! Down it goes!"
+    }
+   ]
+  },
+  {
+   "scene": "食道：一條粉紅色、往下走的軟管子，像一條長隧道，管子的牆一節一節地收緊",
+   "act": "管子的牆一段一段往裡擠，像擠牙膏一樣把小蘋果往下推；小蘋果雙手舉高，像坐溜滑梯一樣往下溜",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蘋果滑進一條管子，叫做食道。",
+     "en": "Little Apple slides into a tube called the food pipe."
+    },
+    {
+     "who": "旁白",
+     "text": "食道擠一擠，把小蘋果往下送。",
+     "en": "The tube squeezes and squeezes, pushing Little Apple down."
+    },
+    {
+     "who": "小蘋果",
+     "tag": "excited",
+     "text": "好像溜滑梯！咻！",
+     "en": "It's like a slide! Wheee!"
+    },
+    {
+     "who": "小蘋果",
+     "text": "一擠，一擠，往下走！",
+     "en": "Squeeze, squeeze, down I go!"
+    }
+   ]
+  },
+  {
+   "scene": "胃的裡面：像一個大大的、會動的粉紅色袋子，裡面是透明、冒小泡泡的胃汁，裡面漂著幾顆米飯和小青菜",
+   "act": "胃有一張圓圓胖胖、留八字鬍的大叔笑臉，一邊張開雙手歡迎，一邊左右搖晃，像洗衣機一樣攪；小蘋果在裡面翻來翻去，頭上冒出暈暈的小星星",
+   "lines": [
+    {
+     "who": "胃",
+     "tag": "happy",
+     "text": "歡迎光臨！我是胃！",
+     "en": "Welcome! I'm the stomach!"
+    },
+    {
+     "who": "旁白",
+     "text": "胃會流出胃汁，把食物泡一泡。",
+     "en": "The stomach makes juice to soak the food."
+    },
+    {
+     "who": "胃",
+     "tag": "laughing",
+     "text": "搖一搖，攪一攪！搖一搖，攪一攪！",
+     "en": "Shake it, mix it! Shake it, mix it!"
+    },
+    {
+     "who": "小蘋果",
+     "tag": "laughing",
+     "text": "哇，好像坐在洗衣機裡，頭好暈！",
+     "en": "Whoa! It's like riding in a washing machine! I'm dizzy!"
+    }
+   ]
+  },
+  {
+   "scene": "胃的裡面，食物變成黏黏的、像稀飯一樣的一團；胃的出口有一扇小門。另外畫一個小框：餐桌旁的小宇",
+   "act": "胃笑著指向出口的小門；小框裡的小宇摀住嘴巴，臉紅紅地打了一個嗝，有點不好意思",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "搖了好久，食物都變成像稀飯一樣。",
+     "en": "After lots of shaking, the food turns into something like porridge."
+    },
+    {
+     "who": "胃",
+     "tag": "gentle",
+     "text": "好了！下一站，小腸！",
+     "en": "All done! Next stop, the small intestine!"
+    },
+    {
+     "who": "小蘋果",
+     "tag": "happy",
+     "text": "掰掰，胃大叔！",
+     "en": "Bye-bye, Uncle Stomach!"
+    },
+    {
+     "who": "旁白",
+     "text": "外面的小宇，打了一個嗝。",
+     "en": "Outside, Leo lets out a burp."
+    },
+    {
+     "who": "小宇",
+     "tag": "surprised",
+     "text": "嗝！不好意思！",
+     "en": "Burp! Excuse me!"
+    }
+   ]
+  },
+  {
+   "scene": "小腸裡面：一條彎來彎去、像捲起來的水管的粉紅色通道；牆上長滿一根一根像小手指的小毛毛",
+   "act": "牆上的小手指像小手一樣，從小蘋果身上接過金色的亮點，收進牆裡，送往身體各個地方；小蘋果開心地分給大家",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小腸彎來彎去，好像捲起來的水管。",
+     "en": "The small intestine twists and turns, like a coiled-up hose."
+    },
+    {
+     "who": "旁白",
+     "text": "牆上有好多小手，把營養收進身體。",
+     "en": "Lots of tiny hands on its walls take the good stuff into the body."
+    },
+    {
+     "who": "旁白",
+     "text": "營養會送到身體的每一個地方。",
+     "en": "The good stuff goes all around the body."
+    },
+    {
+     "who": "小蘋果",
+     "tag": "proud",
+     "text": "我的營養，讓小宇有力氣！",
+     "en": "My good stuff gives Leo lots of energy!"
+    }
+   ]
+  },
+  {
+   "scene": "公園裡，有溜滑梯和盪鞦韆，下午的陽光",
+   "act": "小宇又跑又跳，從溜滑梯上溜下來，兩手高高舉起；他的肚子上畫著小小的金色光點，表示營養在幫他",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小宇吃飽了，跑跑跳跳，好有力氣！",
+     "en": "Leo's tummy is full. He runs and jumps with lots of energy!"
+    },
+    {
+     "who": "小宇",
+     "tag": "excited",
+     "text": "我好有力氣喔！看我跳！",
+     "en": "I have so much energy! Watch me jump!"
+    },
+    {
+     "who": "小宇",
+     "tag": "happy",
+     "text": "謝謝你，小蘋果！",
+     "en": "Thank you, Little Apple!"
+    }
+   ]
+  },
+  {
+   "scene": "大腸裡面：比小腸粗，繞成一個大大的框；牆像海綿一樣，正在吸水",
+   "act": "剩下的食物變成咖啡色的軟軟一團，有可愛的笑臉；小蘋果剩下一點點，也變成咖啡色，摸著頭不好意思地笑；牆上的海綿把水吸走；全部維持卡通笑臉，不畫寫實的樣子",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了一天，用不到的東西來到了大腸。",
+     "en": "A day later, the leftovers the body can't use reach the large intestine."
+    },
+    {
+     "who": "旁白",
+     "text": "大腸把水吸回去，剩下的慢慢變成一團。",
+     "en": "The large intestine soaks up the water. What's left slowly turns into a lump."
+    },
+    {
+     "who": "小蘋果",
+     "tag": "surprised",
+     "text": "咦？我變成咖啡色了！",
+     "en": "Huh? I've turned brown!"
+    },
+    {
+     "who": "小蘋果",
+     "tag": "laughing",
+     "text": "原來，我變成便便了！",
+     "en": "Oh! I've turned into poop!"
+    }
+   ]
+  },
+  {
+   "scene": "家裡乾淨明亮的廁所，白色馬桶，牆上掛著小毛巾",
+   "act": "只畫一刻：小宇穿好褲子站在馬桶旁按沖水、對馬桶揮手；馬桶邊探出一個小小的、卡通化的咖啡色便便揮手說再見，畫成可愛的圓點，不畫寫實的形狀",
+   "lines": [
+    {
+     "who": "小宇",
+     "tag": "excited",
+     "text": "媽媽，我要上廁所！",
+     "en": "Mom, I need to go potty!"
+    },
+    {
+     "who": "旁白",
+     "text": "噗通！便便掉進馬桶裡。",
+     "en": "Plop! The poop drops into the toilet."
+    },
+    {
+     "who": "小蘋果",
+     "tag": "happy",
+     "text": "小宇，再見！我的旅行到站了！",
+     "en": "Bye, Leo! My trip ends here!"
+    },
+    {
+     "who": "小宇",
+     "tag": "laughing",
+     "text": "沖水！便便，再見！",
+     "en": "Flush! Bye-bye, poop!"
+    }
+   ]
+  },
+  {
+   "scene": "廁所的洗手台前，鏡子乾淨，旁邊有肥皂和小毛巾",
+   "act": "媽媽是短捲髮、穿綠色圍裙的溫柔媽媽，站在小宇旁邊豎起三根手指；小宇站在小板凳上，用肥皂搓出好多泡泡",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "小宇，記住三件事喔。",
+     "en": "Leo, remember three things."
+    },
+    {
+     "who": "媽媽",
+     "text": "吃東西要多咬幾下，也要多喝水。",
+     "en": "Chew your food well, and drink lots of water."
+    },
+    {
+     "who": "媽媽",
+     "text": "上完廁所，要用肥皂洗手！",
+     "en": "And after the potty, wash your hands with soap!"
+    },
+    {
+     "who": "小宇",
+     "tag": "happy",
+     "text": "好！搓一搓，洗乾淨！",
+     "en": "Okay! Scrub, scrub, all clean!"
+    },
+    {
+     "who": "旁白",
+     "text": "你今天吃了什麼呢？它也在旅行喔！",
+     "en": "What did you eat today? It's taking a trip inside you, too!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,335 @@
+{
+ "id": "rapunzel",
+ "title": "長髮公主",
+ "title_en": "Rapunzel",
+ "size": "中",
+ "roles": {
+  "長髮公主": "住在高塔上的女孩，十幾歲，聲音甜美、好奇又溫柔，唱歌時輕快。",
+  "巫婆": "照顧長髮公主的老巫婆，說話急、愛操心，不兇，結尾難過又溫柔。",
+  "王子": "年輕的王子，聲音明亮溫和、有禮貌，對長髮公主很親切。"
+ },
+ "cast": {
+  "長髮公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "巫婆": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "全書『長髮公主』『長辮子』，第1頁『好長，好長』",
+   "read": "cháng"
+  },
+  {
+   "char": "扇",
+   "where": "第1頁『一扇小窗』",
+   "read": "shàn"
+  },
+  {
+   "char": "會",
+   "where": "第9頁『我會常常回來』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有樓梯，也沒有門』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第9頁『什麼』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林中間的一座灰色石頭圓塔，好高好高，塔身沒有門也沒有樓梯，只有最上面一扇小窗，窗台擺著一盆紅花。塔四周是綠草地和大樹，晴天。",
+   "act": "長髮公主出場：十幾歲的女孩，金色頭髮編成一條好長的辮子，平常盤成一大圈放在塔裡的窗台邊，只垂出窗外一小段；穿淡綠色長裙、光著腳。她趴在窗台上，對著繞著塔飛的幾隻小黃鳥微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，森林裡有一座好高的塔。",
+     "en": "Once upon a time, there was a very tall tower in the forest."
+    },
+    {
+     "who": "旁白",
+     "text": "塔沒有樓梯，也沒有門，最上面有一扇小窗。",
+     "en": "It had no stairs and no door, just one little window at the very top."
+    },
+    {
+     "who": "旁白",
+     "text": "塔上住著一個女孩，頭髮好長，好長。",
+     "en": "A girl lived at the top. Her hair was long, so very long."
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥們都叫她長髮公主。",
+     "en": "The little birds called her Rapunzel."
+    }
+   ]
+  },
+  {
+   "scene": "高塔下面，白天。長髮公主剛把金色長辮子從窗口放下來，一直垂到草地上。",
+   "act": "巫婆出場：灰白頭髮盤成髮髻，戴尖尖的黑帽子，穿深藍色斗篷，拿一根木頭拐杖；鼻子尖尖，但表情不兇，像愛操心的奶奶。她抓著辮子，一步一步往上爬，拐杖綁在背後。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "每天，巫婆都來看她。",
+     "en": "Every day, an old witch came to see her."
+    },
+    {
+     "who": "巫婆",
+     "text": "長髮公主，長髮公主，把妳的長辮子放下來！",
+     "en": "Rapunzel, Rapunzel, let down your long hair!"
+    },
+    {
+     "who": "旁白",
+     "text": "長辮子放下來了，巫婆抓著辮子爬上去。",
+     "en": "Down came the long golden braid, and the witch climbed up."
+    }
+   ]
+  },
+  {
+   "scene": "高塔頂端的小房間，白天。圓形石牆，有一張小床、一張小桌子、一個書架，窗戶開著，看得到外面的森林和遠山。",
+   "act": "長髮公主指著窗外，眼睛發亮地問；巫婆搖手、皺眉，一臉擔心，把窗戶的窗簾拉上一半。",
+   "lines": [
+    {
+     "who": "長髮公主",
+     "text": "巫婆奶奶，我可以去外面玩嗎？",
+     "en": "Granny Witch, may I go outside to play?"
+    },
+    {
+     "who": "巫婆",
+     "tag": "worried",
+     "text": "不可以！外面好危險。妳在塔上最安全。",
+     "en": "No! It's dangerous out there. You're safest up here."
+    },
+    {
+     "who": "旁白",
+     "text": "巫婆很愛她，可是太怕她離開了。",
+     "en": "The witch loved her very much, but she was too afraid of losing her."
+    }
+   ]
+  },
+  {
+   "scene": "高塔的窗口，傍晚，天空是粉橘色的。",
+   "act": "長髮公主坐在窗台上，雙手放在胸前唱歌，長辮子盤在身旁；幾隻小黃鳥停在她肩膀和窗台上，跟著一起唱；她望著遠方，有一點寂寞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "長髮公主常常坐在窗邊唱歌。",
+     "en": "Rapunzel often sat by the window and sang."
+    },
+    {
+     "who": "長髮公主",
+     "tag": "singing, happy",
+     "text": "小鳥，小鳥，飛過來，陪我唱一首歌。",
+     "en": "Little bird, little bird, fly to me. Sing a song with me."
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥飛來了，可是，她好想要一個朋友。",
+     "en": "The birds came, but she wished she had a friend."
+    }
+   ]
+  },
+  {
+   "scene": "高塔附近的森林小路，傍晚。路邊有一棵粗大的橡樹。",
+   "act": "王子出場：黑色短髮，穿紅色外套、黑色長靴，騎著一匹棕色的馬。他牽著馬躲在大橡樹後面偷看，一手放在耳邊聽歌聲；遠處巫婆正抓著辮子往塔上爬。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，一位王子騎馬經過森林。",
+     "en": "One day, a prince rode through the forest."
+    },
+    {
+     "who": "王子",
+     "tag": "surprised",
+     "text": "這歌聲真好聽！是誰在唱歌？",
+     "en": "What a lovely song! Who is singing?"
+    },
+    {
+     "who": "旁白",
+     "text": "他躲在大樹後面，看到巫婆爬上塔。",
+     "en": "He hid behind a big tree and watched the witch climb the tower."
+    }
+   ]
+  },
+  {
+   "scene": "高塔下面，晚上，月亮出來了，塔頂窗口透出燈光。",
+   "act": "王子站在塔下，仰頭把雙手圍在嘴邊喊；塔頂窗口的金色長辮子正往下放；遠處森林小路上看得到巫婆拄著拐杖走遠的背影。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巫婆走了，王子來到塔下。",
+     "en": "After the witch left, the prince came to the tower."
+    },
+    {
+     "who": "王子",
+     "tag": "whispering",
+     "text": "長髮公主，長髮公主，把妳的長辮子放下來。",
+     "en": "Rapunzel, Rapunzel, let down your long hair."
+    },
+    {
+     "who": "旁白",
+     "text": "長辮子放下來了，王子爬了上去。",
+     "en": "Down came the long braid, and the prince climbed up."
+    }
+   ]
+  },
+  {
+   "scene": "高塔頂端的小房間，晚上，桌上點著一盞燈。",
+   "act": "長髮公主坐在窗台上唱歌，長辮子盤在腳邊；王子坐在小凳子上開心地拍手，帽子放在膝蓋上。",
+   "lines": [
+    {
+     "who": "長髮公主",
+     "tag": "scared",
+     "text": "啊！你是誰？",
+     "en": "Oh! Who are you?"
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "別怕。我聽到妳的歌，好喜歡。",
+     "en": "Don't be afraid. I heard your song, and I loved it."
+    },
+    {
+     "who": "王子",
+     "text": "對不起，我學巫婆奶奶叫妳。",
+     "en": "I'm sorry I called up to you the way Granny Witch does."
+    },
+    {
+     "who": "長髮公主",
+     "tag": "happy",
+     "text": "真的嗎？那我唱給你聽！",
+     "en": "Really? Then I'll sing for you!"
+    },
+    {
+     "who": "長髮公主",
+     "tag": "singing, happy",
+     "text": "小鳥，小鳥，飛過來，陪我唱一首歌。",
+     "en": "Little bird, little bird, fly to me. Sing a song with me."
+    }
+   ]
+  },
+  {
+   "scene": "高塔頂端的小房間，白天，窗外看得到遠方的大河和一片彩色花田。",
+   "act": "王子站在窗邊，一手指著遠方的河和花田，一手拿著一捲紅色絲帶；長髮公主趴在窗台上，托著下巴，好嚮往。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那天起，王子常常來看她。",
+     "en": "From then on, the prince often came to see her."
+    },
+    {
+     "who": "王子",
+     "text": "外面有大河，有花田，有好多朋友。",
+     "en": "Out there are big rivers, flower fields, and lots of friends."
+    },
+    {
+     "who": "長髮公主",
+     "tag": "sad",
+     "text": "我好想去看看。可是，我下不去。",
+     "en": "I want to see them so much. But I can't get down."
+    },
+    {
+     "who": "王子",
+     "tag": "happy",
+     "text": "我每天帶一條絲帶來，我們一起編梯子！",
+     "en": "I'll bring a ribbon every day, and we'll make a ladder together!"
+    }
+   ]
+  },
+  {
+   "scene": "高塔頂端的小房間，白天。床底下露出一條用很多彩色絲帶編成的梯子。",
+   "act": "巫婆蹲在床邊，手裡拿著拉出來的彩色絲帶梯子，瞪大眼睛，又驚訝又難過；長髮公主蹲在她身邊，溫柔地握住她的另一隻手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，巫婆看到了絲帶梯子。",
+     "en": "One day, the witch found the ribbon ladder."
+    },
+    {
+     "who": "巫婆",
+     "tag": "surprised, sad",
+     "text": "這是什麼？妳要離開我嗎？",
+     "en": "What is this? Are you going to leave me?"
+    },
+    {
+     "who": "長髮公主",
+     "tag": "gentle",
+     "text": "巫婆奶奶，我愛妳。可是，我也想看看外面。",
+     "en": "Granny Witch, I love you. But I want to see the world, too."
+    },
+    {
+     "who": "長髮公主",
+     "text": "我會常常回來看妳，好不好？",
+     "en": "I'll come back to visit you often, okay?"
+    }
+   ]
+  },
+  {
+   "scene": "高塔頂端的小房間，白天，陽光從窗戶照進來。房間地板中間出現一個新的洞口，一道石頭螺旋樓梯從那裡往下繞。",
+   "act": "巫婆眼眶紅紅的，溫柔地笑著揮一揮手，手上飛出閃亮的光點，繞著新出現的樓梯口飛；長髮公主站在旁邊，雙手捧著臉，好驚喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巫婆想了好久，眼睛紅了。",
+     "en": "The witch thought for a long time, and her eyes filled with tears."
+    },
+    {
+     "who": "巫婆",
+     "tag": "sad",
+     "text": "我太怕妳離開，把妳關在塔上。是我錯了。",
+     "en": "I was so afraid you would leave that I kept you in the tower. I was wrong."
+    },
+    {
+     "who": "巫婆",
+     "tag": "gentle",
+     "text": "去吧，孩子。我幫妳變出樓梯和門。",
+     "en": "Go on, child. I'll make stairs and a door for you."
+    },
+    {
+     "who": "旁白",
+     "text": "巫婆揮一揮手，塔裡多了樓梯和小門。",
+     "en": "The witch waved her hand, and stairs and a little door appeared in the tower."
+    }
+   ]
+  },
+  {
+   "scene": "高塔下面的草地，下午。草地上開滿小花，遠處有河；塔底多了一扇圓頂小木門，門開著。",
+   "act": "長髮公主光著腳、長辮子盤在身旁，和王子、巫婆三個人坐在塔下的草地上，張著嘴一起唱歌，都在笑；小黃鳥在頭上飛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "長髮公主走出小門，踩在綠草地上。",
+     "en": "Rapunzel stepped through the little door onto the green grass."
+    },
+    {
+     "who": "長髮公主",
+     "tag": "excited",
+     "text": "好軟的草！好香的花！",
+     "en": "Such soft grass! Such sweet flowers!"
+    },
+    {
+     "who": "旁白",
+     "text": "後來，她和王子常常回來看巫婆奶奶。",
+     "en": "After that, she and the prince often came back to visit Granny Witch."
+    },
+    {
+     "who": "旁白",
+     "text": "三個人坐在塔下，一起唱歌。",
+     "en": "The three of them sat by the tower and sang together."
+    }
+   ]
+  }
+ ]
+}

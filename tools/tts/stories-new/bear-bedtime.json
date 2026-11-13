@@ -8,7 +8,13 @@
   "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，像在哄小孩睡覺。",
   "月亮": "窗外的圓月亮，聲音輕柔、像在說悄悄話的姊姊，有點夢幻，只在快睡著時出來說一句晚安。"
  },
- "polyphones": [],
+ "polyphones": [
+  {
+   "char": "覺",
+   "where": "書名『小熊不想睡覺』（目前不錄音）",
+   "read": "jiào"
+  }
+ ],
  "pages": [
   {
    "scene": "晚上，小熊的房間：窗外黑黑的天空有一個圓圓的月亮和好多星星；房間裡有小床、軟枕頭、小兔玩偶、紅色小火車、一雙小拖鞋、一盞小夜燈。",
@@ -90,7 +96,7 @@
      "who": "旁白",
      "tag": "playful",
      "text": "一隻手，兩隻手，頭鑽出來，哇！",
-     "en": "One arm, two arms, and pop! Out comes your head!"
+     "en": "One arm, two arms, and pop! Out comes his head!"
     },
     {
      "who": "小熊",

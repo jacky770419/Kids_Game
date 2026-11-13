@@ -1,0 +1,236 @@
+{
+ "id": "dandelion",
+ "title": "蒲公英的小傘兵",
+ "title_en": "The Dandelion Seeds",
+ "size": "短",
+ "roles": {
+  "蒲公英媽媽": "一朵蒲公英，溫柔的媽媽聲音，說話輕輕慢慢的，送孩子出發時有點捨不得但很鼓勵。",
+  "小傘兵": "主角，蒲公英的一顆種子，像四五歲的小女生，聲音可愛有精神，第一次飛很興奮，最後開花時很得意。",
+  "風哥哥": "春天的風，活潑調皮的年輕大哥哥，說話輕快愛笑，玩累了會打哈欠。"
+ },
+ "cast": {
+  "蒲公英媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小傘兵": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "風哥哥": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "種",
+   "where": "第3頁『一顆種子』；第7頁『種子』兩次",
+   "read": "zhǒng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "春天早上的草地，陽光很亮。一株蒲公英，鋸齒形的綠葉子貼著地面圍成一圈，中間伸出一根細細的花莖，頂端開著一朵黃色、像小太陽的花；旁邊有一隻小蜜蜂在飛。",
+   "act": "蒲公英媽媽第一次出場：黃色的花上有一張溫柔的笑臉，閉著眼睛、仰起頭曬太陽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天的草地上，開著一朵黃色的蒲公英。",
+     "en": "In a spring meadow, a yellow dandelion is blooming."
+    },
+    {
+     "who": "蒲公英媽媽",
+     "tag": "happy",
+     "text": "太陽好暖，我好開心！",
+     "en": "The sun is so warm. I'm so happy!"
+    },
+    {
+     "who": "旁白",
+     "text": "她的花，像一個小太陽。",
+     "en": "Her flower looks like a little sun."
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，幾天後的傍晚，天空是淡橘色的。",
+   "act": "黃色的花瓣合起來，被外面一圈綠色的苞片包住，像一個收起來的小花苞，微微低著頭；蒲公英媽媽閉著眼睛，像在說悄悄話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，黃色的花合起來了。",
+     "en": "A few days later, the yellow flower closes up."
+    },
+    {
+     "who": "蒲公英媽媽",
+     "tag": "whispering",
+     "text": "噓，寶寶們正在裡面變大喔。",
+     "en": "Shh. My babies are growing inside."
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，晴天早上。",
+   "act": "花莖頂端打開成一顆圓圓的白色毛球；毛球是好多白色的小傘組成的，每把小傘下面，用細細的柄掛著一顆褐色、細細的種子。小傘兵第一次出場：其中一把小傘，下面的種子上有一張小笑臉，種子兩邊有一雙細細的小手，頭上的白色傘毛蓬蓬的。從這頁起，蒲公英媽媽的笑臉畫在花莖上、毛球的下方，用葉子當手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天早上，花又打開了。",
+     "en": "One morning, the flower opens again."
+    },
+    {
+     "who": "旁白",
+     "text": "它變成一顆白色的毛球！",
+     "en": "Now it's a fluffy white ball!"
+    },
+    {
+     "who": "小傘兵",
+     "tag": "excited",
+     "text": "嗨！我是小傘兵！",
+     "en": "Hello! I'm Little Seed!"
+    },
+    {
+     "who": "旁白",
+     "text": "每一把白色小傘的下面，都有一顆種子。",
+     "en": "Each tiny white parachute carries a seed."
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，白毛球上好多小傘兵擠在一起；遠方的樹開始搖動，表示風要來了。",
+   "act": "小傘兵低頭看花莖上的媽媽，有點緊張；蒲公英媽媽在毛球下方溫柔地抬頭看她，其他小傘兵也豎起耳朵聽。",
+   "lines": [
+    {
+     "who": "蒲公英媽媽",
+     "tag": "gentle",
+     "text": "孩子們，風來了，就要出發囉。",
+     "en": "Little ones, when the wind comes, it's time to go."
+    },
+    {
+     "who": "小傘兵",
+     "tag": "curious",
+     "text": "媽媽，我們要去哪裡？",
+     "en": "Mommy, where are we going?"
+    },
+    {
+     "who": "蒲公英媽媽",
+     "tag": "gentle",
+     "text": "去找新的土地，在那裡發芽。",
+     "en": "To find new ground, where you can sprout."
+    }
+   ]
+  },
+  {
+   "scene": "草地上吹起風，草和花都往同一邊彎。",
+   "act": "風哥哥第一次出場：一團淡藍色、捲捲的風，有一張調皮的笑臉，鼓著臉頰吹氣。白毛球上的小傘兵一個接一個被吹起來；小傘兵抓著小傘，回頭揮手；蒲公英媽媽的莖上只剩幾把小傘，她笑著揮葉子。",
+   "lines": [
+    {
+     "who": "風哥哥",
+     "tag": "playful",
+     "text": "呼呼！我來囉！抓緊你們的小傘！",
+     "en": "Whoosh! Here I come! Hold on to your parachutes!"
+    },
+    {
+     "who": "旁白",
+     "text": "風一吹，小傘兵一個接一個飛起來。",
+     "en": "The wind blows, and the seeds fly up, one after another."
+    },
+    {
+     "who": "小傘兵",
+     "tag": "excited",
+     "text": "我飛起來了！媽媽，再見！",
+     "en": "I'm flying! Bye, Mommy!"
+    },
+    {
+     "who": "蒲公英媽媽",
+     "tag": "gentle",
+     "text": "再見，要勇敢喔！",
+     "en": "Bye-bye! Be brave!"
+    }
+   ]
+  },
+  {
+   "scene": "從天上往下看的角度：下面有一條小河、一排木頭籬笆、一片農田和一個小菜園。",
+   "act": "小傘兵在風裡飛，張開手好開心；風哥哥在她旁邊推著她走；最後風哥哥打了個哈欠，小傘兵往菜園旁邊一塊褐色的土地慢慢掉下去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小傘兵飛過小河，飛過籬笆。",
+     "en": "Little Seed flies over a stream and over a fence."
+    },
+    {
+     "who": "小傘兵",
+     "tag": "happy",
+     "text": "哇，好高喔！真好玩！",
+     "en": "Wow, so high! This is fun!"
+    },
+    {
+     "who": "風哥哥",
+     "tag": "sleepy",
+     "text": "我想休息了，再見囉！",
+     "en": "I want to rest now. Bye-bye!"
+    },
+    {
+     "who": "旁白",
+     "text": "風停了，小傘兵掉在一塊土地上。",
+     "en": "The wind stops, and Little Seed drops down onto the soil."
+    }
+   ]
+  },
+  {
+   "scene": "菜園旁邊的土地，分成兩格：第一格下著小雨；第二格雨停了，太陽出來。",
+   "act": "小傘兵的種子躺在土上，白色小傘倒在旁邊；第一格種子被雨淋濕，閉著眼睛微笑，身體吸飽水變得胖胖的；第二格種子下面伸出一根白色的小根往土裡鑽，上面冒出兩片綠色的小葉子，小傘兵開心地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "下雨了，種子喝到雨水。",
+     "en": "Rain falls, and the seed drinks the water."
+    },
+    {
+     "who": "旁白",
+     "text": "太陽出來了，土地好溫暖。",
+     "en": "The sun comes out, and the ground gets warm."
+    },
+    {
+     "who": "旁白",
+     "text": "種子伸出小根，冒出綠色的小葉子。",
+     "en": "The seed pushes out a tiny root, then little green leaves."
+    },
+    {
+     "who": "小傘兵",
+     "tag": "happy",
+     "text": "我發芽了！",
+     "en": "I sprouted!"
+    }
+   ]
+  },
+  {
+   "scene": "同一塊土地，過了好久，又是春天，晴天，旁邊的菜園長出了青菜。",
+   "act": "小傘兵變成一株蒲公英，鋸齒形的綠葉子圍成一圈，中間開出一朵黃色的花，花上是小傘兵的笑臉；風哥哥在旁邊轉圈，開心地看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了好久，好久，葉子變多了。",
+     "en": "A long, long time passes. More and more leaves come out."
+    },
+    {
+     "who": "旁白",
+     "text": "中間開出一朵黃色的花！",
+     "en": "In the middle, a yellow flower blooms!"
+    },
+    {
+     "who": "小傘兵",
+     "tag": "proud",
+     "text": "我也變成蒲公英媽媽了！",
+     "en": "Now I'm a dandelion mommy, too!"
+    },
+    {
+     "who": "風哥哥",
+     "tag": "playful",
+     "text": "等你變成白毛球，我再來找你！",
+     "en": "When you turn into a fluffy ball, I'll come back for you!"
+    }
+   ]
+  }
+ ]
+}

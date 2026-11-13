@@ -1,0 +1,355 @@
+{
+ "id": "tadpole",
+ "title": "小蝌蚪長大了",
+ "title_en": "Little Tadpole Grows Up",
+ "size": "中",
+ "roles": {
+  "小蝌蚪": "主角，像四五歲的小男孩，聲音稚嫩、好奇又有活力，發現自己多了腳時興奮大叫；變成青蛙後也是同一個聲音。",
+  "鴨子": "池塘裡愛玩的鴨子大哥哥，年輕男生，說話輕快、愛笑，有點調皮。",
+  "烏龜": "池塘裡的老烏龜爺爺，聲音慢、低沉、慈祥，像在安慰孫子。",
+  "青蛙媽媽": "溫柔的青蛙媽媽，聲音溫暖柔和，見到孩子時又驚喜又疼愛。"
+ },
+ "cast": {
+  "小蝌蚪": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "鴨子": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "烏龜": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "青蛙媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "書名『長大了』",
+   "read": "zhǎng"
+  },
+  {
+   "char": "尾",
+   "where": "第2、5、8、9頁『尾巴』",
+   "read": "wěi"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『很會跳』，第8頁『尾巴會』，第9頁『我會跳了』，第10頁『很會跳』",
+   "read": "huì"
+  },
+  {
+   "char": "膀",
+   "where": "第4頁『翅膀』",
+   "read": "bǎng"
+  },
+  {
+   "char": "扁",
+   "where": "第4頁『扁嘴巴』",
+   "read": "biǎn"
+  },
+  {
+   "char": "什",
+   "where": "第6頁『什麼樣子』",
+   "read": "shén"
+  },
+  {
+   "char": "給",
+   "where": "第8頁『給你力氣』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "春天的池塘，早上，水很清。池塘邊有綠色的水草和剛冒出來的小荷葉；水草旁邊浮著一團透明、像果凍的青蛙卵，裡面有好多小黑點。",
+   "act": "特寫那團像果凍的卵，一顆一顆小黑點包在透明的圓球裡；遠遠的小荷葉上，一隻綠色、白肚子、大眼睛的青蛙（青蛙媽媽，全書同一隻）背影跳走了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天的池塘裡，有一團透明的果凍。",
+     "en": "In the spring pond, there was a clear blob, like jelly."
+    },
+    {
+     "who": "旁白",
+     "text": "果凍裡面，有好多小黑點。",
+     "en": "Inside the jelly were lots of little black dots."
+    },
+    {
+     "who": "旁白",
+     "text": "這是青蛙的卵。小黑點，一天比一天大。",
+     "en": "These were frog eggs. Day by day, the black dots grew bigger."
+    }
+   ]
+  },
+  {
+   "scene": "同一個池塘的水裡，早上，陽光照進水中，水草輕輕搖。",
+   "act": "好多黑色的小蝌蚪從果凍裡鑽出來；其中一隻（主角小蝌蚪，黑色圓頭、大眼睛、一條細長尾巴，頭的兩邊有一點小小的鰓）搖著尾巴往前游，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，小黑點動了動，游出來了！",
+     "en": "One day, the dots wiggled, and out they swam!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠們有很圓的頭，和一條小尾巴。",
+     "en": "They had round heads and little tails."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "happy",
+     "text": "我是小蝌蚪！尾巴搖一搖，往前游！",
+     "en": "I'm a little tadpole! Wiggle my tail, and off I go!"
+    }
+   ]
+  },
+  {
+   "scene": "池塘水裡，水草叢中，一隻橘色小魚游過去。",
+   "act": "小蝌蚪（鰓已經藏到身體裡，看不到了）在水草邊啃水草上的綠色青苔，旁邊的小魚張著嘴巴、鰓一開一合；最後小蝌蚪東張西望，抬頭看水面，下定決心往前游。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蝌蚪住在水裡，跟小魚一樣，用鰓呼吸。",
+     "en": "The tadpole lived in the water. Like a fish, he breathed with gills."
+    },
+    {
+     "who": "旁白",
+     "text": "牠每天吃水草，慢慢變大。",
+     "en": "He nibbled on water plants every day and grew bigger."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "curious",
+     "text": "咦？我的媽媽在哪裡呢？",
+     "en": "Hmm? Where is my mommy?"
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "excited",
+     "text": "我要去找媽媽！",
+     "en": "I'm going to find my mommy!"
+    }
+   ]
+  },
+  {
+   "scene": "池塘水面，白天，荷葉旁邊。",
+   "act": "一隻白色、黃色扁嘴巴的鴨子浮在水面上，低頭看水裡的小蝌蚪，拍著翅膀哈哈笑，用翅膀指向遠處石頭上的烏龜；小蝌蚪點點頭，開心地往那邊游。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一隻白色的鴨子游過來。",
+     "en": "A white duck came swimming by."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "curious",
+     "text": "鴨子，鴨子，你是我的媽媽嗎？",
+     "en": "Duck, duck, are you my mommy?"
+    },
+    {
+     "who": "鴨子",
+     "tag": "laughing",
+     "text": "哈哈，我不是喔！我有翅膀和扁嘴巴。",
+     "en": "Ha ha, no! I have wings and a flat beak."
+    },
+    {
+     "who": "鴨子",
+     "tag": "happy",
+     "text": "去問烏龜爺爺吧！烏龜爺爺最聰明了。",
+     "en": "Go ask Grandpa Turtle! He is very wise."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "excited",
+     "text": "好！謝謝你，鴨子！",
+     "en": "Okay! Thank you, Duck!"
+    }
+   ]
+  },
+  {
+   "scene": "池塘水裡，水草旁邊，好多天以後。",
+   "act": "小蝌蚪變大了一點，身體後面、尾巴根部冒出兩隻小小的後腳；他回頭看自己的腳，眼睛發亮，一邊搖尾巴一邊踢踢小後腳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了好多天，小蝌蚪冒出兩隻後腳。",
+     "en": "Many days later, the tadpole grew two little back legs."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "excited",
+     "text": "哇！我有後腳了！",
+     "en": "Wow! I have back legs!"
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "happy",
+     "text": "尾巴搖一搖，後腳踢一踢！",
+     "en": "Wiggle, wiggle! Kick, kick!"
+    }
+   ]
+  },
+  {
+   "scene": "池塘邊一塊泡在水裡的石頭旁邊，白天。",
+   "act": "一隻背著咖啡色硬殼的老烏龜（烏龜爺爺，眼睛瞇瞇的、有白眉毛）趴在水裡的石頭上，伸出四隻腳；有兩隻小後腳的小蝌蚪游到他的鼻子前面問；烏龜爺爺笑咪咪地回答，眼睛看著小蝌蚪的後腳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蝌蚪游呀游，找到了烏龜爺爺。",
+     "en": "The tadpole swam on and found Grandpa Turtle."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "curious",
+     "text": "烏龜爺爺，我的媽媽是什麼樣子？",
+     "en": "Grandpa Turtle, what does my mommy look like?"
+    },
+    {
+     "who": "烏龜",
+     "tag": "gentle",
+     "text": "你的媽媽是綠色的，有大眼睛，很會跳。",
+     "en": "Your mommy is green. She has big eyes, and she's a great jumper."
+    },
+    {
+     "who": "烏龜",
+     "tag": "gentle",
+     "text": "等你的腳都冒出來，就快找到她了。",
+     "en": "When all your legs come out, you will find her soon."
+    }
+   ]
+  },
+  {
+   "scene": "池塘裡，又過了好多天，接近水面的地方。",
+   "act": "小蝌蚪身體變綠了一點，身體前面也冒出兩隻小前腳；他舉起四隻腳數一數，然後游到水面，把頭伸出水面吸氣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "又過了好多天，前面也冒出兩隻小腳。",
+     "en": "Many days later, he grew two front legs, too."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "excited",
+     "text": "一、二、三、四！我有四隻腳了！",
+     "en": "One, two, three, four! I have four legs!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，牠的鰓不見了，改用肺呼吸。",
+     "en": "By now, his gills were gone. He breathed with lungs instead."
+    },
+    {
+     "who": "旁白",
+     "text": "牠常常把頭伸出水面，用肺吸一口氣。",
+     "en": "He often poked his head out of the water to breathe air into his lungs."
+    }
+   ]
+  },
+  {
+   "scene": "池塘水裡，烏龜爺爺的石頭旁邊。",
+   "act": "小蝌蚪（綠色身體、四隻腳，尾巴明顯變短了一截）回頭看自己的尾巴，皺著眉頭很擔心；烏龜爺爺伸長脖子，溫柔地安慰他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，小蝌蚪的尾巴，一天比一天短。",
+     "en": "But day by day, his tail got shorter."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "worried",
+     "text": "咦？我的尾巴怎麼變短了？",
+     "en": "Huh? Why is my tail getting shorter?"
+    },
+    {
+     "who": "烏龜",
+     "tag": "gentle",
+     "text": "別怕。尾巴會慢慢變成營養，給你力氣。",
+     "en": "Don't worry. Your tail is slowly turning into food for your body. It gives you energy."
+    }
+   ]
+  },
+  {
+   "scene": "池塘邊，一塊露出水面的灰色大石頭，旁邊有荷葉和青草，早上。",
+   "act": "尾巴完全不見的綠色小青蛙（就是小蝌蚪，白肚子、大眼睛）用後腳用力一蹬，從水裡跳上石頭，水花四濺；他站在石頭上張開手，好得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "尾巴越來越短，越來越短，最後不見了！",
+     "en": "His tail got shorter and shorter, until it was gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "小蝌蚪用力一跳，咚！跳上大石頭。",
+     "en": "The tadpole gave a big jump. Plop! He landed on a big rock."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "excited",
+     "text": "我會跳了！我會跳了！",
+     "en": "I can jump! I can jump!"
+    }
+   ]
+  },
+  {
+   "scene": "同一塊灰色大石頭和旁邊的大荷葉，早上。",
+   "act": "青蛙媽媽從荷葉上一跳，跳上大石頭，看到小青蛙，張開雙手；小青蛙一邊看一邊扳著手指數：綠色、大眼睛、很會跳，然後開心地撲過去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "石頭旁邊，有一隻綠色的大青蛙。",
+     "en": "Next to the rock sat a big green frog."
+    },
+    {
+     "who": "旁白",
+     "text": "牠一跳，就跳上了大石頭！",
+     "en": "With one big jump, she landed on the rock!"
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "excited",
+     "text": "綠色的，大眼睛，很會跳。妳是我的媽媽！",
+     "en": "Green, big eyes, great at jumping. You're my mommy!"
+    },
+    {
+     "who": "青蛙媽媽",
+     "tag": "gentle",
+     "text": "對呀！我的孩子，你終於來了！",
+     "en": "That's right! My little one, you're finally here!"
+    }
+   ]
+  },
+  {
+   "scene": "荷葉邊，池塘水面像鏡子一樣，倒映著兩隻青蛙；傍晚，天空是橘色的。",
+   "act": "小青蛙趴在荷葉邊往水裡看，水面映出一隻綠色小青蛙的臉，他驚喜地張大嘴巴；最後青蛙媽媽和小青蛙一起在荷葉上跳。",
+   "lines": [
+    {
+     "who": "青蛙媽媽",
+     "tag": "gentle",
+     "text": "你看看水裡的自己。",
+     "en": "Look at yourself in the water."
+    },
+    {
+     "who": "旁白",
+     "text": "水裡，有一隻綠色的小青蛙，對著牠笑。",
+     "en": "In the water, a little green frog smiled back at him."
+    },
+    {
+     "who": "小蝌蚪",
+     "tag": "surprised",
+     "text": "原來，我也變成青蛙了！",
+     "en": "Oh! I turned into a frog, too!"
+    },
+    {
+     "who": "旁白",
+     "text": "小青蛙和媽媽，一起在池塘邊跳呀跳。",
+     "en": "The little frog and his mommy hopped and hopped by the pond."
+    }
+   ]
+  }
+ ]
+}

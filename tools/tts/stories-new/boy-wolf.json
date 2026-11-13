@@ -1,0 +1,385 @@
+{
+ "id": "boy-wolf",
+ "title": "放羊的孩子",
+ "title_en": "The Boy Who Cried Wolf",
+ "size": "中",
+ "roles": {
+  "男孩": "八歲左右放羊的男孩，聲音清亮、調皮愛笑，開玩笑時得意，狼真的來時害怕大哭，最後誠懇道歉。",
+  "村民們": "村子裡的大人們一起說話，用一個聲音代表，熱心、有點糊塗好笑，被騙兩次後無奈，最後溫和地幫忙。",
+  "奶奶": "村子裡的老奶奶，聲音慈祥溫和、慢慢說，被騙也不生氣，耐心地教男孩說實話。"
+ },
+ "cast": {
+  "男孩": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "村民們": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第4頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有狼』兩處，第8頁『沒有人』，第9頁『沒抓到』",
+   "read": "méi"
+  },
+  {
+   "char": "嚇",
+   "where": "第4頁『嚇我一跳』，第9頁『嚇壞了』",
+   "read": "xià"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『不會相信』，第12頁『才會相信』兩處",
+   "read": "huì"
+  },
+  {
+   "char": "相",
+   "where": "第6頁、第8頁、第10頁、第12頁『相信』",
+   "read": "xiāng"
+  },
+  {
+   "char": "處",
+   "where": "第9頁『到處』",
+   "read": "chù"
+  },
+  {
+   "char": "提",
+   "where": "第11頁『提著燈』",
+   "read": "tí"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "山腳下的小村子和一片綠色山坡，晴朗的早上。村子裡有幾間紅屋頂的小房子，山坡上長滿青草，坡頂有一塊大石頭，遠處有一片樹林和一條小河。",
+   "act": "男孩出場：大約八歲，黑色短髮，戴一頂草帽，穿紅色上衣、藍色短褲，手拿一根上端彎彎的木頭牧羊杖。他坐在坡頂的大石頭上，雙手撐著下巴，一臉無聊；一群白色綿羊在旁邊低頭吃草，其中一隻小羊耳朵是黑色的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，山腳下有一個小村子。",
+     "en": "Once upon a time, there was a little village at the foot of a hill."
+    },
+    {
+     "who": "旁白",
+     "text": "村子裡有一個男孩，每天上山放羊。",
+     "en": "Every day, a boy from the village took the sheep up the hill."
+    },
+    {
+     "who": "旁白",
+     "text": "羊在山坡上吃草，男孩坐在大石頭上。",
+     "en": "The sheep ate grass, and the boy sat on a big rock."
+    },
+    {
+     "who": "男孩",
+     "tag": "sleepy",
+     "text": "吃草，吃草，羊每天都在吃草。好無聊喔！",
+     "en": "Eating grass, eating grass. The sheep eat grass every day. How boring!"
+    }
+   ]
+  },
+  {
+   "scene": "山坡頂的大石頭上，中午。從坡頂看得到山下的小村子。",
+   "act": "男孩站在大石頭上，雙手圍在嘴巴旁邊，對著山下的村子大喊，眼睛眨呀眨，臉上帶著調皮的笑；羊群照樣安靜吃草。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "男孩想到一個好玩的點子。",
+     "en": "Then the boy had a funny idea."
+    },
+    {
+     "who": "男孩",
+     "tag": "excited",
+     "text": "嘻嘻，我來開個玩笑！",
+     "en": "Hee hee, I'll play a trick on them!"
+    },
+    {
+     "who": "男孩",
+     "tag": "shouting",
+     "text": "狼來了！狼來了！快來救羊呀！",
+     "en": "Wolf! Wolf! Come and save the sheep!"
+    }
+   ]
+  },
+  {
+   "scene": "從村子通往山坡的泥土小路，中午。",
+   "act": "村民們出場，一窩蜂往山上衝：麵包叔叔（圓肚子、棕色八字鬍、戴白色廚師帽、繫白圍裙）手裡舉著平底鍋，鍋裡有一顆煎蛋；奶奶（白頭髮綁成包包頭、戴圓眼鏡、穿紫色衣服和綠色圍裙）舉著一根木棍，一隻腳穿拖鞋、一隻拖鞋飛在半空中；後面跟著戴黃色頭巾的阿姨和幾個村民。大家跑得滿頭大汗，樣子好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "村民們聽到了，大家都跑上山。",
+     "en": "The villagers heard him, and they all ran up the hill."
+    },
+    {
+     "who": "旁白",
+     "text": "麵包叔叔拿著鍋子，奶奶拿著木棍。",
+     "en": "The baker grabbed his frying pan, and Grandma grabbed a stick."
+    },
+    {
+     "who": "村民們",
+     "tag": "shouting",
+     "text": "狼在哪裡？狼在哪裡？",
+     "en": "Where's the wolf? Where's the wolf?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "surprised",
+     "text": "哎呀，我的拖鞋跑掉了！",
+     "en": "Oh dear, my slipper fell off!"
+    }
+   ]
+  },
+  {
+   "scene": "山坡頂，中午。羊群安靜地吃草，四周一隻狼也沒有。",
+   "act": "男孩坐在大石頭上抱著肚子哈哈大笑；村民們喘著氣、東張西望；麵包叔叔鍋裡的煎蛋掉在草地上，一隻羊低頭在聞；奶奶單腳站著，拍拍胸口鬆了一口氣。",
+   "lines": [
+    {
+     "who": "男孩",
+     "tag": "laughing",
+     "text": "哈哈！沒有狼啦！我在開玩笑！",
+     "en": "Ha ha! There's no wolf! It was just a joke!"
+    },
+    {
+     "who": "村民們",
+     "tag": "surprised",
+     "text": "什麼？原來是開玩笑呀？",
+     "en": "What? It was only a joke?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "呼，嚇我一跳。沒有狼就好。",
+     "en": "Phew, you gave me a fright. I'm glad there's no wolf."
+    },
+    {
+     "who": "旁白",
+     "text": "大家搖搖頭，走下山了。",
+     "en": "Everyone shook their heads and walked back down the hill."
+    }
+   ]
+  },
+  {
+   "scene": "山坡頂和上山的小路，過了幾天的一大早，太陽剛出來。",
+   "act": "男孩又站在大石頭上雙手圍嘴大喊；村民們又往山上跑，這次麵包叔叔穿著藍色條紋睡衣、戴著尖尖的睡帽，奶奶手上抓著一件洗到一半、還在滴水的衣服；男孩笑得前俯後仰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，男孩又想開玩笑。",
+     "en": "A few days later, the boy wanted to play another joke."
+    },
+    {
+     "who": "男孩",
+     "tag": "shouting",
+     "text": "狼來了！狼來了！",
+     "en": "Wolf! Wolf!"
+    },
+    {
+     "who": "旁白",
+     "text": "村民們又跑上山。",
+     "en": "The villagers ran up the hill again."
+    },
+    {
+     "who": "旁白",
+     "text": "麵包叔叔穿著睡衣就來了！",
+     "en": "The baker even came in his pajamas!"
+    },
+    {
+     "who": "男孩",
+     "tag": "laughing",
+     "text": "哈哈！又被我騙了！",
+     "en": "Ha ha! I fooled you again!"
+    }
+   ]
+  },
+  {
+   "scene": "山坡頂，同一天的一大早。",
+   "act": "村民們雙手抱胸、皺著眉頭看男孩，麵包叔叔的睡帽歪了；奶奶彎下腰，溫和地看著男孩說話；男孩聳聳肩、嘴角還在偷笑，一點也不在乎。",
+   "lines": [
+    {
+     "who": "村民們",
+     "tag": "angry",
+     "text": "又是開玩笑？這樣一點都不好玩！",
+     "en": "Another joke? That's not funny at all!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "孩子，常常說謊，大家就不會相信你了。",
+     "en": "Child, if you keep telling lies, people won't believe you anymore."
+    },
+    {
+     "who": "旁白",
+     "text": "村民們走了，男孩一點也不在乎。",
+     "en": "The villagers left, but the boy didn't care one bit."
+    }
+   ]
+  },
+  {
+   "scene": "山坡頂和樹林邊，天剛黑的晚上，天邊還有一點橘色晚霞，樹林邊的草叢在動。",
+   "act": "一隻灰色大野狼從樹林裡衝出來：毛蓬蓬、大尾巴、黃眼睛，張著嘴，樣子有點兇但也有點笨，不可怕；男孩嚇得跳起來，草帽飛掉，雙手圍嘴大喊；羊群嚇得往四面八方跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天晚上，樹林裡跑出一隻大野狼！",
+     "en": "One evening, a big wolf ran out of the woods!"
+    },
+    {
+     "who": "男孩",
+     "tag": "scared",
+     "text": "狼來了！狼真的來了！",
+     "en": "Wolf! A real wolf is here!"
+    },
+    {
+     "who": "男孩",
+     "tag": "shouting",
+     "text": "快來人呀！救救我的羊！",
+     "en": "Help! Please save my sheep!"
+    }
+   ]
+  },
+  {
+   "scene": "山下的小村子，晚上，家家戶戶在煮晚飯，窗戶亮著燈，屋頂的煙囪冒著白煙。",
+   "act": "麵包叔叔在麵包店門口揉麵團，奶奶在院子裡收衣服，黃頭巾阿姨在門口洗菜；三個人聽到山上傳來喊聲，抬頭看了一眼，又搖搖頭繼續做事。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "村民們聽到了，可是沒有人上山。",
+     "en": "The villagers heard him, but nobody went up the hill."
+    },
+    {
+     "who": "村民們",
+     "text": "又在開玩笑了吧？我們不要再被騙了。",
+     "en": "Is it another joke? We won't be fooled again."
+    },
+    {
+     "who": "奶奶",
+     "tag": "sad",
+     "text": "唉，這一次，我們不相信他了。",
+     "en": "Oh dear. This time, we don't believe him."
+    }
+   ]
+  },
+  {
+   "scene": "山坡上，晚上，天黑了，月亮剛升起，遠處是樹林和小河。",
+   "act": "畫這一刻：大野狼累得吐舌頭，夾著尾巴往樹林裡跑，一隻羊也沒抓到；山坡上一隻羊也不見了，只剩幾撮白羊毛掛在草上；男孩沒戴草帽，站在山坡上拿著牧羊杖大哭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大野狼追著羊，羊嚇壞了，到處亂跑。",
+     "en": "The wolf chased the sheep. The sheep were so scared, they ran all over the place."
+    },
+    {
+     "who": "旁白",
+     "text": "羊跑進樹林，跑過小河，全都不見了。",
+     "en": "They ran into the woods and across the stream, and every one of them was gone."
+    },
+    {
+     "who": "旁白",
+     "text": "大野狼一隻羊也沒抓到，就跑回樹林了。",
+     "en": "The wolf didn't catch a single sheep, and it ran back into the woods."
+    },
+    {
+     "who": "男孩",
+     "tag": "crying",
+     "text": "我的羊！我的羊都不見了！",
+     "en": "My sheep! All my sheep are gone!"
+    }
+   ]
+  },
+  {
+   "scene": "小村子中間的廣場，晚上，屋簷下掛著油燈。",
+   "act": "男孩滿臉眼淚跑進廣場，站在村民們面前低著頭道歉，沒戴草帽，手裡握著牧羊杖；奶奶蹲下來摸摸他的頭；麵包叔叔、黃頭巾阿姨和其他村民圍過來，表情變得溫和。",
+   "lines": [
+    {
+     "who": "男孩",
+     "tag": "crying",
+     "text": "對不起！以前是我說謊。",
+     "en": "I'm sorry! I lied before."
+    },
+    {
+     "who": "男孩",
+     "tag": "sad",
+     "text": "可是這次狼真的來了！我的羊都跑掉了！",
+     "en": "But this time, the wolf really came! All my sheep ran away!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "知道錯了就好，我們相信你。",
+     "en": "It's good that you know it was wrong. We believe you."
+    },
+    {
+     "who": "村民們",
+     "tag": "gentle",
+     "text": "別哭，別哭！我們一起去找羊！",
+     "en": "Don't cry, don't cry! Let's all go find your sheep!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上的樹林和小河邊，月亮出來了，到處是點點燈光。",
+   "act": "村民們提著油燈分頭找羊：麵包叔叔從大石頭後面抱出一隻羊，黃頭巾阿姨在小河邊牽回兩隻，奶奶在大樹下找到那隻黑耳朵的小羊；男孩開心地抱住黑耳朵小羊；奶奶把男孩飛掉的草帽撿回來，戴回他頭上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家提著燈，到樹林和小河邊找羊。",
+     "en": "Everyone carried lamps and looked for the sheep in the woods and by the stream."
+    },
+    {
+     "who": "村民們",
+     "tag": "happy",
+     "text": "這裡有一隻！那裡也有兩隻！",
+     "en": "Here's one! And there are two more over there!"
+    },
+    {
+     "who": "旁白",
+     "text": "最後，羊全都找回來了！",
+     "en": "At last, they found every one of the sheep!"
+    },
+    {
+     "who": "男孩",
+     "tag": "happy",
+     "text": "太好了！我的羊都回來了！",
+     "en": "Hooray! My sheep are all back!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上的綠色山坡，陽光很好，藍天白雲。",
+   "act": "男孩戴著草帽站在山坡上，對著村民們彎腰鞠躬；奶奶、麵包叔叔和黃頭巾阿姨笑著揮手；羊群在旁邊吃草，黑耳朵小羊靠在男孩腳邊。",
+   "lines": [
+    {
+     "who": "男孩",
+     "tag": "gentle",
+     "text": "謝謝大家！我以後都要說實話。",
+     "en": "Thank you, everyone! From now on, I will always tell the truth."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "說實話，大家才會相信你喔！",
+     "en": "When you tell the truth, people will believe you!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，男孩再也不說謊了。",
+     "en": "From that day on, the boy never told a lie again."
+    },
+    {
+     "who": "旁白",
+     "text": "跟著說：說實話，大家才會相信你！",
+     "en": "Say it with me: Tell the truth, and people will believe you!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,415 @@
+{
+ "id": "momotaro",
+ "title": "桃太郎",
+ "title_en": "Momotaro",
+ "size": "中",
+ "roles": {
+  "桃太郎": "從大桃子裡出來的男孩，聲音清亮有精神，勇敢又善良，對朋友很熱情，對大紅鬼說話堅定但不兇。",
+  "老奶奶": "慈祥的老奶奶，聲音溫暖、笑咪咪的，很疼桃太郎。",
+  "老爺爺": "慈祥的老爺爺，聲音穩重溫和、慢慢說。",
+  "小狗": "熱情的白色小狗，像五六歲的小男孩，直爽又忠心。",
+  "猴子": "活潑調皮的猴子，年輕男生的聲音，說話快、愛開玩笑。",
+  "山雞": "漂亮的山雞，聲音尖細甜美、很可愛，有一點小驕傲。",
+  "大紅鬼": "鬼島上的大紅鬼，嗓門好大、低沉沙啞，看起來兇，其實很怕癢，被搔癢時笑到認輸，好笑不可怕。"
+ },
+ "cast": {
+  "桃太郎": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "老奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "老爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小狗": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "猴子": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "山雞": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "大紅鬼": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "漂",
+   "where": "第2頁『漂來』",
+   "read": "piāo"
+  },
+  {
+   "char": "切",
+   "where": "第3頁『正要切』",
+   "read": "qiē"
+  },
+  {
+   "char": "會",
+   "where": "第8頁『我會爬樹』、第9頁『我會飛』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，鄉下的山邊，一間茅草屋頂的木頭小房子，屋前有一條清澈的小河，後面是綠色的山。",
+   "act": "老爺爺（白頭髮、白鬍子，穿咖啡色短衣，背著木柴架）揮手往山上走；老奶奶（灰白頭髮梳成髮髻、穿藍色碎花衣服）抱著洗衣盆，笑著往河邊走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，山邊住著老爺爺和老奶奶。",
+     "en": "Long ago, a kind Grandpa and Grandma lived by the mountains."
+    },
+    {
+     "who": "旁白",
+     "text": "老爺爺上山砍柴，老奶奶到河邊洗衣服。",
+     "en": "Grandpa went up the mountain to cut wood. Grandma went to the river to wash clothes."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "我上山囉！",
+     "en": "I'm off to the mountain!"
+    },
+    {
+     "who": "老奶奶",
+     "tag": "happy",
+     "text": "我去洗衣服囉！",
+     "en": "And I'm off to wash the clothes!"
+    }
+   ]
+  },
+  {
+   "scene": "小河邊，陽光照在水面上，閃閃發亮。",
+   "act": "一顆比洗衣盆還大的粉紅色大桃子，在河上漂過來；老奶奶蹲在河邊的石頭上，張大嘴巴，伸手要把它撈上來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咦？河上漂來一顆好大的桃子！",
+     "en": "Look! A giant peach came floating down the river!"
+    },
+    {
+     "who": "老奶奶",
+     "tag": "surprised",
+     "text": "哇！這麼大的桃子！",
+     "en": "My goodness! What a big peach!"
+    },
+    {
+     "who": "老奶奶",
+     "tag": "happy",
+     "text": "帶回家，給老爺爺吃。",
+     "en": "I'll take it home for Grandpa."
+    },
+    {
+     "who": "旁白",
+     "text": "老奶奶用力把桃子抱回家。",
+     "en": "Grandma hugged the peach tight and carried it home."
+    }
+   ]
+  },
+  {
+   "scene": "小房子裡，木頭地板，中間一張矮桌，大桃子放在桌上。",
+   "act": "老爺爺拿著菜刀正要切，大桃子自己裂成兩半，一個胖嘟嘟、臉頰紅紅的小寶寶坐在裡面揮手笑；老爺爺和老奶奶嚇得往後坐，又驚又喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老爺爺拿起刀子，正要切。",
+     "en": "Grandpa picked up a knife to cut it."
+    },
+    {
+     "who": "旁白",
+     "text": "啪！桃子自己打開了！",
+     "en": "Pop! The peach opened all by itself!"
+    },
+    {
+     "who": "旁白",
+     "text": "裡面坐著一個可愛的小寶寶！",
+     "en": "Inside sat a sweet little baby!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "從桃子裡出來，就叫你桃太郎吧！",
+     "en": "You came out of a peach, so we'll call you Momotaro, Peach Boy!"
+    }
+   ]
+  },
+  {
+   "scene": "幾年後，小房子前的院子，旁邊有一棵開著粉紅色花的桃樹。",
+   "act": "桃太郎變成一個健康的男孩：黑色頭髮、綁白色頭巾，頭巾正中間畫一顆粉紅色的桃子，穿藍色短衣和白色褲子，腰上綁紅色帶子；他一隻手輕鬆地舉起一大綑木柴；老奶奶在旁邊拍手，老爺爺摸著鬍子笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "桃太郎吃好多飯，一天比一天大。",
+     "en": "Momotaro ate lots of rice and grew bigger every day."
+    },
+    {
+     "who": "旁白",
+     "text": "他力氣好大，又很善良。",
+     "en": "He was very strong, and very kind."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "proud",
+     "text": "我們的桃太郎，真能幹！",
+     "en": "Our Momotaro is so strong and helpful!"
+    },
+    {
+     "who": "桃太郎",
+     "tag": "happy",
+     "text": "奶奶，我來幫忙搬木柴！",
+     "en": "Grandma, let me carry the firewood!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡，村民們圍在一起，有人哭、有人搖頭；遠遠的大海上，有一座黑色的島，島上冒出灰色的煙。",
+   "act": "村民們看著倒在地上的米桶和沒有雞的雞籠；一位村民指著海上的鬼島；老爺爺站在桃太郎旁邊，皺著眉頭好擔心；桃太郎握緊拳頭，表情很勇敢。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，鬼島的大紅鬼跑來村子。",
+     "en": "One day, the Red Ogre from Ogre Island came to the village."
+    },
+    {
+     "who": "旁白",
+     "text": "他拿走大家的米、雞和寶物。",
+     "en": "He took away everyone's rice, chickens, and treasures."
+    },
+    {
+     "who": "旁白",
+     "text": "村子裡的人，都好難過。",
+     "en": "Everyone in the village was very sad."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "worried",
+     "text": "鬼島好遠，好危險呀！",
+     "en": "Ogre Island is far away, and dangerous!"
+    },
+    {
+     "who": "桃太郎",
+     "tag": "brave",
+     "text": "我要去鬼島，把東西拿回來！",
+     "en": "I'll go to Ogre Island and bring everything back!"
+    }
+   ]
+  },
+  {
+   "scene": "小房子門口，早上，太陽剛出來。",
+   "act": "老奶奶把一個包著好幾顆白飯糰的藍色布包交給桃太郎；老爺爺拍拍他的肩膀；桃太郎背起布包，手裡拿著一面畫著桃子的小白旗，舉手道別。",
+   "lines": [
+    {
+     "who": "老奶奶",
+     "tag": "gentle",
+     "text": "帶著奶奶做的飯糰，路上吃。",
+     "en": "Take these rice balls I made, for the road."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "路上小心喔！",
+     "en": "Be careful on your way!"
+    },
+    {
+     "who": "桃太郎",
+     "tag": "happy",
+     "text": "謝謝爺爺、奶奶！我出發了！",
+     "en": "Thank you, Grandpa and Grandma! I'm off!"
+    }
+   ]
+  },
+  {
+   "scene": "鄉間小路，兩旁是綠色的稻田。",
+   "act": "一隻白色小狗（尖耳朵、捲尾巴、脖子上綁紅色圍巾）搖著尾巴跑過來；桃太郎蹲下來，從布包拿出一顆飯糰給牠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "走呀走，路上跑來一隻白色小狗。",
+     "en": "Along the way, a little white dog came running up."
+    },
+    {
+     "who": "小狗",
+     "tag": "excited",
+     "text": "汪汪！桃太郎，你要去哪裡？",
+     "en": "Woof woof! Momotaro, where are you going?"
+    },
+    {
+     "who": "桃太郎",
+     "text": "我要去鬼島。請你吃飯糰！",
+     "en": "To Ogre Island. Here, have a rice ball!"
+    },
+    {
+     "who": "小狗",
+     "tag": "happy",
+     "text": "真好吃！我跟你一起去！",
+     "en": "Yummy! I'll come with you!"
+    }
+   ]
+  },
+  {
+   "scene": "山腳下的樹林，大樹上垂著綠色的藤蔓。",
+   "act": "一隻咖啡色的猴子（紅臉、短尾巴、戴一頂小黃帽）坐在樹枝上，一隻手抓著藤蔓，鼻子動來動去聞飯糰的香味；桃太郎把飯糰遞給牠，白色小狗在旁邊搖尾巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "走到樹林裡，樹上有一隻猴子。",
+     "en": "In the woods, there was a monkey up in a tree."
+    },
+    {
+     "who": "猴子",
+     "tag": "excited",
+     "text": "好香喔！我也想吃！",
+     "en": "Mmm, that smells good! I want one too!"
+    },
+    {
+     "who": "旁白",
+     "text": "桃太郎也送牠一顆飯糰。",
+     "en": "So Momotaro gave him a rice ball too."
+    },
+    {
+     "who": "猴子",
+     "tag": "happy",
+     "text": "謝謝！我會爬樹，我也去！",
+     "en": "Thanks! I'm a great climber. I'm coming too!"
+    }
+   ]
+  },
+  {
+   "scene": "山坡上的草地，天上有白雲。",
+   "act": "一隻漂亮的山雞（綠色的頭、紅色的臉、彩色的長尾巴）從天上飛下來，停在桃太郎的肩膀上；小狗和猴子抬頭看著牠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "飛來一隻山雞，是尾巴好漂亮的大鳥。",
+     "en": "Then a pheasant, a big bird with a beautiful tail, flew down from the sky."
+    },
+    {
+     "who": "山雞",
+     "tag": "happy",
+     "text": "桃太郎，我也想要飯糰！",
+     "en": "Momotaro, may I have a rice ball too?"
+    },
+    {
+     "who": "桃太郎",
+     "tag": "happy",
+     "text": "好，請你吃飯糰！",
+     "en": "Sure, have a rice ball!"
+    },
+    {
+     "who": "山雞",
+     "tag": "proud",
+     "text": "我會飛，可以幫你看路！",
+     "en": "I can fly, so I can find the way for you!"
+    },
+    {
+     "who": "旁白",
+     "text": "現在，桃太郎有三個好朋友了！",
+     "en": "Now Momotaro had three good friends!"
+    }
+   ]
+  },
+  {
+   "scene": "藍色的大海上，一艘小木船；前面是鬼島：黑色岩石的小島，島上有一座有大木門的城堡。",
+   "act": "桃太郎在船上划槳，小白旗插在船頭；小狗站在船頭，猴子坐在船尾，山雞飛在船前面帶路，用翅膀指著大木門。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家坐上小船，划呀划，來到鬼島。",
+     "en": "They got into a little boat and rowed and rowed, all the way to Ogre Island."
+    },
+    {
+     "who": "山雞",
+     "tag": "excited",
+     "text": "大門在那裡！",
+     "en": "The big gate is over there!"
+    },
+    {
+     "who": "小狗",
+     "tag": "brave",
+     "text": "汪汪！我們不怕！",
+     "en": "Woof woof! We're not scared!"
+    },
+    {
+     "who": "猴子",
+     "tag": "proud",
+     "text": "我爬上去，幫大家開門！",
+     "en": "I'll climb up and open it for everyone!"
+    }
+   ]
+  },
+  {
+   "scene": "鬼島的城堡裡，地上堆著村子的米袋、雞籠和金色的寶物。",
+   "act": "大紅鬼比門還高：紅色皮膚、頭上一支小角、黑色捲頭髮、穿虎皮短褲；猴子在搔他的腳底，山雞用尾巴的羽毛搔他的鼻子，小狗在旁邊汪汪叫；大紅鬼笑到在地上打滾，眼淚都流出來了；桃太郎雙手叉腰站在前面。",
+   "lines": [
+    {
+     "who": "大紅鬼",
+     "tag": "shouting",
+     "text": "吼！是誰來了？",
+     "en": "Roar! Who's there?"
+    },
+    {
+     "who": "桃太郎",
+     "tag": "brave",
+     "text": "大紅鬼！快把村子的東西送回去！",
+     "en": "Red Ogre! Give back what you took from the village!"
+    },
+    {
+     "who": "旁白",
+     "text": "猴子和山雞衝過去，搔他的癢。",
+     "en": "The monkey and the pheasant rushed over and tickled him."
+    },
+    {
+     "who": "大紅鬼",
+     "tag": "laughing",
+     "text": "哈哈！好癢！我輸了！",
+     "en": "Ha ha! That tickles! I give up!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡，傍晚，夕陽照著，村民們圍在一起。",
+   "act": "大紅鬼低著頭、搓著手，不好意思地把米袋、雞籠和寶物搬下船；桃太郎笑著遞一顆飯糰給大紅鬼，大紅鬼不好意思地接過來；村民們拍手歡呼；老爺爺和老奶奶抱住桃太郎；小狗、猴子、山雞在旁邊開心地跳。",
+   "lines": [
+    {
+     "who": "大紅鬼",
+     "tag": "sad",
+     "text": "對不起，拿別人的東西，是不對的。",
+     "en": "I'm sorry. Taking other people's things is wrong."
+    },
+    {
+     "who": "旁白",
+     "text": "大紅鬼把東西都送回村子了。",
+     "en": "The Red Ogre brought everything back to the village."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "happy",
+     "text": "桃太郎，你回來了！",
+     "en": "Momotaro, you're home!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "proud",
+     "text": "桃太郎，你真勇敢！",
+     "en": "Momotaro, you were so brave!"
+    },
+    {
+     "who": "桃太郎",
+     "tag": "happy",
+     "text": "大家一起來吃飯糰吧！",
+     "en": "Let's all have rice balls together!"
+    }
+   ]
+  }
+ ]
+}

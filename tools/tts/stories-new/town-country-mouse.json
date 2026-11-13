@@ -1,0 +1,351 @@
+{
+ "id": "town-country-mouse",
+ "title": "城市老鼠和鄉下老鼠",
+ "title_en": "The Town Mouse and the Country Mouse",
+ "size": "中",
+ "roles": {
+  "鄉下老鼠": "住在鄉下的小公老鼠，聲音像五六歲小男孩，樸實、熱情、容易滿足，看到大餐時興奮，碰到貓嚇壞了。",
+  "城市老鼠": "住在城市的小母老鼠，聲音嬌嬌的、有點愛現，說話很有自信，在鄉下怕黑怕安靜，其實很重感情。",
+  "貓": "城市大房子裡的胖橘貓，聲音拉長、得意，好笑不可怕。"
+ },
+ "cast": {
+  "鄉下老鼠": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "城市老鼠": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "貓": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第5頁『什麼聲音』，第8頁『想吃什麼，就吃什麼』，第12頁『家的什麼』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的田野，夏末的傍晚。一大片玉米田綠中帶黃，玉米穗是金黃色；田邊有一棵大橡樹，樹根下有一個圓形小洞，洞口掛著一片大葉子當門簾，洞口邊開著幾朵小野花。",
+   "act": "鄉下老鼠出場：棕色的小老鼠，圓耳朵，穿藍色吊帶褲、戴一頂小草帽。他坐在洞口，抱著一根玉米，閉著眼睛滿足地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鄉下的玉米田旁邊，住著一隻鄉下老鼠。",
+     "en": "Next to a cornfield in the country, there lived a little mouse called Country Mouse."
+    },
+    {
+     "who": "旁白",
+     "text": "他的家在大樹下，又小又安靜。",
+     "en": "His home under a big tree was small and quiet."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "happy",
+     "text": "有風，有花，有玉米。我好喜歡我的家！",
+     "en": "There's wind, there are flowers, and there's corn. I love my home!"
+    }
+   ]
+  },
+  {
+   "scene": "大橡樹下的小洞口，晴朗的白天，田邊有一條小路，路邊開著野花。",
+   "act": "城市老鼠出場：灰色的小老鼠，耳朵上戴粉紅色蝴蝶結，穿紅色洋裝，手提一個亮亮的小皮包。她從小路走過來，東看西看；鄉下老鼠張開雙手跑過去迎接她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，城市老鼠來鄉下玩。",
+     "en": "One day, Town Mouse came to visit the country."
+    },
+    {
+     "who": "旁白",
+     "text": "她是鄉下老鼠的好朋友。",
+     "en": "She was Country Mouse's good friend."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "excited",
+     "text": "歡迎妳！快進來，快進來！",
+     "en": "Welcome! Come in, come in!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "surprised",
+     "text": "哇，鄉下好多花喔！",
+     "en": "Wow, there are so many flowers here!"
+    }
+   ]
+  },
+  {
+   "scene": "鄉下老鼠的家裡，晚上。小小的圓房間，牆是泥土，地上鋪著乾草，中間有一張用木片做的小桌子，桌上放著一盞裝著螢火蟲的小玻璃燈。",
+   "act": "桌上擺著幾顆豆子、一根玉米和一小把麥子；鄉下老鼠開心地把玉米推給客人；城市老鼠捏著一顆豆子，皺著鼻子，表情很好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，鄉下老鼠請她吃晚飯。",
+     "en": "That evening, Country Mouse shared his dinner with her."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "happy",
+     "text": "來吃吧！有豆子，有玉米！",
+     "en": "Come and eat! There are beans and there's corn!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "surprised",
+     "text": "就是豆子和玉米嗎？有點硬耶。",
+     "en": "Just beans and corn? They're a little hard."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "proud",
+     "text": "很新鮮喔！多吃一點！",
+     "en": "They're nice and fresh! Have some more!"
+    }
+   ]
+  },
+  {
+   "scene": "夜晚的鄉下田野，滿天星星，有一個圓圓的大乾草堆，草地上飛著螢火蟲。",
+   "act": "兩隻老鼠從乾草堆上像溜滑梯一樣滑下來，城市老鼠的蝴蝶結飛起來，笑得好開心；接著兩隻老鼠並排躺在草地上，看著天上的星星。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "吃完飯，他們從草堆上滑下來。",
+     "en": "After dinner, they slid down a haystack."
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "laughing",
+     "text": "哈哈，真好玩！",
+     "en": "Ha ha! This is so much fun!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們躺在草地上，看天上的星星。",
+     "en": "They lay in the grass and looked up at the stars."
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "surprised",
+     "text": "哇，好多星星！城市裡看不到呢。",
+     "en": "Wow, so many stars! I can't see them in town."
+    }
+   ]
+  },
+  {
+   "scene": "大樹下的小洞裡，深夜。洞口外是一片黑色的田野；大樹枝上站著一隻大貓頭鷹，黃色的大眼睛在黑暗中發亮。",
+   "act": "城市老鼠躲在乾草被子裡發抖，只露出眼睛，蝴蝶結歪了；鄉下老鼠揉著眼睛坐起來，睡眼惺忪地拍拍她安慰她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "半夜，樹上的貓頭鷹叫了起來。",
+     "en": "In the middle of the night, an owl in the tree began to hoot."
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "scared",
+     "text": "那是什麼聲音？好黑，好可怕！",
+     "en": "What's that noise? It's so dark. It's so scary!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "whispering",
+     "text": "鄉下太安靜了，我睡不好。",
+     "en": "It's too quiet in the country. I can't sleep well."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "sleepy",
+     "text": "別怕，那是貓頭鷹，牠在說晚安。",
+     "en": "Don't be scared. That's just an owl saying good night."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，鄉下的小路上。路邊停著一輛要開進城的大貨車，車後面放著很多裝滿青菜的籃子。",
+   "act": "城市老鼠拉著鄉下老鼠的手，兩隻老鼠一起跳進一個菜籃子，從青菜葉子中間探出頭來；鄉下老鼠背著一個小布包。",
+   "lines": [
+    {
+     "who": "城市老鼠",
+     "tag": "excited",
+     "text": "跟我去城市吧！我家有大餐喔！",
+     "en": "Come to the town with me! There's a feast at my house!"
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "excited",
+     "text": "大餐？好，我去！",
+     "en": "A feast? Okay, I'll come!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們跳進菜籃子，坐上大車進城了。",
+     "en": "They hopped into a vegetable basket and rode a big truck into town."
+    }
+   ]
+  },
+  {
+   "scene": "城市的大街，白天。好高的大樓，馬路上很多車子和行人，有紅綠燈，路邊的商店櫥窗亮晶晶。",
+   "act": "兩隻老鼠在人行道邊，鄉下老鼠摀著耳朵、張大嘴巴抬頭看大樓，草帽差點掉下來；城市老鼠抬高下巴，得意地往前帶路。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城市好大，好吵，車子好多。",
+     "en": "The town was big and noisy, with so many cars."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "surprised",
+     "text": "哇！房子好高，好像碰到天了！",
+     "en": "Wow! The buildings are so tall, they almost touch the sky!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "proud",
+     "text": "跟我來，我家就在前面！",
+     "en": "Follow me! My house is just ahead!"
+    }
+   ]
+  },
+  {
+   "scene": "一棟大房子的餐廳，晚上，天花板掛著亮亮的水晶燈。長桌鋪著白桌布，擺滿大餐：起司、奶油蛋糕、餅乾、草莓和葡萄。牆角下方有一個小小的老鼠洞。",
+   "act": "兩隻老鼠站在餐桌上，鄉下老鼠抱著一大塊起司，嘴邊沾著奶油，眼睛發亮；城市老鼠手拿一顆草莓，得意地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城市老鼠住在大房子的牆洞裡。",
+     "en": "Town Mouse lived in a hole in the wall of a big house."
+    },
+    {
+     "who": "旁白",
+     "text": "晚上，他們爬上大桌子。",
+     "en": "That night, they climbed up onto the big table."
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "excited",
+     "text": "哇！有起司，有蛋糕，有草莓！",
+     "en": "Wow! There's cheese, there's cake, and there are strawberries!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "proud",
+     "text": "很棒吧！想吃什麼，就吃什麼！",
+     "en": "Isn't it great? Eat whatever you like!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個餐廳，晚上。",
+   "act": "貓出場：一隻胖胖的橘色大貓，綠眼睛，脖子上掛著小鈴鐺，從門口跳上餐桌，鼻子用力聞，樣子好笑不可怕；兩隻老鼠丟下起司和草莓，往牆角的老鼠洞衝，盤子和餅乾都被撞得飛起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "忽然，一隻大橘貓跳上桌子！",
+     "en": "Suddenly, a big orange cat jumped onto the table!"
+    },
+    {
+     "who": "貓",
+     "tag": "excited",
+     "text": "喵！我聞到老鼠的味道了！",
+     "en": "Meow! I smell mice!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "shouting",
+     "text": "快跑！快躲進洞裡！",
+     "en": "Run! Hide in the hole!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們拚命跑，跑進了牆洞。",
+     "en": "They ran as fast as they could, right into the hole in the wall."
+    }
+   ]
+  },
+  {
+   "scene": "牆洞裡，晚上，很暗。洞口外看得到大橘貓的一隻綠眼睛和鬍鬚。",
+   "act": "兩隻老鼠抱在一起發抖，鄉下老鼠的草帽掉在地上；大橘貓把爪子伸進洞口撈呀撈，撈不到，一臉失望。",
+   "lines": [
+    {
+     "who": "鄉下老鼠",
+     "tag": "scared",
+     "text": "好可怕！心都快跳出來了！",
+     "en": "That was so scary! My heart is pounding!"
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "sad",
+     "text": "城市就是這樣。有大餐，也有大貓。",
+     "en": "That's how it is in the town. There are big feasts, and there are big cats."
+    },
+    {
+     "who": "旁白",
+     "text": "大貓等呀等，最後打個哈欠走開了。",
+     "en": "The cat waited and waited. At last, it yawned and walked away."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，大房子的後門，門口停著要開回鄉下的大貨車，車上放著空的菜籃子。",
+   "act": "鄉下老鼠戴好草帽、背著小布包，布包裡露出一小塊起司；兩隻老鼠抱一抱說再見，兩個都笑著。",
+   "lines": [
+    {
+     "who": "鄉下老鼠",
+     "tag": "gentle",
+     "text": "謝謝妳的大餐。可是，我想回家了。",
+     "en": "Thank you for the feast. But I want to go home now."
+    },
+    {
+     "who": "鄉下老鼠",
+     "text": "我喜歡我的家，安靜又安全。",
+     "en": "I like my home. It's quiet and safe."
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "happy",
+     "text": "我也喜歡我的家，熱鬧又有好吃的！",
+     "en": "I like my home, too. It's busy, and the food is yummy!"
+    }
+   ]
+  },
+  {
+   "scene": "左右兩半的畫面：左邊是鄉下的田野和滿天星星，右邊是城市的大房子和亮著的窗戶。",
+   "act": "左邊：城市老鼠戴著鄉下老鼠的草帽，兩隻老鼠躺在草地上看星星；右邊：兩隻老鼠在城市的牆洞口一起吃蛋糕，大橘貓在遠處的地毯上睡覺。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從此，他們都喜歡自己的家。",
+     "en": "From then on, they both loved their own homes."
+    },
+    {
+     "who": "旁白",
+     "text": "他們也常常去對方家玩。",
+     "en": "And they often visited each other."
+    },
+    {
+     "who": "城市老鼠",
+     "tag": "happy",
+     "text": "到鄉下，看星星！",
+     "en": "To the country, to see the stars!"
+    },
+    {
+     "who": "鄉下老鼠",
+     "tag": "happy",
+     "text": "到城市，吃蛋糕！",
+     "en": "To the town, to eat cake!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，你最喜歡自己家的什麼呢？",
+     "en": "Now it's your turn. What do you love most about your home?"
+    }
+   ]
+  }
+ ]
+}

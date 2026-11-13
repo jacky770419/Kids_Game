@@ -1,0 +1,625 @@
+{
+ "id": "solar-system",
+ "title": "太陽系一家人",
+ "title_en": "A Trip Around the Solar System",
+ "size": "長",
+ "roles": {
+  "小米": "五歲的小女孩，好奇又愛發問，看到新東西會驚喜大叫，笑聲很多。",
+  "小鐵": "小米的機器狗，聲音尖尖細細、很有精神，像愛報站的小導遊，常常汪汪叫。",
+  "太陽公公": "慈祥的老爺爺，聲音溫暖宏亮、慢慢說，笑咪咪的。",
+  "水星": "最小的行星，像五六歲的小男孩，說話又快又急，熱到一直喊燙。",
+  "金星": "愛漂亮的姊姊，說話嬌嬌的，有點愛炫耀自己很亮。",
+  "地球": "溫柔的媽媽，聲音柔和溫暖，像在歡迎孩子回家。",
+  "火星": "活潑的年輕大哥哥，說話輕快好玩，愛開玩笑。",
+  "木星": "超大的大塊頭，嗓門很大很低沉，愛哈哈大笑，其實很友善。",
+  "土星": "溫柔的年輕姊姊，聲音明亮好聽，很愛自己的光環。",
+  "天王星": "懶洋洋的胖叔叔，說話慢吞吞、像剛睡醒，很悠哉。",
+  "海王星": "酷酷的少年，說話很有精神，喜歡呼呼的大風。"
+ },
+ "cast": {
+  "小米": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小鐵": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "太陽公公": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "水星": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "金星": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "地球": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "火星": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "木星": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "土星": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "天王星": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "海王星": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "行",
+   "where": "第1、3、4、5、9、13頁『行星』，第8頁『小行星』，第15頁『是行星喔』",
+   "read": "xíng"
+  },
+  {
+   "char": "系",
+   "where": "書名、第8、13、15頁『太陽系』",
+   "read": "xì"
+  },
+  {
+   "char": "地",
+   "where": "第13頁『水、金、地、火…』兩次，這裡的地是地球",
+   "read": "dì"
+  },
+  {
+   "char": "圈",
+   "where": "第3頁『一圈又一圈』、第4頁『一圈』、第10頁『呼拉圈』、第11頁『轉圈』",
+   "read": "quān"
+  },
+  {
+   "char": "轉",
+   "where": "第11頁『躺著轉圈』",
+   "read": "zhuàn"
+  },
+  {
+   "char": "空",
+   "where": "第5頁『很厚的空氣』",
+   "read": "kōng"
+  },
+  {
+   "char": "漂",
+   "where": "第10頁『漂亮』",
+   "read": "piào"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有河，也沒有海』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第9頁『是什麼』、第10頁『用什麼做的』",
+   "read": "shén"
+  },
+  {
+   "char": "呵",
+   "where": "第11頁天王星『呵』",
+   "read": "hē"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上，小米的房間：牆上貼著一張太陽系的大海報，窗外有好多星星；地上散著積木和一個火箭玩具",
+   "act": "小米是五歲的小女孩，綁一個高馬尾、戴紅色髮夾，穿黃色連身衣，全書都是這個打扮；小鐵是銀白色的小機器狗，圓圓的頭、藍色燈泡眼睛，兩片三角形的金屬小耳朵、四隻短腳，尾巴是一根小天線，頭頂有一個圓按鈕；小米指著海報，小鐵搖著天線尾巴",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小米有一隻機器狗，叫做小鐵。",
+     "en": "Mimi has a robot dog named Tinbo."
+    },
+    {
+     "who": "小米",
+     "tag": "curious",
+     "text": "小鐵，你看，太陽旁邊有八顆行星！",
+     "en": "Look, Tinbo! There are eight planets around the Sun!"
+    },
+    {
+     "who": "小米",
+     "text": "他們住在一起，好像一家人！",
+     "en": "They live together, like one big family!"
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪汪！我們坐火箭，去拜訪他們吧！",
+     "en": "Woof woof! Let's take a rocket and go visit them!"
+    },
+    {
+     "who": "小米",
+     "tag": "excited",
+     "text": "好耶！我們出發！",
+     "en": "Yay! Let's go!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小米家的院子，一艘紅白色的小火箭，火箭窗戶是圓的",
+   "act": "小米戴上透明的圓頭盔、小鐵也戴一個小頭盔，一起坐在火箭裡，從圓窗戶往外看；火箭尾巴噴出橘色的火，往天上衝",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小米和小鐵坐進火箭，戴好頭盔。",
+     "en": "Mimi and Tinbo climb into the rocket and put on their helmets."
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "五、四、三、二、一，出發！",
+     "en": "Five, four, three, two, one, blast off!"
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆！火箭飛上天了！",
+     "en": "Rumble! The rocket zooms into the sky!"
+    },
+    {
+     "who": "旁白",
+     "text": "飛呀飛，飛出地球，來到黑色的宇宙。",
+     "en": "Up and up, out past the Earth, into dark outer space."
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "哇，好多星星！",
+     "en": "Wow! So many stars!"
+    }
+   ]
+  },
+  {
+   "scene": "黑色的宇宙，遠方一個好大好亮的金黃色太陽，表面有火焰在跳",
+   "act": "太陽公公有慈祥的笑臉和火焰做的白鬍子；火箭遠遠停下來，小米戴上墨鏡、用手擋著光，小鐵的耳朵被照得發亮",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "第一站，太陽！",
+     "en": "First stop, the Sun!"
+    },
+    {
+     "who": "旁白",
+     "text": "太陽是一顆好大的星星，像一顆大火球。",
+     "en": "The Sun is a giant star, like a great big ball of fire."
+    },
+    {
+     "who": "太陽公公",
+     "tag": "gentle",
+     "text": "小朋友，不要靠太近，我很燙喔！",
+     "en": "Hello, little ones. Don't come too close. I'm very hot!"
+    },
+    {
+     "who": "太陽公公",
+     "tag": "happy",
+     "text": "八顆行星，都繞著我，一圈又一圈。",
+     "en": "All eight planets go around me, round and round."
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "太陽公公好！我們要去拜訪你的家人！",
+     "en": "Hello, Grandpa Sun! We're going to visit your family!"
+    }
+   ]
+  },
+  {
+   "scene": "太陽旁邊一顆灰色、小小的星球，表面都是坑洞，太陽在旁邊顯得好大",
+   "act": "水星是灰色的小球，有一張滿頭大汗的小男孩笑臉，用小手搧風；火箭窗戶裡的小米也在擦汗",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，水星！",
+     "en": "Next stop, Mercury!"
+    },
+    {
+     "who": "旁白",
+     "text": "水星是最小的行星，離太陽最近。",
+     "en": "Mercury is the smallest planet, and the closest to the Sun."
+    },
+    {
+     "who": "水星",
+     "tag": "excited",
+     "text": "我是水星！太陽照到的地方，好燙，好燙！",
+     "en": "I'm Mercury! Where the sunlight hits me, it's hot, hot, hot!"
+    },
+    {
+     "who": "水星",
+     "text": "我繞太陽一圈，跑最快！",
+     "en": "I go around the Sun the fastest of all!"
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "水星上面，沒有河，也沒有海呢！",
+     "en": "Mercury has no rivers and no seas!"
+    }
+   ]
+  },
+  {
+   "scene": "一顆被黃白色厚雲包住、閃閃發亮的星球",
+   "act": "金星是黃白色的星球，有大眼睛、長睫毛的漂亮姊姊臉，一手托著臉頰擺姿勢，全身亮晶晶；小米和小鐵在火箭裡看呆了",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，金星！",
+     "en": "Next stop, Venus!"
+    },
+    {
+     "who": "金星",
+     "tag": "proud",
+     "text": "我是金星！我是天上最亮的行星！",
+     "en": "I'm Venus! I'm the brightest planet in the sky!"
+    },
+    {
+     "who": "旁白",
+     "text": "金星被很厚的空氣包住，熱氣都跑不出去。",
+     "en": "Thick air wraps around Venus, and the heat can't get out."
+    },
+    {
+     "who": "金星",
+     "tag": "proud",
+     "text": "所以，我才是最熱的行星喔！",
+     "en": "So I'm the hottest planet of all!"
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "我在家裡，也看過你在天上閃！",
+     "en": "I've seen you sparkle in the sky from my home!"
+    }
+   ]
+  },
+  {
+   "scene": "從宇宙看地球：藍色的大海、綠色和咖啡色的陸地、白色的雲；旁邊有一顆灰白色的月亮",
+   "act": "地球有一張溫柔媽媽的笑臉；小米把臉貼在火箭窗戶上開心揮手，小鐵搖著天線尾巴",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，地球！",
+     "en": "Next stop, Earth!"
+    },
+    {
+     "who": "地球",
+     "tag": "gentle",
+     "text": "我是地球，這裡是你們的家喔！",
+     "en": "I'm Earth. This is your home!"
+    },
+    {
+     "who": "旁白",
+     "text": "地球有好多水，有花草樹木，也有我們。",
+     "en": "Earth has lots of water, plants and trees, and us!"
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "有爸爸、媽媽，也有我！",
+     "en": "Mom and Dad live here, and so do I!"
+    },
+    {
+     "who": "小鐵",
+     "tag": "happy",
+     "text": "汪汪！也有我！",
+     "en": "Woof woof! Me too!"
+    }
+   ]
+  },
+  {
+   "scene": "一顆紅色的星球，地上是紅色的沙土、石頭和大山，一陣紅色沙塵被風捲起來",
+   "act": "火星有一張活潑大哥哥的臉，眨眼睛、吹出一陣紅沙；小米在火箭裡哈哈笑，小鐵用兩隻前腳摀住鼻子",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，火星！",
+     "en": "Next stop, Mars!"
+    },
+    {
+     "who": "旁白",
+     "text": "火星是紅色的，地上都是紅色的沙。",
+     "en": "Mars is red. The ground is covered with red dust."
+    },
+    {
+     "who": "火星",
+     "tag": "happy",
+     "text": "我的沙子，像生鏽的鐵，所以是紅色的！",
+     "en": "My dust is like rusty iron. That's why I'm red!"
+    },
+    {
+     "who": "小米",
+     "tag": "laughing",
+     "text": "火星好像穿了一件紅衣服！",
+     "en": "Mars looks like it's wearing a red shirt!"
+    },
+    {
+     "who": "火星",
+     "tag": "laughing",
+     "text": "可是我這裡很冷，來玩要穿外套喔！",
+     "en": "But it's very cold here. Bring a coat if you visit!"
+    }
+   ]
+  },
+  {
+   "scene": "火星和木星中間的宇宙，遠遠近近散著好多大大小小、灰色和咖啡色的石頭，石頭和石頭隔得很開",
+   "act": "小火箭從幾顆石頭旁邊飛過，有幾顆石頭有小小的笑臉在揮手；小米在窗邊揮手回應，小鐵的天線尾巴搖來搖去",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "火星和木星中間，有好多大石頭和小石頭。",
+     "en": "Between Mars and Jupiter, there are lots of big rocks and little rocks."
+    },
+    {
+     "who": "旁白",
+     "text": "它們叫做小行星，也繞著太陽走。",
+     "en": "They are called asteroids, and they go around the Sun, too."
+    },
+    {
+     "who": "小鐵",
+     "tag": "surprised",
+     "text": "汪！石頭也是太陽系的家人！",
+     "en": "Woof! The rocks are part of the Solar System family too!"
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "小行星，你們好！",
+     "en": "Hello, asteroids!"
+    }
+   ]
+  },
+  {
+   "scene": "一顆超級大的星球，身上有橘色和白色的條紋，還有一個大大的紅色圓點；旁邊的小火箭看起來好小",
+   "act": "木星有一張圓滾滾的大臉，張大嘴巴哈哈大笑；小米仰著頭、嘴巴張得好大，小鐵的眼睛燈一閃一閃",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，木星！",
+     "en": "Next stop, Jupiter!"
+    },
+    {
+     "who": "木星",
+     "tag": "laughing",
+     "text": "哈哈！我是木星，最大的行星！",
+     "en": "Ha ha ha! I'm Jupiter, the biggest planet!"
+    },
+    {
+     "who": "旁白",
+     "text": "木星好大，好大，可以裝下一千多個地球！",
+     "en": "Jupiter is so big that more than a thousand Earths could fit inside!"
+    },
+    {
+     "who": "小米",
+     "tag": "curious",
+     "text": "那個紅色的大圓點，是什麼？",
+     "en": "What's that big red spot?"
+    },
+    {
+     "who": "木星",
+     "tag": "proud",
+     "text": "那是一個好大的風暴，比地球大喔！",
+     "en": "That's a giant storm. It's bigger than Earth!"
+    }
+   ]
+  },
+  {
+   "scene": "一顆淡黃色的星球，四周有一圈又寬又亮的光環，光環是好多冰塊和小石頭排成的",
+   "act": "土星有一張溫柔姊姊的笑臉，像跳舞一樣展示她的光環；光環裡的冰塊亮晶晶；小米雙手托著下巴看得好入迷",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，土星！",
+     "en": "Next stop, Saturn!"
+    },
+    {
+     "who": "土星",
+     "tag": "happy",
+     "text": "我是土星！你看，我有漂亮的光環！",
+     "en": "I'm Saturn! Look at my beautiful rings!"
+    },
+    {
+     "who": "小米",
+     "tag": "curious",
+     "text": "光環是用什麼做的呀？",
+     "en": "What are your rings made of?"
+    },
+    {
+     "who": "土星",
+     "tag": "gentle",
+     "text": "是好多冰塊和小石頭，一起繞著我跑！",
+     "en": "Lots of ice and little rocks, all racing around me!"
+    },
+    {
+     "who": "小鐵",
+     "tag": "happy",
+     "text": "汪汪！好像在玩呼拉圈！",
+     "en": "Woof woof! Like a giant hula hoop!"
+    }
+   ]
+  },
+  {
+   "scene": "一顆淡藍綠色的星球，整顆側躺著，連光環都是直立的",
+   "act": "天王星有一張胖叔叔的臉，半閉著眼睛、打哈欠，整顆側躺著自己轉圈，旁邊畫一個轉圈的箭頭；小米歪著頭看，小鐵也跟著歪頭",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，天王星！",
+     "en": "Next stop, Uranus!"
+    },
+    {
+     "who": "旁白",
+     "text": "咦？天王星怎麼躺著呢？",
+     "en": "Huh? Why is Uranus lying on its side?"
+    },
+    {
+     "who": "天王星",
+     "tag": "sleepy",
+     "text": "呵，我是天王星。我是躺著轉圈的。",
+     "en": "Ahh. I'm Uranus. I spin lying on my side."
+    },
+    {
+     "who": "小米",
+     "tag": "laughing",
+     "text": "好像一顆在地上滾的球！",
+     "en": "Like a ball rolling on the ground!"
+    },
+    {
+     "who": "天王星",
+     "tag": "happy",
+     "text": "對呀，我就這樣，躺著繞太陽。",
+     "en": "That's right. I go around the Sun lying down."
+    }
+   ]
+  },
+  {
+   "scene": "很遠很遠的宇宙，一顆藍色的星球，比第11頁的天王星藍一點，表面有白色的雲條被大風吹著跑；太陽在遠方變成一個小亮點",
+   "act": "海王星有一張酷酷的少年臉，鼓起臉頰；它表面的白雲被大風吹成一條一條往前跑；火箭靜靜停在旁邊，小米和小鐵貼著窗戶看那些跑得飛快的白雲",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "下一站，海王星！",
+     "en": "Next stop, Neptune!"
+    },
+    {
+     "who": "海王星",
+     "tag": "excited",
+     "text": "我是海王星！呼！呼！我這裡的風最大！",
+     "en": "I'm Neptune! Whoosh! Whoosh! I have the strongest winds!"
+    },
+    {
+     "who": "旁白",
+     "text": "海王星是藍色的，離太陽最遠，好冷喔。",
+     "en": "Neptune is blue. It's the farthest from the Sun, and very cold."
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪！從這裡就能看到雲在跑！",
+     "en": "Woof! You can see the clouds racing from here!"
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "從這裡看，太陽好小喔！",
+     "en": "From here, the Sun looks so tiny!"
+    }
+   ]
+  },
+  {
+   "scene": "宇宙裡，太陽在最左邊，八顆行星照順序排成一排，像一家人在拍全家福",
+   "act": "八顆行星照順序排好：水星、金星、地球、火星、木星、土星、天王星、海王星，每顆都帶著自己的笑臉看讀者；小米伸出手指一顆一顆點過去，小鐵站在她肩膀旁邊",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小米把八顆行星，一個接一個念出來。",
+     "en": "Mimi names all eight planets, one by one."
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "水星、金星、地球、火星、木星、土星、天王星、海王星！",
+     "en": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune!"
+    },
+    {
+     "who": "旁白",
+     "text": "一起念：水、金、地、火、木、土、天、海！",
+     "en": "Say it with me: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune!"
+    },
+    {
+     "who": "太陽公公",
+     "tag": "happy",
+     "text": "我們是太陽系一家人！",
+     "en": "We are the Solar System family!"
+    }
+   ]
+  },
+  {
+   "scene": "清晨，小米家的院子，小火箭停在草地上，底下還冒著一點白煙",
+   "act": "小米打開艙門跳出來，張開雙手，小鐵在她腳邊轉圈",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "最後一站，地球！我們回家囉！",
+     "en": "Last stop, Earth! We're going home!"
+    },
+    {
+     "who": "旁白",
+     "text": "火箭飛呀飛，飛回了地球。",
+     "en": "The rocket flies and flies, all the way back to Earth."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！火箭停在小米家的院子裡。",
+     "en": "Thump! The rocket lands in Mimi's yard."
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "地球，我回來了！",
+     "en": "Hello, Earth! I'm back!"
+    },
+    {
+     "who": "小米",
+     "tag": "excited",
+     "text": "我要跟媽媽說，我們去了好遠的地方！",
+     "en": "I'm going to tell Mom we went so, so far!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小米的房間，窗外有星星，靠近天邊有一個特別亮的光點",
+   "act": "小米穿睡衣躺在床上，抱著小鐵，看著窗外那個特別亮的光點；小鐵的眼睛燈變成柔和的小夜燈",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，小米躺在床上，看著窗外。",
+     "en": "That night, Mimi lies in bed and looks out the window."
+    },
+    {
+     "who": "小米",
+     "tag": "sleepy",
+     "text": "那個好亮的光點，是金星嗎？",
+     "en": "That very bright dot, is it Venus?"
+    },
+    {
+     "who": "小鐵",
+     "tag": "whispering",
+     "text": "汪，那是金星，是行星喔。晚安，金星。",
+     "en": "Woof. That's Venus. It's a planet! Good night, Venus."
+    },
+    {
+     "who": "小米",
+     "tag": "sleepy",
+     "text": "明天，我們再去宇宙玩。",
+     "en": "Tomorrow, let's go play in space again."
+    },
+    {
+     "who": "旁白",
+     "text": "晚安，太陽系一家人。",
+     "en": "Good night, Solar System family."
+    }
+   ]
+  }
+ ]
+}

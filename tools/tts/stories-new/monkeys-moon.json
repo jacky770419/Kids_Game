@@ -1,0 +1,268 @@
+{
+ "id": "monkeys-moon",
+ "title": "猴子撈月",
+ "title_en": "The Monkeys and the Moon",
+ "size": "短",
+ "roles": {
+  "小猴子": "最小的小猴子，像五六歲的小男孩，聲音清亮、急急忙忙的，很熱心又有點冒失。",
+  "猴子妹妹": "可愛的小母猴，聲音細細甜甜的，愛笑，什麼都覺得好新奇。",
+  "猴子哥哥": "圓滾滾的猴子哥哥，聲音憨厚、慢吞吞的，力氣大但很容易累，好笑。",
+  "老猴子": "白眉毛的老猴子爺爺，聲音慈祥、慢慢說，帶著笑意。"
+ },
+ "cast": {
+  "小猴子": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "猴子妹妹": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "猴子哥哥": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "老猴子": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第2頁『沒有月亮』、第8頁『沒有掉下去』",
+   "read": "méi"
+  },
+  {
+   "char": "弄",
+   "where": "第5頁『弄破了』",
+   "read": "nòng"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『晚上會好黑喔』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上的森林，一棵很高的大樹，樹旁邊有一口圓形的石頭老水井；天上掛著一個又大又圓的金黃色月亮，還有好多星星。",
+   "act": "一群咖啡色的猴子在大樹下玩；小猴子（最小隻，頭頂一撮毛翹起來，脖子上綁藍色領巾）跑到井邊往下看；猴子妹妹（頭上戴一朵粉紅色小花）跟在後面；猴子哥哥（最大隻、圓肚子、穿黃色背心）坐在樹下吃香蕉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，月亮好圓，好亮。",
+     "en": "One night, the moon was big, round, and bright."
+    },
+    {
+     "who": "旁白",
+     "text": "一群猴子，在大樹下玩。",
+     "en": "A bunch of monkeys were playing under a big tree."
+    },
+    {
+     "who": "猴子哥哥",
+     "tag": "happy",
+     "text": "我最愛吃香蕉了！",
+     "en": "I love bananas the most!"
+    },
+    {
+     "who": "旁白",
+     "text": "小猴子跑到井邊，往下一看。",
+     "en": "Little Monkey ran to the well and looked down."
+    }
+   ]
+  },
+  {
+   "scene": "從井口往下看：黑色的井水裡，有一個圓圓的、亮晶晶的月亮。",
+   "act": "小猴子雙手抓著井邊，眼睛睜得好大，嚇得尾巴豎起來；猴子妹妹和猴子哥哥跑過來，從他旁邊探頭看。",
+   "lines": [
+    {
+     "who": "小猴子",
+     "tag": "shouting",
+     "text": "糟糕！月亮掉到井裡了！",
+     "en": "Oh no! The moon fell into the well!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都跑過來看。",
+     "en": "Everyone ran over to look."
+    },
+    {
+     "who": "猴子妹妹",
+     "tag": "surprised",
+     "text": "真的耶！月亮在水裡！",
+     "en": "It's true! The moon is in the water!"
+    },
+    {
+     "who": "猴子哥哥",
+     "tag": "worried",
+     "text": "沒有月亮，晚上會好黑喔！",
+     "en": "Without the moon, the night will be pitch dark!"
+    }
+   ]
+  },
+  {
+   "scene": "井邊，大樹的一根粗樹枝，正好伸到井口上面。",
+   "act": "小猴子跳起來揮手；猴子哥哥拍拍圓肚子，抬頭看著伸到井上的樹枝；猴子妹妹用力點頭。",
+   "lines": [
+    {
+     "who": "小猴子",
+     "tag": "excited",
+     "text": "我們快把月亮撈上來！",
+     "en": "Quick! Let's scoop the moon out!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是井好深，手伸不到。",
+     "en": "But the well was too deep. Their arms couldn't reach."
+    },
+    {
+     "who": "猴子妹妹",
+     "tag": "excited",
+     "text": "我也要幫忙！",
+     "en": "I want to help too!"
+    },
+    {
+     "who": "猴子哥哥",
+     "text": "我抓樹枝，你們一隻拉一隻！",
+     "en": "I'll hold the branch. You all hang on, one by one!"
+    }
+   ]
+  },
+  {
+   "scene": "井口上方，大樹枝伸到井上，月光照下來。",
+   "act": "每隻猴子都頭朝下：猴子哥哥用雙腳勾著樹枝倒掛，雙手抓著猴子妹妹的腳；猴子妹妹雙手抓著小猴子的腳；小猴子在最下面，頭朝下，雙手空著，往井裡伸；三隻猴子一隻接一隻垂下去，像一串香蕉；大家的臉都好認真。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "猴子哥哥掛在樹枝上，抓住猴子妹妹。",
+     "en": "Big Brother Monkey hung from the branch and held on to Little Sister."
+    },
+    {
+     "who": "旁白",
+     "text": "猴子妹妹抓住小猴子。",
+     "en": "Little Sister held on to Little Monkey."
+    },
+    {
+     "who": "旁白",
+     "text": "一隻拉一隻，好像一串香蕉！",
+     "en": "One holding the next, they looked like a bunch of bananas!"
+    },
+    {
+     "who": "猴子妹妹",
+     "tag": "laughing",
+     "text": "嘻嘻，我們是猴子香蕉！",
+     "en": "Hee hee! We're monkey bananas!"
+    }
+   ]
+  },
+  {
+   "scene": "井裡面，水面就在小猴子的手下面，水裡有月亮。",
+   "act": "小猴子倒掛著，伸出雙手去捧水裡的月亮；手一碰到水，水面一圈一圈散開，月亮碎成好多閃亮的小片；小猴子嚇得張大嘴巴。",
+   "lines": [
+    {
+     "who": "小猴子",
+     "tag": "excited",
+     "text": "月亮，月亮，我來救你了！",
+     "en": "Moon, moon, I'm here to save you!"
+    },
+    {
+     "who": "旁白",
+     "text": "小猴子的手，碰到了水。",
+     "en": "Little Monkey's hands touched the water."
+    },
+    {
+     "who": "旁白",
+     "text": "水一動，月亮碎成好多片！",
+     "en": "The water moved, and the moon broke into lots of little pieces!"
+    },
+    {
+     "who": "小猴子",
+     "tag": "scared",
+     "text": "哎呀！月亮被我弄破了！",
+     "en": "Uh-oh! I broke the moon!"
+    }
+   ]
+  },
+  {
+   "scene": "井裡面，水面慢慢變平。",
+   "act": "小猴子一動也不動；水面平了，圓圓的月亮又出現在水裡；猴子妹妹睜大眼睛；最上面的猴子哥哥滿頭大汗，手在發抖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "等水不動了，月亮又變圓了。",
+     "en": "When the water was still, the moon was round again."
+    },
+    {
+     "who": "猴子妹妹",
+     "tag": "surprised",
+     "text": "咦？月亮又好了！",
+     "en": "Huh? The moon is fixed!"
+    },
+    {
+     "who": "猴子哥哥",
+     "tag": "tired",
+     "text": "好累喔！我的手好痠！",
+     "en": "I'm so tired! My arms are sore!"
+    }
+   ]
+  },
+  {
+   "scene": "井邊，大樹下，月光照著草地。",
+   "act": "老猴子（白眉毛、白鬍子、拄著竹子拐杖、穿紅色背心）拄著拐杖快步走過來，揮手叫大家上來；猴子哥哥把妹妹和小猴子一隻一隻拉上井邊；老猴子聽到月亮掉到井裡，忍不住摸著鬍子笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，老猴子走過來了。",
+     "en": "Just then, Grandpa Monkey came along."
+    },
+    {
+     "who": "老猴子",
+     "tag": "worried",
+     "text": "孩子們，快上來！掛在井上好危險！",
+     "en": "Children, come up! It's not safe to hang over a well!"
+    },
+    {
+     "who": "小猴子",
+     "tag": "worried",
+     "text": "爺爺，月亮掉到井裡了！",
+     "en": "Grandpa, the moon fell into the well!"
+    },
+    {
+     "who": "旁白",
+     "text": "老猴子摸摸鬍子，笑了。",
+     "en": "Grandpa Monkey stroked his beard and smiled."
+    }
+   ]
+  },
+  {
+   "scene": "井邊的草地，天上一個又大又圓的月亮。",
+   "act": "老猴子用拐杖指著天上的月亮；小猴子、猴子妹妹、猴子哥哥都爬上來了，坐在井邊抬頭看，張大嘴巴，然後一起抱著肚子哈哈大笑。",
+   "lines": [
+    {
+     "who": "老猴子",
+     "tag": "laughing",
+     "text": "傻孩子，抬頭看！",
+     "en": "Silly children, look up!"
+    },
+    {
+     "who": "老猴子",
+     "tag": "gentle",
+     "text": "月亮一直在天上，井水像鏡子，照出了月亮。",
+     "en": "The moon was in the sky all along. The water is like a mirror that shows the moon."
+    },
+    {
+     "who": "小猴子",
+     "tag": "laughing",
+     "text": "原來月亮沒有掉下去！",
+     "en": "So the moon never fell at all!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家哈哈大笑，一起看著天上的月亮。",
+     "en": "Everyone laughed and laughed, and looked up at the moon together."
+    }
+   ]
+  }
+ ]
+}

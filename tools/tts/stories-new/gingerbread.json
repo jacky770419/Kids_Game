@@ -1,0 +1,243 @@
+{
+ "id": "gingerbread",
+ "title": "薑餅人",
+ "title_en": "The Gingerbread Man",
+ "size": "短",
+ "roles": {
+  "薑餅人": "剛烤好的小薑餅人，聲音像五六歲的小男孩，調皮愛笑、跑得飛快，念口訣時又快樂又得意，最後變得聰明懂事。",
+  "老奶奶": "做薑餅的老奶奶，聲音慈祥、有點喘，追著喊時著急，最後溫柔地抱住薑餅人。",
+  "老爺爺": "鄉下的老爺爺，聲音憨厚、慢吞吞的，追不動時呵呵喘氣。",
+  "小狗": "毛茸茸的小狗，聲音尖細可愛、很嘴饞，說話很興奮。",
+  "母牛": "大大的母牛，聲音慢慢的、有點愛指揮人，好笑不兇。",
+  "狐狸": "狡猾的狐狸，聲音甜甜的裝好人，被拆穿時懊惱，好笑不可怕。"
+ },
+ "cast": {
+  "薑餅人": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "老奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "老爺爺": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "小狗": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "母牛": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "乾",
+   "where": "第3頁『好香的餅乾』，第4、5頁『小餅乾』",
+   "read": "gān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的小木屋廚房，早上。紅磚烤箱冒著熱氣，木頭桌上有麵粉、擀麵棍和一碗糖霜，窗外是綠色的田野。",
+   "act": "老奶奶第一次出場：灰白頭髮盤成圓髮髻、戴圓圓的眼鏡、穿藍色衣服和白色圍裙；她打開烤箱門，嚇得往後仰。薑餅人第一次出場：咖啡色的小餅乾人，白色糖霜畫的眼睛和大笑臉，胸前有兩顆紅色糖果鈕扣；他從烤盤上跳出來，雙腳在空中。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老奶奶烤了一個薑餅人。",
+     "en": "A little old woman baked a gingerbread man."
+    },
+    {
+     "who": "旁白",
+     "text": "烤箱一打開，薑餅人就跳了出來！",
+     "en": "When she opened the oven, out jumped the Gingerbread Man!"
+    },
+    {
+     "who": "薑餅人",
+     "tag": "laughing",
+     "text": "跑呀跑，跑呀跑，你追不到我，我是薑餅人！",
+     "en": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口的泥土小路，早上，路邊有籬笆和一片菜園。",
+   "act": "老爺爺第一次出場：白色大鬍子、戴草帽、穿吊帶工作褲，手上還拿著鋤頭；老奶奶和老爺爺伸長手追在後面，喘著氣；薑餅人在前面跑，回頭笑。",
+   "lines": [
+    {
+     "who": "老奶奶",
+     "tag": "shouting",
+     "text": "薑餅人，停下來！",
+     "en": "Gingerbread Man, stop!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "tired",
+     "text": "等一等，別跑呀！",
+     "en": "Wait for us! Don't run!"
+    },
+    {
+     "who": "薑餅人",
+     "tag": "laughing",
+     "text": "跑呀跑，跑呀跑，你追不到我，我是薑餅人！",
+     "en": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，老奶奶和老爺爺，都追不到他。",
+     "en": "But the old woman and the old man couldn't catch him."
+    }
+   ]
+  },
+  {
+   "scene": "鄉下的小路，路邊有一間紅色小狗屋和一棵大樹。",
+   "act": "小狗第一次出場：白色和咖啡色的小狗，耳朵垂下來、舌頭伸出來；牠從狗屋衝出來，追著薑餅人；薑餅人邊跑邊回頭揮手。",
+   "lines": [
+    {
+     "who": "小狗",
+     "tag": "excited",
+     "text": "汪汪！好香的餅乾，等等我！",
+     "en": "Woof, woof! Yummy cookie, wait for me!"
+    },
+    {
+     "who": "薑餅人",
+     "tag": "laughing",
+     "text": "跑呀跑，跑呀跑，你追不到我，我是薑餅人！",
+     "en": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!"
+    }
+   ]
+  },
+  {
+   "scene": "綠色的草地，白天，遠處有紅色穀倉和白色雲朵。",
+   "act": "母牛第一次出場：黑白花紋的大母牛，粉紅色鼻子，脖子上掛一個金色小鈴鐺；牠慢慢跑，後面跟著小狗、老爺爺、老奶奶，排成一長串；薑餅人跑在最前面。",
+   "lines": [
+    {
+     "who": "母牛",
+     "tag": "shouting",
+     "text": "小餅乾，別跑！停下來！",
+     "en": "Little cookie, stop running! Stop right there!"
+    },
+    {
+     "who": "旁白",
+     "text": "母牛也追，小狗也追，大家一起追。",
+     "en": "The cow chased him, the dog chased him. Everyone chased him."
+    },
+    {
+     "who": "薑餅人",
+     "tag": "laughing",
+     "text": "跑呀跑，跑呀跑，你追不到我，我是薑餅人！",
+     "en": "Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!"
+    }
+   ]
+  },
+  {
+   "scene": "一條很寬的大河邊，白天，河水很急，對岸是草地。",
+   "act": "薑餅人停在河邊，張開雙手、一臉著急。狐狸第一次出場：橘色的狐狸、尾巴蓬蓬的、尾巴尖是白色，脖子上圍一條綠色圍巾；牠從草叢走出來，彎著腰，對薑餅人笑咪咪的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "薑餅人跑到一條大河邊。",
+     "en": "The Gingerbread Man came to a big river."
+    },
+    {
+     "who": "薑餅人",
+     "tag": "worried",
+     "text": "哎呀，有河！我過不去！",
+     "en": "Oh no, a river! I can't get across!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "gentle",
+     "text": "小餅乾，跟我走，我帶你過河。",
+     "en": "Come with me, little cookie. I'll take you across."
+    }
+   ]
+  },
+  {
+   "scene": "大河邊，白天。",
+   "act": "薑餅人往後退一步，雙手叉腰，搖搖頭；狐狸嘴巴張成 O 形、耳朵垂下來、一隻爪子抓抓頭，一臉尷尬，好笑不可怕。",
+   "lines": [
+    {
+     "who": "薑餅人",
+     "tag": "serious",
+     "text": "我不認識你，我不跟陌生人走！",
+     "en": "I don't know you. I don't go with strangers!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "surprised",
+     "text": "哎呀，被你發現了！",
+     "en": "Oh no, you figured me out!"
+    },
+    {
+     "who": "旁白",
+     "text": "薑餅人掉頭，往回跑。",
+     "en": "The Gingerbread Man turned around and ran back."
+    }
+   ]
+  },
+  {
+   "scene": "回家的泥土小路，白天，路邊有草地和籬笆，遠處看得到小木屋的煙囪。",
+   "act": "薑餅人往小木屋跑；狐狸在後面遠遠的河邊坐下來，尾巴垂下來，失望地看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "跑過草地，跑過小路！",
+     "en": "Across the meadow, down the lane!"
+    },
+    {
+     "who": "旁白",
+     "text": "他要回家找老奶奶。",
+     "en": "He was going home to the old woman."
+    },
+    {
+     "who": "狐狸",
+     "tag": "sad",
+     "text": "唉，我抓不到他了。",
+     "en": "Oh dear. I can't catch him now."
+    }
+   ]
+  },
+  {
+   "scene": "鄉下的小木屋門口，傍晚，夕陽是橘色的，煙囪冒著白煙。",
+   "act": "老奶奶蹲下來，把薑餅人輕輕抱在胸前，溫柔地笑；老爺爺摸摸他的頭；小狗和母牛在遠一點的籬笆邊揮手。",
+   "lines": [
+    {
+     "who": "薑餅人",
+     "tag": "sad",
+     "text": "奶奶，對不起，我不該亂跑。",
+     "en": "Grandma, I'm sorry I ran away."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "gentle",
+     "text": "你回來了！你真聰明！",
+     "en": "You're back! You're so clever!"
+    },
+    {
+     "who": "薑餅人",
+     "tag": "proud",
+     "text": "我記住了，不跟陌生人走！",
+     "en": "I remembered. I don't go with strangers!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，薑餅人就住在老奶奶家。",
+     "en": "From then on, the Gingerbread Man lived with the old woman."
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，跟著說：不跟陌生人走！",
+     "en": "Now you say it too: I don't go with strangers!"
+    }
+   ]
+  }
+ ]
+}

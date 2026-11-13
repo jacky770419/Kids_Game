@@ -1,0 +1,590 @@
+{
+ "id": "chang-e",
+ "title": "后羿射日和嫦娥奔月",
+ "title_en": "The Ten Suns and the Moon Lady",
+ "size": "長",
+ "roles": {
+  "后羿": "年輕的大英雄，聲音低沉有力、很可靠，對大家溫和，對太陽說話時堅定，想念嫦娥時變得溫柔又難過。",
+  "嫦娥": "溫柔善良的年輕女生，聲音柔和清亮，碰到壞人時害怕但很勇敢。",
+  "小太陽": "十個太陽兄弟，像五六歲調皮愛玩的小男孩，嘻嘻哈哈，最後一個太陽求饒時又乖又可愛。",
+  "小女孩": "村子裡五六歲的小女孩，天真可愛，熱的時候可憐兮兮，看到后羿射太陽時興奮大叫。",
+  "王母娘娘": "天上慈祥的老奶奶神仙，聲音溫暖緩慢、帶點神祕。",
+  "壞人": "貪心的壞人，說話鬼鬼祟祟、尖酸滑稽，好笑不可怕。",
+  "玉兔": "月亮上的白色小兔子，聲音小小的、甜甜的，熱情又貼心。"
+ },
+ "cast": {
+  "后羿": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  },
+  "嫦娥": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "小太陽": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "王母娘娘": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "壞人": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "玉兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "羿",
+   "where": "全書『后羿』",
+   "read": "yì"
+  },
+  {
+   "char": "后",
+   "where": "全書『后羿』",
+   "read": "hòu"
+  },
+  {
+   "char": "樂",
+   "where": "第16頁『中秋節快樂』兩次",
+   "read": "lè"
+  },
+  {
+   "char": "會",
+   "where": "第8頁『我會很聽話』、第16頁『也會看到』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第12頁『沒有辦法』、第13頁『沒拿到』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第13頁『什麼都沒拿到』",
+   "read": "shén"
+  },
+  {
+   "char": "姊",
+   "where": "第14頁『嫦娥姊姊』",
+   "read": "jiě"
+  },
+  {
+   "char": "咻",
+   "where": "第6、7頁『咻』",
+   "read": "xiū"
+  },
+  {
+   "char": "行",
+   "where": "第12頁嫦娥說『不行』",
+   "read": "xíng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久很久以前，東邊的大海上長著一棵好高好大的神樹，樹枝上坐著十個圓圓的金色小太陽，每個都有笑臉；天剛亮，海面亮晶晶",
+   "act": "十個小太陽一模一樣，金黃色、圓臉、紅臉頰，排排坐在樹枝上；其中一個小太陽往天上跳，其他九個在樹上揮手送它",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久很久以前，天上有十個太陽。",
+     "en": "Long, long ago, there were ten suns in the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "他們是十兄弟，住在東邊的大樹上。",
+     "en": "They were ten brothers, and they lived in a big tree in the east."
+    },
+    {
+     "who": "旁白",
+     "text": "每天，輪到一個太陽出門上班。",
+     "en": "Each day, one sun took a turn to go to work in the sky."
+    },
+    {
+     "who": "小太陽",
+     "tag": "happy",
+     "text": "今天輪到我囉！大家再見！",
+     "en": "It's my turn today! Bye, everyone!"
+    },
+    {
+     "who": "旁白",
+     "text": "晚上，太陽就回到大樹上休息。",
+     "en": "At night, the sun went back to the tree to rest."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵神樹旁的天空，早上",
+   "act": "十個小太陽手牽手、嘻嘻哈哈地一起跳上天，天空被照得金光閃閃，刺眼得讓人睜不開眼睛",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，太陽兄弟想到一個好玩的主意。",
+     "en": "One day, the sun brothers had a fun idea."
+    },
+    {
+     "who": "小太陽",
+     "tag": "excited",
+     "text": "我們十個，一起出去玩吧！",
+     "en": "Let's all ten of us go out and play!"
+    },
+    {
+     "who": "旁白",
+     "text": "呼！十個太陽，一起跳到天上。",
+     "en": "Whoosh! All ten suns jumped up into the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "天上好亮，地上好熱。",
+     "en": "The sky was so bright. The land was so hot."
+    },
+    {
+     "who": "小太陽",
+     "tag": "laughing",
+     "text": "真好玩！明天也一起出來！",
+     "en": "This is so much fun! Let's all come out again tomorrow!"
+    }
+   ]
+  },
+  {
+   "scene": "一個小村子：泥土牆、草屋頂的小房子，河水快乾了，田裡的稻子都彎下頭，地上裂開一條一條的縫；天上掛著十個太陽",
+   "act": "村民們拿扇子搧風、滿頭大汗；一個綁兩條辮子、穿綠色衣服的小女孩坐在樹下，吐著舌頭，手裡拿著空空的水碗；她腳邊一隻黃色小狗趴著吐舌頭",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "十個太陽一起曬，地上好熱，好熱！",
+     "en": "Ten suns shining at once! It was hot, so hot!"
+    },
+    {
+     "who": "旁白",
+     "text": "河水快不見了，小草都彎下頭。",
+     "en": "The rivers almost dried up. The grass drooped down."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sad",
+     "text": "好熱喔！我想喝水！",
+     "en": "It's so hot! I want some water!"
+    },
+    {
+     "who": "小女孩",
+     "text": "小狗也熱到吐舌頭了。",
+     "en": "Even my puppy is panting with his tongue out."
+    }
+   ]
+  },
+  {
+   "scene": "村子邊一間小房子前的院子，院子裡有一棵桃樹，天上十個太陽",
+   "act": "后羿是高大的年輕人，濃眉大眼，穿藍色短衣、綁紅色頭巾，背著一把紅色的大弓；嫦娥是溫柔的年輕女生，穿白色長裙、繫淡粉色絲帶，頭髮盤起來插一朵小白花，正端水給村民喝；兩個人一起抬頭看太陽",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "村子裡，住著一個大英雄，叫做后羿。",
+     "en": "In the village lived a hero named Hou Yi."
+    },
+    {
+     "who": "旁白",
+     "text": "后羿射箭，最準了！",
+     "en": "Nobody could shoot an arrow better than Hou Yi!"
+    },
+    {
+     "who": "旁白",
+     "text": "他的太太嫦娥，又溫柔，又善良。",
+     "en": "His wife, Chang'e, was gentle and kind."
+    },
+    {
+     "who": "嫦娥",
+     "tag": "gentle",
+     "text": "后羿，大家好熱，我們幫幫大家吧！",
+     "en": "Hou Yi, everyone is so hot. Let's help them!"
+    },
+    {
+     "who": "后羿",
+     "tag": "proud",
+     "text": "好！我去跟太陽說！",
+     "en": "Yes! I'll go talk to the suns!"
+    }
+   ]
+  },
+  {
+   "scene": "高高的山頂上，四周的山都曬成黃色，天上十個太陽，熱氣一圈一圈往外冒",
+   "act": "后羿站在山頂，雙手圍在嘴邊對著天空大喊；十個小太陽在天上追來追去，有的扮鬼臉、有的吐舌頭，不理他；山腳下，綁辮子、穿綠衣服的小女孩握拳替后羿加油",
+   "lines": [
+    {
+     "who": "后羿",
+     "tag": "shouting",
+     "text": "太陽兄弟，請你們回家，留一個就好！",
+     "en": "Sun brothers! Please go home. Just one of you can stay!"
+    },
+    {
+     "who": "小太陽",
+     "tag": "laughing",
+     "text": "不要，不要！我們要一直玩！",
+     "en": "No way! We want to keep playing!"
+    },
+    {
+     "who": "旁白",
+     "text": "太陽們不聽，地上越來越熱。",
+     "en": "The suns did not listen. The land got hotter and hotter."
+    },
+    {
+     "who": "后羿",
+     "tag": "brave",
+     "text": "好，那我要拿出弓箭了！",
+     "en": "All right. Then out comes my bow!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "后羿，加油！",
+     "en": "Go, Hou Yi, go!"
+    }
+   ]
+  },
+  {
+   "scene": "山頂上，天空金光閃閃",
+   "act": "后羿剛把箭射出去，紅色大弓還舉在手上；天上一個小太陽冒出一陣金光，正變成一隻金色的小鳥，拍著翅膀飛走；山腳下的小女孩張大嘴巴指著天上",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "后羿拉開大弓，對準一個太陽。",
+     "en": "Hou Yi pulled back his big bow and aimed at a sun."
+    },
+    {
+     "who": "旁白",
+     "text": "咻！",
+     "en": "Whoosh!"
+    },
+    {
+     "who": "旁白",
+     "text": "太陽一閃，變成金色小鳥，飛走了！",
+     "en": "The sun flashed and turned into a little golden bird. Away it flew!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "哇！太陽變成小鳥了！",
+     "en": "Wow! The sun turned into a bird!"
+    }
+   ]
+  },
+  {
+   "scene": "山頂和藍色的天空，遠方的山後面露出幾隻金色小鳥",
+   "act": "后羿還舉著紅色大弓；天上好幾隻金色小鳥飛向遠方，有的躲在山後面探頭偷看；天空已經變藍，只剩一個小太陽；山腳下的小女孩張開雙手歡呼",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咻！咻！咻！一枝箭，又一枝箭。",
+     "en": "Whoosh! Whoosh! Whoosh! One arrow, then another."
+    },
+    {
+     "who": "旁白",
+     "text": "太陽一個接一個，變成小鳥。",
+     "en": "One by one, the suns became birds."
+    },
+    {
+     "who": "旁白",
+     "text": "有的飛走，有的躲到山後面。",
+     "en": "Some flew away. Some hid behind the hills."
+    },
+    {
+     "who": "旁白",
+     "text": "一、二、三、四、五、六、七、八、九！",
+     "en": "One, two, three, four, five, six, seven, eight, nine!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "變涼了！變涼了！",
+     "en": "It's cooler! It's cooler!"
+    }
+   ]
+  },
+  {
+   "scene": "藍色的天空，一朵白雲",
+   "act": "最後一個小太陽躲在白雲後面，只露出半張臉，眼睛水汪汪、發抖；后羿放下弓，抬頭溫柔地笑",
+   "lines": [
+    {
+     "who": "小太陽",
+     "tag": "scared",
+     "text": "后羿，不要射我！我會很聽話！",
+     "en": "Hou Yi, please don't shoot me! I'll be good!"
+    },
+    {
+     "who": "后羿",
+     "tag": "gentle",
+     "text": "你留下來。早上出來，晚上回家休息。",
+     "en": "You may stay. Come out every morning, and go home to rest at night."
+    },
+    {
+     "who": "小太陽",
+     "tag": "happy",
+     "text": "好！我每天都準時上班！",
+     "en": "Okay! I'll be on time every day!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，天上就剩下一個太陽了。",
+     "en": "From that day on, there was just one sun in the sky."
+    }
+   ]
+  },
+  {
+   "scene": "村子裡下起小雨，稻子抬起頭，河水又流起來；天上一個太陽躲在雲邊，還有一道小彩虹",
+   "act": "村民們在雨裡開心跳舞，小女孩把水碗舉高接雨水；后羿和嫦娥站在院子裡相視而笑，村民圍過來拍手",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "涼快的風吹來，天上下起了雨。",
+     "en": "A cool wind blew, and rain began to fall."
+    },
+    {
+     "who": "旁白",
+     "text": "小草抬起頭，河水又回來了。",
+     "en": "The grass lifted its head. The rivers came back."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "謝謝后羿！你是大英雄！",
+     "en": "Thank you, Hou Yi! You're a hero!"
+    },
+    {
+     "who": "嫦娥",
+     "tag": "happy",
+     "text": "后羿，你辛苦了！",
+     "en": "Hou Yi, you worked so hard!"
+    }
+   ]
+  },
+  {
+   "scene": "雲霧繚繞的高山頂上，有一座仙宮，四周開滿花，仙鶴飛來飛去",
+   "act": "王母娘娘是白頭髮、穿紫色長袍、慈祥的老奶奶神仙，把一個小小的白玉瓶交給后羿；瓶子發出淡淡的光；后羿雙手接過，表情有點煩惱",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天上的王母娘娘，送給后羿一瓶仙藥。",
+     "en": "Up in the sky, the Queen Mother of the West gave Hou Yi a bottle of magic medicine."
+    },
+    {
+     "who": "王母娘娘",
+     "tag": "gentle",
+     "text": "后羿，謝謝你。吃下仙藥，就能變成神仙。",
+     "en": "Thank you, Hou Yi. Whoever takes this will become an immortal."
+    },
+    {
+     "who": "后羿",
+     "tag": "sad",
+     "text": "可是，我想陪著嫦娥。",
+     "en": "But I want to stay with Chang'e."
+    },
+    {
+     "who": "旁白",
+     "text": "后羿把仙藥帶回家，交給嫦娥。",
+     "en": "Hou Yi took the medicine home to Chang'e."
+    },
+    {
+     "who": "后羿",
+     "tag": "gentle",
+     "text": "嫦娥，請你幫我收好。",
+     "en": "Chang'e, please keep this safe for me."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，后羿家的窗戶外面，有一叢草和一棵桃樹，屋裡點著油燈",
+   "act": "嫦娥把白玉瓶放進木盒子；窗外草叢裡躲著一個穿黑衣服、留八字鬍、細細眼睛的壞人，搓著手偷笑，樣子好笑不可怕",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，窗外有一個壞人在偷聽。",
+     "en": "But a bad man was listening outside the window."
+    },
+    {
+     "who": "壞人",
+     "tag": "whispering",
+     "text": "嘿嘿，仙藥！我想要！",
+     "en": "Hee hee! Magic medicine! I want it!"
+    },
+    {
+     "who": "壞人",
+     "text": "等后羿出門，我就來拿！",
+     "en": "When Hou Yi goes out, I'll come and grab it!"
+    },
+    {
+     "who": "旁白",
+     "text": "第二天，后羿出門去了。",
+     "en": "The next day, Hou Yi went out."
+    }
+   ]
+  },
+  {
+   "scene": "后羿家裡，傍晚，窗外天色變橘，木桌上放著打開的木盒子",
+   "act": "壞人踮著腳尖溜進門，伸手想拿，表情滑稽；嫦娥把白玉瓶抱在胸前往後退，眉頭皺起來，眼神很勇敢",
+   "lines": [
+    {
+     "who": "壞人",
+     "tag": "grumpy",
+     "text": "嫦娥，快把仙藥給我！",
+     "en": "Chang'e, give me that medicine!"
+    },
+    {
+     "who": "嫦娥",
+     "tag": "scared",
+     "text": "不行！仙藥不能給壞人！",
+     "en": "No! A bad man can't have it!"
+    },
+    {
+     "who": "旁白",
+     "text": "壞人越走越近，嫦娥沒有辦法了。",
+     "en": "The bad man came closer and closer. Chang'e didn't know what else to do."
+    },
+    {
+     "who": "嫦娥",
+     "tag": "brave",
+     "text": "我要保護仙藥！",
+     "en": "I have to keep it safe!"
+    },
+    {
+     "who": "旁白",
+     "text": "她打開瓶子，把仙藥吃下去。",
+     "en": "She opened the bottle and swallowed the medicine."
+    }
+   ]
+  },
+  {
+   "scene": "后羿家的窗外，傍晚的天空，天上已經看得到淡淡的月亮",
+   "act": "嫦娥的白裙子和粉色絲帶飄起來，她慢慢飛出窗戶，回頭看著家；壞人撲了個空，一屁股跌坐在地上，樣子好笑",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咦？嫦娥的身體變輕了，慢慢飄起來。",
+     "en": "Oh! Chang'e felt light. Slowly, she floated up."
+    },
+    {
+     "who": "嫦娥",
+     "tag": "surprised, sad",
+     "text": "啊，我飛起來了！后羿，再見！",
+     "en": "Oh! I'm flying! Goodbye, Hou Yi!"
+    },
+    {
+     "who": "旁白",
+     "text": "壞人什麼都沒拿到，摸摸鼻子跑走了。",
+     "en": "The bad man got nothing at all, so he ran away."
+    },
+    {
+     "who": "旁白",
+     "text": "嫦娥想離家近一點，就飛到月亮上。",
+     "en": "Chang'e wanted to stay close to home, so she flew to the moon."
+    }
+   ]
+  },
+  {
+   "scene": "月亮上：銀白色的地面，一棵開著小黃花的桂花樹，旁邊一間小小的白色宮殿；遠遠的下面看得到地上的小村子",
+   "act": "嫦娥坐在桂花樹下，有點寂寞地看著地上；一隻白色的玉兔，紅眼睛、長耳朵，拿著木棒在石碗裡搗藥，蹦蹦跳跳地靠過來",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "月亮上好安靜，有一點冷。",
+     "en": "The moon was very quiet, and a little cold."
+    },
+    {
+     "who": "玉兔",
+     "tag": "happy",
+     "text": "嫦娥姊姊，我是玉兔！我來陪你！",
+     "en": "Hello, Chang'e! I'm Jade Rabbit! I'll keep you company!"
+    },
+    {
+     "who": "嫦娥",
+     "tag": "gentle",
+     "text": "謝謝你，小玉兔。",
+     "en": "Thank you, little rabbit."
+    },
+    {
+     "who": "玉兔",
+     "text": "我們一起看看地上的家吧！",
+     "en": "Let's look down at your home together!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，玉兔每天陪著嫦娥。",
+     "en": "From then on, Jade Rabbit stayed with Chang'e every day."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，后羿家的院子，天上一個好圓好亮的月亮",
+   "act": "后羿站在院子裡一張擺好水果和圓圓的餅的小木桌旁，抬頭看月亮，眼睛有一點紅；月亮上隱約看到嫦娥和玉兔在揮手",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "后羿回到家，看不到嫦娥，好難過。",
+     "en": "Hou Yi came home. Chang'e was gone. He was so sad."
+    },
+    {
+     "who": "后羿",
+     "tag": "sad",
+     "text": "嫦娥，你在哪裡？",
+     "en": "Chang'e, where are you?"
+    },
+    {
+     "who": "旁白",
+     "text": "抬頭一看，月亮好圓，嫦娥在上面揮手呢！",
+     "en": "He looked up. The moon was so round, and there was Chang'e, waving!"
+    },
+    {
+     "who": "后羿",
+     "tag": "gentle",
+     "text": "嫦娥，我每天都陪你看月亮。",
+     "en": "Chang'e, I'll look at the moon with you every night."
+    },
+    {
+     "who": "旁白",
+     "text": "月亮上的嫦娥，也在想念后羿。",
+     "en": "Up on the moon, Chang'e was missing Hou Yi, too."
+    }
+   ]
+  },
+  {
+   "scene": "現代的晚上，一家人坐在陽台上，桌上有月餅、柚子和茶；天上一個大大的圓月亮，月亮裡看得到嫦娥和玉兔的影子",
+   "act": "爸爸、媽媽和小朋友一起指著月亮，手裡拿著月餅，笑得好開心；月亮上的嫦娥和玉兔一起揮手",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "後來，每年八月十五中秋節，月亮又圓又亮。",
+     "en": "And now, every year at the Mid-Autumn Festival, the moon is big, round and bright."
+    },
+    {
+     "who": "旁白",
+     "text": "大家一起看月亮，吃月餅，想念家人。",
+     "en": "Families look at the moon, eat mooncakes, and think of the people they love."
+    },
+    {
+     "who": "旁白",
+     "text": "抬頭看，你也會看到嫦娥和玉兔喔！",
+     "en": "Look up. Maybe you can see Chang'e and Jade Rabbit, too!"
+    },
+    {
+     "who": "旁白",
+     "text": "我們一起說：中秋節快樂！",
+     "en": "Let's say it together: Happy Mid-Autumn Festival!"
+    },
+    {
+     "who": "玉兔",
+     "tag": "excited",
+     "text": "中秋節快樂！",
+     "en": "Happy Mid-Autumn Festival!"
+    }
+   ]
+  }
+ ]
+}

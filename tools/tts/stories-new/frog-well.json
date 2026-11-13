@@ -1,0 +1,262 @@
+{
+ "id": "frog-well",
+ "title": "井底之蛙",
+ "title_en": "The Frog in the Well",
+ "size": "短",
+ "roles": {
+  "小青蛙": "住在井底的小青蛙，像五六歲的小男孩，聲音清亮、天真，一開始很得意，後來好奇又興奮。",
+  "小鳥": "黃色的小鳥，聲音細細甜甜的，活潑熱心，愛幫忙。",
+  "海龜": "看過大海的海龜爺爺，聲音慈祥、慢慢說，帶著笑意，從不笑話小青蛙。"
+ },
+ "cast": {
+  "小青蛙": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小鳥": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "海龜": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "圈",
+   "where": "第2頁、第4頁、第7頁『圓圈』",
+   "read": "quān"
+  },
+  {
+   "char": "會",
+   "where": "第8頁『會看到』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "田野邊一口很深的老石井，從井底往上看：井壁是灰色的石頭，上面有綠色青苔；井底有一小片清水和幾塊平平的大石頭。頭頂上的井口是一個小小的圓形，露出一小圈藍色的天。",
+   "act": "小青蛙出場：圓眼睛、淺綠色身體、白肚子，脖子上繫一條小小的紅色領巾。牠坐在井底的大石頭上，抬頭看著小小的圓形井口，笑得很滿足。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一口很深的老井。",
+     "en": "There was a deep, old well."
+    },
+    {
+     "who": "旁白",
+     "text": "井底住著一隻小青蛙。",
+     "en": "At the bottom of the well lived a little frog."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "happy",
+     "text": "這是我的家，好舒服喔！",
+     "en": "This is my home. It's so cozy!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠抬頭一看，井口好圓，好小。",
+     "en": "He looked up. The top of the well was small and round."
+    }
+   ]
+  },
+  {
+   "scene": "井底，陽光從小小的圓形井口照下來，照在水面上，水面亮晶晶。",
+   "act": "小青蛙在井底的石頭之間跳來跳去、踢水玩；然後站在大石頭上，一手叉腰，一手指著頭頂那一小圈天，一臉得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小青蛙天天看著井口。",
+     "en": "Every day, Little Frog looked up at the top of the well."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "proud",
+     "text": "天就這麼大，一個圓圈！",
+     "en": "The sky is just this big, one little circle!"
+    },
+    {
+     "who": "小青蛙",
+     "tag": "proud",
+     "text": "我的井，就是全世界！",
+     "en": "My well is the whole wide world!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠在井裡跳來跳去，好開心。",
+     "en": "He hopped all around the well, happy as could be."
+    }
+   ]
+  },
+  {
+   "scene": "老石井的剖面圖：上面是井口，井口的石頭邊上停著一隻小鳥，後面是藍天；下面是很深的井底，有一小片清水和大石頭。",
+   "act": "小鳥出場：黃色羽毛、橘色小尖嘴，頭頂有一撮翹起來的羽毛。小鳥停在井口邊，低頭往井裡看，張開翅膀比出好大的樣子；小青蛙在井底的大石頭上抬頭，一臉得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，一隻小鳥停在井邊。",
+     "en": "One day, a little bird landed on the edge of the well."
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "小青蛙，你好！我從好遠的地方飛來。",
+     "en": "Hello, Little Frog! I flew here from far, far away."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "proud",
+     "text": "歡迎你！天就這麼大，對不對？",
+     "en": "Welcome! The sky is just this big, right?"
+    },
+    {
+     "who": "小鳥",
+     "tag": "surprised",
+     "text": "不對喔！外面的天，好大，好大！",
+     "en": "Oh no, it isn't! The sky out here is big, so big!"
+    }
+   ]
+  },
+  {
+   "scene": "井外面：一片綠色草地上的老石井，遠遠的地方看得到一條藍色的海；天很大、很藍，有幾朵白雲。老石井畫成剖面，看得到井裡很深，一直到井底。",
+   "act": "海龜爺爺出場：大大的綠褐色海龜，殼上有六角形花紋，戴一副圓圓的小眼鏡，笑瞇瞇的；他慢慢從海邊沿著小路爬上草地，來到井邊。小鳥飛在他頭上帶路。從井口往下看，井底的小青蛙抬著頭，歪著頭不太相信。",
+   "lines": [
+    {
+     "who": "小青蛙",
+     "tag": "surprised",
+     "text": "怎麼可能？天就是一個圓圈呀！",
+     "en": "How can that be? The sky is just a circle!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "gentle",
+     "text": "我去請海龜爺爺來，他看過大海喔！",
+     "en": "I'll go get Grandpa Turtle. He has seen the sea!"
+    },
+    {
+     "who": "旁白",
+     "text": "不久，海龜爺爺爬到了井邊。",
+     "en": "Soon, Grandpa Turtle crawled up to the well."
+    }
+   ]
+  },
+  {
+   "scene": "井口邊，從井口往下看：小青蛙在井底，海龜爺爺和小鳥在井口邊往下看。",
+   "act": "海龜爺爺趴在井口邊，伸長脖子往井裡看，溫和地笑著，用前腳比出好大好大的樣子；小青蛙在井底張大嘴巴、睜大眼睛；小鳥停在井邊點頭。",
+   "lines": [
+    {
+     "who": "海龜",
+     "tag": "gentle",
+     "text": "小青蛙，外面有大海喔。",
+     "en": "Little Frog, there is a big sea out here."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "surprised",
+     "text": "大海是什麼？比我的井大嗎？",
+     "en": "What's the sea? Is it bigger than my well?"
+    },
+    {
+     "who": "海龜",
+     "tag": "happy",
+     "text": "大海好大，大到看不見邊！",
+     "en": "The sea is so big, you can't see where it ends!"
+    },
+    {
+     "who": "海龜",
+     "tag": "gentle",
+     "text": "海上的天，也大到看不完喔。",
+     "en": "And the sky over the sea is too big to see all at once."
+    }
+   ]
+  },
+  {
+   "scene": "井裡面的井壁，石頭一塊一塊凸出來，像一層一層的小樓梯，往上通到井口。",
+   "act": "小青蛙用力往上跳，後腳踩在井壁中間一塊凸出來的石頭上，表情好認真；小鳥在井口拍著翅膀加油；海龜爺爺在井口伸頭看，笑著點頭。",
+   "lines": [
+    {
+     "who": "小青蛙",
+     "tag": "excited",
+     "text": "我也想去看看！",
+     "en": "I want to go see it too!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是井好深，小青蛙跳不上去。",
+     "en": "But the well was deep. Little Frog couldn't jump out."
+    },
+    {
+     "who": "小鳥",
+     "tag": "excited",
+     "text": "加油！踩著石頭，往上跳！",
+     "en": "You can do it! Hop up the stones!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠踩著石頭，跳一下，再跳一下。",
+     "en": "Little Frog hopped onto a stone, then another one."
+    }
+   ]
+  },
+  {
+   "scene": "井外面的草地，天好大好藍，有白雲，陽光很亮。老石井在畫面旁邊。",
+   "act": "小青蛙剛跳出井口，四隻腳張開、在半空中，抬頭看著好大的天，眼睛睜得好大、嘴巴張成圓形；小鳥在旁邊飛，開心地笑；海龜爺爺坐在草地上看著他們笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚！小青蛙跳出井口了！",
+     "en": "Hop! Little Frog jumped out of the well!"
+    },
+    {
+     "who": "小青蛙",
+     "tag": "surprised",
+     "text": "哇！天好大，好藍！",
+     "en": "Wow! The sky is so big and so blue!"
+    },
+    {
+     "who": "小青蛙",
+     "tag": "excited",
+     "text": "原來天不是一個圓圈！",
+     "en": "The sky isn't just a little circle after all!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "你看！外面好大喔！",
+     "en": "See? It's so big out here!"
+    }
+   ]
+  },
+  {
+   "scene": "海邊的沙灘，一望無際的藍色大海和好大的天連在一起，有白色浪花和幾朵白雲，遠處有海鷗。",
+   "act": "海龜爺爺趴在沙灘上，小青蛙坐在海龜爺爺的背殼上，張開雙手看著大海，笑得好開心；小鳥停在海龜爺爺旁邊。小青蛙待在岸上看海，不要畫牠下海游泳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "海龜爺爺帶著小青蛙，來到海邊。",
+     "en": "Grandpa Turtle took Little Frog down to the beach."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "excited",
+     "text": "大海好大，看不見邊耶！",
+     "en": "The sea is so big! I can't see where it ends!"
+    },
+    {
+     "who": "海龜",
+     "tag": "gentle",
+     "text": "常常出來走走，會看到好多新東西喔。",
+     "en": "Come out and explore often, and you'll see so many new things."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "happy",
+     "text": "謝謝你們！世界真大！",
+     "en": "Thank you, friends! The world is so big!"
+    }
+   ]
+  }
+ ]
+}

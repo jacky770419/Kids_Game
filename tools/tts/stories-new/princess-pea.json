@@ -1,0 +1,247 @@
+{
+ "id": "princess-pea",
+ "title": "豌豆公主",
+ "title_en": "The Princess and the Pea",
+ "size": "短",
+ "roles": {
+  "王子": "年輕的王子，聲音明亮溫和、有禮貌，看到高高的床會忍不住笑。",
+  "王后": "王子的媽媽，聲音誇張好笑、很有主意，出點子時神祕兮兮，最後得意又開心。",
+  "公主": "淋雨來敲門的年輕公主，聲音清亮甜美，沒睡好時軟軟的、有點委屈，但很有禮貌。"
+ },
+ "cast": {
+  "王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  },
+  "王后": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第3頁『一定會發現』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第7頁『沒睡飽』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "城堡的大廳，白天。紅地毯、高高的窗戶，牆上掛著藍色的旗子。",
+   "act": "王子第一次出場：年輕人，黑色短髮、穿藍色外套、戴一頂小金冠；他托著下巴，坐在台階上想事情。王后第一次出場：胖胖的、紅色長裙、頭髮盤得高高的、戴大金冠和圓眼鏡；她拍拍王子的肩膀，自信地挺起胸。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位王子。",
+     "en": "Once upon a time, there was a prince."
+    },
+    {
+     "who": "王子",
+     "tag": "sad",
+     "text": "我想找一位真正的公主。",
+     "en": "I want to find a real princess."
+    },
+    {
+     "who": "王后",
+     "tag": "proud",
+     "text": "別擔心，交給我吧！",
+     "en": "Don't worry. Leave it to me!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大門口，晚上，下著大雨，天上有閃電。",
+   "act": "公主第一次出場：年輕女孩，棕色長髮被雨淋濕、頭髮上別著一個淋濕的小髮夾、穿淺藍色長裙，裙子滴著水，頭上沒有皇冠；王子打開大木門，驚訝地看著她；王后從後面探出頭來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個下大雨的晚上，咚咚！有人敲門。",
+     "en": "One rainy night, knock, knock! Someone was at the door."
+    },
+    {
+     "who": "公主",
+     "tag": "shy",
+     "text": "我是公主，雨好大，可以讓我進去嗎？",
+     "en": "I'm a princess. It's raining so hard. May I come in?"
+    },
+    {
+     "who": "王子",
+     "tag": "surprised",
+     "text": "妳全身都濕了！快進來！",
+     "en": "You're soaking wet! Come in, quick!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的客房，晚上。房間中間有一張空空的木頭床架，牆邊靠著一大疊彩色床墊。",
+   "act": "王后踮著腳，偷偷把一顆綠色的小豌豆放在床架正中間，一根手指放在嘴邊；門外的走廊上，看得到王子帶公主去烤火的背影。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "whispering",
+     "text": "嘿嘿，我有好辦法。",
+     "en": "Hee hee, I have a clever plan."
+    },
+    {
+     "who": "旁白",
+     "text": "王后在床上，放了一顆很小的豌豆。",
+     "en": "The queen put one tiny pea on the bed."
+    },
+    {
+     "who": "王后",
+     "tag": "whispering",
+     "text": "真正的公主，一定會發現。",
+     "en": "A real princess will surely notice."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的客房，晚上。",
+   "act": "僕人們抬著床墊，一層一層往上疊；床墊顏色由下往上是：紅、橘、黃、綠、藍，疊了五層；王后站在旁邊伸出五根手指頭數。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "王后叫人在豌豆上面，疊上床墊。",
+     "en": "Then the queen had mattresses piled on top of the pea."
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，跟著一起算！",
+     "en": "Let's count together!"
+    },
+    {
+     "who": "王后",
+     "tag": "excited",
+     "text": "一層，兩層，三層，四層，五層！",
+     "en": "One, two, three, four, five!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的客房，晚上。床墊疊得好高，最上面離天花板只剩一點點。",
+   "act": "床墊越疊越高，再加上紫、粉紅、白、咖啡、金色五層，一共十層，最上面離天花板只剩一點點，剛好躺得下一個人；王后站在梯子上放最後一層；王子在下面抬頭看，笑得抱住肚子。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "excited",
+     "text": "六層，七層，八層，九層，十層！",
+     "en": "Six, seven, eight, nine, ten!"
+    },
+    {
+     "who": "王子",
+     "tag": "laughing",
+     "text": "哇，床好高，快碰到天花板了！",
+     "en": "Wow, the bed almost touches the ceiling!"
+    },
+    {
+     "who": "旁白",
+     "text": "十層床墊，好高，好高！",
+     "en": "Ten mattresses, so high, so very high!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的客房，深夜，窗外有月亮，房間只點著一盞小燈。",
+   "act": "公主穿白色睡衣，躺在十層床墊的最上面，抱著枕頭，眼睛睜開、皺著眉頭翻身；木梯子靠在床墊旁邊。",
+   "lines": [
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "謝謝你們，晚安！",
+     "en": "Thank you. Good night!"
+    },
+    {
+     "who": "旁白",
+     "text": "公主躺在床墊上，翻過來，翻過去。",
+     "en": "The princess lay on top of the mattresses. She tossed and turned."
+    },
+    {
+     "who": "公主",
+     "tag": "sleepy",
+     "text": "好睏，可是怎麼躺都不舒服。",
+     "en": "I'm so sleepy, but I just can't get comfy."
+    },
+    {
+     "who": "公主",
+     "tag": "sad",
+     "text": "哎喲，下面有東西，好硬喔！",
+     "en": "Ouch, there's something hard down there!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的餐廳，早上，陽光照在桌上的早餐。",
+   "act": "公主頂著亂翹的頭髮、眼睛下面有黑眼圈，打了一個大哈欠，揉著手臂；王子坐在她旁邊，關心地看著她，幫她倒一杯熱牛奶；王后坐在桌邊，眼睛發亮，身體往前傾。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "curious",
+     "text": "公主，昨晚睡飽了嗎？",
+     "en": "Princess, did you sleep well last night?"
+    },
+    {
+     "who": "公主",
+     "tag": "sleepy",
+     "text": "一點也沒睡飽。",
+     "en": "I barely slept at all."
+    },
+    {
+     "who": "公主",
+     "tag": "sleepy",
+     "text": "床墊下面有很硬的東西，我全身好痛。",
+     "en": "Something hard was under the mattresses. I ache all over."
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "辛苦妳了，今晚在軟床上休息吧！",
+     "en": "You must be tired. Tonight, rest on a soft bed, Princess!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的客房，早上，十層床墊被搬開，堆在牆邊。",
+   "act": "王后用兩根手指捏起那顆綠色小豌豆，高高舉起，得意大笑；公主頭上戴著王子家送的小金冠，和王子手牽手，開心地笑；後面的桌上有一個玻璃盒子，等著放豌豆。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "excited",
+     "text": "十層床墊下的豌豆，她都發現了！",
+     "en": "She felt a pea under ten mattresses!"
+    },
+    {
+     "who": "公主",
+     "tag": "surprised",
+     "text": "原來是一顆豌豆呀！",
+     "en": "So it was a pea!"
+    },
+    {
+     "who": "王后",
+     "tag": "proud",
+     "text": "她是真正的公主！",
+     "en": "She is a real princess!"
+    },
+    {
+     "who": "王子",
+     "tag": "happy",
+     "text": "太好了！我找到真正的公主了！",
+     "en": "Hooray! I found a real princess!"
+    },
+    {
+     "who": "旁白",
+     "text": "那顆豌豆，被放進了玻璃盒子裡。",
+     "en": "And the little pea was put in a glass box."
+    }
+   ]
+  }
+ ]
+}

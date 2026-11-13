@@ -1,0 +1,257 @@
+{
+ "id": "crow-pitcher",
+ "title": "烏鴉喝水",
+ "title_en": "The Crow and the Pitcher",
+ "size": "短",
+ "roles": {
+  "烏鴉": "聰明的小烏鴉，聲音像五六歲的小男孩，口渴時著急，想到辦法時很興奮，算石頭時一個一個說得很清楚。"
+ },
+ "cast": {
+  "烏鴉": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "喝",
+   "where": "第2頁『我要喝水』，第3頁『喝不到』，第8頁『喝到水』『喝了好多水』",
+   "read": "hē"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有放棄』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "炎熱的夏天，黃土地乾乾的，太陽很大，遠處的小池塘乾掉了，只剩裂開的泥巴。",
+   "act": "小烏鴉第一次出場：全身黑色羽毛、黑色尖嘴巴、圓圓的眼睛，脖子上繫一條紅色小領巾；他在天空中飛，嘴巴張開喘氣，一臉又渴又累。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天到了，天氣好熱。",
+     "en": "It was summer, and the day was very hot."
+    },
+    {
+     "who": "旁白",
+     "text": "小烏鴉飛呀飛，飛了好久。",
+     "en": "A little crow flew and flew for a long, long time."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "tired",
+     "text": "好熱，好熱！我好渴喔！",
+     "en": "So hot! So hot! I'm so thirsty!"
+    },
+    {
+     "who": "烏鴉",
+     "text": "哪裡有水呢？",
+     "en": "Where can I find some water?"
+    }
+   ]
+  },
+  {
+   "scene": "一棵大樹下，樹蔭裡的地上放著一個透明玻璃做的高水瓶，瓶身圓滾滾的，瓶口很窄。全書都是這個透明玻璃瓶。",
+   "act": "小烏鴉停在瓶口邊，歪著頭往瓶子裡看，眼睛發亮；隔著透明的玻璃，看得到瓶底只有一點點水。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咦？樹下有一個瓶子。",
+     "en": "Hey! There was a pitcher under a tree."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "excited",
+     "text": "瓶子裡有水！",
+     "en": "There's water in the pitcher!"
+    },
+    {
+     "who": "烏鴉",
+     "text": "太好了，我要喝水！",
+     "en": "Yay! I can have a drink!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，水好少，在瓶子的最下面。",
+     "en": "But there was only a little water, way down at the bottom."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，透明的玻璃水瓶旁邊。",
+   "act": "畫成左右兩小格。左格：小烏鴉把嘴巴伸進窄窄的瓶口，脖子伸得長長的，嘴巴尖還離水很遠。右格：小烏鴉用翅膀推瓶子，瓶子一動也不動，他皺著眉頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小烏鴉把嘴巴伸進去。",
+     "en": "The little crow put his beak inside."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "sad",
+     "text": "哎呀，我的嘴巴碰不到水！",
+     "en": "Oh no! My beak can't reach the water!"
+    },
+    {
+     "who": "烏鴉",
+     "text": "我來推推看。嘿！推不動。",
+     "en": "Let me push it. Ugh! It won't move."
+    },
+    {
+     "who": "旁白",
+     "text": "瓶口太小，水太低，喝不到。",
+     "en": "The opening was too small, and the water was too low. He couldn't drink."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，水瓶旁邊的地上散著很多灰色、白色的小石頭，石頭差不多跟瓶口一樣大，剛好丟得進去。",
+   "act": "小烏鴉站在地上，一邊翅膀摸著下巴，歪著頭想；他看到地上的小石頭，頭上冒出一個發亮的小燈泡，開心地跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小朋友，你想到辦法了嗎？",
+     "en": "Kids, can you think of a way?"
+    },
+    {
+     "who": "旁白",
+     "text": "小烏鴉沒有放棄，他歪著頭，想一想。",
+     "en": "The little crow didn't give up. He tilted his head and thought."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "excited",
+     "text": "有了！我來丟小石頭！",
+     "en": "I've got it! I'll drop in little stones!"
+    },
+    {
+     "who": "烏鴉",
+     "text": "石頭放進去，水就會升上來！",
+     "en": "When the stones go in, the water will come up!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，跟小烏鴉一起算石頭喔！",
+     "en": "Let's count the stones with the little crow!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，透明的玻璃水瓶，看得到裡面的水和石頭。",
+   "act": "小烏鴉嘴巴咬著一顆小石頭，正要丟進瓶口；瓶底已經有三顆石頭，水面比剛才高了一點。",
+   "lines": [
+    {
+     "who": "烏鴉",
+     "tag": "happy",
+     "text": "咚！一顆。",
+     "en": "Plop! One."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！兩顆。",
+     "en": "Plop! Two."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！三顆。",
+     "en": "Plop! Three."
+    },
+    {
+     "who": "旁白",
+     "text": "看！水升上來一些了！",
+     "en": "Look! The water rose up a little!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，透明的玻璃水瓶。",
+   "act": "瓶底疊著六顆石頭，水升到快到瓶口；小烏鴉又咬來一顆石頭，眼睛笑得彎彎的。",
+   "lines": [
+    {
+     "who": "烏鴉",
+     "tag": "excited",
+     "text": "咚！四顆。",
+     "en": "Plop! Four."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！五顆。",
+     "en": "Plop! Five."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！六顆。",
+     "en": "Plop! Six."
+    },
+    {
+     "who": "旁白",
+     "text": "水又升高了！快到瓶口了！",
+     "en": "The water rose higher! It was almost at the top!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，透明的玻璃水瓶。",
+   "act": "小烏鴉咬著第十顆石頭，丟進瓶口；瓶子裡疊著十顆石頭，水升到瓶口，閃閃發亮；小烏鴉張開翅膀，好興奮。",
+   "lines": [
+    {
+     "who": "烏鴉",
+     "tag": "excited",
+     "text": "咚！七顆。",
+     "en": "Plop! Seven."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！八顆。",
+     "en": "Plop! Eight."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！九顆。",
+     "en": "Plop! Nine."
+    },
+    {
+     "who": "烏鴉",
+     "text": "咚！十顆！",
+     "en": "Plop! Ten!"
+    },
+    {
+     "who": "旁白",
+     "text": "水升到瓶口了！",
+     "en": "The water came all the way up to the top!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，下午，陽光是金黃色的。",
+   "act": "小烏鴉戴著紅色小領巾，站在瓶口邊大口喝水，喝完用一邊翅膀拍拍玻璃瓶道謝，挺起胸膛得意地笑；瓶子裡疊著十顆石頭，水滿到瓶口。",
+   "lines": [
+    {
+     "who": "烏鴉",
+     "tag": "happy",
+     "text": "太棒了！我喝到水了！",
+     "en": "Hooray! I can drink the water!"
+    },
+    {
+     "who": "旁白",
+     "text": "小烏鴉喝了好多水，好舒服。",
+     "en": "The little crow drank and drank. Ahh, that felt good."
+    },
+    {
+     "who": "烏鴉",
+     "tag": "gentle",
+     "text": "謝謝你，瓶子！謝謝你，小石頭！",
+     "en": "Thank you, pitcher! Thank you, little stones!"
+    },
+    {
+     "who": "烏鴉",
+     "tag": "proud",
+     "text": "碰到問題，不要急，動動腦筋，就有辦法！",
+     "en": "When there's a problem, don't worry. Use your brain, and you'll find a way!"
+    }
+   ]
+  }
+ ]
+}

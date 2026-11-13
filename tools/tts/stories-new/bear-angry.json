@@ -1,0 +1,278 @@
+{
+ "id": "bear-angry",
+ "title": "小熊生氣了",
+ "title_en": "Little Bear Is Angry",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊的抱抱》《小熊不想睡覺》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌；積木倒了時氣呼呼、大聲，深呼吸後慢慢變小聲、變平靜，最後開心。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、穩穩的，帶小熊深呼吸時很慢很柔。",
+  "小青蛙": "就是《小熊的抱抱》裡的小青蛙：小熊的好朋友，聲音又小又可愛、活潑，撞倒積木後很抱歉、小小聲。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小青蛙": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "倒",
+   "where": "第2頁『積木塔倒了』、第7頁『我的塔倒了』",
+   "read": "dǎo"
+  },
+  {
+   "char": "吐",
+   "where": "第5頁、第8頁『吐氣』",
+   "read": "tǔ"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『生氣沒有關係』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第6頁『氣什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "為",
+   "where": "第7頁『因為』",
+   "read": "wèi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "白天，小熊家的客廳：木頭地板上鋪著綠色地毯，旁邊有一籃彩色積木，窗外是晴天。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。小熊坐在地毯上，用紅、黃、藍色的積木疊一座比坐著的小熊還高的塔，一臉專心又得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊在客廳玩積木。",
+     "en": "Little Bear is playing with blocks."
+    },
+    {
+     "who": "旁白",
+     "text": "一塊，兩塊，三塊，塔越來越高。",
+     "en": "One block, two blocks, three blocks. The tower grows taller and taller."
+    },
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "我的塔好高！快要碰到天花板了！",
+     "en": "My tower is so tall! It almost touches the ceiling!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，綠色地毯，門開著。",
+   "act": "小青蛙是一隻嫩綠色的小青蛙，淡黃色肚子、圓圓的大眼睛、粉紅色臉頰。小青蛙從門口開心地跳進來，一跳就撞到積木塔的底下，積木正往下倒；小熊張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小青蛙跳進來了。",
+     "en": "Just then, Little Frog hops in."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "excited",
+     "text": "小熊，我來找你玩！",
+     "en": "Little Bear, I came to play!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！小青蛙碰到了積木塔。",
+     "en": "Bump! Little Frog bumps into the tower."
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆，積木塔倒了。",
+     "en": "Crash! Down comes the tower."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，彩色積木散了一地。",
+   "act": "小熊站起來，臉變得好紅，兩手握拳、用力跺腳，頭上冒出一小朵灰色的雲；小青蛙縮著身子，一動也不敢動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊的臉一下子變紅了。",
+     "en": "Little Bear's face turns red."
+    },
+    {
+     "who": "旁白",
+     "text": "他用力跺腳，好想大叫。",
+     "en": "He stamps his feet. He wants to shout."
+    },
+    {
+     "who": "小熊",
+     "tag": "angry",
+     "text": "我的塔，我的塔！",
+     "en": "My tower! My tower!"
+    },
+    {
+     "who": "旁白",
+     "text": "小青蛙不敢動了。",
+     "en": "Little Frog freezes."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，彩色積木散了一地。",
+   "act": "熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著淡黃色圍裙。熊媽媽從廚房走過來，蹲在小熊旁邊，輕輕握住他的手；小熊鼓著臉，頭上還有那朵灰色的雲。小青蛙坐在旁邊的積木堆邊，安靜地看著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "媽媽走過來，蹲在小熊旁邊。",
+     "en": "Mama comes over and crouches down next to Little Bear."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "小熊，你好生氣，對不對？",
+     "en": "Little Bear, you feel very angry, don't you?"
+    },
+    {
+     "who": "小熊",
+     "tag": "angry",
+     "text": "對！我好生氣，好生氣！",
+     "en": "Yes! I'm so angry! So, so angry!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "生氣沒有關係，我們先一起深呼吸。",
+     "en": "It's okay to feel angry. Let's take a deep breath together."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，彩色積木散了一地。",
+   "act": "熊媽媽和小熊面對面坐著，兩個都把手放在肚子上：吸氣時肚子鼓起來，吐氣時肚子扁下去；小熊頭上的灰色雲變小了，臉也沒那麼紅了。小青蛙坐在旁邊的積木堆邊，也跟著把手放在肚子上深呼吸。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "calm",
+     "text": "吸氣，肚子鼓起來。",
+     "en": "Breathe in. Your tummy gets big."
+    },
+    {
+     "who": "熊媽媽",
+     "text": "吐氣，肚子扁下去。",
+     "en": "Breathe out. Your tummy goes flat."
+    },
+    {
+     "who": "小熊",
+     "tag": "calm",
+     "text": "吸氣，吐氣。吸氣，吐氣。",
+     "en": "In, out. In, out."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊的臉，慢慢不紅了。",
+     "en": "Little Bear's face isn't so red anymore."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，彩色積木散了一地。",
+   "act": "熊媽媽舉起手指，一根一根比一、二、三；小熊也舉起手指跟著比；小熊頭上的灰色雲不見了，表情平靜下來。小青蛙坐在旁邊的積木堆邊，安靜地看著。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "現在，我們慢慢算到三。",
+     "en": "Now, let's count to three, slowly."
+    },
+    {
+     "who": "小熊",
+     "tag": "calm",
+     "text": "一，二，三。",
+     "en": "One, two, three."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊的心，慢慢平靜下來。",
+     "en": "Little Bear feels calm inside."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "你可以告訴小青蛙，你在氣什麼。",
+     "en": "You can tell Little Frog what made you angry."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，彩色積木散了一地。",
+   "act": "小青蛙低著頭、雙手合十道歉；小熊站在牠面前看著牠，表情已經平靜。",
+   "lines": [
+    {
+     "who": "小熊",
+     "text": "小青蛙，我生氣了，因為我的塔倒了。",
+     "en": "Little Frog, I'm angry because my tower fell down."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "sad",
+     "text": "對不起，我不是故意的。",
+     "en": "I'm sorry. I didn't mean to."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "gentle",
+     "text": "我幫你一起蓋，好不好？",
+     "en": "Can I help you build it again?"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "好啊！",
+     "en": "Okay!"
+    }
+   ]
+  },
+  {
+   "scene": "傍晚，小熊家的客廳，橘色的陽光照進窗戶。",
+   "act": "小熊和小青蛙一起疊好一座更高的彩色積木塔，兩個抱在一起笑；熊媽媽在旁邊拍手。最後兩句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊和小青蛙一起蓋了一座新的塔。",
+     "en": "Little Bear and Little Frog build a new tower together."
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "我們一起蓋，真好玩！",
+     "en": "Building together is so much fun!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "說出來，心裡就舒服多了。",
+     "en": "When you say how you feel, you feel better."
+    },
+    {
+     "who": "旁白",
+     "text": "你生氣的時候，也可以試試看。",
+     "en": "When you feel angry, you can try it too."
+    },
+    {
+     "who": "旁白",
+     "text": "吸氣，吐氣。一，二，三。",
+     "en": "Breathe in, breathe out. One, two, three."
+    }
+   ]
+  }
+ ]
+}

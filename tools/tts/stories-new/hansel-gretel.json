@@ -1,0 +1,568 @@
+{
+ "id": "hansel-gretel",
+ "title": "糖果屋",
+ "title_en": "Hansel and Gretel",
+ "size": "長",
+ "roles": {
+  "哥哥": "大約七歲的男孩，聲音清亮有精神，愛照顧妹妹，害怕時也會先安慰別人，想到好辦法時小聲又興奮。",
+  "妹妹": "大約五歲的小女孩，聲音軟軟甜甜的，好奇愛問，會怕會哭，但嚇跑巫婆時笑得很開心。",
+  "小鳥": "白色的小鳥，聲音又尖又可愛、輕快，貪吃但心地好。",
+  "巫婆": "愛吃甜食的怪巫婆，中年女聲，誇張好笑、愛使喚人但不兇，被怪獸嚇到時尖叫逃走，好笑不可怕。",
+  "爸爸": "溫和的爸爸，聲音低沉厚實，找孩子時大聲又著急，聽故事時笑呵呵。",
+  "媽媽": "溫柔的媽媽，說話輕柔，找到孩子時又哭又笑。"
+ },
+ "cast": {
+  "哥哥": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "妹妹": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小鳥": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "巫婆": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第1頁『我會照顧』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第2頁『做什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第8頁『沒關係』，第13頁『沒有回來』",
+   "read": "méi"
+  },
+  {
+   "char": "嚇",
+   "where": "第14頁『嚇跑了』，第16頁『嚇跑了』",
+   "read": "xià"
+  },
+  {
+   "char": "假",
+   "where": "第11頁、第16頁『假裝』",
+   "read": "jiǎ"
+  },
+  {
+   "char": "給",
+   "where": "第13頁『糖果屋給你』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "大森林旁邊的一間小木屋，早上。紅色屋頂、木頭牆，門口有一個小花園，屋子後面是一大片綠色的森林。",
+   "act": "哥哥（大約七歲，棕色短髮，穿綠色背心和咖啡色短褲，斜背一個小布包）和妹妹（大約五歲，金色頭髮綁兩條辮子，穿紅色洋裝和白色圍裙，手提一個小籃子）站在門口，妹妹拉著媽媽的裙子撒嬌；媽媽（棕色頭髮綁馬尾，穿藍色長裙和白圍裙）彎腰笑著叮嚀；爸爸（大鬍子，穿紅黑格子襯衫）站在旁邊揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林旁邊，有一間小木屋。",
+     "en": "Near a big forest, there was a little wooden house."
+    },
+    {
+     "who": "旁白",
+     "text": "屋裡住著爸爸、媽媽，和一對兄妹。",
+     "en": "A mom and a dad lived there with Hansel and his little sister, Gretel."
+    },
+    {
+     "who": "妹妹",
+     "tag": "excited",
+     "text": "媽媽，我們去森林採果子，好不好？",
+     "en": "Mom, can we go pick berries in the forest?"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "好呀。可是不要走太遠喔！",
+     "en": "Yes, you may. But don't go too far!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "happy",
+     "text": "知道了！我會照顧妹妹！",
+     "en": "Okay! I'll take care of Gretel!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小路，早上，陽光從樹葉中間照下來，路邊長著一叢一叢的紅色野莓。",
+   "act": "哥哥從布包拿出一塊麵包，一邊走一邊把麵包屑撒在路上；妹妹提著籃子跟在後面，歪著頭好奇地看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兄妹走進森林，一邊走，一邊採果子。",
+     "en": "Hansel and Gretel walked into the forest, picking berries as they went."
+    },
+    {
+     "who": "旁白",
+     "text": "哥哥拿出麵包，把麵包屑丟在路上。",
+     "en": "Hansel took out some bread and dropped crumbs along the path."
+    },
+    {
+     "who": "妹妹",
+     "tag": "curious",
+     "text": "哥哥，你在做什麼？",
+     "en": "Hansel, what are you doing?"
+    },
+    {
+     "who": "哥哥",
+     "tag": "proud",
+     "text": "等一下回家，跟著麵包屑走就好！",
+     "en": "On the way home, we just follow the crumbs!"
+    }
+   ]
+  },
+  {
+   "scene": "森林深處，下午，樹越來越高、越來越密，地上到處是紅色的野莓；天空從樹頂露出一點橘色。",
+   "act": "兄妹蹲在莓果叢旁邊採果子，妹妹的籃子快滿了，兩個人嘴邊沾著紅色果汁；哥哥抬頭看天色，有點擔心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林裡的果子好多，好甜。",
+     "en": "The forest was full of sweet berries."
+    },
+    {
+     "who": "妹妹",
+     "tag": "happy",
+     "text": "這裡也有！那裡也有！籃子快滿了！",
+     "en": "Berries here! Berries there! My basket is almost full!"
+    },
+    {
+     "who": "旁白",
+     "text": "走著走著，太陽快要下山了。",
+     "en": "They walked and walked, and the sun began to go down."
+    },
+    {
+     "who": "哥哥",
+     "tag": "worried",
+     "text": "天快黑了，我們回家吧！",
+     "en": "It's getting dark. Let's go home!"
+    }
+   ]
+  },
+  {
+   "scene": "森林小路，傍晚，天色橘紅，路上一點麵包屑都沒有了；低低的樹枝上停著一隻白色小鳥，其他小鳥只在很遠的樹梢。",
+   "act": "哥哥低頭找麵包屑，抓著頭髮很著急；一隻胸口有一小撮紅毛的白色小鳥（全書是同一隻）嘴裡叼著最後一小塊麵包，吃得好開心；妹妹伸手指著小鳥。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，路上的麵包屑，都不見了！",
+     "en": "But the bread crumbs were all gone!"
+    },
+    {
+     "who": "妹妹",
+     "tag": "surprised",
+     "text": "哥哥你看！那隻小鳥在吃麵包屑！",
+     "en": "Look, Hansel! That bird is eating the crumbs!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "好好吃喔，謝謝你們！",
+     "en": "Yummy! Thank you!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "scared",
+     "text": "糟糕！我們找不到回家的路了！",
+     "en": "Oh no! We can't find the way home!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡，晚上，一棵很粗的大樹下面，月亮和星星從樹葉縫裡露出來，四周暗暗的。",
+   "act": "兄妹靠著大樹坐著，妹妹抱著膝蓋、眼眶紅紅的；哥哥用一隻手摟著妹妹，把布包墊在她頭下，後來兩個人抱在一起睡著了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天黑了，森林裡好暗，好安靜。",
+     "en": "Night came. The forest was dark and very quiet."
+    },
+    {
+     "who": "妹妹",
+     "tag": "scared",
+     "text": "哥哥，我好怕，我想回家。",
+     "en": "Hansel, I'm scared. I want to go home."
+    },
+    {
+     "who": "哥哥",
+     "tag": "gentle",
+     "text": "不怕，不怕，哥哥在這裡。",
+     "en": "Don't be scared. I'm right here."
+    },
+    {
+     "who": "哥哥",
+     "text": "我們先睡一下，明天再找路。",
+     "en": "Let's sleep now. We'll find the way tomorrow."
+    },
+    {
+     "who": "旁白",
+     "text": "兄妹抱在一起，在大樹下睡著了。",
+     "en": "They hugged each other and fell asleep under the big tree."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，早上，陽光照進森林，樹葉亮亮的。",
+   "act": "那隻白色小鳥停在低低的樹枝上，低著頭像在道歉；兄妹揉著眼睛醒來；小鳥接著張開翅膀往前飛，回頭叫他們跟上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "早上，那隻白色的小鳥飛來了。",
+     "en": "In the morning, the little white bird flew down."
+    },
+    {
+     "who": "小鳥",
+     "tag": "sad",
+     "text": "對不起，我吃了你們的麵包屑。",
+     "en": "I'm sorry I ate your crumbs."
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "跟我來！那裡有好多好吃的！",
+     "en": "Follow me! There's lots of yummy food over there!"
+    },
+    {
+     "who": "妹妹",
+     "text": "哥哥，我們跟小鳥走吧！",
+     "en": "Hansel, let's follow the bird!"
+    }
+   ]
+  },
+  {
+   "scene": "森林中間一塊有陽光的草地，上面有一間用糖果做的小房子：屋頂是一片一片的巧克力，牆壁是奶油蛋糕，窗戶是透明的黃色糖片，門口的小路鋪著彩色糖果，旁邊種著棒棒糖做的小樹。",
+   "act": "兄妹張大嘴巴看著糖果屋；哥哥踮起腳，掰下一小塊巧克力屋頂；妹妹舔著一顆從門口小路撿起來的彩色糖果，笑得眯起眼睛；小鳥停在棒棒糖樹上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哇！森林裡有一間糖果屋！",
+     "en": "Wow! There was a candy house in the forest!"
+    },
+    {
+     "who": "旁白",
+     "text": "屋頂是巧克力，牆壁是蛋糕，窗戶是糖果。",
+     "en": "The roof was chocolate, the walls were cake, and the windows were candy."
+    },
+    {
+     "who": "哥哥",
+     "tag": "excited",
+     "text": "我們好餓喔！吃一小口就好！",
+     "en": "We're so hungry! Just one little bite!"
+    },
+    {
+     "who": "妹妹",
+     "tag": "happy",
+     "text": "嗯，好甜，好好吃！",
+     "en": "Mmm! So sweet, so yummy!"
+    }
+   ]
+  },
+  {
+   "scene": "糖果屋門口，白天。",
+   "act": "門打開，走出一位巫婆：又高又瘦，戴紫色尖帽子、穿紫色長袍，鼻子尖尖長長的，拿一根比她還高的大棒棒糖當拐杖，嘴角沾著糖粉；她彎腰看著兄妹，眼睛笑成一條線。兄妹嚇一跳，手上的巧克力掉在地上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，門打開了。",
+     "en": "Just then, the door opened."
+    },
+    {
+     "who": "巫婆",
+     "tag": "surprised",
+     "text": "咦？是誰在吃我的房子？",
+     "en": "Hmm? Who is eating my house?"
+    },
+    {
+     "who": "哥哥",
+     "tag": "scared",
+     "text": "對不起！我們迷路了，肚子好餓。",
+     "en": "We're sorry! We got lost, and we're so hungry."
+    },
+    {
+     "who": "巫婆",
+     "tag": "laughing",
+     "text": "嘻嘻，沒關係！進來吧，我請你們吃糖果！",
+     "en": "Hee hee, that's all right! Come in and have some candy!"
+    }
+   ]
+  },
+  {
+   "scene": "糖果屋裡面：大火爐上煮著一大鍋粉紅色的糖漿，桌上堆滿糖果和蛋糕，牆上的架子擺著一排一排糖果罐；門上掛著一把大鎖。",
+   "act": "巫婆坐在桌邊，兩手各拿一塊蛋糕大口吃；兄妹吃飽了，站起來往門口走；巫婆搶先擋在門前，手指勾著一把大鑰匙晃呀晃，笑嘻嘻的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這個巫婆，最愛吃甜的。",
+     "en": "This witch loved sweet things more than anything."
+    },
+    {
+     "who": "巫婆",
+     "tag": "happy",
+     "text": "糖果真好吃！可是做糖果好累喔。",
+     "en": "Candy is so yummy! But making candy is so much work."
+    },
+    {
+     "who": "巫婆",
+     "tag": "excited",
+     "text": "你們留下來，天天幫我做糖果！",
+     "en": "You two can stay and make candy for me every day!"
+    },
+    {
+     "who": "妹妹",
+     "tag": "gentle",
+     "text": "謝謝妳，可是我們要回家了。",
+     "en": "Thank you, but we need to go home now."
+    },
+    {
+     "who": "巫婆",
+     "tag": "excited",
+     "text": "不可以！門鎖起來了，你們是我的小幫手！",
+     "en": "No, no! The door is locked. You're my little helpers now!"
+    }
+   ]
+  },
+  {
+   "scene": "糖果屋的廚房，白天，火爐上的大鍋冒著粉紅色的煙，桌上一盤一盤的糖球。",
+   "act": "哥哥用大木勺攪著糖漿，滿頭大汗；妹妹把糖搓成一顆一顆小圓球；巫婆躺在搖椅上，一手一根棒棒糖指揮他們，說到怪獸時抖了一下，緊張地看看窗外；哥哥偷偷看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兄妹每天幫巫婆攪糖漿，搓糖果。",
+     "en": "Every day, they stirred syrup and rolled candy for the witch."
+    },
+    {
+     "who": "巫婆",
+     "tag": "excited",
+     "text": "快一點！我要再吃一百顆！",
+     "en": "Faster! I want a hundred more!"
+    },
+    {
+     "who": "巫婆",
+     "tag": "scared",
+     "text": "不要跑出去喔！森林裡有大怪獸，好可怕！",
+     "en": "And don't go outside! There are big monsters in the forest. So scary!"
+    },
+    {
+     "who": "旁白",
+     "text": "哥哥看見，巫婆一說到怪獸，就發抖。",
+     "en": "Hansel noticed that the witch shivered when she talked about monsters."
+    },
+    {
+     "who": "妹妹",
+     "tag": "crying",
+     "text": "我好想爸爸，好想媽媽。",
+     "en": "I miss Dad. I miss Mom."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，糖果屋裡的小房間，窗外有月亮；隔壁房間的門縫飄出「Zzz」，看得到巫婆睡在床上的腳。地上放著一條黑色大毯子、兩個鍋子和一盞小油燈。",
+   "act": "兄妹蹲在床邊說悄悄話；哥哥把手指放在嘴巴前面，眼睛發亮；妹妹擦乾眼淚，抱起兩個鍋子，用力點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，巫婆睡著了。呼呼，呼呼。",
+     "en": "At night, the witch fell asleep. Snore, snore."
+    },
+    {
+     "who": "哥哥",
+     "tag": "whispering",
+     "text": "妹妹別哭，我想到一個好辦法。",
+     "en": "Don't cry, Gretel. I have a good idea."
+    },
+    {
+     "who": "哥哥",
+     "tag": "whispering",
+     "text": "巫婆最怕怪獸，我們來假裝大怪獸！",
+     "en": "The witch is scared of monsters. Let's pretend to be a big monster!"
+    },
+    {
+     "who": "妹妹",
+     "tag": "excited",
+     "text": "好！我來敲鍋子！",
+     "en": "Yes! I'll bang the pots!"
+    }
+   ]
+  },
+  {
+   "scene": "半夜，糖果屋的客廳，只點著一盞小油燈，燈光把影子照在牆上。",
+   "act": "哥哥披著黑色大毯子，妹妹坐在他的肩上，兩個人一起把毯子撐高，妹妹把兩根大木勺綁在頭上，牆上就出現一個又高又大、頭上有兩隻角的怪獸影子；妹妹兩手拿著鍋子用力互敲。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥披上黑毯子，妹妹坐在他肩上。",
+     "en": "Hansel put on a black blanket, and Gretel climbed onto his shoulders."
+    },
+    {
+     "who": "旁白",
+     "text": "小燈一照，牆上出現一個又高又大的影子！",
+     "en": "In the lamplight, a huge, tall shadow appeared on the wall!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚咚！轟隆！",
+     "en": "Bang, bang! Boom!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "shouting",
+     "text": "吼！我是森林大怪獸！誰在吃我的糖果？",
+     "en": "Roar! I'm the big forest monster! Who's eating my candy?"
+    },
+    {
+     "who": "妹妹",
+     "tag": "shouting",
+     "text": "吼！吼！快把糖果交出來！",
+     "en": "Roar! Roar! Give me all the candy!"
+    }
+   ]
+  },
+  {
+   "scene": "糖果屋門口，半夜，月光照著森林。",
+   "act": "巫婆穿著白色睡衣、戴睡帽，頭髮亂翹，嚇得跳起來，抱著一罐糖果衝出大門，一路掉糖果，跑進黑黑的森林；大門開著。",
+   "lines": [
+    {
+     "who": "巫婆",
+     "tag": "scared",
+     "text": "哎呀！大怪獸來了！救命呀！",
+     "en": "Eek! A big monster! Help!"
+    },
+    {
+     "who": "巫婆",
+     "tag": "shouting",
+     "text": "糖果屋給你，我不要了！",
+     "en": "You can have the candy house! I don't want it!"
+    },
+    {
+     "who": "旁白",
+     "text": "巫婆打開大門，飛快地跑進森林裡。",
+     "en": "The witch threw open the door and ran into the forest as fast as she could."
+    },
+    {
+     "who": "旁白",
+     "text": "她跑呀跑，再也沒有回來。",
+     "en": "She ran and ran, and she never came back."
+    }
+   ]
+  },
+  {
+   "scene": "糖果屋門口，天快亮了，天邊是淡粉紅色。",
+   "act": "兄妹掀開毯子，哈哈大笑，互相擊掌；白色小鳥飛下來停在妹妹的手指上，接著往森林的小路飛，兄妹手牽手跟在後面。",
+   "lines": [
+    {
+     "who": "妹妹",
+     "tag": "laughing",
+     "text": "哈哈！巫婆被我們嚇跑了！",
+     "en": "Ha ha! We scared the witch away!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "proud",
+     "text": "門開了，我們快回家吧！",
+     "en": "The door is open. Let's go home!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "這一次，我帶你們回家！",
+     "en": "This time, I'll lead you home!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥在前面飛，兄妹在後面跟。",
+     "en": "The bird flew ahead, and Hansel and Gretel followed."
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的小路，早上；遠遠看得到小木屋的紅色屋頂。",
+   "act": "爸爸和媽媽提著已經熄掉的油燈，衣服皺皺的、看起來找了一整夜，在樹林裡大聲叫；看到兄妹跑過來，媽媽蹲下張開雙手；四個人緊緊抱在一起，媽媽一邊笑一邊擦眼淚，小鳥在頭上繞圈。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "走著走著，前面有人在大叫。",
+     "en": "As they walked, they heard someone calling."
+    },
+    {
+     "who": "爸爸",
+     "tag": "shouting",
+     "text": "哥哥！妹妹！你們在哪裡？",
+     "en": "Hansel! Gretel! Where are you?"
+    },
+    {
+     "who": "妹妹",
+     "tag": "excited",
+     "text": "是爸爸媽媽！我們在這裡！",
+     "en": "It's Mom and Dad! We're here!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "crying",
+     "text": "終於找到你們了！我們找了好久，好久！",
+     "en": "We found you at last! We looked for so long!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家緊緊抱在一起。",
+     "en": "They all held each other tight."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，晚上，餐桌上有熱湯和麵包，壁爐的火暖暖的；窗台上停著白色小鳥。",
+   "act": "一家四口圍著桌子吃晚餐，兄妹比手畫腳講故事，爸爸笑得拍桌子，媽媽溫柔地摸妹妹的頭；小鳥在窗台上啄麵包屑。",
+   "lines": [
+    {
+     "who": "哥哥",
+     "tag": "excited",
+     "text": "我們遇到一個愛吃糖果的巫婆！",
+     "en": "We met a witch who loves candy!"
+    },
+    {
+     "who": "妹妹",
+     "tag": "proud",
+     "text": "我們假裝大怪獸，把她嚇跑了！",
+     "en": "We pretended to be a monster and scared her away!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "laughing",
+     "text": "哈哈，你們好聰明，也好勇敢！",
+     "en": "Ha ha! You're so clever and so brave!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "可是以後，不要走太遠喔。",
+     "en": "But next time, don't go too far, okay?"
+    },
+    {
+     "who": "旁白",
+     "text": "窗外的小鳥，也在吃麵包屑呢。",
+     "en": "And outside the window, the little bird was eating bread crumbs, too."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,595 @@
+{
+ "id": "snow-white",
+ "title": "白雪公主",
+ "title_en": "Snow White",
+ "size": "長",
+ "roles": {
+  "白雪公主": "十二三歲的溫柔公主，聲音甜、有禮貌，開心時輕快，害怕時小小聲。",
+  "王后": "愛漂亮、愛生氣的王后，說話高傲、急躁但好笑不可怕，結尾難過又真心道歉。",
+  "魔鏡": "會說話的老魔鏡，聲音低沉、慢慢說、像智者，只說實話，最後溫和地勸王后。",
+  "小矮人們": "七個小矮人一起說話，用一個聲音代表，圓胖溫和、熱情開朗，著急時也很可愛。",
+  "小不點": "最小的小矮人，聲音又小又軟、天真好奇，很喜歡白雪公主。",
+  "王子": "年輕的王子，聲音明亮溫和、有禮貌，叫公主醒來時很輕柔。"
+ },
+ "cast": {
+  "白雪公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "王后": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "魔鏡": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "小矮人們": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "小不點": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第3頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『會說話』，第8頁『我會幫忙』，第10頁『就會睡著』，第13頁『會睡著』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第16頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "冠",
+   "where": "第3頁『皇冠』",
+   "read": "guān"
+  },
+  {
+   "char": "喝",
+   "where": "第6頁『喝了』",
+   "read": "hē"
+  },
+  {
+   "char": "掃",
+   "where": "第8頁『掃地』",
+   "read": "sǎo"
+  },
+  {
+   "char": "給",
+   "where": "第9頁『給陌生人』，第16頁『給妳』『給的東西』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "王宮的花園，春天早上。後面是白色石頭城堡，花園裡有紅玫瑰花叢，和一棵開滿白花的樹，樹枝上站著兩隻藍色小鳥。",
+   "act": "白雪公主出場：七八歲的小女孩，黑色及肩短髮、戴一個銀色髮箍，皮膚很白、臉頰和嘴唇紅紅的，穿紅色長裙、白色圓領。她站在花叢旁，笑著對小鳥揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一個小公主。",
+     "en": "Once upon a time, there was a little princess."
+    },
+    {
+     "who": "旁白",
+     "text": "她的皮膚像雪一樣白，嘴唇像蘋果一樣紅。",
+     "en": "Her skin was as white as snow, and her lips were as red as an apple."
+    },
+    {
+     "who": "旁白",
+     "text": "她很善良，常常和小動物說話。",
+     "en": "She was very kind, and she often talked to the little animals."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都叫她白雪公主。",
+     "en": "Everyone called her Snow White."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "happy",
+     "text": "早安，小鳥！早安，小花！",
+     "en": "Good morning, birds! Good morning, flowers!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮裡王后的房間，晚上，點著蠟燭。牆上掛著一面金色橢圓框的大鏡子，就是魔鏡。",
+   "act": "王后出場：捲捲的金頭髮、戴尖尖的金皇冠，穿紫色長禮服和深紫色披風。她雙手叉腰、抬高下巴照鏡子；鏡子裡浮出一張發著藍光、留白色長鬍子的臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "王宮裡，也住著一個王后。",
+     "en": "A queen lived in the palace, too."
+    },
+    {
+     "who": "旁白",
+     "text": "王后很愛美，也很愛生氣。",
+     "en": "The queen loved being pretty, and she got angry very easily."
+    },
+    {
+     "who": "旁白",
+     "text": "她有一面會說話的魔鏡。",
+     "en": "She had a magic mirror that could talk."
+    },
+    {
+     "who": "王后",
+     "tag": "proud",
+     "text": "魔鏡，魔鏡，誰是世界上最美的人？",
+     "en": "Mirror, mirror, who is the most beautiful of all?"
+    },
+    {
+     "who": "魔鏡",
+     "text": "王后，妳是世界上最美的人。",
+     "en": "My queen, you are the most beautiful of all."
+    }
+   ]
+  },
+  {
+   "scene": "同一個王后房間，晚上，蠟燭和金框魔鏡。",
+   "act": "魔鏡裡出現長大了的白雪公主在花園摘花的畫面，她現在大約十二歲，髮型和紅裙子跟第1頁一樣，從這頁起都是這個年紀；王后氣得臉紅紅的，跺著腳、握著拳頭，皇冠都歪了，樣子好笑不可怕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很多年過去了，白雪公主越來越美。",
+     "en": "Years went by, and Snow White grew lovelier and lovelier."
+    },
+    {
+     "who": "王后",
+     "text": "魔鏡，魔鏡，誰是世界上最美的人？",
+     "en": "Mirror, mirror, who is the most beautiful of all?"
+    },
+    {
+     "who": "魔鏡",
+     "text": "王后，妳很美。可是，白雪公主最美。",
+     "en": "My queen, you are lovely. But Snow White is the most beautiful of all."
+    },
+    {
+     "who": "王后",
+     "tag": "angry",
+     "text": "什麼？不可以！我才是最美的！",
+     "en": "What? No! I am the most beautiful!"
+    },
+    {
+     "who": "旁白",
+     "text": "王后好生氣，皇冠都歪了。",
+     "en": "The queen was so angry that her crown went crooked."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的後門，早上。門外是一條小路，通到遠處一大片深綠色的森林。",
+   "act": "王后站在門口，皺著眉、一手指著森林，一手把一個空的木頭籃子塞給白雪公主；白雪公主提著籃子，乖乖點頭。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "angry",
+     "text": "白雪公主，去森林裡摘花！",
+     "en": "Snow White, go into the forest and pick flowers!"
+    },
+    {
+     "who": "王后",
+     "text": "摘滿一籃，才可以回來！",
+     "en": "Don't come back until the basket is full!"
+    },
+    {
+     "who": "白雪公主",
+     "text": "好的，我去摘花。",
+     "en": "All right. I'll go pick flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "白雪公主提著籃子，走進了大森林。",
+     "en": "Snow White took the basket and walked into the big forest."
+    }
+   ]
+  },
+  {
+   "scene": "森林深處，傍晚，天色變暗。好高的大樹圍成一圈，好幾條小路彎來彎去，看不出哪條是回家的路。",
+   "act": "白雪公主抱著裝了一半野花的籃子，站在路口左看右看，眉毛皺起來，有點害怕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她摘呀摘，越走越遠。",
+     "en": "She picked and picked, and went farther and farther."
+    },
+    {
+     "who": "旁白",
+     "text": "森林好大，樹好高，天也黑了。",
+     "en": "The forest was so big, the trees were so tall, and it was getting dark."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "scared",
+     "text": "咦，回家的路在哪裡？",
+     "en": "Oh? Where is the way home?"
+    },
+    {
+     "who": "旁白",
+     "text": "她好害怕，一直往前走。",
+     "en": "She was very scared, and she kept on walking."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "sad",
+     "text": "我迷路了。誰可以幫我？",
+     "en": "I'm lost. Who can help me?"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡一塊小空地上的小木屋，晚上；屋裡點著小油燈。一張小桌子上擺著七個小碗，旁邊七張小椅子，牆邊排著七張小床。",
+   "act": "白雪公主睡在其中一張小床上，小床太短，腳露在床外面；花籃和一個喝過的小碗放在桌上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "走著，走著，她看到一間小木屋。",
+     "en": "She walked and walked, and found a little wooden house."
+    },
+    {
+     "who": "旁白",
+     "text": "屋裡有七張小椅子，七個小碗，七張小床。",
+     "en": "Inside were seven little chairs, seven little bowls, and seven little beds."
+    },
+    {
+     "who": "旁白",
+     "text": "小碗裡有熱湯，她喝了一小口。",
+     "en": "There was warm soup in the bowls, and she had a little sip."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "sleepy",
+     "text": "好累喔。我在這裡休息一下吧。",
+     "en": "I'm so tired. I'll rest here for a while."
+    },
+    {
+     "who": "旁白",
+     "text": "她躺在小床上，睡著了。",
+     "en": "She lay down on a little bed and fell asleep."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，晚上，門剛被推開。",
+   "act": "七個小矮人出場：身高大約到白雪公主的腰，圓圓胖胖，穿棕色工作服，各戴一頂尖帽子，顏色是紅、橙、黃、綠、藍、靛、紫；六個有棕色鬍子，最小的小不點戴紫帽子，圓臉、沒有鬍子、看起來像小孩。他們提著燈、扛著小鏟子，擠在床邊驚訝地看；小不點把手指放在嘴巴前面「噓」；白雪公主剛睜開眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天黑了，七個小矮人從山洞回家了。",
+     "en": "When night came, seven little dwarfs came home from the mine."
+    },
+    {
+     "who": "小矮人們",
+     "tag": "surprised",
+     "text": "咦？有人睡在我們的床上！",
+     "en": "Huh? Someone is sleeping in our bed!"
+    },
+    {
+     "who": "小不點",
+     "tag": "whispering",
+     "text": "噓，小聲一點。她好美喔。",
+     "en": "Shh, be quiet. She's so pretty."
+    },
+    {
+     "who": "旁白",
+     "text": "白雪公主醒過來，看到七個小矮人。",
+     "en": "Snow White woke up and saw the seven little dwarfs."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，晚上，油燈亮著。",
+   "act": "白雪公主坐在床邊，不好意思地低頭說話；七個小矮人圍著她，張開手臂歡迎她；小不點開心得跳起來。",
+   "lines": [
+    {
+     "who": "白雪公主",
+     "tag": "shy",
+     "text": "對不起，我在森林裡迷路了。",
+     "en": "I'm sorry. I got lost in the forest."
+    },
+    {
+     "who": "小矮人們",
+     "tag": "happy",
+     "text": "別怕！妳可以住在這裡！",
+     "en": "Don't be afraid! You can stay here with us!"
+    },
+    {
+     "who": "白雪公主",
+     "tag": "happy",
+     "text": "謝謝你們！我會幫忙煮飯、掃地。",
+     "en": "Thank you! I'll help cook and sweep."
+    },
+    {
+     "who": "小不點",
+     "tag": "excited",
+     "text": "太好了！我們有新朋友了！",
+     "en": "Hooray! We have a new friend!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，白雪公主就住在小木屋。",
+     "en": "From that day on, Snow White lived in the little house."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，晴朗的早上。屋前有小花園和一條通往山洞的小路，屋簷上停著藍色小鳥。",
+   "act": "七個小矮人扛著小鏟子排成一排走上小路，回頭揮手叮嚀；白雪公主繫著白圍裙站在門口揮手送行，肩膀上停著一隻藍色小鳥。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "每天早上，小矮人們出門去挖寶石。",
+     "en": "Every morning, the dwarfs went off to dig for jewels."
+    },
+    {
+     "who": "小矮人們",
+     "text": "不可以給陌生人開門，也不能拿東西喔！",
+     "en": "Don't open the door for strangers, and don't take anything from them!"
+    },
+    {
+     "who": "小不點",
+     "tag": "happy",
+     "text": "白雪公主，晚上見！",
+     "en": "See you tonight, Snow White!"
+    },
+    {
+     "who": "白雪公主",
+     "tag": "happy",
+     "text": "我記住了！路上小心！",
+     "en": "I'll remember! Be careful on the way!"
+    },
+    {
+     "who": "旁白",
+     "text": "白雪公主在家煮湯、唱歌、餵小鳥。",
+     "en": "At home, Snow White made soup, sang songs, and fed the birds."
+    }
+   ]
+  },
+  {
+   "scene": "王宮裡王后的房間，晚上，蠟燭和金框魔鏡。桌上有一個冒著紫色煙的大鍋子。",
+   "act": "王后站在魔鏡前，得意地笑，雙手捧著一顆發光的紅蘋果，蘋果上有紫色小星星在轉；魔鏡裡出現森林小木屋的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "王宮裡，王后又去問魔鏡。",
+     "en": "Back at the palace, the queen asked the mirror again."
+    },
+    {
+     "who": "王后",
+     "text": "魔鏡，魔鏡，誰是世界上最美的人？",
+     "en": "Mirror, mirror, who is the most beautiful of all?"
+    },
+    {
+     "who": "魔鏡",
+     "text": "森林的小木屋裡，白雪公主最美。",
+     "en": "In the little house in the forest, Snow White is the most beautiful of all."
+    },
+    {
+     "who": "王后",
+     "tag": "angry",
+     "text": "哼！我有辦法了！",
+     "en": "Hmph! I have an idea!"
+    },
+    {
+     "who": "旁白",
+     "text": "王后做了一顆魔法蘋果，吃了就會睡著。",
+     "en": "The queen made a magic apple. One bite, and you would fall asleep."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的窗外，白天。窗戶開著，窗台上有一盆小花。",
+   "act": "王后換上棕色的舊衣服、披著頭巾，彎著腰扮成一個老婆婆，頭巾邊露出一點金頭髮，手提一籃紅蘋果，舉著一顆最紅的蘋果遞向窗口；白雪公主在窗內猶豫地看著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "王后穿上舊衣服，扮成一個老婆婆。",
+     "en": "The queen put on old clothes and dressed up as an old woman."
+    },
+    {
+     "who": "旁白",
+     "text": "她來到小木屋，咚、咚、咚，敲著窗戶。",
+     "en": "She came to the little house. Knock, knock, knock, on the window."
+    },
+    {
+     "who": "王后",
+     "tag": "gentle",
+     "text": "好心的姑娘，請妳吃一顆甜蘋果。",
+     "en": "Kind girl, please have a sweet apple."
+    },
+    {
+     "who": "白雪公主",
+     "text": "小矮人說，不可以開門喔。",
+     "en": "The dwarfs said I must not open the door."
+    },
+    {
+     "who": "王后",
+     "tag": "gentle",
+     "text": "不用開門，從窗戶拿就好啦！",
+     "en": "You don't have to open it. Just take it through the window!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，傍晚。地上鋪著一塊圓地毯，桌上放著被咬了一口的紅蘋果。",
+   "act": "白雪公主躺在地毯上安穩地睡著，臉上帶著微笑；七個小矮人圍在她身邊，著急地叫她，小不點拉著她的手哭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "蘋果又紅又香，白雪公主咬了一口。",
+     "en": "The apple was so red and smelled so good. Snow White took a bite."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "sleepy",
+     "text": "嗯，好甜。我好想睡喔。",
+     "en": "Mmm, so sweet. I'm so sleepy."
+    },
+    {
+     "who": "旁白",
+     "text": "她躺在地上，睡著了。",
+     "en": "She lay down on the floor and fell fast asleep."
+    },
+    {
+     "who": "旁白",
+     "text": "小矮人們回家，怎麼叫都叫不醒她。",
+     "en": "The dwarfs came home, but no matter how they called, she would not wake up."
+    },
+    {
+     "who": "小矮人們",
+     "tag": "crying",
+     "text": "白雪公主，快醒來！快醒來！",
+     "en": "Snow White, wake up! Please wake up!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡開滿野花的草地，白天，陽光從樹葉間灑下來。草地中間用花和葉子鋪成一張花床。",
+   "act": "白雪公主睡在花床上，表情安穩；七個小矮人坐在旁邊守著她，小不點在幫她蓋花瓣；一位王子騎著白馬從樹林走過來。王子出場：棕色短髮，穿綠色外套和白襯衫，腰上有金色腰帶。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小矮人們把她放在花床上，每天陪著她。",
+     "en": "The dwarfs laid her on a bed of flowers and stayed with her every day."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，一位王子騎著白馬經過。",
+     "en": "One day, a prince came riding by on a white horse."
+    },
+    {
+     "who": "王子",
+     "text": "這位公主怎麼了？",
+     "en": "What happened to this princess?"
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "我可以看看她嗎？",
+     "en": "May I take a look at her?"
+    },
+    {
+     "who": "小不點",
+     "tag": "sad",
+     "text": "她吃了會睡著的蘋果，一直醒不來。",
+     "en": "She ate a sleepy apple, and she can't wake up."
+    }
+   ]
+  },
+  {
+   "scene": "同一片花草地，白天，陽光更亮了。",
+   "act": "王子單膝跪在花床邊，扶著白雪公主坐起來；她正好打了一個大噴嚏，一小塊蘋果從嘴裡飛出來；七個小矮人在旁邊驚喜地張大嘴巴、舉起雙手。",
+   "lines": [
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "公主，該起床了，醒一醒吧。",
+     "en": "Princess, it's time to wake up."
+    },
+    {
+     "who": "旁白",
+     "text": "王子扶她坐起來。",
+     "en": "The prince helped her sit up."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "surprised",
+     "text": "哈啾！",
+     "en": "Achoo!"
+    },
+    {
+     "who": "旁白",
+     "text": "一小塊蘋果掉了出來，白雪公主醒了！",
+     "en": "A little piece of apple popped out, and Snow White woke up!"
+    },
+    {
+     "who": "小矮人們",
+     "tag": "excited",
+     "text": "太好了！白雪公主醒了！",
+     "en": "Hooray! Snow White is awake!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮裡王后的房間，白天，窗簾拉開，陽光照進來。",
+   "act": "王后坐在魔鏡前，皇冠放在桌上，雙手捧著臉，難過地低著頭；魔鏡裡的藍色臉溫和地看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這一天，王后又去問魔鏡。",
+     "en": "One day, the queen asked the mirror once more."
+    },
+    {
+     "who": "王后",
+     "tag": "sad",
+     "text": "魔鏡，魔鏡，我是不是最美的人？",
+     "en": "Mirror, mirror, am I the most beautiful?"
+    },
+    {
+     "who": "魔鏡",
+     "tag": "gentle",
+     "text": "王后，最美的，是一顆好心。",
+     "en": "My queen, the most beautiful thing is a kind heart."
+    },
+    {
+     "who": "王后",
+     "tag": "sad",
+     "text": "我做錯了。我要去說對不起。",
+     "en": "I was wrong. I must go and say sorry."
+    },
+    {
+     "who": "旁白",
+     "text": "王后穿上禮服，走進了森林。",
+     "en": "The queen put on her gown and walked into the forest."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋前的花園，晴朗的下午。樹上掛著彩色旗子，長桌上擺著蛋糕、水果和一大盤紅蘋果派。",
+   "act": "王后穿著紫色禮服，不好意思地牽著白雪公主的手道歉，白雪公主笑著看她；王子和七個小矮人坐在桌邊微笑，小不點手裡拿著蛋糕，藍色小鳥停在桌上。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "sad",
+     "text": "白雪公主，對不起，我不該給妳魔法蘋果。",
+     "en": "Snow White, I'm sorry. I should not have given you the magic apple."
+    },
+    {
+     "who": "白雪公主",
+     "tag": "gentle",
+     "text": "沒關係。我們和好吧！",
+     "en": "That's all right. Let's be friends!"
+    },
+    {
+     "who": "白雪公主",
+     "text": "我也記住了，陌生人給的東西不能吃。",
+     "en": "And I learned something, too. Never eat food from strangers."
+    },
+    {
+     "who": "旁白",
+     "text": "後來，大家常常在森林裡開派對。",
+     "en": "After that, everyone often had parties in the forest."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都好開心！",
+     "en": "Everyone was very happy."
+    }
+   ]
+  }
+ ]
+}

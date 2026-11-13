@@ -1,0 +1,278 @@
+{
+ "id": "princess-unicorn",
+ "title": "公主和迷路的小獨角獸",
+ "title_en": "The Princess and the Lost Unicorn",
+ "size": "短",
+ "roles": {
+  "小公主": "就是《公主和小星星》裡的小公主：五六歲的小女孩聲音，溫柔、有禮貌、勇敢，安慰人時輕輕的，問路時清楚又客氣。",
+  "小獨角獸": "迷路的小獨角獸，是獨角獸的孩子，聲音又小又尖細可愛，一開始想哭、小小聲，找到媽媽時好開心。",
+  "蝴蝶": "花園裡的黃色大蝴蝶，可愛的小女生聲音，熱心，說話輕快。",
+  "小鳥": "大樹上的藍色小鳥，活潑的年輕男生聲音，愛飛、熱心、有精神。",
+  "獨角獸": "就是《公主和小星星》裡帶小公主上彩虹的獨角獸，小獨角獸的媽媽：溫柔的年輕女聲，說話平靜、慈祥。"
+ },
+ "cast": {
+  "小公主": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小獨角獸": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "蝴蝶": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小鳥": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "獨角獸": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "尾",
+   "where": "第1頁『小尾巴』",
+   "read": "wěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "白天，城堡的花園：陽光明亮，粉紅色和黃色的花叢，一條石頭小路，中間有一個小噴水池；遠處是白色的城堡。花園四周有高高的樹和城牆擋住遠方，天空不要畫彩虹。",
+   "act": "小公主有咖啡色的長頭髮，戴金色小皇冠，皇冠中間有一顆粉紅色愛心，穿粉紅色的蓬蓬公主裙和粉紅色鞋子。小公主在花叢邊低頭看花；花叢後面露出一條彩虹色的小尾巴，她好奇地歪著頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天氣很好，小公主在花園裡看花。",
+     "en": "It's a sunny day. The little princess is looking at the flowers in the garden."
+    },
+    {
+     "who": "旁白",
+     "text": "咦，花叢後面，有一條彩虹色的小尾巴。",
+     "en": "Oh? Behind the flowers, there is a little rainbow tail."
+    },
+    {
+     "who": "小公主",
+     "tag": "curious",
+     "text": "是誰在那裡呀？",
+     "en": "Who's there?"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的花園，花叢後面；天空不要畫彩虹。",
+   "act": "小獨角獸只有小公主一半高：淡粉紅色的身體、彩虹色的鬃毛和尾巴、很小的黃色螺旋角、紫色的小蹄子。小獨角獸縮著身子坐在花叢裡，眼睛含著眼淚；小公主撥開花叢，蹲下來看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是一隻小獨角獸，正在小聲地哭。",
+     "en": "It's a little unicorn, crying softly."
+    },
+    {
+     "who": "小獨角獸",
+     "tag": "crying",
+     "text": "我找不到媽媽了。",
+     "en": "I can't find my mama."
+    },
+    {
+     "who": "小獨角獸",
+     "tag": "sad",
+     "text": "我迷路了。",
+     "en": "I'm lost."
+    },
+    {
+     "who": "小公主",
+     "tag": "gentle",
+     "text": "不要怕，我幫妳。",
+     "en": "Don't be afraid. I will help you."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的花園，花叢旁邊；天空不要畫彩虹。",
+   "act": "小公主蹲著，用一條白色手帕幫小獨角獸擦眼淚；小獨角獸抬頭看著她，不哭了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小公主拿出手帕，幫小獨角獸擦眼淚。",
+     "en": "The little princess takes out her hanky and wipes the little unicorn's tears."
+    },
+    {
+     "who": "小公主",
+     "tag": "gentle",
+     "text": "妳家在哪裡呢？",
+     "en": "Where is your home?"
+    },
+    {
+     "who": "小獨角獸",
+     "tag": "sad",
+     "text": "我家在彩虹下面，可是我不知道怎麼走。",
+     "en": "My home is under the rainbow. But I don't know the way."
+    },
+    {
+     "who": "小公主",
+     "tag": "happy",
+     "text": "不知道路，我們可以問問看！",
+     "en": "If we don't know the way, we can ask!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡花園的另一邊，一片紫色的花；一隻黃色的大蝴蝶停在花上；花園四周有高高的樹和城牆，天空不要畫彩虹。",
+   "act": "小公主帶著小獨角獸走過來，彎下腰有禮貌地問路；蝴蝶拍拍翅膀，搖搖頭，再用觸角指向花園邊的大樹。",
+   "lines": [
+    {
+     "who": "小公主",
+     "tag": "gentle",
+     "text": "蝴蝶，你好。請問彩虹在哪裡？",
+     "en": "Hello, Butterfly. Excuse me, where is the rainbow?"
+    },
+    {
+     "who": "蝴蝶",
+     "text": "我飛不高，看不到彩虹耶。",
+     "en": "I can't fly very high. I can't see the rainbow."
+    },
+    {
+     "who": "蝴蝶",
+     "tag": "happy",
+     "text": "去問小鳥吧，小鳥飛最高！",
+     "en": "Go ask Little Bird. Little Bird flies the highest!"
+    },
+    {
+     "who": "小公主",
+     "tag": "happy",
+     "text": "謝謝你，蝴蝶！",
+     "en": "Thank you, Butterfly!"
+    }
+   ]
+  },
+  {
+   "scene": "花園邊的一棵大樹，樹枝上有一個鳥窩；一隻藍色的小鳥站在樹枝上；花園四周有高高的樹和城牆，天空不要畫彩虹。",
+   "act": "藍色小鳥飛在高高的天空，開心地用翅膀指著遠方；小公主和小獨角獸站在大樹下抬頭看。",
+   "lines": [
+    {
+     "who": "小公主",
+     "tag": "gentle",
+     "text": "小鳥，你好。請問彩虹在哪裡？",
+     "en": "Hello, Little Bird. Excuse me, where is the rainbow?"
+    },
+    {
+     "who": "小鳥",
+     "tag": "excited",
+     "text": "我飛上去看看！",
+     "en": "I'll fly up and look!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥飛呀飛，飛到好高、好高。",
+     "en": "Little Bird flies up, up, up, high in the sky."
+    },
+    {
+     "who": "小鳥",
+     "tag": "excited",
+     "text": "看到了！彩虹在小山那邊！",
+     "en": "I see it! The rainbow is over the hill!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡外的綠色小山坡，一條小路往上通到坡頂；山坡後面的天空有一道好大的彩虹。",
+   "act": "藍色小鳥在前面飛著帶路；小公主提著裙子，和小獨角獸並排跑上山坡，兩個都看著前方的彩虹，臉上好開心。遠處城堡的窗口，王后笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小公主先跟媽媽說好，再出發。",
+     "en": "The little princess tells her mama first. Then off they go."
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥在前面帶路。",
+     "en": "Little Bird leads the way."
+    },
+    {
+     "who": "旁白",
+     "text": "小公主和小獨角獸跟著跑。",
+     "en": "The little princess and the little unicorn run after him."
+    },
+    {
+     "who": "小公主",
+     "tag": "excited",
+     "text": "快到了，加油！",
+     "en": "We're almost there! Keep going!"
+    },
+    {
+     "who": "小獨角獸",
+     "tag": "excited",
+     "text": "是彩虹！我家就在那裡！",
+     "en": "The rainbow! My home is right there!"
+    }
+   ]
+  },
+  {
+   "scene": "山坡頂上，大彩虹的下面，一片開滿小白花的草地。",
+   "act": "獨角獸跟《公主和小星星》裡的獨角獸長得一樣：淡粉紅色的身體、彩虹色的鬃毛和尾巴、長睫毛、黃色螺旋角、紫色的蹄子，角的樣子照原圖，個子比小獨角獸大很多。獨角獸跑過來，小獨角獸撲進媽媽懷裡，兩個脖子靠在一起；小公主在旁邊驚喜地摀著嘴。",
+   "lines": [
+    {
+     "who": "獨角獸",
+     "tag": "happy",
+     "text": "寶貝，妳在這裡！",
+     "en": "My baby! There you are!"
+    },
+    {
+     "who": "小獨角獸",
+     "tag": "happy",
+     "text": "媽媽！",
+     "en": "Mama!"
+    },
+    {
+     "who": "小公主",
+     "tag": "surprised",
+     "text": "是妳！妳是帶我去送小星星的獨角獸！",
+     "en": "It's you! You're the unicorn who helped me take the little star home!"
+    },
+    {
+     "who": "獨角獸",
+     "tag": "gentle",
+     "text": "小公主，謝謝妳幫助我的孩子。",
+     "en": "Little princess, thank you for helping my little one."
+    }
+   ]
+  },
+  {
+   "scene": "傍晚，彩虹下的草地，天空是粉紅色和橘色；遠處看得到小公主的白色城堡。",
+   "act": "獨角獸低下身子讓小公主坐上背，小獨角獸在旁邊開心地跳；黃色蝴蝶和藍色小鳥也飛過來圍著她們。最後三句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小獨角獸",
+     "tag": "happy",
+     "text": "謝謝妳，小公主！妳是我的好朋友！",
+     "en": "Thank you, little princess! You're my good friend!"
+    },
+    {
+     "who": "獨角獸",
+     "tag": "gentle",
+     "text": "上來吧，我帶妳回家。",
+     "en": "Hop on. I'll take you home."
+    },
+    {
+     "who": "旁白",
+     "text": "如果你迷路了，先站著不要亂跑。",
+     "en": "If you ever get lost, stay where you are."
+    },
+    {
+     "who": "旁白",
+     "text": "再請警察或店員幫忙。",
+     "en": "Then ask a police officer or a store clerk for help."
+    },
+    {
+     "who": "旁白",
+     "text": "你也幫助過別人嗎？",
+     "en": "Have you ever helped someone?"
+    }
+   ]
+  }
+ ]
+}

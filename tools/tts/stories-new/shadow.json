@@ -1,0 +1,230 @@
+{
+ "id": "shadow",
+ "title": "影子跟著我",
+ "title_en": "My Shadow",
+ "size": "短",
+ "roles": {
+  "小傑": "主角，五歲左右的小男孩，活潑好動、好奇愛問，被影子嚇一跳後馬上玩得哈哈笑，睡前聲音變得軟軟的。",
+  "媽媽": "小傑的媽媽，溫柔有耐心的女聲，解釋時清楚慢慢說，玩手影時帶著笑。"
+ },
+ "cast": {
+  "小傑": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [],
+ "pages": [
+  {
+   "scene": "早上，社區的小公園，有草地、溜滑梯和幾棵樹。太陽剛從東邊的房子後面升起，低低地掛在天邊，陽光斜斜地照過來。",
+   "act": "小傑第一次出場：五歲左右的小男孩，短短的黑頭髮，穿藍白條紋 T 恤、紅色短褲、白色球鞋。他走在草地上，回頭看到地上一個又細又長的黑影子，被拉得比溜滑梯還長，嚇一跳；影子倒在他背對太陽的那一邊。媽媽第一次出場：綁馬尾、穿淡黃色上衣和牛仔褲，走在旁邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "早上，小傑和媽媽去公園玩。",
+     "en": "In the morning, Jake and Mom go to the park."
+    },
+    {
+     "who": "旁白",
+     "text": "草地上，有一個好大、好高的黑色怪東西。",
+     "en": "On the grass, there is a big, tall, dark shape."
+    },
+    {
+     "who": "小傑",
+     "tag": "surprised",
+     "text": "媽媽，有一個大巨人跟著我！",
+     "en": "Mommy, a giant is following me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園的草地，早上，太陽在東邊低處。",
+   "act": "小傑跳起來、揮手，地上又細又長的影子做一模一樣的動作；小傑開心地笑；媽媽在旁邊笑著指影子。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "那是你的影子呀！",
+     "en": "That's your shadow!"
+    },
+    {
+     "who": "旁白",
+     "text": "小傑跳一下，影子也跳一下。",
+     "en": "Jake jumps. His shadow jumps, too."
+    },
+    {
+     "who": "旁白",
+     "text": "小傑揮揮手，影子也揮揮手。",
+     "en": "Jake waves. His shadow waves, too."
+    },
+    {
+     "who": "小傑",
+     "tag": "laughing",
+     "text": "影子在學我耶！",
+     "en": "My shadow is copying me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，陽光從畫面一邊斜斜照過來，可以畫幾條黃色的光線。",
+   "act": "媽媽蹲下來跟小傑說話；小傑舉起一隻手，看地上手的影子。光線照到小傑的身體就停住，小傑身後被擋住、照不到光的地上，就是黑色的影子。",
+   "lines": [
+    {
+     "who": "小傑",
+     "tag": "curious",
+     "text": "影子是怎麼來的呀？",
+     "en": "Where do shadows come from?"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "陽光照過來，被你的身體擋住了。",
+     "en": "Sunlight shines on you, and your body blocks it."
+    },
+    {
+     "who": "媽媽",
+     "text": "光照不到的地方，就是影子。",
+     "en": "The spot where the light can't reach is your shadow."
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，早上，太陽在東邊低低的地方。",
+   "act": "小傑低著頭，朝著太陽的方向用力跑，一邊回頭看影子，不抬頭看太陽；影子拖在他身後的地上，一直跟著他；媽媽在後面笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小傑想甩掉影子，往太陽跑過去。",
+     "en": "Jake wants to get away from his shadow. He runs toward the sun."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，影子一直跟在他後面。",
+     "en": "But his shadow stays right behind him."
+    },
+    {
+     "who": "媽媽",
+     "text": "太陽在前面，影子就在後面喔。",
+     "en": "When the sun is in front of you, your shadow is behind you."
+    },
+    {
+     "who": "小傑",
+     "tag": "laughing",
+     "text": "我跑不掉啦！",
+     "en": "I can't get away!"
+    }
+   ]
+  },
+  {
+   "scene": "中午，同一個公園，太陽在頭頂上方，又白又亮，天氣很熱。",
+   "act": "媽媽幫小傑戴上一頂黃色的小帽子，低頭看腳下，影子變成小小一團，貼在他的腳邊；媽媽拿著水壺站在旁邊，她的影子也很小。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "中午，太陽爬到頭頂上了。",
+     "en": "At noon, the sun climbs high up overhead."
+    },
+    {
+     "who": "小傑",
+     "tag": "surprised",
+     "text": "咦？我的影子變小了！",
+     "en": "Huh? My shadow got small!"
+    },
+    {
+     "who": "媽媽",
+     "text": "太陽在頭上，影子就好小。",
+     "en": "When the sun is right over you, your shadow is tiny."
+    }
+   ]
+  },
+  {
+   "scene": "傍晚，同一個公園，太陽在西邊快要下山，天空是橘紅色的。",
+   "act": "小傑還戴著黃色帽子。他的影子又被拉得又細又長，這次往另一邊（東邊）伸出去，比溜滑梯還長；小傑一手牽著媽媽，另一手舉高裝巨人；媽媽的影子也拉得好長，兩個長長的影子也手牽手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽要下山了，它又變低了。",
+     "en": "In the evening, the sun is going down. It's low in the sky again."
+    },
+    {
+     "who": "小傑",
+     "tag": "excited",
+     "text": "哇，影子又變成大巨人了！",
+     "en": "Wow! My shadow is a giant again!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "太陽越低，影子就越大。",
+     "en": "The lower the sun, the bigger the shadow."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小傑的房間，大燈關了，只有一盞檯燈照著白色的牆，窗外有月亮。",
+   "act": "小傑換上藍色睡衣，坐在床上；媽媽把兩隻手靠在一起，在牆上做出小狗的影子，小狗有尖尖的耳朵、嘴巴一開一合。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，媽媽打開檯燈，照著白色的牆。",
+     "en": "At night, Mom turns on a lamp and shines it at the white wall."
+    },
+    {
+     "who": "媽媽",
+     "tag": "playful",
+     "text": "燈光也可以做影子喔，你看！",
+     "en": "Lamplight makes shadows, too. Look!"
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽的手，在牆上變成一隻小狗。",
+     "en": "Mom's hands turn into a little dog on the wall."
+    },
+    {
+     "who": "小傑",
+     "tag": "laughing",
+     "text": "汪汪！小狗好可愛！",
+     "en": "Woof woof! What a cute puppy!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個房間，晚上。分成兩格：第一格檯燈亮著，牆上有小鳥的影子；第二格燈關了，房間暗暗的，只有窗外的月光，牆上沒有影子。",
+   "act": "小傑把兩隻大拇指勾在一起、張開手指，在牆上做出一隻小鳥的影子，手指拍動像翅膀；媽媽笑著把手放在檯燈開關上；第二格小傑躺在被子裡，對著牆說晚安。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小傑也伸出手，做出一隻小鳥。",
+     "en": "Jake holds up his hands and makes a little bird."
+    },
+    {
+     "who": "小傑",
+     "tag": "proud",
+     "text": "看，我的小鳥在飛！",
+     "en": "Look, my bird is flying!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "好晚了，我們要關燈囉。",
+     "en": "It's late. Time to turn off the light."
+    },
+    {
+     "who": "旁白",
+     "text": "燈一關，影子就不見了。",
+     "en": "The light goes off, and the shadows are gone."
+    },
+    {
+     "who": "小傑",
+     "tag": "sleepy",
+     "text": "晚安，影子，明天見！",
+     "en": "Good night, Shadow. See you tomorrow!"
+    }
+   ]
+  }
+ ]
+}

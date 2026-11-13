@@ -1,0 +1,380 @@
+{
+ "id": "ugly-duckling",
+ "title": "醜小鴨",
+ "title_en": "The Ugly Duckling",
+ "size": "中",
+ "roles": {
+  "醜小鴨": "灰色的小鴨，小男孩聲音，害羞、容易難過，最後驚喜又開心。",
+  "鴨媽媽": "溫柔的鴨媽媽，聲音暖、慢慢說，會護著醜小鴨。",
+  "小鴨們": "四隻黃色小鴨一起說話，用一個聲音代表，調皮愛笑，結尾真心道歉。",
+  "農夫爺爺": "鄉下的農夫爺爺，聲音低沉、慢吞吞、很和氣。",
+  "天鵝": "白天鵝，溫柔的年輕女生聲音，親切歡迎新朋友。"
+ },
+ "cast": {
+  "醜小鴨": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "鴨媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小鴨們": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "農夫爺爺": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "天鵝": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第3頁『最會游泳』，第8頁『我會飛了』，第9頁『會不會』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有人』，第11頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "膀",
+   "where": "第8頁『翅膀』",
+   "read": "bǎng"
+  },
+  {
+   "char": "結",
+   "where": "第6頁『結冰』",
+   "read": "jié"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "春天的池塘邊，早上。草地上開著小黃花，池塘旁邊有一叢蘆葦，蘆葦下有一個草窩，窩裡有五顆蛋，其中一顆特別大、顏色比較灰。",
+   "act": "鴨媽媽出場：白色母鴨、橘色嘴巴，脖子上圍著一條藍色小領巾。她坐在窩上，低頭看著蛋，滿臉期待。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天到了，池塘邊開滿了小花。",
+     "en": "Spring had come, and little flowers bloomed by the pond."
+    },
+    {
+     "who": "旁白",
+     "text": "鴨媽媽坐在窩裡，等寶寶出來。",
+     "en": "Mother Duck sat on her nest, waiting for her babies."
+    },
+    {
+     "who": "旁白",
+     "text": "有一顆蛋，特別大。",
+     "en": "One of the eggs was extra big."
+    },
+    {
+     "who": "鴨媽媽",
+     "tag": "gentle",
+     "text": "小寶寶，快出來吧！",
+     "en": "Come out, little ones!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個草窩，早上，地上散著破蛋殼。",
+   "act": "四隻黃色毛茸茸的小鴨從蛋殼裡探出頭，張嘴叫媽媽；最後那顆大蛋裡鑽出一隻灰色小鴨：比其他小鴨大一圈、毛亂翹、腳是很大的橘色腳掌。鴨媽媽歪著頭，驚訝地看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個、兩個、三個、四個，小黃鴨出來了！",
+     "en": "One, two, three, four little yellow ducklings came out!"
+    },
+    {
+     "who": "小鴨們",
+     "tag": "happy",
+     "text": "媽媽好！",
+     "en": "Hello, Mama!"
+    },
+    {
+     "who": "旁白",
+     "text": "最後一顆大蛋裡，出來一隻灰色的小鴨。",
+     "en": "From the last big egg came a gray duckling."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "shy",
+     "text": "媽媽好。",
+     "en": "Hello, Mama."
+    },
+    {
+     "who": "鴨媽媽",
+     "tag": "surprised",
+     "text": "咦，你跟大家不一樣呢。",
+     "en": "Oh my, you look different from the others."
+    }
+   ]
+  },
+  {
+   "scene": "夏天的池塘，大太陽，水面亮晶晶，岸邊的樹長滿綠葉，水上漂著荷葉。",
+   "act": "鴨媽媽在前面游，四隻黃色小鴨排成一排跟著，回頭指著灰色小鴨大笑；灰色小鴨落在最後，低著頭；鴨媽媽回頭用翅膀護著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天到了，鴨媽媽帶大家去游泳。",
+     "en": "Summer came, and Mother Duck took everyone swimming."
+    },
+    {
+     "who": "小鴨們",
+     "tag": "laughing",
+     "text": "你好醜喔！灰色的，大腳丫！",
+     "en": "You're so ugly! All gray, with big feet!"
+    },
+    {
+     "who": "旁白",
+     "text": "醜小鴨低下頭，好傷心。",
+     "en": "The Ugly Duckling hung his head. He felt so sad."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "sad",
+     "text": "我真的很醜嗎？",
+     "en": "Am I really ugly?"
+    },
+    {
+     "who": "鴨媽媽",
+     "tag": "gentle",
+     "text": "不要笑他。他最會游泳了！",
+     "en": "Don't laugh at him. He's the best swimmer of all!"
+    }
+   ]
+  },
+  {
+   "scene": "夏天傍晚的池塘邊，天空是橘色的。",
+   "act": "醜小鴨一個人搖搖擺擺地沿著小路走遠，回頭看了池塘一眼，眼角有淚；遠處池塘邊，四隻黃色小鴨圍成一圈在玩，沒有看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，小鴨們都叫他醜小鴨，不跟他玩。",
+     "en": "But the other ducklings called him the Ugly Duckling and would not play with him."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "sad",
+     "text": "沒有人喜歡我。我去別的地方吧。",
+     "en": "Nobody likes me. I'll go somewhere else."
+    },
+    {
+     "who": "旁白",
+     "text": "醜小鴨離開池塘，走了好遠，好遠。",
+     "en": "The Ugly Duckling left the pond and walked far, far away."
+    },
+    {
+     "who": "旁白",
+     "text": "他一邊走，一邊掉眼淚。",
+     "en": "He cried as he walked."
+    }
+   ]
+  },
+  {
+   "scene": "秋天的湖邊，樹葉變成黃色和紅色，地上鋪滿落葉；湖邊有一大叢枯黃的蘆葦。天上一群白色大鳥排成一排飛過。",
+   "act": "醜小鴨灰色、比夏天大了一點，躲在蘆葦裡，抬頭看天上的白色大鳥，張大嘴巴，眼睛亮亮的，很羨慕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天到了，樹葉變黃，掉了滿地。",
+     "en": "Autumn came. The leaves turned yellow and covered the ground."
+    },
+    {
+     "who": "旁白",
+     "text": "醜小鴨一個人，躲在蘆葦裡。",
+     "en": "The Ugly Duckling hid in the reeds all by himself."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，天上飛過一群白色的大鳥。",
+     "en": "One day, a flock of big white birds flew across the sky."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "surprised",
+     "text": "哇，好美的鳥！我也好想飛！",
+     "en": "Wow, what beautiful birds! I wish I could fly, too!"
+    }
+   ]
+  },
+  {
+   "scene": "冬天的湖邊，下著雪，湖面結了冰，樹枝光禿禿的，到處白茫茫。",
+   "act": "醜小鴨縮成一團，坐在冰上的雪堆旁發抖，身上積了一點雪，眼睛含著淚。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天到了，好冷，好冷。",
+     "en": "Winter came. It was so cold, so cold."
+    },
+    {
+     "who": "旁白",
+     "text": "湖水結冰了，雪一直下。",
+     "en": "The lake froze, and the snow kept falling."
+    },
+    {
+     "who": "旁白",
+     "text": "他縮成一團，冷到一直發抖。",
+     "en": "He curled up in a ball and shivered and shivered."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "sad",
+     "text": "好冷喔。我好餓，好想媽媽。",
+     "en": "I'm so cold. I'm so hungry. I miss Mama."
+    }
+   ]
+  },
+  {
+   "scene": "農夫爺爺家的小木屋裡，晚上，窗外下著雪；火爐燒得紅紅的，火爐邊有一個鋪了稻草的籃子。",
+   "act": "農夫爺爺出場：白鬍子、戴紅色毛線帽、穿棕色厚外套和長靴。他蹲在火爐邊，笑著看稻草籃裡的醜小鴨；醜小鴨閉著眼睛，舒服地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一位農夫爺爺經過，把他抱回家。",
+     "en": "A kind old farmer came by and carried him home."
+    },
+    {
+     "who": "農夫爺爺",
+     "tag": "gentle",
+     "text": "小傢伙，別怕。來火爐邊取暖吧。",
+     "en": "Don't be afraid, little one. Come and warm up by the fire."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "happy",
+     "text": "好溫暖！謝謝爺爺！",
+     "en": "It's so warm! Thank you, Grandpa!"
+    },
+    {
+     "who": "旁白",
+     "text": "醜小鴨在爺爺家，過完了冬天。",
+     "en": "The Ugly Duckling stayed at Grandpa's house all winter."
+    }
+   ]
+  },
+  {
+   "scene": "春天，農夫爺爺家門口，冰雪融化，地上冒出綠草和小花，樹上開了粉紅色的花。",
+   "act": "醜小鴨已經比以前大很多，羽毛大部分已經是白色，只剩幾根灰毛；他張開一對大翅膀用力拍，飛離地面；農夫爺爺站在門口，笑著揮手送他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天又來了，冰化了，花開了。",
+     "en": "Spring came again. The ice melted, and the flowers bloomed."
+    },
+    {
+     "who": "旁白",
+     "text": "醜小鴨張開翅膀，用力一拍。",
+     "en": "The Ugly Duckling spread his wings and flapped hard."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "excited",
+     "text": "咦？我會飛了！我飛起來了！",
+     "en": "Huh? I can fly! I'm flying!"
+    },
+    {
+     "who": "農夫爺爺",
+     "tag": "happy",
+     "text": "去吧，小傢伙！去找你的家！",
+     "en": "Off you go, little one! Go and find your home!"
+    }
+   ]
+  },
+  {
+   "scene": "春天的池塘，就是第一頁那個開滿小黃花的池塘。水面很清，倒映著藍天。",
+   "act": "三隻白天鵝在水上優雅地游；剛降落的主角站在岸邊，害羞地低頭往水裡看；這一頁只畫他白色的背影和水面，先不畫倒影。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他飛呀飛，飛回了小時候的池塘。",
+     "en": "He flew and flew, all the way back to the pond where he was born."
+    },
+    {
+     "who": "旁白",
+     "text": "池塘裡，有三隻白天鵝。",
+     "en": "On the pond were three white swans."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "scared",
+     "text": "我這麼醜，他們會不會笑我？",
+     "en": "I'm so ugly. Will they laugh at me?"
+    },
+    {
+     "who": "旁白",
+     "text": "他低下頭，看到水裡的自己。",
+     "en": "He bent his head and saw himself in the water."
+    }
+   ]
+  },
+  {
+   "scene": "同一個春天的池塘，近看水面。",
+   "act": "水面倒影裡是一隻雪白的天鵝：長長的彎脖子、橘色嘴巴；主角現在全身雪白，張大眼睛驚喜地看著倒影；三隻白天鵝游到他身邊，其中一隻低頭向他打招呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "水裡有一隻白色的大鳥，又美又亮。",
+     "en": "In the water was a big white bird, beautiful and bright."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "surprised",
+     "text": "這是我嗎？我變成天鵝了！",
+     "en": "Is that me? I've become a swan!"
+    },
+    {
+     "who": "旁白",
+     "text": "三隻天鵝游過來，低頭向他打招呼。",
+     "en": "The three swans swam over and bowed their heads to say hello."
+    },
+    {
+     "who": "天鵝",
+     "tag": "gentle",
+     "text": "你好，新朋友！一起來游泳吧！",
+     "en": "Hello, new friend! Come swim with us!"
+    }
+   ]
+  },
+  {
+   "scene": "春天的池塘，陽光很好，岸邊開滿小黃花。",
+   "act": "主角變成的白天鵝浮在水上，三隻天鵝在旁邊；圍著藍領巾的鴨媽媽游到他身邊，張開翅膀抱住他；四隻黃色小鴨在前面不好意思地低頭道歉，白天鵝溫柔地笑著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "原來，醜小鴨是一隻小天鵝。",
+     "en": "The Ugly Duckling had been a little swan all along."
+    },
+    {
+     "who": "旁白",
+     "text": "鴨媽媽和小鴨們，也游過來了。",
+     "en": "Mother Duck and the ducklings swam over, too."
+    },
+    {
+     "who": "鴨媽媽",
+     "tag": "gentle",
+     "text": "孩子，歡迎回家！",
+     "en": "Welcome home, my little one!"
+    },
+    {
+     "who": "小鴨們",
+     "tag": "sad",
+     "text": "對不起，我們不該笑你。",
+     "en": "Sorry, we shouldn't have laughed at you."
+    },
+    {
+     "who": "醜小鴨",
+     "tag": "happy",
+     "text": "沒關係！大家一起玩吧！",
+     "en": "That's okay! Let's all play together!"
+    }
+   ]
+  }
+ ]
+}
