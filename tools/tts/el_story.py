@@ -161,12 +161,18 @@ def lines_html(pages, lang):
     return '<br>'.join(f"<b>{html.escape(l['who'])}</b>：{html.escape(text_of(l, lang))}" for p in pages for l in p['lines'])
 
 
+LINK = False   # page --link：音檔不內嵌，改用相對路徑連到 _tts 裡的檔（整批好幾小時時用）
+
+
 def opts(args):
     """把 --pages 1,2／--out 名字 從參數裡拿出來，回 (其餘參數, 頁碼集合或 None, out)。"""
     rest, pages, out = [], None, None
     it = iter(args)
     for a in it:
-        if a == '--pages':
+        if a == '--link':
+            global LINK
+            LINK = True
+        elif a == '--pages':
             pages = {int(x) for x in next(it).split(',')}
         elif a == '--out':
             out = next(it)
@@ -350,12 +356,14 @@ def cmd_page(args=()):
                 continue
             joined = os.path.join(d, f'_整本_{lang}.mp3')
             concat(files, joined, gap=1.2)
-            if NEW:
+            if NEW and not LINK:
                 small = joined.replace('.mp3', '_48k.mp3')
                 subprocess.run([ffmpeg(), '-loglevel', 'error', '-y', '-i', joined, '-ac', '1', '-b:a', '48k', small], check=True)
                 joined = small
+            player = (f"<audio controls preload='none' src='{html.escape(os.path.relpath(joined, WORK).replace(os.sep, '/'))}'></audio>"
+                      if LINK else audio_tag(joined))
             text = ''.join(f"<div class='pg'><span class='n'>{n}</span><div>{lines_html([s['pages'][n - 1]], lang)}</div></div>" for n in nums)
-            rows.append(f"<div class='v'><div class='t'><span class='k'>{'中文' if lang == 'zh' else 'English'}</span></div>{audio_tag(joined)}{text}</div>")
+            rows.append(f"<div class='v'><div class='t'><span class='k'>{'中文' if lang == 'zh' else 'English'}</span></div>{player}{text}</div>")
     dst = os.path.join(WORK, (out or ('試聽_新故事整本' if NEW else '試聽_故事書整本')) + '.html')
     open(dst, 'w', encoding='utf-8').write(html_page('故事書整本試聽', '每頁之間停 1.2 秒。聽到念錯、語氣怪或聲音不對的，告訴我哪一本、哪種語言、第幾頁，那一頁可以單獨重錄。', rows))
     print('寫出', dst, os.path.getsize(dst) // 1024, 'KB')
