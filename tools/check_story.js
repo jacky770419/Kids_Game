@@ -44,7 +44,8 @@ const ZY_OK = /^˙?[ㄅ-ㄩ]{1,3}[ˊˇˋ]?$/;
 Object.keys(Data.ZY).forEach((c) => { if (!ZY_OK.test(Data.ZY[c])) fail('ZY「' + c + '」的注音寫法怪怪的：' + Data.ZY[c]); });
 Object.keys(Data.ZY_PHRASES).forEach((w) => {
   if (Data.ZY_PHRASES[w].length !== w.length) fail('ZY_PHRASES「' + w + '」的注音數跟字數不一樣');
-  Data.ZY_PHRASES[w].forEach((z) => { if (!ZY_OK.test(z)) fail('ZY_PHRASES「' + w + '」的注音寫法怪怪的：' + z); });
+  // 標點（例如「嗯？」的問號）寫 null
+  Data.ZY_PHRASES[w].forEach((z, i) => { if (!(z === null && !HAN.test(w[i])) && !ZY_OK.test(z)) fail('ZY_PHRASES「' + w + '」的注音寫法怪怪的：' + z); });
 });
 Object.keys(Data.TAPS || {}).forEach((id) => { if (!Data.SPRITES[id]) fail('TAPS 裡的 ' + id + ' 不在 SPRITES'); });
 
@@ -68,8 +69,46 @@ function checkLines(where, pg, lang) {
   });
 }
 
+/* 新書（js/books/，照 tools/tts/stories-new/_上架.json）：載入每本的兩個檔，跟舊書一起檢查。另外檢查
+     H. 角色 id 全站不重複（新書的 sprites 會蓋掉同名的舊角色）
+     I. js/story-books.js 是最新的：本數、順序、每個檔的雜湊都跟磁碟上一樣（不然 iPad 不會重抓改過的檔） */
+global.StoryData = Data;
+const shelf = JSON.parse(read('tools/tts/stories-new/_上架.json')).books;
+// 還沒上架、正在寫分鏡的書：node tools/check_story.js --book <id> [--book <id>]（不檢查書單）
+const extra = process.argv.flatMap((a, i, all) => (a === '--book' && all[i + 1] ? [all[i + 1]] : [])).filter((id) => !shelf.includes(id));
+const books = [];
+shelf.concat(extra).forEach((id) => {
+  const f1 = 'js/books/' + id + '-script.js';
+  const f2 = 'js/books/' + id + '.js';
+  if (!exists(f1) || !exists(f2)) { fail(id + '：上架清單有、但 ' + (exists(f1) ? f2 : f1) + ' 不存在'); return; }
+  const before = new Set(Object.keys(Data.SPRITES));
+  (0, eval)(read(f1));
+  const add = Data.addBook;
+  Data.addBook = (bid, def) => {
+    Object.keys(def.sprites || {}).forEach((a) => { if (before.has(a)) fail(id + '：角色 id「' + a + '」跟別本重複了'); });
+    add(bid, def);
+  };
+  (0, eval)(read(f2));
+  Data.addBook = add;
+  if (!Data.BOOK_SCRIPTS[id] || !Data.STAGING[id]) { fail(id + '：js/books 的檔沒有註冊這本'); return; }
+  books.push(Data.BOOK_SCRIPTS[id]);
+});
+(() => {
+  global.STORY_BOOKS = undefined;
+  (0, eval)(read('js/story-books.js'));
+  const list = global.STORY_BOOKS || [];
+  if (list.map((b) => b.id).join() !== shelf.join()) { fail('js/story-books.js 的書跟上架清單不一樣：重跑 node tools/build_books.js'); return; }
+  const crypto = require('crypto');
+  list.forEach((b) => b.files.forEach(([f, h]) => {
+    if (!exists(f)) { fail('js/story-books.js 列了不存在的檔 ' + f); return; }
+    const now = crypto.createHash('sha1').update(fs.readFileSync(path.join(root, f))).digest('hex').slice(0, 10);
+    if (now !== h) fail('js/story-books.js 裡 ' + f + ' 的雜湊過期了：重跑 node tools/build_books.js');
+  }));
+})();
+
+const voiceOf = (st, who) => (st.voices && st.voices[who]) || Data.VOICES[who];
 const count = { zh: 0, en: 0 };
-SCRIPT.stories.forEach((s) => {
+SCRIPT.stories.concat(books).forEach((s) => {
   const st = Data.STAGING[s.id];
   if (!st) { fail(s.id + '：沒有分鏡（StoryData.STAGING）'); return; }
   if (st.pages.length !== s.pages.length) fail(s.id + '：錄音 ' + s.pages.length + ' 頁、分鏡 ' + st.pages.length + ' 頁');
@@ -91,8 +130,8 @@ SCRIPT.stories.forEach((s) => {
     checkLines(where, pg, 'zh');
     count.zh += pg.lines.length;
     pg.lines.forEach((ln) => {
-      const voice = Data.VOICES[ln.who];
-      if (!voice) fail(where + '：說話的人「' + ln.who + '」不在 VOICES');
+      const voice = voiceOf(st, ln.who);
+      if (!voice) fail(where + '：說話的人「' + ln.who + '」不在 VOICES（新書是那本的 voices）');
       else if (voice.actor && !Data.SPRITES[voice.actor]) fail(where + '：「' + ln.who + '」指到沒有圖的角色 ' + voice.actor);
     });
     if (entry.en) {
@@ -119,5 +158,6 @@ if (problems.length) {
   problems.forEach((p) => console.error('  - ' + p));
   process.exit(1);
 }
-console.log('故事書對帳通過：' + SCRIPT.stories.length + ' 個故事、' +
-  SCRIPT.stories.reduce((n, s) => n + s.pages.length, 0) + ' 頁，中文 ' + count.zh + ' 句、英文 ' + count.en + ' 句，注音 ' + Object.keys(Data.ZY).length + ' 字。');
+const all = SCRIPT.stories.concat(books);
+console.log('故事書對帳通過：' + all.length + ' 個故事（新書 ' + books.length + ' 本）、' +
+  all.reduce((n, s) => n + s.pages.length, 0) + ' 頁，中文 ' + count.zh + ' 句、英文 ' + count.en + ' 句，注音 ' + Object.keys(Data.ZY).length + ' 字。');

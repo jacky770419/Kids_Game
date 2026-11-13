@@ -13,15 +13,15 @@ import json, os, re, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..', '..'))
 WORK = os.path.join(ROOT, '_tts', 'stories')
-DATA = json.load(open(os.path.join(HERE, 'stories.json'), encoding='utf-8'))
 AUDIO = os.path.join(ROOT, 'assets', 'story', 'audio')
-os.makedirs(AUDIO, exist_ok=True)
 
 import imageio_ffmpeg
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 
 
-def build_page(sid, n, page, lang):
+def build_page(sid, n, page, lang, dst=None, url=None):
+    """dst＝轉好的音檔要放哪（預設 assets/story/audio/<id>-N[-en].mp3）、url＝遊戲裡寫的路徑。
+    tools/tts/build_books.py（新書）也用這支，只是放的位置不同。"""
     d = os.path.join(WORK, sid) if lang == 'zh' else os.path.join(WORK, sid, 'en')
     key = 'text' if lang == 'zh' else 'en'
     t = json.load(open(os.path.join(d, f'p{n}.timing.json'), encoding='utf-8'))
@@ -43,33 +43,45 @@ def build_page(sid, n, page, lang):
         lead = len(text) - len(text.lstrip())
         ts = [round(x, 2) for x in starts[i0 + skip + lead:i0 + skip + lead + len(want)]]
         lines.append({'who': line['who'], 'text': want, 's': round(starts[i0 + skip + lead], 2), 'e': round(seg['end_time_seconds'], 2), 't': ts})
-    name = f"{sid}-{n}.mp3" if lang == 'zh' else f"{sid}-{n}-en.mp3"
-    dst = os.path.join(AUDIO, name)
-    subprocess.run([FF, '-loglevel', 'error', '-y', '-i', os.path.join(d, f'p{n}.mp3'), '-ac', '1', '-ar', '44100', '-b:a', '64k', dst], check=True)
-    return {'audio': 'assets/story/audio/' + name, 'dur': round(ends[-1], 2), 'lines': lines}, os.path.getsize(dst)
+    if dst is None:
+        name = f"{sid}-{n}.mp3" if lang == 'zh' else f"{sid}-{n}-en.mp3"
+        dst = os.path.join(AUDIO, name)
+        url = 'assets/story/audio/' + name
+    src = os.path.join(d, f'p{n}.mp3')
+    # 已經轉過、母帶沒換就不重轉（新書的檔名雜湊才不會每次都變、iPad 才不用重抓）
+    if not (os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src)):
+        subprocess.run([FF, '-loglevel', 'error', '-y', '-i', src, '-ac', '1', '-ar', '44100', '-b:a', '64k', dst], check=True)
+    return {'audio': url, 'dur': round(ends[-1], 2), 'lines': lines}, os.path.getsize(dst)
 
 
-out = {'stories': []}
-total = {'zh': 0, 'en': 0}
-count = {'zh': 0, 'en': 0}
-for s in DATA['stories']:
-    has_en = all(os.path.exists(os.path.join(WORK, s['id'], 'en', f'p{n}.timing.json')) for n in range(1, len(s['pages']) + 1))
-    pages = []
-    for n, page in enumerate(s['pages'], 1):
-        entry = {}
-        for lang in (('zh', 'en') if has_en else ('zh',)):
-            entry[lang], size = build_page(s['id'], n, page, lang)
-            total[lang] += size
-            count[lang] += 1
-        pages.append(entry)
-    title = {'zh': s['title']}
-    if has_en and s.get('title_en'):
-        title['en'] = s['title_en']
-    out['stories'].append({'id': s['id'], 'title': title, 'pages': pages})
-    print(s['id'], '中文' + ('＋英文' if has_en else '（英文還沒錄）'))
+def main():
+    DATA = json.load(open(os.path.join(HERE, 'stories.json'), encoding='utf-8'))
+    os.makedirs(AUDIO, exist_ok=True)
+    out = {'stories': []}
+    total = {'zh': 0, 'en': 0}
+    count = {'zh': 0, 'en': 0}
+    for s in DATA['stories']:
+        has_en = all(os.path.exists(os.path.join(WORK, s['id'], 'en', f'p{n}.timing.json')) for n in range(1, len(s['pages']) + 1))
+        pages = []
+        for n, page in enumerate(s['pages'], 1):
+            entry = {}
+            for lang in (('zh', 'en') if has_en else ('zh',)):
+                entry[lang], size = build_page(s['id'], n, page, lang)
+                total[lang] += size
+                count[lang] += 1
+            pages.append(entry)
+        title = {'zh': s['title']}
+        if has_en and s.get('title_en'):
+            title['en'] = s['title_en']
+        out['stories'].append({'id': s['id'], 'title': title, 'pages': pages})
+        print(s['id'], '中文' + ('＋英文' if has_en else '（英文還沒錄）'))
 
-js = ('/* 由 tools/tts/build_story.py 產生，不要手改：故事的文字、誰說、每句與每個字元的時間（中文與英文各一份）。\n'
-      '   要改故事內容，改 tools/tts/stories.json、重錄那一頁、再重跑這支。 */\n'
-      'window.STORY_SCRIPT = ' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ';\n')
-open(os.path.join(ROOT, 'js', 'story-script.js'), 'w', encoding='utf-8', newline='\n').write(js)
-print(f"音檔 中文 {count['zh']} 個 {total['zh'] // 1024} KB、英文 {count['en']} 個 {total['en'] // 1024} KB；js/story-script.js {len(js) // 1024} KB")
+    js = ('/* 由 tools/tts/build_story.py 產生，不要手改：故事的文字、誰說、每句與每個字元的時間（中文與英文各一份）。\n'
+          '   要改故事內容，改 tools/tts/stories.json、重錄那一頁、再重跑這支。 */\n'
+          'window.STORY_SCRIPT = ' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ';\n')
+    open(os.path.join(ROOT, 'js', 'story-script.js'), 'w', encoding='utf-8', newline='\n').write(js)
+    print(f"音檔 中文 {count['zh']} 個 {total['zh'] // 1024} KB、英文 {count['en']} 個 {total['en'] // 1024} KB；js/story-script.js {len(js) // 1024} KB")
+
+
+if __name__ == '__main__':
+    main()

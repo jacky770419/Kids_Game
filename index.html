@@ -136,6 +136,7 @@
 <script src="js/music.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/home.js"></script>
+<script src="js/book-sync.js"></script>
 <script>
 /* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
    權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
@@ -162,7 +163,14 @@ if ('serviceWorker' in navigator) {
   if (!('serviceWorker' in navigator)) return;
   let current = '';
   let extra = '';
-  const show = () => { tag.textContent = [current, extra].filter(Boolean).join('  '); };
+  let books = '';
+  const show = () => { tag.textContent = [current, extra, books].filter(Boolean).join('  '); };
+  // 新故事書在背景下載（js/book-sync.js）：還沒抓完就顯示「故事書 3/5 本」
+  window.addEventListener('book-sync', (e) => {
+    const d = e.detail || {};
+    books = d.total && d.ready < d.total ? '故事書 ' + d.ready + '/' + d.total + ' 本' : '';
+    show();
+  });
   const ask = (w) => new Promise((resolve) => {
     if (!w || typeof MessageChannel !== 'function') return resolve('');
     const ch = new MessageChannel();

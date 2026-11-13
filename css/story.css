@@ -32,14 +32,43 @@ body.story {
   /* 上面留給星星徽章、下面留給底邊，也讓卡片離下緣遠一點 */
   padding: 14px calc(28px + var(--sr)) calc(40px + var(--sb)) calc(28px + var(--sl));
 }
+/* 書變多了（舊的 6 本＋新書）：一個畫面放兩排多一點（直放三排多一點），露出下一排的頭，她才知道下面還有 */
 #storyRow {
-  height: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 0;
-  grid-template-rows: repeat(2, minmax(210px, 310px));
+  grid-template-rows: none;
+  grid-auto-rows: max(210px, min(310px, calc((100dvh - 200px) / 2.3)));
   align-content: start;
 }
+
+/* 新書還沒下載好、又沒網路：卡片變淡、右下角一個下載箭頭，點了只搖一下 */
+.story-card.pending .story-cover,
+.story-card.pending .story-title { opacity: .45; filter: grayscale(.7); }
+.story-card .badge-dl { display: none; }
+.story-card.pending .badge-dl {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 14px;
+  bottom: 62px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, .18);
+  pointer-events: none;
+}
+.story-card .badge-dl svg { width: 32px; height: 32px; }
+.story-card.nope { animation: st-nope .4s ease; }
+@keyframes st-nope {
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+/* 第一次打開新書：載入那本的資料時封面輕輕呼吸 */
+.story-card.opening .story-cover { animation: st-opening .8s ease-in-out infinite alternate; }
+@keyframes st-opening { to { opacity: .6; } }
 
 .story-card {
   display: flex;
@@ -192,7 +221,7 @@ body.story {
   .cap-face { width: calc(var(--u) * 12); height: calc(var(--u) * 12); }
   #storyRow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(200px, 310px));
+    grid-auto-rows: max(200px, min(310px, calc((100dvh - 220px) / 3.3)));
   }
   .story-title { font-size: clamp(22px, 3.8vw, 30px); }
   .story-title.en { font-size: clamp(16px, 2.6vw, 21px); }

@@ -1,0 +1,4 @@
+# 新書的檔用內容雜湊判斷要不要重新下載（js/story-books.js）：本機跟線上的位元組必須一樣，
+# 所以固定 LF，不讓 Windows 的 autocrlf 改換行。
+js/books/*.js text eol=lf
+js/story-books.js text eol=lf

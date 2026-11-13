@@ -19,6 +19,8 @@
   'use strict';
   const SCRIPT = window.STORY_SCRIPT;
   const Data = window.StoryData;
+  const BOOKS = window.STORY_BOOKS || [];   // 新書的書單（js/story-books.js）：書名、封面、要下載的檔
+  const Sync = window.BookSync || null;     // 新書背景下載（js/book-sync.js）
   const $ = (id) => document.getElementById(id);
 
   const selectScreen = $('storySelect');
@@ -242,8 +244,16 @@
   const seg = (typeof Intl !== 'undefined' && Intl.Segmenter) ? new Intl.Segmenter('zh-Hant', { granularity: 'word' }) : null;
   const TAIL = /[的得地了著過們子呢吧嗎啊呀囉喔邊裡上下中不]/;
   const HEAD = /[在把和一好很也都就還小大要沒]/;
-  const KEEP = Object.keys(Data.VOICES).filter((w) => w !== '旁白')
-    .concat(Object.keys(Data.ZY_PHRASES), ['稻草屋', '木頭屋', '磚塊屋']);
+  // 新書打開時會補 voices 和 ZY_PHRASES，所以每次開書重算一次
+  let KEEP = [];
+  function refreshKeep() {
+    KEEP = Object.keys(Data.VOICES).concat(Object.keys((staging && staging.voices) || {}))
+      .filter((w) => w !== '旁白')
+      .concat(Object.keys(Data.ZY_PHRASES), ['稻草屋', '木頭屋', '磚塊屋']);
+  }
+  refreshKeep();
+  // 說話的人：新書可以有自己的 voices（不同本的「小老鼠」是不同角色），沒寫的再查共用表
+  const voiceOf = (who) => (staging && staging.voices && staging.voices[who]) || Data.VOICES[who] || null;
   function insideWord(text) {
     const inside = new Set();
     KEEP.forEach((w) => {
@@ -323,7 +333,7 @@
     shownLine = ln;
     captionEl.innerHTML = '';
     const en = pageLang === 'en';
-    const voice = Data.VOICES[ln.who] || {};
+    const voice = voiceOf(ln.who) || {};
     captionEl.style.setProperty('--who', voice.color || '#FFD84D');
     // 誰在說話：圓框裡放那個角色的臉；旁白是一本書（線條圖示）
     const face = document.createElement('span');
@@ -586,7 +596,7 @@
   }
 
   function setTalking(ln, t) {
-    const voice = ln && t < ln.e ? Data.VOICES[ln.who] : null;
+    const voice = ln && t < ln.e ? voiceOf(ln.who) : null;
     const a = voice && voice.actor ? actors.get(voice.actor) : null;
     const el = a ? a.el : null;
     if (el === talking) return;
@@ -741,10 +751,45 @@
     srcs.forEach((s) => { const im = new Image(); im.src = s; });
   }
 
+  /* 新書第一次打開：把那本的兩個檔叫進來（有下載好就是從快取拿，沒有就走網路）。
+     同一本再開就不用再載。 */
+  const loading = new Map();
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const el = document.createElement('script');
+      el.src = src;
+      el.onload = resolve;
+      el.onerror = () => { el.remove(); reject(new Error(src)); };
+      document.body.appendChild(el);
+    });
+  }
+  function loadBook(id) {
+    if (Data.STAGING[id] && Data.BOOK_SCRIPTS[id]) return Promise.resolve();
+    if (!loading.has(id)) {
+      const p = loadScript('js/books/' + id + '-script.js').then(() => loadScript('js/books/' + id + '.js'));
+      p.catch(() => loading.delete(id));   // 失敗了（離線又還沒下載）下次再試
+      loading.set(id, p);
+    }
+    return loading.get(id);
+  }
+
+  let opening = '';
   function openStory(id, shot) {
-    story = SCRIPT.stories.find((s) => s.id === id);
+    // 截圖模式可以直接開還沒上架（書單裡還沒有）的新書：調分鏡時用
+    const meta = BOOKS.find((b) => b.id === id) || (shot && !SCRIPT.stories.some((s) => s.id === id));
+    if (meta && !(Data.STAGING[id] && Data.BOOK_SCRIPTS[id])) {
+      if (opening) return Promise.resolve();
+      opening = id;
+      const card = cards.get(id);
+      if (card) card.classList.add('opening');
+      return loadBook(id)
+        .then(() => { opening = ''; if (card) card.classList.remove('opening'); if (selectScreen.hidden === false || shot) openStory(id, shot); })
+        .catch(() => { opening = ''; if (card) { card.classList.remove('opening'); refreshCard(id); } });
+    }
+    story = SCRIPT.stories.find((s) => s.id === id) || Data.BOOK_SCRIPTS[id];
     staging = Data.STAGING[id];
-    if (!story || !staging) return;
+    if (!story || !staging) return Promise.resolve();
+    refreshKeep();
     if (window.Speech) window.Speech.cancel();   // 小熊泡泡還在念就停下來，不要跟故事疊在一起
     selectScreen.hidden = true;
     playScreen.hidden = false;
@@ -754,9 +799,10 @@
     document.body.classList.add('playing');     // 回家／換故事變成左邊一直排、小熊收起來（css/story.css）
     dotsEl.innerHTML = story.pages.map(() => '<i></i>').join('');
     layout();
-    if (shot) return;
+    if (shot) return Promise.resolve();
     preload(staging.pages[0]);
     showPage(0);
+    return Promise.resolve();
   }
 
   function showSelect() {
@@ -778,7 +824,7 @@
   function showEnd() {
     audio.pause();
     endCover.style.backgroundImage = 'url("' + staging.cover.bg + '")';
-    endCover.innerHTML = coverArt(staging);
+    endCover.innerHTML = coverArt(staging.cover);
     markDone(story.id);
     endOverlay.hidden = false;
     if (window.Sound) Sound.win();
@@ -812,44 +858,73 @@
   function showShot(spec) {
     const [id, pg, sec, lg] = spec.split(',');
     if (lg === 'en' || lg === 'zh') { lang = lg; applyLang(); }
-    openStory(id, true);
-    if (!story) return;
-    instant = true;
-    showPage(Math.max(0, (parseInt(pg, 10) || 1) - 1), true);
-    done = true;   // 不要因為時間到了就讓「下一頁」變綠色
-    step(parseFloat(sec) || 0);
+    openStory(id, true).then(() => {
+      if (!story) return;
+      instant = true;
+      showPage(Math.max(0, (parseInt(pg, 10) || 1) - 1), true);
+      done = true;   // 不要因為時間到了就讓「下一頁」變綠色
+      step(parseFloat(sec) || 0);
+      document.body.dataset.shot = 'ready';   // 無頭瀏覽器截圖等這個
+    });
   }
 
   // 封面：那本故事的背景＋主角（公主那本手上多一顆小星星）。選故事的卡片和「說完了」共用
-  function coverArt(st) {
-    const hero = Data.SPRITES[st.cover.actor][st.cover.pose];
-    return '<span class="cover-hero"><img alt="" draggable="false" src="' + hero.src + '">' +
-      (st.cover.star ? '<span class="cover-star a-art tw-star s-bright">' + starSvg() + '</span>' : '') + '</span>';
+  // cover＝分鏡裡的 { bg, actor, pose, star }，或新書書單裡的 { bg, hero（圖的路徑） }
+  function coverArt(cover) {
+    const src = cover.hero || Data.SPRITES[cover.actor][cover.pose].src;
+    return '<span class="cover-hero"><img alt="" draggable="false" src="' + src + '">' +
+      (cover.star ? '<span class="cover-star a-art tw-star s-bright">' + starSvg() + '</span>' : '') + '</span>';
   }
 
   /* 卡片＝浮起來的白色大按鈕（base.css 的 .pic-thumb）：上面封面、下面書名（中文是注音，英文是英文）。
      聽完過的右上角有一顆星星。 */
   const titles = [];
-  SCRIPT.stories.forEach((s) => {
-    const st = Data.STAGING[s.id];
-    if (!st) return;
+  const shelf = SCRIPT.stories.filter((s) => Data.STAGING[s.id])
+    .map((s) => ({ id: s.id, title: s.title, cover: Data.STAGING[s.id].cover }))
+    .concat(BOOKS.map((b) => ({ id: b.id, title: b.title, cover: b.cover, zy: b.zy, book: true })));
+  shelf.forEach((s) => {
     const card = document.createElement('button');
     card.type = 'button';
     card.className = 'pic-thumb story-card';
     const pic = document.createElement('span');
     pic.className = 'story-cover';
-    pic.style.backgroundImage = 'url("' + st.cover.bg + '")';
-    pic.innerHTML = coverArt(st);
+    pic.style.backgroundImage = 'url("' + s.cover.bg + '")';
+    pic.innerHTML = coverArt(s.cover);
     const title = document.createElement('span');
     title.className = 'story-title';
     titles.push({ el: title, story: s, card: card });
     card.appendChild(pic);
     card.appendChild(title);
     if (doneSet.has(s.id)) addStar(card);
-    card.addEventListener('click', () => { click(); openStory(s.id); });
+    card.addEventListener('click', () => {
+      // 新書還沒下載好、又沒網路：打不開，卡片搖一下就好
+      if (card.classList.contains('pending')) { pop(); card.classList.remove('nope'); void card.offsetWidth; card.classList.add('nope'); return; }
+      click();
+      openStory(s.id);
+    });
     cards.set(s.id, card);
     storyRow.appendChild(card);
+    if (s.book) refreshCard(s.id);
   });
+
+  /* 新書的卡片：有網路就能開（邊播邊下載）；沒網路時要整本都下載好才能開，還沒好的變灰、角落一個下載箭頭。 */
+  function refreshCard(id) {
+    const card = cards.get(id);
+    if (!card) return;
+    const ok = navigator.onLine !== false || (Sync && Sync.isReady(id));
+    card.classList.toggle('pending', !ok);
+    if (!ok && !card.querySelector('.badge-dl')) {
+      const b = document.createElement('span');
+      b.className = 'badge-dl';
+      b.setAttribute('aria-hidden', 'true');
+      b.innerHTML = icon('download');
+      card.appendChild(b);
+    }
+  }
+  const refreshCards = () => BOOKS.forEach((b) => refreshCard(b.id));
+  window.addEventListener('online', refreshCards);
+  window.addEventListener('offline', refreshCards);
+  window.addEventListener('book-sync', refreshCards);
 
   /* 語言：在首頁的大人專區切換（js/home.js 寫 localStorage kidsStoryLang），這一頁只讀。
      這裡把書名和「說完了」那句換成目前的語言。 */
@@ -859,7 +934,8 @@
       t.el.innerHTML = '';
       t.el.classList.toggle('en', !!en);
       if (en) t.el.textContent = t.story.title.en;
-      else renderText(t.el, t.story.title.zh, zhuyinOf(t.story.title.zh), 0);
+      // 新書的書名注音寫在書單裡（那本的注音表要打開才會載入）
+      else renderText(t.el, t.story.title.zh, t.story.zy || zhuyinOf(t.story.title.zh), 0);
       t.card.setAttribute('aria-label', en ? t.story.title.en : t.story.title.zh);
     });
     const endTitle = $('endTitle');

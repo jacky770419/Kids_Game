@@ -100,12 +100,18 @@ def do_bg(name):
     return dst, im.size
 
 
-os.makedirs(CHARS, exist_ok=True)
-os.makedirs(BG, exist_ok=True)
-names = sys.argv[1:] or sorted(f[:-4] for f in os.listdir(SRC) if f.endswith('.png'))
-total = 0
-for n in names:
-    dst, size = (do_bg if n.startswith('bg_') else do_char)(n)
-    total += os.path.getsize(dst)
-    print(f'{n:22s} → {os.path.relpath(dst, ROOT):40s} {size[0]}x{size[1]} {os.path.getsize(dst) // 1024} KB')
-print('合計', total // 1024, 'KB')
+def main():
+    os.makedirs(CHARS, exist_ok=True)
+    os.makedirs(BG, exist_ok=True)
+    names = sys.argv[1:] or sorted(f[:-4] for f in os.listdir(SRC) if f.endswith('.png'))
+    total = 0
+    for n in names:
+        dst, size = (do_bg if n.startswith('bg_') else do_char)(n)
+        total += os.path.getsize(dst)
+        print(f'{n:22s} → {os.path.relpath(dst, ROOT):40s} {size[0]}x{size[1]} {os.path.getsize(dst) // 1024} KB')
+    print('合計', total // 1024, 'KB')
+
+
+# 有 main 保護：tools/tts/build_books.py 會 import cutout() 來轉新書的圖（以前沒保護，import 就整批重轉）
+if __name__ == '__main__':
+    main()

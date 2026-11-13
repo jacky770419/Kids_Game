@@ -1,0 +1,14 @@
+{
+  "_說明": "新書插圖轉檔的個別設定：holes＝被圍住的白縫也挖掉（最小面積，原圖像素）；max＝最長邊（預設 640）；skip＝不轉的原圖",
+  "cinderella": {
+    "holes": {
+      "ella_cry": 280,
+      "ella_broom": 280
+    }
+  },
+  "zodiac": {
+    "skip": [
+      "bg_village_rain"
+    ]
+  }
+}

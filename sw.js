@@ -11,8 +11,13 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v27';
+const CACHE_VERSION = 'v28';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
+/* 新書（js/story-books.js 書單上的）不在預先快取裡：js/book-sync.js 在背景一本一本抓進這個 cache，
+   它不跟版號走（改版不刪、不重抓），每個檔用書單上的雜湊判斷要不要更新。
+   這裡只負責「讀」：核心 cache 沒有就看這裡。 */
+const BOOKS_CACHE = 'kids-books';
+const isBookFile = (path) => /\/(assets\/books|js\/books)\//.test(path);
 
 /* 預先快取清單。每一筆都由 tools/check_precache.js 與實際程式碼雙向對帳，
    少列（離線會缺資產）或多列（列了不存在的檔會讓 install 整個失敗）都會被測出來。 */
@@ -68,6 +73,8 @@ const PRECACHE = [
   'js/storage.js',
   'js/story-data.js',
   'js/story-script.js',
+  'js/story-books.js',
+  'js/book-sync.js',
   'js/story.js',
   'js/words.js',
   // 字型與圖示
@@ -478,7 +485,7 @@ self.addEventListener('activate', (event) => {
     caches.keys()
       .then((names) => Promise.all(
         names
-          .filter((n) => n.startsWith('kids-') && n !== CACHE_NAME)
+          .filter((n) => n.startsWith('kids-') && n !== CACHE_NAME && n !== BOOKS_CACHE)
           .map((n) => caches.delete(n))
       ))
       .then(() => self.clients.claim())
@@ -537,17 +544,23 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  // book-sync.js 自己在抓新書：不攔，直接走網路
+  if (req.headers.get('x-book-sync')) return;
 
+  const book = isBookFile(url.pathname);
   event.respondWith(
-    caches.match(req, { ignoreSearch: true, cacheName: CACHE_NAME }).then((cached) => {
+    caches.match(req, { ignoreSearch: true, cacheName: CACHE_NAME })
+      .then((hit) => hit || caches.match(req, { ignoreSearch: true, cacheName: BOOKS_CACHE }))
+      .then((cached) => {
       if (cached) {
         const range = req.headers.get('range');
         return range ? rangeResponse(cached.clone(), range) : cached;
       }
 
       return fetch(req).then((res) => {
-        // 只把成功的同源基本回應寫回快取；opaque／錯誤回應存了只會毒化快取
-        if (res && res.ok && res.type === 'basic') {
+        // 只把成功的同源基本回應寫回快取；opaque／錯誤回應存了只會毒化快取。
+        // 新書的檔不寫：那是 book-sync.js 的事（要帶雜湊），寫進核心 cache 下次改版就白丟了
+        if (res && res.ok && res.type === 'basic' && !book) {
           const copy = res.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(req, copy)).catch(() => {});
         }
