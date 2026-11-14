@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v28';
+const CACHE_VERSION = 'v29';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 /* 新書（js/story-books.js 書單上的）不在預先快取裡：js/book-sync.js 在背景一本一本抓進這個 cache，
    它不跟版號走（改版不刪、不重抓），每個檔用書單上的雜湊判斷要不要更新。
