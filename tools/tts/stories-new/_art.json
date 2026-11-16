@@ -6,6 +6,17 @@
       "ella_broom": 280
     }
   },
+  "chang-e": {
+    "holes": {
+      "suns_play": 5000,
+      "houyi_shoot": 10000,
+      "houyi_receive": 10000,
+      "houyi_look": 2200,
+      "houyi_moon": 2500,
+      "houyi_shout": 2000,
+      "houyi_smile_up": 3000
+    }
+  },
   "zodiac": {
     "skip": [
       "bg_village_rain"
