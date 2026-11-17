@@ -35,7 +35,7 @@
  "polyphones": [
   {
    "char": "蒙",
-   "where": "書名『蒙眼摸大象』，第1頁『蒙眼遊戲』『蒙起來』",
+   "where": "書名『蒙眼摸大象』，第1頁『蒙眼遊戲』『蒙起來』，第2頁『蒙上眼睛』，第8頁『蒙眼睛』",
    "read": "méng"
   },
   {
@@ -78,7 +78,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "四個人蒙上眼睛，伸出手，小心地往前走。",
+     "text": "四個好朋友蒙上眼睛，伸出手，小心地往前走。",
      "en": "The four friends tie on their blindfolds, stretch out their hands, and carefully walk forward."
     },
     {
@@ -101,12 +101,18 @@
   },
   {
    "scene": "草地中間，大象站著不動。",
-   "act": "小凱蒙著藍色眼罩，兩手抱住大象粗粗的前腿，臉貼在上面，一臉有把握地笑。大象低頭看他，偷偷笑。",
+   "act": "小凱蒙著藍色眼罩，兩手抱住大象粗粗的前腿，臉貼在上面，一臉有把握地笑。大象低頭看他，怕癢地縮了一下，用鼻子遮著嘴偷偷笑。",
    "lines": [
     {
      "who": "旁白",
      "text": "小凱摸到一個好粗、好硬的東西。",
      "en": "Kai touches something thick and hard."
+    },
+    {
+     "who": "大象",
+     "tag": "whispering",
+     "text": "嘻，好癢喔。",
+     "en": "Hee hee, that tickles."
     },
     {
      "who": "小凱",
@@ -179,7 +185,7 @@
   },
   {
    "scene": "草地中間，大象站在四個朋友中間。",
-   "act": "四個朋友還蒙著眼罩，各自站在大象身邊不同的地方，臉朝不同方向，張大嘴巴爭來爭去：小凱抱著腿、小猴抓著尾巴。小玲伸出雙手往下壓，請大家安靜。大象憋著笑，眼睛瞇成一條線。",
+   "act": "四個朋友還蒙著眼罩，各自站在大象身邊不同的地方，一起張大嘴巴喊：小凱抱著腿、小玲摸著耳朵、小兔抱著鼻子、小猴抓著尾巴，四張臉朝著不同方向。大象站在中間憋著笑，眼睛瞇成一條線。",
    "lines": [
     {
      "who": "小凱",
@@ -188,32 +194,36 @@
      "en": "It's a pillar!"
     },
     {
+     "who": "小玲",
+     "text": "是扇子！",
+     "en": "It's a fan!"
+    },
+    {
+     "who": "小兔",
+     "text": "是水管！",
+     "en": "It's a hose!"
+    },
+    {
      "who": "小猴",
-     "tag": "shouting",
      "text": "是繩子！",
      "en": "It's a rope!"
     },
     {
      "who": "旁白",
-     "text": "大家你一句，我一句，吵起來了。",
-     "en": "Everyone talks at once, and they start to argue."
-    },
-    {
-     "who": "小玲",
-     "tag": "gentle",
-     "text": "別吵了，我們一起拿下眼罩看吧！",
-     "en": "Stop arguing! Let's take off our blindfolds and look together!"
+     "text": "大家吵起來了。小朋友，你猜，這是什麼呢？",
+     "en": "Everyone starts to argue. Can you guess what it is?"
     }
    ]
   },
   {
    "scene": "草地中間，陽光燦爛。",
-   "act": "四個朋友把眼罩拿下來拿在手上，抬頭看著大象，嘴巴張得好大。大象舉起鼻子，笑得好開心。最後，大家一起坐在大象旁邊的草地上，手牽著手一起笑。",
+   "act": "小玲先把粉紅色眼罩拉下來，大家跟著一起拿下眼罩拿在手上，抬頭看著大象，嘴巴張得好大。大象舉起鼻子，笑得好開心，最後用鼻子捲起小猴的紅色布條，蓋在自己眼睛上，大家坐在旁邊的草地上哈哈大笑。",
    "lines": [
     {
-     "who": "旁白",
-     "text": "一、二、三！大家拿下眼罩。",
-     "en": "One, two, three! They take off their blindfolds."
+     "who": "小玲",
+     "tag": "gentle",
+     "text": "別吵了，一起拿下眼罩看吧！一、二、三！",
+     "en": "Stop arguing! Let's take off our blindfolds and look. One, two, three!"
     },
     {
      "who": "小兔",
@@ -229,14 +239,15 @@
     },
     {
      "who": "小凱",
-     "text": "原來，每個人摸到的，都是大象的一部分。",
-     "en": "So each of us touched just one little part of the elephant."
-    },
-    {
-     "who": "小玲",
      "tag": "happy",
      "text": "大家一起看，就看到整隻大象啦！",
      "en": "When we all look together, we can see the whole elephant!"
+    },
+    {
+     "who": "大象",
+     "tag": "laughing",
+     "text": "下次，換我蒙眼睛摸你們！",
+     "en": "Next time, it's my turn to wear a blindfold and touch you!"
     }
    ]
   }

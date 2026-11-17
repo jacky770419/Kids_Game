@@ -4,9 +4,9 @@
  "title_en": "The Old Man and the Snow Hats",
  "size": "短",
  "roles": {
-  "老爺爺": "住在雪國山村的老爺爺，慈祥的老爺爺聲音，說話慢慢的、很溫柔，看到石頭娃娃淋雪時好心疼。",
+  "老爺爺": "住在日本雪國山村的老爺爺，慈祥的老爺爺聲音，說話慢慢的、很溫柔，看到石像爺爺淋雪時好心疼。",
   "老奶奶": "老爺爺的太太，溫柔的奶奶聲音，說話輕輕的、帶著笑，一點也不怪老爺爺。",
-  "石頭娃娃": "路邊的六個石頭娃娃，半夜一起唱歌、說話，聲音又小又甜、整齊又可愛（六個娃娃一起說，用同一個聲音）。"
+  "石像爺爺": "路邊六個小小的石像爺爺，半夜一起念歌、說話，聲音溫和、慈祥、整齊（六個一起說，用同一個聲音）。"
  },
  "cast": {
   "老爺爺": {
@@ -17,9 +17,9 @@
    "find": "冰璃_Jui",
    "en": "Clara"
   },
-  "石頭娃娃": {
-   "find": "Lulu",
-   "en": "Cherry Twinkle"
+  "石像爺爺": {
+   "find": "YCHuang",
+   "en": "Brian"
   }
  },
  "polyphones": [
@@ -34,11 +34,6 @@
    "read": "méi"
   },
   {
-   "char": "什",
-   "where": "第7頁『什麼東西』",
-   "read": "shén"
-  },
-  {
    "char": "處",
    "where": "第8頁『遠處』",
    "read": "chù"
@@ -51,8 +46,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "從前，雪國的山村裡，住著老爺爺和老奶奶。",
-     "en": "Long ago, in a snowy mountain village, there lived an old man and an old woman."
+     "text": "從前，日本雪國的山村裡，住著老爺爺和老奶奶。",
+     "en": "Long ago, in a snowy mountain village in Japan, there lived an old man and an old woman."
     },
     {
      "who": "旁白",
@@ -62,7 +57,7 @@
     {
      "who": "老奶奶",
      "tag": "gentle",
-     "text": "老伴，把這五頂斗笠拿去賣吧。",
+     "text": "老爺爺，把這五頂斗笠拿去賣吧。",
      "en": "Dear, let's sell these five snow hats."
     },
     {
@@ -96,18 +91,18 @@
    ]
   },
   {
-   "scene": "回山村的雪地小路，天色變暗，雪越下越大。路邊排著六個小小的圓臉石頭娃娃，一樣高，頭上、肩上都堆著厚厚的雪。",
-   "act": "老爺爺抱著五頂斗笠，縮著脖子頂著風雪走路；他停下腳步，看見路邊的石頭娃娃，心疼地皺起眉頭。石頭娃娃是灰色的石頭，圓圓的頭、圓圓的臉，閉著眼睛微笑，兩手輕輕放在肚子前，像六個胖胖的小娃娃。",
+   "scene": "回山村的雪地小路，天色變暗，雪越下越大。路邊排著六個小小的石像爺爺，一樣高，頭上、肩上都堆著厚厚的雪。",
+   "act": "老爺爺抱著五頂斗笠，縮著脖子頂著風雪走路；他停下腳步，看見路邊的石像爺爺，心疼地皺起眉頭。石像爺爺是灰色的石頭像，圓圓的頭、圓圓的臉，閉著眼睛、和善地微笑，兩手輕輕放在肚子前，像六個慈祥的小老爺爺。",
    "lines": [
     {
      "who": "旁白",
-     "text": "回家的路上，雪越下越大。",
+     "text": "回家路上，雪越下越大。",
      "en": "On the way home, the snow fell harder and harder."
     },
     {
      "who": "旁白",
-     "text": "路邊站著六個石頭娃娃，頭上都是雪。",
-     "en": "By the road stood six little stone dolls, covered in snow."
+     "text": "路邊站著六個石像爺爺，頭上都是雪。",
+     "en": "By the road stood six little stone statues, all covered in snow."
     },
     {
      "who": "老爺爺",
@@ -119,12 +114,12 @@
   },
   {
    "scene": "同一條雪地小路，雪還在下。",
-   "act": "老爺爺用手拍掉石頭娃娃頭上的雪，一個一個幫他們戴上金黃色的斗笠，再把斗笠的繩子在下巴綁好；已經有五個娃娃戴上斗笠了。",
+   "act": "老爺爺用手拍掉石像爺爺頭上的雪，一個一個幫他們戴上金黃色的斗笠，再把斗笠的繩子在下巴綁好；已經有五個石像戴上斗笠了。",
    "lines": [
     {
      "who": "旁白",
-     "text": "老爺爺拍掉雪，幫娃娃戴上斗笠。",
-     "en": "The old man brushed off the snow and put a hat on each doll."
+     "text": "老爺爺拍掉雪，幫石像戴上斗笠。",
+     "en": "The old man brushed off the snow and put a hat on each statue."
     },
     {
      "who": "老爺爺",
@@ -139,13 +134,13 @@
    ]
   },
   {
-   "scene": "同一條雪地小路，最後一個石頭娃娃旁邊。",
-   "act": "第六個娃娃頭上光光的，積著雪；老爺爺看看空空的雙手，想了一下，解開自己頭上紅白格子的頭巾，綁在娃娃頭上。老爺爺的白頭髮沾滿雪花，可是他笑了。",
+   "scene": "同一條雪地小路，最後一個石像爺爺旁邊。",
+   "act": "第六個石像爺爺頭上光光的，積著雪；老爺爺看看空空的雙手，想了一下，解開自己頭上紅白格子的頭巾，綁在石像頭上。老爺爺的白頭髮沾滿雪花，可是他笑了。",
    "lines": [
     {
      "who": "旁白",
-     "text": "可是，第六個娃娃沒有斗笠了。",
-     "en": "But there was no hat left for the sixth doll."
+     "text": "可是，第六個石像沒有斗笠了。",
+     "en": "But there was no hat left for the sixth statue."
     },
     {
      "who": "老爺爺",
@@ -155,8 +150,8 @@
     },
     {
      "who": "旁白",
-     "text": "老爺爺拿下自己的頭巾，綁在娃娃頭上。",
-     "en": "The old man took off his own head scarf and tied it on the doll."
+     "text": "老爺爺拿下自己的頭巾，綁在石像頭上。",
+     "en": "The old man took off his own head scarf and tied it on the statue."
     },
     {
      "who": "老爺爺",
@@ -190,42 +185,42 @@
   },
   {
    "scene": "老爺爺家門外，半夜。大雪停了，月亮很亮，雪地上一排小小的腳印走到門口。",
-   "act": "屋裡老爺爺和老奶奶躺在被窩裡，睜開眼睛互相看，豎起耳朵聽；門外只畫出六個戴斗笠的小小影子，看不清楚是誰。",
+   "act": "屋裡老爺爺和老奶奶躺在被窩裡，睜開眼睛互相看，豎起耳朵聽；門外只畫出六個戴斗笠、背著大包袱的小小影子，看不清楚是誰，樣子圓圓的、很可愛，不嚇人。",
    "lines": [
     {
      "who": "旁白",
-     "text": "半夜，門外有人在唱歌：",
-     "en": "In the middle of the night, someone was singing outside."
+     "text": "半夜，門外有人一起念著：",
+     "en": "In the middle of the night, voices outside were chanting together."
     },
     {
-     "who": "石頭娃娃",
+     "who": "石像爺爺",
      "tag": "happy",
-     "text": "送斗笠的老爺爺，住在哪裡呀？",
-     "en": "Kind old man who gave us hats, where do you live?"
+     "text": "嘿喲，嘿喲，雪地走！送斗笠的老爺爺，住在哪裡呀？",
+     "en": "Heave-ho, heave-ho, through the snow we go! Kind old man who gave us hats, where, oh where do you live?"
     },
     {
      "who": "旁白",
-     "text": "咚！門口好像放下了什麼東西。",
-     "en": "Thump! Something landed by the door."
+     "text": "咚！有東西放在門口了。",
+     "en": "Thump! Something was set down by the door."
     }
    ]
   },
   {
    "scene": "老爺爺家門口，清晨，太陽剛出來，雪地發亮。門口堆著一袋袋白米、一疊年糕、魚、蘿蔔和橘子。",
-   "act": "老爺爺和老奶奶打開門，驚訝得張大嘴巴；遠處的雪地上，六個石頭娃娃排成一排，五個戴著金黃色斗笠，最後一個綁著紅白格子頭巾，正一搖一擺地走回路邊，回頭揮手。",
+   "act": "老爺爺和老奶奶打開門，驚訝得張大嘴巴；遠處的雪地上，六個石像爺爺排成一排，五個戴著金黃色斗笠，最後一個綁著紅白格子頭巾，正一搖一擺地走回路邊，回頭笑著揮手。",
    "lines": [
     {
      "who": "旁白",
-     "text": "打開門一看，門口堆滿了米、年糕和魚。",
+     "text": "打開門，門口堆滿了米、年糕和魚。",
      "en": "They opened the door. There were piles of rice, rice cakes, and fish!"
     },
     {
      "who": "旁白",
-     "text": "遠處，六個石頭娃娃正在走回去。",
-     "en": "Far away, the six stone dolls were walking back to the road."
+     "text": "遠處，六個石像爺爺正在走回去。",
+     "en": "Far away, the six little stone statues were walking back to the road."
     },
     {
-     "who": "石頭娃娃",
+     "who": "石像爺爺",
      "tag": "happy",
      "text": "謝謝你的斗笠，祝你們過個好年！",
      "en": "Thank you for the hats! Happy New Year!"
@@ -233,8 +228,8 @@
     {
      "who": "老奶奶",
      "tag": "happy",
-     "text": "老伴，我們可以過個好年了！",
-     "en": "Dear, we can have a happy New Year after all!"
+     "text": "我們可以過個好年了！",
+     "en": "We can have a happy New Year after all!"
     }
    ]
   }

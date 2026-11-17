@@ -37,11 +37,11 @@
  "pages": [
   {
    "scene": "晴天的小河邊，岸邊是綠色的草地和一棵大樹，河水慢慢流，閃著光。",
-   "act": "螞蟻第一次出場：很小的紅褐色螞蟻，兩根彎彎的觸角，頭上綁一個黃色小蝴蝶結。她坐在岸邊一片綠色葉子上休息；一陣風吹來，葉子連同螞蟻被吹到河面上，漂離岸邊；螞蟻抱緊葉子，舉起一隻手，一臉著急。",
+   "act": "螞蟻第一次出場：很小的紅褐色螞蟻，兩根彎彎的觸角，頭上綁一個黃色小蝴蝶結。她坐在岸邊一片綠色葉子上休息；一陣風吹來，葉子連同螞蟻被吹到河面上，漂到離岸邊不遠的水上；螞蟻抱緊葉子，舉起一隻手，一臉著急。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小河邊，住著一隻很小的螞蟻。",
+     "text": "小河邊住著一隻小螞蟻。",
      "en": "A tiny ant lived by a little river."
     },
     {
@@ -52,7 +52,7 @@
     {
      "who": "旁白",
      "text": "呼！一陣風吹來，把葉子吹到河上。",
-     "en": "Whoosh! A gust of wind blew the leaf onto the river."
+     "en": "Whoosh! A gust of wind blew the leaf onto the water, just off the shore."
     },
     {
      "who": "螞蟻",
@@ -123,9 +123,9 @@
     },
     {
      "who": "鴿子",
-     "tag": "laughing",
-     "text": "妳這麼小，要怎麼幫我呀？",
-     "en": "You are so tiny. How could you help me?"
+     "tag": "gentle",
+     "text": "不用啦，妳平安就好！",
+     "en": "Oh, you don't have to. I'm just glad you're safe!"
     },
     {
      "who": "螞蟻",
@@ -146,7 +146,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "過了幾天，來了一個淘氣的男孩。",
+     "text": "幾天後，來了一個淘氣的男孩。",
      "en": "A few days later, a mischievous boy came along."
     },
     {
@@ -169,18 +169,23 @@
   },
   {
    "scene": "大樹下的草地。",
-   "act": "螞蟻在草地上抬頭，看到男孩踮著腳慢慢走近大樹，網子舉得高高的；螞蟻兩手握拳，觸角豎起來，下定決心往男孩的腳跑過去。",
+   "act": "螞蟻在草地上抬頭，看到男孩踮著腳慢慢走近大樹，網子舉得高高的；螞蟻兩手放在嘴邊，對著樹上睡覺的鴿子大喊，鴿子還閉著眼睛。下一格螞蟻兩手握拳，觸角豎起來，下定決心往男孩的腳跑過去。",
    "lines": [
     {
      "who": "旁白",
-     "text": "草地上的螞蟻，看見了。",
-     "en": "The ant in the grass saw everything."
+     "text": "螞蟻看見了。",
+     "en": "The ant saw everything."
     },
     {
      "who": "螞蟻",
-     "tag": "scared",
-     "text": "不好了，鴿子有危險！",
-     "en": "Oh no, Dove is in trouble!"
+     "tag": "shouting",
+     "text": "鴿子，快醒來！有危險！",
+     "en": "Dove, wake up! You're in danger!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是螞蟻的聲音太小，鴿子聽不見。",
+     "en": "But the ant's voice was too tiny. The dove couldn't hear her."
     },
     {
      "who": "螞蟻",
@@ -212,8 +217,8 @@
     },
     {
      "who": "旁白",
-     "text": "鴿子醒過來，看見螞蟻和網子，趕快飛走了。",
-     "en": "The dove woke up, saw the ant and the net, and quickly flew away."
+     "text": "鴿子醒過來，看見網子，趕快飛走了。",
+     "en": "The dove woke up, saw the net, and quickly flew away."
     }
    ]
   },

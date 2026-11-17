@@ -27,6 +27,16 @@
    "char": "分",
    "where": "第8頁『分你一半』",
    "read": "fēn"
+  },
+  {
+   "char": "給",
+   "where": "第4頁『給我』",
+   "read": "gěi"
+  },
+  {
+   "char": "沒",
+   "where": "第6頁『沒有了』",
+   "read": "méi"
   }
  ],
  "pages": [
@@ -74,6 +84,11 @@
     },
     {
      "who": "旁白",
+     "text": "河水像一面鏡子。",
+     "en": "The water was as smooth as a mirror."
+    },
+    {
+     "who": "旁白",
      "text": "咦？水裡也有一隻小狗！",
      "en": "Huh? There was a puppy in the water too!"
     },
@@ -100,8 +115,14 @@
     },
     {
      "who": "旁白",
-     "text": "小狗心裡想，哼，敢學我！",
-     "en": "Puppy thought, Hmph! Stop copying me!"
+     "text": "小狗心裡想：",
+     "en": "Puppy thought,"
+    },
+    {
+     "who": "小狗",
+     "tag": "angry",
+     "text": "哼，敢學我！",
+     "en": "Hmph! Stop copying me!"
     }
    ]
   },
@@ -116,8 +137,14 @@
     },
     {
      "who": "旁白",
-     "text": "他心裡想，兩根骨頭，一定比一根好吃！",
-     "en": "He thought, Two bones would be yummier than one!"
+     "text": "他心裡想：",
+     "en": "He thought,"
+    },
+    {
+     "who": "小狗",
+     "tag": "excited",
+     "text": "兩根骨頭，一定比一根好吃！",
+     "en": "Two bones would be yummier than one!"
     },
     {
      "who": "旁白",
@@ -206,7 +233,7 @@
      "who": "小貓",
      "tag": "laughing",
      "text": "嘻，水裡那隻狗，就是你自己呀！",
-     "en": "Hee hee! The dog in the water was you!"
+     "en": "Hee hee! That dog in the water is you!"
     }
    ]
   },
@@ -222,8 +249,8 @@
     },
     {
      "who": "小狗",
-     "text": "我有一根就夠了，不該貪心。",
-     "en": "One bone was plenty. I shouldn't have been greedy."
+     "text": "一根骨頭，就很好吃了嘛！",
+     "en": "One bone is already yummy enough!"
     },
     {
      "who": "小貓",
@@ -240,7 +267,7 @@
      "who": "小狗",
      "tag": "happy",
      "text": "跟朋友一起吃，最好吃！",
-     "en": "Sharing with a friend is the yummiest!"
+     "en": "Snacks with a friend are the yummiest!"
     }
    ]
   }

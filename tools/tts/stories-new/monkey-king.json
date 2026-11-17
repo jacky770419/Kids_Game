@@ -60,7 +60,7 @@
   },
   {
    "char": "會",
-   "where": "第12頁『我會』",
+   "where": "第8頁『學會了』，第12頁『我會』",
    "read": "huì"
   },
   {
@@ -84,9 +84,9 @@
    "read": "gěi"
   },
   {
-   "char": "處",
-   "where": "第9頁『到處』",
-   "read": "chù"
+   "char": "分",
+   "where": "第8頁『分開』",
+   "read": "fēn"
   }
  ],
  "pages": [
@@ -111,8 +111,8 @@
     },
     {
      "who": "旁白",
-     "text": "有一天，轟隆一聲，仙石裂開了！",
-     "en": "One day, with a big BOOM, the magic stone cracked open!"
+     "text": "有一天，轟隆！仙石裂開了！",
+     "en": "One day, BOOM! The magic stone cracked open!"
     }
    ]
   },
@@ -150,8 +150,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "有一天，猴子們來到一條大瀑布前。",
-     "en": "One day, the monkeys came to a great big waterfall."
+     "text": "猴子們來到一條大瀑布前。",
+     "en": "The monkeys came to a great big waterfall."
     },
     {
      "who": "旁白",
@@ -177,13 +177,13 @@
    "lines": [
     {
      "who": "老猴子",
-     "text": "誰能進去看，再平安回來，就請他當大王！",
+     "text": "誰能進去看，平安回來，就請他當大王！",
      "en": "Whoever can go in and come back safely will be our king!"
     },
     {
      "who": "旁白",
-     "text": "猴子們你看我，我看你，誰都不敢去。",
-     "en": "The monkeys looked at each other. No one dared to go."
+     "text": "大家你看我，我看你，誰都不敢去。",
+     "en": "Everyone looked at each other. No one dared to go."
     },
     {
      "who": "小猴子",
@@ -215,7 +215,7 @@
     },
     {
      "who": "旁白",
-     "text": "裡面竟然有一個大山洞！",
+     "text": "裡面有一個大山洞！",
      "en": "Behind the water was a huge cave!"
     },
     {
@@ -250,7 +250,7 @@
     },
     {
      "who": "旁白",
-     "text": "一、二、三，咻！大家都跳進了水簾洞。",
+     "text": "一、二、三，咻！大家都跳進水簾洞。",
      "en": "One, two, three, whoosh! Everyone jumped into the Water Curtain Cave."
     }
    ]
@@ -267,8 +267,8 @@
     },
     {
      "who": "旁白",
-     "text": "猴子們一起拍手，一起大聲喊：",
-     "en": "All the monkeys clapped and shouted together,"
+     "text": "大家一起拍手大喊：",
+     "en": "Everyone clapped and shouted,"
     },
     {
      "who": "小猴子",
@@ -285,12 +285,17 @@
   },
   {
    "scene": "花果山海邊的沙灘，藍色的大海一望無際。",
-   "act": "美猴王頭戴花冠，站在海邊，兩手合起來客氣地對大海說話；海水往兩邊分開，中間出現一條通往海底的沙子小路，路兩邊是透明的水牆，看得到小魚；老猴子在後面揮手送他。",
+   "act": "左上角小圖：美猴王在高山上的松樹下，跟一位白鬍子、穿灰色長袍的老神仙學法術，指尖冒出小小的金光。大圖：美猴王頭戴花冠，站在海邊，兩手合起來客氣地對大海說話；海水往兩邊分開，中間出現一條通往海底的沙子小路，路兩邊是透明的水牆，看得到小魚；老猴子在後面揮手送他。",
    "lines": [
     {
      "who": "旁白",
-     "text": "美猴王想找一根好棍子，保護花果山。",
-     "en": "The Monkey King wanted a good staff to protect the Mountain of Flowers and Fruit."
+     "text": "後來，美猴王跟老神仙學會了法術。",
+     "en": "Later, the Monkey King learned magic from a wise old master."
+    },
+    {
+     "who": "旁白",
+     "text": "他想找一根好棍子，保護花果山。",
+     "en": "He wanted a good staff to protect the Mountain of Flowers and Fruit."
     },
     {
      "who": "老猴子",
@@ -306,19 +311,19 @@
     },
     {
      "who": "旁白",
-     "text": "美猴王會法術，海水真的分開一條路！",
-     "en": "The Monkey King knew magic, and the water really did part to make a path!"
+     "text": "他一用法術，海水真的分開一條路！",
+     "en": "He used his magic, and the water really did part to make a path!"
     }
    ]
   },
   {
-   "scene": "海底的龍宮：珊瑚做的柱子，地上鋪滿發亮的珍珠，小魚和螃蟹游來游去。",
+   "scene": "海底的龍宮大廳：珊瑚做的柱子，地上鋪滿發亮的珍珠，小魚和螃蟹游來游去；大廳正中間立著一根好大好粗的柱子，從地上一直通到屋頂，比珊瑚柱子粗好多倍。",
    "act": "龍王第一次出場：一條好大的青綠色的龍，頭上有兩根金色的角，白色的大鬍子，身穿紅色龍袍，坐在珊瑚寶座上。美猴王雙手抱拳，彎腰鞠躬；龍王低下頭，眼睛笑成兩條線。",
    "lines": [
     {
      "who": "旁白",
-     "text": "龍宮裡到處是珍珠和珊瑚。",
-     "en": "The Dragon Palace was full of pearls and coral."
+     "text": "龍宮中間，有一根好大的柱子。",
+     "en": "In the middle of the Dragon Palace stood a giant pillar."
     },
     {
      "who": "美猴王",
@@ -340,8 +345,8 @@
    ]
   },
   {
-   "scene": "龍宮的寶物房，牆上掛著好多根鐵棍；房間最裡面立著一根好大好粗的柱子，從地上一直通到屋頂。",
-   "act": "龍王在旁邊拿出一根又一根鐵棍。美猴王拿著一根細鐵棍揮一揮，皺著眉；下一格他手裡的鐵棍斷成兩截，他吐吐舌頭，抓抓頭；房間最裡面的大柱子發出金色的光，大家轉頭看它。",
+   "scene": "同一個龍宮大廳，一邊靠牆放著好多根鐵棍；大廳正中間就是那根好大好粗的柱子。",
+   "act": "龍王在旁邊拿出一根又一根鐵棍。美猴王拿著一根細鐵棍揮一揮，皺著眉；下一格他手裡的鐵棍斷成兩截，他吐吐舌頭，抓抓頭；大廳正中間的大柱子發出金色的光，大家轉頭看它。",
    "lines": [
     {
      "who": "旁白",
@@ -356,18 +361,18 @@
     {
      "who": "美猴王",
      "tag": "sad",
-     "text": "哎呀，對不起，我把它弄斷了。",
+     "text": "哎呀，對不起，弄斷了。",
      "en": "Oh no, I'm sorry. I broke it."
     },
     {
      "who": "旁白",
      "text": "這時候，大柱子發出了金光。",
-     "en": "Just then, a giant pillar began to glow gold."
+     "en": "Just then, the giant pillar began to glow gold."
     }
    ]
   },
   {
-   "scene": "龍宮的寶物房，金光照亮了整個房間。",
+   "scene": "同一個龍宮大廳，大柱子的金光照亮了整個大廳。",
    "act": "美猴王兩手抱住大柱子用力推，臉都漲紅了，柱子動也不動；下一格他把臉貼近柱子小聲說話，柱子縮成一根普通大小的棍子，金色的棍身，兩頭各有一圈金箍，他開心地舉起來。",
    "lines": [
     {
@@ -395,19 +400,19 @@
     {
      "who": "旁白",
      "text": "柱子變小了，變成一根金箍棒！",
-     "en": "The pillar shrank and turned into a Golden Staff!"
+     "en": "The pillar shrank and turned into a magic Golden Staff!"
     }
    ]
   },
   {
    "scene": "左邊是龍宮門口，右邊是花果山水簾洞前的草地，太陽快要下山了，天空是橘色的。",
-   "act": "左邊：龍王笑著揮手；美猴王把金箍棒變得像一根針那麼小，夾在耳朵後面，彎腰說謝謝。右邊：美猴王回到花果山，把金箍棒舉高給大家看，猴子們圍著他跳舞歡呼，老猴子摸著鬍子微笑。",
+   "act": "左邊：龍王笑著揮手；美猴王喊「變小」，金箍棒變得像一根針那麼小，他把針放進耳朵裡，彎腰說謝謝。右邊：美猴王回到花果山，從耳朵裡拿出金箍棒變回原來大小，舉高給大家看，猴子們圍著他跳舞歡呼，老猴子摸著鬍子微笑。",
    "lines": [
     {
      "who": "龍王",
      "tag": "happy",
-     "text": "你這麼有禮貌，金箍棒就借給你吧！",
-     "en": "You're so polite, I'll lend you the Golden Staff!"
+     "text": "這麼有禮貌，金箍棒借給你吧！",
+     "en": "Such a polite monkey! I'll lend you the Golden Staff!"
     },
     {
      "who": "美猴王",
@@ -416,9 +421,15 @@
      "en": "Thank you, Dragon King! I will use it to protect everyone."
     },
     {
+     "who": "美猴王",
+     "tag": "excited",
+     "text": "變小，變小！",
+     "en": "Shrink, shrink!"
+    },
+    {
      "who": "旁白",
-     "text": "美猴王回到家，大家都跑來歡迎他。",
-     "en": "When the Monkey King came home, everyone ran to greet him."
+     "text": "金箍棒變成小針，他放進耳朵裡，回家了。",
+     "en": "The Golden Staff shrank to a tiny needle. He tucked it into his ear and went home."
     },
     {
      "who": "小猴子",

@@ -6,7 +6,7 @@
  "roles": {
   "小和尚": "山上小廟的小和尚，像六七歲的小男孩，聲音清亮、勤快又認真，失火時大聲喊大家。",
   "高和尚": "又高又瘦的年輕和尚，活潑的年輕男聲，說話快、愛討價還價，有點愛偷懶。",
-  "胖和尚": "圓滾滾的胖和尚，懶洋洋的胖叔叔聲音，說話慢吞吞，很會喝水，最後笑得最大聲。"
+  "胖和尚": "圓滾滾的胖和尚，懶洋洋的胖叔叔聲音，說話慢吞吞，很會喝水；失火時出力最多，最後笑得最大聲。"
  },
  "cast": {
   "小和尚": {
@@ -44,9 +44,9 @@
    "read": "dǎo"
   },
   {
-   "char": "傳",
-   "where": "第7頁『一個傳水』",
-   "read": "chuán"
+   "char": "累",
+   "where": "第5頁『我好累』",
+   "read": "lèi"
   }
  ],
  "pages": [
@@ -73,7 +73,7 @@
     {
      "who": "旁白",
      "text": "一個和尚挑水喝。",
-     "en": "One monk carries water by himself."
+     "en": "One monk, one pole, he carries the water."
     }
    ]
   },
@@ -108,12 +108,12 @@
   },
   {
    "scene": "往山下的石階小路，兩旁是綠樹。",
-   "act": "小和尚和高和尚一前一後，肩上扛著同一根木棍，一個水桶掛在木棍正中間；高和尚在後面，小和尚在前面，兩人都皺著眉頭、一步一步走。",
+   "act": "小和尚和高和尚一前一後，肩上扛著同一根木棍，一個水桶掛在木棍正中間；高和尚在後面，小和尚在前面，兩人還嘟著嘴、皺著眉頭，一步一步走。",
    "lines": [
     {
      "who": "旁白",
-     "text": "最後，他們把水桶掛在木棍中間，一人抬一頭。",
-     "en": "In the end, they hung one bucket in the middle of the pole, and each of them carried one end."
+     "text": "吵來吵去，他們終於說好，一人抬一頭。",
+     "en": "They argued and argued. At last they agreed to share, one monk at each end of the pole."
     },
     {
      "who": "高和尚",
@@ -123,7 +123,7 @@
     {
      "who": "旁白",
      "text": "兩個和尚抬水喝。",
-     "en": "Two monks carry water together."
+     "en": "Two monks, one pole, they share the water."
     }
    ]
   },
@@ -167,8 +167,8 @@
     {
      "who": "胖和尚",
      "tag": "sleepy",
-     "text": "我不去，你們去。",
-     "en": "Not me. You two go."
+     "text": "我好累，你們去。",
+     "en": "I'm so tired. You two go."
     },
     {
      "who": "旁白",
@@ -178,7 +178,7 @@
     {
      "who": "旁白",
      "text": "一個和尚挑水喝，兩個和尚抬水喝，三個和尚沒水喝！",
-     "en": "One monk carries water by himself. Two monks carry water together. Three monks have no water at all!"
+     "en": "One monk carries the water. Two monks share the water. Three monks? No water at all!"
     }
    ]
   },
@@ -193,8 +193,8 @@
     },
     {
      "who": "旁白",
-     "text": "布簾子的角，冒出了小火苗。",
-     "en": "A tiny flame popped up on the corner of the curtain."
+     "text": "布簾子冒出了小火苗。",
+     "en": "A tiny flame popped up on the curtain."
     },
     {
      "who": "小和尚",
@@ -205,8 +205,8 @@
    ]
   },
   {
-   "scene": "晚上，從小廟到小河邊的石階小路，月光很亮。",
-   "act": "三個和尚在石階小路上排成一排接力：胖和尚在河邊把水桶裝滿，小和尚站在中間的石階上，把水桶往上傳，高和尚站在廟門口，舉起長手臂把水潑向布簾子上的小火苗；火苗變成一縷白煙。",
+   "scene": "晚上，小廟和通到山腳小河的石階小路，月光很亮。",
+   "act": "三個和尚接力跑：高和尚邁開長腿跑下石階，在山腳小河把兩個水桶都裝滿；胖和尚在半路接過水桶，一手一桶、滿頭大汗地往上提，出力最多；小和尚在廟門口接過水桶，跑到布簾子前，把水潑向小火苗，火苗冒出一陣黑煙就滅了。",
    "lines": [
     {
      "who": "旁白",
@@ -215,25 +215,25 @@
     },
     {
      "who": "旁白",
-     "text": "一個裝水，一個傳水，一個潑水。",
-     "en": "One filled the bucket, one passed it along, and one splashed the water."
+     "text": "一個跑下山裝水，一個往上提，一個潑水。",
+     "en": "One ran down to fill the buckets, one carried them up, and one splashed the water."
     },
     {
      "who": "旁白",
-     "text": "滋！小火苗一下子就滅了。",
-     "en": "Sizzle! The little flame went out at once."
+     "text": "滋！一陣黑煙，小火苗滅了。",
+     "en": "Sizzle! A puff of black smoke, and the little flame was out."
     }
    ]
   },
   {
    "scene": "第二天早上的小廟院子，陽光照著大水缸，水缸裝滿了水，花盆裡的花又抬起頭來。",
-   "act": "三個和尚臉上都沾著黑黑的灰，互相指著對方哈哈大笑。最後一格：三個人一起走在石階上，小和尚挑兩桶水，高和尚和胖和尚一起抬一桶，大家都笑咪咪的。",
+   "act": "三個和尚臉上都沾著黑黑的煙灰，互相指著對方哈哈大笑。最後一格：三個人一起走在石階上，小和尚挑兩桶水，高和尚和胖和尚一起抬一桶，大家都笑咪咪的。",
    "lines": [
     {
      "who": "胖和尚",
      "tag": "laughing",
      "text": "哈！你們的臉都黑了！",
-     "en": "Ha! Your faces are all black!"
+     "en": "Ha! You've got soot all over your faces!"
     },
     {
      "who": "小和尚",
@@ -249,7 +249,7 @@
     {
      "who": "旁白",
      "text": "三個和尚，大家都有水喝！",
-     "en": "Three monks, and water for everyone!"
+     "en": "Three monks together, and water for all!"
     }
    ]
   }

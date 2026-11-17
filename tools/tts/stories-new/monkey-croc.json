@@ -37,6 +37,11 @@
    "char": "嚐",
    "where": "第3頁『嚐一口』，第4頁『嚐一口』",
    "read": "cháng"
+  },
+  {
+   "char": "給",
+   "where": "第2頁『分給』『給太太』，第6頁『拿給你』",
+   "read": "gěi"
   }
  ],
  "pages": [
@@ -58,7 +63,7 @@
      "who": "猴子",
      "tag": "happy",
      "text": "鱷魚大哥，帶我過河好嗎？",
-     "en": "Crocodile, will you take me across the river?"
+     "en": "Crocodile, my friend, will you take me across the river?"
     },
     {
      "who": "鱷魚",
@@ -106,20 +111,21 @@
      "en": "So sweet! The monkey eats sweet mangoes every day."
     },
     {
-     "who": "鱷魚太太",
-     "text": "他的心，一定也很甜！",
-     "en": "His heart must be sweet too!"
+     "who": "鱷魚",
+     "tag": "excited",
+     "text": "他的心，一定也很甜吧？",
+     "en": "His heart must be sweet too, right?"
     },
     {
-     "who": "鱷魚",
+     "who": "鱷魚太太",
      "tag": "excited",
      "text": "對耶！我也想嚐一口！",
      "en": "You're right! I want a taste too!"
     },
     {
      "who": "旁白",
-     "text": "兩隻貪吃的鱷魚，一起舔了舔嘴巴。",
-     "en": "The two greedy crocodiles licked their lips together."
+     "text": "兩隻貪吃的鱷魚，舔了舔嘴巴。",
+     "en": "The two greedy crocodiles licked their lips."
     }
    ]
   },
@@ -131,7 +137,7 @@
      "who": "猴子",
      "tag": "happy",
      "text": "鱷魚大哥，帶我過河好嗎？",
-     "en": "Crocodile, will you take me across the river?"
+     "en": "Crocodile, my friend, will you take me across the river?"
     },
     {
      "who": "鱷魚",
@@ -140,7 +146,7 @@
     },
     {
      "who": "旁白",
-     "text": "游到河中間，鱷魚停下來了。",
+     "text": "到了河中間，鱷魚停下來。",
      "en": "In the middle of the river, the crocodile stopped."
     },
     {
@@ -157,7 +163,7 @@
     {
      "who": "旁白",
      "text": "猴子嚇了一跳。",
-     "en": "The monkey jumped in surprise."
+     "en": "The monkey got a big fright."
     },
     {
      "who": "旁白",
@@ -198,8 +204,8 @@
     },
     {
      "who": "旁白",
-     "text": "猴子一跳，就跳回大樹上了。",
-     "en": "With one big leap, the monkey was back in his tree."
+     "text": "猴子一跳，跳回大樹上！",
+     "en": "With one big leap, the monkey was back in his tree!"
     }
    ]
   },
@@ -232,7 +238,7 @@
   },
   {
    "scene": "岸邊的大樹下，太陽要下山了，河面是金色的。",
-   "act": "鱷魚和鱷魚太太並排浮在樹下，低著頭，一臉不好意思；猴子從樹上垂下一個小竹籃，裡面裝滿芒果；兩隻鱷魚開心地抬頭。",
+   "act": "鱷魚和鱷魚太太並排浮在樹下，低著頭，一臉不好意思；猴子坐在高高的樹枝上沒有下來，用繩子吊下一個裝滿芒果的小竹籃，一手指著自己的頭，表示以後要先想清楚；兩隻鱷魚開心地抬頭接芒果。",
    "lines": [
     {
      "who": "鱷魚",
@@ -242,8 +248,8 @@
     },
     {
      "who": "旁白",
-     "text": "鱷魚太太也游過來，低下頭。",
-     "en": "The crocodile's wife swam over and bowed her head too."
+     "text": "鱷魚太太也低下頭。",
+     "en": "The crocodile's wife bowed her head too."
     },
     {
      "who": "鱷魚太太",
@@ -258,9 +264,10 @@
      "en": "Hearts aren't for eating, but mangoes are!"
     },
     {
-     "who": "旁白",
-     "text": "猴子垂下一籃芒果，請他們一起吃。",
-     "en": "The monkey lowered a basket of mangoes for them to share."
+     "who": "猴子",
+     "tag": "gentle",
+     "text": "芒果請你們吃。可是以後，我要想清楚才坐上去！",
+     "en": "The mangoes are for you. But from now on, I'll think carefully before I hop on!"
     }
    ]
   }

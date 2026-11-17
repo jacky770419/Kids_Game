@@ -4,9 +4,9 @@
  "title_en": "Kong Rong Shares the Pears",
  "size": "短",
  "roles": {
-  "孔融": "很久以前中國的四歲小男孩，聲音稚嫩、乖巧又開朗，說話慢慢的、很認真，分梨的時候笑得好開心。",
-  "爸爸": "孔融的爸爸，溫和的中年男聲，說話慢、帶著笑，驚訝時也很溫柔，誇孩子時很驕傲。",
-  "大哥": "孔融的大哥，十歲左右的少年，聲音清亮、熱情，看到梨很興奮，看到弟弟拿小梨很驚訝。"
+  "孔融": "很久以前中國的四歲小男孩，聲音稚嫩、開朗，說話慢慢的、很認真；其實也很想吃大梨，想了想才讓給大家。",
+  "爸爸": "孔融的爸爸，溫和的中年男聲，說話慢、帶著笑，驚訝時也很溫柔。",
+  "大哥": "孔融的大哥，十歲左右的少年，聲音清亮、熱情，看到梨很興奮，愛開玩笑，會把自己的大梨分給弟弟。"
  },
  "cast": {
   "孔融": {
@@ -30,13 +30,18 @@
   },
   {
    "char": "會",
-   "where": "第3頁『他會挑』，第7頁『就會把大梨』",
+   "where": "第3頁『他會挑』，第8頁『大人都會講』",
    "read": "huì"
   },
   {
-   "char": "沒",
-   "where": "第8頁『沒有忘記』",
-   "read": "méi"
+   "char": "分",
+   "where": "第7頁『分了一半』",
+   "read": "fēn"
+  },
+  {
+   "char": "還",
+   "where": "第6頁『梨比他的臉還大』",
+   "read": "hái"
   }
  ],
  "pages": [
@@ -46,18 +51,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "很久，很久以前，在中國，有一個小男孩，叫孔融。",
-     "en": "Long, long ago in China, there lived a little boy named Kong Rong."
+     "text": "很久以前，在中國，有個小男孩叫孔融。",
+     "en": "Long ago in China, there lived a little boy named Kong Rong."
     },
     {
      "who": "旁白",
      "text": "孔融四歲，他有好幾個哥哥，也有一個小弟弟。",
      "en": "Kong Rong was four years old. He had several big brothers and one baby brother."
-    },
-    {
-     "who": "旁白",
-     "text": "兄弟們每天都在院子裡一起玩。",
-     "en": "The brothers played together in the yard every day."
     }
    ]
   },
@@ -96,7 +96,7 @@
   },
   {
    "scene": "梨樹下的木頭桌子，桌上放著那一大盤梨。",
-   "act": "兄弟們圍著桌子站好；大哥彎腰，把盤子推到孔融面前。孔融踮起腳尖，歪著頭，一隻手指放在下巴上，認真地看著盤子裡的梨。",
+   "act": "兄弟們圍著桌子站好；大哥彎腰，把盤子推到孔融面前。孔融踮起腳尖，盯著盤子裡最大的那顆梨，一手摸著肚子，嘴巴微微張開；接著他轉頭看看哥哥們，又看看小弟弟，歪著頭想。",
    "lines": [
     {
      "who": "大哥",
@@ -106,8 +106,19 @@
     },
     {
      "who": "旁白",
-     "text": "孔融看著大的梨，又看著小的梨。",
-     "en": "Kong Rong looked at the big pears. Then he looked at the small pears."
+     "text": "孔融看著最大的梨，肚子咕嚕，咕嚕叫。",
+     "en": "Kong Rong looked at the biggest pear. His tummy went grumble, grumble."
+    },
+    {
+     "who": "孔融",
+     "tag": "whispering",
+     "text": "大的梨，看起來真好吃……",
+     "en": "The big pears look so yummy..."
+    },
+    {
+     "who": "旁白",
+     "text": "他看了哥哥們，又看了小弟弟。",
+     "en": "He looked at his big brothers, and then at his baby brother."
     },
     {
      "who": "旁白",
@@ -118,29 +129,18 @@
   },
   {
    "scene": "梨樹下的木頭桌子。",
-   "act": "孔融小手拿起盤子裡最小的一顆梨，笑咪咪的。大哥張大嘴巴，眼睛睜得好圓；爸爸挑起眉毛，一臉驚訝。",
+   "act": "孔融小手拿起盤子裡最小的一顆梨。大哥張大嘴巴，眼睛睜得好圓；爸爸站在後面挑起眉毛，一臉驚訝。",
    "lines": [
     {
      "who": "旁白",
-     "text": "孔融伸出小手，拿起最小的那一個。",
-     "en": "Kong Rong reached out his little hand and picked up the very smallest one."
+     "text": "孔融想了想，拿起最小的那一個。",
+     "en": "Kong Rong thought for a moment, then picked up the very smallest one."
     },
     {
      "who": "大哥",
      "tag": "surprised",
      "text": "咦？孔融，你怎麼拿最小的？",
      "en": "Huh? Kong Rong, why did you take the smallest one?"
-    },
-    {
-     "who": "旁白",
-     "text": "爸爸也好驚訝。",
-     "en": "Father was surprised too."
-    },
-    {
-     "who": "爸爸",
-     "tag": "surprised",
-     "text": "大的梨那麼多，你怎麼不拿呢？",
-     "en": "There are so many big pears. Why didn't you take one?"
     }
    ]
   },
@@ -169,7 +169,7 @@
   },
   {
    "scene": "梨樹下的木頭桌子，盤子裡只剩一顆大梨。",
-   "act": "爸爸蹲下來，指著站在旁邊的小弟弟，溫柔地問；孔融把最後一顆大梨，用兩手捧給小弟弟。小弟弟兩手抱住大梨，笑得眼睛彎彎的。",
+   "act": "爸爸蹲下來，指著站在旁邊的小弟弟，溫柔地問；孔融把最後一顆大梨，用兩手捧給小弟弟。小弟弟兩手抱住大梨，梨比他的圓臉還大，只露出一雙笑彎的眼睛，哥哥們都笑了。",
    "lines": [
     {
      "who": "爸爸",
@@ -180,42 +180,47 @@
     {
      "who": "孔融",
      "tag": "gentle",
-     "text": "弟弟比我小，我要讓弟弟。大的梨，也給弟弟。",
-     "en": "My baby brother is smaller than me, so he should go first. A big pear for him, too."
+     "text": "弟弟比我小，大的梨，也給弟弟。",
+     "en": "My baby brother is smaller than me, so I'll let him have a big one, too."
     },
     {
      "who": "旁白",
-     "text": "小弟弟抱著大梨，開心地笑了。",
-     "en": "The baby brother hugged the big pear and giggled."
+     "text": "小弟弟抱著大梨，梨比他的臉還大！",
+     "en": "The baby brother hugged the big pear. It was bigger than his face!"
     }
    ]
   },
   {
-   "scene": "梨樹下，陽光從樹葉之間照下來。",
-   "act": "爸爸摸著孔融的頭，滿臉驕傲；大哥蹲下來，對孔融比出大拇指；其他哥哥也笑著拍手。孔融害羞地笑，手裡還抱著他的小梨。",
+   "scene": "梨樹下，陽光從樹葉之間照下來，木頭桌子上放著空空的盤子。",
+   "act": "爸爸笑著摸孔融的頭；大哥蹲下來，指著孔融的肚子哈哈笑，再把自己的大梨掰成兩半，一半遞給孔融。孔融一手抱著小梨、一手接過半個大梨，害羞又開心地笑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "爸爸摸了一下孔融的頭。",
-     "en": "Father patted Kong Rong on the head."
+     "text": "爸爸笑了，摸摸孔融的頭。",
+     "en": "Father smiled and patted Kong Rong on the head."
     },
     {
-     "who": "爸爸",
-     "tag": "proud",
-     "text": "你這麼小，就會把大梨讓給大家。",
-     "en": "You're so little, and you already know how to give the big pears to others."
+     "who": "大哥",
+     "tag": "laughing",
+     "text": "孔融，我剛才聽到你的肚子在叫喔！",
+     "en": "Kong Rong, I heard your tummy grumbling!"
+    },
+    {
+     "who": "旁白",
+     "text": "大哥把自己的大梨，分了一半給孔融。",
+     "en": "Big Brother split his big pear and gave half to Kong Rong."
     },
     {
      "who": "大哥",
      "tag": "happy",
-     "text": "孔融，你是最好的弟弟！",
-     "en": "Kong Rong, you're the best little brother!"
+     "text": "大的梨，我們一起吃！",
+     "en": "Let's eat the big pear together!"
     }
    ]
   },
   {
    "scene": "梨樹下，大家坐在石板地上，夕陽前的金色陽光。",
-   "act": "全家人坐成一圈吃梨：哥哥們大口咬大梨，小弟弟抱著大梨啃，汁水沾到臉上；孔融雙手捧著小梨咬一口，眼睛瞇起來，笑得好甜。爸爸坐在旁邊看著大家微笑。",
+   "act": "全家人坐成一圈吃梨：哥哥們大口咬大梨，小弟弟抱著大梨啃，梨汁沾得滿臉都是，大家指著他笑；孔融一手小梨、一手半個大梨，輪流咬一口，眼睛瞇起來，笑得好甜。爸爸坐在小弟弟旁邊，一手幫他扶著大梨，看著大家微笑。",
    "lines": [
     {
      "who": "旁白",
@@ -225,18 +230,18 @@
     {
      "who": "孔融",
      "tag": "happy",
-     "text": "我的梨很小，可是好甜喔！",
-     "en": "My pear is little, but it's so sweet!"
+     "text": "小梨好甜，大梨也好甜！",
+     "en": "The little pear is sweet, and the big pear is sweet too!"
     },
     {
      "who": "旁白",
-     "text": "看大家這麼開心，孔融的心裡也好甜。",
-     "en": "Seeing everyone so happy made Kong Rong feel sweet inside, too."
+     "text": "小弟弟啃得滿臉都是梨汁，大家都笑了。",
+     "en": "The baby brother got pear juice all over his face, and everyone laughed."
     },
     {
      "who": "旁白",
-     "text": "這個讓梨的小男孩，大家到現在都沒有忘記喔。",
-     "en": "And people still remember the little boy who shared the pears."
+     "text": "到現在，大人都會講孔融讓梨的故事喔。",
+     "en": "Even today, grown-ups still tell the story of Kong Rong and the pears."
     }
    ]
   }
