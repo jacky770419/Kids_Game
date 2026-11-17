@@ -1,0 +1,555 @@
+{
+ "id": "emperor-clothes",
+ "title": "國王的新衣",
+ "title_en": "The Emperor's New Clothes",
+ "size": "長",
+ "roles": {
+  "國王": "就是《青蛙王子》裡那位慈祥的老國王，聲音低沉溫暖，這本裡有點愛面子、好笑可愛，最後大笑著承認。",
+  "騙子甲": "又高又瘦的騙子，說話油嘴滑舌、慢慢說裝神祕，好笑不可怕，最後低頭道歉。",
+  "騙子乙": "又矮又胖的騙子，聲音年輕輕快、愛跟著附和，被抓到時慌慌張張。",
+  "大臣": "老實又緊張的大臣，聲音厚實溫和，看不見布又不敢說時結結巴巴。",
+  "小男孩": "五六歲的小男孩，聲音清亮天真，有話直說，笑起來很開心。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "騙子甲": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "騙子乙": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "大臣": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第2頁『我們會織』，第16頁『學會』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『什麼都沒有』，第4頁『織好了沒有』，第8頁『什麼都沒穿』，第10、11、12頁『沒穿衣服』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第3、4、6、8、14、16頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "給",
+   "where": "第3頁『國王給他們』，第15頁『交給你』",
+   "read": "gěi"
+  },
+  {
+   "char": "行",
+   "where": "第8頁、第9頁『遊行』",
+   "read": "xíng"
+  },
+  {
+   "char": "誰",
+   "where": "第7頁『誰也看不見』『誰都不敢說』",
+   "read": "shéi"
+  },
+  {
+   "char": "膀",
+   "where": "第10頁『肩膀』",
+   "read": "bǎng"
+  },
+  {
+   "char": "漂",
+   "where": "第4、7、9、16頁『漂亮』",
+   "read": "piào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "城堡裡國王的大衣帽間，白天。牆上掛滿各種顏色的外套和披風，地上排著好多雙鞋子，中間有一面金框的大鏡子。和《青蛙王子》同一座白色石頭城堡。",
+   "act": "國王出場：白鬍子、戴金色大皇冠、穿紅色長袍，和《青蛙王子》的國王同一個造型。他站在大鏡子前，一手拿著黃色外套、一手拿著綠色外套，在身上比來比去，歪著頭想，表情好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位國王，最愛穿新衣服。",
+     "en": "Once upon a time, there was a king who loved new clothes more than anything."
+    },
+    {
+     "who": "旁白",
+     "text": "早上換一件，中午換一件，晚上又換一件。",
+     "en": "He changed his clothes in the morning, at noon, and again at night."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "今天，我要穿哪一件呢？",
+     "en": "Now, which one shall I wear today?"
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "我想要全世界最特別的新衣服！",
+     "en": "I want the most special clothes in the whole world!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大廳，紅地毯一路通到金色的寶座，兩邊站著士兵。",
+   "act": "騙子甲出場：又高又瘦，尖下巴、兩撇往上翹的小鬍子，穿黑白條紋外套、戴黑色高帽子。騙子乙出場：又矮又胖，圓臉、紅鼻子，穿黃色背心、戴咖啡色小扁帽，揹著一個大布袋。兩個人一起向坐在寶座上的國王深深鞠躬，臉上堆滿笑；國王身子往前傾，聽得好認真。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，兩個陌生人來到城堡。",
+     "en": "One day, two strangers came to the castle."
+    },
+    {
+     "who": "騙子甲",
+     "tag": "sly",
+     "text": "國王陛下，我們會織世界上最神奇的布。",
+     "en": "Your Majesty, we can weave the most magical cloth in the world."
+    },
+    {
+     "who": "騙子乙",
+     "tag": "excited",
+     "text": "這塊布，聰明的人才能看見！",
+     "en": "Only clever people can see this cloth!"
+    },
+    {
+     "who": "騙子甲",
+     "text": "不聰明的人，一點都看不見喔。",
+     "en": "People who aren't clever can't see it at all."
+    }
+   ]
+  },
+  {
+   "scene": "城堡裡一間大房間，中間擺著兩台大木頭織布機，旁邊的桌子上堆著一袋一袋金幣和一捲一捲金線。",
+   "act": "國王把一大袋金幣和金線交給騙子乙；騙子乙趁國王轉身，偷偷把金線塞進自己的大布袋，對騙子甲眨眼睛；騙子甲坐在空空的織布機前，雙手在空中假裝織布，表情很認真。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "太好了！快幫我織一件新衣服！",
+     "en": "Wonderful! Weave me some new clothes right away!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王給他們好多金子和金線。",
+     "en": "The king gave them lots of gold and golden thread."
+    },
+    {
+     "who": "旁白",
+     "text": "兩個騙子趁國王不注意，把金線放進袋子。",
+     "en": "But when the king wasn't looking, the two tricksters stuffed the thread into their bag."
+    },
+    {
+     "who": "旁白",
+     "text": "然後，他們坐在織布機前，從早織到晚。",
+     "en": "Then they sat at the looms and wove from morning till night."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，織布機上，什麼都沒有！",
+     "en": "But there was nothing on the looms at all!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間織布房，白天。",
+   "act": "大臣出場：胖胖的中年人，棕色八字鬍，戴圓圓的眼鏡，穿綠色外套，手上拿著一本小冊子。他湊到空空的織布機前，眼睛瞪好大，額頭冒出汗珠；騙子甲在旁邊比手畫腳，指著空氣介紹，騙子乙在後面偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王派大臣，去看布織好了沒有。",
+     "en": "The king sent his minister to see how the cloth was coming along."
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "咦？我怎麼什麼都看不見？",
+     "en": "Huh? Why can't I see anything?"
+    },
+    {
+     "who": "大臣",
+     "tag": "scared",
+     "text": "難道，我不聰明？不能讓別人知道！",
+     "en": "Am I not clever? No one must find out!"
+    },
+    {
+     "who": "騙子甲",
+     "tag": "sly",
+     "text": "大人你看，這是金色的花，那是藍色的星星。",
+     "en": "Look, sir. Here are golden flowers, and there are blue stars."
+    },
+    {
+     "who": "大臣",
+     "tag": "nervous",
+     "text": "是，是啊！好漂亮的布！",
+     "en": "Y-yes! What beautiful cloth!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大廳，紅地毯和金色寶座。",
+   "act": "大臣跑回大廳，一邊擦額頭的汗，一邊張開雙手，比出好大一塊布的樣子；國王從寶座上站起來，眼睛發亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大臣跑回去，告訴國王。",
+     "en": "The minister hurried back to the king."
+    },
+    {
+     "who": "大臣",
+     "tag": "nervous",
+     "text": "國王，那塊布，真是太美了！",
+     "en": "Your Majesty, that cloth is simply beautiful!"
+    },
+    {
+     "who": "大臣",
+     "text": "有金色的花，也有藍色的星星！",
+     "en": "It has golden flowers and blue stars!"
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "真的嗎？我也要去看！",
+     "en": "Really? I must go and see it too!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間織布房，窗外有陽光。",
+   "act": "國王帶著大臣走進來，站在空空的織布機前，張大嘴巴、眼睛瞪好大，伸手在空中摸了摸；接著挺起胸膛、拍手大聲稱讚；騙子乙拿著一把剪刀在空中剪來剪去，笑得瞇起眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王來到了織布房。",
+     "en": "The king came to the weaving room."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦？布在哪裡？我什麼都看不見！",
+     "en": "Huh? Where's the cloth? I can't see a thing!"
+    },
+    {
+     "who": "國王",
+     "tag": "worried",
+     "text": "可是我是國王，不能不聰明呀！",
+     "en": "But I'm the king! I have to be clever!"
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "太美了！我好喜歡！",
+     "en": "It's beautiful! I love it!"
+    },
+    {
+     "who": "騙子乙",
+     "tag": "laughing",
+     "text": "國王真聰明！",
+     "en": "What a clever king!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的走廊，白天，織布房的門口擠滿了人。",
+   "act": "宮女、士兵和戴白色高帽的廚師擠在織布房門口探頭看，大家都對著空空的織布機拍手、點頭，可是每個人都偷偷互看，額頭冒汗，樣子好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡裡的人都知道了，大家都跑來看神奇的布。",
+     "en": "Soon everyone in the castle heard about it, and they all came to see the magic cloth."
+    },
+    {
+     "who": "旁白",
+     "text": "誰也看不見，可是誰都不敢說。",
+     "en": "Nobody could see it, but nobody dared to say so."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都怕，別人說自己不聰明。",
+     "en": "Everyone was afraid of being called not clever."
+    },
+    {
+     "who": "旁白",
+     "text": "宮女說好漂亮，士兵說好漂亮，廚師也說好漂亮！",
+     "en": "The maids said it was beautiful. The guards said it was beautiful. Even the cook said it was beautiful!"
+    }
+   ]
+  },
+  {
+   "scene": "國王的衣帽間，大鏡子前，遊行那天早上。",
+   "act": "國王頭上照樣戴著金色大皇冠，身上只穿著白色汗衫，和印著小金皇冠圖案的紅色四角內褲，抬頭挺胸站在鏡子前，很得意；騙子甲雙手捧著空氣，假裝幫國王穿外套；騙子乙在國王背後假裝拉起一件披風；大臣在旁邊拍手，又緊張又想笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "新衣服做好了，國王要穿著它去遊行。",
+     "en": "The new clothes were ready, and the king would wear them in a parade."
+    },
+    {
+     "who": "騙子甲",
+     "tag": "proud",
+     "text": "這是褲子，這是外套，這是披風。",
+     "en": "Here are the trousers, here is the coat, and here is the cape."
+    },
+    {
+     "who": "騙子乙",
+     "tag": "excited",
+     "text": "像羽毛一樣輕，穿起來好像什麼都沒穿！",
+     "en": "Light as a feather! It feels like you're wearing nothing at all!"
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "真的耶！好輕喔！",
+     "en": "It's true! So light!"
+    }
+   ]
+  },
+  {
+   "scene": "城裡的大街，晴天，兩邊是彩色的房子，掛滿旗子和彩帶，街上擠滿了人；前面有打鼓的樂隊。",
+   "act": "國王戴著金色大皇冠，穿著白汗衫和紅色小皇冠四角內褲，抬頭挺胸走在最前面；兩個士兵在後面彎著腰，假裝提著一件長長的披風；大臣跟在旁邊；街邊的大人們都在拍手，表情有點怪。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚，咚，咚！遊行開始了。",
+     "en": "Boom, boom, boom! The parade began."
+    },
+    {
+     "who": "旁白",
+     "text": "國王抬頭挺胸，走在大街上。",
+     "en": "The king held his head high and marched down the street."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都聽說了，聰明的人才能看見新衣服。",
+     "en": "Everyone had heard that only clever people could see the new clothes."
+    },
+    {
+     "who": "旁白",
+     "text": "所以大家都拍手說：國王的新衣，好漂亮！",
+     "en": "So everyone clapped and said, \"The king's new clothes are beautiful!\""
+    }
+   ]
+  },
+  {
+   "scene": "大街邊的人群裡。",
+   "act": "小男孩出場：五六歲，棕色短髮亂翹、臉上有雀斑，穿藍色吊帶褲和黃色上衣。他坐在爸爸的肩膀上；爸爸是大鬍子，戴草帽，穿咖啡色的大外套。小男孩揉著眼睛，歪著頭看國王，接著伸手指著國王大喊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "人群裡，有一個小男孩，坐在爸爸的肩膀上。",
+     "en": "In the crowd, a little boy sat on his dad's shoulders."
+    },
+    {
+     "who": "小男孩",
+     "tag": "curious",
+     "text": "咦？新衣服在哪裡？",
+     "en": "Huh? Where are the new clothes?"
+    },
+    {
+     "who": "旁白",
+     "text": "他揉了揉眼睛，再看一次。",
+     "en": "He rubbed his eyes and looked again."
+    },
+    {
+     "who": "小男孩",
+     "tag": "shouting",
+     "text": "國王沒穿衣服！",
+     "en": "The king isn't wearing any clothes!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條大街。",
+   "act": "街上的人先是一愣，張大嘴巴，接著一個接一個捂著嘴偷笑；小男孩在爸爸肩膀上笑著指國王；一陣風吹過，國王停下腳步，抱著手臂發抖。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "laughing",
+     "text": "國王穿著內褲在走路！",
+     "en": "The king is walking in his underpants!"
+    },
+    {
+     "who": "旁白",
+     "text": "街上的人，你看我，我看你。",
+     "en": "The people looked at one another."
+    },
+    {
+     "who": "旁白",
+     "text": "對呀，國王真的沒穿衣服！",
+     "en": "It was true. The king had no clothes on!"
+    },
+    {
+     "who": "旁白",
+     "text": "一陣風吹過來，國王抖了一下。",
+     "en": "A breeze blew by, and the king shivered."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "好冷，好冷！",
+     "en": "Brr! So cold!"
+    }
+   ]
+  },
+  {
+   "scene": "大街中間，國王站在人群前面。",
+   "act": "國王低頭看自己的紅色小皇冠四角內褲，臉紅到耳朵；接著仰頭大笑，笑到鬍子都在抖，皇冠也歪了；街上的人跟著一起笑，大家都笑得很開心，沒有人在取笑他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王低頭一看，臉一下子紅了。",
+     "en": "The king looked down, and his face turned bright red."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "真的耶！我真的沒穿衣服！",
+     "en": "It's true! I really have no clothes on!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王大笑起來，大家也跟著笑了。",
+     "en": "The king burst out laughing, and everyone laughed along."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "我太怕別人說我不聰明，就不敢說實話。",
+     "en": "I was so afraid of not looking clever that I didn't tell the truth."
+    }
+   ]
+  },
+  {
+   "scene": "同一條大街，陽光很暖。",
+   "act": "小男孩的爸爸把咖啡色大外套披在國王肩上；國王蹲下來，笑咪咪地摸小男孩的頭；小男孩站在地上，開心地笑著豎起大拇指。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小男孩的爸爸，把大外套披在國王身上。",
+     "en": "The boy's dad wrapped his big coat around the king."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "好溫暖！謝謝你！",
+     "en": "So warm! Thank you!"
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "小朋友，謝謝你說實話。你真勇敢！",
+     "en": "And thank you, little one, for telling the truth. You are very brave!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "不客氣！國王，你穿這件外套，很好看喔！",
+     "en": "You're welcome! You look great in that coat, King!"
+    }
+   ]
+  },
+  {
+   "scene": "大街的轉角，停著一輛小驢車。",
+   "act": "兩個騙子抱著鼓鼓的大布袋，正要爬上驢車；大臣張開雙手擋在前面；騙子乙的布袋破了一個洞，金線一條一條掉出來，騙子乙嚇得帽子都飛起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，兩個騙子抱著大袋子，想要溜走。",
+     "en": "Just then, the two tricksters tried to sneak away with their big bag."
+    },
+    {
+     "who": "大臣",
+     "tag": "shouting",
+     "text": "等一下！袋子裡是什麼？",
+     "en": "Wait! What's in that bag?"
+    },
+    {
+     "who": "旁白",
+     "text": "袋子破了一個洞，金線全都掉出來了。",
+     "en": "The bag had a hole, and all the golden thread spilled out!"
+    },
+    {
+     "who": "騙子乙",
+     "tag": "scared",
+     "text": "哎呀，被發現了！",
+     "en": "Uh-oh! We've been caught!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個街角，大家圍過來。",
+   "act": "兩個騙子低著頭、雙手合十道歉，把金線和金幣捧在手上；國王披著咖啡色大外套，雙手叉腰，但是面帶微笑；小男孩站在國王旁邊；大臣把金線撿起來。",
+   "lines": [
+    {
+     "who": "騙子甲",
+     "tag": "sad",
+     "text": "對不起，國王。我們騙了大家。",
+     "en": "We're sorry, Your Majesty. We tricked everyone."
+    },
+    {
+     "who": "騙子乙",
+     "tag": "sad",
+     "text": "金子和金線，都交給你！",
+     "en": "Here, take back all the gold and thread!"
+    },
+    {
+     "who": "騙子甲",
+     "tag": "sad",
+     "text": "以後，我們再也不騙人了。",
+     "en": "We will never trick anyone again."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "那就用這些金線，織一塊大家都能看見的布吧！",
+     "en": "Then use this thread to weave some cloth that everyone can see!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡前的廣場，幾天後，晴天；廣場上擺著兩台真的織布機。",
+   "act": "兩個騙子坐在織布機前，認真地織出一大塊有金色花朵和藍色星星的布；國王穿著用這塊布做的金色新外套，有金色花朵和藍色星星，手臂上掛著小男孩爸爸的咖啡色大外套；小男孩和爸爸站在國王前面，大家都在拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "後來，兩個騙子真的學會了織布。",
+     "en": "Later, the two tricksters really learned how to weave."
+    },
+    {
+     "who": "旁白",
+     "text": "國王有了一件新衣服，大家都能看見！",
+     "en": "And the king got new clothes that everyone could see!"
+    },
+    {
+     "who": "旁白",
+     "text": "那件咖啡色的大外套，變成了國王最喜歡的衣服。",
+     "en": "And the big brown coat became the king's favorite thing to wear."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "小朋友，你看見什麼？",
+     "en": "Little one, what do you see?"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "國王穿衣服了！好漂亮！",
+     "en": "The king is wearing clothes! They're beautiful!"
+    }
+   ]
+  }
+ ]
+}

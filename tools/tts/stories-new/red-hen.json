@@ -1,0 +1,437 @@
+{
+ "id": "red-hen",
+ "title": "小紅母雞",
+ "title_en": "The Little Red Hen",
+ "size": "中",
+ "roles": {
+  "小紅母雞": "勤勞開朗的紅色母雞，年輕女聲，溫柔又有精神，一個人做事也笑咪咪，最後大方原諒大家。",
+  "貓": "愛撒嬌、懶洋洋的白貓姊姊，聲音嬌嬌的、愛拖長音，道歉時小小聲。",
+  "狗": "好動的小狗，年輕男生的聲音，說話又快又興奮，一聽到麵包就跳起來。",
+  "鴨子": "胖胖的鴨子叔叔，聲音懶洋洋、慢吞吞，像剛睡醒。"
+ },
+ "cast": {
+  "小紅母雞": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "貓": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "狗": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "鴨子": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "撒",
+   "where": "第1頁『撒在土裡』，第2頁『撒麥子』，第3頁『撒下麥子』，第11頁『撒麥子』，第12頁『撒麥子』",
+   "read": "sǎ"
+  },
+  {
+   "char": "埋",
+   "where": "第3頁『埋進土裡』",
+   "read": "mái"
+  },
+  {
+   "char": "磨",
+   "where": "第6頁『磨成麵粉』，第7頁『磨成』，第11頁『磨麵粉』",
+   "read": "mò"
+  },
+  {
+   "char": "誰",
+   "where": "第2、4、6、8頁『誰要幫我』，第10頁『誰要吃麵包』",
+   "read": "shéi"
+  },
+  {
+   "char": "什",
+   "where": "第9頁『什麼東西』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第11頁『沒有幫忙』，第12頁『沒關係』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上的農場：紅色的穀倉、木頭籬笆、綠色的草地，遠處有一個小池塘；地上散著幾顆金黃色的麥粒。",
+   "act": "小紅母雞（紅褐色的羽毛、紅色雞冠、黃色尖嘴，繫一條白色小圍裙）低頭看著地上的麥粒，眼睛發亮，用翅膀把麥粒撿起來；遠處，貓（白色的貓，脖子上繫粉紅色蝴蝶結）躺在籬笆上，狗（咖啡色的小狗，一隻耳朵垂下來，戴紅色項圈）在草地上跑，鴨子（胖胖的白色鴨子，橘色扁嘴，戴一頂藍色小帽子）站在池塘邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "農場裡，住著一隻小紅母雞。",
+     "en": "On a farm there lived a Little Red Hen."
+    },
+    {
+     "who": "旁白",
+     "text": "她和貓、狗、鴨子，是好鄰居。",
+     "en": "Her neighbors were Cat, Dog, and Duck."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，小紅母雞在地上找到一把麥子。",
+     "en": "One day, the Little Red Hen found some wheat seeds on the ground."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "excited",
+     "text": "把麥子撒在土裡，就會冒出好多麥子！",
+     "en": "If I scatter these seeds in the soil, lots of wheat will grow!"
+    }
+   ]
+  },
+  {
+   "scene": "農場的草地和池塘邊，陽光很好。",
+   "act": "小紅母雞捧著麥子，一隻一隻去問；貓躺在籬笆上曬太陽，眼睛都沒睜開；狗追著一隻黃蝴蝶跑；鴨子搖搖擺擺走向池塘；小紅母雞聳聳肩，自己抱著麥子走向田裡。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "誰要幫我撒麥子？",
+     "en": "Who will help me scatter the seeds?"
+    },
+    {
+     "who": "貓",
+     "tag": "sleepy",
+     "text": "不要，我要曬太陽。",
+     "en": "Not me. I'm lying in the sun."
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "不要，我要追蝴蝶。",
+     "en": "Not me. I'm chasing butterflies."
+    },
+    {
+     "who": "鴨子",
+     "tag": "lazy",
+     "text": "不要，我要去游泳。",
+     "en": "Not me. I'm going swimming."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "cheerful",
+     "text": "好吧，那我自己來！",
+     "en": "All right. Then I'll do it myself!"
+    }
+   ]
+  },
+  {
+   "scene": "農場旁邊的一小塊田，先是下著小雨，後來出了大太陽；田裡冒出一排排綠色小芽，最後變成一片金黃色的麥田。",
+   "act": "小紅母雞戴著草帽，把麥子撒進田裡，用腳把土撥好蓋住；畫面分成三格：下雨、出太陽、金黃的麥子在風裡搖；小紅母雞站在麥田前，開心地張開翅膀。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小紅母雞撒下麥子，把麥子埋進土裡。",
+     "en": "The Little Red Hen scattered the seeds and covered them with soil."
+    },
+    {
+     "who": "旁白",
+     "text": "下雨了，出太陽了，麥子冒出綠色的小芽。",
+     "en": "The rain fell, the sun shone, and little green sprouts popped up."
+    },
+    {
+     "who": "旁白",
+     "text": "到了夏天，麥子變成一片金黃色。",
+     "en": "By summer, the wheat had turned golden."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "excited",
+     "text": "麥子可以割了！",
+     "en": "The wheat is ready to cut!"
+    }
+   ]
+  },
+  {
+   "scene": "夏天的農場，金黃色的麥田旁邊。",
+   "act": "小紅母雞用翅膀夾著一把小鐮刀去問大家；貓換了一個姿勢繼續曬太陽；狗又在追蝴蝶；鴨子在池塘裡漂；小紅母雞用翅膀叉腰，笑著搖頭。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "誰要幫我割麥子？",
+     "en": "Who will help me cut the wheat?"
+    },
+    {
+     "who": "貓",
+     "tag": "sleepy",
+     "text": "不要，我要曬太陽。",
+     "en": "Not me. I'm lying in the sun."
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "不要，我要追蝴蝶。",
+     "en": "Not me. I'm chasing butterflies."
+    },
+    {
+     "who": "鴨子",
+     "tag": "lazy",
+     "text": "不要，我要去游泳。",
+     "en": "Not me. I'm going swimming."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "cheerful",
+     "text": "好吧，那我自己來！",
+     "en": "All right. Then I'll do it myself!"
+    }
+   ]
+  },
+  {
+   "scene": "金黃色的麥田，太陽很大，一隻小鳥在天上飛。",
+   "act": "小紅母雞拿著小鐮刀割麥子，割好的麥子躺在身後一大片；她擦著額頭的汗，旁邊有一大袋裝滿麥粒的布袋；她累得坐在布袋上，可是笑得很開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小紅母雞拿著小鐮刀，割了一整天。",
+     "en": "The Little Red Hen took her little sickle and cut wheat all day long."
+    },
+    {
+     "who": "旁白",
+     "text": "她把麥粒裝了一大袋。",
+     "en": "She filled a big sack with wheat grains."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "tired",
+     "text": "呼，好累喔。可是，我好開心！",
+     "en": "Phew, I'm tired. But I'm so happy!"
+    }
+   ]
+  },
+  {
+   "scene": "農場的院子，穀倉旁邊，地上放著那一大袋麥粒。",
+   "act": "小紅母雞拍拍布袋去問大家；貓躺在穀倉屋頂上曬太陽；狗在院子裡繞圈追蝴蝶；鴨子在池塘裡翻身；小紅母雞把布袋扛起來。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "誰要幫我把麥子磨成麵粉？",
+     "en": "Who will help me grind the wheat into flour?"
+    },
+    {
+     "who": "貓",
+     "tag": "sleepy",
+     "text": "不要，我要曬太陽。",
+     "en": "Not me. I'm lying in the sun."
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "不要，我要追蝴蝶。",
+     "en": "Not me. I'm chasing butterflies."
+    },
+    {
+     "who": "鴨子",
+     "tag": "lazy",
+     "text": "不要，我要去游泳。",
+     "en": "Not me. I'm going swimming."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "cheerful",
+     "text": "好吧，那我自己來！",
+     "en": "All right. Then I'll do it myself!"
+    }
+   ]
+  },
+  {
+   "scene": "村子邊的一座小石磨，兩塊圓圓的大石頭疊在一起，旁邊有一個木頭推桿。",
+   "act": "小紅母雞推著石磨的木頭推桿，一圈又一圈地走；石磨下面流出雪白的麵粉，裝進一個大木盆；小紅母雞臉上、翅膀上都沾著白色的麵粉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小紅母雞推著大石頭，一圈又一圈。",
+     "en": "The Little Red Hen pushed the big millstone around and around."
+    },
+    {
+     "who": "旁白",
+     "text": "麥子變成了雪白的麵粉。",
+     "en": "The wheat turned into snowy white flour."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "有麵粉，就可以做麵包了！",
+     "en": "With flour, I can make bread!"
+    }
+   ]
+  },
+  {
+   "scene": "小紅母雞的小廚房，窗戶開著，看得到外面的農場。",
+   "act": "小紅母雞捧著一大盆麵粉站在窗口問大家；窗外，貓在打哈欠，狗在追蝴蝶，鴨子在池塘裡；小紅母雞把白色小圍裙綁緊，準備揉麵團。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "誰要幫我烤麵包？",
+     "en": "Who will help me bake the bread?"
+    },
+    {
+     "who": "貓",
+     "tag": "sleepy",
+     "text": "不要，我要曬太陽。",
+     "en": "Not me. I'm lying in the sun."
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "不要，我要追蝴蝶。",
+     "en": "Not me. I'm chasing butterflies."
+    },
+    {
+     "who": "鴨子",
+     "tag": "lazy",
+     "text": "不要，我要去游泳。",
+     "en": "Not me. I'm going swimming."
+    },
+    {
+     "who": "小紅母雞",
+     "tag": "cheerful",
+     "text": "好吧，那我自己來！",
+     "en": "All right. Then I'll do it myself!"
+    }
+   ]
+  },
+  {
+   "scene": "小紅母雞的小廚房，磚砌的烤爐裡烤著一個金黃色的大麵包，香味畫成一條一條彎彎曲曲的線，從窗戶飄出去。",
+   "act": "小紅母雞戴著手套，把金黃色的麵包從烤爐裡拿出來；窗外，貓、狗、鴨子的鼻子都翹起來，閉著眼睛跟著香味飄過來，好像被香味拉著走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小紅母雞揉好麵團，放進烤爐。",
+     "en": "The Little Red Hen kneaded the dough and put it in the oven."
+    },
+    {
+     "who": "旁白",
+     "text": "好香喔！麵包的香味飄出窗外。",
+     "en": "Mmm! The smell of bread floated out the window."
+    },
+    {
+     "who": "貓",
+     "tag": "excited",
+     "text": "什麼東西，這麼香？",
+     "en": "What smells so good?"
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "是麵包！",
+     "en": "It's bread!"
+    },
+    {
+     "who": "鴨子",
+     "tag": "excited",
+     "text": "我們快去！",
+     "en": "Let's hurry!"
+    }
+   ]
+  },
+  {
+   "scene": "小紅母雞的廚房門口，桌上放著冒熱氣的金黃色大麵包。",
+   "act": "小紅母雞捧著麵包站在門口；貓、狗、鴨子擠在門外，三個一起高高舉起手和翅膀，眼睛閃閃發亮，口水都快流下來了。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "gentle",
+     "text": "誰要吃麵包？",
+     "en": "Who wants to eat the bread?"
+    },
+    {
+     "who": "貓",
+     "tag": "excited",
+     "text": "我！",
+     "en": "Me!"
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "我！",
+     "en": "Me!"
+    },
+    {
+     "who": "鴨子",
+     "tag": "excited",
+     "text": "我也要！",
+     "en": "Me too!"
+    },
+    {
+     "who": "旁白",
+     "text": "三個好朋友，一下子都舉起手來。",
+     "en": "All three friends put their hands up at once."
+    }
+   ]
+  },
+  {
+   "scene": "小紅母雞的廚房門口。",
+   "act": "小紅母雞抱著麵包，溫柔地看著大家，沒有生氣；貓、狗、鴨子慢慢放下手，低著頭、耳朵垂下來，貓用腳尖畫圈圈，鴨子抓抓帽子。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "gentle",
+     "text": "撒麥子的時候，你們在哪裡？",
+     "en": "Where were you when I scattered the seeds?"
+    },
+    {
+     "who": "小紅母雞",
+     "text": "磨麵粉的時候，你們在哪裡？",
+     "en": "Where were you when I ground the flour?"
+    },
+    {
+     "who": "旁白",
+     "text": "貓、狗和鴨子，都低下頭來。",
+     "en": "Cat, Dog, and Duck all hung their heads."
+    },
+    {
+     "who": "貓",
+     "tag": "sad",
+     "text": "對不起，都是妳一個人做的。",
+     "en": "We're sorry. You did it all by yourself."
+    },
+    {
+     "who": "鴨子",
+     "tag": "sad",
+     "text": "我們都沒有幫忙。",
+     "en": "None of us helped."
+    }
+   ]
+  },
+  {
+   "scene": "第二年春天的農場，田裡的土剛翻好，天空很藍；角落一張小桌子上放著一個烤好的大麵包。",
+   "act": "上半張：小紅母雞、貓、狗、鴨子排成一排，一起把麥子撒進田裡，狗撒得最用力，貓的蝴蝶結沾到泥土也在笑；下半張：四個好朋友圍著小桌子，一人一塊麵包，吃得好開心。",
+   "lines": [
+    {
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "沒關係。下次，我們一起做，一起吃！",
+     "en": "That's okay. Next time, let's make it together and eat it together!"
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "好！說好了喔！",
+     "en": "Yes! It's a promise!"
+    },
+    {
+     "who": "旁白",
+     "text": "第二年春天，四個好朋友一起撒麥子。",
+     "en": "The next spring, the four friends scattered the seeds together."
+    },
+    {
+     "who": "旁白",
+     "text": "麵包烤好了，大家一起吃，好香喔！",
+     "en": "When the bread was ready, they all ate it together. Yum!"
+    }
+   ]
+  }
+ ]
+}

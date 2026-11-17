@@ -1,0 +1,558 @@
+{
+ "id": "dancing-princesses",
+ "title": "十二個跳舞的公主",
+ "title_en": "The Twelve Dancing Princesses",
+ "size": "長",
+ "roles": {
+  "國王": "就是《青蛙王子》裡那位慈祥的老國王，聲音低沉溫暖、慢慢說，看到破鞋子就著急又好笑，最後開心地笑。",
+  "大公主": "十二個公主裡最大的姊姊，聲音嬌嬌的、愛帶頭、有點得意，被發現時不好意思。",
+  "小公主": "十二個公主裡最小的妹妹，聲音甜美、膽子小、心地好，很有禮貌。",
+  "園丁小伙子": "城堡花園裡的年輕園丁，聲音清亮有精神，好奇又勇敢，做事認真。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "大公主": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "小公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "園丁小伙子": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第1頁『都會』，第2頁『怎麼會』，第12頁『會發光』，第16頁『舞會』",
+   "read": "huì"
+  },
+  {
+   "char": "給",
+   "where": "第6頁『送給妳』，第7頁『公主給你』，第9頁『餵給了』",
+   "read": "gěi"
+  },
+  {
+   "char": "什",
+   "where": "第12頁『什麼聲音』",
+   "read": "shén"
+  },
+  {
+   "char": "鑽",
+   "where": "第12頁『鑽石』",
+   "read": "zuàn"
+  },
+  {
+   "char": "場",
+   "where": "第16頁『一場舞會』",
+   "read": "chǎng"
+  },
+  {
+   "char": "斗",
+   "where": "第7、10頁『斗篷』",
+   "read": "dǒu"
+  },
+  {
+   "char": "著",
+   "where": "第5頁『睡著了』兩次，第9頁『睡著了』（睡著要念 zháo，不是輕聲 zhe）",
+   "read": "zháo"
+  },
+  {
+   "char": "誰",
+   "where": "第4頁『誰能』『誰就是』，第7頁『誰都看不見』",
+   "read": "shéi"
+  },
+  {
+   "char": "划",
+   "where": "第13頁『划到』",
+   "read": "huá"
+  },
+  {
+   "char": "喝",
+   "where": "第7頁『不要喝』",
+   "read": "hē"
+  },
+  {
+   "char": "漂",
+   "where": "第10頁『漂亮』",
+   "read": "piào"
+  },
+  {
+   "char": "祕",
+   "where": "第4、6、15頁『祕密』",
+   "read": "mì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "城堡裡一間好大的臥室，晚上，和《青蛙王子》同一座白色石頭城堡。十二張小床排成一排，每張床邊放著一雙乾淨的新鞋子；窗外有月亮和星星。",
+   "act": "國王出場：白鬍子、戴金色大皇冠、穿紅色長袍，和《青蛙王子》的國王同一個造型，手上拿著一把大金鑰匙，站在門口說晚安。十二個穿白色睡衣的公主從高到矮排好：大公主出場，最高，紅色長捲髮；小公主出場，最矮，黑色短髮、綁一個粉紅色蝴蝶結；中間的公主們頭髮有金色、棕色、黑色，長短不一樣。小公主在最後面揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位國王，他有十二個女兒。",
+     "en": "Once upon a time, there was a king who had twelve daughters."
+    },
+    {
+     "who": "旁白",
+     "text": "十二個公主，睡在同一間大臥室。",
+     "en": "The twelve princesses slept in one big bedroom."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "晚安，我的女兒們！",
+     "en": "Good night, my daughters!"
+    },
+    {
+     "who": "旁白",
+     "text": "每天晚上，國王都會把房門鎖上。",
+     "en": "Every night, the king locked the bedroom door."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，早上，陽光從窗戶照進來。",
+   "act": "國王拿起一雙鞋子，鞋底破了一個大洞，他瞪大眼睛，皇冠歪到一邊；地上排著十二雙破鞋子；公主們坐在床上打哈欠、揉眼睛，大公主偷偷對小公主眨眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是到了早上，國王一看。",
+     "en": "But in the morning, the king took a look."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "鞋子，又破了！",
+     "en": "The shoes are worn out again!"
+    },
+    {
+     "who": "旁白",
+     "text": "十二雙鞋子，每一雙都破了一個大洞。",
+     "en": "All twelve pairs of shoes had big holes in them."
+    },
+    {
+     "who": "國王",
+     "tag": "confused",
+     "text": "妳們整晚都在睡，鞋子怎麼會破呢？",
+     "en": "You slept all night. How did your shoes get worn out?"
+    },
+    {
+     "who": "大公主",
+     "tag": "sweet",
+     "text": "我們不知道呀，爸爸。",
+     "en": "We don't know, Father."
+    }
+   ]
+  },
+  {
+   "scene": "城裡的小街，白天。一間小小的鞋店，門口堆滿鞋盒，像一座小山；遠處是城堡。",
+   "act": "鞋匠爺爺（白頭髮、戴圓眼鏡、穿咖啡色皮圍裙）坐在店門口，滿頭大汗地敲著鞋子；旁邊排著十二雙新做好的彩色鞋子；一位士兵抱著一疊破鞋子跑來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，鞋子又破了。第三天，也破了。",
+     "en": "The next day, the shoes were worn out again. And the day after that, too."
+    },
+    {
+     "who": "旁白",
+     "text": "城裡的鞋匠爺爺，每天都忙著做新鞋。",
+     "en": "The old shoemaker in town was busy making new shoes every single day."
+    },
+    {
+     "who": "旁白",
+     "text": "國王想破了頭，也想不出來。",
+     "en": "The king thought and thought, but he couldn't figure it out."
+    }
+   ]
+  },
+  {
+   "scene": "城堡大廳，白天，國王坐在金色寶座上；大廳裡站著好幾位穿不同顏色衣服的王子。",
+   "act": "國王站起來，張開雙手向大家宣布；王子們排成一排，有穿紫色、藍色、黃色衣服的，個個抬頭挺胸，很有自信。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "serious",
+     "text": "誰能解開鞋子的祕密，誰就是大英雄！",
+     "en": "Whoever solves the secret of the shoes will be a hero!"
+    },
+    {
+     "who": "旁白",
+     "text": "好多王子都來試一試。",
+     "en": "Many princes came to try."
+    },
+    {
+     "who": "旁白",
+     "text": "晚上，他們坐在公主房間的外面守著。",
+     "en": "At night, they sat outside the princesses' room and kept watch."
+    }
+   ]
+  },
+  {
+   "scene": "公主臥室外面的小房間，晚上，有一張大沙發椅，旁邊的小桌上放著一個喝完的牛奶杯；臥室的門縫透出一點光。",
+   "act": "一位穿紫色衣服的王子坐在沙發椅上，頭往後仰，張大嘴巴打呼，口水流下來，樣子好笑；旁邊的牆邊，還有穿藍色、黃色衣服的王子靠著牆坐在地上，也在打呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，大公主送來一杯熱牛奶。",
+     "en": "But the eldest princess brought each of them a cup of warm milk."
+    },
+    {
+     "who": "旁白",
+     "text": "第一個王子，喝完就睡著了。",
+     "en": "The first prince drank it and fell asleep."
+    },
+    {
+     "who": "旁白",
+     "text": "第二個王子，也睡著了。",
+     "en": "The second prince fell asleep, too."
+    },
+    {
+     "who": "旁白",
+     "text": "每一個王子，都打呼打到天亮！",
+     "en": "Every prince snored until morning!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的花園，早上。開滿玫瑰和向日葵，有一口小水井和一間小工具屋。",
+   "act": "園丁小伙子出場：大約十五歲，棕色捲髮，戴一頂草帽，穿綠色背心和咖啡色長褲，繫一件綠色圍裙。他把一朵黃色小花送給小公主；小公主現在穿淺紫色長裙，黑色短髮、粉紅色蝴蝶結，她笑著接過花；她腳上的鞋子破了一個洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡的花園裡，有一位園丁小伙子。",
+     "en": "In the castle garden, there worked a young gardener."
+    },
+    {
+     "who": "園丁小伙子",
+     "tag": "happy",
+     "text": "小公主，早安！這朵花送給妳。",
+     "en": "Good morning, Little Princess! This flower is for you."
+    },
+    {
+     "who": "小公主",
+     "tag": "happy",
+     "text": "謝謝你！你每天都對我這麼好。",
+     "en": "Thank you! You're kind to me every day."
+    },
+    {
+     "who": "園丁小伙子",
+     "tag": "curious",
+     "text": "咦？妳的鞋子，怎麼又破了？",
+     "en": "Huh? Why are your shoes worn out again?"
+    },
+    {
+     "who": "小公主",
+     "tag": "whispering",
+     "text": "這是祕密，我不能說。",
+     "en": "It's a secret. I can't tell."
+    }
+   ]
+  },
+  {
+   "scene": "城堡外面的小路，下午，路邊有一棵大橡樹。",
+   "act": "園丁小伙子幫一位彎著腰、白頭髮、圍著紅色披肩的老奶奶提著一個大籃子；老奶奶從籃子裡拿出一件灰色的斗篷送給他，對他眨眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這天，小伙子幫一位老奶奶，提了一個大籃子。",
+     "en": "That day, the young gardener helped an old granny carry a big basket."
+    },
+    {
+     "who": "旁白",
+     "text": "老奶奶送他一件灰色的斗篷。",
+     "en": "The granny gave him a gray cloak."
+    },
+    {
+     "who": "旁白",
+     "text": "老奶奶說，披上它，誰都看不見你。",
+     "en": "\"Put it on, and no one can see you,\" she said."
+    },
+    {
+     "who": "旁白",
+     "text": "她又說：公主給你的東西，不要喝喔。",
+     "en": "Then she said, \"Don't drink anything the princesses give you.\""
+    }
+   ]
+  },
+  {
+   "scene": "城堡大廳，紅地毯和金色寶座。",
+   "act": "園丁小伙子摘下草帽、拿在胸前，站在寶座前，表情很認真；灰色斗篷摺好夾在手臂下；國王摸著白鬍子，挑起眉毛，先是驚訝，然後笑咪咪。",
+   "lines": [
+    {
+     "who": "園丁小伙子",
+     "tag": "brave",
+     "text": "國王，讓我試一試！",
+     "en": "Your Majesty, let me try!"
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "你？你是園丁小伙子呀！",
+     "en": "You? But you're the gardener!"
+    },
+    {
+     "who": "園丁小伙子",
+     "text": "我想幫小公主，也想幫您。",
+     "en": "I want to help the little princess, and you too."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "好！那你今天晚上，就試一試吧！",
+     "en": "All right! Then try tonight!"
+    }
+   ]
+  },
+  {
+   "scene": "公主臥室外面的小房間，晚上，牆角有一個大花盆，裡面是一棵綠色的小樹；通往公主臥室的門半開著。",
+   "act": "大公主（紅色長捲髮、穿白色睡衣）笑咪咪地端來一杯熱牛奶；園丁小伙子趁她轉身，把牛奶倒進花盆裡；接著靠在沙發椅上假裝打呼，一隻眼睛偷偷睜開一條縫。",
+   "lines": [
+    {
+     "who": "大公主",
+     "tag": "sweet",
+     "text": "園丁小伙子，喝杯熱牛奶，早點睡吧。",
+     "en": "Here, gardener. Have some warm milk and get some sleep."
+    },
+    {
+     "who": "旁白",
+     "text": "小伙子想起老奶奶的話，把牛奶餵給了花盆。",
+     "en": "The gardener remembered the granny's words and fed the milk to a flowerpot."
+    },
+    {
+     "who": "園丁小伙子",
+     "tag": "sleepy",
+     "text": "呼，呼，呼！",
+     "en": "Snore, snore, snore!"
+    },
+    {
+     "who": "大公主",
+     "tag": "laughing",
+     "text": "他睡著了！大家快起來！",
+     "en": "He's asleep! Everyone, get up!"
+    }
+   ]
+  },
+  {
+   "scene": "公主們的大臥室，晚上，點著蠟燭。大公主的床往下沉，地板上出現一個方形的洞，裡面有一條石頭樓梯往下，透出金色的光。",
+   "act": "十二個公主換上彩色的舞裙和新鞋子，在洞口排好隊；大公主彎腰敲著床頭；園丁小伙子披著灰色斗篷，畫成半透明的淡淡輪廓，跟在最後面的小公主後面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "公主們換上漂亮的裙子和新鞋子。",
+     "en": "The princesses put on pretty dresses and new shoes."
+    },
+    {
+     "who": "旁白",
+     "text": "大公主在床上敲了三下，叩，叩，叩！",
+     "en": "The eldest princess knocked on her bed three times. Knock, knock, knock!"
+    },
+    {
+     "who": "旁白",
+     "text": "床往下一沉，出現了一條樓梯！",
+     "en": "The bed sank down, and a staircase appeared!"
+    },
+    {
+     "who": "旁白",
+     "text": "小伙子披上斗篷，跟在小公主的後面。",
+     "en": "The gardener put on the cloak and followed the little princess."
+    }
+   ]
+  },
+  {
+   "scene": "往下的石頭樓梯，又窄又暗，牆上嵌著會發光的小石頭。",
+   "act": "半透明的園丁小伙子不小心踩到小公主淺紫色舞裙的裙角，趕快捂住嘴巴；小公主回頭，嚇了一跳；走在前面的大公主回頭揮手，要她快點。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小伙子不小心，踩到小公主的裙子。",
+     "en": "The gardener accidentally stepped on the little princess's dress."
+    },
+    {
+     "who": "小公主",
+     "tag": "scared",
+     "text": "哎呀！有人拉我的裙子！",
+     "en": "Oh! Someone pulled my dress!"
+    },
+    {
+     "who": "大公主",
+     "tag": "annoyed",
+     "text": "是裙子勾到樓梯了啦！快走！",
+     "en": "Your dress just caught on the stairs! Hurry up!"
+    },
+    {
+     "who": "旁白",
+     "text": "小伙子遮住嘴巴，不敢出聲。",
+     "en": "The gardener covered his mouth and stayed very quiet."
+    }
+   ]
+  },
+  {
+   "scene": "地底下一座會發光的樹林：近處是銀色葉子的樹，再過去是金色葉子的樹，最遠的樹像鑽石一樣閃亮；樹葉發出柔和的光，地上也亮亮的。",
+   "act": "公主們排成一排走在發光的樹中間，抬頭欣賞；半透明的小伙子伸手摘下一根銀色小樹枝；小公主嚇得轉頭看；大公主開心地張開雙手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樓梯下面，是一座會發光的樹林！",
+     "en": "At the bottom of the stairs was a glowing forest!"
+    },
+    {
+     "who": "旁白",
+     "text": "銀色的樹，金色的樹，像鑽石一樣亮的樹！",
+     "en": "Silver trees, golden trees, and trees that sparkled like diamonds!"
+    },
+    {
+     "who": "旁白",
+     "text": "小伙子摘下一根銀色的小樹枝。啪！",
+     "en": "The gardener snapped off a little silver twig. Snap!"
+    },
+    {
+     "who": "小公主",
+     "tag": "scared",
+     "text": "什麼聲音？",
+     "en": "What was that sound?"
+    },
+    {
+     "who": "大公主",
+     "tag": "happy",
+     "text": "是煙火呀！在歡迎我們呢！",
+     "en": "It's fireworks! They're welcoming us!"
+    }
+   ]
+  },
+  {
+   "scene": "樹林後面一座好大的湖，湖水是深藍色，水裡有發光的小魚，水面上漂著睡蓮；湖邊停著十二條小白船，每艘船頭掛著一盞小燈；湖的對面有一座亮著燈的玻璃舞廳。",
+   "act": "公主們一人一艘小船，划向對岸；半透明的小伙子坐在小公主的船尾，小船往下沉了一點；小公主划得滿頭大汗，嘟著嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樹林後面，有一座大湖，湖上有十二條小船。",
+     "en": "Beyond the forest was a big lake with twelve little boats."
+    },
+    {
+     "who": "旁白",
+     "text": "公主們一人一條船，划到湖的對面。",
+     "en": "Each princess rowed a boat across the lake."
+    },
+    {
+     "who": "旁白",
+     "text": "小伙子坐在小公主的船上。",
+     "en": "The gardener sat in the little princess's boat."
+    },
+    {
+     "who": "小公主",
+     "tag": "tired",
+     "text": "奇怪，今天的船，怎麼這麼慢？",
+     "en": "That's strange. Why is my boat so slow today?"
+    }
+   ]
+  },
+  {
+   "scene": "湖對面的玻璃舞廳，屋頂掛滿像星星一樣的小燈，四周開著會發光的花；拇指大的小精靈們，背上有透明翅膀、穿彩色衣服，坐在發光的花朵上吹笛子、打小鼓。",
+   "act": "十二個公主穿著彩色舞裙開心地跳舞，裙子像花一樣張開；大公主拉著小公主的手跳；半透明的小伙子在角落學著跳，踩到自己的腳，差點跌倒，好笑；公主們的鞋底越磨越薄。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "舞廳裡，小精靈們吹著笛子，打著小鼓。",
+     "en": "In the ballroom, tiny fairies played flutes and drums."
+    },
+    {
+     "who": "旁白",
+     "text": "公主們跳呀跳，跳了一整個晚上。",
+     "en": "The princesses danced and danced, all night long."
+    },
+    {
+     "who": "大公主",
+     "tag": "excited",
+     "text": "跳舞最開心了！再跳一首！",
+     "en": "Dancing is the best! One more song!"
+    },
+    {
+     "who": "旁白",
+     "text": "小伙子也跟著跳，一直踩到自己的腳。",
+     "en": "The gardener danced too, and kept stepping on his own feet."
+    },
+    {
+     "who": "旁白",
+     "text": "跳著，跳著，鞋子都跳破了！",
+     "en": "They danced and danced until their shoes were worn out!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡大廳，早上，陽光照進來，國王坐在金色寶座上。",
+   "act": "園丁小伙子拿著銀色的小樹枝給國王看；十二個公主站成一排，手上提著破鞋子，臉紅紅的；大公主低著頭，小公主偷偷對小伙子笑；國王張大嘴巴，好驚訝。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天快亮了，小伙子先跑回去，躺好打呼。",
+     "en": "Before dawn, the gardener hurried back first and lay down, snoring."
+    },
+    {
+     "who": "國王",
+     "tag": "curious",
+     "text": "園丁小伙子，你找到祕密了嗎？",
+     "en": "Gardener, did you find the secret?"
+    },
+    {
+     "who": "園丁小伙子",
+     "tag": "excited",
+     "text": "找到了！公主們去地底下的樹林跳舞了！",
+     "en": "I did! The princesses went to a forest under the ground to dance!"
+    },
+    {
+     "who": "旁白",
+     "text": "他拿出那根銀色的小樹枝。",
+     "en": "He held up the little silver twig."
+    },
+    {
+     "who": "大公主",
+     "tag": "shy",
+     "text": "對不起，爸爸。我們好愛跳舞，怕你不讓我們去。",
+     "en": "We're sorry, Father. We love to dance, and we were afraid you'd say no."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大廳變成了舞廳，晚上，掛滿彩帶和燈，樂隊在演奏；鞋匠爺爺坐在旁邊。",
+   "act": "國王牽著大公主跳舞，皇冠歪到一邊，笑得好開心；其他公主手牽手跳成一圈；小公主拉著園丁小伙子（換上乾淨的白襯衫、還是戴著草帽）的手跳舞；鞋匠爺爺坐在旁邊拍手，腳邊放著一大箱新鞋子。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "傻孩子！想跳舞，跟爸爸說就好呀！",
+     "en": "Silly girls! If you want to dance, just tell me!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，城堡裡每個禮拜，都開一場舞會。",
+     "en": "From then on, the castle held a ball every week."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "園丁小伙子是大英雄！大家一起來跳舞！",
+     "en": "The gardener is our hero! Everyone, come and dance!"
+    },
+    {
+     "who": "小公主",
+     "tag": "shy",
+     "text": "園丁哥哥，你要跟我跳舞嗎？",
+     "en": "Gardener, will you dance with me?"
+    },
+    {
+     "who": "園丁小伙子",
+     "tag": "happy",
+     "text": "好呀！我們是好朋友！",
+     "en": "Sure! We're good friends!"
+    }
+   ]
+  }
+ ]
+}

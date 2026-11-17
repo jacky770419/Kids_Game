@@ -1,0 +1,279 @@
+{
+ "id": "belling-cat",
+ "title": "老鼠開會",
+ "title_en": "Belling the Cat",
+ "size": "短",
+ "roles": {
+  "老鼠爺爺": "老鼠家族最老的爺爺，聲音慈祥穩重、慢慢說，愛呵呵笑。",
+  "小老鼠": "最小的小老鼠，聲音尖細可愛、又快又興奮，點子很多。",
+  "胖老鼠": "愛吃起司的胖叔叔，聲音懶洋洋、慢吞吞，常常喊累，最後吃到起司好滿足。",
+  "年輕老鼠": "愛逞強的年輕老鼠，聲音輕快有精神，嘴巴很勇敢，輪到他就找藉口。"
+ },
+ "cast": {
+  "老鼠爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小老鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "胖老鼠": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "年輕老鼠": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第1頁『什麼時候』",
+   "read": "shén"
+  },
+  {
+   "char": "嚇",
+   "where": "第2頁『嚇飛了』",
+   "read": "xià"
+  },
+  {
+   "char": "誰",
+   "where": "第4頁『誰要去掛鈴鐺』",
+   "read": "shéi"
+  },
+  {
+   "char": "嚕",
+   "where": "第7頁『呼嚕，呼嚕』",
+   "read": "lū"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有』，第2頁『沒聲音』",
+   "read": "méi"
+  },
+  {
+   "char": "間",
+   "where": "第6頁『我站中間』",
+   "read": "jiān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上的老廚房，月光從窗戶照進來；木頭地板、木頭碗櫃，碗櫃下面有一個小洞，是老鼠的家；牆角有一個藍色的軟墊。",
+   "act": "胖老鼠（灰色的毛、粉紅色的大耳朵、圓滾滾的大肚子，繫咖啡色領巾，手上抱著一塊黃色起司）抱著起司從桌腳偷偷走過，一回頭，看到大花貓（橘白花紋、胖嘟嘟的大貓，圓臉、表情愛睏，看起來一點也不兇）就站在他身後，嚇得起司飛到半空中，鬍子都豎起來了；大花貓只是歪著頭看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "碗櫃下面，住著一群老鼠。",
+     "en": "Under the cupboard in an old kitchen lived a family of mice."
+    },
+    {
+     "who": "旁白",
+     "text": "廚房裡，也住著一隻大花貓。",
+     "en": "A big tabby cat lived in the kitchen too."
+    },
+    {
+     "who": "旁白",
+     "text": "大花貓走路，一點聲音也沒有。",
+     "en": "When the cat walked, she didn't make a single sound."
+    },
+    {
+     "who": "胖老鼠",
+     "tag": "scared",
+     "text": "哇！牠什麼時候來的？",
+     "en": "Eek! When did she get here?"
+    }
+   ]
+  },
+  {
+   "scene": "碗櫃下面的老鼠洞裡：瓶蓋當桌子、火柴盒當椅子，一根小蠟燭照亮四周。",
+   "act": "老鼠爺爺（灰色的毛、粉紅色的大耳朵、白色長鬍鬚，繫紅色領巾，拄著一根火柴棒拐杖）站在瓶蓋桌子前，用拐杖敲桌子開會；小老鼠（灰色的毛、粉紅色的大耳朵，身體最小，繫黃色領巾）、胖老鼠、年輕老鼠（灰色的毛、粉紅色的大耳朵，瘦瘦高高，繫橘色領巾，頭頂有一撮翹起來的毛）和其他幾隻老鼠圍著桌子坐；胖老鼠抱著起司嘆氣；年輕老鼠拍著胸脯。",
+   "lines": [
+    {
+     "who": "老鼠爺爺",
+     "tag": "serious",
+     "text": "大家來開會！大花貓走路沒聲音，怎麼辦？",
+     "en": "Meeting time, everyone! The cat walks without a sound. What should we do?"
+    },
+    {
+     "who": "胖老鼠",
+     "tag": "sad",
+     "text": "剛才，我的起司都嚇飛了！",
+     "en": "Just now, I got so scared my cheese went flying!"
+    },
+    {
+     "who": "年輕老鼠",
+     "tag": "proud",
+     "text": "那我們跑快一點就好啦！",
+     "en": "Then we just have to run faster!"
+    },
+    {
+     "who": "胖老鼠",
+     "tag": "whining",
+     "text": "我跑不快啦！",
+     "en": "But I can't run fast!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個老鼠洞裡，蠟燭的光搖來搖去。",
+   "act": "小老鼠跳到火柴盒上，高高舉起一個金色的小鈴鐺，眼睛發亮；大家都轉頭看著她。",
+   "lines": [
+    {
+     "who": "小老鼠",
+     "tag": "excited",
+     "text": "我有一個好辦法！",
+     "en": "I have a great idea!"
+    },
+    {
+     "who": "小老鼠",
+     "text": "在大花貓的脖子上，掛一個鈴鐺！",
+     "en": "Let's hang a bell around the cat's neck!"
+    },
+    {
+     "who": "小老鼠",
+     "text": "牠一走路，就會叮噹，叮噹。我們就知道牠來了！",
+     "en": "When she walks, it will go jingle, jingle, and we'll know she's coming!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個老鼠洞裡。",
+   "act": "老鼠們都站起來拍手歡呼，年輕老鼠把小老鼠舉起來；只有老鼠爺爺摸著鬍子，慢慢地舉起一根手指；接著大家都停住，張著嘴巴，洞裡一下子安靜下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家都拍手：「好主意！好主意！」",
+     "en": "Everyone clapped. \"Great idea! Great idea!\""
+    },
+    {
+     "who": "年輕老鼠",
+     "tag": "excited",
+     "text": "小老鼠真聰明！",
+     "en": "Little Mouse is so smart!"
+    },
+    {
+     "who": "老鼠爺爺",
+     "tag": "gentle",
+     "text": "是好辦法。可是，誰要去掛鈴鐺呢？",
+     "en": "It is a good plan. But who will hang the bell?"
+    },
+    {
+     "who": "旁白",
+     "text": "大家一下子安靜下來。",
+     "en": "Suddenly, everyone went very quiet."
+    }
+   ]
+  },
+  {
+   "scene": "同一個老鼠洞裡。",
+   "act": "胖老鼠摸著大肚子往後退；年輕老鼠抱著肚子，假裝很痛，偷偷用一隻眼睛看大家；小老鼠踮著腳尖，比著自己有多小；其他老鼠你看我、我看你。",
+   "lines": [
+    {
+     "who": "胖老鼠",
+     "tag": "scared",
+     "text": "我太胖了，會把牠吵醒。",
+     "en": "I'm too chubby. I'd wake her up."
+    },
+    {
+     "who": "年輕老鼠",
+     "tag": "nervous",
+     "text": "我、我突然肚子痛！",
+     "en": "I, I suddenly have a tummy ache!"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "sad",
+     "text": "我太小了，爬不上去。",
+     "en": "I'm too small. I can't climb up."
+    }
+   ]
+  },
+  {
+   "scene": "同一個老鼠洞裡，蠟燭的光暖暖的。",
+   "act": "老鼠爺爺張開雙手，把大家圍在一起，呵呵笑；胖老鼠挺起肚子拍胸口；年輕老鼠舉手；小老鼠跳起來舉著鈴鐺。",
+   "lines": [
+    {
+     "who": "老鼠爺爺",
+     "tag": "laughing",
+     "text": "一隻老鼠不敢，那我們一起去！",
+     "en": "If one mouse is too scared, then we'll all go together!"
+    },
+    {
+     "who": "胖老鼠",
+     "tag": "proud",
+     "text": "我最壯，我在下面！",
+     "en": "I'm the strongest, so I'll be on the bottom!"
+    },
+    {
+     "who": "年輕老鼠",
+     "tag": "excited",
+     "text": "我站中間！肚子也不痛了！",
+     "en": "I'll stand in the middle! My tummy feels fine now!"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "excited",
+     "text": "我最輕，我站最上面掛鈴鐺！",
+     "en": "I'm the lightest, so I'll stand on top and hang the bell!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上的老廚房，月光照在牆角的藍色軟墊上。",
+   "act": "大花貓在軟墊上捲成一團睡覺，嘴角帶著笑；老鼠們一隻站在一隻身上，疊成一座小塔：胖老鼠在最下面咬著牙撐住，年輕老鼠站在中間腳發抖，小老鼠站在最上面，把一條紅色緞帶和金色小鈴鐺繞在大花貓的脖子上；老鼠爺爺在旁邊用手指比「噓」。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大花貓閉著眼睛，呼嚕，呼嚕。",
+     "en": "The cat's eyes were closed. Snore, snore."
+    },
+    {
+     "who": "旁白",
+     "text": "老鼠們一隻站在一隻身上，變成一座小塔。",
+     "en": "The mice climbed on top of each other and made a little tower."
+    },
+    {
+     "who": "老鼠爺爺",
+     "tag": "whispering",
+     "text": "小聲一點，小心一點。",
+     "en": "Quiet now. Careful now."
+    },
+    {
+     "who": "旁白",
+     "text": "小老鼠把鈴鐺掛好了！",
+     "en": "Little Mouse hung the bell!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天，陽光照進老廚房，碗櫃下面的老鼠洞口。",
+   "act": "大花貓脖子上繫著紅色緞帶和金鈴鐺，開心地瞇起眼睛，翹著尾巴走來走去；老鼠們躲在洞口偷看，摀著嘴偷笑；胖老鼠坐在洞口，抱著起司大口吃，好滿足。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "叮噹！大花貓醒了。",
+     "en": "Jingle! The cat woke up."
+    },
+    {
+     "who": "旁白",
+     "text": "牠低頭一看，喵！好像很喜歡呢。",
+     "en": "She looked down at her bell. Meow! She seemed to love it."
+    },
+    {
+     "who": "旁白",
+     "text": "從此，大花貓一來，就叮噹，叮噹！",
+     "en": "From then on, whenever the cat came, it went jingle, jingle!"
+    },
+    {
+     "who": "胖老鼠",
+     "tag": "happy",
+     "text": "現在，我可以放心吃起司了！",
+     "en": "Now I can eat my cheese in peace!"
+    }
+   ]
+  }
+ ]
+}

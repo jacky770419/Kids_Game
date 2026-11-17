@@ -1,0 +1,377 @@
+{
+ "id": "hare-rematch",
+ "title": "龜兔再賽跑",
+ "title_en": "The Tortoise and the Hare Race Again",
+ "size": "中",
+ "roles": {
+  "兔子": "就是《龜兔賽跑》裡的兔子，活潑的年輕男聲，愛逞強、說話又快又興奮，著急時快哭，交到朋友後笑得很開心。",
+  "烏龜": "就是《龜兔賽跑》裡的烏龜，懶洋洋的胖叔叔聲音，說話慢慢的、很和氣，游泳時很得意。",
+  "小松鼠": "當裁判的小松鼠，聲音尖細可愛、精神十足，喊口令時又大聲又認真。"
+ },
+ "cast": {
+  "兔子": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "烏龜": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "小松鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "當",
+   "where": "第2頁『我來當裁判』",
+   "read": "dāng"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰先摸到』『誰就贏』，第10頁『誰都比不上』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有橋』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『不會游泳』",
+   "read": "huì"
+  },
+  {
+   "char": "擔",
+   "where": "第5頁『別擔心』",
+   "read": "dān"
+  },
+  {
+   "char": "載",
+   "where": "第11頁『烏龜載兔子』",
+   "read": "zài"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "大草原，早上，綠色的草地上開著小花；遠處有一條大河，河的對面是一座綠色的小山，山頂上有一棵大樹。",
+   "act": "兔子和烏龜就是《龜兔賽跑》裡的兩位：兔子是白色的兔子，長耳朵裡面是粉紅色，粉紅色臉頰，露出兩顆大門牙，圓圓的白尾巴，不穿衣服；烏龜是嫩綠色的烏龜，背著深綠色、一格一格六角形花紋的殼，淡綠色的肚子，粉紅色臉頰，笑咪咪的。兔子雙手叉腰，鼓著臉頰，用手指著烏龜；烏龜慢慢抬起頭看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "上次賽跑，烏龜贏了兔子。",
+     "en": "Last time, Tortoise won the race against Hare."
+    },
+    {
+     "who": "旁白",
+     "text": "兔子想了好久，心裡就是不服氣。",
+     "en": "Hare thinks about it for a long, long time. He still isn't happy about it."
+    },
+    {
+     "who": "兔子",
+     "tag": "excited",
+     "text": "烏龜，我們再比一次！",
+     "en": "Tortoise, let's race again!"
+    },
+    {
+     "who": "兔子",
+     "tag": "proud",
+     "text": "這次，我絕對不打瞌睡！",
+     "en": "This time, I won't take a single nap!"
+    }
+   ]
+  },
+  {
+   "scene": "大草原上用樹枝畫了一條起跑線，旁邊一塊大石頭。",
+   "act": "小松鼠第一次出場：橘咖啡色的小松鼠，一條好大的蓬鬆尾巴，頭戴一頂紅色小帽，手裡拿著一面小黃旗，站在大石頭上。烏龜伸出前腳指著遠方的小山；兔子跳上跳下，等不及要開始。",
+   "lines": [
+    {
+     "who": "烏龜",
+     "tag": "calm",
+     "text": "好啊。這次，我們跑到河對面的山頂。",
+     "en": "All right. This time, let's race to the top of the hill across the river."
+    },
+    {
+     "who": "烏龜",
+     "text": "誰先摸到山頂的大樹，誰就贏。",
+     "en": "Whoever touches the big tree on top first wins."
+    },
+    {
+     "who": "小松鼠",
+     "tag": "excited",
+     "text": "我來當裁判！",
+     "en": "I'll be the judge!"
+    },
+    {
+     "who": "兔子",
+     "tag": "proud",
+     "text": "這次，我一定贏！",
+     "en": "This time, I'll win for sure!"
+    }
+   ]
+  },
+  {
+   "scene": "大草原的起跑線。",
+   "act": "小松鼠在大石頭上用力揮下小黃旗；兔子像一陣風衝出去，身後揚起一片草屑，只剩一個小白點；烏龜才剛跨出第一步，笑咪咪的。",
+   "lines": [
+    {
+     "who": "小松鼠",
+     "tag": "shouting",
+     "text": "預備，開始！",
+     "en": "Ready, set, go!"
+    },
+    {
+     "who": "旁白",
+     "text": "兔子像一陣風，一下子就跑不見了。",
+     "en": "Hare zooms off like the wind and is gone in a flash."
+    },
+    {
+     "who": "旁白",
+     "text": "烏龜呢？一步、一步，往前走。",
+     "en": "And Tortoise? Step by step, he keeps going."
+    },
+    {
+     "who": "烏龜",
+     "text": "慢慢走，不要停。",
+     "en": "Slow and steady. Don't stop."
+    }
+   ]
+  },
+  {
+   "scene": "大河邊，河水又寬又急，閃著藍光，河上沒有橋，對岸就是那座小山。",
+   "act": "兔子在河邊急得跳來跳去，兩隻長耳朵垂下來，伸出一隻腳碰到河水又趕快縮回來，快要哭了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兔子跑到一條大河邊，突然停住了。",
+     "en": "Hare runs to a wide river and stops short."
+    },
+    {
+     "who": "兔子",
+     "tag": "surprised",
+     "text": "糟糕，這裡沒有橋！",
+     "en": "Oh no, there's no bridge!"
+    },
+    {
+     "who": "旁白",
+     "text": "他想跳過去，可是河太寬了。",
+     "en": "He tries to jump across, but the river is too wide."
+    },
+    {
+     "who": "兔子",
+     "tag": "worried",
+     "text": "我又不會游泳，怎麼辦？",
+     "en": "And I can't swim. What do I do?"
+    },
+    {
+     "who": "旁白",
+     "text": "兔子在河邊跳來跳去，急到快哭了。",
+     "en": "Hare hops back and forth by the water, almost in tears."
+    }
+   ]
+  },
+  {
+   "scene": "大河邊，太陽升到頭頂。",
+   "act": "烏龜慢慢走到河邊，脖子伸得長長的，笑咪咪地看著兔子；兔子坐在地上抱著膝蓋，耳朵垂到地上，一臉委屈。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了好久，烏龜才走到河邊。",
+     "en": "After a long time, Tortoise reaches the river."
+    },
+    {
+     "who": "兔子",
+     "tag": "sad",
+     "text": "烏龜，我過不去了。",
+     "en": "Tortoise, I can't get across."
+    },
+    {
+     "who": "旁白",
+     "text": "烏龜看著大河，又看著兔子，笑了。",
+     "en": "Tortoise looks at the river, then at Hare, and smiles."
+    },
+    {
+     "who": "烏龜",
+     "tag": "gentle",
+     "text": "別擔心，坐到我的殼上來吧！",
+     "en": "Don't worry. Climb up onto my shell!"
+    }
+   ]
+  },
+  {
+   "scene": "大河中間，河水起著小波浪，旁邊有小魚跳出水面。",
+   "act": "烏龜在河裡划水，游得又快又穩；兔子坐在烏龜的殼上，兩手抓著殼邊，一開始緊張得閉眼，後來張開眼睛開心大笑，耳朵被風吹得往後飄。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "烏龜游進河裡，兔子坐在他的殼上。",
+     "en": "Tortoise swims into the river with Hare sitting on his shell."
+    },
+    {
+     "who": "兔子",
+     "tag": "excited",
+     "text": "哇，好穩喔！你游泳好厲害！",
+     "en": "Wow, this is so smooth! You're a great swimmer!"
+    },
+    {
+     "who": "烏龜",
+     "tag": "proud",
+     "text": "在水裡，我很快喔！",
+     "en": "In the water, I'm fast!"
+    },
+    {
+     "who": "旁白",
+     "text": "一下子，他們就到了河的對岸。",
+     "en": "In no time at all, they reach the other side."
+    }
+   ]
+  },
+  {
+   "scene": "河對岸的山腳下，一條又陡又彎的山路往上爬，路上都是石頭和樹根，山頂的大樹在很高的地方。",
+   "act": "兩個剛上岸，身上滴著水；烏龜抬頭看著好陡的山路，嘴巴張成一個圓，嚇了一跳；兔子甩甩身上的水，拍拍胸口，自告奮勇。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "上了岸，前面是一條又陡又彎的山路。",
+     "en": "On the other side, a steep and winding path goes up the hill."
+    },
+    {
+     "who": "烏龜",
+     "tag": "worried",
+     "text": "這麼陡，我要爬到天黑了。",
+     "en": "It's so steep. I'll be climbing until dark!"
+    },
+    {
+     "who": "旁白",
+     "text": "兔子看著山路，想了一下。",
+     "en": "Hare looks at the path and thinks for a moment."
+    },
+    {
+     "who": "兔子",
+     "tag": "excited",
+     "text": "換我幫你！我抱著你跑！",
+     "en": "My turn to help! I'll carry you and run!"
+    }
+   ]
+  },
+  {
+   "scene": "陡陡的山路上，兩旁是松樹，路上有大石頭和彎彎曲曲的樹根。",
+   "act": "兔子雙手抱著烏龜，一跳就跳過一顆大石頭；烏龜在兔子懷裡張開四隻腳，像在飛一樣，開心得大笑。",
+   "lines": [
+    {
+     "who": "兔子",
+     "tag": "excited",
+     "text": "抓好喔，我要跳囉！",
+     "en": "Hold on tight. Here I go!"
+    },
+    {
+     "who": "旁白",
+     "text": "兔子抱起烏龜，往山上跳。",
+     "en": "Hare picks up Tortoise and hops up the hill."
+    },
+    {
+     "who": "旁白",
+     "text": "跳過石頭，跳過樹根，一下子就跳了好遠。",
+     "en": "Over rocks, over roots, they get far in no time."
+    },
+    {
+     "who": "烏龜",
+     "tag": "laughing",
+     "text": "哈，好快！好像在飛！",
+     "en": "Ha, so fast! It's like flying!"
+    }
+   ]
+  },
+  {
+   "scene": "山頂，大樹就在前面，粗粗的樹幹；小松鼠坐在樹枝上等著。",
+   "act": "兔子把烏龜輕輕放下來，一手牽著烏龜的前腳；兩個一起伸出另一隻手和前腳，同時摸到大樹的樹幹，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山頂的大樹，就在前面了。",
+     "en": "The big tree on the hilltop is just ahead."
+    },
+    {
+     "who": "旁白",
+     "text": "兔子停下來，小心地把烏龜放在地上。",
+     "en": "Hare stops and carefully sets Tortoise down."
+    },
+    {
+     "who": "兔子",
+     "tag": "happy",
+     "text": "烏龜，我們一起摸大樹吧！",
+     "en": "Tortoise, let's touch the tree together!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們一起伸出手，摸到了大樹。",
+     "en": "Together, they reach out and touch the big tree."
+    }
+   ]
+  },
+  {
+   "scene": "山頂的大樹下，可以看到遠遠的大河和大草原。",
+   "act": "小松鼠從樹枝上跳下來，兩手高高舉起小黃旗；兔子和烏龜互相拍手，笑得好開心。",
+   "lines": [
+    {
+     "who": "小松鼠",
+     "tag": "excited",
+     "text": "你們兩個，都是第一名！",
+     "en": "You're both number one!"
+    },
+    {
+     "who": "小松鼠",
+     "tag": "happy",
+     "text": "這是我看過最棒的比賽！",
+     "en": "That's the best race I've ever seen!"
+    },
+    {
+     "who": "兔子",
+     "tag": "laughing",
+     "text": "你游泳最厲害，我跑步最厲害。",
+     "en": "You're the best swimmer, and I'm the best runner."
+    },
+    {
+     "who": "烏龜",
+     "tag": "happy",
+     "text": "兩個一起，誰都比不上！",
+     "en": "And together, nobody can beat us!"
+    }
+   ]
+  },
+  {
+   "scene": "黃昏的大草原，天空是橘色和粉紅色的，大河在遠處閃著金光。",
+   "act": "回家的路上，烏龜在河裡游，兔子坐在他的殼上揮手；畫面另一邊，兔子抱著烏龜在山坡上跳。小松鼠坐在烏龜的殼上一起笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那天起，兔子和烏龜變成了好朋友。",
+     "en": "Since that day, Hare and Tortoise have been good friends."
+    },
+    {
+     "who": "旁白",
+     "text": "過河的時候，烏龜載兔子。",
+     "en": "When they cross the river, Tortoise carries Hare."
+    },
+    {
+     "who": "旁白",
+     "text": "爬山的時候，兔子抱烏龜。",
+     "en": "When they climb a hill, Hare carries Tortoise."
+    },
+    {
+     "who": "旁白",
+     "text": "一起走，就能走到很遠的地方。",
+     "en": "Together, they can go a long, long way."
+    },
+    {
+     "who": "兔子",
+     "tag": "happy",
+     "text": "烏龜，明天我們去哪裡玩？",
+     "en": "Tortoise, where shall we go tomorrow?"
+    }
+   ]
+  }
+ ]
+}

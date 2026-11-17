@@ -1,0 +1,565 @@
+{
+ "id": "sleeping-beauty",
+ "title": "睡美人",
+ "title_en": "Sleeping Beauty",
+ "size": "長",
+ "roles": {
+  "國王": "就是《青蛙王子》裡那位慈祥的老國王，聲音低沉溫暖、慢慢說，著急時也很溫和。",
+  "王后": "溫柔的王后，三十多歲的女聲，說話輕柔，很愛女兒，難過時聲音發抖。",
+  "公主": "十五歲的公主，聲音甜美活潑、很愛探險，剛醒來時懶洋洋的很可愛。",
+  "好仙女": "年輕溫柔的仙女，聲音清亮、穩穩的，讓大家安心。",
+  "生氣的仙女": "住在高山上的仙女，以為被故意忘了就氣呼呼，說話誇張好笑不可怕，最後不好意思地和好。",
+  "王子": "年輕勇敢的王子，聲音明亮溫和、有禮貌，叫醒公主時很輕柔。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "王后": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "好仙女": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "生氣的仙女": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第1、3、16頁『宴會』，第3、4、5頁『會唱』『會被』『會一直睡』『不會』『會睡』『會牽起』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有請我』，第8頁『沒有上去過』，第15頁『沒有忘了我』，第16頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第8、9頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "給",
+   "where": "第3頁『送給』，第15頁『給我的』",
+   "read": "gěi"
+  },
+  {
+   "char": "扇",
+   "where": "第8頁『一扇小木門』",
+   "read": "shàn"
+  },
+  {
+   "char": "冠",
+   "where": "第14頁『皇冠』",
+   "read": "guān"
+  },
+  {
+   "char": "場",
+   "where": "第1頁、第16頁『一場』",
+   "read": "chǎng"
+  },
+  {
+   "char": "參",
+   "where": "第16頁『參加』",
+   "read": "cān"
+  },
+  {
+   "char": "著",
+   "where": "第9頁『睡著了』，第10頁『一睡著』『睡著了』，第13頁『睡著的』（睡著要念 zháo，不是輕聲 zhe）",
+   "read": "zháo"
+  },
+  {
+   "char": "誰",
+   "where": "第13頁『你是誰呀』",
+   "read": "shéi"
+  },
+  {
+   "char": "尾",
+   "where": "第14頁『尾巴』",
+   "read": "wěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一座白色石頭城堡裡的寶寶房，白天。城堡有很多藍色尖屋頂，窗外看得到旗子在飄；陽光從窗戶照進來，房間中間有一張白色的木頭搖籃。",
+   "act": "國王出場：白鬍子、戴金色大皇冠、穿紅色長袍，和《青蛙王子》的國王同一個造型。王后出場：棕色長捲髮、戴一頂小銀冠、穿淡藍色長裙。兩個人一起彎腰看搖籃，搖籃裡的小公主寶寶包著粉紅色小被子，頭頂有一撮棕色頭髮；國王和王后笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位國王和一位王后。",
+     "en": "Once upon a time, there lived a king and a queen."
+    },
+    {
+     "who": "旁白",
+     "text": "他們好想要一個孩子。",
+     "en": "They wished and wished for a baby."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，小公主出生了！",
+     "en": "One day, a little princess was born!"
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "我們的小公主，好可愛呀！",
+     "en": "Our little princess is so lovely!"
+    },
+    {
+     "who": "王后",
+     "tag": "excited",
+     "text": "我們來開一場大宴會，請大家一起來！",
+     "en": "Let's have a big party and invite everyone!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡高高的窗戶邊，白天。窗外是藍天和綠色的山丘，最遠的地方有一座好高的山，山頂有一棵大樹和一間小石頭屋。",
+   "act": "國王坐在窗邊的書桌前寫金色的邀請信，王后把信一封一封交給白鴿；白鴿們叼著信飛向四面八方。其中一封信被一陣大風吹走，飄向遠處的高山，國王和王后都沒看到。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王寫了好多金色的邀請信。",
+     "en": "The king wrote many golden invitations."
+    },
+    {
+     "who": "旁白",
+     "text": "每一位仙女，都有一封。",
+     "en": "There was one for every fairy in the land."
+    },
+    {
+     "who": "旁白",
+     "text": "呼！一陣大風，吹走了一封信。",
+     "en": "Whoosh! A big wind blew one letter away."
+    },
+    {
+     "who": "旁白",
+     "text": "信飛呀飛，飛到很遠的高山上。",
+     "en": "It flew and flew, all the way to a faraway mountain."
+    },
+    {
+     "who": "旁白",
+     "text": "那座山上，也住著一位仙女。",
+     "en": "A fairy lived on that mountain, too."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大廳，宴會那天。天花板掛著金色吊燈，長桌上擺滿蛋糕和水果，牆上掛著彩帶和花圈；大廳中間放著白色搖籃。",
+   "act": "好仙女出場：年輕的仙女，金色短髮、戴一個小花環、穿淡綠色長裙，背上有一對透明的蝴蝶翅膀，拿一根頂端有小星星的魔杖。她和另外幾位穿橘色、紫色、白色長裙、背上也有透明翅膀的年輕仙女圍著搖籃，揮動魔杖撒出亮晶晶的光點；國王和王后站在旁邊微笑。好仙女排在最後，還沒送出祝福。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "宴會那天，好多仙女都來了。",
+     "en": "On the day of the party, many fairies came."
+    },
+    {
+     "who": "旁白",
+     "text": "她們圍著搖籃，送給小公主祝福。",
+     "en": "They gathered around the cradle to give the baby princess their wishes."
+    },
+    {
+     "who": "旁白",
+     "text": "一位仙女，祝她美麗。",
+     "en": "One fairy wished her beauty."
+    },
+    {
+     "who": "旁白",
+     "text": "一位仙女，祝她善良。",
+     "en": "One fairy wished her kindness."
+    },
+    {
+     "who": "旁白",
+     "text": "一位仙女，祝她會唱好聽的歌。",
+     "en": "One fairy wished her a lovely singing voice."
+    }
+   ]
+  },
+  {
+   "scene": "同一個大廳。大門被撞開，一陣冷風吹進來，蠟燭的火都在搖，彩帶被吹得亂飛。",
+   "act": "生氣的仙女出場：又高又瘦，灰色頭髮亂翹，戴一頂歪掉的尖帽子，穿一件縫著彩色補丁的咖啡色斗篷，背上有一對小小的、皺皺的灰色翅膀，拿一根彎彎的木頭魔杖。她鼓著臉、跺著腳，用魔杖指著搖籃，魔杖冒出一團灰色的煙；樣子誇張好笑，不可怕。國王和王后嚇了一跳，其他仙女躲到桌子後面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最後一位仙女正要送祝福，砰！大門打開了。",
+     "en": "The last fairy was about to give her wish when, bang! The doors flew open."
+    },
+    {
+     "who": "生氣的仙女",
+     "tag": "angry",
+     "text": "哼！你們請了大家，怎麼沒有請我？",
+     "en": "Hmph! You invited everyone. Why didn't you invite me?"
+    },
+    {
+     "who": "生氣的仙女",
+     "text": "公主十五歲的時候，會被紡紗機的針刺到手指。",
+     "en": "When the princess is fifteen, she will prick her finger on the needle of a spinning wheel."
+    },
+    {
+     "who": "生氣的仙女",
+     "text": "然後，她會一直睡，一直睡，永遠不醒！",
+     "en": "Then she will sleep, and sleep, and never wake up!"
+    },
+    {
+     "who": "旁白",
+     "text": "說完，她變成一團灰煙，不見了。",
+     "en": "And with that, she vanished in a puff of gray smoke."
+    }
+   ]
+  },
+  {
+   "scene": "同一個大廳，灰煙慢慢散開，蠟燭又亮起來。",
+   "act": "王后抱著搖籃掉眼淚，國王摟著王后；好仙女走到搖籃前，揮動星星魔杖，撒下一圈金色的亮光，溫柔地對國王和王后微笑。",
+   "lines": [
+    {
+     "who": "王后",
+     "tag": "crying",
+     "text": "不要！我的寶貝！",
+     "en": "Oh no! My baby!"
+    },
+    {
+     "who": "好仙女",
+     "tag": "gentle",
+     "text": "別難過，我的祝福來了。",
+     "en": "Don't be sad. Here comes my wish."
+    },
+    {
+     "who": "好仙女",
+     "text": "我不能把魔法拿掉，可是我能把它改一改。",
+     "en": "I can't take the spell away, but I can change it."
+    },
+    {
+     "who": "好仙女",
+     "text": "公主不會永遠不醒，她會睡一百年。",
+     "en": "The princess won't sleep forever. She will sleep for one hundred years."
+    },
+    {
+     "who": "好仙女",
+     "text": "一百年後，勇敢的王子會牽起她的手，叫醒她。",
+     "en": "After a hundred years, a brave prince will take her hand and wake her up."
+    }
+   ]
+  },
+  {
+   "scene": "城堡前的廣場，白天。廣場上停著好幾輛馬車，車上堆滿木頭紡紗機；遠處是村子的紅屋頂。",
+   "act": "國王站在城堡台階上，伸手指著馬車，表情很認真；士兵把紡紗機搬上馬車；村民們站在旁邊看，有人點頭。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "serious",
+     "text": "把全國的紡紗機，都搬走！",
+     "en": "Take away every spinning wheel in the kingdom!"
+    },
+    {
+     "who": "旁白",
+     "text": "好多輛馬車，把紡紗機運到很遠的地方。",
+     "en": "Many wagons carried the spinning wheels far away."
+    },
+    {
+     "who": "旁白",
+     "text": "城堡裡，好像再也看不到紡紗機了。",
+     "en": "It seemed there was not one spinning wheel left in the castle."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的花園，春天，紅色和粉紅色的玫瑰開了；花園裡掛著彩帶，有一個白色涼亭。",
+   "act": "公主出場：十五歲，棕色長髮綁成一條鬆鬆的辮子，戴一個小金冠，穿玫瑰紅色長裙。她在花園裡蹦蹦跳跳，回頭對涼亭裡的國王和王后揮手；國王和王后坐在涼亭裡微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很多年過去了，公主十五歲了。",
+     "en": "Many years went by, and the princess turned fifteen."
+    },
+    {
+     "who": "旁白",
+     "text": "她很善良，又很愛笑，大家都喜歡她。",
+     "en": "She was kind and loved to laugh, and everyone loved her."
+    },
+    {
+     "who": "公主",
+     "tag": "excited",
+     "text": "今天是我的生日！我要去城堡裡探險！",
+     "en": "Today is my birthday! I'm going to explore the castle!"
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "去吧，小心一點喔。",
+     "en": "Go ahead, but be careful."
+    }
+   ]
+  },
+  {
+   "scene": "城堡角落一座很舊的小石塔，塔裡面是又窄又陡的石頭樓梯，一路往上；牆上掛著小油燈。",
+   "act": "公主一手提著玫瑰紅色的裙子，一手扶著牆，一步一步往上爬，好奇地睜大眼睛；樓梯最上面有一扇小小的木門，門縫透出光。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡的旁邊，有一座小塔。",
+     "en": "In a corner of the castle stood a little tower."
+    },
+    {
+     "who": "旁白",
+     "text": "公主從來沒有上去過。",
+     "en": "The princess had never been up there."
+    },
+    {
+     "who": "公主",
+     "tag": "curious",
+     "text": "一步，兩步，三步！上面有什麼呢？",
+     "en": "One step, two steps, three steps! What's up there?"
+    },
+    {
+     "who": "旁白",
+     "text": "樓梯最上面，有一扇小木門。",
+     "en": "At the very top was a little wooden door."
+    }
+   ]
+  },
+  {
+   "scene": "小塔頂的小房間，有一扇圓窗，陽光照進來；角落有一台木頭紡紗機，輪子在動，旁邊放著一籃白色的毛線團；牆邊有一張鋪著白色床單的小床。",
+   "act": "一位白頭髮、戴白色頭巾、穿咖啡色衣服的老奶奶坐在紡紗機前紡線，她不知道國王的命令；公主蹲在旁邊，伸出手指去摸紡紗機上那根細細的針，手指被刺到，皺起眉頭，眼睛快要閉上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "門裡面，有一位老奶奶，正在紡紗。",
+     "en": "Inside, an old granny was spinning thread."
+    },
+    {
+     "who": "公主",
+     "tag": "curious",
+     "text": "奶奶，這是什麼？看起來真好玩！",
+     "en": "Granny, what is that? It looks like fun!"
+    },
+    {
+     "who": "旁白",
+     "text": "公主伸出手指，摸了一下那根針。",
+     "en": "The princess reached out and touched the needle."
+    },
+    {
+     "who": "公主",
+     "tag": "surprised",
+     "text": "哎呀！",
+     "en": "Ouch!"
+    },
+    {
+     "who": "旁白",
+     "text": "她的手指被刺了一下，就睡著了。",
+     "en": "It pricked her finger, and she fell fast asleep."
+    }
+   ]
+  },
+  {
+   "scene": "城堡各個地方拼成一幅大畫：大廳、廚房、院子和屋頂。",
+   "act": "公主躺在小塔的小床上睡著；國王和王后坐在寶座上張大嘴巴打哈欠，就這樣睡著了；廚房裡的胖廚師戴白色高帽，張大嘴巴正要咬一口草莓蛋糕，也睡著了；小狗趴在地上、小貓趴在窗台、屋頂上的白鴿把頭埋進翅膀，全都睡著了。老奶奶趴在紡紗機上睡著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "公主一睡著，整座城堡也跟著睡著了。",
+     "en": "When the princess fell asleep, the whole castle fell asleep too."
+    },
+    {
+     "who": "旁白",
+     "text": "國王和王后，打了一個大哈欠，睡著了。",
+     "en": "The king and queen gave a big yawn and fell asleep."
+    },
+    {
+     "who": "旁白",
+     "text": "廚師張大嘴巴，正要咬一口蛋糕，也睡著了。",
+     "en": "The cook opened his mouth wide for a bite of cake, and fell asleep too."
+    },
+    {
+     "who": "旁白",
+     "text": "小狗睡了，小貓睡了，連鴿子都睡了。",
+     "en": "The dog slept, the cat slept, even the doves slept."
+    }
+   ]
+  },
+  {
+   "scene": "城堡外面，玫瑰花藤越爬越高，變成一道好高的花牆，把整座城堡包起來，只露出小塔的尖屋頂。畫面左邊是春天開花，右邊是冬天下雪，表示一年一年過去。",
+   "act": "沒有主角。遠處村子的大樹下，一位戴草帽、穿咖啡色背心的村子老爺爺指著玫瑰花牆，跟一群小孩說故事，小孩們聽得張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡外面，玫瑰花越爬越高。",
+     "en": "Outside, the roses climbed higher and higher."
+    },
+    {
+     "who": "旁白",
+     "text": "最後，變成一道好高的玫瑰花牆。",
+     "en": "At last, they became a tall wall of roses."
+    },
+    {
+     "who": "旁白",
+     "text": "春天，夏天，秋天，冬天，一年又一年過去了。",
+     "en": "Spring, summer, fall, and winter. Year after year went by."
+    },
+    {
+     "who": "旁白",
+     "text": "村子裡的人都說，城堡裡有一位睡美人。",
+     "en": "People in the village said there was a sleeping beauty inside."
+    }
+   ]
+  },
+  {
+   "scene": "玫瑰花牆前面，晴天。花牆上開滿紅玫瑰和粉紅玫瑰；花藤正往兩邊打開，變成一條開滿花的小路，路的盡頭是城堡大門。",
+   "act": "王子出場：年輕人，黑色短髮，穿深藍色外套和白襯衫，披一件金黃色短披風，腰上掛一把小劍，牽著一匹棕色的馬。他輕輕摸著玫瑰花說話，玫瑰花向他點頭、往兩邊讓開，花瓣飄下來；王子又驚訝又開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一百年後，一位王子來到了花牆前。",
+     "en": "One hundred years later, a prince came to the wall of roses."
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "玫瑰花，玫瑰花，請讓我過去。",
+     "en": "Roses, roses, please let me through."
+    },
+    {
+     "who": "旁白",
+     "text": "說也奇怪，花牆自己打開了！",
+     "en": "And like magic, the wall opened all by itself!"
+    },
+    {
+     "who": "旁白",
+     "text": "原來，一百年正好到了。",
+     "en": "The hundred years were over at last."
+    }
+   ]
+  },
+  {
+   "scene": "小塔頂的小房間，陽光從圓窗照進來；公主躺在一張鋪著白色床單的小床上，房間角落有可愛的蜘蛛網，窗外開著玫瑰。",
+   "act": "王子單膝跪在床邊，輕輕牽起公主的手；公主的睫毛動了動，慢慢睜開眼睛，伸了一個大懶腰，打著哈欠看王子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "王子爬上小塔，看到了睡著的公主。",
+     "en": "The prince climbed the little tower and found the sleeping princess."
+    },
+    {
+     "who": "旁白",
+     "text": "他溫柔地牽起公主的手。",
+     "en": "He gently took her hand."
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "公主，醒來吧。一百年過去了。",
+     "en": "Princess, wake up. One hundred years have passed."
+    },
+    {
+     "who": "公主",
+     "tag": "sleepy",
+     "text": "嗯？我睡了好久喔。你是誰呀？",
+     "en": "Hmm? I slept for so long. Who are you?"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大廳和廚房，陽光照進來，到處亮起來。",
+   "act": "國王和王后在寶座上揉著眼睛醒來，國王的金色大皇冠歪到一邊；廚房裡的胖廚師終於咬下一大口草莓蛋糕，滿臉奶油，笑得好開心；小狗搖著尾巴、白鴿飛上天；公主和王子手牽手走進大廳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "公主一醒來，整座城堡也醒來了！",
+     "en": "When the princess woke up, the whole castle woke up too!"
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦？我的皇冠，怎麼歪了？",
+     "en": "Huh? Why is my crown crooked?"
+    },
+    {
+     "who": "旁白",
+     "text": "廚師終於咬下那一口蛋糕。",
+     "en": "The cook finally took his bite of cake."
+    },
+    {
+     "who": "旁白",
+     "text": "小狗搖著尾巴，鴿子飛上天，大家都笑了。",
+     "en": "The dog wagged its tail, the doves flew up, and everyone laughed."
+    }
+   ]
+  },
+  {
+   "scene": "很遠的高山上，山頂有一棵大樹和一間小石頭屋，起了大風，樹葉被吹得到處飛；遠方看得到城堡，城堡外面的玫瑰花牆已經打開。",
+   "act": "生氣的仙女（灰色亂翹的頭髮、歪掉的尖帽子、縫著彩色補丁的咖啡色斗篷、小小的灰色翅膀）站在大樹下，一封又舊又皺的金色信被風從樹枝上吹下來，正好飄到她面前；她伸手接住，張大嘴巴好驚訝，接著不好意思地抓抓頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "呼！山上吹起一陣大風，一封信掉到仙女面前。",
+     "en": "Whoosh! A big wind blew on the mountain, and a letter dropped right in front of the fairy."
+    },
+    {
+     "who": "生氣的仙女",
+     "tag": "surprised",
+     "text": "咦？這是給我的邀請信！",
+     "en": "Huh? This is my invitation!"
+    },
+    {
+     "who": "生氣的仙女",
+     "tag": "sad",
+     "text": "原來，信被風吹到這裡。國王沒有忘了我！",
+     "en": "The wind blew it here. The king didn't forget me after all!"
+    },
+    {
+     "who": "生氣的仙女",
+     "tag": "shy",
+     "text": "哎呀，我做錯事了。",
+     "en": "Oh dear. I did something wrong."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的大廳又開起大宴會，晚上，掛滿彩帶和燈，長桌上擺著好大的蛋糕。",
+   "act": "生氣的仙女拿著那封舊的金色信，紅著臉低頭道歉；國王笑著伸出手歡迎她，王后在旁邊點頭；好仙女、公主和王子拍手；胖廚師端著蛋糕走過來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "仙女飛到城堡，紅著臉說對不起。",
+     "en": "The fairy flew to the castle and, with red cheeks, said she was sorry."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "沒關係！一起來參加宴會吧！",
+     "en": "That's all right! Come and join our party!"
+    },
+    {
+     "who": "生氣的仙女",
+     "tag": "happy",
+     "text": "我也要送祝福！祝大家每天晚上，都有好夢！",
+     "en": "I want to give a wish too! Sweet dreams to everyone, every night!"
+    },
+    {
+     "who": "旁白",
+     "text": "那天晚上，城堡裡開了一場最開心的宴會。",
+     "en": "That night, the castle had the happiest party ever."
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，祝你今天晚上，也有好夢喔！",
+     "en": "And sweet dreams to you tonight, too!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,391 @@
+{
+ "id": "billy-goats",
+ "title": "三隻山羊過橋",
+ "title_en": "The Three Billy Goats",
+ "size": "中",
+ "roles": {
+  "小山羊": "三兄弟裡最小的小山羊，五六歲小男孩的聲音，天真、有點膽小，但很會想辦法。",
+  "中山羊": "老二中山羊，少年的聲音，活潑機靈，害怕時說話很快。",
+  "大山羊": "老大大山羊，成熟溫和的男聲，沉穩不急，對誰都很和氣。",
+  "橋下怪獸": "橋下的綠色大怪獸，粗啞的大嗓門，愛裝兇其實很寂寞，哭起來和笑起來都很誇張，好笑不可怕。"
+ },
+ "cast": {
+  "小山羊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "中山羊": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "大山羊": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "橋下怪獸": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "誰",
+   "where": "第2頁『誰敢走』『把誰吃掉』，第3、5、7頁『誰在我的橋上走』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『沒錯』，第8頁『沒有生氣』，第9頁『沒有人』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『也不會飽』",
+   "read": "huì"
+  },
+  {
+   "char": "嚇",
+   "where": "第11頁『不嚇人了』",
+   "read": "xià"
+  },
+  {
+   "char": "什",
+   "where": "第12頁『寫什麼呀』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一條清澈的小河，河上有一座窄窄的木頭橋。河的這一邊是光禿禿的土坡，草都被吃光了；河的那一邊是綠油油的山坡，開滿小黃花，還有一叢一叢的紅色野莓。早上，天空很藍。",
+   "act": "三隻山羊兄弟站在光禿禿的這一邊，都是白色捲毛、奶油色的臉、頭上一對黃色小彎角、咖啡色小蹄子。小山羊最小，脖子上戴黃色鈴鐺；中山羊中等身材，脖子上繫藍色領巾；大山羊最高最壯，角也最大，下巴有一撮白鬍子，脖子上戴紅色鈴鐺。小山羊摸著肚子，苦著臉；大山羊指著對岸的青草。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小河的這一邊，青草都被吃光了。",
+     "en": "On this side of the river, all the grass had been eaten."
+    },
+    {
+     "who": "旁白",
+     "text": "小河的那一邊，有好多又綠又嫩的青草。",
+     "en": "On the other side, there was lots of fresh green grass."
+    },
+    {
+     "who": "小山羊",
+     "tag": "sad",
+     "text": "大哥，我的肚子好餓喔！",
+     "en": "Big Brother, my tummy is so hungry!"
+    },
+    {
+     "who": "大山羊",
+     "tag": "gentle",
+     "text": "我們過橋，去那邊吃草吧！",
+     "en": "Let's cross the bridge and eat over there!"
+    },
+    {
+     "who": "中山羊",
+     "tag": "scared",
+     "text": "可是，聽說橋下住著怪獸耶。",
+     "en": "But they say a monster lives under that bridge."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋的下面，陰陰涼涼的，河水在石頭間流過，橋墩旁邊有一堆亂七八糟的樹枝，是怪獸的窩。",
+   "act": "橋下怪獸第一次出場：綠色毛茸茸的大怪獸，肚子圓滾滾，鼻子又大又紅，頭頂一撮紫色的毛，嘴邊露出兩顆白色小牙，眉毛皺成一團，看起來想裝兇，其實有點呆。牠從橋邊探出頭，雙手叉腰大吼；三隻山羊在岸上嚇得擠成一團。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "沒錯，橋下真的住著一隻大怪獸。",
+     "en": "It was true. A big monster lived under the bridge."
+    },
+    {
+     "who": "旁白",
+     "text": "牠的鼻子很大，聲音像打雷一樣。",
+     "en": "He had a big nose and a voice like thunder."
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "shouting",
+     "text": "誰敢走我的橋，我就把誰吃掉！",
+     "en": "If anyone crosses my bridge, I'll gobble them up!"
+    },
+    {
+     "who": "中山羊",
+     "tag": "scared",
+     "text": "哇，好可怕喔！",
+     "en": "Whoa, he's scary!"
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋上，河水在下面流。",
+   "act": "小山羊踮著小蹄子走上橋，鈴鐺輕輕晃；怪獸突然從橋邊冒出頭，瞪著大眼睛。小山羊縮著脖子，耳朵往下垂。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小山羊第一個上橋。",
+     "en": "Little Goat went first."
+    },
+    {
+     "who": "旁白",
+     "text": "咚、咚、咚。腳步聲很輕。",
+     "en": "Tap, tap, tap. His steps were soft and light."
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "shouting",
+     "text": "誰在我的橋上走？",
+     "en": "Who's walking on my bridge?"
+    },
+    {
+     "who": "小山羊",
+     "tag": "scared",
+     "text": "是我，小山羊。",
+     "en": "It's me, Little Goat."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋上。",
+   "act": "怪獸張大嘴巴、伸出大手；小山羊舉起小蹄子比了比自己有多小，再指指岸上的中山羊。怪獸抓著頭在想。",
+   "lines": [
+    {
+     "who": "橋下怪獸",
+     "tag": "angry",
+     "text": "我要把你吃掉！",
+     "en": "I'm going to gobble you up!"
+    },
+    {
+     "who": "小山羊",
+     "text": "我這麼小，你吃了也不會飽。",
+     "en": "I'm so small. I won't fill you up."
+    },
+    {
+     "who": "小山羊",
+     "text": "我的二哥等一下就來，他比我大！",
+     "en": "My middle brother is coming soon. He's bigger than me!"
+    },
+    {
+     "who": "橋下怪獸",
+     "text": "嗯，那你過去吧。",
+     "en": "Hmm. Fine, you may cross."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋上，對岸的小山羊已經在吃草。",
+   "act": "中山羊走上橋，藍色領巾飄起來，腳步大了一點，橋板微微晃；怪獸又冒出頭，鼻孔噴氣。中山羊吞了一下口水。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "接著，中山羊上橋了。",
+     "en": "Next, Middle Goat stepped onto the bridge."
+    },
+    {
+     "who": "旁白",
+     "text": "咚、咚、咚。腳步聲大了一點。",
+     "en": "Thump, thump, thump. His steps were a little louder."
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "shouting",
+     "text": "誰在我的橋上走？",
+     "en": "Who's walking on my bridge?"
+    },
+    {
+     "who": "中山羊",
+     "tag": "scared",
+     "text": "是我，中山羊。",
+     "en": "It's me, Middle Goat."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋上。",
+   "act": "怪獸張大嘴巴；中山羊趕快指向岸上的大山羊，說得口沫橫飛。怪獸想到大餐，口水流下來，眼睛發亮。",
+   "lines": [
+    {
+     "who": "橋下怪獸",
+     "tag": "angry",
+     "text": "我要把你吃掉！",
+     "en": "I'm going to gobble you up!"
+    },
+    {
+     "who": "中山羊",
+     "text": "等一下！我大哥最大，一定最好吃！",
+     "en": "Wait! My big brother is the biggest. He must be the tastiest!"
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "excited",
+     "text": "最大，最好吃？那你快過去吧！",
+     "en": "The biggest and the tastiest? Then hurry across!"
+    },
+    {
+     "who": "旁白",
+     "text": "中山羊一溜煙跑過橋，跟小山羊一起吃草。",
+     "en": "Middle Goat dashed across and joined Little Goat in the grass."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋上，橋板一下一下地上下晃，河面起了波紋。",
+   "act": "大山羊穩穩地走上橋，紅色鈴鐺噹噹響，每一步都讓橋板跳起來；怪獸從橋邊冒出頭，被晃得頭頂的紫毛亂飛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最後，大山羊上橋了。",
+     "en": "Last of all, Big Goat stepped onto the bridge."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！咚！咚！整座橋都在搖。",
+     "en": "Stomp! Stomp! Stomp! The whole bridge shook."
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "shouting",
+     "text": "誰在我的橋上走？",
+     "en": "Who's walking on my bridge?"
+    },
+    {
+     "who": "大山羊",
+     "tag": "calm",
+     "text": "是我，大山羊。",
+     "en": "It's me, Big Goat."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋中間。",
+   "act": "怪獸跳到橋上，張開雙手擋住路；大山羊低頭看著怪獸，眼神溫和，沒有擺出要撞的樣子。怪獸的肚子大聲咕嚕叫，牠趕快摀住肚子。",
+   "lines": [
+    {
+     "who": "橋下怪獸",
+     "tag": "angry",
+     "text": "我要把你吃掉！",
+     "en": "I'm going to gobble you up!"
+    },
+    {
+     "who": "旁白",
+     "text": "大山羊沒有生氣，也沒有逃跑。",
+     "en": "Big Goat did not get angry, and he did not run away."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，怪獸的肚子咕嚕、咕嚕叫。",
+     "en": "Just then, the monster's tummy went grumble, grumble."
+    },
+    {
+     "who": "大山羊",
+     "tag": "gentle",
+     "text": "你的肚子好餓，對不對？",
+     "en": "Your tummy is really hungry, isn't it?"
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋中間，怪獸坐在橋板上。",
+   "act": "怪獸一屁股坐下，嘴巴扁成一條線，大顆大顆的眼淚掉進河裡，濺起小水花；大山羊在牠旁邊蹲下，聽牠說話。",
+   "lines": [
+    {
+     "who": "橋下怪獸",
+     "tag": "sad",
+     "text": "對呀。我每天一個人在橋下，又餓又無聊。",
+     "en": "Yes. I'm all alone under the bridge every day, hungry and bored."
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "crying",
+     "text": "大家都怕我，沒有人陪我玩。",
+     "en": "Everyone is scared of me. Nobody plays with me."
+    },
+    {
+     "who": "旁白",
+     "text": "怪獸的大眼淚，滴答、滴答，掉進河裡。",
+     "en": "The monster's big tears went drip, drop, into the river."
+    }
+   ]
+  },
+  {
+   "scene": "河的那一邊，綠油油的山坡，開滿小黃花和紅色野莓。",
+   "act": "大山羊陪著怪獸走過橋，小山羊和中山羊從山坡上跑下來迎接，一個捧著青草，一個捧著野莓；怪獸擦著眼淚，不敢相信。",
+   "lines": [
+    {
+     "who": "大山羊",
+     "tag": "happy",
+     "text": "那就跟我們一起去吃草吧！",
+     "en": "Then come and eat grass with us!"
+    },
+    {
+     "who": "小山羊",
+     "tag": "excited",
+     "text": "這裡的青草好甜喔！",
+     "en": "The grass here is so sweet!"
+    },
+    {
+     "who": "中山羊",
+     "tag": "happy",
+     "text": "也有紅色的野莓喔！",
+     "en": "And there are red berries, too!"
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "surprised",
+     "text": "真的嗎？我也可以一起吃嗎？",
+     "en": "Really? I can eat with you too?"
+    }
+   ]
+  },
+  {
+   "scene": "山坡上，太陽暖洋洋的，遠處是那座木頭橋和小河。",
+   "act": "怪獸坐在草地上，雙手捧著野莓，嘴邊沾滿紅色果汁，笑得眼睛瞇成一條線；小山羊坐在怪獸的肩膀上，中山羊和大山羊在旁邊低頭吃草。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "怪獸吃了一大口青草，又吃了一顆野莓。",
+     "en": "The monster ate a big bite of grass and then a berry."
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "laughing",
+     "text": "好甜！原來青草這麼好吃！",
+     "en": "So sweet! I never knew grass was so yummy!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，怪獸再也不嚇人了。",
+     "en": "From that day on, the monster never scared anyone again."
+    }
+   ]
+  },
+  {
+   "scene": "木頭橋的橋頭，早上，橋邊插著一塊新的木牌，木牌上畫著一隻笑臉怪獸和三隻山羊。",
+   "act": "怪獸抱著木槌，得意地指著新木牌，頭頂的紫毛翹起來；三隻山羊和怪獸排成一排走上橋，小山羊在最前面，怪獸走在最後面，大家都笑著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，怪獸在橋頭插了一塊新木牌。",
+     "en": "The next day, the monster put up a new sign by the bridge."
+    },
+    {
+     "who": "小山羊",
+     "tag": "curious",
+     "text": "木牌上面寫什麼呀？",
+     "en": "What does the sign say?"
+    },
+    {
+     "who": "橋下怪獸",
+     "tag": "proud",
+     "text": "歡迎大家過橋，來找我玩！",
+     "en": "Everyone is welcome to cross. Come and play with me!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚、咚、咚，四個好朋友，一起過橋去吃草！",
+     "en": "Tap, thump, stomp! Four good friends crossed the bridge together to eat grass!"
+    }
+   ]
+  }
+ ]
+}

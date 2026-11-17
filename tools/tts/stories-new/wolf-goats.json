@@ -1,0 +1,548 @@
+{
+ "id": "wolf-goats",
+ "title": "大野狼和七隻小羊",
+ "title_en": "The Wolf and the Seven Little Goats",
+ "size": "長",
+ "roles": {
+  "大野狼": "就是《小紅帽》《三隻小豬》裡的灰狼，愛耍小聰明、會裝甜甜的聲音騙人，但總是出糗，滑稽好笑、一點都不可怕。",
+  "羊媽媽": "溫柔又可靠的羊媽媽，三十多歲的女聲，說話輕柔，叮嚀時認真，抱孩子時充滿疼愛。",
+  "小羊們": "七隻小羊一起說話，五六歲小孩的聲音，活潑整齊，生氣時一起大喊，開心時一起歡呼。",
+  "最小的小羊": "七隻裡最小的小羊，小女生，聲音又細又甜，個子小但很機靈，緊要關頭會大聲喊停。"
+ },
+ "cast": {
+  "大野狼": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "羊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小羊們": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "最小的小羊": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第3頁『會先說一句暗號』，第7頁『一定會開門』",
+   "read": "huì"
+  },
+  {
+   "char": "給",
+   "where": "第6頁『給我們看』",
+   "read": "gěi"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰來敲門』『誰來都不開』",
+   "read": "shéi"
+  },
+  {
+   "char": "鑽",
+   "where": "第10頁『鑽到床底下』，第11頁『鑽了進去』",
+   "read": "zuān"
+  },
+  {
+   "char": "沒",
+   "where": "第11頁『都沒有』，第12頁『都沒有』，第13頁『沒多久』",
+   "read": "méi"
+  },
+  {
+   "char": "乾",
+   "where": "第12頁『餅乾罐』",
+   "read": "gān"
+  },
+  {
+   "char": "傳",
+   "where": "第13頁『門外傳來』",
+   "read": "chuán"
+  },
+  {
+   "char": "嚇",
+   "where": "第15頁『嚇了一大跳』",
+   "read": "xià"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林邊的一間小木屋，早上。紅色屋頂、木頭牆、綠色的木門，門旁有一扇小窗戶，屋前開著小白花，後面是一大片綠色的森林。",
+   "act": "羊媽媽是一隻大白羊，白色捲毛、奶油色的臉、頭上一對黃色小彎角、咖啡色小蹄子，繫著藍底白點的圍裙。七隻小羊都是白色捲毛、奶油色的臉、粉紅色的耳朵內側、頭上一對黃色小彎角、咖啡色小蹄子，脖子上各戴一個不同顏色的鈴鐺項圈：老大紅色、老二橙色、老三黃色、老四綠色、老五藍色、老六紫色；最小的小羊個子最小，戴粉紅色鈴鐺，頭上還有一朵粉紅色小花。七隻小羊在門前排成一排蹦蹦跳跳，最小的那隻站在最前面，抬頭挺胸。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林邊的小木屋裡，住著羊媽媽和七隻小羊。",
+     "en": "In a little house by the forest lived Mother Goat and her seven little goats."
+    },
+    {
+     "who": "旁白",
+     "text": "每隻小羊都戴著鈴鐺，一走路就叮噹響。",
+     "en": "Each little goat wore a bell that went ding-dong with every step."
+    },
+    {
+     "who": "小羊們",
+     "tag": "happy",
+     "text": "我們是七隻小羊！",
+     "en": "We are the seven little goats!"
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "proud",
+     "text": "我最小，可是我最聰明！",
+     "en": "I'm the littlest, but I'm the smartest!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳：木頭地板、一張大桌子、一張舊搖椅，牆邊立著一座比大人還高的木頭大鐘，下面有一扇小門。",
+   "act": "羊媽媽手臂掛著一個空籃子，準備出門；她蹲下來，豎起一根手指認真叮嚀。七隻小羊圍在她身邊，一邊點頭一邊跟著說。",
+   "lines": [
+    {
+     "who": "羊媽媽",
+     "tag": "gentle",
+     "text": "媽媽要去市場買青菜，很快就回來。",
+     "en": "Mama is going to the market to buy vegetables. I'll be back soon."
+    },
+    {
+     "who": "羊媽媽",
+     "text": "媽媽不在家，誰來敲門都不要開。",
+     "en": "While I'm away, don't open the door for anyone."
+    },
+    {
+     "who": "小羊們",
+     "tag": "excited",
+     "text": "媽媽不在家，不開門！",
+     "en": "Mama's not home, so we don't open the door!"
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "proud",
+     "text": "我記住了，誰來都不開！",
+     "en": "Got it! We won't open it for anyone!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳，門和窗戶都關好了。",
+   "act": "羊媽媽彎下腰，手放在嘴邊，小聲說悄悄話；小羊們把耳朵湊過去，眼睛睜得好大。最後一格畫面：窗外遠遠的大樹後面，露出一隻灰色尖耳朵和半張灰色的臉，圓圓的黑眼睛正在偷看。",
+   "lines": [
+    {
+     "who": "羊媽媽",
+     "tag": "whispering",
+     "text": "媽媽回來的時候，會先說一句暗號。",
+     "en": "When I come home, I'll say a secret password first."
+    },
+    {
+     "who": "羊媽媽",
+     "text": "暗號是：青草香，鈴鐺響。",
+     "en": "The password is: Sweet green grass, ring the bells."
+    },
+    {
+     "who": "小羊們",
+     "tag": "whispering",
+     "text": "青草香，鈴鐺響！",
+     "en": "Sweet green grass, ring the bells!"
+    },
+    {
+     "who": "旁白",
+     "text": "羊媽媽抱了抱每一隻小羊，就出門了。",
+     "en": "Mother Goat hugged every little goat and set off."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，大樹後面，有一雙眼睛正在偷看。",
+     "en": "But from behind a big tree, someone was watching."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，綠色木門關著，旁邊的小窗戶也關著。",
+   "act": "大野狼就是《小紅帽》《三隻小豬》裡那隻灰狼：灰色的毛、白色的肚子和嘴巴、粉紅色臉頰、圓圓的黑眼睛、尖耳朵裡面是粉紅色、一條好大的蓬鬆尾巴，尾巴尖端是白色，樣子滑稽不可怕。牠舉起爪子敲門，壓低嗓子裝媽媽；門裡的小羊們擠在一起，搖頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是大野狼！牠舔了一下嘴巴，走到門口。",
+     "en": "It was the Big Bad Wolf! He licked his lips and went to the door."
+    },
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩！",
+     "en": "Knock, knock, knock!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly",
+     "text": "孩子們，媽媽回來了，快開門！",
+     "en": "Children, Mama's home! Open the door!"
+    },
+    {
+     "who": "小羊們",
+     "tag": "shouting",
+     "text": "你的聲音好粗，你不是媽媽！",
+     "en": "Your voice is too rough. You're not our mama!"
+    }
+   ]
+  },
+  {
+   "scene": "大野狼亂糟糟的山洞家，桌上擺著一個大蜂蜜罐。",
+   "act": "大野狼仰著頭，把一整罐蜂蜜往嘴裡倒，嘴邊黏著金黃色的蜂蜜；接著牠清清喉嚨，捏著嗓子練習，一臉得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大野狼跑回家，喝光了一大罐蜂蜜。",
+     "en": "The wolf ran home and gulped down a big jar of honey."
+    },
+    {
+     "who": "大野狼",
+     "tag": "laughing",
+     "text": "啦，啦，啦，我的聲音好甜喔！",
+     "en": "La, la, la! My voice is so sweet now!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠又跑去敲門：叩、叩、叩！",
+     "en": "Then he ran back and knocked again. Knock, knock, knock!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "gentle",
+     "text": "孩子們，媽媽回來了，快開門！",
+     "en": "Children, Mama's home! Open the door!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口和門邊的小窗戶。",
+   "act": "窗戶上搭著一隻灰色、毛茸茸的大腳掌；屋裡最小的小羊站在椅子上，指著窗戶大喊，其他小羊嚇得往後退。",
+   "lines": [
+    {
+     "who": "小羊們",
+     "tag": "happy",
+     "text": "是媽媽的聲音！",
+     "en": "That's Mama's voice!"
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "shouting",
+     "text": "等一下！把腳放在窗戶上，給我們看！",
+     "en": "Wait! Put your foot on the window so we can see!"
+    },
+    {
+     "who": "旁白",
+     "text": "窗戶上，出現一隻灰色的大腳。",
+     "en": "A big gray foot appeared on the window."
+    },
+    {
+     "who": "小羊們",
+     "tag": "shouting",
+     "text": "媽媽的腳是白色的，你不是媽媽！",
+     "en": "Mama's feet are white. You're not our mama!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡的麵包店，早上，桌上放著一大袋白色麵粉，架子上有一排麵包。",
+   "act": "大野狼把兩隻前腳伸進麵粉袋，拿出來變得雪白；麵粉噴到牠臉上，牠瞇著眼睛、張大嘴巴打噴嚏，白粉飛了滿天，好笑極了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大野狼生氣地跑到麵包店。",
+     "en": "The angry wolf ran to the bakery."
+    },
+    {
+     "who": "旁白",
+     "text": "牠把兩隻腳伸進麵粉袋，腳變成白色了。",
+     "en": "He stuck both front feet into a bag of flour, and they turned white."
+    },
+    {
+     "who": "旁白",
+     "text": "麵粉飛進鼻子，牠打了一個好大的噴嚏！",
+     "en": "Flour flew up his nose, and he let out a huge sneeze!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠看著自己的白腳，越看越像羊媽媽的腳。",
+     "en": "He looked at his white feet. They looked just like Mother Goat's."
+    },
+    {
+     "who": "大野狼",
+     "tag": "laughing",
+     "text": "嘿，這次牠們一定會開門！",
+     "en": "Ha! This time they'll open the door for sure!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口和小窗戶。",
+   "act": "大野狼第三次敲門，把一隻沾滿麵粉的白腳搭在窗戶上，另一隻爪子遮著嘴偷笑；屋裡小羊們開心地往門口跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩！大野狼第三次來敲門。",
+     "en": "Knock, knock, knock! The wolf came back a third time."
+    },
+    {
+     "who": "大野狼",
+     "tag": "gentle",
+     "text": "孩子們，媽媽回來了，快開門！",
+     "en": "Children, Mama's home! Open the door!"
+    },
+    {
+     "who": "旁白",
+     "text": "這一次，窗戶上是一隻白色的腳。",
+     "en": "This time, a white foot appeared on the window."
+    },
+    {
+     "who": "小羊們",
+     "tag": "excited",
+     "text": "是白色的腳，是媽媽！",
+     "en": "It's a white foot! It's Mama!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳，靠近門口。",
+   "act": "老大紅鈴鐺小羊的手已經碰到門把；最小的小羊衝過去，張開雙手擋在門前。門外，大野狼抓抓頭、眼睛往上看，一臉想不出來。",
+   "lines": [
+    {
+     "who": "最小的小羊",
+     "tag": "shouting",
+     "text": "等一下！媽媽要先說暗號！",
+     "en": "Wait! Mama has to say the password first!"
+    },
+    {
+     "who": "小羊們",
+     "text": "對！請說暗號！",
+     "en": "Yes! Say the password!"
+    },
+    {
+     "who": "大野狼",
+     "tag": "nervous",
+     "text": "暗號？這個嘛，大野狼最帥！",
+     "en": "The password? Um, the Big Bad Wolf is the most handsome!"
+    },
+    {
+     "who": "小羊們",
+     "tag": "laughing",
+     "text": "錯了！你是大野狼！",
+     "en": "Wrong! You're the Big Bad Wolf!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳：床、木頭櫃子、大桌子、長窗簾、洗衣籃、搖椅，牆邊是那座高高的大鐘。",
+   "act": "窗外大野狼氣得跳腳，尾巴豎起來；屋裡小羊們四處跑去躲：紅鈴鐺鑽到床底下，橙鈴鐺躲進櫃子，黃鈴鐺躲在桌子下，綠鈴鐺躲在窗簾後面，藍鈴鐺鑽進洗衣籃，紫鈴鐺蓋著被子。",
+   "lines": [
+    {
+     "who": "大野狼",
+     "tag": "angry",
+     "text": "不開門？那我從窗戶爬進去！",
+     "en": "You won't open the door? Then I'll climb in the window!"
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "scared",
+     "text": "大家快躲起來！",
+     "en": "Everybody, hide!"
+    },
+    {
+     "who": "旁白",
+     "text": "有的小羊鑽到床底下，有的躲進櫃子裡。",
+     "en": "Some goats crawled under the bed. Some hid in the cupboard."
+    },
+    {
+     "who": "旁白",
+     "text": "有的躲在桌子下，有的躲在窗簾後面。",
+     "en": "Some hid under the table. Some hid behind the curtains."
+    }
+   ]
+  },
+  {
+   "scene": "牆邊那座高高的木頭大鐘，下面的小門開著，裡面有一根金色的鐘擺。",
+   "act": "最小的小羊鑽進大鐘下面的小門，縮成一團，用手指比在嘴巴前面「噓」；金色鐘擺在她頭上輕輕擺動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最小的小羊呢？她打開大鐘的小門，鑽了進去。",
+     "en": "And the littlest goat? She opened the little door of the big clock and squeezed inside."
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "whispering",
+     "text": "噓，我要跟小老鼠一樣安靜。",
+     "en": "Shh. I'll be as quiet as a mouse."
+    },
+    {
+     "who": "旁白",
+     "text": "大鐘滴答、滴答，好像在說：不要怕。",
+     "en": "Tick-tock, tick-tock, went the clock, as if to say, don't be afraid."
+    },
+    {
+     "who": "旁白",
+     "text": "屋子裡好安靜，一點聲音都沒有。",
+     "en": "The whole house was quiet. Not a sound."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳，窗戶被推開了，地板上有一排白色的麵粉腳印。",
+   "act": "大野狼從窗戶爬進來，翻開帽子、掀開鍋蓋到處找，找的都是好笑的地方；最後牠停在大鐘前面，歪著頭聽。大鐘的門縫裡，看得到一點粉紅色的鈴鐺。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大野狼爬進屋子，東找西找。",
+     "en": "The wolf climbed into the house and searched here and there."
+    },
+    {
+     "who": "大野狼",
+     "tag": "sly",
+     "text": "小羊在哪裡？在帽子裡嗎？在鍋子裡嗎？",
+     "en": "Where are those goats? In the hat? In the pot?"
+    },
+    {
+     "who": "大野狼",
+     "text": "在餅乾罐裡嗎？咦，都沒有！",
+     "en": "In the cookie jar? Hmm, not there either!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠走到大鐘前面，停了下來。",
+     "en": "He walked up to the big clock and stopped."
+    },
+    {
+     "who": "旁白",
+     "text": "滴答、滴答。最小的小羊遮住嘴巴，一動也不動。",
+     "en": "Tick-tock, tick-tock. The littlest goat covered her mouth and did not move."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳，下午的陽光從窗戶照進來。",
+   "act": "大野狼癱在搖椅上，嘴巴張得好大，打呼打到鼻子冒泡泡，尾巴垂到地上；門外看得到羊媽媽提著滿滿一籃青菜的影子。",
+   "lines": [
+    {
+     "who": "大野狼",
+     "tag": "sleepy",
+     "text": "找了好久，好累喔。我先坐一下。",
+     "en": "I've looked and looked. I'm so tired. I'll sit down for a bit."
+    },
+    {
+     "who": "旁白",
+     "text": "牠坐上搖椅，沒多久就打起呼來。",
+     "en": "He sat in the rocking chair, and soon he was snoring."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，門外傳來一個聲音。",
+     "en": "Just then, a voice came from outside the door."
+    },
+    {
+     "who": "羊媽媽",
+     "tag": "gentle",
+     "text": "青草香，鈴鐺響！",
+     "en": "Sweet green grass, ring the bells!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，門開了一條縫，陽光照進來。",
+   "act": "最小的小羊從大鐘裡跳出來，踮著腳尖去開門，指著搖椅上打呼的大野狼；羊媽媽提著青菜籃，瞪大眼睛。其他小羊從床底下、櫃子、窗簾後面探出頭來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是暗號！最小的小羊跳出大鐘，打開門。",
+     "en": "The password! The littlest goat jumped out of the clock and opened the door."
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "whispering",
+     "text": "媽媽，大野狼在搖椅上睡著了！",
+     "en": "Mama, the wolf is asleep in the rocking chair!"
+    },
+    {
+     "who": "羊媽媽",
+     "tag": "whispering",
+     "text": "別怕。孩子們，大家都出來吧。",
+     "en": "Don't be afraid. Come out, everyone."
+    },
+    {
+     "who": "旁白",
+     "text": "小羊們從四面八方，全都跑了出來。",
+     "en": "Out came all the little goats from every corner."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳，熱熱鬧鬧。",
+   "act": "羊媽媽拿著鍋子和湯匙用力敲，小羊們搖著七種顏色的鈴鐺大叫；大野狼嚇得整身毛都豎起來，從窗戶跳出去，屁股上還沾著白麵粉，往森林逃走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "羊媽媽拿起鍋子，小羊們搖響鈴鐺。",
+     "en": "Mother Goat grabbed a pot, and the little goats shook their bells."
+    },
+    {
+     "who": "小羊們",
+     "tag": "shouting",
+     "text": "大野狼，快走開！",
+     "en": "Go away, Big Bad Wolf!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！咚！咚！叮噹！叮噹！",
+     "en": "Bang! Bang! Bang! Ding-dong! Ding-dong!"
+    },
+    {
+     "who": "旁白",
+     "text": "大野狼嚇了一大跳，從窗戶跳了出去。",
+     "en": "The wolf leaped up in fright and jumped out the window."
+    },
+    {
+     "who": "旁白",
+     "text": "牠一溜煙跑回森林，再也不敢來了。",
+     "en": "He ran all the way back to the forest and never came back again."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的客廳，窗外太陽要下山了，天空是橘色的，桌上放著媽媽買回來的青菜。",
+   "act": "羊媽媽張開雙手，把七隻小羊抱在懷裡，一隻一隻點著算；最小的小羊舉起手，笑得最開心。",
+   "lines": [
+    {
+     "who": "羊媽媽",
+     "tag": "gentle",
+     "text": "一隻小羊，兩隻小羊，三隻小羊。",
+     "en": "One little goat, two little goats, three little goats."
+    },
+    {
+     "who": "羊媽媽",
+     "text": "四隻小羊，五隻小羊，六隻小羊。",
+     "en": "Four little goats, five little goats, six little goats."
+    },
+    {
+     "who": "最小的小羊",
+     "tag": "happy",
+     "text": "第七隻小羊，在這裡！",
+     "en": "And the seventh little goat is right here!"
+    },
+    {
+     "who": "小羊們",
+     "tag": "proud",
+     "text": "媽媽不在家，不開門！要先說暗號！",
+     "en": "Mama's not home, so we don't open the door! Say the password first!"
+    },
+    {
+     "who": "羊媽媽",
+     "tag": "happy",
+     "text": "你們真聰明！媽媽好愛你們。",
+     "en": "You're so clever! Mama loves you so much."
+    }
+   ]
+  }
+ ]
+}

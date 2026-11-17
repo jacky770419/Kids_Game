@@ -1,0 +1,590 @@
+{
+ "id": "rat-wedding",
+ "title": "老鼠嫁女兒",
+ "title_en": "Who Is the Strongest?",
+ "size": "長",
+ "roles": {
+  "老鼠爸爸": "胖胖的老鼠爸爸，聲音憨厚、有點大嗓門，疼女兒又愛面子，一路追問「你是最厲害的嗎」，最後哈哈大笑。",
+  "老鼠姑娘": "老鼠爸爸的女兒，聲音尖細可愛，害羞又有主見，一直想說心裡話，說出來時又甜又開心。",
+  "太陽": "溫暖慈祥的太陽阿姨，中年女聲，說話慢、輕柔、帶著笑意。",
+  "雲朵": "白白胖胖的雲朵姊姊，年輕女聲，溫柔又有點害羞，說話輕飄飄的。",
+  "北風": "同《北風與太陽》的北風，愛逞強但不壞的大哥哥，聲音宏亮、有點驕傲，吹不動牆時又喘又不好意思。",
+  "牆": "老鼠家那面老磚牆，慈祥的老爺爺聲音，穩重、慢慢說，講到怕癢時呵呵笑。",
+  "阿灰": "住在隔壁、最會挖洞的年輕老鼠，少年的聲音，開朗直爽，被叫新郎時又驚訝又害羞。"
+ },
+ "cast": {
+  "老鼠爸爸": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "老鼠姑娘": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "太陽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "雲朵": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "北風": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "牆": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "阿灰": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "嫁",
+   "where": "書名『老鼠嫁女兒』，第1頁『要嫁給』，第13頁『嫁給阿灰』，第14頁『嫁女兒』",
+   "read": "jià"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰最厲害呢』",
+   "read": "shéi"
+  },
+  {
+   "char": "什",
+   "where": "第7頁『是什麼呢』，第10頁『什麼新郎』",
+   "read": "shén"
+  },
+  {
+   "char": "鬧",
+   "where": "第14頁『好熱鬧』",
+   "read": "nào"
+  },
+  {
+   "char": "轎",
+   "where": "第14頁『小花轎』",
+   "read": "jiào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一面老舊的紅磚牆，牆腳下有一個小圓洞，洞裡是老鼠的家：火柴盒做的床、瓶蓋做的桌子、頂針當杯子；白天，牆外是草地和藍天。",
+   "act": "老鼠爸爸（灰色的毛、粉紅色的大耳朵、圓滾滾的肚子，戴一頂咖啡色小瓜皮帽、繫藍色領巾）摸著女兒的頭，得意地挺起肚子；老鼠姑娘（灰色的毛、粉紅色的大耳朵，繫粉紅色領巾，右耳旁別一朵小黃花）舉起一隻手想說話，可是爸爸搖著手指不讓她說。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "牆腳下的小洞裡，住著老鼠爸爸和他的女兒。",
+     "en": "In a little hole at the bottom of a wall lived Papa Mouse and his daughter."
+    },
+    {
+     "who": "旁白",
+     "text": "老鼠姑娘又聰明又可愛，大家都喜歡她。",
+     "en": "His daughter was clever and sweet, and everyone loved her."
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "proud",
+     "text": "我的女兒最可愛，一定要嫁給最厲害的新郎！",
+     "en": "My daughter is the sweetest, so she must marry the strongest groom of all!"
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "shy",
+     "text": "爸爸，我有話要說！",
+     "en": "Papa, there's something I want to tell you!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "excited",
+     "text": "先別說！爸爸去幫妳找新郎！",
+     "en": "Not now! Papa is going to find you a groom!"
+    }
+   ]
+  },
+  {
+   "scene": "老鼠家門口的草地，白天，天空很藍，太陽掛在天上。",
+   "act": "老鼠爸爸抬頭看著天上的太陽，眼睛一亮，用手指著天空；接著他牽著女兒，沿著藤蔓爬上旁邊一間房子的紅瓦屋頂。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "誰最厲害呢？老鼠爸爸抬頭一看。",
+     "en": "Who was the strongest of all? Papa Mouse looked up."
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "excited",
+     "text": "是太陽！太陽在天上，照亮每一個地方！",
+     "en": "It's the Sun! She shines on every place in the world!"
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "shy",
+     "text": "爸爸，等一下！我想說一件事！",
+     "en": "Papa, wait! I want to tell you something!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "excited",
+     "text": "等找到新郎再說！",
+     "en": "Tell me after we find your groom!"
+    },
+    {
+     "who": "旁白",
+     "text": "他牽著女兒，爬到最高的屋頂上。",
+     "en": "He took his daughter's hand and climbed up to the highest rooftop."
+    }
+   ]
+  },
+  {
+   "scene": "紅瓦屋頂上，天空很藍，大大的太陽就在頭上。",
+   "act": "太陽（金黃色的圓臉、女生的臉、長睫毛，四周是橘黃色的三角形光芒，頭頂一朵小紅花）笑咪咪地往下看；老鼠爸爸摘下小瓜皮帽，彎腰行禮；老鼠姑娘用手擋著亮光，瞇著眼睛。",
+   "lines": [
+    {
+     "who": "老鼠爸爸",
+     "tag": "hopeful",
+     "text": "太陽阿姨，妳是最厲害的嗎？",
+     "en": "Auntie Sun, are you the strongest of all?"
+    },
+    {
+     "who": "太陽",
+     "tag": "gentle",
+     "text": "謝謝你。可是，我不是最厲害的喔。",
+     "en": "Thank you. But I'm not the strongest."
+    },
+    {
+     "who": "太陽",
+     "text": "雲朵一飄過來，就把我遮住了。",
+     "en": "When Cloud floats by, she covers me right up."
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "shy",
+     "text": "爸爸，太陽好亮，我的眼睛睜不開了。",
+     "en": "Papa, the Sun is so bright. I can't open my eyes."
+    },
+    {
+     "who": "旁白",
+     "text": "話才說完，一朵白雲飄過來，把太陽遮住了。",
+     "en": "Just then, a white cloud floated over and covered the Sun."
+    }
+   ]
+  },
+  {
+   "scene": "同一個紅瓦屋頂，天色變暗了一點，一朵大白雲擋在太陽前面。",
+   "act": "雲朵（一朵又白又胖的大雲，圓圓的笑臉、粉紅色臉頰，像一團棉花糖）擋在太陽前面，太陽從雲邊探出半張臉；老鼠爸爸趕快轉身，對著雲朵彎腰；老鼠姑娘在後面偷偷嘆氣。",
+   "lines": [
+    {
+     "who": "老鼠爸爸",
+     "tag": "excited",
+     "text": "雲朵姊姊，妳是最厲害的嗎？",
+     "en": "Big Sister Cloud, are you the strongest of all?"
+    },
+    {
+     "who": "雲朵",
+     "tag": "shy",
+     "text": "我也不是喔。",
+     "en": "I'm not, either."
+    },
+    {
+     "who": "雲朵",
+     "text": "北風一吹，我就飛走了。",
+     "en": "When North Wind blows, away I go."
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "sad",
+     "text": "爸爸，我們回家好不好？",
+     "en": "Papa, can we please go home now?"
+    },
+    {
+     "who": "旁白",
+     "text": "呼！一陣大風吹過來。",
+     "en": "Whoosh! A big gust of wind came blowing."
+    }
+   ]
+  },
+  {
+   "scene": "同一個紅瓦屋頂，風好大，樹葉在天上飛。",
+   "act": "北風（灰藍色蓬蓬的雲朵臉、兩道濃眉、鼓著臉頰、沒有手）用力吹氣，雲朵被吹得往旁邊飄走、轉圈圈；老鼠爸爸兩手按住帽子，老鼠姑娘抱住屋頂上的煙囪，領巾被風吹得飛起來。",
+   "lines": [
+    {
+     "who": "老鼠爸爸",
+     "tag": "shouting",
+     "text": "北風大哥，你是最厲害的嗎？",
+     "en": "Big Brother North Wind, are you the strongest of all?"
+    },
+    {
+     "who": "北風",
+     "tag": "proud",
+     "text": "我很厲害！大樹都怕我！",
+     "en": "I'm very strong! Even big trees are afraid of me!"
+    },
+    {
+     "who": "北風",
+     "tag": "sad",
+     "text": "可是，有一道牆，我怎麼吹都吹不動。",
+     "en": "But there's one wall I can never blow down."
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "scared",
+     "text": "哇！我的領巾要飛走了！",
+     "en": "Whoa! My scarf is blowing away!"
+    }
+   ]
+  },
+  {
+   "scene": "老鼠家那面紅磚老牆前面的草地，風吹得草都倒向一邊。",
+   "act": "北風對著紅磚牆鼓起臉頰拚命吹，累得滿頭大汗、喘個不停；紅磚牆一動也不動；老鼠爸爸和老鼠姑娘站在草地上，張大嘴巴看著那面牆，認出牆腳下就是自己家的小洞。",
+   "lines": [
+    {
+     "who": "北風",
+     "tag": "proud",
+     "text": "就是那一道牆！你們看！",
+     "en": "That wall right there! Look!"
+    },
+    {
+     "who": "旁白",
+     "text": "北風用力吹，呼！呼！呼！",
+     "en": "North Wind blew hard. Whoosh! Whoosh! Whoosh!"
+    },
+    {
+     "who": "旁白",
+     "text": "牆動也不動，北風累到喘不過氣。",
+     "en": "The wall didn't move one bit. North Wind ran out of breath."
+    },
+    {
+     "who": "北風",
+     "tag": "tired",
+     "text": "呼，呼，我吹不動啦！",
+     "en": "Huff, puff. I can't move it!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "surprised",
+     "text": "咦？那不是我們家的牆嗎？",
+     "en": "Huh? Isn't that the wall where we live?"
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆前面，北風已經飛走了，天空又是藍的。",
+   "act": "牆爺爺（老鼠家那面紅磚老牆，牆上有一張慈祥的臉：兩扇小窗戶是眼睛，綠色的青苔像鬍子）睜開眼睛，笑咪咪地往下看；老鼠爸爸摘下帽子問問題；老鼠姑娘歪著頭，好奇地抬頭看。",
+   "lines": [
+    {
+     "who": "老鼠爸爸",
+     "tag": "hopeful",
+     "text": "牆爺爺，你是最厲害的嗎？",
+     "en": "Grandpa Wall, are you the strongest of all?"
+    },
+    {
+     "who": "牆",
+     "tag": "laughing",
+     "text": "風吹不動我，雨也打不壞我。",
+     "en": "Wind can't move me, and rain can't break me."
+    },
+    {
+     "who": "牆",
+     "tag": "whispering",
+     "text": "可是，我最怕一個小東西。",
+     "en": "But there's one little thing I'm afraid of."
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "curious",
+     "text": "是什麼呢？",
+     "en": "What is it?"
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆前面，牆腳下有好幾個被挖出來的小洞，旁邊有一小堆一小堆的泥土。",
+   "act": "牆爺爺笑得扭來扭去，好像有人在搔他癢；老鼠爸爸指著自己的鼻子，嚇了一大跳；老鼠姑娘跟爸爸互相看著對方。",
+   "lines": [
+    {
+     "who": "牆",
+     "tag": "laughing",
+     "text": "我最怕老鼠！",
+     "en": "I'm afraid of mice!"
+    },
+    {
+     "who": "牆",
+     "text": "老鼠在我腳下挖洞，挖呀挖，好癢，好癢！",
+     "en": "Mice dig holes at my feet. Dig, dig, dig! It tickles, it tickles!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "surprised",
+     "text": "怕老鼠？那不就是我們嗎？",
+     "en": "Afraid of mice? But that's us!"
+    },
+    {
+     "who": "旁白",
+     "text": "老鼠爸爸和女兒，你看我，我看你。",
+     "en": "Papa Mouse and his daughter looked at each other."
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "laughing",
+     "text": "原來，我們老鼠最厲害！",
+     "en": "So mice are the strongest of all!"
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆前面，牆腳下其中一個小洞旁邊的泥土，正在微微地動。",
+   "act": "牆爺爺朝隔壁那個小洞眨眨眼；老鼠姑娘兩手摀著臉頰，開心得跳起來，臉紅紅的；老鼠爸爸張大嘴巴，帽子都歪了。",
+   "lines": [
+    {
+     "who": "牆",
+     "tag": "gentle",
+     "text": "最會挖洞的，是住在你家隔壁的那一隻。",
+     "en": "The best digger of all lives right next door to you."
+    },
+    {
+     "who": "牆",
+     "tag": "laughing",
+     "text": "他每天都在我腳下挖洞，我笑到停不下來！",
+     "en": "He digs at my feet every day, and I can't stop laughing!"
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "excited",
+     "text": "隔壁？是阿灰！",
+     "en": "Next door? That's Gray!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "surprised",
+     "text": "阿灰？那個每天挖洞，挖到滿身泥土的阿灰？",
+     "en": "Gray? The one who digs all day and gets covered in dirt?"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，牆腳下的泥土，動了一下。",
+     "en": "Just then, the dirt at the bottom of the wall wiggled."
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆的牆腳下，泥土堆中間冒出一個新的小洞。",
+   "act": "小洞裡冒出一顆小頭：阿灰（年輕的男生老鼠，灰色的毛、粉紅色的大耳朵，繫綠色領巾，手上拿一把小鏟子）鼻子上沾著一點泥土，笑嘻嘻地探出頭揮手；老鼠姑娘摀著嘴開心地笑；老鼠爸爸嚇了一跳，帽子歪到一邊。",
+   "lines": [
+    {
+     "who": "阿灰",
+     "tag": "happy",
+     "text": "嗨！你們怎麼站在這裡？",
+     "en": "Hi! What are you doing out here?"
+    },
+    {
+     "who": "旁白",
+     "text": "阿灰的鼻子上，沾著一點泥土。",
+     "en": "Gray had a little dirt on his nose."
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "surprised",
+     "text": "阿灰？最厲害的新郎，就是你？",
+     "en": "Gray? The strongest groom is you?"
+    },
+    {
+     "who": "阿灰",
+     "tag": "surprised",
+     "text": "新郎？什麼新郎？",
+     "en": "Groom? What groom?"
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "laughing",
+     "text": "阿灰，你的鼻子好髒喔！",
+     "en": "Gray, your nose is so dirty!"
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆前面的草地，天上有太陽、雲朵，遠遠的還有北風探頭偷看。",
+   "act": "老鼠爸爸伸出手指，一隻一隻指過去：指著天上的太陽、旁邊的雲朵、遠處的北風、身後的牆爺爺，最後指著阿灰；阿灰抓著頭，臉紅到耳朵。",
+   "lines": [
+    {
+     "who": "老鼠爸爸",
+     "tag": "excited",
+     "text": "太陽怕雲朵，雲朵怕北風。",
+     "en": "The Sun is afraid of Cloud. Cloud is afraid of North Wind."
+    },
+    {
+     "who": "老鼠爸爸",
+     "text": "北風怕牆，牆怕老鼠。",
+     "en": "North Wind is afraid of the Wall. The Wall is afraid of mice."
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "laughing",
+     "text": "所以，最厲害的，就是阿灰！",
+     "en": "So the strongest of all is Gray!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿灰摸著頭，臉都紅了。",
+     "en": "Gray rubbed his head, and his face turned red."
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆前面，牆腳下開著幾朵小黃花。",
+   "act": "老鼠姑娘走到阿灰身邊，害羞地牽起他的手；阿灰拿著小鏟子，開心地指著牆上準備挖新家的地方；牆爺爺在後面瞇著眼睛笑。",
+   "lines": [
+    {
+     "who": "老鼠姑娘",
+     "tag": "shy",
+     "text": "爸爸，我早就想說了。",
+     "en": "Papa, I've been wanting to tell you."
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "happy",
+     "text": "我喜歡的，就是阿灰！",
+     "en": "Gray is the one I like!"
+    },
+    {
+     "who": "阿灰",
+     "tag": "happy",
+     "text": "我也喜歡妳！我們一起挖一個新家，好嗎？",
+     "en": "I like you too! Shall we dig a new home together?"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "surprised",
+     "text": "原來妳一直想說的，就是這個呀！",
+     "en": "So that's what you've been trying to tell me!"
+    }
+   ]
+  },
+  {
+   "scene": "紅磚老牆前面的草地，下午的陽光暖暖地照著。",
+   "act": "老鼠爸爸笑得抱著大肚子往後仰，帽子掉在地上；接著他拍著手，把女兒的手放在阿灰手上；阿灰和老鼠姑娘開心地互看。",
+   "lines": [
+    {
+     "who": "老鼠爸爸",
+     "tag": "laughing",
+     "text": "哈！走了這麼遠，新郎就在隔壁！",
+     "en": "Ha! We went so far, and the groom was right next door!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "happy",
+     "text": "好！就嫁給阿灰！",
+     "en": "All right! She'll marry Gray!"
+    },
+    {
+     "who": "阿灰",
+     "tag": "excited",
+     "text": "謝謝您！我會每天陪她挖洞！",
+     "en": "Thank you! I'll dig with her every single day!"
+    },
+    {
+     "who": "老鼠姑娘",
+     "tag": "happy",
+     "text": "爸爸最好了！",
+     "en": "You're the best, Papa!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，牆腳下的小路，天上掛著一彎細細的月亮，路兩旁插著用紅色糖果紙做的小燈籠。",
+   "act": "老鼠們排成一列遊行：前面的老鼠敲小鑼、打小鼓；四隻老鼠抬著一頂紅紙盒做的小花轎，老鼠姑娘蓋著小紅頭巾坐在裡面；阿灰胸前別一朵大紅花，走在花轎旁邊；老鼠爸爸戴著新帽子跟在後面，一邊擦眼淚一邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "嫁女兒的那天晚上，好熱鬧！",
+     "en": "On the night of the wedding, everything was so lively!"
+    },
+    {
+     "who": "旁白",
+     "text": "老鼠們敲鑼打鼓，咚咚鏘！",
+     "en": "The mice beat their drums and gongs. Boom, boom, clang!"
+    },
+    {
+     "who": "旁白",
+     "text": "月亮也出來，看新娘子。",
+     "en": "Even the Moon came out to see the bride."
+    },
+    {
+     "who": "旁白",
+     "text": "小花轎一路搖呀搖，搖到阿灰家。",
+     "en": "The little wedding chair swayed all the way to Gray's home."
+    },
+    {
+     "who": "阿灰",
+     "tag": "excited",
+     "text": "新娘子來囉！",
+     "en": "Here comes my bride!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，紅磚老牆前面，天空很藍，花瓣在風裡飄。",
+   "act": "太陽在天上灑下金色的光；雲朵在旁邊投下一小片影子；北風輕輕吹著，吹起一陣粉紅色的花瓣；牆爺爺笑咪咪地看著阿灰和老鼠姑娘在他身上挖新家。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，大家都來送禮物。",
+     "en": "The next day, everyone came with gifts."
+    },
+    {
+     "who": "太陽",
+     "tag": "happy",
+     "text": "送你們很暖的陽光！",
+     "en": "Here is warm sunshine for you!"
+    },
+    {
+     "who": "雲朵",
+     "tag": "happy",
+     "text": "我送你們一片涼快的影子！",
+     "en": "And I'll give you some cool shade!"
+    },
+    {
+     "who": "北風",
+     "tag": "gentle",
+     "text": "我吹一陣小風，送你們花瓣！",
+     "en": "I'll blow a soft breeze full of flower petals!"
+    },
+    {
+     "who": "牆",
+     "tag": "laughing",
+     "text": "你們就在我身上挖新家吧。可是，輕一點喔！",
+     "en": "Go ahead and dig your new home in me. But gently, please!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，紅磚老牆上多了一扇新的小圓門，門上貼著紅色的囍字；遠處人們房子的窗戶都熄燈了，天上有星星。",
+   "act": "阿灰和老鼠姑娘一起從小圓門探出頭，對著畫面外的小讀者揮手；老鼠爸爸從隔壁的小洞探頭，笑得好開心；牆爺爺閉著眼睛，滿足地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從此，阿灰和老鼠姑娘住在牆裡，每天都很開心。",
+     "en": "From then on, Gray and his bride lived in the wall, happy every day."
+    },
+    {
+     "who": "牆",
+     "tag": "laughing",
+     "text": "哈，好癢喔！可是，我好開心。",
+     "en": "Ha, that tickles! But I'm so happy."
+    },
+    {
+     "who": "旁白",
+     "text": "老人家說，大年初三，老鼠也會辦喜事。",
+     "en": "Old folks say that on the third day of the New Year, mice have weddings too."
+    },
+    {
+     "who": "旁白",
+     "text": "那天晚上要早點睡，別吵到牠們喔！",
+     "en": "So on that night, go to bed early, and don't disturb them!"
+    }
+   ]
+  }
+ ]
+}
