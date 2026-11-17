@@ -1,0 +1,254 @@
+{
+ "id": "moon-rabbit",
+ "title": "玉兔的月亮晚會",
+ "title_en": "The Moon Rabbit's Party",
+ "size": "短",
+ "roles": {
+  "玉兔": "就是《后羿射日和嫦娥奔月》裡月亮上的白色小兔子：聲音小小的、甜甜的，熱情又貼心，想到點子時很興奮。",
+  "嫦娥": "就是《后羿射日和嫦娥奔月》裡住在月亮上的嫦娥：溫柔的年輕女生，聲音柔和清亮，像大姊姊一樣疼玉兔。",
+  "小星星": "月亮旁邊的一顆小星星，五六歲小女孩的聲音，熱心、有點冒失，迷路時慌張，成功時好開心。"
+ },
+ "cast": {
+  "玉兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "嫦娥": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "小星星": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第2頁『要送什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "扇",
+   "where": "第7頁『每一扇窗戶』",
+   "read": "shàn"
+  },
+  {
+   "char": "暈",
+   "where": "第5頁『頭好暈』",
+   "read": "yūn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "月亮上：銀白色的地面，一棵開滿小黃花的桂花樹，樹下放著石碗和木棒；遠處的天上，看得到藍綠色的地球，地上一戶一戶的人家亮著燈。",
+   "act": "玉兔和嫦娥照《后羿射日和嫦娥奔月》的插圖延續：玉兔是白色的小兔子，紅眼睛、長耳朵；嫦娥穿白色長裙、繫淡粉色絲帶，頭髮盤起來插一朵小白花。玉兔趴在月亮邊邊，兩隻耳朵豎起來往下看；嫦娥坐在桂花樹下微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "今天是農曆八月十五，中秋節。",
+     "en": "Tonight is the fifteenth day of the eighth lunar month. It's the Mid-Autumn Festival."
+    },
+    {
+     "who": "旁白",
+     "text": "月亮上，玉兔趴著往地上看。",
+     "en": "Up on the moon, Jade Rabbit lies on her tummy, looking down at the Earth."
+    },
+    {
+     "who": "玉兔",
+     "tag": "excited",
+     "text": "嫦娥姊姊，地上的小朋友在看月亮耶！",
+     "en": "Chang'e, all the children down there are looking at the moon!"
+    },
+    {
+     "who": "嫦娥",
+     "tag": "gentle",
+     "text": "對呀，今晚的月亮最圓了。",
+     "en": "That's right. Tonight the moon is at its roundest."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵桂花樹下。",
+   "act": "玉兔站起來，兩手抱著胸口，眼睛閃閃發亮；嫦娥歪著頭問她；玉兔想了一下，突然高高跳起來，耳朵飛起來。",
+   "lines": [
+    {
+     "who": "玉兔",
+     "tag": "excited",
+     "text": "我想送他們一份禮物！",
+     "en": "I want to give them a present!"
+    },
+    {
+     "who": "嫦娥",
+     "tag": "gentle",
+     "text": "要送什麼好呢？",
+     "en": "What would you like to give them?"
+    },
+    {
+     "who": "旁白",
+     "text": "玉兔想了想，跳了起來。",
+     "en": "Jade Rabbit thinks for a moment, then hops up high."
+    },
+    {
+     "who": "玉兔",
+     "tag": "happy",
+     "text": "我來做月亮糕！",
+     "en": "I'll make moon cakes!"
+    }
+   ]
+  },
+  {
+   "scene": "桂花樹下，石碗裡裝著白米和小黃花。",
+   "act": "玉兔拿著木棒在石碗裡搗，咚咚有節奏；桂花飄下來落進碗裡；旁邊的盤子上，一個個小小的圓糕發出暖黃色的光；嫦娥在旁邊拍手打拍子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "玉兔把桂花和白米放進石碗。",
+     "en": "Jade Rabbit puts osmanthus flowers and white rice into the stone bowl."
+    },
+    {
+     "who": "玉兔",
+     "tag": "happy",
+     "text": "咚！咚！搗一搗，月亮糕，香又亮！",
+     "en": "Thump! Thump! Pound and pound! Moon cakes, sweet and bright!"
+    },
+    {
+     "who": "旁白",
+     "text": "做好的小圓糕，竟然會發光！",
+     "en": "The little round cakes she makes are glowing!"
+    }
+   ]
+  },
+  {
+   "scene": "月亮邊緣，旁邊的夜空裡有許多星星。",
+   "act": "一顆小星星飛過來：金黃色、五個圓角、圓圓的臉、粉紅色臉頰，頭頂綁一個小藍色蝴蝶結。玉兔把一個裝滿發光月亮糕的竹籃交給她；小星星兩手提起籃子，很有精神地往下飛。",
+   "lines": [
+    {
+     "who": "玉兔",
+     "tag": "gentle",
+     "text": "小星星，可以請妳幫忙送下去嗎？",
+     "en": "Little Star, could you please take these down for me?"
+    },
+    {
+     "who": "小星星",
+     "tag": "excited",
+     "text": "好呀！交給我！",
+     "en": "Sure! Leave it to me!"
+    },
+    {
+     "who": "旁白",
+     "text": "小星星提著籃子，往地上飛。",
+     "en": "Little Star picks up the basket and flies down toward the Earth."
+    }
+   ]
+  },
+  {
+   "scene": "夜空中，籃子發出好亮的光，四周一片白亮。",
+   "act": "小星星被籃子的光照得瞇起眼睛，頭上冒出幾個小圈圈，在天上繞了一個大圈，又飛回月亮；玉兔站在月亮上，張大嘴巴看著她回來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，月亮糕太亮，小星星看不見路。",
+     "en": "But the moon cakes are so bright that Little Star can't see where she's going."
+    },
+    {
+     "who": "小星星",
+     "tag": "scared",
+     "text": "這邊？那邊？我的頭好暈！",
+     "en": "This way? That way? I'm so dizzy!"
+    },
+    {
+     "who": "旁白",
+     "text": "她繞了一大圈，咚！又回到月亮上。",
+     "en": "She flies around in a big circle and, bump! She's back on the moon."
+    },
+    {
+     "who": "玉兔",
+     "tag": "surprised",
+     "text": "咦？妳怎麼又回來了？",
+     "en": "Huh? Why are you back again?"
+    }
+   ]
+  },
+  {
+   "scene": "桂花樹下，地上落著幾片綠色的桂花葉。",
+   "act": "小星星坐在地上，垂著頭；玉兔摘下桂花葉，一片一片蓋在籃子上，只留一個小洞，洞裡透出一道細細的光，像一盞小燈；嫦娥在旁邊點頭微笑。",
+   "lines": [
+    {
+     "who": "小星星",
+     "tag": "sad",
+     "text": "太亮了，我找不到路。",
+     "en": "It's too bright. I can't find my way."
+    },
+    {
+     "who": "玉兔",
+     "tag": "gentle",
+     "text": "別擔心，我有辦法！",
+     "en": "Don't worry. I have an idea!"
+    },
+    {
+     "who": "旁白",
+     "text": "玉兔用桂花葉蓋住籃子，留下一個小洞。",
+     "en": "Jade Rabbit covers the basket with osmanthus leaves and leaves one little hole."
+    },
+    {
+     "who": "玉兔",
+     "tag": "happy",
+     "text": "這樣，光就像一盞小燈，幫妳照路。",
+     "en": "Now the light is like a little lamp to show you the way."
+    }
+   ]
+  },
+  {
+   "scene": "地上的小村子和城市，晚上，一戶一戶人家的窗戶，窗外是圓月。",
+   "act": "小星星提著蓋好葉子的籃子，洞口一道細光照在前面；她飛到一扇窗戶前，輕輕放下一塊發光的月亮糕；屋子裡的小朋友都跑到院子和陽台上看月亮了，沒看見她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小星星又出發了，這次看清楚了。",
+     "en": "Little Star sets off again, and this time she can see the way."
+    },
+    {
+     "who": "旁白",
+     "text": "她在每一扇窗戶前，放下一塊月亮糕。",
+     "en": "At every window, she leaves one moon cake."
+    },
+    {
+     "who": "小星星",
+     "tag": "whispering",
+     "text": "中秋節快樂！",
+     "en": "Happy Mid-Autumn Festival!"
+    }
+   ]
+  },
+  {
+   "scene": "一邊是地上一戶人家的陽台，一邊是天上的大月亮，月亮上看得到桂花樹。",
+   "act": "陽台上，幾個小朋友捧著發光的月亮糕，抬頭對月亮揮手；月亮上，玉兔和嫦娥一起用力揮手；小星星在月亮旁邊眨眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小朋友看到月亮糕，抬頭對月亮揮手。",
+     "en": "The children find the glowing moon cakes. They look up and wave at the moon."
+    },
+    {
+     "who": "玉兔",
+     "tag": "excited",
+     "text": "嫦娥姊姊，他們在跟我們揮手！",
+     "en": "Chang'e, they're waving at us!"
+    },
+    {
+     "who": "嫦娥",
+     "tag": "happy",
+     "text": "大家一起看月亮，月亮晚會開始囉！",
+     "en": "Everyone is looking at the moon together. Our moon party has begun!"
+    },
+    {
+     "who": "玉兔",
+     "tag": "happy",
+     "text": "咚！咚！搗一搗，中秋節快樂！",
+     "en": "Thump! Thump! Pound and pound! Happy Mid-Autumn Festival!"
+    }
+   ]
+  }
+ ]
+}

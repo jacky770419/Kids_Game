@@ -1,0 +1,286 @@
+{
+ "id": "empty-pot",
+ "title": "空花盆",
+ "title_en": "The Empty Pot",
+ "size": "短",
+ "roles": {
+  "阿明": "村子裡的小男孩，七歲左右，愛花、認真，著急時聲音小小的、有點委屈，下決心時聲音變穩。",
+  "國王": "白鬍子的老國王，慈祥、說話慢，揭曉祕密時忍不住笑出來。",
+  "媽媽": "阿明的媽媽，溫柔安靜，不多話，說話輕輕的。"
+ },
+ "cast": {
+  "阿明": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "種",
+   "where": "第1、2、5、8頁『種子』，第2、3、8頁『小種子』，第8頁『新種子』",
+   "read": "zhǒng"
+  },
+  {
+   "char": "空",
+   "where": "第6頁『空花盆』",
+   "read": "kōng"
+  },
+  {
+   "char": "當",
+   "where": "第1頁『當國王』",
+   "read": "dāng"
+  },
+  {
+   "char": "誰",
+   "where": "第1頁『誰的花』",
+   "read": "shéi"
+  },
+  {
+   "char": "什",
+   "where": "第3頁『什麼也沒有』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『什麼也沒有』，第7頁『沒有笑』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『會不會』，第8頁『不會發芽』",
+   "read": "huì"
+  },
+  {
+   "char": "發",
+   "where": "第7頁『不發芽』，第8頁『我發的種子』『發芽』",
+   "read": "fā"
+  },
+  {
+   "char": "只",
+   "where": "第8頁『只有你』",
+   "read": "zhǐ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "古時候的宮殿前，一大片石板廣場，紅柱子、金色屋頂；廣場上站滿小孩，台階上放著一籃小種子。",
+   "act": "國王是白鬍子的老國王，戴金色王冠，穿紅色長袍，彎腰把一顆小種子放進每個小孩的手心。阿明第一次出場：七歲左右的小男孩，頭頂綁一個小髻，穿藍色短衣和黑褲子；他雙手捧著小種子，眼睛發亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老國王想找一個孩子，以後當國王。",
+     "en": "The old king wants to find a child to be the next king."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "每人拿一顆花的種子回家。",
+     "en": "Each of you, take one flower seed home."
+    },
+    {
+     "who": "國王",
+     "text": "明年春天，看誰的花最漂亮！",
+     "en": "Next spring, we'll see whose flower is the most beautiful!"
+    }
+   ]
+  },
+  {
+   "scene": "阿明家的小院子：土牆、木門，院子角落有一個咖啡色的陶土花盆。",
+   "act": "阿明蹲在花盆前，把小種子輕輕埋進土裡，再用小木瓢澆水。媽媽第一次出場：頭髮挽成髻，穿淡紫色衣服，站在門口微笑看著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿明最喜歡花了。",
+     "en": "Ming loves flowers more than anything."
+    },
+    {
+     "who": "旁白",
+     "text": "他把種子埋進土裡，每天澆水。",
+     "en": "He buries the seed in the soil and waters it every day."
+    },
+    {
+     "who": "阿明",
+     "tag": "excited",
+     "text": "小種子，快點醒來吧！",
+     "en": "Little seed, wake up soon!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個小院子，大太陽下的石階；一隻橘色小貓本來在石階上睡覺。",
+   "act": "阿明把花盆搬到太陽下，張大嘴巴、雙手打開大聲唱歌；橘色小貓嚇得跳起來，尾巴豎直逃走。花盆裡還是一片土。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "好多天了，土裡什麼也沒有。",
+     "en": "Many days go by, but nothing comes up."
+    },
+    {
+     "who": "阿明",
+     "tag": "worried",
+     "text": "我搬你去曬太陽！",
+     "en": "I'll move you into the sun!"
+    },
+    {
+     "who": "旁白",
+     "text": "他大聲唱歌，連小貓都嚇跑了。",
+     "en": "He sings so loudly that even the cat runs away."
+    },
+    {
+     "who": "阿明",
+     "tag": "excited",
+     "text": "小種子，快點醒來吧！",
+     "en": "Little seed, wake up soon!"
+    }
+   ]
+  },
+  {
+   "scene": "春天的村子小路，路邊桃花開了；別的小孩捧著開滿紅花、黃花、紫花的大花盆走過。",
+   "act": "阿明抱著自己的花盆站在路邊，花盆裡只有土；他低頭看看自己的花盆，又偷看別人的花，嘴巴扁著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天到了，大家捧著花盆走過。",
+     "en": "Spring comes, and the other children walk by with their pots."
+    },
+    {
+     "who": "旁白",
+     "text": "紅花、黃花，每一盆都好漂亮。",
+     "en": "Red flowers, yellow flowers. Every pot is so pretty."
+    },
+    {
+     "who": "阿明",
+     "tag": "sad",
+     "text": "大家都有花，我就是一盆土！",
+     "en": "Everyone has a flower, and all I have is dirt!"
+    }
+   ]
+  },
+  {
+   "scene": "阿明家院子的小花圃，開著一朵小紅花；地上放著一把小鏟子。",
+   "act": "阿明蹲在花圃邊，一手拿小鏟子對著小紅花，眉頭皺著，左右偷看；下一格他把鏟子放下，又拿起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "院子裡開著一朵小紅花。",
+     "en": "In the yard, a little red flower is blooming."
+    },
+    {
+     "who": "阿明",
+     "tag": "whispering",
+     "text": "把它挖到花盆裡，國王也不知道。",
+     "en": "If I dig it up and put it in my pot, the king will never know."
+    },
+    {
+     "who": "旁白",
+     "text": "他拿起小鏟子，又放下。拿起來，又放下。",
+     "en": "He picks up the little shovel, then puts it down. Picks it up, puts it down."
+    },
+    {
+     "who": "阿明",
+     "tag": "sad",
+     "text": "可是，這不是我的種子開的花。",
+     "en": "But this flower didn't grow from my seed."
+    }
+   ]
+  },
+  {
+   "scene": "早上，阿明家門口，木門開著。",
+   "act": "阿明雙手捧著只有土的花盆，眼睛有點紅，抬頭看媽媽；媽媽蹲下來，手放在他的肩膀上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "媽媽看著他，等他自己想好。",
+     "en": "Mama looks at him and waits for him to decide."
+    },
+    {
+     "who": "阿明",
+     "tag": "worried",
+     "text": "媽媽，我要捧這個空花盆去。",
+     "en": "Mama, I'm going to take this empty pot."
+    },
+    {
+     "who": "阿明",
+     "text": "大家會不會笑我？",
+     "en": "Will everyone laugh at me?"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "媽媽陪你去。",
+     "en": "I'll go with you."
+    }
+   ]
+  },
+  {
+   "scene": "宮殿前的廣場，台階下排滿一大片顏色鮮豔的花，小孩們得意地捧著花盆。",
+   "act": "國王背著手，沿著花盆慢慢走，眉頭皺著；走到隊伍最後，看到阿明捧著只有土的花盆，停下腳步，彎下腰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "宮殿前，到處都是花。",
+     "en": "In front of the palace, there are flowers everywhere."
+    },
+    {
+     "who": "旁白",
+     "text": "國王一盆接一盆看，都沒有笑。",
+     "en": "The king looks at pot after pot, but he doesn't smile."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦，你的花呢？",
+     "en": "Oh? Where is your flower?"
+    },
+    {
+     "who": "阿明",
+     "tag": "sad",
+     "text": "我每天澆水，它就是不發芽。",
+     "en": "I watered it every day, but it just wouldn't sprout."
+    }
+   ]
+  },
+  {
+   "scene": "宮殿台階前；下一格是阿明家的小院子，春天的陽光，花盆裡冒出一顆嫩綠的小芽。",
+   "act": "國王蹲下來，笑得眼睛瞇起來，一手輕拍阿明的肩膀，一手把一顆新的小種子放在他手心；捧著花的小孩們臉都紅了。下一格阿明和媽媽趴在花盆邊，看著小綠芽，開心得拍手。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "我發的種子，都是煮過的。",
+     "en": "Every seed I gave out was cooked."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "煮過的蛋，孵不出小雞。煮過的種子，也不會發芽。",
+     "en": "A cooked egg can't hatch into a chick. And a cooked seed can't sprout."
+    },
+    {
+     "who": "國王",
+     "text": "只有你說真話，我要找的就是你！",
+     "en": "Only you told the truth. You are the child I'm looking for!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王送他一顆新種子。這次，它發芽了！",
+     "en": "The king gives Ming a new seed. And this time, it sprouts!"
+    },
+    {
+     "who": "阿明",
+     "tag": "excited",
+     "text": "小種子，你醒來了！",
+     "en": "Little seed, you woke up!"
+    }
+   ]
+  }
+ ]
+}

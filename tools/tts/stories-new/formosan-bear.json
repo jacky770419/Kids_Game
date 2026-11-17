@@ -1,0 +1,259 @@
+{
+ "id": "formosan-bear",
+ "title": "黑熊的月亮項鍊",
+ "title_en": "The Black Bear's Moon Necklace",
+ "size": "短",
+ "roles": {
+  "小黑熊": "台灣黑熊寶寶，小男孩的聲音，好奇、天真，被笑時有點委屈，發現自己的月亮獨一無二時好開心。",
+  "黑熊媽媽": "台灣黑熊媽媽，溫柔穩重的女聲，說話慢慢的、帶著笑，和熊小花不是同一位。",
+  "台灣藍鵲": "台灣藍鵲，小黑熊的好朋友，活潑愛講話、嘴巴快，笑人沒惡意，知道錯會馬上道歉。"
+ },
+ "cast": {
+  "小黑熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "黑熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "台灣藍鵲": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第7頁『沒有一個』",
+   "read": "méi"
+  },
+  {
+   "char": "傻",
+   "where": "第3頁『傻孩子』",
+   "read": "shǎ"
+  },
+  {
+   "char": "鵲",
+   "where": "全書『藍鵲』",
+   "read": "què"
+  },
+  {
+   "char": "舔",
+   "where": "第6頁『舔蜂蜜』",
+   "read": "tiǎn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "台灣的高山森林，清晨，白霧飄在山谷裡，高大的樹木長滿青苔；地上有一個雨後的小水坑，映著天空和樹。",
+   "act": "小黑熊第一次出場：全身黑毛的小熊，圓圓的耳朵，淺咖啡色的鼻子和嘴巴，胸前有一道細細的白色 V 字毛；他趴在水坑邊低頭看自己的倒影，嚇了一跳，眼睛瞪大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "台灣的高山上，有一大片森林。",
+     "en": "High in the mountains of Taiwan, there is a big forest."
+    },
+    {
+     "who": "旁白",
+     "text": "小黑熊在水坑裡，看到自己的影子。",
+     "en": "In a puddle, Little Black Bear sees his reflection."
+    },
+    {
+     "who": "小黑熊",
+     "tag": "surprised",
+     "text": "咦？我的胸前，怎麼有一塊白毛？",
+     "en": "Huh? Why is there white fur on my chest?"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的一片草地，開著小野花。",
+   "act": "小黑熊抓著一把葉子，用力擦胸前的白毛；下一格他在草地上打滾，四腳朝天，身上沾滿草屑；白色的 V 字毛還在。",
+   "lines": [
+    {
+     "who": "小黑熊",
+     "tag": "worried",
+     "text": "是不是沾到東西了？",
+     "en": "Did I get something on me?"
+    },
+    {
+     "who": "旁白",
+     "text": "他拿葉子擦一擦，又在草地上滾一滾。",
+     "en": "He rubs it with leaves, and he rolls around in the grass."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，白毛就是擦不掉！",
+     "en": "But the white fur won't come off!"
+    },
+    {
+     "who": "小黑熊",
+     "tag": "sad",
+     "text": "媽媽，救命啊！",
+     "en": "Mama, help!"
+    }
+   ]
+  },
+  {
+   "scene": "草地旁的大樹下。",
+   "act": "黑熊媽媽第一次出場：比小黑熊大很多的黑熊，胸前有一個又寬又白的 V 字毛，像一彎月亮；她笑著拍掉小黑熊身上的草屑，指著自己胸前的白毛。小黑熊低頭看自己的胸前，再拍一拍。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "黑熊媽媽笑著走過來。",
+     "en": "His mama walks over, laughing."
+    },
+    {
+     "who": "黑熊媽媽",
+     "tag": "laughing",
+     "text": "傻孩子，那是你的月亮項鍊呀！",
+     "en": "Silly, that's your moon necklace!"
+    },
+    {
+     "who": "黑熊媽媽",
+     "tag": "gentle",
+     "text": "台灣黑熊的胸前，都有一個彎月亮。",
+     "en": "Every black bear in Taiwan has a moon on its chest, shaped like a V."
+    },
+    {
+     "who": "小黑熊",
+     "tag": "excited",
+     "text": "拍一拍，我的月亮在這裡！",
+     "en": "Pat, pat! Here's my moon!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，樹枝低低地伸過來。",
+   "act": "台灣藍鵲第一次出場：深藍色的身體，黑色的頭，紅色的嘴巴和腳，拖著一條很長、尾端有白點的藍色尾巴；他停在低樹枝上，張開翅膀哈哈笑。小黑熊挺起胸膛，然後嘟起嘴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "好朋友台灣藍鵲飛來了。",
+     "en": "Just then, his friend Blue Magpie swoops down."
+    },
+    {
+     "who": "小黑熊",
+     "tag": "proud",
+     "text": "藍鵲你看，我有月亮項鍊！",
+     "en": "Look, Blue Magpie! I have a moon necklace!"
+    },
+    {
+     "who": "台灣藍鵲",
+     "tag": "laughing",
+     "text": "哈，你的月亮好小，像一根小羽毛！",
+     "en": "Ha! Your moon is so tiny. It looks like a little feather!"
+    }
+   ]
+  },
+  {
+   "scene": "大樹下，一條小路通往森林深處。",
+   "act": "小黑熊低頭看自己細細的白毛，又抬頭看媽媽寬寬的白毛，耳朵垂下來；媽媽牽起他的手往小路走，台灣藍鵲在上面跟著飛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小黑熊看著自己，又看著媽媽。",
+     "en": "Little Black Bear looks at his own moon, then at Mama's."
+    },
+    {
+     "who": "小黑熊",
+     "tag": "sad",
+     "text": "我的月亮好小喔。",
+     "en": "My moon is so small."
+    },
+    {
+     "who": "黑熊媽媽",
+     "tag": "gentle",
+     "text": "走，我們去找別的黑熊。",
+     "en": "Come on, let's go find some other black bears."
+    },
+    {
+     "who": "台灣藍鵲",
+     "tag": "excited",
+     "text": "我也要去！",
+     "en": "I'm coming too!"
+    }
+   ]
+  },
+  {
+   "scene": "森林深處：低矮的樹上結著紅色小果子；一棵大樹的樹洞裡有蜂巢；旁邊一條清澈的小溪。",
+   "act": "小黑熊站著摘低樹枝上的紅果子吃。一隻大黑熊坐在大樹下舔沾滿蜂蜜的手掌，胸前的 V 字又寬又大。小溪邊另一隻黑熊阿姨抬起頭，她的 V 字像兩條細細的線。台灣藍鵲在樹枝上睜大眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們一路吃著樹上的果子。",
+     "en": "Along the way, they nibble fruit from the trees."
+    },
+    {
+     "who": "旁白",
+     "text": "大樹下有隻黑熊在舔蜂蜜，月亮好大。",
+     "en": "Under a big tree, a bear is licking honey. His moon is so big."
+    },
+    {
+     "who": "旁白",
+     "text": "溪邊的黑熊阿姨，月亮像兩條線。",
+     "en": "By the stream, another bear's moon looks like two thin lines."
+    },
+    {
+     "who": "台灣藍鵲",
+     "tag": "surprised",
+     "text": "咦，每一個月亮都不一樣耶！",
+     "en": "Hey, every moon is different!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片森林，陽光從樹葉縫照下來。",
+   "act": "小黑熊張大嘴巴，左右看著兩隻大黑熊；媽媽蹲下來，用鼻子碰碰他的白毛；台灣藍鵲低著頭，用翅膀抓抓頭，有點不好意思；小黑熊用兩隻手拍拍胸前，笑得好開心。",
+   "lines": [
+    {
+     "who": "小黑熊",
+     "tag": "surprised",
+     "text": "真的耶！沒有一個一樣的！",
+     "en": "It's true! No two are the same!"
+    },
+    {
+     "who": "黑熊媽媽",
+     "tag": "gentle",
+     "text": "媽媽在很遠的地方，看到小月亮，就知道是你。",
+     "en": "Even from far away, when I see your little moon, I know it's you."
+    },
+    {
+     "who": "台灣藍鵲",
+     "text": "對不起，你的月亮很好看。",
+     "en": "Sorry. Your moon is really nice."
+    },
+    {
+     "who": "小黑熊",
+     "tag": "excited",
+     "text": "拍一拍，我的月亮在這裡！",
+     "en": "Pat, pat! Here's my moon!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上的高山森林，深藍色的天空，一彎白色的月亮掛在山頂上，星星一閃一閃。",
+   "act": "黑熊媽媽靠在大樹下，小黑熊窩在她懷裡，指著天上的彎月；兩隻熊胸前的白色 V 字和天上的月亮一樣亮。台灣藍鵲在上面的樹枝上，把頭埋進翅膀睡著了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，天上出來一個彎月亮。",
+     "en": "That night, a crescent moon rises in the sky."
+    },
+    {
+     "who": "小黑熊",
+     "tag": "happy",
+     "text": "天上一個月亮，媽媽一個，我也有一個！",
+     "en": "One moon in the sky, one on Mama, and one on me!"
+    },
+    {
+     "who": "小黑熊",
+     "tag": "sleepy",
+     "text": "拍一拍，小月亮，晚安。",
+     "en": "Pat, pat. Good night, little moon."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "id": "puss-boots",
+ "title": "穿靴子的貓",
+ "title_en": "Puss in Boots",
+ "size": "中",
+ "roles": {
+  "貓": "穿紅靴子的橘色貓，活潑的年輕男聲，聰明機靈、說話又快又神氣，被獅子嚇到時會結巴，很好笑。",
+  "小兒子": "老爸爸的小兒子，十五歲左右的少年，老實勤勞、有點害羞，最喜歡照顧蘋果樹。",
+  "國王": "慈祥的老國王，聲音低沉溫暖、慢慢說，擔心村民時語氣著急但溫和。",
+  "公主": "國王的女兒，聲音甜美活潑、不怕弄髒，喜歡跟小兒子一起照顧樹。",
+  "大魔王": "山上的大魔王，大嗓門、說話粗聲粗氣，愛炫耀但好笑不可怕，變成小老鼠後還是粗嗓子，嚇得求饒。"
+ },
+ "cast": {
+  "貓": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "小兒子": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "大魔王": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第1頁『沒想到』，第4頁『一顆蘋果也沒有』，第10頁『再也沒有回來』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『我會的』，第7頁『您會變成』",
+   "read": "huì"
+  },
+  {
+   "char": "擔",
+   "where": "第4頁『別擔心』",
+   "read": "dān"
+  },
+  {
+   "char": "誰",
+   "where": "第6頁『誰能』，第9頁『誰說』",
+   "read": "shéi"
+  },
+  {
+   "char": "什",
+   "where": "第1頁『做什麼呢』，第7頁『來做什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "當",
+   "where": "第7頁『當然』",
+   "read": "dāng"
+  },
+  {
+   "char": "還",
+   "where": "第10頁『把田還給大家』",
+   "read": "huán"
+  },
+  {
+   "char": "陛",
+   "where": "第3頁『國王陛下』",
+   "read": "bì"
+  },
+  {
+   "char": "尾",
+   "where": "第9頁『尾巴』",
+   "read": "wěi"
+  },
+  {
+   "char": "嚇",
+   "where": "第8頁『嚇了一大跳』",
+   "read": "xià"
+  },
+  {
+   "char": "行",
+   "where": "第9頁『我不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "應",
+   "where": "第10頁『答應』",
+   "read": "yìng"
+  },
+  {
+   "char": "給",
+   "where": "第1、11頁『給我一雙靴子』，第3頁『送給您』，第10頁『還給大家』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的一間舊木頭小屋，白天；屋後有一棵結著紅蘋果的蘋果樹。",
+   "act": "小兒子出場：十五歲左右的少年，咖啡色亂亂的頭髮，穿一件補了補丁的藍色上衣，戴草帽。他坐在門口的台階上，垂頭喪氣。貓出場：一隻橘色虎斑貓，白色的胸口，綠色的大眼睛，坐在他旁邊，抬頭挺胸地開口說話，小兒子嚇了一跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老爸爸把東西分給三個兒子。",
+     "en": "An old father divided what he had among his three sons."
+    },
+    {
+     "who": "旁白",
+     "text": "大哥分到房子，二哥分到驢子，小兒子分到一隻貓。",
+     "en": "The oldest got the house, the middle son got the donkey, and the youngest got a cat."
+    },
+    {
+     "who": "小兒子",
+     "tag": "sad",
+     "text": "一隻貓，能做什麼呢？",
+     "en": "What can a cat do?"
+    },
+    {
+     "who": "旁白",
+     "text": "沒想到，貓開口說話了：",
+     "en": "To his surprise, the cat spoke!"
+    },
+    {
+     "who": "貓",
+     "tag": "proud",
+     "text": "主人，別難過！給我一雙靴子，我就有辦法！",
+     "en": "Cheer up, Master! Give me a pair of boots, and I'll find a way!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，桌上放著一個空錢袋，地上放著一雙紅色的小長靴。",
+   "act": "貓穿上紅色長靴，抬頭挺胸在屋裡走來走去，好神氣；小兒子蹲在旁邊忍不住笑了，指著窗外屋後的蘋果樹。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兒子用最後的錢，買了一雙紅靴子。",
+     "en": "The youngest son spent his last coins on a pair of red boots."
+    },
+    {
+     "who": "旁白",
+     "text": "貓穿上靴子，走來走去，好神氣。",
+     "en": "The cat pulled them on and strutted around, looking very grand."
+    },
+    {
+     "who": "小兒子",
+     "tag": "shy",
+     "text": "可是我會的，就是照顧蘋果樹。",
+     "en": "But all I know how to do is take care of apple trees."
+    },
+    {
+     "who": "貓",
+     "tag": "excited",
+     "text": "那就夠了！你的蘋果，是全村最甜的！",
+     "en": "That's plenty! Your apples are the sweetest in the village!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，紅地毯，金色的寶座。",
+   "act": "國王出場：白鬍子、戴金色皇冠、穿紅色長袍，坐在寶座上咬了一口蘋果，眼睛一亮。貓穿著紅靴子，提著一籃紅蘋果，有禮貌地鞠躬。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "貓提著一籃紅蘋果，走進王宮。",
+     "en": "The cat carried a basket of red apples to the palace."
+    },
+    {
+     "who": "貓",
+     "tag": "polite",
+     "text": "國王陛下，這是小兒子的蘋果，送給您。",
+     "en": "Your Majesty, these apples are from the youngest son's tree. They're a gift for you."
+    },
+    {
+     "who": "旁白",
+     "text": "國王咬了一口。",
+     "en": "The king took a bite."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "好甜呀！這個孩子一定很勤勞。",
+     "en": "How sweet! That boy must work very hard."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，白天；花園中間有幾棵蘋果樹，葉子黃黃的、垂下來，一顆果子都沒有。",
+   "act": "公主出場：棕色捲髮、戴小金冠、穿黃色長裙，站在樹下嘆氣。國王站在旁邊搖頭；貓穿著紅靴子，舉起一隻手搶著說話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王的女兒公主，在花園裡嘆氣。",
+     "en": "In the palace garden, the king's daughter, the princess, sighed."
+    },
+    {
+     "who": "公主",
+     "tag": "sad",
+     "text": "花園裡的蘋果樹生病了，一顆蘋果也沒有。",
+     "en": "The apple trees in our garden are sick. There's not a single apple."
+    },
+    {
+     "who": "貓",
+     "tag": "excited",
+     "text": "別擔心！我主人有辦法！",
+     "en": "Don't worry! My master can help!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園，陽光很好；地上放著水桶、小鏟子和剪刀。",
+   "act": "小兒子挽起袖子，幫蘋果樹剪掉乾枯的樹枝；公主捲起黃色長裙的袖子，提著水桶幫忙澆水，臉上沾了一點泥巴，兩個人一起笑。樹枝上冒出了小綠芽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兒子來剪枯樹枝、鬆土、澆水。",
+     "en": "The youngest son came to trim the dry branches, loosen the soil, and water the roots."
+    },
+    {
+     "who": "旁白",
+     "text": "公主也捲起袖子，一起幫忙。",
+     "en": "The princess rolled up her sleeves and helped, too."
+    },
+    {
+     "who": "公主",
+     "tag": "excited",
+     "text": "你看！樹上冒出小綠芽了！",
+     "en": "Look! Tiny green buds!"
+    },
+    {
+     "who": "小兒子",
+     "tag": "shy",
+     "text": "謝謝妳。我家很窮，可是我最愛照顧樹了。",
+     "en": "Thank you. My family is poor, but I love taking care of trees."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園門口，遠方的山上有一座國王的舊城堡，黑色石頭蓋的，城堡四周的田地被高高的木頭圍欄圍起來。",
+   "act": "國王皺著眉頭，指著遠方的黑色城堡；小兒子和公主一臉擔心；貓雙手叉腰，抬起穿紅靴子的腳，自信滿滿。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，村民跑來找國王。",
+     "en": "Just then, some villagers came running to the king."
+    },
+    {
+     "who": "旁白",
+     "text": "大魔王住進國王的舊城堡，還把大家的田圍起來。",
+     "en": "A big ogre had moved into the king's old castle on the hill, and he had fenced off everyone's fields."
+    },
+    {
+     "who": "國王",
+     "tag": "worried",
+     "text": "大魔王又高又壯，誰能讓他不再欺負大家呢？",
+     "en": "The ogre is huge and strong. Who can stop him from bullying everyone?"
+    },
+    {
+     "who": "貓",
+     "tag": "proud",
+     "text": "我有靴子，我就有辦法！",
+     "en": "I've got my boots. I'll find a way!"
+    }
+   ]
+  },
+  {
+   "scene": "山上黑色石頭城堡的大廳，牆上掛著破舊的旗子，中間有一張好大的石頭椅子。",
+   "act": "大魔王出場：有三個人那麼高，紫色的皮膚，頭上兩根短短的小角，穿一件破破的咖啡色背心，鼻孔會噴出白煙，樣子好笑不可怕。他坐在石頭椅上低頭看；貓站在地上有禮貌地鞠躬，眼睛卻在偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "貓走進城堡，大魔王坐在大石椅上。",
+     "en": "The cat walked into the ogre's castle. The ogre sat on a giant stone chair."
+    },
+    {
+     "who": "大魔王",
+     "tag": "angry",
+     "text": "小貓，你來做什麼？",
+     "en": "Little cat, what are you doing here?"
+    },
+    {
+     "who": "貓",
+     "tag": "curious",
+     "text": "聽說您會變成任何東西，是真的嗎？",
+     "en": "I've heard you can turn into anything at all. Is that true?"
+    },
+    {
+     "who": "大魔王",
+     "tag": "proud",
+     "text": "當然！你看！",
+     "en": "Of course! Watch this!"
+    }
+   ]
+  },
+  {
+   "scene": "黑色石頭城堡的大廳，一團白煙散開。",
+   "act": "白煙裡出現一隻好大的金色獅子，張大嘴巴吼叫；貓的毛全部豎起來，躲到厚厚的紅色窗簾後面，只露出兩隻眼睛和紅靴子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "砰！大魔王變成了一隻大獅子。",
+     "en": "Poof! The ogre turned into a huge lion."
+    },
+    {
+     "who": "大魔王",
+     "tag": "shouting",
+     "text": "吼！怕不怕？",
+     "en": "Roar! Scared yet?"
+    },
+    {
+     "who": "旁白",
+     "text": "貓嚇了一大跳，趕快躲到窗簾後面。",
+     "en": "The cat jumped in fright and hid behind the curtain."
+    },
+    {
+     "who": "貓",
+     "tag": "scared",
+     "text": "好，好厲害！可是變大，很簡單嘛。",
+     "en": "W-wow, very impressive! But getting big is easy."
+    }
+   ]
+  },
+  {
+   "scene": "黑色石頭城堡的大廳，又一團白煙。",
+   "act": "獅子變回大魔王，氣得鼻孔噴白煙；接著白煙裡變出一隻灰色小老鼠，頭上還有兩根小小的角。貓從窗簾後面跳出來，用爪子輕輕按住小老鼠的尾巴。",
+   "lines": [
+    {
+     "who": "貓",
+     "tag": "curious",
+     "text": "要變小，一定很難吧？我猜您變不成小老鼠。",
+     "en": "Getting small must be much harder. I bet you can't turn into a little mouse."
+    },
+    {
+     "who": "大魔王",
+     "tag": "angry",
+     "text": "誰說我不行？",
+     "en": "Who says I can't?"
+    },
+    {
+     "who": "旁白",
+     "text": "砰！他真的變成了小老鼠。",
+     "en": "Poof! He really did turn into a tiny mouse."
+    },
+    {
+     "who": "旁白",
+     "text": "貓一跳，用爪子按住牠的尾巴。",
+     "en": "The cat pounced and pinned its tail with one paw."
+    }
+   ]
+  },
+  {
+   "scene": "黑色石頭城堡的大門口，門外是被圍起來的田地。",
+   "act": "小老鼠縮成一團，用好大的聲音大叫；貓蹲下來，搖搖手指頭跟牠說話。最後貓放開尾巴，小老鼠一路衝出城堡大門，往遠遠的山後面跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小老鼠用好粗的聲音大叫：",
+     "en": "The tiny mouse shouted in a great big voice,"
+    },
+    {
+     "who": "大魔王",
+     "tag": "scared",
+     "text": "別吃我！我最怕貓了！",
+     "en": "Don't eat me! I'm scared of cats!"
+    },
+    {
+     "who": "貓",
+     "tag": "firm",
+     "text": "我不吃你。你要答應，把田還給大家！",
+     "en": "I won't eat you. But you must promise to give everyone's fields back!"
+    },
+    {
+     "who": "大魔王",
+     "tag": "crying",
+     "text": "我答應！我答應！",
+     "en": "I promise! I promise!"
+    },
+    {
+     "who": "旁白",
+     "text": "小老鼠咻的一聲跑出城堡，再也沒有回來。",
+     "en": "Whoosh! The mouse ran out of the castle and never came back."
+    }
+   ]
+  },
+  {
+   "scene": "山上的城堡前，木頭圍欄拆掉了，金黃色的田地上村民在拍手；城堡的大門打開，掛上了彩色旗子。",
+   "act": "國王、公主、小兒子和貓站在城堡門口；村民們圍在旁邊拍手歡呼。國王拍拍小兒子的肩膀，公主笑著指向城堡旁邊的蘋果樹苗，貓抬起穿紅靴子的腳，得意地眨眼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "村民拿回了自己的田，大家都好開心。",
+     "en": "The villagers got their fields back, and everyone cheered."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "這座城堡，就請勤勞的小兒子幫大家照顧吧！",
+     "en": "Let's ask the hardworking youngest son to look after this castle for everyone!"
+    },
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "我可以來一起照顧蘋果樹嗎？",
+     "en": "May I come and help with the apple trees?"
+    },
+    {
+     "who": "貓",
+     "tag": "proud",
+     "text": "看吧！給我一雙靴子，我就有辦法！",
+     "en": "See? Give me a pair of boots, and I'll find a way!"
+    }
+   ]
+  }
+ ]
+}

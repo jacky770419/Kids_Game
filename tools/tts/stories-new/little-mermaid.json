@@ -1,0 +1,550 @@
+{
+ "id": "little-mermaid",
+ "title": "小美人魚",
+ "title_en": "The Little Mermaid",
+ "size": "長",
+ "roles": {
+  "小美人魚": "住在海底的人魚女孩，十五歲，聲音甜美清亮、充滿好奇，換掉聲音後只靠手和畫說話，最後又驚又喜。",
+  "海巫婆": "住在冒泡山洞裡的海巫婆，愛打嗝，怪趣好笑不可怕，其實很想唱歌，最後被小美人魚的勇氣打動。",
+  "人魚奶奶": "小美人魚的奶奶，慈祥溫暖的老奶奶聲音，說話慢慢的、很疼孫女。",
+  "王子": "住在海邊城堡的年輕王子，聲音明亮溫和、有禮貌，猜錯時很熱心，認出小美人魚時又驚又喜。",
+  "小海豹": "胖肚子的小海豹，活潑的年輕男聲，愛講話、整天想著小魚乾，遇到暴風雨第一個躲起來，很好笑。"
+ },
+ "cast": {
+  "小美人魚": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "海巫婆": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "人魚奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  },
+  "小海豹": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "嗝",
+   "where": "第8、9、15頁『嗝』『打嗝』",
+   "read": "gé"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『就會唱出』，第11、12頁『會唱歌』，第16頁『我會常回來』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『沒有耶』，第7頁『沒有腳』，第9頁『沒有聲音』，第10頁『沒事吧』",
+   "read": "méi"
+  },
+  {
+   "char": "還",
+   "where": "第15頁『聲音還給妳』",
+   "read": "huán"
+  },
+  {
+   "char": "誰",
+   "where": "第3頁『妳是誰』，第6頁『是誰救了我』",
+   "read": "shéi"
+  },
+  {
+   "char": "什",
+   "where": "第3頁『是什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "露",
+   "where": "第5頁『露出水面』",
+   "read": "lù"
+  },
+  {
+   "char": "教",
+   "where": "第16頁『也教大家』",
+   "read": "jiāo"
+  },
+  {
+   "char": "尾",
+   "where": "第9頁『尾巴』",
+   "read": "wěi"
+  },
+  {
+   "char": "乾",
+   "where": "第3、13、16頁『小魚乾』",
+   "read": "gān"
+  },
+  {
+   "char": "傳",
+   "where": "第14頁『傳出一首歌』",
+   "read": "chuán"
+  },
+  {
+   "char": "給",
+   "where": "第15頁『還給妳』，第16頁『唱歌給妳聽』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很深的海底，白天。藍綠色的海水裡透下一道道陽光，海底有一座粉紅色和白色珊瑚蓋成的宮殿，四周長著海草，小魚游來游去。",
+   "act": "小美人魚出場：十五歲左右的人魚女孩，黑色的長辮子上別著小珍珠，淡紫色、亮晶晶的魚尾巴，穿淡黃色的小上衣。她坐在宮殿屋頂上，抬頭望著上面發亮的海面，眼睛閃閃發光。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "在很深的海底，有一座珊瑚宮殿。",
+     "en": "Deep under the sea, there was a palace made of coral."
+    },
+    {
+     "who": "旁白",
+     "text": "裡面住著小美人魚，她的歌聲最好聽。",
+     "en": "A little mermaid lived there, and her singing voice was the sweetest of all."
+    },
+    {
+     "who": "旁白",
+     "text": "她每天都抬頭說：",
+     "en": "Every day, she looked up and said,"
+    },
+    {
+     "who": "小美人魚",
+     "tag": "dreamy",
+     "text": "我想看一看海面上的世界！",
+     "en": "I want to see the world up above!"
+    }
+   ]
+  },
+  {
+   "scene": "珊瑚宮殿裡的房間，貝殼做的床和桌子，牆上掛著發光的珍珠燈。",
+   "act": "人魚奶奶出場：白頭髮盤成一個圓髻，戴珊瑚項鍊，深綠色的魚尾巴，笑起來眼角彎彎的。奶奶拿出兩個一模一樣的粉紅色螺旋貝殼放在小美人魚手心，小美人魚驚喜地捧著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "人魚奶奶游過來，摸了摸她的頭。",
+     "en": "Her grandma, an old mermaid with snow-white hair, swam over and stroked her head."
+    },
+    {
+     "who": "人魚奶奶",
+     "tag": "gentle",
+     "text": "等妳十五歲生日，就可以上去看。",
+     "en": "On your fifteenth birthday, you may swim up and see it."
+    },
+    {
+     "who": "旁白",
+     "text": "生日那天，奶奶送她一對粉紅色的螺旋貝殼。",
+     "en": "On her birthday, Grandma gave her a pair of pink spiral shells."
+    },
+    {
+     "who": "人魚奶奶",
+     "text": "這對貝殼靠在一起，就會唱出妳的歌喔。",
+     "en": "Put these two shells together, and they will sing your song."
+    }
+   ]
+  },
+  {
+   "scene": "海面上，太陽快要下山了，天空是橘色和粉紅色；海上有一塊黑色的大石頭。",
+   "act": "小美人魚第一次從海裡探出頭，頭髮濕濕的，好奇地東看西看。小海豹出場：一隻胖肚子的灰色小海豹，圓圓的黑眼睛，長長的白鬍鬚，脖子上圍著一條小紅領巾，趴在大石頭上歪著頭看她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她第一次游出了海面。",
+     "en": "She swam up and poked her head above the water for the very first time."
+    },
+    {
+     "who": "旁白",
+     "text": "大石頭上，趴著一隻胖肚子的小海豹。",
+     "en": "On a big rock lay a seal pup with a round, plump belly."
+    },
+    {
+     "who": "小海豹",
+     "tag": "excited",
+     "text": "嗨！妳是誰？妳有沒有帶小魚乾？",
+     "en": "Hi there! Who are you? Did you bring any fish snacks?"
+    },
+    {
+     "who": "小美人魚",
+     "tag": "surprised",
+     "text": "沒有耶。咦，那邊好亮！",
+     "en": "Sorry, no. Oh, what's that bright light?"
+    }
+   ]
+  },
+  {
+   "scene": "海上，天色暗了。一條白色大帆船，船上掛滿了黃色的燈，有人在甲板上拍手；遠方的天空有烏雲飄過來。",
+   "act": "王子出場：二十歲左右的年輕人，棕色短髮，穿深藍色外套、金色鈕扣，站在船邊對著星星微笑。小美人魚和小海豹在船邊的浪裡偷看。最後烏雲蓋住月亮，浪變大了，小海豹慌張地撲通鑽進海裡。",
+   "lines": [
+    {
+     "who": "小海豹",
+     "text": "那是王子的大船，今天是他的生日派對！",
+     "en": "That's the prince's big ship. It's his birthday party!"
+    },
+    {
+     "who": "旁白",
+     "text": "王子站在船邊，對著星星笑。",
+     "en": "The prince stood at the rail, smiling at the stars."
+    },
+    {
+     "who": "旁白",
+     "text": "突然，風一直吹，浪越來越大。",
+     "en": "Suddenly, the wind began to blow, and the waves grew bigger and bigger."
+    },
+    {
+     "who": "小海豹",
+     "tag": "scared",
+     "text": "哇，暴風雨來了！我先去躲起來啦！",
+     "en": "Yikes, a storm! I'm out of here!"
+    }
+   ]
+  },
+  {
+   "scene": "暴風雨的海上，夜晚，大浪打在帆船上，閃電照亮天空。",
+   "act": "王子從船邊滑進海裡，表情驚訝但不痛苦；小美人魚正好游到，雙手抱住王子，讓他的頭露在水面上，她一臉勇敢。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個大浪打過來，撲通一聲，王子掉進了海裡。",
+     "en": "A huge wave crashed over the ship, and splash! The prince fell into the sea."
+    },
+    {
+     "who": "小美人魚",
+     "tag": "brave",
+     "text": "王子，別怕！我來了！",
+     "en": "Don't be afraid, Prince! I'm coming!"
+    },
+    {
+     "who": "旁白",
+     "text": "她游過去，抱住王子，讓他的頭露出水面。",
+     "en": "She swam to him, caught him, and held his head above the water."
+    },
+    {
+     "who": "旁白",
+     "text": "她陪著王子，一直游到天亮。",
+     "en": "She stayed with him and swam on and on until morning."
+    }
+   ]
+  },
+  {
+   "scene": "早上，安靜的白色沙灘，海浪輕輕拍上岸；沙灘旁邊有一塊大石頭，遠處有一座白色城堡。",
+   "act": "王子閉著眼睛躺在沙灘上睡覺，衣服濕濕的。小美人魚半個身子在淺水裡，對著他輕聲唱歌，把一個粉紅色螺旋貝殼放在他手心。最後她躲到大石頭後面偷看，王子慢慢睜開眼睛，手裡握著貝殼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "在沙灘上，小美人魚輕聲對王子唱歌。",
+     "en": "On the beach, the little mermaid sang softly to the sleeping prince."
+    },
+    {
+     "who": "旁白",
+     "text": "她把一個粉紅色貝殼，放在王子的手心。",
+     "en": "She placed one of her pink shells in his hand."
+    },
+    {
+     "who": "旁白",
+     "text": "有人來了，她趕快躲到大石頭後面。",
+     "en": "Someone was coming, so she hid behind a big rock."
+    },
+    {
+     "who": "王子",
+     "tag": "surprised",
+     "text": "我聽到一首好聽的歌。是誰救了我？",
+     "en": "I heard such a lovely song. Who saved me?"
+    }
+   ]
+  },
+  {
+   "scene": "海底的珊瑚宮殿，小美人魚的房間，窗外有小魚游過。",
+   "act": "小美人魚捲著尾巴坐在貝殼床上，手裡握著剩下的那個粉紅色貝殼，一臉想念；人魚奶奶坐在旁邊，溫柔地看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回到海底，她一直想著王子。",
+     "en": "Back under the sea, she couldn't stop thinking about the prince."
+    },
+    {
+     "who": "小美人魚",
+     "tag": "sad",
+     "text": "奶奶，我想看一看海面上的世界，也想再見到他。",
+     "en": "Grandma, I want to see the world up above, and I want to see him again."
+    },
+    {
+     "who": "人魚奶奶",
+     "tag": "gentle",
+     "text": "可是人魚沒有腳，不能上岸呀。",
+     "en": "But mermaids have no legs, my dear. We can't live on land."
+    },
+    {
+     "who": "旁白",
+     "text": "她想了一整晚，決定去找海巫婆。",
+     "en": "She thought about it all night, and then she decided to visit the Sea Witch."
+    }
+   ]
+  },
+  {
+   "scene": "海底深處的一個大山洞，洞口一直冒出彩色的氣泡，洞裡堆滿了瓶子、海螺和亂七八糟的貝殼。",
+   "act": "海巫婆出場：一位怪趣的阿姨，淡藍色的捲頭髮蓬得像一朵海葵，戴一頂貝殼帽和圓眼鏡，穿一件飄來飄去的深綠色海草長裙。她一說話就打嗝，嘴裡冒出一個大氣泡，小美人魚嚇了一跳又忍不住想笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "海巫婆住在一個一直冒氣泡的山洞裡。",
+     "en": "The Sea Witch lived in a cave that was always full of bubbles."
+    },
+    {
+     "who": "旁白",
+     "text": "她一說話就打嗝，冒出一個大氣泡。",
+     "en": "Whenever she talked, she hiccuped out a big bubble."
+    },
+    {
+     "who": "海巫婆",
+     "tag": "laughing",
+     "text": "嗝！小美人魚，妳想要一雙腳，對不對？",
+     "en": "Hic! Little mermaid, you want a pair of legs, don't you?"
+    },
+    {
+     "who": "海巫婆",
+     "tag": "excited",
+     "text": "可以呀，用妳好聽的聲音來換。我最想唱歌了！嗝！",
+     "en": "You can have them, in exchange for your lovely voice. I've always wanted to sing! Hic!"
+    }
+   ]
+  },
+  {
+   "scene": "海巫婆的山洞裡，四周飄著大大小小的彩色氣泡。",
+   "act": "小美人魚猶豫地低頭想了一下，然後抬起頭點點頭。海巫婆打了一個嗝，嘴裡冒出一個好大的透明泡泡，輕輕包住小美人魚淡紫色的尾巴；泡泡破掉時，尾巴變成了一雙腳，小美人魚驚訝地看著自己的腳。",
+   "lines": [
+    {
+     "who": "小美人魚",
+     "tag": "brave",
+     "text": "沒有聲音，我就不能說話了。可是，我願意。",
+     "en": "Without my voice, I won't be able to talk. But yes, I'll do it."
+    },
+    {
+     "who": "旁白",
+     "text": "海巫婆一打嗝，氣泡就包住她的尾巴。",
+     "en": "The Sea Witch hiccuped, and a big bubble wrapped around the little mermaid's tail."
+    },
+    {
+     "who": "旁白",
+     "text": "氣泡一破，尾巴變成了腳，聲音也不見了。",
+     "en": "When the bubble popped, her tail had turned into two legs, and her voice was gone."
+    },
+    {
+     "who": "海巫婆",
+     "tag": "gentle",
+     "text": "如果妳想家，就到海邊叫我。嗝！",
+     "en": "If you ever miss home, just call me from the beach. Hic!"
+    }
+   ]
+  },
+  {
+   "scene": "早上的白色沙灘，遠處是白色城堡，小海豹趴在沙灘上。",
+   "act": "小美人魚第一次用腳站起來，雙手張開，身體搖來搖去，最後咚一聲坐在柔軟的沙子上，自己也笑了。小海豹趴在旁邊，笑得用鰭拍肚子。王子從城堡那邊走過來，伸手拉她起來，把自己的深藍色外套披在她身上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她用腳走路，搖來搖去，像一隻小鹿。",
+     "en": "She tried walking on her new legs. She wobbled this way and that, like a baby deer."
+    },
+    {
+     "who": "小海豹",
+     "tag": "laughing",
+     "text": "哈，哈！妳走路跟我一樣搖來搖去！",
+     "en": "Ha ha! You waddle just like me!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！她坐在沙子上。王子正好走過來，拉她起來。",
+     "en": "Bump! She sat down on the sand. Just then, the prince came along and helped her up."
+    },
+    {
+     "who": "王子",
+     "tag": "gentle",
+     "text": "妳沒事吧？妳從哪裡來呀？",
+     "en": "Are you all right? Where did you come from?"
+    }
+   ]
+  },
+  {
+   "scene": "白色城堡裡的大廳，大窗戶看得到大海，桌上擺著花。",
+   "act": "小美人魚穿著淡紫色的長裙，用力指著自己；王子手裡拿著那個粉紅色螺旋貝殼給她看，笑得很親切，但一臉不明白。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她張開嘴，卻發不出聲音。",
+     "en": "She opened her mouth, but no sound came out."
+    },
+    {
+     "who": "旁白",
+     "text": "王子帶她回城堡，拿出那個貝殼。",
+     "en": "The prince took her to his castle and showed her the pink shell."
+    },
+    {
+     "who": "王子",
+     "text": "有一個會唱歌的女孩救了我。我好想找到她。",
+     "en": "A girl with a beautiful song saved me. I wish I could find her."
+    },
+    {
+     "who": "旁白",
+     "text": "她用力指著自己，王子卻不明白。",
+     "en": "She pointed at herself again and again, but the prince didn't understand."
+    },
+    {
+     "who": "王子",
+     "tag": "happy",
+     "text": "妳也喜歡這個貝殼嗎？",
+     "en": "Do you like this shell too?"
+    }
+   ]
+  },
+  {
+   "scene": "城堡的花園，陽光很好，石頭桌上放著紙和彩色筆。",
+   "act": "小美人魚用雙手比出海浪，又用手指比出游來游去的小魚；接著在紙上畫畫：暴風雨、大船和一條淡紫色尾巴的小人魚。王子先是開心地猜錯，後來拿起畫看，誇她畫得好，但還是搖頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她不能說話，就用手比，也用筆畫。",
+     "en": "She couldn't speak, so she talked with her hands and drew pictures."
+    },
+    {
+     "who": "王子",
+     "tag": "excited",
+     "text": "我懂了！妳是說，妳想去海邊玩，對不對？",
+     "en": "I get it! You want to go and play by the sea, right?"
+    },
+    {
+     "who": "旁白",
+     "text": "她搖了搖頭，畫了暴風雨、大船，和一條小人魚。",
+     "en": "She shook her head and drew a storm, a big ship, and a little mermaid."
+    },
+    {
+     "who": "王子",
+     "text": "好漂亮的畫！可是，救我的女孩會唱歌呀。",
+     "en": "What a beautiful picture! But the girl who saved me could sing."
+    }
+   ]
+  },
+  {
+   "scene": "晚上的海邊，月亮又大又圓，海面上一條銀色的月光。",
+   "act": "小美人魚一個人坐在沙灘上，望著大海想念奶奶。小海豹從海裡爬上沙灘，叼著一條小魚乾要分她，她笑著搖頭。接著她從口袋裡拿出另一個粉紅色螺旋貝殼，眼睛一下子亮起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，她一個人坐在海邊，好想奶奶。",
+     "en": "That night, the little mermaid sat alone by the sea. She missed Grandma."
+    },
+    {
+     "who": "小海豹",
+     "tag": "gentle",
+     "text": "別難過嘛。我的小魚乾，分妳一半！",
+     "en": "Cheer up! You can have half my fish snack!"
+    },
+    {
+     "who": "旁白",
+     "text": "她笑著搖頭，摸到口袋裡的另一個貝殼。",
+     "en": "She smiled and shook her head. Then she felt the other shell in her pocket."
+    },
+    {
+     "who": "旁白",
+     "text": "她想起奶奶的話，眼睛亮了起來。",
+     "en": "She remembered what Grandma had said, and her eyes lit up."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的陽台，晚上，可以看到月光下的大海。",
+   "act": "小美人魚把兩個粉紅色貝殼靠在一起，貝殼發出淡淡的光，飄出一串音符；她的雙手像海浪一樣擺動。王子睜大眼睛，雙手握住她的手，又驚喜又感動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她跑去找王子，把兩個貝殼靠在一起。",
+     "en": "She ran to the prince and held the two shells together."
+    },
+    {
+     "who": "旁白",
+     "text": "貝殼裡傳出一首歌，就是那天沙灘上的歌！",
+     "en": "A song floated out of the shells. It was the very song from the beach!"
+    },
+    {
+     "who": "旁白",
+     "text": "她的手跟著歌聲，像海浪一樣擺動。",
+     "en": "Her hands swayed with the music, like ocean waves."
+    },
+    {
+     "who": "王子",
+     "tag": "surprised",
+     "text": "是妳！那天救我的，就是妳！",
+     "en": "It's you! You're the one who saved me!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡下面的海邊，晚上，海面冒出一個好大的氣泡。",
+   "act": "海巫婆從海裡探出上半身，貝殼帽歪一邊，打了一個好大的嗝，嘴裡冒出一個大泡泡，泡泡飄到小美人魚面前破掉，閃出一串小音符。王子站在小美人魚旁邊，驚訝地看著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，海巫婆從海裡探出頭來。",
+     "en": "Just then, the Sea Witch popped her head out of the sea."
+    },
+    {
+     "who": "海巫婆",
+     "tag": "sad",
+     "text": "嗝！妳的聲音給我唱，一點都不好聽。",
+     "en": "Hic! Your voice doesn't sound pretty at all when I sing with it."
+    },
+    {
+     "who": "海巫婆",
+     "tag": "gentle",
+     "text": "妳這麼勇敢，聲音還給妳吧！",
+     "en": "You were so brave. Here, take your voice back!"
+    },
+    {
+     "who": "旁白",
+     "text": "海巫婆一打嗝，聲音就飛回來了！",
+     "en": "The Sea Witch hiccuped, and the little mermaid's voice came flying back!"
+    }
+   ]
+  },
+  {
+   "scene": "早上的海邊，陽光燦爛；淺水裡有人魚奶奶，沙灘上有王子，沙灘上有小海豹。",
+   "act": "小美人魚站在淺水邊，對海巫婆用手比著「謝謝」，同時開口說話；人魚奶奶從浪裡探出身子，張開雙手笑；王子在旁邊學著比手語；小海豹趴在王子腳邊，嘴裡叼著小魚乾。",
+   "lines": [
+    {
+     "who": "小美人魚",
+     "tag": "happy",
+     "text": "謝謝妳！我會常回來，唱歌給妳聽。",
+     "en": "Thank you! I'll come back often and sing for you."
+    },
+    {
+     "who": "旁白",
+     "text": "從此，她用歌聲說話，也教大家用手說話。",
+     "en": "From then on, she talked with her songs, and she taught everyone to talk with their hands, too."
+    },
+    {
+     "who": "人魚奶奶",
+     "tag": "happy",
+     "text": "海面上的世界，好看嗎？",
+     "en": "So, how is the world up above?"
+    },
+    {
+     "who": "小美人魚",
+     "tag": "excited",
+     "text": "好看！岸上和海底，都是我的家！",
+     "en": "Wonderful! The sea and the land are both my home!"
+    },
+    {
+     "who": "小海豹",
+     "tag": "laughing",
+     "text": "那，有小魚乾嗎？",
+     "en": "So, are there any fish snacks?"
+    }
+   ]
+  }
+ ]
+}

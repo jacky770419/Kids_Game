@@ -1,0 +1,264 @@
+{
+ "id": "animal-sleep",
+ "title": "動物怎麼睡覺",
+ "title_en": "How Do Animals Sleep?",
+ "size": "短",
+ "roles": {
+  "小女孩": "五歲的小女孩小柔，聲音細細甜甜的，一開始好奇、睡不著，想學蝙蝠時興奮又好笑，越到後面越想睡、聲音越輕。",
+  "貓頭鷹": "住在窗外樹上的貓頭鷹爺爺，慈祥的老爺爺聲音，說話慢慢的、輕輕的，像在講睡前故事。",
+  "海獺": "大海上的小海獺，可愛的小動物聲音，甜甜的、懶洋洋的，快要睡著。",
+  "長頸鹿": "草原上的長頸鹿，溫柔的年輕女聲，說話輕柔、不急不忙。"
+ },
+ "cast": {
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "貓頭鷹": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "海獺": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "長頸鹿": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "第6頁『長頸鹿』兩次",
+   "read": "cháng"
+  },
+  {
+   "char": "倒",
+   "where": "第4頁『倒掛著』『倒掛著睡』",
+   "read": "dào"
+  },
+  {
+   "char": "朝",
+   "where": "第4頁『頭朝下』",
+   "read": "cháo"
+  },
+  {
+   "char": "暈",
+   "where": "第5頁『會頭暈』",
+   "read": "yūn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上，小柔的臥室：小木床、淡黃色的小夜燈，窗戶開著一半，窗外是一棵大樹和滿天星星。",
+   "act": "小柔是五歲的小女孩，黑色短髮、齊瀏海，穿淺藍色有白色小星星的睡衣，躺在床上，被子踢到腳邊，眼睛睜得很大看著窗外。窗外樹枝上站著貓頭鷹爺爺：咖啡色的羽毛、圓圓的黃色大眼睛、頭上兩撮小羽毛，脖子上圍著一條紅格子小圍巾。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，小柔躺在床上，睡不著。",
+     "en": "It is night. Nora lies in bed, but she can't fall asleep."
+    },
+    {
+     "who": "旁白",
+     "text": "窗外的樹上，有一隻貓頭鷹。",
+     "en": "In the tree outside her window sits an owl."
+    },
+    {
+     "who": "小女孩",
+     "tag": "curious",
+     "text": "貓頭鷹爺爺，你怎麼不睡呢？",
+     "en": "Mr. Owl, why aren't you asleep?"
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "gentle",
+     "text": "我呀，白天睡，晚上醒著。",
+     "en": "Oh, I sleep in the daytime and stay awake at night."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，小夜燈亮著。",
+   "act": "貓頭鷹爺爺飛到窗台上，張開一邊翅膀，像在邀請；小柔坐起來，抱著枕頭，閉上眼睛微笑。畫面邊緣淡淡地畫出一圈藍色的海浪，表示她開始想像。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "curious",
+     "text": "那別的動物，都怎麼睡呢？",
+     "en": "Then how do other animals sleep?"
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "gentle",
+     "text": "閉上眼睛，我帶妳去看。",
+     "en": "Close your eyes, and I'll show you."
+    },
+    {
+     "who": "旁白",
+     "text": "小柔閉上眼睛，聽見海浪的聲音。",
+     "en": "Nora closes her eyes and hears the sound of waves."
+    }
+   ]
+  },
+  {
+   "scene": "晚上的大海，海面很平靜，月光照在水上，旁邊漂著一片綠色的海草。",
+   "act": "兩隻咖啡色的海獺仰躺在水面上，肚子朝上，兩隻小手牽在一起，身上還纏著一點海草，眼睛快要閉起來。穿星星睡衣的小柔坐在貓頭鷹爺爺旁邊的一塊大石頭上，輕輕揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大海上，兩隻海獺躺著，漂呀漂。",
+     "en": "Out on the sea, two sea otters float on their backs."
+    },
+    {
+     "who": "海獺",
+     "tag": "sleepy",
+     "text": "我們手牽手睡，就不會分開囉。",
+     "en": "We hold hands when we sleep, so we don't drift apart."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "晚安，海獺！",
+     "en": "Good night, sea otters!"
+    },
+    {
+     "who": "海獺",
+     "tag": "sleepy",
+     "text": "晚安，小柔。",
+     "en": "Good night, Nora."
+    }
+   ]
+  },
+  {
+   "scene": "白天的山洞裡，洞口透進一點光，洞頂是凹凸不平的灰色石頭。",
+   "act": "好多隻黑色小蝙蝠用腳勾住洞頂，倒掛著，用翅膀把自己包起來像小黑傘；貓頭鷹爺爺站在洞口的地上，用翅膀指著牠們；小柔站在地上，抬頭看，眼睛發亮、兩手握拳很興奮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山洞裡，好多蝙蝠倒掛著，用翅膀包住自己。",
+     "en": "In a cave, lots of bats hang upside down, wrapped up in their wings."
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "gentle",
+     "text": "蝙蝠白天睡，用腳勾著，頭朝下。",
+     "en": "Bats sleep in the daytime. They hold on with their feet, heads pointing down."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "真好玩！我也要倒掛著睡！",
+     "en": "That looks like fun! I want to sleep upside down too!"
+    }
+   ]
+  },
+  {
+   "scene": "想像泡泡：卡通風格的夜晚樹枝；泡泡外是剛才的山洞。",
+   "act": "想像泡泡畫成卡通：小柔變成一隻穿淺藍色星星睡衣的小蝙蝠，用蝙蝠的小腳勾在樹枝上，頭朝下，黑色短髮全部垂下來，像一支小拖把；枕頭和被子從樹下掉下去。不要畫她爬床、爬家具或抓著任何東西倒吊。泡泡外，小柔站在山洞地上，捧著肚子大笑；貓頭鷹爺爺也笑得瞇起眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小柔想一想：頭朝下，頭髮垂下來，像一支拖把。",
+     "en": "Nora imagines it. Upside down, her hair hangs down like a mop."
+    },
+    {
+     "who": "旁白",
+     "text": "枕頭掉了，被子也掉了！",
+     "en": "Her pillow falls off. Her blanket falls off too!"
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "gentle",
+     "text": "小朋友倒掛，會頭暈喔。",
+     "en": "Hanging upside down would make you dizzy, little one."
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "哎呀，那我用躺的就好！",
+     "en": "Oops! Then I'll just lie down!"
+    },
+    {
+     "who": "小女孩",
+     "text": "晚安，蝙蝠。",
+     "en": "Good night, bats."
+    }
+   ]
+  },
+  {
+   "scene": "晚上的大草原，天空是深藍色，遠處有一棵平頂的大樹，草很低。",
+   "act": "一隻黃色帶咖啡色花紋的長頸鹿站在樹旁，四隻腳站直，閉著眼睛打盹；小柔和貓頭鷹爺爺在草地上踮著腳尖，手指放在嘴巴前面，輕輕地看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "草原上，長頸鹿站著，閉上眼睛。",
+     "en": "On the grassland, a giraffe stands still and closes her eyes."
+    },
+    {
+     "who": "長頸鹿",
+     "tag": "gentle",
+     "text": "我站著睡一會兒，很快就醒來。",
+     "en": "I sleep standing up, just for a little while. Then I wake up again."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "晚安，長頸鹿。",
+     "en": "Good night, giraffe."
+    }
+   ]
+  },
+  {
+   "scene": "回到小柔的臥室，小夜燈調成很暗的黃光，窗外月亮彎彎的。",
+   "act": "小柔躺回自己的床上，打一個大哈欠；貓頭鷹爺爺站在窗台上，輕輕眨眼。被子還在腳邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "涼風吹來，小柔回到自己的床上。",
+     "en": "A soft wind blows, and Nora is back in her own bed."
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "whispering",
+     "text": "換妳睡了，小柔。",
+     "en": "Now it's your turn to sleep, Nora."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sleepy",
+     "text": "我知道我要怎麼睡。",
+     "en": "I know how I like to sleep."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，很暗，只有月光和小夜燈。",
+   "act": "小柔自己把淺藍色被子拉到下巴，蓋得好好的，閉著眼睛微笑；窗外，貓頭鷹爺爺張開翅膀，安靜地飛向月亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小柔拉起被子，自己蓋好。",
+     "en": "Nora pulls up her blanket and tucks herself in."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sleepy, whispering",
+     "text": "我躺著睡，最舒服。晚安。",
+     "en": "Lying down is the coziest. Good night."
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "whispering",
+     "text": "晚安，小柔。",
+     "en": "Good night, Nora."
+    },
+    {
+     "who": "旁白",
+     "text": "貓頭鷹安靜地飛走了。",
+     "en": "And the owl flies quietly away."
+    }
+   ]
+  }
+ ]
+}

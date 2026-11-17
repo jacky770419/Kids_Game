@@ -1,0 +1,427 @@
+{
+ "id": "brave-tailor",
+ "title": "勇敢的小裁縫",
+ "title_en": "The Brave Little Tailor",
+ "size": "中",
+ "roles": {
+  "小裁縫": "帽子上插白羽毛的小裁縫，活潑的年輕男聲，愛逞強又有點膽小，腦筋動得快，最後老實說出真相。",
+  "果醬奶奶": "推小車賣草莓果醬的奶奶，慈祥熱情的老奶奶聲音，看到「一下七個」嚇一大跳。",
+  "國王": "慈祥的老國王，聲音低沉溫暖，擔心巨人時著急，最後笑呵呵地誇小裁縫聰明。",
+  "大鼻子巨人": "鼻子像大馬鈴薯的巨人，粗大嗓門、脾氣急，被搔鼻子就氣呼呼，好笑不可怕。",
+  "大耳朵巨人": "耳朵像大扇子的巨人，低沉渾厚的大叔聲音，說話比大鼻子慢一點、愛睏，生氣時很固執，好笑不可怕。"
+ },
+ "cast": {
+  "小裁縫": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "果醬奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "大鼻子巨人": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "大耳朵巨人": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "縫",
+   "where": "書名與全書『裁縫』",
+   "read": "féng"
+  },
+  {
+   "char": "給",
+   "where": "第1頁『請給我』",
+   "read": "gěi"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『話沒說完』，第9頁『沒說話』，第10頁『再也沒回來』『沒有人受傷』，第11頁『我沒有打他們』",
+   "read": "méi"
+  },
+  {
+   "char": "扇",
+   "where": "第6頁『像扇子』",
+   "read": "shàn"
+  },
+  {
+   "char": "著",
+   "where": "第7頁『又睡著了』",
+   "read": "zháo"
+  },
+  {
+   "char": "什",
+   "where": "第7頁『做什麼』，第9頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "繫",
+   "where": "第3頁『繫上腰帶』",
+   "read": "jì"
+  },
+  {
+   "char": "搔",
+   "where": "第7、8頁『搔一搔』『搔我』",
+   "read": "sāo"
+  },
+  {
+   "char": "嚏",
+   "where": "第7頁『噴嚏』",
+   "read": "tì"
+  },
+  {
+   "char": "愣",
+   "where": "第11頁『愣了一下』",
+   "read": "lèng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "小鎮的石頭街道，早上；一間小小的裁縫店，窗戶開著，窗台上放著布和剪刀。",
+   "act": "小裁縫出場：二十歲左右的瘦小年輕人，咖啡色短髮，穿綠色背心和白襯衫，脖子上掛著皮尺，綠色小帽子上插著一根好長的白羽毛。他坐在窗邊縫衣服。果醬奶奶出場：圓臉、白頭髮綁成包包頭，戴紅色頭巾，穿格子圍裙，推著一台放滿果醬罐子的小木車。小裁縫從窗戶探出頭揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小鎮上的小裁縫，帽子上插著白羽毛。",
+     "en": "In a little town lived a little tailor with a white feather in his hat."
+    },
+    {
+     "who": "旁白",
+     "text": "果醬奶奶推著小車經過：",
+     "en": "One morning, Granny Jam came by with her cart."
+    },
+    {
+     "who": "果醬奶奶",
+     "tag": "cheerful",
+     "text": "賣果醬喔！草莓果醬，又甜又香！",
+     "en": "Jam for sale! Strawberry jam, sweet and yummy!"
+    },
+    {
+     "who": "小裁縫",
+     "tag": "excited",
+     "text": "奶奶，請給我一罐！",
+     "en": "Granny, one jar, please!"
+    }
+   ]
+  },
+  {
+   "scene": "裁縫店裡，木頭桌子上放著一片塗了紅色草莓果醬的麵包。",
+   "act": "七隻黑色小蒼蠅繞著麵包飛，停在果醬上；小裁縫皺著眉，拿起一塊藍色的布用力一揮，七隻蒼蠅全都往窗外飛走，一隻都沒有受傷。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他把果醬塗在麵包上。",
+     "en": "He spread the jam on his bread."
+    },
+    {
+     "who": "旁白",
+     "text": "嗡，嗡，嗡！七隻蒼蠅飛來了。",
+     "en": "Bzz, bzz, bzz! Along came seven flies."
+    },
+    {
+     "who": "小裁縫",
+     "tag": "annoyed",
+     "text": "走開！這是我的麵包！",
+     "en": "Shoo! That's my bread!"
+    },
+    {
+     "who": "旁白",
+     "text": "他拿布一揮，七隻蒼蠅全飛出窗外。",
+     "en": "He swished a cloth, and all seven flies zoomed out the window."
+    }
+   ]
+  },
+  {
+   "scene": "裁縫店裡，桌上放著針線盒和一條咖啡色的皮腰帶。",
+   "act": "小裁縫拿著針，用金色的線在腰帶上繡出「一下七個」四個大字；接著把腰帶繫在綠色背心外面，雙手叉腰，抬頭挺胸走出門。",
+   "lines": [
+    {
+     "who": "小裁縫",
+     "tag": "proud",
+     "text": "一下七個！我好厲害！",
+     "en": "Seven in one swish! I'm amazing!"
+    },
+    {
+     "who": "旁白",
+     "text": "他在腰帶上，繡了四個金色大字：一下七個。",
+     "en": "On his belt, he stitched big golden words: Seven in One Swish."
+    },
+    {
+     "who": "旁白",
+     "text": "他繫上腰帶，神氣地出門了。",
+     "en": "He put on the belt and marched proudly out the door."
+    }
+   ]
+  },
+  {
+   "scene": "小鎮的廣場，很多人在逛市集；遠方的山坡上有王宮。",
+   "act": "果醬奶奶推著小木車，瞇著眼睛看小裁縫腰帶上的字，嚇得張大嘴巴；旁邊的大人、小孩一個接一個地交頭接耳，有人比出七根手指，有人學巨人走路。",
+   "lines": [
+    {
+     "who": "果醬奶奶",
+     "tag": "surprised",
+     "text": "一下七個？他一下打敗七個巨人嗎？",
+     "en": "Seven in one swish? Did he beat seven giants at once?"
+    },
+    {
+     "who": "旁白",
+     "text": "大家你說給我聽，我說給他聽。",
+     "en": "Everyone told someone, and that someone told someone else."
+    },
+    {
+     "who": "旁白",
+     "text": "最後，國王也聽說了，請他到王宮。",
+     "en": "Soon, the king heard about it too, and invited him to the palace."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，紅地毯和金色寶座；窗外看得到一片黑色的大森林。",
+   "act": "國王出場：白鬍子、戴金色皇冠、穿紅色長袍，把小裁縫請到王宮，坐在寶座上興奮地指著窗外的森林；大臣和士兵在旁邊拍手。小裁縫站在中間，舉起一根手指想解釋，一臉尷尬。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "worried",
+     "text": "森林裡有兩個巨人，一打呼，房子就搖來搖去。",
+     "en": "Two giants live in the forest. When they snore, the houses shake."
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "你一下就能打敗七個，一定有辦法！",
+     "en": "If you can beat seven in one swish, you can surely help us!"
+    },
+    {
+     "who": "小裁縫",
+     "tag": "nervous",
+     "text": "可是，我說的七個，是……",
+     "en": "But, um, the seven I meant were..."
+    },
+    {
+     "who": "旁白",
+     "text": "話沒說完，大家就拍起手來了。",
+     "en": "Before he could finish, everyone started clapping."
+    }
+   ]
+  },
+  {
+   "scene": "黑色大森林裡，一棵好大的老橡樹下；地上的落葉被巨人的鼾聲吹得飛起來。",
+   "act": "兩個巨人躺在大樹下打呼，比大樹還高。大鼻子巨人出場：紅色亂髮，鼻子像一顆好大的馬鈴薯，穿咖啡色背心。大耳朵巨人出場：光頭，兩隻耳朵像兩把大扇子，穿灰色背心。小裁縫躲在一棵樹後面，雙手握拳替自己打氣。",
+   "lines": [
+    {
+     "who": "小裁縫",
+     "tag": "brave",
+     "text": "我是一下七個的小裁縫，我不怕！",
+     "en": "I'm the Seven-in-One-Swish tailor. I'm not scared!"
+    },
+    {
+     "who": "旁白",
+     "text": "森林裡，兩個巨人在大樹下打呼。",
+     "en": "In the forest, two giants were snoring under a big tree."
+    },
+    {
+     "who": "旁白",
+     "text": "大鼻子的鼻子像馬鈴薯，大耳朵的耳朵像扇子。",
+     "en": "Big Nose had a nose like a potato. Big Ears had ears like fans."
+    }
+   ]
+  },
+  {
+   "scene": "大森林的老橡樹下，陽光從樹葉縫照下來。",
+   "act": "小裁縫從樹後面伸長手，用白羽毛搔大鼻子巨人的鼻孔；大鼻子巨人打了一個好大的噴嚏坐起來，氣呼呼地瞪著還閉著眼睛的大耳朵巨人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他拿下白羽毛，搔一搔大鼻子的鼻孔。",
+     "en": "He took the white feather from his hat and tickled Big Nose's nose."
+    },
+    {
+     "who": "旁白",
+     "text": "大鼻子打了個大噴嚏，醒了。",
+     "en": "Big Nose sneezed a giant sneeze and woke up."
+    },
+    {
+     "who": "大鼻子巨人",
+     "tag": "angry",
+     "text": "大耳朵，你搔我鼻子做什麼？",
+     "en": "Big Ears, why are you tickling my nose?"
+    },
+    {
+     "who": "大耳朵巨人",
+     "tag": "sleepy",
+     "text": "我閉著眼睛呢，才不是我！",
+     "en": "My eyes are closed. It wasn't me!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個巨人哼了一聲，又睡著了。",
+     "en": "The two giants grumbled and went back to sleep."
+    }
+   ]
+  },
+  {
+   "scene": "大森林的老橡樹下，同一個下午。",
+   "act": "小裁縫用白羽毛搔大耳朵巨人的耳朵；大耳朵巨人坐起來，兩隻大耳朵豎起來朝小裁縫躲的那棵樹轉過去；小裁縫緊緊閉上嘴巴，一動也不動，額頭冒汗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小裁縫又用羽毛，搔一搔大耳朵的耳朵。",
+     "en": "Then the little tailor tickled one of Big Ears' giant ears."
+    },
+    {
+     "who": "大耳朵巨人",
+     "tag": "angry",
+     "text": "大鼻子，你搔我耳朵！",
+     "en": "Big Nose, you tickled my ear!"
+    },
+    {
+     "who": "大鼻子巨人",
+     "tag": "grumpy",
+     "text": "才不是我！",
+     "en": "Did not!"
+    },
+    {
+     "who": "大耳朵巨人",
+     "tag": "suspicious",
+     "text": "咦？樹後面，好像有聲音。",
+     "en": "Hmm? I think I heard something behind that tree."
+    },
+    {
+     "who": "旁白",
+     "text": "小裁縫一動也不敢動。",
+     "en": "The little tailor didn't dare to move."
+    }
+   ]
+  },
+  {
+   "scene": "大森林的老橡樹下，兩個巨人面對面坐著。",
+   "act": "小裁縫躲在樹後面，用手圍著嘴巴，壓低聲音說話；大耳朵巨人氣得臉紅通通，指著大鼻子巨人的鼻子；大鼻子巨人一臉莫名其妙，兩手一攤。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小裁縫壓低聲音，學大鼻子說話：",
+     "en": "The little tailor put on a deep, gruff voice, just like Big Nose's:"
+    },
+    {
+     "who": "小裁縫",
+     "tag": "mischievous",
+     "text": "大耳朵的腳，最臭了！",
+     "en": "Big Ears has the stinkiest feet!"
+    },
+    {
+     "who": "大耳朵巨人",
+     "tag": "angry",
+     "text": "什麼？你的鼻子，才像一顆大馬鈴薯！",
+     "en": "What? Well, your nose looks like a giant potato!"
+    },
+    {
+     "who": "大鼻子巨人",
+     "tag": "shouting",
+     "text": "我根本沒說話呀！",
+     "en": "I didn't say a word!"
+    }
+   ]
+  },
+  {
+   "scene": "大森林外的山坡，兩座大山之間。",
+   "act": "兩個巨人背對背，氣呼呼地往相反的方向大步走，一個往左邊的高山，一個往右邊的高山，腳下塵土飛起來；小裁縫從樹後面探出頭，鬆了一口氣，偷偷比出勝利的手勢。",
+   "lines": [
+    {
+     "who": "大耳朵巨人",
+     "tag": "angry",
+     "text": "我不要跟你住在一起了！",
+     "en": "I'm not living with you anymore!"
+    },
+    {
+     "who": "大鼻子巨人",
+     "tag": "angry",
+     "text": "我也不要！哼！",
+     "en": "Me neither! Hmph!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚、咚、咚，兩個巨人各走一邊，再也沒回來。",
+     "en": "Stomp, stomp, stomp! The giants marched off in opposite directions and never came back."
+    },
+    {
+     "who": "旁白",
+     "text": "沒有人受傷，森林又安靜了。",
+     "en": "No one got hurt, and the forest was quiet again."
+    }
+   ]
+  },
+  {
+   "scene": "王宮前的廣場，國王、果醬奶奶和鎮上的人都在。",
+   "act": "大家圍著小裁縫歡呼；小裁縫摸著頭不好意思地笑，指著腰帶上「一下七個」的字；國王先愣住，接著和大家一起笑了出來，果醬奶奶笑得用圍裙擦眼淚。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "你打敗了兩個巨人！",
+     "en": "You defeated the two giants!"
+    },
+    {
+     "who": "小裁縫",
+     "tag": "shy",
+     "text": "我沒有打他們，只是逗他們吵了一架。",
+     "en": "I didn't fight them. I just tricked them into arguing."
+    },
+    {
+     "who": "小裁縫",
+     "tag": "embarrassed",
+     "text": "其實，我腰帶上的七個，是七隻蒼蠅啦。",
+     "en": "And actually, the seven on my belt were seven flies."
+    },
+    {
+     "who": "旁白",
+     "text": "大家愣了一下，都笑了。",
+     "en": "Everyone stared for a moment, then burst out laughing."
+    }
+   ]
+  },
+  {
+   "scene": "王宮前的廣場，擺著長桌子，桌上有好多草莓果醬麵包，大家在開派對。",
+   "act": "國王拍拍小裁縫的肩膀，笑著指指自己的紅袍子；果醬奶奶把一大片果醬麵包遞給小裁縫；幾隻蒼蠅飛過來，小裁縫笑著揮一揮藍色的布，小孩子們跟著他一起比出七根手指。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "不打架就讓大家平安，真聰明！",
+     "en": "You kept everyone safe without a single fight. How clever!"
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "我的新衣服，也請你做吧！",
+     "en": "Will you make my new clothes, too?"
+    },
+    {
+     "who": "果醬奶奶",
+     "tag": "happy",
+     "text": "來，大家一起吃果醬麵包！",
+     "en": "Come on, everyone, have some bread and jam!"
+    },
+    {
+     "who": "旁白",
+     "text": "嗡，嗡！蒼蠅又飛來了，小裁縫揮一揮布：",
+     "en": "Bzz, bzz! Here came the flies again. The little tailor swished his cloth,"
+    },
+    {
+     "who": "小裁縫",
+     "tag": "laughing",
+     "text": "一下七個！",
+     "en": "Seven in one swish!"
+    }
+   ]
+  }
+ ]
+}

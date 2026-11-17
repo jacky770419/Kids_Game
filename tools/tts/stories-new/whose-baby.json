@@ -1,0 +1,259 @@
+{
+ "id": "whose-baby",
+ "title": "這是誰的寶寶",
+ "title_en": "Whose Baby Is This?",
+ "size": "短",
+ "roles": {
+  "小男孩": "五歲的小男孩小森，聲音清亮有精神，愛猜謎，猜錯時自己哈哈大笑，猜對時好得意。",
+  "袋鼠媽媽": "動物園裡的袋鼠媽媽，溫柔的媽媽聲音，說話慢慢的、帶著笑，很疼寶寶。",
+  "天鵝寶寶": "灰色的小天鵝寶寶，聲音尖細可愛，被認成小鴨子時咯咯笑，說到自己是天鵝時很驕傲。"
+ },
+ "cast": {
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "袋鼠媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "天鵝寶寶": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "誰",
+   "where": "每一頁『這是誰的寶寶呢』",
+   "read": "shéi"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『以後會變成』，第4頁『以後會變成』，第5頁『以後會變成』，第7頁『這個我會』『不會走丟』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上的動物園大門口，彩色的拱門，旁邊是袋鼠區的木頭柵欄和綠色草地。",
+   "act": "小森是五歲的小男孩，黑色短髮，穿橘色條紋上衣、藍色短褲，背一個小綠背包，牽著媽媽的手；媽媽穿白色上衣、綁馬尾。柵欄裡，一隻咖啡色的袋鼠媽媽站著，畫面只畫到她肚子前面的育兒袋，袋口探出一顆好小的頭，只露出兩隻耳朵和一雙眼睛。小森指著它，眼睛發亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小森和媽媽，來到動物園。",
+     "en": "Benny and his mom go to the zoo."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "媽媽，我們來玩猜寶寶！",
+     "en": "Mom, let's play Guess the Baby!"
+    },
+    {
+     "who": "旁白",
+     "text": "看，一個口袋裡，探出一顆好小的頭。",
+     "en": "Look! A tiny head is peeking out of a pocket."
+    },
+    {
+     "who": "旁白",
+     "text": "這是誰的寶寶呢？",
+     "en": "Whose baby is this?"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜一猜。",
+     "en": "Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "袋鼠區的草地，旁邊有一個小池塘，池塘邊長著蘆葦。",
+   "act": "整隻袋鼠媽媽出現，她低頭，溫柔地看著育兒袋裡的寶寶，寶寶整個頭探出來；小森趴在柵欄上笑。遠處的池塘裡，一隻全身灰色、毛很蓬的小鳥在水上游。",
+   "lines": [
+    {
+     "who": "袋鼠媽媽",
+     "tag": "gentle",
+     "text": "是我的寶寶！我是袋鼠媽媽。",
+     "en": "It's my baby! I'm Mother Kangaroo."
+    },
+    {
+     "who": "袋鼠媽媽",
+     "text": "寶寶在育兒袋裡，好溫暖。",
+     "en": "My baby rides in my pouch, nice and warm."
+    },
+    {
+     "who": "旁白",
+     "text": "池塘裡，有一隻灰色的小鳥，毛好蓬。",
+     "en": "On the pond, there's a little gray bird with fluffy feathers."
+    },
+    {
+     "who": "旁白",
+     "text": "這是誰的寶寶呢？",
+     "en": "Whose baby is this?"
+    }
+   ]
+  },
+  {
+   "scene": "池塘邊，水很清，有蘆葦和幾片荷葉。",
+   "act": "小森蹲在池塘邊，舉起一根手指大聲猜；灰色的小天鵝寶寶在水上，張開小翅膀咯咯笑、搖頭。旁邊的想像泡泡裡畫著一隻雪白的大鳥，脖子彎彎的很優雅。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "我知道！是小鴨子！",
+     "en": "I know! It's a duckling!"
+    },
+    {
+     "who": "天鵝寶寶",
+     "tag": "laughing",
+     "text": "不是喔！我以後會變成白色的大鳥。",
+     "en": "Nope! One day I'll be a big white bird."
+    },
+    {
+     "who": "旁白",
+     "text": "這是誰的寶寶呢？",
+     "en": "Whose baby is this?"
+    }
+   ]
+  },
+  {
+   "scene": "池塘邊，後面是企鵝館的玻璃牆，牆裡面是白色的冰和藍色的水。",
+   "act": "一隻雪白的天鵝媽媽游過來，灰色的小天鵝寶寶游在她旁邊，挺起胸膛好驕傲；小森拍手。遠處玻璃牆裡，一顆咖啡色、毛很蓬的大毛球站在冰上，搖來搖去。",
+   "lines": [
+    {
+     "who": "天鵝寶寶",
+     "tag": "proud",
+     "text": "我是天鵝寶寶！",
+     "en": "I'm a baby swan!"
+    },
+    {
+     "who": "旁白",
+     "text": "灰色的小天鵝，以後會變成白天鵝。",
+     "en": "A little gray swan turns into a white swan one day."
+    },
+    {
+     "who": "旁白",
+     "text": "冰上有一顆咖啡色的大毛球，搖來搖去。",
+     "en": "On the ice, a big brown fuzzball is wobbling back and forth."
+    },
+    {
+     "who": "旁白",
+     "text": "這是誰的寶寶呢？",
+     "en": "Whose baby is this?"
+    }
+   ]
+  },
+  {
+   "scene": "企鵝館裡，玻璃牆後面是冰和水，幾隻黑白色的大企鵝站在後面。",
+   "act": "小森把臉貼在玻璃上，張大嘴巴喊；咖啡色的大毛球回過頭，眨了一下黑色的小眼睛，露出尖尖的嘴巴。小森往後一跳，又笑出來。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "是一顆好大的奇異果！",
+     "en": "It's a giant kiwi fruit!"
+    },
+    {
+     "who": "旁白",
+     "text": "大毛球回過頭，眨了一下眼睛。",
+     "en": "The fuzzball turns around and blinks."
+    },
+    {
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "哇，奇異果有眼睛！",
+     "en": "Whoa! The kiwi has eyes!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠以後會變成黑白色，一搖一擺地走。",
+     "en": "One day it will be black and white, and it will waddle along."
+    },
+    {
+     "who": "旁白",
+     "text": "再猜一次，這是誰的寶寶呢？",
+     "en": "Guess again. Whose baby is this?"
+    }
+   ]
+  },
+  {
+   "scene": "企鵝館外面，接著是大象區的大泥地和水池。",
+   "act": "咖啡色的大毛球企鵝寶寶站在一隻黑白色的大企鵝腳邊；小森抱著肚子大笑。遠處大象區，畫面只露出一隻灰色的小鼻子，捲住一條大尾巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是企鵝寶寶！",
+     "en": "It's a baby penguin!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "laughing",
+     "text": "原來不是奇異果，是企鵝！",
+     "en": "So it's not a kiwi. It's a penguin!"
+    },
+    {
+     "who": "旁白",
+     "text": "有一個寶寶，用鼻子拉著媽媽的尾巴。",
+     "en": "Here's a baby holding its mom's tail with its trunk."
+    },
+    {
+     "who": "旁白",
+     "text": "這是誰的寶寶呢？",
+     "en": "Whose baby is this?"
+    }
+   ]
+  },
+  {
+   "scene": "大象區旁邊的步道，太陽有點斜了。",
+   "act": "整隻灰色的小象出現，用鼻子拉著象媽媽的尾巴慢慢走；小森舉手比出勝利手勢。媽媽牽著小森的手，彎腰對他眨眼睛。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "proud",
+     "text": "這個我會！是大象寶寶！",
+     "en": "I know this one! It's a baby elephant!"
+    },
+    {
+     "who": "旁白",
+     "text": "答對了！小象拉著媽媽，就不會走丟。",
+     "en": "That's right! Holding on to Mom keeps the baby from getting lost."
+    },
+    {
+     "who": "旁白",
+     "text": "最後一個寶寶，牽著媽媽的手，來動物園玩。",
+     "en": "The last baby is holding his mom's hand, visiting the zoo."
+    },
+    {
+     "who": "旁白",
+     "text": "這是誰的寶寶呢？",
+     "en": "Whose baby is this?"
+    }
+   ]
+  },
+  {
+   "scene": "動物園大門口，太陽快要下山了，天空是橘色和粉紅色。",
+   "act": "小森指著自己，笑得好開心；媽媽蹲下來抱住他。拱門旁的看板上畫著袋鼠、天鵝、企鵝和大象一家，每隻寶寶都靠著媽媽。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "laughing",
+     "text": "這是誰的寶寶呢？是我！",
+     "en": "Whose baby is this? It's me!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "proud",
+     "text": "我是媽媽的寶寶！",
+     "en": "I'm Mom's baby!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "媽媽，下次我們再來猜寶寶！",
+     "en": "Mom, let's come back and play Guess the Baby again!"
+    }
+   ]
+  }
+ ]
+}

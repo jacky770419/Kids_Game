@@ -1,0 +1,362 @@
+{
+ "id": "silly-tom",
+ "title": "照著做的湯姆",
+ "title_en": "Silly Tom Does What He Is Told",
+ "size": "中",
+ "roles": {
+  "湯姆": "鄉下男孩湯姆，十來歲的少年聲音，老實、開朗、有點傻氣，每次都很認真地照著做，出錯時一臉疑惑，最後跟著大笑。",
+  "媽媽": "湯姆的媽媽，溫柔有耐心的媽媽聲音，看到湯姆出錯忍不住笑，教他時慢慢說、像在念口訣。",
+  "農夫": "請湯姆幫忙的農夫伯伯，胖胖的鄉下大叔，聲音憨厚、笑呵呵的。",
+  "公主": "城堡裡從來不笑的公主，少女的聲音，一開始安靜，忍不住笑出來後變得活潑又開朗。"
+ },
+ "cast": {
+  "湯姆": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "農夫": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第1頁『說什麼』『做什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "倒",
+   "where": "第3頁『倒進口袋』",
+   "read": "dào"
+  },
+  {
+   "char": "散",
+   "where": "第11頁『散步』",
+   "read": "sàn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的小石頭屋，門口有一條泥土小路，遠方的小山上有一座白色城堡，城堡有一扇大窗戶。",
+   "act": "湯姆是十來歲的男孩，蓬蓬的棕色頭髮，穿綠色背心、白襯衫、咖啡色褲子，褲子兩邊有大口袋；媽媽繫著藍色圍裙、包著白頭巾。湯姆站得直直的，舉手敬禮；媽媽笑著指向遠方的農場。遠處城堡的窗戶邊，坐著一位公主，金色長髮、穿淡紫色長裙，托著下巴，一點也不笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一個男孩叫湯姆。",
+     "en": "This is Tom, a boy who lives with his mom."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽說什麼，湯姆就做什麼。",
+     "en": "Whatever his mom tells him, Tom does."
+    },
+    {
+     "who": "旁白",
+     "text": "遠處的城堡裡，住著一位公主，她從來不笑。",
+     "en": "Far away in a castle lives a princess who never laughs."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "湯姆，今天去幫農夫伯伯做事吧。",
+     "en": "Tom, go and help the farmer today."
+    },
+    {
+     "who": "湯姆",
+     "tag": "happy",
+     "text": "好！媽媽說的，我照著做！",
+     "en": "Okay! I'll do just what Mom says!"
+    }
+   ]
+  },
+  {
+   "scene": "農場，金黃色的麥田，旁邊是紅色穀倉，路邊長著很高的草。",
+   "act": "農夫是胖胖的大叔，紅鼻子、戴草帽、穿吊帶褲，笑呵呵地把一個閃亮的銅板放在湯姆手上。下一格：湯姆走在回家路上，手甩得高高的，銅板飛進路邊的草叢裡；湯姆回頭，一臉疑惑。",
+   "lines": [
+    {
+     "who": "農夫",
+     "tag": "happy",
+     "text": "謝謝你，湯姆！這個銅板給你。",
+     "en": "Thank you, Tom! Here's a coin for you."
+    },
+    {
+     "who": "旁白",
+     "text": "湯姆拿著閃亮的銅板，手甩呀甩。",
+     "en": "Tom holds the shiny coin and swings his arms as he walks."
+    },
+    {
+     "who": "旁白",
+     "text": "叮！銅板飛進草叢，找不到了。",
+     "en": "Ting! The coin flies into the grass, and he can't find it."
+    }
+   ]
+  },
+  {
+   "scene": "湯姆家的廚房，木頭桌子、窗邊掛著洋蔥。",
+   "act": "媽媽一手扶著額頭笑，一手拍拍湯姆的口袋；湯姆跟著拍口袋，大聲覆誦。下一格：農場上，農夫遞給湯姆一瓶白色的牛奶，湯姆正把牛奶往褲子口袋裡倒。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "湯姆，湯姆，下次要記住：放進口袋裡！",
+     "en": "Tom, oh Tom, next time remember: put it in your pocket!"
+    },
+    {
+     "who": "湯姆",
+     "tag": "proud",
+     "text": "放進口袋裡，我記住了！",
+     "en": "Put it in my pocket. Got it!"
+    },
+    {
+     "who": "旁白",
+     "text": "第二天，農夫給湯姆一瓶牛奶。",
+     "en": "The next day, the farmer gives Tom a bottle of milk."
+    },
+    {
+     "who": "旁白",
+     "text": "湯姆把牛奶，倒進口袋裡。",
+     "en": "Tom pours the milk into his pocket."
+    }
+   ]
+  },
+  {
+   "scene": "回家的泥土小路。",
+   "act": "湯姆的褲子濕了一大片，牛奶從口袋滴下來，一路滴到家門口；一隻小黃狗跟在後面好奇地聞；湯姆翻著空口袋，眉頭皺起來。媽媽站在門口，笑到彎腰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "牛奶滴答，滴答，流了一路，褲子都濕了。",
+     "en": "Drip, drop, drip, drop. The milk leaks all the way home, and his pants are soaking wet."
+    },
+    {
+     "who": "湯姆",
+     "tag": "surprised",
+     "text": "咦？牛奶怎麼不見了？",
+     "en": "Huh? Where did the milk go?"
+    },
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "湯姆，湯姆，下次要記住：泡在涼水裡！",
+     "en": "Tom, oh Tom, next time remember: keep it in cool water!"
+    },
+    {
+     "who": "湯姆",
+     "tag": "proud",
+     "text": "泡在涼水裡，我記住了！",
+     "en": "Keep it in cool water. Got it!"
+    }
+   ]
+  },
+  {
+   "scene": "農場，接著是湯姆家的廚房。",
+   "act": "上半：農夫給湯姆一塊黃色的大起司，湯姆把起司丟進裝滿水的木桶，提著木桶走回家，一臉得意。下半：廚房裡，媽媽從水桶撈出起司，起司吸飽了水、軟塌塌地往下垂，像一塊濕海綿，滴著水；媽媽忍不住笑，湯姆張大嘴巴看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第三天，農夫給湯姆一塊起司。",
+     "en": "On the third day, the farmer gives Tom a big piece of cheese."
+    },
+    {
+     "who": "旁白",
+     "text": "湯姆把起司泡進涼水裡，提回家。",
+     "en": "Tom drops the cheese into a bucket of cool water and carries it home."
+    },
+    {
+     "who": "旁白",
+     "text": "起司泡爛了，像一塊濕海綿！",
+     "en": "The cheese turns all mushy, like a wet sponge!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "湯姆，湯姆，下次要記住：用兩手捧好！",
+     "en": "Tom, oh Tom, next time remember: hold it carefully in both hands!"
+    },
+    {
+     "who": "湯姆",
+     "tag": "proud",
+     "text": "用兩手捧好，我記住了！",
+     "en": "Hold it in both hands. Got it!"
+    }
+   ]
+  },
+  {
+   "scene": "農場的穀倉門口，地上鋪著乾草，一隻灰色的母貓帶著好幾隻小貓。",
+   "act": "農夫抱起一隻白底橘色斑點的小貓，送給湯姆；湯姆伸出兩手，小心地捧著小貓，舉在胸前，小貓好奇地東張西望。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第四天，農夫送湯姆一隻小貓。",
+     "en": "On the fourth day, the farmer gives Tom a kitten."
+    },
+    {
+     "who": "農夫",
+     "tag": "happy",
+     "text": "我家小貓好多，這隻給你養吧！",
+     "en": "We have so many kittens. You can keep this one!"
+    },
+    {
+     "who": "旁白",
+     "text": "湯姆用兩手捧著小貓，小心地走。",
+     "en": "Tom holds the kitten in both hands and walks very slowly."
+    }
+   ]
+  },
+  {
+   "scene": "回家的泥土小路，路邊開著野花。",
+   "act": "小貓從湯姆手上輕輕一跳，跳到湯姆頭上，趴在他蓬蓬的頭髮裡，瞇著眼睛、尾巴翹起來，好像在坐車，舒服得很；湯姆兩手還捧在前面，抬眼往上看，一臉疑惑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小貓不想坐著，一跳，跳到湯姆頭上。",
+     "en": "The kitten doesn't want to sit still. With a little hop, she lands on Tom's head."
+    },
+    {
+     "who": "旁白",
+     "text": "她趴在頭髮裡，喵！好像在坐車，好舒服。",
+     "en": "She snuggles into his hair. Meow! It's like riding in a cart, and she loves it."
+    },
+    {
+     "who": "湯姆",
+     "tag": "surprised",
+     "text": "小貓，妳怎麼跑到上面去了？",
+     "en": "Kitten, how did you get up there?"
+    }
+   ]
+  },
+  {
+   "scene": "湯姆家門口，小貓已經在門口的墊子上玩毛線球。",
+   "act": "媽媽笑著把小貓抱下來放在地上，小貓開心地跑去玩毛線球；媽媽對湯姆比出「跟我來」的手勢。下一格：農場上，農夫推著一顆好大的橘色南瓜給湯姆。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "湯姆，湯姆，下次要記住：叫牠跟你走！",
+     "en": "Tom, oh Tom, next time remember: tell it to follow you!"
+    },
+    {
+     "who": "湯姆",
+     "tag": "proud",
+     "text": "叫牠跟我走，我記住了！",
+     "en": "Tell it to follow me. Got it!"
+    },
+    {
+     "who": "旁白",
+     "text": "第五天，農夫給湯姆一顆大南瓜。",
+     "en": "On the fifth day, the farmer gives Tom a big pumpkin."
+    }
+   ]
+  },
+  {
+   "scene": "農場門口的小路，小路慢慢往下坡，坡底就是城堡的大門。",
+   "act": "湯姆把大南瓜放在路上，雙手圍在嘴邊大喊；南瓜一動也不動；湯姆往前走幾步又回頭看，抓抓頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "湯姆把南瓜放在地上，大聲喊：",
+     "en": "Tom sets the pumpkin down on the road and calls out,"
+    },
+    {
+     "who": "湯姆",
+     "tag": "shouting",
+     "text": "南瓜，南瓜，跟我走！",
+     "en": "Pumpkin, pumpkin, follow me!"
+    },
+    {
+     "who": "旁白",
+     "text": "南瓜動也不動。湯姆走幾步，回頭看。",
+     "en": "The pumpkin doesn't move. Tom takes a few steps and looks back."
+    },
+    {
+     "who": "湯姆",
+     "text": "南瓜，快跟上來呀！",
+     "en": "Come on, pumpkin, keep up!"
+    }
+   ]
+  },
+  {
+   "scene": "下坡的小路，坡很緩，路旁是綠色草地，坡底是白色城堡，城堡的大窗戶開著。",
+   "act": "大南瓜咕嚕咕嚕地慢慢滾下坡，跟在湯姆後面；湯姆一邊走一邊回頭，開心地揮手；城堡窗戶裡，金髮的公主張大眼睛看著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "路變成下坡，南瓜咕嚕，咕嚕，滾起來了。",
+     "en": "The road goes downhill. Roll, roll! The pumpkin starts rolling."
+    },
+    {
+     "who": "旁白",
+     "text": "湯姆走一步，南瓜滾一步，一路跟到城堡前面。",
+     "en": "Tom takes a step, the pumpkin rolls a step, all the way to the castle."
+    },
+    {
+     "who": "湯姆",
+     "tag": "excited",
+     "text": "南瓜真的跟我走了！",
+     "en": "The pumpkin is really following me!"
+    }
+   ]
+  },
+  {
+   "scene": "城堡大門前，南瓜停在門口的草地上。",
+   "act": "公主從窗戶邊探出身子，雙手抱著肚子，笑得前俯後仰；湯姆站在南瓜旁邊，愣了一下，也跟著哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡裡，從來不笑的公主，笑出聲來了。",
+     "en": "Inside the castle, the princess who never laughs bursts out laughing."
+    },
+    {
+     "who": "公主",
+     "tag": "laughing",
+     "text": "太好笑了！南瓜跟著你散步！",
+     "en": "That's so funny! Your pumpkin is going for a walk with you!"
+    },
+    {
+     "who": "湯姆",
+     "tag": "laughing",
+     "text": "很好玩，對不對？",
+     "en": "It's funny, isn't it?"
+    }
+   ]
+  },
+  {
+   "scene": "回湯姆家的小路，太陽快下山了，天空是橘色的；遠處是湯姆家的小石頭屋，媽媽站在門口揮手。",
+   "act": "公主換上方便走路的鞋子，和湯姆一起推著大南瓜往湯姆家走，兩個人都在笑；小貓坐在南瓜上面，尾巴翹起來。",
+   "lines": [
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "湯姆，我們一起推南瓜回家吧！",
+     "en": "Tom, let's push the pumpkin home together!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，公主愛笑了，和湯姆變成好朋友。",
+     "en": "From then on, the princess laughs a lot, and she and Tom become good friends."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "湯姆，湯姆，下次要記住：",
+     "en": "Tom, oh Tom, next time remember,"
+    },
+    {
+     "who": "湯姆",
+     "tag": "proud",
+     "text": "先想一想，再做！我記住了！",
+     "en": "Think first, then do it. Got it!"
+    }
+   ]
+  }
+ ]
+}

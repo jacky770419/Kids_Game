@@ -1,0 +1,268 @@
+{
+ "id": "turnip-soup",
+ "title": "大蘿蔔煮成湯",
+ "title_en": "The Giant Turnip Soup",
+ "size": "短",
+ "roles": {
+  "爺爺": "就是《拔蘿蔔》裡的爺爺：胖胖的鄉下爺爺，聲音憨厚溫和、愛笑，切不動時嚇一跳，最後很開心。",
+  "奶奶": "就是《拔蘿蔔》裡的奶奶：慈祥的奶奶聲音，不急不忙，很會想辦法。",
+  "孫女": "就是《拔蘿蔔》裡的孫女：五六歲的小女孩，聲音清脆、好奇又興奮。",
+  "小狗": "就是《拔蘿蔔》裡的小狗：小男孩的聲音，活潑莽撞、精神十足。",
+  "小貓": "就是《拔蘿蔔》裡的小貓：可愛的小動物聲音，甜甜的，有點愛擔心。",
+  "小老鼠": "就是《拔蘿蔔》裡的小老鼠：聲音尖細，個子最小、點子最多，說話又快又熱心。"
+ },
+ "cast": {
+  "爺爺": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "孫女": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小狗": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小貓": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小老鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "擠",
+   "where": "第2頁『擠不進去』",
+   "read": "jǐ"
+  },
+  {
+   "char": "切",
+   "where": "第4頁『要切了』『用力切』『切到一半』，第5頁『切小塊』『輪流切』",
+   "read": "qiē"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "接著《拔蘿蔔》：菜園裡，下午，綠色的菜畦，大蘿蔔剛被拔出來，躺在地上，比爺爺還高，蘿蔔的顏色和葉子照已上架《拔蘿蔔》的插圖。",
+   "act": "爺爺、奶奶、孫女、小狗、小貓、小老鼠的外型、衣服，全部照已上架《拔蘿蔔》的插圖延續，不要改造型。大家坐在地上喘氣、哈哈笑；孫女站起來，張開雙手比蘿蔔有多大；小狗繞著蘿蔔跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大蘿蔔拔起來了，像一座小山。",
+     "en": "The giant turnip is out at last. It's as big as a little hill."
+    },
+    {
+     "who": "孫女",
+     "tag": "excited",
+     "text": "好大的蘿蔔！要怎麼吃呢？",
+     "en": "What a giant turnip! How do we eat it?"
+    },
+    {
+     "who": "爺爺",
+     "tag": "happy",
+     "text": "煮一大鍋蘿蔔湯！",
+     "en": "Let's make a big pot of turnip soup!"
+    },
+    {
+     "who": "小狗",
+     "tag": "excited",
+     "text": "汪！可是它好大喔！",
+     "en": "Woof! But it's so big!"
+    }
+   ]
+  },
+  {
+   "scene": "爺爺奶奶家的院子，紅磚小屋，廚房的木門開著。",
+   "act": "大家在蘿蔔後面排成一排，一起推，大蘿蔔滾到廚房門口，頭塞在門框裡進不去；小貓兩手抱頭，眼睛睜得好大；奶奶在最旁邊指揮。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "cheerful",
+     "text": "大家一起推，推回家！",
+     "en": "Everybody push! Let's push it home!"
+    },
+    {
+     "who": "旁白",
+     "text": "嘿喲！嘿喲！滾到廚房門口。",
+     "en": "Heave-ho! Heave-ho! It rolls up to the kitchen door."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！門太小，擠不進去！",
+     "en": "Bump! The door is too small. It won't fit!"
+    },
+    {
+     "who": "小貓",
+     "tag": "surprised",
+     "text": "喵！蘿蔔進不去！",
+     "en": "Meow! The turnip can't get in!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大蘿蔔橫躺在草地上，旁邊有一個木水桶和幾把刷子。",
+   "act": "孫女提著小水桶倒水；小貓拿一把刷子刷蘿蔔；小老鼠用一把好小的牙刷刷蘿蔔底下的小根；小狗渾身濕透，正用力甩毛，水花噴到大家身上；爺爺在旁邊大笑。",
+   "lines": [
+    {
+     "who": "爺爺",
+     "tag": "laughing",
+     "text": "那就在院子裡洗吧！",
+     "en": "Then let's wash it right here in the yard!"
+    },
+    {
+     "who": "旁白",
+     "text": "孫女提水，小貓和小老鼠拿刷子刷。",
+     "en": "Granddaughter carries water. Kitty and Little Mouse scrub with brushes."
+    },
+    {
+     "who": "旁白",
+     "text": "小狗用力一甩，水噴到大家身上！",
+     "en": "Puppy gives a big shake, and water splashes all over everyone!"
+    },
+    {
+     "who": "孫女",
+     "tag": "laughing",
+     "text": "小狗，我們也洗好了啦！",
+     "en": "Puppy! Now we've had a bath too!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大蘿蔔放在一張長木桌上。",
+   "act": "爺爺拿著一把大菜刀站在桌邊，菜刀切到一半停在蘿蔔中間，爺爺瞪大眼睛；孫女、小狗、小貓、小老鼠都站在遠遠的地方，手牽手看著。",
+   "lines": [
+    {
+     "who": "爺爺",
+     "tag": "gentle",
+     "text": "要切了，大家站遠一點喔。",
+     "en": "I'm going to cut it now. Everybody stand back."
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺拿起大菜刀，用力切。咚！",
+     "en": "Grandpa lifts the big knife and cuts down hard. Thunk!"
+    },
+    {
+     "who": "旁白",
+     "text": "菜刀切到一半，動不了！",
+     "en": "The knife stops halfway. It won't move!"
+    },
+    {
+     "who": "爺爺",
+     "tag": "surprised",
+     "text": "哎呀，這蘿蔔好硬！",
+     "en": "Oh my! This turnip is so hard!"
+    }
+   ]
+  },
+  {
+   "scene": "同一張長木桌，旁邊放著一疊碗和一個大盤子。",
+   "act": "奶奶站在爺爺旁邊，比著小塊小塊的手勢；爺爺和奶奶輪流慢慢切；孫女、小狗、小貓用盤子和碗，把切好的蘿蔔塊端進廚房；小老鼠頭上頂著一小塊蘿蔔，得意地走。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "別急，我們切小塊就好。",
+     "en": "Don't rush. Let's just cut small pieces."
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺奶奶輪流切，大家端進廚房。",
+     "en": "Grandpa and Grandma take turns cutting, and everyone carries the pieces inside."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "proud",
+     "text": "我也能端一塊！",
+     "en": "I can carry a piece too!"
+    }
+   ]
+  },
+  {
+   "scene": "廚房裡，爐子上一個大鐵鍋，窗外看得到院子。",
+   "act": "大鐵鍋裡的蘿蔔塊堆得冒出鍋口；窗外的院子裡，蘿蔔塊又堆成一大堆；小貓兩手扶著臉頰發愁；小老鼠舉手跳起來，好像想到好主意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "蘿蔔塊放進鍋子，一下就滿了。",
+     "en": "The pieces go into the pot, and it's full right away."
+    },
+    {
+     "who": "旁白",
+     "text": "可是院子裡，蘿蔔塊好多，好多！",
+     "en": "But out in the yard, there are lots and lots of pieces!"
+    },
+    {
+     "who": "小貓",
+     "tag": "worried",
+     "text": "鍋子太小了，怎麼辦？",
+     "en": "The pot is too small. What do we do?"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "excited",
+     "text": "我知道！我們去村子裡借鍋子！",
+     "en": "I know! Let's borrow pots from the village!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，太陽快下山了，一排小爐子和大大小小的鍋子冒著白煙。",
+   "act": "村子裡的叔叔阿姨、爺爺奶奶和小朋友抱著各式各樣的鍋子走進院子，小老鼠站在最前面帶路；奶奶站在爐子旁邊，用長湯匙攪湯，笑咪咪地聞香味；孫女和小動物站在一旁遞碗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小老鼠跑遍村子，大家都抱著鍋子來了。",
+     "en": "Little Mouse runs all through the village, and everyone comes with a pot."
+    },
+    {
+     "who": "旁白",
+     "text": "一鍋、兩鍋、三鍋，院子裡都是蘿蔔湯。",
+     "en": "One pot, two pots, three pots. The yard is full of turnip soup."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "好香喔！請大家留下來一起喝！",
+     "en": "Mmm, smells so good! Please stay and have some with us!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，晚上，掛著幾盞小燈，長桌上擺滿一碗一碗冒煙的蘿蔔湯。",
+   "act": "全村的人圍著長桌坐著，捧著碗喝湯，笑得好開心；孫女舉起碗；小狗、小貓、小老鼠坐在桌邊，小老鼠捧著一個好小的碗；爺爺站起來，舉起碗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "全村的人，都來喝蘿蔔湯。",
+     "en": "The whole village comes to have turnip soup."
+    },
+    {
+     "who": "孫女",
+     "tag": "happy",
+     "text": "一起拉，一起煮，一起喝！",
+     "en": "Pull together, cook together, eat together!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家一起說：一起拉，一起煮，一起喝，真開心！",
+     "en": "Everyone says, \"Pull together, cook together, eat together. So happy!\""
+    },
+    {
+     "who": "爺爺",
+     "tag": "happy",
+     "text": "明年，我們再拔一顆大蘿蔔！",
+     "en": "Next year, let's pull up another giant turnip!"
+    }
+   ]
+  }
+ ]
+}

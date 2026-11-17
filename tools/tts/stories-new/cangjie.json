@@ -1,0 +1,294 @@
+{
+ "id": "cangjie",
+ "title": "倉頡造字",
+ "title_en": "Cangjie Invents Writing",
+ "size": "短",
+ "roles": {
+  "倉頡": "幫黃帝記事情的倉頡，三十多歲的爸爸，認真又有點迷糊，想到好點子時聲音一下子亮起來。",
+  "小女孩": "倉頡的女兒，六歲，愛笑、反應快，搶著猜答案。",
+  "黃帝": "黃帝，慈祥的老爺爺國王，說話慢、口氣和善。"
+ },
+ "cast": {
+  "倉頡": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "黃帝": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "頡",
+   "where": "全書『倉頡』",
+   "read": "jié"
+  },
+  {
+   "char": "結",
+   "where": "第1頁『打結』『全是結』，第2頁『大結』，第8頁『打結』",
+   "read": "jié"
+  },
+  {
+   "char": "什",
+   "where": "第1、5、6頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第4頁『是誰走過』，第8頁『畫的是誰』",
+   "read": "shéi"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『也會知道』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有字』",
+   "read": "méi"
+  },
+  {
+   "char": "角",
+   "where": "第7頁『三個尖角』",
+   "read": "jiǎo"
+  },
+  {
+   "char": "頭",
+   "where": "第2頁『三頭牛』",
+   "read": "tóu"
+  },
+  {
+   "char": "散",
+   "where": "第3頁『散步』",
+   "read": "sàn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的古代村子：茅草屋、木頭柵欄，屋簷下掛著好幾條打滿結的長繩子。",
+   "act": "倉頡第一次出場：三十多歲的男人，頭髮在頭頂綁成髻，留短鬍子，穿咖啡色麻布長衣；他坐在屋前，兩手拉著一條打滿大大小小結的繩子，一個一個認真看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，世界上沒有字。",
+     "en": "Long ago, there was no writing in the world."
+    },
+    {
+     "who": "旁白",
+     "text": "要記事情，大家就在繩子上打結。",
+     "en": "To remember things, people tied knots in a rope."
+    },
+    {
+     "who": "旁白",
+     "text": "倉頡幫黃帝記事情，繩子上全是結。",
+     "en": "Cangjie kept track of things for the Yellow Emperor, and his ropes were covered in knots."
+    }
+   ]
+  },
+  {
+   "scene": "黃帝的大屋子裡，木頭地板，牆邊堆著一團一團打結的繩子。",
+   "act": "黃帝第一次出場：留長白鬍子的老人，戴黃色的高帽子，穿黃色長袍，坐在木椅上笑著等。倉頡手忙腳亂地翻著一團亂七八糟的繩子，抓著頭。倉頡的女兒第一次出場：六歲小女孩，綁兩根小辮子，穿紅色短衣，在旁邊用手遮著嘴笑。",
+   "lines": [
+    {
+     "who": "黃帝",
+     "tag": "gentle",
+     "text": "倉頡，昨天記的是什麼事呀？",
+     "en": "Cangjie, what was yesterday's knot for?"
+    },
+    {
+     "who": "倉頡",
+     "tag": "worried",
+     "text": "這個大結是三頭牛？不對，是三條魚？",
+     "en": "This big knot means three cows? No, wait, three fish?"
+    },
+    {
+     "who": "旁白",
+     "text": "倉頡抓著頭，他自己也忘了！",
+     "en": "Cangjie scratched his head. Even he had forgotten!"
+    },
+    {
+     "who": "旁白",
+     "text": "他的女兒在旁邊笑了出來。",
+     "en": "His daughter, standing nearby, burst out laughing."
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "爸爸，你的繩子好像一團麵條！",
+     "en": "Daddy, your rope looks like a big bowl of noodles!"
+    }
+   ]
+  },
+  {
+   "scene": "冬天的山腳下，地上鋪滿白雪，樹枝上也有雪；雪地上有一排小鳥的腳印，和一排像兩片葉子的小鹿腳印。",
+   "act": "倉頡和女兒穿著厚厚的毛皮外衣走在雪地裡；女兒蹲下來，指著像小樹枝的鳥腳印，好興奮；倉頡彎腰看另一排小鹿的腳印。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "倉頡好煩惱，帶女兒去雪地散步。",
+     "en": "Cangjie was very worried, so he took his daughter for a walk in the snow."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "爸爸，小鳥的腳印！",
+     "en": "Daddy, bird footprints!"
+    },
+    {
+     "who": "倉頡",
+     "text": "這個像兩片葉子的，是小鹿。",
+     "en": "And these, like two little leaves, are from a deer."
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，陽光照在雪上。",
+   "act": "倉頡突然站直，眼睛睜好大，拍一下自己的額頭；接著撿起一根樹枝，蹲下來準備在雪地上畫。女兒好奇地湊過來。",
+   "lines": [
+    {
+     "who": "倉頡",
+     "tag": "surprised",
+     "text": "咦？看到腳印，就知道是誰走過。",
+     "en": "Hey! Just by looking at footprints, we can tell who walked by."
+    },
+    {
+     "who": "倉頡",
+     "tag": "excited",
+     "text": "那我把東西畫出來，大家也會知道！",
+     "en": "So if I draw things, everyone will know what they mean!"
+    },
+    {
+     "who": "旁白",
+     "text": "他撿起樹枝，在雪地上畫了起來。",
+     "en": "He picked up a stick and started drawing in the snow."
+    }
+   ]
+  },
+  {
+   "scene": "雪地上用樹枝畫了一個大圓圈，圓圈中間有一點；天上的太陽從雲後面露出來。",
+   "act": "倉頡拿著樹枝，指著雪地上的圓圈，笑著看女兒；女兒歪著頭看一下，馬上舉手大叫。",
+   "lines": [
+    {
+     "who": "倉頡",
+     "tag": "happy",
+     "text": "一個圓圈，中間一點。猜猜看，這是什麼？",
+     "en": "A circle with a dot in the middle. Can you guess what it is?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "是太陽！",
+     "en": "It's the sun!"
+    },
+    {
+     "who": "旁白",
+     "text": "對了！這就是「日」。",
+     "en": "That's right! This little picture became the word for sun."
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，圓圈旁邊又畫了一個彎彎的月牙形。",
+   "act": "女兒指著月牙形，笑嘻嘻地大聲猜；倉頡笑彎了腰，伸手指著天空；下一格女兒拍一下手，恍然大悟。",
+   "lines": [
+    {
+     "who": "倉頡",
+     "tag": "happy",
+     "text": "猜猜看，這是什麼？",
+     "en": "Can you guess what this is?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "是香蕉！",
+     "en": "It's a banana!"
+    },
+    {
+     "who": "倉頡",
+     "tag": "laughing",
+     "text": "不是啦，晚上它掛在天上。",
+     "en": "No, no! It hangs in the sky at night."
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "是月亮！這是「月」！",
+     "en": "It's the moon! That's the word for moon!"
+    }
+   ]
+  },
+  {
+   "scene": "雪地上又多了兩個圖：三個尖角連在一起的山，和一條直線、上面有樹枝、下面有樹根的樹；遠處真的有山和樹。",
+   "act": "倉頡蹲著用樹枝畫；女兒先指著三個尖角，又指著遠處的山；接著指著樹的圖，再指著旁邊一棵真的大樹，開心得跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "倉頡又畫了三個尖角。",
+     "en": "Next, Cangjie drew three peaks."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "我知道，是山！",
+     "en": "I know, it's a mountain!"
+    },
+    {
+     "who": "旁白",
+     "text": "再畫一條線，上面樹枝，下面樹根。",
+     "en": "Then he drew a line with branches on top and roots below."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "是一棵樹！",
+     "en": "It's a tree!"
+    },
+    {
+     "who": "旁白",
+     "text": "這就是「山」和「木」。木，就是樹！",
+     "en": "And these became the words for mountain and tree."
+    }
+   ]
+  },
+  {
+   "scene": "黃帝的大屋子前，地上鋪著一大片沙，沙上畫滿了日、月、山、木的圖；村子裡的人圍過來看。",
+   "act": "黃帝彎腰看著沙上的圖，摸著白鬍子，笑得好開心；村民拿著樹枝跟著學畫。女兒在旁邊畫了一個留短鬍子、頭頂綁髻的人，拉著倉頡的袖子；倉頡看了哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "倉頡把這些圖畫給黃帝看。",
+     "en": "Cangjie drew the pictures for the Yellow Emperor."
+    },
+    {
+     "who": "黃帝",
+     "tag": "surprised",
+     "text": "我一看就懂！比打結清楚多了！",
+     "en": "I understand them at a glance! So much clearer than knots!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都來學，這就是最早的字。",
+     "en": "Everyone came to learn, and this picture writing became the very first Chinese writing."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "爸爸，猜猜看，我畫的是誰？",
+     "en": "Daddy, guess who I drew!"
+    },
+    {
+     "who": "倉頡",
+     "tag": "laughing",
+     "text": "哈，是我嘛！",
+     "en": "Ha! It's me!"
+    }
+   ]
+  }
+ ]
+}

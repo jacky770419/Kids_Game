@@ -1,0 +1,262 @@
+{
+ "id": "leopard-cat",
+ "title": "石虎過馬路",
+ "title_en": "The Little Leopard Cat Crosses the Road",
+ "size": "短",
+ "roles": {
+  "小石虎": "石虎寶寶，聲音又小又可愛，愛玩、容易分心，找不到媽媽時著急想哭。",
+  "石虎媽媽": "石虎媽媽，溫柔可靠，在遠處喊孩子時聲音清楚有力。",
+  "小晨": "小晨，六歲小男孩，坐在爸爸車上，眼睛很尖、很關心小動物，會自己說出不下車、不抓動物。",
+  "爸爸": "小晨的爸爸，溫和穩重的大叔聲音，開車很小心，說話慢慢的。"
+ },
+ "cast": {
+  "小石虎": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "石虎媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小晨": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "鑽",
+   "where": "第7頁『鑽進小洞』",
+   "read": "zuān"
+  },
+  {
+   "char": "叭",
+   "where": "第3頁『叭，叭』",
+   "read": "bā"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『也不會去抓』",
+   "read": "huì"
+  },
+  {
+   "char": "隧",
+   "where": "第6頁『小隧道』",
+   "read": "suì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "苗栗的小山邊，太陽剛下山，天空是橘色和紫色；田邊一片高高的草叢，田裡躺著幾顆大南瓜。",
+   "act": "石虎媽媽和小石虎第一次出場：像家貓一樣大的野貓，土黃色的毛上有黑色斑點，額頭有兩條白線，圓耳朵後面各有一塊白斑；媽媽比較大，小石虎小小的。小石虎追著一隻白色飛蛾跳起來，頭撞上一顆大南瓜，眼睛冒出小星星；媽媽走在前面的草叢裡。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽下山了，石虎媽媽帶小石虎出門。",
+     "en": "The sun has gone down, and Mama Leopard Cat takes her cub out."
+    },
+    {
+     "who": "小石虎",
+     "tag": "excited",
+     "text": "媽媽，有一隻飛蛾！",
+     "en": "Mama, a moth!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠追著飛蛾跳呀跳，咚！撞到大南瓜。",
+     "en": "The little leopard cat chases it, hop, hop, hop. Bonk! He bumps into a big pumpkin."
+    }
+   ]
+  },
+  {
+   "scene": "同一片草叢，天色變暗，草叢外面看得到一條馬路的路燈。",
+   "act": "小石虎坐在南瓜旁邊，揉揉頭，抬頭左看右看，媽媽不見了；他耳朵豎起來，聽著遠方。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小石虎抬起頭，媽媽不見了！",
+     "en": "He looks up. Mama is gone!"
+    },
+    {
+     "who": "小石虎",
+     "tag": "scared",
+     "text": "媽媽，妳在哪裡？",
+     "en": "Mama, where are you?"
+    },
+    {
+     "who": "旁白",
+     "text": "遠方傳來媽媽的聲音。",
+     "en": "From far away comes Mama's voice."
+    },
+    {
+     "who": "石虎媽媽",
+     "tag": "shouting",
+     "text": "寶貝，我在馬路對面！",
+     "en": "Sweetie, I'm across the road!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上的雙線馬路，路燈亮著，一輛一輛車子開過，車燈很亮；路邊有一面黃色的牌子，畫著石虎，寫著「石虎出沒，請減速」。",
+   "act": "小石虎一隻腳剛踏上馬路邊，被迎面的車燈照得眯起眼睛，往後跳回草叢；他縮在草叢裡，耳朵壓低，不會被車碰到。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "前面是一條大馬路。",
+     "en": "Ahead is a big road."
+    },
+    {
+     "who": "旁白",
+     "text": "牠才踏出一步，叭，叭！",
+     "en": "He takes one step out. Beep, beep!"
+    },
+    {
+     "who": "旁白",
+     "text": "牠趕快跳回草叢裡。",
+     "en": "He quickly jumps back into the grass."
+    },
+    {
+     "who": "小石虎",
+     "tag": "scared",
+     "text": "車子好多，我過不去！",
+     "en": "So many cars! I can't get across!"
+    }
+   ]
+  },
+  {
+   "scene": "一輛藍色的小汽車裡，車窗外是同一條馬路和草叢，路邊有黃色的石虎牌子。",
+   "act": "小晨第一次出場：六歲小男孩，短頭髮，穿綠色恐龍 T 恤，繫著安全帶坐在後座的兒童座椅上，臉貼著車窗，手指著草叢裡兩個小亮點。爸爸第一次出場：戴眼鏡、穿格子襯衫，兩手握方向盤，放慢車子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一輛藍色小車開過來，車上是小晨和爸爸。",
+     "en": "A little blue car comes along. Inside are Jay and his dad."
+    },
+    {
+     "who": "小晨",
+     "tag": "excited",
+     "text": "爸爸，草叢裡有兩個小亮點！",
+     "en": "Dad, there are two little lights in the grass!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "是石虎！我們開慢一點。",
+     "en": "It's a leopard cat! Let's slow down."
+    }
+   ]
+  },
+  {
+   "scene": "同一條馬路，藍色小車停在路邊，閃著黃色的閃燈；後面的車也慢下來。",
+   "act": "爸爸按下閃燈；小晨坐在車上，隔著車窗小聲說話，兩手放在膝蓋上，沒有打開車門；草叢裡露出小石虎的半張臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸把車停在路邊，打開閃燈。",
+     "en": "Dad pulls over and turns on the flashing lights."
+    },
+    {
+     "who": "小晨",
+     "tag": "whispering",
+     "text": "小石虎別怕。我們不下車，也不會去抓你。",
+     "en": "Don't be scared, little leopard cat. We won't get out, and we won't try to catch you."
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "對，野生動物，要讓牠自己走。",
+     "en": "That's right. Wild animals should find their own way."
+    }
+   ]
+  },
+  {
+   "scene": "馬路邊的草叢，草叢旁邊的土坡下面，有一個方形的水泥小洞口，通到馬路底下。",
+   "act": "小石虎身體壓低，準備再衝上馬路；聽到聲音，耳朵一下子轉向旁邊，看到草叢裡的小洞口，眼睛睜大。",
+   "lines": [
+    {
+     "who": "小石虎",
+     "tag": "crying",
+     "text": "媽媽，妳在哪裡？",
+     "en": "Mama, where are you?"
+    },
+    {
+     "who": "石虎媽媽",
+     "tag": "shouting",
+     "text": "寶貝，不要上馬路！走下面！",
+     "en": "Sweetie, don't go on the road! Go underneath!"
+    },
+    {
+     "who": "旁白",
+     "text": "草叢旁有個小洞，通到馬路下面。",
+     "en": "Beside the grass, there's a little hole that goes under the road."
+    },
+    {
+     "who": "小石虎",
+     "tag": "surprised",
+     "text": "咦，有一條小隧道！",
+     "en": "Oh! A little tunnel!"
+    }
+   ]
+  },
+  {
+   "scene": "馬路底下的水泥小通道，裡面有一點暗，另一頭的洞口看得到月光和草叢。",
+   "act": "小石虎在小通道裡往前跑，尾巴翹起來；另一頭洞口，石虎媽媽坐著等，伸出頭往裡面看；下一格兩隻石虎在洞口蹭蹭臉，媽媽先停在洞口，左看右看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小石虎鑽進小洞，一直往前跑。",
+     "en": "The little leopard cat slips into the hole and runs and runs."
+    },
+    {
+     "who": "旁白",
+     "text": "洞的另一頭，媽媽在等牠！",
+     "en": "At the other end, Mama is waiting!"
+    },
+    {
+     "who": "小石虎",
+     "tag": "happy",
+     "text": "媽媽！我找到妳了！",
+     "en": "Mama! I found you!"
+    },
+    {
+     "who": "石虎媽媽",
+     "tag": "gentle",
+     "text": "出去以前，先停下來，看左邊，看右邊。",
+     "en": "Before we go out, we stop, look left, and look right."
+    }
+   ]
+  },
+  {
+   "scene": "馬路另一邊的草叢和小樹林；藍色小車停在路邊，車窗開著。",
+   "act": "爸爸指著土坡下的小洞口；小晨趴在車窗邊，笑著揮手；遠處兩隻石虎一前一後走進樹林，小石虎回頭，好像在點頭。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "tag": "happy",
+     "text": "那是動物的通道，車子走上面，動物走下面。",
+     "en": "That's a tunnel for animals. Cars go on top, and animals go underneath."
+    },
+    {
+     "who": "小晨",
+     "tag": "excited",
+     "text": "我過馬路，也要牽爸爸的手！",
+     "en": "And when I cross the road, I hold Dad's hand!"
+    },
+    {
+     "who": "小晨",
+     "text": "而且要停下來，看左邊，看右邊！",
+     "en": "And I stop, look left, and look right!"
+    },
+    {
+     "who": "旁白",
+     "text": "草叢裡，小石虎好像也點了點頭。",
+     "en": "In the grass, the little leopard cat seems to nod."
+    }
+   ]
+  }
+ ]
+}
