@@ -4,9 +4,9 @@
  "title_en": "Marking the Boat",
  "size": "短",
  "roles": {
-  "大叔": "坐船的大叔，慢吞吞、很有自信的鄉下大叔聲音，說話拖得慢慢的，什麼事都說「不急，不急」；最後自己哈哈笑。",
+  "大叔": "坐船的大叔，慢吞吞、很有自信的大叔聲音，說話拖得慢慢的，什麼事都說「不急，不急」；最後自己哈哈笑。",
   "船夫": "划船的老船夫，慈祥的老爺爺聲音，話不多，說話慢、很穩。",
-  "小女孩": "同船的小女孩，六歲左右，眼睛尖、愛問，聲音清脆，看到什麼就說什麼。"
+  "小女孩": "同船的小女孩，六歲左右，眼睛尖、愛問，聲音清脆，看到什麼就說什麼；提醒大叔的時候很認真，不是在笑他。"
  },
  "cast": {
   "大叔": {
@@ -30,12 +30,12 @@
   },
   {
    "char": "划",
-   "where": "第3頁『往前划』，第7頁『划回』",
+   "where": "第1頁『划著船』，第3頁『往前划』，第7頁『划回』",
    "read": "huá"
   },
   {
    "char": "撈",
-   "where": "第4頁『下面撈』，第4、7頁『撈到』，第7頁『一撈』",
+   "where": "第2頁『從這裡撈』，第4頁『下面撈』，第4、5、7頁『撈到』，第5頁『再撈』，第7頁『一撈』",
    "read": "lāo"
   },
   {
@@ -47,11 +47,6 @@
    "char": "會",
    "where": "第3頁『會跟著』，第4、6、8頁『不會』，第8頁『船會走』",
    "read": "huì"
-  },
-  {
-   "char": "沒",
-   "where": "第4頁『沒有』",
-   "read": "méi"
   },
   {
    "char": "哪",
@@ -76,13 +71,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "大叔和小女孩坐船去市場。",
-     "en": "A man and a little girl were riding a boat to market."
+     "text": "老船夫划著船，送大叔和小女孩去市場。",
+     "en": "An old boatman was rowing a man and a little girl to market."
     },
     {
      "who": "旁白",
-     "text": "大叔拿著心愛的小銅鏡。",
-     "en": "The man was holding his favorite little bronze mirror."
+     "text": "大叔拿著小銅鏡。",
+     "en": "The man was holding his little bronze mirror."
     },
     {
      "who": "大叔",
@@ -115,13 +110,13 @@
     },
     {
      "who": "旁白",
-     "text": "大叔拿木炭，在船邊畫了一個記號。",
+     "text": "大叔拿木炭，在船邊畫記號。",
      "en": "The man took a piece of charcoal and drew a mark on the side of the boat."
     },
     {
      "who": "大叔",
-     "text": "不急，不急。從這裡掉的，就從這裡找。",
-     "en": "No hurry, no hurry. It fell from here, so I'll look for it from here."
+     "text": "不急，不急。從這裡掉的，靠岸再從這裡撈。",
+     "en": "No hurry, no hurry. It fell from here, so when we reach the dock, I'll fish it out from here."
     }
    ]
   },
@@ -131,8 +126,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "船往前划，大柳樹越來越遠，越來越小。",
-     "en": "The boat moved on. The big willow got farther and farther away, smaller and smaller."
+     "text": "船往前划，大柳樹越來越遠。",
+     "en": "The boat moved on. The big willow got farther and farther away."
     },
     {
      "who": "大叔",
@@ -142,29 +137,30 @@
     },
     {
      "who": "旁白",
-     "text": "船一直往前走，沉在河底的銅鏡，會跟著船走嗎？",
+     "text": "船往前走，沉在河底的銅鏡，會跟著船走嗎？",
      "en": "The boat kept moving on. Do you think the mirror at the bottom of the river moved along with it?"
     }
    ]
   },
   {
    "scene": "下游的小碼頭：用木板搭的，小木船綁在碼頭邊。岸上看得到市場的布棚子。這裡看不到大柳樹。",
-   "act": "大叔站在碼頭的木板上，兩腳站得穩穩的，身體沒有探出去，兩手握著老船夫那支長柄撈魚網，把網子伸到船邊黑色圓圈記號正下方的水裡。網子撈上來一大把滴著水的綠色水草，其中一條水草甩到大叔的山羊鬍上掛著（之後每一頁都還掛著）。大叔瞪大眼睛看著網子裡的水草。小女孩和老船夫站在碼頭上看，小女孩用手遮著嘴偷笑。",
+   "act": "大叔站在碼頭的木板上，兩腳站得穩穩的，身體沒有探出去，兩手握著老船夫那支長柄撈魚網，把網子伸到船邊黑色圓圈記號正下方的水裡。網子撈上來一大把滴著水的綠色水草，其中一條水草甩到大叔的山羊鬍上掛著（之後每一頁都還掛著）。大叔瞪大眼睛看著網子裡的水草。小女孩和老船夫站在碼頭上看：小女孩歪著頭，好奇地看著網子裡的水草，一手指著河水（她剛剛才告訴大叔，銅鏡陷在泥裡、不會跟著船走）；老船夫摸著白鬍子。沒有人在笑大叔。",
    "lines": [
     {
-     "who": "旁白",
-     "text": "不會。因為銅鏡陷在泥裡不動，船卻往前走。",
-     "en": "No. Because the mirror was stuck in the mud and stayed still, while the boat kept moving on."
+     "who": "小女孩",
+     "text": "銅鏡不會跟著船走！因為它陷在泥裡，不動。",
+     "en": "The mirror didn't move along with the boat! It's stuck in the mud, so it stays right where it is."
+    },
+    {
+     "who": "大叔",
+     "tag": "proud",
+     "text": "不急，不急，我有記號。",
+     "en": "No hurry, no hurry. I have my mark."
     },
     {
      "who": "旁白",
-     "text": "所以畫在船上的記號，跟著船走了，銅鏡沒有。",
-     "en": "So the mark on the boat went along with the boat, but the mirror did not."
-    },
-    {
-     "who": "旁白",
-     "text": "船靠岸了。大叔借老船夫的網子，在記號下面撈。",
-     "en": "The boat reached the dock. The man borrowed the old boatman's net and fished right under his mark."
+     "text": "船靠岸了。大叔借了網子，在記號下面撈。",
+     "en": "The boat reached the dock. The man borrowed a net and fished right under his mark."
     },
     {
      "who": "大叔",
@@ -176,8 +172,13 @@
   },
   {
    "scene": "同一個小碼頭。碼頭的木板上堆了一小堆撈上來的東西：幾把水草、一顆圓石頭、一個破掉的陶碗。",
-   "act": "大叔一手拿著長柄撈魚網，一手指著船邊的黑色圓圈記號，歪著頭、皺著眉，鬍子上還掛著一條水草，頭上一個問號。小女孩站在他旁邊，仰頭看著他，一手指著河的上游（船划過來的方向）。老船夫摸著白鬍子微笑。",
+   "act": "大叔一手拿著長柄撈魚網（網子裡是剛撈上來的破陶碗），一手指著船邊的黑色圓圈記號，歪著頭、皺著眉，鬍子上還掛著一條水草，頭上一個問號。小女孩站在他旁邊，仰頭看著他，一手指著船邊的記號、一手拍拍小木船的船邊（意思是：記號畫在船上）；這一頁她不指上游，答案留到下一頁。老船夫摸著白鬍子微笑。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "他再撈，撈到石頭和破碗。",
+     "en": "He fished again and got a stone, and then a broken bowl."
+    },
     {
      "who": "大叔",
      "tag": "confused",
@@ -186,8 +187,13 @@
     },
     {
      "who": "小女孩",
-     "text": "大叔，銅鏡留在掉下去的地方了。",
-     "en": "Mister, the mirror stayed where it fell."
+     "text": "記號坐在船上，跟著船來了。",
+     "en": "The mark rode along on the boat."
+    },
+    {
+     "who": "小女孩",
+     "text": "銅鏡留在掉下去的地方。",
+     "en": "The mirror stayed where it fell."
     },
     {
      "who": "旁白",
@@ -214,8 +220,8 @@
     },
     {
      "who": "船夫",
-     "text": "銅鏡掉的時候，船就在大柳樹旁邊。",
-     "en": "And when the mirror fell, the boat was right beside that willow."
+     "text": "銅鏡是在大柳樹旁邊掉的。",
+     "en": "And the mirror fell right beside that willow."
     }
    ]
   },
@@ -243,7 +249,7 @@
   },
   {
    "scene": "大柳樹下，小木船停在岸邊，陽光穿過柳條照下來。",
-   "act": "大叔坐在船裡，拿著擦乾的小銅鏡照自己，鏡子裡看得到他的山羊鬍上掛著一條綠色的水草；他仰著頭哈哈大笑，一手指著岸上的大柳樹。小女孩指著他的鬍子笑彎了腰，老船夫也笑了。船邊那個黑色圓圈記號還在。",
+   "act": "大叔坐在船裡，拿著擦乾的小銅鏡照自己，鏡子裡看得到他的山羊鬍上掛著一條綠色的水草；他仰著頭哈哈大笑，一手指著岸上的大柳樹。小女孩指著他鬍子上的水草告訴他，跟他一起笑，老船夫也笑了（大家一起笑那條水草，大叔自己笑得最大聲）。船邊那個黑色圓圈記號還在。",
    "lines": [
     {
      "who": "大叔",

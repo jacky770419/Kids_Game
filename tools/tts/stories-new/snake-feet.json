@@ -6,7 +6,7 @@
  "roles": {
   "阿福": "就是《年獸來了》《小美的串珠項鍊》裡的阿福：六歲左右的小男孩，聲音清亮、很有精神，做事很急、常常太快；畫得快很得意，發現自己多畫了也笑得出來，最後開開心心幫四腳蛇取名字。",
   "小美": "就是《年獸來了》《小美的串珠項鍊》裡的小美：五歲左右的小女孩，聲音細細甜甜的，做事細心、慢慢來；看到四隻腳的蛇覺得很好笑，分豆花給阿福時很大方。",
-  "奶奶": "阿福和小美的奶奶，聲音慈祥溫和、笑咪咪的，說話慢慢的；講比賽的規則時一句一句說清楚，看到四隻腳的蛇忍不住笑。"
+  "奶奶": "阿福和小美的奶奶，聲音慈祥溫和、笑咪咪的，說話慢慢的；講比賽的規則時一句一句說清楚，看到四隻腳的蛇覺得很可愛，笑咪咪的，不是在笑阿福。"
  },
  "cast": {
   "阿福": {
@@ -30,7 +30,7 @@
   },
   {
    "char": "還",
-   "where": "第2頁『還在畫』，第3頁『還沒畫好』",
+   "where": "第3頁『還沒畫好』",
    "read": "hái"
   },
   {
@@ -55,7 +55,7 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『還沒畫好』，第5頁『沒有腳』『沒看過』，第6頁『沒有腳』",
+   "where": "第3頁『沒有去叫』『還沒畫好』，第5、6頁『沒有腳』",
    "read": "méi"
   },
   {
@@ -83,7 +83,7 @@
      "who": "奶奶",
      "tag": "happy",
      "text": "誰先畫好一條蛇，叫我來看，誰就先吃第一碗。",
-     "en": "Whoever finishes drawing a snake first, and calls me to look, gets the first bowl."
+     "en": "The first one to finish drawing a snake and call me over gets the first bowl."
     },
     {
      "who": "奶奶",
@@ -93,7 +93,7 @@
     },
     {
      "who": "旁白",
-     "text": "阿福和小美拿起樹枝，在地上畫。",
+     "text": "阿福和小美拿樹枝，在地上畫。",
      "en": "Afu and Mei picked up sticks and began to draw in the dirt."
     }
    ]
@@ -115,15 +115,20 @@
     },
     {
      "who": "旁白",
-     "text": "小美還在畫，才畫到一半。",
-     "en": "Mei was still drawing. She was only halfway done."
+     "text": "小美才畫到一半。",
+     "en": "Mei was only halfway done."
     }
    ]
   },
   {
    "scene": "很久以前的夏天，山腳下小村子裡，奶奶家的院子，晴天的白天：地上是平平的黃色泥土地（可以用樹枝在上面畫出線條），院子裡一棵綠色的大樹，樹下一張矮木桌和兩張小板凳；後面是灰瓦白牆的矮房子，木門開著。",
-   "act": "畫面左邊：阿福又蹲下來，沒有去叫奶奶；他用樹枝在自己那條蛇的身體下面加畫腳，蛇的身體下面已經有四隻短短的腳（前面兩隻、後面兩隻，每隻腳有三根小腳趾），他正畫完第四隻，笑得很開心。畫面右邊：小美的蛇快畫好了，有頭、有彎了三個彎的長身體，她正在畫尖尖的尾巴，沒有腳。",
+   "act": "奶奶不在畫面裡（她還在屋子裡，沒有人去叫她）。畫面左邊：阿福又蹲下來，沒有去叫奶奶；他用樹枝在自己那條蛇的身體下面加畫腳，蛇的身體下面已經有四隻短短的腳（前面兩隻、後面兩隻，每隻腳有三根小腳趾），他正畫完第四隻，笑得很開心。畫面右邊：小美的蛇快畫好了，有頭、有彎了三個彎的長身體，她正在畫尖尖的尾巴，沒有腳。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "阿福沒有去叫奶奶。",
+     "en": "But Afu didn't call Grandma."
+    },
     {
      "who": "阿福",
      "tag": "happy",
@@ -173,19 +178,19 @@
   },
   {
    "scene": "很久以前的夏天，山腳下小村子裡，奶奶家的院子，晴天的白天：地上是平平的黃色泥土地（可以用樹枝在上面畫出線條），院子裡一棵綠色的大樹，樹下一張矮木桌和兩張小板凳；後面是灰瓦白牆的矮房子，木門開著。",
-   "act": "奶奶一手遮著嘴笑，另一手指著阿福那張畫上的四隻腳。小美蹲在阿福的畫旁邊，用樹枝一隻一隻點著那四隻腳，笑得眼睛瞇起來。阿福兩手抱著頭，嘴巴張得大大的，臉有一點紅，可是嘴角也翹起來，快要笑出來。地上：左邊是阿福那條有四隻腳的蛇，右邊是小美那條沒有腳的蛇。",
+   "act": "奶奶笑咪咪的，一手指著阿福那張畫上的四隻腳。小美蹲在阿福的畫旁邊，用樹枝一隻一隻點著那四隻腳，笑得眼睛瞇起來（大家笑的是那條四隻腳的蛇，不是笑阿福）。阿福兩手抱著頭，嘴巴張得大大的，可是嘴角也翹起來，自己也快要笑出來。地上：左邊是阿福那條有四隻腳的蛇，右邊是小美那條沒有腳的蛇。",
    "lines": [
     {
      "who": "奶奶",
      "tag": "laughing",
      "text": "不算。因為蛇沒有腳，有了腳，就不是蛇了。",
-     "en": "No, it doesn't. Because snakes have no feet. Once it has feet, it isn't a snake anymore."
+     "en": "No, it doesn't. Snakes don't have feet. Give it feet, and it isn't a snake anymore."
     },
     {
      "who": "小美",
      "tag": "laughing",
-     "text": "四隻腳的蛇？我沒看過！",
-     "en": "A snake with four feet? I've never seen one!"
+     "text": "四隻腳的蛇？那是蜥蜴吧！",
+     "en": "A snake with four feet? That's a lizard!"
     },
     {
      "who": "阿福",
@@ -208,7 +213,7 @@
      "who": "奶奶",
      "tag": "gentle",
      "text": "我是說，誰先畫好一條蛇，叫我來看。",
-     "en": "I said, whoever finishes a snake first, and calls me to look."
+     "en": "I said the first one to finish a snake and call me over gets the first bowl."
     },
     {
      "who": "旁白",
@@ -234,13 +239,13 @@
     {
      "who": "奶奶",
      "tag": "gentle",
-     "text": "因為我來看的時候，阿福畫的不是蛇。",
-     "en": "Because when I came to look, Afu's drawing was not a snake."
+     "text": "因為小美先叫我來看，而且她畫的是一條蛇。",
+     "en": "Mei called me over first, and what she drew is a snake."
     },
     {
      "who": "奶奶",
-     "text": "小美畫的，才是一條蛇。",
-     "en": "Only Mei's drawing was a snake."
+     "text": "阿福畫的有腳，不是蛇。",
+     "en": "Afu's has feet, so it isn't a snake."
     },
     {
      "who": "阿福",

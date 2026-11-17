@@ -29,11 +29,6 @@
    "read": "pī"
   },
   {
-   "char": "為",
-   "where": "第6頁『因為』",
-   "read": "wèi"
-  },
-  {
    "char": "什",
    "where": "第3、5頁『什麼』",
    "read": "shén"
@@ -101,8 +96,8 @@
     {
      "who": "兒子",
      "tag": "excited",
-     "text": "額頭高，對！眼睛亮，對！後腿有力，對！",
-     "en": "High forehead, yes! Bright eyes, yes! Strong back legs, yes!"
+     "text": "額頭高，對！眼睛亮，對！腿有力，對！",
+     "en": "High forehead, yes! Bright eyes, yes! Strong legs, yes!"
     },
     {
      "who": "旁白",
@@ -150,7 +145,7 @@
     },
     {
      "who": "旁白",
-     "text": "青蛙一跳，跳到伯樂的頭上。",
+     "text": "青蛙一跳，跳到伯樂頭上。",
      "en": "Hop! The frog jumped right onto Bo Le's head."
     },
     {
@@ -168,8 +163,20 @@
   },
   {
    "scene": "馬場的木頭欄杆旁邊，棕色的馬站在欄杆裡面吃草。",
-   "act": "父子兩個並排蹲在欄杆前面，一起看棕色的馬。大青蛙蹲在欄杆最下面的橫木上，就在馬的腳邊，看起來好小。兒子指著馬的四條高高的腿，再用兩隻手指比出跑步的樣子；伯樂一手指著馬的大尾巴，一手指著馬嘴邊的草，笑著點頭。下一格：伯樂拿著那張圖，指指圖上的三個記號，再指指青蛙，最後指指馬，慢慢說明；兒子拍一下自己的額頭，笑了。",
+   "act": "第一格：兒子把那張圖舉到大青蛙旁邊（大青蛙蹲在欄杆最下面的橫木上），手指在圖上的三個記號和青蛙之間來回比，然後拍一下自己的額頭，嘴巴張得圓圓的，自己發現了；伯樂在旁邊笑著點頭，一手指指青蛙，一手指指欄杆裡的馬。第二格：父子兩個並排蹲在欄杆前面，一起看棕色的馬，大青蛙就在馬的腳邊，看起來好小。兒子指著馬的四條很高的腿，再用兩隻手指比出跑步的樣子；伯樂一手指著馬的大尾巴，一手指著馬嘴邊的草，笑著點頭。",
    "lines": [
+    {
+     "who": "兒子",
+     "tag": "surprised",
+     "text": "啊，圖上三樣，青蛙也都有！",
+     "en": "Oh! The frog has all three things on the picture!"
+    },
+    {
+     "who": "伯樂",
+     "tag": "gentle",
+     "text": "對，所以要多寫幾樣馬有、青蛙沒有的。",
+     "en": "Right. So we need to add more things that a horse has, but a frog doesn't."
+    },
     {
      "who": "兒子",
      "tag": "excited",
@@ -181,17 +188,6 @@
      "tag": "happy",
      "text": "大尾巴，愛吃草，都可以。",
      "en": "A big tail. Eats grass. Those all work."
-    },
-    {
-     "who": "伯樂",
-     "tag": "gentle",
-     "text": "因為圖上才三樣，青蛙也都有。",
-     "en": "Because my picture has only three things, and a frog has them all."
-    },
-    {
-     "who": "伯樂",
-     "text": "所以，要多寫幾樣馬才有的。",
-     "en": "So we need to add more things that only a horse has."
     }
    ]
   },

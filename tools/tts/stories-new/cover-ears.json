@@ -30,7 +30,7 @@
   },
   {
    "char": "還",
-   "where": "第4頁『還是在響』，第5頁『還是看得到』，第7頁『還是響了』",
+   "where": "第5頁『還是看得到』，第7頁『還是響了』",
    "read": "hái"
   },
   {
@@ -82,7 +82,7 @@
     },
     {
      "who": "旁白",
-     "text": "爸爸把鈴鐺掛在小熊的脖子上。",
+     "text": "爸爸把鈴鐺掛在小熊脖子上。",
      "en": "Papa hangs the bell around Little Bear's neck."
     }
    ]
@@ -147,8 +147,8 @@
     },
     {
      "who": "旁白",
-     "text": "鈴鐺還是在響。叮噹，叮噹！",
-     "en": "The bell is still ringing. Ding-dong, ding-dong!"
+     "text": "叮噹，叮噹！",
+     "en": "Ding-dong, ding-dong!"
     },
     {
      "who": "旁白",
@@ -159,12 +159,12 @@
   },
   {
    "scene": "白天，小熊家：畫面左邊是短短的走廊（木頭地板），走廊口接著客廳。客廳是木頭地板、綠色地毯，中間一張大沙發和小茶几，窗外是晴天；綠色的大門在客廳最右邊的牆上，要從走廊走到大門，一定要經過沙發前面。",
-   "act": "畫面左邊的走廊裡（客廳的沙發看不到這裡）：熊爸爸蹲著，一手指著自己的耳朵，眼睛笑得彎彎的。小熊站在他面前，兩隻手已經從耳朵上放下來、攤開在身體兩邊，嘴巴張得大大的，很驚訝；金色的大鈴鐺還用紅色緞帶掛在他的脖子上。熊爸爸頭上有一個想像泡泡：小熊站在房間正中間玩躲貓貓，用兩隻手遮住自己的眼睛，以為別人看不到他。畫面右邊遠遠的客廳裡，熊媽媽還把書舉在臉前面。",
+   "act": "畫面左邊的走廊裡（客廳的沙發看不到這裡）：熊爸爸剛從後面追上來，把小熊從客廳拉回走廊；他蹲著，一手指著自己的耳朵，眼睛笑得彎彎的。小熊站在他面前，兩隻手已經從耳朵上放下來、攤開在身體兩邊，嘴巴張得大大的，很驚訝；金色的大鈴鐺還用紅色緞帶掛在他的脖子上。熊爸爸頭上有一個想像泡泡：小熊站在房間正中間玩躲貓貓，用兩隻手遮住自己的眼睛，以為別人看不到他。畫面右邊遠遠的客廳裡，熊媽媽還把書舉在臉前面。",
    "lines": [
     {
      "who": "旁白",
-     "text": "爸爸把小熊帶回來。",
-     "en": "Papa brings Little Bear back."
+     "text": "爸爸從後面把小熊拉回來。",
+     "en": "Papa comes up from behind and pulls Little Bear back."
     },
     {
      "who": "熊爸爸",
@@ -188,12 +188,13 @@
   },
   {
    "scene": "白天，小熊家的走廊：木頭地板，走廊的另一頭看得到客廳的綠色地毯。這一頁是鈴鐺的近景。",
-   "act": "熊爸爸蹲在小熊面前，用一根手指輕輕推了一下小熊脖子上的金色大鈴鐺；鈴鐺歪向一邊，從下面的開口看得到裡面那顆圓頭的小錘子正敲到鈴鐺的內側，敲到的地方畫出聲音的小線條。小熊低著頭，兩隻手托著下巴，認真地看鈴鐺裡面，在想辦法。",
+   "act": "小熊低著頭，一隻手托住脖子上的金色大鈴鐺、把它歪向一邊搖了一下，眼睛睜得圓圓的，往鈴鐺下面的開口裡看：從開口看得到裡面那顆圓頭的小錘子正敲到鈴鐺的內側，敲到的地方畫出聲音的小線條。熊爸爸蹲在小熊面前，笑著看他自己發現，沒有伸手幫忙。",
    "lines": [
     {
-     "who": "熊爸爸",
-     "text": "鈴鐺一晃，裡面的小錘子就敲出聲音。",
-     "en": "When the bell swings, the little clapper inside hits it. That makes the sound."
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "咦，鈴鐺一晃，裡面有小錘子在敲！",
+     "en": "Oh! When the bell swings, a little clapper inside knocks on it!"
     },
     {
      "who": "旁白",
@@ -204,24 +205,30 @@
   },
   {
    "scene": "白天，小熊家的走廊：木頭地板，走廊的另一頭看得到客廳的綠色地毯。",
-   "act": "畫面分兩格。左格：小熊踮著腳尖，很慢很慢地跨出一小步，脖子上的金色大鈴鐺還是輕輕晃了一下，旁邊畫出一條小小的聲音線條；小熊吐出舌頭。右格：熊爸爸一隻手伸進鈴鐺下面的開口，捏住裡面的小錘子，另一隻手拿著一條藍色的毛巾；小熊眼睛發亮，一手指著鈴鐺、一手指著毛巾。",
+   "act": "畫面分三格。第一格：小熊兩隻手舉高、張開手掌，指著客廳的方向，想跑去遮媽媽的耳朵；熊爸爸笑著搖搖手，另一手的食指放在嘴巴前面。第二格：小熊踮著腳尖，很慢很慢地跨出一小步，脖子上的金色大鈴鐺還是輕輕晃了一下，旁邊畫出一條小小的聲音線條；小熊吐出舌頭。第三格：熊爸爸一隻手伸進鈴鐺下面的開口，捏住裡面的小錘子，鈴鐺旁邊沒有聲音的線條，另一隻手拿著一條藍色的毛巾；小熊眼睛發亮，一手指著鈴鐺、一手指著毛巾。",
    "lines": [
     {
      "who": "小熊",
-     "tag": "whispering",
-     "text": "我走很慢，很慢！",
-     "en": "I'll walk very, very slowly!"
+     "tag": "excited",
+     "text": "那我去遮媽媽的耳朵！",
+     "en": "Then I'll go cover Mama's ears!"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "laughing",
+     "text": "那媽媽就知道有驚喜啦！",
+     "en": "Then Mama will know there's a surprise!"
     },
     {
      "who": "旁白",
-     "text": "叮！還是響了一小聲。",
-     "en": "Ding! It still rings a little."
+     "text": "他走很慢，很慢。叮！還是響了一小聲。",
+     "en": "He walks very, very slowly. Ding! It still rings a little."
     },
     {
      "who": "熊爸爸",
      "tag": "happy",
-     "text": "抓住小錘子可以，用毛巾包起來也可以。",
-     "en": "You could hold the clapper still. Or you could wrap the bell in a towel."
+     "text": "抓住小錘子，或用毛巾包起來！",
+     "en": "Hold the little clapper still, or wrap the bell in a towel!"
     },
     {
      "who": "小熊",
@@ -237,8 +244,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "爸爸用毛巾把鈴鐺包好，小錘子動不了。",
-     "en": "Papa wraps the bell up in a towel, so the little clapper can't move."
+     "text": "爸爸用毛巾包好，小錘子動不了。",
+     "en": "Papa wraps it up in the towel, so the little clapper can't move."
     },
     {
      "who": "旁白",
@@ -253,8 +260,8 @@
     {
      "who": "熊媽媽",
      "tag": "happy",
-     "text": "我剛才聽到叮噹，叮噹，真好聽。可是我沒有偷看！",
-     "en": "I did hear a ding-dong before, and it sounded lovely. But I didn't peek!"
+     "text": "我剛才聽到叮噹聲，真好聽。可是我沒有偷看！",
+     "en": "I did hear a ding-dong earlier, and it sounded lovely. But I didn't peek!"
     }
    ]
   }

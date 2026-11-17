@@ -2,11 +2,11 @@
  "id": "two-kids-sun",
  "title": "太陽什麼時候比較近",
  "title_en": "Is the Sun Near or Far?",
- "size": "短",
+ "size": "中",
  "roles": {
-  "孔子": "很久以前很有學問的老師，六十歲左右的老先生；聲音溫和穩重、慢慢說，愛聽孩子說話；說「我也不知道」的時候很坦白、帶著笑，一點也不難為情。",
-  "男孩": "六歲左右的小男孩，聲音清亮、很有精神，講道理時一句接一句、很有把握；聽到老師說不知道時很驚訝。",
-  "女孩": "六歲左右的小女孩，聲音細細甜甜的、說話很快，不服輸；講自己的道理時很認真，問老師時很有禮貌。"
+  "孔子": "很久以前很有學問的老師，六十歲左右的老先生；聲音溫和穩重、慢慢說，愛聽孩子說話；說「我也不知道」的時候很坦白、帶著笑，一點也不難為情；帶孩子試月亮、想辦法的時候像在一起玩，不是在上課。",
+  "男孩": "六歲左右的小男孩，聲音清亮、很有精神，講道理時一句接一句、很有把握，口頭禪是「越近越大！」；聽到老師說不知道時很驚訝；最後想通了，笑著提出新的猜想。",
+  "女孩": "六歲左右的小女孩，聲音又細又甜、說話很快，不服輸，口頭禪是「越近越熱！」；講自己的道理時很認真，問老師時很有禮貌；最後笑著說不用吵了。"
  },
  "cast": {
   "孔子": {
@@ -25,12 +25,12 @@
  "polyphones": [
   {
    "char": "為",
-   "where": "第3、7、8頁『因為』",
+   "where": "第3、7、10頁『因為』",
    "read": "wèi"
   },
   {
    "char": "還",
-   "where": "第1頁『還是中午近』",
+   "where": "第1頁『還是中午近』，第9頁『還是剛好遮住』『還是看起來大』",
    "read": "hái"
   },
   {
@@ -40,23 +40,28 @@
   },
   {
    "char": "覺",
-   "where": "第6頁『你覺得呢』",
+   "where": "第6頁『你覺得誰說得對』，第7頁『覺得兩個都不對』",
    "read": "jué"
   },
   {
    "char": "差",
-   "where": "第8頁『差不多』",
+   "where": "第12頁『差不多』",
    "read": "chà"
   },
   {
    "char": "什",
-   "where": "書名、第2頁『什麼時候』",
+   "where": "書名、第2頁『什麼時候』，第10頁『什麼都沒有』",
    "read": "shén"
   },
   {
    "char": "誰",
    "where": "第5、6頁『誰說得對』",
    "read": "shéi"
+  },
+  {
+   "char": "散",
+   "where": "第11頁『散開』",
+   "read": "sàn"
   }
  ],
  "pages": [
@@ -71,13 +76,13 @@
     },
     {
      "who": "旁白",
-     "text": "有一天，他聽到兩個孩子在吵。",
-     "en": "One day, he heard two children arguing."
+     "text": "大家有問題，都去問他。",
+     "en": "Whenever people had a question, they went to ask him."
     },
     {
      "who": "旁白",
-     "text": "他們在吵，太陽是早上近，還是中午近。",
-     "en": "They were arguing about whether the sun is closer in the morning or at noon."
+     "text": "有一天，兩個孩子在吵，太陽是早上近，還是中午近。",
+     "en": "One day, two children were arguing. Is the sun closer in the morning, or at noon?"
     }
    ]
   },
@@ -93,8 +98,8 @@
     {
      "who": "男孩",
      "tag": "excited",
-     "text": "東西越近，看起來越大。",
-     "en": "The closer something is, the bigger it looks."
+     "text": "東西越近，看起來越大！",
+     "en": "The closer something is, the bigger it looks!"
     },
     {
      "who": "男孩",
@@ -142,13 +147,13 @@
    "lines": [
     {
      "who": "女孩",
-     "text": "離火越近越熱。靠近爐子好熱，走遠就不熱。",
-     "en": "The closer you are to a fire, the hotter you feel. It's hot next to the stove, and not so hot when you walk away."
+     "text": "靠近爐子好熱，走遠就不熱。越近越熱！",
+     "en": "It's hot next to the stove, and not so hot when you walk away. Closer means hotter!"
     },
     {
      "who": "女孩",
      "tag": "proud",
-     "text": "早上涼，中午熱，所以中午比較近！",
+     "text": "早上涼，中午熱，所以中午近！",
      "en": "Mornings are cool and noon is hot. So the sun is closer at noon!"
     }
    ]
@@ -205,56 +210,179 @@
     },
     {
      "who": "旁白",
-     "text": "兩個人都有理由。你覺得呢，誰說得對？",
-     "en": "Both children have a reason. What do you think? Who is right?"
+     "text": "那你呢？你覺得誰說得對？",
+     "en": "What about you? Who do you think is right?"
     }
    ]
   },
   {
    "scene": "很久很久以前的古時候，鄉下一條黃色泥土路的路邊，晴天的上午；路邊一棵樹蔭很大的大樹，樹下有三顆可以坐的扁石頭；遠處是綠色的田，和幾間茅草屋頂、土牆的矮房子。全書都不把太陽直接畫在天空裡（天空只畫藍天白雲和從樹葉間照下來的光），太陽只出現在孩子頭上的想像泡泡裡；沒有任何人抬頭看太陽。",
-   "act": "大樹下。孔子坐在中間那顆扁石頭上，男孩坐在他左邊的石頭上，女孩坐在他右邊的石頭上，三個人一起托著下巴想，姿勢一模一樣，都笑咪咪的。男孩頭上的想像泡泡是橘紅色的大太陽和大圓桌，女孩頭上的想像泡泡是白色的小太陽和冒熱氣的爐子，孔子頭上的想像泡泡是一個大大的問號。",
+   "act": "大樹下。孔子從中間那顆扁石頭上站起來，一手摸著鬍子，一手的食指往上比，像是想到辦法了，笑咪咪的；他頭上的想像泡泡是晚上一顆黃色的大月亮，掛在茅草屋頂旁邊。男孩和女孩並排站在他面前，仰著頭看他，眼睛睜得好大，很期待；兩個人不吵了。男孩頭上的小泡泡是橘紅色的大太陽和大圓桌，女孩頭上的小泡泡是白色的小太陽和冒熱氣的爐子。沒有人抬頭看天空。",
    "lines": [
     {
      "who": "旁白",
-     "text": "選男孩，選女孩，都可以，因為都有道理。",
-     "en": "You can pick the boy or the girl, because both of them make sense."
+     "text": "選男孩、選女孩，都很棒，因為你有想理由。",
+     "en": "Picking the boy or the girl is great, because you thought of a reason."
     },
     {
      "who": "旁白",
-     "text": "說不知道，跟孔子一樣！",
-     "en": "And if you said you don't know, you're just like Confucius!"
+     "text": "覺得兩個都不對？也很棒！",
+     "en": "And if you think they're both wrong? That's great too!"
     },
     {
      "who": "孔子",
      "tag": "happy",
      "text": "來，我們一起找答案！",
      "en": "Come, let's find the answer together!"
+    },
+    {
+     "who": "孔子",
+     "text": "太陽不能看，先看月亮。",
+     "en": "We can't stare at the sun. So first, let's look at the moon."
     }
    ]
   },
   {
-   "scene": "這一頁不是故事裡的場景，是一張說明用的大圖：淺黃色的紙當背景，畫風跟前面一樣，分成三格。這一頁可以整頁拿掉，前面七頁的故事還是完整的。",
-   "act": "第一格（一樣遠）：左邊一顆藍綠色的小地球，右邊很遠的地方一顆黃色的太陽；地球上站著「早上」和「中午」兩個小人，各拉一條虛線到太陽，兩條線一樣長。第二格（眼睛被騙了）：左邊是剛從山頭後面出來的橘紅色太陽，旁邊有房子和樹可以比，看起來很大；右邊是高高在天上的太陽，旁邊什麼都沒有，看起來很小；兩個太陽中間畫一個等號，表示其實一樣大。第三格（中午比較熱）：左邊是早上，陽光斜斜地照在地上，照到的地方又長又淡；右邊是中午，陽光從正上方照在地上，照到的地方又小又亮，地上的小人在擦汗。圖的右下角畫著小小的孔子、男孩、女孩，三個人擠在一起探頭看這張圖，笑得很開心；沒有人抬頭看太陽。",
+   "scene": "同一天晚上，村子裡一間茅草屋頂、土牆的矮房子前面的空地，地上有三個草墊子；深藍色的夜空，有幾顆星星。白天的頁面都不畫太陽；晚上的月亮可以直接畫，孩子可以看月亮。這一頁天剛黑：很圓的黃色大月亮剛出來，位置很低，就貼在茅草屋頂的旁邊，屋頂另一邊還有一棵樹的黑影（月亮旁邊有屋頂和樹可以比）。",
+   "act": "分兩格。第一格：男孩（外型同前）兩手張得開開的，比出「好大」，嘴巴張得圓圓的，看著屋頂旁邊的大月亮；孔子（外型同前）站在中間，手心攤開，上面有一顆綠色的小豆子（跟綠豆一樣小）。第二格：男孩一隻手臂往前伸得很直，拇指和食指捏著那顆小豆子，舉在月亮前面，閉起一隻眼睛看；女孩（外型同前）站在旁邊，踮著腳、歪著頭在看。第二格旁邊畫一個小圓框，是從男孩眼睛看出去的樣子：小豆子剛好把整顆月亮遮住，邊緣只露出一圈很細的光。",
    "lines": [
     {
      "who": "旁白",
-     "text": "過了好久，大家才找到答案。",
-     "en": "A long, long time later, people finally found the answer."
+     "text": "晚上，月亮剛出來，在屋頂旁邊。",
+     "en": "That night, the moon had just come up, right beside a rooftop."
+    },
+    {
+     "who": "男孩",
+     "tag": "excited",
+     "text": "月亮好大！越近越大！",
+     "en": "The moon is huge! Closer means bigger!"
+    },
+    {
+     "who": "孔子",
+     "tag": "gentle",
+     "text": "伸直手，用這顆小豆子遮月亮。",
+     "en": "Hold your arm out straight, and cover the moon with this little bean."
     },
     {
      "who": "旁白",
-     "text": "早上和中午，太陽差不多一樣遠。",
-     "en": "In the morning and at noon, the sun is just about the same distance away."
+     "text": "小豆子剛好遮住月亮。",
+     "en": "The little bean covered the moon exactly."
+    }
+   ]
+  },
+  {
+   "scene": "同一天晚上，村子裡一間茅草屋頂、土牆的矮房子前面的空地，地上有三個草墊子；深藍色的夜空，有幾顆星星。白天的頁面都不畫太陽；晚上的月亮可以直接畫，孩子可以看月亮。這一頁夜深了：月亮爬到很高的天上，在畫面正上方，周圍只有深藍色的夜空和星星，旁邊沒有屋頂、沒有樹（沒有東西可以比）。這一頁月亮的直徑，要畫得跟上一頁一模一樣。",
+   "act": "男孩（外型同前）再一次把一隻手臂往上伸得很直，拇指和食指捏著同一顆綠色小豆子，舉在月亮前面，閉起一隻眼睛看；他嘴巴張開，很驚訝。旁邊的小圓框是從他眼睛看出去的樣子：同一顆小豆子，一樣剛好把整顆月亮遮住，跟上一頁的小圓框一模一樣。女孩站在旁邊，踮著腳、歪著頭在看。孔子一手摸著鬍子，一手指著下面的茅草屋頂，眼睛笑得瞇瞇的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "月亮爬到天上，看起來變小了。",
+     "en": "Later, the moon climbed high into the sky, and it looked smaller."
     },
     {
      "who": "旁白",
-     "text": "早上看起來大，是眼睛被騙了。",
-     "en": "The morning sun only looks bigger. Our eyes are playing a trick on us."
+     "text": "男孩再遮一次。同一顆豆子，還是剛好遮住。",
+     "en": "The boy tried again. The same little bean still covered the moon exactly."
+    },
+    {
+     "who": "孔子",
+     "tag": "happy",
+     "text": "月亮一樣大！剛才旁邊有屋頂可以比，看起來才大。",
+     "en": "The moon is the same size! It only looked big before, next to the rooftop."
     },
     {
      "who": "旁白",
-     "text": "早上的陽光斜著照，中午從頭頂照下來，比較熱。",
-     "en": "In the morning, the sunlight comes in at a slant. At noon, it shines down from high above, so it feels hotter."
+     "text": "那早上的太陽呢？是真的比較大，還是看起來大？",
+     "en": "So what about the morning sun? Is it really bigger, or does it just look bigger?"
+    }
+   ]
+  },
+  {
+   "scene": "同一天晚上，村子裡一間茅草屋頂、土牆的矮房子前面的空地，地上有三個草墊子；深藍色的夜空，有幾顆星星。白天的頁面都不畫太陽；晚上的月亮可以直接畫，孩子可以看月亮。月亮在很高的天上。畫面上方是一個很大的想像泡泡，分左右兩半（太陽只畫在想像泡泡裡）。",
+   "act": "想像泡泡左半是早上：橘紅色的太陽剛出來，位置很低，旁邊有山頭、茅草屋和樹，跟它們一比，太陽看起來很大。右半是中午：太陽在很高的天上，周圍什麼都沒有，看起來很小。兩個太陽中間畫一個等號，而且兩個太陽的直徑其實畫得一模一樣。泡泡下面，男孩指著左半邊，眼睛睜得好大；女孩指著右半邊，搶著接話；兩個人肩膀靠在一起，一起想，不吵了。孔子坐在草墊子上，笑著聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是看起來大。",
+     "en": "It just looks bigger."
+    },
+    {
+     "who": "男孩",
+     "tag": "surprised",
+     "text": "因為早上，太陽旁邊有山、有房子可以比！",
+     "en": "In the morning, the sun is next to hills and houses, so it looks big!"
+    },
+    {
+     "who": "女孩",
+     "tag": "excited",
+     "text": "中午，旁邊什麼都沒有，看起來就小！",
+     "en": "And at noon, there's nothing next to it, so it looks small!"
+    },
+    {
+     "who": "男孩",
+     "text": "那看起來大，不一定比較近。",
+     "en": "So looking bigger doesn't always mean closer."
+    }
+   ]
+  },
+  {
+   "scene": "同一天晚上，村子裡一間茅草屋頂、土牆的矮房子前面的空地，地上有三個草墊子；深藍色的夜空，有幾顆星星。白天的頁面都不畫太陽；晚上的月亮可以直接畫，孩子可以看月亮。月亮在很高的天上。畫面右下角另外放一個小圓框（這是旁白對小讀者說的比喻，不是故事裡的東西，不要連到任何角色；故事裡的人沒有手電筒）。",
+   "act": "女孩舉起一隻手發問。孔子歪著頭，一邊想一邊用手臂比給他們看：一隻手臂歪著伸向地面，另一隻手臂從頭頂直著往下比。他頭上的想像泡泡分左右兩半：左半是早上，太陽位置很低，光歪著照到地上，照到的那一塊又長又淡；右半是中午，太陽在頭頂，光直著照下來，照到的那一塊又小又亮，地上的小人在擦汗。男孩也學孔子用手臂比。右下角的小圓框裡：一支現在的手電筒，左邊直著往下照，地上一個很亮的小圓；右邊歪著照，地上一塊拉長、變淡的光。",
+   "lines": [
+    {
+     "who": "女孩",
+     "text": "那我的越近越熱呢？",
+     "en": "Then what about my 'closer means hotter'?"
+    },
+    {
+     "who": "孔子",
+     "tag": "gentle",
+     "text": "早上，光歪著照。中午，光從頭頂直著照下來。會不會這樣才熱？",
+     "en": "In the morning, the light comes in at a tilt. At noon, it shines straight down from above. Could that be why noon is hot?"
+    },
+    {
+     "who": "女孩",
+     "tag": "surprised",
+     "text": "那中午熱，也不一定比較近！",
+     "en": "So being hotter doesn't always mean closer, either!"
+    },
+    {
+     "who": "旁白",
+     "text": "你玩過手電筒嗎？直著照，一小塊很亮。",
+     "en": "Have you ever played with a flashlight? Shine it straight down, and you get a small, bright spot."
+    },
+    {
+     "who": "旁白",
+     "text": "歪著照，光散開，就比較不亮。太陽也一樣。",
+     "en": "Tilt it, and the light spreads out, so it isn't as bright. The sun works the same way."
+    }
+   ]
+  },
+  {
+   "scene": "同一天晚上，村子裡一間茅草屋頂、土牆的矮房子前面的空地，地上有三個草墊子；深藍色的夜空，有幾顆星星。白天的頁面都不畫太陽；晚上的月亮可以直接畫，孩子可以看月亮。很圓的月亮在很高的天上，地上有三個人的影子。畫面一角另外放一個小圓框（這是旁白對小讀者說的答案，不要連到任何角色）。",
+   "act": "男孩和女孩面對面，手拉著手，兩個人都仰著頭笑，女孩的短辮子翹起來，男孩笑得眼睛瞇起來。孔子坐在兩個人後面的草墊子上，摸著鬍子，也笑得眼睛瞇成一條線。小圓框裡：左邊一顆藍綠色的小地球，右邊很遠的地方一顆黃色的太陽；地球上站著「早上」和「中午」兩個小人，各拉一條虛線到太陽，兩條線一樣長。",
+   "lines": [
+    {
+     "who": "男孩",
+     "tag": "excited",
+     "text": "會不會，早上和中午一樣遠？",
+     "en": "What if the sun is just as far away in the morning as it is at noon?"
+    },
+    {
+     "who": "女孩",
+     "tag": "laughing",
+     "text": "那就不用吵啦！",
+     "en": "Then we don't have to argue anymore!"
+    },
+    {
+     "who": "旁白",
+     "text": "三個人都笑了。",
+     "en": "And all three of them laughed."
+    },
+    {
+     "who": "旁白",
+     "text": "很久以後，大家才知道，早上和中午，太陽差不多一樣遠。",
+     "en": "A long, long time later, people found out. In the morning and at noon, the sun is just about the same distance away."
     }
    ]
   }
