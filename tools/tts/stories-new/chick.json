@@ -2,9 +2,9 @@
  "id": "chick",
  "title": "小雞出生了",
  "title_en": "A Chick Is Born",
- "size": "短",
+ "size": "中",
  "roles": {
-  "小花": "到奶奶家玩的五歲小女孩，好奇愛問，聲音清亮，看到小雞出生時又驚訝又開心，忍不住咯咯笑。",
+  "小花": "放暑假住在奶奶家的五歲小女孩，好奇愛問，聲音清亮，看到小雞出生時又驚訝又開心，忍不住咯咯笑。",
   "母雞": "奶奶家的棕色母雞，溫柔又有耐心的年輕女聲，說話輕輕的，小雞要出來時又興奮又驕傲。",
   "小雞": "剛出生的小雞，聲音又尖又細、可愛活潑，第一次見到媽媽好興奮。"
  },
@@ -25,7 +25,7 @@
  "polyphones": [
   {
    "char": "殼",
-   "where": "第5頁『蛋殼』兩次，第6頁『蛋殼』",
+   "where": "第5頁『蛋殼』兩次，第6頁『蛋殼』，第7頁『蛋殼』",
    "read": "ké"
   },
   {
@@ -40,7 +40,7 @@
   },
   {
    "char": "喀",
-   "where": "第5頁、第6頁『喀！』（蛋殼裂開的聲音）",
+   "where": "第5頁、第7頁、第9頁、第10頁『喀！』（蛋殼裂開的聲音）",
    "read": "kā"
   }
  ],
@@ -51,8 +51,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小花到奶奶家玩，跑去看雞舍。",
-     "en": "Lily is visiting Grandma's farm. She runs to see the henhouse."
+     "text": "放暑假了，小花住在奶奶家，跑去看雞舍。",
+     "en": "It's summer vacation, and Daisy is staying at Grandma's farm. She runs to see the henhouse."
     },
     {
      "who": "旁白",
@@ -96,8 +96,8 @@
     },
     {
      "who": "母雞",
-     "text": "大約要二十一天喔。",
-     "en": "In about twenty-one days."
+     "text": "大約要二十一天，就是睡二十一個晚上喔。",
+     "en": "In about twenty-one days. That's twenty-one sleeps!"
     }
    ]
   },
@@ -136,7 +136,7 @@
     {
      "who": "旁白",
      "text": "第二十一天，小花把耳朵貼近雞窩。",
-     "en": "On day twenty-one, Lily puts her ear close to the nest."
+     "en": "On day twenty-one, Daisy puts her ear close to the nest."
     },
     {
      "who": "旁白",
@@ -169,8 +169,13 @@
     {
      "who": "母雞",
      "tag": "proud",
-     "text": "小雞嘴巴上有個小尖角，可以啄破蛋殼。",
-     "en": "My chick has a tiny egg tooth on the tip of his beak. It helps him peck through the shell."
+     "text": "小雞嘴巴上，有一個小尖角。",
+     "en": "My chick has a tiny egg tooth on his beak."
+    },
+    {
+     "who": "母雞",
+     "text": "叩！叩！就用它來啄蛋殼！",
+     "en": "Tap! Tap! He uses it to peck the shell!"
     },
     {
      "who": "旁白",
@@ -186,8 +191,41 @@
    ]
   },
   {
+   "scene": "雞窩的特寫，稻草和五顆淺棕色的蛋，其中一顆破了一個小洞。",
+   "act": "破洞裡的小黃嘴巴停下來，好像累得在喘氣；小花伸出一根手指，想去拿掉蛋殼；母雞張開一邊翅膀，輕輕擋在小花的手前面，眼神很溫柔；接著小花把手收回來，雙手握拳放在胸前，在旁邊加油。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小雞啄了好久，好累喔。",
+     "en": "The chick pecks and pecks. He's getting so tired."
+    },
+    {
+     "who": "小花",
+     "tag": "worried",
+     "text": "小雞，我來幫你把蛋殼打開！",
+     "en": "Little chick, I'll open the shell for you!"
+    },
+    {
+     "who": "旁白",
+     "text": "母雞張開翅膀，溫柔地擋住小花的手。",
+     "en": "Mother Hen gently spreads her wing in front of Daisy's hand."
+    },
+    {
+     "who": "母雞",
+     "tag": "gentle",
+     "text": "不行喔。小雞要自己啄出來，才會有力氣。",
+     "en": "No, dear. He has to peck his own way out. That's how he gets strong."
+    },
+    {
+     "who": "小花",
+     "text": "好，那我在旁邊幫他加油！",
+     "en": "Okay. Then I'll cheer for him right here!"
+    }
+   ]
+  },
+  {
    "scene": "雞窩的特寫。",
-   "act": "蛋殼裂成兩半，一隻小雞跌坐在稻草上，全身濕透，細細的羽毛黏在身上，腳還站不穩，張著嘴巴叫；母雞低頭看他；小花張大嘴巴，忍不住笑出來。",
+   "act": "蛋殼裂成兩半，一隻小雞跌坐在稻草上，全身濕透，細細的羽毛黏在身上，腳還站不穩，張著嘴巴叫；母雞低頭看他，得意地挺起胸膛；小花張大嘴巴，忍不住笑出來。",
    "lines": [
     {
      "who": "旁白",
@@ -199,6 +237,12 @@
      "tag": "excited",
      "text": "媽媽！我出來了！",
      "en": "Mama! I'm out!"
+    },
+    {
+     "who": "母雞",
+     "tag": "proud",
+     "text": "你好棒，自己出來了！",
+     "en": "Good job! You came out all by yourself!"
     },
     {
      "who": "小花",
@@ -236,13 +280,80 @@
    ]
   },
   {
+   "scene": "雞舍裡，第二天早上，陽光照在稻草上；雞窩裡有四顆還沒破的淺棕色蛋，旁邊站著昨天出生、毛已經乾了的黃色小雞。",
+   "act": "一顆蛋裂開，第二隻濕濕的小雞鑽出來；接著另外兩顆蛋同時裂開，第三隻、第四隻小雞一起探出頭，頭上還頂著蛋殼；小花趴在雞窩旁邊，伸出手指在數，笑得好開心；母雞張開翅膀，把小雞們圍在身邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，其他的蛋也開始敲門了。",
+     "en": "The next morning, the other eggs start knocking too."
+    },
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩！喀！",
+     "en": "Tap, tap, tap! Crack!"
+    },
+    {
+     "who": "小花",
+     "tag": "excited",
+     "text": "第二隻小雞！",
+     "en": "Chick number two!"
+    },
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩！喀！喀！",
+     "en": "Tap, tap, tap! Crack! Crack!"
+    },
+    {
+     "who": "小花",
+     "tag": "laughing",
+     "text": "哇，第三隻和第四隻，一起出來了！",
+     "en": "Whoa! Numbers three and four came out together!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個雞窩，只剩最後一顆淺棕色的蛋，四隻小雞擠在母雞旁邊。",
+   "act": "小花把臉湊近最後一顆蛋，皺著眉頭、有點擔心；四隻小雞也伸長脖子一起看；母雞溫柔地看著那顆蛋。接著蛋殼裂開，第五隻小雞鑽出來；小花跳起來，舉起五根手指歡呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，最後一顆蛋，一點聲音也沒有。",
+     "en": "But the last egg doesn't make a sound."
+    },
+    {
+     "who": "小花",
+     "tag": "worried",
+     "text": "小雞，你在裡面嗎？",
+     "en": "Little chick, are you in there?"
+    },
+    {
+     "who": "母雞",
+     "tag": "gentle",
+     "text": "別急，他需要多一點時間。",
+     "en": "Don't worry. He just needs a little more time."
+    },
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩！喀！",
+     "en": "Tap, tap, tap! Crack!"
+    },
+    {
+     "who": "小花",
+     "tag": "excited",
+     "text": "第五隻！大家都出來了！",
+     "en": "Number five! Everyone's out!"
+    }
+   ]
+  },
+  {
    "scene": "奶奶家的後院草地，陽光很亮，地上撒著小米；遠處是紅屋頂的雞舍。",
    "act": "母雞走在前面，五隻黃色小雞排成一排跟在後面，小花也彎著腰、學小雞走路，跟在最後面；奶奶（白頭髮、藍色圍裙）站在遠處的門口笑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "第二天，五隻小雞全都出生了。",
-     "en": "By the next day, all five chicks have hatched."
+     "text": "五隻小雞，都變成了黃色的小毛球。",
+     "en": "Now all five chicks are fluffy little yellow balls."
     },
     {
      "who": "小雞",
@@ -259,7 +370,7 @@
     {
      "who": "旁白",
      "text": "母雞在前面，小雞在後面，小花跟在最後面！",
-     "en": "Mother Hen leads the way. The chicks follow behind. And Lily follows at the very end!"
+     "en": "Mother Hen leads the way. The chicks follow behind. And Daisy follows at the very end!"
     }
    ]
   }

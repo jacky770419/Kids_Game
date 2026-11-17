@@ -40,13 +40,8 @@
   },
   {
    "char": "什",
-   "where": "第11頁『什麼衣服』",
+   "where": "第2、4、5、7、10頁『你今天穿什麼』，第7頁『什麼都沒穿』，第11頁『穿什麼呢』",
    "read": "shén"
-  },
-  {
-   "char": "會",
-   "where": "第8頁『會下雪』『不會下雪』",
-   "read": "huì"
   }
  ],
  "pages": [
@@ -56,8 +51,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "公園裡，有一棵好老的鳳凰木。",
-     "en": "In the park stands a very old flame tree."
+     "text": "公園裡，有一棵好老的大樹，叫做鳳凰木。",
+     "en": "In the park stands a very old, very big tree. It is called a flame tree."
     },
     {
      "who": "旁白",
@@ -82,10 +77,16 @@
      "en": "It's spring, and new buds are popping out on the branches."
     },
     {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "大樹爺爺，你今天穿什麼？",
+     "en": "Grandpa Tree, what are you wearing today?"
+    },
+    {
      "who": "大樹爺爺",
      "tag": "happy",
-     "text": "小晴，妳看！我穿上綠色的新衣服了！",
-     "en": "Lily, look! I'm wearing my new green clothes!"
+     "text": "我穿綠色的新衣服！",
+     "en": "My new green clothes!"
     },
     {
      "who": "小晴",
@@ -96,8 +97,8 @@
     {
      "who": "爸爸",
      "tag": "gentle",
-     "text": "妳聽，小鳥也回來唱歌了。",
-     "en": "Listen, the birds are back and singing."
+     "text": "妳聽，小鳥在樹上唱歌了。",
+     "en": "Listen, the birds are singing in the branches."
     }
    ]
   },
@@ -139,10 +140,16 @@
      "en": "A few days later, Grandpa Tree is covered in red flowers."
     },
     {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "大樹爺爺，你今天穿什麼？",
+     "en": "Grandpa Tree, what are you wearing today?"
+    },
+    {
      "who": "大樹爺爺",
      "tag": "proud",
-     "text": "妳看，我戴上紅色的花帽子了！",
-     "en": "Look, now I'm wearing a hat of red flowers!"
+     "text": "我戴紅色的花帽子！",
+     "en": "A hat of red flowers!"
     },
     {
      "who": "旁白",
@@ -159,7 +166,7 @@
   },
   {
    "scene": "同一個公園，秋天的下午，天空很高很藍，風吹過來，大樹爺爺的葉子變成金黃色。",
-   "act": "小晴穿上淡藍色薄外套，頭髮被風吹起來；大樹爺爺全身換成黃色的葉子，像穿了一件金黃色的衣服；爸爸在旁邊拉好小晴的外套拉鍊。",
+   "act": "小晴穿上淡藍色薄外套，頭髮被風吹起來，抬頭看著大樹爺爺問問題；大樹爺爺全身換成黃色的葉子，像穿了一件金黃色的衣服，得意地笑；爸爸在旁邊拉好小晴的外套拉鍊。",
    "lines": [
     {
      "who": "旁白",
@@ -168,21 +175,21 @@
     },
     {
      "who": "小晴",
-     "tag": "surprised",
-     "text": "大樹爺爺，你的葉子變黃了！",
-     "en": "Grandpa Tree, your leaves have turned yellow!"
+     "tag": "curious",
+     "text": "大樹爺爺，你今天穿什麼？",
+     "en": "Grandpa Tree, what are you wearing today?"
     },
     {
      "who": "大樹爺爺",
      "tag": "happy",
-     "text": "對呀，我換上黃色的衣服了！",
-     "en": "That's right! I've put on my yellow clothes!"
+     "text": "我穿黃色的衣服！",
+     "en": "My yellow clothes!"
     },
     {
-     "who": "爸爸",
-     "tag": "gentle",
-     "text": "秋天的風，吹起來好舒服。",
-     "en": "The autumn breeze feels so nice."
+     "who": "小晴",
+     "tag": "surprised",
+     "text": "哇，你的葉子都變黃了！",
+     "en": "Wow, your leaves have all turned yellow!"
     }
    ]
   },
@@ -220,9 +227,15 @@
     },
     {
      "who": "小晴",
-     "tag": "surprised",
-     "text": "大樹爺爺，你的衣服呢？",
-     "en": "Grandpa Tree, where did your clothes go?"
+     "tag": "curious",
+     "text": "大樹爺爺，你今天穿什麼？",
+     "en": "Grandpa Tree, what are you wearing today?"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "sleepy",
+     "text": "我呀，什麼都沒穿！",
+     "en": "Me? Nothing at all!"
     },
     {
      "who": "大樹爺爺",
@@ -233,14 +246,14 @@
    ]
   },
   {
-   "scene": "同一個公園，冬天，冷風吹著；畫面右上角畫一個雲朵形狀的想像泡泡，泡泡裡是一座很高的山，山頂是白色的雪；公園四周看不到雪。",
-   "act": "小晴縮著脖子，指著旁邊綠色的大榕樹，一臉不懂；爸爸蹲下來，指著想像泡泡裡山頂上的白雪；大樹爺爺半睜著眼睛在聽。",
+   "scene": "同一個公園，冬天，冷風吹著；光禿禿的鳳凰木旁邊，有一棵葉子還是綠油油的大榕樹。",
+   "act": "小晴縮著脖子，指著旁邊綠色的大榕樹，一臉不懂；大樹爺爺半睜著眼睛，用一根樹枝指指榕樹，再指指自己光禿禿的樹枝，笑咪咪的；爸爸蹲在小晴旁邊一起聽。",
    "lines": [
     {
      "who": "小晴",
      "tag": "curious",
-     "text": "可是，旁邊的榕樹，葉子都沒有掉耶！",
-     "en": "But the banyan tree next to you still has all its leaves!"
+     "text": "可是，旁邊那棵樹，葉子都沒有掉耶！",
+     "en": "But that tree next to you hasn't lost any leaves!"
     },
     {
      "who": "大樹爺爺",
@@ -249,16 +262,15 @@
      "en": "Every tree is different, you know."
     },
     {
-     "who": "小晴",
-     "tag": "curious",
-     "text": "爸爸，冬天這麼冷，這裡會下雪嗎？",
-     "en": "Daddy, it's so cold. Will it snow here?"
+     "who": "大樹爺爺",
+     "text": "那棵榕樹，一整年都穿綠衣服。",
+     "en": "That banyan tree wears green all year round."
     },
     {
-     "who": "爸爸",
-     "tag": "gentle",
-     "text": "我們這裡不會下雪。要到很高的山上，才會看到雪。",
-     "en": "Not down here. You have to go up a very tall mountain to see snow."
+     "who": "大樹爺爺",
+     "tag": "laughing",
+     "text": "我呀，最喜歡換衣服！",
+     "en": "Me? I love changing my clothes!"
     }
    ]
   },
@@ -303,14 +315,26 @@
     {
      "who": "小晴",
      "tag": "excited",
-     "text": "大樹爺爺，春天來了！你醒了嗎？",
-     "en": "Grandpa Tree, spring is here! Are you awake?"
+     "text": "春天來了！你醒了嗎？",
+     "en": "Spring is here! Are you awake?"
     },
     {
      "who": "大樹爺爺",
      "tag": "happy",
-     "text": "醒了，醒了！小晴，妳看我的新衣服！",
-     "en": "I'm awake, I'm awake! Lily, look at my new clothes!"
+     "text": "醒了，醒了！",
+     "en": "I'm awake, I'm awake!"
+    },
+    {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "大樹爺爺，你今天穿什麼？",
+     "en": "Grandpa Tree, what are you wearing today?"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "happy",
+     "text": "我穿綠色的新衣服！",
+     "en": "My new green clothes!"
     }
    ]
   },
@@ -337,8 +361,8 @@
     },
     {
      "who": "旁白",
-     "text": "小朋友，你家附近的大樹，現在穿什麼衣服呢？",
-     "en": "What is the big tree near your home wearing right now?"
+     "text": "小朋友，你家附近的大樹，今天穿什麼呢？",
+     "en": "What is the big tree near your home wearing today?"
     }
    ]
   }

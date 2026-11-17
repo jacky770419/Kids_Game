@@ -7,7 +7,8 @@
   "小米": "就是《太陽系一家人》裡的小米：五歲的小女孩，聲音清亮、好奇愛問，玩不夠時有點撒嬌，發現答案時又驚又喜。",
   "小鐵": "小米的銀白色機器狗，聲音尖細可愛、精神十足，每句話前面愛先叫一聲「汪」，愛搶著說話，有點冒失好笑。",
   "地球": "溫柔的地球媽媽，說話輕柔、慢慢的、帶著笑，像在哄小孩，讓人安心。",
-  "太陽公公": "慈祥的太陽公公，老爺爺的聲音，宏亮溫暖、慢慢說，愛笑。"
+  "太陽公公": "慈祥的太陽公公，老爺爺的聲音，宏亮溫暖、慢慢說，愛笑。",
+  "山姆": "住在地球另一邊的小男孩，五歲左右，剛起床、精神很好，聲音活潑開朗，愛笑。"
  },
  "cast": {
   "小米": {
@@ -25,27 +26,31 @@
   "太陽公公": {
    "find": "Hardy",
    "en": "Grandfather Joe"
+  },
+  "山姆": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
   }
  },
  "polyphones": [
   {
    "char": "轉",
-   "where": "第4頁到第11頁『轉圈』『轉回』『轉一圈』『轉到』，共十多處",
+   "where": "第4頁到第12頁『轉圈』『轉走』『轉回』『轉一圈』『轉到』，共十多處",
    "read": "zhuàn"
   },
   {
    "char": "暈",
-   "where": "第8頁『好暈』『不會暈』",
+   "where": "第9頁『好暈』『不會暈』兩次",
    "read": "yūn"
   },
   {
    "char": "會",
-   "where": "第2頁、第3頁『會黑』，第8頁『不會暈』",
+   "where": "第2頁、第3頁『會黑』，第9頁『不會暈』兩次，第11頁『我會把』",
    "read": "huì"
   },
   {
    "char": "什",
-   "where": "第2頁、第3頁『為什麼』",
+   "where": "第2頁、第3頁『為什麼』，第4頁『在做什麼』",
    "read": "shén"
   },
   {
@@ -159,7 +164,7 @@
   },
   {
    "scene": "同樣的地球，近一點：亮的一半上面畫一個小太陽符號，暗的一半上面畫一個小月亮和星星符號，中間有一條明暗交界。",
-   "act": "地球媽媽一邊轉，一邊用溫柔的眼神指給大家看；小鐵把臉貼在窗戶上，一下看亮的那邊、一下看暗的那邊。",
+   "act": "地球媽媽一邊轉，一邊用溫柔的眼神指給大家看；小鐵把臉貼在窗戶上，頭一下轉向亮的那邊、一下轉向暗的那邊。",
    "lines": [
     {
      "who": "地球",
@@ -171,11 +176,6 @@
      "who": "地球",
      "text": "另一邊照不到陽光，很黑，就是晚上。",
      "en": "The other side gets no sunlight. It's dark. That's nighttime."
-    },
-    {
-     "who": "旁白",
-     "text": "小鐵一下看這邊，一下看那邊。",
-     "en": "Tinbo looks one way, then the other."
     },
     {
      "who": "小鐵",
@@ -206,18 +206,24 @@
      "tag": "gentle",
      "text": "對呀，所以你們那裡，天黑了。",
      "en": "That's right. That's why it's getting dark where you live."
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "原來太陽公公沒有走，是我家轉走了！",
+     "en": "So Grandpa Sun didn't go anywhere. My home turned away from him!"
     }
    ]
   },
   {
-   "scene": "同一個地球，另一邊：美洲剛從暗的那一邊轉進亮的那一邊，天邊露出橘黃色的陽光；放大的小圓圈裡，一個小男孩在床上伸懶腰，窗外的天正在變亮。",
+   "scene": "同一個地球，另一邊：美洲剛從暗的那一邊轉進亮的那一邊，天邊露出橘黃色的陽光。",
    "act": "小米指著地球另一邊剛亮起來的地方，好奇地歪著頭；小鐵的天線尾巴豎起來。",
    "lines": [
     {
      "who": "小米",
      "tag": "curious",
      "text": "那邊亮起來的地方，是哪裡？",
-     "en": "What's that place over there that's getting light?"
+     "en": "Where's that, over there? It's getting light!"
     },
     {
      "who": "地球",
@@ -230,6 +236,41 @@
      "tag": "surprised",
      "text": "我們這裡天黑，他們那裡天亮了！",
      "en": "It's getting dark for us, and it's getting light for them!"
+    }
+   ]
+  },
+  {
+   "scene": "火箭裡面，圓窗戶外面是慢慢轉的地球：一半亮、一半暗。小鐵的兩隻藍眼睛射出藍光，在火箭裡投出一個圓圓的小螢幕；螢幕裡是地球另一邊的早上：一間白色小房子的房間，窗外的天剛變亮，太陽剛升起來。",
+   "act": "山姆第一次出場：五歲左右的小男孩，棕色捲頭髮、臉上有雀斑，穿綠色條紋睡衣，頭髮睡得翹起來，坐在床上伸懶腰、對著螢幕揮手。小米穿黃色連身衣，對著螢幕揮手；小鐵坐得挺挺的，眼睛發著藍光當投影機，天線尾巴搖來搖去。畫面左邊小米這一半是暗藍色的晚上色調，右邊山姆那一半是金黃色的早上色調。",
+   "lines": [
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪！我來打視訊電話！",
+     "en": "Woof! I'll make a video call!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鐵的眼睛變成螢幕，出現一個小男孩。",
+     "en": "Tinbo's eyes turn into a little screen, and there's a boy on it."
+    },
+    {
+     "who": "山姆",
+     "tag": "happy",
+     "text": "嗨！我是山姆。早安！",
+     "en": "Hi! I'm Sam. Good morning!"
+    },
+    {
+     "who": "小米",
+     "tag": "laughing",
+     "text": "早安！可是我家那邊，天黑了。",
+     "en": "Good morning! But it's getting dark at my house."
+    },
+    {
+     "who": "山姆",
+     "tag": "laughing",
+     "text": "那，我這邊早安，妳那邊晚安！",
+     "en": "Then it's good morning over here, and good night over there!"
     }
    ]
   },
@@ -250,21 +291,16 @@
      "en": "Woof! I'll spin around too! Whoa, I'm dizzy!"
     },
     {
-     "who": "旁白",
-     "text": "小米笑著問地球：",
-     "en": "Mimi giggles and asks the Earth,"
-    },
-    {
      "who": "小米",
-     "tag": "curious",
+     "tag": "laughing",
      "text": "地球，妳轉了那麼多圈，不會暈嗎？",
      "en": "Earth, you spin so much. Don't you get dizzy?"
     },
     {
      "who": "地球",
-     "tag": "laughing",
-     "text": "不會，我轉圈又慢又穩，你們在我身上也不會暈喔。",
-     "en": "Not at all. I spin slowly and smoothly, so you don't get dizzy riding on me either."
+     "tag": "gentle",
+     "text": "不會喔。我轉圈又慢又穩，你們也不會暈。",
+     "en": "Not at all. I spin slowly and smoothly, so you don't get dizzy either."
     }
    ]
   },
@@ -274,8 +310,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "回到家，小米拿出一顆地球皮球，貼上一顆小紅星。",
-     "en": "Back home, Mimi gets out a ball that looks like the Earth and sticks a little red star on it."
+     "text": "火箭飛回家，小米拿出地球皮球，貼上一顆小紅星。",
+     "en": "The rocket flies home. Mimi gets out a ball that looks like the Earth and sticks a little red star on it."
     },
     {
      "who": "小鐵",
@@ -291,7 +327,7 @@
     {
      "who": "小米",
      "tag": "happy",
-     "text": "小紅星轉到亮的地方，是白天；轉到黑的地方，是晚上！",
+     "text": "小紅星轉到亮的地方是白天，轉到黑的地方是晚上！",
      "en": "When the red star spins into the light, it's day. When it spins into the dark, it's night!"
     }
    ]
@@ -320,14 +356,14 @@
     {
      "who": "小鐵",
      "tag": "whispering",
-     "text": "汪，地球另一邊的小朋友，早安！",
-     "en": "Woof. Good morning to the children on the other side of the world!"
+     "text": "汪，山姆，早安！",
+     "en": "Woof. Good morning, Sam!"
     }
    ]
   },
   {
    "scene": "早上，小米的房間，金黃色的陽光從窗戶照進來，照在床上；窗外的天空是淡藍色的，太陽公公在窗外笑。",
-   "act": "小米坐起來伸懶腰，張開雙手迎接陽光；小鐵在床上跳來跳去；太陽公公在窗外眨眼睛。最後一句是對著聽故事的小孩說。",
+   "act": "小米坐起來伸懶腰，張開雙手迎接陽光，再對著窗外遠方揮揮手，好像在跟山姆說晚安；小鐵在床上跳來跳去；太陽公公在窗外眨眼睛。最後一句是對著聽故事的小孩說。",
    "lines": [
     {
      "who": "太陽公公",
@@ -340,6 +376,12 @@
      "tag": "excited",
      "text": "早安，太陽公公！我們家轉回來了！",
      "en": "Good morning, Grandpa Sun! Our home spun back around!"
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "山姆那邊，要說晚安了！",
+     "en": "And over at Sam's house, it's time to say good night!"
     },
     {
      "who": "旁白",

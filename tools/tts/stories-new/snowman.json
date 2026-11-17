@@ -5,7 +5,7 @@
  "size": "短",
  "roles": {
   "小雪人": "小女孩堆出來的小雪人，小男孩的聲音，天真好動、愛笑，有點冒失，問問題時好奇，變成小水滴後又輕快又興奮。",
-  "小女孩": "五歲左右的小女孩，就是《小水滴變雪花》裡在合歡山接住雪花的女孩；聲音清亮甜美，玩的時候很興奮，說再見時有點捨不得。",
+  "小女孩": "五歲左右的小女孩，就是《小水滴變雪花》裡在合歡山接住雪花的女孩；聲音清亮甜美，玩的時候很興奮，說再見時有點捨不得，春天在山下好想念小雪人。",
   "太陽": "春天溫柔的太陽，像溫柔的阿姨，說話輕輕慢慢、暖暖的，讓人安心。"
  },
  "cast": {
@@ -25,13 +25,13 @@
  "polyphones": [
   {
    "char": "會",
-   "where": "第2頁『會說話』，第4頁『會化掉』，第5頁『會不見』",
+   "where": "第2頁『會說話』，第4頁『會化掉』，第5頁『會不見』『會變成』",
    "read": "huì"
   },
   {
-   "char": "行",
-   "where": "第4頁『不行』，第5頁『旅行』",
-   "read": "xíng"
+   "char": "誰",
+   "where": "第2頁『妳是誰呀』",
+   "read": "shéi"
   }
  ],
  "pages": [
@@ -46,8 +46,8 @@
     },
     {
      "who": "旁白",
-     "text": "她滾了一顆大雪球，又滾了一顆小雪球。",
-     "en": "She rolls a big snowball, and then a little one."
+     "text": "她滾了一大一小兩顆雪球。",
+     "en": "She rolls one big snowball and one little one."
     },
     {
      "who": "小女孩",
@@ -80,8 +80,8 @@
     {
      "who": "小女孩",
      "tag": "surprised",
-     "text": "哇！小雪人會說話！",
-     "en": "Wow! A talking snowman!"
+     "text": "哇，你會說話！我是你的好朋友！",
+     "en": "Wow, you can talk! I'm your best friend!"
     }
    ]
   },
@@ -92,8 +92,8 @@
     {
      "who": "小女孩",
      "tag": "excited",
-     "text": "小雪人，我們來比賽跳高！",
-     "en": "Snowman, let's see who can jump higher!"
+     "text": "我們來比賽跳高！",
+     "en": "Let's see who can jump higher!"
     },
     {
      "who": "旁白",
@@ -108,36 +108,42 @@
     },
     {
      "who": "旁白",
-     "text": "小女孩笑著，把鼻子插回去。",
+     "text": "小女孩笑著幫他插回去。",
      "en": "Giggling, the girl pops it back on."
     }
    ]
   },
   {
    "scene": "太陽要下山了，雪地變成淡橘色，小木屋的窗戶亮著黃色的燈，屋前停著一輛車。",
-   "act": "小女孩抱著小雪人，臉貼著雪人圓圓的身體，有點捨不得；小雪人用樹枝手拍拍她的背，對她笑。",
+   "act": "小女孩抱著小雪人，臉貼著雪人圓圓的身體，有點捨不得；接著她伸出小指頭，小雪人也伸出樹枝手，兩個人勾在一起約定，一起笑了。",
    "lines": [
     {
      "who": "旁白",
-     "text": "太陽要下山了，小女孩要回家了。",
-     "en": "The sun is going down. It's time for the girl to go home."
+     "text": "天快黑了，小女孩要回家了。",
+     "en": "It's getting dark. Time for the girl to go home."
     },
     {
      "who": "小女孩",
      "tag": "sad",
-     "text": "小雪人，跟我回家好不好？",
-     "en": "Snowman, will you come home with me?"
+     "text": "好想帶你回家喔。",
+     "en": "I wish I could take you home with me."
     },
     {
      "who": "小雪人",
      "tag": "gentle",
-     "text": "不行喔，山下太暖了，我會化掉。",
-     "en": "I can't. It's too warm down there. I'd melt."
+     "text": "我也想，可是我怕熱，會化掉喔。",
+     "en": "I wish I could go! But I'm afraid of the heat. I'd melt!"
     },
     {
      "who": "小女孩",
-     "text": "那明年冬天，我再來看你！",
-     "en": "Then I'll come back and see you next winter!"
+     "text": "說好了，明年冬天見！",
+     "en": "It's a promise! See you next winter!"
+    },
+    {
+     "who": "小雪人",
+     "tag": "happy",
+     "text": "說好了，明年冬天見！",
+     "en": "It's a promise! See you next winter!"
     }
    ]
   },
@@ -147,88 +153,83 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "冬天過去，太陽一天比一天暖。",
-     "en": "Winter goes by, and each day the sun shines a little warmer."
-    },
-    {
-     "who": "太陽",
-     "tag": "gentle",
-     "text": "小雪人，春天來了喔。",
-     "en": "Little snowman, spring is here."
+     "text": "春天，太陽一天比一天暖。",
+     "en": "In spring, each day the sun shines a little warmer."
     },
     {
      "who": "小雪人",
      "tag": "worried",
-     "text": "太陽，我會不見嗎？",
-     "en": "Sun, am I going to disappear?"
+     "text": "我會不見嗎？我跟小女孩說好了呀！",
+     "en": "Am I going to disappear? But I made a promise to the girl!"
     },
     {
      "who": "太陽",
      "tag": "gentle",
-     "text": "不會的。你會變成小水滴，去旅行。",
-     "en": "No, you won't. You'll turn into little water drops and go on a trip."
+     "text": "別怕。你會變成小水滴，冬天再變回雪花。",
+     "en": "Don't worry. You'll turn into little water drops, and in winter, you'll come back as snow."
     }
    ]
   },
   {
    "scene": "同一片山坡，草地上的雪幾乎都化了，旁邊有一條小小的水流。",
-   "act": "小雪人慢慢變小，身上冒出一顆一顆亮晶晶的小水滴，每一顆小水滴都有小雪人的笑臉；一隻小鳥停在草地上，啄著留下來的紅蘿蔔，兩顆黑石頭躺在草地上。",
+   "act": "一隻小鳥停在草地上，歪著頭看小雪人的紅蘿蔔鼻子；小雪人已經變小了一點，用樹枝手把紅蘿蔔推給小鳥，笑咪咪的；接著小雪人慢慢變小，身上冒出一顆一顆亮晶晶的小水滴，每一顆小水滴都有小雪人的笑臉，兩顆黑石頭躺在草地上。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小雪人越變越小，變成好多小水滴。",
-     "en": "Little by little, the snowman gets smaller and turns into lots of tiny water drops."
+     "text": "小鳥飛來，看著紅蘿蔔。",
+     "en": "A little bird flies down and looks at the carrot."
     },
     {
      "who": "小雪人",
-     "tag": "excited",
-     "text": "我好輕，像一根羽毛！",
-     "en": "I feel as light as a feather!"
+     "tag": "happy",
+     "text": "小鳥，紅蘿蔔送給你吃！",
+     "en": "Little bird, you can have my carrot!"
     },
     {
      "who": "旁白",
-     "text": "小鳥飛來，啄了一口紅蘿蔔。",
-     "en": "A little bird flies down and takes a bite of the carrot."
+     "text": "小雪人越變越小，變成了小水滴。",
+     "en": "Little by little, the snowman gets smaller and turns into tiny water drops."
     }
    ]
   },
   {
    "scene": "山下的小溪流過小女孩住的小鎮，溪邊有綠色的草、小橋，遠處是房子和山。",
-   "act": "帶著小雪人笑臉的小水滴，坐在溪水上往下滑，像溜滑梯，對岸邊揮手；小女孩（春天變暖了，換成黃色的薄外套，頭上一樣戴紅色毛線帽，好認出是同一個女孩）蹲在溪邊，把手伸進水裡，好像聽到了什麼，歪著頭笑。",
+   "act": "小女孩（春天變暖了，換成黃色的薄外套，頭上一樣戴紅色毛線帽，好認出是同一個女孩）坐在溪邊的草地上（離水有一段距離），托著下巴，看著遠方還有一點白雪的高山，好想念小雪人；溪水裡一顆帶著小雪人笑臉的小水滴，跳出水面對她揮手；小女孩低頭看見了，眼睛睜得好大，笑了起來。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小水滴跳進小溪，一路流到山下。",
-     "en": "The little drops hop into a stream and flow all the way down the mountain."
+     "text": "小女孩坐在山下的小溪邊。",
+     "en": "The girl sits by the stream down in her town."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sad",
+     "text": "小雪人，我好想你喔。",
+     "en": "Snowman, I miss you so much."
     },
     {
      "who": "旁白",
-     "text": "小溪流到小女孩住的小鎮。",
-     "en": "The stream flows into the little town where the girl lives."
+     "text": "小溪裡，一顆小水滴在揮手。",
+     "en": "In the stream, a little water drop is waving."
     },
     {
      "who": "小雪人",
      "tag": "excited",
-     "text": "嗨，是我！我變成小水滴了！",
-     "en": "Hi, it's me! I'm a little water drop now!"
+     "text": "嗨，是我！我流下山來看妳了！",
+     "en": "Hi, it's me! I flowed down the mountain to see you!"
     },
     {
      "who": "小女孩",
-     "tag": "surprised",
-     "text": "咦？小溪在跟我說話嗎？",
-     "en": "Huh? Is the stream talking to me?"
+     "tag": "happy",
+     "text": "小雪人！說好了，明年冬天見！",
+     "en": "Snowman! It's a promise! See you next winter!"
     }
    ]
   },
   {
    "scene": "第二年冬天，合歡山上又在下雪，雪地上有一間紅屋頂的小木屋；天上的雲裡，飄出一片一片的雪花。",
-   "act": "小女孩張開雙手跑在雪地上，一片帶著小雪人笑臉的雪花，停在她的紅手套上；小女孩又驚又喜，旁邊已經有一顆滾好的大雪球。",
+   "act": "小女孩張開雙手跑在雪地上，一片帶著小雪人笑臉的雪花，停在她的紅手套上；小女孩又驚又喜，旁邊已經有一顆滾好的大雪球，口袋裡露出一根新的紅蘿蔔。",
    "lines": [
-    {
-     "who": "旁白",
-     "text": "太陽把小水滴，送上了白雲。",
-     "en": "The sun lifts the little drops up into the clouds."
-    },
     {
      "who": "旁白",
      "text": "第二年冬天，雪花又飄下來了。",
@@ -239,6 +240,11 @@
      "tag": "excited",
      "text": "小雪人，我來了！",
      "en": "Snowman, I'm back!"
+    },
+    {
+     "who": "旁白",
+     "text": "雪花停在她的紅手套上。",
+     "en": "A snowflake lands on her red mitten."
     },
     {
      "who": "小雪人",

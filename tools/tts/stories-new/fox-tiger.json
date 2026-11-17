@@ -52,7 +52,7 @@
     {
      "who": "旁白",
      "text": "有一天，老虎按住了一隻小狐狸。",
-     "en": "One day, the tiger pinned a little fox under his giant paw."
+     "en": "One day, the tiger caught a little fox by the tail with his giant paw."
     },
     {
      "who": "老虎",
@@ -98,12 +98,12 @@
   },
   {
    "scene": "森林裡的小路，旁邊是一片草地，草地上有一隻小兔在吃草。",
-   "act": "狐狸鼻子朝天、大搖大擺走在前面；老虎跟在狐狸後面，好奇地東張西望。小兔第一次出場：白色的小兔子，長耳朵內側是粉紅色，嘴裡咬著一根草，看到老虎嚇得耳朵豎起來、草掉到地上。",
+   "act": "狐狸鼻子朝天、挺著胸膛走在前面；老虎跟在狐狸後面，好奇地東張西望。小兔第一次出場：白色的小兔子，長耳朵內側是粉紅色，嘴裡咬著一根草，看到老虎嚇得耳朵豎起來、草掉到地上。",
    "lines": [
     {
      "who": "旁白",
-     "text": "狐狸抬起頭，大搖大擺走在前面。",
-     "en": "The fox stuck his nose in the air and strutted ahead."
+     "text": "狐狸抬起頭，挺著胸，走在前面。",
+     "en": "The fox stuck his nose in the air, puffed out his chest, and marched ahead."
     },
     {
      "who": "旁白",
@@ -205,12 +205,12 @@
   },
   {
    "scene": "同一條小路，大石頭旁邊。",
-   "act": "小兔從大石頭後面探出頭，兩隻長耳朵先冒出來，小小聲地跟老虎說話；老虎蹲下來聽，聽完眼睛瞪大、尾巴豎起來，一臉恍然大悟。",
+   "act": "小兔一路躲在草叢裡偷偷跟過來，現在躲在大石頭後面，只探出頭和兩隻長耳朵，小小聲地跟老虎說話，說完又縮回石頭後面一半；老虎蹲下來聽，聽完眼睛瞪大、尾巴豎起來，一臉恍然大悟。",
    "lines": [
     {
      "who": "旁白",
-     "text": "這時候，小兔從石頭後面探出頭來。",
-     "en": "Just then, the little bunny peeked out from behind a big rock."
+     "text": "這時候，偷偷跟來的小兔，從石頭後面探出頭來。",
+     "en": "Just then, the little bunny, who had quietly followed them, peeked out from behind a big rock."
     },
     {
      "who": "小兔",
@@ -243,13 +243,13 @@
     },
     {
      "who": "旁白",
-     "text": "小狐狸借了老虎的威風，假裝自己很厲害。",
-     "en": "The little fox borrowed the tiger's power to make himself look mighty."
+     "text": "小狐狸假裝很厲害，其實大家怕的是老虎。",
+     "en": "The little fox was only pretending to be mighty. Everyone was really afraid of the tiger."
     },
     {
      "who": "旁白",
      "text": "這就叫做，狐假虎威。",
-     "en": "There's a saying for this: the fox borrows the tiger's might. It means acting big because someone strong is standing behind you."
+     "en": "There's a saying for this: the fox borrows the tiger's might."
     }
    ]
   }

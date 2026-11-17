@@ -35,23 +35,33 @@
  "polyphones": [
   {
    "char": "會",
-   "where": "第2頁『你會說話』，第3頁『她會用』，第10頁『喜鵲會來』，第12頁『都會見面』",
+   "where": "第2頁『你會說話』，第3頁『她會用』，第11頁『喜鵲會來』，第13頁『都會見面』",
    "read": "huì"
   },
   {
    "char": "鵲",
-   "where": "第10頁、第11頁、第12頁『喜鵲』『鵲橋』",
+   "where": "第11頁、第12頁、第13頁『喜鵲』『鵲橋』",
    "read": "què"
   },
   {
    "char": "載",
-   "where": "第8頁『白雲載著』『載著牛郎』",
+   "where": "第9頁『白雲載著』『載著牛郎』，第13頁『載牛郎來』",
    "read": "zài"
   },
   {
    "char": "夕",
-   "where": "第12頁『七夕』",
+   "where": "第14頁『七夕』",
    "read": "xì"
+  },
+  {
+   "char": "哪",
+   "where": "第5頁『我哪有那麼胖』，第7頁『去哪裡』",
+   "read": "nǎ"
+  },
+  {
+   "char": "誰",
+   "where": "第4頁『你是誰呀』",
+   "read": "shéi"
   }
  ],
  "pages": [
@@ -118,7 +128,7 @@
     {
      "who": "旁白",
      "text": "最美的那一位，叫做織女。",
-     "en": "The loveliest one was named Zhinu."
+     "en": "The loveliest one was named Zhinu, which means the Weaver Girl."
     },
     {
      "who": "旁白",
@@ -168,24 +178,53 @@
    ]
   },
   {
+   "scene": "牛郎家旁邊的稻田邊，夏天的下午：綠色的稻子隨風擺動，田埂上開著小黃花，天上飄著幾朵白雲，其中一朵圓滾滾的，形狀像一頭牛。",
+   "act": "織女（淡粉紅色長裙、彩虹紗巾）坐在田埂上，指著天上那朵像牛的白雲，笑得好開心；牛郎（藍色粗布短衣、捲褲管）戴著斗笠，站在田裡哈哈大笑；老牛站在旁邊，鼓起臉頰、假裝生氣地瞪著牛郎，脖子上的小銅鈴在晃，樣子很好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "織女喜歡人間的花，也常來找牛郎和老牛玩。",
+     "en": "Zhinu loved the flowers on Earth, so she often came to visit Niulang and Old Ox."
+    },
+    {
+     "who": "織女",
+     "tag": "happy",
+     "text": "牛郎，你看！那朵雲像不像一頭牛？",
+     "en": "Niulang, look! Doesn't that cloud look like an ox?"
+    },
+    {
+     "who": "牛郎",
+     "tag": "laughing",
+     "text": "像！跟老牛一樣胖！",
+     "en": "It does! It's just as round as Old Ox!"
+    },
+    {
+     "who": "老牛",
+     "tag": "laughing",
+     "text": "我哪有那麼胖！",
+     "en": "Hey! I'm not that round!"
+    }
+   ]
+  },
+  {
    "scene": "牛郎的小土屋前面，屋旁多了一架木頭織布機，田邊開著小花，天空有一點粉紅色的雲。",
    "act": "牛郎戴著斗笠在田裡工作；織女坐在織布機前織出彩色的布，抬頭對牛郎笑；老牛躺在大樹下，搖著尾巴，看起來好滿足。",
    "lines": [
     {
      "who": "旁白",
-     "text": "織女喜歡人間的花，喜歡老牛，也喜歡牛郎。",
-     "en": "Zhinu loved the flowers on Earth. She loved Old Ox. And she loved Niulang, too."
-    },
-    {
-     "who": "旁白",
-     "text": "後來，牛郎和織女結婚了。",
-     "en": "Before long, Niulang and Zhinu got married."
+     "text": "他們越來越喜歡對方，後來就結婚了。",
+     "en": "They grew fonder and fonder of each other, and before long, Niulang and Zhinu got married."
     },
     {
      "who": "織女",
      "tag": "happy",
      "text": "牛郎下田，我來織布，每天都好開心！",
      "en": "Niulang works in the fields, I weave cloth, and every day is a happy day!"
+    },
+    {
+     "who": "旁白",
+     "text": "老牛在大樹下搖著尾巴，也好開心。",
+     "en": "Under a big tree, Old Ox swished his tail. He was happy, too."
     }
    ]
   },
@@ -201,7 +240,7 @@
     {
      "who": "旁白",
      "text": "住在天上的王母娘娘，看著灰色的雲，好著急。",
-     "en": "The Queen Mother of the West, who lived in the sky, looked at the gray clouds and grew worried."
+     "en": "The Queen Mother of the West, the kind old queen of the sky, looked at the gray clouds and grew worried."
     },
     {
      "who": "王母娘娘",
@@ -212,8 +251,8 @@
    ]
   },
   {
-   "scene": "牛郎的小土屋前面，天上飄下一朵大白雲。",
-   "act": "王母娘娘站在白雲上，溫柔地向織女伸出手；織女回頭看牛郎，眼淚掉下來；牛郎從田裡跑過來，伸長了手；老牛低著頭，在旁邊靜靜看。",
+   "scene": "牛郎的小土屋前面，天上的雲都變成灰色的了，一朵大白雲從灰色的天空飄下來。",
+   "act": "王母娘娘站在白雲上，溫柔地向織女伸出手；織女抬頭看著灰色的天空，又回頭看牛郎，眼淚掉下來；牛郎從田裡跑過來，伸長了手；老牛低著頭，在旁邊靜靜看。",
    "lines": [
     {
      "who": "旁白",
@@ -229,8 +268,8 @@
     {
      "who": "織女",
      "tag": "sad",
-     "text": "牛郎，我要回天上去了。",
-     "en": "Niulang, I have to go back to the sky."
+     "text": "天上都變成灰色的了。牛郎，我要回去織雲彩。",
+     "en": "The whole sky has turned gray. Niulang, I have to go back and weave the clouds."
     },
     {
      "who": "牛郎",
@@ -252,6 +291,11 @@
     {
      "who": "老牛",
      "tag": "excited",
+     "text": "別擔心，有老牛在！",
+     "en": "Don't worry! Old Ox is here!"
+    },
+    {
+     "who": "老牛",
      "text": "牛郎，快坐上來，我帶你去追她！",
      "en": "Niulang, climb on! I'll take you after her!"
     },
@@ -269,7 +313,7 @@
   },
   {
    "scene": "天上，夜空中有一條又寬又亮的銀河，像一條用星星做成的大河，閃著白色和藍色的光。",
-   "act": "牛郎和老牛站在銀河的左邊，織女站在右邊，兩個人隔著銀河伸出手，怎麼也碰不到；牛郎和織女都在掉眼淚。",
+   "act": "牛郎和老牛站在銀河的左邊，老牛望著又寬又亮的銀河，難過地垂下耳朵；織女站在右邊，兩個人隔著銀河伸出手，怎麼也碰不到；牛郎和織女都在掉眼淚。",
    "lines": [
     {
      "who": "旁白",
@@ -277,9 +321,15 @@
      "en": "But in front of them lay a wide, bright river made of stars, called the Milky Way."
     },
     {
+     "who": "老牛",
+     "tag": "sad",
+     "text": "銀河太寬、太亮了，我也飛不過去。",
+     "en": "The Milky Way is too wide and too bright. Even I can't fly across."
+    },
+    {
      "who": "旁白",
-     "text": "牛郎在這一邊，織女在那一邊，怎麼也過不去。",
-     "en": "Niulang was on one side, Zhinu was on the other, and there was no way across."
+     "text": "牛郎在這一邊，織女在那一邊，兩個人都哭了。",
+     "en": "Niulang was on one side, Zhinu was on the other, and they both began to cry."
     },
     {
      "who": "牛郎",
@@ -307,8 +357,13 @@
     {
      "who": "王母娘娘",
      "tag": "gentle",
-     "text": "別哭了。每年七月七日，你們可以見一次面。",
-     "en": "Don't cry. Every year, on the seventh night of the seventh month, you may meet."
+     "text": "別哭了。織女要在天上織雲彩，不能每天都過去。",
+     "en": "Don't cry. Zhinu must weave the clouds, so she can't cross over every day."
+    },
+    {
+     "who": "王母娘娘",
+     "text": "可是每年夏天，農曆七月七日，你們可以見一次面。",
+     "en": "But every summer, on the seventh night of the seventh month of the lunar calendar, you two may meet."
     },
     {
      "who": "王母娘娘",
@@ -318,13 +373,13 @@
    ]
   },
   {
-   "scene": "七月七日的晚上，銀河上空，好多好多喜鵲從四面八方飛來。",
+   "scene": "夏天，農曆七月七日的晚上，銀河上空，好多好多喜鵲從四面八方飛來。",
    "act": "喜鵲是黑色的頭、白色的肚子、長長的尾巴，帶頭的小喜鵲脖子上有一圈藍色的羽毛，張開翅膀指揮；喜鵲們一隻接一隻張開翅膀，排成一座彎彎的橋，橫跨銀河。",
    "lines": [
     {
      "who": "旁白",
-     "text": "到了七月七日，一大群喜鵲飛來了。",
-     "en": "When the seventh night of the seventh month came, a great flock of magpies flew in."
+     "text": "到了農曆七月七日，一大群喜鵲飛來了。",
+     "en": "When the seventh night of the seventh lunar month came at last, a great flock of magpies flew in."
     },
     {
      "who": "喜鵲",
@@ -333,15 +388,20 @@
      "en": "Everyone, line up! Let's make a bridge!"
     },
     {
+     "who": "喜鵲",
+     "text": "翅膀張開，一隻接一隻，抓穩喔！",
+     "en": "Wings out, wing to wing! Hold steady!"
+    },
+    {
      "who": "旁白",
-     "text": "喜鵲一隻接一隻，在銀河上搭成了一座橋。",
-     "en": "One by one, the magpies spread their wings across the Milky Way and became a bridge."
+     "text": "喜鵲們在銀河上，搭成了一座橋。",
+     "en": "Across the Milky Way, the magpies made a bridge."
     }
    ]
   },
   {
-   "scene": "喜鵲搭成的橋上，四周是閃亮的星星；下面是地上的小村子，屋頂上有小朋友在看星星。",
-   "act": "牛郎和織女從橋的兩邊跑過來，在橋中間牽起手，笑著流眼淚；老牛在牛郎後面搖尾巴；喜鵲們抬起頭看著他們，好開心。最後一句是對著聽故事的小孩說，畫面角落的小朋友指著天上的兩顆亮星。",
+   "scene": "喜鵲搭成的橋上，四周是閃亮的星星。",
+   "act": "牛郎和織女從橋的兩邊跑過來，在橋中間牽起手，笑著流眼淚；老牛身上發著金色的光，站在牛郎後面搖尾巴，對著牛郎眨一隻眼睛；喜鵲們抬起頭看著他們，好開心。",
    "lines": [
     {
      "who": "旁白",
@@ -361,14 +421,36 @@
      "en": "Zhinu, we'll meet every year!"
     },
     {
+     "who": "老牛",
+     "tag": "laughing",
+     "text": "別擔心，有老牛在！每年我都載牛郎來。",
+     "en": "Don't worry! Old Ox is here! I'll bring Niulang every year."
+    }
+   ]
+  },
+  {
+   "scene": "夏天的夜空，一條白色的銀河橫過天空，兩邊各有一顆特別亮的星星；牛郎星旁邊有一顆金色的小星星。下面是地上的小村子，院子裡有小朋友和爸爸媽媽一起看星星。",
+   "act": "畫面角落，一個小朋友坐在院子的竹椅上，指著天上的兩顆亮星，爸爸媽媽在旁邊笑著陪他看；天上那顆金色的小星星，隱約是老牛的樣子，在牛郎星旁邊眨眼睛。最後兩句是對著聽故事的小孩說。",
+   "lines": [
+    {
      "who": "旁白",
-     "text": "這一天，就是七夕。",
-     "en": "That special night is the Double Seventh Festival."
+     "text": "農曆七月七日的晚上，就叫做七夕。",
+     "en": "The seventh night of the seventh lunar month is called Qixi, the Double Seventh Festival."
     },
     {
      "who": "旁白",
-     "text": "夏天晚上，銀河兩邊的兩顆亮星，就是牛郎和織女喔！",
-     "en": "On summer nights, look up! The two bright stars on each side of the Milky Way are Niulang and Zhinu."
+     "text": "夏天晚上，抬頭看天上的銀河。",
+     "en": "On summer nights, look up at the Milky Way."
+    },
+    {
+     "who": "旁白",
+     "text": "兩邊那兩顆亮星，就是牛郎和織女喔！",
+     "en": "The two bright stars on each side are Niulang and Zhinu!"
+    },
+    {
+     "who": "旁白",
+     "text": "老牛也變回星星，陪在牛郎身邊。",
+     "en": "And Old Ox is a star again, shining right beside Niulang."
     }
    ]
   }

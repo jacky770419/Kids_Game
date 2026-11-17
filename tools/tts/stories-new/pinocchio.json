@@ -45,7 +45,7 @@
   },
   {
    "char": "會",
-   "where": "第2頁『會說話』，第3頁『就會變成』『會變長』",
+   "where": "第2頁『會說話』，第3頁『你會說真話』『也會對爸爸好』『就會變成』『會變長』，第10頁『會浮起來』",
    "read": "huì"
   },
   {
@@ -138,17 +138,18 @@
     {
      "who": "藍仙女",
      "tag": "gentle",
-     "text": "皮諾丘，要說真話，要認真上學，要對爸爸好。",
-     "en": "Pinocchio, always tell the truth, work hard at school, and be good to your papa."
+     "text": "皮諾丘，我知道你會說真話，也會對爸爸好。",
+     "en": "Pinocchio, I know you can tell the truth and be kind to your papa."
     },
     {
      "who": "藍仙女",
-     "text": "這樣，有一天你就會變成真的男孩。",
-     "en": "Then one day, you will become a real boy."
+     "tag": "happy",
+     "text": "有一天，你就會變成真的男孩！",
+     "en": "And one day, you will become a real boy!"
     },
     {
      "who": "藍仙女",
-     "text": "可是，說謊的話，鼻子會變長喔！",
+     "text": "不過，說謊的話，鼻子會變長喔！",
      "en": "But if you tell a lie, your nose will grow!"
     }
    ]
@@ -282,7 +283,7 @@
   },
   {
    "scene": "同一個廣場，路燈下。旁邊有一棵小樹。",
-   "act": "皮諾丘的鼻子變得好長，一直伸到旁邊的小樹邊；兩隻小鳥停在他的鼻尖上，歪著頭看他。皮諾丘一邊哭一邊低頭道歉；藍仙女微笑看著他；小蟋蟀在旁邊笑得抱住肚子。",
+   "act": "皮諾丘的鼻子變得好長，一直伸到旁邊的小樹邊；兩隻小鳥停在他的鼻尖上，歪著頭看他。小蟋蟀先用小腳遮著嘴偷笑，看著小鳥；皮諾丘低頭道歉時，小蟋蟀拍拍他的肩膀；藍仙女微笑看著他。",
    "lines": [
     {
      "who": "旁白",
@@ -325,14 +326,14 @@
     {
      "who": "小蟋蟀",
      "tag": "worried",
-     "text": "傑佩托爺爺不見了！",
-     "en": "Mr. Geppetto is gone!"
+     "text": "糟糕，你的爸爸不見了！",
+     "en": "Oh no, your papa is gone!"
     },
     {
      "who": "藍仙女",
      "tag": "gentle",
-     "text": "爸爸找了你一整天，划著小船到海上去了。",
-     "en": "Your papa looked for you all day. Then he rowed out to sea in a little boat."
+     "text": "爸爸到處找你，聽說你去了海邊，就划著小船出海了。",
+     "en": "Your papa looked everywhere for you. Someone said you went to the sea, so he rowed out in a little boat."
     },
     {
      "who": "小木偶",
@@ -344,7 +345,7 @@
   },
   {
    "scene": "海邊，晚上。月光照在海面上，海浪一波一波；遠遠的海上，有一條好大的灰藍色鯨魚，露出背和尾巴。",
-   "act": "皮諾丘從岸邊的石頭上跳進海裡，木頭身體浮在水面上，用力划水；小蟋蟀坐在他的紙帽子上。大鯨魚出場：一條巨大的灰藍色鯨魚，圓圓的眼睛、笨笨的表情，肚子是白色的，張開好大的嘴巴，樣子好笑不可怕。",
+   "act": "皮諾丘的木頭身體像一塊小木板，穩穩地浮在海面上，用力划水；小蟋蟀坐在他的紙帽子上。大鯨魚出場：一條巨大的灰藍色鯨魚，圓圓的眼睛、笨笨的表情，肚子是白色的，張開好大的嘴巴，樣子好笑不可怕。",
    "lines": [
     {
      "who": "旁白",
@@ -352,9 +353,10 @@
      "en": "Pinocchio ran to the shore and jumped into the sea."
     },
     {
-     "who": "旁白",
-     "text": "他是木頭做的，在水上浮呀浮。",
-     "en": "He was made of wood, so he bobbed up and down on the waves."
+     "who": "小木偶",
+     "tag": "brave",
+     "text": "我是木頭做的，會浮起來！爸爸，等我！",
+     "en": "I'm made of wood. I float! Hang on, Papa!"
     },
     {
      "who": "旁白",
@@ -375,13 +377,13 @@
    ]
   },
   {
-   "scene": "大鯨魚的肚子裡，又黑又大，像一個大山洞；地上有海草、木桶和一艘破掉的小划船。很遠的地方，有一點燭光。",
+   "scene": "大鯨魚的肚子裡，又黑又大，像一個大山洞；地上有海草、木桶、一根白色的海鷗大羽毛，和一艘破掉的小划船。很遠的地方，有一點燭光。",
    "act": "老木匠坐在小桌子旁邊，桌上點著一根蠟燭，他沒有戴毛線帽，白頭髮亂亂的，穿白襯衫，看起來很累。皮諾丘踩著海草跑過去，張開雙手；老木匠站起來，伸出手，眼睛裡有淚光，好驚喜。小蟋蟀跟在後面跳。",
    "lines": [
     {
      "who": "旁白",
-     "text": "鯨魚的肚子裡，又黑又大。",
-     "en": "Inside the whale, it was big and very dark."
+     "text": "鯨魚的肚子裡好黑，地上有一根白色的大羽毛。",
+     "en": "Inside the whale, it was very dark. A big white feather lay on the floor."
     },
     {
      "who": "旁白",
@@ -424,8 +426,8 @@
     },
     {
      "who": "旁白",
-     "text": "皮諾丘撿起一根羽毛，去搔鯨魚的舌頭。",
-     "en": "Pinocchio picked up a feather and tickled the whale's tongue."
+     "text": "皮諾丘撿起那根羽毛，去搔鯨魚的舌頭。",
+     "en": "Pinocchio picked up the feather and tickled the whale's tongue."
     },
     {
      "who": "大鯨魚",
@@ -478,8 +480,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "從那天起，皮諾丘每天上學，也幫爸爸做事。",
-     "en": "From that day on, Pinocchio went to school every day and helped his papa at home."
+     "text": "從那天起，皮諾丘每天上學，回家也幫爸爸掃地。",
+     "en": "From that day on, Pinocchio went to school every day and swept the floor for his papa at home."
     },
     {
      "who": "旁白",
@@ -489,8 +491,8 @@
     {
      "who": "藍仙女",
      "tag": "happy",
-     "text": "皮諾丘，你說真話、認真上學，又勇敢地救了爸爸。",
-     "en": "Pinocchio, you tell the truth, you work hard at school, and you bravely saved your papa."
+     "text": "皮諾丘，你說了真話，又勇敢地救了爸爸，我好開心！",
+     "en": "Pinocchio, you told the truth, and you bravely saved your papa. That makes me so happy!"
     },
     {
      "who": "藍仙女",
