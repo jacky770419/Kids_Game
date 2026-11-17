@@ -1,0 +1,290 @@
+{
+ "id": "bees-flowers",
+ "title": "真花和假花",
+ "title_en": "Which Flowers Are Real?",
+ "size": "短",
+ "roles": {
+  "國王": "喜歡動腦的老國王，慈祥、愛笑，聲音低沉溫暖；看不出答案時不著急，自己先笑出來，想到辦法時說話變快、很開心。",
+  "女王": "遠方來作客的女王，溫柔明亮的年輕女聲；愛出謎題交朋友，不是要考倒人，國王答對時真心高興。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "女王": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "假",
+   "where": "書名『假花』，第2、6、7、8頁『假花』",
+   "read": "jiǎ"
+  },
+  {
+   "char": "模",
+   "where": "第2頁『一模一樣』",
+   "read": "mú"
+  },
+  {
+   "char": "冠",
+   "where": "第3頁『皇冠』",
+   "read": "guān"
+  },
+  {
+   "char": "長",
+   "where": "第3頁『伸長脖子』",
+   "read": "cháng"
+  },
+  {
+   "char": "為",
+   "where": "第5、7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "只",
+   "where": "第3頁『只能』，第5頁『只找花』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "還",
+   "where": "第6頁『還是』",
+   "read": "hái"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『會聞著』，第6頁『會停在』",
+   "read": "huì"
+  },
+  {
+   "char": "著",
+   "where": "第2頁『放著』，第4頁『關著』，第5頁『聞著』，第8頁『開著』",
+   "read": "zhe"
+  },
+  {
+   "char": "誰",
+   "where": "第4頁『請誰』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第7頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "嗡",
+   "where": "第5、8頁『嗡，嗡』",
+   "read": "wēng"
+  },
+  {
+   "char": "答",
+   "where": "第8頁『答對』",
+   "read": "dá"
+  },
+  {
+   "char": "哪",
+   "where": "第2頁『哪一束』",
+   "read": "nǎ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晴朗的早上，王宮的花園：開滿紅色、黃色、白色的花，後面是王宮的白色石牆和一排高高的玻璃窗（就是大廳的窗戶）。",
+   "act": "幾隻小蜜蜂（圓圓的身體有黃黑相間的條紋，一對透明的小翅膀，頭上兩根短短的觸角，不穿衣服）停在花心上採花蜜，有一隻正往一朵花飛過去，花上飄出幾條淡淡的香味線條。國王第一次出場：六十多歲，白鬍子，戴一頂有點太大的金色皇冠，穿紅色長袍，站在花園小路上張開雙手歡迎客人。女王第一次出場：三十歲左右，黑色長髮編成一條粗辮子，戴細細的銀色頭冠，穿青綠色長裙、披金黃色披肩，笑著走進花園；她身後一位侍女捧著一個蓋著布的大籃子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王的花園裡，蜜蜂聞到花香，就飛來採蜜。",
+     "en": "In the king's garden, bees smelled the sweet flowers and flew over for nectar."
+    },
+    {
+     "who": "旁白",
+     "text": "遠方的女王來作客。",
+     "en": "A queen from far away came to visit."
+    },
+    {
+     "who": "女王",
+     "tag": "happy",
+     "text": "國王，我帶謎題來交朋友！",
+     "en": "Your Majesty, I brought a puzzle so we can be friends!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，白天：長長的大廳，紅色地毯，兩邊是高高的玻璃窗，窗外看得到花園。大廳的這一頭是國王的椅子；另一頭（離國王大約二十步遠）並排擺著兩張一樣的小圓桌，桌上各有一個一樣的白色花瓶。這一頁窗戶都關著。",
+   "act": "兩張小圓桌的花瓶裡各插一束花：紅色、黃色、白色的花配綠葉，兩束的花、顏色、高度都一模一樣（左邊那一束是布做的假花，右邊那一束是真花；左右以國王看過去的方向為準，全書一致；畫面上看不出差別）。女王站在國王旁邊，一手指向大廳另一頭的兩束花，笑咪咪的。國王摸著白鬍子，瞇起眼睛往那邊看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大廳的另一頭，放著兩束花。",
+     "en": "At the far end of the great hall stood two bunches of flowers."
+    },
+    {
+     "who": "女王",
+     "text": "一束是真花，一束是布做的假花。",
+     "en": "One bunch is real. The other is made of cloth."
+    },
+    {
+     "who": "女王",
+     "tag": "playful",
+     "text": "哪一束是真的？",
+     "en": "Which one is real?"
+    },
+    {
+     "who": "旁白",
+     "text": "左邊一束，右邊一束，一模一樣。",
+     "en": "One on the left, one on the right. They looked exactly the same."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，白天：長長的大廳，紅色地毯，兩邊是高高的玻璃窗，窗外看得到花園。大廳的這一頭是國王的椅子；另一頭（離國王大約二十步遠）並排擺著兩張一樣的小圓桌，桌上各有一個一樣的白色花瓶。這一頁窗戶都關著。畫面在國王站的這一頭。",
+   "act": "女王伸出手掌，輕輕擋在國王前面，另一手指著國王腳下的地毯，表示只能站在這裡。國王站在原地，踮著腳、伸長脖子往大廳另一頭看；太大的金色皇冠往前滑下來，蓋住了他的眼睛，他兩手往前摸，自己先笑了出來。女王也跟著笑，伸手幫他扶皇冠。遠遠的另一頭看得到兩束一模一樣的花。",
+   "lines": [
+    {
+     "who": "女王",
+     "text": "只能站在這裡看。不能走過去，不能摸，也不能聞。",
+     "en": "You may only look from here. No walking over, no touching, and no sniffing."
+    },
+    {
+     "who": "旁白",
+     "text": "國王伸長脖子，皇冠滑下來，蓋住眼睛。",
+     "en": "The king stretched his neck. His crown slid down right over his eyes."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哎呀，看不到了！",
+     "en": "Oh my! Now I can't see a thing!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，白天：長長的大廳，紅色地毯，兩邊是高高的玻璃窗，窗外看得到花園。大廳的這一頭是國王的椅子；另一頭（離國王大約二十步遠）並排擺著兩張一樣的小圓桌，桌上各有一個一樣的白色花瓶。這一頁窗戶還關著。畫面在國王站的這一頭，旁邊就是一扇關著的玻璃窗。",
+   "act": "國王扶好皇冠，不再看花，轉頭看著旁邊關著的玻璃窗；窗外是花園，花開得很多（花上的蜜蜂畫得很小、只是幾個小點，不要特別強調）。國王一手摸鬍子，一手指著窗戶，眼睛發亮；一位侍衛走向窗戶，手伸向窗戶的把手，還沒打開。女王好奇地歪著頭看國王。",
+   "lines": [
+    {
+     "who": "國王",
+     "text": "真花有香味，有花蜜，可是我不能聞。",
+     "en": "Real flowers have a sweet smell and nectar. But I'm not allowed to sniff."
+    },
+    {
+     "who": "旁白",
+     "text": "大廳的窗戶關著，外面就是花園。",
+     "en": "The windows of the hall were shut. Just outside was the garden."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "請把窗戶打開。",
+     "en": "Please open the window."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，國王想請誰來幫忙呢？",
+     "en": "Who did the king want to help him? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，白天：長長的大廳，紅色地毯，兩邊是高高的玻璃窗，窗外看得到花園。大廳的這一頭是國王的椅子；另一頭（離國王大約二十步遠）並排擺著兩張一樣的小圓桌，桌上各有一個一樣的白色花瓶。這一頁國王旁邊的那一扇玻璃窗打開了，陽光照進來。",
+   "act": "一隻小蜜蜂從打開的窗戶飛進大廳，後面一條虛線畫出牠飛的路線。國王兩手輕輕往下壓，請大家站好；女王和兩位侍衛都安靜地站著，手放在身體兩邊，沒有人揮手，眼睛跟著小蜜蜂看。大家的表情是好奇，不是害怕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是花園裡的小蜜蜂！",
+     "en": "It was the little bees from the garden!"
+    },
+    {
+     "who": "國王",
+     "text": "因為蜜蜂會聞著香味找花。",
+     "en": "Because bees follow sweet smells to find flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "嗡，嗡，小蜜蜂飛進來了。",
+     "en": "Buzz, buzz. A little bee flew in."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "別揮手，牠只找花，不叮人。",
+     "en": "No waving, everyone. It only wants flowers. It won't sting."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳的另一頭，近看兩張一樣的小圓桌、兩個一樣的白色花瓶、兩束一模一樣的花；背景遠遠的是國王的椅子和打開的那一扇窗。",
+   "act": "小蜜蜂飛到兩束花的正中間、比花高一點的地方，停在半空中，還沒有靠近任何一束（這一頁不要畫出牠選哪一邊，也不要在任何一束花上畫香味線條）。遠遠的背景裡，國王和女王站在大廳那一頭伸長脖子看，女王兩手握在胸前。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蜜蜂飛向兩束花。",
+     "en": "The little bee flew toward the two bunches."
+    },
+    {
+     "who": "旁白",
+     "text": "左邊一束，右邊一束。",
+     "en": "One on the left, one on the right."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，牠會停在真花上，還是假花上？",
+     "en": "Would it land on the real flowers or the cloth ones? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳的另一頭，近看兩張小圓桌和兩束花；背景遠遠的是國王和女王。",
+   "act": "分兩格。第一格：小蜜蜂飛到左邊那一束（布做的假花）上面繞了一圈，虛線畫出一個圓圈，沒有停下來。第二格：小蜜蜂停在右邊那一束（真花）一朵花的花心上，頭埋進花裡採花蜜，這一束花旁邊畫幾條淡淡的香味線條。背景裡，國王高興地舉起一隻手指著右邊那一束，皇冠又歪了一點；女王驚喜地張開嘴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "牠在左邊繞一圈，沒有停。",
+     "en": "It circled the bunch on the left, but it did not land."
+    },
+    {
+     "who": "旁白",
+     "text": "飛到右邊，停下來了。",
+     "en": "It flew to the right, and there it landed."
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "牠停在真花上！右邊是真的！",
+     "en": "It landed on the real flowers! The right bunch is real!"
+    },
+    {
+     "who": "國王",
+     "text": "因為真花有香味、有花蜜，布做的假花沒有。",
+     "en": "Because real flowers smell sweet and have nectar. Cloth flowers have neither."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，白天：長長的大廳，紅色地毯，兩邊是高高的玻璃窗，窗外看得到花園。大廳的這一頭是國王的椅子；另一頭（離國王大約二十步遠）並排擺著兩張一樣的小圓桌，桌上各有一個一樣的白色花瓶。國王旁邊的那一扇窗開著，窗外的花園陽光很亮。",
+   "act": "女王笑著，雙手把右邊那一束真花連白色花瓶一起送到國王手上；左邊那一束布做的假花留在小圓桌上，由侍女端過來放在國王的椅子旁邊。國王捧著真花，笑得鬍子都翹起來。小蜜蜂從打開的窗戶飛回花園，後面一條虛線。",
+   "lines": [
+    {
+     "who": "女王",
+     "tag": "laughing",
+     "text": "答對了！真有趣！",
+     "en": "You got it! What fun!"
+    },
+    {
+     "who": "女王",
+     "tag": "gentle",
+     "text": "真花送你。假花永遠開著，像我們永遠是朋友。",
+     "en": "The real ones are for you. The cloth ones will bloom forever, just like our friendship."
+    },
+    {
+     "who": "旁白",
+     "text": "嗡，嗡，小蜜蜂飛回花園了。",
+     "en": "Buzz, buzz. The little bee flew back to the garden."
+    }
+   ]
+  }
+ ]
+}

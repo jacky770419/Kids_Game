@@ -1,0 +1,307 @@
+{
+ "id": "fox-footprints",
+ "title": "狐狸看腳印",
+ "title_en": "The Footprints at the Cave",
+ "size": "短",
+ "roles": {
+  "獅子": "年紀大了、有點寂寞的老獅子，嗓門還是很大，聲音低沉沙啞；喊人來陪的時候很大聲，被說破以後不好意思、說話變小聲，最後笑得很開心。",
+  "狐狸": "細心、愛觀察的狐狸，說話不急不忙、很清楚；這本裡他不捉弄人，跟獅子說實話的時候很溫和、不兇。",
+  "小兔子": "急性子的小兔子（用「她」），聲音又小又甜、說話很快，想到什麼就要馬上去做，很熱心。"
+ },
+ "cast": {
+  "獅子": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "小兔子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "還",
+   "where": "第6頁『還沒』",
+   "read": "hái"
+  },
+  {
+   "char": "只",
+   "where": "第5頁『只有』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "少",
+   "where": "第3、4頁『少了』",
+   "read": "shǎo"
+  },
+  {
+   "char": "傳",
+   "where": "第1頁『傳出』，第4頁『傳來』",
+   "read": "chuán"
+  },
+  {
+   "char": "擔",
+   "where": "第7頁『擔心』",
+   "read": "dān"
+  },
+  {
+   "char": "會",
+   "where": "第7頁『會擔心』『會來』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第4、5、7頁『沒有』，第6頁『還沒』",
+   "read": "méi"
+  },
+  {
+   "char": "誰",
+   "where": "第1頁『誰來』",
+   "read": "shéi"
+  },
+  {
+   "char": "著",
+   "where": "第2、3、4頁『對著』",
+   "read": "zhe"
+  },
+  {
+   "char": "個",
+   "where": "第2頁『每個』，第4頁『一個』",
+   "read": "gè"
+  },
+  {
+   "char": "哪",
+   "where": "第3頁『哪裡』",
+   "read": "nǎ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "雨剛停的森林，太陽出來了，天上有一道彩虹。山坡上有一個山洞，洞口又大又亮，沒有門；洞口前面是一片很濕的咖啡色泥地，泥地外面是草地和小花。",
+   "act": "洞口傳出一個大大的對話框，洞口也飄出幾個笑聲的符號（哈、哈）。畫面一角的小圓框裡畫出老獅子（第一次出場：年紀大的公獅，淺金黃色的毛，一圈灰白色的鬃毛，白色的長眉毛，眼睛下面有皺紋）：他躺在洞裡一張乾草鋪的床上，蓋著一條紅格子毯子，一隻前腳圍在嘴邊大聲喊，表情有點寂寞、不兇；小圓框裡只畫他，不要畫出洞裡其他的動物。狐狸（外型照《狐狸和鶴》：橘紅色的毛，白色胸口，穿一件藍色背心，尖鼻子、嘴巴很寬）和小兔子（奶茶色的小兔子，白色的肚子和白色圓尾巴，長耳朵內側粉紅色，左耳別著一朵藍色小花，不穿衣服）沿著草地上的小路走到洞口前面；小兔子跑在前面，急著往洞口指，狐狸走在後面，低頭看著地上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "剛下過雨，山洞裡的老獅子大喊。",
+     "en": "The rain had just stopped. From inside a cave, Old Lion called out loudly."
+    },
+    {
+     "who": "獅子",
+     "tag": "shouting",
+     "text": "我生病了，誰來看我？",
+     "en": "I'm sick! Who will come and see me?"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸和小兔子走到洞口，洞裡傳出笑聲。",
+     "en": "Fox and Little Rabbit walked up to the cave. Laughter was coming from inside."
+    },
+    {
+     "who": "小兔子",
+     "tag": "excited",
+     "text": "快進去看他！",
+     "en": "Let's hurry in and see him!"
+    }
+   ]
+  },
+  {
+   "scene": "雨剛停的森林，太陽出來了，天上有一道彩虹。山坡上有一個山洞，洞口又大又亮，沒有門；洞口前面是一片很濕的咖啡色泥地，泥地外面是草地和小花。近看洞口前面的泥地。",
+   "act": "狐狸伸出一隻手輕輕擋住小兔子（兩個都站在泥地外面的草地上，還沒有踩進泥地），另一手指著泥地。泥地上有三排腳印，都從草地這一邊一路排進洞口：小鹿的（兩瓣尖尖的蹄印，尖的那一頭對著洞口）、小豬的（兩瓣比較圓的蹄印、後面兩個小點，尖的那一頭對著洞口）、小鴨的（三根腳趾張開、中間有蹼，腳趾對著洞口）。每一個腳印的腳尖都對著洞裡，沒有任何一個對著外面。小兔子停下來，歪著頭看地上。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "text": "等一下，先看地上。",
+     "en": "Wait. Look at the ground first."
+    },
+    {
+     "who": "旁白",
+     "text": "泥地上有好多腳印。",
+     "en": "There were lots of footprints in the mud."
+    },
+    {
+     "who": "狐狸",
+     "text": "小鹿的，小豬的，小鴨的。",
+     "en": "Little Deer's, Little Pig's, and Little Duck's."
+    },
+    {
+     "who": "旁白",
+     "text": "每個腳尖都對著洞裡。",
+     "en": "Every toe pointed into the cave."
+    }
+   ]
+  },
+  {
+   "scene": "雨剛停的森林，太陽出來了，天上有一道彩虹。山坡上有一個山洞，洞口又大又亮，沒有門；洞口前面是一片很濕的咖啡色泥地，泥地外面是草地和小花。近看洞口前面的泥地。",
+   "act": "狐狸蹲在泥地旁邊的草地上，用手指著一個小鹿腳印尖尖的那一頭，再順著指向洞口。小兔子兩隻前腳貼著臉頰，驚訝地看著那三排腳印。泥地上有三排腳印，都從草地這一邊一路排進洞口：小鹿的（兩瓣尖尖的蹄印，尖的那一頭對著洞口）、小豬的（兩瓣比較圓的蹄印、後面兩個小點，尖的那一頭對著洞口）、小鴨的（三根腳趾張開、中間有蹼，腳趾對著洞口）。每一個腳印的腳尖都對著洞裡，沒有任何一個對著外面。這一頁不要畫箭頭，也不要畫出洞裡面。",
+   "lines": [
+    {
+     "who": "小兔子",
+     "tag": "surprised",
+     "text": "好多朋友來了！",
+     "en": "So many friends came!"
+    },
+    {
+     "who": "狐狸",
+     "text": "腳尖對著洞裡，都是走進去的腳印。",
+     "en": "Toes pointing into the cave. These are all footprints going in."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，地上少了往哪裡走的腳印？",
+     "en": "Which way were the missing footprints going? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "雨剛停的森林，太陽出來了，天上有一道彩虹。山坡上有一個山洞，洞口又大又亮，沒有門；洞口前面是一片很濕的咖啡色泥地，泥地外面是草地和小花。",
+   "act": "狐狸一手指著泥地上的腳印，一手往洞口外面的方向比，搖搖頭（往外的腳印一個也沒有）。洞口飄出幾個音符和笑聲的符號，還有一個大對話框，對話框裡畫著老獅子笑咪咪的頭像。小兔子的長耳朵豎得直直的，往洞口的方向聽。這一頁還是不畫洞裡面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "少了走出來的腳印！",
+     "en": "The footprints coming out were missing!"
+    },
+    {
+     "who": "狐狸",
+     "text": "因為腳尖對著外面的，一個也沒有。",
+     "en": "Because not one toe points away from the cave."
+    },
+    {
+     "who": "旁白",
+     "text": "洞裡傳來老獅子的聲音。",
+     "en": "Then Old Lion's voice came from the cave."
+    },
+    {
+     "who": "獅子",
+     "tag": "happy",
+     "text": "再陪我一下，再講一個故事！",
+     "en": "Stay a little longer! Tell me one more story!"
+    }
+   ]
+  },
+  {
+   "scene": "雨剛停的森林，太陽出來了，天上有一道彩虹。山坡上有一個山洞，洞口又大又亮，沒有門；洞口前面是一片很濕的咖啡色泥地，泥地外面是草地和小花。",
+   "act": "小兔子抬起一隻腳，正要往泥地上跳；狐狸轉頭看著她，一手指著地上的腳印（這一頁不要畫出小兔子被拉住或走進洞裡）。泥地上有三排腳印，都從草地這一邊一路排進洞口：小鹿的（兩瓣尖尖的蹄印，尖的那一頭對著洞口）、小豬的（兩瓣比較圓的蹄印、後面兩個小點，尖的那一頭對著洞口）、小鴨的（三根腳趾張開、中間有蹼，腳趾對著洞口）。每一個腳印的腳尖都對著洞裡，沒有任何一個對著外面。狐狸的表情很認真，不兇。",
+   "lines": [
+    {
+     "who": "小兔子",
+     "tag": "excited",
+     "text": "好熱鬧！我要進去！",
+     "en": "It sounds like fun! I'm going in!"
+    },
+    {
+     "who": "狐狸",
+     "text": "等一下，再看地上。",
+     "en": "Wait. Look at the ground again."
+    },
+    {
+     "who": "旁白",
+     "text": "只有走進去的腳印，沒有走出來的。",
+     "en": "There were only footprints going in, and none coming out."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，小兔子要不要進去呢？",
+     "en": "Should Little Rabbit go in? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "山洞的剖面：左邊是洞口外面的草地和泥地，右邊是山洞裡面。洞裡很亮，洞頂有一個小天窗照進陽光，地上鋪著乾草，洞口沒有門。",
+   "act": "洞裡第一次畫出來：老獅子躺在乾草床上，蓋著紅格子毯子，笑咪咪的。小鹿（淺咖啡色、背上有白色斑點）拿著一片大葉子幫他趕蚊子，小豬（粉紅色、捲尾巴）在幫他抓背，小鴨（黃色、橘色嘴巴）捧著一本書講故事；三個都打著呵欠、眼皮快要閉起來，很累，可是好好的，沒有人被關、被綁。洞口外面，小兔子停在草地上沒有進去；狐狸站在泥地外面的草地上沒有進去，兩手圍在嘴邊對著洞裡大聲問；洞裡的小鹿、小豬、小鴨一起轉頭看洞口，舉起手回答。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "先不要進去！",
+     "en": "Better not go in yet!"
+    },
+    {
+     "who": "狐狸",
+     "text": "因為進去的朋友，都還沒出來。",
+     "en": "Because the friends who went in haven't come out."
+    },
+    {
+     "who": "狐狸",
+     "text": "妳進去，可能也出不來。",
+     "en": "If you go in, you might not come out either."
+    },
+    {
+     "who": "狐狸",
+     "tag": "shouting",
+     "text": "裡面的朋友，想回家嗎？",
+     "en": "Friends in there, do you want to go home?"
+    },
+    {
+     "who": "旁白",
+     "text": "朋友們說，想回家！",
+     "en": "The friends inside called back that they wanted to go home!"
+    }
+   ]
+  },
+  {
+   "scene": "山洞的洞口，從外面往裡面看，洞裡很亮，看得到乾草床。",
+   "act": "老獅子從乾草床上坐起來，紅格子毯子滑到腳邊（看得出他沒有生病），低著頭、耳朵往後貼，兩隻前腳的指頭互相點著，不好意思。狐狸站在洞口外面，溫和地看著他，不兇。小兔子笑著對獅子揮手。小鹿、小豬、小鴨站在獅子旁邊，小鹿拍拍他的肩膀。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "gentle",
+     "text": "獅子，想要朋友陪，直接說就好。",
+     "en": "Lion, if you want friends to stay, just ask."
+    },
+    {
+     "who": "狐狸",
+     "text": "說生病，大家會擔心。",
+     "en": "When you say you're sick, everyone worries."
+    },
+    {
+     "who": "獅子",
+     "tag": "sad",
+     "text": "對不起，我怕沒有人來看我。",
+     "en": "I'm sorry. I was afraid no one would come to see me."
+    },
+    {
+     "who": "小兔子",
+     "tag": "happy",
+     "text": "我們會來呀！",
+     "en": "Of course we'll come!"
+    }
+   ]
+  },
+  {
+   "scene": "雨剛停的森林，太陽出來了，天上有一道彩虹。山坡上有一個山洞，洞口又大又亮，沒有門；洞口前面是一片很濕的咖啡色泥地，泥地外面是草地和小花。",
+   "act": "小鹿、小豬、小鴨走出洞口，在泥地上留下三排新的腳印，腳尖都對著外面；新的三排就在原來那三排（腳尖對著洞裡）的旁邊，看得出一進一出。老獅子站在洞口揮手，話說到一半，用一隻前腳遮住嘴巴笑；小兔子、狐狸和三個朋友都回頭一起笑。畫面一角的小圖：另一天，小兔子抱著一本故事書走進洞口，泥地上有進去的腳印，也有出來的腳印。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家走出來，留下往外的腳印。",
+     "en": "Everyone walked out of the cave, leaving footprints that pointed out."
+    },
+    {
+     "who": "獅子",
+     "tag": "happy",
+     "text": "再陪我一下！不對，明天再來！",
+     "en": "Stay a little longer! Oops, I mean, come again tomorrow!"
+    },
+    {
+     "who": "旁白",
+     "text": "後來，大家輪流來陪他。",
+     "en": "After that, the friends took turns visiting Old Lion."
+    },
+    {
+     "who": "旁白",
+     "text": "洞口有進去的腳印，也有出來的腳印。",
+     "en": "Now the mud had footprints going in, and footprints coming out."
+    }
+   ]
+  }
+ ]
+}

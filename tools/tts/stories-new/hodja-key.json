@@ -1,0 +1,273 @@
+{
+ "id": "hodja-key",
+ "title": "在燈下找鑰匙",
+ "title_en": "Looking Where the Light Is",
+ "size": "短",
+ "roles": {
+  "阿凡提": "騎驢子的大叔，戴頭巾、留大鬍子，幽默、愛想怪點子、很機靈；說話慢、嗓門大，找不到鑰匙時很著急，被問到時理直氣壯，想通以後自己大笑。",
+  "小女孩": "《阿凡提的五隻驢子》裡那個小女孩，六歲左右，聲音清脆、愛笑，看得很清楚，說話有禮貌，很愛幫忙。"
+ },
+ "cast": {
+  "阿凡提": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "匙",
+   "where": "第2、3、4、5、7頁『鑰匙』",
+   "read": "shi"
+  },
+  {
+   "char": "著",
+   "where": "第1頁『掛著』",
+   "read": "zhe"
+  },
+  {
+   "char": "什",
+   "where": "第1、3頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第2、4頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "哪",
+   "where": "第3、4、8頁『在哪裡』，第4、6、8頁『到哪裡』，第6頁『哪裡就亮』",
+   "read": "nǎ"
+  },
+  {
+   "char": "為",
+   "where": "第3頁『為什麼』，第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "得",
+   "where": "第3頁『找得到』",
+   "read": "de"
+  },
+  {
+   "char": "棗",
+   "where": "第2、8頁『甜棗』",
+   "read": "zǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "天黑以後的小鎮，阿凡提的家門口：沙土色的土牆小屋，圓拱形的木門開著，門裡面一片黑；門框旁邊的鐵鉤上掛著一盞紙燈籠，發出橘黃色的光，在門前的地上照出一圈亮亮的圓；天上有幾顆星星，隔壁人家的窗子亮著。",
+   "act": "第一次出場。阿凡提（和《阿凡提的五隻驢子》是同一個人）：四十多歲的大叔，戴一頂好大的白色頭巾，黑色的大鬍子，穿藍色長袍、繫紅色腰帶、穿尖頭鞋，眼睛亮亮的、很有精神。他趴在燈籠下面那一圈亮的地上，屁股翹得高高的，兩隻手在地上摸，頭巾歪了。小女孩（和《阿凡提的五隻驢子》是同一個人）：六歲左右，兩條長辮子，戴一頂繡花小圓帽，穿紅色洋裝，手提一個小籃子，她家就在隔壁，跟阿凡提已經認識。她從路上走過來，停在亮圈旁邊，歪著頭看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天黑了。阿凡提家門口掛著燈籠。",
+     "en": "It was dark. A lantern hung by Hodja's front door."
+    },
+    {
+     "who": "旁白",
+     "text": "他趴在燈籠下面，摸來摸去。",
+     "en": "Hodja was down on his hands and knees under it, patting the ground."
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩路過。",
+     "en": "A little girl came by."
+    },
+    {
+     "who": "小女孩",
+     "text": "大叔，你在找什麼？",
+     "en": "Mister, what are you looking for?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個家門口，燈籠下面那一圈亮的地上。",
+   "act": "阿凡提和小女孩一起蹲在燈籠下面的亮圈裡，兩個人的手都在地上摸；小女孩的籃子放在旁邊。阿凡提頭上一個想像泡泡：一個上了鎖的小木箱，裡面是一大包紅褐色的甜棗。亮圈裡只有黃土，沒有鑰匙。阿凡提的鬍子垂下來，小女孩兩手一攤。",
+   "lines": [
+    {
+     "who": "阿凡提",
+     "tag": "worried",
+     "text": "木箱的鑰匙掉了，吃不到甜棗！",
+     "en": "I dropped the key to my wooden chest! Now I can't get my sweet dates!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "我幫你找！",
+     "en": "I'll help you look!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個人把燈籠下面摸了一遍，又一遍。沒有。",
+     "en": "They patted the ground under the lantern once, then once more. No key."
+    }
+   ]
+  },
+  {
+   "scene": "同一個家門口。",
+   "act": "小女孩站起來，一手指著地上的亮圈，一手指著開著的木門裡面那一片黑，歪著頭問。阿凡提跪坐在亮圈裡，一手指著很暗的屋子、皺著臉搖頭，另一手指著頭上的燈籠，理直氣壯地笑。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "text": "鑰匙是在哪裡掉的？",
+     "en": "Where did you drop the key?"
+    },
+    {
+     "who": "阿凡提",
+     "text": "在屋子裡。",
+     "en": "Inside the house."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "那為什麼在這裡找？",
+     "en": "Then why are you looking out here?"
+    },
+    {
+     "who": "阿凡提",
+     "text": "屋子裡好暗，這裡比較亮！",
+     "en": "It's so dark in there. It's much brighter out here!"
+    },
+    {
+     "who": "旁白",
+     "text": "鑰匙掉在屋子裡。你猜，在外面的燈籠下面，找得到嗎？",
+     "en": "The key fell inside the house. Do you think they could find it outside, under the lantern?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個家門口。",
+   "act": "小女孩笑著搖搖手，再用手指比一比地上的亮圈（亮圈裡只有黃土，沒有鑰匙），然後指向屋子裡面。阿凡提一手拍在自己的大頭巾上，眼睛和嘴巴張得圓圓的，一下子想通了。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "找不到啦！因為鑰匙不在這裡。",
+     "en": "No, we can't! Because the key isn't here."
+    },
+    {
+     "who": "小女孩",
+     "text": "這裡再亮，也沒有鑰匙。",
+     "en": "However bright it is, there's no key here."
+    },
+    {
+     "who": "小女孩",
+     "text": "掉在哪裡，就要到哪裡找。",
+     "en": "Look where you dropped it."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "surprised",
+     "text": "對呀！",
+     "en": "That's true!"
+    }
+   ]
+  },
+  {
+   "scene": "家門口，從門外往屋子裡看：門裡面一片黑，什麼都看不清楚；門框旁邊的燈籠亮著。",
+   "act": "阿凡提站在門檻外面，彎著腰、伸長脖子往很暗的屋子裡看，兩手一攤，眉毛垂下來。小女孩站在他後面的亮圈裡，抬頭看燈籠，再看很暗的屋子，一根手指點著下巴在想。",
+   "lines": [
+    {
+     "who": "阿凡提",
+     "tag": "worried",
+     "text": "可是屋子裡好暗，看不到呀！",
+     "en": "But it's so dark in there. I can't see a thing!"
+    },
+    {
+     "who": "旁白",
+     "text": "屋子裡很暗，外面的燈籠下面才亮。",
+     "en": "Inside, it was dark. Only the spot under the lantern was bright."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，要怎麼辦，才能在屋子裡找到鑰匙呢？",
+     "en": "What could they do to find the key inside the house?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個家門口。",
+   "act": "左格：小女孩指著天上的星星提議等天亮；阿凡提摸著肚子、嘟著嘴，頭上的想像泡泡裡是一包甜棗。中格：阿凡提趴在門檻上，一隻手伸進很暗的屋子裡摸地板，一臉苦惱。右格：小女孩眼睛一亮，跳起來，手指著門框旁邊的燈籠。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "text": "等天亮再找？",
+     "en": "Wait for morning?"
+    },
+    {
+     "who": "阿凡提",
+     "text": "可以，可是要等好久。",
+     "en": "We could, but that's a long wait."
+    },
+    {
+     "who": "阿凡提",
+     "text": "用手摸也可以，可是好慢。",
+     "en": "I could feel around with my hands, but that is so slow."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "把燈籠拿進去！因為燈籠到哪裡，哪裡就亮。",
+     "en": "Take the lantern inside! Because wherever the lantern goes, that's where it's bright."
+    }
+   ]
+  },
+  {
+   "scene": "阿凡提的屋子裡：土牆、一張矮木桌、地上鋪著一塊花地毯，牆邊放著一個上了鎖的小木箱；門開著。",
+   "act": "阿凡提（大人）提著燈籠的木頭提把走進屋子，把燈籠舉高，橘黃色的光照亮整個房間。小女孩站在門邊，沒有碰燈籠，手指著牆邊的木箱：一把銅色的小鑰匙就躺在木箱旁邊的地上，在燈光下發亮。阿凡提低頭看到鑰匙，仰頭大笑，鬍子都在抖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "燈籠裡有火，由大人阿凡提拿進去。屋子亮了！",
+     "en": "There was a flame in the lantern, so Hodja, the grown-up, carried it in. The room lit up!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "看到了！鑰匙在木箱旁邊！",
+     "en": "I see it! The key is right beside the chest!"
+    },
+    {
+     "who": "阿凡提",
+     "tag": "laughing",
+     "text": "哈！是我找錯地方，不是鑰匙躲起來！",
+     "en": "Ha! I was looking in the wrong place. The key wasn't hiding at all!"
+    }
+   ]
+  },
+  {
+   "scene": "阿凡提的家門口，燈籠掛回門框旁邊的鐵鉤上，門前的地上又是一圈亮亮的圓；天上有星星。",
+   "act": "阿凡提和小女孩並肩坐在門口的台階上，中間放著打開的小木箱，裡面是紅褐色的甜棗，鑰匙插在鎖上。兩個人手上各拿一顆甜棗。阿凡提的黑色大鬍子上黏著一顆甜棗，他自己沒發現，正低頭在地上找；小女孩笑得彎下腰，手指著他的鬍子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩個人坐在門口吃甜棗。",
+     "en": "The two of them sat by the door, eating sweet dates."
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "大叔，甜棗掉了！",
+     "en": "Mister, you dropped a date!"
+    },
+    {
+     "who": "阿凡提",
+     "text": "掉在哪裡？我就到哪裡找！",
+     "en": "Where did it drop? That's where I'll look!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "掉在你的大鬍子上！",
+     "en": "It dropped into your big beard!"
+    }
+   ]
+  }
+ ]
+}

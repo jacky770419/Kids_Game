@@ -1,0 +1,290 @@
+{
+ "id": "hodja-smell",
+ "title": "聞香味要付錢嗎",
+ "title_en": "Paying for a Smell",
+ "size": "短",
+ "roles": {
+  "阿凡提": "騎驢子的大叔，戴頭巾、留大鬍子，幽默、愛想怪點子、很機靈；說話慢、嗓門大，先問清楚再想辦法，搖錢袋時一本正經，說完自己笑得很開心。",
+  "老闆": "湯店的老闆，四十多歲，愛算錢、嗓門大，急起來說話很快，好笑不可怕；聽懂以後自己大笑，很大方地請人喝湯。",
+  "年輕人": "趕路的年輕人，二十歲左右，身上只帶了一塊乾的大餅；聲音清亮、有禮貌，被要錢時又驚訝又著急，喝到熱湯很開心。"
+ },
+ "cast": {
+  "阿凡提": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "老闆": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "年輕人": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "乾",
+   "where": "第1頁『乾的大餅』",
+   "read": "gān"
+  },
+  {
+   "char": "只",
+   "where": "第1頁『只有一塊』，第3頁『只是聞一聞』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "喝",
+   "where": "第2、5頁『沒喝』，第7頁『喝湯』，第7頁『喝完』，第8頁『喝了一碗』，第8頁『喝了湯』",
+   "read": "hē"
+  },
+  {
+   "char": "沒",
+   "where": "第2、5頁『沒喝』，第3頁『湯沒少』，第4頁『沒少』，第6頁『沒拿走』",
+   "read": "méi"
+  },
+  {
+   "char": "少",
+   "where": "第3、4頁『沒少』",
+   "read": "shǎo"
+  },
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "第4頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "得",
+   "where": "第5頁『拿得到』",
+   "read": "de"
+  },
+  {
+   "char": "噹",
+   "where": "第5、8頁『叮噹』",
+   "read": "dāng"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰對』",
+   "read": "shéi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，很遠的地方，一個沙土色小鎮的街上：圓屋頂的土房子，一家小湯店，門口搭著橘色布棚；店門裡的爐子上有一個黑色大鐵鍋，鍋口冒著白色的熱氣，熱氣一路飄到門外。天氣晴朗。",
+   "act": "年輕人第一次出場：二十歲左右，一般身材，黑色短髮，戴綠色小圓帽，穿米白色上衣、棕色背心和長褲，背一個布包，鞋子上有灰塵。他站在湯店門外的街上（沒有進門），一手拿著一塊圓形的乾大餅，閉著眼睛，鼻子對著飄出來的熱氣聞，嘴裡咬著一口餅，一臉滿足。店裡的大鐵鍋，湯滿到鍋口。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "年輕人趕路，身上只有一塊乾的大餅。",
+     "en": "A young man was on a long walk. All he had with him was one dry flatbread."
+    },
+    {
+     "who": "旁白",
+     "text": "湯店的湯好香。他站在門口吃餅。",
+     "en": "The soup at the soup shop smelled so good. He stood by the door and ate his bread."
+    },
+    {
+     "who": "年輕人",
+     "tag": "happy",
+     "text": "聞一口，咬一口，真香！",
+     "en": "One sniff, one bite. Mmm!"
+    }
+   ]
+  },
+  {
+   "scene": "同一家湯店門口的街上。",
+   "act": "老闆第一次出場：四十多歲，一般身材，兩撇往上翹的小鬍子，戴紅色小圓帽，穿黃色上衣、圍一條白色圍裙，他從店裡跑出來，一手拿著一支大湯勺叉在腰上，另一手攤開手掌伸向年輕人要錢，嘴巴張得好大。年輕人睜大眼睛，舉著大餅搖手。畫面右邊，阿凡提第一次出場：阿凡提（和《阿凡提的五隻驢子》是同一個人）：四十多歲的大叔，戴一頂好大的白色頭巾，黑色的大鬍子，穿藍色長袍、繫紅色腰帶、穿尖頭鞋，眼睛亮亮的、很有精神。他騎著一隻披紅色毯子的灰色小驢子路過，轉頭好奇地看著兩個人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老闆跑出來。",
+     "en": "Out ran the soup seller."
+    },
+    {
+     "who": "老闆",
+     "tag": "shouting",
+     "text": "你聞了我的湯！要付錢！",
+     "en": "You smelled my soup! Now pay for it!"
+    },
+    {
+     "who": "年輕人",
+     "tag": "surprised",
+     "text": "我一口也沒喝呀！",
+     "en": "But I didn't drink a single sip!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿凡提大叔騎驢子路過。",
+     "en": "Just then, a man called Hodja came riding by on his donkey."
+    },
+    {
+     "who": "老闆",
+     "text": "阿凡提，你說誰對！",
+     "en": "Hodja, you tell us who is right!"
+    }
+   ]
+  },
+  {
+   "scene": "湯店門口，從街上看得到店裡的爐子和大鐵鍋。",
+   "act": "阿凡提從驢子上下來，站在大鐵鍋旁邊，彎腰看鍋子裡面：湯滿到鍋口，一口也沒少。他一手摸著大鬍子，臉上沒有表情，看不出他站在誰那一邊。年輕人站在門外，舉著咬了幾口的大餅；老闆站在另一邊，手叉著腰。驢子在門外等。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿凡提看了看大鍋。",
+     "en": "Hodja took a good look at the big pot."
+    },
+    {
+     "who": "阿凡提",
+     "text": "湯是一整鍋，一口也沒少。",
+     "en": "The pot is full. Not one sip is missing."
+    },
+    {
+     "who": "旁白",
+     "text": "年輕人只是聞一聞，湯沒少。你猜，他要不要付錢呢？",
+     "en": "The young man only smelled the soup, and none of it is missing. Do you think he should pay?"
+    }
+   ]
+  },
+  {
+   "scene": "湯店門口。",
+   "act": "阿凡提站在兩個人中間，一手指著從鍋子飄到門外的白色熱氣，一手指著滿到鍋口的湯，對老闆說明。老闆兩手抱在胸前，用力搖頭，小鬍子翹得好高。年輕人鬆了一口氣。下一格：阿凡提笑著把手伸進長袍的口袋，對老闆眨一隻眼睛。",
+   "lines": [
+    {
+     "who": "阿凡提",
+     "text": "不用付。因為香味自己飄出來，湯沒少。",
+     "en": "No, he doesn't have to pay. Because the smell floated out all by itself, and no soup is missing."
+    },
+    {
+     "who": "阿凡提",
+     "text": "所以老闆什麼都沒少。",
+     "en": "So the soup seller has lost nothing."
+    },
+    {
+     "who": "老闆",
+     "tag": "angry",
+     "text": "不行！聞了就要付！",
+     "en": "No! If you smell it, you pay for it!"
+    },
+    {
+     "who": "阿凡提",
+     "tag": "happy",
+     "text": "好，我幫他付。",
+     "en": "All right. I will pay for him."
+    }
+   ]
+  },
+  {
+   "scene": "湯店門口。",
+   "act": "阿凡提拿出一個鼓鼓的棕色小布錢袋（袋口綁著繩子，沒有打開），舉到老闆的右耳旁邊搖，錢袋旁邊畫幾條表示聲音的小線。老闆歪著頭、把耳朵湊過去聽，眼睛發亮，兩手已經伸出來準備接錢。年輕人在旁邊歪著頭看，一臉不懂。錢袋一直在阿凡提手上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿凡提拿出錢袋，在老闆耳邊搖一搖。",
+     "en": "Hodja took out his coin purse and shook it by the soup seller's ear."
+    },
+    {
+     "who": "阿凡提",
+     "text": "叮噹，叮噹。聽到了嗎？",
+     "en": "Jingle, jingle. Did you hear that?"
+    },
+    {
+     "who": "老闆",
+     "tag": "happy",
+     "text": "聽到了！",
+     "en": "I heard it!"
+    },
+    {
+     "who": "旁白",
+     "text": "年輕人聞香味，沒喝到湯。老闆聽到錢的聲音。",
+     "en": "The young man smelled the soup, but he drank none. The soup seller heard the money."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，老闆拿得到錢嗎？",
+     "en": "Do you think the soup seller would get the money?"
+    }
+   ]
+  },
+  {
+   "scene": "湯店門口。",
+   "act": "阿凡提把錢袋放回長袍的口袋，一手拍拍口袋，另一手先指著鍋子上飄的熱氣、再指著自己的耳朵，笑得很開心。老闆伸出來的兩隻手停在半空中，手上什麼也沒有，眼睛眨呀眨。年輕人張大嘴巴，開始笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿凡提收起錢袋。",
+     "en": "Hodja put the purse away."
+    },
+    {
+     "who": "阿凡提",
+     "text": "拿不到。因為他聞香味，沒拿走湯。",
+     "en": "No, you won't. Because he smelled your soup, but he took none."
+    },
+    {
+     "who": "阿凡提",
+     "text": "所以你聽聲音，也拿不走錢。",
+     "en": "So you heard my money, but you get none."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "happy",
+     "text": "聞一聞，換聽一聽，剛好公平！",
+     "en": "A sniff for a jingle. That's fair!"
+    }
+   ]
+  },
+  {
+   "scene": "湯店裡面：土牆、木頭桌子和長板凳，爐子上是那個大鐵鍋。",
+   "act": "左格：老闆愣了一下，接著拍著自己的圍裙仰頭大笑，阿凡提和年輕人也跟著笑，三個人笑在一起。右格：年輕人坐在桌邊喝完一碗熱湯，接著捲起袖子，在水盆邊洗碗；老闆笑著拍拍他的肩膀。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老闆呆了一下，大笑起來。",
+     "en": "The soup seller blinked. Then he burst out laughing."
+    },
+    {
+     "who": "老闆",
+     "tag": "laughing",
+     "text": "聞一聞，換聽一聽！年輕人，我請你喝湯！",
+     "en": "A sniff for a jingle! Ha! Young man, the soup is my treat!"
+    },
+    {
+     "who": "旁白",
+     "text": "年輕人喝完，幫老闆洗碗。",
+     "en": "The young man drank his soup. Then he helped wash the bowls."
+    }
+   ]
+  },
+  {
+   "scene": "湯店裡面的木頭桌子旁，門外看得到驢子。",
+   "act": "阿凡提坐在桌邊，面前一個喝完的大碗，鬍子上沾了一點湯。他從錢袋裡拿出一個銅色的錢幣，放在桌上，錢幣旁邊畫一條表示聲音的小線。老闆拿起錢幣，舉高給大家看，笑得小鬍子都在抖。年輕人拿著洗好的碗，跟著笑。門外的驢子探頭進來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿凡提也喝了一碗。",
+     "en": "Hodja had a bowl too."
+    },
+    {
+     "who": "阿凡提",
+     "text": "我喝了湯，就要付真的錢。",
+     "en": "I drank the soup, so I pay real money."
+    },
+    {
+     "who": "旁白",
+     "text": "叮噹！這次是真的錢。",
+     "en": "Clink! This time, it was a real coin."
+    },
+    {
+     "who": "旁白",
+     "text": "三個人都笑了。",
+     "en": "And all three of them laughed."
+    }
+   ]
+  }
+ ]
+}

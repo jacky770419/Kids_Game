@@ -1,0 +1,424 @@
+{
+ "id": "hare-tug",
+ "title": "拉不動的繩子",
+ "title_en": "The Great Tug-of-War",
+ "size": "中",
+ "roles": {
+  "小兔子": "就是《兔子和井裡的獅子》裡的小兔子（用「她」）：個子小、腦筋快，聲音又小又甜、說話輕快；跟大象、河馬說話時不害怕、很有精神，喊「拉」的時候很大聲，最後笑著說自己會想辦法，不嘲笑誰。",
+  "大象": "就是《兔子和井裡的獅子》裡好脾氣的大象，溫和的大叔聲音，說話慢慢的；不相信小兔子拉得動他，笑一笑、不兇；拔河時很賣力，發現另一頭是河馬的時候，自己先大笑。",
+  "河馬": "住在大河裡的河馬，嗓門很大、聲音低沉沙啞，說話直來直往、愛笑，不兇；拔河時很賣力，最後跟大象一起大笑。"
+ },
+ "cast": {
+  "小兔子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "大象": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "河馬": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "頭",
+   "where": "第3頁『一頭』『這一頭』，第4、5頁『另一頭』，第6頁『這一頭』『另一頭』，第7頁『兩頭』，第8、11頁『另一頭』，第12頁『一人拉一頭』",
+   "read": "tóu"
+  },
+  {
+   "char": "長",
+   "where": "第1頁『又長又牢』",
+   "read": "cháng"
+  },
+  {
+   "char": "為",
+   "where": "第7、9頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "為",
+   "where": "第8、9頁『以為』",
+   "read": "wéi"
+  },
+  {
+   "char": "誰",
+   "where": "第6頁『誰跟誰』，第8頁『誰也拉不動誰』『是誰在拉』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第6、7頁『沒有拉』",
+   "read": "méi"
+  },
+  {
+   "char": "間",
+   "where": "第1、6、12頁『中間』",
+   "read": "jiān"
+  },
+  {
+   "char": "噴",
+   "where": "第10頁『噴出水花』",
+   "read": "pēn"
+  },
+  {
+   "char": "喲",
+   "where": "第8頁『嘿喲』",
+   "read": "yō"
+  },
+  {
+   "char": "愣",
+   "where": "第11頁『愣了一下』",
+   "read": "lèng"
+  },
+  {
+   "char": "會",
+   "where": "第12頁『我會想辦法』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晴朗的白天。畫面左邊是森林（高大的綠樹，樹下是軟軟的泥土地和短草），畫面右邊是一條很寬的藍色大河（河邊有蘆葦和泥灘），中間隔著一座圓圓的小山丘：山丘比大象高出很多，上面都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋。山丘擋在中間，站在森林這邊看不到大河，站在大河那邊也看不到森林。",
+   "act": "小兔子就是《兔子和井裡的獅子》裡的小兔子：奶茶色的小兔子，白色的肚子和白色的圓尾巴，長耳朵內側粉紅色，左耳上別著一朵藍色小花，不穿衣服。大象就是《兔子和井裡的獅子》裡的大象：灰色的大象，大耳朵、短短的白色象牙、小眼睛笑笑的。河馬第一次出場：灰紫色的大河馬，粉紅色的肚子和嘴邊，小小的圓耳朵，大大的圓鼻孔，嘴巴很大、有兩顆圓圓的白色下牙，眼睛笑笑的。繩子是用綠褐色的藤編成的粗繩子，像一條很長的辮子，長到可以從森林邊翻過小山丘、一直拉到大河邊。畫面左邊：大象站在森林邊，用鼻子摘樹上的葉子吃。畫面右邊：河馬泡在大河裡，露出背、耳朵、眼睛和鼻孔。兩個中間隔著小山丘，互相看不到。小兔子坐在森林這邊的山腳下，正在編繩子的最後一段，編好的繩子在她旁邊捲成比她還高的一大捲。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林和大河中間，有一座小山丘。",
+     "en": "Between the forest and the big river stood a little hill."
+    },
+    {
+     "who": "旁白",
+     "text": "山丘上都是高草，在這一邊，看不到另一邊。",
+     "en": "Tall grass covered the hill. From one side, you could not see the other side."
+    },
+    {
+     "who": "旁白",
+     "text": "大象住森林這邊，河馬住大河那邊。",
+     "en": "Elephant lived on the forest side, and Hippo lived on the river side."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔子用藤，編了一條又長又牢的繩子。",
+     "en": "Little Rabbit wove a rope out of vines, very long and very strong."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，小山丘左邊的森林邊：高大的綠樹，樹下是軟軟的泥土地和短草；後面就是那座圓圓的小山丘，山丘比大象高出很多，上面都是金黃色的高草。在這裡看不到山丘另一邊的大河。",
+   "act": "小兔子拖著那一大捲藤繩，站在大象面前，兩隻前腳把繩子舉高給他看，抬著頭、很有精神。大象低下頭看她，眼睛彎彎地笑，鼻子輕輕搖一搖（是和氣的笑，不兇、沒有取笑的樣子）。",
+   "lines": [
+    {
+     "who": "小兔子",
+     "tag": "happy",
+     "text": "大象，你看，拔河的繩子！",
+     "en": "Elephant, look! A rope for tug-of-war!"
+    },
+    {
+     "who": "大象",
+     "tag": "laughing",
+     "text": "妳這麼小，拉不動我的啦。",
+     "en": "Oh, you're far too little to pull me."
+    },
+    {
+     "who": "小兔子",
+     "tag": "excited",
+     "text": "我有辦法，讓你拉不動這條繩子！",
+     "en": "I have a way to make sure you can't pull this rope!"
+    },
+    {
+     "who": "大象",
+     "tag": "gentle",
+     "text": "好啊，我試一試。",
+     "en": "All right. I'll give it a try."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，小山丘左邊的森林邊：高大的綠樹，樹下是軟軟的泥土地和短草；後面就是那座圓圓的小山丘，山丘比大象高出很多，上面都是金黃色的高草。在這裡看不到山丘另一邊的大河。",
+   "act": "小兔子兩隻前腳捧著繩子的一頭，遞給大象；大象用鼻子把這一頭捲住，捲了兩圈，穩穩的。繩子其他的部分還捲在小兔子腳邊的地上。小兔子舉起一隻前腳，認真地交代；大象點點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔子把繩子的一頭，交給大象。",
+     "en": "Little Rabbit handed one end of the rope to Elephant."
+    },
+    {
+     "who": "小兔子",
+     "text": "等我喊拉，你就拉！",
+     "en": "When I shout 'Pull,' you pull!"
+    },
+    {
+     "who": "旁白",
+     "text": "大象用鼻子，捲住繩子的這一頭。",
+     "en": "Elephant curled his trunk around this end of the rope."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，小山丘右邊的大河邊：很寬的藍色大河，河邊有蘆葦和泥灘；後面就是那座圓圓的小山丘，山丘上都是金黃色的高草。在這裡看不到山丘另一邊的森林。",
+   "act": "小兔子把繩子的另一頭扛在肩上，從山丘的高草裡走出來，來到大河邊；繩子在她後面拖得好長，一路翻過山丘頂，消失在山丘的另一邊（看不到大象）。河馬泡在河邊的淺水裡，抬起頭看她，張開大嘴巴哈哈笑，露出兩顆圓圓的下牙（是開心的笑，不兇、沒有取笑的樣子）。小兔子站在泥灘上，抬著頭跟他說話，不害怕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔子拖著另一頭，翻過小山丘。",
+     "en": "Little Rabbit dragged the other end over the little hill."
+    },
+    {
+     "who": "旁白",
+     "text": "大河裡，河馬在泡水。",
+     "en": "Hippo was soaking in the big river."
+    },
+    {
+     "who": "小兔子",
+     "tag": "happy",
+     "text": "河馬，你看，拔河的繩子！",
+     "en": "Hippo, look! A rope for tug-of-war!"
+    },
+    {
+     "who": "河馬",
+     "tag": "laughing",
+     "text": "妳這麼小，拉不動我的啦！",
+     "en": "You're far too little to pull me!"
+    },
+    {
+     "who": "小兔子",
+     "tag": "excited",
+     "text": "我有辦法，讓你拉不動這條繩子！",
+     "en": "I have a way to make sure you can't pull this rope!"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，小山丘右邊的大河邊：很寬的藍色大河，河邊有蘆葦和泥灘；後面就是那座圓圓的小山丘，山丘上都是金黃色的高草。在這裡看不到山丘另一邊的森林。",
+   "act": "河馬從水裡走上泥灘，四隻腳站穩，用大嘴巴咬住小兔子遞過來的繩子的另一頭，眼睛笑笑的。小兔子舉起一隻前腳，認真地交代。繩子從河馬的嘴邊一路往山丘上延伸，翻過山丘頂，看不到另一頭在哪裡。",
+   "lines": [
+    {
+     "who": "小兔子",
+     "text": "等我喊拉，你就拉！",
+     "en": "When I shout 'Pull,' you pull!"
+    },
+    {
+     "who": "旁白",
+     "text": "河馬用嘴巴，咬住繩子的另一頭。",
+     "en": "Hippo bit down on the other end of the rope."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天。畫面左邊是森林（高大的綠樹，樹下是軟軟的泥土地和短草），畫面右邊是一條很寬的藍色大河（河邊有蘆葦和泥灘），中間隔著一座圓圓的小山丘：山丘比大象高出很多，上面都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋。山丘擋在中間，站在森林這邊看不到大河，站在大河那邊也看不到森林。",
+   "act": "全景，要一眼看得出繩子兩頭在誰那裡：畫面左邊，大象站在森林邊，鼻子捲著繩子的這一頭；畫面右邊，河馬站在大河邊的泥灘上，嘴巴咬著繩子的另一頭；繩子從左邊翻過山丘頂、一直到右邊，還是鬆鬆的，沒有拉直。小兔子站在山丘頂上的高草中間，高草比她連耳朵都高，從山腳下完全看不到她（畫面上讓讀者從草縫裡看得到她，但她的耳朵沒有露出草的上面），山腳下的大象和河馬都看不到她；她沒有碰繩子，兩隻前腳圍在嘴巴旁邊，準備大喊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔子跑回山丘頂上，站在高草裡。",
+     "en": "Little Rabbit ran back to the top of the hill and stood in the tall grass."
+    },
+    {
+     "who": "旁白",
+     "text": "草比她高，大象和河馬都看不到她。",
+     "en": "The grass was taller than she was. Elephant and Hippo could not see her."
+    },
+    {
+     "who": "旁白",
+     "text": "這一頭在大象那裡，另一頭在河馬那裡。",
+     "en": "This end was with Elephant. The other end was with Hippo."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔子站在中間，沒有拉。",
+     "en": "Little Rabbit stood in the middle, and she was not pulling."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，等一下，是誰跟誰在拔河呢？",
+     "en": "So who was about to play tug-of-war with whom? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天。畫面左邊是森林（高大的綠樹，樹下是軟軟的泥土地和短草），畫面右邊是一條很寬的藍色大河（河邊有蘆葦和泥灘），中間隔著一座圓圓的小山丘：山丘比大象高出很多，上面都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋。山丘擋在中間，站在森林這邊看不到大河，站在大河那邊也看不到森林。",
+   "act": "全景：小兔子在山丘頂上的高草中間（高草蓋過她和她的耳朵，山腳下看不到她），仰頭大喊，嘴邊畫出聲音的線條，兩隻前腳還是圍在嘴巴旁邊，沒有碰繩子。繩子一下子拉直了：畫面左邊，大象用鼻子捲著這一頭，身體往後坐、用力往森林那邊拉；畫面右邊，河馬咬著另一頭，四隻腳撐在泥灘上、用力往大河那邊拉。兩個隔著山丘，互相看不到。",
+   "lines": [
+    {
+     "who": "小兔子",
+     "tag": "shouting",
+     "text": "拉！",
+     "en": "Pull!"
+    },
+    {
+     "who": "旁白",
+     "text": "是大象跟河馬在拔河！",
+     "en": "It was Elephant and Hippo!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為繩子的兩頭，是他們兩個在拉。",
+     "en": "Because they were the two pulling on the ends of the rope."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔子沒有拉，她在喊。",
+     "en": "Little Rabbit did not pull. She just shouted."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天。畫面左邊是森林（高大的綠樹，樹下是軟軟的泥土地和短草），畫面右邊是一條很寬的藍色大河（河邊有蘆葦和泥灘），中間隔著一座圓圓的小山丘：山丘比大象高出很多，上面都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋。山丘擋在中間，站在森林這邊看不到大河，站在大河那邊也看不到森林。",
+   "act": "畫面分成左右兩半，中間是山丘。左半：大象用鼻子捲著繩子往後退了一步，額頭冒汗，很賣力；他往山丘那邊看，看到的是高草和山丘，看不到另一邊。右半：河馬咬著繩子，屁股往河裡退了一步，把繩子又拉回去，鼻孔張得好大。山丘頂上，繩子中間綁著一片大葉子當記號，葉子往左移一點、又往右移一點，還是停在山丘頂上；小兔子在高草裡看著那片葉子，沒有碰繩子。",
+   "lines": [
+    {
+     "who": "大象",
+     "tag": "excited",
+     "text": "嘿喲，嘿喲！",
+     "en": "Heave-ho, heave-ho!"
+    },
+    {
+     "who": "旁白",
+     "text": "大象拉過去一點。",
+     "en": "Elephant pulled the rope his way a little."
+    },
+    {
+     "who": "河馬",
+     "tag": "excited",
+     "text": "嘿喲，嘿喲！",
+     "en": "Heave-ho, heave-ho!"
+    },
+    {
+     "who": "旁白",
+     "text": "河馬又拉回來一點。誰也拉不動誰。",
+     "en": "Hippo pulled it right back. Neither one could budge the other."
+    },
+    {
+     "who": "旁白",
+     "text": "大象看不到另一邊。你猜，大象以為，另一頭是誰在拉呢？",
+     "en": "Elephant could not see the other side. So who did he think was pulling the other end? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天。畫面左邊是森林（高大的綠樹，樹下是軟軟的泥土地和短草），畫面右邊是一條很寬的藍色大河（河邊有蘆葦和泥灘），中間隔著一座圓圓的小山丘：山丘比大象高出很多，上面都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋。山丘擋在中間，站在森林這邊看不到大河，站在大河那邊也看不到森林。",
+   "act": "畫面分成左右兩半，中間是山丘。左半：大象用鼻子捲著繩子，眼睛瞪得好大，很驚訝；他頭上一個想像泡泡：山丘另一邊，一隻小兔子兩隻前腳抓著繩子在拉，手臂上鼓出好大的肌肉。右半：河馬咬著繩子，眼睛也瞪得好大；他頭上一個一模一樣的想像泡泡：山丘另一邊，一隻手臂上有大肌肉的小兔子在拉繩子。真正的小兔子在山丘頂上的高草裡，沒有碰繩子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象以為，是小兔子在拉！",
+     "en": "Elephant thought it was Little Rabbit!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為另一頭是小兔子拖走的，他又看不到河馬。",
+     "en": "Because Little Rabbit had dragged the other end away, and he could not see Hippo."
+    },
+    {
+     "who": "大象",
+     "tag": "surprised",
+     "text": "小兔子的力氣，怎麼這麼大！",
+     "en": "How can Little Rabbit be so strong?"
+    },
+    {
+     "who": "旁白",
+     "text": "河馬看不到大象，也這樣想。",
+     "en": "Hippo could not see Elephant, so he thought the same thing."
+    },
+    {
+     "who": "河馬",
+     "tag": "surprised",
+     "text": "小兔子的力氣，怎麼這麼大！",
+     "en": "How can Little Rabbit be so strong?"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天。畫面左邊是森林（高大的綠樹，樹下是軟軟的泥土地和短草），畫面右邊是一條很寬的藍色大河（河邊有蘆葦和泥灘），中間隔著一座圓圓的小山丘：山丘比大象高出很多，上面都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋。山丘擋在中間，站在森林這邊看不到大河，站在大河那邊也看不到森林。",
+   "act": "畫面分成左右兩半，中間是山丘。左半：大象的四隻腳陷進軟軟的泥巴裡，泥巴到他的腳踝，他站得很穩、沒有跌倒，鼻子還捲著繩子，喘著氣。右半：河馬咬著繩子，兩個大鼻孔噴出兩道水花，像小噴泉。山丘頂上：小兔子從高草裡跳到一塊石頭上，高高舉起兩隻前腳喊停。繩子完好，沒有斷。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象的腳，陷進泥巴裡。",
+     "en": "Elephant's feet sank into the mud."
+    },
+    {
+     "who": "旁白",
+     "text": "河馬的鼻子，噴出水花。",
+     "en": "Hippo's nose sprayed water."
+    },
+    {
+     "who": "小兔子",
+     "tag": "shouting",
+     "text": "停！請你們順著繩子，走上山丘來！",
+     "en": "Stop! Now follow the rope, both of you, and come up the hill!"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，小山丘的頂上：四周都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋；從這裡往左邊看得到山腳下的森林，往右邊看得到山腳下的大河。",
+   "act": "大象從左邊的山坡走上來，鼻子還捲著繩子的這一頭，腳上沾著泥巴；河馬從右邊的山坡走上來，繩子的另一頭掛在他的嘴角，鼻子上還滴著水。兩個在山丘頂上面對面碰到，中間就是那條繩子和綁著的大葉子；兩個都愣住，眼睛瞪圓，然後一起仰頭大笑。小兔子站在兩個中間的石頭上，笑咪咪地抬頭看他們。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象順著這一頭走，河馬順著另一頭走。",
+     "en": "Elephant followed this end, and Hippo followed the other end."
+    },
+    {
+     "who": "旁白",
+     "text": "兩個在山丘頂上碰面，愣了一下。",
+     "en": "They met at the top of the hill and just stared."
+    },
+    {
+     "who": "大象",
+     "tag": "surprised",
+     "text": "河馬？原來是你！",
+     "en": "Hippo? It was you!"
+    },
+    {
+     "who": "河馬",
+     "tag": "laughing",
+     "text": "大象？原來是你！",
+     "en": "Elephant? It was you!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們一起大笑。",
+     "en": "And they both burst out laughing."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，小山丘的頂上：四周都是金黃色的高草，草比小兔子高很多、大約到大象的膝蓋；從這裡往左邊看得到山腳下的森林，往右邊看得到山腳下的大河。",
+   "act": "山丘頂上，高草被踩平了一小塊。大象站在左邊，用鼻子捲著繩子的這一頭；河馬站在右邊，用嘴巴咬著另一頭；兩個一起把繩子甩成一個大圓圈。小兔子在繩子的正中間跳繩，跳得好高，長耳朵飛起來，笑得很開心。大象和河馬的眼睛都笑得彎彎的。繩子完好，沒有斷。",
+   "lines": [
+    {
+     "who": "小兔子",
+     "tag": "happy",
+     "text": "我力氣小，可是我會想辦法。",
+     "en": "I'm not very strong, but I can think of a way."
+    },
+    {
+     "who": "大象",
+     "tag": "laughing",
+     "text": "妳真的讓我拉不動！",
+     "en": "You were right! I couldn't pull that rope!"
+    },
+    {
+     "who": "河馬",
+     "tag": "happy",
+     "text": "以後，不說妳小了！",
+     "en": "We'll never call you too little again!"
+    },
+    {
+     "who": "旁白",
+     "text": "大象和河馬一人拉一頭，甩起繩子。",
+     "en": "Elephant and Hippo each took an end and swung the rope."
+    },
+    {
+     "who": "旁白",
+     "text": "這一次，小兔子在中間跳！",
+     "en": "And this time, Little Rabbit jumped in the middle!"
+    }
+   ]
+  }
+ ]
+}

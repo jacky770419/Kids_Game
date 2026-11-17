@@ -1,0 +1,254 @@
+{
+ "id": "ikkyu-tiger",
+ "title": "一休和屏風上的老虎",
+ "title_en": "Ikkyu and the Tiger Screen",
+ "size": "短",
+ "roles": {
+  "一休": "日本很久以前一個很會動腦的小和尚，七八歲，在寺裡學習；聲音清亮、有禮貌，不慌不忙，準備抓老虎時很有精神，愛笑。",
+  "將軍": "管很多地方的大人物，五十歲左右，嗓門大、愛出題目考人，裝得很兇，其實很喜歡一休；老虎趕不出來時自己大笑。"
+ },
+ "cast": {
+  "一休": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "將軍": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "屏",
+   "where": "第1、2、4頁『屏風』",
+   "read": "píng"
+  },
+  {
+   "char": "將",
+   "where": "第1～8頁『將軍』",
+   "read": "jiāng"
+  },
+  {
+   "char": "尚",
+   "where": "第1頁『小和尚』",
+   "read": "shang"
+  },
+  {
+   "char": "為",
+   "where": "第3、6頁『因為』，第5頁『為什麼』",
+   "read": "wèi"
+  },
+  {
+   "char": "得",
+   "where": "第6頁『出得來』『抓得到』",
+   "read": "de"
+  },
+  {
+   "char": "沒",
+   "where": "第3、7頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "摺",
+   "where": "第2頁『可以摺』",
+   "read": "zhé"
+  },
+  {
+   "char": "搗",
+   "where": "第2、6頁『搗蛋』",
+   "read": "dǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的日本，一座大宅院的門口：木頭大門、灰瓦屋頂、白色圍牆，門邊有松樹，遠處是山。",
+   "act": "第一次出場。一休：七八歲的小男孩，頭髮剃得很短，圓臉、大眼睛，穿灰藍色的日式短上衣和長褲、腰上繫一條黑色腰帶，腳穿草鞋。他站在大門口，抬頭看著高高的大門，一臉好奇。將軍：五十歲左右，一般身材，濃眉毛、黑色短鬍子，頭髮在頭頂綁成一個髻，穿深紫色寬袖子的日式長袍、繫金色腰帶，手拿一把摺扇。他站在門裡面的台階上，一手拿扇子，一手摸著鬍子，笑著低頭看一休，眼睛裡閃著想出題目的光。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，日本有個愛動腦筋的小和尚，叫一休。",
+     "en": "Long ago in Japan, there lived a little monk named Ikkyu, who loved to puzzle things out."
+    },
+    {
+     "who": "旁白",
+     "text": "將軍是一位大人物，愛出題目考人。",
+     "en": "There was also a great lord called the Shogun, who loved to test people with tricky questions."
+    },
+    {
+     "who": "旁白",
+     "text": "他請一休到家裡看屏風。",
+     "en": "He invited Ikkyu to his home to see a folding screen."
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳：木頭地板，鋪著榻榻米，紙拉門開著，看得到外面的松樹；大廳中間立著一面四片連在一起、可以摺起來的大屏風，金色的底，上面用黑色的墨畫著一隻大老虎：老虎趴在竹子旁邊的大石頭上，瞪著圓圓的眼睛、張著嘴，姿勢全書都一樣，不會動。",
+   "act": "將軍站在屏風旁邊，用摺扇指著屏風上的老虎，眉毛豎起來，裝出很生氣的樣子，嘴角卻有一點笑。一休站在屏風前面，仰頭看著比他高很多的老虎，眨著眼睛。老虎是平平的畫，在屏風上一動也不動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "屏風是可以摺的大木板，上面畫著一隻大老虎。",
+     "en": "A folding screen is a row of tall panels that fold up. On this one was a painting of a big tiger."
+    },
+    {
+     "who": "將軍",
+     "tag": "shouting",
+     "text": "這隻老虎晚上會跑出來搗蛋！",
+     "en": "This tiger jumps out at night and makes trouble!"
+    },
+    {
+     "who": "將軍",
+     "text": "你把牠抓起來！",
+     "en": "Catch it for me!"
+    },
+    {
+     "who": "旁白",
+     "text": "老虎是用墨畫的。你猜，牠晚上真的會跑出來嗎？",
+     "en": "The tiger was painted in ink. Do you think it could really jump out at night?"
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳，屏風前面。",
+   "act": "一休走到屏風前面，踮起腳，把臉湊到老虎的鼻子前面，一隻手在老虎眼睛前面揮一揮；老虎和上一頁的姿勢一模一樣，一動也不動。將軍站在後面，用扇子遮住半張臉，眼睛彎彎的，小聲說悄悄話，等著看一休怎麼回答。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "不會。因為牠是畫的，不是真的老虎。",
+     "en": "No. Because it was a painting, not a real tiger."
+    },
+    {
+     "who": "將軍",
+     "tag": "whispering",
+     "text": "我是在考他呢！",
+     "en": "I'm just testing him!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，一休沒有說抓不到。",
+     "en": "But Ikkyu didn't say, \"I can't.\""
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳，屏風前面。",
+   "act": "一休把兩邊的袖子捲到手肘上面，兩手拉著一條將軍叫人拿來的粗粗的草繩，兩腳張開，在屏風前面蹲好馬步，眼睛盯著屏風上的老虎，一副馬上要抓的樣子。將軍放下扇子，眉毛抬得好高，嘴巴微微張開。老虎在屏風上，姿勢沒有變。",
+   "lines": [
+    {
+     "who": "一休",
+     "tag": "happy",
+     "text": "好，我來抓！請給我繩子。",
+     "en": "All right, I'll catch it! May I have a rope, please?"
+    },
+    {
+     "who": "旁白",
+     "text": "一休捲起袖子，在屏風前面站好。",
+     "en": "Ikkyu rolled up his sleeves and stood ready in front of the screen."
+    },
+    {
+     "who": "一休",
+     "text": "將軍，我準備好了！",
+     "en": "I'm ready, my lord!"
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳，屏風前面。",
+   "act": "一休拉著繩子蹲著馬步，轉頭看將軍，一隻手很有禮貌地比向屏風，請將軍動手。將軍站在屏風旁邊，嘴巴張得好大，扇子掉在地上，眼睛看著屏風上那隻一動也不動的老虎。",
+   "lines": [
+    {
+     "who": "一休",
+     "text": "請您先把老虎趕出來。",
+     "en": "Please chase the tiger out first."
+    },
+    {
+     "who": "一休",
+     "tag": "excited",
+     "text": "牠一出來，我馬上抓！",
+     "en": "The moment it comes out, I'll catch it!"
+    },
+    {
+     "who": "旁白",
+     "text": "將軍張大了嘴巴。",
+     "en": "The Shogun's mouth fell open."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，一休為什麼要將軍先把老虎趕出來呢？",
+     "en": "Can you guess why Ikkyu asked the Shogun to chase the tiger out first?"
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳，屏風前面。",
+   "act": "一休一手拿著繩子，笑著對將軍伸出兩根手指，像在說「有兩種」。他頭上兩個想像泡泡：左邊的泡泡裡，老虎跳到屏風外面，一休用繩子圈住牠；右邊的泡泡裡，晚上的大廳安安靜靜，老虎待在屏風上，姿勢和原來一樣，繩子放在地上。將軍摸著鬍子，歪著頭聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "因為畫的老虎出不來，將軍也趕不出來。",
+     "en": "Because a painted tiger could not come out, not even for the Shogun."
+    },
+    {
+     "who": "一休",
+     "text": "老虎出得來，我就抓得到。",
+     "en": "If the tiger can come out, I can catch it."
+    },
+    {
+     "who": "一休",
+     "text": "老虎出不來，就不會搗蛋，也不用抓了。",
+     "en": "If it can't come out, it can't make trouble. Then nobody needs to catch it."
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳，屏風前面。",
+   "act": "左格：將軍面對屏風，兩手放在嘴邊對著老虎大喊，又拍手、又跺腳；屏風上的老虎姿勢完全沒有變。一休拉著繩子在旁邊等。右格：將軍兩手一攤，仰頭大笑，一休也跟著笑；兩個人一起笑，沒有人難過。",
+   "lines": [
+    {
+     "who": "將軍",
+     "tag": "shouting",
+     "text": "老虎，出來！老虎，快出來！",
+     "en": "Tiger, come out! Tiger, come out right now!"
+    },
+    {
+     "who": "旁白",
+     "text": "老虎一動也不動，真的趕不出來！",
+     "en": "The tiger didn't move a whisker. It really couldn't be chased out!"
+    },
+    {
+     "who": "將軍",
+     "tag": "laughing",
+     "text": "哈！這一題本來就做不到。你沒有輸！",
+     "en": "Ha! Nobody could do this one. You didn't lose!"
+    }
+   ]
+  },
+  {
+   "scene": "將軍家的大廳，屏風旁邊放了一張矮木桌。",
+   "act": "將軍和一休面對面坐在矮木桌旁，桌上一盤串在竹籤上的白色日式小甜點、兩杯茶。將軍用扇子指著屏風，對一休眨一隻眼睛開玩笑。一休一手拿著一串小甜點，另一手用手指在空中畫一個方形的籠子，笑得很開心。屏風上的老虎姿勢沒有變。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "將軍請一休吃甜點。",
+     "en": "The Shogun gave Ikkyu some sweets."
+    },
+    {
+     "who": "將軍",
+     "text": "要是老虎真的跑出來呢？",
+     "en": "But what if the tiger really does jump out?"
+    },
+    {
+     "who": "一休",
+     "tag": "laughing",
+     "text": "那就畫一個籠子，把牠關起來！",
+     "en": "Then paint a cage around it and lock it in!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個人都笑了。",
+     "en": "And they both laughed."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,370 @@
+{
+ "id": "ooka-coins",
+ "title": "沒有人要的金幣",
+ "title_en": "The Coins Nobody Would Take",
+ "size": "中",
+ "roles": {
+  "法官": "日本很久以前一位很公平的法官，五十歲左右，聲音沉穩、溫和，說話不急，很有耐心，一個人、一個人算給大家聽。",
+  "木匠": "做桌子椅子的木匠，三十多歲，撿到錢包的人；老實又固執，嗓門大、說話直，好笑不討厭，想通以後很乾脆。",
+  "漁夫": "抓魚的漁夫，二十多歲，掉錢包的人；老實又固執，說話快、不肯改口，好笑不討厭，想通以後很乾脆。"
+ },
+ "cast": {
+  "法官": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "木匠": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "漁夫": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "少",
+   "where": "第8頁『少了幾個』，第9頁『少了一個』，第9、10、11頁『少一個』，第12頁『大家都少一個』",
+   "read": "shǎo"
+  },
+  {
+   "char": "分",
+   "where": "第4、6頁『兩個人分』，第4頁『分得一樣多』",
+   "read": "fēn"
+  },
+  {
+   "char": "岡",
+   "where": "第4頁『大岡法官』",
+   "read": "gāng"
+  },
+  {
+   "char": "得",
+   "where": "第1頁『走得好快』，第4頁『分得一樣多』",
+   "read": "de"
+  },
+  {
+   "char": "為",
+   "where": "第5、7、9頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "誰",
+   "where": "第5頁『給誰』，第12頁『誰也沒說』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第9頁『沒回來』，第12頁『沒說不要』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的日本，小鎮外的一條土路：路邊有松樹和木頭房子，遠處看得到海和小漁船。天氣晴朗。",
+   "act": "第一次出場。木匠：三十多歲，一般身材，頭上綁一條白色頭巾，穿深藍色的日式短外衣、棕色長褲，肩上背一個木頭工具箱。他蹲在路中間，撿起一個紅色的小布錢包，袋口用黃色的繩子綁著，打開來看，錢包裡有三個圓形的金幣（畫清楚是三個），他的眼睛睜得好大。路的前面，漁夫：二十多歲，一般身材，戴一頂草帽，穿淺綠色的日式短外衣、褲管捲到膝蓋，手上提著一串用草繩綁著的三條魚，背對著木匠，大步往前走，腰上的口袋開著一個洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，日本有一個木匠，會做桌子和椅子。",
+     "en": "Long ago in Japan, there lived a carpenter who made tables and chairs."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，他在路上撿到一個錢包。",
+     "en": "One day, he found a purse on the road."
+    },
+    {
+     "who": "木匠",
+     "tag": "surprised",
+     "text": "哇，裡面有三個金幣！",
+     "en": "Oh! There are three gold coins inside!"
+    },
+    {
+     "who": "旁白",
+     "text": "前面有個漁夫，提著魚走得好快。",
+     "en": "Up ahead, a fisherman was hurrying along with his fish."
+    }
+   ]
+  },
+  {
+   "scene": "同一條土路，一棵大松樹下。",
+   "act": "木匠追上漁夫，喘著氣，兩手把紅色錢包捧到漁夫面前，錢包打開著，看得到三個金幣。漁夫轉過身，一手提著魚，一手手掌朝外推回去，下巴抬得高高的。木匠愣住，也把手縮回來搖頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "木匠追上了漁夫。",
+     "en": "The carpenter ran and caught up with him."
+    },
+    {
+     "who": "木匠",
+     "text": "這是你掉的錢包，三個金幣都在。",
+     "en": "You dropped this purse. All three coins are here."
+    },
+    {
+     "who": "漁夫",
+     "text": "掉了，就不是我的了。我不要！",
+     "en": "I dropped it, so it isn't mine anymore. I won't take it!"
+    },
+    {
+     "who": "木匠",
+     "tag": "surprised",
+     "text": "不是我的錢，我也不要！",
+     "en": "It's not my money. I won't take it either!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條土路，往小鎮裡走，路邊的人轉頭看。",
+   "act": "木匠和漁夫一邊走一邊吵：兩個人面對面，把紅色錢包推過來、推過去，誰也不肯拿，錢包夾在四隻手中間。路邊一隻小狗歪著頭看。遠處看得到一棟有大屋頂的木頭房子，是法官辦事的地方。",
+   "lines": [
+    {
+     "who": "漁夫",
+     "tag": "shouting",
+     "text": "是你的！你拿去！",
+     "en": "It's yours! Take it!"
+    },
+    {
+     "who": "木匠",
+     "tag": "shouting",
+     "text": "不是我的！我不要！",
+     "en": "It's not mine! I won't take it!"
+    },
+    {
+     "who": "旁白",
+     "text": "別人吵架，都是搶著要。這兩個人，是搶著不要。",
+     "en": "Most people fight to get things. These two were fighting to give them away."
+    },
+    {
+     "who": "旁白",
+     "text": "他們一路吵到法官那裡。",
+     "en": "They argued all the way to the judge."
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間：木頭地板，後面是白色的紙拉門，中間一張矮木桌。",
+   "act": "第一次出場。法官：五十歲左右，一般身材，頭髮在頭頂綁成一個髻，眉毛很濃、眼睛很溫和，穿深灰色的日式正式外衣，坐在一張矮木桌後面的墊子上。矮木桌上放著打開的紅色錢包，三個金幣在桌上排成一排（三個）。木匠跪坐在桌子左邊，漁夫跪坐在桌子右邊，兩個人都把頭轉開、手抱在胸前。法官一手摸著下巴，一手拿起一個金幣敲敲桌子，表示金幣很硬。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大岡法官很公平。他聽完了。",
+     "en": "There they met a wise judge named Ooka, who was always fair. He listened to it all."
+    },
+    {
+     "who": "法官",
+     "text": "你不要，他也不要。那就兩個人分，一樣多。",
+     "en": "You won't take it, and he won't take it. Then you two will share it, the same for each."
+    },
+    {
+     "who": "法官",
+     "text": "金幣很硬，不能切開。",
+     "en": "Gold coins are hard. You can't cut one in half."
+    },
+    {
+     "who": "旁白",
+     "text": "三個金幣，兩個人分。你猜，可以分得一樣多嗎？",
+     "en": "Three gold coins, shared by two people. Could each one get the same?"
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "桌上：一個金幣放在木匠面前，一個金幣放在漁夫面前，第三個金幣留在桌子正中間。法官用手指著中間那一個，看看左邊、再看看右邊。木匠和漁夫都把兩隻手舉起來用力搖，身體往後退，誰也不肯多拿。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "不行。因為一人拿一個，會剩下一個。",
+     "en": "No. Because if each takes one, there is one left over."
+    },
+    {
+     "who": "法官",
+     "text": "剩下的這一個，給誰呢？",
+     "en": "Who gets the one that's left?"
+    },
+    {
+     "who": "木匠",
+     "text": "我不要多拿！",
+     "en": "Not me! I won't take more!"
+    },
+    {
+     "who": "漁夫",
+     "text": "我也不要多拿！",
+     "en": "Not me! I won't take more either!"
+    },
+    {
+     "who": "旁白",
+     "text": "給誰，都不一樣多，不公平。",
+     "en": "Whoever got it, the two of them wouldn't have the same. That's not fair."
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "法官先把桌上的三個金幣收回紅色錢包，再從自己外衣的口袋裡拿出一個金幣放進去，然後把錢包裡的金幣全部倒在桌上排成一排：桌上現在一排四個金幣（原來的三個，加上法官的一個；法官的那一個可以畫得亮一點）。木匠和漁夫都伸長脖子看，嘴巴張開。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "法官從自己的口袋，拿出一個金幣。",
+     "en": "Judge Ooka took one gold coin out of his own pocket."
+    },
+    {
+     "who": "法官",
+     "tag": "gentle",
+     "text": "我也放一個進去。",
+     "en": "I'll put one in too."
+    },
+    {
+     "who": "旁白",
+     "text": "三個，加一個，是四個。",
+     "en": "Three coins and one more makes four."
+    },
+    {
+     "who": "旁白",
+     "text": "四個金幣，兩個人分，一人拿幾個呢？",
+     "en": "Four gold coins, shared by two people. How many would each one get?"
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "法官把四個金幣分成兩堆：兩個推到木匠面前，兩個推到漁夫面前，桌子中間沒有剩下。木匠低頭看著面前的兩個金幣，抓抓頭上的頭巾，一臉想不通。法官笑著豎起一根手指。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一人拿兩個。因為兩個，再兩個，剛好四個。",
+     "en": "Two each. Because two and two makes exactly four."
+    },
+    {
+     "who": "法官",
+     "text": "木匠兩個，漁夫兩個，一樣多。",
+     "en": "Two for the carpenter, two for the fisherman. The same for each."
+    },
+    {
+     "who": "木匠",
+     "text": "這樣真的公平嗎？",
+     "en": "But is that really fair?"
+    },
+    {
+     "who": "法官",
+     "tag": "happy",
+     "text": "公平。我們一個人，一個人算。",
+     "en": "It is. Let's check, one person at a time."
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "法官的手比向漁夫。漁夫面前的桌上有兩個金幣；他頭上一個想像泡泡：紅色錢包裡三個金幣（他本來有的）。漁夫伸出一隻手的三根手指，再看看桌上的兩個金幣，皺著眉頭一根一根算。木匠在旁邊看。",
+   "lines": [
+    {
+     "who": "法官",
+     "text": "先算漁夫。你本來有三個金幣，現在拿回兩個。",
+     "en": "First, the fisherman. You had three gold coins. Now you get two back."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，漁夫少了幾個？",
+     "en": "Can you guess how many coins he was short?"
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "漁夫面前的桌上是兩個金幣，旁邊用虛線畫一個空的圓圈，表示少掉的那一個。漁夫伸出一根手指，恍然大悟，眼睛睜得圓圓的。法官點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "少了一個。因為三個裡面，有一個沒回來。",
+     "en": "One. Because out of three coins, one didn't come back."
+    },
+    {
+     "who": "漁夫",
+     "tag": "surprised",
+     "text": "本來三個，現在兩個。我少一個！",
+     "en": "I had three. Now I have two. I'm one short!"
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "法官的手比向木匠。木匠面前的桌上是兩個金幣，旁邊也用虛線畫一個空的圓圈。木匠頭上一個想像泡泡：他在路上撿起裝著三個金幣的紅色錢包，漁夫把錢包推給他（就是在路上說「你拿去」的樣子）。木匠伸出一根手指，也恍然大悟。",
+   "lines": [
+    {
+     "who": "法官",
+     "text": "再算木匠。你撿到三個，漁夫說都給你。",
+     "en": "Next, the carpenter. You found three coins, and the fisherman said they were all yours."
+    },
+    {
+     "who": "法官",
+     "text": "你本來可以拿三個，現在拿兩個。",
+     "en": "You could have had three. Now you get two."
+    },
+    {
+     "who": "木匠",
+     "tag": "surprised",
+     "text": "本來三個，現在兩個。我也少一個！",
+     "en": "It could have been three. Now it's two. I'm one short too!"
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間，矮木桌旁。",
+   "act": "法官把自己外衣的口袋翻出來給兩個人看，口袋旁邊用虛線畫一個空的圓圈，表示他拿出去的那一個金幣。畫面上方排三個小圖：漁夫、木匠、法官，每個人旁邊都有一個虛線的空圓圈，三個人一樣。木匠和漁夫互相看一眼，一起點頭。",
+   "lines": [
+    {
+     "who": "法官",
+     "text": "最後算我。我從口袋拿出一個金幣。",
+     "en": "Last, me. I took one gold coin out of my pocket."
+    },
+    {
+     "who": "法官",
+     "tag": "happy",
+     "text": "所以，我也少一個。",
+     "en": "So I'm one short too."
+    },
+    {
+     "who": "旁白",
+     "text": "漁夫少一個，木匠少一個，法官也少一個。",
+     "en": "The fisherman, one short. The carpenter, one short. The judge, one short."
+    },
+    {
+     "who": "旁白",
+     "text": "三個人都少一個，一樣多，所以公平。",
+     "en": "All three were one short, just the same. So it was fair."
+    }
+   ]
+  },
+  {
+   "scene": "法官辦事的大房間門口，外面是小鎮的街道，太陽快下山，天空橘色。",
+   "act": "左格：木匠和漁夫各把兩個金幣收進自己的口袋，並排向法官深深鞠躬。右格：兩個人肩並肩走在街上，木匠一手搭著漁夫的肩膀，另一手指著路邊掛著布簾的麵店；漁夫把手上那一串魚裡的一條遞給木匠，兩個人都在笑。門口，法官站著目送他們，一手摸著外衣的口袋，笑得很溫和。",
+   "lines": [
+    {
+     "who": "木匠",
+     "text": "法官都拿出自己的金幣了，我收下！",
+     "en": "The judge even gave his own coin. Then I'll take mine!"
+    },
+    {
+     "who": "漁夫",
+     "text": "大家都少一個，我也收下！",
+     "en": "We're all one short. I'll take mine too!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個人向法官鞠躬，肩並肩走出去。",
+     "en": "The two men bowed to the judge and walked out side by side."
+    },
+    {
+     "who": "旁白",
+     "text": "木匠請漁夫吃麵，漁夫送木匠一條魚，誰也沒說不要。",
+     "en": "The carpenter treated the fisherman to noodles. The fisherman gave the carpenter a fish. And nobody said, \"I won't take it.\""
+    },
+    {
+     "who": "旁白",
+     "text": "法官摸著輕了一點的口袋，笑了。",
+     "en": "Judge Ooka patted his pocket, which was a little lighter now, and smiled."
+    }
+   ]
+  }
+ ]
+}

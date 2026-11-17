@@ -1,0 +1,410 @@
+{
+ "id": "wise-girl",
+ "title": "聰明的小姑娘",
+ "title_en": "The Wise Little Girl",
+ "size": "中",
+ "roles": {
+  "國王": "愛出謎題的老國王，慈祥、愛笑，笑聲很大；不是壞人，出題是因為喜歡動腦，謎題被解開時又驚訝又高興。",
+  "小姑娘": "七歲左右，農夫的女兒，全書沒有名字，就叫小姑娘；聲音清楚有精神，愛動腦，想事情時不急，想到辦法時很興奮；對國王有禮貌、不害怕。",
+  "爸爸": "老實的農夫，三十多歲，溫和的爸爸聲音；聽到謎題就驚訝，口頭禪是「怎麼可能兩樣都對！」，很疼女兒，最後笑得最開心。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小姑娘": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "娘",
+   "where": "書名『小姑娘』，第1、2、8頁『小姑娘』（輕聲）",
+   "read": "niang"
+  },
+  {
+   "char": "還",
+   "where": "第6、8頁『還沒』",
+   "read": "hái"
+  },
+  {
+   "char": "為",
+   "where": "第3、4、6、10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "為",
+   "where": "第8頁『以為』",
+   "read": "wéi"
+  },
+  {
+   "char": "只",
+   "where": "第4頁『不只』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "種",
+   "where": "第4頁『一種』",
+   "read": "zhǒng"
+  },
+  {
+   "char": "行",
+   "where": "第3頁『不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第1頁『誰能』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第4、8、10頁『沒有』，第6、8頁『還沒』",
+   "read": "méi"
+  },
+  {
+   "char": "著",
+   "where": "第8頁『騎著』，第9頁『捧著』，第9頁『拍著』",
+   "read": "zhe"
+  },
+  {
+   "char": "解",
+   "where": "第4、6頁『解開』",
+   "read": "jiě"
+  },
+  {
+   "char": "膀",
+   "where": "第3頁『肩膀』，第9頁『翅膀』",
+   "read": "bǎng"
+  },
+  {
+   "char": "個",
+   "where": "第1頁『這個』（輕聲）",
+   "read": "ge"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的小村子廣場，晴朗的白天：石頭鋪的小廣場，中間一口井，四周是茅草屋頂的小房子，遠處是麥田。",
+   "act": "國王第一次出場：六十多歲，白色的大鬍子長到胸口，戴金色皇冠，穿紅色長袍，站在井邊的石階上，笑咪咪地伸出三根手指。村民圍著聽。爸爸第一次出場：三十多歲的農夫，咖啡色短髮，戴草帽，穿米白色上衣、咖啡色吊帶褲、黑色靴子，一手抓著頭。小姑娘第一次出場：七歲左右，兩條咖啡色辮子，頭上綁紅色頭巾，穿淺黃色上衣、綠色背心裙、咖啡色短靴，牽著爸爸的手，一根手指點著下巴，眼睛發亮地看著國王。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，愛出謎題的國王來到村子裡。",
+     "en": "Once upon a time, a king who loved riddles came to a village."
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "誰能照我說的三樣來王宮，我就請他全家吃飯！",
+     "en": "Come to my palace and do the three things I say, and your whole family may dine with me!"
+    },
+    {
+     "who": "旁白",
+     "text": "農夫和女兒也來聽。這個小姑娘最愛動腦。",
+     "en": "A farmer and his daughter came to listen. The little girl loved to think."
+    }
+   ]
+  },
+  {
+   "scene": "農夫家的院子，白天：茅草屋頂的小木屋，木頭圍籬，院子裡長著草，屋簷下掛著一個木頭小鴿舍，圍籬外面是麥田。",
+   "act": "大山羊第一次出場：白色的大山羊，一對往後彎的灰色角，下巴一撮白鬍子，脖子上繫一條藍色繩子、掛一個小銅鈴，個子到小姑娘的胸口，站在院子裡低頭吃草。小鴿子第一次出場：白色的小鴿子，粉紅色的腳，停在屋簷下的鴿舍上。爸爸坐在門口的木頭矮凳上，草帽拿在手裡，皺著眉頭，伸出一根手指。小姑娘站在他旁邊，一根手指點著下巴想事情。這一頁不要畫出小姑娘騎山羊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回到家，大山羊在院子裡吃草。",
+     "en": "Back home, their big goat was munching grass in the yard."
+    },
+    {
+     "who": "爸爸",
+     "tag": "worried",
+     "text": "第一樣，不能走路去，也不能騎馬去。",
+     "en": "First, you can't walk there, and you can't ride a horse there."
+    },
+    {
+     "who": "爸爸",
+     "tag": "surprised",
+     "text": "怎麼可能兩樣都對！",
+     "en": "How can both be true?"
+    },
+    {
+     "who": "小姑娘",
+     "text": "爸爸，我想一想。",
+     "en": "Let me think, Papa."
+    },
+    {
+     "who": "旁白",
+     "text": "不能走路，也不能騎馬。你猜，小姑娘要怎麼去呢？",
+     "en": "No walking, and no riding a horse. How will the little girl get there? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "農夫家的院子，白天：茅草屋頂的小木屋，木頭圍籬，院子裡長著草，屋簷下掛著一個木頭小鴿舍，圍籬外面是麥田。",
+   "act": "爸爸頭上依序三個想像泡泡：第一個是小姑娘用跑的（旁邊打叉）；第二個是小姑娘坐在一輛馬車上，一匹咖啡色的馬在前面拉車（旁邊打叉）；第三個是小姑娘坐在爸爸的肩膀上（旁邊一個問號）。爸爸笑著拍拍自己的肩膀。小姑娘對前兩個泡泡搖搖頭，看到第三個笑了出來。大山羊在後面吃草。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "text": "用跑的？",
+     "en": "Run there?"
+    },
+    {
+     "who": "小姑娘",
+     "text": "不行，因為跑也是用腳走。",
+     "en": "No, because running is still going on foot."
+    },
+    {
+     "who": "爸爸",
+     "text": "坐馬車？",
+     "en": "Take a horse cart?"
+    },
+    {
+     "who": "小姑娘",
+     "text": "馬車要馬拉，也不行。",
+     "en": "A horse pulls the cart, so that's no good either."
+    },
+    {
+     "who": "爸爸",
+     "tag": "excited",
+     "text": "那妳坐在我的肩膀上！",
+     "en": "Then sit on my shoulders!"
+    }
+   ]
+  },
+  {
+   "scene": "農夫家的院子，白天：茅草屋頂的小木屋，木頭圍籬，院子裡長著草，屋簷下掛著一個木頭小鴿舍，圍籬外面是麥田。",
+   "act": "左邊小格：小姑娘笑著點頭，一手指著圍籬外面的麥田，爸爸的鋤頭靠在圍籬上（爸爸要去田裡工作）。右邊大格：小姑娘跨坐在大山羊的背上，兩手抓著山羊脖子上的藍色繩子，兩隻腳離開地面；大山羊站得很穩，嘴裡還嚼著草。爸爸張大嘴巴，草帽掉在地上。小姑娘頭上一個想像泡泡：一匹馬（打叉）、一隻山羊（打勾）。",
+   "lines": [
+    {
+     "who": "小姑娘",
+     "tag": "laughing",
+     "text": "這樣可以！可是爸爸要下田。",
+     "en": "That would work! But you have to work in the field, Papa."
+    },
+    {
+     "who": "小姑娘",
+     "tag": "excited",
+     "text": "我騎大山羊去！因為山羊不是馬，我也沒有走路。",
+     "en": "I'll ride our big goat! Because a goat is not a horse, and I won't be walking."
+    },
+    {
+     "who": "旁白",
+     "text": "辦法不只一種。第一樣，解開了。",
+     "en": "There was more than one way. The first one was solved."
+    }
+   ]
+  },
+  {
+   "scene": "農夫家的院子，白天：茅草屋頂的小木屋，木頭圍籬，院子裡長著草，屋簷下掛著一個木頭小鴿舍，圍籬外面是麥田。中午，太陽高高掛在天上。",
+   "act": "爸爸伸出兩根手指，另一手抓著頭。小姑娘坐在大山羊旁邊的草地上，一手遮在眉毛上，抬頭看天。畫面上方畫三個並排的小格子：左邊一格是太陽高掛的藍色天空（白天），右邊一格是有月亮和星星的黑色夜空（晚上），中間一格是空白的、只有一個問號。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "text": "第二樣，不能白天去，也不能晚上去。",
+     "en": "Second, you can't go by day, and you can't go by night."
+    },
+    {
+     "who": "爸爸",
+     "tag": "surprised",
+     "text": "怎麼可能兩樣都對！",
+     "en": "How can both be true?"
+    },
+    {
+     "who": "旁白",
+     "text": "太陽在天上是白天，天全黑了是晚上。",
+     "en": "When the sun is in the sky, it is day. When the sky is all dark, it is night."
+    },
+    {
+     "who": "旁白",
+     "text": "不是白天，也不是晚上。你猜，她什麼時候去呢？",
+     "en": "Not day, and not night. When will she go? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "農夫家的院子，白天：茅草屋頂的小木屋，木頭圍籬，院子裡長著草，屋簷下掛著一個木頭小鴿舍，圍籬外面是麥田。",
+   "act": "小姑娘站起來，高興地指著頭上的大想像泡泡：太陽剛落到山後面看不到了，天空是橘紅色帶粉紫色，天還亮、還沒有星星。旁邊一個小一點的泡泡：早上天剛亮，太陽還在山後面沒有出來，天空是淡粉紅色。上一頁中間那一格問號，換成這張橘紅色天空的圖。爸爸伸出兩根手指，笑著點頭。",
+   "lines": [
+    {
+     "who": "小姑娘",
+     "tag": "excited",
+     "text": "太陽剛下山，天還沒黑的時候去！",
+     "en": "I'll go just after the sun goes down, before the sky gets dark!"
+    },
+    {
+     "who": "小姑娘",
+     "text": "因為太陽下山了，不是白天。天還沒黑，不是晚上。",
+     "en": "The sun has set, so it is not day. The sky is not dark yet, so it is not night."
+    },
+    {
+     "who": "旁白",
+     "text": "早上天剛亮、太陽還沒出來，也可以。",
+     "en": "Early morning works too, when it is getting light but the sun is not up yet."
+    },
+    {
+     "who": "旁白",
+     "text": "第一樣，第二樣，都解開了。",
+     "en": "The first and the second were both solved."
+    }
+   ]
+  },
+  {
+   "scene": "農夫家的院子，白天：茅草屋頂的小木屋，木頭圍籬，院子裡長著草，屋簷下掛著一個木頭小鴿舍，圍籬外面是麥田。下午。",
+   "act": "爸爸伸出三根手指，另一手攤開，眉毛皺成八字。小鴿子從天上飛回來，停在小姑娘伸出來的手上；小姑娘看著手上的小鴿子，眼睛發亮，笑了。屋簷下的小鴿舍門開著。這一頁不要畫出她打算怎麼做。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "text": "第三樣，要帶禮物，又不能帶禮物。",
+     "en": "Third, you must bring a gift, and you must not bring a gift."
+    },
+    {
+     "who": "爸爸",
+     "tag": "surprised",
+     "text": "怎麼可能兩樣都對！",
+     "en": "How can both be true?"
+    },
+    {
+     "who": "旁白",
+     "text": "她的小鴿子飛出去玩，又自己飛回家。",
+     "en": "Her pet pigeon flew out to play, then flew back home all by itself."
+    },
+    {
+     "who": "小姑娘",
+     "tag": "happy",
+     "text": "爸爸，我有辦法了！",
+     "en": "Papa, I've got it!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大門口，太陽剛下山：太陽已經落到山後面看不到了，天空是橘紅色帶一點粉紫色，天還亮、看得清楚路，還沒有星星和月亮，門口的燈也還沒點。大門前是寬寬的石階。",
+   "act": "小姑娘騎在大山羊的背上（兩隻腳離開地面），大山羊慢慢走到石階前；她胸前抱著一個有蓋子的小藤籃，蓋子的縫露出一點白色羽毛（小鴿子在裡面）。國王站在大門口，驚訝地張開雙手。下一格：大山羊伸長脖子，舔了一口國王的白色大鬍子；國王縮著脖子，笑得眼睛瞇起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽剛下山，天還沒黑。",
+     "en": "The sun had just gone down, and the sky was not dark yet."
+    },
+    {
+     "who": "旁白",
+     "text": "小姑娘騎著大山羊，來到王宮。",
+     "en": "The little girl rode her big goat up to the palace."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "沒有走路，也沒有騎馬！不是白天，也不是晚上！",
+     "en": "No walking, and no horse! Not day, and not night!"
+    },
+    {
+     "who": "旁白",
+     "text": "大山羊以為國王的鬍子是草，舔了一口。",
+     "en": "The big goat thought the king's beard was grass, and gave it a lick."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大門口，太陽剛下山：太陽已經落到山後面看不到了，天空是橘紅色帶一點粉紫色，天還亮、看得清楚路，還沒有星星和月亮，門口的燈也還沒點。大門前是寬寬的石階。",
+   "act": "小姑娘還坐在大山羊的背上，打開小藤籃，雙手捧出白色的小鴿子，舉到國王面前；國王伸出雙手要接。她的手一打開，小鴿子拍著翅膀飛起來，往天上飛；國王的雙手停在半空中，手上是空的，抬頭張著嘴看。小鴿子好好的，飛得很穩。",
+   "lines": [
+    {
+     "who": "國王",
+     "text": "那禮物呢？",
+     "en": "And the gift?"
+    },
+    {
+     "who": "小姑娘",
+     "text": "這是我的禮物。",
+     "en": "This is my gift."
+    },
+    {
+     "who": "旁白",
+     "text": "她捧著小鴿子，手一打開。",
+     "en": "She held up her little pigeon and opened her hands."
+    },
+    {
+     "who": "旁白",
+     "text": "小鴿子拍著翅膀，飛走了。",
+     "en": "The pigeon flapped its wings and flew away."
+    },
+    {
+     "who": "旁白",
+     "text": "要帶禮物，又不能帶禮物。你猜，兩樣都對嗎？",
+     "en": "She must bring a gift, and must not bring a gift. Are both true? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大門口，太陽剛下山：太陽已經落到山後面看不到了，天空是橘紅色帶一點粉紫色，天還亮、看得清楚路，還沒有星星和月亮，門口的燈也還沒點。大門前是寬寬的石階。",
+   "act": "小姑娘笑著，伸出兩根手指（兩樣都對），一手比著自己剛才捧鴿子的手（真的帶來了），一手指著國王空空的雙手（國王手上沒有）。國王低頭看自己空空的手，眼睛睜大，開始笑。遠遠的天上，小鴿子往村子的方向飛；畫面一角的小圖：小鴿子已經回到農夫家屋簷下的鴿舍，探出頭來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩樣都對！",
+     "en": "Both are true!"
+    },
+    {
+     "who": "小姑娘",
+     "text": "因為我真的帶來了，所以有帶。",
+     "en": "I really did bring it here, so I brought a gift."
+    },
+    {
+     "who": "小姑娘",
+     "text": "可是牠飛走了，國王手上沒有，所以又沒有帶。",
+     "en": "But it flew away, and your hands are empty, so I did not bring one."
+    },
+    {
+     "who": "旁白",
+     "text": "小鴿子自己飛回家了。",
+     "en": "And the little pigeon flew home all by itself."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的餐廳，晚上：一張鋪著白桌布的長桌，桌上有蠟燭、麵包、熱湯和水果，後面是高高的窗戶。",
+   "act": "國王、小姑娘和爸爸坐在長桌邊吃飯。爸爸把草帽放在腿上，笑得最大聲，一手拍著桌子。國王舉著杯子對小姑娘說話，笑咪咪的；小姑娘舉起一根手指，眼睛發亮，已經在想要出什麼題。大山羊站在國王的椅子旁邊，又伸出舌頭舔國王的白鬍子，國王笑得往後仰，皇冠歪到一邊；小姑娘一邊笑一邊拉山羊脖子上的藍色繩子。小鴿子停在窗台上。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！三樣都做到了，全家一起吃飯！",
+     "en": "Ha! You did all three! Now your whole family dines with me!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "happy",
+     "text": "原來，真的可以兩樣都對！",
+     "en": "Well, well! Both really can be true!"
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "以後常來想謎題！",
+     "en": "Come back often, and we'll think up riddles together!"
+    },
+    {
+     "who": "小姑娘",
+     "tag": "happy",
+     "text": "好！下次換我出題！",
+     "en": "Yes! Next time, I'll bring a riddle for you!"
+    },
+    {
+     "who": "旁白",
+     "text": "大山羊又舔了國王的鬍子，大家都笑了。",
+     "en": "The big goat licked the king's beard again, and everyone laughed."
+    }
+   ]
+  }
+ ]
+}
