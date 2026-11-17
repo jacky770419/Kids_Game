@@ -1,0 +1,267 @@
+{
+ "id": "chick",
+ "title": "小雞出生了",
+ "title_en": "A Chick Is Born",
+ "size": "短",
+ "roles": {
+  "小花": "到奶奶家玩的五歲小女孩，好奇愛問，聲音清亮，看到小雞出生時又驚訝又開心，忍不住咯咯笑。",
+  "母雞": "奶奶家的棕色母雞，溫柔又有耐心的年輕女聲，說話輕輕的，小雞要出來時又興奮又驕傲。",
+  "小雞": "剛出生的小雞，聲音又尖又細、可愛活潑，第一次見到媽媽好興奮。"
+ },
+ "cast": {
+  "小花": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "母雞": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "小雞": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "殼",
+   "where": "第5頁『蛋殼』兩次，第6頁『蛋殼』",
+   "read": "ké"
+  },
+  {
+   "char": "什",
+   "where": "第2頁『什麼時候』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第4頁『是誰』",
+   "read": "shéi"
+  },
+  {
+   "char": "喀",
+   "where": "第5頁、第6頁『喀！』（蛋殼裂開的聲音）",
+   "read": "kā"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上，奶奶家的後院：一間紅屋頂的木頭雞舍，門開著，裡面有一個鋪滿金黃色稻草的雞窩；陽光從門口照進來。",
+   "act": "小花第一次出場：五歲左右的小女孩，黑色短髮、頭上綁一個紅色蝴蝶結，穿黃色連身裙、紅色小雨鞋。她蹲在雞舍門口，歪著頭往裡看。母雞第一次出場：胖胖的棕色母雞，紅色雞冠，脖子有一圈金色羽毛；她把羽毛蓬起來，一動也不動地坐在雞窩裡，把一邊翅膀的尖端舉到嘴邊，好像在說「噓」。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小花到奶奶家玩，跑去看雞舍。",
+     "en": "Lily is visiting Grandma's farm. She runs to see the henhouse."
+    },
+    {
+     "who": "旁白",
+     "text": "雞窩裡，母雞一動也不動地坐著。",
+     "en": "In the nest, Mother Hen sits very still."
+    },
+    {
+     "who": "小花",
+     "tag": "curious",
+     "text": "母雞，妳怎麼不出來玩？",
+     "en": "Mother Hen, why don't you come out and play?"
+    },
+    {
+     "who": "母雞",
+     "tag": "whispering",
+     "text": "噓，我在幫我的蛋保暖。",
+     "en": "Shh. I'm keeping my eggs warm."
+    }
+   ]
+  },
+  {
+   "scene": "雞舍裡的雞窩，金黃色的稻草。",
+   "act": "母雞微微站起來，肚子下面露出五顆淺棕色的蛋，排在稻草窩裡；她用嘴巴輕輕把一顆蛋翻過來。小花睜大眼睛，雙手捂著嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "母雞站起來，下面有五顆蛋。",
+     "en": "Mother Hen stands up a little. Under her are five eggs."
+    },
+    {
+     "who": "母雞",
+     "tag": "gentle",
+     "text": "小雞正在蛋裡面變大呢。",
+     "en": "My chicks are growing inside."
+    },
+    {
+     "who": "小花",
+     "tag": "excited",
+     "text": "哇！他們什麼時候出來？",
+     "en": "Wow! When will they come out?"
+    },
+    {
+     "who": "母雞",
+     "text": "大約要二十一天喔。",
+     "en": "In about twenty-one days."
+    }
+   ]
+  },
+  {
+   "scene": "同一間雞舍，畫面分成三小格：第一格下著雨，雨滴打在紅屋頂上；第二格颳著風，樹葉在門口飛；第三格是晴天的雞舍裡，雞窩旁邊放著一個水盆和一小堆米。",
+   "act": "第一、二格：母雞蓬著羽毛，穩穩坐在雞窩裡；小花穿著紅色雨鞋、撐一把黃色小傘站在門口，一臉擔心。第三格：母雞跳下雞窩，低頭喝一口水、啄幾顆米，眼睛還看著窩裡的蛋。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "下雨天，母雞坐在蛋上。",
+     "en": "On rainy days, Mother Hen sits on her eggs."
+    },
+    {
+     "who": "旁白",
+     "text": "颳風天，母雞也坐在蛋上。",
+     "en": "On windy days, she sits on her eggs too."
+    },
+    {
+     "who": "小花",
+     "tag": "worried",
+     "text": "母雞，妳都不餓嗎？",
+     "en": "Mother Hen, aren't you hungry?"
+    },
+    {
+     "who": "母雞",
+     "tag": "gentle",
+     "text": "我下來吃一點，馬上就回去。",
+     "en": "I hop down for a quick bite, then hurry right back."
+    }
+   ]
+  },
+  {
+   "scene": "雞舍裡，第二十一天的早上，陽光照在稻草上。",
+   "act": "小花趴在雞窩旁邊，把耳朵貼近蛋，眼睛睜得好大；母雞歪著頭，也在聽；其中一顆蛋輕輕搖了一下。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二十一天，小花把耳朵貼近雞窩。",
+     "en": "On day twenty-one, Lily puts her ear close to the nest."
+    },
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩！",
+     "en": "Tap, tap, tap!"
+    },
+    {
+     "who": "小花",
+     "tag": "surprised",
+     "text": "咦？是誰在敲門？",
+     "en": "Huh? Who's knocking?"
+    },
+    {
+     "who": "母雞",
+     "tag": "excited",
+     "text": "是小雞！他要出來了！",
+     "en": "It's a chick! He's coming out!"
+    }
+   ]
+  },
+  {
+   "scene": "雞窩的特寫，稻草和五顆淺棕色的蛋。",
+   "act": "一顆蛋上破了一個小洞，洞裡露出一個黃色的小嘴巴，嘴巴尖端有一個白色的小尖角；母雞得意地挺起胸膛；小花雙手握拳，在旁邊加油。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "喀！蛋殼破了一個小洞。",
+     "en": "Crack! A tiny hole pops open in the shell."
+    },
+    {
+     "who": "母雞",
+     "tag": "proud",
+     "text": "小雞嘴巴上有個小尖角，可以啄破蛋殼。",
+     "en": "My chick has a tiny egg tooth on the tip of his beak. It helps him peck through the shell."
+    },
+    {
+     "who": "旁白",
+     "text": "小雞啄一下，休息一下，再啄一下。",
+     "en": "The chick pecks, rests a little, then pecks again."
+    },
+    {
+     "who": "小花",
+     "tag": "excited",
+     "text": "小雞，加油！",
+     "en": "Go, little chick, go!"
+    }
+   ]
+  },
+  {
+   "scene": "雞窩的特寫。",
+   "act": "蛋殼裂成兩半，一隻小雞跌坐在稻草上，全身濕透，細細的羽毛黏在身上，腳還站不穩，張著嘴巴叫；母雞低頭看他；小花張大嘴巴，忍不住笑出來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "喀！蛋殼裂成兩半，小雞跌了出來。",
+     "en": "Crack! The shell splits in two, and out tumbles the chick."
+    },
+    {
+     "who": "小雞",
+     "tag": "excited",
+     "text": "媽媽！我出來了！",
+     "en": "Mama! I'm out!"
+    },
+    {
+     "who": "小花",
+     "tag": "laughing",
+     "text": "小雞全身濕透了，好像剛洗完澡！",
+     "en": "He's all wet, like he just had a bath!"
+    }
+   ]
+  },
+  {
+   "scene": "雞舍裡，下午，陽光斜斜地照進來。",
+   "act": "母雞張開翅膀，把小雞抱在翅膀下面；接著小雞從翅膀下鑽出來，毛已經乾了，變成一顆蓬鬆的黃色小毛球；小花伸出一根手指，輕輕摸小雞的頭，笑得眼睛彎彎。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "母雞把小雞抱在翅膀下取暖。",
+     "en": "Mother Hen tucks the chick under her cozy wing."
+    },
+    {
+     "who": "旁白",
+     "text": "幾個小時後，小雞的毛乾了。",
+     "en": "A few hours later, the chick is dry."
+    },
+    {
+     "who": "旁白",
+     "text": "他變得又軟又蓬鬆，像一顆黃色的小球！",
+     "en": "Now he's soft and fluffy, like a little yellow ball!"
+    },
+    {
+     "who": "小花",
+     "tag": "happy",
+     "text": "哇，好軟，好可愛！",
+     "en": "Ooh, so soft! So cute!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家的後院草地，陽光很亮，地上撒著小米；遠處是紅屋頂的雞舍。",
+   "act": "母雞走在前面，五隻黃色小雞排成一排跟在後面，小花也彎著腰、學小雞走路，跟在最後面；奶奶（白頭髮、藍色圍裙）站在遠處的門口笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，五隻小雞全都出生了。",
+     "en": "By the next day, all five chicks have hatched."
+    },
+    {
+     "who": "小雞",
+     "tag": "happy",
+     "text": "媽媽，我們要去哪裡？",
+     "en": "Mama, where are we going?"
+    },
+    {
+     "who": "母雞",
+     "tag": "happy",
+     "text": "去院子曬太陽，吃小米！",
+     "en": "Out to the yard, to sit in the sun and eat some seeds!"
+    },
+    {
+     "who": "旁白",
+     "text": "母雞在前面，小雞在後面，小花跟在最後面！",
+     "en": "Mother Hen leads the way. The chicks follow behind. And Lily follows at the very end!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,528 @@
+{
+ "id": "nutcracker",
+ "title": "胡桃鉗",
+ "title_en": "The Nutcracker",
+ "size": "長",
+ "roles": {
+  "瑪莉": "七歲的小女孩，聲音甜甜的、好奇又善良，很愛惜玩具，緊張時小小聲，鼓起勇氣時大聲又堅定。",
+  "教父爺爺": "做時鐘的老爺爺，瑪莉的教父，聲音低沉慈祥、慢慢說，說話帶一點神祕和頑皮。",
+  "胡桃鉗王子": "被魔法變成木頭胡桃鉗的王子，聲音明亮溫和、有禮貌，帶玩具們比賽時很有精神。",
+  "老鼠王": "戴金色皇冠的胖老鼠王，嗓門又粗又大、很愛吹牛，被拖鞋嚇到就慌慌張張，好笑不可怕。",
+  "糖果仙子": "糖果王國的仙子，年輕女生的聲音，清亮甜美、熱情好客。"
+ },
+ "cast": {
+  "瑪莉": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "教父爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "胡桃鉗王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  },
+  "老鼠王": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "糖果仙子": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "教",
+   "where": "第2頁『教父爺爺來了』『謝謝教父爺爺』",
+   "read": "jiào"
+  },
+  {
+   "char": "給",
+   "where": "第2頁『給妳的』",
+   "read": "gěi"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『最會咬開』，第15頁『不會忘記』",
+   "read": "huì"
+  },
+  {
+   "char": "著",
+   "where": "第5頁『睡不著』（念 zháo，不是輕聲 zhe）",
+   "read": "zháo"
+  },
+  {
+   "char": "鑽",
+   "where": "第6頁『鑽出』，第12頁『鑽進』",
+   "read": "zuān"
+  },
+  {
+   "char": "冠",
+   "where": "第6、9、14、16頁『皇冠』",
+   "read": "guān"
+  },
+  {
+   "char": "場",
+   "where": "第16頁『一場夢』",
+   "read": "chǎng"
+  },
+  {
+   "char": "少",
+   "where": "第16頁『少了一隻』",
+   "read": "shǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一棟老房子的客廳，聖誕夜，晚上。客廳中間有一棵好高的聖誕樹，掛滿彩色的燈、金色的星星和紅色的蘋果；樹下堆著禮物盒；牆邊有一個玻璃門的玩具櫃，牆上有一座老式大時鐘。",
+   "act": "瑪莉出場：七歲的小女孩，棕色捲髮，頭上綁著白色髮帶，穿紅色絨布洋裝。哥哥弗里茲出場：九歲的男孩，金色短髮，穿綠色西裝短褲。兩個人站在剛打開的客廳門口，張大嘴巴看著聖誕樹，瑪莉雙手合在胸前，好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "聖誕夜，瑪莉和哥哥在客廳門外，等呀等。",
+     "en": "On Christmas Eve, Marie and her big brother, Fritz, waited and waited outside the living room door."
+    },
+    {
+     "who": "旁白",
+     "text": "門一打開，哇！好大一棵聖誕樹！",
+     "en": "Then the door swung open. Wow! There stood a giant Christmas tree!"
+    },
+    {
+     "who": "旁白",
+     "text": "樹上掛滿了彩色的燈和金色的星星。",
+     "en": "It was covered with colorful lights and golden stars."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "excited",
+     "text": "好美的聖誕樹！",
+     "en": "What a beautiful tree!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，聖誕樹旁邊。",
+   "act": "教父爺爺出場：一位做時鐘的老爺爺，白色捲捲的頭髮，戴圓眼鏡，穿長長的灰色外套，口袋垂著一條金色懷錶鍊，笑得很慈祥。他彎下腰，把一個綁著紅色緞帶的禮物盒交給瑪莉；瑪莉打開盒子，看到裡面的木頭娃娃，眼睛亮了起來。弗里茲在旁邊踮腳偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，教父爺爺來了。",
+     "en": "Just then, Godfather Drosselmeyer arrived."
+    },
+    {
+     "who": "旁白",
+     "text": "他是做時鐘的老爺爺，每年都帶來神奇的禮物。",
+     "en": "He was an old clockmaker, and every year he brought the most wonderful presents."
+    },
+    {
+     "who": "教父爺爺",
+     "tag": "happy",
+     "text": "瑪莉，這是給妳的聖誕禮物！",
+     "en": "Marie, this Christmas present is for you!"
+    },
+    {
+     "who": "旁白",
+     "text": "盒子裡，是一個穿紅色衣服的木頭小兵。",
+     "en": "Inside the box was a little wooden soldier in a red coat."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "happy",
+     "text": "好可愛的小兵！謝謝教父爺爺！",
+     "en": "What a sweet little soldier! Thank you, Godfather Drosselmeyer!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，聖誕樹下。地上有一個裝滿胡桃的木碗。",
+   "act": "胡桃鉗出場：一個跟瑪莉的手臂差不多高的木頭娃娃，穿紅色士兵外套、金色鈕扣、藍色褲子、黑色靴子，戴很高的黑色帽子，有白色的鬍子和一張好大的方嘴巴，表情很認真、很可愛。瑪莉坐在地毯上，把一顆胡桃放進胡桃鉗的嘴巴，輕按他背後的小把手，胡桃殼裂開了；教父爺爺在旁邊笑著點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兵有一張很大的嘴巴，戴著很高的黑帽子。",
+     "en": "The soldier had a big wide mouth and a tall black hat."
+    },
+    {
+     "who": "教父爺爺",
+     "tag": "proud",
+     "text": "他叫胡桃鉗，最會咬開胡桃喔！",
+     "en": "He's called the Nutcracker. He's the best at cracking nuts!"
+    },
+    {
+     "who": "旁白",
+     "text": "瑪莉放一顆胡桃進他的嘴巴，按了一下。喀！",
+     "en": "Marie put a nut in his mouth and gave a little push. Crack!"
+    },
+    {
+     "who": "瑪莉",
+     "tag": "happy",
+     "text": "胡桃開了！胡桃鉗，你好厲害！",
+     "en": "The nut cracked open! Nutcracker, you're amazing!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，聖誕樹下，地上滾著幾顆胡桃。玩具櫃裡有一張粉紅色的娃娃小床。",
+   "act": "弗里茲搶過胡桃鉗，塞進一顆好大的胡桃，用力一按，胡桃鉗的下巴歪掉了；弗里茲嚇一跳，抓著頭不好意思。瑪莉抱著胡桃鉗，用自己頭上的白色髮帶，幫他把下巴包起來，綁成一個蝴蝶結，表情很心疼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥搶過胡桃鉗，放進一顆最大、最硬的胡桃。",
+     "en": "Fritz grabbed the Nutcracker and pushed in the biggest, hardest nut of all."
+    },
+    {
+     "who": "旁白",
+     "text": "喀啦！胡桃鉗的下巴，鬆掉了。",
+     "en": "Crunch! The Nutcracker's jaw came loose."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "sad",
+     "text": "哥哥！你把他弄壞了！",
+     "en": "Fritz! You broke him!"
+    },
+    {
+     "who": "旁白",
+     "text": "瑪莉解下白色髮帶，幫胡桃鉗包好下巴。",
+     "en": "Marie untied the white ribbon from her hair and wrapped up his jaw."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "gentle",
+     "text": "不痛了。今天晚上，你睡在小床上。",
+     "en": "There, there. Tonight, you can sleep in the little doll bed."
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，半夜。燈都關了，只有窗外的月光照進來，聖誕樹上的星星微微發亮；大時鐘的指針指著十二點。",
+   "act": "瑪莉換上白色睡衣，腳上穿著粉紅色的毛毛拖鞋，頭髮披下來，一個人走下樓梯，走到玩具櫃前，看著娃娃小床上綁著白色髮帶的胡桃鉗。大時鐘的鐘擺在晃；玩具櫃裡穿藍色外套的小錫兵、布娃娃、木頭馬，全都睜開眼睛動了起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "半夜，瑪莉睡不著，穿上粉紅色的拖鞋，走下樓。",
+     "en": "At midnight, Marie couldn't sleep. She put on her pink slippers and crept downstairs."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "whispering",
+     "text": "胡桃鉗，你的下巴，有好一點嗎？",
+     "en": "Nutcracker, is your jaw feeling any better?"
+    },
+    {
+     "who": "旁白",
+     "text": "噹，噹，噹！大時鐘敲了十二下。",
+     "en": "Bong, bong, bong! The big clock struck twelve."
+    },
+    {
+     "who": "旁白",
+     "text": "忽然，櫃子裡的玩具，全都動起來了！",
+     "en": "Suddenly, all the toys in the cabinet began to move!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，半夜，月光下。地板的木頭縫裡鑽出好多灰色小老鼠。",
+   "act": "老鼠王出場：一隻胖胖的大灰老鼠，戴金色皇冠，披紫色斗篷，鬍鬚又翹又長，挺著圓肚子，叉著腰，樣子神氣又好笑，不可怕；後面跟著一大群灰色小老鼠。胡桃鉗從娃娃小床上跳下來，下巴還綁著白色髮帶，站得直挺挺的，舉起一隻手；穿藍色外套的小錫兵站在他後面。瑪莉躲在聖誕樹旁邊偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "地板下面，鑽出一大群老鼠。",
+     "en": "Out from under the floor came a whole crowd of mice."
+    },
+    {
+     "who": "旁白",
+     "text": "走在最前面的，是戴著金色皇冠的老鼠王。",
+     "en": "At the front marched the Mouse King, wearing a golden crown."
+    },
+    {
+     "who": "老鼠王",
+     "tag": "proud",
+     "text": "聖誕節的糖果和胡桃，全都是我的！",
+     "en": "All the Christmas candy and nuts belong to me!"
+    },
+    {
+     "who": "旁白",
+     "text": "胡桃鉗從小床上，跳了下來！",
+     "en": "The Nutcracker leaped out of the doll bed!"
+    },
+    {
+     "who": "胡桃鉗王子",
+     "tag": "brave",
+     "text": "不行！我們來比賽，輸的要回家！",
+     "en": "Oh no, you don't! Let's have a contest. Whoever loses goes home!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，聖誕樹下的地毯上。地毯中間拉著一條紅色的跳繩，跳繩中間綁著一條金色的聖誕彩帶當記號。",
+   "act": "瑪莉從玩具櫃裡拿出一條紅色的跳繩，遞給胡桃鉗。跳繩一頭是胡桃鉗帶著穿藍色外套的小錫兵、布娃娃和木頭馬，另一頭是老鼠王帶著一大群灰色老鼠，兩邊都抓緊繩子，準備拔河；老鼠王得意地大笑。",
+   "lines": [
+    {
+     "who": "老鼠王",
+     "tag": "laughing",
+     "text": "好呀！那我們來拔河！",
+     "en": "Fine! Then let's have a tug-of-war!"
+    },
+    {
+     "who": "旁白",
+     "text": "瑪莉從玩具櫃裡，拿出一條紅色的跳繩。",
+     "en": "Marie took a red jump rope out of the toy cabinet."
+    },
+    {
+     "who": "旁白",
+     "text": "玩具拉一頭，老鼠拉另一頭。",
+     "en": "The toys took one end, and the mice took the other."
+    },
+    {
+     "who": "胡桃鉗王子",
+     "tag": "excited",
+     "text": "大家一起，用力拉！",
+     "en": "Everybody, pull with all your might!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，地毯上。金色彩帶記號慢慢往老鼠那邊移過去。",
+   "act": "老鼠們人多，咬著牙、拉得好起勁；穿藍色外套的小錫兵和布娃娃的腳在地毯上滑，被拉著往前走，胡桃鉗咬著牙用力拉；老鼠王一邊拉一邊哈哈大笑。瑪莉站在聖誕樹旁邊，兩手握拳，好著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，老鼠好多，力氣好大。",
+     "en": "But there were so many mice, and they were so strong."
+    },
+    {
+     "who": "老鼠王",
+     "tag": "laughing",
+     "text": "哈！你們快輸了！",
+     "en": "Ha! You're going to lose!"
+    },
+    {
+     "who": "旁白",
+     "text": "玩具們快要被拉過去了！",
+     "en": "The toys were almost pulled all the way across!"
+    },
+    {
+     "who": "胡桃鉗王子",
+     "text": "大家，再用力一點！",
+     "en": "Come on, everyone! Pull harder!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，地毯上。",
+   "act": "瑪莉單腳站著，脫下一隻粉紅色毛毛拖鞋，舉起手用力丟出去；拖鞋在空中飛，正好打在老鼠王的金色皇冠上，皇冠往下滑，蓋住了老鼠王的眼睛。老鼠王兩手亂揮、尾巴翹起來，樣子好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "瑪莉脫下一隻拖鞋。",
+     "en": "Marie pulled off one of her slippers."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "brave",
+     "text": "老鼠王，看這裡！",
+     "en": "Hey, Mouse King! Over here!"
+    },
+    {
+     "who": "旁白",
+     "text": "她用力一丟，碰！皇冠歪了，蓋住老鼠王的眼睛。",
+     "en": "She threw it as hard as she could. Bonk! It knocked his crown right down over his eyes."
+    },
+    {
+     "who": "老鼠王",
+     "tag": "scared",
+     "text": "哎呀！我看不見了！快跑呀！",
+     "en": "Yikes! I can't see! Run!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，地毯上。地板的木頭縫邊，露出最後一條老鼠尾巴。",
+   "act": "老鼠王扶著歪掉的皇冠，帶著老鼠們一溜煙鑽回地板下；紅色跳繩掉在地上，玩具們往後跌成一堆，大家抱在一起哈哈大笑；胡桃鉗舉起雙手歡呼，瑪莉也跟著拍手跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老鼠王鬆開繩子，帶著老鼠，趕快跑回地板下。",
+     "en": "The Mouse King let go of the rope, and all the mice scurried back under the floor."
+    },
+    {
+     "who": "旁白",
+     "text": "玩具們跌成一堆，大家都笑了。",
+     "en": "The toys tumbled into a big heap, and everyone laughed."
+    },
+    {
+     "who": "胡桃鉗王子",
+     "tag": "happy",
+     "text": "我們贏了！謝謝妳，瑪莉！",
+     "en": "We won! Thank you, Marie!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，月光下。聖誕樹的燈全部亮了起來，空中飄著金色的光點。",
+   "act": "胡桃鉗全身發出金光，變成一位年輕的王子：棕色短頭髮，戴一頂小小的金色皇冠，穿紅色外套、金色鈕扣、藍色褲子、黑色靴子，跟胡桃鉗的衣服一樣，臉上帶著溫柔的笑；他手腕上綁著瑪莉的白色髮帶。瑪莉兩手摀著嘴巴，又驚又喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "忽然，胡桃鉗身上發出一道金光。",
+     "en": "Suddenly, a golden light shone all around the Nutcracker."
+    },
+    {
+     "who": "旁白",
+     "text": "木頭胡桃鉗，變成了一位穿紅色衣服的王子！",
+     "en": "The wooden Nutcracker turned into a prince in a red coat!"
+    },
+    {
+     "who": "胡桃鉗王子",
+     "tag": "gentle",
+     "text": "我本來是王子，被老鼠王變成了胡桃鉗。",
+     "en": "I was once a prince, but the Mouse King turned me into a nutcracker."
+    },
+    {
+     "who": "胡桃鉗王子",
+     "text": "妳的勇敢，解開了魔法！",
+     "en": "Your courage broke the spell!"
+    }
+   ]
+  },
+  {
+   "scene": "客廳角落的一個大衣櫃，門開著，裡面掛著一件長長的大衣；大衣的袖子裡透出彩色的光。",
+   "act": "王子牽著瑪莉的手，兩個人彎著腰，鑽進大衣的袖子裡；瑪莉一隻腳穿著粉紅色拖鞋，一隻腳光著，回頭笑著，好興奮。",
+   "lines": [
+    {
+     "who": "胡桃鉗王子",
+     "text": "瑪莉，我帶妳去我的糖果王國，好不好？",
+     "en": "Marie, may I take you to my Candy Kingdom?"
+    },
+    {
+     "who": "瑪莉",
+     "tag": "excited",
+     "text": "好呀！",
+     "en": "Yes, please!"
+    },
+    {
+     "who": "旁白",
+     "text": "王子牽著瑪莉，鑽進衣櫃裡大衣的袖子。",
+     "en": "The prince took Marie's hand, and they climbed into the sleeve of a big coat in the wardrobe."
+    },
+    {
+     "who": "旁白",
+     "text": "一下子，他們就到了糖果王國！",
+     "en": "In a blink, they were in the Candy Kingdom!"
+    }
+   ]
+  },
+  {
+   "scene": "糖果王國，白天。草地上的樹掛滿彩色的糖果，一條淡黃色的檸檬汁小河流過；路邊是一排薑餅屋，屋頂鋪著白色糖霜；遠處的山丘上，有一座粉紅色的杏仁糖城堡。",
+   "act": "瑪莉和王子手牽手站在小河邊的糖果橋上，瑪莉張大眼睛到處看，聞著空氣，一臉陶醉；王子在旁邊笑著，伸手指向粉紅色城堡。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樹上掛滿了糖果，小河裡流著檸檬汁。",
+     "en": "Candy hung from every tree, and the river was made of lemonade."
+    },
+    {
+     "who": "旁白",
+     "text": "房子是薑餅做的，屋頂上是白色的糖霜。",
+     "en": "The houses were made of gingerbread, with white frosting on the roofs."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "surprised",
+     "text": "哇！每一樣都好香喔！",
+     "en": "Wow! Everything smells so sweet!"
+    },
+    {
+     "who": "旁白",
+     "text": "前面有一座粉紅色的城堡，是用杏仁糖做的。",
+     "en": "Up ahead stood a pink castle made of marzipan."
+    }
+   ]
+  },
+  {
+   "scene": "粉紅色杏仁糖城堡的大廳。地板像一塊大巧克力，柱子像彩色的拐杖糖，天花板掛著糖果做的吊燈。",
+   "act": "糖果仙子出場：年輕的仙子，淡金色頭髮盤成一個圓髻，插著糖果髮夾，穿粉紅色和白色條紋的長裙，裙襬垂到腳邊，像糖果紙一樣閃亮，背上有一對亮晶晶的透明翅膀。她雙手捧著一頂很小的糖果皇冠，笑著送給瑪莉；巧克力、棉花糖和水果糖排成一圈，牽著手跳舞；王子站在旁邊微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡裡，糖果仙子笑著走出來。",
+     "en": "Inside the castle, the Candy Fairy came out with a smile."
+    },
+    {
+     "who": "糖果仙子",
+     "tag": "happy",
+     "text": "歡迎妳，瑪莉！王子說，是妳救了他！",
+     "en": "Welcome, Marie! The prince told us you saved him!"
+    },
+    {
+     "who": "糖果仙子",
+     "text": "送妳一頂糖果做的小皇冠。我們來跳舞吧！",
+     "en": "Here is a little crown made of candy for you. Now, let's dance!"
+    },
+    {
+     "who": "旁白",
+     "text": "巧克力、棉花糖和水果糖，全都跳起舞來。",
+     "en": "The chocolates, marshmallows, and fruit candies all began to dance."
+    }
+   ]
+  },
+  {
+   "scene": "同一個城堡大廳，燈光變得暖暖的、暗暗的，窗外出現了星星。",
+   "act": "瑪莉戴著小小的糖果皇冠，和王子手牽手跳舞，然後揉著眼睛打哈欠，靠在一個大大的棉花糖枕頭上，慢慢閉上眼睛；王子幫她蓋上一條粉紅色的小毯子，溫柔地微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "瑪莉和王子，手牽手一起跳舞。",
+     "en": "Marie and the prince danced hand in hand."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "sleepy",
+     "text": "好開心喔！可是，我好想睡喔。",
+     "en": "This is so much fun! But I'm getting sleepy."
+    },
+    {
+     "who": "胡桃鉗王子",
+     "tag": "gentle",
+     "text": "睡吧，瑪莉。謝謝妳，我永遠不會忘記妳。",
+     "en": "Go to sleep, Marie. Thank you. I will never forget you."
+    }
+   ]
+  },
+  {
+   "scene": "瑪莉的臥室，聖誕節的早上。陽光從窗戶照進來，窗外有白雪；床邊的小架子上，站著胡桃鉗。",
+   "act": "瑪莉穿白色睡衣坐在床上，揉著眼睛，看著枕頭旁邊一頂很小、閃著金光的糖果皇冠，又驚又喜。架子上的胡桃鉗，下巴綁著白色髮帶，好像對她眨了一下眼睛。床邊地上只有一隻粉紅色拖鞋，另一隻不見了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "瑪莉醒來，發現自己躺在床上。",
+     "en": "Marie opened her eyes. She was lying in her own bed."
+    },
+    {
+     "who": "瑪莉",
+     "tag": "surprised",
+     "text": "咦？那是一場夢嗎？",
+     "en": "Huh? Was it all a dream?"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，她的枕頭旁邊，有一頂很小的糖果皇冠。",
+     "en": "But beside her pillow was a tiny crown made of candy."
+    },
+    {
+     "who": "旁白",
+     "text": "床邊的拖鞋，少了一隻。",
+     "en": "And next to her bed, one slipper was missing."
+    },
+    {
+     "who": "旁白",
+     "text": "架子上的胡桃鉗，好像對她眨了一下眼睛。",
+     "en": "On the shelf, the Nutcracker seemed to give her a little wink."
+    }
+   ]
+  }
+ ]
+}

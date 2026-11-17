@@ -1,0 +1,346 @@
+{
+ "id": "seasons",
+ "title": "春夏秋冬",
+ "title_en": "The Four Seasons",
+ "size": "中",
+ "roles": {
+  "小晴": "就是《彩虹從哪裡來》裡的小晴：五歲左右的小女孩，聲音清亮、好奇愛問，看到新東西就興奮，擔心大樹時小聲又著急。",
+  "爸爸": "小晴的爸爸，溫和的大叔聲音，低沉厚實、說話慢慢的，愛陪小晴到處看，常常帶著笑。",
+  "大樹爺爺": "公園裡一棵很老的鳳凰木，慈祥的老爺爺聲音，穩重溫暖、慢慢說，愛跟小晴開玩笑；冬天說話懶洋洋的，像要休息了。"
+ },
+ "cast": {
+  "小晴": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "大樹爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "凰",
+   "where": "第1頁『鳳凰木』",
+   "read": "huáng"
+  },
+  {
+   "char": "涼",
+   "where": "第3頁『乘涼』",
+   "read": "liáng"
+  },
+  {
+   "char": "乘",
+   "where": "第3頁『乘涼』",
+   "read": "chéng"
+  },
+  {
+   "char": "什",
+   "where": "第11頁『什麼衣服』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第8頁『會下雪』『不會下雪』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "小晴家附近的公園，春天的早上：草地、溜滑梯、小步道，步道旁邊有一棵好大好老的鳳凰木，樹幹粗粗的、樹枝往四面張開像一把大傘，旁邊還有一棵綠色的大榕樹。剛過完冬天，鳳凰木的樹枝上還幾乎沒有葉子。",
+   "act": "小晴和《彩虹從哪裡來》同一個樣子：五歲左右的小女孩，黑色頭髮綁兩條短辮子，今天穿粉紅色長袖上衣、牛仔褲、白色布鞋。爸爸短頭髮、戴黑框圓眼鏡、穿綠色格子襯衫和卡其褲。小晴拉著爸爸的手往鳳凰木跑。鳳凰木的樹幹上有一張慈祥老爺爺的臉：樹皮皺紋當眉毛、樹洞當嘴巴，全書都是這張臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "公園裡，有一棵好老的鳳凰木。",
+     "en": "In the park stands a very old flame tree."
+    },
+    {
+     "who": "旁白",
+     "text": "小晴叫他「大樹爺爺」。",
+     "en": "Lily calls him Grandpa Tree."
+    },
+    {
+     "who": "小晴",
+     "tag": "excited",
+     "text": "爸爸，春天來了！我們去看大樹爺爺！",
+     "en": "Daddy, spring is here! Let's go see Grandpa Tree!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，春天，天空飄著一點小雨，樹枝上冒出一點一點嫩綠色的新芽，新葉子細細的像羽毛。",
+   "act": "大樹爺爺伸伸懶腰、張開嘴巴笑；小晴踮起腳尖，摸摸一片像羽毛的嫩葉；爸爸撐著一把黃色的雨傘，幫小晴擋雨，樹枝上停著兩隻小麻雀。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天到了，樹枝上冒出了新芽。",
+     "en": "It's spring, and new buds are popping out on the branches."
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "happy",
+     "text": "小晴，妳看！我穿上綠色的新衣服了！",
+     "en": "Lily, look! I'm wearing my new green clothes!"
+    },
+    {
+     "who": "小晴",
+     "tag": "surprised",
+     "text": "好小的新葉子，像綠色的羽毛！",
+     "en": "Such tiny new leaves! They look like green feathers!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "妳聽，小鳥也回來唱歌了。",
+     "en": "Listen, the birds are back and singing."
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，夏天的中午，太陽好大，地上的影子很短，草地被曬得發亮。",
+   "act": "小晴戴著黃色遮陽帽、穿白色短袖和短褲，滿頭大汗，用手搧風；爸爸拿著水壺；大樹爺爺的樹枝張得好開，地上有一大片涼涼的樹蔭，樹上趴著幾隻蟬。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天到了，蟬在樹上叫個不停。",
+     "en": "Summer comes, and the cicadas buzz all day long."
+    },
+    {
+     "who": "小晴",
+     "text": "好熱，好熱！我快變成冰淇淋了！",
+     "en": "So hot, so hot! I'm melting like an ice cream cone!"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "laughing",
+     "text": "快到我下面來乘涼！",
+     "en": "Quick, come cool off in my shade!"
+    },
+    {
+     "who": "小晴",
+     "tag": "happy",
+     "text": "哇！樹下好涼快，像一把大傘！",
+     "en": "Ahh! It's so cool under here, like a giant umbrella!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵鳳凰木下，夏天，整棵樹開滿了火紅色的花，像一把紅色的大傘；地上也落了好多紅色的花瓣。",
+   "act": "小晴坐在樹蔭下，用四片紅色花瓣拼成一隻小蝴蝶，舉起來給爸爸看；爸爸也撿起花瓣幫忙拼；大樹爺爺滿頭紅花，得意地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，大樹爺爺開出好多紅色的花。",
+     "en": "A few days later, Grandpa Tree is covered in red flowers."
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "proud",
+     "text": "妳看，我戴上紅色的花帽子了！",
+     "en": "Look, now I'm wearing a hat of red flowers!"
+    },
+    {
+     "who": "旁白",
+     "text": "小晴撿起紅色的花瓣，拼成一隻小蝴蝶。",
+     "en": "Lily picks up the red petals and makes a little butterfly."
+    },
+    {
+     "who": "小晴",
+     "tag": "excited",
+     "text": "爸爸你看，花瓣蝴蝶飛起來了！",
+     "en": "Daddy, look! My petal butterfly is flying!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，秋天的下午，天空很高很藍，風吹過來，大樹爺爺的葉子變成金黃色。",
+   "act": "小晴穿上淡藍色薄外套，頭髮被風吹起來；大樹爺爺全身換成黃色的葉子，像穿了一件金黃色的衣服；爸爸在旁邊拉好小晴的外套拉鍊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天到了，風變涼快了。",
+     "en": "Then autumn arrives, and the wind feels cool."
+    },
+    {
+     "who": "小晴",
+     "tag": "surprised",
+     "text": "大樹爺爺，你的葉子變黃了！",
+     "en": "Grandpa Tree, your leaves have turned yellow!"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "happy",
+     "text": "對呀，我換上黃色的衣服了！",
+     "en": "That's right! I've put on my yellow clothes!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "秋天的風，吹起來好舒服。",
+     "en": "The autumn breeze feels so nice."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵鳳凰木下，秋天，風一吹，好多小小的黃色葉子從樹上飄下來，像下著金色的雨。",
+   "act": "小晴張開雙手在樹下轉圈，黃色的小葉子落在她的頭髮和肩膀上；爸爸笑著用手機幫她拍照；大樹爺爺閉著眼睛搖著樹枝，好像在跳舞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "風一吹，黃色的小葉子飄下來。",
+     "en": "Whoosh! The wind blows, and tiny yellow leaves come drifting down."
+    },
+    {
+     "who": "小晴",
+     "tag": "laughing",
+     "text": "下金色的雨囉！",
+     "en": "It's raining gold!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "laughing",
+     "text": "小晴，妳的頭上也有金色的葉子！",
+     "en": "Lily, you've got golden leaves in your hair!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，冬天，天空灰白色，冷風吹著，路上的人都穿著厚外套；鳳凰木的葉子全部掉光了，只剩下咖啡色的樹枝，旁邊的大榕樹還是綠色的。",
+   "act": "小晴穿紅色厚外套、圍白色圍巾、戴毛線手套，站在光禿禿的大樹爺爺前面，張大嘴巴、兩手摀著臉頰；大樹爺爺閉著眼睛、打著哈欠，樹枝上一片葉子也沒有；爸爸也穿著灰色厚外套。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天到了，冷風一直吹。",
+     "en": "Winter comes, and a cold wind blows."
+    },
+    {
+     "who": "小晴",
+     "tag": "surprised",
+     "text": "大樹爺爺，你的衣服呢？",
+     "en": "Grandpa Tree, where did your clothes go?"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "sleepy",
+     "text": "冬天，我把葉子都脫掉，要休息了。",
+     "en": "In winter, I take off all my leaves and have a long rest."
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，冬天，冷風吹著；畫面右上角畫一個雲朵形狀的想像泡泡，泡泡裡是一座很高的山，山頂是白色的雪；公園四周看不到雪。",
+   "act": "小晴縮著脖子，指著旁邊綠色的大榕樹，一臉不懂；爸爸蹲下來，指著想像泡泡裡山頂上的白雪；大樹爺爺半睜著眼睛在聽。",
+   "lines": [
+    {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "可是，旁邊的榕樹，葉子都沒有掉耶！",
+     "en": "But the banyan tree next to you still has all its leaves!"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "sleepy",
+     "text": "每一棵樹都不一樣喔。",
+     "en": "Every tree is different, you know."
+    },
+    {
+     "who": "小晴",
+     "tag": "curious",
+     "text": "爸爸，冬天這麼冷，這裡會下雪嗎？",
+     "en": "Daddy, it's so cold. Will it snow here?"
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "我們這裡不會下雪。要到很高的山上，才會看到雪。",
+     "en": "Not down here. You have to go up a very tall mountain to see snow."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵光禿禿的鳳凰木下，冬天的下午，陽光淡淡的。",
+   "act": "近看大樹爺爺的樹枝：咖啡色的樹枝上，有好幾個小小的、圓圓的芽，像閉著眼睛睡覺的小寶寶；小晴把臉湊近樹枝看，再張開雙手抱住大樹爺爺的樹幹；大樹爺爺閉著眼睛微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小晴伸出手，摸著大樹爺爺的樹枝。",
+     "en": "Lily reaches out and touches Grandpa Tree's bare branches."
+    },
+    {
+     "who": "小晴",
+     "tag": "worried",
+     "text": "大樹爺爺，你冷不冷？你生病了嗎？",
+     "en": "Grandpa Tree, are you cold? Are you sick?"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "gentle",
+     "text": "別擔心。妳看，我的樹枝上，有好小的芽在等春天。",
+     "en": "Don't worry. Look, there are tiny buds on my branches, waiting for spring."
+    },
+    {
+     "who": "小晴",
+     "tag": "gentle",
+     "text": "大樹爺爺，你休息吧，春天見！",
+     "en": "Rest well, Grandpa Tree. See you in spring!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個公園，又是春天，下過小雨，樹枝上冒出好多嫩綠色的新芽，像第2頁一樣。",
+   "act": "小晴穿著粉紅色上衣，比去年高了一點，拉著爸爸跑向大樹；大樹爺爺張開眼睛，伸著樹枝打哈欠，樹枝上滿是綠色的嫩葉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冷風走了，暖風來了。",
+     "en": "The cold wind leaves, and the warm wind returns."
+    },
+    {
+     "who": "小晴",
+     "tag": "excited",
+     "text": "大樹爺爺，春天來了！你醒了嗎？",
+     "en": "Grandpa Tree, spring is here! Are you awake?"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "happy",
+     "text": "醒了，醒了！小晴，妳看我的新衣服！",
+     "en": "I'm awake, I'm awake! Lily, look at my new clothes!"
+    }
+   ]
+  },
+  {
+   "scene": "公園的鳳凰木下，畫面分成四塊，像四張照片：左上是春天綠色新芽的大樹，右上是夏天開滿紅花的大樹，左下是秋天金黃葉子的大樹，右下是冬天光禿禿的大樹。",
+   "act": "小晴站在畫面中間，伸出手指，一張一張點過去；爸爸在旁邊豎起大拇指；大樹爺爺笑咪咪的。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小晴",
+     "tag": "happy",
+     "text": "春天，穿綠色的新衣服；夏天，戴紅色的花帽子。",
+     "en": "In spring, new green clothes. In summer, a hat of red flowers."
+    },
+    {
+     "who": "小晴",
+     "text": "秋天，換上黃色的衣服；冬天，脫掉衣服休息！",
+     "en": "In autumn, yellow clothes. In winter, off come the clothes, and it's time to rest!"
+    },
+    {
+     "who": "大樹爺爺",
+     "tag": "laughing",
+     "text": "一年又一年，我們都是好朋友！",
+     "en": "Year after year, we'll always be friends!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，你家附近的大樹，現在穿什麼衣服呢？",
+     "en": "What is the big tree near your home wearing right now?"
+    }
+   ]
+  }
+ ]
+}

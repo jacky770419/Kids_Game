@@ -1,0 +1,587 @@
+{
+ "id": "bremen",
+ "title": "不來梅的動物樂隊",
+ "title_en": "The Bremen Town Musicians",
+ "size": "長",
+ "roles": {
+  "驢子": "帶頭的老驢子，懶洋洋的胖叔叔聲音，憨厚、樂天、自信滿滿，說話慢慢的，常常得意地笑。",
+  "狗": "跑不動的老獵狗，年輕男孩般的聲音，直爽熱情，餓了累了就會抱怨。",
+  "貓": "愛溫暖的老貓，溫柔的年輕女聲，說話輕柔、優雅，偶爾嚇一跳會尖叫。",
+  "公雞": "被鬧鐘取代的老公雞，活潑的年輕男生聲音，嗓門大、愛表現、點子多。",
+  "強盜": "森林小屋裡帶頭的強盜，狡猾但好笑、一點也不可怕，吃飯時得意洋洋，被嚇到時誇張地大叫、說話結結巴巴。"
+ },
+ "cast": {
+  "驢子": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "狗": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "貓": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "公雞": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "強盜": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "樂",
+   "where": "書名『動物樂隊』",
+   "read": "yuè"
+  },
+  {
+   "char": "樂",
+   "where": "第1、2、3、4頁『音樂家』，第16頁『音樂會』",
+   "read": "yuè"
+  },
+  {
+   "char": "強",
+   "where": "第7、8、11、13、14、15、16頁『強盜』",
+   "read": "qiáng"
+  },
+  {
+   "char": "嚇",
+   "where": "第8頁『嚇他們一跳』，第14頁『嚇一跳』",
+   "read": "xià"
+  },
+  {
+   "char": "什",
+   "where": "第13頁『什麼也看不見』",
+   "read": "shén"
+  },
+  {
+   "char": "喔",
+   "where": "第4頁兩次、第5、10、14頁公雞叫『喔喔喔』（同生肖賽跑的記法）",
+   "read": "ō"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "秋天早上的鄉下農場：一座紅色磨坊，門口堆著白色麵粉袋，一條泥土路彎彎曲曲通向遠方，路邊有一塊寫著箭頭的木頭路牌。",
+   "act": "四隻動物全書造型一致：驢子是灰色的老驢子，長耳朵、白色的嘴巴，脖子繫一條紅色舊圍巾；狗是咖啡色的老獵狗，垂下來的大耳朵，戴藍色項圈；貓是灰白條紋的老貓，粉紅色鼻子，脖子繫一個黃色蝴蝶結；公雞是紅色雞冠、金黃和咖啡色羽毛、黑綠色長尾巴的老公雞。這頁只有驢子：老驢子站在磨坊門口，旁邊的麵粉袋他搬不動了；戴草帽的農夫在門口揮手叫他走。驢子沒有哭，反而抬起頭望著遠方的路，眼睛發亮，嘴角往上翹。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一隻老驢子，幫農夫搬了好多年的麵粉。",
+     "en": "Once upon a time, an old donkey carried flour for a farmer for many, many years."
+    },
+    {
+     "who": "旁白",
+     "text": "現在他老了，搬不動了，農夫就不要他了。",
+     "en": "Now he was old and couldn't carry it anymore, so the farmer didn't want him."
+    },
+    {
+     "who": "旁白",
+     "text": "可是驢子不難過，他想到一個好主意。",
+     "en": "But the donkey wasn't sad. He had a great idea."
+    },
+    {
+     "who": "驢子",
+     "tag": "proud",
+     "text": "我的嗓門最大，我要去不來梅，當音樂家！",
+     "en": "I have the loudest voice around. I'll go to Bremen Town and be a musician!"
+    }
+   ]
+  },
+  {
+   "scene": "泥土路旁的一棵大樹下，草地上落著黃葉。",
+   "act": "老狗趴在樹下喘氣，耳朵垂著，一臉沒精神；驢子低頭跟他說話；接著老狗站起來，搖著尾巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "走了一段路，驢子看到一隻老狗趴在路邊。",
+     "en": "As he walked along, the donkey saw an old dog lying by the road."
+    },
+    {
+     "who": "狗",
+     "tag": "sad",
+     "text": "唉，我跑不動了，主人不要我了。",
+     "en": "Oh dear. I'm too old to run, and my owner doesn't want me anymore."
+    },
+    {
+     "who": "驢子",
+     "tag": "happy",
+     "text": "跟我去不來梅，當音樂家吧！",
+     "en": "Come with me to Bremen and be a musician!"
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "好啊！汪，汪！",
+     "en": "Okay! Woof, woof!"
+    }
+   ]
+  },
+  {
+   "scene": "泥土路旁，一塊圓圓的大石頭。",
+   "act": "老貓坐在石頭上，嘴角往下垂，一臉難過；驢子和狗走過來，狗對貓伸出一隻前腳；接著貓跳下石頭，翹起尾巴跟上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們又走了一會兒，遇到一隻老貓。",
+     "en": "A little farther on, they met an old cat."
+    },
+    {
+     "who": "旁白",
+     "text": "她坐在石頭上，看起來好難過。",
+     "en": "She was sitting on a rock, looking very sad."
+    },
+    {
+     "who": "貓",
+     "tag": "sad",
+     "text": "喵，我老了，抓不到老鼠，主人不要我了。",
+     "en": "Meow. I'm too old to catch mice, and my owner doesn't want me anymore."
+    },
+    {
+     "who": "狗",
+     "tag": "happy",
+     "text": "跟我們去不來梅，當音樂家吧！",
+     "en": "Come with us to Bremen and be a musician!"
+    },
+    {
+     "who": "貓",
+     "tag": "happy",
+     "text": "好啊！喵！",
+     "en": "Okay! Meow!"
+    }
+   ]
+  },
+  {
+   "scene": "一戶農家的木頭籬笆，後面是農舍，窗台上放著一個紅色的新鬧鐘。",
+   "act": "老公雞站在籬笆上，伸長脖子大叫，接著垂下頭，指著窗台上的鬧鐘；驢子、狗、貓站在籬笆下抬頭看，貓溫柔地對他招手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "經過一戶農家，籬笆上站著一隻老公雞。",
+     "en": "As they passed a farmhouse, they saw an old rooster on the fence."
+    },
+    {
+     "who": "公雞",
+     "tag": "shouting",
+     "text": "喔喔喔！",
+     "en": "Cock-a-doodle-doo!"
+    },
+    {
+     "who": "公雞",
+     "tag": "sad",
+     "text": "主人買了新鬧鐘，不要我叫他起床了。",
+     "en": "My owner got a new alarm clock, so he doesn't need me to wake him up anymore."
+    },
+    {
+     "who": "貓",
+     "tag": "gentle",
+     "text": "跟我們去不來梅，當音樂家吧！",
+     "en": "Come with us to Bremen and be a musician!"
+    },
+    {
+     "who": "公雞",
+     "tag": "excited",
+     "text": "好啊！喔喔喔！",
+     "en": "Okay! Cock-a-doodle-doo!"
+    }
+   ]
+  },
+  {
+   "scene": "泥土路上，兩旁是田野和幾棵樹，下午的陽光。",
+   "act": "四隻動物排成一排走在路上，一起張大嘴巴：驢子仰頭大叫，狗汪汪叫，貓喵喵叫，公雞拍著翅膀啼叫；空中畫滿歪七扭八的音符。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "四個好朋友一邊走，一邊練習唱歌。",
+     "en": "The four friends practiced singing as they walked."
+    },
+    {
+     "who": "旁白",
+     "text": "驢子仰起頭，發出好大的叫聲。",
+     "en": "The donkey threw back his head and brayed his biggest bray."
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "汪，汪！",
+     "en": "Woof, woof!"
+    },
+    {
+     "who": "貓",
+     "tag": "happy",
+     "text": "喵！",
+     "en": "Meow!"
+    },
+    {
+     "who": "公雞",
+     "tag": "shouting",
+     "text": "喔喔喔！",
+     "en": "Cock-a-doodle-doo!"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的大樹，天快黑了，天空是深藍色，一彎月亮升起來。",
+   "act": "畫面左邊：樹上的小鳥嚇得飛走，路邊兩隻兔子趕緊用前腳捂住長耳朵；驢子挺起胸膛，一臉得意。畫面右邊：天黑了，驢子和狗躺在大樹下，貓窩在樹枝上，公雞站在最高的樹頂，伸長脖子，用翅膀指著森林深處的一點黃色燈光。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樹上的小鳥全飛走了，兔子也遮住了耳朵。",
+     "en": "The birds in the trees flew away, and the rabbits covered their ears."
+    },
+    {
+     "who": "驢子",
+     "tag": "proud",
+     "text": "我們的歌，真好聽！",
+     "en": "Our song sounds wonderful!"
+    },
+    {
+     "who": "旁白",
+     "text": "天黑了，他們在森林的大樹下休息。",
+     "en": "When night came, they stopped to rest under a big tree in the forest."
+    },
+    {
+     "who": "旁白",
+     "text": "公雞飛到樹頂，往遠處一看。",
+     "en": "The rooster flew to the top of the tree and looked far away."
+    },
+    {
+     "who": "公雞",
+     "tag": "excited",
+     "text": "那邊有燈光，有一間小屋！",
+     "en": "I see a light over there! It's a little house!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小木屋：圓木牆、茅草屋頂、一扇方窗戶透出黃色燈光；屋裡有長木桌、石頭火爐，後面有一扇後門，屋前有一個鋪稻草的小院子。晚上；屋裡：長木桌上擺滿烤雞、麵包、蘋果派和葡萄，桌角放著一袋金幣。",
+   "act": "四隻動物全書造型一致：驢子是灰色的老驢子，長耳朵、白色的嘴巴，脖子繫一條紅色舊圍巾；狗是咖啡色的老獵狗，垂下來的大耳朵，戴藍色項圈；貓是灰白條紋的老貓，粉紅色鼻子，脖子繫一個黃色蝴蝶結；公雞是紅色雞冠、金黃和咖啡色羽毛、黑綠色長尾巴的老公雞。三個強盜：胖胖的、看起來好笑不可怕，戴條紋頭巾、留著往上翹的大鬍子；帶頭的強盜最胖，戴紅色頭巾，另外兩個戴藍色和綠色頭巾。這頁強盜第一次出場：三個強盜圍著桌子大吃大喝，帶頭的強盜舉起雞腿哈哈笑。窗外，驢子把頭靠在窗邊偷看，狗、貓、公雞擠在他腳邊，狗流著口水。",
+   "lines": [
+    {
+     "who": "貓",
+     "tag": "happy",
+     "text": "也許那裡有火爐，好溫暖呢！",
+     "en": "Maybe there's a warm fire inside!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們走到小屋旁，驢子最高，從窗戶往裡看。",
+     "en": "They crept up to the house. The donkey was the tallest, so he peeked in the window."
+    },
+    {
+     "who": "驢子",
+     "tag": "whispering",
+     "text": "屋裡有三個強盜，正在吃大餐！",
+     "en": "There are three robbers in there, eating a big feast!"
+    },
+    {
+     "who": "強盜",
+     "tag": "laughing",
+     "text": "嘿，金幣真多！大家快吃，快吃！",
+     "en": "Look at all this gold! Eat up, boys, eat up!"
+    },
+    {
+     "who": "狗",
+     "tag": "sad",
+     "text": "好香喔，我的肚子好餓。",
+     "en": "It smells so good. My tummy is rumbling."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的窗戶下面，晚上，屋裡的燈光照出來。",
+   "act": "四隻動物蹲在窗戶下面，頭靠在一起，圍成一圈小聲商量；驢子低頭出主意，狗興奮地搖尾巴，貓舉起前腳往上比，公雞用力點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "四個好朋友，在窗戶下面小聲商量。",
+     "en": "Under the window, the four friends made a quiet plan."
+    },
+    {
+     "who": "貓",
+     "tag": "whispering",
+     "text": "我們怎麼把強盜趕走呢？",
+     "en": "How can we make the robbers go away?"
+    },
+    {
+     "who": "驢子",
+     "tag": "whispering",
+     "text": "我有辦法！我們一起唱歌，嚇他們一跳！",
+     "en": "I know! Let's sing our song together and give them a big surprise!"
+    },
+    {
+     "who": "狗",
+     "tag": "excited",
+     "text": "好主意！我最會大叫了！",
+     "en": "Great idea! I'm good at being loud!"
+    },
+    {
+     "who": "貓",
+     "tag": "happy",
+     "text": "我們疊起來，越高越好！",
+     "en": "And let's stand on top of each other, as high as we can!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的窗戶前，月光很亮。",
+   "act": "這是全書最有名的畫面：驢子站在窗戶前，狗站在驢子身上，貓站在狗的頭上，公雞站在貓的頭上，四隻疊成一座高塔；月光把他們的影子照在窗戶上，像一個有四個頭的大怪物。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狗跳到驢子身上。",
+     "en": "The dog jumped up onto the donkey."
+    },
+    {
+     "who": "旁白",
+     "text": "貓爬到狗的頭上。",
+     "en": "The cat climbed up onto the dog's head."
+    },
+    {
+     "who": "旁白",
+     "text": "公雞飛到貓的頭上。",
+     "en": "The rooster flew up onto the cat's head."
+    },
+    {
+     "who": "公雞",
+     "tag": "proud",
+     "text": "哇，我是最高的！",
+     "en": "Wow, I'm the tallest!"
+    },
+    {
+     "who": "驢子",
+     "tag": "whispering",
+     "text": "準備好了嗎？一、二、三！",
+     "en": "Ready? One, two, three!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的窗戶前，晚上。",
+   "act": "疊在一起的四隻動物一起張大嘴巴大叫，窗戶被聲音震得往裡打開，空中滿是歪七扭八的音符；屋裡桌上的杯子跳了起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "四個好朋友，一起用最大的聲音唱！",
+     "en": "The four friends sang as loud as they possibly could!"
+    },
+    {
+     "who": "狗",
+     "tag": "shouting",
+     "text": "汪，汪！",
+     "en": "Woof, woof!"
+    },
+    {
+     "who": "貓",
+     "tag": "shouting",
+     "text": "喵！",
+     "en": "Meow!"
+    },
+    {
+     "who": "公雞",
+     "tag": "shouting",
+     "text": "喔喔喔！",
+     "en": "Cock-a-doodle-doo!"
+    },
+    {
+     "who": "旁白",
+     "text": "驢子的叫聲最大，把窗戶都震開了！",
+     "en": "The donkey brayed loudest of all, and the window flew open!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，晚上；接著畫面是屋外的森林小路。",
+   "act": "三個強盜：胖胖的、看起來好笑不可怕，戴條紋頭巾、留著往上翹的大鬍子；帶頭的強盜最胖，戴紅色頭巾，另外兩個戴藍色和綠色頭巾。三個強盜嚇得跳起來，椅子翻倒，雞腿飛到空中；他們從後門擠出去，頭巾跑歪了，靴子掉了一地。四隻動物從窗戶跳進屋裡，開心地圍著長桌吃大餐。",
+   "lines": [
+    {
+     "who": "強盜",
+     "tag": "scared",
+     "text": "哇！窗外有一個四個頭的大怪物！",
+     "en": "Aaah! There's a monster with four heads at the window!"
+    },
+    {
+     "who": "旁白",
+     "text": "強盜們跳起來，從後門逃進森林。",
+     "en": "The robbers leaped up and ran out the back door into the forest."
+    },
+    {
+     "who": "旁白",
+     "text": "他們拚命跑，連鞋子都跑掉了。",
+     "en": "They ran so fast that their boots fell off!"
+    },
+    {
+     "who": "旁白",
+     "text": "四個好朋友跳進屋裡，吃了一頓大餐。",
+     "en": "The four friends jumped inside and ate a wonderful feast."
+    },
+    {
+     "who": "驢子",
+     "tag": "laughing",
+     "text": "嗯，好吃！我們的歌真有用！",
+     "en": "Mmm, yummy! Our song really worked!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小木屋：圓木牆、茅草屋頂、一扇方窗戶；屋裡有長木桌、石頭火爐，後面有一扇後門，屋前有一個鋪稻草的小院子。深夜，燈熄了，月光從窗戶照進來。",
+   "act": "畫面分成四小格：驢子躺在院子的稻草堆上；狗趴在門後面；貓蜷在石頭火爐邊，火爐裡的炭還有一點紅光；公雞站在屋頂上，把頭埋進翅膀裡。驢子打著哈欠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "吃飽了，大家吹熄蠟燭，準備睡了。",
+     "en": "When they were full, they blew out the candles and got ready for bed."
+    },
+    {
+     "who": "旁白",
+     "text": "驢子睡在院子裡，狗睡在門後面。",
+     "en": "The donkey slept in the yard, and the dog slept behind the door."
+    },
+    {
+     "who": "旁白",
+     "text": "貓睡在火爐邊，公雞睡在屋頂上。",
+     "en": "The cat curled up by the fire, and the rooster slept on the roof."
+    },
+    {
+     "who": "貓",
+     "tag": "happy",
+     "text": "火爐好溫暖，我最喜歡了。",
+     "en": "The fire is so warm. I love it here."
+    },
+    {
+     "who": "驢子",
+     "tag": "sleepy",
+     "text": "這裡真舒服，晚安！",
+     "en": "This place is so cozy. Good night!"
+    }
+   ]
+  },
+  {
+   "scene": "半夜的小木屋裡，很黑，只有月光照在地上；火爐邊有兩個綠色的小亮點。",
+   "act": "帶頭的強盜（紅頭巾）踮著腳尖從後門溜進來，伸長脖子東張西望；他彎腰湊近火爐邊那兩個綠色亮點，鼓起臉頰準備吹氣。那其實是貓的眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "半夜，帶頭的強盜，一個人溜了回來。",
+     "en": "In the middle of the night, the robber chief sneaked back."
+    },
+    {
+     "who": "強盜",
+     "tag": "whispering",
+     "text": "屋裡好黑，什麼也看不見。",
+     "en": "It's so dark. I can't see a thing."
+    },
+    {
+     "who": "旁白",
+     "text": "火爐邊，有兩個綠色的亮點。",
+     "en": "By the fire, he saw two little green lights."
+    },
+    {
+     "who": "強盜",
+     "tag": "curious",
+     "text": "咦？是火嗎？我來吹一吹。",
+     "en": "Ooh, is that a bit of fire? Let me blow on it."
+    }
+   ]
+  },
+  {
+   "scene": "半夜的小木屋和院子，月光很亮。",
+   "act": "畫面像連環漫畫：貓弓起背跳起來，毛全豎起來；強盜往後一退，踩到門後狗的尾巴，狗跳起來大叫；強盜跑到院子，被驢子的腿絆了一下，驢子仰頭大叫；屋頂上的公雞張開翅膀啼叫。強盜嚇得頭巾都歪了，大家都沒有受傷。",
+   "lines": [
+    {
+     "who": "貓",
+     "tag": "surprised",
+     "text": "喵！",
+     "en": "Meow!"
+    },
+    {
+     "who": "旁白",
+     "text": "強盜嚇一跳，往後一退，踩到了狗的尾巴。",
+     "en": "The robber jumped back and stepped right on the dog's tail."
+    },
+    {
+     "who": "狗",
+     "tag": "surprised",
+     "text": "汪！",
+     "en": "Woof!"
+    },
+    {
+     "who": "旁白",
+     "text": "他逃到院子，絆到驢子，驢子大叫一聲！",
+     "en": "He ran into the yard and tripped over the donkey, who let out an enormous bray!"
+    },
+    {
+     "who": "公雞",
+     "tag": "shouting",
+     "text": "喔喔喔！",
+     "en": "Cock-a-doodle-doo!"
+    }
+   ]
+  },
+  {
+   "scene": "森林深處的大樹下，半夜，月光從樹葉間照下來。",
+   "act": "三個強盜：胖胖的、看起來好笑不可怕，戴條紋頭巾、留著往上翹的大鬍子；帶頭的強盜最胖，戴紅色頭巾，另外兩個戴藍色和綠色頭巾。帶頭的強盜跑回另外兩個強盜身邊，頭巾歪了、鬍子亂了，張開雙手比手畫腳；兩個強盜抱在一起發抖，牙齒打顫。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "強盜逃回森林，跟其他強盜說：",
+     "en": "The robber ran back to the others in the forest and cried,"
+    },
+    {
+     "who": "強盜",
+     "tag": "scared",
+     "text": "屋裡有一個巫婆，眼睛會發光！",
+     "en": "There's a witch in there with glowing eyes!"
+    },
+    {
+     "who": "強盜",
+     "tag": "scared",
+     "text": "門後有東西大叫，院子裡有大怪物！",
+     "en": "Something howled behind the door, and there's a giant monster in the yard!"
+    },
+    {
+     "who": "強盜",
+     "tag": "shouting",
+     "text": "屋頂上，有人一直喊：抓小偷！",
+     "en": "And someone on the roof kept shouting, \"Catch the thief!\""
+    },
+    {
+     "who": "旁白",
+     "text": "其實，那是公雞在叫啦。",
+     "en": "But it was only the rooster crowing!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小木屋：圓木牆、茅草屋頂、一扇方窗戶；屋裡有長木桌、石頭火爐，後面有一扇後門，屋前有一個鋪稻草的小院子。第二天早上，陽光很好，屋前開著小花。",
+   "act": "四隻動物在院子裡開音樂會：驢子仰頭唱，狗搖尾巴，貓坐在窗台上，公雞站在驢子頭上；森林裡的小松鼠、小鹿圍過來聽；兩隻兔子坐在最前面，用前腳捂著長耳朵，可是也在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那天起，強盜們再也不敢回來了。",
+     "en": "From that day on, the robbers never dared to come back."
+    },
+    {
+     "who": "驢子",
+     "tag": "happy",
+     "text": "不來梅好遠，我們就住在這裡吧！",
+     "en": "Bremen is so far away. Let's just live here!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，四個好朋友住在森林小屋，每天都開音樂會。",
+     "en": "And so the four friends lived in the little forest house and played music every day."
+    },
+    {
+     "who": "旁白",
+     "text": "不過兔子聽到了，一樣會遮住耳朵！",
+     "en": "But the rabbits still covered their ears!"
+    }
+   ]
+  }
+ ]
+}

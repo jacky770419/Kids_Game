@@ -1,0 +1,564 @@
+{
+ "id": "thumbelina",
+ "title": "拇指姑娘",
+ "title_en": "Thumbelina",
+ "size": "長",
+ "roles": {
+  "拇指姑娘": "從花裡出生、跟拇指一樣大的小女孩，聲音甜美清亮、很有禮貌，愛唱歌，難過時小小聲，看到太陽和花就好開心。",
+  "媽媽": "很想要孩子的年輕媽媽，聲音溫柔輕柔，看到花裡的小女孩又驚又喜。",
+  "蟾蜍": "住在池塘邊的大蟾蜍，嗓門又粗又大、慢吞吞，自以為很會唱歌，誇張好笑不可怕。",
+  "田鼠奶奶": "住在田邊地洞裡的老田鼠，慈祥熱心的奶奶聲，說話慢慢的、很愛照顧人。",
+  "地鼠先生": "住在地底下的胖地鼠，懶洋洋、有點自以為是，不喜歡太陽和花，說話好笑不兇。",
+  "燕子": "被救活的小燕子，年輕男生的聲音，活潑爽朗、很講義氣。",
+  "花王子": "住在花裡的小王子，聲音溫和明亮、有禮貌，很歡迎拇指姑娘。"
+ },
+ "cast": {
+  "拇指姑娘": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "蟾蜍": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "田鼠奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "地鼠先生": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "燕子": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "花王子": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第1頁『會發光』，第9頁『我會幫忙』，第11頁『不會挖洞』，第13頁『會想我』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒多久』，第5頁『沒聽見』",
+   "read": "méi"
+  },
+  {
+   "char": "露",
+   "where": "第7頁『露水』",
+   "read": "lù"
+  },
+  {
+   "char": "扇",
+   "where": "第8頁『一扇小門』",
+   "read": "shàn"
+  },
+  {
+   "char": "掃",
+   "where": "第9頁『掃地』",
+   "read": "sǎo"
+  },
+  {
+   "char": "什",
+   "where": "第10頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第11頁『誰叫』",
+   "read": "shéi"
+  },
+  {
+   "char": "喝",
+   "where": "第7頁『喝花上的露水』，第13頁『喝水』",
+   "read": "hē"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下一間小木屋的廚房，白天。窗台上擺著一個陶土花盆，窗外是綠色的田野和藍天。",
+   "act": "媽媽出場：年輕的媽媽，棕色頭髮在腦後綁成一個圓髻，穿淺黃色長裙、綠色圍裙。門口站著一位白頭髮、駝著背、拄拐杖的老奶奶，笑咪咪地把一顆發著金光的小豆子放在媽媽手心；媽媽雙手捧著豆子，又驚又喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位媽媽，好想要一個孩子。",
+     "en": "Once upon a time, there was a mother who wished for a child of her own."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，一位老奶奶送她一顆會發光的豆子。",
+     "en": "One day, a kind old woman gave her a little bean that glowed."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽把豆子放進花盆，每天澆水。",
+     "en": "The mother put the bean in a flowerpot and watered it every day."
+    },
+    {
+     "who": "旁白",
+     "text": "沒多久，花盆裡冒出一個紅色的花苞。",
+     "en": "Soon, a red flower bud popped up in the pot."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "好美的花苞！我來親一下。",
+     "en": "What a beautiful bud! I'll give it a little kiss."
+    }
+   ]
+  },
+  {
+   "scene": "同一個窗台，陽光照在花盆上。花盆裡那朵紅色的花，像一個小碗一樣打開了。",
+   "act": "拇指姑娘出場：跟媽媽的拇指一樣大，金色長頭髮、穿粉紅色花瓣做的小裙子、光著小腳，坐在紅花的正中間，抬頭揮手。媽媽彎著腰，眼睛睜得好大，一隻手摀著嘴，好驚喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，花苞打開了！",
+     "en": "Just then, the bud opened!"
+    },
+    {
+     "who": "旁白",
+     "text": "花的中間，坐著一個小女孩。",
+     "en": "And there, in the middle of the flower, sat a tiny girl."
+    },
+    {
+     "who": "旁白",
+     "text": "她跟媽媽的拇指一樣大！",
+     "en": "She was no bigger than her mother's thumb!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "surprised",
+     "text": "哇，好小的寶貝！我就叫妳拇指姑娘吧！",
+     "en": "Oh my, what a tiny darling! I'll call you Thumbelina!"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "happy",
+     "text": "嗨，媽媽！",
+     "en": "Hi, Mama!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的木頭桌子上。桌上有一個裝滿水的白色大碗，碗邊放著幾朵花；旁邊有半個核桃做的小床，鋪著一片粉紅色的玫瑰花瓣。",
+   "act": "拇指姑娘坐在一片綠色葉子做的小船上，用兩根白色馬毛當槳，在大碗裡划船，張開嘴唱歌；媽媽坐在桌邊，托著下巴笑著聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "拇指姑娘睡在半個核桃裡，蓋著玫瑰花瓣做的被子。",
+     "en": "Thumbelina slept in half a walnut shell, with a rose petal for a blanket."
+    },
+    {
+     "who": "旁白",
+     "text": "白天，她在大碗裡划葉子小船。",
+     "en": "During the day, she rowed a little leaf boat around a bowl of water."
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "happy",
+     "text": "小船搖呀搖，我是最開心的小姑娘！",
+     "en": "Row, row, my little boat! I'm the happiest girl afloat!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的房間，晚上。窗戶開著一半，窗外是深藍色的夜空和月亮；桌上是半個核桃做的小床。",
+   "act": "拇指姑娘蓋著玫瑰花瓣，在核桃小床裡睡覺。蟾蜍出場：一隻好大的蟾蜍，褐綠色、肚子圓滾滾、脖子上打著紅色領結，眼睛又大又圓，咧著大嘴巴笑；牠從窗台跳進來，伸手抱起核桃小床，樣子笨笨的、很好笑，不可怕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一天晚上，咚！一隻大蟾蜍從窗戶跳進來。",
+     "en": "One night, thump! A great big toad hopped in through the window."
+    },
+    {
+     "who": "蟾蜍",
+     "tag": "excited",
+     "text": "這個小姑娘好可愛！",
+     "en": "Well, well! What a pretty little girl!"
+    },
+    {
+     "who": "蟾蜍",
+     "text": "我要帶她回池塘，陪我唱歌！",
+     "en": "I'll take her home to my pond to sing with me!"
+    },
+    {
+     "who": "旁白",
+     "text": "蟾蜍抱起核桃小床，跳出了窗戶。",
+     "en": "The toad picked up the walnut bed and hopped out the window."
+    }
+   ]
+  },
+  {
+   "scene": "池塘的小河邊，早上。河中間浮著一片好大的綠色荷葉，岸邊是爛泥巴和一個歪歪扭扭的泥巴小房子，水面上有幾朵粉紅色的荷花。",
+   "act": "拇指姑娘坐在荷葉中間，抱著膝蓋哭，核桃小床放在旁邊。蟾蜍蹲在岸邊的泥巴上，挺著圓肚子，張開嘴巴大聲唱歌，表情很得意，樣子好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "拇指姑娘醒來，發現自己在大荷葉上。",
+     "en": "When Thumbelina woke up, she was on a big lily pad."
+    },
+    {
+     "who": "蟾蜍",
+     "tag": "proud",
+     "text": "妳醒啦！以後我們每天在泥巴裡唱歌！",
+     "en": "You're awake! From now on, we'll sing in the mud every day!"
+    },
+    {
+     "who": "蟾蜍",
+     "tag": "happy",
+     "text": "聽好喔！咕嚕，咕嚕，咕嚕！",
+     "en": "Listen! Croak, croak, croak!"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "crying",
+     "text": "我不要住在泥巴裡，我要回家！",
+     "en": "I don't want to live in the mud! I want to go home!"
+    },
+    {
+     "who": "旁白",
+     "text": "蟾蜍沒聽見，跳回岸上整理泥巴房子去了。",
+     "en": "But the toad didn't hear her. He hopped back to shore to tidy up his mud house."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河。水很清，看得到河底的小石頭；荷葉下面有一根綠色的莖連到河底。",
+   "act": "幾條橘色和銀色的小魚圍在荷葉下面，一起用嘴巴咬斷荷葉的莖；荷葉開始順著水流走，拇指姑娘站起來揮手道謝，笑了。遠遠的岸上，蟾蜍抱著一把泥巴，張大嘴巴東張西望，一臉傻眼，很好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "水裡的小魚聽見了，咬斷了荷葉的莖。",
+     "en": "Some little fish heard her crying, and they nibbled through the lily pad's stem."
+    },
+    {
+     "who": "旁白",
+     "text": "荷葉順著小河，流走了。",
+     "en": "Off floated the lily pad, down the stream."
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "happy",
+     "text": "謝謝你們，小魚！",
+     "en": "Thank you, little fish!"
+    },
+    {
+     "who": "旁白",
+     "text": "蟾蜍回來一看，荷葉不見了。",
+     "en": "When the toad came back, the lily pad was gone."
+    },
+    {
+     "who": "蟾蜍",
+     "tag": "surprised",
+     "text": "咦？我的小姑娘呢？",
+     "en": "Huh? Where did my little girl go?"
+    }
+   ]
+  },
+  {
+   "scene": "夏天的大森林，白天，森林邊有一條小河，那片大荷葉停在岸邊。高大的樹、很多野花，草地上灑滿陽光；一片大葉子下面掛著一張用草編的小吊床。",
+   "act": "拇指姑娘躺在草編吊床上晃著腳，一隻手拿著一滴亮亮的露水在喝，身邊停著一隻藍色蝴蝶；樹枝上幾隻小鳥張嘴唱歌，拇指姑娘也跟著唱，好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "荷葉流到大森林。整個夏天，她一個人住在那裡。",
+     "en": "The lily pad drifted to a big forest. All summer long, Thumbelina lived there by herself."
+    },
+    {
+     "who": "旁白",
+     "text": "她喝花上的露水，吃很甜的花蜜。",
+     "en": "She drank dew from the flowers and sipped sweet nectar."
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "happy",
+     "text": "小鳥唱歌，我也唱歌！",
+     "en": "The birds are singing, and so am I!"
+    }
+   ]
+  },
+  {
+   "scene": "冬天的田野，下雪了。天空灰灰暗暗，田裡只剩下光禿禿的麥梗，地上蓋著一層白雪；雪地邊有一扇圓圓的小木門，門縫透出暖黃色的光。",
+   "act": "拇指姑娘抱著自己發抖，花瓣小裙子破了一個小洞，頭髮上沾著雪花，一步一步走向那扇小木門；表情又冷又累，但看到門縫的光，眼睛亮了起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，冬天來了，雪花飄下來了。",
+     "en": "But then winter came, and snow began to fall."
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "sad",
+     "text": "好冷，好冷！我好餓喔！",
+     "en": "I'm so cold! And so hungry!"
+    },
+    {
+     "who": "旁白",
+     "text": "她走到田邊，看見地上有一扇小門。",
+     "en": "At the edge of a field, she found a tiny door in the ground."
+    }
+   ]
+  },
+  {
+   "scene": "田鼠奶奶的地洞小家，冬天。圓圓的土牆，牆上掛著一串串玉米和麥穗，小火爐裡的火燒得好旺，木頭桌上有一碗熱湯。",
+   "act": "田鼠奶奶出場：一隻灰色的老田鼠，鼻樑上架著一副小圓眼鏡，穿紅色圍裙、頭上包著白色頭巾。她站在門口，張開雙手招呼拇指姑娘進來；拇指姑娘抱著身體，在火爐旁邊取暖，鬆了一口氣地笑了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "叩，叩，叩。小門打開了，探出一位田鼠奶奶。",
+     "en": "Knock, knock, knock. The little door opened, and out peeked an old field mouse."
+    },
+    {
+     "who": "田鼠奶奶",
+     "tag": "gentle",
+     "text": "哎呀，可憐的孩子，快進來烤火！",
+     "en": "Oh, you poor dear! Come in and warm up by the fire!"
+    },
+    {
+     "who": "田鼠奶奶",
+     "text": "冬天就住在我家吧。",
+     "en": "You can stay with me all winter long."
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "happy",
+     "text": "謝謝田鼠奶奶！我會幫忙掃地、講故事！",
+     "en": "Thank you, Mrs. Field Mouse! I'll help sweep the floor, and I'll tell you stories!"
+    }
+   ]
+  },
+  {
+   "scene": "地鼠先生的地底大家，很深、很暗，只有幾盞小油燈；好多條長長的地道和好多個房間，地上堆著一袋袋的穀子。",
+   "act": "地鼠先生出場：一隻圓滾滾的胖地鼠，穿黑色絨毛大衣，戴一副黑色小圓眼鏡，粉紅色的鼻子，背著手、抬著下巴，很得意地介紹他的家。拇指姑娘和田鼠奶奶站在旁邊，拇指姑娘抬頭看著洞頂，一臉想念太陽的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "田鼠奶奶有一個鄰居，叫地鼠先生。",
+     "en": "Mrs. Field Mouse had a neighbor named Mr. Mole."
+    },
+    {
+     "who": "旁白",
+     "text": "他穿著黑色絨毛大衣，住在很深的地洞裡。",
+     "en": "He wore a black velvet coat and lived deep, deep under the ground."
+    },
+    {
+     "who": "地鼠先生",
+     "tag": "proud",
+     "text": "我家好大，有好多房間！",
+     "en": "My home is huge! It has lots and lots of rooms!"
+    },
+    {
+     "who": "地鼠先生",
+     "text": "太陽？花？那有什麼好看的！",
+     "en": "The sun? Flowers? What's so great about those?"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "sad",
+     "text": "可是，我最喜歡太陽了。",
+     "en": "But I love the sun most of all."
+    }
+   ]
+  },
+  {
+   "scene": "地鼠先生家的地道裡，很暗。地道的土牆上有一個小破洞，透進一點點白色的雪光。",
+   "act": "地鼠先生提著小油燈走在前面，田鼠奶奶跟在後面；地上躺著一隻燕子，藍黑色的背、白色的肚子、紅色的喉嚨、剪刀一樣的尾巴，翅膀縮著、眼睛閉著，一動也不動。地鼠先生皺著鼻子搖頭，拇指姑娘蹲在燕子旁邊，一臉心疼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，地鼠先生帶她們走過地道。",
+     "en": "One day, Mr. Mole led them through one of his tunnels."
+    },
+    {
+     "who": "旁白",
+     "text": "地上躺著一隻燕子，一動也不動。",
+     "en": "A swallow was lying on the ground, not moving at all."
+    },
+    {
+     "who": "地鼠先生",
+     "text": "哼，牠凍僵了。誰叫小鳥不會挖洞！",
+     "en": "Hmph. It's frozen stiff. That's what happens when birds don't dig holes!"
+    },
+    {
+     "who": "旁白",
+     "text": "地鼠先生和田鼠奶奶往前走了。",
+     "en": "Mr. Mole and Mrs. Field Mouse walked on ahead."
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "gentle",
+     "text": "可憐的燕子，你一定好冷吧。",
+     "en": "Poor swallow. You must be so cold."
+    }
+   ]
+  },
+  {
+   "scene": "同一條地道，晚上。只有拇指姑娘手上提的一盞小燈，照出一圈暖黃色的光。",
+   "act": "拇指姑娘跪在燕子旁邊，把一團白色棉花做的被子蓋在燕子身上，再把耳朵貼在燕子的胸口，眼睛睜大，又驚又喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，拇指姑娘一個人跑回地道。",
+     "en": "That night, Thumbelina crept back into the tunnel all by herself."
+    },
+    {
+     "who": "旁白",
+     "text": "她用棉花做了一條被子，蓋在燕子身上。",
+     "en": "She made a blanket out of cotton and tucked it over the swallow."
+    },
+    {
+     "who": "旁白",
+     "text": "她把耳朵貼在燕子身上。咚，咚，咚！",
+     "en": "Then she pressed her ear against him. Thump, thump, thump!"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "excited",
+     "text": "牠的心在跳！牠活著！",
+     "en": "His heart is beating! He's alive!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條地道。從冬天到春天，洞頂的小破洞透進來的光，從白色的雪光變成金色的陽光，洞口長出一株小綠芽。",
+   "act": "燕子睜開眼睛，站起來拍拍翅膀，很有精神；拇指姑娘捧著一片葉子裝的水，站在燕子面前微笑。燕子低下身子，請她坐上來，拇指姑娘搖搖頭，揮手說再見，眼裡有一點捨不得。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "每天晚上，她都去看燕子，餵牠喝水。",
+     "en": "Every night, she visited the swallow and gave him water to drink."
+    },
+    {
+     "who": "燕子",
+     "tag": "happy",
+     "text": "謝謝妳，拇指姑娘！妳救了我！",
+     "en": "Thank you, Thumbelina! You saved my life!"
+    },
+    {
+     "who": "旁白",
+     "text": "春天到了，燕子要飛走了。",
+     "en": "When spring came, it was time for the swallow to fly away."
+    },
+    {
+     "who": "燕子",
+     "tag": "gentle",
+     "text": "要不要坐在我身上，跟我一起飛？",
+     "en": "Would you like to climb on my back and fly away with me?"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "sad",
+     "text": "不行，田鼠奶奶會想我的。再見，燕子！",
+     "en": "I can't. Mrs. Field Mouse would miss me. Goodbye, swallow!"
+    }
+   ]
+  },
+  {
+   "scene": "田鼠奶奶家的小門外，秋天。麥子已經收完了，田裡是一片金黃色的麥梗，天空很藍，太陽暖暖地照著。",
+   "act": "地鼠先生穿著黑色絨毛大衣、戴黑色小圓眼鏡站在門口，手裡拿著一朵枯掉的小花，笑咪咪地邀請；田鼠奶奶在旁邊拍手。拇指姑娘站在門外的陽光下，抬頭看太陽，舉起小手揮一揮，表情很難過。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天到了，地鼠先生來敲門。",
+     "en": "When autumn came, Mr. Mole came knocking at the door."
+    },
+    {
+     "who": "地鼠先生",
+     "tag": "happy",
+     "text": "拇指姑娘，搬來我家，永遠住在地底下吧！",
+     "en": "Thumbelina, come and live with me under the ground, forever and ever!"
+    },
+    {
+     "who": "田鼠奶奶",
+     "tag": "excited",
+     "text": "太棒了！地鼠先生家，有好多吃的！",
+     "en": "How wonderful! Mr. Mole has plenty of food!"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "sad",
+     "text": "住在地底下，就再也看不到太陽了。",
+     "en": "If I live under the ground, I'll never see the sun again."
+    },
+    {
+     "who": "旁白",
+     "text": "她走出門，想跟太陽說再見。",
+     "en": "She stepped outside to say goodbye to the sun."
+    }
+   ]
+  },
+  {
+   "scene": "田邊的天空，秋天。藍天、白雲，遠方有一排南飛的燕子；田鼠奶奶家的小門在下面變得好小。",
+   "act": "燕子張開藍黑色的翅膀，從天上俯衝下來，開心地叫她；拇指姑娘舉起雙手跳起來，朝下面的小門揮手說再見，田鼠奶奶站在小門口揮著手帕；接著拇指姑娘坐上燕子的背，抓著羽毛，頭髮在風裡飄。他們飛過雪白的高山和藍色的大海。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，天上有人在叫她。",
+     "en": "Just then, someone called her name from the sky."
+    },
+    {
+     "who": "燕子",
+     "tag": "excited",
+     "text": "拇指姑娘！冬天快來了，要不要跟我一起飛？",
+     "en": "Thumbelina! Winter is coming. Would you like to fly away with me?"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "happy",
+     "text": "要！田鼠奶奶，謝謝妳，再見！",
+     "en": "Yes! Thank you, Mrs. Field Mouse. Goodbye!"
+    },
+    {
+     "who": "旁白",
+     "text": "她坐上燕子，飛過高山，飛過大海。",
+     "en": "She climbed onto the swallow, and away they flew, over the mountains and over the sea."
+    }
+   ]
+  },
+  {
+   "scene": "溫暖的花的國度，白天。到處開滿了比人還高的大花，紅的、黃的、白的；每一朵花裡都坐著一個跟拇指一樣大、背上有透明翅膀的小人。",
+   "act": "花王子出場：跟拇指姑娘一樣大，棕色短髮，戴一頂小小的金色皇冠，穿淡綠色的衣服，背上有一對透明的翅膀。他站在一朵白花上，把一對透明的翅膀送給拇指姑娘；拇指姑娘背上多了翅膀，飛了起來，開心地笑。燕子停在旁邊的花莖上點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們飛到一個好溫暖、開滿花的地方。",
+     "en": "They flew to a warm, sunny land full of flowers."
+    },
+    {
+     "who": "花王子",
+     "tag": "gentle",
+     "text": "妳好，我是花王子。歡迎來到花的王國！",
+     "en": "Hello, I'm the Flower Prince. Welcome to the Land of Flowers!"
+    },
+    {
+     "who": "花王子",
+     "tag": "happy",
+     "text": "送妳一對翅膀，想去哪裡都可以飛！",
+     "en": "Here is a pair of wings for you. Now you can fly anywhere you like!"
+    },
+    {
+     "who": "拇指姑娘",
+     "tag": "excited",
+     "text": "我有翅膀了！我可以飛回家看媽媽了！",
+     "en": "I have wings! Now I can fly home to see Mama!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，每年春天，她都跟燕子一起回家看媽媽。",
+     "en": "And every spring after that, she flew home with the swallow to visit her mother."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,257 @@
+{
+ "id": "fox-tiger",
+ "title": "狐假虎威",
+ "title_en": "The Fox and the Tiger",
+ "size": "短",
+ "roles": {
+  "狐狸": "聰明又愛吹牛的小狐狸，男生，聲音尖滑、說話很快，裝神氣時拉高嗓門，其實心裡偷笑，好笑不可怕。",
+  "老虎": "森林裡最大的老虎，聲音低沉又大聲、嗓門像打雷，看起來兇其實有點傻，被騙時一愣一愣的，最後自己也笑了。",
+  "小兔": "森林裡的白色小兔子，聲音又小又甜，一開始嚇得發抖，後來鼓起勇氣說出真相。"
+ },
+ "cast": {
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "老虎": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "假",
+   "where": "第8頁『假裝』『狐假虎威』",
+   "read": "jiǎ"
+  },
+  {
+   "char": "什",
+   "where": "第7頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『都會逃跑』『誰會怕你』，第8頁『不會再被騙』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "大森林裡：好高的大樹，樹葉中間照下一道一道的陽光，地上是綠色的草和小黃花。",
+   "act": "老虎第一次出場：好大的老虎，橘色的毛、黑色條紋、白色的肚子和嘴巴周圍、耳朵內側是粉紅色，大大的圓黑眼睛，看起來威風但有點傻氣，和《十二生肖》裡的老虎同一個樣子。他用一隻大腳掌輕輕按住狐狸的尾巴，得意地笑。狐狸第一次出場：瘦瘦的小狐狸，橘紅色的毛、白色的胸口、尾巴尖是白色的、耳朵尖尖的，細長的眼睛；他趴在地上，眼珠子往旁邊轉，正在想辦法。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大森林裡，住著一隻大老虎。",
+     "en": "Deep in the forest lived a great big tiger."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，老虎按住了一隻小狐狸。",
+     "en": "One day, the tiger pinned a little fox under his giant paw."
+    },
+    {
+     "who": "老虎",
+     "tag": "proud",
+     "text": "吼！小狐狸，你跑不掉了！",
+     "en": "Roar! Got you, little fox! You can't get away now!"
+    },
+    {
+     "who": "狐狸",
+     "text": "放開我！你不知道我是誰嗎？",
+     "en": "Let go of me! Don't you know who I am?"
+    }
+   ]
+  },
+  {
+   "scene": "同一片森林，狐狸被按住的地方。",
+   "act": "狐狸抬起下巴、挺起胸膛，一副神氣的樣子；老虎歪著頭、張大嘴巴笑，腳掌還按著狐狸的尾巴。",
+   "lines": [
+    {
+     "who": "老虎",
+     "tag": "surprised",
+     "text": "你是誰？",
+     "en": "Who are you?"
+    },
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "我是森林之王！大家看到我，都會逃跑！",
+     "en": "I'm the King of the Forest! Everyone runs away when they see me!"
+    },
+    {
+     "who": "老虎",
+     "tag": "laughing",
+     "text": "哈！你這麼小，誰會怕你？",
+     "en": "Ha! You're so small. Who would be afraid of you?"
+    },
+    {
+     "who": "狐狸",
+     "text": "不信？你跟在我後面，看一看！",
+     "en": "Don't believe me? Walk behind me and see for yourself!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小路，旁邊是一片草地，草地上有一隻小兔在吃草。",
+   "act": "狐狸鼻子朝天、大搖大擺走在前面；老虎跟在狐狸後面，好奇地東張西望。小兔第一次出場：白色的小兔子，長耳朵內側是粉紅色，嘴裡咬著一根草，看到老虎嚇得耳朵豎起來、草掉到地上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸抬起頭，大搖大擺走在前面。",
+     "en": "The fox stuck his nose in the air and strutted ahead."
+    },
+    {
+     "who": "旁白",
+     "text": "老虎跟在後面，咚，咚，咚。",
+     "en": "The tiger followed right behind him. Stomp, stomp, stomp."
+    },
+    {
+     "who": "旁白",
+     "text": "草地上，有一隻小兔正在吃草。",
+     "en": "In the meadow, a little bunny was nibbling grass."
+    },
+    {
+     "who": "小兔",
+     "tag": "scared",
+     "text": "啊！快跑呀！",
+     "en": "Eek! Run!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，小兔跑進遠方的草叢；小路再往前，是一條小溪，溪邊有一隻小鹿在喝水。",
+   "act": "狐狸回頭對老虎眨眼睛，用一隻前腳指著跑掉的小兔；老虎抓抓頭，一臉想不通；溪邊的小鹿抬起頭，看到老虎，四條腿跳起來就跑。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "看吧！小兔怕我！",
+     "en": "See? The bunny is afraid of me!"
+    },
+    {
+     "who": "老虎",
+     "tag": "surprised",
+     "text": "咦？真的耶！",
+     "en": "Huh? It's true!"
+    },
+    {
+     "who": "旁白",
+     "text": "小溪邊的小鹿看到了，也跑走了。",
+     "en": "A little deer by the stream saw them and ran away too."
+    },
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "看吧！小鹿也怕我！",
+     "en": "See? The deer is afraid of me too!"
+    }
+   ]
+  },
+  {
+   "scene": "森林深處，有一棵香蕉樹和一片泥巴地。",
+   "act": "樹上的猴子嚇得手一鬆，香蕉掉下來，抱著樹枝往上爬；泥巴地裡的大野豬跳起來，屁股沾著泥巴往遠處逃；狐狸叉著腰哈哈大笑；老虎張大嘴巴、眼睛瞪得好圓。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樹上的猴子看到了，香蕉都掉了！",
+     "en": "A monkey up in a tree saw them and dropped his banana!"
+    },
+    {
+     "who": "旁白",
+     "text": "大野豬也大叫一聲，跑走了。",
+     "en": "A big wild boar squealed and ran off too."
+    },
+    {
+     "who": "狐狸",
+     "tag": "laughing",
+     "text": "看吧！大家都怕我！",
+     "en": "See? Everyone is afraid of me!"
+    },
+    {
+     "who": "老虎",
+     "tag": "surprised",
+     "text": "哇！原來你真的是森林之王！",
+     "en": "Wow! You really are the King of the Forest!"
+    }
+   ]
+  },
+  {
+   "scene": "森林深處的小路，旁邊有好多草叢和一塊大石頭。",
+   "act": "老虎縮著脖子、低著頭，兩隻前腳併在一起，恭恭敬敬地讓開路；狐狸一邊偷笑一邊往草叢裡跑，只剩一條白尖的尾巴露在外面。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "那你現在，要讓我走了吧？",
+     "en": "So, you'll let me go now, won't you?"
+    },
+    {
+     "who": "老虎",
+     "tag": "scared",
+     "text": "是，是！大王請走！",
+     "en": "Yes, yes! Off you go, Your Majesty!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸鑽進草叢，一下子就不見了。",
+     "en": "The fox slipped into the bushes, and in a flash, he was gone."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，大石頭旁邊。",
+   "act": "小兔從大石頭後面探出頭，兩隻長耳朵先冒出來，小小聲地跟老虎說話；老虎蹲下來聽，聽完眼睛瞪大、尾巴豎起來，一臉恍然大悟。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小兔從石頭後面探出頭來。",
+     "en": "Just then, the little bunny peeked out from behind a big rock."
+    },
+    {
+     "who": "小兔",
+     "tag": "whispering",
+     "text": "老虎大哥，我們怕的不是狐狸。",
+     "en": "Mr. Tiger, we weren't afraid of the fox."
+    },
+    {
+     "who": "小兔",
+     "text": "我們怕的，是走在後面的你呀！",
+     "en": "We were afraid of you, walking right behind him!"
+    },
+    {
+     "who": "老虎",
+     "tag": "surprised",
+     "text": "什麼？我被狐狸騙了！",
+     "en": "What? That fox tricked me!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的大樹下，陽光從樹葉中間照下來；遠遠的草叢裡，露出一條白尖的狐狸尾巴。",
+   "act": "老虎坐在地上，抓著頭哈哈大笑；小兔坐在老虎旁邊，也捂著嘴笑；遠處的狐狸從草叢裡偷看，吐吐舌頭。",
+   "lines": [
+    {
+     "who": "老虎",
+     "tag": "laughing",
+     "text": "好聰明的狐狸！下次我不會再被騙了！",
+     "en": "What a clever little fox! Next time, I won't be fooled!"
+    },
+    {
+     "who": "旁白",
+     "text": "小狐狸借了老虎的威風，假裝自己很厲害。",
+     "en": "The little fox borrowed the tiger's power to make himself look mighty."
+    },
+    {
+     "who": "旁白",
+     "text": "這就叫做，狐假虎威。",
+     "en": "There's a saying for this: the fox borrows the tiger's might. It means acting big because someone strong is standing behind you."
+    }
+   ]
+  }
+ ]
+}

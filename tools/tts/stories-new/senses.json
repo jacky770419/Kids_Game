@@ -1,0 +1,370 @@
+{
+ "id": "senses",
+ "title": "五個好朋友",
+ "title_en": "My Five Senses",
+ "size": "中",
+ "roles": {
+  "小傑": "就是《影子跟著我》裡的小傑：五歲左右的小男孩，活潑好動、好奇愛問，熱得有點累，找到冰淇淋時又興奮又開心。",
+  "眼睛": "小傑的眼睛，可愛的小女生聲音，又甜又快，看到東西就興奮地叫。",
+  "耳朵": "小傑的耳朵，活潑的年輕男生聲音，輕快有精神，愛說「聽」。",
+  "鼻子": "小傑的鼻子，懶洋洋的胖叔叔聲音，說話慢吞吞、愛用力吸氣，好笑又可愛。",
+  "嘴巴": "小傑的嘴巴，嬌嬌的姊姊聲音，貪吃又急性子，一直問「輪到我了嗎」，最後吃到冰淇淋時好滿足。",
+  "小手": "小傑的小手，溫柔的年輕女生聲音，輕聲細語、細心又體貼。"
+ },
+ "cast": {
+  "小傑": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "眼睛": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "耳朵": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "鼻子": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "嘴巴": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "小手": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第2、4、6、8、10頁『我會看』『我會聽』『我會聞』『我會摸』『我會嚐』",
+   "read": "huì"
+  },
+  {
+   "char": "乘",
+   "where": "第9頁『在乘涼』",
+   "read": "chéng"
+  },
+  {
+   "char": "什",
+   "where": "第12頁『發現了什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "樂",
+   "where": "第4頁『冰淇淋車的音樂』『跟著音樂』，第5頁『音樂忽然停了』",
+   "read": "yuè"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "夏天中午的公園：太陽好大，草地、溜滑梯、花圃，遠處有一排大樹和矮樹叢。",
+   "act": "小傑（同《影子跟著我》：短短的黑頭髮，穿藍白條紋 T 恤、紅色短褲、白色球鞋）滿頭大汗，吐著舌頭，用手搧風；媽媽（綁馬尾、穿淡黃色上衣和牛仔褲）在旁邊撐一把白色陽傘。小傑頭上飄著五個問號形狀的小光點，還看不清楚是誰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天，小傑和媽媽去公園，好熱，好熱！",
+     "en": "It's summer. Jake and Mom are at the park, and it's hot, hot, hot!"
+    },
+    {
+     "who": "小傑",
+     "tag": "tired",
+     "text": "媽媽，我好想吃冰淇淋喔！",
+     "en": "Mommy, I really want some ice cream!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，冰淇淋車在哪裡呢？",
+     "en": "But where is the ice cream truck?"
+    },
+    {
+     "who": "旁白",
+     "text": "別擔心，小傑有五個好朋友，會幫他找。",
+     "en": "Don't worry. Jake has five good friends who can help him look."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，是誰呢？",
+     "en": "Can you guess who they are?"
+    }
+   ]
+  },
+  {
+   "scene": "公園的草地，遠處飄著紅色氣球，花圃上有黃色蝴蝶；一個綁辮子的小女孩走過去，手上拿著一支粉紅色的冰淇淋。",
+   "act": "五個好朋友畫成飄在小傑身邊的小卡通，全書造型一致：眼睛是粉紅色圓球、臉上一雙長睫毛大眼睛；耳朵是天藍色、耳朵形狀的小傢伙；鼻子是胖胖的橘色鼻子形狀；嘴巴是紅色嘴唇形狀、頭上綁一個紅色蝴蝶結；小手是一隻黃色的小手套。誰在說話，誰就發亮、靠近小傑。這頁只有眼睛出場：粉紅色的眼睛小卡通從小傑臉旁飛出來，眨著長睫毛，指向拿冰淇淋的小女孩；小傑轉頭去看，眼睛發亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第一個好朋友，眨了眨眼睛，跳出來了。",
+     "en": "The first friend blinks and pops out."
+    },
+    {
+     "who": "眼睛",
+     "tag": "happy",
+     "text": "我是眼睛，我會看！",
+     "en": "I'm Eyes, and I can see!"
+    },
+    {
+     "who": "眼睛",
+     "text": "我看到紅色的氣球，黃色的蝴蝶。",
+     "en": "I see red balloons and yellow butterflies."
+    },
+    {
+     "who": "眼睛",
+     "tag": "excited",
+     "text": "你看！那個小妹妹，手上拿著冰淇淋！",
+     "en": "Look! That little girl has an ice cream cone!"
+    },
+    {
+     "who": "小傑",
+     "tag": "excited",
+     "text": "冰淇淋車一定在附近！",
+     "en": "The ice cream truck must be close by!"
+    }
+   ]
+  },
+  {
+   "scene": "公園的草地，同一個中午。",
+   "act": "紅色嘴唇形狀、綁蝴蝶結的嘴巴小卡通擠到小傑面前，張大嘴巴、口水快流下來；小傑舉起一隻手，對嘴巴比「等一下」；眼睛小卡通在旁邊偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，第二個好朋友張大嘴巴，急著大叫。",
+     "en": "Just then, the second friend opens wide and shouts."
+    },
+    {
+     "who": "嘴巴",
+     "tag": "excited",
+     "text": "我是嘴巴！冰淇淋在哪裡？輪到我了嗎？",
+     "en": "I'm Mouth! Where's the ice cream? Is it my turn yet?"
+    },
+    {
+     "who": "小傑",
+     "tag": "laughing",
+     "text": "嘴巴，等一下啦！我們要先找到冰淇淋車。",
+     "en": "Wait, Mouth! First we have to find the truck."
+    }
+   ]
+  },
+  {
+   "scene": "公園的小路，路邊有長椅和路燈，遠處是一排大樹。",
+   "act": "五個好朋友畫成飄在小傑身邊的小卡通，全書造型一致：眼睛是粉紅色圓球、臉上一雙長睫毛大眼睛；耳朵是天藍色、耳朵形狀的小傢伙；鼻子是胖胖的橘色鼻子形狀；嘴巴是紅色嘴唇形狀、頭上綁一個紅色蝴蝶結；小手是一隻黃色的小手套。誰在說話，誰就發亮、靠近小傑。天藍色的耳朵小卡通豎起來，一手放在耳邊；空中飄著幾個小小的音符，從遠處大樹的方向飄過來；小傑把手放在耳朵旁邊，踮起腳尖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第三個好朋友，豎起來仔細聽。",
+     "en": "The third friend perks up and listens carefully."
+    },
+    {
+     "who": "耳朵",
+     "tag": "excited",
+     "text": "我是耳朵，我會聽！你聽，叮咚，叮咚！",
+     "en": "I'm Ears, and I can hear! Listen! Ding-dong, ding-dong!"
+    },
+    {
+     "who": "耳朵",
+     "text": "是冰淇淋車的音樂，從那邊傳過來！",
+     "en": "That's the ice cream truck's music, and it's coming from over there!"
+    },
+    {
+     "who": "旁白",
+     "text": "小傑跟著音樂，往大樹那邊跑。",
+     "en": "Jake follows the music and runs toward the big trees."
+    }
+   ]
+  },
+  {
+   "scene": "公園另一邊，一排大樹和很高的綠色矮樹叢，樹蔭很涼；看不到任何車子。",
+   "act": "小傑停在樹叢前，左看右看，兩手一攤，皺著眉頭；空中的音符不見了；耳朵小卡通垂下來，有點不好意思。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "跑到大樹下，音樂忽然停了。",
+     "en": "When he reaches the trees, the music suddenly stops."
+    },
+    {
+     "who": "旁白",
+     "text": "左邊看，沒有車。右邊看，也沒有車。",
+     "en": "He looks left. No truck. He looks right. No truck."
+    },
+    {
+     "who": "小傑",
+     "tag": "sad",
+     "text": "冰淇淋車到底在哪裡呀？",
+     "en": "Where could the ice cream truck be?"
+    }
+   ]
+  },
+  {
+   "scene": "大樹下的樹叢前。",
+   "act": "五個好朋友畫成飄在小傑身邊的小卡通，全書造型一致：眼睛是粉紅色圓球、臉上一雙長睫毛大眼睛；耳朵是天藍色、耳朵形狀的小傢伙；鼻子是胖胖的橘色鼻子形狀；嘴巴是紅色嘴唇形狀、頭上綁一個紅色蝴蝶結；小手是一隻黃色的小手套。誰在說話，誰就發亮、靠近小傑。胖胖的橘色鼻子小卡通慢慢飄出來，用力吸氣，鼻孔張得好大；它湊到小傑的腋下聞一聞，皺起臉；小傑抬起手臂，紅著臉大叫。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第四個好朋友，用力吸了一口氣。",
+     "en": "The fourth friend takes a big, long sniff."
+    },
+    {
+     "who": "鼻子",
+     "tag": "sleepy",
+     "text": "我是鼻子，我會聞。嗯，我聞到了！",
+     "en": "I'm Nose, and I can smell. Mmm, I smell something!"
+    },
+    {
+     "who": "鼻子",
+     "tag": "laughing",
+     "text": "是小傑流汗的味道，好臭喔！",
+     "en": "It's Jake's sweat. Pee-yew!"
+    },
+    {
+     "who": "小傑",
+     "tag": "surprised",
+     "text": "哪有！鼻子，你再聞一次！",
+     "en": "Hey! Nose, sniff again!"
+    }
+   ]
+  },
+  {
+   "scene": "大樹下的樹叢前，樹叢後面飄出一縷粉紅色的香味線條。",
+   "act": "鼻子小卡通閉著眼睛、一臉陶醉，跟著粉紅色的香味線條飄向樹叢；嘴巴小卡通從後面擠過來，興奮得跳上跳下。",
+   "lines": [
+    {
+     "who": "鼻子",
+     "tag": "happy",
+     "text": "嗯，這次是很甜的草莓香味！從樹叢後面飄出來的！",
+     "en": "Mmm, this time it's sweet strawberry! It's coming from behind the bushes!"
+    },
+    {
+     "who": "嘴巴",
+     "tag": "excited",
+     "text": "草莓？輪到我了嗎？輪到我了嗎？",
+     "en": "Strawberry? Is it my turn? Is it my turn?"
+    },
+    {
+     "who": "鼻子",
+     "tag": "laughing",
+     "text": "嘴巴，再等一下啦！",
+     "en": "Not yet, Mouth! Just a little longer!"
+    }
+   ]
+  },
+  {
+   "scene": "大樹下，高高的綠色矮樹叢，葉子很密。",
+   "act": "五個好朋友畫成飄在小傑身邊的小卡通，全書造型一致：眼睛是粉紅色圓球、臉上一雙長睫毛大眼睛；耳朵是天藍色、耳朵形狀的小傢伙；鼻子是胖胖的橘色鼻子形狀；嘴巴是紅色嘴唇形狀、頭上綁一個紅色蝴蝶結；小手是一隻黃色的小手套。誰在說話，誰就發亮、靠近小傑。黃色小手套小卡通溫柔地發亮；小傑把手伸進樹叢的葉子裡，摸到一個白色、光滑的東西，嚇一跳又好奇。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第五個好朋友，小心地伸進樹叢裡。",
+     "en": "The fifth friend reaches carefully into the bushes."
+    },
+    {
+     "who": "小手",
+     "tag": "gentle",
+     "text": "我是小手，我會摸。這裡有個東西，好冰，好滑。",
+     "en": "I'm Hands, and I can feel. There's something here. It's cold and smooth."
+    },
+    {
+     "who": "小手",
+     "tag": "whispering",
+     "text": "眼睛，妳快來看！",
+     "en": "Eyes, come take a look!"
+    }
+   ]
+  },
+  {
+   "scene": "樹叢被撥開，後面停著一輛粉紅色的冰淇淋車，車頂有一個大大的冰淇淋甜筒招牌，停在大樹的樹蔭下。",
+   "act": "小傑兩手撥開樹叢，眼睛小卡通飛到最前面，大眼睛睜得好圓；冰淇淋車的窗口，一位戴白帽子、留小鬍子的冰淇淋叔叔笑著揮手。",
+   "lines": [
+    {
+     "who": "眼睛",
+     "tag": "excited",
+     "text": "找到了！冰淇淋車躲在樹叢後面，在乘涼呢！",
+     "en": "Found it! The ice cream truck is hiding behind the bushes, staying in the shade!"
+    },
+    {
+     "who": "小傑",
+     "tag": "shouting",
+     "text": "耶！謝謝你們！",
+     "en": "Yay! Thank you, friends!"
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽買了一支草莓冰淇淋給小傑。",
+     "en": "Mom buys Jake a strawberry ice cream cone."
+    }
+   ]
+  },
+  {
+   "scene": "冰淇淋車旁邊的長椅，樹蔭下。",
+   "act": "小傑坐在長椅上，手上拿著粉紅色的草莓冰淇淋甜筒；嘴巴小卡通張大嘴、閉著眼睛，一臉幸福；其他四個好朋友圍在旁邊拍手。",
+   "lines": [
+    {
+     "who": "嘴巴",
+     "tag": "excited",
+     "text": "終於輪到我了！",
+     "en": "Finally, it's my turn!"
+    },
+    {
+     "who": "嘴巴",
+     "tag": "happy",
+     "text": "我是嘴巴，我會嚐。好冰，好甜，是草莓的味道！",
+     "en": "I'm Mouth, and I can taste. So cold, so sweet, it's strawberry!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了。",
+     "en": "Everyone laughs."
+    }
+   ]
+  },
+  {
+   "scene": "長椅上，冰淇淋在太陽下開始融化。",
+   "act": "粉紅色的冰淇淋滴下來，流到小傑的手上；黃色小手套小卡通黏答答地舉起來，一臉無奈；小傑哈哈大笑，伸出舌頭舔手指。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哎呀，冰淇淋融化了，滴了下來。",
+     "en": "Uh-oh. The ice cream is melting and dripping down."
+    },
+    {
+     "who": "小手",
+     "tag": "surprised",
+     "text": "好黏，好黏！小傑，快幫我舔一舔！",
+     "en": "Sticky! So sticky! Jake, help me lick it off!"
+    },
+    {
+     "who": "小傑",
+     "tag": "laughing",
+     "text": "好，我來舔！",
+     "en": "Okay, I'll lick it!"
+    }
+   ]
+  },
+  {
+   "scene": "公園門口，太陽沒那麼大了，天空是淡橘色。",
+   "act": "小傑牽著媽媽的手往回走，一手舉高比出五根手指；五個好朋友小卡通排成一排，跟著他揮手。最後一句是對聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小傑",
+     "tag": "proud",
+     "text": "眼睛看，耳朵聽，鼻子聞，小手摸，嘴巴嚐。",
+     "en": "Eyes see. Ears hear. Nose smells. Hands feel. Mouth tastes."
+    },
+    {
+     "who": "小傑",
+     "tag": "happy",
+     "text": "我的五個好朋友，最厲害了！",
+     "en": "My five friends are the best!"
+    },
+    {
+     "who": "旁白",
+     "text": "你的五個好朋友，今天發現了什麼呢？",
+     "en": "What did your five friends discover today?"
+    }
+   ]
+  }
+ ]
+}

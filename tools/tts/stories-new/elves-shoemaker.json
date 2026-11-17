@@ -1,0 +1,498 @@
+{
+ "id": "elves-shoemaker",
+ "title": "小精靈和鞋匠",
+ "title_en": "The Elves and the Shoemaker",
+ "size": "長",
+ "roles": {
+  "鞋匠爺爺": "很窮但很善良的老鞋匠，慈祥的老爺爺聲音，說話慢、溫和，看到神奇的鞋子時又驚訝又開心，做小鞋子時呵呵笑。",
+  "鞋匠奶奶": "鞋匠的太太，溫暖的奶奶聲音，樂觀又細心，總是安慰老伴，偷看小精靈時小小聲、很興奮。",
+  "小叮": "金色捲髮的小精靈，聲音又甜又可愛，活潑愛笑，做事很快。",
+  "小咚": "棕色直髮的小精靈，聲音尖細可愛、帶點調皮，收到禮物時開心得大叫。"
+ },
+ "cast": {
+  "鞋匠爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "鞋匠奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "小叮": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小咚": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "誰",
+   "where": "第3頁『是誰做的呢』，第6頁『是誰在幫忙』",
+   "read": "shéi"
+  },
+  {
+   "char": "縫",
+   "where": "第9頁『縫鞋面』，第12頁『我來縫』",
+   "read": "féng"
+  },
+  {
+   "char": "樂",
+   "where": "第15頁『聖誕快樂』",
+   "read": "lè"
+  },
+  {
+   "char": "鬧",
+   "where": "第6頁『越來越熱鬧』",
+   "read": "nào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "下雪的冬天，很久以前的歐洲小鎮：石板路、尖屋頂的房子，路邊一間很小的鞋店，門口掛著畫了一隻靴子的木頭招牌。店裡：很久以前的歐洲小鎮，一間很小的鞋店：木頭工作桌、牆上掛著鐵鎚和剪刀、一排木頭鞋架，角落有一個小暖爐，門邊的衣架上掛著兩件厚大衣；窗戶是小方格玻璃。",
+   "act": "鞋匠爺爺第一次出場：白頭髮、白鬍子，戴圓眼鏡，穿灰色毛衣和咖啡色皮圍裙。鞋匠奶奶第一次出場：白頭髮梳成圓髮髻，穿深紅色長裙和白色圍裙，肩上披一條綠色披肩。兩個人坐在店裡，看著空蕩蕩的鞋架，有點發愁；窗外飄著雪，路上沒有客人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，小鎮上有一間很小的鞋店。",
+     "en": "Long ago, in a little town, there was a tiny shoe shop."
+    },
+    {
+     "who": "旁白",
+     "text": "鞋匠爺爺和鞋匠奶奶，就住在這裡。",
+     "en": "An old shoemaker and his wife lived there."
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺做的鞋子又漂亮，又好穿。",
+     "en": "The shoemaker made shoes that were pretty and comfortable."
+    },
+    {
+     "who": "旁白",
+     "text": "可是冬天到了，客人越來越少。",
+     "en": "But when winter came, fewer and fewer people came to buy them."
+    }
+   ]
+  },
+  {
+   "scene": "晚上的鞋店，工作桌上點著一根蠟燭，燭光暖黃色。很久以前的歐洲小鎮，一間很小的鞋店：木頭工作桌、牆上掛著鐵鎚和剪刀、一排木頭鞋架，角落有一個小暖爐，門邊的衣架上掛著兩件厚大衣；窗戶是小方格玻璃。",
+   "act": "爺爺坐在工作桌前，手上拿著最後一塊咖啡色的皮，一臉發愁；奶奶站在他身後，把一條毛毯披在他肩上，溫柔地拍拍他。接著爺爺用大剪刀把皮剪成鞋子的形狀，整齊地放在桌上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天晚上，爺爺拿出最後一塊皮。",
+     "en": "One night, the shoemaker took out his very last piece of leather."
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "sad",
+     "text": "老伴，這是最後一塊皮了。",
+     "en": "My dear, this is the last piece of leather we have."
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "gentle",
+     "text": "別擔心，明天做好鞋子，就能買麵包了。",
+     "en": "Don't worry. Tomorrow you'll make the shoes, and then we can buy bread."
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺把皮剪好，放在桌上，就去睡了。",
+     "en": "He cut out the pieces, left them on the table, and went to bed."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，陽光照進鞋店的小方格窗戶，照在工作桌上。",
+   "act": "桌上放著一雙咖啡色的新皮鞋，擦得發亮，縫線又小又整齊；爺爺扶著眼鏡彎腰看，嘴巴張得好大；奶奶雙手捧著臉，驚訝地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，爺爺走到桌子前面。",
+     "en": "The next morning, the shoemaker went to his table."
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "surprised",
+     "text": "咦？鞋子已經做好了！",
+     "en": "What? The shoes are already made!"
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "surprised",
+     "text": "你看，每一針都好小，好整齊！",
+     "en": "Look! Every stitch is so tiny and neat!"
+    },
+    {
+     "who": "鞋匠爺爺",
+     "text": "是誰做的呢？",
+     "en": "Who could have made them?"
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺和奶奶想了又想，都想不出來。",
+     "en": "The shoemaker and his wife thought and thought, but they had no idea."
+    }
+   ]
+  },
+  {
+   "scene": "白天的鞋店，門上的小鈴鐺在搖。",
+   "act": "一位戴羽毛帽、穿藍色大衣的太太坐在椅子上試穿那雙咖啡色新鞋，站起來開心地跳了一下；她把好幾枚金幣放在爺爺手心；奶奶在旁邊拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，一位太太走進店裡。",
+     "en": "Just then, a lady walked into the shop."
+    },
+    {
+     "who": "旁白",
+     "text": "她穿上新鞋，高興地跳了起來。",
+     "en": "She tried on the new shoes and jumped for joy."
+    },
+    {
+     "who": "旁白",
+     "text": "她多付了好多錢，爺爺就能買兩雙鞋的皮。",
+     "en": "She paid extra, so the shoemaker could buy leather for two pairs of shoes."
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "happy",
+     "text": "太好了！今天有麵包吃了！",
+     "en": "Hooray! We'll have bread today!"
+    }
+   ]
+  },
+  {
+   "scene": "鞋店的工作桌，畫面分成左右兩半：左邊是晚上的燭光，右邊是早上的陽光。",
+   "act": "左邊：爺爺在燭光下，把兩雙鞋的皮剪好放在桌上。右邊：桌上排著兩雙漂亮的新鞋，一雙紅色、一雙黑色，爺爺抱著頭哈哈大笑，奶奶在旁邊拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "那天晚上，爺爺剪好兩雙鞋的皮。",
+     "en": "That night, he cut out leather for two pairs."
+    },
+    {
+     "who": "旁白",
+     "text": "第二天早上，兩雙新鞋做好了！",
+     "en": "The next morning, two new pairs were ready!"
+    },
+    {
+     "who": "旁白",
+     "text": "晚上剪好四雙，早上就有四雙新鞋。",
+     "en": "When he cut out four pairs at night, there were four new pairs in the morning."
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "laughing",
+     "text": "真是太神奇了！",
+     "en": "It's like magic!"
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "happy",
+     "text": "一定有好心人在幫我們！",
+     "en": "Someone kind must be helping us!"
+    }
+   ]
+  },
+  {
+   "scene": "白天的鞋店，鞋架上擺滿各種顏色的鞋子，窗外下著雪，窗戶上掛著一個綠色的聖誕花圈。",
+   "act": "店裡擠滿客人，有人試穿、有人排隊；爺爺和奶奶（衣服跟第 1 頁一樣）笑咪咪地招呼客人。晚上客人走了，奶奶舉起一根手指，眼睛一亮，湊到爺爺耳邊說悄悄話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "客人越來越多，鞋店越來越熱鬧。",
+     "en": "More and more customers came, and the shop grew busier and busier."
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺和奶奶，再也不用餓肚子了。",
+     "en": "The shoemaker and his wife were never hungry again."
+    },
+    {
+     "who": "旁白",
+     "text": "聖誕節快到了，奶奶想到一個好主意。",
+     "en": "One night, just before Christmas, the wife had an idea."
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "whispering",
+     "text": "老伴，今晚我們躲起來，看一看是誰在幫忙吧！",
+     "en": "My dear, let's hide tonight and see who's helping us!"
+    }
+   ]
+  },
+  {
+   "scene": "半夜的鞋店，蠟燭熄了，只有窗外的月光照進來；牆上的老時鐘指著十二點；工作桌上放著剪好的皮。",
+   "act": "爺爺和奶奶躲在門邊掛著的兩件厚大衣後面，只露出兩雙眼睛。窗戶打開，兩個小精靈爬進來。小精靈第一次出場：跟茶杯差不多高，尖耳朵、紅臉頰，光著小腳；小叮是金色捲髮，小咚是棕色直髮，兩個都穿著又舊又破、補了好多補丁的灰色小衣服。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們吹熄蠟燭，躲在大衣後面。",
+     "en": "They blew out the candle and hid behind the coats."
+    },
+    {
+     "who": "旁白",
+     "text": "時鐘敲了十二下，噹，噹，噹！",
+     "en": "The clock struck twelve. Bong, bong, bong!"
+    },
+    {
+     "who": "旁白",
+     "text": "窗戶忽然打開了，兩個小精靈爬了進來！",
+     "en": "Suddenly the window swung open, and in climbed two tiny elves!"
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "whispering",
+     "text": "好小喔，跟茶杯一樣高！",
+     "en": "They're so small! No taller than a teacup!"
+    }
+   ]
+  },
+  {
+   "scene": "半夜的鞋店，月光照在工作桌上。",
+   "act": "金色捲髮的小叮跳上工作桌，興奮地揮手；棕色直髮的小咚跟著跳上來，拿起一根跟他差不多高的針和一捆線；爺爺奶奶在大衣後面偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個金頭髮的小精靈，先跳上了桌子。",
+     "en": "First, an elf with golden curls jumped up onto the table."
+    },
+    {
+     "who": "小叮",
+     "tag": "excited",
+     "text": "小咚，快來！今天有好多皮！",
+     "en": "Tap, come quick! There's lots of leather tonight!"
+    },
+    {
+     "who": "旁白",
+     "text": "棕頭髮的小精靈跟著跳上來，拿起針線。",
+     "en": "Then an elf with brown hair hopped up and picked up a needle and thread."
+    },
+    {
+     "who": "小咚",
+     "tag": "happy",
+     "text": "小叮，我們開工囉！",
+     "en": "Okay, Tip, let's get to work!"
+    }
+   ]
+  },
+  {
+   "scene": "半夜的鞋店，工作桌上。",
+   "act": "小叮拿著小鐵鎚敲鞋底，小咚拿著針線飛快地縫鞋面，桌上已經排好好幾雙新鞋；兩個小精靈一邊做一邊搖頭晃腦；大衣後面，爺爺和奶奶互看一眼，捂著嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小叮敲鞋底，叩、叩、叩！",
+     "en": "Tip hammered the soles. Rat-a-tat-tat!"
+    },
+    {
+     "who": "旁白",
+     "text": "小咚縫鞋面，一針，一針，又一針。",
+     "en": "Tap sewed the tops, stitch after stitch after stitch."
+    },
+    {
+     "who": "旁白",
+     "text": "他們的小手好快，鞋子一雙接一雙做好了。",
+     "en": "Their little hands were so quick! Pair after pair of shoes was finished."
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "whispering",
+     "text": "原來是小精靈在幫我們！",
+     "en": "So it's the elves who've been helping us!"
+    }
+   ]
+  },
+  {
+   "scene": "半夜快結束的鞋店，工作桌上排滿一雙一雙的新鞋；窗外的天空開始變成淡藍色。",
+   "act": "小叮坐在一排新鞋旁邊，伸了一個大懶腰、打哈欠；小咚趴在窗台上往外看，嚇得跳起來，拉著小叮的手要跑；大衣後面，爺爺奶奶睜大眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最後一雙鞋做好了，小叮伸了一個大懶腰。",
+     "en": "When the last pair was done, Tip gave a great big stretch."
+    },
+    {
+     "who": "小叮",
+     "tag": "sleepy",
+     "text": "呼，好累喔！天快亮了吧？",
+     "en": "Phew, I'm tired! Is it almost morning?"
+    },
+    {
+     "who": "旁白",
+     "text": "小咚往窗外一看，跳了起來。",
+     "en": "Tap peeked out the window and jumped."
+    },
+    {
+     "who": "小咚",
+     "tag": "surprised",
+     "text": "糟糕，天快亮了！快走，快走！",
+     "en": "Oh no, the sun's coming up! Hurry, hurry!"
+    }
+   ]
+  },
+  {
+   "scene": "天快亮了，窗外的天空是淡藍色，雪地白茫茫一片。",
+   "act": "兩個小精靈光著小腳從窗戶跳到雪地上，縮著肩膀、抱著手臂發抖；爺爺和奶奶從大衣後面走出來，站在窗邊看，一臉心疼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩個小精靈從窗戶跳出去，光著腳跑進雪地裡。",
+     "en": "The elves jumped out the window and ran barefoot into the snow."
+    },
+    {
+     "who": "鞋匠奶奶",
+     "tag": "sad",
+     "text": "你看，他們的衣服好破，好舊。",
+     "en": "Look how worn and ragged their clothes are."
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "sad",
+     "text": "他們做了那麼多鞋，自己卻沒有鞋子穿！",
+     "en": "They've made so many shoes, but they don't have any shoes of their own!"
+    }
+   ]
+  },
+  {
+   "scene": "早上的鞋店，小暖爐裡的火燒得很旺。",
+   "act": "爺爺和奶奶坐在暖爐邊；奶奶從籃子裡拿出紅色、綠色的毛線和碎布，爺爺拿出一小塊柔軟的紅色皮，兩個人笑著點頭。",
+   "lines": [
+    {
+     "who": "鞋匠奶奶",
+     "tag": "happy",
+     "text": "聖誕節快到了，我們送禮物謝謝他們吧！",
+     "en": "Christmas is coming. Let's give them presents to say thank you!"
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "happy",
+     "text": "好主意！我用最軟的紅色皮，做兩雙小鞋子。",
+     "en": "Good idea! I'll use my softest red leather to make two pairs of little shoes."
+    },
+    {
+     "who": "鞋匠奶奶",
+     "text": "我來縫小衣服、小褲子，再織兩頂小帽子。",
+     "en": "I'll sew some little clothes, and knit two little hats."
+    }
+   ]
+  },
+  {
+   "scene": "鞋店的暖爐邊，接著是聖誕夜的工作桌。",
+   "act": "奶奶縫好兩件紅色小上衣和兩條綠色小褲子，正用紅毛線織尖帽子；爺爺舉起一隻紅色的小鞋子，只有他的指甲那麼大，笑得眼睛瞇起來。聖誕夜，兩人把兩套小衣服、兩頂小帽子、兩雙小紅鞋整齊地擺在工作桌上，桌上沒有放皮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們忙了好幾天。",
+     "en": "They worked for days and days."
+    },
+    {
+     "who": "旁白",
+     "text": "小鞋子做好了，只有爺爺的指甲那麼大！",
+     "en": "At last the little shoes were done, each one no bigger than the shoemaker's fingernail!"
+    },
+    {
+     "who": "鞋匠爺爺",
+     "tag": "laughing",
+     "text": "哈，這是我做過最小的鞋子！",
+     "en": "Ha! These are the smallest shoes I've ever made!"
+    },
+    {
+     "who": "旁白",
+     "text": "聖誕夜，他們把禮物放在桌上，又躲了起來。",
+     "en": "On Christmas Eve, they laid the presents on the table and hid again."
+    }
+   ]
+  },
+  {
+   "scene": "聖誕夜半夜的鞋店，月光照在工作桌上，桌上擺著兩套紅色小上衣和綠色小褲子、兩頂紅色尖帽子、兩雙紅色小鞋子。",
+   "act": "兩個小精靈從窗戶爬進來；小叮站在桌邊歪著頭、抓抓金色捲髮；小咚拿起一頂小紅帽，眼睛發亮；大衣後面露出爺爺奶奶期待的眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "半夜，兩個小精靈又爬進來了。",
+     "en": "At midnight, the two elves climbed in again."
+    },
+    {
+     "who": "旁白",
+     "text": "大衣後面，爺爺奶奶一動也不敢動。",
+     "en": "Behind the coats, the shoemaker and his wife kept very still."
+    },
+    {
+     "who": "小叮",
+     "tag": "surprised",
+     "text": "咦？今天沒有皮。",
+     "en": "Huh? There's no leather tonight."
+    },
+    {
+     "who": "旁白",
+     "text": "小咚拿起一頂小帽子，眼睛亮了起來。",
+     "en": "Tap picked up a tiny hat, and his eyes lit up."
+    },
+    {
+     "who": "小咚",
+     "tag": "excited",
+     "text": "小叮，你看！這是給我們的禮物！",
+     "en": "Tip, look! These presents are for us!"
+    }
+   ]
+  },
+  {
+   "scene": "聖誕夜半夜的鞋店，工作桌上。",
+   "act": "兩個小精靈穿上紅色小上衣、綠色小褲子，戴上紅色尖帽子，穿上紅色小鞋子，在桌上手牽手跳舞，帽子尖尖晃來晃去；爺爺奶奶在大衣後面捂著嘴偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們穿上新衣服，戴上小帽子，再穿上小鞋子。",
+     "en": "They put on the clothes, then the hats, then the little shoes."
+    },
+    {
+     "who": "小叮",
+     "tag": "happy",
+     "text": "好溫暖，鞋子也剛好！",
+     "en": "So warm! And the shoes fit just right!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們手牽手，在桌上跳起舞來。",
+     "en": "They held hands and danced across the table."
+    },
+    {
+     "who": "小咚",
+     "tag": "excited",
+     "text": "我們穿新衣，我們穿新鞋，聖誕快樂！",
+     "en": "New clothes for us! New shoes for us! Merry Christmas!"
+    }
+   ]
+  },
+  {
+   "scene": "下雪的聖誕夜，月光下的雪地，遠處是小鎮尖屋頂的房子；鞋店的窗戶透出暖黃色的燈光。接著是隔年聖誕節的早上，同一個窗台。",
+   "act": "兩個小精靈穿著紅衣服，在雪地上蹦蹦跳跳地走遠，留下兩串小腳印；爺爺奶奶站在窗邊揮手。最後一個畫面：窗台上放著一個空盤子，只剩一點蛋糕屑，旁邊有兩個小小的腳印，爺爺奶奶對看著笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩個小精靈跳出窗戶，在雪地裡越跳越遠。",
+     "en": "The two elves danced out the window and over the snow, farther and farther away."
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，他們再也沒有來做鞋。",
+     "en": "After that night, they never came back to make shoes."
+    },
+    {
+     "who": "旁白",
+     "text": "可是每年聖誕夜，爺爺奶奶都在窗邊放一塊小蛋糕。",
+     "en": "But every Christmas Eve, the shoemaker and his wife left a tiny cake on the windowsill."
+    },
+    {
+     "who": "旁白",
+     "text": "第二天早上，蛋糕總是不見了。",
+     "en": "And the next morning, the cake was always gone."
+    }
+   ]
+  }
+ ]
+}

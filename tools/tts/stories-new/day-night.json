@@ -1,0 +1,357 @@
+{
+ "id": "day-night",
+ "title": "白天和黑夜",
+ "title_en": "Why Is There Day and Night?",
+ "size": "中",
+ "roles": {
+  "小米": "就是《太陽系一家人》裡的小米：五歲的小女孩，聲音清亮、好奇愛問，玩不夠時有點撒嬌，發現答案時又驚又喜。",
+  "小鐵": "小米的銀白色機器狗，聲音尖細可愛、精神十足，每句話前面愛先叫一聲「汪」，愛搶著說話，有點冒失好笑。",
+  "地球": "溫柔的地球媽媽，說話輕柔、慢慢的、帶著笑，像在哄小孩，讓人安心。",
+  "太陽公公": "慈祥的太陽公公，老爺爺的聲音，宏亮溫暖、慢慢說，愛笑。"
+ },
+ "cast": {
+  "小米": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小鐵": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "地球": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "太陽公公": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "轉",
+   "where": "第4頁到第11頁『轉圈』『轉回』『轉一圈』『轉到』，共十多處",
+   "read": "zhuàn"
+  },
+  {
+   "char": "暈",
+   "where": "第8頁『好暈』『不會暈』",
+   "read": "yūn"
+  },
+  {
+   "char": "會",
+   "where": "第2頁、第3頁『會黑』，第8頁『不會暈』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第2頁、第3頁『為什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "為",
+   "where": "第2頁、第3頁『為什麼』",
+   "read": "wèi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "小米家的院子，太陽快要下山了，天空從橘色慢慢變成紫色，草地上的影子拉得好長。",
+   "act": "小米和《太陽系一家人》同一個樣子：五歲的小女孩，綁一個高馬尾、戴紅色髮夾，穿黃色連身衣。小鐵是銀白色的小機器狗，圓圓的頭、藍色燈泡眼睛，兩片三角形的金屬小耳朵、四隻短腳，尾巴是一根小天線，頭頂有一個圓按鈕。小米抱著一顆紅色皮球，對著要下山的太陽揮手大喊；小鐵在她腳邊跳，天線尾巴搖來搖去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小米和機器狗小鐵，在院子裡玩球。",
+     "en": "Mimi and her robot dog, Tinbo, are playing ball in the yard."
+    },
+    {
+     "who": "旁白",
+     "text": "太陽要下山了，天變成了橘色。",
+     "en": "The sun is going down, and the sky is turning orange."
+    },
+    {
+     "who": "小米",
+     "tag": "sad",
+     "text": "太陽公公，不要走！我想再玩一下！",
+     "en": "Grandpa Sun, don't go! I want to play a little longer!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，天越來越黑了。",
+     "en": "But the sky keeps getting darker and darker."
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，天快黑了，天上冒出第一顆星星；院子角落停著那艘紅白色、有圓窗戶的小火箭。",
+   "act": "小米坐在台階上，手撐著下巴，嘴巴嘟起來；小鐵的藍眼睛一亮，用鼻子指著院子角落的火箭，尾巴天線豎得直直的。",
+   "lines": [
+    {
+     "who": "小米",
+     "tag": "curious",
+     "text": "小鐵，天為什麼會黑呢？",
+     "en": "Tinbo, why does it get dark?"
+    },
+    {
+     "who": "旁白",
+     "text": "小鐵的眼睛，忽然亮了起來。",
+     "en": "Suddenly, Tinbo's eyes light up."
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪！我們坐火箭，去問太陽公公！",
+     "en": "Woof! Let's take the rocket and ask Grandpa Sun!"
+    },
+    {
+     "who": "旁白",
+     "text": "小米和小鐵戴上頭盔，坐進了火箭。",
+     "en": "Mimi and Tinbo put on their helmets and climb into the rocket."
+    }
+   ]
+  },
+  {
+   "scene": "黑色的宇宙，遠方一個好大、好亮的金黃色太陽，表面有火焰在跳；火箭遠遠地停著。",
+   "act": "太陽公公有慈祥的笑臉和火焰做的白鬍子，笑咪咪地看著火箭；小米戴著墨鏡，貼在圓窗戶上；小鐵的金屬耳朵被照得發亮。",
+   "lines": [
+    {
+     "who": "小米",
+     "text": "太陽公公，你去哪裡了？",
+     "en": "Grandpa Sun, where did you go?"
+    },
+    {
+     "who": "太陽公公",
+     "tag": "laughing",
+     "text": "我哪裡都沒有去喔。我一直在這裡發光呀！",
+     "en": "I didn't go anywhere, little one. I'm always right here, shining!"
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "那為什麼天會黑呢？",
+     "en": "Then why does it get dark?"
+    }
+   ]
+  },
+  {
+   "scene": "從宇宙看地球：左邊是太陽照過來的光，地球靠太陽的這一半很亮，看得到藍色的海和綠色的陸地；另一半是深藍色的，上面點著城市的小燈光。地球旁邊畫一個轉圈的箭頭，表示地球由西往東轉（從北極上方看是逆時針）。",
+   "act": "地球有一張溫柔媽媽的笑臉，和《太陽系一家人》同一個樣子，正慢慢地轉；小米和小鐵在火箭的圓窗戶裡，張大嘴巴看。",
+   "lines": [
+    {
+     "who": "太陽公公",
+     "tag": "gentle",
+     "text": "你們看，地球在做什麼？",
+     "en": "Look at the Earth. What is she doing?"
+    },
+    {
+     "who": "地球",
+     "tag": "gentle",
+     "text": "我是地球。我一直在轉圈喔，很慢，很穩。",
+     "en": "I'm Earth. I'm always spinning, nice and slow, nice and steady."
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "哇，地球在轉圈！",
+     "en": "Wow! The Earth is spinning!"
+    }
+   ]
+  },
+  {
+   "scene": "同樣的地球，近一點：亮的一半上面畫一個小太陽符號，暗的一半上面畫一個小月亮和星星符號，中間有一條明暗交界。",
+   "act": "地球媽媽一邊轉，一邊用溫柔的眼神指給大家看；小鐵把臉貼在窗戶上，一下看亮的那邊、一下看暗的那邊。",
+   "lines": [
+    {
+     "who": "地球",
+     "tag": "gentle",
+     "text": "我這一邊對著太陽公公，很亮，就是白天。",
+     "en": "The side of me facing Grandpa Sun is bright. That's daytime."
+    },
+    {
+     "who": "地球",
+     "text": "另一邊照不到陽光，很黑，就是晚上。",
+     "en": "The other side gets no sunlight. It's dark. That's nighttime."
+    },
+    {
+     "who": "旁白",
+     "text": "小鐵一下看這邊，一下看那邊。",
+     "en": "Tinbo looks one way, then the other."
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪！一半是白天，一半是晚上！",
+     "en": "Woof! Half is day, and half is night!"
+    }
+   ]
+  },
+  {
+   "scene": "地球的近景，亞洲在明暗交界上，小小的台灣正要轉進暗的那一邊；台灣上面畫一顆小紅星和一個小房子，代表小米家（跟第9頁皮球上的小紅星貼紙呼應）。",
+   "act": "小米伸出手指，指著窗外的台灣，眼睛睜得好大；地球媽媽笑著點頭。",
+   "lines": [
+    {
+     "who": "小米",
+     "tag": "excited",
+     "text": "我看到了！我家在那裡！",
+     "en": "I see it! There's my home!"
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "我家正要轉到晚上那邊！",
+     "en": "My home is spinning into the night side!"
+    },
+    {
+     "who": "地球",
+     "tag": "gentle",
+     "text": "對呀，所以你們那裡，天黑了。",
+     "en": "That's right. That's why it's getting dark where you live."
+    }
+   ]
+  },
+  {
+   "scene": "同一個地球，另一邊：美洲剛從暗的那一邊轉進亮的那一邊，天邊露出橘黃色的陽光；放大的小圓圈裡，一個小男孩在床上伸懶腰，窗外的天正在變亮。",
+   "act": "小米指著地球另一邊剛亮起來的地方，好奇地歪著頭；小鐵的天線尾巴豎起來。",
+   "lines": [
+    {
+     "who": "小米",
+     "tag": "curious",
+     "text": "那邊亮起來的地方，是哪裡？",
+     "en": "What's that place over there that's getting light?"
+    },
+    {
+     "who": "地球",
+     "tag": "happy",
+     "text": "那是地球的另一邊。那裡的小朋友，正要起床呢！",
+     "en": "That's the other side of me. The children there are just waking up!"
+    },
+    {
+     "who": "小米",
+     "tag": "surprised",
+     "text": "我們這裡天黑，他們那裡天亮了！",
+     "en": "It's getting dark for us, and it's getting light for them!"
+    }
+   ]
+  },
+  {
+   "scene": "火箭裡面，圓窗戶外面是慢慢轉的地球。",
+   "act": "小鐵在火箭裡原地轉圈，轉到眼睛變成兩個螺旋圈圈，四隻腳歪歪扭扭，一屁股坐在地上；小米捧著肚子笑；窗外的地球媽媽也笑了。",
+   "lines": [
+    {
+     "who": "地球",
+     "tag": "gentle",
+     "text": "我轉一圈，就是一天。",
+     "en": "Each time I spin all the way around, that's one day."
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪！我也來轉一圈！哎呀，好暈！",
+     "en": "Woof! I'll spin around too! Whoa, I'm dizzy!"
+    },
+    {
+     "who": "旁白",
+     "text": "小米笑著問地球：",
+     "en": "Mimi giggles and asks the Earth,"
+    },
+    {
+     "who": "小米",
+     "tag": "curious",
+     "text": "地球，妳轉了那麼多圈，不會暈嗎？",
+     "en": "Earth, you spin so much. Don't you get dizzy?"
+    },
+    {
+     "who": "地球",
+     "tag": "laughing",
+     "text": "不會，我轉圈又慢又穩，你們在我身上也不會暈喔。",
+     "en": "Not at all. I spin slowly and smoothly, so you don't get dizzy riding on me either."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小米的房間：火箭已經停回院子，窗外是黑色的天和星星；房間的燈關了。",
+   "act": "小米抱著一顆藍色的地球儀皮球，上面貼了一張小紅星貼紙，代表她的家；小鐵的眼睛燈打開，照出一道黃色的光，當作太陽；小米慢慢轉著皮球，紅星貼紙一下轉到亮的地方、一下轉到暗的地方。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回到家，小米拿出一顆地球皮球，貼上一顆小紅星。",
+     "en": "Back home, Mimi gets out a ball that looks like the Earth and sticks a little red star on it."
+    },
+    {
+     "who": "小鐵",
+     "tag": "excited",
+     "text": "汪！讓我的眼睛做太陽！",
+     "en": "Woof! My eyes can be the Sun!"
+    },
+    {
+     "who": "旁白",
+     "text": "小米把皮球轉了起來。",
+     "en": "Mimi starts to spin the ball."
+    },
+    {
+     "who": "小米",
+     "tag": "happy",
+     "text": "小紅星轉到亮的地方，是白天；轉到黑的地方，是晚上！",
+     "en": "When the red star spins into the light, it's day. When it spins into the dark, it's night!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小米的房間，窗外有星星，小米頭上畫一個夢泡泡，泡泡裡是笑著的地球媽媽，好像在輕輕搖。",
+   "act": "小米穿著睡衣躺在床上，抱著小鐵，看著窗外的星星；小鐵的眼睛燈變成柔和的小夜燈；床邊放著那顆貼了紅星的地球皮球。",
+   "lines": [
+    {
+     "who": "小米",
+     "tag": "sleepy",
+     "text": "晚安，地球。",
+     "en": "Good night, Earth."
+    },
+    {
+     "who": "地球",
+     "tag": "whispering",
+     "text": "晚安，小米。",
+     "en": "Good night, Mimi."
+    },
+    {
+     "who": "地球",
+     "text": "睡吧。我會把你們家，轉回太陽公公那邊。",
+     "en": "Go to sleep. I'll carry your home back around to Grandpa Sun."
+    },
+    {
+     "who": "小鐵",
+     "tag": "whispering",
+     "text": "汪，地球另一邊的小朋友，早安！",
+     "en": "Woof. Good morning to the children on the other side of the world!"
+    }
+   ]
+  },
+  {
+   "scene": "早上，小米的房間，金黃色的陽光從窗戶照進來，照在床上；窗外的天空是淡藍色的，太陽公公在窗外笑。",
+   "act": "小米坐起來伸懶腰，張開雙手迎接陽光；小鐵在床上跳來跳去；太陽公公在窗外眨眼睛。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "太陽公公",
+     "tag": "happy",
+     "text": "早安，小米！",
+     "en": "Good morning, Mimi!"
+    },
+    {
+     "who": "小米",
+     "tag": "excited",
+     "text": "早安，太陽公公！我們家轉回來了！",
+     "en": "Good morning, Grandpa Sun! Our home spun back around!"
+    },
+    {
+     "who": "旁白",
+     "text": "地球轉一圈，晚上過去，白天又來了。",
+     "en": "Each time the Earth spins all the way around, night goes by, and day comes again."
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，現在你家是白天，或是晚上呢？",
+     "en": "So, is your home on the day side or the night side right now?"
+    }
+   ]
+  }
+ ]
+}

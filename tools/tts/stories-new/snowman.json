@@ -1,0 +1,252 @@
+{
+ "id": "snowman",
+ "title": "小雪人",
+ "title_en": "The Little Snowman",
+ "size": "短",
+ "roles": {
+  "小雪人": "小女孩堆出來的小雪人，小男孩的聲音，天真好動、愛笑，有點冒失，問問題時好奇，變成小水滴後又輕快又興奮。",
+  "小女孩": "五歲左右的小女孩，就是《小水滴變雪花》裡在合歡山接住雪花的女孩；聲音清亮甜美，玩的時候很興奮，說再見時有點捨不得。",
+  "太陽": "春天溫柔的太陽，像溫柔的阿姨，說話輕輕慢慢、暖暖的，讓人安心。"
+ },
+ "cast": {
+  "小雪人": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "太陽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第2頁『會說話』，第4頁『會化掉』，第5頁『會不見』",
+   "read": "huì"
+  },
+  {
+   "char": "行",
+   "where": "第4頁『不行』，第5頁『旅行』",
+   "read": "xíng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "冬天，台灣的合歡山上：松樹和矮竹子都蓋著白雪，地上一大片雪地，遠處有一間紅屋頂的小木屋，天空是淡灰色的。",
+   "act": "小女孩第一次出場：約五歲，黑色短髮，戴紅色毛線帽、帽子上有白色毛球，穿黃色厚外套、紅色手套、藍色雪靴，和《小水滴變雪花》裡同一個女孩。她蹲在雪地上，用力推著一顆大雪球，旁邊已經有一顆小雪球，臉頰凍得紅紅的，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天，小女孩到高山上看雪。",
+     "en": "In winter, a little girl goes up a tall mountain to see the snow."
+    },
+    {
+     "who": "旁白",
+     "text": "她滾了一顆大雪球，又滾了一顆小雪球。",
+     "en": "She rolls a big snowball, and then a little one."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "小的放上面，變成小雪人！",
+     "en": "Little one on top, and now I have a snowman!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，小木屋前面。",
+   "act": "小雪人第一次出場：一大一小兩顆雪球疊成，比小女孩矮一點，兩顆黑色小石頭當眼睛，一根橘色紅蘿蔔當鼻子，兩根咖啡色樹枝當手，嘴巴是一排小石子排成的笑臉。小雪人眨著眼睛，舉起樹枝手打招呼；小女孩往後跳一步，張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "石頭做眼睛，紅蘿蔔做鼻子，樹枝做手。",
+     "en": "Black pebbles for eyes, a carrot for a nose, and two sticks for arms."
+    },
+    {
+     "who": "旁白",
+     "text": "咦？小雪人眨了眨眼睛！",
+     "en": "Hey! The snowman blinks!"
+    },
+    {
+     "who": "小雪人",
+     "tag": "happy",
+     "text": "妳好！妳是誰呀？",
+     "en": "Hi! Who are you?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "哇！小雪人會說話！",
+     "en": "Wow! A talking snowman!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，四周的松樹上掉下一點一點的雪。",
+   "act": "小雪人用力往上跳，紅蘿蔔鼻子飛到半空中；小女孩捧著肚子笑，伸手去接鼻子。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "小雪人，我們來比賽跳高！",
+     "en": "Snowman, let's see who can jump higher!"
+    },
+    {
+     "who": "旁白",
+     "text": "小雪人一跳，咚！鼻子飛走了。",
+     "en": "The snowman jumps up. Plop! Off pops his carrot nose."
+    },
+    {
+     "who": "小雪人",
+     "tag": "laughing",
+     "text": "哎呀，我的鼻子！",
+     "en": "Oops! My nose!"
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩笑著，把鼻子插回去。",
+     "en": "Giggling, the girl pops it back on."
+    }
+   ]
+  },
+  {
+   "scene": "太陽要下山了，雪地變成淡橘色，小木屋的窗戶亮著黃色的燈，屋前停著一輛車。",
+   "act": "小女孩抱著小雪人，臉貼著雪人圓圓的身體，有點捨不得；小雪人用樹枝手拍拍她的背，對她笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽要下山了，小女孩要回家了。",
+     "en": "The sun is going down. It's time for the girl to go home."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sad",
+     "text": "小雪人，跟我回家好不好？",
+     "en": "Snowman, will you come home with me?"
+    },
+    {
+     "who": "小雪人",
+     "tag": "gentle",
+     "text": "不行喔，山下太暖了，我會化掉。",
+     "en": "I can't. It's too warm down there. I'd melt."
+    },
+    {
+     "who": "小女孩",
+     "text": "那明年冬天，我再來看你！",
+     "en": "Then I'll come back and see you next winter!"
+    }
+   ]
+  },
+  {
+   "scene": "春天的合歡山：雪少了很多，露出綠色的草和小黃花，松樹枝上滴著水珠，天空很藍。",
+   "act": "太陽第一次出場：金黃色的圓臉，長睫毛、溫柔的笑容，四周是一圈橘黃色的光芒，像溫柔的阿姨。她低頭對小雪人微笑。小雪人比冬天小了一點，抬頭看著太陽，有點擔心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天過去，太陽一天比一天暖。",
+     "en": "Winter goes by, and each day the sun shines a little warmer."
+    },
+    {
+     "who": "太陽",
+     "tag": "gentle",
+     "text": "小雪人，春天來了喔。",
+     "en": "Little snowman, spring is here."
+    },
+    {
+     "who": "小雪人",
+     "tag": "worried",
+     "text": "太陽，我會不見嗎？",
+     "en": "Sun, am I going to disappear?"
+    },
+    {
+     "who": "太陽",
+     "tag": "gentle",
+     "text": "不會的。你會變成小水滴，去旅行。",
+     "en": "No, you won't. You'll turn into little water drops and go on a trip."
+    }
+   ]
+  },
+  {
+   "scene": "同一片山坡，草地上的雪幾乎都化了，旁邊有一條小小的水流。",
+   "act": "小雪人慢慢變小，身上冒出一顆一顆亮晶晶的小水滴，每一顆小水滴都有小雪人的笑臉；一隻小鳥停在草地上，啄著留下來的紅蘿蔔，兩顆黑石頭躺在草地上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小雪人越變越小，變成好多小水滴。",
+     "en": "Little by little, the snowman gets smaller and turns into lots of tiny water drops."
+    },
+    {
+     "who": "小雪人",
+     "tag": "excited",
+     "text": "我好輕，像一根羽毛！",
+     "en": "I feel as light as a feather!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥飛來，啄了一口紅蘿蔔。",
+     "en": "A little bird flies down and takes a bite of the carrot."
+    }
+   ]
+  },
+  {
+   "scene": "山下的小溪流過小女孩住的小鎮，溪邊有綠色的草、小橋，遠處是房子和山。",
+   "act": "帶著小雪人笑臉的小水滴，坐在溪水上往下滑，像溜滑梯，對岸邊揮手；小女孩（春天變暖了，換成黃色的薄外套，頭上一樣戴紅色毛線帽，好認出是同一個女孩）蹲在溪邊，把手伸進水裡，好像聽到了什麼，歪著頭笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小水滴跳進小溪，一路流到山下。",
+     "en": "The little drops hop into a stream and flow all the way down the mountain."
+    },
+    {
+     "who": "旁白",
+     "text": "小溪流到小女孩住的小鎮。",
+     "en": "The stream flows into the little town where the girl lives."
+    },
+    {
+     "who": "小雪人",
+     "tag": "excited",
+     "text": "嗨，是我！我變成小水滴了！",
+     "en": "Hi, it's me! I'm a little water drop now!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "咦？小溪在跟我說話嗎？",
+     "en": "Huh? Is the stream talking to me?"
+    }
+   ]
+  },
+  {
+   "scene": "第二年冬天，合歡山上又在下雪，雪地上有一間紅屋頂的小木屋；天上的雲裡，飄出一片一片的雪花。",
+   "act": "小女孩張開雙手跑在雪地上，一片帶著小雪人笑臉的雪花，停在她的紅手套上；小女孩又驚又喜，旁邊已經有一顆滾好的大雪球。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽把小水滴，送上了白雲。",
+     "en": "The sun lifts the little drops up into the clouds."
+    },
+    {
+     "who": "旁白",
+     "text": "第二年冬天，雪花又飄下來了。",
+     "en": "The next winter, down come the snowflakes again."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "小雪人，我來了！",
+     "en": "Snowman, I'm back!"
+    },
+    {
+     "who": "小雪人",
+     "tag": "happy",
+     "text": "我也回來了！我們再堆一次吧！",
+     "en": "I'm back too! Let's build me all over again!"
+    }
+   ]
+  }
+ ]
+}

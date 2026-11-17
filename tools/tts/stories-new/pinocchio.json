@@ -1,0 +1,542 @@
+{
+ "id": "pinocchio",
+ "title": "小木偶奇遇記",
+ "title_en": "Pinocchio",
+ "size": "長",
+ "roles": {
+  "老木匠": "做木偶的老爺爺傑佩托，聲音低沉、慈祥、慢慢說，很愛皮諾丘，找到他時又哭又笑。",
+  "小木偶": "會說話的木偶皮諾丘，像七八歲男孩，聲音清亮、調皮愛玩，說謊時心虛，認錯時很真心，最後勇敢救爸爸。",
+  "藍仙女": "藍頭髮的仙女，聲音溫柔穩重，像媽媽一樣，不罵人但說話讓人想說真話。",
+  "小蟋蟀": "住在工作室牆角的綠色小蟋蟀，聲音又細又尖、很可愛，愛提醒皮諾丘，著急時說得快。",
+  "狐狸": "穿格子背心的狐狸，說話甜甜的、油嘴滑舌，愛騙人但好笑不可怕。",
+  "大鯨魚": "海裡的大鯨魚，嗓門又低又粗、慢吞吞、肚子永遠很餓，怕癢，好笑不可怕。"
+ },
+ "cast": {
+  "老木匠": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小木偶": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "藍仙女": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小蟋蟀": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "大鯨魚": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "第3頁『鼻子會變長』，第7頁『鼻子變長了』，第8頁『又變長了』（變長要念 cháng，不是 zhǎng）",
+   "read": "cháng"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『會說話』，第3頁『就會變成』『會變長』",
+   "read": "huì"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『我是誰呀』",
+   "read": "shéi"
+  },
+  {
+   "char": "給",
+   "where": "第5頁『把書給我』，第8頁『把書給了狐狸』",
+   "read": "gěi"
+  },
+  {
+   "char": "沒",
+   "where": "第9頁『一個人也沒有』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "義大利小鎮上一間小小的木工房，白天。牆上掛著鋸子、鐵鎚和刨刀，地上散著木屑，工作台上躺著一根淺色的木頭；牆角有一個小洞。",
+   "act": "老木匠出場：白頭髮、灰白色的短鬍子、戴一副圓眼鏡，頭戴咖啡色毛線帽，穿白襯衫、深藍色有補丁的舊外套。他坐在工作台前，拿著木頭看，表情有點寂寞。小蟋蟀出場：一隻綠色的小蟋蟀，長長的觸鬚，沒有穿衣服，從牆角的小洞探出頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一位老木匠，叫做傑佩托。",
+     "en": "Once upon a time, there was an old carpenter named Geppetto."
+    },
+    {
+     "who": "旁白",
+     "text": "他一個人住，好想要一個孩子。",
+     "en": "He lived all alone, and he wished he had a child."
+    },
+    {
+     "who": "旁白",
+     "text": "工作室的牆角，住著一隻綠色的小蟋蟀。",
+     "en": "In a corner of his workshop lived a little green cricket."
+    },
+    {
+     "who": "老木匠",
+     "tag": "gentle",
+     "text": "我來做一個木偶，陪我聊天吧！",
+     "en": "I'll make a puppet to keep me company!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間木工房，白天。工作台上滿是捲捲的木屑。",
+   "act": "小木偶出場：淺木頭色的身體，手腳的關節是圓圓的木頭，畫上去的黑頭髮，紅紅的圓臉頰，小小的尖鼻子；戴一頂白色尖尖的紙帽子，穿綠色短上衣、紅色花朵圖案的短褲。他坐在工作台上，眨著眼睛，張大嘴巴笑；老木匠手拿雕刻刀往後一跳，眼鏡滑到鼻尖，又驚又喜。小蟋蟀從牆角的小洞跳出來，笑著揮手打招呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他刻呀刻，刻出眼睛、嘴巴，和一個小鼻子。",
+     "en": "He carved and carved: two eyes, a mouth, and a little nose."
+    },
+    {
+     "who": "旁白",
+     "text": "木偶眨了一下眼睛，笑出聲來！",
+     "en": "Then the puppet blinked his eyes and laughed out loud!"
+    },
+    {
+     "who": "小木偶",
+     "tag": "excited",
+     "text": "嗨，爸爸！我是誰呀？",
+     "en": "Hi, Papa! Who am I?"
+    },
+    {
+     "who": "老木匠",
+     "tag": "surprised",
+     "text": "你會說話！我就叫你皮諾丘吧！",
+     "en": "You can talk! I'll call you Pinocchio!"
+    },
+    {
+     "who": "小蟋蟀",
+     "tag": "happy",
+     "text": "皮諾丘，你好！我是住在牆角的小蟋蟀。",
+     "en": "Hello, Pinocchio! I'm the little cricket who lives in the corner."
+    }
+   ]
+  },
+  {
+   "scene": "木工房，晚上。窗外有月亮和星星，屋裡只有一根快燒完的蠟燭；角落的小床上，老木匠蓋著被子在睡。",
+   "act": "藍仙女出場：一位溫柔的仙女，長長的藍色頭髮，穿銀白色長裙，手拿一根頂端有藍色星星的魔杖，全身發著淡淡的藍光，從窗外飄進來。皮諾丘坐在工作台上，抬頭看她，嘴巴張得圓圓的；小蟋蟀坐在皮諾丘的肩膀上，仔細聽著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，一位藍頭髮的仙女，從窗外飛了進來。",
+     "en": "That night, a fairy with blue hair floated in through the window."
+    },
+    {
+     "who": "藍仙女",
+     "tag": "gentle",
+     "text": "皮諾丘，要說真話，要認真上學，要對爸爸好。",
+     "en": "Pinocchio, always tell the truth, work hard at school, and be good to your papa."
+    },
+    {
+     "who": "藍仙女",
+     "text": "這樣，有一天你就會變成真的男孩。",
+     "en": "Then one day, you will become a real boy."
+    },
+    {
+     "who": "藍仙女",
+     "text": "可是，說謊的話，鼻子會變長喔！",
+     "en": "But if you tell a lie, your nose will grow!"
+    }
+   ]
+  },
+  {
+   "scene": "木工房門口，冬天的早上，好冷。門外是石頭小路，路邊有一點白霜。",
+   "act": "老木匠沒有穿外套，只穿白襯衫，冷得縮著肩膀，卻笑咪咪地把一本紅色封面的新書交給皮諾丘。皮諾丘抱著書，抬頭看著老木匠，一臉感動。小蟋蟀坐在皮諾丘的紙帽子上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天好冷，老木匠卻賣掉了外套，買回一本新書。",
+     "en": "It was very cold, but Geppetto sold his coat to buy a brand-new book."
+    },
+    {
+     "who": "老木匠",
+     "tag": "gentle",
+     "text": "皮諾丘，帶著書，去上學吧！",
+     "en": "Here you go, Pinocchio. Take this book to school!"
+    },
+    {
+     "who": "小木偶",
+     "tag": "surprised",
+     "text": "爸爸，你的外套呢？",
+     "en": "Papa, where's your coat?"
+    },
+    {
+     "who": "老木匠",
+     "tag": "happy",
+     "text": "賣掉啦！我不冷，不冷！",
+     "en": "I sold it! I'm not cold. Not one bit!"
+    },
+    {
+     "who": "小木偶",
+     "text": "謝謝爸爸！我一定認真上學！",
+     "en": "Thank you, Papa! I'll work really hard at school!"
+    }
+   ]
+  },
+  {
+   "scene": "小鎮的石頭路上，早上。路的一邊通往學校，學校屋頂有一個小鐘；另一邊是廣場，廣場上搭著一個彩色條紋的木偶戲帳篷，插著小旗子。",
+   "act": "狐狸出場：一隻橘色的狐狸，沒有戴帽子，穿綠色格子背心、脖子上打著黃色領結，尾巴蓬蓬的，笑嘻嘻地彎著腰，伸手指向木偶戲帳篷，樣子滑稽不可怕。皮諾丘抱著紅色的書，眼睛盯著帳篷；小蟋蟀站在他的紙帽子上，揮手喊著，很著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "上學的路上，一隻狐狸笑著走過來。",
+     "en": "On the way to school, a fox came strolling up with a big smile."
+    },
+    {
+     "who": "狐狸",
+     "tag": "cheerful",
+     "text": "小木偶，上學好無聊！跟我去看木偶戲吧！",
+     "en": "Hey there, little puppet! School is boring. Come and see the puppet show with me!"
+    },
+    {
+     "who": "小蟋蟀",
+     "tag": "worried",
+     "text": "不可以！皮諾丘，快去上學！",
+     "en": "No, Pinocchio! You have to go to school!"
+    },
+    {
+     "who": "小木偶",
+     "text": "我看一下就回來嘛！",
+     "en": "I'll just watch for a little while!"
+    },
+    {
+     "who": "狐狸",
+     "text": "看戲要買票。把書給我，我幫你換一張票！",
+     "en": "You need a ticket. Give me your book, and I'll trade it for one!"
+    }
+   ]
+  },
+  {
+   "scene": "木偶戲帳篷外的廣場，天快黑了。帳篷已經收起一半，廣場上的人都走光了，路燈亮起來。",
+   "act": "皮諾丘手上沒有書，一個人站在廣場中間，左看右看，快要哭了；遠遠的街角，狐狸抱著那本紅色的書，揮手跑掉。小蟋蟀坐在皮諾丘的肩膀上。天空的一角，有一道藍光亮起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "皮諾丘看了一整天的戲，又笑又跳。",
+     "en": "Pinocchio watched the puppet show all day long, laughing and jumping."
+    },
+    {
+     "who": "旁白",
+     "text": "戲演完了，狐狸不見了，書也不見了。",
+     "en": "When the show was over, the fox was gone, and so was the book."
+    },
+    {
+     "who": "小木偶",
+     "tag": "sad",
+     "text": "糟糕，天黑了，我找不到路回家！",
+     "en": "Oh no! It's dark, and I can't find my way home!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，藍仙女又出現了。",
+     "en": "Just then, the Blue Fairy appeared again."
+    }
+   ]
+  },
+  {
+   "scene": "同一個廣場，晚上，路燈下。四周很安靜。",
+   "act": "藍仙女站在藍光裡，溫柔地看著皮諾丘；皮諾丘把兩手藏在背後，眼睛往旁邊飄，他的鼻子變得比原來長一大截，鼻尖翹起來，樣子好笑。小蟋蟀在他肩膀上用小腳摀住眼睛。",
+   "lines": [
+    {
+     "who": "藍仙女",
+     "tag": "gentle",
+     "text": "皮諾丘，你的書呢？",
+     "en": "Pinocchio, where is your book?"
+    },
+    {
+     "who": "小木偶",
+     "text": "被一隻大狗吃掉了！",
+     "en": "A big dog ate it!"
+    },
+    {
+     "who": "旁白",
+     "text": "一下子，他的鼻子變長了！",
+     "en": "All of a sudden, his nose grew longer!"
+    },
+    {
+     "who": "小蟋蟀",
+     "tag": "worried",
+     "text": "皮諾丘，要說真話喔！",
+     "en": "Pinocchio, tell the truth!"
+    },
+    {
+     "who": "小木偶",
+     "text": "這個嘛，是被大風吹走了！",
+     "en": "Well, actually, the wind blew it away!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個廣場，路燈下。旁邊有一棵小樹。",
+   "act": "皮諾丘的鼻子變得好長，一直伸到旁邊的小樹邊；兩隻小鳥停在他的鼻尖上，歪著頭看他。皮諾丘一邊哭一邊低頭道歉；藍仙女微笑看著他；小蟋蟀在旁邊笑得抱住肚子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他的鼻子又變長了，一直伸到小樹旁邊！",
+     "en": "His nose grew longer and longer, all the way to a little tree!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩隻小鳥飛來，停在他的鼻子上。",
+     "en": "Two little birds flew down and landed on it."
+    },
+    {
+     "who": "小蟋蟀",
+     "tag": "laughing",
+     "text": "皮諾丘，小鳥坐在你的鼻子上了！",
+     "en": "Pinocchio, there are birds sitting on your nose!"
+    },
+    {
+     "who": "小木偶",
+     "tag": "crying",
+     "text": "對不起！我把書給了狐狸，我說謊了！",
+     "en": "I'm sorry! I gave my book to the fox. I told a lie!"
+    },
+    {
+     "who": "旁白",
+     "text": "他的鼻子，馬上變回原來的樣子。",
+     "en": "And right away, his nose went back to just the right size."
+    }
+   ]
+  },
+  {
+   "scene": "木工房裡，晚上。屋子裡黑黑的、空蕩蕩，工作台上的蠟燭熄了；桌上留著一頂咖啡色毛線帽。",
+   "act": "皮諾丘推開門，左看右看，找不到老木匠，一臉著急；小蟋蟀跳到桌上，舉起小腳大喊。藍仙女站在門口，發著藍光，用魔杖指著窗外的大海。窗外遠遠的海上，有一艘小小的木頭划船。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "藍仙女帶皮諾丘回家，可是家裡一個人也沒有。",
+     "en": "The Blue Fairy took Pinocchio home, but no one was there."
+    },
+    {
+     "who": "小蟋蟀",
+     "tag": "worried",
+     "text": "傑佩托爺爺不見了！",
+     "en": "Mr. Geppetto is gone!"
+    },
+    {
+     "who": "藍仙女",
+     "tag": "gentle",
+     "text": "爸爸找了你一整天，划著小船到海上去了。",
+     "en": "Your papa looked for you all day. Then he rowed out to sea in a little boat."
+    },
+    {
+     "who": "小木偶",
+     "tag": "brave",
+     "text": "爸爸！我去找你！",
+     "en": "Papa! I'm coming to find you!"
+    }
+   ]
+  },
+  {
+   "scene": "海邊，晚上。月光照在海面上，海浪一波一波；遠遠的海上，有一條好大的灰藍色鯨魚，露出背和尾巴。",
+   "act": "皮諾丘從岸邊的石頭上跳進海裡，木頭身體浮在水面上，用力划水；小蟋蟀坐在他的紙帽子上。大鯨魚出場：一條巨大的灰藍色鯨魚，圓圓的眼睛、笨笨的表情，肚子是白色的，張開好大的嘴巴，樣子好笑不可怕。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "皮諾丘跑到海邊，跳進大海。",
+     "en": "Pinocchio ran to the shore and jumped into the sea."
+    },
+    {
+     "who": "旁白",
+     "text": "他是木頭做的，在水上浮呀浮。",
+     "en": "He was made of wood, so he bobbed up and down on the waves."
+    },
+    {
+     "who": "旁白",
+     "text": "忽然，一條好大的鯨魚游過來，張開大嘴巴。",
+     "en": "Suddenly, an enormous whale swam up and opened his giant mouth."
+    },
+    {
+     "who": "大鯨魚",
+     "tag": "happy",
+     "text": "嗯，開飯囉！",
+     "en": "Mmm, dinnertime!"
+    },
+    {
+     "who": "旁白",
+     "text": "一口，就把皮諾丘吞進肚子裡了。",
+     "en": "And with one big gulp, he swallowed Pinocchio whole."
+    }
+   ]
+  },
+  {
+   "scene": "大鯨魚的肚子裡，又黑又大，像一個大山洞；地上有海草、木桶和一艘破掉的小划船。很遠的地方，有一點燭光。",
+   "act": "老木匠坐在小桌子旁邊，桌上點著一根蠟燭，他沒有戴毛線帽，白頭髮亂亂的，穿白襯衫，看起來很累。皮諾丘踩著海草跑過去，張開雙手；老木匠站起來，伸出手，眼睛裡有淚光，好驚喜。小蟋蟀跟在後面跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鯨魚的肚子裡，又黑又大。",
+     "en": "Inside the whale, it was big and very dark."
+    },
+    {
+     "who": "旁白",
+     "text": "很遠的地方，有一點燭光在發亮。",
+     "en": "Far away, a tiny candle was glowing."
+    },
+    {
+     "who": "旁白",
+     "text": "燭光旁邊，坐著一個白頭髮的老爺爺。",
+     "en": "Beside the candle sat an old man with white hair."
+    },
+    {
+     "who": "小木偶",
+     "tag": "excited",
+     "text": "爸爸！是你嗎？",
+     "en": "Papa! Is that you?"
+    },
+    {
+     "who": "老木匠",
+     "tag": "crying",
+     "text": "皮諾丘！我的好孩子！",
+     "en": "Pinocchio! My dear boy!"
+    }
+   ]
+  },
+  {
+   "scene": "大鯨魚的肚子裡，靠近鯨魚的嘴巴，看得到一排大牙齒和粉紅色的大舌頭，牙齒中間透進一點月光。",
+   "act": "皮諾丘手拿一根白色的海鷗羽毛，踮著腳，輕輕搔大鯨魚的舌頭；老木匠在後面抓著皮諾丘的衣服，小蟋蟀摀著嘴偷笑。大鯨魚癢得眼睛瞇成一條線，嘴巴開始抖動，快要笑出來了。",
+   "lines": [
+    {
+     "who": "老木匠",
+     "tag": "sad",
+     "text": "鯨魚把我和小船一起吞了，我出不去呀。",
+     "en": "The whale swallowed me, boat and all. I can't get out!"
+    },
+    {
+     "who": "小木偶",
+     "text": "別怕，爸爸，我有辦法！",
+     "en": "Don't worry, Papa. I have an idea!"
+    },
+    {
+     "who": "旁白",
+     "text": "皮諾丘撿起一根羽毛，去搔鯨魚的舌頭。",
+     "en": "Pinocchio picked up a feather and tickled the whale's tongue."
+    },
+    {
+     "who": "大鯨魚",
+     "tag": "laughing",
+     "text": "嗯？好癢，好癢喔！",
+     "en": "Hmm? That tickles! That really tickles!"
+    },
+    {
+     "who": "旁白",
+     "text": "大鯨魚笑得張開了大嘴巴！",
+     "en": "The whale laughed so hard that he opened his mouth wide!"
+    }
+   ]
+  },
+  {
+   "scene": "海面上，晚上。月亮又大又亮，遠方看得到岸邊和小鎮的燈光。",
+   "act": "皮諾丘和老木匠一起從大鯨魚張得好大的嘴巴裡跳出來；大鯨魚在後面一臉傻眼、東張西望。下面的海面上，皮諾丘浮在水上用力踢水，老木匠緊緊抱著他；小蟋蟀坐在皮諾丘的紙帽子上，指著岸邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "皮諾丘和爸爸，趕快從鯨魚的嘴巴跳了出去！",
+     "en": "Pinocchio and his papa jumped right out of the whale's mouth!"
+    },
+    {
+     "who": "大鯨魚",
+     "tag": "surprised",
+     "text": "咦？我的晚餐呢？",
+     "en": "Huh? Where did my dinner go?"
+    },
+    {
+     "who": "旁白",
+     "text": "皮諾丘浮在水上，爸爸用力抱著他。",
+     "en": "Pinocchio floated on the water, and Geppetto held on tight."
+    },
+    {
+     "who": "小木偶",
+     "text": "爸爸，抱緊喔！我們回家！",
+     "en": "Hold on, Papa! We're going home!"
+    },
+    {
+     "who": "旁白",
+     "text": "皮諾丘用力踢水，終於回到了岸邊。",
+     "en": "Pinocchio kicked and kicked, until at last they reached the shore."
+    }
+   ]
+  },
+  {
+   "scene": "木工房裡，晚上。屋裡點著暖黃色的燈，老木匠躺在小床上蓋著被子；窗外有月亮。",
+   "act": "晚上，皮諾丘蓋著被子睡在老木匠旁邊的小床上，床邊放著他的書包和掃把。藍仙女從窗外飄進來，揮動魔杖，一道藍光包住熟睡的皮諾丘。小蟋蟀坐在枕頭邊，開心地拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那天起，皮諾丘每天上學，也幫爸爸做事。",
+     "en": "From that day on, Pinocchio went to school every day and helped his papa at home."
+    },
+    {
+     "who": "旁白",
+     "text": "一天晚上，藍仙女又來了。",
+     "en": "One night, the Blue Fairy came again."
+    },
+    {
+     "who": "藍仙女",
+     "tag": "happy",
+     "text": "皮諾丘，你說真話、認真上學，又勇敢地救了爸爸。",
+     "en": "Pinocchio, you tell the truth, you work hard at school, and you bravely saved your papa."
+    },
+    {
+     "who": "藍仙女",
+     "text": "現在，你可以變成真的男孩了！",
+     "en": "Now you can become a real boy!"
+    },
+    {
+     "who": "旁白",
+     "text": "一道藍光，溫柔地包住了他。",
+     "en": "A soft blue light wrapped around him."
+    }
+   ]
+  },
+  {
+   "scene": "木工房裡，早上。陽光從窗戶照進來，工作台上放著一個不會動的木偶，跟皮諾丘原來的樣子一樣。",
+   "act": "皮諾丘變成一個真的男孩：黑色短頭髮、紅紅的臉頰、小小的鼻子，還是戴白色紙帽子、穿綠色短上衣和紅色花朵圖案的短褲。他摸著自己軟軟的臉，笑得好開心；老木匠穿著睡衣，張開雙手緊緊抱住他；小蟋蟀在桌上跳舞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，皮諾丘醒來，摸了摸自己的臉。",
+     "en": "The next morning, Pinocchio woke up and touched his face."
+    },
+    {
+     "who": "小木偶",
+     "tag": "excited",
+     "text": "我的臉是軟的！我變成真的男孩了！",
+     "en": "My face is soft! I'm a real boy!"
+    },
+    {
+     "who": "老木匠",
+     "tag": "happy",
+     "text": "我的好孩子！太好了！",
+     "en": "My dear boy! This is wonderful!"
+    },
+    {
+     "who": "小蟋蟀",
+     "tag": "happy",
+     "text": "皮諾丘，你做到了！",
+     "en": "You did it, Pinocchio!"
+    },
+    {
+     "who": "旁白",
+     "text": "老木匠抱住皮諾丘，開心地笑了。",
+     "en": "Geppetto hugged him tight and laughed with joy."
+    }
+   ]
+  }
+ ]
+}
