@@ -19,6 +19,11 @@
  },
  "polyphones": [
   {
+   "char": "空",
+   "where": "第1頁『看天空』",
+   "read": "kōng"
+  },
+  {
    "char": "答",
    "where": "第2頁『答對了』",
    "read": "dá"
@@ -36,7 +41,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小丁躺在涼亭旁的山坡上，看著天空。",
+     "text": "小丁躺在涼亭旁的山坡上看天空。",
      "en": "Toby is lying on a grassy hill next to a little gazebo, looking up at the sky."
     },
     {
@@ -110,42 +115,47 @@
    ]
   },
   {
-   "scene": "同一片天空，風比較大，雲朵的邊邊飄出一小片。",
-   "act": "小雲朵頭上冒出兩隻翹起來的大耳朵，可是其中一隻被風吹散，只剩一隻；看起來像一顆圓圓的大饅頭插著一隻耳朵。小丁抱著肚子大笑，小雲朵嘟著嘴。",
+   "scene": "同一片天空，風比較大，雲朵的邊邊被吹出兩小片雲，往旁邊飄走。",
+   "act": "先是小雲朵身體變得很圓，頭上豎起兩隻翹起來的大耳朵，像一隻小兔子；接著一陣大風把兩隻耳朵都吹散成兩小片雲飄走，只剩下一團圓滾滾的身體，看起來像一顆大饅頭。小丁抱著肚子大笑，小雲朵嘟著嘴，回頭看飄走的耳朵。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "她身體好圓，頭上豎起兩隻大耳朵。",
+     "en": "Now she has a round body and two big ears sticking up."
+    },
     {
      "who": "小雲朵",
      "tag": "proud",
-     "text": "這一次比較難喔！猜一猜，我像什麼？",
-     "en": "This one is harder! Guess, guess! What do I look like?"
+     "text": "猜一猜，我像什麼？",
+     "en": "Guess, guess! What do I look like?"
+    },
+    {
+     "who": "旁白",
+     "text": "呼！一陣大風，把兩隻耳朵都吹走了！",
+     "en": "Whoosh! A big gust of wind blows both ears away!"
     },
     {
      "who": "小丁",
      "tag": "excited",
-     "text": "我知道！是一個大饅頭！",
-     "en": "I know! A big steamed bun!"
+     "text": "我知道！是大饅頭！",
+     "en": "I know! A big round bun!"
     },
     {
      "who": "小雲朵",
      "tag": "angry",
      "text": "不對啦！我是小兔子！",
-     "en": "No! I'm a bunny!"
-    },
-    {
-     "who": "旁白",
-     "text": "原來，一隻兔耳朵被風吹走了！",
-     "en": "Oh! The wind has blown one of the bunny ears away!"
+     "en": "No! I'm a bunny, not a bun!"
     }
    ]
   },
   {
-   "scene": "天空的另一邊飄來一大片薄薄的白霧，裡面有好多閃亮的小水珠。",
-   "act": "好多小水珠從四面八方飄進小雲朵裡，小雲朵越來越大、越來越胖，顏色從白色變成淺灰色；她驚訝地低頭看自己。小丁坐在草地上，張大嘴巴。",
+   "scene": "小雲朵下面，看不見的水氣用一縷一縷淡淡的透明線條畫出來，從下面的草地和小河往上飄，飄到天上變成好多閃亮的小水珠。",
+   "act": "好多閃亮的小水珠擠進小雲朵裡，小雲朵越來越大、越來越胖，顏色從白色變成淺灰色；她驚訝地低頭看自己。小丁坐在草地上，張大嘴巴。",
    "lines": [
     {
      "who": "旁白",
-     "text": "雲是小水滴做成的。這時候，更多小水滴擠進來。",
-     "en": "Clouds are made of tiny water droplets. Just then, lots more droplets squeeze into Little Cloud."
+     "text": "雲是小水滴做的。水氣飄上來，變成好多小水滴。",
+     "en": "Clouds are made of tiny water droplets. Invisible water vapor floats up and turns into lots more droplets."
     },
     {
      "who": "旁白",
@@ -161,8 +171,8 @@
     {
      "who": "小雲朵",
      "tag": "surprised",
-     "text": "我太厚了，陽光穿不過去啦！",
-     "en": "I'm too thick! The sunlight can't get through!"
+     "text": "我太厚了，陽光很難穿過來啦！",
+     "en": "I'm too thick! The sunlight can hardly get through!"
     }
    ]
   },
@@ -207,12 +217,12 @@
     {
      "who": "小丁",
      "tag": "excited",
-     "text": "快跑，跑進涼亭裡！",
+     "text": "快跑進涼亭！",
      "en": "Quick! Into the gazebo!"
     },
     {
      "who": "旁白",
-     "text": "小花和小草，都在喝水呢！",
+     "text": "小花小草都在喝水呢！",
      "en": "The flowers and the grass are having a drink!"
     }
    ]
@@ -223,7 +233,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "雨停了，小雲朵變小了，又變回白色。",
+     "text": "雨停了，小雲朵又變小、變白了。",
      "en": "The rain stops. Little Cloud is small and white again."
     },
     {

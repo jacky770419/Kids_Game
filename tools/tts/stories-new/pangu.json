@@ -29,6 +29,11 @@
    "read": "méi"
   },
   {
+   "char": "沉",
+   "where": "第4頁『又黑又沉』",
+   "read": "chén"
+  },
+  {
    "char": "會",
    "where": "第5頁『會不會』，第8頁『不會掉下來』",
    "read": "huì"
@@ -46,7 +51,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "在一座大山上，有一隻剛出生的小鳥。",
+     "text": "大山上，有一隻剛出生的小鳥。",
      "en": "On a big mountain, there lived a little bird who had just hatched."
     },
     {
@@ -57,8 +62,8 @@
     },
     {
      "who": "旁白",
-     "text": "風吹過來，好像在說一個很老的故事。",
-     "en": "A wind blew by, as if it were telling a very old story."
+     "text": "風吹過來，說起古時候的人講的故事。",
+     "en": "A wind blew by and began to tell a story that people told long, long ago."
     },
     {
      "who": "小鳥",
@@ -111,8 +116,8 @@
     {
      "who": "盤古",
      "tag": "sleepy",
-     "text": "啊，我睡飽了。咦，這裡怎麼這麼黑？",
-     "en": "Ahh, what a good sleep. Huh? Why is it so dark in here?"
+     "text": "啊，睡飽了。咦，怎麼這麼黑？",
+     "en": "Ahh, what a good sleep. Huh? Why is it so dark?"
     },
     {
      "who": "盤古",
@@ -123,7 +128,7 @@
    ]
   },
   {
-   "scene": "大雞蛋裂開的一瞬間：一道金色的光從裂縫射出來。上面是又輕又亮的白色光霧往上飄，下面是深咖啡色的泥土往下沉。",
+   "scene": "大雞蛋裂開的一瞬間：一道金色的光從裂縫射出來。上面是又輕又亮的白雲和金色的光，輕飄飄地往上飄；下面是又黑又沉的深咖啡色泥土，往下掉。",
    "act": "盤古身邊有一把大石頭斧頭，木頭握把；他兩手握著斧頭往前一揮，蛋殼像花瓣一樣裂開，沒有碎片亂飛。盤古瞇著眼睛，被光照得好驚喜。",
    "lines": [
     {
@@ -144,13 +149,13 @@
     },
     {
      "who": "旁白",
-     "text": "又輕又亮的，往上飄，變成了天。",
-     "en": "The light, bright parts floated up and became the sky."
+     "text": "又輕又亮的雲和光，往上飄，變成了天。",
+     "en": "Light, bright clouds and a golden glow floated up and became the sky."
     },
     {
      "who": "旁白",
-     "text": "又黑又沉的，往下掉，變成了地。",
-     "en": "The dark, heavy parts sank down and became the ground."
+     "text": "又黑又沉的泥土，往下掉，變成了地。",
+     "en": "Dark, heavy dirt sank down and became the ground."
     }
    ]
   },
@@ -167,7 +172,7 @@
     {
      "who": "旁白",
      "text": "盤古站起來，手撐著天，腳踩著地。",
-     "en": "Pangu stood up, holding up the sky with his hands and standing firm on the ground."
+     "en": "Pangu stood up. He held up the sky with his hands and planted his feet on the ground."
     },
     {
      "who": "盤古",
@@ -295,17 +300,18 @@
   },
   {
    "scene": "大地從上面看下去：一座一座綠色的大山連在一起，形狀像一個側睡的巨人；山間有小河流過，下著細細的小雨，夜空中滿天星星。",
-   "act": "山坡上開滿彩色的花，冒出青草和大樹；小雨落在花上。畫面溫暖，像一個好大的人安穩地睡在大地上。",
+   "act": "天上滿是星星，星星連起來像盤古飄在風裡的頭髮和鬍子；山坡上開滿彩色的花，冒出青草和大樹；小雨落在花上。畫面角落的小圓框裡，聽故事的小黃鳥先歪著頭發問，接著張開翅膀在小雨裡笑。畫面溫暖，像一個好大的人安穩地睡在大地上。",
    "lines": [
     {
-     "who": "旁白",
-     "text": "他的頭髮和鬍子，變成了滿天的星星。",
-     "en": "His hair and his beard became all the stars in the sky."
+     "who": "小鳥",
+     "tag": "curious",
+     "text": "那星星呢？",
+     "en": "What about the stars?"
     },
     {
      "who": "旁白",
-     "text": "他躺下來的身體，變成了一座又一座大山。",
-     "en": "His sleeping body became mountain after mountain."
+     "text": "星星是盤古的頭髮和鬍子變的。",
+     "en": "The stars came from Pangu's hair and beard."
     },
     {
      "who": "旁白",
@@ -313,9 +319,15 @@
      "en": "His sweat became the rain and the rivers."
     },
     {
+     "who": "小鳥",
+     "tag": "laughing",
+     "text": "哈，下雨就是盤古在流汗！",
+     "en": "Ha! So rain is Pangu sweating!"
+    },
+    {
      "who": "旁白",
-     "text": "大地上，開滿了花，冒出了青草和大樹。",
-     "en": "Flowers bloomed, and grass and trees sprang up all over the land."
+     "text": "他的身體，變成了一座又一座大山。",
+     "en": "And his body became mountain after mountain."
     }
    ]
   },

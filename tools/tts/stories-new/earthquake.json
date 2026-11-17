@@ -4,11 +4,11 @@
  "title_en": "When the Ground Shakes",
  "size": "短",
  "roles": {
-  "小男孩": "幼兒園大班的阿哲，小男孩的聲音，活潑好動，地震時有點害怕、想去拿玩具，後來很得意自己學會了。",
+  "阿哲": "幼兒園大班的男孩阿哲，五歲，男孩的童聲，活潑好動，地震時有點害怕、想去拿玩具，說出害怕以後安心下來，很得意自己學會了。",
   "老師": "阿哲的林老師，溫柔的年輕女生聲音，說話慢、清楚又鎮定，讓人聽了就安心。"
  },
  "cast": {
-  "小男孩": {
+  "阿哲": {
    "find": "童_男",
    "en": "Teddy Twinkle"
   },
@@ -25,7 +25,7 @@
   },
   {
    "char": "會",
-   "where": "第8頁『我會趴下』",
+   "where": "第5頁『可能會再搖』、第8頁『我會趴下』",
    "read": "huì"
   },
   {
@@ -46,7 +46,7 @@
     },
     {
      "who": "旁白",
-     "text": "他最愛的紅色小汽車，放在窗邊的櫃子上。",
+     "text": "他最愛的紅色小汽車，放在窗邊櫃子上。",
      "en": "His favorite little red car sat on the shelf by the window."
     },
     {
@@ -61,7 +61,7 @@
      "tag": "happy"
     },
     {
-     "who": "小男孩",
+     "who": "阿哲",
      "text": "我的小汽車！",
      "en": "My little car!",
      "tag": "proud"
@@ -79,11 +79,11 @@
     },
     {
      "who": "旁白",
-     "text": "窗戶也跟著響了起來。",
+     "text": "窗戶也跟著響。",
      "en": "The windows rattled too."
     },
     {
-     "who": "小男孩",
+     "who": "阿哲",
      "text": "老師，地板在動！",
      "en": "Ms. Lin, the floor is moving!",
      "tag": "scared"
@@ -124,11 +124,11 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "阿哲看見櫃子上的小汽車，晃來晃去。",
-     "en": "Theo saw his little car wobbling on the shelf."
+     "text": "櫃子上的小汽車，晃來晃去。",
+     "en": "On the shelf, his little car was wobbling."
     },
     {
-     "who": "小男孩",
+     "who": "阿哲",
      "text": "我的小汽車！我好想去拿。",
      "en": "My little car! I really want to go get it.",
      "tag": "worried"
@@ -140,7 +140,7 @@
      "tag": "gentle"
     },
     {
-     "who": "小男孩",
+     "who": "阿哲",
      "text": "好，我抓住桌腳了。",
      "en": "Okay. I'm holding the table leg."
     }
@@ -156,15 +156,15 @@
      "en": "Before long, the shaking stopped."
     },
     {
-     "who": "小男孩",
+     "who": "阿哲",
      "text": "老師，停了耶！",
      "en": "Ms. Lin, it stopped!",
      "tag": "surprised"
     },
     {
      "who": "老師",
-     "text": "先不要動，等一下，聽老師說。",
-     "en": "Don't move yet. Wait a moment, and listen to me.",
+     "text": "先不要動，地板可能會再搖一下。",
+     "en": "Stay still for now. The floor might shake a little more.",
      "tag": "calm"
     }
    ]
@@ -175,8 +175,8 @@
    "lines": [
     {
      "who": "老師",
-     "text": "現在，用書包遮住頭，排成一排。",
-     "en": "Now, put your backpack over your head and line up.",
+     "text": "用書包遮住頭，排成一排。",
+     "en": "Put your backpack over your head and line up.",
      "tag": "gentle"
     },
     {
@@ -193,24 +193,36 @@
   },
   {
    "scene": "學校的大操場，四周是綠色的樹，天空很藍；大家坐在操場正中間，離大樓和樹都很遠。",
-   "act": "小朋友們圍成一圈坐在操場中間，林老師拿著點名板點名；阿哲還把書包頂在頭上，背帶垂下來像帽子的帶子，旁邊的小朋友看著他笑出來，林老師也笑了。",
+   "act": "小朋友們圍成一圈坐在操場中間，林老師拿著點名板點名。阿哲小聲跟林老師說話，林老師蹲下來，摸摸他的頭，溫柔地笑；接著阿哲把書包頂在頭上，背帶垂下來像帽子的帶子，旁邊的小朋友看著他笑出來，林老師也笑了。",
    "lines": [
     {
      "who": "旁白",
-     "text": "林老師點名，一個小朋友都沒有少。",
+     "text": "林老師點名，一個都沒有少。",
      "en": "Ms. Lin called everyone's name. Nobody was missing."
     },
     {
-     "who": "小男孩",
-     "text": "老師，我的書包好像一頂大帽子！",
-     "en": "Ms. Lin, my backpack looks like a big hat!",
-     "tag": "laughing"
+     "who": "阿哲",
+     "tag": "shy",
+     "text": "老師，我剛才有一點怕。",
+     "en": "Ms. Lin, I was a little scared."
     },
     {
      "who": "老師",
-     "text": "這頂帽子，剛才保護了你的頭喔。",
-     "en": "That hat just helped keep your head safe.",
-     "tag": "happy"
+     "tag": "gentle",
+     "text": "會怕沒關係，你每一步都做對了。",
+     "en": "It's okay to feel scared. You did every step just right."
+    },
+    {
+     "who": "阿哲",
+     "tag": "laughing",
+     "text": "我的書包，好像一頂大帽子！",
+     "en": "My backpack looks like a big hat!"
+    },
+    {
+     "who": "老師",
+     "tag": "happy",
+     "text": "這頂帽子，保護了你的頭喔。",
+     "en": "That hat helped keep your head safe."
     }
    ]
   },
@@ -225,13 +237,13 @@
     },
     {
      "who": "旁白",
-     "text": "小汽車也回到他手上了。",
-     "en": "His little red car was back in his hand."
+     "text": "林老師幫他拿回了小汽車。",
+     "en": "Ms. Lin had helped him get his little red car back."
     },
     {
-     "who": "小男孩",
-     "text": "爸爸，地震的時候，我會趴下，掩護，穩住！",
-     "en": "Dad, in an earthquake, I know how to drop, cover, and hold on!",
+     "who": "阿哲",
+     "text": "爸爸，我會趴下，掩護，穩住！",
+     "en": "Dad, I know how to drop, cover, and hold on!",
      "tag": "proud"
     },
     {
@@ -240,9 +252,9 @@
      "en": "Dad knelt down and gave him a big hug."
     },
     {
-     "who": "小男孩",
+     "who": "阿哲",
      "text": "回家真好！",
-     "en": "It's so good to go home!",
+     "en": "I'm so glad to be going home!",
      "tag": "happy"
     }
    ]

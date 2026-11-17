@@ -29,18 +29,13 @@
  },
  "polyphones": [
   {
-   "char": "散",
-   "where": "第1頁『阿散蒂人』",
-   "read": "sàn"
-  },
-  {
    "char": "沒",
    "where": "第1頁『沒有故事』，第2頁『沒人拿到過』",
    "read": "méi"
   },
   {
    "char": "給",
-   "where": "第2頁『把故事盒給我』，第6頁『給天神看』，第11頁『分給大家』，第12頁『說給你聽』",
+   "where": "第2頁『把故事盒給我』，第3頁『故事盒就給你』，第6頁『給天神看』，第11頁『分給大家』，第12頁『說給你聽』",
    "read": "gěi"
   },
   {
@@ -67,6 +62,11 @@
    "char": "豎",
    "where": "第8頁『豎了起來』",
    "read": "shù"
+  },
+  {
+   "char": "吐",
+   "where": "第2頁『吐出細絲』",
+   "read": "tǔ"
   }
  ],
  "pages": [
@@ -76,8 +76,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "這是非洲迦納，阿散蒂人的故事。",
-     "en": "This is a story from the Ashanti people of Ghana, in Africa."
+     "text": "這是非洲迦納的老故事。",
+     "en": "This is an old story from Ghana, in Africa."
     },
     {
      "who": "旁白",
@@ -86,7 +86,7 @@
     },
     {
      "who": "旁白",
-     "text": "所有的故事，都收在天神的故事盒裡。",
+     "text": "故事都收在天神的故事盒裡。",
      "en": "All the stories were kept in the Sky God's story box."
     },
     {
@@ -132,13 +132,18 @@
   },
   {
    "scene": "天上的雲朵宮殿，同一個時候。",
-   "act": "天神伸出三根手指頭，一根一根數給阿南西看，表情認真；背後的雲上浮出三個小圖案：一條大蟒蛇、一隻花豹、一群虎頭蜂。阿南西挺起胸膛，八隻腳叉著腰，一副很有自信的樣子。",
+   "act": "天神伸出三根手指頭，一根一根數給阿南西看，另一手拍拍懷裡的金色故事盒，表情認真；背後的雲上浮出三個小圖案：一條大蟒蛇、一隻花豹、一群虎頭蜂。阿南西挺起胸膛，八隻腳叉著腰，一副很有自信的樣子。",
    "lines": [
     {
      "who": "天神",
      "tag": "serious",
-     "text": "請大蟒蛇、花豹和虎頭蜂，來天上作客。",
-     "en": "Invite Python, Leopard, and the Hornets to visit me in the sky."
+     "text": "你去請大蟒蛇、花豹和虎頭蜂，來天上作客。",
+     "en": "Go and invite Python, Leopard, and the Hornets to visit me in the sky."
+    },
+    {
+     "who": "天神",
+     "text": "請到了，故事盒就給你。",
+     "en": "If they come, the story box is yours."
     },
     {
      "who": "天神",
@@ -164,8 +169,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "大蟒蛇捲成一大團，在樹下打瞌睡。",
-     "en": "Python was curled up in a big coil, dozing under a tree."
+     "text": "大蟒蛇捲成一團，在樹下打瞌睡。",
+     "en": "Python was curled up in a coil, dozing under a tree."
     },
     {
      "who": "阿南西",
@@ -204,7 +209,7 @@
     },
     {
      "who": "旁白",
-     "text": "大蟒蛇在樹枝旁邊伸直身體。",
+     "text": "大蟒蛇在樹枝旁伸直身體。",
      "en": "Python stretched out straight beside the branch."
     },
     {
@@ -238,7 +243,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "接著，阿南西去請花豹來作客。",
+     "text": "接著，阿南西去請花豹。",
      "en": "Next, Anansi went to invite Leopard."
     },
     {
@@ -249,13 +254,13 @@
     },
     {
      "who": "旁白",
-     "text": "阿南西坐在樹下，自己說起故事。",
+     "text": "阿南西坐在樹下，自己說故事。",
      "en": "Anansi sat under the tree and began telling a story, all by himself."
     },
     {
      "who": "阿南西",
      "tag": "mysterious",
-     "text": "從前，有一隻花豹，發現一個大祕密！",
+     "text": "從前有一隻花豹，發現一個大祕密！",
      "en": "Once upon a time, a leopard found a big secret!"
     }
    ]
@@ -306,8 +311,8 @@
     },
     {
      "who": "旁白",
-     "text": "嗡！虎頭蜂不想去，追著阿南西飛。",
-     "en": "BZZ! The Hornets didn't want to go, and they chased Anansi around."
+     "text": "虎頭蜂不想去，追著阿南西飛。",
+     "en": "The Hornets didn't want to go, and they chased Anansi around."
     },
     {
      "who": "阿南西",
@@ -318,24 +323,35 @@
    ]
   },
   {
-   "scene": "同一片草原，天空的一邊飄來一大片黑色的烏雲，風把草吹得往同一邊倒。",
-   "act": "阿南西停下來，指著烏雲大喊；虎頭蜂抬頭看天，停在半空中。花豹和大蟒蛇也抬頭看。接著虎頭蜂排成一排，跟在阿南西後面飛。",
+   "scene": "同一片草原和大樹上的灰色蜂窩。頭頂飄過一小片白雲，草地上有一塊雲的影子；遠遠的天邊，有一大片黑色的烏雲正慢慢飄過來，風把草吹得往同一邊倒。",
+   "act": "阿南西躲在一片大葉子下面，只露出圓圓的眼睛偷看；一小片雲的影子滑過蜂窩，虎頭蜂全部鑽回蜂窩裡，只露出幾個小頭。下一格：阿南西跳到石頭上，指著天邊的大烏雲大喊；虎頭蜂從蜂窩探出來抬頭看天，接著排成一排，跟在阿南西後面飛。花豹和大蟒蛇也抬頭看。",
    "lines": [
     {
      "who": "旁白",
-     "text": "這時候，天邊飄來一大片烏雲。",
-     "en": "Just then, a big dark cloud drifted across the sky."
+     "text": "阿南西躲在葉子下偷看。",
+     "en": "Anansi hid under a leaf and watched."
+    },
+    {
+     "who": "旁白",
+     "text": "一小片雲飄過，虎頭蜂就躲回蜂窩。",
+     "en": "When a little cloud floated by, the Hornets hid in their nest."
+    },
+    {
+     "who": "阿南西",
+     "tag": "whispering",
+     "text": "原來他們怕下雨！",
+     "en": "So that's it! They don't like rain!"
     },
     {
      "who": "阿南西",
      "tag": "shouting",
-     "text": "要下大雨了！去天神家躲雨吧！",
-     "en": "A big rain is coming! Come stay dry at the Sky God's house!"
+     "text": "看，大烏雲來了！天神家在雲上，不會下雨！",
+     "en": "Look, a big storm cloud is coming! The Sky God's house is above the clouds, where it never rains!"
     },
     {
      "who": "旁白",
-     "text": "虎頭蜂不喜歡淋雨，趕快跟上去。",
-     "en": "The Hornets didn't like getting wet, so they hurried after him."
+     "text": "虎頭蜂一看，趕快跟上去。",
+     "en": "The Hornets took one look and hurried after him."
     }
    ]
   },
@@ -345,8 +361,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "阿南西織了一座蜘蛛絲橋，大家一起上了天。",
-     "en": "Anansi wove a bridge of spider silk, and they all went up to the sky together."
+     "text": "阿南西織了一座蜘蛛絲橋，大家上了天。",
+     "en": "Anansi wove a bridge of spider silk, and they all went up to the sky."
     },
     {
      "who": "天神",
@@ -373,7 +389,7 @@
     },
     {
      "who": "旁白",
-     "text": "故事像蝴蝶一樣飛出來，飛進每一個家。",
+     "text": "故事像蝴蝶飛出來，飛進每一個家。",
      "en": "The stories flew out like butterflies, into every home."
     },
     {

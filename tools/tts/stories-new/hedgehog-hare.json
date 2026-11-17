@@ -56,13 +56,13 @@
     },
     {
      "who": "旁白",
-     "text": "兔子看見他的短腿，笑了。",
-     "en": "Hare saw his short legs and laughed."
+     "text": "兔子看見他，笑了。",
+     "en": "Hare saw him and laughed."
     },
     {
      "who": "兔子",
-     "text": "腿這麼短，走好慢喔！",
-     "en": "Your legs are so short. You're so slow!",
+     "text": "腿這麼短，是用滾的嗎？",
+     "en": "Your legs are so short. Do you roll everywhere?",
      "tag": "laughing"
     },
     {
@@ -81,17 +81,18 @@
   },
   {
    "scene": "刺蝟的家：菜田邊一棵大樹的樹根下，有一個鋪著乾葉子的小洞，洞口擺著兩個小木碗。",
-   "act": "刺蝟太太第一次出場：她跟刺蝟一模一樣，也是圓滾滾的咖啡色刺蝟，也圍著一條一樣的藍色小圍巾，正在洞口擺早餐。刺蝟靠在她耳邊說話，她遮著嘴，眼睛笑成兩條線。",
+   "act": "刺蝟一邊走進樹根下的家，一邊摸著下巴想事情；刺蝟太太第一次出場：她跟刺蝟一模一樣，也是圓滾滾的咖啡色刺蝟，也圍著一條一樣的藍色小圍巾，正在洞口擺早餐。刺蝟靠在她耳邊說話，她遮著嘴，眼睛笑成兩條線。",
    "lines": [
     {
-     "who": "旁白",
-     "text": "刺蝟先回家吃早餐。",
-     "en": "Hedgehog went home for breakfast first."
+     "who": "刺蝟",
+     "tag": "thoughtful",
+     "text": "我跑不快，可是我會想辦法。",
+     "en": "I can't run fast, but I can think of a plan."
     },
     {
      "who": "旁白",
-     "text": "他小聲告訴刺蝟太太一個計畫。",
-     "en": "He whispered a plan to Mrs. Hedgehog."
+     "text": "他回家小聲告訴刺蝟太太一個計畫。",
+     "en": "He went home and whispered his plan to Mrs. Hedgehog."
     },
     {
      "who": "旁白",
@@ -107,30 +108,24 @@
    ]
   },
   {
-   "scene": "高麗菜田的一頭，兩排高麗菜中間有兩條平行的泥土小路，一直通到田的另一頭；遠遠的那一頭，一顆大高麗菜旁邊露出一點藍色。",
-   "act": "刺蝟和兔子各站在一條小路的起點，兔子壓低身體、後腿用力準備衝；遠遠的田的那一頭，刺蝟太太躲在一顆大高麗菜的葉子後面，只看得到一點藍色圍巾。",
+   "scene": "高麗菜田的起點，兩排高麗菜中間有兩條平行的泥土小路，一直通到田的另一頭（終點）；遠遠的終點那裡，刺蝟那條小路的盡頭，一顆大高麗菜旁邊露出一點藍色。",
+   "act": "刺蝟和兔子並排站在起點，一人一條小路，兔子壓低身體、後腿用力準備衝，刺蝟悠閒地站著；遠遠的終點，刺蝟那條小路的盡頭，刺蝟太太躲在一顆大高麗菜的葉子後面，只看得到一點藍色圍巾。",
    "lines": [
     {
      "who": "旁白",
-     "text": "高麗菜田中間，有兩條小路。",
-     "en": "Between the rows of cabbages ran two little paths."
+     "text": "刺蝟和兔子站在起點，一人一條小路。",
+     "en": "Hedgehog and Hare stood side by side at the start, one on each path."
     },
     {
      "who": "旁白",
-     "text": "刺蝟太太躲在小路的那一頭。",
-     "en": "Mrs. Hedgehog hid quietly at the far end of one path."
-    },
-    {
-     "who": "刺蝟",
-     "text": "兔子，你跑那一條，我跑這一條。",
-     "en": "Hare, you take that path, and I'll take this one.",
-     "tag": "calm"
+     "text": "刺蝟那條小路的終點，躲著刺蝟太太。",
+     "en": "At the far end of Hedgehog's path, Mrs. Hedgehog was hiding."
     },
     {
      "who": "兔子",
-     "text": "預備，開始！",
-     "en": "Ready, set, go!",
-     "tag": "shouting"
+     "tag": "shouting",
+     "text": "準備好了嗎？跑！",
+     "en": "Ready? Go!"
     }
    ]
   },
@@ -140,8 +135,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "兔子一下子就跑到了那一頭。",
-     "en": "Hare zoomed to the far end in no time."
+     "text": "兔子一下子衝到終點。",
+     "en": "Hare zoomed to the finish in no time."
     },
     {
      "who": "刺蝟太太",
@@ -163,8 +158,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "兔子回頭，又一路跑回來。",
-     "en": "Hare turned around and dashed all the way back."
+     "text": "兔子又一路跑回起點。",
+     "en": "Hare dashed all the way back to the start."
     },
     {
      "who": "刺蝟",
@@ -186,8 +181,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "兔子又跑過去。",
-     "en": "Hare raced over again."
+     "text": "兔子又衝到終點。",
+     "en": "Hare raced to the finish again."
     },
     {
      "who": "刺蝟太太",
@@ -260,13 +255,13 @@
     {
      "who": "兔子",
      "text": "我的耳朵收不進去啦！",
-     "en": "My ears won't fit!",
+     "en": "My ears won't tuck in!",
      "tag": "laughing"
     },
     {
      "who": "刺蝟太太",
-     "text": "兔子，我們已經在這裡了！",
-     "en": "Hare, we're already here!",
+     "text": "我們早就縮好了，已經在這裡了！",
+     "en": "We're all curled up. We're already here!",
      "tag": "laughing"
     }
    ]

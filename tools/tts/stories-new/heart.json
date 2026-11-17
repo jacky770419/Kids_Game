@@ -25,7 +25,7 @@
  "polyphones": [
   {
    "char": "血",
-   "where": "第4頁『把血送出去』『血會流到』，第5頁『血裡面』，第5、6、8、9、11頁『紅血球』",
+   "where": "第4頁『把血送出去』『血會流到』『血會繞一大圈』，第5頁『血裡面』，第5、6、8、9、11頁『紅血球』",
    "read": "xiě"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "char": "圈",
-   "where": "第5頁『甜甜圈』，第7頁『一圈又一圈』",
+   "where": "第4頁『繞一大圈』，第5頁『甜甜圈』，第7頁『一圈又一圈』",
    "read": "quān"
   }
  ],
@@ -79,7 +79,7 @@
     {
      "who": "旁白",
      "text": "她仔細聽，聽到一個聲音：撲通，撲通。",
-     "en": "She listens closely and hears a sound. Thump, thump."
+     "en": "She listens closely and hears a sound. Ba-bum, ba-bum."
     },
     {
      "who": "旁白",
@@ -107,8 +107,8 @@
     {
      "who": "心臟",
      "tag": "proud",
-     "text": "我在工作！白天、晚上，我每天都在工作。",
-     "en": "I'm working! I work all day and all night, every single day."
+     "text": "我在工作！白天、晚上都在工作，我最愛這個工作！",
+     "en": "I'm working! I work all day and all night, and I love my job!"
     },
     {
      "who": "心臟",
@@ -124,8 +124,8 @@
    ]
   },
   {
-   "scene": "同一個院子。畫面旁邊有一張簡單可愛的小圖：一個小女孩的身體輪廓，胸口偏左有一顆小小的紅色心臟（跟第2頁同樣的畫法），從心臟連出紅色的小路，通到頭、兩隻手和兩隻腳。",
-   "act": "小卉把小拳頭握緊、打開、握緊，玩得好認真；心臟也跟著用力一擠，旁邊的紅色小路上有紅色的小點點往外跑。",
+   "scene": "同一個院子。畫面旁邊有一張簡單可愛的小圖：一個小女孩的身體輪廓，胸口偏左有一顆小小的紅色心臟（跟第2頁同樣的畫法），從心臟連出紅色的小路，通到頭、兩隻手和兩隻腳，再從手腳繞回心臟，整條小路像一個大圓圈，路上畫幾個小箭頭表示血跑的方向。",
+   "act": "小卉把小拳頭握緊、打開、握緊，玩得好認真；心臟也跟著用力一擠，旁邊的紅色小路上有紅色的小點點往外跑，跑到手腳以後，又沿著小路繞回心臟。",
    "lines": [
     {
      "who": "心臟",
@@ -147,12 +147,17 @@
      "who": "心臟",
      "text": "血會流到妳的頭、妳的手，也會流到妳的腳。",
      "en": "The blood flows to your head, your hands, and all the way to your feet."
+    },
+    {
+     "who": "心臟",
+     "text": "然後，血會繞一大圈，再流回我這裡。",
+     "en": "Then the blood goes all the way around and comes back to me."
     }
    ]
   },
   {
    "scene": "小卉身體裡的想像畫面：一條紅色、彎彎的大水管，像紅色的河，裡面漂著好多紅色的小圓片。",
-   "act": "紅血球第一次出場：一個紅色、圓圓扁扁、中間凹下去的小傢伙，看起來像一個小甜甜圈，有大眼睛和紅臉頰，戴一頂藍色的送貨員小帽子，背著一個小袋子。他從紅色的河裡跳出來，揮手打招呼。小卉的小臉出現在畫面角落，張大嘴巴。",
+   "act": "紅血球第一次出場：一個紅色、圓圓扁扁、中間凹下去、沒有破洞的小傢伙，看起來像一個沒有洞的小甜甜圈，有大眼睛和紅臉頰，戴一頂藍色的送貨員小帽子，背著一個小袋子。他從紅色的河裡跳出來，揮手打招呼。小卉的小臉出現在畫面角落，張大嘴巴。",
    "lines": [
     {
      "who": "旁白",
@@ -161,8 +166,8 @@
     },
     {
      "who": "旁白",
-     "text": "一個紅血球跳了出來，看起來像一個小甜甜圈。",
-     "en": "One red blood cell pops up. It looks like a little donut."
+     "text": "一個紅血球跳出來，像一個沒有洞的小甜甜圈。",
+     "en": "One red blood cell pops up. It looks like a little donut with no hole."
     },
     {
      "who": "紅血球",
@@ -179,19 +184,24 @@
    ]
   },
   {
-   "scene": "想像畫面：左邊是小卉的胸口，空氣變成一顆一顆閃亮的小光點跑進去；右邊是紅色的河，一路流到手和腳。",
-   "act": "紅血球把閃亮的小光點一顆一顆裝進小袋子，袋子鼓起來；他推著袋子沿著紅色的河往手和腳跑。心臟在河的起點用力推一把，笑咪咪的。",
+   "scene": "想像畫面：左邊是小卉胸口裡的兩片粉紅色的肺，像兩塊軟軟的海綿，空氣變成一顆一顆閃亮的小光點跑進肺裡；右邊是紅色的河，從肺流到心臟，再一路流到手和腳。",
+   "act": "畫面角落的小卉閉著眼睛、鼓起胸口，吸了一大口氣。紅血球站在肺旁邊，把閃亮的小光點（氧氣）一顆一顆裝進小袋子，袋子鼓起來；他推著袋子沿著紅色的河往手和腳跑。心臟在河的中間用力推一把，笑咪咪的。",
    "lines": [
     {
-     "who": "紅血球",
-     "tag": "happy",
-     "text": "妳吸一口氣，空氣就跑進妳的胸口。",
-     "en": "When you breathe in, air goes into your chest."
+     "who": "旁白",
+     "text": "小卉吸一大口氣，空氣跑進她胸口裡的肺。",
+     "en": "Amy takes a big breath. The air goes into her lungs, inside her chest."
     },
     {
      "who": "紅血球",
-     "text": "我在那裡裝滿空氣裡的好東西，再載到妳的手和腳！",
-     "en": "I fill up with the good stuff from the air, and I carry it to your hands and feet!"
+     "tag": "happy",
+     "text": "空氣裡有氧氣，是讓身體有力氣的好東西。",
+     "en": "The air has oxygen in it. Oxygen is the good stuff that gives your body energy."
+    },
+    {
+     "who": "紅血球",
+     "text": "我在肺裡裝滿氧氣，再載到妳的手和腳！",
+     "en": "I fill up with oxygen in your lungs, and I carry it to your hands and feet!"
     },
     {
      "who": "心臟",
@@ -237,7 +247,7 @@
     {
      "who": "旁白",
      "text": "她停下來，把手放在胸口。撲通，撲通！好快！",
-     "en": "She stops and puts her hand on her chest. Thump, thump! So fast!"
+     "en": "She stops and puts her hand on her chest. Ba-bum, ba-bum! So fast!"
     },
     {
      "who": "小卉",
@@ -248,8 +258,8 @@
     {
      "who": "心臟",
      "tag": "excited",
-     "text": "妳在跑，手腳要用好多力氣，需要好多好東西！",
-     "en": "You're running! Your arms and legs are working hard. They need lots and lots of good stuff!"
+     "text": "妳在跑，手腳要用好多力氣，需要好多氧氣！",
+     "en": "You're running! Your arms and legs are working hard. They need lots and lots of oxygen!"
     },
     {
      "who": "紅血球",
@@ -301,7 +311,7 @@
     {
      "who": "旁白",
      "text": "撲通，撲通。這一次，心臟慢下來了。",
-     "en": "Thump, thump. This time, her heart slows down."
+     "en": "Ba-bum, ba-bum. This time, her heart slows down."
     }
    ]
   },

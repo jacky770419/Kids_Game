@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "縫",
-   "where": "第5頁、第11頁『門縫』",
+   "where": "第5頁、第8頁、第12頁『門縫』，第8頁 scene 的『縫』",
    "read": "fèng"
   },
   {
@@ -40,28 +40,33 @@
   },
   {
    "char": "會",
-   "where": "第8頁『怎麼會說話』",
+   "where": "第9頁『怎麼會說話』",
    "read": "huì"
   },
   {
    "char": "嚇",
-   "where": "第12頁『嚇跑了』",
+   "where": "第13頁『嚇跑了』",
    "read": "xià"
   },
   {
    "char": "喔",
-   "where": "第8頁第3句弟弟學公雞叫『喔，喔，喔』（前一句旁白已說明是學公雞叫）",
+   "where": "第9頁第3句弟弟學公雞叫『喔，喔，喔』（前一句旁白已說明是學公雞叫）",
    "read": "ō"
   },
   {
    "char": "假",
-   "where": "第5頁『假裝』",
+   "where": "第5頁『假裝』，第10頁『假裝爸爸在家』",
    "read": "jiǎ"
   },
   {
    "char": "咳",
    "where": "第5頁『咳了一下』",
    "read": "ké"
+  },
+  {
+   "char": "長",
+   "where": "第9頁『伸長脖子』",
+   "read": "cháng"
   }
  ],
  "pages": [
@@ -147,7 +152,7 @@
     {
      "who": "虎姑婆",
      "text": "乖孩子，我是姑婆，快開門呀！",
-     "en": "Good children, it's your Great-Auntie! Open the door!",
+     "en": "Sweet children, it's your Great-Auntie! Open the door!",
      "tag": "cheerful"
     }
    ]
@@ -260,13 +265,48 @@
    ]
   },
   {
+   "scene": "小屋裡的木門前，燈籠的光照在地板上。木門是兩片門板，中間有一條細細的縫，門閂還好好地拴著。",
+   "act": "一隻毛茸茸的大手從兩片門板中間的縫伸進來一點點，手是橘黃色的，上面有黑色條紋，手心裡拿著一顆紅色糖紙包的糖果，手卡在門縫裡伸不進來。弟弟穿著大雨鞋，眼睛發亮、伸出手想拿；姊姊一手拉住弟弟的手臂，一手指著大手上的條紋，眉頭皺起來。下一格：姊姊站直身體，兩手叉腰，對著門搖頭；大手慌慌張張縮回去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "門縫裡，伸進來一隻拿著糖果的大手。",
+     "en": "Then a big hand holding a piece of candy poked through the crack in the door."
+    },
+    {
+     "who": "虎姑婆",
+     "tag": "sweet",
+     "text": "姑婆帶了糖果喔！開門就給你。",
+     "en": "Great-Auntie brought candy! Open the door, and it's yours."
+    },
+    {
+     "who": "姊姊",
+     "tag": "whispering",
+     "text": "你看，那隻手好多毛，有黃黑條紋！",
+     "en": "Look! That hand is so hairy, with yellow and black stripes!"
+    },
+    {
+     "who": "虎姑婆",
+     "tag": "nervous",
+     "text": "這，這是姑婆的毛手套啦！",
+     "en": "Th-these are my fuzzy gloves!"
+    },
+    {
+     "who": "姊姊",
+     "tag": "brave",
+     "text": "我們不要陌生人的糖果！",
+     "en": "We don't take candy from strangers!"
+    }
+   ]
+  },
+  {
    "scene": "屋裡和門外分成兩半的畫面：屋裡燈籠亮著；門外的院子黑黑的，天上有月亮和星星。",
-   "act": "屋裡，弟弟站在小板凳旁邊，兩手像翅膀一樣拍動，伸長脖子學公雞叫；姊姊在旁邊豎起大拇指。門外，虎姑婆雙手叉腰，抬頭看著黑黑的天空，搖頭大笑。",
+   "act": "屋裡，弟弟還穿著爸爸的大雨鞋，站在小板凳旁邊，兩手像翅膀一樣拍動，伸長脖子學公雞叫；姊姊在旁邊豎起大拇指。門外，虎姑婆雙手叉腰，抬頭看著黑黑的天空，搖頭大笑。",
    "lines": [
     {
      "who": "姊姊",
-     "text": "虎姑婆怕天亮。弟弟，你學公雞叫！",
-     "en": "Auntie Tiger doesn't like the morning. Brother, crow like a rooster!",
+     "text": "聽說老虎最怕天亮。弟弟，你學公雞叫！",
+     "en": "I heard tigers don't like the morning. Brother, crow like a rooster!",
      "tag": "whispering"
     },
     {
@@ -290,17 +330,17 @@
   },
   {
    "scene": "小屋裡，燈籠的光把兩個孩子的影子照在牆上，影子看起來好大。",
-   "act": "姊姊眼睛一亮，對著屋子裡面大聲喊；弟弟穿著爸爸的大雨鞋，挺起胸、用力踩地板，嘴巴故意往下撇，裝出大人的樣子。牆上的影子大大的，像一個大人。",
+   "act": "姊姊眼睛一亮，轉身對著屋子裡面空空的房間大聲喊，好像爸爸在裡面睡覺；弟弟穿著爸爸的大雨鞋，挺起胸、用力踩地板，嘴巴故意往下撇，裝出大人的樣子。牆上的影子大大的，像一個大人。",
    "lines": [
     {
      "who": "旁白",
-     "text": "姊姊想了想，眼睛一亮。",
-     "en": "Big Sister thought for a moment, and her eyes lit up."
+     "text": "姊姊假裝爸爸在家，故意大聲說：",
+     "en": "Big Sister pretended Dad was home and called out loudly,"
     },
     {
      "who": "姊姊",
-     "text": "爸爸，你醒啦？門外有一隻老虎喔！",
-     "en": "Daddy, you're awake? There's a tiger outside!",
+     "text": "爸爸，你起來啦？門外有一隻老虎喔！",
+     "en": "Daddy, are you up? There's a tiger outside!",
      "tag": "shouting"
     },
     {
@@ -328,7 +368,7 @@
     },
     {
      "who": "旁白",
-     "text": "虎姑婆抱著尾巴，一路跑回山上去了。",
+     "text": "虎姑婆抱著尾巴，跑回山上去了。",
      "en": "Auntie Tiger grabbed her tail and ran all the way back up the mountain."
     },
     {
