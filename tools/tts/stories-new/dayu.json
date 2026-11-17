@@ -1,0 +1,367 @@
+{
+ "id": "dayu",
+ "title": "大禹治水",
+ "title_en": "Yu the Great and the Flood",
+ "size": "中",
+ "roles": {
+  "大禹": "年輕的治水英雄，低沉有力的年輕男聲，說話堅定、有精神，想到辦法時很興奮，對家人說話很溫柔。",
+  "大禹的爸爸": "大禹的爸爸，溫和的中年大叔聲音，勇敢、帶頭堆土牆時大聲喊，擋不住水時嘆氣，老了以後說話慢慢的、很慈祥。",
+  "兒子": "大禹的兒子，從四歲長到八歲的小男孩，聲音稚嫩、開朗，發現水會流走時很興奮，替爸爸加油時又大聲又驕傲。",
+  "老奶奶": "村子裡的老奶奶，慢慢的奶奶聲音，家泡在水裡時很難過，最後能回家時好開心。"
+ },
+ "cast": {
+  "大禹": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  },
+  "大禹的爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "兒子": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "老奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "給",
+   "where": "第5頁『交給兒子大禹』",
+   "read": "gěi"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『一定會想到辦法』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒想到』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，下著大雨的村子：土牆茅草屋、綠色的田，河水漲起來，淡咖啡色的水慢慢淹進田裡和村子的小路；遠處有一座長滿樹的山坡。",
+   "act": "村民們撐著斗笠、穿著蓑衣，牽著小羊、抱著小雞，排成一排慢慢走上山坡，大家平平安安，沒有人在水裡。小狗跟在後面，甩著身上的雨水。畫面是溫和的雨天顏色，不要畫大浪或被沖走的東西。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，天上下了好多天的大雨。",
+     "en": "Long, long ago in China, it rained and rained for many days."
+    },
+    {
+     "who": "旁白",
+     "text": "河水滿了出來，流進田裡，流進村子裡。",
+     "en": "The rivers overflowed. The water ran into the fields and into the village."
+    },
+    {
+     "who": "旁白",
+     "text": "大家帶著小雞和小羊，走到山坡上。",
+     "en": "Everyone took their chickens and goats and walked up the hill to stay dry."
+    }
+   ]
+  },
+  {
+   "scene": "山坡上，大家搭了幾個草棚子；往下看，村子的房子泡在水裡，只露出屋頂。",
+   "act": "老奶奶第一次出場：白頭髮梳成圓髻、插一根木簪子，穿淺紫色粗布衣，拄著拐杖，站在山坡邊往下看自己泡在水裡的小屋和菜園，眼睛濕濕的；旁邊的村民扶著她、拍拍她的背。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一位老奶奶，看著泡在水裡的家。",
+     "en": "An old woman looked down at her house, sitting in the water."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "sad",
+     "text": "我的房子，我的菜園，都泡在水裡了。",
+     "en": "My house and my vegetable garden are all under water."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都好想回家。",
+     "en": "Everyone wanted so much to go home."
+    }
+   ]
+  },
+  {
+   "scene": "村子外面的大河邊，下著小雨。",
+   "act": "大禹的爸爸第一次出場：高大的中年男人，黑色鬍子，頭上綁一條灰色頭巾，穿咖啡色粗布短衣，捲起袖子和褲管。他舉起鏟子帶頭，村民們用竹籃搬土，沿著河邊堆起一道土牆，土牆越堆越高。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大禹的爸爸，是個勇敢的人。",
+     "en": "The father of Yu the Great was a very brave man."
+    },
+    {
+     "who": "大禹的爸爸",
+     "tag": "determined",
+     "text": "大家來！我們堆一道土牆，把水擋住！",
+     "en": "Come on, everyone! Let's build a dirt wall and block the water!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家搬土、堆牆，牆越來越高。",
+     "en": "Everyone carried dirt and piled it up. The wall grew higher and higher."
+    },
+    {
+     "who": "大禹的爸爸",
+     "tag": "shouting",
+     "text": "擋住它！擋住它！",
+     "en": "Block it! Block it!"
+    }
+   ]
+  },
+  {
+   "scene": "大河邊的土牆。",
+   "act": "河水也跟著變高，從土牆的旁邊繞過去，咕嘟咕嘟地流進田裡；土牆上有個小缺口在冒水。大禹的爸爸放下鏟子，扶著土牆，嘆了一口氣；村民們拿著空竹籃，愣在旁邊。沒有人被水沖到，大家都站在乾的地方。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，牆越高，水也越高。",
+     "en": "But the higher the wall, the higher the water."
+    },
+    {
+     "who": "旁白",
+     "text": "沒想到，水從牆的旁邊繞過去了！",
+     "en": "Then the water simply went around the side of the wall!"
+    },
+    {
+     "who": "大禹的爸爸",
+     "tag": "sad",
+     "text": "唉，水擋不住啊。",
+     "en": "Oh dear. We can't block the water."
+    }
+   ]
+  },
+  {
+   "scene": "山坡上的草棚子前面，雨停了，天空灰灰的。",
+   "act": "大禹第一次出場：年輕的男人，濃眉大眼、皮膚曬得黑黑的，頭髮在頭頂綁一個髻、繫藍色布條，穿淺藍色粗布短衣，腰上繫草繩。大禹的爸爸頭髮變白了，坐在石頭上，把手上的鏟子交給大禹；大禹雙手接過鏟子，認真地點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大禹的爸爸老了，把治水交給兒子大禹。",
+     "en": "Great Yu's father grew old, so he asked his son to take care of the flood."
+    },
+    {
+     "who": "大禹的爸爸",
+     "tag": "gentle",
+     "text": "孩子，水擋不住，你要想個新的辦法。",
+     "en": "Son, the water can't be blocked. You need to find a new way."
+    },
+    {
+     "who": "大禹",
+     "tag": "determined",
+     "text": "爸爸，我一定會想到辦法！",
+     "en": "Father, I will find a way!"
+    }
+   ]
+  },
+  {
+   "scene": "大禹家門口，一間小茅草屋，門口的泥土地上有一個小水坑。",
+   "act": "兒子第一次出場：大禹的兒子，四歲的小男孩，圓臉、頭頂綁一個小沖天辮，穿黃色小短衣。他蹲在水坑旁，用小樹枝在泥土上劃出一條彎彎的小溝，水坑的水沿著小溝流走了。大禹站在旁邊彎下腰看，眼睛一亮。大禹的妻子穿淡粉紅色衣服，站在門口微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大禹回到家，看到兒子在門口玩水。",
+     "en": "When Great Yu came home, he saw his son playing with water by the door."
+    },
+    {
+     "who": "旁白",
+     "text": "兒子用樹枝畫一條小溝，水就流走了。",
+     "en": "His son drew a little ditch with a stick, and the puddle water ran away."
+    },
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "爸爸你看！水跟著小路跑走了！",
+     "en": "Daddy, look! The water ran away down the little path!"
+    },
+    {
+     "who": "大禹",
+     "tag": "excited",
+     "text": "對呀！水喜歡往低的地方流。",
+     "en": "That's it! Water likes to flow downhill."
+    },
+    {
+     "who": "大禹",
+     "tag": "excited",
+     "text": "擋不住，就幫水挖一條路，讓水流到大海！",
+     "en": "If we can't block it, we'll dig a path for it, all the way to the sea!"
+    }
+   ]
+  },
+  {
+   "scene": "大平原上，大家挖出一條長長的河道，河道彎彎地一直通到遠方藍色的大海。",
+   "act": "大禹捲起褲管站在泥巴裡，跟村民一起揮鏟子挖河道，臉上、手上都是泥巴，還是笑著；村民排成長長一排傳竹籃。河道裡的水開始慢慢往大海流。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大禹帶著大家，挖了一條又一條河道。",
+     "en": "Great Yu led everyone, and together they dug path after path for the water."
+    },
+    {
+     "who": "大禹",
+     "tag": "shouting",
+     "text": "挖一條路，讓水去大海！",
+     "en": "Dig a path, and send the water to the sea!"
+    },
+    {
+     "who": "旁白",
+     "text": "大禹每天挖，手上都是泥巴。",
+     "en": "He dug every day, and his hands were covered in mud."
+    }
+   ]
+  },
+  {
+   "scene": "大禹家的小茅草屋門口，屋前有一棵小桃樹。",
+   "act": "大禹扛著鏟子、帶著幾個村民從門前的小路經過；妻子站在門口，牽著四歲的兒子，兩個人一起用力揮手。大禹回頭揮手，笑得好溫暖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，大禹經過自己的家門口。",
+     "en": "One day, Great Yu passed by his own house."
+    },
+    {
+     "who": "旁白",
+     "text": "大禹的太太牽著兒子，站在門口揮手。",
+     "en": "His wife stood at the door with their son, waving."
+    },
+    {
+     "who": "兒子",
+     "tag": "happy",
+     "text": "爸爸，加油！",
+     "en": "Go, Daddy, go!"
+    },
+    {
+     "who": "大禹",
+     "tag": "gentle",
+     "text": "等水流到大海，我就回家！",
+     "en": "When the water reaches the sea, I'll come home!"
+    }
+   ]
+  },
+  {
+   "scene": "大禹家門口，上半頁是夏天，門前的小桃樹變大了；下半頁是秋天，桃樹結滿桃子。",
+   "act": "上半頁：兒子大一點了，六歲左右，跑到路邊，踮著腳把一頂草帽戴到大禹頭上。下半頁：兒子再大一點，八歲左右，拿著一把小鏟子，在家門口挖了一條小溝，抬頭對經過的大禹驕傲地笑；大禹哈哈大笑，媽媽在門口揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二次經過，兒子送他一頂草帽。",
+     "en": "The second time he passed by, his son gave him a straw hat."
+    },
+    {
+     "who": "兒子",
+     "tag": "happy",
+     "text": "爸爸，太陽好大，戴上草帽！",
+     "en": "Daddy, the sun is so hot. Wear this hat!"
+    },
+    {
+     "who": "旁白",
+     "text": "第三次經過，兒子拿著小鏟子。",
+     "en": "The third time, his son was holding a little shovel."
+    },
+    {
+     "who": "兒子",
+     "tag": "proud",
+     "text": "爸爸，我也在幫水挖小路！",
+     "en": "Daddy, I'm digging little paths for the water too!"
+    },
+    {
+     "who": "大禹",
+     "tag": "laughing",
+     "text": "好兒子！我們一起讓水去大海！",
+     "en": "That's my boy! Together, we'll send the water to the sea!"
+    }
+   ]
+  },
+  {
+   "scene": "河道的盡頭，一座灰色的石頭山擋在前面；水在山前面停住，慢慢往旁邊的村子漫過去。",
+   "act": "大禹站在石頭山前面，皺著眉頭看；村民們著急地指著往村子流的水。下一格：大禹舉起鏟子，大家拿著石鏟和木鏟，一起在山上挖一個缺口，碎石頭一塊一塊滾到旁邊，大家都站在安全的地方。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，河道前面，擋著一座石頭山。",
+     "en": "But there was a rocky mountain in the way."
+    },
+    {
+     "who": "旁白",
+     "text": "水過不去，又往村子流回去了。",
+     "en": "The water couldn't get through, and it started flowing back toward the village."
+    },
+    {
+     "who": "大禹",
+     "tag": "determined",
+     "text": "大家別怕！我們在山上，開一個口！",
+     "en": "Don't worry, everyone! Let's open a gap in the mountain!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家挖呀挖，石頭山終於開了一個大口。",
+     "en": "Everyone dug and dug, until at last there was a big gap in the rocky mountain."
+    }
+   ]
+  },
+  {
+   "scene": "石頭山的大缺口，河水穿過山口，一路流向遠方閃閃發亮的藍色大海；太陽出來了，天上有一道彩虹。",
+   "act": "河水穿過山口往大海流；山坡上，村民們歡呼跳起來。老奶奶拄著拐杖，看著水退下去，自己的小屋和菜園又出現了，她笑得好開心，跟旁邊的人拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "轟隆！河水穿過山口，一路流向大海。",
+     "en": "Rumble! The river rushed through the gap, all the way to the sea."
+    },
+    {
+     "who": "旁白",
+     "text": "田裡的水退了，房子和菜園又出現了。",
+     "en": "The water left the fields, and the houses and gardens appeared again."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "happy",
+     "text": "我可以回家了！",
+     "en": "I can go home now!"
+    },
+    {
+     "who": "大禹",
+     "tag": "shouting",
+     "text": "挖一條路，讓水去大海！我們做到了！",
+     "en": "Dig a path, and send the water to the sea! We did it!"
+    }
+   ]
+  },
+  {
+   "scene": "大禹家的小茅草屋門口，晚上，屋裡透出溫暖的燈光，小桃樹在旁邊。",
+   "act": "大禹走回家，八歲的兒子跑過來撲進他懷裡，大禹把兒子高高抱起來轉圈；媽媽站在門口笑；老奶奶提著一籃剛摘的青菜來送給他們。大禹的爸爸坐在門口的板凳上，摸著白鬍子，笑咪咪的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大禹也回家了，兒子跑過來抱住他。",
+     "en": "Great Yu came home at last, and his son ran to hug him."
+    },
+    {
+     "who": "兒子",
+     "tag": "happy",
+     "text": "爸爸，水去大海了！",
+     "en": "Daddy, the water went to the sea!"
+    },
+    {
+     "who": "大禹",
+     "tag": "gentle",
+     "text": "對，我們幫水，找到回大海的路了。",
+     "en": "Yes. We helped the water find its way to the sea."
+    },
+    {
+     "who": "大禹的爸爸",
+     "tag": "happy",
+     "text": "孩子，你做到了，爸爸好開心。",
+     "en": "You did it, son! I'm so happy."
+    }
+   ]
+  }
+ ]
+}

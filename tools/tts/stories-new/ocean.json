@@ -35,7 +35,7 @@
   },
   {
    "char": "會",
-   "where": "第5頁『我會變顏色』，第11頁『都會游回』",
+   "where": "第5頁『我會變顏色』，第11頁『會游回』",
    "read": "huì"
   },
   {
@@ -57,6 +57,11 @@
    "char": "沒",
    "where": "第11頁『沒錯』",
    "read": "méi"
+  },
+  {
+   "char": "潛",
+   "where": "第12頁『潛水員』",
+   "read": "qián"
   }
  ],
  "pages": [
@@ -66,7 +71,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "月亮好亮，沙灘上的沙子，動了一下。",
+     "text": "月亮好亮，沙灘上的沙子動了一下。",
      "en": "The moon is bright, and the sand on the beach wiggles a little."
     },
     {
@@ -88,8 +93,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小海龜用四隻小腳，一步、一步，爬向大海。",
-     "en": "Little Turtle crawls toward the sea on his four small flippers, step by step."
+     "text": "小海龜一步、一步，爬向大海。",
+     "en": "Step by step, Little Turtle crawls toward the sea."
     },
     {
      "who": "旁白",
@@ -111,7 +116,7 @@
     {
      "who": "旁白",
      "text": "海底有一大片珊瑚，紅色、黃色、紫色都有。",
-     "en": "On the sea floor is a big patch of coral, red, yellow, and purple."
+     "en": "There's a big patch of coral on the sea floor. It's red and yellow and purple!"
     },
     {
      "who": "小海龜",
@@ -138,8 +143,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "珊瑚旁邊有一顆灰石頭，忽然張開了兩隻眼睛！",
-     "en": "Next to the coral, a gray rock suddenly opens two eyes!"
+     "text": "旁邊有一顆灰石頭，忽然張開了兩隻眼睛！",
+     "en": "Nearby, a gray rock suddenly opens two eyes!"
     },
     {
      "who": "小海龜",
@@ -195,7 +200,7 @@
     },
     {
      "who": "旁白",
-     "text": "前面有一個白色的東西，在水裡飄來飄去。",
+     "text": "前面有個白色的東西，在水裡飄來飄去。",
      "en": "Up ahead, something white is floating back and forth."
     },
     {
@@ -207,7 +212,7 @@
     {
      "who": "旁白",
      "text": "原來是塑膠袋，套住了他的前腳！",
-     "en": "It is a plastic bag, and it wraps right around his front flipper!"
+     "en": "It's a plastic bag! And it wraps right around his front flipper!"
     }
    ]
   },
@@ -219,7 +224,7 @@
      "who": "小海龜",
      "tag": "scared",
      "text": "我的腳被纏住了！誰來幫我？",
-     "en": "My flipper is stuck! Somebody help!"
+     "en": "My flipper is all tangled up! Somebody help!"
     },
     {
      "who": "旁白",
@@ -234,7 +239,7 @@
     },
     {
      "who": "旁白",
-     "text": "他拉了一下，袋子好滑，拉不下來。",
+     "text": "他拉了一下，袋子好滑。",
      "en": "He gives a tug, but the bag is too slippery."
     },
     {
@@ -246,7 +251,7 @@
   },
   {
    "scene": "同一片海水，上方的海水忽然暗下來，一個好大的黑影從他們頭上游過去。",
-   "act": "小海龜甩甩自由的前腳，抱住章魚的一隻腳道謝；章魚把塑膠袋捲成一小團抓在手裡；兩個一起抬頭，看著頭頂那個好大的影子，嘴巴張成圓形。",
+   "act": "小海龜甩甩自由的前腳，抱住章魚的一隻腳道謝；章魚把塑膠袋捲成一小團，用一隻腳緊緊抓著；兩個一起抬頭，看著頭頂那個好大的影子，嘴巴張成圓形。",
    "lines": [
     {
      "who": "小海龜",
@@ -256,8 +261,8 @@
     },
     {
      "who": "章魚",
-     "text": "塑膠袋很像水母，要小心喔。",
-     "en": "Plastic bags look like jellyfish, so be careful next time."
+     "text": "塑膠袋很像水母。我先收好，不讓它亂飄。",
+     "en": "Plastic bags look like jellyfish. I'll hold on to this one so it can't drift away."
     },
     {
      "who": "旁白",
@@ -274,7 +279,7 @@
   },
   {
    "scene": "海面，陽光很亮；一隻灰藍色的大鯨魚浮在水面上，頭頂噴出一大團白色的水霧。",
-   "act": "大鯨魚第一次出場：灰藍色、比一座房子還大，肚子上有一條條白色的紋路，眼睛小小的、很溫和。章魚指著大鯨魚，小海龜和章魚跟著游到水面附近，抬頭看那一大團白霧，張大嘴巴。",
+   "act": "大鯨魚第一次出場：灰藍色、比一座房子還大，肚子上有一條條白色的紋路，眼睛小小的、很溫和。章魚指著大鯨魚，另一隻腳還抓著那團白色塑膠袋，小海龜和章魚跟著游到水面附近，抬頭看那一大團白霧，張大嘴巴。",
    "lines": [
     {
      "who": "章魚",
@@ -308,8 +313,8 @@
     {
      "who": "大鯨魚",
      "tag": "gentle",
-     "text": "我用肺呼吸，要浮上來吸氣。小海龜，你也是喔。",
-     "en": "I breathe with lungs, so I come up for air. And so do you, Little Turtle."
+     "text": "小海龜，我跟你一樣，要浮上來吸氣。",
+     "en": "Little Turtle, I'm just like you. I have to come up for air."
     },
     {
      "who": "旁白",
@@ -336,8 +341,8 @@
     {
      "who": "大鯨魚",
      "tag": "gentle",
-     "text": "海龜媽媽，都會游回出生的海灘下蛋喔。",
-     "en": "Mother sea turtles always swim back to the beach where they were born to lay their eggs."
+     "text": "海龜媽媽，會游回出生的海灘下蛋喔。",
+     "en": "When mother sea turtles are ready to lay eggs, they swim back to the beach where they were born."
     },
     {
      "who": "小海龜",
@@ -354,7 +359,7 @@
    ]
   },
   {
-   "scene": "左半邊：寬廣的藍色大海，小海龜和章魚揮手道別，大鯨魚在遠處噴氣。右半邊：很多年以後，同一片月光沙灘，一隻大大的海龜媽媽爬上沙灘，用後腳挖沙洞，洞裡有幾顆白色的蛋。",
+   "scene": "左半邊：寬廣的藍色大海，小海龜和章魚揮手道別，大鯨魚在遠處噴氣；珊瑚旁邊，一位戴潛水鏡、背著氧氣瓶的潛水員，手上提著裝垃圾的網袋；章魚把那團白色塑膠袋交給他，潛水員對章魚比讚。右半邊：很多年以後，同一片月光沙灘，一隻大大的海龜媽媽爬上沙灘，用後腳挖沙洞，洞裡有幾顆白色的蛋。",
    "act": "小海龜笑著往大海深處游去；右邊的海龜媽媽溫柔地看著沙洞裡的蛋，月亮又大又亮，跟第1頁一樣。右邊的海龜媽媽是另一隻母海龜，不是小海龜長大的樣子；沙洞旁邊有一排她爬上岸的痕跡。",
    "lines": [
     {
@@ -362,6 +367,11 @@
      "tag": "excited",
      "text": "游啊游，大海真好玩！我要去看好多地方！",
      "en": "Swim and swim! The sea is so much fun! I want to see so many places!"
+    },
+    {
+     "who": "旁白",
+     "text": "章魚把塑膠袋，交給撿垃圾的潛水員。",
+     "en": "Octopus hands the plastic bag to a diver who is picking up trash."
     },
     {
      "who": "旁白",

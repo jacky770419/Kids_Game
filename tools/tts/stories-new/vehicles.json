@@ -5,10 +5,12 @@
  "size": "中",
  "roles": {
   "小男孩": "五歲的小男孩小恩，童稚的男孩聲音，活潑好奇、什麼都想問，看到車子就興奮，喊「我們出發囉」時又大聲又開心。",
-  "公車": "綠色的大公車，懶洋洋的胖叔叔聲音，和氣、愛笑，提醒坐好時很認真。",
-  "捷運": "在地底下跑的捷運，溫柔的年輕女生聲音，說話清楚、有禮貌，像車上的廣播。",
-  "火車": "跑很遠的老火車，慈祥的老爺爺聲音，說話慢慢的、很有精神，笑聲呵呵的。",
-  "飛機": "天上飛過的飛機，活潑的年輕男生聲音，說話又快又得意。"
+  "公車": "綠色的大公車，懶洋洋的胖叔叔聲音，和氣、愛笑、愛跟乘客打招呼，提醒坐好時很認真。",
+  "捷運": "在地底下跑的捷運，溫柔的年輕女生聲音，說話清楚、有禮貌，開口就像車上的廣播，常常先「叮咚」一聲。",
+  "火車": "跑很遠的紅色火車，慈祥的老爺爺聲音，說話慢慢的、很有精神，愛「嗚」一聲、笑聲呵呵的。",
+  "飛機": "天上飛過的飛機，活潑的年輕男生聲音，說話又快又得意。",
+  "媽媽": "小恩的媽媽，溫柔的媽媽聲音，說話輕輕的、愛笑；在捷運上打瞌睡，被小恩叫醒時有點不好意思。",
+  "外婆": "住在鄉下的外婆，慈祥的奶奶聲音，說話慢慢的、笑聲很暖，最愛抱小恩。"
  },
  "cast": {
   "小男孩": {
@@ -30,28 +32,31 @@
   "飛機": {
    "find": "夏侯儀_Yu",
    "en": "Valf - Young, Playful"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "外婆": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
   }
  },
  "polyphones": [
-  {
-   "char": "會",
-   "where": "第2頁『我會停好多站』",
-   "read": "huì"
-  },
   {
    "char": "鑽",
    "where": "第8頁『鑽進了山洞』",
    "read": "zuān"
   },
   {
-   "char": "塞",
-   "where": "第4頁『塞車』",
-   "read": "sāi"
-  },
-  {
    "char": "嚇",
    "where": "第6頁『嚇了一跳』",
    "read": "xià"
+  },
+  {
+   "char": "長",
+   "where": "第7頁『你好長喔』",
+   "read": "cháng"
   }
  ],
  "pages": [
@@ -67,7 +72,7 @@
     {
      "who": "旁白",
      "text": "外婆家好遠，要換好幾次車。",
-     "en": "Grandma lives far away, so they will need to change rides a few times."
+     "en": "Grandma lives far away, so they will need to take a few different rides to get there."
     },
     {
      "who": "小男孩",
@@ -79,24 +84,29 @@
   },
   {
    "scene": "公車站牌前，一輛綠色的大公車開過來停下。",
-   "act": "公車第一次出場：綠色的大公車，車頭兩個圓圓的大燈像眼睛，保險桿彎成一個笑臉，胖胖的很和氣。小恩在站牌旁跳起來揮手。",
+   "act": "公車第一次出場：綠色的大公車，車頭兩個圓圓的大燈像眼睛，保險桿彎成一個笑臉，胖胖的很和氣，車門打開。媽媽在車門邊把卡片放到刷卡機上，小恩踮起腳、張大嘴巴跟著喊。",
    "lines": [
     {
      "who": "旁白",
-     "text": "叭！一輛綠色的大公車開過來了。",
-     "en": "Beep! A big green bus pulls up."
+     "text": "一輛綠色的大公車，停在站牌前。",
+     "en": "A big green bus pulls up to the stop."
     },
     {
      "who": "公車",
      "tag": "happy",
-     "text": "嗨，小朋友，我是公車！",
-     "en": "Hi there, kiddo. I'm the bus!"
+     "text": "早安！要去哪裡呀？",
+     "en": "Good morning! Where are you off to?"
     },
     {
-     "who": "公車",
-     "tag": "proud",
-     "text": "我會停好多站，讓好多人上車、下車！",
-     "en": "I stop at lots of stops, and lots of people get on and off!"
+     "who": "媽媽",
+     "tag": "happy",
+     "text": "我們要去外婆家。",
+     "en": "We're going to Grandma's house."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽的卡片一碰，嗶！小恩也跟著喊：嗶！",
+     "en": "Mom taps her card. Beep! Max shouts, too: Beep!"
     },
     {
      "who": "小男孩",
@@ -108,7 +118,7 @@
   },
   {
    "scene": "公車車廂裡，窗外是街道和一排行道樹。",
-   "act": "小恩本來想跑到窗邊站著看，公車的大眼睛往車廂裡看，提醒他；下一格小恩乖乖坐在媽媽旁邊，兩手抓著前面椅背的扶手，看著窗外的樹往後跑。",
+   "act": "小恩本來想跑到窗邊站著看，公車的大眼睛往車廂裡看，提醒他；下一格小恩乖乖坐在媽媽旁邊，兩手抓著前面椅背的扶手，窗外的樹往後跑；最後一格小恩伸手按下扶手上的紅色下車鈴，笑得好得意。",
    "lines": [
     {
      "who": "旁白",
@@ -128,31 +138,30 @@
     },
     {
      "who": "旁白",
-     "text": "公車往前開，路邊的樹一棵、一棵往後跑。",
-     "en": "The bus rolls along, and the trees by the road zip past, one by one."
+     "text": "快到站了，小恩按下車鈴，叮咚！",
+     "en": "Their stop is coming up. Max presses the stop bell. Ding-dong!"
     }
    ]
   },
   {
    "scene": "捷運站的月台，在地底下，燈光明亮，月台邊有黃色的線和玻璃門。",
-   "act": "捷運第一次出場：一列銀白色的捷運列車，車頭有一條藍色的線，車頭燈像一雙溫柔的眼睛，正在進站。小恩和媽媽站在黃線後面排隊，小恩張大嘴巴看著。",
+   "act": "捷運第一次出場：一列銀白色的捷運列車，車頭有一條藍色的線，車頭燈像一雙溫柔的眼睛，正在進站。小恩和媽媽站在黃線後面排隊，等車上的人先下來，小恩張大嘴巴看著。",
    "lines": [
     {
      "who": "旁白",
-     "text": "下了公車，他們走進捷運站，到地底下搭車。",
-     "en": "They get off the bus, walk into the metro station, and go down under the ground."
+     "text": "下了公車，他們走到地底下搭捷運。",
+     "en": "They get off the bus and go down under the ground to ride the metro."
     },
     {
      "who": "捷運",
      "tag": "gentle",
-     "text": "你好，我是捷運。",
-     "en": "Hello. I am the metro."
+     "text": "叮咚，列車進站了，請站在黃線後面。",
+     "en": "Ding-dong. The train is arriving. Please stand behind the yellow line."
     },
     {
      "who": "捷運",
-     "tag": "proud",
-     "text": "我在地底下跑，不怕塞車，每次都準時到！",
-     "en": "I run under the ground, so I never get stuck in traffic. I am always on time!"
+     "text": "先讓車上的人下車，再上車喔。",
+     "en": "Let people get off first, and then get on."
     },
     {
      "who": "小男孩",
@@ -168,8 +177,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "捷運好快好穩，媽媽坐著，打起瞌睡來了。",
-     "en": "The metro is fast and smooth, and Mom starts to doze off."
+     "text": "捷運好穩，媽媽打起瞌睡來了。",
+     "en": "The metro rides so smoothly that Mom starts to doze off."
     },
     {
      "who": "旁白",
@@ -178,8 +187,8 @@
     },
     {
      "who": "捷運",
-     "text": "下一站，火車站。",
-     "en": "Next stop, Train Station."
+     "text": "叮咚，下一站，火車站。",
+     "en": "Ding-dong. Next stop, Train Station."
     },
     {
      "who": "小男孩",
@@ -191,40 +200,41 @@
   },
   {
    "scene": "同一個捷運車廂，車子慢慢停進火車站。",
-   "act": "小恩搖著媽媽的手臂；媽媽張開眼睛，先嚇一跳、又笑著摸小恩的頭；車停好、門打開，兩人牽著手，慢慢走出車廂。",
+   "act": "車子停進火車站，小恩搖著媽媽的手臂；媽媽張開眼睛，先嚇一跳、又笑著摸小恩的頭；車門打開，兩人牽著手，走出車廂。",
    "lines": [
+    {
+     "who": "捷運",
+     "tag": "gentle",
+     "text": "叮咚，火車站到了。",
+     "en": "Ding-dong. Train Station."
+    },
     {
      "who": "小男孩",
      "tag": "excited",
-     "text": "媽媽，快起來！下一站要下車了！",
-     "en": "Mom, wake up! We get off at the next stop!"
+     "text": "媽媽，快起來！我們要下車了！",
+     "en": "Mom, wake up! We have to get off!"
     },
     {
      "who": "旁白",
-     "text": "媽媽張開眼睛，嚇了一跳，又笑了。",
-     "en": "Mom opens her eyes with a start, and then she laughs."
+     "text": "媽媽張開眼睛，嚇了一跳。",
+     "en": "Mom opens her eyes with a start."
+    },
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "好險！謝謝你叫醒我，小恩好厲害！",
+     "en": "Phew! Thank you for waking me up, Max. You're amazing!"
     },
     {
      "who": "旁白",
-     "text": "好險，沒有坐過頭！",
-     "en": "Phew, they did not miss their stop!"
-    },
-    {
-     "who": "旁白",
-     "text": "車停好，門打開，他們牽著手，一起走出去。",
-     "en": "The train stops, the doors open, and they walk out hand in hand."
-    },
-    {
-     "who": "捷運",
-     "tag": "happy",
-     "text": "你有注意聽，好棒喔！",
-     "en": "You were listening carefully. Great job!"
+     "text": "門打開，他們牽著手，一起走出去。",
+     "en": "The doors open, and they walk out hand in hand."
     }
    ]
   },
   {
    "scene": "火車站的月台，一列紅色的火車停在旁邊，有好多節車廂。",
-   "act": "火車第一次出場：紅色的老火車，車頭有白色的長鬍子花紋，車頭燈像一雙笑咪咪的眼睛，煙囪冒出一點白煙。小恩牽著媽媽，仰頭看著火車頭。",
+   "act": "火車第一次出場：紅色的電聯車，車頂有接電線的支架，車頭有白色的長鬍子花紋，車頭燈像一雙笑咪咪的眼睛，後面接著好多節車廂。小恩牽著媽媽，仰頭看著長長的火車。",
    "lines": [
     {
      "who": "旁白",
@@ -233,15 +243,21 @@
     },
     {
      "who": "火車",
-     "tag": "gentle",
-     "text": "嗚！小朋友，我是火車。",
-     "en": "Toot! Hello, little one. I'm the train."
+     "tag": "happy",
+     "text": "嗚！要出遠門的小朋友，請上車囉！",
+     "en": "Toot! Little travelers going far away, all aboard!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "火車，你好長喔！",
+     "en": "Wow, Train, you're so long!"
     },
     {
      "who": "火車",
-     "tag": "proud",
-     "text": "我有好多節車廂，能跑到好遠、好遠的地方！",
-     "en": "I have lots and lots of cars, and I can go far, far away!"
+     "tag": "laughing",
+     "text": "呵，我有好多節車廂呢！",
+     "en": "Ho ho! I have lots and lots of train cars!"
     },
     {
      "who": "小男孩",
@@ -291,8 +307,8 @@
     {
      "who": "飛機",
      "tag": "excited",
-     "text": "嗨！我是飛機，我能飛到雲上面！",
-     "en": "Hi! I'm a plane. I can fly above the clouds!"
+     "text": "嗨！我要飛到雲上面去囉！",
+     "en": "Hi there! I'm off to fly above the clouds!"
     },
     {
      "who": "小男孩",
@@ -327,23 +343,35 @@
      "who": "旁白",
      "text": "外婆一把抱住小恩，親了他一下。",
      "en": "Grandma scoops Max up in a big hug and gives him a kiss."
+    },
+    {
+     "who": "外婆",
+     "tag": "happy",
+     "text": "哇，坐了這麼多車，好勇敢喔！",
+     "en": "Wow, all those rides! What a brave boy!"
     }
    ]
   },
   {
    "scene": "晚上，外婆家的客廳，桌上有一盤水果，窗外是星星。",
-   "act": "小恩坐在外婆腿上，扳著手指頭說今天坐過的車；地上擺著他的玩具公車、玩具火車和一架紙飛機；外婆和媽媽笑咪咪地聽。",
+   "act": "小恩把外婆家客廳的小椅子排成一列當火車，坐在最前面當火車頭，回頭對外婆招手；外婆笑著坐上後面的椅子，扶著小恩的肩膀；媽媽坐在沙發上笑咪咪地看；地上擺著他的玩具公車和一架紙飛機。",
    "lines": [
     {
-     "who": "小男孩",
-     "tag": "proud",
-     "text": "公車停好多站，捷運在地底下跑，火車跑好遠！",
-     "en": "The bus stops at lots of stops, the metro runs under the ground, and the train goes really far!"
+     "who": "旁白",
+     "text": "晚上，小恩跟外婆玩坐車的遊戲。",
+     "en": "That night, Max plays a riding game with Grandma."
     },
     {
      "who": "小男孩",
-     "text": "每一台車，都好厲害！",
-     "en": "Every single one is amazing!"
+     "tag": "excited",
+     "text": "火車來了，嗚！外婆，請上車！",
+     "en": "Here comes the train, toot! Grandma, all aboard!"
+    },
+    {
+     "who": "外婆",
+     "tag": "laughing",
+     "text": "好，我們出發囉！",
+     "en": "Okay! Off we go!"
     },
     {
      "who": "小男孩",

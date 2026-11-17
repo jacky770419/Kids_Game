@@ -2,7 +2,7 @@
  "id": "elephant-touch",
  "title": "蒙眼摸大象",
  "title_en": "The Friends and the Elephant",
- "size": "短",
+ "size": "中",
  "roles": {
   "小凱": "五六歲的小男孩，聲音清亮、急性子，第一個搶著猜，很有把握。",
   "小玲": "五六歲的小女孩，聲音清脆、愛笑，大家吵起來時溫柔地出主意。",
@@ -35,12 +35,12 @@
  "polyphones": [
   {
    "char": "蒙",
-   "where": "書名『蒙眼摸大象』，第1頁『蒙眼遊戲』『蒙起來』，第2頁『蒙上眼睛』，第8頁『蒙眼睛』",
+   "where": "書名『蒙眼摸大象』，第1頁『蒙眼遊戲』『蒙起來』，第2頁『蒙上眼睛』，第12頁『蒙眼睛』",
    "read": "méng"
   },
   {
    "char": "噴",
-   "where": "第5頁『噴出』『噴氣』",
+   "where": "第5頁『噴出』『噴氣』，第8頁『噴氣』",
    "read": "pēn"
   }
  ],
@@ -105,6 +105,11 @@
    "lines": [
     {
      "who": "旁白",
+     "text": "摸一摸，猜一猜，小凱第一個！",
+     "en": "Touch it, guess it. Kai goes first!"
+    },
+    {
+     "who": "旁白",
      "text": "小凱摸到一個好粗、好硬的東西。",
      "en": "Kai touches something thick and hard."
     },
@@ -126,6 +131,11 @@
    "scene": "草地中間。",
    "act": "小玲蒙著粉紅色眼罩，兩手摸著大象又大又薄的耳朵；大象耳朵輕輕一搧，小玲的辮子被風吹得飛起來，她咯咯笑。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "摸一摸，猜一猜，輪到小玲了！",
+     "en": "Touch it, guess it. Now it's Lena's turn!"
+    },
     {
      "who": "旁白",
      "text": "小玲摸到一片好大、好薄的東西。",
@@ -150,6 +160,11 @@
    "lines": [
     {
      "who": "旁白",
+     "text": "摸一摸，猜一猜，輪到小兔了！",
+     "en": "Touch it, guess it. Now it's Bunny's turn!"
+    },
+    {
+     "who": "旁白",
      "text": "小兔摸到一條會彎來彎去的東西。",
      "en": "Bunny touches something that bends and wiggles."
     },
@@ -168,12 +183,23 @@
   },
   {
    "scene": "草地中間，大象身後。",
-   "act": "小猴蒙著紅色眼罩，站在大象後面，兩手抓著大象細細的尾巴，尾巴左右搖，小猴抬起下巴，一臉得意。",
+   "act": "小猴蒙著紅色眼罩，站在大象後面，兩手抓著大象細細的尾巴，尾巴左右搖，小猴抬起下巴，一臉得意。大象回頭偷看，用鼻子遮著嘴巴偷笑。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "摸一摸，猜一猜，輪到小猴了！",
+     "en": "Touch it, guess it. Now it's Monkey's turn!"
+    },
     {
      "who": "旁白",
      "text": "小猴抓到一條好細的東西，搖來搖去。",
      "en": "Monkey grabs something thin that swings back and forth."
+    },
+    {
+     "who": "大象",
+     "tag": "whispering",
+     "text": "嘻，輕一點喔。",
+     "en": "Hee hee, gently, please."
     },
     {
      "who": "小猴",
@@ -185,7 +211,7 @@
   },
   {
    "scene": "草地中間，大象站在四個朋友中間。",
-   "act": "四個朋友還蒙著眼罩，各自站在大象身邊不同的地方，一起張大嘴巴喊：小凱抱著腿、小玲摸著耳朵、小兔抱著鼻子、小猴抓著尾巴，四張臉朝著不同方向。大象站在中間憋著笑，眼睛瞇成一條線。",
+   "act": "四個朋友還蒙著眼罩，各自站在大象身邊不同的地方，一起張大嘴巴喊：小凱抱著腿、小玲摸著耳朵、小兔抱著鼻子、小猴抓著尾巴，四張臉朝著不同方向，你一句我一句。大象站在中間憋著笑，眼睛瞇成一條線。",
    "lines": [
     {
      "who": "小凱",
@@ -210,20 +236,54 @@
     },
     {
      "who": "旁白",
-     "text": "大家吵起來了。小朋友，你猜，這是什麼呢？",
-     "en": "Everyone starts to argue. Can you guess what it is?"
+     "text": "大家你一句，我一句，吵起來了。",
+     "en": "Everyone talks at once, and they start to argue."
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，大象站著不動。",
+   "act": "小玲舉起雙手要大家安靜。四個朋友還蒙著眼罩，圍著大象坐成一圈，扳著手指頭數：柱子、扇子、水管、繩子。大象憋不住，用鼻子遮著嘴巴，肚子一抖一抖地偷笑；小兔的長耳朵豎起來，轉頭朝向笑聲。",
+   "lines": [
+    {
+     "who": "小玲",
+     "tag": "gentle",
+     "text": "別吵了，我們把摸到的，一起想一想。",
+     "en": "Stop arguing. Let's think about everything we touched."
+    },
+    {
+     "who": "旁白",
+     "text": "有粗柱子、大扇子、會噴氣的水管，和細繩子。",
+     "en": "A thick pillar, a big fan, a hose that puffs air, and a thin rope."
+    },
+    {
+     "who": "大象",
+     "tag": "laughing",
+     "text": "呵，呵，呵。",
+     "en": "Ho, ho, ho."
+    },
+    {
+     "who": "小兔",
+     "tag": "surprised",
+     "text": "咦？這個東西，會笑耶！",
+     "en": "Huh? This thing can laugh!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，你猜，這是什麼呢？",
+     "en": "Can you guess what it is?"
     }
    ]
   },
   {
    "scene": "草地中間，陽光燦爛。",
-   "act": "小玲先把粉紅色眼罩拉下來，大家跟著一起拿下眼罩拿在手上，抬頭看著大象，嘴巴張得好大。大象舉起鼻子，笑得好開心，最後用鼻子捲起小猴的紅色布條，蓋在自己眼睛上，大家坐在旁邊的草地上哈哈大笑。",
+   "act": "小猴第一個把紅色眼罩往上一推，大家跟著一起拿下眼罩拿在手上，抬頭看著大象，嘴巴張得好大。大象舉起鼻子，笑咪咪地跟大家打招呼。",
    "lines": [
     {
-     "who": "小玲",
-     "tag": "gentle",
-     "text": "別吵了，一起拿下眼罩看吧！一、二、三！",
-     "en": "Stop arguing! Let's take off our blindfolds and look. One, two, three!"
+     "who": "小猴",
+     "tag": "excited",
+     "text": "大家一起拿下眼罩！一、二、三！",
+     "en": "Everybody, take off your blindfolds! One, two, three!"
     },
     {
      "who": "小兔",
@@ -234,9 +294,76 @@
     {
      "who": "大象",
      "tag": "laughing",
-     "text": "柱子是腿，扇子是耳朵，水管是鼻子，繩子是尾巴！",
-     "en": "The pillar is my leg, the fan is my ear, the hose is my trunk, and the rope is my tail!"
+     "text": "嗨，大家好！我也來玩囉！",
+     "en": "Hi, everyone! I joined the game too!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，陽光燦爛。",
+   "act": "上半：大象抬起一隻粗粗的前腿，再用力踩下去，小凱指著腿大笑。下半：大象搧動大耳朵，風把小玲的辮子吹得飛起來，小玲指著耳朵咯咯笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象抬起一隻腳，用力一踩，咚！",
+     "en": "The elephant lifts one foot and stomps. Thump!"
     },
+    {
+     "who": "大象",
+     "text": "柱子是什麼呢？",
+     "en": "So, what's the pillar?"
+    },
+    {
+     "who": "小凱",
+     "tag": "excited",
+     "text": "柱子是腿！",
+     "en": "The pillar is your leg!"
+    },
+    {
+     "who": "旁白",
+     "text": "大象搧一搧耳朵，呼！",
+     "en": "He flaps his ears. Whoosh!"
+    },
+    {
+     "who": "小玲",
+     "tag": "laughing",
+     "text": "扇子是耳朵！",
+     "en": "The fan is your ear!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，陽光燦爛。",
+   "act": "上半：大象舉起鼻子噴一口氣，小兔的長耳朵被吹得往後飛，小兔指著鼻子笑。下半：大象把尾巴左右搖，小猴跳起來指著尾巴，紅色棒球帽歪到一邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象舉起鼻子，噗！",
+     "en": "He lifts his trunk. Puff!"
+    },
+    {
+     "who": "小兔",
+     "tag": "laughing",
+     "text": "水管是鼻子！",
+     "en": "The hose is your trunk!"
+    },
+    {
+     "who": "旁白",
+     "text": "大象搖一搖尾巴。",
+     "en": "He swings his tail."
+    },
+    {
+     "who": "小猴",
+     "tag": "laughing",
+     "text": "繩子是尾巴！",
+     "en": "The rope is your tail!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，陽光燦爛，四條彩色布條散在草地上。",
+   "act": "上半：四個朋友手牽手圍著大象，開心地笑。下半：大象用鼻子捲起小猴的紅色眼罩，蓋在自己眼睛上，伸長鼻子往前摸；四個朋友坐在旁邊的草地上哈哈大笑，小猴拍著手。",
+   "lines": [
     {
      "who": "小凱",
      "tag": "happy",
@@ -248,6 +375,17 @@
      "tag": "laughing",
      "text": "下次，換我蒙眼睛摸你們！",
      "en": "Next time, it's my turn to wear a blindfold and touch you!"
+    },
+    {
+     "who": "旁白",
+     "text": "大象用鼻子捲起小猴的眼罩，蓋在眼睛上。",
+     "en": "The elephant picks up Monkey's blindfold with his trunk and puts it over his eyes."
+    },
+    {
+     "who": "小猴",
+     "tag": "laughing",
+     "text": "摸一摸，猜一猜，換你猜囉！",
+     "en": "Touch it, guess it. Your turn to guess!"
     }
    ]
   }

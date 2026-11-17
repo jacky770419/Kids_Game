@@ -24,6 +24,11 @@
    "read": "zuān"
   },
   {
+   "char": "露",
+   "where": "第3頁『露出』",
+   "read": "lù"
+  },
+  {
    "char": "會",
    "where": "第5頁『會不會』",
    "read": "huì"
@@ -47,7 +52,7 @@
     {
      "who": "旁白",
      "text": "窗外忽然一亮，接著，轟隆！",
-     "en": "Suddenly, the window flashes bright. Then, rumble, BOOM!"
+     "en": "Suddenly, a bright flash lights up the window. Then, rumble, BOOM!"
     },
     {
      "who": "小女孩",
@@ -64,17 +69,17 @@
   },
   {
    "scene": "同一間臥室，小夜燈亮著。",
-   "act": "奶奶第一次出場：白頭髮在腦後盤成一個髮髻，戴圓眼鏡，穿紫色的毛衣。奶奶坐在床邊，一手輕輕放在那顆被子圓球上，笑咪咪的；被子圓球縮得更緊。",
+   "act": "奶奶第一次出場：白頭髮在腦後盤成一個髮髻，戴圓眼鏡，穿紫色的毛衣。奶奶把一杯冒著熱氣的熱牛奶放在床邊小桌上，坐在床邊，一手輕輕放在那顆被子圓球上，笑咪咪的；被子圓球縮得更緊。",
    "lines": [
     {
      "who": "旁白",
-     "text": "奶奶來了，輕輕摸著那顆圓球。",
-     "en": "Grandma comes in and gently pats the little ball."
+     "text": "奶奶端來熱牛奶，輕輕摸著圓球。",
+     "en": "Grandma brings in some warm milk and gently pats the little ball."
     },
     {
      "who": "奶奶",
      "tag": "gentle",
-     "text": "我們來玩一個遊戲，好不好？",
+     "text": "我們來玩遊戲，好不好？",
      "en": "Shall we play a game?"
     },
     {
@@ -97,17 +102,17 @@
    "lines": [
     {
      "who": "奶奶",
-     "text": "光比聲音快，所以先看到閃電，再聽到轟隆。",
-     "en": "Light is faster than sound, so first we see the lightning, then we hear the boom."
+     "text": "閃電跑得比轟隆快，所以先看到閃電，再聽到轟隆。",
+     "en": "Lightning runs faster than thunder, so first we see the lightning, then we hear the boom."
     },
     {
      "who": "奶奶",
-     "text": "閃電一亮，就一起慢慢算，算到轟隆。",
-     "en": "When the lightning flashes, we count slowly together until the boom."
+     "text": "閃電一亮，就一起算到轟隆。",
+     "en": "When the lightning flashes, we count together until the boom."
     },
     {
      "who": "旁白",
-     "text": "被子裡，露出了一隻眼睛。",
+     "text": "被子裡露出一隻眼睛。",
      "en": "From under the blanket, one eye peeks out."
     }
    ]
@@ -150,8 +155,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "窗外又一亮，才剛算到一，轟隆！好大聲！",
-     "en": "Another flash! They only get to one, and BOOM! So loud!"
+     "text": "窗外又一亮，才算到一，轟隆！",
+     "en": "Another flash! They only get to one, and BOOM!"
     },
     {
      "who": "旁白",
@@ -174,7 +179,7 @@
   },
   {
    "scene": "同一間臥室，奶奶抱著被子圓球。",
-   "act": "被子圓球旁邊畫一個「咕嚕」的小字；奶奶歪著頭、假裝很驚訝地把耳朵貼在被子上；下一格小琪掀開被子笑出來，摸著肚子，臉紅紅的。",
+   "act": "被子圓球旁邊畫一個「咕嚕」的小字；奶奶歪著頭、假裝很驚訝地把耳朵貼在被子上；下一格小琪掀開被子笑出來，摸著肚子，臉紅紅的；奶奶笑著把床邊那杯熱牛奶端給她。",
    "lines": [
     {
      "who": "旁白",
@@ -190,20 +195,26 @@
     {
      "who": "小女孩",
      "tag": "laughing",
-     "text": "不是啦，是我肚子餓了！",
+     "text": "不是啦，我肚子餓了！",
      "en": "No, Grandma! That's my tummy. I'm hungry!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "喝杯熱牛奶，咕嚕就跑走了。",
+     "en": "Drink some warm milk, and the grumble will run away."
     }
    ]
   },
   {
-   "scene": "同一間臥室，床邊小桌上放著一杯熱牛奶；窗外遠遠的天邊一道小閃電。",
-   "act": "小琪坐在床上，一手抱小熊、一手扳著手指頭算，嘴巴張得大大的；奶奶在旁邊笑咪咪地看著，沒有出聲。",
+   "scene": "同一間臥室，床邊小桌上放著一個喝光的牛奶杯；窗外遠遠的天邊一道小閃電。",
+   "act": "小琪剛喝完熱牛奶，嘴邊一圈白色的牛奶鬍子，坐在床上，一手抱小熊、一手扳著手指頭算，嘴巴張得大大的；奶奶在旁邊笑咪咪地看著，沒有出聲。",
    "lines": [
     {
      "who": "小女孩",
      "tag": "proud",
-     "text": "奶奶，下一次，我自己算！",
-     "en": "Grandma, next time, I will count by myself!"
+     "text": "咕嚕跑走了！下一次，我自己算！",
+     "en": "The grumble ran away! Next time, I will count by myself!"
     },
     {
      "who": "小女孩",
@@ -229,8 +240,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "雨變小了，雷聲越來越遠。",
-     "en": "The rain gets lighter, and the thunder moves farther away."
+     "text": "雨變小了。",
+     "en": "The rain gets lighter."
     },
     {
      "who": "小女孩",

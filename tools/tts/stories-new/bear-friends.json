@@ -1,0 +1,254 @@
+{
+ "id": "bear-friends",
+ "title": "兩個朋友遇到熊",
+ "title_en": "Two Friends and a Bear",
+ "size": "短",
+ "roles": {
+  "小明": "十歲左右的男孩，個性溫和老實，說話清楚，被丟下時委屈難過，最後願意原諒朋友。",
+  "小華": "小明的好朋友，活潑愛說大話的男孩，聲音輕快，跑掉後很不好意思，真心道歉。",
+  "大熊": "山裡的大熊，低沉沙啞的大嗓門，可是一點也不兇，說話慢吞吞、好笑又有點睿智。"
+ },
+ "cast": {
+  "小明": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "小華": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "大熊": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "散",
+   "where": "第1頁『散步』",
+   "read": "sàn"
+  },
+  {
+   "char": "嚇",
+   "where": "第2頁『嚇到』",
+   "read": "xià"
+  },
+  {
+   "char": "臭",
+   "where": "第3頁『好臭』",
+   "read": "chòu"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『說了什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第6頁『沒有說話』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "山上的小路，兩旁是高大的樹和綠色的草叢，路邊有一顆好大的灰色石頭；遠處山腳下看得到紅屋頂的小村子。",
+   "act": "小明第一次出場：十歲左右的男孩，短短的黑頭髮，戴一頂黃色鴨舌帽，穿藍色T恤、咖啡色短褲和白色球鞋。小華第一次出場：同年紀的男孩，頭髮翹翹的，穿紅色T恤、深藍色長褲，背一個綠色小背包。小華拍拍胸口，一臉神氣；小明笑著點頭，兩個人勾著手臂走在小路上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小明和小華是好朋友，一起去山上散步。",
+     "en": "Milo and Hugo were best friends. One day, they went for a walk up the mountain."
+    },
+    {
+     "who": "小華",
+     "tag": "proud",
+     "text": "有危險的話，我一定保護你！",
+     "en": "If there's any danger, I'll protect you!"
+    },
+    {
+     "who": "旁白",
+     "text": "小明笑著點頭。",
+     "en": "Milo smiled and nodded."
+    },
+    {
+     "who": "小明",
+     "tag": "happy",
+     "text": "好朋友，要一起！",
+     "en": "Best friends stick together!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條山路，路邊的草叢在搖晃，大石頭就在旁邊。",
+   "act": "大熊第一次出場：一隻胖胖的大黑熊，胸口有一塊白色的V字形毛，圓圓的耳朵，圓圓的肚子，表情呆呆的、一點也不兇，從草叢裡探出頭來。小華已經跑到大石頭後面，只露出半個頭偷看；小明嚇得趴在地上，雙手抱著頭，眼睛緊緊閉著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "忽然，草叢裡沙沙響，走出一隻大熊！",
+     "en": "Suddenly, the bushes rustled, and out came a big bear!"
+    },
+    {
+     "who": "旁白",
+     "text": "小華拔腿就跑，自己躲到大石頭後面。",
+     "en": "Hugo ran off and hid behind a big rock, all by himself."
+    },
+    {
+     "who": "旁白",
+     "text": "小明嚇到腿都軟了，趴在地上不敢動。",
+     "en": "Milo was so scared his legs went wobbly. He lay flat on the ground and didn't move."
+    }
+   ]
+  },
+  {
+   "scene": "同一條山路。",
+   "act": "大熊彎下身子，用大鼻子湊近小明的球鞋，鼻子皺成一團；下一格大熊仰起頭打一個好大的噴嚏，全身的毛都抖起來。小明趴著不動，眼睛閉緊，額頭冒汗。大石頭後面，小華遮著眼睛偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大熊走過來，聞了他的頭髮，又聞了鞋子。",
+     "en": "The bear came over. It sniffed his hair, and then it sniffed his shoes."
+    },
+    {
+     "who": "小明",
+     "tag": "whispering",
+     "text": "不要動，不要動。",
+     "en": "Don't move. Don't move."
+    },
+    {
+     "who": "大熊",
+     "tag": "surprised",
+     "text": "哇，這雙鞋子好臭喔！",
+     "en": "Whoa, these shoes are stinky!"
+    },
+    {
+     "who": "旁白",
+     "text": "大熊打了一個好大的噴嚏！",
+     "en": "And the bear let out a giant sneeze!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條山路，陽光從樹葉間照下來。",
+   "act": "大熊把大嘴巴湊到小明的耳朵旁邊，好像在說悄悄話；小明睜開一隻眼睛，一臉驚訝。下一格，大熊搖著大屁股，慢吞吞地走回森林。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "接著，大熊把嘴巴靠在小明的耳朵旁邊。",
+     "en": "Then the bear leaned close to Milo's ear."
+    },
+    {
+     "who": "大熊",
+     "tag": "whispering",
+     "text": "好朋友，要一起喔。",
+     "en": "Best friends stick together, you know."
+    },
+    {
+     "who": "旁白",
+     "text": "說完，大熊搖著大屁股，走回森林了。",
+     "en": "Then it waddled back into the forest, wiggling its big bottom."
+    }
+   ]
+  },
+  {
+   "scene": "同一條山路，大熊已經不見了。",
+   "act": "小華從大石頭後面跑出來，蹲在小明旁邊，好奇地睜大眼睛；小明坐在地上，低著頭，拍掉衣服上的草。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小華從石頭後面跑出來。",
+     "en": "Hugo came running out from behind the rock."
+    },
+    {
+     "who": "小華",
+     "tag": "curious",
+     "text": "熊在你耳邊，說了什麼？",
+     "en": "What did the bear whisper to you?"
+    },
+    {
+     "who": "旁白",
+     "text": "小明低著頭說：",
+     "en": "Milo looked down and said,"
+    },
+    {
+     "who": "小明",
+     "tag": "sad",
+     "text": "熊說：「好朋友，要一起。」",
+     "en": "The bear said, \"Best friends stick together.\""
+    }
+   ]
+  },
+  {
+   "scene": "同一條山路。",
+   "act": "小華的臉紅紅的，雙手放在背後，低頭道歉；小明轉過身去，抱著膝蓋，嘴巴扁扁的，還在難過。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小華的臉一下子紅了。",
+     "en": "Hugo's face turned red."
+    },
+    {
+     "who": "小華",
+     "tag": "sad",
+     "text": "對不起，我太害怕，就自己跑掉了。",
+     "en": "I'm sorry. I got so scared that I ran off by myself."
+    },
+    {
+     "who": "旁白",
+     "text": "小明沒有說話。",
+     "en": "Milo didn't say anything."
+    },
+    {
+     "who": "小明",
+     "tag": "sad",
+     "text": "你說要保護我，可是你丟下我。",
+     "en": "You said you would protect me. But you left me behind."
+    }
+   ]
+  },
+  {
+   "scene": "同一條山路，太陽往西邊移，樹影變長。",
+   "act": "小華伸出手，認真地看著小明；小明想了一想，轉回來，伸出小指頭；兩個人的小指頭勾在一起，都笑了。",
+   "lines": [
+    {
+     "who": "小華",
+     "tag": "gentle",
+     "text": "下次，我們手牽手，一起走開，一起找大人。",
+     "en": "Next time, let's hold hands, get away together, and find a grown-up together."
+    },
+    {
+     "who": "旁白",
+     "text": "小明想了想，伸出小指頭。",
+     "en": "Milo thought about it, then held out his pinky."
+    },
+    {
+     "who": "小明",
+     "tag": "happy",
+     "text": "好，我們說好了！",
+     "en": "Okay. It's a promise!"
+    }
+   ]
+  },
+  {
+   "scene": "山腳下的小村子，紅屋頂的房子，一位戴斗笠的爺爺和一位穿圍裙的阿姨站在村口。",
+   "act": "小明和小華手牽手走下山，指著山上，跟村口的大人說話；大人點頭，彎腰摸摸他們的頭，豎起大拇指。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們手牽手下山，去告訴村子裡的大人。",
+     "en": "They walked down the mountain hand in hand and told the grown-ups in the village."
+    },
+    {
+     "who": "旁白",
+     "text": "大人說：「看到野生動物，要離遠一點，你們做對了！」",
+     "en": "The grown-ups said, \"When you see a wild animal, stay far away. You did the right thing!\""
+    },
+    {
+     "who": "小華",
+     "tag": "happy",
+     "text": "好朋友，要一起！",
+     "en": "Best friends stick together!"
+    }
+   ]
+  }
+ ]
+}

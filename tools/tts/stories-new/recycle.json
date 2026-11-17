@@ -45,19 +45,24 @@
   },
   {
    "char": "倒",
-   "where": "第5、8頁『倒進廚餘桶』",
+   "where": "第5頁『倒進廚餘桶』、第8頁『倒進桶子』",
    "read": "dào"
+  },
+  {
+   "char": "乾",
+   "where": "第3頁『沖乾淨』",
+   "read": "gān"
   }
  ],
  "pages": [
   {
    "scene": "晚上，小薇家的客廳，窗外是一條小巷子，路燈亮著；遠遠的巷子口有一台黃色垃圾車的燈光。",
-   "act": "小薇第一次出場：六歲的女孩，齊瀏海的短頭髮，穿粉紅色上衣和白色長褲。爸爸第一次出場：戴黑框眼鏡、穿灰色上衣和藍色短褲的爸爸。小薇趴在窗邊豎起耳朵；爸爸從沙發上跳起來，抓抓頭。",
+   "act": "小薇第一次出場：六歲的女孩，齊瀏海的短頭髮，穿粉紅色上衣和白色長褲。爸爸第一次出場：戴黑框眼鏡、穿灰色上衣和藍色短褲的爸爸。小薇趴在窗邊豎起耳朵；爸爸從沙發上跳起來，抓抓頭；窗外巷子裡，鄰居們提著垃圾袋走出家門。",
    "lines": [
     {
      "who": "旁白",
-     "text": "晚上，巷子口傳來一陣音樂。",
-     "en": "One evening, music drifts in from the end of the lane."
+     "text": "晚上，小薇聽到巷子口的音樂。",
+     "en": "One evening, Emma hears music drifting in from the end of the lane."
     },
     {
      "who": "小薇",
@@ -73,13 +78,8 @@
     },
     {
      "who": "旁白",
-     "text": "在台灣，垃圾車一邊開，一邊放音樂。",
-     "en": "In Taiwan, garbage trucks play music as they drive along."
-    },
-    {
-     "who": "旁白",
-     "text": "聽到音樂，大家就提著垃圾出來等。",
-     "en": "When people hear it, they carry their trash outside to wait."
+     "text": "巷子裡的鄰居，都提著垃圾出來等了。",
+     "en": "All the neighbors are already carrying their trash outside to wait."
     }
    ]
   },
@@ -108,7 +108,7 @@
   },
   {
    "scene": "小薇家的廚房，水槽旁邊。",
-   "act": "寶特瓶站在流理台上，挺起胸膛，得意地比手畫腳；畫面上有兩個想像泡泡，一個是新的寶特瓶，一個是一件藍色的新衣服。小薇蹲著，好奇地看著它。後半頁小薇把寶特瓶用水沖乾淨，放進透明的回收袋。",
+   "act": "寶特瓶站在流理台上，挺起胸膛，得意地比手畫腳；畫面上有兩個想像泡泡，一個是新的寶特瓶，一個是一件藍色的新衣服。小薇蹲著，好奇地看著它。後半頁小薇把寶特瓶用水沖乾淨，放進透明的回收袋，舉起一根手指笑著念口訣。",
    "lines": [
     {
      "who": "寶特瓶",
@@ -132,6 +132,12 @@
      "who": "寶特瓶",
      "text": "先把我沖乾淨，再放進回收袋喔。",
      "en": "Just rinse me out first, then put me in the recycling bag."
+    },
+    {
+     "who": "小薇",
+     "tag": "happy",
+     "text": "分一分，變寶貝！",
+     "en": "Sort it, sort it, trash to treasure!"
     }
    ]
   },
@@ -191,8 +197,13 @@
     },
     {
      "who": "爸爸",
-     "text": "有了肥料，菜園的青菜就能變高變壯。",
-     "en": "With compost, vegetables in the garden can grow big and strong."
+     "text": "有了肥料，青菜就能變高變壯。",
+     "en": "With compost, vegetables can grow big and strong."
+    },
+    {
+     "who": "小薇",
+     "text": "分一分，變寶貝！",
+     "en": "Sort it, sort it, trash to treasure!"
     }
    ]
   },
@@ -242,28 +253,30 @@
      "who": "爸爸",
      "tag": "happy",
      "text": "謝謝你，辛苦了！",
-     "en": "Thank you. You work so hard!"
+     "en": "Thank you so much for all your hard work!"
     }
    ]
   },
   {
    "scene": "巷子裡，黃色的垃圾車、白色的資源回收車，垃圾車旁邊掛著一個大廚餘桶。",
-   "act": "清潔隊員用手比給小薇看：一般垃圾往黃色垃圾車、廚餘往旁邊的大桶子、寶特瓶和紙箱往後面的白色回收車。爸爸把綠色垃圾袋丟進垃圾車，再牽著抱著回收袋的小薇，一起走到白色回收車後面。",
+   "act": "清潔隊員彎腰問小薇，小薇指著後面的白色回收車大聲回答；清潔隊員豎起大拇指，再用手比：一般垃圾往黃色垃圾車、廚餘往旁邊的大桶子。爸爸把綠色垃圾袋丟進垃圾車、把廚餘倒進旁邊的大廚餘桶，再牽著抱著回收袋的小薇，一起走到白色回收車後面。",
    "lines": [
     {
      "who": "清潔隊員",
-     "text": "一般垃圾，丟進黃色的垃圾車。",
-     "en": "Regular trash goes into the yellow garbage truck."
+     "tag": "happy",
+     "text": "小妹妹，寶特瓶要放哪一台車？",
+     "en": "Little one, which truck do the bottles go in?"
+    },
+    {
+     "who": "小薇",
+     "tag": "excited",
+     "text": "後面的白色回收車！",
+     "en": "The white recycling truck in the back!"
     },
     {
      "who": "清潔隊員",
-     "text": "廚餘，倒進旁邊的廚餘桶。",
-     "en": "Food scraps go into the bin on the side."
-    },
-    {
-     "who": "清潔隊員",
-     "text": "寶特瓶和紙箱，放進後面的回收車。",
-     "en": "Bottles and boxes go into the recycling truck behind."
+     "text": "答對了！垃圾丟黃色的車，廚餘倒進桶子。",
+     "en": "That's right! Trash goes in the yellow truck, and food scraps go in the bin."
     },
     {
      "who": "旁白",
@@ -303,12 +316,12 @@
   },
   {
    "scene": "回家的巷子，路燈亮著，天上有幾顆星星；遠遠的垃圾車轉進下一條巷子。",
-   "act": "爸爸牽著小薇的手走回家，兩個人手上都空空的；小薇一邊走一邊蹦蹦跳跳，爸爸低頭笑著看她。",
+   "act": "爸爸牽著小薇的手走回家，兩個人手上都空空的；小薇一邊走一邊蹦蹦跳跳、念著口訣，爸爸低頭笑著看她。",
    "lines": [
     {
      "who": "旁白",
-     "text": "音樂越來越小聲，垃圾車開到下一條巷子了。",
-     "en": "The music grows softer as the truck moves on to the next lane."
+     "text": "音樂越來越小聲，垃圾車走遠了。",
+     "en": "The music fades as the truck rolls far away."
     },
     {
      "who": "小薇",
@@ -321,17 +334,22 @@
      "tag": "proud",
      "text": "好啊，妳是我們家的分類小幫手！",
      "en": "You got it. You're our family's sorting helper!"
+    },
+    {
+     "who": "小薇",
+     "text": "分一分，變寶貝！",
+     "en": "Sort it, sort it, trash to treasure!"
     }
    ]
   },
   {
-   "scene": "幾天後的早上，小薇的房間，書桌靠著窗戶，陽光照進來。",
+   "scene": "過了一陣子的一個早上，小薇的房間，書桌靠著窗戶，陽光照進來。",
    "act": "爸爸把一本新的圖畫本遞給小薇；小薇抱著圖畫本，盯著封面想事情。後半頁小薇趴在書桌上畫畫，第一頁畫著黃色垃圾車、寶特瓶和紙箱；圖畫本的封面上，好像有一對半瞇的眼睛在對她眨眼。",
    "lines": [
     {
      "who": "旁白",
-     "text": "過了幾天，爸爸買了一本新的圖畫本給小薇。",
-     "en": "A few days later, Daddy buys Emma a new sketchbook."
+     "text": "過了一陣子，爸爸買了新的圖畫本給小薇。",
+     "en": "Some time later, Daddy buys Emma a new sketchbook."
     },
     {
      "who": "小薇",

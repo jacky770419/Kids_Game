@@ -1,0 +1,357 @@
+{
+ "id": "heungbu",
+ "title": "燕子送的葫蘆",
+ "title_en": "The Swallow's Gift",
+ "size": "中",
+ "roles": {
+  "弟弟": "住在韓國小村子茅草屋的弟弟，英文叫 Heungbu，少年男聲，善良開朗、說話溫和，鋸葫蘆時很有精神。",
+  "哥哥": "住大瓦房的哥哥，英文叫 Nolbu，懶洋洋的胖叔叔聲音，小氣又愛吹牛，想要寶物時好笑不可怕，被葫蘆整得哇哇叫，最後不好意思地改過。",
+  "燕子": "受傷被弟弟救起來的小燕子，可愛的小女生聲音，聰明、說話輕快，看穿哥哥時很直接、不害怕。"
+ },
+ "cast": {
+  "弟弟": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "哥哥": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "燕子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "種",
+   "where": "第4頁『葫蘆種子』『好可愛的種子』，第8頁『這顆種子』",
+   "read": "zhǒng"
+  },
+  {
+   "char": "誰",
+   "where": "第1頁『誰也別想拿』",
+   "read": "shéi"
+  },
+  {
+   "char": "分",
+   "where": "第1頁『不分給別人』，第6頁『一起分』，第11頁『不分米給你』",
+   "read": "fēn"
+  },
+  {
+   "char": "鋸",
+   "where": "第5頁『鋸開』『鋸葫蘆』，第9、12頁『鋸葫蘆』，第9頁『鋸子』",
+   "read": "jù"
+  },
+  {
+   "char": "會",
+   "where": "第8頁『它會給你』，第12頁『會學著分享』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "韓國的小村子，春天的早上，遠處是綠色的山。畫面左邊是一間大大的瓦房，院子裡堆滿米袋；右邊是一間小小的茅草屋，門口很乾淨。",
+   "act": "哥哥第一次出場：圓臉、兩撇八字鬍，穿藍色韓服背心和寬褲子，頭戴黑色的高帽子，坐在米袋上抱著一袋米，嘟著嘴。弟弟第一次出場：瘦瘦的年輕人，頭髮在頭頂綁成小髻，穿舊舊的白色韓服，拿著掃把在茅草屋前笑咪咪。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，韓國有一對兄弟。",
+     "en": "Long ago in Korea, there lived two brothers, Nolbu and Heungbu."
+    },
+    {
+     "who": "旁白",
+     "text": "哥哥住大房子，有好多米，卻不分給別人。",
+     "en": "Nolbu, the older one, had a big house and lots of rice, but he never shared any."
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟住小草屋，很窮，可是對大家很好。",
+     "en": "Heungbu, the younger one, lived in a tiny straw hut. He was poor, but he was kind to everyone."
+    },
+    {
+     "who": "哥哥",
+     "tag": "proud",
+     "text": "我的米，都是我的！誰也別想拿！",
+     "en": "My rice is mine, all mine! Nobody gets any!"
+    }
+   ]
+  },
+  {
+   "scene": "弟弟的茅草屋，屋簷下有一個泥土做的燕子窩。",
+   "act": "小燕子第一次出場：黑色的背、白色的肚子、紅色的小臉頰、剪刀形狀的尾巴。她從窩裡掉到軟軟的草地上，一邊翅膀垂著；弟弟蹲下來，用雙手輕輕捧起她，窩裡的燕子爸媽探頭張望。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天，一家燕子在弟弟的屋簷下做窩。",
+     "en": "In spring, a family of swallows built a nest under Heungbu's roof."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，小燕子學飛，跌到草地上，翅膀受傷了。",
+     "en": "One day, the little swallow was learning to fly. She tumbled onto the grass and hurt her wing."
+    },
+    {
+     "who": "弟弟",
+     "tag": "gentle",
+     "text": "小燕子，別怕，我來幫妳。",
+     "en": "Don't be scared, little swallow. I'll help you."
+    }
+   ]
+  },
+  {
+   "scene": "茅草屋裡，簡單的木頭地板，窗邊放著一個鋪了稻草的小籃子。",
+   "act": "弟弟用白色布條包住燕子的翅膀，用小湯匙餵她吃小米；小燕子在籃子裡張開嘴巴。下一個小畫面：秋天，小燕子跟家人排成一排往南飛，弟弟在地上揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "弟弟用布條，包好她的翅膀，每天餵她吃小米。",
+     "en": "Heungbu wrapped her wing in a strip of cloth and fed her millet every day."
+    },
+    {
+     "who": "燕子",
+     "tag": "happy",
+     "text": "謝謝你，我的翅膀不痛了！",
+     "en": "Thank you! My wing doesn't hurt anymore!"
+    },
+    {
+     "who": "旁白",
+     "text": "秋天到了，小燕子跟著家人，飛到溫暖的南方。",
+     "en": "When autumn came, the little swallow flew south with her family, where it was warm."
+    }
+   ]
+  },
+  {
+   "scene": "第二年春天，茅草屋門口，桃花開了。",
+   "act": "小燕子飛回來，停在弟弟的手指上，把嘴裡叼著的一顆金黃色小種子放在他手心；弟弟驚喜地看著。下一個小畫面：弟弟和小燕子一起把種子埋進屋旁的土裡。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二年春天，小燕子飛回來了。",
+     "en": "The next spring, the little swallow came back."
+    },
+    {
+     "who": "燕子",
+     "tag": "excited",
+     "text": "我從南方帶了一顆葫蘆種子，送給你！",
+     "en": "I brought you a gourd seed from the south. It's a present!"
+    },
+    {
+     "who": "弟弟",
+     "tag": "happy",
+     "text": "好可愛的種子！我們一起把它埋進土裡吧！",
+     "en": "What a cute seed! Let's plant it together!"
+    }
+   ]
+  },
+  {
+   "scene": "夏天快結束的時候，茅草屋，屋頂上爬滿綠色的葫蘆藤。",
+   "act": "屋頂上掛著三個比人還大的金黃色葫蘆。弟弟和一位鄰居大叔一人拉一邊大鋸子，鋸著第一個葫蘆；小燕子在旁邊飛，一起喊口號。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "葫蘆藤爬滿屋頂，上面掛著三個好大的葫蘆。",
+     "en": "The gourd vine climbed all over the roof, and three enormous gourds hung from it."
+    },
+    {
+     "who": "弟弟",
+     "tag": "excited",
+     "text": "我們把葫蘆鋸開吧！",
+     "en": "Let's saw them open!"
+    },
+    {
+     "who": "弟弟",
+     "text": "嘿喲，嘿喲，鋸葫蘆！",
+     "en": "Heave-ho, heave-ho, saw the gourd!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個茅草屋門口，村子裡的人都圍過來。",
+   "act": "第一個葫蘆裡湧出白米，第二個葫蘆裡跑出一疊一疊暖和的棉衣，第三個葫蘆裡亮著金子。弟弟把米和衣服分給村裡的老奶奶、小孩和鄰居，大家都在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第一個葫蘆裡，跑出好多白米。",
+     "en": "Out of the first gourd poured heaps of rice."
+    },
+    {
+     "who": "旁白",
+     "text": "第二個跑出暖和的衣服，第三個跑出金子！",
+     "en": "The second was full of warm clothes, and the third was full of gold!"
+    },
+    {
+     "who": "弟弟",
+     "tag": "happy",
+     "text": "太好了！大家快來，一起分！",
+     "en": "Hooray! Everyone, come and share!"
+    }
+   ]
+  },
+  {
+   "scene": "哥哥的大瓦房屋簷下，新做了一個金光閃閃、很誇張的鳥窩，旁邊掛著彩色的布條。",
+   "act": "哥哥對著飛過的小燕子招手假笑，一隻手放在身後，身後偷偷拿著一個竹子編的鳥籠；小燕子停在樹枝上，歪著頭看他的身後。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥聽說了，馬上跑來找燕子。",
+     "en": "When Heungbu's big brother, Nolbu, heard about it, he came running to find the swallow."
+    },
+    {
+     "who": "哥哥",
+     "tag": "laughing",
+     "text": "小燕子，來我家住嘛！我給妳好吃的！",
+     "en": "Little swallow! Come live at my house! I'll give you lots of treats!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，他身後拿著一個鳥籠。",
+     "en": "But behind his back, he was hiding a birdcage."
+    },
+    {
+     "who": "燕子",
+     "tag": "surprised",
+     "text": "你身後拿的是什麼呀？",
+     "en": "What's that behind your back?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個屋簷下。",
+   "act": "哥哥把鳥籠舉起來，臉紅紅的，尷尬地抓頭；小燕子站在樹枝上，表情很認真，把一顆灰色的小種子丟到哥哥腳邊。",
+   "lines": [
+    {
+     "who": "哥哥",
+     "tag": "surprised",
+     "text": "這個嘛，這是，這是給妳的新家！",
+     "en": "Oh, this? It's, um, it's your new home!"
+    },
+    {
+     "who": "燕子",
+     "text": "你不是想照顧我，你想要的是寶物。",
+     "en": "You don't want to take care of me. You just want treasure."
+    },
+    {
+     "who": "燕子",
+     "tag": "gentle",
+     "text": "這顆種子送你，它會給你最需要的東西。",
+     "en": "Here, take this seed. It will give you what you need most."
+    },
+    {
+     "who": "哥哥",
+     "tag": "excited",
+     "text": "嘿，一定是一大堆金子！",
+     "en": "Heh! It must be piles of gold!"
+    }
+   ]
+  },
+  {
+   "scene": "夏天快結束的時候，哥哥家的院子，米袋堆得高高的，屋頂上掛著三個灰色的大葫蘆。",
+   "act": "哥哥一個人拉著大鋸子鋸葫蘆，滿頭大汗；第一個葫蘆裂開，跑出一群白色的小山羊，正在大口吃他的米袋裡的米，哥哥張開雙手想攔住牠們。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥的葫蘆也變大了，他拿出鋸子。",
+     "en": "Nolbu's gourds grew big too, so he grabbed his saw."
+    },
+    {
+     "who": "哥哥",
+     "tag": "excited",
+     "text": "嘿喲，嘿喲，鋸葫蘆！",
+     "en": "Heave-ho, heave-ho, saw the gourd!"
+    },
+    {
+     "who": "旁白",
+     "text": "第一個葫蘆，跑出一群小山羊，把他的米全吃光了！",
+     "en": "Out of the first gourd ran a herd of little goats, and they gobbled up all his rice!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "shouting",
+     "text": "不要吃！那是我的米！",
+     "en": "Stop eating! That's my rice!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，米袋都扁了。",
+   "act": "第二個葫蘆裡飄出一朵小烏雲，跟在哥哥頭上下雨，哥哥全身溼透，抱著頭跑；第三個葫蘆裡吹出一陣大風，把他的黑色高帽子吹到天上，打著轉飛走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二個葫蘆，飄出一朵小烏雲，追著哥哥下雨。",
+     "en": "Out of the second gourd floated a little gray cloud, and it rained on Nolbu wherever he went."
+    },
+    {
+     "who": "哥哥",
+     "tag": "crying",
+     "text": "哎呀，別跟著我！我全身都溼了！",
+     "en": "Oh no! Stop following me! I'm soaking wet!"
+    },
+    {
+     "who": "旁白",
+     "text": "第三個葫蘆，吹出一陣大風，把他的帽子吹走了。",
+     "en": "Out of the third gourd came a big gust of wind that blew his hat away."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，哥哥的大瓦房門口，月亮出來了，院子裡的米袋都扁了。",
+   "act": "哥哥全身溼答答，沒戴帽子，坐在門口的台階上嘆氣，肚子餓扁扁；弟弟提著一盞小燈籠走過來，彎腰伸手要拉哥哥起來，帶他回家吃熱飯，小燕子站在弟弟的肩膀上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天黑了，哥哥又冷又餓，坐在門口嘆氣。",
+     "en": "By nightfall, Nolbu sat by his door, cold, hungry, and sighing."
+    },
+    {
+     "who": "弟弟",
+     "tag": "gentle",
+     "text": "哥哥，來我家吃熱飯吧。",
+     "en": "Brother, come and have some hot rice at my house."
+    },
+    {
+     "who": "哥哥",
+     "tag": "sad",
+     "text": "我從來不分米給你，你怎麼對我這麼好？",
+     "en": "I never shared a single grain with you. Why are you being so kind to me?"
+    },
+    {
+     "who": "弟弟",
+     "tag": "gentle",
+     "text": "你是我哥哥呀。",
+     "en": "You're my brother, that's why."
+    }
+   ]
+  },
+  {
+   "scene": "第二年夏天快結束的時候，弟弟的茅草屋門口，村子裡的人都圍過來；哥哥的大瓦房屋簷下，多了一個樸素的泥土燕子窩。",
+   "act": "哥哥戴回高帽子，跟弟弟一人拉一邊大鋸子，一起鋸一個金黃色的大葫蘆，兩個人都在笑；小燕子在他們頭上飛，村裡的小孩一起拍手喊。",
+   "lines": [
+    {
+     "who": "哥哥",
+     "tag": "sad",
+     "text": "小燕子，對不起。我以後會學著分享。",
+     "en": "Little swallow, I'm sorry. From now on, I'll learn to share."
+    },
+    {
+     "who": "燕子",
+     "tag": "happy",
+     "text": "好！以後，我兩家都去住！",
+     "en": "Okay! Then from now on, I'll stay at both your houses!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "laughing",
+     "text": "嘿喲，嘿喲，鋸葫蘆！",
+     "en": "Heave-ho, heave-ho, saw the gourd!"
+    },
+    {
+     "who": "旁白",
+     "text": "這是韓國的老故事喔。",
+     "en": "This is an old, old story from Korea."
+    }
+   ]
+  }
+ ]
+}

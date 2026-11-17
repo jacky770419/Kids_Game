@@ -2,11 +2,11 @@
  "id": "gold-axe",
  "title": "金斧頭",
  "title_en": "The Honest Woodcutter",
- "size": "短",
+ "size": "中",
  "roles": {
   "砍柴大叔": "住在河邊的砍柴大叔，溫和厚實的大叔聲，說話老實直接，斧頭掉了很著急，看到自己的舊斧頭時好開心。",
   "河神": "住在河裡的河神，慈祥有智慧的老爺爺聲，說話慢慢的、帶著笑；發現有人說謊時不罵人，只是靜靜看著他。",
-  "鄰居": "大叔的鄰居，年輕男生，愛占小便宜、說話誇張好笑不可怕，對著鏡子練習假哭，假哭很假，被河神看著時越說越心虛，最後低頭小聲道歉。"
+  "鄰居": "大叔的鄰居，年輕男生，愛占便宜、什麼都想要，說話誇張好笑不可怕；對著鏡子練習假哭卻被小狗舔臉，到了河邊還忘了自己手上拿著斧頭，被河神看著時越說越心虛，最後低頭小聲道歉。"
  },
  "cast": {
   "砍柴大叔": {
@@ -25,29 +25,34 @@
  "polyphones": [
   {
    "char": "沒",
-   "where": "第2頁『沒有』，第7頁『也沒了』",
+   "where": "第1頁『沒有』，第11頁『也沒了』",
    "read": "méi"
   },
   {
    "char": "假",
-   "where": "第5頁『假哭』",
+   "where": "第6頁『假哭』",
    "read": "jiǎ"
   },
   {
    "char": "潛",
-   "where": "第2頁『潛進』",
+   "where": "第2頁、第8頁『潛進』",
    "read": "qián"
   },
   {
+   "char": "為",
+   "where": "第6頁『以為』",
+   "read": "wéi"
+  },
+  {
    "char": "給",
-   "where": "第8頁『交給他』",
+   "where": "第12頁『交給他』",
    "read": "gěi"
   }
  ],
  "pages": [
   {
    "scene": "山腳下的一條小河邊，早上。河水清清的，看得到河底的小石頭；岸邊有幾棵大樹和一堆劈好的木柴。",
-   "act": "砍柴大叔出場：四十多歲，黑色短鬍子，戴草帽，穿藍色上衣和咖啡色褲子。他舉著一把舊鐵斧頭在砍一棵枯樹，斧頭從手裡滑出去，飛向河裡，濺起水花；大叔張大嘴巴。",
+   "act": "砍柴大叔出場：四十多歲，黑色短鬍子，戴草帽，穿藍色上衣和咖啡色褲子。上半：他把一捆木柴換成一袋米，扛著米笑咪咪地走回家。下半：他在河邊舉著舊鐵斧頭砍一棵枯樹，斧頭從手裡滑出去，飛向河裡，濺起水花；大叔張大嘴巴，接著蹲下來雙手抱頭。",
    "lines": [
     {
      "who": "旁白",
@@ -56,25 +61,35 @@
     },
     {
      "who": "旁白",
+     "text": "他把木柴賣掉，買米回家。",
+     "en": "He sold the firewood and bought rice to bring home."
+    },
+    {
+     "who": "旁白",
      "text": "有一天，手一滑，撲通！斧頭掉進河裡了。",
      "en": "One day, his hand slipped. Splash! The axe fell into the river."
-    }
-   ]
-  },
-  {
-   "scene": "同一條小河，河中間冒出一圈一圈的水波和白色的水花，發出白色的光。",
-   "act": "大叔蹲在河邊，雙手抱著頭，好難過。河神出場：從河裡升起來的老爺爺，白色長鬍子像水流一樣，穿淺藍色長袍，頭上戴一頂水草編的帽子，手拿一根木杖，站在水面上微笑。",
-   "lines": [
+    },
     {
      "who": "砍柴大叔",
      "tag": "sad",
      "text": "糟糕！沒有斧頭，不能砍柴了。",
      "en": "Oh no! Without my axe, I can't chop wood!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河，河中間冒出一串一串的泡泡，接著濺起一大片白色的水花，水花發出白色的光。",
+   "act": "大叔蹲在河邊，驚訝地抬頭。河神出場：從水花裡升起來的老爺爺，白色長鬍子一直垂到水面上，穿淺藍色長袍，頭上戴一頂水草編的帽子，手拿一根木杖，站在水面上微笑。最後河神潛進水裡，舉著一把金斧頭冒出來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咕嚕，咕嚕，河中間冒出好多水泡。",
+     "en": "Blub, blub! Lots of bubbles popped up in the middle of the river."
     },
     {
      "who": "旁白",
-     "text": "水裡冒出一位白鬍子河神。",
-     "en": "Up from the water rose a River Spirit with a long white beard."
+     "text": "水花裡站起一位河神，白鬍子垂到水面上。",
+     "en": "Out of the splash rose a River Spirit, his white beard trailing on the water."
     },
     {
      "who": "河神",
@@ -144,41 +159,69 @@
    ]
   },
   {
-   "scene": "左半邊：大叔家門口的小路，下午，路邊有木頭籬笆和一棵蘋果樹。右半邊：鄰居家裡，牆上掛著一面圓鏡子。",
-   "act": "左邊，大叔扛著三把斧頭走回家；鄰居出場：瘦高的年輕男人，留著往上翹的小鬍子，穿紅色背心、戴綠色帽子，從籬笆後面探出頭，盯著金斧頭和銀斧頭，眼睛發亮，搓著兩隻手。右邊，鄰居對著鏡子皺眉張嘴假哭，表情很誇張好笑，一隻手放在耳朵旁邊，好像在聽自己哭得夠不夠大聲。",
+   "scene": "大叔家門口的小路，下午，路邊有木頭籬笆和一棵蘋果樹；籬笆另一邊是鄰居的小木屋。",
+   "act": "大叔扛著三把斧頭走回家，金斧頭和銀斧頭在太陽下閃閃發亮。鄰居出場：瘦高的年輕男人，留著往上翹的小鬍子，穿紅色背心、戴綠色帽子，從籬笆後面探出頭，盯著金斧頭和銀斧頭，眼睛發亮，搓著兩隻手，先比一根手指，再改成比兩根手指，一臉好笑的貪心表情。",
    "lines": [
     {
      "who": "旁白",
-     "text": "鄰居看到金斧頭，眼睛亮了。",
-     "en": "When his neighbor saw the golden axe, his eyes lit up."
+     "text": "大叔扛著三把斧頭回家。",
+     "en": "The woodcutter carried all three axes home."
+    },
+    {
+     "who": "旁白",
+     "text": "隔壁的鄰居看到金斧頭，眼睛都亮了。",
+     "en": "His next-door neighbor saw the golden axe, and his eyes lit up."
     },
     {
      "who": "鄰居",
      "tag": "excited",
-     "text": "我也要去拿一把金斧頭！",
-     "en": "I'm going to get a golden axe too!"
+     "text": "哇！我也要去拿一把金斧頭！",
+     "en": "Wow! I'm going to get a golden axe too!"
     },
     {
+     "who": "鄰居",
+     "tag": "excited",
+     "text": "不對，金的、銀的，我都要！",
+     "en": "No, wait. Gold and silver. I want them both!"
+    }
+   ]
+  },
+  {
+   "scene": "鄰居的小木屋裡，牆上掛著一面圓鏡子，地上有一個狗碗和一條小毯子。",
+   "act": "鄰居（紅色背心、綠色帽子、翹小鬍子）對著鏡子皺眉張嘴假哭，表情很誇張，一隻手放在耳朵旁邊，好像在聽自己哭得夠不夠大聲。他的小狗出場：咖啡色的小狗，耳朵垂垂的，脖子上有紅色項圈；小狗以為主人真的在哭，跳到他身上舔他的臉，鄰居一邊笑一邊把臉轉開。",
+   "lines": [
+    {
      "who": "旁白",
-     "text": "他對著鏡子練習假哭。",
-     "en": "He practiced fake crying in front of the mirror."
+     "text": "鄰居回到家，對著鏡子練習假哭。",
+     "en": "The neighbor went home and practiced fake crying in front of the mirror."
     },
     {
      "who": "鄰居",
      "tag": "playful",
      "text": "嗚。太小聲了！嗚，嗚，嗚！",
      "en": "Boo-hoo. Too quiet! Boo-hoo-hoo!"
+    },
+    {
+     "who": "旁白",
+     "text": "他的小狗以為他真的在哭，跳上來舔他的臉。",
+     "en": "His little dog thought he was really crying, and jumped up to lick his face."
+    },
+    {
+     "who": "鄰居",
+     "tag": "laughing",
+     "text": "別舔啦！我是在練習！",
+     "en": "Stop licking! I'm just practicing!"
     }
    ]
   },
   {
-   "scene": "同一條小河邊，下午。",
-   "act": "鄰居故意把自己的斧頭丟進河裡，用手揉眼睛大聲假哭，一邊從手指中間偷看；河神舉著金斧頭從水裡升起來，鄰居伸出雙手搶著要。",
+   "scene": "同一條小河邊，下午，岸邊有幾顆大石頭。",
+   "act": "鄰居站在河邊，用左手揉眼睛大聲假哭，嘴巴張得好大，右手卻還緊緊握著自己的鐵斧頭。河神從水裡升起半個身子，歪著頭，看著鄰居手上的斧頭，一臉疑惑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "他故意把斧頭丟進河裡。",
-     "en": "He tossed his axe into the river on purpose."
+     "text": "他跑到河邊，大聲哭了起來。",
+     "en": "He ran to the river and started to wail."
     },
     {
      "who": "鄰居",
@@ -186,6 +229,51 @@
      "text": "嗚，嗚，嗚！我的斧頭掉下去了！",
      "en": "Boo-hoo-hoo! My axe fell in!"
     },
+    {
+     "who": "旁白",
+     "text": "河神探出頭，看著他的手。",
+     "en": "The River Spirit peeked out and looked at his hand."
+    },
+    {
+     "who": "河神",
+     "tag": "surprised",
+     "text": "咦？你的斧頭，不是在你手上嗎？",
+     "en": "Hmm? Isn't your axe right there in your hand?"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河邊，下午。",
+   "act": "上半：鄰居低頭看著手上的斧頭，臉一下子變紅，帽子往後滑，兩隻手慌張地亂揮。下半：斧頭從他手裡滑出去，撲通掉進河裡，濺起小水花；鄰居愣了一下，接著又揉眼睛假哭；河神用袖子遮著嘴巴偷笑，然後潛進水裡。",
+   "lines": [
+    {
+     "who": "鄰居",
+     "tag": "surprised",
+     "text": "啊！我忘了！",
+     "en": "Oops! I forgot!"
+    },
+    {
+     "who": "旁白",
+     "text": "他一緊張，手一滑，撲通！斧頭掉進河裡了。",
+     "en": "He got so flustered that his hand slipped. Splash! The axe fell into the river."
+    },
+    {
+     "who": "鄰居",
+     "tag": "crying",
+     "text": "嗚，嗚，嗚！這次真的掉下去了！",
+     "en": "Boo-hoo-hoo! This time it really fell in!"
+    },
+    {
+     "who": "旁白",
+     "text": "河神忍住笑，潛進水裡。",
+     "en": "The River Spirit held back a laugh and dived down."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河，河神站在水面上。",
+   "act": "河神先舉起閃閃發光的金斧頭，再舉起亮亮的銀斧頭；鄰居每次都伸長兩隻手搶著要，踮起腳尖，眼睛發亮，嘴巴笑得合不起來。",
+   "lines": [
     {
      "who": "河神",
      "text": "這把金斧頭，是你的嗎？",
@@ -196,13 +284,40 @@
      "tag": "excited",
      "text": "是我的！是我的！",
      "en": "It's mine! It's mine!"
+    },
+    {
+     "who": "河神",
+     "text": "這把銀斧頭，是你的嗎？",
+     "en": "Is this silver axe yours?"
+    },
+    {
+     "who": "鄰居",
+     "tag": "excited",
+     "text": "這把也是我的！兩把都是我的！",
+     "en": "This one's mine too! They're both mine!"
     }
    ]
   },
   {
-   "scene": "同一條小河邊，河面只剩下一圈一圈的水波。",
-   "act": "上半：河神拿著金斧頭，靜靜地看著鄰居，一句話也不說；鄰居伸出的手停在半空中，笑容變得尷尬，眼睛不敢看河神。下半：河神帶著金斧頭沉回水裡，河面只剩下一圈一圈的水波；鄰居兩手空空站在河邊，張大嘴巴，帽子歪了一邊。",
+   "scene": "同一條小河，河神站在水面上。",
+   "act": "河神一手拿著金斧頭和銀斧頭，另一手舉起一隻破舊的咖啡色鞋子，鞋子上掛著綠色水草，還在滴水。鄰居伸出的手停在半空中，盯著鞋子愣住；接著笑容變得尷尬，眼睛不敢看河神。河神靜靜地看著他，一句話也不說。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "河神又拿出一隻舊鞋子，上面掛著水草。",
+     "en": "Then the River Spirit held up an old shoe, covered in waterweed."
+    },
+    {
+     "who": "河神",
+     "text": "這隻舊鞋子，是你的嗎？",
+     "en": "Is this old shoe yours?"
+    },
+    {
+     "who": "鄰居",
+     "tag": "excited",
+     "text": "是我的！咦？鞋子？",
+     "en": "It's mine! Huh? A shoe?"
+    },
     {
      "who": "旁白",
      "text": "河神看著他，不說話。",
@@ -213,49 +328,61 @@
      "tag": "nervous",
      "text": "是我的！大概是吧？",
      "en": "It's mine! Probably?"
-    },
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河邊，太陽快要下山，河面只剩下一圈一圈的水波，變成金黃色。",
+   "act": "上半：河神帶著斧頭沉回水裡，鄰居兩手空空站在河邊，張大嘴巴，帽子歪了一邊。下半：鄰居低著頭，臉越來越紅，頭上有一個想像的泡泡，裡面是大叔抱著舊鐵斧頭開心大笑的樣子；最後鄰居雙手合起來，小聲對著河說話。",
+   "lines": [
     {
      "who": "旁白",
-     "text": "河神帶著金斧頭，回到水裡。",
-     "en": "The River Spirit sank back into the water with the golden axe."
+     "text": "河神帶著斧頭，回到水裡了。",
+     "en": "The River Spirit sank back into the water, axes and all."
     },
     {
      "who": "旁白",
      "text": "鄰居連自己的斧頭也沒了。",
      "en": "Now the neighbor didn't even have his own axe."
-    }
-   ]
-  },
-  {
-   "scene": "同一條小河邊，太陽快要下山，河面變成金黃色。",
-   "act": "鄰居站在河邊低著頭，臉越來越紅；接著他雙手合起來，小聲對著河說話；河神浮出水面，微笑著把一把舊鐵斧頭交給他；砍柴大叔走過來，拍拍鄰居的肩膀。最後兩個人扛著斧頭，一起往樹林走去。",
-   "lines": [
+    },
     {
      "who": "旁白",
-     "text": "鄰居低下頭，臉越來越紅。",
-     "en": "The neighbor hung his head. His face got redder and redder."
+     "text": "他想起大叔拿到舊鐵斧頭時，好開心的樣子。",
+     "en": "He remembered how happy the woodcutter had looked, just holding his old iron axe."
     },
     {
      "who": "鄰居",
      "tag": "shy",
      "text": "對不起，我說謊了。我的斧頭是鐵做的。",
      "en": "I'm sorry. I lied. My axe is made of iron."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河邊，太陽快要下山，天空和河面都是金黃色，遠處是樹林。",
+   "act": "河神從水裡探出頭，微笑著把鄰居的舊鐵斧頭交給他；砍柴大叔扛著舊鐵斧頭走過來，拍拍鄰居的肩膀。最後兩個人各扛著一把鐵斧頭，有說有笑地沿著河邊走回家，鄰居的咖啡色小狗跟在後面搖尾巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "河神又探出頭，笑著把鐵斧頭交給他。",
+     "en": "The River Spirit popped up again and, with a smile, handed him his iron axe."
     },
     {
      "who": "旁白",
-     "text": "河神探出頭，笑著把鐵斧頭交給他。",
-     "en": "The River Spirit popped up with a smile and handed him his iron axe."
-    },
-    {
-     "who": "旁白",
-     "text": "大叔走過來說：",
-     "en": "The woodcutter came over and said,"
+     "text": "大叔剛好走過來，說：",
+     "en": "Just then, the woodcutter came by and said,"
     },
     {
      "who": "砍柴大叔",
      "tag": "happy",
-     "text": "走吧，我們一起去砍柴！",
-     "en": "Come on, let's go chop wood together!"
+     "text": "明天，我們一起去砍柴吧！",
+     "en": "Tomorrow, let's go chop wood together!"
+    },
+    {
+     "who": "鄰居",
+     "tag": "happy",
+     "text": "好！我就用我的鐵斧頭！",
+     "en": "Okay! I'll use my very own iron axe!"
     }
    ]
   }

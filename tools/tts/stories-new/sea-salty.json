@@ -1,0 +1,376 @@
+{
+ "id": "sea-salty",
+ "title": "海水為什麼是鹹的",
+ "title_en": "Why the Sea Is Salty",
+ "size": "中",
+ "roles": {
+  "窮弟弟": "住在海邊小木屋的窮弟弟，少年男聲，善良、說話溫和，念石磨的口訣時又慢又清楚。",
+  "有錢哥哥": "住山坡大房子的有錢哥哥，懶洋洋的胖叔叔聲音，性急、愛搶話，被湯淹到腳時哇哇叫，好笑不可怕。",
+  "神奇石磨": "一個會說話的老石磨，神仙智者的聲音，說話慢慢的、低沉，帶一點幽默。",
+  "船長": "留橘色大鬍子的貪心船長，狡猾又好笑的聲音，不可怕，石磨停不下來時大呼小叫。"
+ },
+ "cast": {
+  "窮弟弟": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "有錢哥哥": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "神奇石磨": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "船長": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "磨",
+   "where": "『石磨』，每頁都有（名詞）",
+   "read": "mò"
+  },
+  {
+   "char": "磨",
+   "where": "第3頁『磨出來』『磨出白米』，第4頁『磨出白米』，第6頁『磨出蔬菜湯』『不要再磨了』，第9頁『磨出鹽』，第10頁『不要磨了』『一直磨』，第12頁『磨鹽』（動詞）",
+   "read": "mó"
+  },
+  {
+   "char": "長",
+   "where": "第8頁『船長』，第11頁『船長』",
+   "read": "zhǎng"
+  },
+  {
+   "char": "為",
+   "where": "書名『海水為什麼是鹹的』",
+   "read": "wèi"
+  },
+  {
+   "char": "載",
+   "where": "第11頁『大船載著石磨』",
+   "read": "zài"
+  },
+  {
+   "char": "划",
+   "where": "第11頁『划走了』",
+   "read": "huá"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有米』，第5頁『話沒說完』，第10頁『沒說謝謝』，第12頁『沒有人』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，北歐很冷的海邊，灰藍色的大海；岸邊有一間小小的木頭屋，山坡上有一棟紅色屋頂的大房子。",
+   "act": "窮弟弟第一次出場：瘦高的年輕人，棕色短頭髮，穿有補丁的綠色上衣、灰色褲子，揹著一小捆木柴走在山路上。有錢哥哥第一次出場：圓滾滾的大叔，紅鼻子，穿紅色背心、戴灰色毛線帽，在大房子窗邊啃大雞腿。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，北歐的海邊住著一對兄弟。",
+     "en": "Long ago, by the sea in the far north of Europe, there lived two brothers."
+    },
+    {
+     "who": "旁白",
+     "text": "哥哥很有錢，住大房子。",
+     "en": "The older brother was rich and lived in a big house."
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟很窮，家裡常常沒有米。",
+     "en": "The younger brother was poor, and often he had no rice at all."
+    }
+   ]
+  },
+  {
+   "scene": "山上的老松樹下，樹根旁邊堆著落葉。",
+   "act": "窮弟弟撥開落葉，發現一個灰色的小石磨：上下兩塊圓石頭疊在一起，旁邊有一根木頭把手，石頭上長著一點青苔。石磨上有一雙會眨的眼睛和一張笑嘴，弟弟嚇一跳，往後坐在地上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，弟弟在老樹下找到一個小石磨。",
+     "en": "One day, under an old tree on the hill, the younger brother found a little stone mill."
+    },
+    {
+     "who": "旁白",
+     "text": "兩塊圓石頭疊在一起，旁邊有個把手。",
+     "en": "It was two round stones, one on top of the other, with a wooden handle."
+    },
+    {
+     "who": "旁白",
+     "text": "咦？石磨竟然說話了！",
+     "en": "Then, to his surprise, the mill began to talk!"
+    },
+    {
+     "who": "神奇石磨",
+     "tag": "gentle",
+     "text": "你好呀，年輕人。我睡了好久呢。",
+     "en": "Well, hello there, young man. I've been asleep for ages."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵老松樹下。",
+   "act": "石磨眨著眼睛，慢慢說話；窮弟弟盤腿坐在地上，認真聽，用手指一個一個記。旁邊畫兩個小泡泡，不寫字：一個畫白米流出來（開始），一個畫閉著眼睛睡覺的石磨（休息）。",
+   "lines": [
+    {
+     "who": "神奇石磨",
+     "text": "想要什麼，我都能磨出來。",
+     "en": "Whatever you want, I can grind it out."
+    },
+    {
+     "who": "神奇石磨",
+     "text": "要我開始，就說：石磨，石磨，請你磨出白米。",
+     "en": "To start me, say: Mill, mill, please grind some rice."
+    },
+    {
+     "who": "神奇石磨",
+     "text": "要我停，就說：石磨，石磨，謝謝你，休息吧。",
+     "en": "To stop me, say: Mill, mill, thank you, you may rest."
+    },
+    {
+     "who": "窮弟弟",
+     "tag": "happy",
+     "text": "說請就開始，說謝謝就停，我記住了！",
+     "en": "Please to start, thank you to stop. Got it!"
+    }
+   ]
+  },
+  {
+   "scene": "海邊的小木屋裡，晚上，桌上點著蠟燭。",
+   "act": "石磨放在桌上，自己動起來，白米像小瀑布一樣流進米缸；窮弟弟端著一大鍋熱飯，門口站著鄰居老奶奶和兩個小孩，大家笑著一起吃。",
+   "lines": [
+    {
+     "who": "窮弟弟",
+     "tag": "excited",
+     "text": "石磨，石磨，請你磨出白米！",
+     "en": "Mill, mill, please grind some rice!"
+    },
+    {
+     "who": "旁白",
+     "text": "石磨動了起來，白米一直跑出來。",
+     "en": "The mill began to turn, and out came rice, and more rice."
+    },
+    {
+     "who": "窮弟弟",
+     "tag": "gentle",
+     "text": "石磨，石磨，謝謝你，休息吧。",
+     "en": "Mill, mill, thank you, you may rest."
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟煮了一大鍋飯，請鄰居一起吃。",
+     "en": "Then he cooked a big pot of rice and shared it with his neighbors."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，白天。",
+   "act": "有錢哥哥雙手抱著石磨往外跑，臉上很得意；窮弟弟站在門口，伸出一隻手，話還沒說完。",
+   "lines": [
+    {
+     "who": "有錢哥哥",
+     "tag": "excited",
+     "text": "好棒的石磨！借我用一天！",
+     "en": "What a marvelous mill! Lend it to me for a day!"
+    },
+    {
+     "who": "窮弟弟",
+     "text": "好，可是你要記住，停下來要說…",
+     "en": "All right. But remember, to stop it, you have to say..."
+    },
+    {
+     "who": "有錢哥哥",
+     "text": "知道啦，知道啦！我最聰明了！",
+     "en": "Yes, yes, I know! I'm the smartest!"
+    },
+    {
+     "who": "旁白",
+     "text": "話沒說完，哥哥就抱著石磨跑了。",
+     "en": "Before his brother could finish, he grabbed the mill and ran off."
+    }
+   ]
+  },
+  {
+   "scene": "有錢哥哥家的大廚房，地板是木頭的。",
+   "act": "石磨放在大鍋子上，一直磨出綠色的蔬菜湯；湯從鍋子滿出來，流過地板、流出大門，淹到哥哥的腳踝。哥哥拿著湯勺跳腳，毛線帽歪了，表情好笑，湯是溫的不燙。",
+   "lines": [
+    {
+     "who": "有錢哥哥",
+     "tag": "happy",
+     "text": "石磨，石磨，請你磨出蔬菜湯！",
+     "en": "Mill, mill, please grind some vegetable soup!"
+    },
+    {
+     "who": "旁白",
+     "text": "湯滿出鍋子，流出大門。",
+     "en": "Soup filled the pot and flowed right out the door."
+    },
+    {
+     "who": "有錢哥哥",
+     "tag": "shouting",
+     "text": "停！停！不要再磨了！",
+     "en": "Stop! Stop! No more soup!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，石磨聽不懂，湯一直流，一直流。",
+     "en": "But the mill didn't understand, and the soup kept flowing and flowing."
+    }
+   ]
+  },
+  {
+   "scene": "同一個廚房，地上都是湯。",
+   "act": "窮弟弟跑進來，站在湯裡，對石磨說話，石磨閉上眼睛停下來；哥哥全身都是湯，頭上掛著一片菜葉，抓著頭不好意思地笑。",
+   "lines": [
+    {
+     "who": "窮弟弟",
+     "tag": "gentle",
+     "text": "石磨，石磨，謝謝你，休息吧。",
+     "en": "Mill, mill, thank you, you may rest."
+    },
+    {
+     "who": "旁白",
+     "text": "石磨馬上停了下來。",
+     "en": "The mill stopped at once."
+    },
+    {
+     "who": "有錢哥哥",
+     "tag": "laughing",
+     "text": "嘿，原來要說謝謝呀。這個石磨，你帶回家吧！",
+     "en": "Heh. So you have to say thank you. Here, take your mill home!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，海邊碼頭，月亮下停著一條大帆船；窮弟弟的小木屋窗戶亮著燈。",
+   "act": "船長第一次出場：橘色的大鬍子，戴黑色三角帽，穿藍色外套、金色鈕扣，挺著大肚子。他蹲在小木屋窗外偷聽，然後半夜抱著石磨，踮著腳走向他的大帆船。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這件事，被大鬍子船長聽到了。",
+     "en": "But a captain with a big bushy beard heard all about it."
+    },
+    {
+     "who": "船長",
+     "tag": "whispering",
+     "text": "嘿，有了石磨，我就有一整船的鹽！",
+     "en": "Heh. With that mill, I'll have a whole ship full of salt!"
+    },
+    {
+     "who": "旁白",
+     "text": "他偷聽到一半，就急著跑走了。",
+     "en": "He only heard half of it before he hurried off."
+    },
+    {
+     "who": "旁白",
+     "text": "半夜，船長偷走石磨，開船出海了。",
+     "en": "In the middle of the night, he stole the mill and sailed out to sea."
+    }
+   ]
+  },
+  {
+   "scene": "大海中間，大帆船的甲板上，天亮了。",
+   "act": "石磨在甲板上不停磨出白色的鹽，鹽堆成一座小山；船長站在鹽山旁邊，雙手叉腰，仰頭大笑。",
+   "lines": [
+    {
+     "who": "船長",
+     "tag": "excited",
+     "text": "石磨，石磨，請你磨出鹽！",
+     "en": "Mill, mill, please grind some salt!"
+    },
+    {
+     "who": "旁白",
+     "text": "白色的鹽堆成一座小山。",
+     "en": "White salt poured out and piled up into a little mountain."
+    },
+    {
+     "who": "船長",
+     "tag": "laughing",
+     "text": "哈！好多鹽！我要發財了！",
+     "en": "Ha! So much salt! I'm going to be rich!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條大帆船，鹽堆滿了甲板，船身越來越低，海水快碰到船邊。",
+   "act": "船長滿頭大汗，一下對石磨跺腳，一下雙手合十拜託，一下鞠躬；石磨閉著眼睛，繼續磨鹽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鹽越來越多，船一直往下沉。",
+     "en": "More and more salt piled up, and the ship began to sink lower and lower."
+    },
+    {
+     "who": "船長",
+     "tag": "scared",
+     "text": "停！夠了！不要磨了！",
+     "en": "Stop! That's enough! No more!"
+    },
+    {
+     "who": "船長",
+     "tag": "crying",
+     "text": "拜託，拜託，石磨大人，休息一下好不好？",
+     "en": "Please, please, dear Mr. Mill, could you take a little break?"
+    },
+    {
+     "who": "旁白",
+     "text": "他沒說謝謝，石磨就一直磨。",
+     "en": "But he never said thank you, so the mill kept on grinding."
+    }
+   ]
+  },
+  {
+   "scene": "同一片海，大帆船的船尾。",
+   "act": "船長坐在一條小船上，用力划槳離開，全身乾乾的、平安沒事；後面的大帆船被白鹽壓著，慢慢沉進海裡，甲板上的石磨還在動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "船長趕快坐上一條小船，划走了。",
+     "en": "The captain hurried into a little rowboat and rowed safely away."
+    },
+    {
+     "who": "船長",
+     "tag": "sad",
+     "text": "唉，我再也不偷東西了！",
+     "en": "Oh dear. I'll never steal anything again!"
+    },
+    {
+     "who": "旁白",
+     "text": "大船載著石磨，沉到了海底。",
+     "en": "The big ship, mill and all, slowly sank to the bottom of the sea."
+    }
+   ]
+  },
+  {
+   "scene": "海底，藍色的海水裡，有珊瑚和海草；畫面上方是海面和海邊的小木屋。",
+   "act": "石磨在海底慢慢轉，冒出一陣陣白色的鹽，小魚圍著它看；畫面上方，窮弟弟和有錢哥哥站在海邊，一起對大海揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "聽說，石磨到現在，都在海底磨鹽。",
+     "en": "They say the mill is still grinding salt at the bottom of the sea."
+    },
+    {
+     "who": "旁白",
+     "text": "沒有人跟它說：石磨，石磨，謝謝你，休息吧。",
+     "en": "No one has ever told it, Mill, mill, thank you, you may rest."
+    },
+    {
+     "who": "旁白",
+     "text": "所以，海水就變鹹了。",
+     "en": "And that's why the sea is salty."
+    },
+    {
+     "who": "旁白",
+     "text": "這是很久以前的人想出來的故事喔。真正的答案，以後一起找吧！",
+     "en": "This is a story people made up long, long ago. Why is the sea really salty? Let's find out together someday!"
+    }
+   ]
+  }
+ ]
+}

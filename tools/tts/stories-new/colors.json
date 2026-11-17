@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "調",
-   "where": "第1頁、第7頁『調色盤』",
+   "where": "第1、2、7頁『調色盤』",
    "read": "tiáo"
   },
   {
@@ -125,7 +125,7 @@
      "who": "紅色",
      "tag": "laughing",
      "text": "碰一碰，變！變！變！",
-     "en": "Bump and mix, colors switch!"
+     "en": "Bump and mix! Magic, magic, magic!"
     }
    ]
   },
@@ -154,13 +154,13 @@
      "who": "藍色",
      "tag": "laughing",
      "text": "碰一碰，變！變！變！",
-     "en": "Bump and mix, colors switch!"
+     "en": "Bump and mix! Magic, magic, magic!"
     }
    ]
   },
   {
    "scene": "白色調色盤上，有紅、黃、藍、橘、綠五個顏料寶寶。",
-   "act": "紅色寶寶拉著藍色寶寶的手，兩個輕輕碰一下；碰在一起的地方冒出一個紫色寶寶，頭頂掛著一串小葡萄。橘色和綠色寶寶在旁邊拍手。",
+   "act": "紅色寶寶拉著藍色寶寶的手，兩個輕輕碰一下；碰在一起的地方冒出一個紫色寶寶，頭頂掛著一串小葡萄。橘色和綠色寶寶在旁邊拍手；紅色寶寶舉起雙手歡呼。",
    "lines": [
     {
      "who": "紅色",
@@ -178,6 +178,12 @@
      "tag": "excited",
      "text": "紫色，像葡萄！",
      "en": "Purple, like grapes!"
+    },
+    {
+     "who": "紅色",
+     "tag": "laughing",
+     "text": "碰一碰，變！變！變！",
+     "en": "Bump and mix! Magic, magic, magic!"
     }
    ]
   },
@@ -188,8 +194,8 @@
     {
      "who": "黃色",
      "tag": "excited",
-     "text": "那我們三個，一起碰！",
-     "en": "Then let's all three bump together!"
+     "text": "我有好點子！我們三個，一起碰！",
+     "en": "I have an idea! Let's all three bump together!"
     },
     {
      "who": "旁白",
@@ -234,7 +240,7 @@
    ]
   },
   {
-   "scene": "書桌上的圖畫紙：畫好一棵咖啡色樹幹、綠色樹葉的大樹，大樹後面一道彩虹，從上到下是紅、橘、黃、綠、藍、紫。",
+   "scene": "書桌上的圖畫紙：畫好一棵咖啡色樹幹、綠色樹葉的大樹，大樹後面一道彩虹，從上到下是紅、橘、黃、綠、藍、深藍、紫七種顏色（深藍是藍色加一點紫色調出來的），跟《彩虹從哪裡來》一樣。",
    "act": "小彤舉起畫好的圖，開心地笑。調色盤上的顏料寶寶們偷偷睜開一隻眼睛，咖啡色寶寶挺起胸膛很驕傲，紅色寶寶拍拍它；黃色寶寶小聲地對大家眨眼。",
    "lines": [
     {
@@ -244,8 +250,8 @@
     },
     {
      "who": "旁白",
-     "text": "紅色、橘色、黃色、綠色、藍色、紫色，真漂亮！",
-     "en": "Red, orange, yellow, green, blue, and purple. How beautiful!"
+     "text": "每個顏色都畫上去了，真漂亮！",
+     "en": "Every color is in the picture. How beautiful!"
     },
     {
      "who": "紅色",
@@ -257,7 +263,7 @@
      "who": "黃色",
      "tag": "whispering",
      "text": "下次再來，碰一碰，變！變！變！",
-     "en": "Next time, let's bump and mix, colors switch!"
+     "en": "Next time, let's bump and mix! Magic, magic, magic!"
     }
    ]
   }

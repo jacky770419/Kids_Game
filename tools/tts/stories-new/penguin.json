@@ -2,9 +2,9 @@
  "id": "penguin",
  "title": "企鵝爸爸抱蛋",
  "title_en": "Penguin Dad Keeps the Egg Warm",
- "size": "短",
+ "size": "中",
  "roles": {
-  "企鵝爸爸": "皇帝企鵝爸爸，溫和的大叔聲音，認真又有點傻氣，蛋滑出去時手忙腳亂，抱到蛋就鬆一口氣、笑呵呵。",
+  "企鵝爸爸": "皇帝企鵝爸爸，溫和的大叔聲音，認真又有點傻氣，蛋滑出去時手忙腳亂，抱到蛋就鬆一口氣、笑呵呵；自己餓扁了也先顧小企鵝。",
   "企鵝媽媽": "皇帝企鵝媽媽，溫柔的媽媽聲音，說話輕輕的、帶著笑，從海裡回來時又開心又興奮。",
   "小企鵝": "剛出生的小企鵝，小男孩的聲音，軟軟的、肚子餓又愛撒嬌。"
  },
@@ -39,8 +39,18 @@
    "read": "ké"
   },
   {
+   "char": "會",
+   "where": "第8頁『會做出』",
+   "read": "huì"
+  },
+  {
+   "char": "幾",
+   "where": "第7頁『過幾天』，第9頁『好幾千隻』",
+   "read": "jǐ"
+  },
+  {
    "char": "鑽",
-   "where": "第8頁『鑽進』",
+   "where": "第11頁『鑽進』",
    "read": "zuān"
   }
  ],
@@ -56,8 +66,8 @@
     },
     {
      "who": "旁白",
-     "text": "企鵝媽媽生了一顆蛋。",
-     "en": "Penguin Mom has laid an egg."
+     "text": "皇帝企鵝媽媽生了一顆蛋。",
+     "en": "Emperor Penguin Mom has laid an egg."
     },
     {
      "who": "企鵝媽媽",
@@ -75,34 +85,34 @@
   },
   {
    "scene": "同一片冰原，媽媽往遠處的海邊走去。",
-   "act": "企鵝爸爸把蛋放在兩隻腳上，肚子下面垂下一塊毛茸茸的皮，像小棉被一樣蓋住蛋，只露出一點點白；爸爸低頭對蛋微笑。遠處媽媽一搖一擺地走向大海，回頭揮翅膀。",
+   "act": "企鵝爸爸把蛋放在兩隻腳上，肚子下面垂下一塊毛茸茸、暖呼呼的肚皮，像小棉被一樣蓋住蛋，只露出一點點白；爸爸低頭對蛋微笑。遠處媽媽一搖一擺地走向大海，回頭揮翅膀。",
    "lines": [
     {
      "who": "旁白",
-     "text": "爸爸把蛋放在腳上，用肚子的皮蓋起來。",
-     "en": "Dad sets the egg on his feet and covers it with the warm skin of his tummy."
+     "text": "爸爸把蛋放在腳上，用又軟又暖的肚皮蓋起來。",
+     "en": "Dad sets the egg on his feet and covers it with the soft, warm skin of his tummy."
     },
     {
      "who": "企鵝爸爸",
      "tag": "gentle",
      "text": "小寶貝，我的肚子就是你的棉被。",
-     "en": "Little egg, my tummy is your blanket."
+     "en": "Little one, my tummy is your blanket."
     },
     {
      "who": "企鵝媽媽",
      "text": "等我回來喔！",
-     "en": "Wait for me!"
+     "en": "Wait for me to come back!"
     }
    ]
   },
   {
-   "scene": "冰原上颳著大風雪，雪花斜斜地飛。",
-   "act": "很多隻企鵝爸爸擠成一大團，每一隻腳上都抱著蛋；外圈的爸爸縮著脖子發抖，慢慢往裡面走，裡面暖好的爸爸換到外圈。戴紅圍巾的企鵝爸爸在中間笑咪咪的。",
+   "scene": "冰原上颳著大風雪，雪花斜斜地飛，天空灰濛濛的。",
+   "act": "很多隻企鵝爸爸擠成一大團，每一隻腳上都抱著蛋；外圈的爸爸縮著脖子發抖，慢慢往裡面走，裡面暖好的爸爸換到外圈。戴紅圍巾的企鵝爸爸在中間，低頭對著肚子下面的蛋，溫柔地說話。",
    "lines": [
     {
      "who": "旁白",
-     "text": "呼，呼，冷風吹過來了。",
-     "en": "Whoo, whoo. Here comes the cold wind."
+     "text": "呼，呼，大風雪來了。",
+     "en": "Whoo, whoo. Here comes a big snowstorm."
     },
     {
      "who": "旁白",
@@ -117,8 +127,14 @@
     },
     {
      "who": "旁白",
-     "text": "外面的爸爸冷了，就換到裡面，輪流取暖。",
-     "en": "When the ones outside get cold, they move to the middle. Everyone takes a turn."
+     "text": "外面的爸爸冷了，就換到裡面，大家輪流。",
+     "en": "When the dads outside get cold, they move to the middle. Everyone takes turns."
+    },
+    {
+     "who": "企鵝爸爸",
+     "tag": "gentle",
+     "text": "小寶貝，別怕，爸爸在這裡。",
+     "en": "Little one, don't be scared. Daddy's right here."
     }
    ]
   },
@@ -151,7 +167,7 @@
   },
   {
    "scene": "同一片冰原。",
-   "act": "爸爸彎下腰，用嘴巴輕輕把蛋推回腳上，趕快用肚子的皮蓋好，翅膀拍著胸口鬆一口氣；旁邊幾隻企鵝爸爸看著他，笑得東倒西歪。",
+   "act": "爸爸彎下腰，用嘴巴輕輕把蛋推回腳上，趕快用肚皮蓋好，翅膀拍著胸口鬆一口氣；旁邊幾隻企鵝爸爸看著他，笑得東倒西歪。",
    "lines": [
     {
      "who": "旁白",
@@ -199,14 +215,93 @@
    ]
   },
   {
-   "scene": "冰原，遠處的海邊，一排企鵝媽媽排隊走回來。",
-   "act": "小企鵝第一次出場：毛茸茸的灰色小企鵝，白色的臉、黑色的頭頂，坐在爸爸腳上；戴藍圍巾的企鵝媽媽一搖一擺地趕回來，張開翅膀；小企鵝張大嘴巴，媽媽低頭餵他吃魚。",
+   "scene": "同一片冬天的冰原，天空暗藍色，綠色的極光淡淡的；遠處是一大群企鵝爸爸，看不到海，也看不到媽媽們。",
+   "act": "小企鵝第一次出場：毛茸茸的灰色小企鵝，白色的臉、黑色的頭頂，坐在爸爸腳上、半個身子藏在爸爸肚皮下面，張大嘴巴喊餓；戴紅圍巾的企鵝爸爸變瘦了，肚子扁扁的，望著媽媽離開的遠方，然後低頭對小企鵝笑。",
+   "lines": [
+    {
+     "who": "小企鵝",
+     "tag": "sad",
+     "text": "爸爸，我好餓！",
+     "en": "Daddy, I'm so hungry!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是媽媽在很遠的海裡，要過幾天才回來。",
+     "en": "But Mom is far away in the sea. She won't be back for a few days."
+    },
+    {
+     "who": "企鵝爸爸",
+     "tag": "gentle",
+     "text": "別擔心，爸爸有企鵝奶！",
+     "en": "Don't worry. Daddy has penguin milk!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片冬天的冰原，極光淡淡的。",
+   "act": "戴紅圍巾的企鵝爸爸彎下脖子，把自己的嘴巴靠在小企鵝張開的小嘴巴上，餵他喝一點白色的企鵝奶；小企鵝閉著眼睛喝得好滿足；爸爸雖然瘦瘦的，眼睛笑得彎彎的。",
    "lines": [
     {
      "who": "旁白",
-     "text": "媽媽從海裡回來了，肚子裝滿了魚。",
-     "en": "Then Penguin Mom comes back from the sea with a tummy full of fish."
+     "text": "爸爸的喉嚨裡，會做出一點白色的企鵝奶。",
+     "en": "Deep in his throat, Dad can make a little white penguin milk."
     },
+    {
+     "who": "旁白",
+     "text": "他把嘴巴靠過去，餵小企鵝喝。",
+     "en": "He puts his beak to the chick's beak and feeds him."
+    },
+    {
+     "who": "小企鵝",
+     "tag": "happy",
+     "text": "嗯，好喝！",
+     "en": "Mmm, yummy!"
+    },
+    {
+     "who": "企鵝爸爸",
+     "tag": "gentle",
+     "text": "小口喝，媽媽很快就回來了。",
+     "en": "Little sips. Mommy will be back soon."
+    }
+   ]
+  },
+  {
+   "scene": "冰原，遠處的海邊，一排企鵝媽媽排隊走回來；冰上站滿了好幾千隻企鵝，黑白色的一大片。",
+   "act": "戴藍圍巾的企鵝媽媽站在企鵝群邊上，抬起頭、張開嘴巴大聲叫；在很多長得一樣的企鵝中間，戴紅圍巾的企鵝爸爸猛然抬頭，舉起一隻翅膀用力揮，小企鵝在爸爸腳上探出頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，媽媽們從海裡回來了，肚子裝滿了魚。",
+     "en": "One day, the moms come back from the sea with tummies full of fish."
+    },
+    {
+     "who": "旁白",
+     "text": "冰上有好幾千隻企鵝，看起來都一樣。",
+     "en": "There are thousands of penguins on the ice, and they all look the same."
+    },
+    {
+     "who": "企鵝媽媽",
+     "tag": "shouting",
+     "text": "我回來了！你們在哪裡？",
+     "en": "I'm back! Where are you?"
+    },
+    {
+     "who": "旁白",
+     "text": "爸爸一聽，就認出媽媽的聲音。",
+     "en": "Dad hears her call and knows her voice right away."
+    },
+    {
+     "who": "企鵝爸爸",
+     "tag": "excited",
+     "text": "我們在這裡！在這裡！",
+     "en": "We're over here! Over here!"
+    }
+   ]
+  },
+  {
+   "scene": "冰原上，企鵝群的中間。",
+   "act": "戴藍圍巾的企鵝媽媽一搖一擺地跑到爸爸身邊，張開翅膀；小企鵝坐在爸爸腳上，張大嘴巴，媽媽低頭餵他吃魚；接著媽媽轉頭，用翅膀輕輕摸摸瘦了一圈的爸爸，爸爸不好意思地笑。",
+   "lines": [
     {
      "who": "企鵝媽媽",
      "tag": "excited",
@@ -215,25 +310,44 @@
     },
     {
      "who": "小企鵝",
-     "text": "媽媽，我好餓！",
-     "en": "Mommy, I'm so hungry!"
+     "tag": "excited",
+     "text": "媽媽！爸爸給我喝了企鵝奶喔！",
+     "en": "Mommy! Daddy gave me penguin milk!"
     },
     {
      "who": "旁白",
      "text": "媽媽餵他吃魚，小企鵝吃飽了。",
      "en": "Mom feeds him fish until his tummy is full."
+    },
+    {
+     "who": "企鵝媽媽",
+     "tag": "gentle",
+     "text": "你瘦了好多，謝謝你顧好寶貝！",
+     "en": "You got so thin! Thank you for taking care of our baby."
     }
    ]
   },
   {
    "scene": "冰原上陽光出來了，冰閃閃發亮。",
-   "act": "企鵝爸爸揮著翅膀，一搖一擺地走向大海；小企鵝鑽到媽媽腳上、肚子的皮下面，只露出小小的頭，對爸爸揮翅膀；一家人笑咪咪的。",
+   "act": "企鵝爸爸揮著翅膀，一搖一擺地走向大海，回頭看；小企鵝鑽到媽媽腳上、肚皮下面，只露出小小的頭，對爸爸揮翅膀；一家人笑咪咪的。",
    "lines": [
     {
      "who": "企鵝爸爸",
      "tag": "excited",
      "text": "換我去海裡吃魚囉！",
      "en": "My turn to go eat fish in the sea!"
+    },
+    {
+     "who": "小企鵝",
+     "tag": "gentle",
+     "text": "爸爸再見，要快點回來喔！",
+     "en": "Bye, Daddy! Come back soon!"
+    },
+    {
+     "who": "企鵝爸爸",
+     "tag": "happy",
+     "text": "好，我很快就回來！",
+     "en": "I will! I'll be back soon!"
     },
     {
      "who": "旁白",

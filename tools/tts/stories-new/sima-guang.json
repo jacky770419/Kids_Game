@@ -1,0 +1,260 @@
+{
+ "id": "sima-guang",
+ "title": "司馬光救朋友",
+ "title_en": "Sima Guang and the Water Jar",
+ "size": "短",
+ "roles": {
+  "司馬光": "很久以前中國的七歲小男孩，聲音稚嫩、認真又冷靜，著急時大聲喊人，想到辦法時堅定，跟爸爸道歉時小聲。",
+  "阿寶": "司馬光的好朋友，八歲的男孩，聲音清亮、活潑愛玩，掉進水缸時又急又怕，得救後哈哈大笑。",
+  "爸爸": "司馬光的爸爸，溫和的中年男聲，說話慢、很疼孩子，提醒孩子時溫柔又認真。"
+ },
+ "cast": {
+  "司馬光": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "阿寶": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第4頁『沒有人聽到』，第7頁『沒事了』，第8頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "行",
+   "where": "第5頁『不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『我也會掉進去』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，一座老房子的後院：灰瓦白牆，種著花和竹子，地上鋪著石板。院子角落有一個好大的陶土水缸，深咖啡色，一半埋在土裡，缸口大約到小孩的胸口，裝滿了水，用來澆花。遠遠的前面是房子的大廳。",
+   "act": "司馬光第一次出場：七歲的小男孩，圓臉、大眼睛，黑頭髮在頭頂綁一個小圓髻，穿淺藍色古代小長袍。爸爸第一次出場：中年男人，黑色短鬍子，頭戴黑色布帽，穿深灰色長袍。爸爸蹲在水缸旁邊，指著水缸，認真地提醒司馬光；司馬光乖乖點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，有個小男孩，叫司馬光。",
+     "en": "Long ago in China, there lived a little boy named Sima Guang."
+    },
+    {
+     "who": "旁白",
+     "text": "他家後院，有一個好大的水缸。",
+     "en": "In his backyard, there was a great big water jar."
+    },
+    {
+     "who": "旁白",
+     "text": "爸爸總是提醒他：",
+     "en": "His father always reminded him,"
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "水缸很深，不可以在旁邊玩喔。",
+     "en": "The water jar is very deep. Don't play near it."
+    }
+   ]
+  },
+  {
+   "scene": "同一個後院；遠遠的大廳裡，大人們圍著桌子在忙。",
+   "act": "阿寶第一次出場：司馬光的好朋友，八歲的男孩，臉頰紅通通，頭髮綁兩個小圓髻，穿橘紅色短衣和黑褲子。兩個人在院子中間踢一顆紅色布球；阿寶抬起腳用力一踢，布球高高飛起，往水缸的方向飛去。遠處大廳裡的大人們低頭忙著，沒有往後院看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，大人都在大廳忙。",
+     "en": "One day, all the grown-ups were busy in the big hall."
+    },
+    {
+     "who": "旁白",
+     "text": "司馬光和好朋友阿寶在後院踢球。",
+     "en": "Sima Guang and his best friend, Bao, were playing ball in the backyard."
+    },
+    {
+     "who": "阿寶",
+     "tag": "excited",
+     "text": "看我的！用力踢！",
+     "en": "Watch this! A big kick!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！球飛進了水缸裡。",
+     "en": "Plop! The ball flew right into the water jar."
+    }
+   ]
+  },
+  {
+   "scene": "後院的水缸旁邊，缸口的石頭上長著綠色的青苔，濕濕亮亮的。",
+   "act": "紅色布球浮在水缸裡的水面上。阿寶跑到缸邊，雙腳站在地上，彎下腰伸長手臂去撿球；下一格：他的腳踩到缸邊濕滑的青苔，一滑，整個人撲通滑進水缸裡，水花濺起來。司馬光在後面伸出手，嘴巴張得好大。",
+   "lines": [
+    {
+     "who": "阿寶",
+     "tag": "sad",
+     "text": "我的球！",
+     "en": "My ball!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿寶跑到缸邊，彎腰去撿。",
+     "en": "Bao ran over to the jar and leaned down to grab it."
+    },
+    {
+     "who": "旁白",
+     "text": "缸邊好滑，撲通！",
+     "en": "But the edge was slippery. Splash!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿寶滑進水缸裡了！",
+     "en": "Bao slipped right into the water jar!"
+    }
+   ]
+  },
+  {
+   "scene": "後院的水缸旁邊。",
+   "act": "阿寶在水缸裡，兩手緊緊抓著缸口，只露出頭和雙手，頭髮濕答答，一臉著急（不畫水下面，不畫沉下去）。司馬光雙手圍在嘴邊，轉頭朝著遠處大廳大聲喊；大廳在畫面好遠的地方，小小的，裡面的人沒有轉頭。",
+   "lines": [
+    {
+     "who": "阿寶",
+     "tag": "scared",
+     "text": "救命！裡面好滑，我出不來！",
+     "en": "Help! It's too slippery! I can't get out!"
+    },
+    {
+     "who": "司馬光",
+     "tag": "shouting",
+     "text": "快來人啊！快來人啊！",
+     "en": "Help, somebody! Help, somebody!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是大廳好遠，沒有人聽到。",
+     "en": "But the hall was far away, and nobody heard."
+    }
+   ]
+  },
+  {
+   "scene": "後院的水缸旁邊。",
+   "act": "司馬光跑到缸邊，伸出手，又縮回來，搖搖頭，臉上又急又認真；阿寶在缸裡抓著缸口，手指頭慢慢往下滑。司馬光又一次朝大廳大喊，臉都喊紅了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "司馬光想伸手拉，可是缸太深了。",
+     "en": "Sima Guang wanted to reach in and pull Bao out, but the jar was too deep."
+    },
+    {
+     "who": "司馬光",
+     "tag": "serious",
+     "text": "不行，我也會掉進去！",
+     "en": "No, I would fall in too!"
+    },
+    {
+     "who": "司馬光",
+     "tag": "shouting",
+     "text": "快來人啊！阿寶掉進水缸了！",
+     "en": "Help, somebody! Bao fell into the water jar!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿寶快抓不住缸邊了。",
+     "en": "Bao was losing his grip on the edge."
+    }
+   ]
+  },
+  {
+   "scene": "後院的水缸旁邊，地上有一塊比西瓜小一點的灰色大石頭。",
+   "act": "司馬光看到地上的大石頭，眼睛一亮。他兩手抱起石頭，站在缸邊的地上，對準水缸靠近地面的地方，用力砸下去；水缸裂開一個大洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他看到地上有一塊大石頭。",
+     "en": "Then Sima Guang spotted a big stone on the ground."
+    },
+    {
+     "who": "司馬光",
+     "tag": "serious",
+     "text": "阿寶，抓緊！我來救你！",
+     "en": "Hold on tight, Bao! I'm coming!"
+    },
+    {
+     "who": "旁白",
+     "text": "他抱起石頭，往缸底用力一砸。",
+     "en": "He picked up the stone and smashed it hard against the bottom of the jar."
+    },
+    {
+     "who": "旁白",
+     "text": "砰！水缸破了一個大洞！",
+     "en": "Crack! The jar broke open with a big hole!"
+    }
+   ]
+  },
+  {
+   "scene": "後院，破掉的水缸旁邊，水流了滿地，紅色布球漂在地上的水裡。",
+   "act": "水從破洞嘩地流出來，流了一地；阿寶坐在破水缸裡，全身濕答答，大口喘氣，一隻綠色的小青蛙跳到他頭上。司馬光和阿寶看著青蛙，一起破涕為笑。遠處，爸爸和好幾個大人從大廳跑過來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "水全流出來了，阿寶沒事了！",
+     "en": "All the water came rushing out, and Bao was safe!"
+    },
+    {
+     "who": "旁白",
+     "text": "一隻小青蛙也跳出來，跳到阿寶頭上！",
+     "en": "A little frog hopped out too, and landed right on Bao's head!"
+    },
+    {
+     "who": "阿寶",
+     "tag": "laughing",
+     "text": "哈！青蛙也出來了！",
+     "en": "Ha! The frog got out too!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，爸爸和大人們才跑來。",
+     "en": "Just then, Father and the other grown-ups came running."
+    }
+   ]
+  },
+  {
+   "scene": "後院，破水缸旁邊；太陽照下來，地上的水亮晶晶的。",
+   "act": "爸爸蹲下來，一手摟著司馬光，一手摟著裹著大毛巾的阿寶；司馬光低著頭，有點不好意思。爸爸笑著摸摸他的頭。小青蛙坐在破水缸邊上看著大家。",
+   "lines": [
+    {
+     "who": "司馬光",
+     "tag": "sad",
+     "text": "爸爸，對不起，我把水缸打破了。",
+     "en": "Father, I'm sorry. I broke the water jar."
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "水缸破了沒關係，人平安最要緊。",
+     "en": "A broken jar doesn't matter. What matters is that everyone is safe."
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "以後遇到危險，一定要先大聲叫大人喔！",
+     "en": "From now on, when there's danger, always call a grown-up first, loud and clear!"
+    },
+    {
+     "who": "阿寶",
+     "tag": "happy",
+     "text": "知道了！我們不在水缸旁邊玩了！",
+     "en": "We will! And we will never play by the water jar again!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "id": "dragon-lover",
+ "title": "最愛龍的張先生",
+ "title_en": "The Man Who Loved Dragons",
+ "size": "短",
+ "roles": {
+  "張先生": "最愛龍的中年大叔，懶洋洋的胖叔叔聲音，平常得意又熱情，愛炫耀自己的龍；看到真的龍時嚇得大叫、聲音發抖，鼓起勇氣時小聲害羞，最後開心大笑。",
+  "龍": "跟十二生肖裡一樣的綠色龍，溫柔的老爺爺聲音，低沉溫暖、說話慢慢的，很想交朋友；被躲開時很難過，打噴嚏後不好意思。"
+ },
+ "cast": {
+  "張先生": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "龍": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "嚇",
+   "where": "第4頁『嚇了一大跳』",
+   "read": "xià"
+  },
+  {
+   "char": "喝",
+   "where": "第7頁『要不要喝杯茶』",
+   "read": "hē"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，一間小小的老房子裡：灰瓦屋頂、木格子窗，屋裡有一張矮木床、一張木桌。牆上掛滿了畫著龍的畫；桌上的茶杯、茶壺畫著龍，床上的枕頭和被子也繡著龍。",
+   "act": "張先生第一次出場：中年大叔，圓圓的臉、兩撇翹翹的黑色小鬍子，頭戴黑色小布帽，穿一件繡著綠色龍的金黃色長袍。他站在屋子中間，張開雙手，得意地介紹滿屋子的龍，笑得眼睛瞇成一條線。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有位張先生，最愛龍了。",
+     "en": "Once upon a time, there was a man named Mr. Zhang, who loved dragons."
+    },
+    {
+     "who": "旁白",
+     "text": "牆上有龍，杯子上有龍，枕頭上也有龍！",
+     "en": "There were dragons on his walls, dragons on his cups, and even dragons on his pillow!"
+    },
+    {
+     "who": "張先生",
+     "tag": "proud",
+     "text": "你們看，我最愛龍了！",
+     "en": "Look! I love dragons most of all!"
+    }
+   ]
+  },
+  {
+   "scene": "張先生家門口的小路，路邊有柳樹；天上飄著白雲，雲裡面躲著一條龍。",
+   "act": "張先生在門口拉著兩位鄰居（挑菜的大嬸、牽小孩的大叔），指著自己袍子上的龍，說個不停；鄰居們笑著點頭。天上的雲朵後面，龍第一次出場（跟十二生肖插圖裡的龍一樣）：綠色的身體又細又彎，淡黃色的肚子一節一節，頭上一對橘黃色的鹿角，耳朵裡面是粉紅色，白色的眉毛、紅紅的臉頰、嘴邊兩條白色長鬚、白色捲捲的大鬍子，脖子和背上有白色的毛，尾巴尖一撮白毛，眼睛笑成彎彎的。龍從雲裡探出頭，好奇地往下聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他每天都跟鄰居說：",
+     "en": "Every day, Mr. Zhang told his neighbors,"
+    },
+    {
+     "who": "張先生",
+     "tag": "excited",
+     "text": "龍真威風！我最愛龍了！",
+     "en": "Dragons are so amazing! I love dragons most of all!"
+    },
+    {
+     "who": "旁白",
+     "text": "天上有一條綠色的龍，聽見了。",
+     "en": "Up in the sky, a green dragon heard him."
+    },
+    {
+     "who": "龍",
+     "tag": "happy",
+     "text": "有人這麼愛我？我去找他玩！",
+     "en": "Someone loves me that much? I will go and visit him!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，張先生的屋子裡點著一盞油燈；窗外是黑藍色的夜空和星星。",
+   "act": "張先生穿著睡衣（淡黃色，上面也有小龍），坐在床邊打哈欠。窗戶被風吹開，窗簾飛起來，一顆好大的綠色龍頭從窗戶伸進來，白色大鬍子垂在窗台上，笑咪咪地打招呼，鹿角卡在窗框上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，窗外颳起一陣大風。",
+     "en": "That night, a big wind blew outside the window."
+    },
+    {
+     "who": "旁白",
+     "text": "一顆好大的龍頭，伸進了窗戶。",
+     "en": "A huge dragon head poked in through the window."
+    },
+    {
+     "who": "龍",
+     "tag": "gentle",
+     "text": "張先生，你好！我是龍。",
+     "en": "Hello, Mr. Zhang! I am a dragon."
+    }
+   ]
+  },
+  {
+   "scene": "張先生的屋子裡，床邊。",
+   "act": "張先生跳起來，小布帽飛到半空中，鬍子都翹起來了，嘴巴張得好大。下一格：他趴下去躲進矮木床底下，可是床太矮，圓滾滾的屁股卡在床外面，兩隻腳亂踢。龍歪著頭，眨眨眼睛看著那個屁股。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "張先生嚇了一大跳。",
+     "en": "Mr. Zhang jumped in fright."
+    },
+    {
+     "who": "張先生",
+     "tag": "scared",
+     "text": "哇！是真的龍！",
+     "en": "Aaah! A real dragon!"
+    },
+    {
+     "who": "旁白",
+     "text": "他趕快躲到床底下。",
+     "en": "He dove under his bed."
+    },
+    {
+     "who": "旁白",
+     "text": "可是床太矮了，屁股露在外面！",
+     "en": "But the bed was too low, and his bottom stuck out!"
+    }
+   ]
+  },
+  {
+   "scene": "張先生的屋子裡，床邊；油燈的光照在龍的臉上。",
+   "act": "龍把頭伸進屋裡，低頭看著床底下，一臉不懂；張先生從床底下露出一隻眼睛，在發抖。下一格：龍的白色大鬍子垂下來，眉毛垂成八字，眼睛濕濕的，好難過。",
+   "lines": [
+    {
+     "who": "龍",
+     "tag": "surprised",
+     "text": "咦？你不是最愛龍嗎？",
+     "en": "Huh? Don't you love dragons most of all?"
+    },
+    {
+     "who": "張先生",
+     "tag": "scared",
+     "text": "我愛畫裡的龍！真的龍，好可怕！",
+     "en": "I love dragons in pictures! Real dragons are scary!"
+    },
+    {
+     "who": "旁白",
+     "text": "龍的大鬍子垂了下來。",
+     "en": "The dragon's big beard drooped."
+    },
+    {
+     "who": "龍",
+     "tag": "sad",
+     "text": "原來，你不想跟我做朋友。",
+     "en": "Oh. So you don't want to be my friend."
+    }
+   ]
+  },
+  {
+   "scene": "張先生的屋子裡，床底下揚起一團灰塵。",
+   "act": "張先生從床底下慢慢爬出來，滿頭灰塵，鼻子上沾著灰。龍皺起鼻子，眼睛閉起來，打了一個大噴嚏；一陣大風把牆上的龍畫全吹得滿屋子飛，張先生的小布帽又飛走了。下一格：張先生又一頭躲回床底下，屁股又卡在外面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他往外一看，龍的眼睛好溫柔。",
+     "en": "Mr. Zhang peeked out. The dragon's eyes looked so kind."
+    },
+    {
+     "who": "旁白",
+     "text": "他鼓起勇氣，爬了出來。",
+     "en": "He gathered his courage and crawled out."
+    },
+    {
+     "who": "旁白",
+     "text": "灰塵飛起來，龍打了一個大噴嚏！",
+     "en": "Dust flew up from under the bed, and the dragon let out a huge sneeze!"
+    },
+    {
+     "who": "旁白",
+     "text": "颳起一陣大風，張先生又躲回床底下了！",
+     "en": "Whoosh! Wind blew all around, and Mr. Zhang dove right back under the bed!"
+    }
+   ]
+  },
+  {
+   "scene": "張先生的屋子裡，滿地都是被吹亂的龍畫。",
+   "act": "龍用尾巴把飛走的龍畫一張一張接住，不好意思地抓抓頭。張先生第二次從床底下爬出來，雙腳還在發抖，雙手捧著那個畫著龍的茶杯，小心地遞給龍；龍彎下頭，鬍子輕輕碰到張先生的頭，兩個都笑了。",
+   "lines": [
+    {
+     "who": "龍",
+     "tag": "gentle",
+     "text": "對不起，我的鼻子好癢。",
+     "en": "Sorry! The dust tickled my nose."
+    },
+    {
+     "who": "旁白",
+     "text": "張先生吸一口氣，又爬了出來。",
+     "en": "Mr. Zhang took a deep breath and crawled out again."
+    },
+    {
+     "who": "張先生",
+     "tag": "shy",
+     "text": "龍，你好。要不要喝杯茶？",
+     "en": "Hello, Dragon. Would you like a cup of tea?"
+    },
+    {
+     "who": "旁白",
+     "text": "龍笑了，用大鬍子摸了摸他的頭。",
+     "en": "The dragon smiled and patted his head with its big beard."
+    }
+   ]
+  },
+  {
+   "scene": "張先生家的院子，晚上，滿天星星；院子裡一張小石桌，放著畫著龍的茶壺和茶杯。",
+   "act": "張先生坐在石桌旁，龍把長長的身體圍著院子繞一圈，用尾巴尖捏著小小的茶杯喝茶。張先生拿著毛筆，對著真的龍畫一張新的畫，兩個一起哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從此，張先生和龍變成了好朋友。",
+     "en": "From that day on, Mr. Zhang and the dragon were good friends."
+    },
+    {
+     "who": "張先生",
+     "tag": "happy",
+     "text": "畫裡的龍，我愛；真的龍，我也愛！",
+     "en": "I love dragons in pictures, and I love real dragons too!"
+    },
+    {
+     "who": "旁白",
+     "text": "他對著真的龍，畫了一張新的畫。",
+     "en": "Then he painted a new picture of his real dragon friend."
+    },
+    {
+     "who": "張先生",
+     "tag": "laughing",
+     "text": "我最愛龍了！",
+     "en": "I love dragons most of all!"
+    }
+   ]
+  }
+ ]
+}

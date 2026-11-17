@@ -4,13 +4,13 @@
  "title_en": "The Three Little Kittens",
  "size": "短",
  "roles": {
-  "小花": "三隻小貓裡的大姊姊，可愛小女生的聲音，很有主意，口頭禪是「跟我來！」。",
+  "小桃": "三隻小貓裡的大姊姊，可愛小女生的聲音，很有主意，口頭禪是「跟我來！」。",
   "小虎": "三隻小貓裡的哥哥，活潑的小男孩聲音，什麼都要搶第一，口頭禪是「我來，我來！」。",
   "小咪": "三隻小貓裡最小的妹妹，尖細可愛的聲音，總是慢一步，開口先「喵」一聲，常說「等我一下！」。",
   "貓媽媽": "溫柔的貓媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，從不大聲罵人。"
  },
  "cast": {
-  "小花": {
+  "小桃": {
    "find": "Lulu",
    "en": "Cherry Twinkle"
   },
@@ -57,56 +57,66 @@
    "char": "會",
    "where": "第3頁『派會等你們』",
    "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第2頁『什麼都沒有』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『什麼都沒有』",
+   "read": "méi"
   }
  ],
  "pages": [
   {
    "scene": "秋天的白天，一間紅屋頂的小木屋和前面的院子：院子裡有一大堆黃色和橘色的樹葉、幾個花盆、一條晒衣繩；木屋窗戶飄出熱氣，看得到廚房裡的烤箱。",
-   "act": "貓媽媽是灰色的大貓，繫著白色圍裙，從窗戶探頭叫小貓。三隻小貓在樹葉堆旁邊玩：小花是白底橘色花斑的小母貓，頭上綁紅色蝴蝶結，戴紅手套；小虎是橘色條紋的小公貓，戴藍手套；小咪是最小的白色小母貓，耳朵尖是黑色，戴黃手套。",
+   "act": "貓媽媽是灰色的大貓，繫著白色圍裙，從窗戶探頭叫小貓。三隻小貓在樹葉堆旁邊玩：小桃是白底橘色花斑的小母貓，頭上綁紅色蝴蝶結，戴紅手套；小虎是橘色條紋的小公貓，戴藍手套；小咪是最小的白色小母貓，耳朵尖是黑色，戴黃手套。",
    "lines": [
     {
      "who": "旁白",
      "text": "貓媽媽在烤派，屋子裡好香。",
-     "en": "Mother Cat is baking a pie. The whole house smells yummy."
+     "en": "Mother Cat is baking a pie, and the whole house smells so sweet."
     },
     {
      "who": "旁白",
      "text": "三隻小貓在院子裡玩。",
-     "en": "Outside, three little kittens play in the yard."
+     "en": "Out in the yard, three little kittens play."
     },
     {
      "who": "旁白",
-     "text": "小花戴紅手套，小虎戴藍手套，小咪戴黃手套。",
-     "en": "Coco wears red mittens, Ollie wears blue, and Pip wears yellow."
+     "text": "小桃戴紅手套，小虎戴藍手套，小咪戴黃手套。",
+     "en": "Coco wears red mittens, Ollie wears blue, and Pip wears yellow ones, too."
     },
     {
      "who": "貓媽媽",
      "tag": "happy",
      "text": "派烤好了，進來吃吧！",
-     "en": "The pie is ready. Come in and eat!"
+     "en": "The pie is ready! Come in and eat!"
     }
    ]
   },
   {
    "scene": "小木屋的廚房：木頭餐桌上放著一個剛烤好的草莓派，冒著熱氣。",
-   "act": "小虎第一個衝進門，後面跟著小花和小咪。貓媽媽彎腰看他們的手，一臉驚訝；三隻小貓低頭看自己光禿禿的手掌，小咪的眼淚快掉下來了。小咪的黃手套其實掛在她自己的白尾巴尖上，她沒發現。",
+   "act": "小虎第一個衝進門，後面跟著小桃和小咪。貓媽媽彎腰看他們的手，一臉驚訝；三隻小貓低頭看自己光禿禿的手掌，小咪的眼淚快掉下來了。小咪的黃手套其實掛在她自己的白尾巴尖上，她沒發現。",
    "lines": [
     {
      "who": "小虎",
      "tag": "excited",
      "text": "我來，我來！我第一個！",
-     "en": "Me, me! I'm first!"
+     "en": "Me first, me first! I'm number one!"
     },
     {
      "who": "貓媽媽",
      "tag": "surprised",
      "text": "咦？你們的手套呢？",
-     "en": "Wait, where are your mittens?"
+     "en": "Wait, my kittens, where are your mittens?"
     },
     {
      "who": "旁白",
      "text": "低頭一看，手上什麼都沒有。",
-     "en": "They look down. Their paws are bare."
+     "en": "They look at their paws. Nothing there! Their paws are bare."
     },
     {
      "who": "小咪",
@@ -118,22 +128,22 @@
   },
   {
    "scene": "同一間廚房，草莓派放在桌上。",
-   "act": "貓媽媽蹲下來，摸摸小咪的頭，溫柔地笑；小花舉起一隻手，眼睛一亮，往門口一指。小咪的黃手套還掛在她的尾巴尖上。",
+   "act": "貓媽媽蹲下來，摸摸小咪的頭，溫柔地笑；小桃舉起一隻手，眼睛一亮，往門口一指。小咪的黃手套還掛在她的尾巴尖上。",
    "lines": [
     {
      "who": "貓媽媽",
      "tag": "gentle",
-     "text": "別哭，派會等你們。",
-     "en": "Don't cry. The pie will wait for you."
+     "text": "別難過，派會等你們。",
+     "en": "Don't be sad. The pie will wait."
     },
     {
      "who": "貓媽媽",
      "tag": "gentle",
      "text": "想一想，剛才去哪裡玩？",
-     "en": "Think hard. Where were you playing just now?"
+     "en": "Now think. Where did you play today?"
     },
     {
-     "who": "小花",
+     "who": "小桃",
      "tag": "excited",
      "text": "我知道！跟我來！",
      "en": "I know! Follow me!"
@@ -142,7 +152,7 @@
   },
   {
    "scene": "小木屋前的院子，那一大堆黃色和橘色的樹葉。",
-   "act": "三隻小貓跑回院子，兩手放在嘴邊大聲喊；樹葉堆裡露出一小角紅色，小花撲過去，拉出一雙紅手套高高舉起。",
+   "act": "三隻小貓跑回院子，兩手放在嘴邊大聲喊；樹葉堆裡露出一小角紅色，小桃撲過去，拉出一雙紅手套高高舉起。",
    "lines": [
     {
      "who": "旁白",
@@ -150,7 +160,7 @@
      "en": "They look all around, calling,"
     },
     {
-     "who": "小花",
+     "who": "小桃",
      "tag": "shouting",
      "text": "手套，手套，在哪裡？",
      "en": "Mittens, mittens, where are you?"
@@ -158,10 +168,10 @@
     {
      "who": "旁白",
      "text": "樹葉堆裡，有一點紅色。",
-     "en": "Something red is peeking out of the leaf pile."
+     "en": "In the leaf pile, a bit of red peeks through."
     },
     {
-     "who": "小花",
+     "who": "小桃",
      "tag": "excited",
      "text": "找到了！我的紅手套！",
      "en": "Found them! My red mittens!"
@@ -170,24 +180,24 @@
   },
   {
    "scene": "院子裡的花盆旁邊。",
-   "act": "小虎從花盆後面拉出一雙藍手套，得意地揮；小咪在院子裡繞著跑，急得快哭了，她的黃手套其實一直掛在她自己的白尾巴上，跟著她一起跑。小花指著小咪的尾巴笑。",
+   "act": "小虎從花盆後面拉出一雙藍手套，得意地揮；小咪在院子裡繞著跑，急得快哭了，她的黃手套其實一直掛在她自己的白尾巴上，跟著她一起跑。小桃指著小咪的尾巴笑。",
    "lines": [
     {
      "who": "小虎",
      "tag": "excited",
      "text": "我來，我來！手套，手套，在哪裡？",
-     "en": "Me, me! Mittens, mittens, where are you?"
+     "en": "Me first, me first! Mittens, mittens, where are you?"
     },
     {
-     "who": "旁白",
-     "text": "花盆後面，是藍手套！",
-     "en": "Behind a flowerpot, there are the blue mittens!"
+     "who": "小虎",
+     "text": "找到了！藍手套在花盆後面！",
+     "en": "Found them! My blue mittens are behind the flowerpot!"
     },
     {
      "who": "小咪",
      "tag": "crying",
      "text": "喵，等我一下！我的黃手套呢？",
-     "en": "Mew, wait for me! Where are my yellow mittens?"
+     "en": "Mew, wait for me! My yellow pair, where can it be?"
     },
     {
      "who": "旁白",
@@ -195,7 +205,7 @@
      "en": "Pip runs around the yard, and her tail runs right along with her."
     },
     {
-     "who": "小花",
+     "who": "小桃",
      "tag": "laughing",
      "text": "小咪，在妳的尾巴上啦！",
      "en": "Pip, they're on your tail!"
@@ -208,25 +218,25 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "他們戴著手套就吃派。",
-     "en": "They eat the pie with their mittens still on."
+     "text": "他們急著吃派，忘了脫手套。",
+     "en": "In a hurry for pie, they forget to take their mittens off."
     },
     {
      "who": "小虎",
      "tag": "happy",
-     "text": "我來，我來！真好吃！",
-     "en": "Me, me! Yummy!"
+     "text": "我來，我來！我要第一塊！",
+     "en": "Me first, me first! The first slice is for me!"
     },
     {
      "who": "旁白",
-     "text": "吃完派，手套都沾滿了草莓醬。",
-     "en": "When the pie is gone, their mittens are covered in strawberry jam."
+     "text": "手套都沾滿了草莓醬。",
+     "en": "Now their mittens are covered in strawberry jam."
     },
     {
      "who": "小咪",
      "tag": "scared",
      "text": "喵，糟糕，手套好黏！",
-     "en": "Mew, uh-oh! Our mittens are all sticky!"
+     "en": "Mew, uh-oh! Our mittens are as sticky as can be!"
     }
    ]
   },
@@ -235,26 +245,26 @@
    "act": "三隻小貓站在小木盆旁邊，把手套泡進水裡搓，肥皂泡飛得到處都是，小咪的鼻子上也沾了一個泡泡；小虎舉著洗好的藍手套跑向晒衣繩。",
    "lines": [
     {
-     "who": "小花",
+     "who": "小桃",
      "tag": "proud",
      "text": "別怕，我們自己洗！跟我來！",
      "en": "Don't worry, we can wash them ourselves! Follow me!"
     },
     {
      "who": "旁白",
-     "text": "他們在小木盆裡，搓呀搓。",
-     "en": "In a little tub of water, they scrub, scrub, scrub."
+     "text": "在小木盆裡，搓呀搓。",
+     "en": "In a little tub, they scrub and scrub."
     },
     {
      "who": "旁白",
      "text": "肥皂泡飛起來，手套變乾淨了。",
-     "en": "Soap bubbles float up, and the mittens come clean."
+     "en": "Bubbles float high, and the mittens come clean."
     },
     {
      "who": "小虎",
      "tag": "excited",
      "text": "我來，我來！我來晾！",
-     "en": "Me, me! I'll hang them up!"
+     "en": "Me first, me first! I'll hang them up to dry!"
     }
    ]
   },
@@ -265,7 +275,7 @@
     {
      "who": "旁白",
      "text": "三雙手套，排成一排掛在繩子上。",
-     "en": "Three pairs of mittens hang in a row on the line."
+     "en": "Three pairs of mittens hang on the line, all in a row."
     },
     {
      "who": "貓媽媽",
@@ -282,8 +292,8 @@
     {
      "who": "貓媽媽",
      "tag": "happy",
-     "text": "你們真棒！等手套乾了，一起出去玩吧！",
-     "en": "Well done! When they're dry, let's all go out and play!"
+     "text": "你們真棒！等手套乾了，再出去玩！",
+     "en": "Clever kittens, clean mittens! When they're dry, let's all go out and play!"
     }
    ]
   }

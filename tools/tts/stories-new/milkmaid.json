@@ -1,0 +1,244 @@
+{
+ "id": "milkmaid",
+ "title": "提牛奶的小姑娘",
+ "title_en": "The Milkmaid and Her Pail",
+ "size": "短",
+ "roles": {
+  "小姑娘": "頭頂牛奶去市場的小姑娘茉莉，十二歲左右的女孩，活潑愛幻想，說話又快又興奮，灑了牛奶也能笑出來。",
+  "媽媽": "茉莉的媽媽，溫柔的媽媽聲音，說話輕輕慢慢、帶著笑，從來不罵人。"
+ },
+ "cast": {
+  "小姑娘": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "孵",
+   "where": "第2頁『孵出小雞』",
+   "read": "fū"
+  },
+  {
+   "char": "晃",
+   "where": "第5頁『晃呀晃』",
+   "read": "huàng"
+  },
+  {
+   "char": "空",
+   "where": "第7頁『空桶』",
+   "read": "kōng"
+  },
+  {
+   "char": "哪",
+   "where": "第7頁『哪來的』",
+   "read": "nǎ"
+  },
+  {
+   "char": "沒",
+   "where": "第7頁『沒關係』『沒受傷』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上的鄉下農場，木頭小屋、紅色的穀倉，草地上有一頭黑白花的乳牛在吃草；一條黃土小路從家門口通往遠處的小鎮。",
+   "act": "茉莉第一次出場：十二歲左右的女孩，咖啡色頭髮綁成一條長辮子，戴一條綠色頭巾，穿淡藍色連身裙、白色圍裙和棕色小靴子。媽媽第一次出場：圓臉、溫柔的媽媽，頭髮挽成髮髻，穿米色衣服、繫碎花圍裙。媽媽把一個裝滿白色牛奶的木桶，小心放在茉莉頭頂的布墊上；茉莉兩手扶著木桶，笑得很有自信。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "茉莉家有乳牛，每天都有新鮮牛奶。",
+     "en": "Molly's family had a cow that gave fresh milk every morning."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽把一桶牛奶放在茉莉頭上。",
+     "en": "Mama set a pail of milk on top of Molly's head."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "拿去市場賣，路上要看路喔！",
+     "en": "Take it to the market to sell. Watch where you're going!"
+    },
+    {
+     "who": "小姑娘",
+     "tag": "happy",
+     "text": "放心！",
+     "en": "Don't worry!"
+    }
+   ]
+  },
+  {
+   "scene": "鄉間的黃土小路，兩旁是綠色的田和野花，天空很藍。",
+   "act": "茉莉頭頂著木桶走在小路上，兩手扶著桶子，眼睛往上看著天空，一臉想像的樣子；她頭旁邊畫著想像泡泡，裡面是一籃雞蛋，雞蛋孵出黃色小雞，小雞再變成大母雞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "茉莉一邊走，一邊想。",
+     "en": "Molly walked along, thinking as she went."
+    },
+    {
+     "who": "小姑娘",
+     "tag": "excited",
+     "text": "賣了牛奶，我要買一籃雞蛋！",
+     "en": "When I sell the milk, I'll buy a basket of eggs!"
+    },
+    {
+     "who": "小姑娘",
+     "text": "雞蛋孵出小雞，小雞變成大雞！",
+     "en": "The eggs will hatch into chicks, and the chicks will grow into hens!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，走過一座小木橋，遠處看得到小鎮的屋頂。",
+   "act": "茉莉的想像泡泡變大了：大母雞生了一堆蛋，蛋旁邊有一個錢袋，最後是一件好漂亮的紅色裙子。茉莉腳步越走越快，嘴角上揚，裙擺飛起來，頭上的木桶有一點歪。",
+   "lines": [
+    {
+     "who": "小姑娘",
+     "tag": "excited",
+     "text": "大雞生好多蛋，我再把蛋賣掉！",
+     "en": "The hens will lay lots of eggs, and I'll sell those too!"
+    },
+    {
+     "who": "小姑娘",
+     "tag": "happy",
+     "text": "然後，我要買一件新裙子，紅色的！",
+     "en": "Then I'll buy a new dress. A red one!"
+    },
+    {
+     "who": "旁白",
+     "text": "她越想越開心，腳步也越來越快。",
+     "en": "The more she thought about it, the happier she got, and the faster she walked."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，路邊有一棵大樹。",
+   "act": "畫面用一整排小圖畫出想像的鏈條：牛奶桶、一籃雞蛋、小雞、大母雞、一堆蛋、紅裙子。最後一格，茉莉想像自己穿著紅裙子站在市場中間，旁邊的人都轉頭看她。真實的茉莉頭頂木桶，抬著下巴，得意地走著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "賣了牛奶買雞蛋，雞蛋變小雞，小雞變大雞。",
+     "en": "Sell the milk, buy some eggs. Eggs turn into chicks, and chicks turn into hens."
+    },
+    {
+     "who": "旁白",
+     "text": "大雞生蛋，賣了蛋，買新裙子！",
+     "en": "Hens lay eggs, sell the eggs, and buy a new dress!"
+    },
+    {
+     "who": "小姑娘",
+     "tag": "proud",
+     "text": "我穿新裙子去市場，大家都看我！",
+     "en": "I'll wear my new dress to the market, and everyone will look at me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，路邊是柔軟的草地。",
+   "act": "茉莉抬高下巴，把頭用力往旁邊一甩，眼睛閉著，一臉神氣；頭上的木桶晃了晃，從她頭上滑下去，咚的一聲掉在路邊的草地上，牛奶往上濺起來。她沒有受傷。",
+   "lines": [
+    {
+     "who": "小姑娘",
+     "tag": "proud",
+     "text": "有人說「好漂亮」，我就把頭一甩，哼！",
+     "en": "If someone says, \"How pretty!\" I'll just toss my head like this. Hmph!"
+    },
+    {
+     "who": "旁白",
+     "text": "她真的把頭用力一甩。",
+     "en": "And she really did toss her head."
+    },
+    {
+     "who": "旁白",
+     "text": "牛奶桶晃呀晃，咚的一聲，掉在草地上！",
+     "en": "The pail wobbled and wobbled, and thump! It landed on the grass."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，草地上倒著空木桶，地上一大片白色的牛奶。",
+   "act": "茉莉坐在草地上，全身滴著牛奶，頭髮和裙子都濕了，嘴巴上面一圈白色的牛奶鬍子，像個白鬍子老公公；她張大嘴巴，兩手攤開，一臉傻眼，樣子好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "牛奶灑了她一身，連臉上都是。",
+     "en": "The milk splashed all over her, even on her face."
+    },
+    {
+     "who": "旁白",
+     "text": "她的嘴巴上，多了一圈白鬍子。",
+     "en": "Now she had a big white milk mustache!"
+    },
+    {
+     "who": "小姑娘",
+     "tag": "surprised",
+     "text": "我的雞蛋、小雞、新裙子，全都不見了！",
+     "en": "My eggs, my chicks, my new dress, all gone!"
+    }
+   ]
+  },
+  {
+   "scene": "茉莉家的木頭小屋門口，下午。",
+   "act": "茉莉提著空木桶站在門口，臉上還有白色牛奶鬍子；媽媽彎下腰，一手拿毛巾溫柔地幫她擦臉，一邊笑；茉莉也忍不住笑了出來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "茉莉提著空桶回家了。",
+     "en": "Molly carried the empty pail back home."
+    },
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "哎呀，哪來的白鬍子老公公？",
+     "en": "Oh my, who's this old man with a white beard?"
+    },
+    {
+     "who": "旁白",
+     "text": "茉莉也笑了出來。",
+     "en": "Molly burst out laughing too."
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "沒關係，妳沒受傷就好。明天又有新的牛奶。",
+     "en": "That's all right. I'm just glad you're not hurt. There will be fresh milk tomorrow."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，同一條鄉間小路，陽光很亮；遠處小鎮的市場搭著彩色的棚子。",
+   "act": "茉莉頭頂木桶，兩手扶好，低頭看著腳前的路，一步一步小心地走；她頭旁邊的想像泡泡裡有一顆雞蛋，被她自己笑著揮手趕走。最後一格，她把滿滿的牛奶桶放在市場的攤子上，開心地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，茉莉又去賣牛奶了。",
+     "en": "The next day, Molly set off to sell milk again."
+    },
+    {
+     "who": "小姑娘",
+     "tag": "excited",
+     "text": "賣了牛奶買雞蛋，雞蛋變小雞！",
+     "en": "Sell the milk, buy some eggs, eggs turn into chicks!"
+    },
+    {
+     "who": "小姑娘",
+     "tag": "laughing",
+     "text": "不對，不對！先看路，一步，一步走。",
+     "en": "Oops, no, no! Eyes on the path. One step at a time."
+    },
+    {
+     "who": "旁白",
+     "text": "這一次，牛奶平安地到了市場。",
+     "en": "This time, the milk made it safely to the market."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,367 @@
+{
+ "id": "nightingale",
+ "title": "國王和夜鶯",
+ "title_en": "The Emperor and the Nightingale",
+ "size": "中",
+ "roles": {
+  "國王": "住在大宮殿裡的國王，慈祥的老爺爺聲音，說話低沉溫暖，一開始愛新鮮，生病時虛弱寂寞，最後懂得珍惜。",
+  "夜鶯": "森林裡的小夜鶯，可愛的小女生聲音，輕柔溫和，說話有禮貌、有主見。",
+  "廚房小女孩": "在宮殿廚房幫忙的小女孩，聲音清亮天真，熱心又勇敢，笑起來很開心。",
+  "大臣": "國王的大臣，溫和的大叔聲音，有點緊張、常常大驚小怪，好笑可愛。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "夜鶯": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "廚房小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "大臣": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第1頁『沒聽過』，第6頁『沒有人看見』",
+   "read": "méi"
+  },
+  {
+   "char": "哪",
+   "where": "第1頁『在哪裡』",
+   "read": "nǎ"
+  },
+  {
+   "char": "傳",
+   "where": "第3頁『傳來』",
+   "read": "chuán"
+  },
+  {
+   "char": "給",
+   "where": "第4頁『我給妳』，第5頁『唱歌給你聽』，第8頁『唱首歌給我聽』",
+   "read": "gěi"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『就會唱歌』『不會累』，第11頁『會再來』『會呀』『會常來』",
+   "read": "huì"
+  },
+  {
+   "char": "累",
+   "where": "第5頁『不會累』",
+   "read": "lèi"
+  },
+  {
+   "char": "間",
+   "where": "第8頁『房間』",
+   "read": "jiān"
+  },
+  {
+   "char": "扭",
+   "where": "第5頁『用鑰匙一扭』",
+   "read": "niǔ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "古代中國風的宮殿：金色屋頂、紅柱子，宮殿裡擺著白底藍花的瓷器；宮殿外面是大花園，花園盡頭有一片深綠色的森林，森林旁邊就是大海。",
+   "act": "國王第一次出場：黑色長鬍子、圓臉，戴一頂金色的帽子，穿金黃色長袍，袍子上繡著雲朵，坐在大椅子上看一本書，驚訝地抬起頭。大臣第一次出場：瘦瘦高高，留兩撇細鬍子，戴黑色官帽，穿深藍色長袍，彎著腰站在旁邊，一臉為難。畫面一角畫一個小圓圈，裡面是森林裡唱歌的小夜鶯。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，國王的宮殿外面，住著一隻小夜鶯。",
+     "en": "Long ago, a little nightingale lived in the forest outside the Emperor's palace."
+    },
+    {
+     "who": "旁白",
+     "text": "國王在書上讀到她的歌最美，可是從來沒聽過。",
+     "en": "The Emperor read in a book that her song was the loveliest of all, but he had never heard it."
+    },
+    {
+     "who": "國王",
+     "tag": "excited",
+     "text": "大臣，快把夜鶯找來，我想聽她唱歌！",
+     "en": "Minister, bring me this nightingale! I want to hear her sing!"
+    },
+    {
+     "who": "大臣",
+     "tag": "worried",
+     "text": "是！可是，夜鶯在哪裡呢？",
+     "en": "Yes, Your Majesty! But, um, where is she?"
+    }
+   ]
+  },
+  {
+   "scene": "宮殿的大廚房，牆上掛著鍋子，灶上冒著熱氣；窗外看得到森林。",
+   "act": "廚房小女孩第一次出場：七八歲的小女孩，黑色頭髮綁兩個小包包頭，穿洗舊的淺綠色衣服，繫一條白圍裙，手上還拿著一個碗，高高舉起另一隻手。大臣和幾個穿長袍的人圍著她，驚訝地看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "誰都不知道，最後廚房的小女孩舉起了手。",
+     "en": "Nobody knew, until at last the little kitchen girl raised her hand."
+    },
+    {
+     "who": "廚房小女孩",
+     "tag": "excited",
+     "text": "我知道！她每天都在森林裡唱歌。",
+     "en": "I know! She sings in the forest every day."
+    },
+    {
+     "who": "旁白",
+     "text": "她帶大家走進森林。忽然，一頭牛大聲叫了起來。",
+     "en": "She led everyone into the forest. Suddenly, a cow let out a loud moo."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小路，大樹下有一頭黑白花的乳牛在吃草；高高的樹枝上停著一隻小鳥。",
+   "act": "大臣張開雙手，興奮地對著乳牛側耳傾聽；廚房小女孩抱著肚子笑，用手指著乳牛搖頭。接著她抬頭指向樹枝：夜鶯第一次出場，是一隻小小的灰褐色小鳥，肚子是淺米色，眼睛又圓又亮，張著嘴唱歌。",
+   "lines": [
+    {
+     "who": "大臣",
+     "tag": "excited",
+     "text": "這就是夜鶯嗎？聲音好大！",
+     "en": "Is that the nightingale? What a big voice!"
+    },
+    {
+     "who": "廚房小女孩",
+     "tag": "laughing",
+     "text": "不是啦，那是牛！",
+     "en": "No, that's a cow!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，樹上傳來好美的歌聲。",
+     "en": "Just then, a beautiful song drifted down from the trees."
+    },
+    {
+     "who": "廚房小女孩",
+     "tag": "gentle",
+     "text": "夜鶯，國王想聽妳唱歌，妳願意來嗎？",
+     "en": "Nightingale, the Emperor would love to hear you sing. Will you come?"
+    }
+   ]
+  },
+  {
+   "scene": "宮殿的大殿，晚上，點著一盞盞紅燈籠，地上鋪著金色地毯，窗外有月亮。",
+   "act": "夜鶯停在一根金色小樹枝上，抬頭唱歌；國王坐在大椅子上，眼角流下眼淚，嘴角卻在笑；大臣和宮裡的人都安靜地聽。畫面一邊擺著一個亮晶晶的金色鳥籠，國王伸手指著它。",
+   "lines": [
+    {
+     "who": "夜鶯",
+     "tag": "happy",
+     "text": "好啊，我很願意！",
+     "en": "Yes, I'd be glad to!"
+    },
+    {
+     "who": "旁白",
+     "text": "晚上，夜鶯飛到宮殿裡唱歌。",
+     "en": "That night, the nightingale sang in the palace."
+    },
+    {
+     "who": "旁白",
+     "text": "她的歌像小河在流，像月光照在水上。",
+     "en": "Her song was like a flowing stream, like moonlight on the water."
+    },
+    {
+     "who": "旁白",
+     "text": "國王聽了，流下開心的眼淚。",
+     "en": "The Emperor was so moved that happy tears rolled down his cheeks."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "留下來吧，我給妳一個金籠子！",
+     "en": "Stay with me! I'll give you a golden cage!"
+    }
+   ]
+  },
+  {
+   "scene": "宮殿的大殿，白天，陽光從窗戶照進來。",
+   "act": "夜鶯停在打開的窗邊，有禮貌地對國王點點頭；國王手上拿著空的金色鳥籠，笑著點頭答應。另一邊，一個大禮盒打開了，裡面是一隻機器鳥：金色的身體，鑲滿紅色、藍色、綠色的寶石，背上插著一把小鑰匙。大臣捧著機器鳥，笑得好得意。",
+   "lines": [
+    {
+     "who": "夜鶯",
+     "tag": "gentle",
+     "text": "謝謝你，可是我不要住在籠子裡。",
+     "en": "Thank you, but I don't want to live in a cage."
+    },
+    {
+     "who": "夜鶯",
+     "text": "我每天晚上，都飛來唱歌給你聽。",
+     "en": "I'll fly here every night and sing for you."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，有人送來一隻機器鳥，全身都是寶石。",
+     "en": "One day, someone sent the Emperor a wind-up bird covered in jewels."
+    },
+    {
+     "who": "大臣",
+     "tag": "proud",
+     "text": "用鑰匙一扭，它就會唱歌，而且不會累！",
+     "en": "Just turn the key, and it sings! And it never gets tired!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個大殿，窗戶開著，窗外是藍天和遠處的森林。",
+   "act": "國王和宮裡的人圍成一圈，看著桌上閃亮的機器鳥，國王拍手。沒有人注意到，夜鶯正從打開的窗戶飛向遠處的森林；空的金籠子放在角落。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家都圍著機器鳥。",
+     "en": "Everyone crowded around the wind-up bird."
+    },
+    {
+     "who": "旁白",
+     "text": "沒有人發現，夜鶯從窗邊飛回了森林。",
+     "en": "No one noticed the nightingale fly from the window back to the forest."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "好聽！再唱一遍！",
+     "en": "Lovely! Sing it again!"
+    },
+    {
+     "who": "旁白",
+     "text": "一遍，又一遍，機器鳥唱了好幾百遍。",
+     "en": "Again and again, the wind-up bird sang, hundreds of times."
+    }
+   ]
+  },
+  {
+   "scene": "同一個大殿，晚上。",
+   "act": "機器鳥身上冒出一個小彈簧和一顆小螺絲，歪倒在桌上；大臣抓著頭，一臉苦惱。下一格，國王躺在床上，蓋著厚棉被，額頭放著一條毛巾，臉色蒼白。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天晚上，機器鳥肚子裡喀啦一聲，不動了。",
+     "en": "One night, something inside the wind-up bird went clunk, and it stopped."
+    },
+    {
+     "who": "大臣",
+     "tag": "worried",
+     "text": "糟糕，修不好了！",
+     "en": "Oh no, it can't be fixed!"
+    },
+    {
+     "who": "旁白",
+     "text": "不久，國王生病了，躺在床上起不來。",
+     "en": "Not long after, the Emperor fell ill and couldn't get out of bed."
+    }
+   ]
+  },
+  {
+   "scene": "國王的寢宮，大床掛著金色床帳，房間很暗，只點一盞小燈；床邊小桌上放著壞掉的機器鳥。",
+   "act": "國王躺在床上，轉頭看著桌上的機器鳥，伸出一隻手，一臉寂寞。門外，廚房小女孩從門縫偷看，擔心地皺著眉，接著轉身往外跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "房間裡好安靜，國王好想聽歌。",
+     "en": "The room was so quiet, and the Emperor longed for a song."
+    },
+    {
+     "who": "國王",
+     "tag": "sad",
+     "text": "機器鳥，唱首歌給我聽，好嗎？",
+     "en": "Wind-up bird, will you sing me a song?"
+    },
+    {
+     "who": "旁白",
+     "text": "可是機器鳥一動也不動。",
+     "en": "But the wind-up bird didn't move."
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩聽說了，趕快跑進森林。",
+     "en": "When the kitchen girl heard, she ran straight to the forest."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡，下午，陽光從樹葉間照下來；大樹的樹枝上停著夜鶯。",
+   "act": "廚房小女孩站在樹下，雙手合在胸前，抬頭望著夜鶯；夜鶯歪著頭想一想，接著張開翅膀，往遠處的宮殿飛去。下一格，夜鶯停在國王寢宮的窗邊。",
+   "lines": [
+    {
+     "who": "廚房小女孩",
+     "tag": "worried",
+     "text": "夜鶯，國王生病了，妳願意去看他嗎？",
+     "en": "Nightingale, the Emperor is sick. Will you go and see him?"
+    },
+    {
+     "who": "旁白",
+     "text": "夜鶯想了一下，張開翅膀，往宮殿飛去。",
+     "en": "The nightingale thought for a moment. Then she spread her wings and flew to the palace."
+    },
+    {
+     "who": "旁白",
+     "text": "她停在國王的窗邊，唱起歌來。",
+     "en": "She landed on the Emperor's windowsill and began to sing."
+    }
+   ]
+  },
+  {
+   "scene": "國王的寢宮，晚上變成早上，窗外的天空亮了，陽光照進房間。",
+   "act": "夜鶯在窗邊唱歌，歌聲畫成一道金色的光，飄到國王身上；國王閉著眼睛微笑睡著。下一格，早上國王坐起來，臉色紅潤，伸出手，感激地看著窗邊的夜鶯。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她的歌像溫暖的太陽，像春天的花。",
+     "en": "Her song was like warm sunshine, like flowers in spring."
+    },
+    {
+     "who": "旁白",
+     "text": "國王笑了，安心地睡著了。",
+     "en": "The Emperor smiled and fell peacefully asleep."
+    },
+    {
+     "who": "旁白",
+     "text": "第二天早上，國王醒來，病好了一大半。",
+     "en": "The next morning, the Emperor woke up feeling much better."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "夜鶯，謝謝妳。我忘了妳，妳卻回來陪我。",
+     "en": "Thank you, little nightingale. I forgot all about you, and still you came back to me."
+    }
+   ]
+  },
+  {
+   "scene": "國王的寢宮，窗戶大大地打開，窗外是森林、大海和月亮；廚房小女孩站在門邊。",
+   "act": "國王親手把窗戶推開，笑著對窗邊的夜鶯說話；空的金籠子被放在角落，上面插著一朵花。夜鶯張開翅膀飛向森林，又在窗邊回頭唱歌。廚房小女孩站在國王旁邊，一起聽，笑得好開心。",
+   "lines": [
+    {
+     "who": "國王",
+     "text": "以後，妳會再來唱歌嗎？",
+     "en": "Will you come and sing for me again?"
+    },
+    {
+     "who": "夜鶯",
+     "tag": "happy",
+     "text": "會呀！森林是我的家，我會常來唱歌。",
+     "en": "Yes! The forest is my home, and I'll come and sing for you often."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "好！我的窗戶每天晚上都開著，等妳來。",
+     "en": "Wonderful! My window will be open every night, waiting for you."
+    },
+    {
+     "who": "旁白",
+     "text": "從此，每天晚上，夜鶯都飛到窗邊唱歌。",
+     "en": "And from then on, every night, the nightingale flew to the window and sang."
+    }
+   ]
+  }
+ ]
+}

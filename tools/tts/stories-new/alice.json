@@ -1,0 +1,582 @@
+{
+ "id": "alice",
+ "title": "愛麗絲夢遊仙境",
+ "title_en": "Alice's Adventures in Wonderland",
+ "size": "長",
+ "roles": {
+  "愛麗絲": "七歲左右的小女孩，好奇、有禮貌又有主見，說話清楚活潑，遇到怪事會驚訝，最後敢大聲說出自己的想法。",
+  "白兔": "穿背心、拿懷錶的白兔，聲音尖細，總是慌慌張張、急急忙忙，口頭禪是「要遲到了」。",
+  "柴郡貓": "坐在樹上、會慢慢不見的柴郡貓，年輕男生的聲音，慢條斯理又調皮，愛說繞圈圈的怪道理，笑嘻嘻的。",
+  "帽匠": "戴高帽子的帽匠，圓臉胖叔叔的聲音，大嗓門、懶洋洋又愛搞笑，說話時常哈哈大笑。",
+  "紅心皇后": "紅心皇后，愛使喚人的大嗓門阿姨，動不動就生氣喊「罰你們學青蛙跳」，好笑不可怕。"
+ },
+ "cast": {
+  "愛麗絲": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "白兔": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "柴郡貓": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "帽匠": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "紅心皇后": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "背",
+   "where": "第2頁『背心』",
+   "read": "bèi"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『會說話』，第3頁『會不會』",
+   "read": "huì"
+  },
+  {
+   "char": "鑽",
+   "where": "第2頁『鑽進』，第4頁『鑽不過去』",
+   "read": "zuān"
+  },
+  {
+   "char": "扇",
+   "where": "第5頁『扇子』",
+   "read": "shàn"
+  },
+  {
+   "char": "搧",
+   "where": "第5頁『搧呀搧』『再搧下去』",
+   "read": "shān"
+  },
+  {
+   "char": "什",
+   "where": "第1頁『有什麼好看』，第10頁『答案是什麼』，第11頁『塗什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有圖』，第7頁『沒有貓』『沒看過』，第8頁『沒位子』，第15頁『沒有腳』",
+   "read": "méi"
+  },
+  {
+   "char": "長",
+   "where": "第8頁『長桌』",
+   "read": "cháng"
+  },
+  {
+   "char": "覺",
+   "where": "第8頁『睡覺』",
+   "read": "jiào"
+  },
+  {
+   "char": "嚇",
+   "where": "第4頁『嚇我一跳』",
+   "read": "xià"
+  },
+  {
+   "char": "處",
+   "where": "第16頁『遠處』",
+   "read": "chù"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "夏天的午後，河邊的草地上有一棵大樹，樹下有樹蔭；遠處小河閃著光，草地上開著白色的雛菊，旁邊有一排矮樹叢。",
+   "act": "愛麗絲第一次出場：七歲左右的小女孩，長長的金色頭髮，戴一條藍色髮帶，穿淡黃色洋裝、白色圍裙、白色長襪和黑色小皮鞋，照原著插畫的樣子。姊姊十幾歲，棕色頭髮盤起來，穿淡紫色長裙，靠著大樹看一本厚厚的書，書頁上全是字、沒有圖。愛麗絲坐在姊姊旁邊，手撐著下巴，一臉無聊；畫面邊上，一隻白兔從草地上跑過去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天的午後，愛麗絲和姊姊坐在河邊。",
+     "en": "One summer afternoon, Alice was sitting by the river with her big sister."
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊在看一本沒有圖的書。",
+     "en": "Her sister was reading a book with no pictures in it."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "bored",
+     "text": "沒有圖的書，有什麼好看呢？",
+     "en": "What good is a book without pictures?"
+    },
+    {
+     "who": "旁白",
+     "text": "忽然，一隻白兔從她身邊跑過去。",
+     "en": "Suddenly, a white rabbit ran right past her."
+    }
+   ]
+  },
+  {
+   "scene": "同一片河邊草地，矮樹叢下面有一個好大的兔子洞，洞口又黑又圓。",
+   "act": "白兔第一次出場：白色的兔子，粉紅色眼睛，長長的耳朵，穿一件淡綠色背心，背心口袋掛著金色鍊子；他一邊跑，一邊低頭看手上金色的懷錶，滿頭大汗、一臉著急。愛麗絲跳起來，提著裙子跟在後面跑，眼睛睜得好大。白兔正一頭鑽進樹叢下的大洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "白兔穿著背心，拿出一個金懷錶。",
+     "en": "He was wearing a little vest, and he took out a gold pocket watch."
+    },
+    {
+     "who": "白兔",
+     "tag": "worried",
+     "text": "我的耳朵和鬍子啊！要遲到了，要遲到了！",
+     "en": "Oh my ears and whiskers! I'll be late, so very late!"
+    },
+    {
+     "who": "旁白",
+     "text": "會說話的兔子？愛麗絲趕快跟上去。",
+     "en": "A talking rabbit? Alice hurried after him."
+    },
+    {
+     "who": "旁白",
+     "text": "白兔一下子就鑽進一個大洞。",
+     "en": "In a flash, the White Rabbit popped down a big hole."
+    }
+   ]
+  },
+  {
+   "scene": "兔子洞裡面，像一口很深、很寬的井，光線柔和，四周牆上有書架、櫥櫃，掛著地圖和圖畫；洞底鋪著一大堆金黃色的乾葉子。",
+   "act": "愛麗絲像一片羽毛一樣慢慢往下飄，裙子像一朵倒過來的花一樣撐開，頭髮輕輕飄起；她一點也不怕，好奇地看著身邊的書架和地圖，一手比著往下的方向，像在想事情。畫面下方，她輕輕坐在乾葉子堆上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "愛麗絲往洞裡看了一眼，就飄了下去。",
+     "en": "Alice peeked into the hole, and all at once she began to float down."
+    },
+    {
+     "who": "旁白",
+     "text": "她像一片羽毛，往下飄呀飄。",
+     "en": "Down, down she drifted, like a feather."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "curious",
+     "text": "我會不會一直飄，飄到地球的另一邊？",
+     "en": "Will I float all the way through to the other side of the world?"
+    },
+    {
+     "who": "旁白",
+     "text": "最後，她輕輕停在一堆葉子上。",
+     "en": "At last, she landed softly on a pile of leaves."
+    }
+   ]
+  },
+  {
+   "scene": "洞底的大廳，天花板上掛著一排小燈，兩邊有很多扇門；牆角有一扇只有老鼠那麼高的小門。",
+   "act": "愛麗絲趴在地上，把臉貼近小門，想從門縫往外看，一臉著急。白兔從大廳另一頭跑過來，看到愛麗絲嚇得跳起來，耳朵豎直，手上的白手套和一把小扇子正往下掉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "洞底是一個大廳，牆角有一扇很小的門。",
+     "en": "At the bottom was a big hall with a tiny door in the corner."
+    },
+    {
+     "who": "旁白",
+     "text": "可是門太小了，愛麗絲連頭都鑽不過去。",
+     "en": "But the door was so small that Alice couldn't even fit her head through."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，白兔跑過來。",
+     "en": "Just then, the White Rabbit came running by."
+    },
+    {
+     "who": "白兔",
+     "tag": "scared",
+     "text": "哎呀，嚇我一跳！要遲到了，要遲到了！",
+     "en": "Oh my, you gave me a fright! I'll be late, so very late!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個大廳，地上躺著一雙白手套。",
+   "act": "愛麗絲拿著白兔的小扇子在臉旁邊搧風；她的身體一點一點變小，最後只跟小門一樣高，旁邊的桌腳看起來像大樹一樣高。她嚇得張大嘴巴，把扇子往旁邊一丟。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他跑走時，掉了一把小扇子。",
+     "en": "As he dashed off, he dropped a little fan."
+    },
+    {
+     "who": "旁白",
+     "text": "大廳好熱，愛麗絲撿起扇子，搧呀搧。",
+     "en": "The hall was warm, so Alice picked up the fan and fanned herself."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "surprised",
+     "text": "咦？我怎麼越變越小？",
+     "en": "Huh? Why am I getting smaller?"
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "shouting",
+     "text": "停！再搧下去，我就不見了！",
+     "en": "Stop! If I keep fanning, I'll disappear!"
+    },
+    {
+     "who": "旁白",
+     "text": "她趕快丟開扇子，剛好和小門一樣高。",
+     "en": "She dropped the fan just in time. Now she was exactly as tall as the little door."
+    }
+   ]
+  },
+  {
+   "scene": "小門外面的樹林，大樹又高又粗，樹下長著大朵的蘑菇和野花，陽光從樹葉間灑下來。",
+   "act": "柴郡貓第一次出場：一隻胖胖的灰色虎斑貓，身上有深灰色條紋，照原著插畫的樣子，坐在大樹的粗樹枝上，尾巴垂下來，嘴巴笑得好大，露出一整排牙齒，笑成一個大彎月。變小的愛麗絲站在樹下，抬頭有禮貌地問路。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "門外是樹林，樹上有一隻柴郡貓，笑得嘴巴好大。",
+     "en": "Beyond the door was a forest, and up in a tree sat a Cheshire Cat with a great big grin."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "polite",
+     "text": "請問，我要往哪邊走呢？",
+     "en": "Excuse me, which way should I go?"
+    },
+    {
+     "who": "柴郡貓",
+     "tag": "playful",
+     "text": "那要看妳想去哪裡呀。",
+     "en": "That depends on where you want to get to."
+    },
+    {
+     "who": "愛麗絲",
+     "text": "我也不知道耶。",
+     "en": "I don't really know."
+    },
+    {
+     "who": "柴郡貓",
+     "tag": "laughing",
+     "text": "那往哪邊走，都可以呀！",
+     "en": "Then it doesn't matter which way you go!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片樹林，大樹的樹枝上。",
+   "act": "柴郡貓用尾巴指著一條小路，路的盡頭隱約有一頂高帽子的影子。接著柴郡貓從尾巴開始慢慢變透明，最後樹枝上只剩下一個飄在空中的大笑臉。愛麗絲揉揉眼睛，張大嘴巴。",
+   "lines": [
+    {
+     "who": "柴郡貓",
+     "text": "往那邊走，有個做帽子的帽匠，整天在喝茶。",
+     "en": "Go that way, and you'll find the Hatter. He makes hats, and he drinks tea all day long."
+    },
+    {
+     "who": "旁白",
+     "text": "柴郡貓從尾巴開始，慢慢不見了。",
+     "en": "Then, starting with his tail, the Cheshire Cat slowly vanished."
+    },
+    {
+     "who": "旁白",
+     "text": "最後，樹上剩下一個大笑臉，沒有貓。",
+     "en": "In the end, all that was left was his grin, with no cat at all."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "surprised",
+     "text": "我看過沒有笑臉的貓，可是沒看過沒有貓的笑臉！",
+     "en": "I've seen a cat without a grin, but never a grin without a cat!"
+    }
+   ]
+  },
+  {
+   "scene": "樹林後面的一間小房子前，煙囪像兩隻兔子耳朵，屋頂鋪著毛皮；屋前樹下擺著一張好長的長桌，鋪白桌巾，上面擺滿茶杯、茶壺和小蛋糕，有好多空椅子。",
+   "act": "帽匠第一次出場：圓臉的叔叔，戴一頂好高的黑色禮帽，帽帶上插著一張寫著價錢的小卡片，打一個大大的蝴蝶結領結，穿格子褲子，照原著插畫的樣子。三月兔是一隻咖啡色的野兔，耳朵上纏著幾根稻草。睡鼠是一隻圓滾滾的咖啡色小老鼠，捲成一團睡在茶壺裡。帽匠和三月兔擠在桌子的一角，對著愛麗絲揮手大喊；愛麗絲已經變回原來的大小，衣服和第一頁一樣；她叉著腰，自己拉開一張椅子坐下。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "愛麗絲往前走，又變回原來的大小了。",
+     "en": "As she walked on, Alice grew back to her usual size."
+    },
+    {
+     "who": "旁白",
+     "text": "長桌旁，帽匠和三月兔在喝茶，睡鼠在茶壺裡睡覺。",
+     "en": "At a long table, the Hatter and the March Hare were having tea, and a dormouse was asleep in the teapot."
+    },
+    {
+     "who": "帽匠",
+     "tag": "shouting",
+     "text": "沒位子！沒位子！",
+     "en": "No room! No room!"
+    },
+    {
+     "who": "愛麗絲",
+     "text": "可是有好多位子呀！",
+     "en": "But there's plenty of room!"
+    }
+   ]
+  },
+  {
+   "scene": "同一張長桌，桌上的杯子東倒西歪，有的沾著茶漬；樹上掛著一個大時鐘，指針停在六點。",
+   "act": "帽匠指著停住的時鐘，一臉可憐；接著他、三月兔和睡鼠一起抱著茶杯往旁邊的椅子挪一格，睡鼠閉著眼睛被三月兔拎著走。愛麗絲用手遮著嘴笑。",
+   "lines": [
+    {
+     "who": "帽匠",
+     "tag": "sad",
+     "text": "我們的時鐘停了，永遠都是下午茶時間！",
+     "en": "Our clock has stopped, so it's always teatime!"
+    },
+    {
+     "who": "帽匠",
+     "text": "所以我們一直喝茶，杯子都來不及洗！",
+     "en": "So we drink tea all day long, and there's never time to wash the cups!"
+    },
+    {
+     "who": "旁白",
+     "text": "杯子髒了怎麼辦？換位子就好啦！",
+     "en": "What did they do about the dirty cups? They just moved to a clean seat!"
+    },
+    {
+     "who": "帽匠",
+     "tag": "excited",
+     "text": "換位子！換位子！",
+     "en": "Move down! Move down!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家往旁邊挪一格，愛麗絲忍不住笑了。",
+     "en": "Everyone scooted over one seat, and Alice couldn't help laughing."
+    }
+   ]
+  },
+  {
+   "scene": "同一張長桌，茶壺冒著熱氣。",
+   "act": "帽匠身體往前傾，眨眨眼睛出謎語；畫面上方畫一個想像泡泡，裡面是一隻黑色烏鴉和一張木頭書桌。愛麗絲托著下巴、皺著眉頭用力想；接著帽匠攤開雙手大笑，愛麗絲也笑出來。睡鼠在茶壺裡打呼。",
+   "lines": [
+    {
+     "who": "帽匠",
+     "tag": "playful",
+     "text": "妳猜，烏鴉和書桌，哪裡一樣？",
+     "en": "Guess this one. How is a crow like a desk?"
+    },
+    {
+     "who": "旁白",
+     "text": "愛麗絲想了又想，就是猜不出來。",
+     "en": "Alice thought and thought, but she couldn't work it out."
+    },
+    {
+     "who": "愛麗絲",
+     "text": "我猜不到，答案是什麼？",
+     "en": "I give up. What's the answer?"
+    },
+    {
+     "who": "帽匠",
+     "tag": "laughing",
+     "text": "我也不知道！",
+     "en": "I haven't the slightest idea!"
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "laughing",
+     "text": "這是我喝過最奇怪的下午茶！",
+     "en": "This is the silliest tea party I've ever been to!"
+    }
+   ]
+  },
+  {
+   "scene": "紅心皇后的花園：修剪成圓球的樹籬，一排玫瑰樹，噴水池，遠處有紅白色的城堡。有一棵玫瑰樹開著白玫瑰，旁邊放著一桶紅色油漆。",
+   "act": "三張撲克牌第一次出場：扁扁的長方形身體，上面印著黑桃二、黑桃五、黑桃七，有細細的手腳，拿著油漆刷，手忙腳亂地把白玫瑰塗成紅色，一張撲克牌把手指放在嘴邊小聲說話。愛麗絲站在旁邊歪著頭看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "愛麗絲走啊走，來到一座花園。",
+     "en": "Alice walked on and on until she came to a garden."
+    },
+    {
+     "who": "旁白",
+     "text": "三張撲克牌拿著刷子，正把白玫瑰塗成紅色。",
+     "en": "Three playing cards with paintbrushes were painting the white roses red."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "surprised",
+     "text": "你們在塗什麼呀？",
+     "en": "What are you painting?"
+    },
+    {
+     "who": "旁白",
+     "text": "撲克牌小聲說：「皇后要的是紅玫瑰！」",
+     "en": "The cards whispered, \"The Queen wants red roses!\""
+    }
+   ]
+  },
+  {
+   "scene": "同一座花園，花園的大門打開，鋪著紅地毯。",
+   "act": "白兔吹著一支金色長喇叭走在前面。紅心皇后第一次出場：胖胖的圓臉，戴金色皇冠，穿紅色長袍，袍子上有好多紅心圖案，手拿一根頂端是紅心的權杖，氣到臉紅，指著塗了一半的玫瑰。三張撲克牌蹲下來，一張接一張學青蛙跳，樣子好笑。愛麗絲在旁邊忍住笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，白兔吹著喇叭跑進來。",
+     "en": "Just then, the White Rabbit came running in, blowing a trumpet."
+    },
+    {
+     "who": "白兔",
+     "tag": "shouting",
+     "text": "紅心皇后來了！",
+     "en": "Make way for the Queen of Hearts!"
+    },
+    {
+     "who": "旁白",
+     "text": "皇后看到白玫瑰，氣到臉都紅了。",
+     "en": "When the Queen saw the white roses, her face turned red."
+    },
+    {
+     "who": "紅心皇后",
+     "tag": "angry",
+     "text": "罰你們學青蛙跳！跳十下！",
+     "en": "Hop like frogs, all of you! Ten hops!"
+    },
+    {
+     "who": "旁白",
+     "text": "撲克牌蹲下來，一下、一下，學青蛙跳。",
+     "en": "So the cards squatted down and hopped like frogs, one hop at a time."
+    }
+   ]
+  },
+  {
+   "scene": "花園的草地上，插著一個一個撲克牌彎成的拱門。",
+   "act": "皇后和愛麗絲各抱著一隻粉紅色的紅鶴，紅鶴的腳被抱在手裡當球棍，地上的球是縮成一團的刺蝟。愛麗絲的紅鶴把長脖子彎回來，歪著頭盯著她看；她的刺蝟伸開四隻腳，慢慢走掉了。愛麗絲笑得彎下腰。",
+   "lines": [
+    {
+     "who": "紅心皇后",
+     "tag": "proud",
+     "text": "小女孩，來陪我打球！",
+     "en": "You there, girl! Come and play a game with me!"
+    },
+    {
+     "who": "旁白",
+     "text": "球棍是一隻紅鶴，球是一隻刺蝟。",
+     "en": "The bats were flamingos, and the balls were hedgehogs!"
+    },
+    {
+     "who": "旁白",
+     "text": "愛麗絲正要打，紅鶴卻彎過脖子看著她。",
+     "en": "Just as Alice was about to swing, her flamingo bent its neck around and looked at her."
+    },
+    {
+     "who": "旁白",
+     "text": "刺蝟也伸個懶腰，自己走掉了。",
+     "en": "And her hedgehog stretched and wandered off on its own."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "laughing",
+     "text": "這樣的球，要怎麼打呀？",
+     "en": "How do you play with a ball like this?"
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，天空上飄著一個大大的笑臉。",
+   "act": "皇后的刺蝟也跑掉了，皇后氣得跺腳，揮著權杖；所有撲克牌、紅鶴都在學青蛙跳。天空上浮著柴郡貓的大笑臉，沒有身體。皇后指著天上的笑臉大喊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "皇后的刺蝟也跑掉了。",
+     "en": "The Queen's hedgehog ran off too."
+    },
+    {
+     "who": "紅心皇后",
+     "tag": "shouting",
+     "text": "罰大家學青蛙跳！",
+     "en": "Everybody, hop like frogs!"
+    },
+    {
+     "who": "旁白",
+     "text": "天上忽然出現柴郡貓的笑臉。",
+     "en": "Suddenly, the Cheshire Cat's grin appeared up in the sky."
+    },
+    {
+     "who": "柴郡貓",
+     "tag": "laughing",
+     "text": "皇后輸不起喔！",
+     "en": "Looks like somebody can't stand to lose!"
+    },
+    {
+     "who": "紅心皇后",
+     "tag": "angry",
+     "text": "那個笑臉，也罰他學青蛙跳！",
+     "en": "That grin! It must hop like a frog too!"
+    }
+   ]
+  },
+  {
+   "scene": "同一座花園，從低處往上看。",
+   "act": "天上的笑臉沒有身體，大家抬頭看傻了眼。愛麗絲越變越大，變得比玫瑰樹還高，裙子和髮帶也跟著變大；皇后在她腳邊變得好小，還在跳腳。愛麗絲叉著腰低頭大聲說話，所有撲克牌被一陣風捲起來，飛向天空。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是笑臉沒有腳，要怎麼跳呢？",
+     "en": "But a grin has no legs. How could it hop?"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，愛麗絲開始變大，越變越大！",
+     "en": "Just then, Alice began to grow, bigger and bigger!"
+    },
+    {
+     "who": "紅心皇后",
+     "tag": "shouting",
+     "text": "妳太大了！罰妳學青蛙跳！",
+     "en": "You're much too big! Hop like a frog!"
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "brave",
+     "text": "我才不怕！你們不過是一副撲克牌！",
+     "en": "I'm not scared of you! You're nothing but a pack of cards!"
+    },
+    {
+     "who": "旁白",
+     "text": "呼的一聲，撲克牌都飛了起來！",
+     "en": "Whoosh! The cards flew up into the air!"
+    }
+   ]
+  },
+  {
+   "scene": "回到第一頁的河邊大樹下，夏天的午後，陽光暖暖照著；遠處草地的另一邊有一個小小的白點。",
+   "act": "愛麗絲躺在草地上，頭枕著姊姊的腿，剛睜開眼睛，幾片樹葉在她臉上；姊姊笑著幫她拿掉葉子。愛麗絲坐起來，興奮地比手畫腳講她的夢。遠處草地的另一邊，一隻穿淡綠色背心的白兔小小的背影，正跑進樹叢。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "撲克牌飄下來，變成了樹葉。",
+     "en": "The cards fluttered down and turned into leaves."
+    },
+    {
+     "who": "旁白",
+     "text": "愛麗絲睜開眼睛，原來她躺在姊姊的腿上。",
+     "en": "Alice opened her eyes. She was lying by the river with her head in her sister's lap."
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊笑著幫她拿掉葉子。",
+     "en": "Her sister smiled and brushed the leaves away."
+    },
+    {
+     "who": "愛麗絲",
+     "tag": "excited",
+     "text": "姊姊，我作了一個好奇怪，又好玩的夢！",
+     "en": "Sister, I had the strangest, most wonderful dream!"
+    },
+    {
+     "who": "旁白",
+     "text": "遠處，好像有一隻白兔跑過去了呢。",
+     "en": "And far away, something white went hopping by."
+    }
+   ]
+  }
+ ]
+}

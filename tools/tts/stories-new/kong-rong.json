@@ -2,7 +2,7 @@
  "id": "kong-rong",
  "title": "孔融讓梨",
  "title_en": "Kong Rong Shares the Pears",
- "size": "短",
+ "size": "中",
  "roles": {
   "孔融": "很久以前中國的四歲小男孩，聲音稚嫩、開朗，說話慢慢的、很認真；其實也很想吃大梨，想了想才讓給大家。",
   "爸爸": "孔融的爸爸，溫和的中年男聲，說話慢、帶著笑，驚訝時也很溫柔。",
@@ -24,30 +24,45 @@
  },
  "polyphones": [
   {
+   "char": "沒",
+   "where": "第2頁『沒踢到』兩處",
+   "read": "méi"
+  },
+  {
    "char": "挑",
-   "where": "第3頁『你先挑』『挑哪一個』",
+   "where": "第4頁『你先挑』，第5頁『再不挑』『挑哪一個』",
    "read": "tiāo"
   },
   {
    "char": "會",
-   "where": "第3頁『他會挑』，第8頁『大人都會講』",
+   "where": "第5頁『孔融會挑』，第11頁『大人都會講』",
    "read": "huì"
   },
   {
+   "char": "還",
+   "where": "第8頁『梨比他的臉還大』",
+   "read": "hái"
+  },
+  {
    "char": "分",
-   "where": "第7頁『分了一半』",
+   "where": "第10頁『分了一半』",
    "read": "fēn"
   },
   {
-   "char": "還",
-   "where": "第6頁『梨比他的臉還大』",
-   "read": "hái"
+   "char": "晃",
+   "where": "第8頁『晃一下』兩處",
+   "read": "huàng"
+  },
+  {
+   "char": "得",
+   "where": "第11頁『啃得』",
+   "read": "de"
   }
  ],
  "pages": [
   {
    "scene": "很久以前的中國，一座有院子的老房子：灰色瓦片屋頂、紅色木頭柱子、木格子窗；院子中間有一棵結滿黃色梨子的梨樹，地上鋪著石板。",
-   "act": "孔融第一次出場：四歲的小男孩，圓臉、粉紅色臉頰，黑頭髮在頭頂綁成兩個小圓髻，穿淺藍色古代小長袍、黑色布鞋。大哥：十歲左右的少年，頭髮在頭頂綁一個髻，穿深綠色長袍；旁邊還有兩個哥哥（八歲、六歲，穿土黃色和淺灰色長袍）。小弟弟：兩歲，胖胖的，穿紅色小衣服。大家在梨樹下玩踢毽子，孔融笑著牽小弟弟的手。",
+   "act": "孔融第一次出場：四歲的小男孩，圓臉、粉紅色臉頰，黑頭髮在頭頂綁成兩個小圓髻，穿淺藍色古代小長袍、黑色布鞋。大哥：十歲左右的少年，頭髮在頭頂綁一個髻，穿深綠色長袍；旁邊還有兩個哥哥（八歲、六歲，穿土黃色和淺灰色長袍）。小弟弟：兩歲，胖胖的，穿紅色小衣服。兄弟們站在梨樹下，孔融笑著牽小弟弟的手。",
    "lines": [
     {
      "who": "旁白",
@@ -56,8 +71,46 @@
     },
     {
      "who": "旁白",
-     "text": "孔融四歲，他有好幾個哥哥，也有一個小弟弟。",
-     "en": "Kong Rong was four years old. He had several big brothers and one baby brother."
+     "text": "孔融四歲，他有三個哥哥，也有一個小弟弟。",
+     "en": "Kong Rong was four years old. He had three big brothers and one baby brother."
+    },
+    {
+     "who": "旁白",
+     "text": "孔融最喜歡吃梨了。",
+     "en": "And Kong Rong loved pears more than anything."
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，梨樹下的石板地，旁邊有一小片草地，陽光很好。",
+   "act": "大哥把一個彩色羽毛毽子踢得高高的，一臉得意，兩個哥哥在旁邊拍手數著；小弟弟學哥哥抬腳去踢，沒踢到，毽子從他頭上飛過，他一屁股坐在軟軟的草地上，自己先咯咯笑；孔融指著小弟弟哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥們在院子裡踢毽子。",
+     "en": "His big brothers were kicking a feather shuttlecock in the yard."
+    },
+    {
+     "who": "大哥",
+     "tag": "proud",
+     "text": "看我的！一下、兩下、三下！",
+     "en": "Watch me! One, two, three!"
+    },
+    {
+     "who": "旁白",
+     "text": "小弟弟也想踢，一腳踢出去，咦？沒踢到。",
+     "en": "The baby brother wanted to try too. He kicked as hard as he could, but whoops! He missed."
+    },
+    {
+     "who": "孔融",
+     "tag": "laughing",
+     "text": "弟弟沒踢到毽子，踢到風了！",
+     "en": "You missed the shuttlecock and kicked the wind!"
+    },
+    {
+     "who": "旁白",
+     "text": "小弟弟坐在草地上，自己也笑了。",
+     "en": "The baby brother sat down on the grass and laughed too."
     }
    ]
   },
@@ -67,8 +120,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "有一天，爸爸端來一大盤梨。",
-     "en": "One day, Father brought out a big plate of pears."
+     "text": "這時候，爸爸端來一大盤梨。",
+     "en": "Just then, Father brought out a big plate of pears."
     },
     {
      "who": "旁白",
@@ -96,7 +149,7 @@
   },
   {
    "scene": "梨樹下的木頭桌子，桌上放著那一大盤梨。",
-   "act": "兄弟們圍著桌子站好；大哥彎腰，把盤子推到孔融面前。孔融踮起腳尖，盯著盤子裡最大的那顆梨，一手摸著肚子，嘴巴微微張開；接著他轉頭看看哥哥們，又看看小弟弟，歪著頭想。",
+   "act": "兄弟們圍著桌子站好；大哥彎腰，把盤子推到孔融面前。孔融踮起腳尖，盯著盤子裡最大的那顆梨，一手摸著肚子，嘴巴微微張開；另一隻小手伸出去，碰到最大的梨，停在半空中。",
    "lines": [
     {
      "who": "大哥",
@@ -117,19 +170,36 @@
     },
     {
      "who": "旁白",
+     "text": "他伸出小手，摸到最大的梨，又停住了。",
+     "en": "He reached out and touched the biggest pear, and then he stopped."
+    }
+   ]
+  },
+  {
+   "scene": "梨樹下的木頭桌子，桌上放著那一大盤梨。",
+   "act": "孔融的手還放在最大的梨上，轉頭看看三個哥哥，又看看小弟弟，歪著頭想；大哥等得受不了，彎著腰、皺起眉毛，假裝變成一個駝背的老爺爺，做出好笑的鬼臉，兩個哥哥摀著嘴偷笑；爸爸站在後面，笑著不說話。",
+   "lines": [
+    {
+     "who": "旁白",
      "text": "他看了哥哥們，又看了小弟弟。",
      "en": "He looked at his big brothers, and then at his baby brother."
     },
     {
+     "who": "大哥",
+     "tag": "laughing",
+     "text": "孔融，你再不挑，梨都要等到變老了！",
+     "en": "Kong Rong, if you don't pick soon, the pears are going to get old and wrinkly!"
+    },
+    {
      "who": "旁白",
-     "text": "他會挑哪一個呢？",
-     "en": "Which one would he choose?"
+     "text": "孔融會挑哪一個呢？",
+     "en": "Which one would Kong Rong choose?"
     }
    ]
   },
   {
    "scene": "梨樹下的木頭桌子。",
-   "act": "孔融小手拿起盤子裡最小的一顆梨。大哥張大嘴巴，眼睛睜得好圓；爸爸站在後面挑起眉毛，一臉驚訝。",
+   "act": "孔融小手拿起盤子裡最小的一顆梨。大哥和兩個哥哥都張大嘴巴，眼睛睜得好圓；小弟弟看到哥哥們張大嘴巴，也跟著張大嘴巴；爸爸站在後面挑起眉毛，一臉驚訝。",
    "lines": [
     {
      "who": "旁白",
@@ -141,12 +211,17 @@
      "tag": "surprised",
      "text": "咦？孔融，你怎麼拿最小的？",
      "en": "Huh? Kong Rong, why did you take the smallest one?"
+    },
+    {
+     "who": "旁白",
+     "text": "哥哥們都張大嘴巴，小弟弟也跟著張大嘴巴。",
+     "en": "His big brothers' mouths dropped open, and the baby brother copied them with his mouth wide open too."
     }
    ]
   },
   {
    "scene": "梨樹下的木頭桌子。",
-   "act": "孔融抱著自己的小梨，另一隻手拿起大梨，一顆一顆遞給哥哥們；大哥和兩個哥哥伸手接過大梨，又驚訝又開心。",
+   "act": "孔融抱著自己的小梨，另一隻手拿起大梨，一顆一顆遞給哥哥們：先給穿深綠色長袍的大哥，再給穿土黃色的二哥、穿淺灰色的三哥；哥哥們伸手接過大梨，又驚訝又開心。",
    "lines": [
     {
      "who": "孔融",
@@ -160,6 +235,12 @@
      "en": "He handed the big pears to his brothers, one by one."
     },
     {
+     "who": "孔融",
+     "tag": "happy",
+     "text": "大哥一個，二哥一個，三哥一個！",
+     "en": "One for Big Brother, one for Second Brother, and one for Third Brother!"
+    },
+    {
      "who": "大哥",
      "tag": "happy",
      "text": "謝謝你，孔融！",
@@ -169,7 +250,7 @@
   },
   {
    "scene": "梨樹下的木頭桌子，盤子裡只剩一顆大梨。",
-   "act": "爸爸蹲下來，指著站在旁邊的小弟弟，溫柔地問；孔融把最後一顆大梨，用兩手捧給小弟弟。小弟弟兩手抱住大梨，梨比他的圓臉還大，只露出一雙笑彎的眼睛，哥哥們都笑了。",
+   "act": "爸爸蹲下來，指著站在旁邊的小弟弟，溫柔地問；孔融把最後一顆大梨，用兩手捧給小弟弟。小弟弟兩手抱住大梨，梨比他的圓臉還大，只露出一雙笑彎的眼睛；他抱著梨走一步、晃一下，哥哥們都笑了。",
    "lines": [
     {
      "who": "爸爸",
@@ -187,12 +268,17 @@
      "who": "旁白",
      "text": "小弟弟抱著大梨，梨比他的臉還大！",
      "en": "The baby brother hugged the big pear. It was bigger than his face!"
+    },
+    {
+     "who": "旁白",
+     "text": "他抱著大梨，走一步，晃一下，走一步，晃一下。",
+     "en": "He took a step and wobbled, took another step and wobbled again."
     }
    ]
   },
   {
    "scene": "梨樹下，陽光從樹葉之間照下來，木頭桌子上放著空空的盤子。",
-   "act": "爸爸笑著摸孔融的頭；大哥蹲下來，指著孔融的肚子哈哈笑，再把自己的大梨掰成兩半，一半遞給孔融。孔融一手抱著小梨、一手接過半個大梨，害羞又開心地笑。",
+   "act": "爸爸笑著摸孔融的頭；大哥蹲下來，指著孔融的肚子哈哈笑；孔融一手抱著小梨，另一手按住自己的肚子，臉紅紅的，嘟著嘴不好意思地笑；最後爸爸也拍拍自己的肚子，仰頭哈哈大笑。",
    "lines": [
     {
      "who": "旁白",
@@ -206,6 +292,24 @@
      "en": "Kong Rong, I heard your tummy grumbling!"
     },
     {
+     "who": "孔融",
+     "tag": "shy",
+     "text": "那是我的肚子，它自己要叫的嘛！",
+     "en": "That was my tummy. It grumbled all by itself!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "laughing",
+     "text": "爸爸的肚子，也在叫呢！",
+     "en": "My tummy is grumbling too!"
+    }
+   ]
+  },
+  {
+   "scene": "梨樹下，陽光從樹葉之間照下來。",
+   "act": "大哥把自己的大梨掰成兩半，一半遞給孔融；孔融一手抱著小梨、一手接過半個大梨，眼睛亮起來，害羞又開心地笑；爸爸在後面看著兄弟倆，笑咪咪的。",
+   "lines": [
+    {
      "who": "旁白",
      "text": "大哥把自己的大梨，分了一半給孔融。",
      "en": "Big Brother split his big pear and gave half to Kong Rong."
@@ -215,6 +319,12 @@
      "tag": "happy",
      "text": "大的梨，我們一起吃！",
      "en": "Let's eat the big pear together!"
+    },
+    {
+     "who": "孔融",
+     "tag": "happy",
+     "text": "謝謝大哥！",
+     "en": "Thank you, Big Brother!"
     }
    ]
   },

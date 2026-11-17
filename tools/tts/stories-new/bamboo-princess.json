@@ -1,0 +1,339 @@
+{
+ "id": "bamboo-princess",
+ "title": "竹子裡的月亮公主",
+ "title_en": "The Bamboo Princess",
+ "size": "中",
+ "roles": {
+  "老爺爺": "在日本山腳下砍竹子的老爺爺，慈祥的老爺爺聲音，說話慢慢的，跟小光賽跑時笑呵呵，捨不得小光時聲音發抖。",
+  "老奶奶": "老爺爺的太太，溫柔的奶奶聲音，常常唱歌給小光聽，說話輕輕的、帶著笑，說再見時有點想哭。",
+  "月亮公主": "從竹子裡來的女孩小光，聲音清亮甜美、很貼心，平常愛笑，說出秘密時小小聲，說再見時有點想哭但很溫柔。"
+ },
+ "cast": {
+  "老爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "老奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "月亮公主": {
+   "find": "Yu-Ting",
+   "en": "Libby - Animated"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "第4頁『快點長大』『好快就長大了』",
+   "read": "zhǎng"
+  },
+  {
+   "char": "切",
+   "where": "第2頁『切開竹子』",
+   "read": "qiē"
+  },
+  {
+   "char": "誰",
+   "where": "第5頁『看誰先跑到』，第8頁『誰也不能』",
+   "read": "shéi"
+  },
+  {
+   "char": "縫",
+   "where": "第8頁『每一條門縫』",
+   "read": "fèng"
+  },
+  {
+   "char": "籠",
+   "where": "第10頁『小燈籠』，第12頁『竹子燈籠』",
+   "read": "lóng"
+  },
+  {
+   "char": "會",
+   "where": "第1頁『怎麼會發光』，第3頁『妳會發光』，第4頁『就會跑會跳』，第7頁『會來接我』，第10頁『都會在月亮上』『都會抬頭』，第12頁『就會亮起來』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "日本的山腳下，一大片綠色的竹林，晚上，天上掛著細細的月牙，竹林很暗。",
+   "act": "老爺爺第一次出場：白頭髮綁成小髮髻、灰白色的鬍子，穿咖啡色和服，腰上掛一把小柴刀。他走在竹林裡，停下腳步，驚訝地看著一根從裡面發出金色光芒的竹子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，日本有一位砍竹子的老爺爺。",
+     "en": "Long ago in Japan, there was an old man who cut bamboo."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天晚上，他看到一根竹子，竟然在發光！",
+     "en": "One night, he saw a stalk of bamboo that was glowing!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "surprised",
+     "text": "咦？竹子怎麼會發光？",
+     "en": "Huh? Why is this bamboo glowing?"
+    }
+   ]
+  },
+  {
+   "scene": "同一片竹林，發光的竹子旁邊。",
+   "act": "老爺爺小心切開竹子上面的一節，裡面坐著一個跟手掌一樣大的小女孩，穿粉紅色小和服，全身發著淡淡的金光，對老爺爺笑著揮手。老爺爺蹲下來，伸出手心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老爺爺很小心，切開竹子。",
+     "en": "Very carefully, the old man cut the bamboo open."
+    },
+    {
+     "who": "旁白",
+     "text": "裡面坐著一個小女孩，跟他的手掌一樣大！",
+     "en": "Inside sat a tiny girl, no bigger than his hand!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "小寶貝，跟我回家吧！",
+     "en": "Hello, little one! Come home with me!"
+    }
+   ]
+  },
+  {
+   "scene": "山腳下的木頭房子裡，紙窗、榻榻米，矮桌上點著一盞油燈。",
+   "act": "老奶奶第一次出場：白頭髮、圓圓的臉，穿深藍色和服、繫紅色圍裙。她用雙手捧著小女孩，笑得眼睛彎彎的；小女孩發出的光，把整個屋子照亮。老爺爺在旁邊開心地拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老奶奶好開心，把她捧在手心。",
+     "en": "The old woman was overjoyed and held her gently in her hands."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "happy",
+     "text": "妳會發光，我們就叫妳小光吧！",
+     "en": "You shine so brightly! Let's call you Hikari. It means light."
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，小光就是他們的寶貝。",
+     "en": "From that day on, Hikari was their treasure."
+    }
+   ]
+  },
+  {
+   "scene": "木頭房子的窗邊，晚上，窗外是竹林和圓圓的月亮。",
+   "act": "老奶奶抱著小光，坐在窗邊輕輕搖，一邊唱歌。旁邊一排小畫面：小光一天比一天大，會爬、會走、會在院子裡跑跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "每天晚上，老奶奶都唱歌給小光聽。",
+     "en": "Every night, the old woman sang Hikari a song."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "gentle",
+     "text": "竹子綠，月亮圓，小光，小光，快點長大！",
+     "en": "Green bamboo, round moon, Hikari, Hikari, grow up soon!"
+    },
+    {
+     "who": "旁白",
+     "text": "小光真的好快就長大了，一個月就會跑會跳。",
+     "en": "And Hikari grew so fast! In just one month, she could run and jump."
+    }
+   ]
+  },
+  {
+   "scene": "竹林旁邊的小路，晴天的下午，竹葉在風裡搖。",
+   "act": "小光變成十二歲左右的女孩：黑色長頭髮用粉紅色緞帶綁起來，穿粉紅色和服。她在前面一邊跑一邊回頭笑；老爺爺在後面追，扶著腰喘氣；老奶奶站在路邊拍手大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小光變成一個漂亮的姊姊，笑聲像小鈴鐺。",
+     "en": "Hikari became a lovely young girl, with a laugh like a tiny bell."
+    },
+    {
+     "who": "月亮公主",
+     "tag": "excited",
+     "text": "爺爺，奶奶，我們來比賽，看誰先跑到竹林！",
+     "en": "Grandpa! Grandma! Let's race to the bamboo grove!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "laughing",
+     "text": "哎呀，等一下，我的腳跑不動啦！",
+     "en": "Oh my! Wait for me! My old legs can't keep up!"
+    }
+   ]
+  },
+  {
+   "scene": "夏天的晚上，木頭房子的走廊，院子裡的竹子在月光下輕輕搖。",
+   "act": "小光坐在走廊上，抬頭看著月亮，眼睛裡有淚光；老爺爺和老奶奶站在紙門後，擔心地看著她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，每次看到月亮，小光就不說話了。",
+     "en": "But whenever Hikari looked at the moon, she grew very quiet."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "worried",
+     "text": "小光，妳怎麼了？",
+     "en": "Hikari, what's the matter?"
+    },
+    {
+     "who": "月亮公主",
+     "tag": "sad",
+     "text": "爺爺，奶奶，我一直不敢說。",
+     "en": "Grandpa, Grandma, there's something I've been afraid to tell you."
+    }
+   ]
+  },
+  {
+   "scene": "同一個走廊，月亮比上一頁更大。",
+   "act": "小光牽著老爺爺和老奶奶的手，另一隻手指著月亮，小小聲說話；老爺爺張大眼睛，老奶奶用手遮住嘴巴。",
+   "lines": [
+    {
+     "who": "月亮公主",
+     "tag": "whispering",
+     "text": "我是從月亮上來的公主。",
+     "en": "I'm a princess from the moon."
+    },
+    {
+     "who": "月亮公主",
+     "tag": "sad",
+     "text": "農曆八月十五晚上，月亮上的人，會來接我回家。",
+     "en": "On the full moon night of the eighth lunar month, the moon people will come to take me home."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "sad",
+     "text": "不行！妳是我們的寶貝呀！",
+     "en": "No! You're our treasure!"
+    }
+   ]
+  },
+  {
+   "scene": "農曆八月十五的晚上，木頭房子裡，窗外的月亮又大又圓。",
+   "act": "老爺爺把每一扇門窗都關緊，用木棍頂住門；老奶奶緊緊牽著小光的手。金色的月光從門縫一條一條照進來，下一個小畫面：紙門自己輕輕滑開。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "八月十五晚上，老爺爺把門窗都關緊。",
+     "en": "On that night, the old man shut every door and window tight."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "shouting",
+     "text": "誰也不能帶走小光！",
+     "en": "No one is taking Hikari away!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，月亮好亮，好亮，光從每一條門縫照進來。",
+     "en": "But the moon shone brighter and brighter, and light poured in through every crack."
+    },
+    {
+     "who": "旁白",
+     "text": "門窗竟然自己打開了。",
+     "en": "Then the doors and windows slid open all by themselves."
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，天上一朵發光的白雲，慢慢飄下來，停在竹子旁邊。",
+   "act": "雲上站著幾位月亮上的人，穿淡金色的長袍，手上提著小燈，表情溫和，安靜地等著。小光站在院子中間，回頭看著老爺爺和老奶奶。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一朵發光的白雲，飄進院子裡。",
+     "en": "A glowing white cloud floated gently down into the garden."
+    },
+    {
+     "who": "旁白",
+     "text": "雲上的月亮人，溫柔地等著小光。",
+     "en": "The moon people on the cloud waited kindly for Hikari."
+    },
+    {
+     "who": "月亮公主",
+     "tag": "gentle",
+     "text": "請等一下，讓我跟爺爺奶奶說再見。",
+     "en": "Please wait a moment. Let me say goodbye to Grandpa and Grandma."
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，月光下。",
+   "act": "小光雙手捧著一盞用竹子做的小燈籠，交給老奶奶，燈籠發出淡淡的金光；三個人抱在一起，老奶奶在擦眼淚。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小光拿出一盞小燈籠，是用那根發光的竹子做的。",
+     "en": "Hikari held out a little lantern made from the very bamboo she was found in."
+    },
+    {
+     "who": "月亮公主",
+     "tag": "gentle",
+     "text": "每次月亮圓了，我都會在月亮上看著你們。",
+     "en": "Every time the moon is full, I'll be watching over you from up there."
+    },
+    {
+     "who": "月亮公主",
+     "text": "燈籠亮起來，就是我在跟你們說嗨。",
+     "en": "When the lantern glows, that's me saying hello."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "crying",
+     "text": "好，我們每次都會抬頭看妳。",
+     "en": "All right. We'll look up at you every time."
+    }
+   ]
+  },
+  {
+   "scene": "院子上空，又大又圓的月亮前面。",
+   "act": "小光坐在白雲上，慢慢往月亮飛去，回頭揮手；老爺爺和老奶奶在院子裡揮手，老奶奶手上的竹子燈籠亮著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小光坐上白雲，往月亮飛去。",
+     "en": "Hikari stepped onto the cloud and floated slowly up toward the moon."
+    },
+    {
+     "who": "月亮公主",
+     "tag": "gentle",
+     "text": "爺爺，奶奶，謝謝你們，我愛你們！",
+     "en": "Grandpa, Grandma, thank you. I love you!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "小光，路上小心！我們也愛妳！",
+     "en": "Safe travels, Hikari! We love you too!"
+    }
+   ]
+  },
+  {
+   "scene": "很多年後，又是一個月圓的晚上，木頭房子的走廊。",
+   "act": "老爺爺和老奶奶並肩坐在走廊上，中間放著發出金光的竹子燈籠，一起抬頭微笑揮手；圓圓的月亮上，好像有一個小女孩也在揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那以後，每次月亮圓了，竹子燈籠就會亮起來。",
+     "en": "Ever since then, whenever the moon was full, the bamboo lantern would light up."
+    },
+    {
+     "who": "老奶奶",
+     "tag": "gentle",
+     "text": "竹子綠，月亮圓，小光，小光，我們在這裡。",
+     "en": "Green bamboo, round moon, Hikari, Hikari, here we are!"
+    },
+    {
+     "who": "旁白",
+     "text": "這是日本很久以前的故事。下次月圓，你也跟小光揮個手吧！",
+     "en": "This is a very old story from Japan. Next full moon, give Hikari a wave too!"
+    }
+   ]
+  }
+ ]
+}

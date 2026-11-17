@@ -1,0 +1,349 @@
+{
+ "id": "yugong",
+ "title": "愚公移山",
+ "title_en": "The Old Man Who Moved Mountains",
+ "size": "中",
+ "roles": {
+  "愚公爺爺": "九十歲的老爺爺，慈祥的長者聲音，說話慢慢的、很有耐心，被笑也不生氣，說到挖山時很堅定。",
+  "孫子": "愚公爺爺的小孫子，六歲的小男孩，聲音稚嫩、活潑，挖山時很興奮，手痠時有點洩氣，被爺爺鼓勵後又開心起來。",
+  "聰明伯伯": "住在隔壁、大家說很聰明的伯伯，懶洋洋的胖叔叔聲音，愛哈哈大笑、有點自以為是，最後驚訝又不好意思。",
+  "山神": "住在山裡的老神仙，智者的聲音，溫和、慢慢的，被鏟子弄得好癢時哈哈大笑，被一家人感動時很溫柔。"
+ },
+ "cast": {
+  "愚公爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "孫子": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "聰明伯伯": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "山神": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "伯",
+   "where": "第4頁『一位伯伯』，第4、6、11頁角色『聰明伯伯』",
+   "read": "bó"
+  },
+  {
+   "char": "場",
+   "where": "第1、9、11頁『市場』",
+   "read": "chǎng"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『不會再變高』『總有一天會挖平』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第7頁『沒變小』，第10頁『沒有人住』",
+   "read": "méi"
+  },
+  {
+   "char": "肚",
+   "where": "第8頁『肚子』",
+   "read": "dù"
+  },
+  {
+   "char": "誰",
+   "where": "第8頁『是誰在挖』",
+   "read": "shéi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，一個小村子：幾間土牆茅草屋，屋前有菜園和小雞；門口正前方擋著兩座又高又大的山，山上長滿樹，山頂碰到白雲。一條細細的小路，彎彎曲曲地繞著山腳走到很遠的地方。",
+   "act": "愚公爺爺第一次出場：九十歲的老爺爺，白頭髮在頭頂綁一個小髻，白色長鬍子到胸口，彎彎的白眉毛，穿土黃色粗布衣、繫深咖啡色腰帶，拄著一根木頭拐杖。他站在家門口，抬頭看著兩座大山，皺著眉頭。小路上一個挑著菜的人走得滿頭大汗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，有一位九十歲的老爺爺。",
+     "en": "Long ago in China, there lived an old man who was ninety years old."
+    },
+    {
+     "who": "旁白",
+     "text": "他家門口，擋著兩座又高又大的山。",
+     "en": "Right in front of his house stood two huge, tall mountains."
+    },
+    {
+     "who": "旁白",
+     "text": "每次要去市場，都要繞著山，走一整天。",
+     "en": "Every time he wanted to go to the market, he had to walk all the way around them. It took a whole day!"
+    }
+   ]
+  },
+  {
+   "scene": "老爺爺家的院子，一張大木桌。",
+   "act": "全家人圍著木桌：老爺爺的兩個兒子（壯壯的中年人，一個穿藍色、一個穿綠色粗布衣）、兒媳婦，還有孫子。孫子第一次出場：六歲的小男孩，圓臉、缺一顆門牙，頭髮綁一個沖天小辮子，穿紅色短衣和黑色短褲。老爺爺用拐杖指著大山說話；孫子第一個高高舉起手，跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，老爺爺把全家人叫來。",
+     "en": "One day, the old man called his whole family together."
+    },
+    {
+     "who": "愚公爺爺",
+     "tag": "determined",
+     "text": "我們一起把山挖平，開一條大路，好不好？",
+     "en": "Let's dig away these mountains together and make a wide road. What do you say?"
+    },
+    {
+     "who": "旁白",
+     "text": "小孫子第一個舉手。",
+     "en": "His little grandson was the first to raise his hand."
+    },
+    {
+     "who": "孫子",
+     "tag": "excited",
+     "text": "好！我也要挖！",
+     "en": "Yes! I want to dig too!"
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下，滿地石頭和泥土。",
+   "act": "全家人拿著鏟子和竹籃挖山：兒子們用力鏟土，兒媳婦把土裝進竹籃，老爺爺拄著拐杖也拿著一把小鏟子；孫子拿著一把小小的木鏟，跟在爺爺旁邊，鏟起一小撮軟軟的泥土，認真地倒進竹籃；大石頭都是大人在搬。遠遠的地平線上可以看到一片藍色的大海，有人抬著竹籃往大海走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "全家人拿著鏟子和竹籃，開始挖山。",
+     "en": "The whole family took shovels and baskets and started to dig."
+    },
+    {
+     "who": "旁白",
+     "text": "一鏟，又一鏟；一籃，又一籃。",
+     "en": "One shovel, then another. One basket, then another."
+    },
+    {
+     "who": "旁白",
+     "text": "土和石頭，被抬到很遠的大海邊。",
+     "en": "They carried the dirt and rocks all the way to the faraway sea."
+    },
+    {
+     "who": "孫子",
+     "tag": "happy",
+     "text": "一鏟，又一鏟！大山，你要變小囉！",
+     "en": "One shovel, then another! Mountain, you're getting smaller!"
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下。",
+   "act": "聰明伯伯第一次出場：住在隔壁的中年伯伯，胖胖的，戴一頂黑色方帽，留八字鬍，穿深藍色長袍，手裡搖著一把扇子。他站在旁邊，指著老爺爺，笑得前仰後合、扇子都快掉了；老爺爺停下鏟子，安靜地看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "隔壁住著一位伯伯，大家都說他最聰明。",
+     "en": "Next door lived a man everyone said was very clever. They called him Mr. Clever."
+    },
+    {
+     "who": "聰明伯伯",
+     "tag": "laughing",
+     "text": "哈！你都九十歲了，怎麼搬走兩座大山？",
+     "en": "Ha! You're ninety years old! How could you ever move two mountains?"
+    },
+    {
+     "who": "聰明伯伯",
+     "tag": "laughing",
+     "text": "你真傻，真是個愚公爺爺！",
+     "en": "How silly! You're a real Old Yugong!"
+    },
+    {
+     "who": "旁白",
+     "text": "愚公，就是傻爺爺的意思。大家都笑他傻。",
+     "en": "In Chinese, Yugong means silly old man. Everyone laughed and said he was silly."
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下。",
+   "act": "愚公爺爺一點也不生氣，摸著白鬍子，慢慢地數手指頭，笑咪咪地解釋。孫子站在爺爺身邊，把小木鏟舉得高高的，一臉驕傲。聰明伯伯的扇子停在半空中。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "愚公爺爺一點也不生氣。",
+     "en": "Old Yugong wasn't angry at all."
+    },
+    {
+     "who": "愚公爺爺",
+     "tag": "gentle",
+     "text": "我挖不完，我的兒子接著挖。",
+     "en": "If I can't finish, my sons will keep digging."
+    },
+    {
+     "who": "愚公爺爺",
+     "tag": "gentle",
+     "text": "兒子挖不完，孫子接著挖。",
+     "en": "If my sons can't finish, my grandson will keep digging."
+    },
+    {
+     "who": "孫子",
+     "tag": "proud",
+     "text": "我挖不完，我的孩子接著挖！",
+     "en": "And if I can't finish, my children will keep digging!"
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下。",
+   "act": "愚公爺爺用拐杖指指大山，一臉篤定；聰明伯伯張大嘴巴，扇子掉在地上，說不出話來。孫子在旁邊偷笑。",
+   "lines": [
+    {
+     "who": "愚公爺爺",
+     "tag": "gentle",
+     "text": "山不會再變高，我們一直挖，總有一天會挖平！",
+     "en": "The mountains won't grow any taller. If we keep digging, one day they'll be gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "聰明伯伯張大嘴巴，說不出話來。",
+     "en": "Mr. Clever's mouth fell open. He didn't know what to say."
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下，左邊一半是夏天的大太陽，右邊一半是冬天飄雪。",
+   "act": "左半邊：大熱天，全家人滿頭大汗地挖土。右半邊：下著小雪，孫子戴著毛帽，坐在石頭上，甩著發痠的小手，噘著嘴看著還是好大的山；愚公爺爺蹲在他身邊，指著旁邊一堆他們挖出來、已經跟小屋一樣高的土堆。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天好熱，冬天好冷，他們每天都挖。",
+     "en": "In the hot summer and the cold winter, they dug every single day."
+    },
+    {
+     "who": "孫子",
+     "tag": "sad",
+     "text": "爺爺，我的手好痠，山好像沒變小。",
+     "en": "Grandpa, my hands are so sore. The mountain doesn't look any smaller."
+    },
+    {
+     "who": "愚公爺爺",
+     "tag": "gentle",
+     "text": "你看，我們挖出來的土，堆成小山了。",
+     "en": "Look! All the dirt we dug out has made a little hill."
+    },
+    {
+     "who": "旁白",
+     "text": "小孫子笑了，又拿起小鏟子。",
+     "en": "The little grandson smiled and picked up his shovel again."
+    },
+    {
+     "who": "孫子",
+     "tag": "happy",
+     "text": "一鏟，又一鏟！",
+     "en": "One shovel, then another!"
+    }
+   ]
+  },
+  {
+   "scene": "大山的裡面，一個發著淡淡金光的大石洞，石洞頂上一直掉下小沙子。",
+   "act": "山神第一次出場：住在山裡的老神仙，長長的灰綠色鬍子像青苔，頭上戴著一圈小樹葉和小花，穿石頭灰色的長袍，袍子上有小小的青苔和野花。他抱著肚子在地上打滾，笑得眼淚都流出來了；洞頂上隱約聽到鏟子的聲音。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山的裡面，住著一位山神。",
+     "en": "Deep inside the mountain lived a Mountain Spirit."
+    },
+    {
+     "who": "旁白",
+     "text": "鏟子每天挖呀挖，山神的肚子好癢。",
+     "en": "Every day the shovels went dig, dig, dig, and it tickled the Mountain Spirit's tummy."
+    },
+    {
+     "who": "山神",
+     "tag": "laughing",
+     "text": "哈！好癢！是誰在挖我的山呀？",
+     "en": "Ha! That tickles! Who is digging my mountain?"
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下，太陽要下山了，天空橘紅色。",
+   "act": "山神從一塊大石頭後面探出頭來，身體一半還是石頭的顏色，一臉驚訝地看著正在挖山的一家人；愚公爺爺放下鏟子，拱手向山神行禮，孫子躲在爺爺後面偷看，又好奇地揮揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山神偷看，看到一家人在努力挖山。",
+     "en": "The Mountain Spirit peeked out and saw a whole family hard at work."
+    },
+    {
+     "who": "山神",
+     "tag": "surprised",
+     "text": "老爺爺，你們真的要把山挖平嗎？",
+     "en": "Old man, are you really going to dig away the mountain?"
+    },
+    {
+     "who": "愚公爺爺",
+     "tag": "gentle",
+     "text": "對！開一條大路，大家去市場，就不用繞遠路了。",
+     "en": "Yes! With a wide road, everyone can get to the market without going the long way around."
+    }
+   ]
+  },
+  {
+   "scene": "大山的山腳下，天空出現一道金光。",
+   "act": "山神變得跟大山一樣高大，張開雙手，把兩座大山輕輕抱起來，好像抱起兩顆大饅頭；山上的小鳥和兔子坐在山頂上，開心地跟著一起飛走。全家人抬頭看，孫子張大嘴巴，小木鏟掉在地上。",
+   "lines": [
+    {
+     "who": "山神",
+     "tag": "gentle",
+     "text": "你們一家人每天都不放棄，我好感動。",
+     "en": "Your family never gives up, not even for a day. That really touches my heart."
+    },
+    {
+     "who": "山神",
+     "tag": "happy",
+     "text": "我來幫你們吧！",
+     "en": "Let me help you!"
+    },
+    {
+     "who": "旁白",
+     "text": "山神抱起兩座大山，好像抱起兩顆大饅頭。",
+     "en": "The Mountain Spirit picked up both mountains, as easily as two big steamed buns."
+    },
+    {
+     "who": "旁白",
+     "text": "他把山搬到好遠、沒有人住的地方。",
+     "en": "He carried them far, far away, to a place where nobody lived."
+    }
+   ]
+  },
+  {
+   "scene": "老爺爺的家門口，原本是大山的地方變成一大片平地，一條又平又直的大路，一直通到遠處熱鬧的市場。",
+   "act": "全家人在大路上又跳又笑；孫子扛著小木鏟走在最前面；聰明伯伯站在路邊，不好意思地抓抓頭，然後跟愚公爺爺握手、一起哈哈大笑。愚公爺爺摸著鬍子，笑得眼睛瞇成一條線。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "家門口，出現了一條又平又直的大路。",
+     "en": "Now, right outside the door, there was a wide, straight road."
+    },
+    {
+     "who": "聰明伯伯",
+     "tag": "surprised",
+     "text": "原來，愚公爺爺一點也不傻！",
+     "en": "Well, well! Old Yugong isn't silly at all!"
+    },
+    {
+     "who": "孫子",
+     "tag": "happy",
+     "text": "一鏟，又一鏟，我們做到了！",
+     "en": "One shovel, then another. We did it!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家走上大路，開心地去市場。",
+     "en": "And everyone walked down the new road to the market, happy as could be."
+    }
+   ]
+  }
+ ]
+}

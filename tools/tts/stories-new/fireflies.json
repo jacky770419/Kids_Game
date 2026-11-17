@@ -35,7 +35,7 @@
   },
   {
    "char": "沒",
-   "where": "第2頁『一隻都沒有』",
+   "where": "第2頁『一隻都沒有』，第7頁『你沒有抓』",
    "read": "méi"
   },
   {
@@ -67,8 +67,8 @@
     {
      "who": "爸爸",
      "tag": "gentle",
-     "text": "四月、五月，螢火蟲最多。跟好爸爸，別離開步道。",
-     "en": "April and May are firefly time. Stay close to me, and don't leave the trail."
+     "text": "四月、五月，螢火蟲最多。跟好爸爸，別走進草叢。",
+     "en": "Around here, April and May are firefly time. Stay close to me, and stay out of the tall grass."
     },
     {
      "who": "小男孩",
@@ -78,8 +78,8 @@
     },
     {
      "who": "旁白",
-     "text": "他手上拿著小罐子。",
-     "en": "He is holding a little jar."
+     "text": "他舉起小罐子。",
+     "en": "He holds up his little jar."
     }
    ]
   },
@@ -193,8 +193,8 @@
     {
      "who": "小螢火蟲",
      "tag": "scared",
-     "text": "不要抓我！關起來，朋友就找不到我了。",
-     "en": "Please don't catch me! If I'm shut away, my friends can't find me."
+     "text": "不要抓我！在罐子裡，我飛不到朋友身邊。",
+     "en": "Please don't catch me! In a jar, I can't fly to my friends."
     },
     {
      "who": "旁白",
@@ -211,18 +211,18 @@
   },
   {
    "scene": "整片山坡和步道兩旁，滿滿的黃綠色光點，像一串一串的小燈籠，把步道照亮。",
-   "act": "小螢火蟲高興地繞著小哲飛一圈，草叢裡的螢火蟲一起亮起來；爸爸蹲在小哲旁邊，摟著他的肩膀，兩個人都小聲地笑。",
+   "act": "小螢火蟲高興地繞著小哲飛一圈，草叢裡的螢火蟲一起亮起來；爸爸蹲在小哲旁邊，摟著他的肩膀、對他點點頭，兩個人都小聲地笑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "螢火蟲一起亮起來，像一大串小燈籠。",
-     "en": "The fireflies light up together, like a long string of tiny lanterns."
+     "text": "螢火蟲一起亮，整座山都是小燈籠。",
+     "en": "The fireflies light up together. The whole mountain is full of tiny lanterns."
     },
     {
      "who": "爸爸",
      "tag": "whispering",
-     "text": "你看，整座山都是小燈籠。",
-     "en": "Look, the whole mountain is full of tiny lanterns."
+     "text": "你沒有抓，牠才能跟朋友一起亮。",
+     "en": "You let it be, so it can shine with its friends."
     },
     {
      "who": "小男孩",
@@ -238,7 +238,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "回家時，手電筒一樣往地上照。",
+     "text": "回家時，手電筒也往地上照。",
      "en": "On the way home, the flashlight points at the ground again."
     },
     {

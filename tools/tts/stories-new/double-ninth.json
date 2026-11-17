@@ -2,10 +2,10 @@
  "id": "double-ninth",
  "title": "跟爺爺去爬山",
  "title_en": "Climbing with Grandpa",
- "size": "短",
+ "size": "中",
  "roles": {
   "小男孩": "小男孩小豪，五六歲，活潑好動、說話又快又大聲，一個人時有點害怕，後來學會等爺爺，說話變得溫柔。",
-  "爺爺": "小豪的爺爺，慈祥的老爺爺聲音，說話慢慢的、很和氣，常常笑。",
+  "爺爺": "小豪的爺爺，慈祥的老爺爺聲音，說話慢慢的、很和氣，常常笑，偶爾愛耍寶。",
   "奶奶": "小豪的奶奶，溫柔的奶奶聲音，說話輕輕的、帶著笑，愛講好玩的小知識。"
  },
  "cast": {
@@ -25,12 +25,12 @@
  "polyphones": [
   {
    "char": "重",
-   "where": "第1頁『重陽節』『叫重陽』，第7頁『重陽節』『重陽糕』，第8頁『重陽節』",
+   "where": "第1頁『重陽節』『叫重陽』，第7頁『重陽節』兩處，第10頁『重陽節』『重陽糕』，第11頁『重陽節』",
    "read": "chóng"
   },
   {
    "char": "數",
-   "where": "第1頁『好數字』",
+   "where": "第1頁『陽的數字』",
    "read": "shù"
   },
   {
@@ -40,13 +40,23 @@
   },
   {
    "char": "沒",
-   "where": "第5頁『都沒看到』",
+   "where": "第6頁『都沒看到』",
    "read": "méi"
   },
   {
    "char": "處",
-   "where": "第7頁『遠處』",
+   "where": "第9頁『遠處』",
    "read": "chù"
+  },
+  {
+   "char": "轉",
+   "where": "第3頁『轉身』",
+   "read": "zhuǎn"
+  },
+  {
+   "char": "樂",
+   "where": "第7頁『快樂』",
+   "read": "lè"
   }
  ],
  "pages": [
@@ -61,8 +71,13 @@
     },
     {
      "who": "旁白",
-     "text": "古時候，九是好數字。兩個九，就叫重陽。",
-     "en": "Long ago, people thought nine was a lucky number. Two nines make a Double Ninth."
+     "text": "古時候的人說，九是陽的數字，像太陽一樣好。",
+     "en": "Long ago, people said nine was a \"sunny\" number, good and bright like the sun."
+    },
+    {
+     "who": "旁白",
+     "text": "兩個九碰在一起，就叫重陽。",
+     "en": "Two nines together make the Double Ninth."
     },
     {
      "who": "旁白",
@@ -79,7 +94,7 @@
   },
   {
    "scene": "山上的石頭階梯步道，兩邊有木頭扶手和高大的樹。",
-   "act": "小豪已經跑到前面好幾階，回頭揮手催大家；爺爺一手扶著扶手、一手拄著拐杖，一階一階慢慢往上；奶奶陪在爺爺旁邊。",
+   "act": "小豪已經跑到前面好幾階，回頭揮手催大家，一臉得意；奶奶在後面把手放在嘴邊喊他；爺爺一手扶著扶手、一手拄著拐杖，一階一階慢慢往上。",
    "lines": [
     {
      "who": "旁白",
@@ -89,8 +104,14 @@
     {
      "who": "小男孩",
      "tag": "impatient",
-     "text": "爺爺，快一點啦！",
-     "en": "Grandpa, hurry up!"
+     "text": "爺爺，快一點啦！我要第一名！",
+     "en": "Grandpa, hurry up! I'm going to be first!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "worried",
+     "text": "小豪，別跑太遠喔！",
+     "en": "Noah, don't run too far!"
     },
     {
      "who": "旁白",
@@ -144,8 +165,8 @@
     {
      "who": "小男孩",
      "tag": "worried",
-     "text": "好。爺爺，你累了嗎？",
-     "en": "Okay. Grandpa, are you tired?"
+     "text": "好，我記住了。爺爺，你累了嗎？",
+     "en": "Okay, I'll remember. Grandpa, are you tired?"
     },
     {
      "who": "爺爺",
@@ -161,8 +182,8 @@
    ]
   },
   {
-   "scene": "步道上，秋天的樹林，紅色和黃色的葉子在風中飄下來；旁邊一棵松樹上，有一隻咖啡色的松鼠抱著松果在吃。",
-   "act": "小豪牽著爺爺的手，一起慢慢走；一片紅葉正好停在爺爺的灰色鴨舌帽上，小豪指著帽子哈哈笑，爺爺翻著眼睛往上看自己的帽子；奶奶也笑了，抬手指著松樹上的松鼠，小豪睜大眼睛看過去。",
+   "scene": "步道上，秋天的樹林，紅色和黃色的葉子在風中飄下來。",
+   "act": "小豪牽著爺爺的手，一起慢慢走；一片紅葉正好停在爺爺的灰色鴨舌帽上，小豪指著帽子哈哈笑；爺爺翻著眼睛往上看自己的帽子，故意挺起胸膛擺帥氣的姿勢；奶奶在旁邊笑。",
    "lines": [
     {
      "who": "旁白",
@@ -181,9 +202,32 @@
      "en": "Grandpa, the leaf landed on your cap!"
     },
     {
+     "who": "爺爺",
+     "tag": "laughing",
+     "text": "那我就戴著它，變成最帥的爺爺！",
+     "en": "Then I'll keep it on. Now I'm the most handsome grandpa!"
+    }
+   ]
+  },
+  {
+   "scene": "步道旁邊的樹林，樹枝上停著兩隻小鳥張著嘴在唱歌；旁邊一棵松樹上，有一隻咖啡色的松鼠抱著松果，臉頰鼓鼓的。",
+   "act": "爺爺帽子上還戴著紅葉。三個人停下腳步抬頭看；奶奶彎下腰，指著松樹上的松鼠，小聲地跟小豪說話；小豪睜大眼睛、張大嘴巴，好驚訝。",
+   "lines": [
+    {
      "who": "旁白",
-     "text": "樹上的松鼠，在吃松果。",
-     "en": "Up in a tree, a squirrel is eating a pinecone."
+     "text": "樹上的小鳥，在唱歌。",
+     "en": "Up in the trees, little birds are singing."
+    },
+    {
+     "who": "旁白",
+     "text": "松樹上，一隻松鼠抱著松果。",
+     "en": "In a pine tree, a squirrel is hugging a pinecone."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "松鼠在存松果，準備過冬喔。",
+     "en": "The squirrel is saving pinecones for winter."
     },
     {
      "who": "小男孩",
@@ -194,14 +238,48 @@
    ]
   },
   {
+   "scene": "步道轉彎的地方，路邊的花圃開滿黃色的菊花，花瓣細細長長、一朵一朵圓圓的；旁邊有木頭扶手。",
+   "act": "奶奶站在花圃旁邊，笑著介紹菊花；小豪蹲在步道上，只用眼睛看、沒有摘花，指著一朵最大的黃菊花，抬頭看天上的太陽，又看看花，好開心；爺爺拄著拐杖彎下腰，對著菊花揮手打招呼，逗得小豪咯咯笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "路邊開滿了黃色的菊花。",
+     "en": "Yellow chrysanthemums are blooming along the path."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "重陽節爬山，也要看菊花喔。",
+     "en": "On Double Ninth, we climb hills and look at chrysanthemums."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "奶奶，這朵菊花，好像小太陽！",
+     "en": "Grandma, this flower looks like a little sun!"
+    },
+    {
+     "who": "爺爺",
+     "tag": "laughing",
+     "text": "小太陽，重陽節快樂！",
+     "en": "Happy Double Ninth, little sun!"
+    }
+   ]
+  },
+  {
    "scene": "步道最後一段比較高的石頭階梯，旁邊有扶手。",
-   "act": "小豪和爺爺站在同一階，小豪牽著爺爺的手，低頭提醒他看腳下；爺爺一手拄著拐杖、一手牽著小豪，靠著扶手那一邊慢慢踏上階梯；奶奶在後面看著，笑得好開心。",
+   "act": "小豪和爺爺站在同一階，小豪牽著爺爺的手，低頭提醒他看腳下，另一隻手比出一、二、三；爺爺一手拄著拐杖、一手牽著小豪，靠著扶手那一邊慢慢踏上階梯；奶奶在後面看著，笑得好開心。",
    "lines": [
     {
      "who": "小男孩",
      "tag": "gentle",
-     "text": "爺爺，有階梯，小心喔。",
-     "en": "Grandpa, there are steps here. Be careful."
+     "text": "爺爺，這裡階梯比較高，小心喔。",
+     "en": "Grandpa, these steps are taller. Be careful."
+    },
+    {
+     "who": "小男孩",
+     "text": "我們一起來，一階、兩階、三階！",
+     "en": "Let's go together. One step, two steps, three steps!"
     },
     {
      "who": "小男孩",
@@ -217,7 +295,7 @@
   },
   {
    "scene": "山頂的平台，有一座紅色屋頂的涼亭，四周有木頭欄杆；遠處是小小的房子、彎彎的河和藍天白雲。",
-   "act": "三個人坐在涼亭裡；奶奶打開小竹籃，拿出一盒四方形的重陽糕，糕是一層白、一層咖啡色，上面放著紅棗；小豪兩手捧著一塊，聞了一下，好開心。",
+   "act": "三個人手牽手走上山頂平台，站在涼亭前面、離欄杆有一段距離，一起望著遠方；爺爺帽子上還戴著紅葉，舉起拐杖笑哈哈；小豪抬頭看爺爺，笑得好開心。",
    "lines": [
     {
      "who": "旁白",
@@ -225,10 +303,44 @@
      "en": "They reach the top! The houses far away look so tiny."
     },
     {
+     "who": "爺爺",
+     "tag": "laughing",
+     "text": "你看，不急，不急，我們一起走，也到山頂了！",
+     "en": "See? No rush, no rush. We walked together, and we made it to the top!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "一起走，比一個人好玩多了！",
+     "en": "Walking together is way more fun than being alone!"
+    }
+   ]
+  },
+  {
+   "scene": "山頂的涼亭裡，有一張木頭桌子和長椅。",
+   "act": "三個人坐在涼亭裡；奶奶打開小竹籃，拿出一盒四方形的重陽糕，糕是一層白、一層咖啡色，上面放著紅棗；小豪先用兩手捧著一塊，遞給爺爺，爺爺笑咪咪地接過去；接著小豪自己咬一大口，好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "奶奶打開小竹籃，拿出一盒糕，上面有紅棗。",
+     "en": "Grandma opens her little basket and takes out a box of cakes with red dates on top."
+    },
+    {
      "who": "奶奶",
      "tag": "happy",
      "text": "重陽節，我們來吃重陽糕。",
      "en": "It's the Double Ninth Festival. Let's eat Double Ninth cake."
+    },
+    {
+     "who": "小男孩",
+     "tag": "gentle",
+     "text": "爺爺先吃，第一塊給爺爺！",
+     "en": "Grandpa first! The first piece is for you!"
+    },
+    {
+     "who": "旁白",
+     "text": "小豪也咬了一大口。",
+     "en": "Then Noah takes a big bite too."
     },
     {
      "who": "小男孩",

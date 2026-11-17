@@ -34,11 +34,6 @@
    "read": "lù"
   },
   {
-   "char": "束",
-   "where": "第2頁『一束紫羅蘭』",
-   "read": "shù"
-  },
-  {
    "char": "趴",
    "where": "第2頁『趴在床上』",
    "read": "pā"
@@ -55,7 +50,7 @@
   },
   {
    "char": "會",
-   "where": "第6頁『會帶來春天』、第10頁『怎麼會有』",
+   "where": "第10頁『怎麼會有』",
    "read": "huì"
   },
   {
@@ -72,6 +67,11 @@
    "char": "片",
    "where": "第9頁『一大片』",
    "read": "piàn"
+  },
+  {
+   "char": "只",
+   "where": "第1頁『只有』",
+   "read": "zhǐ"
   }
  ],
  "pages": [
@@ -81,13 +81,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "一月，山腳下的小木屋外，下著好大的雪。",
+     "text": "一月，山腳下的小木屋外，下著大雪。",
      "en": "It's January. Outside a little cabin at the foot of a mountain, the snow is falling hard."
     },
     {
      "who": "旁白",
-     "text": "屋裡住著瑪露莎，和她的姊姊。",
-     "en": "Inside live Marushka and her big sister."
+     "text": "爸爸媽媽進城去了，家裡只有瑪露莎和姊姊。",
+     "en": "Mom and Dad have gone to town, so only Marushka and her big sister are home."
     },
     {
      "who": "旁白",
@@ -109,8 +109,8 @@
     {
      "who": "姊姊",
      "tag": "excited",
-     "text": "明天是我的生日，我想要一束紫羅蘭！",
-     "en": "Tomorrow is my birthday. I want a bunch of violets!"
+     "text": "明天是我的生日，我想要紫羅蘭，紫色的小花！",
+     "en": "Tomorrow is my birthday. I want violets, the little purple flowers!"
     },
     {
      "who": "瑪露莎",
@@ -137,7 +137,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "瑪露莎看著窗外的大雪，想了好久。",
+     "text": "瑪露莎看著大雪，想了好久。",
      "en": "Marushka looks out at the heavy snow and thinks for a long time."
     },
     {
@@ -200,7 +200,7 @@
   },
   {
    "scene": "山頂的營火旁，火光把雪地照成橘色。",
-   "act": "瑪露莎坐在一月爺爺旁邊伸手烤火，一月爺爺用手杖一個一個指給她看；三月哥哥是年輕的哥哥，淡棕色短髮，頭上戴一圈小花編的花環，穿嫩綠色斗篷，對瑪露莎眨眼揮手。",
+   "act": "瑪露莎坐在一月爺爺旁邊伸手烤火，一月爺爺用手杖一個一個指給她看；三月哥哥是年輕的哥哥，淡棕色短髮，頭上戴一圈小花編的花環，穿嫩綠色斗篷，對瑪露莎眨眼揮手；穿金黃色斗篷的六月、穿橘色斗篷的九月、穿銀色斗篷的十二月也笑著點頭。",
    "lines": [
     {
      "who": "一月爺爺",
@@ -210,13 +210,13 @@
     },
     {
      "who": "旁白",
-     "text": "穿綠衣服的三月哥哥，會帶來春天。",
+     "text": "穿綠衣服的三月哥哥，帶來春天。",
      "en": "The young man in green is Brother March. He brings the spring."
     },
     {
      "who": "旁白",
-     "text": "七月帶來夏天，十月帶來秋天。",
-     "en": "July brings the summer, and October brings the fall."
+     "text": "六月帶來夏天，九月帶來秋天，十二月帶來冬天。",
+     "en": "June brings the summer, September brings the fall, and December brings the winter."
     }
    ]
   },
@@ -262,7 +262,7 @@
     },
     {
      "who": "旁白",
-     "text": "一月爺爺拿起手杖，交給三月哥哥。",
+     "text": "一月爺爺把手杖交給三月哥哥。",
      "en": "Old January hands his wooden staff to Brother March."
     },
     {
@@ -315,11 +315,11 @@
   },
   {
    "scene": "晚上，小木屋裡，火爐的火光；窗外又下起大雪。",
-   "act": "瑪露莎抱著一籃紫羅蘭進門，頭髮和外套上都是雪；姊姊從床上跳下來，張大嘴巴，伸手去搶花，手指碰到了瑪露莎冰冷的手。",
+   "act": "瑪露莎抱著一籃紫羅蘭進門，頭髮和外套上都是雪，笑著說是山上的十二個月兄弟幫忙；姊姊從床上跳下來，張大嘴巴，伸手去搶花，手指碰到了瑪露莎冰冷的手。",
    "lines": [
     {
      "who": "旁白",
-     "text": "瑪露莎抱著紫羅蘭，跑回小木屋。",
+     "text": "瑪露莎抱著紫羅蘭跑回家。",
      "en": "Marushka hugs the violets and hurries home to the cabin."
     },
     {
@@ -329,6 +329,12 @@
      "en": "Violets? How can there be violets in January?"
     },
     {
+     "who": "瑪露莎",
+     "tag": "gentle",
+     "text": "是十二個月兄弟幫我的！",
+     "en": "The Twelve Months helped me!"
+    },
+    {
      "who": "姊姊",
      "tag": "excited",
      "text": "快給我！明天我要戴在頭上！",
@@ -336,7 +342,7 @@
     },
     {
      "who": "旁白",
-     "text": "姊姊伸手一拿，碰到了妹妹的手。",
+     "text": "姊姊伸手一拿，碰到妹妹的手。",
      "en": "Big Sister reaches for the flowers and touches her little sister's hand."
     }
    ]
@@ -353,8 +359,8 @@
     },
     {
      "who": "旁白",
-     "text": "姊姊看著窗外的大雪，說不出話。",
-     "en": "Big Sister looks at the heavy snow outside, and she can't say a word."
+     "text": "姊姊看看窗外，說不出話。",
+     "en": "Big Sister looks out at the heavy snow, and she can't say a word."
     },
     {
      "who": "姊姊",
@@ -364,7 +370,7 @@
     },
     {
      "who": "旁白",
-     "text": "姊姊用毯子包住妹妹，煮了一鍋熱湯。",
+     "text": "她用毯子包住妹妹，煮了一鍋熱湯。",
      "en": "She wraps her sister in a blanket and cooks a pot of hot soup."
     },
     {
@@ -381,19 +387,19 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "到了三月，姊妹兩個手牽手，一起上山。",
+     "text": "到了三月，姊妹手牽手，一起上山。",
      "en": "When March comes, the two sisters walk up the mountain hand in hand."
     },
     {
      "who": "旁白",
-     "text": "山上開滿紫羅蘭，遠方的三月哥哥，在對她們揮手。",
-     "en": "The mountain is covered in violets, and far away, Brother March waves to them."
+     "text": "遠方的三月哥哥，在對她們揮手。",
+     "en": "Far away, Brother March waves to them."
     },
     {
      "who": "姊姊",
      "tag": "happy",
-     "text": "妳看，紫羅蘭真的等到三月才開！",
-     "en": "Look! The violets really did wait for March to bloom!"
+     "text": "妳看，三月一到，紫羅蘭自己就開了！",
+     "en": "Look! March is here, and the violets have bloomed all by themselves!"
     }
    ]
   }

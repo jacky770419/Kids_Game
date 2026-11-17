@@ -1,7 +1,7 @@
 {
  "id": "bean-sprout",
  "title": "小豆子發芽了",
- "title_en": "The Little Bean Sprouts",
+ "title_en": "The Little Pea Sprouts",
  "size": "短",
  "roles": {
   "小豆子": "主角，一顆綠色的小豆子，像四五歲的小女生，聲音可愛有精神；口渴時大聲喊救命，最後當上豆子媽媽很得意。",
@@ -37,6 +37,11 @@
    "char": "莢",
    "where": "第8頁『豆莢』兩次",
    "read": "jiá"
+  },
+  {
+   "char": "鑽",
+   "where": "第4頁『往下鑽』『鑽出土』",
+   "read": "zuān"
   }
  ],
  "pages": [
@@ -46,14 +51,14 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小萱的手心裡，有一顆綠色的豆子。",
-     "en": "In Sophie's hand, there is a tiny, round, green bean."
+     "text": "小萱的手心裡，有一顆綠色的豌豆。",
+     "en": "In Sophie's hand, there is a tiny, round, green pea."
     },
     {
      "who": "小豆子",
      "tag": "happy",
      "text": "嗨，我是小豆子！我想變成很高的豆苗！",
-     "en": "Hi! I'm Little Bean! I want to be a really tall bean plant!"
+     "en": "Hi! I'm Little Pea! I want to be a really tall pea plant!"
     },
     {
      "who": "小萱",
@@ -69,8 +74,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小萱把小豆子埋進花盆的土裡。",
-     "en": "Sophie tucks Little Bean into the soil in the flowerpot."
+     "text": "小萱把小豆子埋進土裡。",
+     "en": "Sophie tucks Little Pea into the soil in the flowerpot."
     },
     {
      "who": "小豆子",
@@ -82,7 +87,7 @@
      "who": "小萱",
      "tag": "happy",
      "text": "喝點水，曬太陽，小豆子，加油喔！",
-     "en": "Drink some water, soak up the sun. Little Bean, you can do it!"
+     "en": "Drink some water, soak up the sun. Little Pea, you can do it!"
     }
    ]
   },
@@ -99,12 +104,12 @@
      "who": "太陽",
      "tag": "gentle",
      "text": "早安，小豆子，我來幫妳暖一暖。",
-     "en": "Good morning, Little Bean. Let me warm you up."
+     "en": "Good morning, Little Pea. Let me warm you up."
     },
     {
      "who": "旁白",
      "text": "小豆子喝飽了水，越來越胖。",
-     "en": "Little Bean drinks lots of water and gets plumper and plumper."
+     "en": "Little Pea drinks lots of water and gets plumper and plumper."
     },
     {
      "who": "小豆子",
@@ -116,34 +121,29 @@
   },
   {
    "scene": "花盆的剖面，土上面是陽光。",
-   "act": "第一格：小豆子身上冒出一根白色的小根，往土的下面伸。第二格：一根彎彎的綠色小芽頂開土，冒出土面，打開兩片嫩綠的小葉子；小豆子的笑臉在小芽旁邊，舉起雙手歡呼。",
+   "act": "第一格：小豆子身上冒出一根白色的小根，往土的下面鑽。第二格：一根彎彎的綠色小芽從小豆子身上往上頂，冒出土面，打開第一對嫩綠的小葉子；小豆子本身和她的笑臉留在土裡的剖面，抬頭看著小芽，舉起雙手歡呼（豌豆發芽時豆子留在土裡）。",
    "lines": [
     {
      "who": "旁白",
-     "text": "一根白色的小根冒出來，往下伸。",
-     "en": "A tiny white root pops out and reaches down."
-    },
-    {
-     "who": "旁白",
-     "text": "接著，綠色的小芽往上冒，冒出了土。",
-     "en": "Then a little green sprout pushes up, up, out of the soil."
+     "text": "白色的小根冒出來，往下鑽。",
+     "en": "A tiny white root pops out and digs down."
     },
     {
      "who": "小豆子",
      "tag": "excited",
-     "text": "嘿咻！我發芽了！",
-     "en": "Heave-ho! I sprouted!"
+     "text": "嘿喲！小芽鑽出土了！我發芽了！",
+     "en": "Heave-ho! My little sprout poked out of the soil! I sprouted!"
     }
    ]
   },
   {
    "scene": "中午，陽台上大太陽好亮；花盆的土又乾又裂，黃色小水壺倒在角落。",
-   "act": "小豆苗的兩片小葉子垂下來，小豆子的臉皺成一團，張大嘴巴喊救命；天上的太陽一臉著急，往旁邊的雲那裡飛去。畫面一角是一個小框：小萱揹著小背包，牽著奶奶的手出門。",
+   "act": "小豆苗的兩片小葉子垂下來，土裡的小豆子臉皺成一團，張大嘴巴喊救命；天上的太陽一臉著急，對著遠遠的一朵灰色烏雲揮手大喊。畫面一角是一個小框：小萱揹著小背包，牽著奶奶的手出門。",
    "lines": [
     {
      "who": "旁白",
      "text": "可是，小萱去奶奶家兩天，忘了澆水。",
-     "en": "But Sophie goes to Grandma's house for two days and forgets to water."
+     "en": "But Sophie goes to Grandma's house for two days and forgets to water Little Pea."
     },
     {
      "who": "小豆子",
@@ -154,8 +154,8 @@
     {
      "who": "太陽",
      "tag": "gentle",
-     "text": "別怕，我去找烏雲幫忙！",
-     "en": "Don't be scared. I'll go ask the rain clouds for help!"
+     "text": "別怕！烏雲，快過來幫忙！",
+     "en": "Don't be scared! Rain cloud, come over here and help!"
     }
    ]
   },
@@ -172,11 +172,11 @@
      "who": "雨滴",
      "tag": "excited",
      "text": "我是雨滴！小豆子，我們來救妳了！",
-     "en": "I'm Raindrop! Little Bean, we're here to save you!"
+     "en": "I'm Raindrop! Little Pea, we're here to save you!"
     },
     {
      "who": "旁白",
-     "text": "滴答，滴答，雨滴跳進了花盆。",
+     "text": "滴答，滴答，雨滴跳進花盆。",
      "en": "Drip, drop, drip, drop. The raindrops jump into the pot."
     },
     {
@@ -189,7 +189,7 @@
   },
   {
    "scene": "雨停了，陽台的地板濕濕的，欄杆上掛著水珠；花盆裡的豆苗比之前高了一截，有好幾片葉子。",
-   "act": "小萱揹著小背包衝到陽台，蹲在花盆前，雙手合起來，一臉抱歉；豆苗上的小豆子笑著擺擺葉子。後半頁：小萱拿著黃色小水壺澆水，嘴巴張開在唱歌。",
+   "act": "小萱揹著小背包衝到陽台，蹲在花盆前，雙手合起來，一臉抱歉；豆苗上的葉子笑著擺一擺。接著小萱舉起一根手指，認真地想好下次的辦法。後半頁：小萱拿著黃色小水壺澆水，嘴巴張開在唱歌。",
    "lines": [
     {
      "who": "旁白",
@@ -199,8 +199,8 @@
     {
      "who": "小萱",
      "tag": "sad",
-     "text": "小豆子，對不起，我忘了幫妳澆水！",
-     "en": "Little Bean, I'm so sorry I forgot to water you!"
+     "text": "小豆子，對不起，我忘了澆水！",
+     "en": "Little Pea, I'm so sorry I forgot to water you!"
     },
     {
      "who": "小豆子",
@@ -210,9 +210,15 @@
     },
     {
      "who": "小萱",
+     "tag": "determined",
+     "text": "下次出門，我要請媽媽幫妳澆水！",
+     "en": "Next time I go away, I will ask Mom to water you!"
+    },
+    {
+     "who": "小萱",
      "tag": "happy",
      "text": "喝點水，曬太陽，小豆子，加油喔！",
-     "en": "Drink some water, soak up the sun. Little Bean, you can do it!"
+     "en": "Drink some water, soak up the sun. Little Pea, you can do it!"
     }
    ]
   },
@@ -223,7 +229,7 @@
     {
      "who": "旁白",
      "text": "小豆子越變越高，開出白色的小花。",
-     "en": "Little Bean grows taller and taller, and white flowers bloom."
+     "en": "Little Pea grows taller and taller, and white flowers bloom."
     },
     {
      "who": "旁白",
@@ -234,7 +240,7 @@
      "who": "小萱",
      "tag": "surprised",
      "text": "哇！豆莢裡有五顆新豆子！",
-     "en": "Wow! There are five new beans in this pod!"
+     "en": "Wow! There are five new peas in this pod!"
     },
     {
      "who": "小豆子",

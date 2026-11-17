@@ -39,11 +39,6 @@
    "read": "nòng"
   },
   {
-   "char": "縫",
-   "where": "第6頁『指縫』",
-   "read": "fèng"
-  },
-  {
    "char": "背",
    "where": "第6頁『手背』",
    "read": "bèi"
@@ -56,8 +51,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小翔在公園玩沙子，玩了好久。",
-     "en": "Owen plays in the sandbox at the park for a long, long time."
+     "text": "小翔在公園玩沙子。",
+     "en": "Owen plays in the sandbox at the park."
     },
     {
      "who": "旁白",
@@ -78,12 +73,12 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小翔一回家，就跑去拿餅乾。",
+     "text": "小翔一回家，就去拿餅乾。",
      "en": "As soon as Owen gets home, he runs to grab a cookie."
     },
     {
      "who": "旁白",
-     "text": "可是，他的手上有看不見的小東西。",
+     "text": "可是，他手上有看不見的東西。",
      "en": "But there are tiny things on his hands that nobody can see."
     },
     {
@@ -95,7 +90,7 @@
     {
      "who": "細菌小怪",
      "tag": "whispering",
-     "text": "等他拿餅乾，我們就跳進他肚子搗蛋！",
+     "text": "等他拿餅乾，我們就跳進肚子搗蛋！",
      "en": "When he grabs that cookie, we'll jump into his tummy and make trouble!"
     }
    ]
@@ -107,7 +102,7 @@
     {
      "who": "媽媽",
      "tag": "gentle",
-     "text": "小翔，你玩完沙子，洗手了嗎？",
+     "text": "小翔，玩完沙子，洗手了嗎？",
      "en": "Owen, you played in the sand. Did you wash your hands?"
     },
     {
@@ -142,7 +137,7 @@
     {
      "who": "小翔",
      "tag": "determined",
-     "text": "我才不要把細菌吃進肚子！我要自己去洗手！",
+     "text": "我才不要吃細菌！我要自己去洗手！",
      "en": "No way am I eating germs! I'm going to wash my hands all by myself!"
     },
     {
@@ -165,25 +160,25 @@
     {
      "who": "細菌小怪",
      "tag": "scared",
-     "text": "是肥皂泡！好滑，抓不住了！",
-     "en": "Soap bubbles! It's so slippery! We can't hold on!"
+     "text": "是肥皂泡！快躲起來！",
+     "en": "Soap bubbles! Quick, hide!"
     },
     {
      "who": "小翔",
      "tag": "excited",
-     "text": "搓一搓，沖一沖，細菌再見囉！",
-     "en": "Scrub, scrub, rinse, rinse! Bye-bye, germs!"
+     "text": "細菌小怪，你們躲不掉了！",
+     "en": "Germies, you can't hide from me!"
     }
    ]
   },
   {
    "scene": "浴室的洗手台，近看小翔滿是泡泡的雙手。",
-   "act": "分三格畫：第一格兩個手心貼在一起搓；第二格一隻手的手心搓另一隻手的手背；第三格十根手指頭交叉，搓指縫。每一格都有細菌小怪們被泡泡擠出來，笑到滾來滾去。",
+   "act": "分三格畫：第一格兩個手心貼在一起搓；第二格一隻手的手心搓另一隻手的手背，細菌小怪們慌張地往手指中間跑；第三格十根手指頭交叉搓手指中間，躲在那裡的細菌小怪們被泡泡擠出來，笑到滾來滾去。",
    "lines": [
     {
      "who": "旁白",
-     "text": "先把兩個手心貼在一起，搓一搓。",
-     "en": "First, he presses his palms together and rubs."
+     "text": "小翔手心貼手心，搓一搓。",
+     "en": "Owen presses his palms together and rubs."
     },
     {
      "who": "旁白",
@@ -191,41 +186,49 @@
      "en": "Next, he rubs the back of one hand with the other palm."
     },
     {
+     "who": "細菌小怪",
+     "tag": "whispering",
+     "text": "快躲到手指中間！",
+     "en": "Quick! Hide between the fingers!"
+    },
+    {
      "who": "旁白",
-     "text": "然後十根手指頭交叉，搓一搓指縫。",
+     "text": "他把手指交叉，搓一搓手指中間。",
      "en": "Then he laces his fingers together and scrubs between them."
     },
     {
      "who": "細菌小怪",
      "tag": "laughing",
-     "text": "哈！好癢喔！",
-     "en": "Ha! That tickles!"
+     "text": "哈！好癢！被找到了！",
+     "en": "Ha! That tickles! He found us!"
     }
    ]
   },
   {
    "scene": "浴室的洗手台，水龍頭的水流下來。",
-   "act": "分三格畫：第一格一隻手握住另一隻手的大拇指搓；第二格指尖放在另一隻手的手心上抓；第三格一手握住另一隻手的手腕上下搓。最後一大格：水沖下來，細菌小怪們坐在泡泡上，像坐滑水道一樣滑進水槽，邊滑邊揮手說再見。",
+   "act": "分三格畫：第一格把手指彎起來，用指背在另一隻手的手心轉圈搓，細菌小怪們往大拇指逃；第二格一隻手握住另一隻手的大拇指搓，接著指尖立在另一隻手的手心上，像小貓抓抓；第三格一手握住另一隻手的手腕上下搓。最後一大格：水沖下來，細菌小怪們坐在泡泡上，像坐滑水道一樣滑進水槽，邊滑邊揮手說再見。",
    "lines": [
     {
      "who": "旁白",
-     "text": "接著，握住大拇指，搓一搓。",
-     "en": "Next, he holds each thumb and scrubs it."
+     "text": "他把手指彎起來，在另一隻手的手心轉一轉。",
+     "en": "He curls his fingers and rubs the backs of them in his other palm."
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "scared",
+     "text": "快逃到大拇指上！",
+     "en": "Quick! Run to the thumb!"
     },
     {
      "who": "旁白",
-     "text": "再用指尖，在手心上抓一抓。",
-     "en": "Then he scratches his palm with his fingertips."
+     "text": "再握住大拇指搓一搓，指尖在另一隻手的手心抓一抓。",
+     "en": "Then he holds each thumb and scrubs it, and rubs his fingertips in his other palm."
     },
     {
-     "who": "旁白",
-     "text": "最後，握住手腕，上下搓一搓。",
-     "en": "Last, he holds his wrist and scrubs up and down."
-    },
-    {
-     "who": "旁白",
-     "text": "水一沖，細菌小怪都滑進水槽了。",
-     "en": "The water rinses down, and the Germies slide into the sink."
+     "who": "小翔",
+     "tag": "excited",
+     "text": "最後握住手腕搓一搓！沖一沖，細菌再見囉！",
+     "en": "Last, I hold my wrists and scrub! Rinse, rinse! Bye-bye, germs!"
     },
     {
      "who": "細菌小怪",
@@ -241,7 +244,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小翔用毛巾把手擦乾，拿起一塊餅乾。",
+     "text": "小翔擦乾手，拿起一塊餅乾。",
      "en": "Owen dries his hands with a towel and picks up a cookie."
     },
     {
