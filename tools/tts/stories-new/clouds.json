@@ -1,0 +1,249 @@
+{
+ "id": "clouds",
+ "title": "雲朵變變變",
+ "title_en": "Cloud Shapes",
+ "size": "短",
+ "roles": {
+  "小雲朵": "天上一朵愛玩的小雲朵，聲音又小又甜、調皮愛笑，出題時神氣，被猜錯時嘟嘴，著急時說話變快。",
+  "小丁": "五歲的小男孩，聲音活潑響亮，愛猜謎，猜到時大聲歡呼，猜錯了自己也哈哈笑。"
+ },
+ "cast": {
+  "小雲朵": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小丁": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "答",
+   "where": "第2頁『答對了』",
+   "read": "dá"
+  },
+  {
+   "char": "沉",
+   "where": "第6頁『越來越沉』",
+   "read": "chén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晴朗的早上，一座綠色的小山坡，草地上開著白色和黃色的小花；山坡旁邊有一座紅色屋頂的小涼亭；藍色的天空很大，飄著一朵白色的小雲朵。",
+   "act": "小丁第一次出場：五歲的小男孩，短短的黑頭髮，穿橘色短袖上衣、綠色短褲和藍色球鞋，躺在草地上，兩手枕在頭後面，翹著腳看天空。小雲朵第一次出場：一朵白色、蓬鬆的小雲朵，有一雙大眼睛和粉紅色臉頰，笑咪咪地往下看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小丁躺在涼亭旁的山坡上，看著天空。",
+     "en": "Toby is lying on a grassy hill next to a little gazebo, looking up at the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "天上飄來一朵白色的小雲朵。",
+     "en": "A small white cloud drifts by."
+    },
+    {
+     "who": "小雲朵",
+     "tag": "happy",
+     "text": "嗨！我是小雲朵。我們來玩猜一猜！",
+     "en": "Hi! I'm Little Cloud. Let's play a guessing game!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片天空，風吹過，雲朵的邊邊被吹得蓬起來。",
+   "act": "小雲朵變成一隻綿羊的形狀：一團白色捲毛的身體，下面四隻小短腳，前面一個小小的頭；她還是有大眼睛和粉紅臉頰。小丁坐起來，用手指著天空。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "風一吹，小雲朵變了樣子。",
+     "en": "The wind blows, and Little Cloud changes shape."
+    },
+    {
+     "who": "小雲朵",
+     "tag": "proud",
+     "text": "猜一猜，我像什麼？",
+     "en": "Guess, guess! What do I look like?"
+    },
+    {
+     "who": "旁白",
+     "text": "白色的捲毛，四隻小腳。你猜到了嗎？",
+     "en": "White, curly wool and four little legs. Can you guess?"
+    },
+    {
+     "who": "小丁",
+     "tag": "excited",
+     "text": "是綿羊！",
+     "en": "It's a sheep!"
+    },
+    {
+     "who": "小雲朵",
+     "tag": "laughing",
+     "text": "答對了！",
+     "en": "You got it!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片天空，太陽在旁邊發亮。",
+   "act": "小雲朵變成一支冰淇淋的形狀：上面是一大球蓬鬆的雲，下面越來越細，像甜筒；小丁跪在草地上，舔舔嘴唇，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "風又一吹，她上面變圓，下面變細。",
+     "en": "The wind blows again. Now she's round on top and skinny at the bottom."
+    },
+    {
+     "who": "小雲朵",
+     "tag": "proud",
+     "text": "猜一猜，我像什麼？",
+     "en": "Guess, guess! What do I look like?"
+    },
+    {
+     "who": "小丁",
+     "tag": "laughing",
+     "text": "是冰淇淋！看起來真好吃！",
+     "en": "It's an ice cream cone! It looks yummy!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片天空，風比較大，雲朵的邊邊飄出一小片。",
+   "act": "小雲朵頭上冒出兩隻翹起來的大耳朵，可是其中一隻被風吹散，只剩一隻；看起來像一顆圓圓的大饅頭插著一隻耳朵。小丁抱著肚子大笑，小雲朵嘟著嘴。",
+   "lines": [
+    {
+     "who": "小雲朵",
+     "tag": "proud",
+     "text": "這一次比較難喔！猜一猜，我像什麼？",
+     "en": "This one is harder! Guess, guess! What do I look like?"
+    },
+    {
+     "who": "小丁",
+     "tag": "excited",
+     "text": "我知道！是一個大饅頭！",
+     "en": "I know! A big steamed bun!"
+    },
+    {
+     "who": "小雲朵",
+     "tag": "angry",
+     "text": "不對啦！我是小兔子！",
+     "en": "No! I'm a bunny!"
+    },
+    {
+     "who": "旁白",
+     "text": "原來，一隻兔耳朵被風吹走了！",
+     "en": "Oh! The wind has blown one of the bunny ears away!"
+    }
+   ]
+  },
+  {
+   "scene": "天空的另一邊飄來一大片薄薄的白霧，裡面有好多閃亮的小水珠。",
+   "act": "好多小水珠從四面八方飄進小雲朵裡，小雲朵越來越大、越來越胖，顏色從白色變成淺灰色；她驚訝地低頭看自己。小丁坐在草地上，張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雲是小水滴做成的。這時候，更多小水滴擠進來。",
+     "en": "Clouds are made of tiny water droplets. Just then, lots more droplets squeeze into Little Cloud."
+    },
+    {
+     "who": "旁白",
+     "text": "小雲朵越來越胖，顏色越來越灰。",
+     "en": "Little Cloud gets puffier and puffier, and grayer and grayer."
+    },
+    {
+     "who": "小丁",
+     "tag": "surprised",
+     "text": "咦？妳怎麼變成灰色了？",
+     "en": "Huh? Why are you turning gray?"
+    },
+    {
+     "who": "小雲朵",
+     "tag": "surprised",
+     "text": "我太厚了，陽光穿不過去啦！",
+     "en": "I'm too thick! The sunlight can't get through!"
+    }
+   ]
+  },
+  {
+   "scene": "天空變暗了，小雲朵變成一朵又大又胖的灰色烏雲，下面的草地顏色也變暗。",
+   "act": "灰色的大烏雲伸出兩隻手臂，看起來像一隻大灰熊；她的臉皺起來，兩手用力抱住肚子，肚子裡的小水滴擠在一起、變成大水滴。小丁站起來，指著天空笑。",
+   "lines": [
+    {
+     "who": "小雲朵",
+     "tag": "worried",
+     "text": "猜一猜，我現在像什麼？",
+     "en": "Guess, guess! What do I look like now?"
+    },
+    {
+     "who": "小丁",
+     "tag": "laughing",
+     "text": "像一隻大灰熊！",
+     "en": "A big gray bear!"
+    },
+    {
+     "who": "旁白",
+     "text": "小水滴擠在一起，越變越大，越來越沉。",
+     "en": "The tiny droplets bump together and grow bigger and heavier."
+    },
+    {
+     "who": "小雲朵",
+     "tag": "scared",
+     "text": "糟糕，我抱不住了！",
+     "en": "Uh-oh, I can't hold them anymore!"
+    }
+   ]
+  },
+  {
+   "scene": "下雨了，雨絲從灰色的雲裡往下飄，打在草地和小花上；小丁躲在紅屋頂的小涼亭裡。",
+   "act": "小丁兩手遮在頭上跑進涼亭，站在涼亭裡伸出一隻手接雨，笑嘻嘻的；草地上的小花和小草沾滿雨珠，抬起頭好像在喝水。天上的灰色小雲朵閉著眼睛、鬆了一口氣，雨從她身上落下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "滴答，滴答，下雨了！",
+     "en": "Pitter-patter, pitter-patter. Here comes the rain!"
+    },
+    {
+     "who": "小丁",
+     "tag": "excited",
+     "text": "快跑，跑進涼亭裡！",
+     "en": "Quick! Into the gazebo!"
+    },
+    {
+     "who": "旁白",
+     "text": "小花和小草，都在喝水呢！",
+     "en": "The flowers and the grass are having a drink!"
+    }
+   ]
+  },
+  {
+   "scene": "雨停了，天空又變藍，草地亮晶晶的，太陽出來了。",
+   "act": "小雲朵變小了，又變回白色，看起來好輕鬆，伸著懶腰；小丁從涼亭跑出來，對著天空揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雨停了，小雲朵變小了，又變回白色。",
+     "en": "The rain stops. Little Cloud is small and white again."
+    },
+    {
+     "who": "小雲朵",
+     "tag": "happy",
+     "text": "大水滴都下去了，我好輕鬆喔！",
+     "en": "All the big drops came down. I feel so light!"
+    },
+    {
+     "who": "小丁",
+     "tag": "happy",
+     "text": "小雲朵，明天再來玩猜一猜！",
+     "en": "Little Cloud, let's play the guessing game again tomorrow!"
+    },
+    {
+     "who": "旁白",
+     "text": "你也抬頭看一看，雲像什麼呢？",
+     "en": "Now you look up. What do the clouds look like to you?"
+    }
+   ]
+  }
+ ]
+}

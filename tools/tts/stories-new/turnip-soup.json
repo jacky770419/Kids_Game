@@ -56,8 +56,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "大蘿蔔拔起來了，像一座小山。",
-     "en": "The giant turnip is out at last. It's as big as a little hill."
+     "text": "一起拉呀拉，大蘿蔔拔起來了！",
+     "en": "Everyone pulls and pulls, and the giant turnip pops out!"
     },
     {
      "who": "孫女",
@@ -74,8 +74,8 @@
     {
      "who": "小狗",
      "tag": "excited",
-     "text": "汪！可是它好大喔！",
-     "en": "Woof! But it's so big!"
+     "text": "汪！哎呀，蘿蔔太大了！",
+     "en": "Woof! Uh-oh, the turnip is too big!"
     }
    ]
   },
@@ -102,8 +102,8 @@
     {
      "who": "小貓",
      "tag": "surprised",
-     "text": "喵！蘿蔔進不去！",
-     "en": "Meow! The turnip can't get in!"
+     "text": "喵！哎呀，蘿蔔太大了！",
+     "en": "Meow! Uh-oh, the turnip is too big!"
     }
    ]
   },
@@ -120,7 +120,7 @@
     {
      "who": "旁白",
      "text": "孫女提水，小貓和小老鼠拿刷子刷。",
-     "en": "Granddaughter carries water. Kitty and Little Mouse scrub with brushes."
+     "en": "The granddaughter carries water. Kitty and Little Mouse scrub with brushes."
     },
     {
      "who": "旁白",
@@ -159,7 +159,7 @@
      "who": "爺爺",
      "tag": "surprised",
      "text": "哎呀，這蘿蔔好硬！",
-     "en": "Oh my! This turnip is so hard!"
+     "en": "Uh-oh! This turnip is so hard!"
     }
    ]
   },
@@ -203,47 +203,47 @@
     {
      "who": "小貓",
      "tag": "worried",
-     "text": "鍋子太小了，怎麼辦？",
-     "en": "The pot is too small. What do we do?"
+     "text": "哎呀，鍋子太小了！",
+     "en": "Uh-oh, the pot is too small!"
     },
     {
      "who": "小老鼠",
      "tag": "excited",
-     "text": "我知道！我們去村子裡借鍋子！",
-     "en": "I know! Let's borrow pots from the village!"
+     "text": "我知道！送給大家，每家煮一鍋！",
+     "en": "I know! Let's give some to everyone. Each family can cook a pot!"
     }
    ]
   },
   {
-   "scene": "院子裡，太陽快下山了，一排小爐子和大大小小的鍋子冒著白煙。",
-   "act": "村子裡的叔叔阿姨、爺爺奶奶和小朋友抱著各式各樣的鍋子走進院子，小老鼠站在最前面帶路；奶奶站在爐子旁邊，用長湯匙攪湯，笑咪咪地聞香味；孫女和小動物站在一旁遞碗。",
+   "scene": "村子裡的石頭小路，太陽快下山了，路兩邊是一間一間的小屋，屋頂上有煙囪。",
+   "act": "爺爺推著一台裝滿蘿蔔塊的木頭小推車，奶奶、孫女提著小籃子跟在旁邊，小狗、小貓跟著跑；小老鼠站在一戶人家門口，舉起小手敲門。一位阿姨開門，笑著接過一籃蘿蔔。遠處好幾間小屋的煙囪已經冒出白煙。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小老鼠跑遍村子，大家都抱著鍋子來了。",
-     "en": "Little Mouse runs all through the village, and everyone comes with a pot."
+     "text": "大家推著小車，把蘿蔔送到每一家。",
+     "en": "So they push a cart and take turnip pieces to every house."
     },
     {
-     "who": "旁白",
-     "text": "一鍋、兩鍋、三鍋，院子裡都是蘿蔔湯。",
-     "en": "One pot, two pots, three pots. The yard is full of turnip soup."
-    },
-    {
-     "who": "奶奶",
+     "who": "小老鼠",
      "tag": "happy",
-     "text": "好香喔！請大家留下來一起喝！",
-     "en": "Mmm, smells so good! Please stay and have some with us!"
+     "text": "叩、叩、叩！送你們蘿蔔！",
+     "en": "Knock, knock, knock! Here's some turnip for you!"
+    },
+    {
+     "who": "旁白",
+     "text": "不久，每一家的煙囪，都飄出蘿蔔湯的香味。",
+     "en": "Soon, the smell of turnip soup drifts from every chimney in the village."
     }
    ]
   },
   {
-   "scene": "院子裡，晚上，掛著幾盞小燈，長桌上擺滿一碗一碗冒煙的蘿蔔湯。",
-   "act": "全村的人圍著長桌坐著，捧著碗喝湯，笑得好開心；孫女舉起碗；小狗、小貓、小老鼠坐在桌邊，小老鼠捧著一個好小的碗；爺爺站起來，舉起碗。",
+   "scene": "爺爺奶奶家的院子，晚上，掛著幾盞小燈；矮籬笆外，村子裡每間小屋的窗戶都亮著，煙囪冒著白煙。",
+   "act": "爺爺、奶奶、孫女、小狗、小貓、小老鼠圍著院子裡的木桌喝蘿蔔湯，小老鼠捧著一個好小的碗；籬笆外，每扇亮著的窗戶裡都有一家人捧著碗，鄰居們從窗戶探出頭，舉起碗一起喊；爺爺站起來，舉起碗。",
    "lines": [
     {
      "who": "旁白",
-     "text": "全村的人，都來喝蘿蔔湯。",
-     "en": "The whole village comes to have turnip soup."
+     "text": "晚上，每一家都喝蘿蔔湯。",
+     "en": "That night, every family in the village has turnip soup."
     },
     {
      "who": "孫女",
@@ -253,8 +253,8 @@
     },
     {
      "who": "旁白",
-     "text": "大家一起說：一起拉，一起煮，一起喝，真開心！",
-     "en": "Everyone says, \"Pull together, cook together, eat together. So happy!\""
+     "text": "鄰居也在窗戶裡喊：一起拉，一起煮，一起喝！",
+     "en": "From their windows, the neighbors cheer: Pull together, cook together, eat together!"
     },
     {
      "who": "爺爺",

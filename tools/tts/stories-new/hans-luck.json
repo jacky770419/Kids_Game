@@ -1,0 +1,425 @@
+{
+ "id": "hans-luck",
+ "title": "幸運的漢斯",
+ "title_en": "Hans in Luck",
+ "size": "中",
+ "roles": {
+  "漢斯": "十幾歲的大男孩，聲音明亮、天真愛笑，什麼事都往好處想，說「換一換，真幸運」時又得意又開心。",
+  "農夫伯伯": "牽著牛的胖農夫伯伯，鄉下口音、說話慢吞吞、很和氣。",
+  "磨刀師傅": "村子口的磨刀師傅，溫和的大叔聲音，邊工作邊唱歌，說話實在、會提醒漢斯想清楚。",
+  "媽媽": "漢斯的媽媽，溫柔有耐心，笑聲很溫暖，看到兒子回家就好開心。"
+ },
+ "cast": {
+  "漢斯": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "農夫伯伯": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "磨刀師傅": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "磨",
+   "where": "第8頁『磨刀師傅』『磨剪刀，磨菜刀，一磨』『磨刀石』『磨亮』，第9頁『磨刀石』『磨剪刀』",
+   "read": "mó"
+  },
+  {
+   "char": "沉",
+   "where": "第2頁『金子好沉』，第10頁『石頭也好沉』",
+   "read": "chén"
+  },
+  {
+   "char": "騎",
+   "where": "第2頁『騎馬過來』，第3頁『騎馬』",
+   "read": "qí"
+  },
+  {
+   "char": "擠",
+   "where": "第5頁『擠牛奶喝』『擠了好久』『不會擠牛奶』，第6頁『會擠牛奶』",
+   "read": "jǐ"
+  },
+  {
+   "char": "什",
+   "where": "第12頁『什麼都沒帶』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『你沒事吧』，第5頁『一滴也沒有』，第12頁『什麼都沒帶』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一座熱鬧的小城，石頭鋪的路，兩旁是紅屋頂的房子；城門外，一條黃土小路彎彎地通到遠方的鄉下，路邊有綠色的田和小樹。",
+   "act": "漢斯第一次出場：十幾歲的大男孩，金黃色的短捲髮，圓臉、笑容大大的，穿綠色短背心、白襯衫、咖啡色長褲和咖啡色靴子，頭戴一頂紅色小帽。他兩手抱著一塊閃閃發亮、跟他的頭差不多大的金子，笑得眼睛瞇起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一個大男孩，叫做漢斯。",
+     "en": "There once was a young man named Hans."
+    },
+    {
+     "who": "旁白",
+     "text": "他工作了好多年，老闆送他一大塊金子。",
+     "en": "He had worked in town for many years, and his boss gave him a big lump of gold."
+    },
+    {
+     "who": "旁白",
+     "text": "金子跟他的頭一樣大！",
+     "en": "The gold was as big as his head!"
+    },
+    {
+     "who": "漢斯",
+     "tag": "happy",
+     "text": "我要帶回家，送給媽媽！",
+     "en": "I'll take it home to Mom!"
+    }
+   ]
+  },
+  {
+   "scene": "城外的黃土小路，太陽很大，路邊有一棵大樹。一個大哥哥騎著一匹咖啡色的馬走過來。",
+   "act": "漢斯抱著金子，彎著腰、滿頭大汗，嘴巴嘟起來。騎馬的大哥哥穿藍色外套、戴黑色帽子，騎著一匹咖啡色、白鼻子的馬；他聽到漢斯的話，驚訝地張大嘴，指著金子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是金子好沉，漢斯好累。",
+     "en": "But the gold was so heavy, and Hans got very tired."
+    },
+    {
+     "who": "漢斯",
+     "tag": "tired",
+     "text": "哎喲，我的手好痠！",
+     "en": "Oof, my arms are so sore!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，一個大哥哥騎馬過來。",
+     "en": "Just then, a young man came riding by on a horse."
+    },
+    {
+     "who": "漢斯",
+     "tag": "excited",
+     "text": "大哥哥，我的金子換你的馬，好嗎？",
+     "en": "Excuse me! Will you trade your horse for my gold?"
+    },
+    {
+     "who": "旁白",
+     "text": "大哥哥問：金子比馬值錢，你確定嗎？",
+     "en": "The young man asked, \"Gold is worth more than a horse. Are you sure?\""
+    }
+   ]
+  },
+  {
+   "scene": "小路旁邊一大片綠色草地，開著小花。",
+   "act": "大哥哥抱著金子揮手；漢斯坐在馬背上兩手舉高，好得意。接著馬兒往前衝，漢斯緊緊抱住馬脖子，帽子快飛掉，嚇得閉上眼睛；最後馬兒在草地上停下來，低頭吃草。",
+   "lines": [
+    {
+     "who": "漢斯",
+     "tag": "happy",
+     "text": "確定！騎馬就不用走路了！",
+     "en": "I'm sure! On a horse, I won't have to walk!"
+    },
+    {
+     "who": "漢斯",
+     "tag": "proud",
+     "text": "換一換，真幸運！",
+     "en": "Swap, swap! Lucky me!"
+    },
+    {
+     "who": "旁白",
+     "text": "馬兒越跑越快。",
+     "en": "The horse took off, faster and faster."
+    },
+    {
+     "who": "漢斯",
+     "tag": "scared",
+     "text": "慢一點！慢一點！",
+     "en": "Slow down! Slow down!"
+    },
+    {
+     "who": "旁白",
+     "text": "馬兒衝進草地，停下來吃草。",
+     "en": "It dashed into a meadow and stopped to munch on the grass."
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地。",
+   "act": "農夫伯伯第一次出場：胖胖的伯伯，紅鼻子、白色短鬍子，戴大草帽、穿吊帶褲，牽著一頭黑白花的母牛。漢斯從馬背上爬下來，頭髮亂七八糟，牽著馬，指著母牛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一位農夫伯伯牽著牛走過來。",
+     "en": "A farmer came along, leading a cow."
+    },
+    {
+     "who": "農夫伯伯",
+     "tag": "gentle",
+     "text": "年輕人，你沒事吧？",
+     "en": "Young man, are you all right?"
+    },
+    {
+     "who": "漢斯",
+     "tag": "excited",
+     "text": "我的馬換你的牛，好嗎？",
+     "en": "Will you trade your cow for my horse?"
+    },
+    {
+     "who": "農夫伯伯",
+     "tag": "surprised",
+     "text": "馬比牛好喔，你確定嗎？",
+     "en": "A horse is worth more than a cow. Are you sure?"
+    },
+    {
+     "who": "漢斯",
+     "tag": "happy",
+     "text": "確定！牛有牛奶喝！",
+     "en": "I'm sure! A cow gives milk!"
+    }
+   ]
+  },
+  {
+   "scene": "另一段小路，中午，太陽在頭頂，路邊有一棵小樹。",
+   "act": "農夫伯伯騎著馬，在遠處開心地揮手。漢斯蹲在母牛旁邊，拿著一個小木桶，滿臉疑惑；母牛甩了一下尾巴走開，桶子裡什麼都沒有。",
+   "lines": [
+    {
+     "who": "漢斯",
+     "tag": "proud",
+     "text": "換一換，真幸運！",
+     "en": "Swap, swap! Lucky me!"
+    },
+    {
+     "who": "旁白",
+     "text": "中午，漢斯好渴，想擠牛奶喝。",
+     "en": "By noon, Hans was thirsty. He wanted to milk the cow for a drink."
+    },
+    {
+     "who": "旁白",
+     "text": "他擠了好久，一滴也沒有。",
+     "en": "He tried and tried, but not one drop came out."
+    },
+    {
+     "who": "漢斯",
+     "tag": "laughing",
+     "text": "原來，我不會擠牛奶呀！",
+     "en": "Oh! I guess I don't know how to milk a cow!"
+    }
+   ]
+  },
+  {
+   "scene": "同一段小路，路邊有泥巴地和草叢。",
+   "act": "一位大叔第一次出場：穿灰色背心、圍咖啡色圍裙，抱著一隻粉紅色的小豬；他蹲下來熟練地幫母牛擠奶，牛奶流進木桶。漢斯接過小豬，大叔牽著牛，兩個人笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一位會擠牛奶的大叔，抱著小豬走過來。",
+     "en": "A man who knew how to milk cows came by, carrying a piglet."
+    },
+    {
+     "who": "漢斯",
+     "tag": "excited",
+     "text": "我的牛換你的小豬，好嗎？",
+     "en": "Will you trade your piglet for my cow?"
+    },
+    {
+     "who": "旁白",
+     "text": "大叔問他確定嗎，漢斯用力點頭。",
+     "en": "The man asked if he was sure, and Hans nodded hard."
+    },
+    {
+     "who": "漢斯",
+     "tag": "proud",
+     "text": "換一換，真幸運！",
+     "en": "Swap, swap! Lucky me!"
+    }
+   ]
+  },
+  {
+   "scene": "鄉下小路旁的泥巴地，有幾朵小黃花。",
+   "act": "小豬在泥巴地裡東跑西跑，漢斯伸手追，身上都是泥巴點，滿頭大汗。路邊一個小姑娘抱著一隻白色大鵝，笑著看他；小姑娘綁兩條辮子，穿黃色裙子。下一個畫面，小姑娘抱著小豬，漢斯抱著白鵝。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小豬東跑西跑，漢斯追到滿頭大汗。",
+     "en": "The piglet ran this way and that. Hans chased it until he was dripping with sweat."
+    },
+    {
+     "who": "旁白",
+     "text": "一個抱白鵝的小姑娘，好喜歡小豬。",
+     "en": "A girl with a white goose loved the little piglet."
+    },
+    {
+     "who": "漢斯",
+     "tag": "happy",
+     "text": "我的小豬換妳的白鵝，好嗎？",
+     "en": "Will you trade your goose for my piglet?"
+    },
+    {
+     "who": "漢斯",
+     "text": "鵝毛可以給媽媽做枕頭！",
+     "en": "I can make Mom a feather pillow!"
+    },
+    {
+     "who": "漢斯",
+     "tag": "proud",
+     "text": "換一換，真幸運！",
+     "en": "Swap, swap! Lucky me!"
+    }
+   ]
+  },
+  {
+   "scene": "村子口的大樹下，一台木頭小推車，車上有一塊灰色的圓形大石頭、幾把剪刀和菜刀。",
+   "act": "磨刀師傅第一次出場：瘦瘦高高的大叔，咖啡色短鬍子，穿藍色工作服、戴深藍色帽子，捲起袖子，一邊在灰色石頭上磨刀，一邊張嘴唱歌。漢斯抱著白鵝站在旁邊，好奇地看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "村子口，一位磨刀師傅邊工作邊唱歌。",
+     "en": "At the edge of the village, a knife sharpener was working and singing."
+    },
+    {
+     "who": "磨刀師傅",
+     "tag": "happy",
+     "text": "磨剪刀，磨菜刀，一磨就發亮！",
+     "en": "Sharpen scissors, sharpen knives, rub them till they shine!"
+    },
+    {
+     "who": "漢斯",
+     "tag": "surprised",
+     "text": "師傅，你好開心喔！",
+     "en": "Sir, you look so happy!"
+    },
+    {
+     "who": "磨刀師傅",
+     "tag": "proud",
+     "text": "有這塊磨刀石，我就能把刀子磨亮。",
+     "en": "With this sharpening stone, I can make knives shiny and sharp."
+    }
+   ]
+  },
+  {
+   "scene": "同一個村子口。",
+   "act": "漢斯把白鵝遞給師傅，師傅一手抱鵝、一手摸鬍子，皺著眉頭，像在提醒他；接著漢斯兩手抱起灰色的大石頭，笑得好開心。",
+   "lines": [
+    {
+     "who": "漢斯",
+     "tag": "excited",
+     "text": "我的鵝換你的磨刀石，好嗎？",
+     "en": "Will you trade your stone for my goose?"
+    },
+    {
+     "who": "磨刀師傅",
+     "tag": "surprised",
+     "text": "鵝比石頭好喔，你確定嗎？",
+     "en": "A goose is worth more than a stone. Are you sure?"
+    },
+    {
+     "who": "漢斯",
+     "tag": "happy",
+     "text": "確定！我要幫媽媽磨剪刀！",
+     "en": "I'm sure! I'll sharpen Mom's scissors!"
+    },
+    {
+     "who": "漢斯",
+     "tag": "proud",
+     "text": "換一換，真幸運！",
+     "en": "Swap, swap! Lucky me!"
+    }
+   ]
+  },
+  {
+   "scene": "鄉下的小山坡，草地斜斜地往下，山坡下面有一條淺淺的小河，河邊有蘆葦；遠處的山坡上有一間小木屋，煙囪冒著煙。",
+   "act": "漢斯坐在山坡上休息，擦著汗，手肘不小心碰到石頭；灰色的石頭從他旁邊滾下山坡，滾進下面的小河，濺起小水花。漢斯坐在原地，兩手伸出去，張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，石頭也好沉。",
+     "en": "But the stone was heavy too."
+    },
+    {
+     "who": "旁白",
+     "text": "漢斯坐在山坡上休息，石頭放在旁邊。",
+     "en": "Hans sat down on a hill to rest, with the stone beside him."
+    },
+    {
+     "who": "旁白",
+     "text": "咕嚕，咕嚕，石頭滾進了小河裡。",
+     "en": "Bump, bump! The stone rolled down the hill and into a little river."
+    },
+    {
+     "who": "漢斯",
+     "tag": "surprised",
+     "text": "哎呀！我的石頭！",
+     "en": "Oh no! My stone!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個小山坡，太陽快要下山，天空是橘色的。",
+   "act": "漢斯看著小河愣了一下，接著站起來伸懶腰，甩著兩隻手大笑；然後他輕快地往小木屋的方向跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "漢斯看著小河，愣了一下。",
+     "en": "Hans stared at the river for a moment."
+    },
+    {
+     "who": "旁白",
+     "text": "然後，他甩一甩手，笑了出來。",
+     "en": "Then he shook out his arms and burst out laughing."
+    },
+    {
+     "who": "漢斯",
+     "tag": "laughing",
+     "text": "我的手不痠了！可以跑回家了！",
+     "en": "My arms aren't sore anymore! Now I can run home!"
+    },
+    {
+     "who": "漢斯",
+     "tag": "happy",
+     "text": "換一換，真幸運！",
+     "en": "Swap, swap! Lucky me!"
+    }
+   ]
+  },
+  {
+   "scene": "漢斯家：山坡上的小木屋，煙囪冒著煙，門口開著紅花；太陽下山前的橘色光照在門口。",
+   "act": "媽媽第一次出場：圓臉、灰色頭髮盤起來，穿紫色長裙、繫白圍裙，站在門口張開雙手；漢斯兩手空空地跑過去，兩個人緊緊抱在一起，都笑得好開心。",
+   "lines": [
+    {
+     "who": "漢斯",
+     "tag": "excited",
+     "text": "媽媽，我回來了！我什麼都沒帶。",
+     "en": "Mom, I'm home! But I didn't bring anything."
+    },
+    {
+     "who": "旁白",
+     "text": "漢斯把換東西的事，說給媽媽聽。",
+     "en": "Hans told Mom all about his swaps along the way."
+    },
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "金子換馬，馬換牛，最後換回一個開心的你！",
+     "en": "Gold for a horse, a horse for a cow, and in the end, I got back a happy you!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "你開心地回家，媽媽就最開心了。",
+     "en": "You came home happy, and that makes me happiest of all."
+    }
+   ]
+  }
+ ]
+}

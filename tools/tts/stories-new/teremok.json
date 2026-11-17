@@ -1,0 +1,283 @@
+{
+ "id": "teremok",
+ "title": "森林小木屋",
+ "title_en": "The Little House in the Woods",
+ "size": "短",
+ "roles": {
+  "小老鼠": "第一個住進小木屋的小老鼠，尖細可愛的聲音，熱情好客、愛笑。",
+  "青蛙": "愛唱歌的青蛙，甜甜的小女生聲音，活潑開朗。",
+  "兔子": "跑步飛快的兔子，小女孩的聲音，說話很快、很有精神。",
+  "狐狸": "好心的狐狸，會煮湯，說話慢條斯理、有點愛耍帥，好笑不壞。",
+  "大熊": "又大又溫和的大熊，低沉沙啞的大嗓門，憨厚、有點笨手笨腳。"
+ },
+ "cast": {
+  "小老鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "青蛙": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "兔子": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "大熊": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "誰",
+   "where": "第1、2、3、4、5頁『小木屋，誰在家呀』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒人回答』，第7頁『沒人受傷』『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『我會唱歌』，第4頁『很會煮湯』，第8頁『不會撞到頭』",
+   "read": "huì"
+  },
+  {
+   "char": "倒",
+   "where": "第6頁『牆也倒了』",
+   "read": "dǎo"
+  },
+  {
+   "char": "頂",
+   "where": "第6頁『頭就頂到屋頂』",
+   "read": "dǐng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "秋天的森林，一片小草地中間，有一間小小的木頭屋子：紅色的門、尖尖的茅草屋頂、小煙囪、一扇有黃色小窗簾的窗戶；屋子比旁邊的樹樁大一點而已。",
+   "act": "小老鼠出場：灰色的小老鼠，粉紅色大耳朵，脖子上圍著一條藍色小圍巾。她站在紅色門前，踮著腳，用小拳頭敲門，歪著頭聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林裡，有一間小木屋。",
+     "en": "In the forest stood a little wooden house."
+    },
+    {
+     "who": "旁白",
+     "text": "小老鼠跑過來，叩，叩，叩。",
+     "en": "Along ran a little mouse. Knock, knock, knock."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "curious",
+     "text": "小木屋，誰在家呀？",
+     "en": "Little house, little house, who's at home?"
+    },
+    {
+     "who": "旁白",
+     "text": "沒人回答，小老鼠就住進去了。",
+     "en": "No one answered, so the mouse moved right in."
+    }
+   ]
+  },
+  {
+   "scene": "同一間小木屋的門口，白天。",
+   "act": "青蛙出場：綠色的青蛙，肚子是淡黃色，頭上戴一頂紅色小帽子，手上拿一片當扇子的大葉子；她跳到門口敲門。小老鼠從窗戶探出頭，笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "青蛙跳來了，叩，叩，叩。",
+     "en": "Along hopped a frog. Knock, knock, knock."
+    },
+    {
+     "who": "青蛙",
+     "tag": "cheerful",
+     "text": "小木屋，誰在家呀？",
+     "en": "Little house, little house, who's at home?"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "happy",
+     "text": "我是小老鼠！你是誰？",
+     "en": "I'm Mouse! Who are you?"
+    },
+    {
+     "who": "青蛙",
+     "tag": "excited",
+     "text": "我是青蛙，我會唱歌喔！",
+     "en": "I'm Frog, and I can sing!"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "happy",
+     "text": "好啊，進來一起住吧！",
+     "en": "Great! Come in and live with me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間小木屋的門口，揚起一陣小小的塵土。",
+   "act": "兔子出場：白色的兔子，長耳朵內側是粉紅色，穿一件橘色背心；她跑得太快，在門口緊急停下來，耳朵往前甩。小老鼠開門歡迎她，青蛙在小老鼠後面拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兔子跑來了，叩，叩，叩。",
+     "en": "Along ran a rabbit. Knock, knock, knock."
+    },
+    {
+     "who": "兔子",
+     "tag": "excited",
+     "text": "小木屋，誰在家呀？我是兔子，我跑好快！",
+     "en": "Little house, little house, who's at home? I'm Rabbit, and I run super fast!"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "happy",
+     "text": "進來一起住吧！",
+     "en": "Come in and live with us!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡面，晚上：小小的房間，暖暖的小火爐，桌上有四個小碗，窗外有月亮。",
+   "act": "狐狸出場：橘紅色的狐狸，白色的尾巴尖，繫著一條綠色格子圍裙，手上提著一個黑色的大湯鍋。屋裡擠滿了，小老鼠、青蛙、兔子、狐狸擠在小桌邊喝湯，青蛙站在椅子上唱歌，大家笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸提著大鍋子來了。",
+     "en": "Along came a fox, carrying a big pot."
+    },
+    {
+     "who": "狐狸",
+     "tag": "gentle",
+     "text": "小木屋，誰在家呀？我是狐狸，我很會煮湯喔。",
+     "en": "Little house, little house, who's at home? I'm Fox, and I make very good soup."
+    },
+    {
+     "who": "兔子",
+     "tag": "happy",
+     "text": "進來一起住吧！",
+     "en": "Come in and live with us!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家喝熱湯，聽青蛙唱歌。",
+     "en": "Everyone had hot soup and listened to Frog sing."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，小木屋外面，樹葉被震得飄下來。",
+   "act": "大熊出場：好大一隻咖啡色的大熊，戴一頂黃色毛線帽，肚子圓滾滾的；他彎著腰，用一根手指頭小心地敲紅色小門，門比他的腳掌還小。四個小動物從窗戶擠出頭來看，眼睛睜得好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大熊來了，小心敲一下門。",
+     "en": "Along came a big bear. He gave the door one careful little knock."
+    },
+    {
+     "who": "大熊",
+     "tag": "hopeful",
+     "text": "小木屋，誰在家呀？我是大熊，我也想住！",
+     "en": "Little house, little house, who's at home? I'm Bear, and I want to live here too!"
+    },
+    {
+     "who": "小老鼠",
+     "tag": "happy",
+     "text": "好啊，進來一起住吧！",
+     "en": "Sure! Come in and live with us!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋的門口和屋頂，同一個早上。",
+   "act": "大熊彎下腰，用力擠進門，小木屋被撐得鼓起來；接著大熊一站起來，頭把茅草屋頂頂飛到半空中，四面木頭牆像打開的紙盒一樣，往外平平地倒在草地上。小動物們坐在原地，安全沒事，嚇一跳張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大熊彎下腰，用力擠進門。",
+     "en": "Bear bent down low and pushed his way through the door."
+    },
+    {
+     "who": "旁白",
+     "text": "他一站起來，頭就頂到屋頂。",
+     "en": "As soon as he stood up, his head bumped the roof."
+    },
+    {
+     "who": "旁白",
+     "text": "喀啦，碰！屋頂飛走了，牆也倒了！",
+     "en": "Crack, boom! The roof popped off, and the walls fell flat!"
+    }
+   ]
+  },
+  {
+   "scene": "草地上，一片倒下的木頭牆和茅草，陽光很亮。",
+   "act": "大家坐在倒下的牆中間，頭上沾著茅草，沒有人受傷；青蛙坐在大熊的頭頂上，好好笑。大熊低著頭、搓著手，好不好意思。狐狸笑著拍拍大熊的手臂。後半：大熊扛著好大的木頭，兔子抱著樹枝跑來跑去，小老鼠拿著泥土補小洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "沒人受傷，青蛙坐在大熊頭上呢！",
+     "en": "No one was hurt. And Frog was sitting right on top of Bear's head!"
+    },
+    {
+     "who": "大熊",
+     "tag": "sad",
+     "text": "對不起，都是我太大了。",
+     "en": "I'm sorry. It's because I'm too big."
+    },
+    {
+     "who": "狐狸",
+     "tag": "laughing",
+     "text": "沒關係！一起蓋一間大的！",
+     "en": "That's all right! Let's build a big one together!"
+    },
+    {
+     "who": "旁白",
+     "text": "大熊搬木頭，兔子拿樹枝。",
+     "en": "Bear carried the logs, and Rabbit fetched sticks."
+    },
+    {
+     "who": "青蛙",
+     "tag": "cheerful",
+     "text": "嘿喲，嘿喲，一起蓋新家！",
+     "en": "Heave-ho, heave-ho, let's build a new home!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地上，一間好大的新木屋：大大的紅門、大窗戶、兩根煙囪，門口有五個大小不一樣的信箱。屋裡有一張好大的木頭椅子。",
+   "act": "大熊坐在專門給他的大椅子上，抬頭挺胸，頭離屋頂還很遠，笑得好開心；小老鼠、青蛙、兔子、狐狸坐在他旁邊的小椅子上。門口站著一隻背著小包袱的小刺蝟，舉手敲門。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "新木屋好大，有大熊的大椅子。",
+     "en": "The new house was big, with a big chair just for Bear."
+    },
+    {
+     "who": "大熊",
+     "tag": "happy",
+     "text": "這次，我站起來不會撞到頭了！",
+     "en": "This time, I can stand up without bumping my head!"
+    },
+    {
+     "who": "旁白",
+     "text": "叩，叩，叩。又有人來敲門了！",
+     "en": "Knock, knock, knock. Someone else was at the door!"
+    },
+    {
+     "who": "大熊",
+     "tag": "cheerful",
+     "text": "進來一起住吧！",
+     "en": "Come in and live with us!"
+    }
+   ]
+  }
+ ]
+}

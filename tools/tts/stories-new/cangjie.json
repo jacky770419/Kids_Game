@@ -67,6 +67,11 @@
    "char": "散",
    "where": "第3頁『散步』",
    "read": "sàn"
+  },
+  {
+   "char": "傳",
+   "where": "第8頁『傳說』",
+   "read": "chuán"
   }
  ],
  "pages": [
@@ -76,18 +81,18 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "很久以前，世界上沒有字。",
-     "en": "Long ago, there was no writing in the world."
+     "text": "很久以前，還沒有字。",
+     "en": "Long, long ago in China, there was no writing yet."
     },
     {
      "who": "旁白",
-     "text": "要記事情，大家就在繩子上打結。",
+     "text": "要記事情，大家在繩子上打結。",
      "en": "To remember things, people tied knots in a rope."
     },
     {
      "who": "旁白",
-     "text": "倉頡幫黃帝記事情，繩子上全是結。",
-     "en": "Cangjie kept track of things for the Yellow Emperor, and his ropes were covered in knots."
+     "text": "倉頡幫大首領黃帝記事情，繩子上全是結。",
+     "en": "Cangjie kept track of things for the great leader, the Yellow Emperor, and his ropes were covered in knots."
     }
    ]
   },
@@ -109,19 +114,19 @@
     },
     {
      "who": "旁白",
-     "text": "倉頡抓著頭，他自己也忘了！",
+     "text": "倉頡抓著頭，自己也忘了！",
      "en": "Cangjie scratched his head. Even he had forgotten!"
     },
     {
      "who": "旁白",
-     "text": "他的女兒在旁邊笑了出來。",
-     "en": "His daughter, standing nearby, burst out laughing."
+     "text": "女兒笑出聲來。",
+     "en": "His daughter burst out laughing."
     },
     {
      "who": "小女孩",
      "tag": "laughing",
      "text": "爸爸，你的繩子好像一團麵條！",
-     "en": "Daddy, your rope looks like a big bowl of noodles!"
+     "en": "Daddy, your rope looks like a big tangle of noodles!"
     }
    ]
   },
@@ -131,8 +136,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "倉頡好煩惱，帶女兒去雪地散步。",
-     "en": "Cangjie was very worried, so he took his daughter for a walk in the snow."
+     "text": "倉頡帶女兒去雪地散步。",
+     "en": "Cangjie took his daughter for a walk in the snow."
     },
     {
      "who": "小女孩",
@@ -143,7 +148,7 @@
     {
      "who": "倉頡",
      "text": "這個像兩片葉子的，是小鹿。",
-     "en": "And these, like two little leaves, are from a deer."
+     "en": "And these look like two little leaves. They're deer tracks!"
     }
    ]
   },
@@ -165,8 +170,8 @@
     },
     {
      "who": "旁白",
-     "text": "他撿起樹枝，在雪地上畫了起來。",
-     "en": "He picked up a stick and started drawing in the snow."
+     "text": "他撿起樹枝，在雪地上畫。",
+     "en": "He picked up a stick and drew in the snow."
     }
    ]
   },
@@ -188,20 +193,20 @@
     },
     {
      "who": "旁白",
-     "text": "對了！這就是「日」。",
+     "text": "對了！「日」，就是太陽！",
      "en": "That's right! This little picture became the word for sun."
     }
    ]
   },
   {
-   "scene": "同一片雪地，圓圈旁邊又畫了一個彎彎的月牙形。",
+   "scene": "同一片雪地，圓圈旁邊又畫了一個彎彎的月牙形，兩頭翹起來，像一條小船。",
    "act": "女兒指著月牙形，笑嘻嘻地大聲猜；倉頡笑彎了腰，伸手指著天空；下一格女兒拍一下手，恍然大悟。",
    "lines": [
     {
      "who": "倉頡",
      "tag": "happy",
-     "text": "猜猜看，這是什麼？",
-     "en": "Can you guess what this is?"
+     "text": "兩頭往上彎，像一條小船。猜猜看，這是什麼？",
+     "en": "It curves up at both ends, like a little boat. Can you guess what this is?"
     },
     {
      "who": "小女孩",
@@ -229,8 +234,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "倉頡又畫了三個尖角。",
-     "en": "Next, Cangjie drew three peaks."
+     "text": "他又畫了三個尖角。",
+     "en": "Next, he drew three peaks."
     },
     {
      "who": "小女孩",
@@ -273,8 +278,8 @@
     },
     {
      "who": "旁白",
-     "text": "大家都來學，這就是最早的字。",
-     "en": "Everyone came to learn, and this picture writing became the very first Chinese writing."
+     "text": "大家都來學。傳說，這就是最早的字。",
+     "en": "Everyone came to learn. People say this is how Chinese writing began."
     },
     {
      "who": "小女孩",

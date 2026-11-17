@@ -2,12 +2,14 @@
  "id": "animal-sleep",
  "title": "動物怎麼睡覺",
  "title_en": "How Do Animals Sleep?",
- "size": "短",
+ "size": "中",
  "roles": {
   "小女孩": "五歲的小女孩小柔，聲音細細甜甜的，一開始好奇、睡不著，想學蝙蝠時興奮又好笑，越到後面越想睡、聲音越輕。",
   "貓頭鷹": "住在窗外樹上的貓頭鷹爺爺，慈祥的老爺爺聲音，說話慢慢的、輕輕的，像在講睡前故事。",
   "海獺": "大海上的小海獺，可愛的小動物聲音，甜甜的、懶洋洋的，快要睡著。",
-  "長頸鹿": "草原上的長頸鹿，溫柔的年輕女聲，說話輕柔、不急不忙。"
+  "長頸鹿": "草原上的長頸鹿，溫柔的年輕女聲，說話輕柔、不急不忙。",
+  "馬": "農場上的老馬，溫和的大叔聲音，低低的、慢慢的，睏得打哈欠。",
+  "鴨子": "池塘邊排在最旁邊的鴨子，尖細可愛的小聲音，認真又體貼，說話很小聲。"
  },
  "cast": {
   "小女孩": {
@@ -25,28 +27,46 @@
   "長頸鹿": {
    "find": "Lee Ting Ting",
    "en": "Hope - Vibrant"
+  },
+  "馬": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "鴨子": {
+   "find": "Stacy",
+   "en": "kids_Macy"
   }
  },
  "polyphones": [
   {
    "char": "長",
-   "where": "第6頁『長頸鹿』兩次",
+   "where": "第6頁『長頸鹿』兩次，第10頁『長頸鹿』",
    "read": "cháng"
   },
   {
    "char": "倒",
-   "where": "第4頁『倒掛著』『倒掛著睡』",
+   "where": "第4頁『倒掛著』『倒掛著睡』，第5頁『倒掛』",
    "read": "dào"
   },
   {
+   "char": "倒",
+   "where": "第6頁『跌倒』",
+   "read": "dǎo"
+  },
+  {
    "char": "朝",
-   "where": "第4頁『頭朝下』",
+   "where": "第4頁『頭朝下』，第5頁『頭朝下』",
    "read": "cháo"
   },
   {
    "char": "暈",
    "where": "第5頁『會頭暈』",
    "read": "yūn"
+  },
+  {
+   "char": "睜",
+   "where": "第8頁『睜著』『睜一隻眼睛』",
+   "read": "zhēng"
   }
  ],
  "pages": [
@@ -61,14 +81,14 @@
     },
     {
      "who": "旁白",
-     "text": "窗外的樹上，有一隻貓頭鷹。",
-     "en": "In the tree outside her window sits an owl."
+     "text": "窗外的大樹上，住著一隻老貓頭鷹。",
+     "en": "An old owl lives in the big tree outside her window."
     },
     {
      "who": "小女孩",
      "tag": "curious",
      "text": "貓頭鷹爺爺，你怎麼不睡呢？",
-     "en": "Mr. Owl, why aren't you asleep?"
+     "en": "Grandpa Owl, why aren't you asleep?"
     },
     {
      "who": "貓頭鷹",
@@ -188,7 +208,7 @@
   },
   {
    "scene": "晚上的大草原，天空是深藍色，遠處有一棵平頂的大樹，草很低。",
-   "act": "一隻黃色帶咖啡色花紋的長頸鹿站在樹旁，四隻腳站直，閉著眼睛打盹；小柔和貓頭鷹爺爺在草地上踮著腳尖，手指放在嘴巴前面，輕輕地看。",
+   "act": "一隻黃色帶咖啡色花紋的長頸鹿站在樹旁，四隻腳站直，閉著眼睛打盹，聽到小柔說話時睜開一隻眼睛溫柔地看她；小柔和貓頭鷹爺爺在草地上踮著腳尖，小柔歪著頭好奇地小聲問。",
    "lines": [
     {
      "who": "旁白",
@@ -204,19 +224,140 @@
     {
      "who": "小女孩",
      "tag": "whispering",
+     "text": "站著睡？不會跌倒嗎？",
+     "en": "Sleeping standing up? Won't you fall over?"
+    },
+    {
+     "who": "長頸鹿",
+     "tag": "gentle",
+     "text": "不會喔。站著，有危險就能馬上跑。",
+     "en": "No, I won't. Standing up, I can run away fast if there's danger."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
      "text": "晚安，長頸鹿。",
      "en": "Good night, giraffe."
     }
    ]
   },
   {
+   "scene": "晚上的農場，矮矮的木頭圍欄，草地上有月光，遠處有一間紅色的小穀倉。",
+   "act": "一匹棕色的老馬，黑色的鬃毛，額頭有一塊白色，先站在圍欄旁邊低著頭睡，一隻後腳輕輕抬起來；然後彎下腿，慢慢躺到草地上，閉上眼睛。小柔和貓頭鷹爺爺站在圍欄外面小聲看，小柔揉著眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "農場裡，一匹馬也站著，低著頭睡。",
+     "en": "On the farm, a horse is sleeping on his feet too, head down."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "你也站著睡嗎？",
+     "en": "Do you sleep standing up too?"
+    },
+    {
+     "who": "馬",
+     "tag": "sleepy",
+     "text": "站著，我睡一下。要睡很熟，我就躺下來。",
+     "en": "Standing up, I take little naps. When I need a deep sleep, I lie down."
+    },
+    {
+     "who": "旁白",
+     "text": "馬彎下腿，躺到草地上休息。",
+     "en": "The horse bends his legs and lies down in the grass to rest."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "晚安，馬兒。",
+     "en": "Good night, horse."
+    }
+   ]
+  },
+  {
+   "scene": "晚上的池塘邊，水面很平靜，岸邊有矮草和幾根蘆葦，月亮倒映在水裡。",
+   "act": "四隻綠頭鴨在岸上的草地排成一排睡覺，有綠色頭的，也有咖啡色的。三隻把頭塞在翅膀裡閉著眼睛；排在最旁邊的那隻咖啡色鴨子，朝外的那隻眼睛睜開，朝著同伴的那隻眼睛閉著。小柔和貓頭鷹爺爺站在旁邊的草地上，離水邊遠遠的，小柔蹲下來好奇地看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "池塘邊，一排鴨子正在睡。",
+     "en": "By the pond, a row of ducks is sleeping."
+    },
+    {
+     "who": "旁白",
+     "text": "咦？最旁邊那隻，睜著一隻眼睛！",
+     "en": "Huh? The duck at the very end has one eye open!"
+    },
+    {
+     "who": "鴨子",
+     "tag": "gentle",
+     "text": "我睜一隻眼睛，幫大家看著。",
+     "en": "I keep one eye open to watch over everyone."
+    },
+    {
+     "who": "貓頭鷹",
+     "tag": "whispering",
+     "text": "牠的腦袋，一半在休息，一半醒著。",
+     "en": "Half of her brain is resting, and half is awake."
+    }
+   ]
+  },
+  {
+   "scene": "同一個池塘邊，月光更淡了。",
+   "act": "小柔學鴨子，先閉上一隻眼睛、另一隻努力睜著，表情好笑；接著兩隻眼睛都慢慢閉上，打一個大哈欠。最旁邊的咖啡色鴨子睜著一隻眼睛，對她點點頭；貓頭鷹爺爺在旁邊瞇著眼睛微笑。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "我也來試一下。",
+     "en": "Let me try too."
+    },
+    {
+     "who": "旁白",
+     "text": "小柔閉上一隻眼睛，另一隻也跟著閉上了。",
+     "en": "Nora closes one eye. Then the other eye closes too."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sleepy, laughing",
+     "text": "哎呀，兩隻都閉起來了。",
+     "en": "Oops. Both of them closed."
+    },
+    {
+     "who": "鴨子",
+     "tag": "gentle",
+     "text": "放心睡吧，我幫大家看著。",
+     "en": "Go ahead and sleep. I'll watch over everyone."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "晚安，鴨子。",
+     "en": "Good night, ducks."
+    }
+   ]
+  },
+  {
    "scene": "回到小柔的臥室，小夜燈調成很暗的黃光，窗外月亮彎彎的。",
-   "act": "小柔躺回自己的床上，打一個大哈欠；貓頭鷹爺爺站在窗台上，輕輕眨眼。被子還在腳邊。",
+   "act": "小柔躺回自己的床上，打一個大哈欠，閉著眼睛小聲數著剛才看到的動物，畫面上方淡淡地畫出海獺、蝙蝠、長頸鹿、馬和鴨子的小圖案；貓頭鷹爺爺站在窗台上，輕輕眨眼。被子還在腳邊。",
    "lines": [
     {
      "who": "旁白",
      "text": "涼風吹來，小柔回到自己的床上。",
      "en": "A soft wind blows, and Nora is back in her own bed."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sleepy",
+     "text": "晚安，海獺。晚安，蝙蝠。晚安，長頸鹿。",
+     "en": "Good night, sea otters. Good night, bats. Good night, giraffe."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "晚安，馬兒。晚安，鴨子。",
+     "en": "Good night, horse. Good night, ducks."
     },
     {
      "who": "貓頭鷹",

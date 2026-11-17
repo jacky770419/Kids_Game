@@ -1,0 +1,399 @@
+{
+ "id": "anansi",
+ "title": "蜘蛛阿南西",
+ "title_en": "Anansi and the Sky Stories",
+ "size": "中",
+ "roles": {
+  "阿南西": "西非迦納故事裡的小蜘蛛，活潑的年輕男聲，聰明、愛說笑、有一點調皮，說話快又有精神。",
+  "天神": "住在天上、保管所有故事的天神，低沉緩慢的智者聲音，嚴肅裡帶一點幽默。",
+  "大蟒蛇": "懶洋洋又愛面子的大蟒蛇，說話慢吞吞、拖著尾音，好笑不可怕。",
+  "花豹": "脾氣有點大的花豹，粗粗的大嗓門，嘴巴說不要，其實好愛聽故事。"
+ },
+ "cast": {
+  "阿南西": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "天神": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大蟒蛇": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "花豹": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "散",
+   "where": "第1頁『阿散蒂人』",
+   "read": "sàn"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有故事』，第2頁『沒人拿到過』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第2頁『把故事盒給我』，第6頁『給天神看』，第11頁『分給大家』，第12頁『說給你聽』",
+   "read": "gěi"
+  },
+  {
+   "char": "長",
+   "where": "第5頁『比這根樹枝長』『長了一大截』，第6頁『最長的』",
+   "read": "cháng"
+  },
+  {
+   "char": "量",
+   "where": "第5頁『量一量』",
+   "read": "liáng"
+  },
+  {
+   "char": "當",
+   "where": "第6頁『那當然』",
+   "read": "dāng"
+  },
+  {
+   "char": "什",
+   "where": "第8頁『什麼祕密』",
+   "read": "shén"
+  },
+  {
+   "char": "豎",
+   "where": "第8頁『豎了起來』",
+   "read": "shù"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "西非迦納的村莊，晚上。方形的泥土牆小房子、又高又尖的金黃色茅草屋頂，旁邊有高高的棕櫚樹；月亮很亮，村子中間有一堆小營火。",
+   "act": "村民穿著色彩鮮豔的布衣，圍著營火坐，大家托著下巴，看起來好無聊。阿南西出場：一隻咖啡色的小蜘蛛，八隻細腳，圓圓的大眼睛，肩上披著一條紅、黃、綠條紋的小布巾；他站在營火邊的石頭上，舉起兩隻前腳，興奮地往天上指。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這是非洲迦納，阿散蒂人的故事。",
+     "en": "This is a story from the Ashanti people of Ghana, in Africa."
+    },
+    {
+     "who": "旁白",
+     "text": "很久以前，地上沒有故事。",
+     "en": "Long ago, there were no stories on Earth."
+    },
+    {
+     "who": "旁白",
+     "text": "所有的故事，都收在天神的故事盒裡。",
+     "en": "All the stories were kept in the Sky God's story box."
+    },
+    {
+     "who": "旁白",
+     "text": "小蜘蛛阿南西，好想聽故事。",
+     "en": "A little spider named Anansi wanted to hear stories very much."
+    },
+    {
+     "who": "阿南西",
+     "tag": "excited",
+     "text": "我去跟天神要！",
+     "en": "I'll go ask the Sky God!"
+    }
+   ]
+  },
+  {
+   "scene": "天上的雲朵宮殿：白雲堆成的大廳，金色的陽光，遠遠看得到地上的村子和棕櫚樹，好小好小。",
+   "act": "一條銀白色的蜘蛛絲從地上一直連到雲上，阿南西剛爬上來，喘著氣揮手。天神出場：很高大的老爺爺，深咖啡色皮膚，白色短鬍子，穿金黃色長袍，頭上戴金色頭環，坐在雲做的椅子上；懷裡抱著一個雕著花紋的金色木頭盒子，就是故事盒。天神摸著鬍子，笑咪咪地看著小小的阿南西。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿南西吐出細絲，爬到天上。",
+     "en": "Anansi spun a thin silk thread and climbed up to the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "天神坐在白雲上，抱著金色的故事盒。",
+     "en": "The Sky God sat on a white cloud, holding a golden story box."
+    },
+    {
+     "who": "阿南西",
+     "tag": "hopeful",
+     "text": "天神，請把故事盒給我，好嗎？",
+     "en": "Sky God, may I please have the story box?"
+    },
+    {
+     "who": "天神",
+     "tag": "amused",
+     "text": "好多人想要，可是沒人拿到過。",
+     "en": "Many have asked, but no one has ever won it."
+    }
+   ]
+  },
+  {
+   "scene": "天上的雲朵宮殿，同一個時候。",
+   "act": "天神伸出三根手指頭，一根一根數給阿南西看，表情認真；背後的雲上浮出三個小圖案：一條大蟒蛇、一隻花豹、一群虎頭蜂。阿南西挺起胸膛，八隻腳叉著腰，一副很有自信的樣子。",
+   "lines": [
+    {
+     "who": "天神",
+     "tag": "serious",
+     "text": "請大蟒蛇、花豹和虎頭蜂，來天上作客。",
+     "en": "Invite Python, Leopard, and the Hornets to visit me in the sky."
+    },
+    {
+     "who": "天神",
+     "text": "不能傷害他們，也不能關住他們。",
+     "en": "You may not hurt them, and you may not trap them."
+    },
+    {
+     "who": "天神",
+     "text": "他們要自己願意來才行。",
+     "en": "They must come because they want to."
+    },
+    {
+     "who": "阿南西",
+     "tag": "proud",
+     "text": "我很小，可是我很聰明！",
+     "en": "I'm small, but I'm very clever!"
+    }
+   ]
+  },
+  {
+   "scene": "地上的森林，河邊一棵大樹下，樹蔭很涼，地上有落葉。",
+   "act": "大蟒蛇出場：一條好大的咖啡色蟒蛇，身上有深褐色和淡黃色的花紋，捲成一大團，在樹下閉著眼睛打瞌睡，嘴角還掛著笑。阿南西站在牠的鼻子前面，揮著小腳打招呼；接著摸著下巴，眼睛一亮，想到好點子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大蟒蛇捲成一大團，在樹下打瞌睡。",
+     "en": "Python was curled up in a big coil, dozing under a tree."
+    },
+    {
+     "who": "阿南西",
+     "tag": "cheerful",
+     "text": "大蟒蛇，跟我去天上作客吧！",
+     "en": "Python, come visit the sky with me!"
+    },
+    {
+     "who": "大蟒蛇",
+     "tag": "sleepy",
+     "text": "不要，好遠喔。我要午睡。",
+     "en": "No. It's too far. I'm taking a nap."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，草地上。",
+   "act": "阿南西用力拖來一根好大的棕櫚樹枝，放在草地上。大蟒蛇抬起頭，不服氣地瞇著眼睛；接著把身體伸直，躺在樹枝旁邊，牠的頭在樹枝前面，尾巴遠遠超過樹枝的另一頭。阿南西張大嘴巴，假裝嚇一跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿南西拖來一根棕櫚樹枝。",
+     "en": "Anansi dragged over a palm branch."
+    },
+    {
+     "who": "阿南西",
+     "tag": "playful",
+     "text": "我猜你比這根樹枝長，可是我不確定！",
+     "en": "I bet you're longer than this branch, but I'm not sure!"
+    },
+    {
+     "who": "大蟒蛇",
+     "tag": "proud",
+     "text": "哼，量一量就知道！",
+     "en": "Hmph! Let's measure and see!"
+    },
+    {
+     "who": "旁白",
+     "text": "大蟒蛇在樹枝旁邊伸直身體。",
+     "en": "Python stretched out straight beside the branch."
+    },
+    {
+     "who": "旁白",
+     "text": "哇，他比樹枝長了一大截！",
+     "en": "Wow! He was much, much longer than the branch!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下，往天上去的小路口。",
+   "act": "阿南西拍著小手，蹦蹦跳跳；大蟒蛇得意地抬高頭，跟在阿南西後面滑走，尾巴一扭一扭的。",
+   "lines": [
+    {
+     "who": "阿南西",
+     "tag": "amazed",
+     "text": "你是森林裡最長的！天神一定想看！",
+     "en": "You're the longest in the whole forest! The Sky God will want to see this!"
+    },
+    {
+     "who": "大蟒蛇",
+     "tag": "proud",
+     "text": "那當然。走，我去給天神看！",
+     "en": "Of course. Let's go. I'll show him myself!"
+    }
+   ]
+  },
+  {
+   "scene": "草原上一棵枝葉很寬的大樹，下午的陽光，遠處有小山。",
+   "act": "花豹出場：一隻金黃色、身上有黑色花斑的大花豹，趴在粗樹枝上，尾巴垂下來，皺著眉頭、背對阿南西。阿南西不生氣，坐在樹下的石頭上，翹著腳，對著空中比手畫腳，自己說起故事。大蟒蛇在旁邊捲成一團等著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "接著，阿南西去請花豹來作客。",
+     "en": "Next, Anansi went to invite Leopard."
+    },
+    {
+     "who": "花豹",
+     "tag": "grumpy",
+     "text": "不去，不去！別吵我！",
+     "en": "No way, no way! Don't bother me!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿南西坐在樹下，自己說起故事。",
+     "en": "Anansi sat under the tree and began telling a story, all by himself."
+    },
+    {
+     "who": "阿南西",
+     "tag": "mysterious",
+     "text": "從前，有一隻花豹，發現一個大祕密！",
+     "en": "Once upon a time, a leopard found a big secret!"
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹，同一個下午。",
+   "act": "花豹的兩隻耳朵豎起來，從樹枝上探出頭，眼睛睜得好大；接著跳下樹，著急地湊到阿南西面前。阿南西摀著嘴偷笑，伸出一隻腳指著天上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "花豹的耳朵，豎了起來。",
+     "en": "Leopard's ears perked up."
+    },
+    {
+     "who": "花豹",
+     "tag": "excited",
+     "text": "什麼祕密？然後呢？然後呢？",
+     "en": "What secret? And then? And then?"
+    },
+    {
+     "who": "阿南西",
+     "tag": "laughing",
+     "text": "後面的故事，在天神的故事盒裡喔！",
+     "en": "The rest of the story is in the Sky God's story box!"
+    },
+    {
+     "who": "花豹",
+     "tag": "excited",
+     "text": "那我們快上去！",
+     "en": "Then let's get up there, fast!"
+    }
+   ]
+  },
+  {
+   "scene": "開滿花的草原邊，一棵大樹上掛著一個大大的灰色蜂窩。",
+   "act": "虎頭蜂出場：一群黃黑條紋的大虎頭蜂，從蜂窩飛出來，嗡嗡地繞著阿南西飛。阿南西站在離蜂窩遠遠的花叢邊，先是很有禮貌地鞠躬，接著被追得繞著大樹跑，八隻腳跑成一團，表情好笑；花豹和大蟒蛇在旁邊看得張大嘴巴。虎頭蜂只是追，沒有叮人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最後是虎頭蜂。嗡，嗡，嗡！",
+     "en": "Last came the Hornets. Bzz, bzz, bzz!"
+    },
+    {
+     "who": "阿南西",
+     "tag": "polite",
+     "text": "請你們去天上作客，好嗎？",
+     "en": "Would you please come visit the sky?"
+    },
+    {
+     "who": "旁白",
+     "text": "嗡！虎頭蜂不想去，追著阿南西飛。",
+     "en": "BZZ! The Hornets didn't want to go, and they chased Anansi around."
+    },
+    {
+     "who": "阿南西",
+     "tag": "scared",
+     "text": "哎喲，別追我，別追我！",
+     "en": "Yikes! Don't chase me, don't chase me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片草原，天空的一邊飄來一大片黑色的烏雲，風把草吹得往同一邊倒。",
+   "act": "阿南西停下來，指著烏雲大喊；虎頭蜂抬頭看天，停在半空中。花豹和大蟒蛇也抬頭看。接著虎頭蜂排成一排，跟在阿南西後面飛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，天邊飄來一大片烏雲。",
+     "en": "Just then, a big dark cloud drifted across the sky."
+    },
+    {
+     "who": "阿南西",
+     "tag": "shouting",
+     "text": "要下大雨了！去天神家躲雨吧！",
+     "en": "A big rain is coming! Come stay dry at the Sky God's house!"
+    },
+    {
+     "who": "旁白",
+     "text": "虎頭蜂不喜歡淋雨，趕快跟上去。",
+     "en": "The Hornets didn't like getting wet, so they hurried after him."
+    }
+   ]
+  },
+  {
+   "scene": "天上的雲朵宮殿。一座銀白色、亮晶晶的蜘蛛絲橋，從地上的森林一直連到雲上。",
+   "act": "大蟒蛇、花豹走在蜘蛛絲橋上，虎頭蜂在旁邊飛，阿南西在最前面帶路。天神從雲椅子上站起來，張大眼睛，雙手一攤，好驚訝；接著笑著把金色的故事盒交給阿南西。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿南西織了一座蜘蛛絲橋，大家一起上了天。",
+     "en": "Anansi wove a bridge of spider silk, and they all went up to the sky together."
+    },
+    {
+     "who": "天神",
+     "tag": "surprised",
+     "text": "大家都是自己願意來的！",
+     "en": "Every one of them came because they wanted to!"
+    },
+    {
+     "who": "天神",
+     "tag": "warm",
+     "text": "阿南西，故事盒是你的了。要分給大家喔。",
+     "en": "Anansi, the story box is yours. Be sure to share it with everyone."
+    }
+   ]
+  },
+  {
+   "scene": "回到第1頁的迦納村莊，晚上，營火很亮。",
+   "act": "阿南西打開金色的故事盒，一個一個發亮的小故事像彩色蝴蝶一樣飛出來，飛進每一間泥土小房子；村民圍著營火，笑著聽故事。花豹擠在最前面，搖著尾巴；大蟒蛇捲在旁邊；虎頭蜂停在樹上。阿南西坐在石頭上，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿南西回到地上，打開故事盒。",
+     "en": "Anansi went back down to Earth and opened the story box."
+    },
+    {
+     "who": "旁白",
+     "text": "故事像蝴蝶一樣飛出來，飛進每一個家。",
+     "en": "The stories flew out like butterflies, into every home."
+    },
+    {
+     "who": "旁白",
+     "text": "從此，大家都叫這些故事「蜘蛛的故事」。",
+     "en": "Ever since, people have called these stories \"spider stories.\""
+    },
+    {
+     "who": "花豹",
+     "tag": "eager",
+     "text": "阿南西，那隻花豹的祕密呢？",
+     "en": "Anansi, what about that leopard's secret?"
+    },
+    {
+     "who": "阿南西",
+     "tag": "laughing",
+     "text": "今天晚上，我說給你聽！",
+     "en": "Tonight, I'll tell you!"
+    }
+   ]
+  }
+ ]
+}

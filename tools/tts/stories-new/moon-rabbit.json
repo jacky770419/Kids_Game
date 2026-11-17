@@ -29,25 +29,25 @@
    "read": "shén"
   },
   {
-   "char": "扇",
-   "where": "第7頁『每一扇窗戶』",
-   "read": "shàn"
-  },
-  {
    "char": "暈",
    "where": "第5頁『頭好暈』",
    "read": "yūn"
+  },
+  {
+   "char": "籠",
+   "where": "第6、7頁『燈籠』",
+   "read": "lóng"
   }
  ],
  "pages": [
   {
-   "scene": "月亮上：銀白色的地面，一棵開滿小黃花的桂花樹，樹下放著石碗和木棒；遠處的天上，看得到藍綠色的地球，地上一戶一戶的人家亮著燈。",
+   "scene": "月亮上：銀白色的地面，一棵開滿小黃花的桂花樹，樹下放著石碗和木棒；遠處的天上，看得到藍綠色的地球，地上一戶一戶的人家亮著燈，院子裡有小小的燈籠光點。",
    "act": "玉兔和嫦娥照《后羿射日和嫦娥奔月》的插圖延續：玉兔是白色的小兔子，紅眼睛、長耳朵；嫦娥穿白色長裙、繫淡粉色絲帶，頭髮盤起來插一朵小白花。玉兔趴在月亮邊邊，兩隻耳朵豎起來往下看；嫦娥坐在桂花樹下微笑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "今天是農曆八月十五，中秋節。",
-     "en": "Tonight is the fifteenth day of the eighth lunar month. It's the Mid-Autumn Festival."
+     "text": "農曆八月十五中秋節，月亮最圓。",
+     "en": "It's the Mid-Autumn Festival, the fifteenth day of the eighth lunar month, and the moon is at its roundest."
     },
     {
      "who": "旁白",
@@ -57,14 +57,14 @@
     {
      "who": "玉兔",
      "tag": "excited",
-     "text": "嫦娥姊姊，地上的小朋友在看月亮耶！",
-     "en": "Chang'e, all the children down there are looking at the moon!"
+     "text": "嫦娥姊姊，地上的人都在看月亮耶！",
+     "en": "Chang'e, everyone down there is looking at the moon!"
     },
     {
      "who": "嫦娥",
      "tag": "gentle",
-     "text": "對呀，今晚的月亮最圓了。",
-     "en": "That's right. Tonight the moon is at its roundest."
+     "text": "對呀，一家人團圓，一起看月亮。",
+     "en": "That's right. Families get together and watch the moon."
     }
    ]
   },
@@ -92,8 +92,8 @@
     {
      "who": "玉兔",
      "tag": "happy",
-     "text": "我來做月亮糕！",
-     "en": "I'll make moon cakes!"
+     "text": "我來做桂花糕！",
+     "en": "I'll make osmanthus rice cakes!"
     }
    ]
   },
@@ -109,19 +109,19 @@
     {
      "who": "玉兔",
      "tag": "happy",
-     "text": "咚！咚！搗一搗，月亮糕，香又亮！",
-     "en": "Thump! Thump! Pound and pound! Moon cakes, sweet and bright!"
+     "text": "咚！咚！搗一搗，桂花糕，香又亮！",
+     "en": "Thump! Thump! Pound, pound, pound! Rice cakes, sweet and bright!"
     },
     {
      "who": "旁白",
-     "text": "做好的小圓糕，竟然會發光！",
-     "en": "The little round cakes she makes are glowing!"
+     "text": "小圓糕，竟然會發光！",
+     "en": "And the little round cakes are glowing!"
     }
    ]
   },
   {
    "scene": "月亮邊緣，旁邊的夜空裡有許多星星。",
-   "act": "一顆小星星飛過來：金黃色、五個圓角、圓圓的臉、粉紅色臉頰，頭頂綁一個小藍色蝴蝶結。玉兔把一個裝滿發光月亮糕的竹籃交給她；小星星兩手提起籃子，很有精神地往下飛。",
+   "act": "一顆小星星飛過來：金黃色、五個圓角、圓圓的臉、粉紅色臉頰，頭頂綁一個小藍色蝴蝶結。玉兔把一個裝滿發光桂花糕的竹籃交給她；小星星兩手提起籃子，很有精神地往下飛。",
    "lines": [
     {
      "who": "玉兔",
@@ -148,8 +148,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "可是，月亮糕太亮，小星星看不見路。",
-     "en": "But the moon cakes are so bright that Little Star can't see where she's going."
+     "text": "可是，桂花糕太亮，小星星看不見路。",
+     "en": "But the rice cakes are so bright that Little Star can't see where she's going."
     },
     {
      "who": "小星星",
@@ -172,7 +172,7 @@
   },
   {
    "scene": "桂花樹下，地上落著幾片綠色的桂花葉。",
-   "act": "小星星坐在地上，垂著頭；玉兔摘下桂花葉，一片一片蓋在籃子上，只留一個小洞，洞裡透出一道細細的光，像一盞小燈；嫦娥在旁邊點頭微笑。",
+   "act": "小星星坐在地上，垂著頭；玉兔摘下桂花葉，一片一片蓋在籃子上，只留一個小洞，洞裡透出一道柔和的光，整個籃子像一盞小燈籠；嫦娥在旁邊點頭微笑。",
    "lines": [
     {
      "who": "小星星",
@@ -189,29 +189,29 @@
     {
      "who": "旁白",
      "text": "玉兔用桂花葉蓋住籃子，留下一個小洞。",
-     "en": "Jade Rabbit covers the basket with osmanthus leaves and leaves one little hole."
+     "en": "Jade Rabbit covers the basket with osmanthus leaves, but keeps one little hole open."
     },
     {
      "who": "玉兔",
      "tag": "happy",
-     "text": "這樣，光就像一盞小燈，幫妳照路。",
-     "en": "Now the light is like a little lamp to show you the way."
+     "text": "這樣，籃子就變成一盞小燈籠，幫妳照路。",
+     "en": "Now your basket is a little lantern to light the way."
     }
    ]
   },
   {
-   "scene": "地上的小村子和城市，晚上，一戶一戶人家的窗戶，窗外是圓月。",
-   "act": "小星星提著蓋好葉子的籃子，洞口一道細光照在前面；她飛到一扇窗戶前，輕輕放下一塊發光的月亮糕；屋子裡的小朋友都跑到院子和陽台上看月亮了，沒看見她。",
+   "scene": "地上的小村子和城市，晚上，圓月高高掛著；一戶一戶人家的院子和陽台上，擺著賞月的小桌子，桌上有月餅和柚子，爺爺奶奶、爸爸媽媽和小朋友坐在一起，小朋友提著燈籠。",
+   "act": "小星星提著蓋好葉子、像小燈籠一樣的籃子飛下來，洞口一道柔和的光照在前面；她飛到一家人的賞月桌旁，輕輕放下一塊發光的桂花糕，和月餅、柚子擺在一起；一家人正抬頭看月亮。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小星星又出發了，這次看清楚了。",
-     "en": "Little Star sets off again, and this time she can see the way."
+     "text": "提著小燈籠，小星星這次看清楚了。",
+     "en": "With her little lantern, Little Star can see the way this time."
     },
     {
      "who": "旁白",
-     "text": "她在每一扇窗戶前，放下一塊月亮糕。",
-     "en": "At every window, she leaves one moon cake."
+     "text": "她在每家看月亮的桌上，放一塊桂花糕。",
+     "en": "On every family's moon-watching table, she leaves one rice cake."
     },
     {
      "who": "小星星",
@@ -222,13 +222,13 @@
    ]
   },
   {
-   "scene": "一邊是地上一戶人家的陽台，一邊是天上的大月亮，月亮上看得到桂花樹。",
-   "act": "陽台上，幾個小朋友捧著發光的月亮糕，抬頭對月亮揮手；月亮上，玉兔和嫦娥一起用力揮手；小星星在月亮旁邊眨眼睛。",
+   "scene": "一邊是地上一戶人家的陽台，桌上有月餅、柚子和一盞燈籠，一家人坐在一起；一邊是天上的大月亮，月亮上看得到桂花樹。",
+   "act": "陽台上，一家人圍著賞月桌，幾個小朋友捧著發光的桂花糕咬一口，笑著抬頭對月亮揮手；月亮上，玉兔和嫦娥一起用力揮手；小星星在月亮旁邊眨眼睛。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小朋友看到月亮糕，抬頭對月亮揮手。",
-     "en": "The children find the glowing moon cakes. They look up and wave at the moon."
+     "text": "小朋友咬一口，好香！對月亮揮手。",
+     "en": "The children take a bite. Yum! They wave at the moon."
     },
     {
      "who": "玉兔",
@@ -246,7 +246,7 @@
      "who": "玉兔",
      "tag": "happy",
      "text": "咚！咚！搗一搗，中秋節快樂！",
-     "en": "Thump! Thump! Pound and pound! Happy Mid-Autumn Festival!"
+     "en": "Thump! Thump! Pound, pound, pound! Happy Mid-Autumn Festival!"
     }
    ]
   }

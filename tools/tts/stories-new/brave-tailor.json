@@ -4,9 +4,9 @@
  "title_en": "The Brave Little Tailor",
  "size": "中",
  "roles": {
-  "小裁縫": "帽子上插白羽毛的小裁縫，活潑的年輕男聲，愛逞強又有點膽小，腦筋動得快，最後老實說出真相。",
+  "小裁縫": "帽子上插白羽毛的小裁縫，活潑的年輕男聲，愛逞強又有點膽小，腦筋動得快，不想打架，最後老實說出真相。",
   "果醬奶奶": "推小車賣草莓果醬的奶奶，慈祥熱情的老奶奶聲音，看到「一下七個」嚇一大跳。",
-  "國王": "慈祥的老國王，聲音低沉溫暖，擔心巨人時著急，最後笑呵呵地誇小裁縫聰明。",
+  "國王": "慈祥的老國王，聲音低沉溫暖，被巨人吵得睡不著、著急，最後鬆一口氣，笑呵呵。",
   "大鼻子巨人": "鼻子像大馬鈴薯的巨人，粗大嗓門、脾氣急，被搔鼻子就氣呼呼，好笑不可怕。",
   "大耳朵巨人": "耳朵像大扇子的巨人，低沉渾厚的大叔聲音，說話比大鼻子慢一點、愛睏，生氣時很固執，好笑不可怕。"
  },
@@ -45,7 +45,7 @@
   },
   {
    "char": "沒",
-   "where": "第5頁『話沒說完』，第9頁『沒說話』，第10頁『再也沒回來』『沒有人受傷』，第11頁『我沒有打他們』",
+   "where": "第5頁『話沒說完』，第9頁『沒說話』，第10頁『沒有人受傷』，第11頁『我沒有打他們』",
    "read": "méi"
   },
   {
@@ -55,7 +55,7 @@
   },
   {
    "char": "著",
-   "where": "第7頁『又睡著了』",
+   "where": "第5頁『睡不著』，第7頁『又睡著了』",
    "read": "zháo"
   },
   {
@@ -79,9 +79,19 @@
    "read": "tì"
   },
   {
-   "char": "愣",
-   "where": "第11頁『愣了一下』",
-   "read": "lèng"
+   "char": "覺",
+   "where": "第10頁『睡大覺』",
+   "read": "jiào"
+  },
+  {
+   "char": "傳",
+   "where": "第4頁『一個傳一個』",
+   "read": "chuán"
+  },
+  {
+   "char": "只",
+   "where": "第11頁『只是』",
+   "read": "zhǐ"
   }
  ],
  "pages": [
@@ -174,8 +184,8 @@
     },
     {
      "who": "旁白",
-     "text": "大家你說給我聽，我說給他聽。",
-     "en": "Everyone told someone, and that someone told someone else."
+     "text": "大家一個傳一個：七個巨人！七十個巨人！",
+     "en": "Word spread from person to person: Seven giants! Seventy giants!"
     },
     {
      "who": "旁白",
@@ -186,13 +196,13 @@
   },
   {
    "scene": "王宮的大廳，紅地毯和金色寶座；窗外看得到一片黑色的大森林。",
-   "act": "國王出場：白鬍子、戴金色皇冠、穿紅色長袍，把小裁縫請到王宮，坐在寶座上興奮地指著窗外的森林；大臣和士兵在旁邊拍手。小裁縫站在中間，舉起一根手指想解釋，一臉尷尬。",
+   "act": "國王出場：白鬍子、戴金色皇冠、穿紅色長袍，眼睛下面有黑眼圈，打著哈欠，坐在寶座上指著窗外的森林；天花板正掉下一點灰，大臣和士兵也都一臉沒睡飽，在旁邊拍手。小裁縫站在中間，舉起一根手指想解釋，一臉尷尬。",
    "lines": [
     {
      "who": "國王",
      "tag": "worried",
-     "text": "森林裡有兩個巨人，一打呼，房子就搖來搖去。",
-     "en": "Two giants live in the forest. When they snore, the houses shake."
+     "text": "森林裡的巨人一打呼，屋頂就掉灰，大家都睡不著！",
+     "en": "When the giants in the forest snore, dust falls from our roofs, and nobody can sleep!"
     },
     {
      "who": "國王",
@@ -208,7 +218,7 @@
     },
     {
      "who": "旁白",
-     "text": "話沒說完，大家就拍起手來了。",
+     "text": "話沒說完，大家就拍手了。",
      "en": "Before he could finish, everyone started clapping."
     }
    ]
@@ -220,8 +230,8 @@
     {
      "who": "小裁縫",
      "tag": "brave",
-     "text": "我是一下七個的小裁縫，我不怕！",
-     "en": "I'm the Seven-in-One-Swish tailor. I'm not scared!"
+     "text": "我不打架，也能讓巨人搬遠一點！",
+     "en": "I won't fight. I'll just get the giants to move farther away!"
     },
     {
      "who": "旁白",
@@ -333,7 +343,7 @@
   },
   {
    "scene": "大森林外的山坡，兩座大山之間。",
-   "act": "兩個巨人背對背，氣呼呼地往相反的方向大步走，一個往左邊的高山，一個往右邊的高山，腳下塵土飛起來；小裁縫從樹後面探出頭，鬆了一口氣，偷偷比出勝利的手勢。",
+   "act": "兩個巨人背對背，氣呼呼地往相反的方向大步走，一個往左邊很遠的高山，一個往右邊很遠的高山，腳下塵土飛起來；小裁縫從樹後面探出頭，鬆了一口氣。右下角小圖：兩個巨人各自躺在自己的山頂上，抱著大石頭當枕頭，睡得好香；山下小鎮的屋頂安安靜靜。",
    "lines": [
     {
      "who": "大耳朵巨人",
@@ -349,19 +359,19 @@
     },
     {
      "who": "旁白",
-     "text": "咚、咚、咚，兩個巨人各走一邊，再也沒回來。",
-     "en": "Stomp, stomp, stomp! The giants marched off in opposite directions and never came back."
+     "text": "咚、咚、咚，兩個巨人各自搬到很遠的山上。",
+     "en": "Stomp, stomp, stomp! The giants each moved to a faraway mountain."
     },
     {
      "who": "旁白",
-     "text": "沒有人受傷，森林又安靜了。",
-     "en": "No one got hurt, and the forest was quiet again."
+     "text": "沒有人受傷，巨人在山上睡大覺，小鎮也安靜了。",
+     "en": "No one got hurt. The giants slept soundly on their own mountains, and the town was quiet at last."
     }
    ]
   },
   {
    "scene": "王宮前的廣場，國王、果醬奶奶和鎮上的人都在。",
-   "act": "大家圍著小裁縫歡呼；小裁縫摸著頭不好意思地笑，指著腰帶上「一下七個」的字；國王先愣住，接著和大家一起笑了出來，果醬奶奶笑得用圍裙擦眼淚。",
+   "act": "大家圍著小裁縫；小裁縫摸著頭不好意思地笑，指著腰帶上「一下七個」的字；國王先嚇一跳，接著和大家一起笑了出來，果醬奶奶笑得用圍裙擦眼淚。",
    "lines": [
     {
      "who": "國王",
@@ -372,8 +382,8 @@
     {
      "who": "小裁縫",
      "tag": "shy",
-     "text": "我沒有打他們，只是逗他們吵了一架。",
-     "en": "I didn't fight them. I just tricked them into arguing."
+     "text": "我沒有打他們，只是讓他們搬遠一點。",
+     "en": "I didn't fight them. I just got them to move farther away."
     },
     {
      "who": "小裁縫",
@@ -383,26 +393,20 @@
     },
     {
      "who": "旁白",
-     "text": "大家愣了一下，都笑了。",
-     "en": "Everyone stared for a moment, then burst out laughing."
+     "text": "大家嚇一跳，都笑了。",
+     "en": "Everyone blinked in surprise, then burst out laughing."
     }
    ]
   },
   {
    "scene": "王宮前的廣場，擺著長桌子，桌上有好多草莓果醬麵包，大家在開派對。",
-   "act": "國王拍拍小裁縫的肩膀，笑著指指自己的紅袍子；果醬奶奶把一大片果醬麵包遞給小裁縫；幾隻蒼蠅飛過來，小裁縫笑著揮一揮藍色的布，小孩子們跟著他一起比出七根手指。",
+   "act": "國王伸懶腰、笑呵呵地拍拍小裁縫的肩膀；果醬奶奶把一大片果醬麵包遞給小裁縫；幾隻蒼蠅飛過來，小裁縫笑著揮一揮藍色的布，小孩子們跟著他一起比出七根手指。",
    "lines": [
     {
      "who": "國王",
-     "tag": "gentle",
-     "text": "不打架就讓大家平安，真聰明！",
-     "en": "You kept everyone safe without a single fight. How clever!"
-    },
-    {
-     "who": "國王",
      "tag": "happy",
-     "text": "我的新衣服，也請你做吧！",
-     "en": "Will you make my new clothes, too?"
+     "text": "謝謝你，今晚大家可以安心睡了！",
+     "en": "Thank you! Tonight, everyone can sleep in peace!"
     },
     {
      "who": "果醬奶奶",
@@ -412,7 +416,7 @@
     },
     {
      "who": "旁白",
-     "text": "嗡，嗡！蒼蠅又飛來了，小裁縫揮一揮布：",
+     "text": "嗡，嗡！蒼蠅又來了，小裁縫揮一揮布：",
      "en": "Bzz, bzz! Here came the flies again. The little tailor swished his cloth,"
     },
     {

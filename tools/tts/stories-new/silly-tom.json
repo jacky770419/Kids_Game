@@ -130,7 +130,7 @@
   },
   {
    "scene": "回家的泥土小路。",
-   "act": "湯姆的褲子濕了一大片，牛奶從口袋滴下來，一路滴到家門口；一隻小黃狗跟在後面好奇地聞；湯姆翻著空口袋，眉頭皺起來。媽媽站在門口，笑到彎腰。",
+   "act": "湯姆的褲子濕了一大片，牛奶從口袋滴下來，一路滴到家門口；一隻小黃狗跟在後面好奇地聞；湯姆翻著空口袋，眉頭皺起來。媽媽站在門口，笑到彎腰，一手拍拍自己的頭頂。",
    "lines": [
     {
      "who": "旁白",
@@ -146,20 +146,20 @@
     {
      "who": "媽媽",
      "tag": "laughing",
-     "text": "湯姆，湯姆，下次要記住：泡在涼水裡！",
-     "en": "Tom, oh Tom, next time remember: keep it in cool water!"
+     "text": "湯姆，湯姆，下次要記住：頂在頭上！",
+     "en": "Tom, oh Tom, next time remember: carry it on your head!"
     },
     {
      "who": "湯姆",
      "tag": "proud",
-     "text": "泡在涼水裡，我記住了！",
-     "en": "Keep it in cool water. Got it!"
+     "text": "頂在頭上，我記住了！",
+     "en": "Carry it on my head. Got it!"
     }
    ]
   },
   {
-   "scene": "農場，接著是湯姆家的廚房。",
-   "act": "上半：農夫給湯姆一塊黃色的大起司，湯姆把起司丟進裝滿水的木桶，提著木桶走回家，一臉得意。下半：廚房裡，媽媽從水桶撈出起司，起司吸飽了水、軟塌塌地往下垂，像一塊濕海綿，滴著水；媽媽忍不住笑，湯姆張大嘴巴看。",
+   "scene": "從農場回家的泥土小路，大太陽，天空很藍；最後是湯姆家門口。",
+   "act": "上半：農夫給湯姆一塊黃色的大起司，湯姆把起司頂在頭上，抬頭挺胸走回家，一臉得意，天上的太陽好大。下半：到了家門口，起司軟掉了，黃色的起司從他蓬蓬的頭髮流下來，掛在眉毛和鼻子上；湯姆眨著眼睛，媽媽忍不住笑。",
    "lines": [
     {
      "who": "旁白",
@@ -168,13 +168,13 @@
     },
     {
      "who": "旁白",
-     "text": "湯姆把起司泡進涼水裡，提回家。",
-     "en": "Tom drops the cheese into a bucket of cool water and carries it home."
+     "text": "湯姆把起司頂在頭上，走回家。",
+     "en": "Tom puts the cheese on his head and walks home."
     },
     {
      "who": "旁白",
-     "text": "起司泡爛了，像一塊濕海綿！",
-     "en": "The cheese turns all mushy, like a wet sponge!"
+     "text": "太陽好熱，起司化了，從頭上流到臉上！",
+     "en": "The sun is hot. The cheese melts and runs down his face!"
     },
     {
      "who": "媽媽",
@@ -214,22 +214,22 @@
   },
   {
    "scene": "回家的泥土小路，路邊開著野花。",
-   "act": "小貓從湯姆手上輕輕一跳，跳到湯姆頭上，趴在他蓬蓬的頭髮裡，瞇著眼睛、尾巴翹起來，好像在坐車，舒服得很；湯姆兩手還捧在前面，抬眼往上看，一臉疑惑。",
+   "act": "小貓從湯姆手上輕輕一跳，跳到湯姆頭上，趴在他蓬蓬的頭髮裡，伸出小舌頭舔頭髮上剩下的一點起司，瞇著眼睛、尾巴翹起來，舒服得很；湯姆兩手還捧在前面，抬眼往上看，一臉疑惑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小貓不想坐著，一跳，跳到湯姆頭上。",
-     "en": "The kitten doesn't want to sit still. With a little hop, she lands on Tom's head."
+     "text": "小貓聞到起司味，一跳，跳到湯姆頭上。",
+     "en": "The kitten smells cheese. With a little hop, she lands on Tom's head."
     },
     {
      "who": "旁白",
-     "text": "她趴在頭髮裡，喵！好像在坐車，好舒服。",
-     "en": "She snuggles into his hair. Meow! It's like riding in a cart, and she loves it."
+     "text": "牠趴在頭髮裡舔呀舔，喵！好香喔。",
+     "en": "She snuggles into his hair and licks and licks. Meow! Yummy!"
     },
     {
      "who": "湯姆",
      "tag": "surprised",
-     "text": "小貓，妳怎麼跑到上面去了？",
+     "text": "小貓，你怎麼跑到上面去了？",
      "en": "Kitten, how did you get up there?"
     }
    ]
@@ -295,8 +295,8 @@
     },
     {
      "who": "旁白",
-     "text": "湯姆走一步，南瓜滾一步，一路跟到城堡前面。",
-     "en": "Tom takes a step, the pumpkin rolls a step, all the way to the castle."
+     "text": "湯姆走在前面，南瓜追在後面，一路滾到城堡前。",
+     "en": "Tom walks in front, and the pumpkin rolls along behind him, all the way to the castle."
     },
     {
      "who": "湯姆",
@@ -326,12 +326,18 @@
      "tag": "laughing",
      "text": "很好玩，對不對？",
      "en": "It's funny, isn't it?"
+    },
+    {
+     "who": "公主",
+     "tag": "happy",
+     "text": "原來，大笑這麼好玩！",
+     "en": "Wow, laughing is so much fun!"
     }
    ]
   },
   {
    "scene": "回湯姆家的小路，太陽快下山了，天空是橘色的；遠處是湯姆家的小石頭屋，媽媽站在門口揮手。",
-   "act": "公主換上方便走路的鞋子，和湯姆一起推著大南瓜往湯姆家走，兩個人都在笑；小貓坐在南瓜上面，尾巴翹起來。",
+   "act": "公主換上方便走路的鞋子，和湯姆一起推著大南瓜往湯姆家走，兩個人都在笑；小貓從家門口跑過來，跳上南瓜坐著，尾巴翹起來。",
    "lines": [
     {
      "who": "公主",
@@ -341,8 +347,13 @@
     },
     {
      "who": "旁白",
-     "text": "從那天起，公主愛笑了，和湯姆變成好朋友。",
-     "en": "From then on, the princess laughs a lot, and she and Tom become good friends."
+     "text": "小貓跑出來，跳上南瓜，喵！",
+     "en": "The kitten runs out and hops onto the pumpkin. Meow!"
+    },
+    {
+     "who": "旁白",
+     "text": "公主和湯姆變成好朋友了。",
+     "en": "The princess and Tom become good friends."
     },
     {
      "who": "媽媽",

@@ -1,0 +1,399 @@
+{
+ "id": "tiger-aunt",
+ "title": "虎姑婆",
+ "title_en": "Auntie Tiger",
+ "size": "中",
+ "roles": {
+  "虎姑婆": "假扮成姑婆的老虎，有點傻氣的阿姨聲音，平常粗聲粗氣，假裝細聲時又尖又好笑，被識破時慌慌張張，一點都不可怕。",
+  "姊姊": "大約七歲的姊姊，小女孩的聲音，冷靜又聰明，小聲說悄悄話，該拒絕時說得很清楚。",
+  "弟弟": "大約四歲的弟弟，小男孩的聲音，天真愛笑、什麼都想試，學大人說話時故意壓低聲音，很好笑。",
+  "媽媽": "姊弟倆的媽媽，溫柔的媽媽聲音，叮嚀時很認真，回家時很安心。"
+ },
+ "cast": {
+  "虎姑婆": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "姊姊": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "弟弟": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "縫",
+   "where": "第5頁、第11頁『門縫』",
+   "read": "fèng"
+  },
+  {
+   "char": "塞",
+   "where": "第7頁『塞進衣服裡』",
+   "read": "sāi"
+  },
+  {
+   "char": "會",
+   "where": "第8頁『怎麼會說話』",
+   "read": "huì"
+  },
+  {
+   "char": "嚇",
+   "where": "第12頁『嚇跑了』",
+   "read": "xià"
+  },
+  {
+   "char": "喔",
+   "where": "第8頁第3句弟弟學公雞叫『喔，喔，喔』（前一句旁白已說明是學公雞叫）",
+   "read": "ō"
+  },
+  {
+   "char": "假",
+   "where": "第5頁『假裝』",
+   "read": "jiǎ"
+  },
+  {
+   "char": "咳",
+   "where": "第5頁『咳了一下』",
+   "read": "ké"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "台灣鄉下的山腳下，一間紅磚牆、黑瓦屋頂的小平房，屋前有一小片曬穀的空地，旁邊是綠色的竹林，遠處是一座綠色的大山；下午，陽光很亮。",
+   "act": "姊姊第一次出場：大約七歲，綁兩條辮子，穿紅底白點的上衣和深藍色長褲；弟弟第一次出場：大約四歲，西瓜皮頭，穿黃色上衣、藍色短褲，光著腳；媽媽第一次出場：綁著馬尾，穿淡綠色上衣和米色長裙，手提一個裝著水果的竹籃。媽媽站在木門口，彎下腰，豎起一根手指認真叮嚀；姊姊點頭，弟弟抱著媽媽的腿。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這是台灣的一個老故事，叫做虎姑婆。",
+     "en": "This is an old story from Taiwan. It's called Auntie Tiger."
+    },
+    {
+     "who": "旁白",
+     "text": "山腳下的小屋裡，住著姊姊、弟弟和媽媽。",
+     "en": "In a little house at the foot of a mountain lived Big Sister, Little Brother, and their mom."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天下午，媽媽要去山那邊的外婆家。",
+     "en": "One afternoon, Mom had to go to Grandma's house on the other side of the mountain."
+    },
+    {
+     "who": "媽媽",
+     "text": "媽媽天黑以後就回來。",
+     "en": "I'll be back after dark.",
+     "tag": "gentle"
+    },
+    {
+     "who": "媽媽",
+     "text": "記住，不能幫陌生人開門喔。",
+     "en": "Remember, never open the door for a stranger."
+    }
+   ]
+  },
+  {
+   "scene": "小屋裡面，木頭地板，一張小方桌，牆邊有一盞沒點亮的燈籠；木門旁邊放著一雙好大的黑色雨鞋。",
+   "act": "弟弟把小腳伸進爸爸的大黑雨鞋裡，雨鞋高到他的膝蓋，他抬高腳、挺起胸，一步一步大搖大擺地走；姊姊坐在小桌旁，遮著嘴大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸在城裡工作，門邊放著他的大雨鞋。",
+     "en": "Dad worked in the city, and his big rain boots stood by the door."
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟穿上爸爸的大雨鞋，走起路來咚！咚！咚！",
+     "en": "Little Brother put on Dad's big rain boots. When he walked, they went clomp! clomp! clomp!"
+    },
+    {
+     "who": "弟弟",
+     "text": "看！我是大爸爸！",
+     "en": "Look at me! I'm a great big daddy!",
+     "tag": "proud"
+    },
+    {
+     "who": "姊姊",
+     "text": "你真好笑！",
+     "en": "You're so silly!",
+     "tag": "laughing"
+    }
+   ]
+  },
+  {
+   "scene": "小屋裡，窗外天色變成深藍色，竹林黑黑一片；牆邊的燈籠亮著，屋裡有暖黃色的光。木門關得好好的，門閂橫著拴住。",
+   "act": "姊姊和弟弟一起轉頭看著木門，弟弟還穿著大雨鞋；門外看不見人，只看得到門下的縫透進一點影子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽下山了，天色暗了下來。",
+     "en": "The sun went down, and the sky grew dark."
+    },
+    {
+     "who": "旁白",
+     "text": "叩、叩、叩，有人在敲門。",
+     "en": "Knock, knock, knock. Someone was at the door."
+    },
+    {
+     "who": "旁白",
+     "text": "門外傳來一個很粗的聲音。",
+     "en": "A deep, rough voice came from outside."
+    },
+    {
+     "who": "虎姑婆",
+     "text": "乖孩子，我是姑婆，快開門呀！",
+     "en": "Good children, it's your Great-Auntie! Open the door!",
+     "tag": "cheerful"
+    }
+   ]
+  },
+  {
+   "scene": "小屋裡的木門前，燈籠的光照在地板上。",
+   "act": "弟弟穿著大雨鞋，開心地一步一步走向門口，兩手伸向門閂；姊姊從後面一把拉住他的衣服，豎起手指放在嘴巴前面，皺著眉頭仔細聽。",
+   "lines": [
+    {
+     "who": "弟弟",
+     "text": "姑婆來了！有沒有帶糖果？",
+     "en": "Great-Auntie's here! Did you bring candy?",
+     "tag": "excited"
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟穿著大雨鞋，咚咚地走到門口。",
+     "en": "Little Brother clomped to the door in his big boots."
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊趕快拉住他。",
+     "en": "Big Sister grabbed him just in time."
+    },
+    {
+     "who": "姊姊",
+     "text": "等一下！姑婆的聲音，才沒有這麼粗。",
+     "en": "Wait! Great-Auntie's voice isn't that deep.",
+     "tag": "whispering"
+    }
+   ]
+  },
+  {
+   "scene": "木門的內外對照畫：門裡是燈籠照亮的小屋；門外是黑黑的院子，月光下站著一個大大的影子，看不清楚是誰。",
+   "act": "姊姊整個人趴在木頭地板上，臉貼近門下面的細縫往外看；弟弟遮著嘴偷笑，大雨鞋歪在一邊。門外的影子捏著喉嚨，努力裝出細細的聲音。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "門外的人咳了一下，假裝把聲音變得好細。",
+     "en": "The visitor outside coughed and tried to sound high and thin."
+    },
+    {
+     "who": "虎姑婆",
+     "text": "哎喲，姑婆感冒了嘛。現在對了吧？",
+     "en": "Oh dear, Great-Auntie just has a cold. Is this better?",
+     "tag": "silly"
+    },
+    {
+     "who": "弟弟",
+     "text": "嘻，聲音好奇怪！",
+     "en": "Hee hee, that voice sounds so funny!",
+     "tag": "laughing"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊趴在地上，從門縫往外看。",
+     "en": "Big Sister lay down on the floor and peeked through the crack under the door."
+    }
+   ]
+  },
+  {
+   "scene": "從門下的細縫看出去的畫面：月光下的院子地上，有一雙大大的布鞋，布鞋後面垂著一條黃黑條紋、毛很多的粗尾巴，正在甩來甩去。",
+   "act": "下一格：姊姊坐起來，眼睛睜得圓圓的，一手拉著弟弟靠近，小聲說話；弟弟張大嘴巴，雙手抱著頭。接著姊姊站直身體，對著門大聲說話，一臉勇敢。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她看見一條黃黑條紋的大尾巴，甩來甩去。",
+     "en": "She saw a big tail with yellow and black stripes, swishing back and forth."
+    },
+    {
+     "who": "姊姊",
+     "text": "弟弟，那不是姑婆，是老虎！",
+     "en": "Brother, that's not Great-Auntie. It's a tiger!",
+     "tag": "whispering"
+    },
+    {
+     "who": "姊姊",
+     "text": "媽媽說，不能幫陌生人開門！",
+     "en": "Mom said never open the door for a stranger!",
+     "tag": "brave"
+    }
+   ]
+  },
+  {
+   "scene": "門外的院子，月光很亮，竹林在後面。",
+   "act": "虎姑婆第一次被看清楚：一隻圓滾滾的大老虎，圓圓的眼睛、粉紅色的鼻子，穿著紫色碎花布衫，頭上包著紅色頭巾，腳穿一雙大布鞋，樣子很滑稽、一點都不兇。她手忙腳亂地把黃黑條紋的尾巴往布衫裡面塞，尾巴尖還翹在外面。",
+   "lines": [
+    {
+     "who": "虎姑婆",
+     "text": "我不是陌生人，我是姑婆呀！",
+     "en": "I'm not a stranger. I'm your Great-Auntie!",
+     "tag": "surprised"
+    },
+    {
+     "who": "姊姊",
+     "text": "那門外怎麼有一條尾巴？",
+     "en": "Then why is there a tail out there?"
+    },
+    {
+     "who": "虎姑婆",
+     "text": "這，這是我的圍巾啦！",
+     "en": "Th-this is my scarf!",
+     "tag": "nervous"
+    },
+    {
+     "who": "旁白",
+     "text": "虎姑婆趕快把尾巴塞進衣服裡。",
+     "en": "Auntie Tiger quickly stuffed her tail into her clothes."
+    }
+   ]
+  },
+  {
+   "scene": "屋裡和門外分成兩半的畫面：屋裡燈籠亮著；門外的院子黑黑的，天上有月亮和星星。",
+   "act": "屋裡，弟弟站在小板凳旁邊，兩手像翅膀一樣拍動，伸長脖子學公雞叫；姊姊在旁邊豎起大拇指。門外，虎姑婆雙手叉腰，抬頭看著黑黑的天空，搖頭大笑。",
+   "lines": [
+    {
+     "who": "姊姊",
+     "text": "虎姑婆怕天亮。弟弟，你學公雞叫！",
+     "en": "Auntie Tiger doesn't like the morning. Brother, crow like a rooster!",
+     "tag": "whispering"
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟伸長脖子，學公雞叫。",
+     "en": "Little Brother stretched out his neck and crowed like a rooster."
+    },
+    {
+     "who": "弟弟",
+     "text": "喔，喔，喔！天亮囉！",
+     "en": "Cock-a-doodle-doo! It's morning!",
+     "tag": "excited"
+    },
+    {
+     "who": "虎姑婆",
+     "text": "天這麼黑，公雞怎麼會說話？騙不了我！",
+     "en": "It's pitch dark, and roosters can't talk! You can't fool me!",
+     "tag": "laughing"
+    }
+   ]
+  },
+  {
+   "scene": "小屋裡，燈籠的光把兩個孩子的影子照在牆上，影子看起來好大。",
+   "act": "姊姊眼睛一亮，對著屋子裡面大聲喊；弟弟穿著爸爸的大雨鞋，挺起胸、用力踩地板，嘴巴故意往下撇，裝出大人的樣子。牆上的影子大大的，像一個大人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "姊姊想了想，眼睛一亮。",
+     "en": "Big Sister thought for a moment, and her eyes lit up."
+    },
+    {
+     "who": "姊姊",
+     "text": "爸爸，你醒啦？門外有一隻老虎喔！",
+     "en": "Daddy, you're awake? There's a tiger outside!",
+     "tag": "shouting"
+    },
+    {
+     "who": "旁白",
+     "text": "弟弟穿著大雨鞋，用力踩，咚！咚！咚！",
+     "en": "Little Brother stomped hard in the big rain boots. Clomp! Clomp! Clomp!"
+    },
+    {
+     "who": "弟弟",
+     "text": "喂！是誰在外面？",
+     "en": "Hey! Who's out there?",
+     "tag": "serious"
+    }
+   ]
+  },
+  {
+   "scene": "月光下的山路，從小屋一路通到黑黑的大山；小屋的窗戶透出黃色的燈光。",
+   "act": "虎姑婆兩手抱著自己的尾巴，紅頭巾歪到一邊，一隻布鞋都跑掉了，踮著腳尖慌慌張張往山上跑；屋裡，姊姊和弟弟擠在窗邊偷看，開心地互相拍手。",
+   "lines": [
+    {
+     "who": "虎姑婆",
+     "text": "哎呀，家裡有大人！",
+     "en": "Oh no, there's a grown-up home!",
+     "tag": "scared"
+    },
+    {
+     "who": "旁白",
+     "text": "虎姑婆抱著尾巴，一路跑回山上去了。",
+     "en": "Auntie Tiger grabbed her tail and ran all the way back up the mountain."
+    },
+    {
+     "who": "弟弟",
+     "text": "哈，她的圍巾跑出來了！",
+     "en": "Ha, her scarf popped out!",
+     "tag": "laughing"
+    }
+   ]
+  },
+  {
+   "scene": "小屋的木門外，一盞小燈籠在黑夜裡慢慢靠近，照亮了門前的石階。",
+   "act": "媽媽提著小燈籠和空竹籃站在門外，臉上帶著笑；屋裡，姊姊又趴在地板上從門縫往外看，看到媽媽的米色長裙和熟悉的竹籃，開心地跳起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "沒多久，門外亮起一盞小燈籠。",
+     "en": "Before long, a small lantern glowed outside the door."
+    },
+    {
+     "who": "媽媽",
+     "text": "姊姊、弟弟，媽媽回來了。",
+     "en": "Sister, Brother, Mom's home.",
+     "tag": "gentle"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊聽了聽，又從門縫看一看。",
+     "en": "Big Sister listened carefully, then peeked through the crack."
+    },
+    {
+     "who": "旁白",
+     "text": "真的是媽媽！她這才打開門。",
+     "en": "It really was Mom! Only then did she open the door."
+    }
+   ]
+  },
+  {
+   "scene": "小屋裡，燈籠暖黃色的光，小方桌上放著媽媽帶回來的竹籃。",
+   "act": "媽媽蹲下來張開雙手，把姊姊和弟弟一起抱住；弟弟還穿著爸爸的大雨鞋，得意地抬起一隻腳給媽媽看；姊姊靠在媽媽肩上笑。",
+   "lines": [
+    {
+     "who": "弟弟",
+     "text": "媽媽，老虎來敲門！我們把她嚇跑了！",
+     "en": "Mom, a tiger knocked on the door! We scared her away!",
+     "tag": "excited"
+    },
+    {
+     "who": "媽媽",
+     "text": "你們記得不開門，真聰明。",
+     "en": "You remembered not to open the door. That was smart.",
+     "tag": "gentle"
+    },
+    {
+     "who": "弟弟",
+     "text": "因為家裡有一個大爸爸呀！",
+     "en": "Because there's a great big daddy at home!",
+     "tag": "proud"
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽笑了，把兩個孩子抱在懷裡。",
+     "en": "Mom laughed and held them both in her arms."
+    }
+   ]
+  }
+ ]
+}

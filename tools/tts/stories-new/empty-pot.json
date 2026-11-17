@@ -35,7 +35,7 @@
   },
   {
    "char": "當",
-   "where": "第1頁『當國王』",
+   "where": "第1頁『當國王』，第8頁『換你當國王』",
    "read": "dāng"
   },
   {
@@ -50,7 +50,7 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『什麼也沒有』，第7頁『沒有笑』",
+   "where": "第3頁『什麼也沒有』",
    "read": "méi"
   },
   {
@@ -65,8 +65,13 @@
   },
   {
    "char": "只",
-   "where": "第8頁『只有你』",
+   "where": "第4頁『只有一盆土』，第8頁『只有你』",
    "read": "zhǐ"
+  },
+  {
+   "char": "嚇",
+   "where": "第3頁『嚇跑了』",
+   "read": "xià"
   }
  ],
  "pages": [
@@ -159,7 +164,7 @@
     {
      "who": "阿明",
      "tag": "sad",
-     "text": "大家都有花，我就是一盆土！",
+     "text": "大家都有花，我只有一盆土！",
      "en": "Everyone has a flower, and all I have is dirt!"
     }
    ]
@@ -222,7 +227,7 @@
   },
   {
    "scene": "宮殿前的廣場，台階下排滿一大片顏色鮮豔的花，小孩們得意地捧著花盆。",
-   "act": "國王背著手，沿著花盆慢慢走，眉頭皺著；走到隊伍最後，看到阿明捧著只有土的花盆，停下腳步，彎下腰。",
+   "act": "國王背著手，沿著花盆慢慢走，看一盆，搖一搖頭；走到隊伍最後，看到阿明捧著只有土的花盆，停下腳步，彎下腰。媽媽站在隊伍後面，溫柔地看著阿明。",
    "lines": [
     {
      "who": "旁白",
@@ -231,8 +236,8 @@
     },
     {
      "who": "旁白",
-     "text": "國王一盆接一盆看，都沒有笑。",
-     "en": "The king looks at pot after pot, but he doesn't smile."
+     "text": "國王一盆接一盆看，一直搖頭。",
+     "en": "The king looks at pot after pot, and he keeps shaking his head."
     },
     {
      "who": "國王",
@@ -266,8 +271,8 @@
     },
     {
      "who": "國王",
-     "text": "只有你說真話，我要找的就是你！",
-     "en": "Only you told the truth. You are the child I'm looking for!"
+     "text": "只有你說真話，以後就換你當國王！",
+     "en": "Only you told the truth. You will be the next king!"
     },
     {
      "who": "旁白",

@@ -1,0 +1,275 @@
+{
+ "id": "hedgehog-hare",
+ "title": "兔子和刺蝟賽跑",
+ "title_en": "The Hare and the Hedgehog",
+ "size": "短",
+ "roles": {
+  "兔子": "住在菜田邊的野兔，少年的聲音，跑得快又愛炫耀，被騙時又急又不服氣，最後笑得很開心。",
+  "刺蝟": "腿短短的刺蝟先生，溫和大叔的聲音，說話慢吞吞、有點倔強，認錯時很誠懇。",
+  "刺蝟太太": "刺蝟先生的太太，好笑的阿姨聲音，喊『我已經在這裡了』時又響亮又調皮。"
+ },
+ "cast": {
+  "兔子": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "刺蝟": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "刺蝟太太": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "散",
+   "where": "第1頁『散步』",
+   "read": "sàn"
+  },
+  {
+   "char": "模",
+   "where": "第2頁、第7頁『一模一樣』",
+   "read": "mú"
+  },
+  {
+   "char": "誰",
+   "where": "第8頁『比誰縮成最圓的球』",
+   "read": "shéi"
+  },
+  {
+   "char": "翹",
+   "where": "第8頁『耳朵翹在外面』",
+   "read": "qiào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的一大片高麗菜田，早上，一顆顆圓圓的綠色高麗菜排得很整齊，菜田邊有一條泥土小路和一排小野花。",
+   "act": "刺蝟第一次出場：圓滾滾的咖啡色刺蝟，背上一根根短刺，小黑鼻子，四隻短短的小腿，脖子上圍著一條藍色小圍巾，慢慢走在小路上。兔子第一次出場：淺咖啡色的野兔，長耳朵尖端是黑色的，後腿很長，穿一件黃色小背心。兔子指著刺蝟的短腿，抱著肚子大笑；刺蝟停下來，鼓起臉頰瞪他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "早上，刺蝟在高麗菜田邊散步。",
+     "en": "One morning, Hedgehog was taking a walk by the cabbage field."
+    },
+    {
+     "who": "旁白",
+     "text": "兔子看見他的短腿，笑了。",
+     "en": "Hare saw his short legs and laughed."
+    },
+    {
+     "who": "兔子",
+     "text": "腿這麼短，走好慢喔！",
+     "en": "Your legs are so short. You're so slow!",
+     "tag": "laughing"
+    },
+    {
+     "who": "刺蝟",
+     "text": "哼，短腿也能跑贏你！",
+     "en": "Hmph. Short legs can still beat you!",
+     "tag": "annoyed"
+    },
+    {
+     "who": "兔子",
+     "text": "好啊，我們來比賽！",
+     "en": "All right, let's race!",
+     "tag": "excited"
+    }
+   ]
+  },
+  {
+   "scene": "刺蝟的家：菜田邊一棵大樹的樹根下，有一個鋪著乾葉子的小洞，洞口擺著兩個小木碗。",
+   "act": "刺蝟太太第一次出場：她跟刺蝟一模一樣，也是圓滾滾的咖啡色刺蝟，也圍著一條一樣的藍色小圍巾，正在洞口擺早餐。刺蝟靠在她耳邊說話，她遮著嘴，眼睛笑成兩條線。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "刺蝟先回家吃早餐。",
+     "en": "Hedgehog went home for breakfast first."
+    },
+    {
+     "who": "旁白",
+     "text": "他小聲告訴刺蝟太太一個計畫。",
+     "en": "He whispered a plan to Mrs. Hedgehog."
+    },
+    {
+     "who": "旁白",
+     "text": "刺蝟太太跟他一模一樣，連圍巾都一樣。",
+     "en": "Mrs. Hedgehog looked exactly like him, right down to her blue scarf."
+    },
+    {
+     "who": "刺蝟太太",
+     "text": "好啊，我們跟兔子開個小玩笑！",
+     "en": "Oh yes, let's play a little joke on Hare!",
+     "tag": "laughing"
+    }
+   ]
+  },
+  {
+   "scene": "高麗菜田的一頭，兩排高麗菜中間有兩條平行的泥土小路，一直通到田的另一頭；遠遠的那一頭，一顆大高麗菜旁邊露出一點藍色。",
+   "act": "刺蝟和兔子各站在一條小路的起點，兔子壓低身體、後腿用力準備衝；遠遠的田的那一頭，刺蝟太太躲在一顆大高麗菜的葉子後面，只看得到一點藍色圍巾。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "高麗菜田中間，有兩條小路。",
+     "en": "Between the rows of cabbages ran two little paths."
+    },
+    {
+     "who": "旁白",
+     "text": "刺蝟太太躲在小路的那一頭。",
+     "en": "Mrs. Hedgehog hid quietly at the far end of one path."
+    },
+    {
+     "who": "刺蝟",
+     "text": "兔子，你跑那一條，我跑這一條。",
+     "en": "Hare, you take that path, and I'll take this one.",
+     "tag": "calm"
+    },
+    {
+     "who": "兔子",
+     "text": "預備，開始！",
+     "en": "Ready, set, go!",
+     "tag": "shouting"
+    }
+   ]
+  },
+  {
+   "scene": "田的另一頭，一顆大高麗菜旁邊。",
+   "act": "兔子像一陣風衝到終點，身後揚起泥土；刺蝟太太從高麗菜葉子後面跳出來，雙手叉腰，笑嘻嘻的；兔子煞住腳，耳朵往前甩，嘴巴張得好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兔子一下子就跑到了那一頭。",
+     "en": "Hare zoomed to the far end in no time."
+    },
+    {
+     "who": "刺蝟太太",
+     "text": "我已經在這裡了！",
+     "en": "I'm already here!",
+     "tag": "cheerful"
+    },
+    {
+     "who": "兔子",
+     "text": "什麼？再比一次！",
+     "en": "What? Let's race again!",
+     "tag": "surprised"
+    }
+   ]
+  },
+  {
+   "scene": "田的起點這一頭。",
+   "act": "兔子跑回起點，刺蝟從起點的高麗菜旁邊探出頭，悠閒地揮揮手；兔子停下來，抓著長耳朵，一臉想不通。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兔子回頭，又一路跑回來。",
+     "en": "Hare turned around and dashed all the way back."
+    },
+    {
+     "who": "刺蝟",
+     "text": "我已經在這裡了！",
+     "en": "I'm already here!",
+     "tag": "cheerful"
+    },
+    {
+     "who": "兔子",
+     "text": "怎麼可能？再一次！",
+     "en": "No way! One more time!",
+     "tag": "angry"
+    }
+   ]
+  },
+  {
+   "scene": "田的另一頭，太陽升高了一點，高麗菜的影子變短。",
+   "act": "兔子第三次跑到終點，刺蝟太太又跳出來揮手；兔子不跑了，慢慢坐在小路上，沒有喘氣、不是累倒，是想不通、很失望，長耳朵垂下來，低著頭，眼睛紅紅的，看起來好失望。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兔子又跑過去。",
+     "en": "Hare raced over again."
+    },
+    {
+     "who": "刺蝟太太",
+     "text": "我已經在這裡了！",
+     "en": "I'm already here!",
+     "tag": "cheerful"
+    },
+    {
+     "who": "兔子",
+     "text": "我跑那麼快，怎麼一直輸？",
+     "en": "I'm so fast. Why do I keep losing?",
+     "tag": "sad"
+    },
+    {
+     "who": "旁白",
+     "text": "兔子坐下來，耳朵垂了下來。",
+     "en": "Hare sat down, and his ears drooped."
+    }
+   ]
+  },
+  {
+   "scene": "田的另一頭，兔子坐在小路上。",
+   "act": "刺蝟從另一條小路慢慢走過來，低著頭，一臉不好意思；刺蝟太太也從高麗菜葉子後面走出來，站在刺蝟旁邊。兩隻一模一樣的刺蝟並排站著，兔子瞪大眼睛，左看看、右看看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "刺蝟看見兔子好難過。",
+     "en": "Hedgehog saw how sad Hare was."
+    },
+    {
+     "who": "刺蝟",
+     "text": "兔子，對不起。我們騙了你。",
+     "en": "Hare, I'm sorry. We tricked you.",
+     "tag": "sorry"
+    },
+    {
+     "who": "旁白",
+     "text": "刺蝟太太也走出來。兩隻刺蝟，一模一樣！",
+     "en": "Mrs. Hedgehog stepped out too. Two hedgehogs, exactly alike!"
+    },
+    {
+     "who": "兔子",
+     "text": "原來有兩個你！",
+     "en": "So there are two of you!",
+     "tag": "surprised"
+    }
+   ]
+  },
+  {
+   "scene": "高麗菜田邊一片短短的柔軟草地，太陽暖暖的，旁邊開著小野花。",
+   "act": "兔子低頭道歉；接著兩隻刺蝟縮成兩顆圓圓的刺球，圍巾露在外面；兔子也努力抱住膝蓋縮成一團，可是兩隻長耳朵直直翹在外面，自己笑倒在草地上。兩顆刺蝟球滾到兔子身邊，大家一起笑。",
+   "lines": [
+    {
+     "who": "兔子",
+     "text": "我也不對，不該笑你腿短。",
+     "en": "I was wrong too. I shouldn't have laughed at your short legs.",
+     "tag": "sorry"
+    },
+    {
+     "who": "刺蝟",
+     "text": "我們不比跑步了，來比誰縮成最圓的球！",
+     "en": "Let's not race anymore. Let's see who can curl into the roundest ball!",
+     "tag": "happy"
+    },
+    {
+     "who": "旁白",
+     "text": "兩隻刺蝟縮成圓球，兔子的耳朵卻翹在外面。",
+     "en": "The hedgehogs curled into balls, but Hare's ears stuck straight out."
+    },
+    {
+     "who": "兔子",
+     "text": "我的耳朵收不進去啦！",
+     "en": "My ears won't fit!",
+     "tag": "laughing"
+    },
+    {
+     "who": "刺蝟太太",
+     "text": "兔子，我們已經在這裡了！",
+     "en": "Hare, we're already here!",
+     "tag": "laughing"
+    }
+   ]
+  }
+ ]
+}

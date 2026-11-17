@@ -45,7 +45,7 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『沒有耶』，第7頁『沒有腳』，第9頁『沒有聲音』，第10頁『沒事吧』",
+   "where": "第3頁『沒有耶』，第7頁『沒有腳』，第9頁『沒有聲音』，第10頁『沒事吧』，第15頁『沒有放棄』",
    "read": "méi"
   },
   {
@@ -90,8 +90,13 @@
   },
   {
    "char": "給",
-   "where": "第15頁『還給妳』，第16頁『唱歌給妳聽』",
+   "where": "第15頁『還給妳』，第16頁『唱歌給妳聽』，第15頁『給我唱』",
    "read": "gěi"
+  },
+  {
+   "char": "只",
+   "where": "第11頁『只好』",
+   "read": "zhǐ"
   }
  ],
  "pages": [
@@ -139,8 +144,8 @@
     },
     {
      "who": "旁白",
-     "text": "生日那天，奶奶送她一對粉紅色的螺旋貝殼。",
-     "en": "On her birthday, Grandma gave her a pair of pink spiral shells."
+     "text": "生日那天，奶奶送她一對粉紅色的貝殼。",
+     "en": "On her birthday, Grandma gave her a pair of pink shells."
     },
     {
      "who": "人魚奶奶",
@@ -337,8 +342,8 @@
     {
      "who": "海巫婆",
      "tag": "gentle",
-     "text": "如果妳想家，就到海邊叫我。嗝！",
-     "en": "If you ever miss home, just call me from the beach. Hic!"
+     "text": "想家的時候，就對著海水吹個氣泡。嗝！",
+     "en": "Whenever you miss home, just blow a bubble into the sea. Hic!"
     }
    ]
   },
@@ -372,13 +377,8 @@
   },
   {
    "scene": "白色城堡裡的大廳，大窗戶看得到大海，桌上擺著花。",
-   "act": "小美人魚穿著淡紫色的長裙，用力指著自己；王子手裡拿著那個粉紅色螺旋貝殼給她看，笑得很親切，但一臉不明白。",
+   "act": "小美人魚穿著淡紫色的長裙，張著嘴說不出話，用力指著自己；王子手裡拿著那個粉紅色螺旋貝殼給她看，笑得很親切，但一臉不明白。",
    "lines": [
-    {
-     "who": "旁白",
-     "text": "她張開嘴，卻發不出聲音。",
-     "en": "She opened her mouth, but no sound came out."
-    },
     {
      "who": "旁白",
      "text": "王子帶她回城堡，拿出那個貝殼。",
@@ -391,8 +391,8 @@
     },
     {
      "who": "旁白",
-     "text": "她用力指著自己，王子卻不明白。",
-     "en": "She pointed at herself again and again, but the prince didn't understand."
+     "text": "她張開嘴，發不出聲音，只好用力指著自己。",
+     "en": "She opened her mouth, but no sound came out. So she pointed at herself again and again."
     },
     {
      "who": "王子",
@@ -403,24 +403,18 @@
    ]
   },
   {
-   "scene": "城堡的花園，陽光很好，石頭桌上放著紙和彩色筆。",
-   "act": "小美人魚用雙手比出海浪，又用手指比出游來游去的小魚；接著在紙上畫畫：暴風雨、大船和一條淡紫色尾巴的小人魚。王子先是開心地猜錯，後來拿起畫看，誇她畫得好，但還是搖頭。",
+   "scene": "城堡的花園，靠海的一道矮石牆，陽光很好，石頭桌上放著紙和彩色筆；牆外就是沙灘和大海。",
+   "act": "小美人魚搖著頭，用雙手比出海浪；石頭桌上的紙畫著暴風雨和一條淡紫色尾巴的小人魚。矮石牆外，胖肚子的小海豹探出頭，扭著身體學海浪，好笑地幫忙。王子拿起畫，誇她畫得好，但還是搖頭。",
    "lines": [
     {
      "who": "旁白",
-     "text": "她不能說話，就用手比，也用筆畫。",
-     "en": "She couldn't speak, so she talked with her hands and drew pictures."
-    },
-    {
-     "who": "王子",
-     "tag": "excited",
-     "text": "我懂了！妳是說，妳想去海邊玩，對不對？",
-     "en": "I get it! You want to go and play by the sea, right?"
+     "text": "她搖頭，用手比海浪，用筆畫暴風雨和小人魚。",
+     "en": "She shook her head. She made waves with her hands and drew a storm and a little mermaid."
     },
     {
      "who": "旁白",
-     "text": "她搖了搖頭，畫了暴風雨、大船，和一條小人魚。",
-     "en": "She shook her head and drew a storm, a big ship, and a little mermaid."
+     "text": "牆外的小海豹，也搖來搖去學海浪！",
+     "en": "Over the wall, the seal pup wiggled this way and that, pretending to be a wave!"
     },
     {
      "who": "王子",
@@ -431,12 +425,12 @@
   },
   {
    "scene": "晚上的海邊，月亮又大又圓，海面上一條銀色的月光。",
-   "act": "小美人魚一個人坐在沙灘上，望著大海想念奶奶。小海豹從海裡爬上沙灘，叼著一條小魚乾要分她，她笑著搖頭。接著她從口袋裡拿出另一個粉紅色螺旋貝殼，眼睛一下子亮起來。",
+   "act": "小美人魚一個人蹲在淺水邊，對著海水吹出一個亮晶晶的泡泡，泡泡飄進海裡；她望著大海想念奶奶。小海豹從海裡爬上沙灘，叼著一條小魚乾要分她，她笑著搖頭。接著她從口袋裡拿出另一個粉紅色螺旋貝殼，眼睛一下子亮起來。",
    "lines": [
     {
      "who": "旁白",
-     "text": "晚上，她一個人坐在海邊，好想奶奶。",
-     "en": "That night, the little mermaid sat alone by the sea. She missed Grandma."
+     "text": "晚上，她好想奶奶，就對著海水吹了一個氣泡。",
+     "en": "That night, the little mermaid missed Grandma, so she blew a bubble into the sea."
     },
     {
      "who": "小海豹",
@@ -485,18 +479,24 @@
   },
   {
    "scene": "城堡下面的海邊，晚上，海面冒出一個好大的氣泡。",
-   "act": "海巫婆從海裡探出上半身，貝殼帽歪一邊，打了一個好大的嗝，嘴裡冒出一個大泡泡，泡泡飄到小美人魚面前破掉，閃出一串小音符。王子站在小美人魚旁邊，驚訝地看著。",
+   "act": "海巫婆從海裡探出上半身，手上托著小美人魚吹的那個亮晶晶泡泡，貝殼帽歪一邊；她打了一個好大的嗝，嘴裡冒出一個大泡泡，泡泡飄到小美人魚面前破掉，閃出一串小音符。王子站在小美人魚旁邊，驚訝地看著。",
    "lines": [
     {
      "who": "旁白",
-     "text": "這時候，海巫婆從海裡探出頭來。",
-     "en": "Just then, the Sea Witch popped her head out of the sea."
+     "text": "海巫婆收到氣泡，從海裡探出頭來。",
+     "en": "The Sea Witch got the bubble and popped her head out of the sea."
+    },
+    {
+     "who": "海巫婆",
+     "tag": "gentle",
+     "text": "嗝！我在海裡都看到了，妳一直沒有放棄。",
+     "en": "Hic! I saw everything from the sea. You never gave up."
     },
     {
      "who": "海巫婆",
      "tag": "sad",
-     "text": "嗝！妳的聲音給我唱，一點都不好聽。",
-     "en": "Hic! Your voice doesn't sound pretty at all when I sing with it."
+     "text": "妳的聲音給我唱，一點都不好聽。",
+     "en": "When I sing with your voice, it just doesn't sound right!"
     },
     {
      "who": "海巫婆",
@@ -512,7 +512,7 @@
    ]
   },
   {
-   "scene": "早上的海邊，陽光燦爛；淺水裡有人魚奶奶，沙灘上有王子，沙灘上有小海豹。",
+   "scene": "早上的海邊，陽光燦爛；淺水裡有人魚奶奶和海巫婆，沙灘上有王子和小海豹。",
    "act": "小美人魚站在淺水邊，對海巫婆用手比著「謝謝」，同時開口說話；人魚奶奶從浪裡探出身子，張開雙手笑；王子在旁邊學著比手語；小海豹趴在王子腳邊，嘴裡叼著小魚乾。",
    "lines": [
     {
@@ -523,8 +523,8 @@
     },
     {
      "who": "旁白",
-     "text": "從此，她用歌聲說話，也教大家用手說話。",
-     "en": "From then on, she talked with her songs, and she taught everyone to talk with their hands, too."
+     "text": "從此，她能說也能唱，也教大家用手比一比來說話。",
+     "en": "From then on, she could talk and sing, and she taught everyone to talk with their hands, too."
     },
     {
      "who": "人魚奶奶",

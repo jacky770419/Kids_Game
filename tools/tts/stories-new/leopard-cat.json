@@ -129,11 +129,11 @@
   },
   {
    "scene": "一輛藍色的小汽車裡，車窗外是同一條馬路和草叢，路邊有黃色的石虎牌子。",
-   "act": "小晨第一次出場：六歲小男孩，短頭髮，穿綠色恐龍 T 恤，繫著安全帶坐在後座的兒童座椅上，臉貼著車窗，手指著草叢裡兩個小亮點。爸爸第一次出場：戴眼鏡、穿格子襯衫，兩手握方向盤，放慢車子。",
+   "act": "小晨第一次出場：六歲小男孩，短頭髮，穿綠色恐龍 T 恤，繫著安全帶坐在後座的兒童座椅上，臉貼著車窗，手指著草叢裡兩個小亮點。爸爸第一次出場：戴眼鏡、穿格子襯衫，兩手握方向盤，看了一眼路邊的石虎牌子，放慢車子。",
    "lines": [
     {
      "who": "旁白",
-     "text": "一輛藍色小車開過來，車上是小晨和爸爸。",
+     "text": "一輛藍色小車開過來，是小晨和爸爸。",
      "en": "A little blue car comes along. Inside are Jay and his dad."
     },
     {
@@ -145,8 +145,8 @@
     {
      "who": "爸爸",
      "tag": "gentle",
-     "text": "是石虎！我們開慢一點。",
-     "en": "It's a leopard cat! Let's slow down."
+     "text": "是石虎！這裡常有石虎過馬路，開慢一點。",
+     "en": "It's a leopard cat! Leopard cats often cross the road here. Let's slow down."
     }
    ]
   },
@@ -204,7 +204,7 @@
   },
   {
    "scene": "馬路底下的水泥小通道，裡面有一點暗，另一頭的洞口看得到月光和草叢。",
-   "act": "小石虎在小通道裡往前跑，尾巴翹起來；另一頭洞口，石虎媽媽坐著等，伸出頭往裡面看；下一格兩隻石虎在洞口蹭蹭臉，媽媽先停在洞口，左看右看。",
+   "act": "小石虎在小通道裡往前跑，尾巴翹起來；跑到另一頭的洞口，先停下來，探出頭左看右看；石虎媽媽就坐在洞口旁邊的草叢等著；下一格兩隻石虎在洞口蹭蹭臉。",
    "lines": [
     {
      "who": "旁白",
@@ -212,44 +212,45 @@
      "en": "The little leopard cat slips into the hole and runs and runs."
     },
     {
+     "who": "石虎媽媽",
+     "tag": "gentle",
+     "text": "到洞口，先停下來，看左邊，看右邊！",
+     "en": "When you get to the end, stop first. Look left, look right!"
+    },
+    {
      "who": "旁白",
-     "text": "洞的另一頭，媽媽在等牠！",
-     "en": "At the other end, Mama is waiting!"
+     "text": "牠停下來看一看，媽媽就在洞口！",
+     "en": "He stops and looks. Mama is right by the hole!"
     },
     {
      "who": "小石虎",
      "tag": "happy",
      "text": "媽媽！我找到妳了！",
      "en": "Mama! I found you!"
-    },
-    {
-     "who": "石虎媽媽",
-     "tag": "gentle",
-     "text": "出去以前，先停下來，看左邊，看右邊。",
-     "en": "Before we go out, we stop, look left, and look right."
     }
    ]
   },
   {
    "scene": "馬路另一邊的草叢和小樹林；藍色小車停在路邊，車窗開著。",
-   "act": "爸爸指著土坡下的小洞口；小晨趴在車窗邊，笑著揮手；遠處兩隻石虎一前一後走進樹林，小石虎回頭，好像在點頭。",
+   "act": "小晨趴在車窗邊，指著土坡下的小洞口，又驚又喜；爸爸回頭對他笑；遠處兩隻石虎一前一後走進樹林，小石虎回頭，好像在點頭；小晨笑著揮手。",
    "lines": [
+    {
+     "who": "小晨",
+     "tag": "surprised",
+     "text": "原來那是動物走的路！",
+     "en": "So that's a path for animals!"
+    },
     {
      "who": "爸爸",
      "tag": "happy",
-     "text": "那是動物的通道，車子走上面，動物走下面。",
-     "en": "That's a tunnel for animals. Cars go on top, and animals go underneath."
+     "text": "對，車子走上面，動物走下面。",
+     "en": "That's right. Cars go on top, and animals go underneath."
     },
     {
      "who": "小晨",
      "tag": "excited",
-     "text": "我過馬路，也要牽爸爸的手！",
-     "en": "And when I cross the road, I hold Dad's hand!"
-    },
-    {
-     "who": "小晨",
-     "text": "而且要停下來，看左邊，看右邊！",
-     "en": "And I stop, look left, and look right!"
+     "text": "我過馬路，也要牽爸爸的手，看左邊，看右邊！",
+     "en": "When I cross the road, I hold Dad's hand and look left and right!"
     },
     {
      "who": "旁白",

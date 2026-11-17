@@ -6,7 +6,8 @@
  "roles": {
   "小男孩": "五歲的小男孩小森，聲音清亮有精神，愛猜謎，猜錯時自己哈哈大笑，猜對時好得意。",
   "袋鼠媽媽": "動物園裡的袋鼠媽媽，溫柔的媽媽聲音，說話慢慢的、帶著笑，很疼寶寶。",
-  "天鵝寶寶": "灰色的小天鵝寶寶，聲音尖細可愛，被認成小鴨子時咯咯笑，說到自己是天鵝時很驕傲。"
+  "天鵝寶寶": "灰色的小天鵝寶寶，聲音尖細可愛，被認成小鴨子時咯咯笑，說到自己是天鵝時很驕傲。",
+  "企鵝寶寶": "咖啡色大毛球似的國王企鵝寶寶，聲音軟軟的、可愛，被認成奇異果時覺得好好笑。"
  },
  "cast": {
   "小男孩": {
@@ -20,6 +21,10 @@
   "天鵝寶寶": {
    "find": "Stacy",
    "en": "kids_Macy"
+  },
+  "企鵝寶寶": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
   }
  },
  "polyphones": [
@@ -32,6 +37,11 @@
    "char": "會",
    "where": "第3頁『以後會變成』，第4頁『以後會變成』，第5頁『以後會變成』，第7頁『這個我會』『不會走丟』",
    "read": "huì"
+  },
+  {
+   "char": "長",
+   "where": "第3頁『長脖子』",
+   "read": "cháng"
   }
  ],
  "pages": [
@@ -80,7 +90,7 @@
     {
      "who": "袋鼠媽媽",
      "text": "寶寶在育兒袋裡，好溫暖。",
-     "en": "My baby rides in my pouch, nice and warm."
+     "en": "My baby is called a joey. My joey rides in my pouch, nice and warm."
     },
     {
      "who": "旁白",
@@ -107,8 +117,8 @@
     {
      "who": "天鵝寶寶",
      "tag": "laughing",
-     "text": "不是喔！我以後會變成白色的大鳥。",
-     "en": "Nope! One day I'll be a big white bird."
+     "text": "不是喔！我以後會變成長脖子的白色大鳥。",
+     "en": "Nope! One day I'll be a big white bird with a long neck."
     },
     {
      "who": "旁白",
@@ -119,18 +129,19 @@
   },
   {
    "scene": "池塘邊，後面是企鵝館的玻璃牆，牆裡面是白色的冰和藍色的水。",
-   "act": "一隻雪白的天鵝媽媽游過來，灰色的小天鵝寶寶游在她旁邊，挺起胸膛好驕傲；小森拍手。遠處玻璃牆裡，一顆咖啡色、毛很蓬的大毛球站在冰上，搖來搖去。",
+   "act": "一隻雪白的天鵝媽媽游過來，灰色的小天鵝寶寶游在她旁邊，挺起胸膛好驕傲；小森睜大眼睛、拍手。遠處玻璃牆裡，一顆咖啡色、毛很蓬的大毛球站在冰上，搖來搖去。",
    "lines": [
     {
      "who": "天鵝寶寶",
      "tag": "proud",
      "text": "我是天鵝寶寶！",
-     "en": "I'm a baby swan!"
+     "en": "I'm a baby swan. I'm called a cygnet!"
     },
     {
-     "who": "旁白",
-     "text": "灰色的小天鵝，以後會變成白天鵝。",
-     "en": "A little gray swan turns into a white swan one day."
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "原來天鵝寶寶是灰色的！",
+     "en": "Wow, baby swans are gray!"
     },
     {
      "who": "旁白",
@@ -146,7 +157,7 @@
   },
   {
    "scene": "企鵝館裡，玻璃牆後面是冰和水，幾隻黑白色的大企鵝站在後面。",
-   "act": "小森把臉貼在玻璃上，張大嘴巴喊；咖啡色的大毛球回過頭，眨了一下黑色的小眼睛，露出尖尖的嘴巴。小森往後一跳，又笑出來。",
+   "act": "小森把臉貼在玻璃上，張大嘴巴喊；咖啡色的大毛球（國王企鵝寶寶）回過頭，眨了一下黑色的小眼睛，露出尖尖的嘴巴。小森往後一跳，又笑出來。",
    "lines": [
     {
      "who": "小男孩",
@@ -179,18 +190,19 @@
   },
   {
    "scene": "企鵝館外面，接著是大象區的大泥地和水池。",
-   "act": "咖啡色的大毛球企鵝寶寶站在一隻黑白色的大企鵝腳邊；小森抱著肚子大笑。遠處大象區，畫面只露出一隻灰色的小鼻子，捲住一條大尾巴。",
+   "act": "咖啡色的大毛球是國王企鵝寶寶，站在一隻黑白色、脖子有一點橘黃色的國王企鵝媽媽腳邊，張開尖尖的嘴巴說話；小森抱著肚子大笑。遠處大象區，畫面只露出一隻灰色的小鼻子，捲住一條大尾巴。",
    "lines": [
     {
-     "who": "旁白",
-     "text": "是企鵝寶寶！",
-     "en": "It's a baby penguin!"
+     "who": "企鵝寶寶",
+     "tag": "laughing",
+     "text": "我不是奇異果，我是企鵝寶寶！",
+     "en": "I'm not a kiwi. I'm a penguin chick!"
     },
     {
      "who": "小男孩",
-     "tag": "laughing",
-     "text": "原來不是奇異果，是企鵝！",
-     "en": "So it's not a kiwi. It's a penguin!"
+     "tag": "surprised",
+     "text": "原來是企鵝！",
+     "en": "So it's a penguin!"
     },
     {
      "who": "旁白",
@@ -217,12 +229,12 @@
     {
      "who": "旁白",
      "text": "答對了！小象拉著媽媽，就不會走丟。",
-     "en": "That's right! Holding on to Mom keeps the baby from getting lost."
+     "en": "That's right! A baby elephant is called a calf. Holding on to Mom keeps the calf from getting lost."
     },
     {
      "who": "旁白",
      "text": "最後一個寶寶，牽著媽媽的手，來動物園玩。",
-     "en": "The last baby is holding his mom's hand, visiting the zoo."
+     "en": "Our last baby is at the zoo, holding his mom's hand."
     },
     {
      "who": "旁白",
@@ -244,8 +256,8 @@
     {
      "who": "小男孩",
      "tag": "proud",
-     "text": "我是媽媽的寶寶！",
-     "en": "I'm Mom's baby!"
+     "text": "小森是媽媽的寶寶！",
+     "en": "Benny is Mom's baby!"
     },
     {
      "who": "小男孩",

@@ -1,0 +1,351 @@
+{
+ "id": "pangu",
+ "title": "盤古開天",
+ "title_en": "Pangu Opens the Sky",
+ "size": "中",
+ "roles": {
+  "盤古": "開天的巨人，低沉沙啞的大嗓門，憨厚溫和、說話慢慢的，一點也不可怕。",
+  "小鳥": "很久以後才出生的小鳥，聲音小又甜，好奇、愛發問，聽故事聽得好入迷。"
+ },
+ "cast": {
+  "盤古": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小鳥": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第1頁『什麼故事』，第2頁『什麼也看不見』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『沒有天』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『會不會』，第8頁『不會掉下來』",
+   "read": "huì"
+  },
+  {
+   "char": "得",
+   "where": "第2頁『睡得好香』，第8頁『睡得好香』，第11頁『睡得好香』（兩處）",
+   "read": "de"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一座綠色大山的山頂，清晨，太陽剛升起來，天空好高好藍；山下有彎彎的小河和一片森林。",
+   "act": "小鳥出場：一隻剛出生的小黃鳥，橘色的小嘴巴，白色的肚子，頭上翹著一撮黃色羽毛，坐在山頂大樹的鳥窩邊，歪著頭往天上看。一陣風吹過，樹葉和小鳥的羽毛輕輕飄起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "在一座大山上，有一隻剛出生的小鳥。",
+     "en": "On a big mountain, there lived a little bird who had just hatched."
+    },
+    {
+     "who": "小鳥",
+     "tag": "curious",
+     "text": "天怎麼這麼高？山怎麼這麼大？",
+     "en": "Why is the sky so high? Why is the mountain so big?"
+    },
+    {
+     "who": "旁白",
+     "text": "風吹過來，好像在說一個很老的故事。",
+     "en": "A wind blew by, as if it were telling a very old story."
+    },
+    {
+     "who": "小鳥",
+     "tag": "excited",
+     "text": "什麼故事？我想聽！",
+     "en": "What story? I want to hear it!"
+    }
+   ]
+  },
+  {
+   "scene": "很久很久以前：一片黑黑的、霧濛濛的世界，看不到天也看不到地，中間浮著一顆好大的、發著微光的雞蛋形狀。",
+   "act": "大雞蛋的蛋殼半透明，可以隱約看到裡面蜷著身體、抱著膝蓋睡覺的巨人盤古：深棕色長頭髮和鬍子，身上圍著樹葉做的短裙，表情很安詳。畫面溫柔，不恐怖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久、很久以前，沒有天，也沒有地。",
+     "en": "Long, long ago, there was no sky and no ground."
+    },
+    {
+     "who": "旁白",
+     "text": "到處都好黑，什麼也看不見。",
+     "en": "Everything was dark. You couldn't see a thing."
+    },
+    {
+     "who": "旁白",
+     "text": "天和地混在一起，像一顆好大的雞蛋。",
+     "en": "The sky and the ground were all mixed up together, like one giant egg."
+    },
+    {
+     "who": "旁白",
+     "text": "雞蛋裡面，一個巨人睡得好香，他叫盤古。",
+     "en": "Inside the egg, a giant lay sleeping. His name was Pangu."
+    }
+   ]
+  },
+  {
+   "scene": "大雞蛋裡面，黑黑的，只有盤古身邊有一點微光。",
+   "act": "盤古張開眼睛，伸了一個大懶腰，手腳碰到蛋殼，被擠得縮成一團，臉上一副好擠、好好笑的表情；嘴巴張大打哈欠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "盤古睡呀睡，一睡就是一萬八千年。",
+     "en": "Pangu slept and slept, for eighteen thousand years."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，他醒來，伸了一個大懶腰。",
+     "en": "One day, he woke up and gave a big, long stretch."
+    },
+    {
+     "who": "盤古",
+     "tag": "sleepy",
+     "text": "啊，我睡飽了。咦，這裡怎麼這麼黑？",
+     "en": "Ahh, what a good sleep. Huh? Why is it so dark in here?"
+    },
+    {
+     "who": "盤古",
+     "tag": "surprised",
+     "text": "好擠喔，我的腳都伸不直！",
+     "en": "It's so squished in here! I can't even stretch my legs!"
+    }
+   ]
+  },
+  {
+   "scene": "大雞蛋裂開的一瞬間：一道金色的光從裂縫射出來。上面是又輕又亮的白色光霧往上飄，下面是深咖啡色的泥土往下沉。",
+   "act": "盤古身邊有一把大石頭斧頭，木頭握把；他兩手握著斧頭往前一揮，蛋殼像花瓣一樣裂開，沒有碎片亂飛。盤古瞇著眼睛，被光照得好驚喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "盤古身邊，有一把大斧頭。",
+     "en": "Beside Pangu lay a big axe."
+    },
+    {
+     "who": "盤古",
+     "tag": "excited",
+     "text": "我來把這顆大雞蛋打開！",
+     "en": "I'll open up this big egg!"
+    },
+    {
+     "who": "旁白",
+     "text": "他用力一揮，轟隆！大雞蛋裂開了。",
+     "en": "He swung it with all his might. Boom! The big egg cracked open."
+    },
+    {
+     "who": "旁白",
+     "text": "又輕又亮的，往上飄，變成了天。",
+     "en": "The light, bright parts floated up and became the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "又黑又沉的，往下掉，變成了地。",
+     "en": "The dark, heavy parts sank down and became the ground."
+    }
+   ]
+  },
+  {
+   "scene": "剛分開的天和地：上面是淡藍色的天，下面是咖啡色、光禿禿的大地，中間還很近。",
+   "act": "盤古站在大地上，兩隻手往上撐著天，兩隻腳穩穩踩著地，咬著牙、用力的表情，但看起來很勇敢。畫面角落用一個小圓框，畫第1頁山頂鳥窩裡正在聽故事的小黃鳥，張開翅膀跟著喊；小黃鳥不在這個古老的畫面裡面。",
+   "lines": [
+    {
+     "who": "盤古",
+     "tag": "worried",
+     "text": "糟糕，天和地，會不會又黏回去？",
+     "en": "Oh no. What if the sky and the ground stick back together?"
+    },
+    {
+     "who": "旁白",
+     "text": "盤古站起來，手撐著天，腳踩著地。",
+     "en": "Pangu stood up, holding up the sky with his hands and standing firm on the ground."
+    },
+    {
+     "who": "盤古",
+     "tag": "shouting",
+     "text": "天，往上！地，往下！",
+     "en": "Sky, go up! Ground, go down!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "excited",
+     "text": "天，往上！地，往下！",
+     "en": "Sky, go up! Ground, go down!"
+    }
+   ]
+  },
+  {
+   "scene": "天和地之間越來越寬，天越來越高、越來越藍，大地越來越厚。",
+   "act": "盤古一天比一天高，頭頂著天，腳踩著地，身體高到像一座塔；旁邊畫出好幾個不同大小的盤古影子，表示他一天比一天高。他笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "每一天，天就高一點，地就厚一點。",
+     "en": "Every day, the sky rose a little higher, and the ground grew a little thicker."
+    },
+    {
+     "who": "旁白",
+     "text": "盤古也跟著，一天比一天高。",
+     "en": "And Pangu grew taller, day by day."
+    },
+    {
+     "who": "盤古",
+     "tag": "proud",
+     "text": "天，往上！地，往下！我也變高啦！",
+     "en": "Sky, go up! Ground, go down! And I'm getting taller too!"
+    },
+    {
+     "who": "旁白",
+     "text": "又過了一萬八千年。",
+     "en": "Another eighteen thousand years went by."
+    }
+   ]
+  },
+  {
+   "scene": "天已經很高很高，大地很寬很厚，天邊是橘紅色的晚霞。",
+   "act": "盤古滿頭大汗，手臂微微發抖，膝蓋有一點彎，眼睛快要閉起來了，可是還是撐著天。畫面角落的小圓框裡，聽故事的小黃鳥兩隻翅膀放在嘴巴前面，緊張地替他加油。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，盤古好累，好累。",
+     "en": "But Pangu was tired, so very tired."
+    },
+    {
+     "who": "旁白",
+     "text": "他的手在發抖，腳也在發軟。",
+     "en": "His arms were shaking, and his legs were wobbling."
+    },
+    {
+     "who": "小鳥",
+     "tag": "worried",
+     "text": "盤古，加油！不要放手！",
+     "en": "Come on, Pangu! Don't let go!"
+    },
+    {
+     "who": "盤古",
+     "tag": "tired",
+     "text": "再撐一下，再撐一下就好！",
+     "en": "Just a little longer, just a little longer!"
+    }
+   ]
+  },
+  {
+   "scene": "天和地終於分得好開，天很穩，地很穩；滿天是金色的晚霞。",
+   "act": "盤古慢慢放下手，臉上露出放心又溫柔的笑容，打了一個大哈欠，側身躺在大地上，像抱著枕頭一樣，閉上眼睛睡著了，表情好安詳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "終於，天和地都站穩了。",
+     "en": "At last, the sky and the ground stayed put."
+    },
+    {
+     "who": "盤古",
+     "tag": "happy",
+     "text": "好了，天不會掉下來了。",
+     "en": "There. The sky won't fall now."
+    },
+    {
+     "who": "盤古",
+     "tag": "sleepy",
+     "text": "我好睏，我睡一下喔。",
+     "en": "I'm so sleepy. I'll rest for a while."
+    },
+    {
+     "who": "旁白",
+     "text": "盤古躺下來，睡得好香，好香。",
+     "en": "Pangu lay down and fell into a deep, sweet sleep."
+    }
+   ]
+  },
+  {
+   "scene": "夢一樣的天空：一邊是金色的太陽，一邊是銀白色的月亮，中間飄著白雲，遠處有一道閃電，卻一點也不可怕。",
+   "act": "盤古安詳睡著的大大側臉，像畫在天空上一樣淡淡的；他嘴巴吹出的氣變成一縷一縷白雲和風，閉著的眼睛那邊，一邊亮起太陽，一邊亮起月亮。畫面角落的小圓框裡，聽故事的小黃鳥笑彎了腰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他的呼吸，變成了風和白雲。",
+     "en": "His breath became the wind and the white clouds."
+    },
+    {
+     "who": "旁白",
+     "text": "他打呼的聲音，變成了轟隆的雷聲。",
+     "en": "The sound of his snoring became rumbling thunder."
+    },
+    {
+     "who": "旁白",
+     "text": "他的左眼變成太陽，右眼變成月亮。",
+     "en": "His left eye became the sun, and his right eye became the moon."
+    },
+    {
+     "who": "小鳥",
+     "tag": "laughing",
+     "text": "原來打雷，是盤古在打呼呀！",
+     "en": "So thunder is just Pangu snoring!"
+    }
+   ]
+  },
+  {
+   "scene": "大地從上面看下去：一座一座綠色的大山連在一起，形狀像一個側睡的巨人；山間有小河流過，下著細細的小雨，夜空中滿天星星。",
+   "act": "山坡上開滿彩色的花，冒出青草和大樹；小雨落在花上。畫面溫暖，像一個好大的人安穩地睡在大地上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他的頭髮和鬍子，變成了滿天的星星。",
+     "en": "His hair and his beard became all the stars in the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "他躺下來的身體，變成了一座又一座大山。",
+     "en": "His sleeping body became mountain after mountain."
+    },
+    {
+     "who": "旁白",
+     "text": "他的汗水，變成了雨和小河。",
+     "en": "His sweat became the rain and the rivers."
+    },
+    {
+     "who": "旁白",
+     "text": "大地上，開滿了花，冒出了青草和大樹。",
+     "en": "Flowers bloomed, and grass and trees sprang up all over the land."
+    }
+   ]
+  },
+  {
+   "scene": "回到第1頁的大山山頂，晚上，太陽剛下山，月亮慢慢升起來，天上有星星。",
+   "act": "小黃鳥站在鳥窩邊，低頭看著腳下的大山，又抬頭看月亮和星星，臉上是溫暖的笑；風吹過她的羽毛，好像有人在輕輕摸她的頭。她把頭靠在山上的小草上，閉上眼睛。",
+   "lines": [
+    {
+     "who": "小鳥",
+     "tag": "surprised",
+     "text": "原來，我住的這座山，就是睡得好香的盤古！",
+     "en": "So this mountain I live on is Pangu, fast asleep!"
+    },
+    {
+     "who": "旁白",
+     "text": "太陽下山了，月亮升起來了。",
+     "en": "The sun went down, and the moon came up."
+    },
+    {
+     "who": "旁白",
+     "text": "微風吹過來，好像盤古在夢裡呼吸。",
+     "en": "A soft breeze blew, like Pangu breathing in his dreams."
+    },
+    {
+     "who": "小鳥",
+     "tag": "whispering",
+     "text": "謝謝你，盤古。晚安，祝你睡得好香。",
+     "en": "Thank you, Pangu. Good night. Sweet dreams."
+    }
+   ]
+  }
+ ]
+}

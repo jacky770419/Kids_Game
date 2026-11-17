@@ -1,0 +1,338 @@
+{
+ "id": "heart",
+ "title": "撲通撲通的心臟",
+ "title_en": "My Busy Heart",
+ "size": "中",
+ "roles": {
+  "小卉": "五歲的小女孩，聲音清亮、好奇心很強，愛跑愛跳，發現新東西時又驚訝又興奮。",
+  "心臟": "小卉胸口裡的心臟，像溫和的爸爸，聲音低沉溫暖、帶著笑，說話慢慢的、很有耐心。",
+  "紅血球": "血裡面的小送貨員，聲音又小又甜、活潑急性子，忙起來說話很快，累了會喘氣，很好笑。"
+ },
+ "cast": {
+  "小卉": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "心臟": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "紅血球": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "血",
+   "where": "第4頁『把血送出去』『血會流到』，第5頁『血裡面』，第5、6、8、9、11頁『紅血球』",
+   "read": "xiě"
+  },
+  {
+   "char": "載",
+   "where": "第6頁『載到妳的手』",
+   "read": "zài"
+  },
+  {
+   "char": "空",
+   "where": "第6頁『空氣』兩處",
+   "read": "kōng"
+  },
+  {
+   "char": "什",
+   "where": "第3頁『做什麼』，第5頁『送什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "圈",
+   "where": "第5頁『甜甜圈』，第7頁『一圈又一圈』",
+   "read": "quān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上，小卉家的小院子：綠色草地、一棵小樹、木頭圍籬，圍籬邊開著黃色小花，天空很藍，有幾朵白雲。",
+   "act": "小卉第一次出場：五歲的小女孩，綁兩條短短的辮子，紮黃色髮圈，穿紅色短袖上衣和藍色短褲、白色布鞋。她剛跳完繩，手上拿著一條粉紅色跳繩，臉頰紅紅的，一手放在胸口，眼睛睜得好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小卉在院子裡跳繩，跳了好多下。",
+     "en": "Amy is jumping rope in the yard. She jumps and jumps and jumps."
+    },
+    {
+     "who": "旁白",
+     "text": "她停下來，把手放在胸口。",
+     "en": "She stops and puts her hand on her chest."
+    },
+    {
+     "who": "小卉",
+     "tag": "surprised",
+     "text": "咦？我的胸口裡，有東西在跳！",
+     "en": "Huh? Something is jumping inside my chest!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，小卉坐在草地上。畫面用一個透明的圓圈，畫出小卉胸口裡面的樣子。",
+   "act": "小卉低頭，把手貼在胸口仔細聽。透明圓圈裡是心臟：一顆紅色、圓鼓鼓的心臟小傢伙（照真的心臟畫成可愛版：上寬下窄、頂端接著幾根短短的管子，不要畫成愛心符號），有大眼睛和笑咪咪的嘴巴，戴著一頂小小的工人帽，兩隻小手扠腰，看起來很可靠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她仔細聽，聽到一個聲音：撲通，撲通。",
+     "en": "She listens closely and hears a sound. Thump, thump."
+    },
+    {
+     "who": "旁白",
+     "text": "原來，是她的心臟在說話！",
+     "en": "It's her heart, and it's talking!"
+    },
+    {
+     "who": "心臟",
+     "tag": "happy",
+     "text": "嗨，小卉！我是妳的心臟，就住在這裡面。",
+     "en": "Hi, Amy! I'm your heart. I live right in here."
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，草地上。",
+   "act": "小卉好奇地歪著頭，握起一個小拳頭舉到眼前；透明圓圈裡的心臟也舉起小拳頭比給她看，兩個拳頭差不多大。",
+   "lines": [
+    {
+     "who": "小卉",
+     "tag": "curious",
+     "text": "心臟，你在裡面做什麼呀？",
+     "en": "Heart, what are you doing in there?"
+    },
+    {
+     "who": "心臟",
+     "tag": "proud",
+     "text": "我在工作！白天、晚上，我每天都在工作。",
+     "en": "I'm working! I work all day and all night, every single day."
+    },
+    {
+     "who": "心臟",
+     "text": "妳握一個拳頭，我大概就這麼大喔。",
+     "en": "Make a fist. I'm about that big."
+    },
+    {
+     "who": "小卉",
+     "tag": "surprised",
+     "text": "哇，你跟我的拳頭一樣大！",
+     "en": "Wow, you're as big as my fist!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子。畫面旁邊有一張簡單可愛的小圖：一個小女孩的身體輪廓，胸口偏左有一顆小小的紅色心臟（跟第2頁同樣的畫法），從心臟連出紅色的小路，通到頭、兩隻手和兩隻腳。",
+   "act": "小卉把小拳頭握緊、打開、握緊，玩得好認真；心臟也跟著用力一擠，旁邊的紅色小路上有紅色的小點點往外跑。",
+   "lines": [
+    {
+     "who": "心臟",
+     "tag": "gentle",
+     "text": "妳把拳頭握緊，再打開，再握緊。",
+     "en": "Squeeze your fist tight, open it, then squeeze again."
+    },
+    {
+     "who": "旁白",
+     "text": "小卉一握，一放，一握，一放。",
+     "en": "Amy squeezes and lets go, squeezes and lets go."
+    },
+    {
+     "who": "心臟",
+     "text": "我也是這樣，用力一擠，就把血送出去。",
+     "en": "That's what I do. I squeeze hard and push the blood out."
+    },
+    {
+     "who": "心臟",
+     "text": "血會流到妳的頭、妳的手，也會流到妳的腳。",
+     "en": "The blood flows to your head, your hands, and all the way to your feet."
+    }
+   ]
+  },
+  {
+   "scene": "小卉身體裡的想像畫面：一條紅色、彎彎的大水管，像紅色的河，裡面漂著好多紅色的小圓片。",
+   "act": "紅血球第一次出場：一個紅色、圓圓扁扁、中間凹下去的小傢伙，看起來像一個小甜甜圈，有大眼睛和紅臉頰，戴一頂藍色的送貨員小帽子，背著一個小袋子。他從紅色的河裡跳出來，揮手打招呼。小卉的小臉出現在畫面角落，張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "血裡面，有好多紅色的小傢伙，叫做紅血球。",
+     "en": "In the blood, there are lots of tiny red helpers called red blood cells."
+    },
+    {
+     "who": "旁白",
+     "text": "一個紅血球跳了出來，看起來像一個小甜甜圈。",
+     "en": "One red blood cell pops up. It looks like a little donut."
+    },
+    {
+     "who": "紅血球",
+     "tag": "excited",
+     "text": "嗨！我是紅血球，我是送貨員喔！",
+     "en": "Hi! I'm a red blood cell. I'm a delivery helper!"
+    },
+    {
+     "who": "小卉",
+     "tag": "curious",
+     "text": "送貨員？你要送什麼呀？",
+     "en": "A delivery helper? What do you deliver?"
+    }
+   ]
+  },
+  {
+   "scene": "想像畫面：左邊是小卉的胸口，空氣變成一顆一顆閃亮的小光點跑進去；右邊是紅色的河，一路流到手和腳。",
+   "act": "紅血球把閃亮的小光點一顆一顆裝進小袋子，袋子鼓起來；他推著袋子沿著紅色的河往手和腳跑。心臟在河的起點用力推一把，笑咪咪的。",
+   "lines": [
+    {
+     "who": "紅血球",
+     "tag": "happy",
+     "text": "妳吸一口氣，空氣就跑進妳的胸口。",
+     "en": "When you breathe in, air goes into your chest."
+    },
+    {
+     "who": "紅血球",
+     "text": "我在那裡裝滿空氣裡的好東西，再載到妳的手和腳！",
+     "en": "I fill up with the good stuff from the air, and I carry it to your hands and feet!"
+    },
+    {
+     "who": "心臟",
+     "tag": "proud",
+     "text": "我負責推，紅血球負責送！",
+     "en": "I do the pushing, and Red Blood Cell does the delivering!"
+    },
+    {
+     "who": "小卉",
+     "tag": "excited",
+     "text": "所以我才有力氣跳繩呀！",
+     "en": "So that's how I have the energy to jump rope!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡的草地，陽光很亮，小樹在旁邊。",
+   "act": "小卉站起來，舉起一根手指頭，笑得很得意；接著她繞著院子跑，辮子飛起來，畫面上用幾條線畫出她跑的路線，一圈又一圈。",
+   "lines": [
+    {
+     "who": "小卉",
+     "tag": "excited",
+     "text": "我們來玩一個遊戲：跑一跑，再聽一聽！",
+     "en": "Let's play a game. Run around, then listen!"
+    },
+    {
+     "who": "心臟",
+     "tag": "laughing",
+     "text": "好啊，我準備好了！",
+     "en": "Okay, I'm ready!"
+    },
+    {
+     "who": "旁白",
+     "text": "小卉繞著院子，跑了一圈又一圈。",
+     "en": "Amy runs around the yard, around and around."
+    }
+   ]
+  },
+  {
+   "scene": "院子，小卉停在小樹旁邊。透明圓圈裡是心臟和紅血球。",
+   "act": "小卉喘著氣，把手放在胸口，眼睛發亮；圓圈裡的心臟跳得好用力，頭上冒汗珠；紅血球推著鼓鼓的小袋子飛快地跑，跑出一條條速度線。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她停下來，把手放在胸口。撲通，撲通！好快！",
+     "en": "She stops and puts her hand on her chest. Thump, thump! So fast!"
+    },
+    {
+     "who": "小卉",
+     "tag": "surprised",
+     "text": "心臟，你變快了！",
+     "en": "Heart, you're going faster!"
+    },
+    {
+     "who": "心臟",
+     "tag": "excited",
+     "text": "妳在跑，手腳要用好多力氣，需要好多好東西！",
+     "en": "You're running! Your arms and legs are working hard. They need lots and lots of good stuff!"
+    },
+    {
+     "who": "紅血球",
+     "tag": "excited",
+     "text": "好忙，好忙！我要快點送貨！",
+     "en": "So busy, so busy! I have to hurry with my deliveries!"
+    }
+   ]
+  },
+  {
+   "scene": "院子，小卉又跑起來，臉紅紅的。透明圓圈裡是紅血球。",
+   "act": "小卉大步往前衝，喘著大氣；圓圈裡的紅血球扶著膝蓋停下來，舌頭吐出來，一臉好累又好笑的樣子；心臟溫和地朝小卉揮揮手。",
+   "lines": [
+    {
+     "who": "小卉",
+     "tag": "proud",
+     "text": "那我再跑快一點，讓你跳最快！",
+     "en": "Then I'll run even faster and make you go the fastest!"
+    },
+    {
+     "who": "紅血球",
+     "tag": "laughing",
+     "text": "等一下，等一下！我快跟不上了！",
+     "en": "Wait, wait! I can't keep up!"
+    },
+    {
+     "who": "心臟",
+     "tag": "gentle",
+     "text": "小卉，跑累了，就休息一下吧。",
+     "en": "Amy, when you're tired, it's time to rest."
+    }
+   ]
+  },
+  {
+   "scene": "院子的草地上，天空很藍，飄著幾朵白雲。",
+   "act": "小卉躺在草地上，兩手放在胸口，閉著眼睛，慢慢地深呼吸，臉上帶著微笑；跳繩放在她旁邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小卉躺在草地上，吸一大口氣，再把氣呼出來。",
+     "en": "Amy lies down on the grass. She takes a big breath in, then lets it out."
+    },
+    {
+     "who": "小卉",
+     "tag": "whispering",
+     "text": "跑一跑，再聽一聽。",
+     "en": "Run around, then listen."
+    },
+    {
+     "who": "旁白",
+     "text": "撲通，撲通。這一次，心臟慢下來了。",
+     "en": "Thump, thump. This time, her heart slows down."
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，下午的陽光暖暖的，小花在風裡搖。透明圓圈裡是心臟和紅血球。",
+   "act": "圓圈裡的心臟輕輕地跳，閉著眼睛笑；紅血球慢慢地推著小袋子散步，打了一個小哈欠。小卉坐起來，雙手放在胸口，開心地笑。",
+   "lines": [
+    {
+     "who": "心臟",
+     "tag": "gentle",
+     "text": "妳休息，我也跳慢一點。",
+     "en": "When you rest, I slow down too."
+    },
+    {
+     "who": "紅血球",
+     "tag": "happy",
+     "text": "我也可以慢一點，像在散步囉！",
+     "en": "And I can slow down, like I'm out for a stroll!"
+    },
+    {
+     "who": "小卉",
+     "tag": "happy",
+     "text": "心臟、紅血球，謝謝你們！",
+     "en": "Thank you, Heart! Thank you, Red Blood Cell!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，把耳朵貼在家人的胸口，聽一聽吧！",
+     "en": "Now you try! Put your ear on the chest of someone in your family and listen!"
+    }
+   ]
+  }
+ ]
+}
