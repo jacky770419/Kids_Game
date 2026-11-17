@@ -1,0 +1,265 @@
+{
+ "id": "wen-yanbo",
+ "title": "文彥博灌水取球",
+ "title_en": "The Ball in the Tree Hole",
+ "size": "短",
+ "roles": {
+  "文彥博": "很久以前中國的男孩，七八歲，愛動腦、不慌張，聲音沉穩，說話不急不慢，想到辦法時眼睛一亮，一點也不炫耀。",
+  "阿勇": "文彥博的朋友，急性子的小男孩，聲音又亮又快，愛搶第一，踢球很用力，很好笑。",
+  "小蘭": "文彥博的朋友，愛笑的小女孩，聲音清脆，看得很仔細，喜歡把事情說清楚。"
+ },
+ "cast": {
+  "文彥博": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "阿勇": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小蘭": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "彥",
+   "where": "書名『文彥博』，第1頁『文彥博』，第3頁『彥博看著』『彥博想到』，第8頁『彥博，』",
+   "read": "yàn"
+  },
+  {
+   "char": "倒",
+   "where": "第4頁『倒水』『倒進』『所以倒水』，第5頁『倒進去』，第6頁『倒一桶』，第7頁『倒水』",
+   "read": "dào"
+  },
+  {
+   "char": "為",
+   "where": "第4頁『因為球會浮』，第5頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "喝",
+   "where": "第3頁『烏鴉喝水』",
+   "read": "hē"
+  },
+  {
+   "char": "什",
+   "where": "第3頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『石頭會壓住』『球會浮』『會浮的球會怎麼樣』，第8頁『球會浮』",
+   "read": "huì"
+  },
+  {
+   "char": "窄",
+   "where": "第2頁『又深又窄』",
+   "read": "zhǎi"
+  },
+  {
+   "char": "和",
+   "where": "第1頁『他和阿勇』",
+   "read": "hé"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，一座老房子的院子，晴朗的下午：灰瓦白牆，地上鋪著石板。院子角落有一棵樹幹很粗的老槐樹；院子另一邊的牆邊有一個矮矮的陶土水缸（只到孩子的腰，蓋著一半木頭蓋子，旁邊放著一個小木桶和一支長柄木勺）；院子中間的地上放著一個裝了水的大木盆。",
+   "act": "三個孩子第一次出場。文彥博：七八歲男孩，圓臉、濃眉毛，黑頭髮在頭頂綁一個小圓髻、繫深藍色髮帶，穿米白色古代短上衣、深藍色背心和深藍色褲子、黑布鞋。阿勇：個子最高、瘦瘦的男孩，頭髮在頭頂綁成一束，穿橘紅色短衣、咖啡色褲子，袖子捲起來。小蘭：六七歲女孩，頭上兩個小圓髻綁淺綠色頭繩，穿鵝黃色短上衣、淺綠色長裙。一顆紅色的小皮球（比柚子小一點）浮在大木盆的水面上，一半露在水面外；文彥博蹲在木盆旁邊，歪著頭看那顆浮著的球；阿勇伸手要去撈，小蘭在旁邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，有個愛動腦的男孩，叫文彥博。",
+     "en": "Long ago in China, there lived a boy named Wen Yanbo, who loved to think."
+    },
+    {
+     "who": "旁白",
+     "text": "他和阿勇、小蘭在院子踢球。",
+     "en": "He was playing ball in the yard with his friends, Yong and Lan."
+    },
+    {
+     "who": "旁白",
+     "text": "球滾進水盆，浮在水面上。",
+     "en": "The ball rolled into a tub of water and floated on top."
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，角落的老槐樹前面。老樹：院子角落一棵樹幹很粗的老槐樹，樹幹在孩子胸口那麼高的地方分成兩枝，分叉的地方有一個開口朝上的樹洞，洞口比球大一點，直直往下，比孩子的整隻手臂還深；孩子站在地上就看得到洞口，不用爬樹。",
+   "act": "左格：阿勇抬起一隻腳，用力把紅色小皮球踢出去，一臉得意。右格：紅色小皮球畫一條弧線，掉進老槐樹分叉地方那個朝上的樹洞裡，洞口冒出「咚」的小星星。旁邊畫一個樹幹的剖面小圖：樹洞像一個又深又窄的杯子，四周和底部都是厚厚的、完整的木頭，沒有裂縫，紅球在最底下。三個孩子站在地上，張大嘴巴看著樹洞。",
+   "lines": [
+    {
+     "who": "阿勇",
+     "tag": "excited",
+     "text": "看我阿勇的，用力踢！",
+     "en": "Watch me! Here comes Yong's super kick!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！球掉進老樹的樹洞裡。",
+     "en": "Thump! The ball dropped into a hole in the old tree."
+    },
+    {
+     "who": "旁白",
+     "text": "樹洞又深又窄，像一個不漏水的大木杯。",
+     "en": "The hole was deep and narrow, like a big wooden cup that could hold water."
+    }
+   ]
+  },
+  {
+   "scene": "老槐樹前面，看得到院子中間那個裝了水的大木盆。",
+   "act": "畫成三小格。第一格：阿勇兩腳站在地上，把手伸進樹洞，只伸到手肘，皺著眉頭搖頭；旁邊的樹幹剖面小圖裡，他的手指離洞底的紅球還很遠。第二格：小蘭兩腳站在地上，拿一根長樹枝伸進樹洞；剖面小圖裡，樹枝碰到了紅球，可是圓圓的球一碰就滑開。第三格：文彥博站在後面，一手摸著下巴，轉頭看著院子中間的大木盆；他頭上一個想像泡泡：一隻黑色的小烏鴉把小石頭丟進透明的水瓶，瓶子裡的水變高。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿勇伸手進去，碰不到。",
+     "en": "Yong reached in, but he couldn't touch the ball."
+    },
+    {
+     "who": "旁白",
+     "text": "小蘭用樹枝勾，球太圓，勾不起來。",
+     "en": "Lan tried to hook it with a stick, but the ball was too round."
+    },
+    {
+     "who": "旁白",
+     "text": "彥博看著水盆，想起烏鴉喝水的故事。",
+     "en": "Yanbo looked at the tub of water and remembered the story of the crow and the pitcher."
+    },
+    {
+     "who": "旁白",
+     "text": "烏鴉丟石頭，讓水變高。",
+     "en": "The crow dropped in stones to make the water rise."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，彥博想到什麼辦法呢？",
+     "en": "Can you guess what idea Yanbo had?"
+    }
+   ]
+  },
+  {
+   "scene": "老槐樹前面。",
+   "act": "文彥博眼睛發亮，一手指著樹洞，一手指著院子牆邊的矮水缸；他頭上一個想像泡泡：幾顆小石頭掉進樹洞，壓在紅球上面，泡泡上畫一個大叉叉。阿勇手裡拿著一顆小石頭，歪著頭一臉疑問。小蘭已經跑到矮水缸旁邊，兩腳站在地上，用長柄木勺把水舀進小木桶裡（水缸只到她的腰，她沒有探頭進去）。",
+   "lines": [
+    {
+     "who": "文彥博",
+     "tag": "excited",
+     "text": "有了！我們倒水進去！",
+     "en": "I've got it! Let's pour water in!"
+    },
+    {
+     "who": "阿勇",
+     "tag": "surprised",
+     "text": "倒水？不丟石頭嗎？",
+     "en": "Water? Not stones, like the crow?"
+    },
+    {
+     "who": "文彥博",
+     "text": "石頭會壓住球。因為球會浮，所以倒水。",
+     "en": "Stones would land on the ball and hold it down. The ball floats, so we'll use water."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，水倒進樹洞，會浮的球會怎麼樣呢？",
+     "en": "Remember, the ball floats. Can you guess what would happen when they poured water into the hole?"
+    }
+   ]
+  },
+  {
+   "scene": "老槐樹前面。",
+   "act": "文彥博兩腳站在地上，兩手提著小木桶，把水倒進朝上的樹洞。旁邊的樹幹剖面小圖：洞底有了一點水，紅球浮在水面上，比剛才高了一點，可是離洞口還很遠。阿勇踮著腳往洞裡看，急得皺眉頭；小蘭在旁邊看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一桶水倒進去，球浮起來了！",
+     "en": "In went one bucket of water, and the ball floated up!"
+    },
+    {
+     "who": "文彥博",
+     "text": "因為球浮在水上，水變高，球就跟著變高。",
+     "en": "Because the ball floats on the water, when the water rises, the ball rises too."
+    },
+    {
+     "who": "阿勇",
+     "tag": "worried",
+     "text": "可是離洞口好遠！",
+     "en": "But it's still far from the top!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，從牆邊的矮水缸到老槐樹之間。",
+   "act": "三個孩子輪流提水：阿勇提著小木桶跑向老槐樹，水灑出來一點；小蘭在矮水缸旁邊用長柄木勺舀水，等著下一趟；文彥博站在樹前，把水倒進樹洞。畫面上方三個並排的樹幹剖面小圖：水面一格比一格高，紅球也一格比一格高，第三格的紅球已經快到洞口。小蘭踮著腳，指著洞口笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一桶不夠。三個人輪流去水缸提水。",
+     "en": "One bucket was not enough. So the three friends took turns fetching water from the big water jar."
+    },
+    {
+     "who": "旁白",
+     "text": "倒一桶，球高一點。再倒一桶，球又高一點。",
+     "en": "One more bucket, and the ball rose a little. Another bucket, and it rose a little more."
+    },
+    {
+     "who": "小蘭",
+     "tag": "excited",
+     "text": "我看到球了！",
+     "en": "I can see the ball!"
+    }
+   ]
+  },
+  {
+   "scene": "老槐樹前面，樹洞的水滿到洞口。",
+   "act": "樹洞裡的水滿到洞口，紅色小皮球就浮在洞口的水面上。阿勇兩腳站在地上，兩手把濕濕的球捧起來，笑得好開心。小蘭一手比著小鳥嘴巴的樣子，一手比著往上升的樣子，在說明；文彥博提著空的小木桶，笑著點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "水滿到洞口，球也浮到洞口。",
+     "en": "At last the water reached the top of the hole, and so did the ball."
+    },
+    {
+     "who": "阿勇",
+     "tag": "happy",
+     "text": "拿到了！",
+     "en": "Got it!"
+    },
+    {
+     "who": "小蘭",
+     "text": "烏鴉丟石頭，讓水變高。我們倒水，讓球變高！",
+     "en": "The crow dropped stones to make the water rise. We poured water to make the ball rise!"
+    }
+   ]
+  },
+  {
+   "scene": "院子中間，太陽要下山了，天空是橘色的。地上是那個裝了水的大木盆。",
+   "act": "阿勇搭著文彥博的肩膀發問；文彥博不好意思地笑，一手指著大木盆。下一格：阿勇很小心地踢了一腳，紅色小皮球滾呀滾，又滾進大木盆裡，浮在水面上；三個孩子指著球哈哈大笑。",
+   "lines": [
+    {
+     "who": "阿勇",
+     "text": "彥博，你怎麼想到的？",
+     "en": "Yanbo, how did you think of that?"
+    },
+    {
+     "who": "文彥博",
+     "tag": "gentle",
+     "text": "我看到球會浮，才想到的。",
+     "en": "I saw the ball float in the tub. That gave me the idea."
+    },
+    {
+     "who": "阿勇",
+     "tag": "happy",
+     "text": "這次，我踢小力一點！",
+     "en": "This time, I'll kick more gently!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！球又滾進水盆浮起來，大家都笑了。",
+     "en": "Thump! The ball rolled right back into the tub and floated on top. Everyone laughed."
+    }
+   ]
+  }
+ ]
+}

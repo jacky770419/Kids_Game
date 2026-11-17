@@ -1,0 +1,388 @@
+{
+ "id": "bear-detective",
+ "title": "小熊偵探：誰吃了蜂蜜蛋糕？",
+ "title_en": "Detective Little Bear",
+ "size": "中",
+ "roles": {
+  "小熊": "就是《小熊學分享》《小熊的生日》裡的小熊：小男孩的聲音，活潑、愛撒嬌；戴上偵探帽以後一本正經、很認真，找到線索時很興奮，跟朋友說謝謝時很真心，最後笑得很開心。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑。",
+  "小兔": "就是《小熊學分享》《小熊上幼兒園》裡的小兔：小熊的好朋友，小女生，聲音又小又甜、活潑熱情；說話很快、急急忙忙，愛把話連說兩次（「你看，你看！」）。",
+  "小青蛙": "就是《小熊生氣了》《小熊的生日》裡的小青蛙：小熊的好朋友，小男生，聲音又小又可愛；說話比小兔慢、一跳一跳的，每次開口都先說「跳，跳！」。",
+  "熊爸爸": "高大溫和的熊爸爸，中年男聲，低沉溫暖；被找到時很不好意思、老老實實道歉，送禮物時開心又得意。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小青蛙": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "熊爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "為",
+   "where": "第6、8、10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『沒有腳』，第11頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "乾",
+   "where": "第5頁『餐桌是乾的』『地板也是乾的』，第6頁『這裡是乾的』",
+   "read": "gān"
+  },
+  {
+   "char": "劃",
+   "where": "第6頁『從名單上劃掉』，第8頁『把妳也劃掉』，第9頁『都劃掉了』",
+   "read": "huà"
+  },
+  {
+   "char": "當",
+   "where": "第6頁『當小幫手』",
+   "read": "dāng"
+  },
+  {
+   "char": "少",
+   "where": "第2頁『少了一大塊』",
+   "read": "shǎo"
+  },
+  {
+   "char": "哪",
+   "where": "第1頁『走到哪裡，滴到哪裡』，第5頁『跳到哪裡』『滴到哪裡』，第6頁『走到哪裡』",
+   "read": "nǎ"
+  },
+  {
+   "char": "應",
+   "where": "第11頁『應該先問的』",
+   "read": "yīng"
+  },
+  {
+   "char": "誰",
+   "where": "書名『誰吃了』，第5、7頁『不是誰』，第9頁『剩下誰』『是誰吃的』，第12頁『是誰吃的』",
+   "read": "shéi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "白天，小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花。小兔是白色的小兔，長耳朵內側是粉紅色，穿黃色吊帶裙，頭上夾著一個紅色小髮夾。小青蛙是嫩綠色的小青蛙，淡黃色肚子、圓圓的大眼睛、粉紅色臉頰。熊媽媽把一個完整的圓形蜂蜜蛋糕（金黃色、淋著蜂蜜，放在白色盤子裡）端到餐桌上。小兔站在客廳那一邊的門口揮手。小青蛙剛從大門跳進來，全身都是水，身上一滴一滴往下滴，他跳過的地板上留下一排小水漬；小青蛙兩手舉高，笑得很開心。小熊站在餐桌旁邊，聞著蛋糕的香味。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "熊媽媽烤了蜂蜜蛋糕，放在餐桌上。",
+     "en": "Mama Bear bakes a honey cake and leaves it on the table."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔和小青蛙來玩了。",
+     "en": "Little Bunny and Little Frog come over to play."
+    },
+    {
+     "who": "旁白",
+     "text": "小青蛙剛從池塘上來，全身是水，走到哪裡，滴到哪裡。",
+     "en": "Little Frog is fresh out of the pond. He is wet all over, and he drips wherever he goes."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "happy",
+     "text": "跳，跳！我來了！",
+     "en": "Hop, hop! Here I am!"
+    }
+   ]
+  },
+  {
+   "scene": "畫面分兩格。左格：小熊家的院子，晴天，兩棵樹中間拉著一條晾衣繩，掛著白色床單和一件黃色、印著小星星的小睡衣；從院子的窗戶看得到屋子裡。右格：小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "左格：熊媽媽和小熊一起晾衣服，小熊踮著腳遞衣夾給媽媽，兩個一直站在一起；從窗戶看進去，客廳綠色地毯上小兔和小青蛙在玩彩色積木，走廊底書房的門關著。右格：熊媽媽抱著空的洗衣籃，和小熊回到餐桌旁邊；餐桌上的白色盤子裡是一個圓形、金黃色、淋著蜂蜜的蜂蜜蛋糕，少了一大塊（大約四分之一），缺口邊有一點蜂蜜流下來。小熊張大嘴巴，一手指著蛋糕的缺口；熊媽媽也睜大眼睛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "朋友在客廳玩，熊爸爸在書房裡忙。",
+     "en": "The friends play in the living room. Papa Bear is busy in his study."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊和媽媽一直在院子晾衣服，回來一看。",
+     "en": "Little Bear and Mama are out in the yard hanging laundry the whole time. Then they come back in."
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "哎呀！蛋糕少了一大塊！",
+     "en": "Oh no! A big piece of cake is gone!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "小熊從椅子上拿起一頂偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽）戴到頭上，一手叉腰、一手指著蛋糕，一臉得意；他頭上有一個想像泡泡：缺掉的那一塊蛋糕長出兩隻小腳，自己跑出門。餐桌上的白色盤子裡是一個圓形、金黃色、淋著蜂蜜的蜂蜜蛋糕，少了一大塊（大約四分之一），缺口邊有一點蜂蜜流下來。熊媽媽站在旁邊，一手遮著嘴巴笑，另一手指著蛋糕的下面（沒有腳）。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊戴上偵探帽。",
+     "en": "Little Bear puts on his detective hat."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "我知道了，蛋糕自己跑掉了！",
+     "en": "I know! The cake ran away all by itself!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "laughing",
+     "text": "蛋糕沒有腳呀。偵探不亂猜，要找線索，看誰留下什麼。",
+     "en": "Cakes don't have feet! A detective doesn't guess. A detective looks for clues, to see who left what behind."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），坐在餐桌旁的椅子上，拿著一本小本子和一枝鉛筆。小本子上畫著三個圓圈大頭像，從上到下：小兔（白色、長耳朵）、小青蛙（綠色、大眼睛）、熊爸爸（深棕色、藍色格子衣領），三個都還沒被劃掉。小熊一手用鉛筆指著名單，一手指指自己和媽媽，再指窗外院子的晾衣繩。熊媽媽站在旁邊點頭微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊畫了一張名單。",
+     "en": "Little Bear draws up a list."
+    },
+    {
+     "who": "小熊",
+     "text": "媽媽和我一直在院子，不是我們。",
+     "en": "Mama and I were in the yard the whole time, so it wasn't us."
+    },
+    {
+     "who": "小熊",
+     "text": "可能吃蛋糕的有三個：小兔，小青蛙，和爸爸。",
+     "en": "My list has three who could have eaten it: Little Bunny, Little Frog, and Papa."
+    }
+   ]
+  },
+  {
+   "scene": "畫面分兩格。左格：小熊家的客廳，綠色地毯，地上有彩色積木。右格：小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "左格：小青蛙在客廳跳來跳去，身上還在滴水，他跳過的每一個地方都有一小攤水，連成一排；小兔坐在地毯上疊積木。右格：小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），蹲在餐桌旁邊，鼻子快貼到地板，一手摸桌面、一手摸地板。餐桌的桌面和桌子四周的木頭地板完全是乾的，一滴水、一個水漬都沒有。餐桌上的白色盤子裡是一個圓形、金黃色、淋著蜂蜜的蜂蜜蛋糕，少了一大塊（大約四分之一），缺口邊有一點蜂蜜流下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "客廳裡，小青蛙跳到哪裡，水就滴到哪裡。",
+     "en": "In the living room, wherever Little Frog hops, water drips."
+    },
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "餐桌是乾的，這裡的地板也是乾的！",
+     "en": "The table is dry. The floor here is dry too!"
+    },
+    {
+     "who": "旁白",
+     "text": "這樣，可以先知道不是誰呢？",
+     "en": "So, who do we know didn't do it?"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），站在餐桌旁邊，用鉛筆在小本子上把小青蛙的頭像劃掉（一條斜線），笑著對小青蛙點頭道謝。小青蛙剛從客廳跳到餐桌旁邊，他一路跳過來的地板上多了一排新的小水漬，腳邊也有一小攤水；小青蛙指著自己腳邊的水，哈哈笑。餐桌下面別的地板還是乾的。小本子上：小青蛙劃掉了，小兔和熊爸爸還在。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "因為小青蛙走到哪裡都有水，這裡是乾的，所以不是他！",
+     "en": "Because Little Frog leaves water wherever he goes, and it is dry here, it wasn't him!"
+    },
+    {
+     "who": "小青蛙",
+     "tag": "laughing",
+     "text": "跳，跳！我一來，地板就有水了！",
+     "en": "Hop, hop! As soon as I come over, the floor gets wet!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "謝謝你！把你從名單上劃掉，你當小幫手！",
+     "en": "Thank you! I'll cross you off my list. Now you're my helper!"
+    },
+    {
+     "who": "旁白",
+     "text": "剩下小兔和爸爸。",
+     "en": "That leaves Little Bunny and Papa."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。這一頁是餐桌下面的近景。",
+   "act": "餐桌下面的木頭地板上有一個沾了蜂蜜、金黃色發亮的大腳印（大熊的腳掌形狀）。小青蛙蹲在腳印旁邊，一手指著腳印。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），把自己的一隻腳放在腳印上面比：腳印比小熊的腳大一圈，四周都多出來。小兔從客廳走過來，站在旁邊，也伸出一隻腳放在腳印旁邊：小兔的腳很小，大約只有腳印的三分之一。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小青蛙在餐桌下找到一個蜂蜜腳印。",
+     "en": "Under the table, Little Frog finds a footprint with honey on it."
+    },
+    {
+     "who": "旁白",
+     "text": "腳印比小熊的腳大。",
+     "en": "It is bigger than Little Bear's foot."
+    },
+    {
+     "who": "小熊",
+     "text": "小兔，請妳來比一比。",
+     "en": "Little Bunny, will you try yours, please?"
+    },
+    {
+     "who": "旁白",
+     "text": "小兔的腳好小，腳印好大。這樣，又不是誰呢？",
+     "en": "Little Bunny's foot is so small, and the footprint is so big. So, who else didn't do it?"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。",
+   "act": "小兔站在蜂蜜腳印旁邊，抬起一隻小腳給大家看，另一手指著自己，說得很快、耳朵豎得直直的。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），用鉛筆在小本子上把小兔的頭像也劃掉，笑著跟小兔道謝。小本子上：小青蛙、小兔都劃掉了，只有熊爸爸的頭像還在。小青蛙蹲在旁邊拍手，沒有說話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "因為腳印很大，小兔的腳很小，所以不是小兔。",
+     "en": "Because the footprint is big and Little Bunny's foot is small, it wasn't Little Bunny."
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "對呀！我的腳這麼小！",
+     "en": "That's right! My feet are tiny!"
+    },
+    {
+     "who": "小熊",
+     "text": "謝謝小兔！把妳也劃掉，妳也是小幫手！",
+     "en": "Thank you, Little Bunny! I'll cross you off too. You're my helper too!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳和走廊：木頭地板，從餐桌旁邊到走廊底書房的咖啡色木門。書房的門關著。",
+   "act": "木頭地板上有一排金黃色的蜂蜜小圓點，從餐桌下面的腳印旁邊開始，一滴、一滴，沿著走廊一直排到書房的門口，最後一滴就在門縫前面。小兔跑在最前面，彎著腰、一手指著地上的蜂蜜，回頭叫大家。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），拿著小本子跟在後面，眼睛順著蜂蜜看向書房的門。小青蛙跟在最後面，沒有說話。小本子上只剩熊爸爸的頭像沒被劃掉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔也找到線索了。",
+     "en": "Then Little Bunny finds a clue too."
+    },
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "你看，你看！地上有蜂蜜！",
+     "en": "Look, look! Honey on the floor!"
+    },
+    {
+     "who": "旁白",
+     "text": "蜂蜜一滴，一滴，滴到書房門口。",
+     "en": "Drip, drip, drip. The honey goes all the way to the study door."
+    },
+    {
+     "who": "旁白",
+     "text": "小青蛙和小兔都劃掉了，名單上剩下誰？你猜，是誰吃的？",
+     "en": "Little Frog and Little Bunny are both crossed off. Who is left on the list? Can you guess who ate it?"
+    }
+   ]
+  },
+  {
+   "scene": "走廊底，書房的咖啡色木門打開了；門裡看得到書房的一角：一張木頭書桌，桌上有一些木屑、一張砂紙，和一個只剩幾粒蛋糕屑、沾著蜂蜜的小盤子。",
+   "act": "熊爸爸是比熊媽媽還要高大的深棕色公熊，穿藍色格子襯衫。熊爸爸站在打開的門口，嘴巴旁邊沾著金黃色的蜂蜜，一隻腳的腳底也沾著蜂蜜；他一手抓著後腦勺，耳朵垂下來，很不好意思地笑，另一隻手放在身體後面（手裡的東西還看不到）。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），站在門前，一手舉著小本子（只剩熊爸爸的頭像沒劃掉），一手指著地上滴到門口的蜂蜜。小兔和小青蛙站在小熊後面探頭看，都沒有說話。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "因為名單上剩下爸爸，蜂蜜又滴到書房，所以是爸爸！",
+     "en": "Because Papa is the one left on my list, and the honey goes to the study, it's Papa!"
+    },
+    {
+     "who": "旁白",
+     "text": "叩，叩，叩！書房的門開了。",
+     "en": "Knock, knock, knock! The study door opens."
+    },
+    {
+     "who": "旁白",
+     "text": "熊爸爸的嘴邊有蜂蜜。",
+     "en": "There is honey around Papa Bear's mouth."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "shy",
+     "text": "哎呀，被偵探找到了。",
+     "en": "Oh my. The detective found me."
+    }
+   ]
+  },
+  {
+   "scene": "書房門口，走廊的木頭地板；門裡是書房的木頭書桌，桌上有木屑和砂紙。",
+   "act": "熊爸爸蹲下來，跟小熊一樣高，嘴邊還沾著蜂蜜；他先低頭道歉，再從身體後面拿出一個放大鏡，雙手遞給小熊：圓形的鏡片，淺色木頭做的邊框和握把，握把上刻著一個小小的熊掌印。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），先伸出一根手指、笑著提醒爸爸，再睜大眼睛看著放大鏡。熊媽媽從餐廳走過來，站在後面笑。小兔和小青蛙站在旁邊，都沒有說話。",
+   "lines": [
+    {
+     "who": "熊爸爸",
+     "tag": "shy",
+     "text": "蛋糕太香，我忍不住吃了一塊。應該先問的，對不起。",
+     "en": "The cake smelled so good, I just had to eat a piece. I should have asked first. I'm sorry."
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "沒關係！下次要先問喔！",
+     "en": "That's okay! Just ask first next time!"
+    },
+    {
+     "who": "旁白",
+     "text": "原來，爸爸在書房做禮物。",
+     "en": "So that's it! Papa was in the study making a present."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "happy",
+     "text": "放大鏡，送給小熊偵探！",
+     "en": "A magnifying glass, for Detective Little Bear!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。餐廳的一邊接著客廳（鋪綠色地毯），另一邊有一條短短的走廊，走廊底是書房的咖啡色木門；從餐桌到書房不會經過客廳。餐桌上是剩下的蜂蜜蛋糕，切成一塊一塊，每個位子前面有一個小盤子。",
+   "act": "大家圍著餐桌吃蛋糕：熊媽媽拿著蛋糕鏟把蛋糕分到小盤子裡，熊爸爸坐在旁邊（嘴邊的蜂蜜擦乾淨了）。小兔戴著那頂咖啡色格子的偵探帽，帽子太大、蓋到她的長耳朵根，她笑得很開心，沒有說話。小青蛙坐在椅子上，兩手拿著木頭放大鏡，對準小熊的臉；放大鏡裡是小熊放大的嘴巴，嘴邊沾著一圈金黃色的蜂蜜。小熊沒戴帽子，手裡拿著咬了一口的蛋糕，哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家一起吃蛋糕。",
+     "en": "Everyone eats the cake together."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊把偵探帽送給小兔，放大鏡借給小青蛙。",
+     "en": "Little Bear gives his detective hat to Little Bunny and lends the magnifying glass to Little Frog."
+    },
+    {
+     "who": "小青蛙",
+     "tag": "excited",
+     "text": "跳，跳！小熊的嘴邊也有蜂蜜！",
+     "en": "Hop, hop! There's honey by Little Bear's mouth too!"
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "這次，大家都看到是誰吃的啦！",
+     "en": "This time, everybody saw who ate it!"
+    }
+   ]
+  }
+ ]
+}

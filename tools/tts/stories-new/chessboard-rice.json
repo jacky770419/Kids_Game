@@ -1,0 +1,390 @@
+{
+ "id": "chessboard-rice",
+ "title": "棋盤上的米",
+ "title_en": "Rice on the Chessboard",
+ "size": "中",
+ "roles": {
+  "國王": "很久以前印度的一位國王（不是阿克巴國王，這本不取名），年紀大的男聲，愛玩遊戲、愛笑、笑聲很大，說到做到；米不夠時老實承認，不生氣。",
+  "老爺爺": "發明棋的聰明老爺爺，說話慢、帶著笑，像個溫和的智者；不是要占便宜，是想跟國王玩一個遊戲。",
+  "大臣": "管倉庫的大臣，中年男聲，很老實，放米時一格一格認真報數，越搬越慌、越搬越喘，很好笑，最後也跟著笑。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "老爺爺": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大臣": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "為",
+   "where": "第5、7、10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "第2、12頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第7頁『沒關係』，第11頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第9頁『怎麼會』，第12頁『會變成』",
+   "read": "huì"
+  },
+  {
+   "char": "車",
+   "where": "第8、10頁『一車』，第8、10頁『兩車』",
+   "read": "chē"
+  },
+  {
+   "char": "把",
+   "where": "第5、6頁『一小把』，第5、12頁『把米』",
+   "read": "bǎ"
+  },
+  {
+   "char": "少",
+   "where": "第3頁『太少』",
+   "read": "shǎo"
+  },
+  {
+   "char": "幾",
+   "where": "第4頁『幾粒』",
+   "read": "jǐ"
+  },
+  {
+   "char": "分",
+   "where": "第11、12頁『分給』",
+   "read": "fēn"
+  },
+  {
+   "char": "肚",
+   "where": "第11頁『肚子』",
+   "read": "dù"
+  },
+  {
+   "char": "倍",
+   "where": "第3、7、10、12頁『加倍』",
+   "read": "bèi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的印度王宮大廳：米黃色的石頭柱子、尖拱形的窗戶，窗外看得到棕櫚樹；地上鋪著紅色花紋的大地毯，地毯中間有一張矮矮的方桌，兩邊各放一個軟墊。",
+   "act": "國王第一次出場：五十多歲，高個子、圓肚子，一把灰黑色的大鬍子、兩端往上翹，戴天藍色頭巾、頭巾前面別一根白羽毛和一顆綠寶石，穿橘黃色金邊長袍、尖頭鞋。老爺爺第一次出場：瘦瘦的，白色長鬍子垂到胸口，戴白色小頭巾，穿米白色粗布長袍、皮涼鞋，肩上掛一個布包，眼睛笑得彎彎的。老爺爺把棋盤放在矮桌上，國王彎腰湊過去看，眼睛發亮。棋盤：一塊正方形的厚木板，上面畫著深咖啡色和淺木頭色相間的小方格，橫的一排八格、一共八排，總共六十四格。棋盤上擺著木頭刻的小象、小馬、小兵。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，印度有一位愛玩遊戲的國王。",
+     "en": "Long ago in India, there lived a king who loved to play games."
+    },
+    {
+     "who": "旁白",
+     "text": "有位老爺爺帶來一個新遊戲，叫做棋。",
+     "en": "One day, a wise old man brought him a brand-new board game."
+    },
+    {
+     "who": "旁白",
+     "text": "棋盤上畫滿小格子，一排八格，一共八排。",
+     "en": "The board was covered with little squares. Eight squares in a row, and eight rows in all."
+    }
+   ]
+  },
+  {
+   "scene": "同一個王宮大廳，矮桌和棋盤旁邊。",
+   "act": "國王和老爺爺面對面坐在軟墊上，剛下完棋，棋子已經收到桌子旁邊的小木盒裡，棋盤上是空的。國王一手拿著一個木頭小馬棋子，仰頭大笑。老爺爺笑著，一隻手指著棋盤最下面一排、最左邊角落的那一格（這就是「第一格」），另一隻手的手指捏著一粒白色的米。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王玩了又玩，好開心。",
+     "en": "The King played again and again. He loved it!"
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "太好玩了！你想要什麼，我都送你！",
+     "en": "What a wonderful game! Ask for anything, and it's yours!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "我想跟您玩放米的遊戲。",
+     "en": "I'd like to play a little rice game with you."
+    },
+    {
+     "who": "老爺爺",
+     "text": "第一格，請放一粒米。",
+     "en": "On the first square, please put one grain of rice."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，矮桌和空的棋盤旁邊。",
+   "act": "老爺爺用手指從第一格往右，一格一格點過去，慢慢說明；他頭上一個想像泡泡：第一格一粒米，第二格兩粒米，中間畫一個「加」的記號。國王一手拍著自己的圓肚子，仰頭哈哈大笑，另一手伸出一根手指比「一」。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "text": "後面每一格，都放跟前一格一樣多，再加一樣多。",
+     "en": "On every square after that, put as many as the square before, and then that many again."
+    },
+    {
+     "who": "老爺爺",
+     "text": "這就叫加倍。",
+     "en": "That's called doubling."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！一粒米？太少了！",
+     "en": "Ha! One grain of rice? That's hardly anything!"
+    },
+    {
+     "who": "國王",
+     "text": "好，我說到做到！",
+     "en": "All right. A king keeps his word!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，矮桌旁邊的地毯上放著一個小布米袋，大小差不多像一顆小西瓜，袋口打開，看得到白色的米。",
+   "act": "大臣第一次出場：矮矮胖胖，圓臉、沒有鬍子，戴一頂很高的綠色頭巾，穿綠色長袍，腰上掛著一大串倉庫的鑰匙。他跪坐在棋盤前面，用兩根手指很認真地一粒一粒放米。棋盤最下面、最靠近他的那一排，從左邊算起：第一格一粒米，第二格兩粒米，第三格四粒米，第四格還是空的，他的手正懸在第四格上面。國王和老爺爺坐在兩邊看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "管倉庫的大臣提來一袋米。",
+     "en": "The minister who looked after the storehouse brought in a bag of rice."
+    },
+    {
+     "who": "大臣",
+     "text": "第一格，一粒。",
+     "en": "First square, one grain."
+    },
+    {
+     "who": "大臣",
+     "text": "第二格，一粒再加一粒，兩粒。",
+     "en": "Second square, one and one more. Two grains."
+    },
+    {
+     "who": "大臣",
+     "text": "第三格，兩粒再加兩粒，四粒。",
+     "en": "Third square, two and two more. Four grains."
+    },
+    {
+     "who": "旁白",
+     "text": "一粒、兩粒、四粒，每格都加倍。你猜，第四格要放幾粒呢？",
+     "en": "One, two, four. Every square doubles. Can you guess how many went on the fourth?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，棋盤的特寫。",
+   "act": "棋盤最下面、最靠近大臣的第一排，八格都放了米，從左到右越來越多：一粒、兩粒、四粒、八粒、十六粒，第六格三十二粒、第七格六十四粒、第八格一百二十八粒（畫成一堆比一堆大的小米堆，第八格的小米堆大約一個瓶蓋那麼大）。其他七排都是空的。大臣攤開一隻手掌，手心比出「一小把」的樣子，旁邊的小布米袋看起來還是滿的。",
+   "lines": [
+    {
+     "who": "大臣",
+     "text": "因為四粒再加四粒，所以第四格，八粒。",
+     "en": "Four and four more makes eight. So the fourth square gets eight grains."
+    },
+    {
+     "who": "大臣",
+     "text": "第五格，八粒再加八粒，十六粒。",
+     "en": "Fifth square, eight and eight more. Sixteen grains."
+    },
+    {
+     "who": "旁白",
+     "text": "第一排八格都放好了，才用掉一小把米。",
+     "en": "Soon all eight squares in the first row were done. That took just one small handful of rice."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，矮桌旁邊。棋盤第一排八格放了米，後面七排是空的；旁邊的米袋幾乎還是滿的。",
+   "act": "國王笑到往後仰，一手指著幾乎還是滿的米袋。老爺爺摸著白鬍子微笑，另一隻手指著棋盤後面空著的七排。大臣擦擦額頭，鬆了一口氣的樣子。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！才一小把！一袋米一定夠！",
+     "en": "Ha! Only a handful! One bag will be plenty!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "別急，才放完一排呢。",
+     "en": "Not so fast. That was only one row."
+    },
+    {
+     "who": "旁白",
+     "text": "棋盤有八排。你猜，這一袋米，夠不夠放滿八排呢？",
+     "en": "The board had eight rows. Do you think one bag of rice was enough to fill all eight?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，矮桌旁邊。棋盤的第一排和第二排都放了米：第二排的每一格是一堆比一堆高的米堆，最後一格的米堆已經比格子大，滿到旁邊的桌面上。",
+   "act": "大臣把小布米袋整個倒過來，用力抖，只掉出最後兩三粒米，袋子扁扁的；他瞪大眼睛，嘴巴張成圓形。國王一點也不在意，笑著把手往門外一揮。老爺爺安靜地微笑。棋盤後面還有六排是空的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "不夠！因為每一格都加倍，越後面，米越多。",
+     "en": "No, it wasn't! Because every square doubled, the piles got bigger and bigger."
+    },
+    {
+     "who": "旁白",
+     "text": "第二排才放完，一整袋就用光了。",
+     "en": "By the end of the second row, the whole bag was used up."
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "咦？全用光了？",
+     "en": "What? It's all gone?"
+    },
+    {
+     "who": "國王",
+     "text": "沒關係，去倉庫搬！",
+     "en": "Never mind. Fetch more from the storehouse!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳。矮桌和棋盤已經被白色的米蓋住一半，矮桌旁邊的地毯上，米堆成一座一座的小山，一座比一座高；大廳門口停著好幾輛木頭手推車，車上都是米袋。",
+   "act": "大臣推著一輛裝滿米袋的木頭手推車衝進來，滿頭大汗，高高的綠色頭巾歪到一邊，腰上的鑰匙甩來甩去；他一手指著眼前的米山，一手伸出兩根手指，一臉慌張。國王不笑了，摸著鬍子，歪著頭看米山。老爺爺坐在軟墊上，還是微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第三排，大臣推來一車又一車的米。",
+     "en": "For the third row, the minister pushed in cart after cart of rice."
+    },
+    {
+     "who": "大臣",
+     "tag": "worried",
+     "text": "這一格，要一車。下一格，就要兩車！",
+     "en": "This square needs one cart. And the next one needs two!"
+    },
+    {
+     "who": "旁白",
+     "text": "米堆成了小山。大臣越搬越慌，頭巾都歪了。",
+     "en": "The rice piled up like little hills. The minister ran faster and faster, until his turban slid sideways."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，整個大廳堆滿了白色的米山，比人還高，矮桌只露出一個角。畫面角落一個小圓框：王宮的倉庫，大門開著，裡面空空的，只剩幾個扁掉的空袋子。",
+   "act": "畫面另一個角落也有一個小圓框：棋盤的小圖，靠下面的四排塗成白色（放過米了），上面四排還是空的，剛好一半。大臣跪坐在地上，兩手攤開，頭巾快掉了，喘著氣報告。國王張大嘴巴，兩手抓著自己的頭巾，一點也笑不出來。老爺爺坐在一旁，安靜地摸著鬍子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第四排放完，棋盤才放了一半。",
+     "en": "At last the fourth row was done. That was only half the board."
+    },
+    {
+     "who": "大臣",
+     "tag": "worried",
+     "text": "不好了！整個倉庫的米，全搬光了！",
+     "en": "Oh dear, oh dear! The whole storehouse is empty!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王笑不出來了。",
+     "en": "The King wasn't laughing anymore."
+    },
+    {
+     "who": "旁白",
+     "text": "第一格才一粒米。你猜，怎麼會變這麼多呢？",
+     "en": "It all started with just one grain. Can you guess how it grew into so much?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，米山前面。",
+   "act": "老爺爺站起來，笑著伸出兩隻手說明；他頭上三個並排的想像泡泡：第一個泡泡，一粒米變成兩粒米；第二個泡泡，一輛米車變成兩輛米車；第三個泡泡，一間倉庫變成兩間倉庫。國王和大臣並排坐在地上，仰頭看著泡泡，兩個人的嘴巴都張得圓圓的。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "因為每一格都加倍呀。",
+     "en": "Because every square doubles."
+    },
+    {
+     "who": "老爺爺",
+     "text": "一粒加倍，才兩粒。一車加倍，就是兩車。",
+     "en": "Double one grain, and you only get two. Double one cart, and you get two carts."
+    },
+    {
+     "who": "老爺爺",
+     "text": "一個倉庫加倍，就要兩個倉庫！",
+     "en": "Double a whole storehouse, and you need two storehouses!"
+    },
+    {
+     "who": "旁白",
+     "text": "所以後面的格子，全國的米都不夠放。",
+     "en": "So for the squares that were left, all the rice in the kingdom would not be enough."
+    }
+   ]
+  },
+  {
+   "scene": "王宮大廳，米山前面。",
+   "act": "國王站起來，一手放在胸口，不好意思地低下頭，老實地說。老爺爺哈哈笑，搖搖手，從布包裡拿出一個小木碗，舀了剛好一碗米，另一隻手指向窗外。窗外的王宮門口，看得到幾個提著空籃子的大人和小孩。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "sad",
+     "text": "我說到做到。可是，我沒有那麼多米。",
+     "en": "A king keeps his word. But I don't have that much rice."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "laughing",
+     "text": "哈，這是遊戲呀。我要一碗米就好。",
+     "en": "Ha, it's only a game. One bowl of rice is all I need."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "其他的，請分給肚子餓的人吧。",
+     "en": "Please share the rest with people who are hungry."
+    }
+   ]
+  },
+  {
+   "scene": "王宮門口的廣場，太陽很大，天空很藍。廣場上排著長長一排大人和小孩，每個人都捧著碗或提著籃子；旁邊停著幾輛裝米的木頭手推車。",
+   "act": "國王拍著肚子哈哈大笑，一手摟著老爺爺的肩膀；老爺爺捧著自己那一小碗米，笑得眼睛彎彎的。大臣推著一輛米車，頭巾還是歪的，先是瞪大眼睛，接著一邊擦汗一邊跟著笑，用木勺把米舀進一個小孩的碗裡。拿到米的大人和小孩都笑得很開心。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！一粒米一直加倍，會變成好多，好多！",
+     "en": "Ha! One grain, doubled again and again, turns into so, so much!"
+    },
+    {
+     "who": "國王",
+     "text": "大臣，把米分給大家！",
+     "en": "Minister, share the rice with everyone!"
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "什麼？又要搬？",
+     "en": "What? Carry it all again?"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了，大臣也笑了。",
+     "en": "Everyone laughed, and so did the minister."
+    }
+   ]
+  }
+ ]
+}

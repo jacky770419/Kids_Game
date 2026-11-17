@@ -1,0 +1,394 @@
+{
+ "id": "huai-bing",
+ "title": "懷丙撈鐵牛",
+ "title_en": "Lifting the Iron Ox",
+ "size": "中",
+ "roles": {
+  "懷丙師父": "很久以前中國一位很會想辦法的師父，說話慢、很沉穩、帶著笑，像個溫和的智者；不談宗教，大家都叫他懷丙師父。",
+  "大官": "管這座城的大官，中年男聲，很關心橋，遇到事情容易著急，看不懂師父的辦法時很驚訝，最後很開心。",
+  "船夫": "力氣很大、嗓門很大的船夫，聲音又粗又低，很豪爽，喊口令很有精神，是小女孩的爸爸。",
+  "小女孩": "船夫的女兒，六歲左右，聲音清脆，在岸邊看、愛問為什麼，看到什麼就大聲說出來。"
+ },
+ "cast": {
+  "懷丙師父": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大官": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "船夫": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "撈",
+   "where": "書名『撈鐵牛』",
+   "read": "lāo"
+  },
+  {
+   "char": "重",
+   "where": "第1頁『很重』，第3頁『太重』，第5頁『船越重』",
+   "read": "zhòng"
+  },
+  {
+   "char": "得",
+   "where": "第5頁『沉得』，第6、8頁『拉得』，第8、9、12頁『綁得』",
+   "read": "de"
+  },
+  {
+   "char": "為",
+   "where": "第8、9頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "第7頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第2、4頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『很會想辦法』，第7頁『船會往上浮』，第8頁『才會往下沉』，第8頁『鐵牛會怎麼樣』",
+   "read": "huì"
+  },
+  {
+   "char": "划",
+   "where": "第6頁『船划到』，第10頁『划回』",
+   "read": "huá"
+  },
+  {
+   "char": "間",
+   "where": "第6頁『中間』",
+   "read": "jiān"
+  },
+  {
+   "char": "少",
+   "where": "第7頁『越來越少』，第8頁『泥土少了』",
+   "read": "shǎo"
+  },
+  {
+   "char": "頭",
+   "where": "第1頁『一頭大鐵牛』",
+   "read": "tóu"
+  },
+  {
+   "char": "條",
+   "where": "第5頁『兩條大船』，第5、10頁『兩條船』",
+   "read": "tiáo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，一條又寬又黃的大河，晴朗的白天。河上有一座浮橋：很多條小木船並排，上面鋪著木板，人和牛車在橋上走。河岸是黃土地，遠處有城牆和灰瓦屋頂。",
+   "act": "鐵牛：黑色的大鐵牛，比真的牛還大，四隻腳站著的樣子，兩隻彎彎的牛角，背上有一個大鐵環。鐵牛站在橋頭旁邊、緊靠水邊的岸上，四隻腳踩在淺淺的水裡（只到腳踝），一條很粗的鐵鍊從牠背上的大鐵環連到浮橋的橋頭，把橋拉住。鐵牛旁邊，七八個大人一起用力推牠、抬牠，臉都紅了，鐵牛一動也不動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，大河上有一座橋。",
+     "en": "Long ago in China, a bridge crossed a wide river."
+    },
+    {
+     "who": "旁白",
+     "text": "河邊有一頭大鐵牛，用來綁住橋。",
+     "en": "On the bank stood a great iron ox. The bridge was tied to it to keep it in place."
+    },
+    {
+     "who": "旁白",
+     "text": "鐵牛很重，很重，好多人也抬不動。",
+     "en": "The iron ox was very, very heavy. Not even a crowd could lift it."
+    }
+   ]
+  },
+  {
+   "scene": "同一條大河，下過大雨，天空灰灰的，河水漲得很高、變成黃色，淹到河岸上；浮橋歪到一邊。岸上沒有人站在水邊。",
+   "act": "畫面右上角一個小圓框：黑色的大鐵牛被黃色的大水沖得滑進河裡，濺起好大的水花。主畫面的剖面圖：水面下，鐵牛斜斜地陷在河底的泥巴裡。大官第一次出場：四十多歲，圓臉、黑色短鬍子，戴黑色官帽（帽子兩邊各有一根長長平平的帽翅），穿大紅色官袍、黑靴子；他站在離河很遠的高地上，兩手抓著帽子，急得跺腳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一年，大水把鐵牛沖進河裡，沉到河底的泥巴裡。",
+     "en": "One year, a flood swept the iron ox into the river. It sank into the mud at the bottom."
+    },
+    {
+     "who": "旁白",
+     "text": "管這座城的大官急壞了。",
+     "en": "The Governor of the town was terribly worried."
+    },
+    {
+     "who": "大官",
+     "tag": "worried",
+     "text": "糟糕！沒有鐵牛，橋就綁不住了！",
+     "en": "Oh no! Without the iron ox, we can't hold the bridge!"
+    }
+   ]
+  },
+  {
+   "scene": "大水退了，天氣放晴，河水變回平靜。河岸的黃土地上，離水邊很遠的地方有一棵大柳樹。",
+   "act": "船夫第一次出場：高高壯壯的大人，皮膚曬得很黑，手臂很粗，滿臉短鬍子，頭上綁藍色頭巾，穿咖啡色短衣，褲管捲到膝蓋；他全身濕濕的，剛從河裡上來，站在岸邊，兩手抓著一條粗繩子的前端，張大嘴巴喊口令。他後面二十幾個大人排成一長排，一起往後拉那條粗繩子，每個人都往後仰、臉紅紅的；繩子另一頭直直伸進河裡，水面下的剖面圖看得到繩子綁在河底的鐵牛身上，鐵牛一動也不動。小女孩第一次出場：六歲左右，兩個小圓髻綁紅頭繩，穿粉紅色短上衣、藍色褲子；她站在離水邊很遠的大柳樹下，兩手圈在嘴邊對爸爸喊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "力氣很大的船夫潛下去，把粗繩子綁在鐵牛身上。",
+     "en": "A strong boatman dove down and tied a thick rope around the iron ox."
+    },
+    {
+     "who": "船夫",
+     "tag": "shouting",
+     "text": "大家一起拉！嘿喲，嘿喲！",
+     "en": "Everybody, pull! Heave-ho, heave-ho!"
+    },
+    {
+     "who": "旁白",
+     "text": "鐵牛一動也不動。船夫的女兒在岸上看。",
+     "en": "The iron ox didn't move one bit. The boatman's little girl was watching from the bank."
+    },
+    {
+     "who": "小女孩",
+     "text": "爸爸，鐵牛太重，拉不動！",
+     "en": "Papa, it's too heavy! It won't move!"
+    }
+   ]
+  },
+  {
+   "scene": "河岸的黃土地上，大柳樹旁邊。河邊停著兩條空的大木船。",
+   "act": "懷丙師父第一次出場：五十多歲，瘦瘦高高，光頭，白色的長眉毛，穿灰色長袍、草鞋，手裡拿一根木頭手杖，笑得很溫和。他一手指著河邊的兩條大木船。大官擦著汗，彎腰聽他說。小女孩站在大柳樹下，歪著頭、兩手攤開，一臉想不通；船夫坐在地上喘氣，手裡還抓著繩子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，很會想辦法的懷丙師父來了。",
+     "en": "Just then, along came Master Huaibing, who was very good at solving problems."
+    },
+    {
+     "who": "懷丙師父",
+     "tag": "gentle",
+     "text": "人拉不動，就請船來幫忙。",
+     "en": "If people can't pull it up, let's ask the boats to help."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "船？船又沒有手！",
+     "en": "Boats? But boats don't have hands!"
+    },
+    {
+     "who": "懷丙師父",
+     "tag": "laughing",
+     "text": "別急，一步，一步來。",
+     "en": "Just wait. One step at a time."
+    }
+   ]
+  },
+  {
+   "scene": "河邊，兩條大木船並排停在岸邊的水裡，岸上有一大堆黃色的泥土。",
+   "act": "畫成左右兩格。左格：兩條大木船是空的，浮得很高，船邊離水面有一個大人的手臂那麼高；大人們用鏟子和竹籃把泥土搬上船。右格：兩條船都裝滿了泥土，堆得像小山，船沉得很低，水面只離船邊一個手掌那麼近。小女孩站在大柳樹下，指著船邊大叫；懷丙師父站在岸上，笑著點頭。",
+   "lines": [
+    {
+     "who": "懷丙師父",
+     "text": "第一步，把兩條大船裝滿泥土。",
+     "en": "Step one. Fill two big boats with dirt."
+    },
+    {
+     "who": "旁白",
+     "text": "泥土越多，船越重，沉得越低。",
+     "en": "The more dirt went in, the heavier the boats got, and the lower they sank."
+    },
+    {
+     "who": "小女孩",
+     "text": "水快碰到船邊了！",
+     "en": "The water is almost up to the edge!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩條船裝滿了，沉得好低。",
+     "en": "Now both boats were full, sitting very low in the water."
+    }
+   ]
+  },
+  {
+   "scene": "大河中間，鐵牛沉下去的地方。兩條大木船並排停在河中間，中間隔開一小段，兩條船上橫架著一根很粗的大木頭；幾條粗繩子從大木頭直直往下伸進水裡，綁著河底的鐵牛。",
+   "act": "兩條船都裝滿泥土、沉得很低，水面只離船邊一個手掌那麼近。船夫從兩條船中間的水面冒出頭來，一手抓著船邊，一手舉起大拇指，張大嘴巴喊。水面下的剖面圖：粗繩子拉得直直的，下面綁著斜斜陷在河底泥巴裡的黑色鐵牛。船上的大人扶著大木頭。岸上，懷丙師父、大官和小女孩站在大柳樹下看（小女孩沒有靠近水邊）。",
+   "lines": [
+    {
+     "who": "懷丙師父",
+     "text": "第二步，用粗繩子，把船和鐵牛綁在一起。",
+     "en": "Step two. Tie the boats to the iron ox with thick ropes."
+    },
+    {
+     "who": "旁白",
+     "text": "船划到鐵牛上面，船夫潛下去綁。",
+     "en": "They rowed the boats right over the iron ox, and the boatman dove down to tie the ropes."
+    },
+    {
+     "who": "船夫",
+     "tag": "shouting",
+     "text": "綁好了！拉得很緊！",
+     "en": "All tied! Nice and tight!"
+    },
+    {
+     "who": "旁白",
+     "text": "船在上面，鐵牛在河底，中間是拉緊的繩子。",
+     "en": "Now the boats were on top, the iron ox was at the bottom, and tight ropes ran between them."
+    }
+   ]
+  },
+  {
+   "scene": "大河中間。兩條大木船並排停在河中間，中間隔開一小段，兩條船上橫架著一根很粗的大木頭；幾條粗繩子從大木頭直直往下伸進水裡，綁著河底的鐵牛。",
+   "act": "船上的大人們拿著鏟子，把船上的泥土一鏟一鏟鏟進河裡，泥土落進水裡濺起小水花；兩條船上的泥土山已經矮了一半。岸上，大官兩手一攤，眼睛瞪得好大，帽子兩邊的帽翅抖呀抖；懷丙師父笑著摸摸自己的光頭。小女孩在大柳樹下，盯著船邊看。",
+   "lines": [
+    {
+     "who": "懷丙師父",
+     "text": "第三步，把船上的泥土鏟進河裡。",
+     "en": "Step three. Shovel the dirt out of the boats and into the river."
+    },
+    {
+     "who": "大官",
+     "tag": "surprised",
+     "text": "什麼？才裝滿，又要鏟掉？",
+     "en": "What? We just filled them, and now we empty them?"
+    },
+    {
+     "who": "旁白",
+     "text": "大家一鏟，一鏟，泥土越來越少。",
+     "en": "Scoop by scoop, there was less and less dirt in the boats."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，船會往上浮，或是往下沉呢？",
+     "en": "Do you think the boats floated up, or sank down?"
+    }
+   ]
+  },
+  {
+   "scene": "大河中間。兩條大木船並排停在河中間，中間隔開一小段，兩條船上橫架著一根很粗的大木頭；幾條粗繩子從大木頭直直往下伸進水裡，綁著河底的鐵牛。",
+   "act": "兩條船上的泥土還剩下大約三分之一，船只浮高了一點點：船身上露出一小圈濕濕的深色水痕，只有一根手指那麼寬（原本泡在水裡的地方），水面離船邊大約一個手掌多一點。水面下的剖面圖：粗繩子繃得非常直、非常緊，鐵牛還在河底的泥巴裡，一動也不動。小女孩在大柳樹下跳起來，指著拉得直直的繩子；大官伸長脖子看；懷丙師父安靜地看著繩子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "往上浮！因為泥土少了，船變輕了，所以往上浮。",
+     "en": "They floated up! With less dirt, the boats were lighter, so they floated up."
+    },
+    {
+     "who": "旁白",
+     "text": "泥土變多，才會往下沉。",
+     "en": "They only sank down when more dirt went in."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "船浮高一點了！繩子拉得好緊！",
+     "en": "The boats are a little higher! The ropes are so tight!"
+    },
+    {
+     "who": "旁白",
+     "text": "船想往上浮，繩子又綁得好緊。你猜，河底的鐵牛會怎麼樣呢？",
+     "en": "The boats wanted to float up, and the ropes were tied tight. Can you guess what happened to the iron ox at the bottom?"
+    }
+   ]
+  },
+  {
+   "scene": "大河中間。兩條大木船並排停在河中間，中間隔開一小段，兩條船上橫架著一根很粗的大木頭；幾條粗繩子從大木頭直直往下伸進水裡，綁著河底的鐵牛。",
+   "act": "水面下的剖面圖：黑色的大鐵牛離開了河底的泥巴，被粗繩子吊在兩條船的正下方，腳下的泥巴留著一個牛形狀的大坑，冒出一串泡泡。水面上，船上的泥土更少了，兩條船帶著鐵牛一起往上浮高了一點。船夫站在船上，兩手高舉，張大嘴巴歡呼。岸上，懷丙師父一手往上比，向大官和小女孩說明；大官張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鐵牛動了！",
+     "en": "The iron ox moved!"
+    },
+    {
+     "who": "懷丙師父",
+     "text": "因為繩子綁得很緊，船往上，鐵牛也被拉上來。",
+     "en": "Because the ropes are tight, when the boats go up, they pull the iron ox up too."
+    },
+    {
+     "who": "旁白",
+     "text": "鐵牛離開河底的泥巴，掛在船下面。",
+     "en": "The iron ox came free of the mud and hung beneath the boats."
+    },
+    {
+     "who": "船夫",
+     "tag": "shouting",
+     "text": "起來了！鐵牛起來了！",
+     "en": "It's up! The iron ox is up!"
+    }
+   ]
+  },
+  {
+   "scene": "大河上，從河中間到岸邊。",
+   "act": "兩條大木船上的泥土都鏟光了，船邊離水面大約一個大人的小腿那麼高（比空船低一點，因為下面吊著鐵牛）。船夫和大人們划著槳，兩條船並排慢慢靠向橋頭旁邊的岸邊；水面下的剖面圖：鐵牛吊在兩條船下面的水裡，離河底一小段，跟著船一起移動，前面的河底越來越淺。小女孩在岸上的大柳樹下，高高舉起兩隻手，一手指著繩子，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "泥土鏟光了，鐵牛吊在兩條船下面。",
+     "en": "When all the dirt was gone, the iron ox hung beneath the two boats."
+    },
+    {
+     "who": "旁白",
+     "text": "兩條船帶著鐵牛，划到橋頭旁邊的淺水，把牠放下。",
+     "en": "The two boats carried the iron ox to the shallow water by the bridge, and set it down."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "我知道了！繩子就是船的手！",
+     "en": "Now I see! The ropes are the boats' hands!"
+    }
+   ]
+  },
+  {
+   "scene": "河岸的黃土地上，太陽出來了，河水亮亮的。",
+   "act": "黑色的大鐵牛已經回到原來的地方：站在橋頭旁邊、緊靠水邊的岸上，四隻腳踩在淺淺的水裡，全身濕濕的、沾著泥巴；兩條空船停在旁邊的水裡，繩子已經解開。大官笑得眼睛瞇起來，兩手拱在胸前向懷丙師父道謝。懷丙師父笑著，一手平平地往下比、再往上比，像船沉下去又浮起來的樣子。旁邊的大人們在擦汗、歡呼。",
+   "lines": [
+    {
+     "who": "大官",
+     "tag": "happy",
+     "text": "鐵牛回來了！師父，您怎麼想到的？",
+     "en": "The iron ox is back! Master, how did you think of that?"
+    },
+    {
+     "who": "懷丙師父",
+     "text": "船裝了東西就往下沉，東西拿走就往上浮。",
+     "en": "Fill a boat, and it sinks lower. Empty it, and it floats up."
+    },
+    {
+     "who": "懷丙師父",
+     "tag": "gentle",
+     "text": "我是請河水幫忙抬鐵牛。",
+     "en": "I just asked the river to do the lifting."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的大河邊，浮橋又直直地橫在河上，人和牛車在橋上走；鐵牛站在橋頭旁邊、緊靠水邊的原來的地方。",
+   "act": "很粗的鐵鍊又從鐵牛背上的大鐵環連到橋頭，把橋拉得穩穩的。船夫牽著小女孩的手，站在鐵牛旁邊乾乾的岸上，仰頭哈哈大笑；小女孩另一隻手摸著鐵牛的頭，抬頭看著爸爸、指著河水。懷丙師父拿著手杖，笑著慢慢走遠；大官在後面向他揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鐵牛又站在河邊，把橋綁得好穩。",
+     "en": "Once again the iron ox stood on the bank, holding the bridge steady."
+    },
+    {
+     "who": "小女孩",
+     "text": "爸爸，好多人拉不動，河水卻把牠抬起來了！",
+     "en": "Papa, all those people couldn't pull it up, but the river lifted it!"
+    },
+    {
+     "who": "船夫",
+     "tag": "laughing",
+     "text": "哈！河水的力氣比我大！",
+     "en": "Ha! The river is stronger than I am!"
+    }
+   ]
+  }
+ ]
+}
