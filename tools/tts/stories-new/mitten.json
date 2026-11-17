@@ -1,0 +1,364 @@
+{
+ "id": "mitten",
+ "title": "森林裡的大手套",
+ "title_en": "The Mitten",
+ "size": "中",
+ "roles": {
+  "小男孩": "大約五歲的男孩，聲音清亮、有精神，找不到手套時著急，看到手套變大時又驚訝又好笑。",
+  "小老鼠": "第一個住進手套的小老鼠，聲音又尖又細、很熱心，每次都說「擠一擠，進來吧！」。",
+  "兔子": "怕冷的白兔，聲音又小又甜、蹦蹦跳跳。",
+  "狐狸": "毛很蓬鬆的狐狸，說話慢吞吞、很有禮貌，有一點愛面子，好笑不可怕。",
+  "大熊": "又大又胖的熊，聲音低沉粗粗的，可是好怕冷，說話像在撒嬌。",
+  "小甲蟲": "最後一個來的小甲蟲，聲音小小的、好可愛，很有禮貌。"
+ },
+ "cast": {
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小老鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "兔子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "大熊": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小甲蟲": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "誰",
+   "where": "第3、4、7頁『住著誰呀』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有發現』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第1頁『不會冷』",
+   "read": "huì"
+  },
+  {
+   "char": "給",
+   "where": "第1頁『織給他』",
+   "read": "gěi"
+  },
+  {
+   "char": "鑽",
+   "where": "第2、3、4、7頁『鑽進』",
+   "read": "zuān"
+  },
+  {
+   "char": "彈",
+   "where": "第8頁『彈了出來』",
+   "read": "tán"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "冬天的森林邊，白雪蓋住了地面和松樹，天空是淡藍色的；遠處看得到一間冒著煙的小木屋。",
+   "act": "小男孩出場：大約五歲，圓臉、紅臉頰，戴一頂綠色毛線帽，穿黃色厚外套和咖啡色雪靴（全書一致），有一雙紅色毛線手套，手套上織著白色的小雪花圖案：右手戴著一隻，左手那隻剛脫下來、塞在外套口袋裡，方便他撿樹枝。他拉著一台小木頭雪橇，雪橇上放著幾根撿來的樹枝；他彎腰撿樹枝時，口袋裡的紅手套掉進雪地裡，他沒有發現。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小男孩有一雙紅色的毛線手套。",
+     "en": "A little boy had a pair of red woolen mittens."
+    },
+    {
+     "who": "旁白",
+     "text": "那是奶奶織給他的，戴起來好溫暖。",
+     "en": "Grandma had knitted them for him, and they were very warm."
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "有了奶奶的手套，我一點也不會冷！",
+     "en": "With Grandma's mittens, I'm not cold at all!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，他在雪地裡撿樹枝時，掉了一隻手套。",
+     "en": "But while he was picking up sticks in the snow, he dropped one mitten."
+    },
+    {
+     "who": "旁白",
+     "text": "小男孩沒有發現，就回家了。",
+     "en": "The boy didn't notice, and he went home."
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，紅手套躺在白雪上，像一個小小的紅房子。",
+   "act": "小老鼠出場：灰色的小老鼠，圓耳朵、粉紅色鼻子，脖子上圍一條藍色小圍巾（全書一致），冷得發抖，正從手套口探頭往裡面看，尾巴還露在外面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一隻小老鼠，冷到一直發抖。",
+     "en": "A little mouse was shivering with cold."
+    },
+    {
+     "who": "旁白",
+     "text": "她看到雪地上的紅手套，眼睛一亮。",
+     "en": "She saw the red mitten in the snow, and her eyes lit up."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "excited",
+     "text": "哇，一間紅色的小房子！",
+     "en": "Wow, a little red house!"
+    },
+    {
+     "who": "旁白",
+     "text": "小老鼠鑽進手套裡，好溫暖喔！",
+     "en": "The mouse crawled inside. It was so warm!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，紅手套。",
+   "act": "兔子出場：白色的兔子，長耳朵內側是粉紅色，戴一頂黃色毛線耳罩（全書一致），蹦到手套前面歪著頭問。小老鼠從手套口探出頭來回答。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "蹦，蹦，蹦，一隻兔子跳了過來。",
+     "en": "Hop, hop, hop! Along came a rabbit."
+    },
+    {
+     "who": "兔子",
+     "tag": "curious",
+     "text": "手套裡住著誰呀？我是兔子，我可以進來嗎？",
+     "en": "Who lives in the mitten? I'm Rabbit. May I come in?"
+    },
+    {
+     "who": "旁白",
+     "text": "手套裡，傳出小老鼠的聲音：",
+     "en": "From inside the mitten came a squeaky voice."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "happy",
+     "text": "我是小老鼠。擠一擠，進來吧！",
+     "en": "I'm Mouse. Squeeze in, come on in!"
+    },
+    {
+     "who": "旁白",
+     "text": "兔子鑽進去，手套變胖了一點。",
+     "en": "Rabbit wriggled in, and the mitten got a little fatter."
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，紅手套變得鼓鼓的。",
+   "act": "狐狸出場：橘紅色的狐狸，蓬鬆的大尾巴尖端是白色，脖子上繫一條紫色領巾（全書一致），彎腰很有禮貌地敲敲手套。小老鼠和兔子從手套口一起探出頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "接著，一隻狐狸走了過來。",
+     "en": "Next, a fox came along."
+    },
+    {
+     "who": "狐狸",
+     "tag": "polite",
+     "text": "手套裡住著誰呀？我是狐狸，我可以進來嗎？",
+     "en": "Who lives in the mitten? I'm Fox. May I come in?"
+    },
+    {
+     "who": "旁白",
+     "text": "小老鼠和兔子想一想，一起點頭。",
+     "en": "Mouse and Rabbit thought for a moment, then nodded."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "happy",
+     "text": "擠一擠，進來吧！",
+     "en": "Squeeze in, come on in!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸也鑽進去，手套變好胖。",
+     "en": "Fox squeezed in too, and the mitten got very fat."
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，紅手套胖得像一顆大氣球，手套口露出狐狸的尾巴和兔子的耳朵。",
+   "act": "大熊出場：好大好胖的咖啡色熊，比手套大好多倍，戴一頂紅色毛線帽（全書一致），抱著自己的身體發抖，鼻子凍得紅紅的。小老鼠、兔子、狐狸擠在手套口，睜大眼睛看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚，咚，咚，一隻大熊走了過來。",
+     "en": "Thump, thump, thump! A big bear came along."
+    },
+    {
+     "who": "大熊",
+     "tag": "sad",
+     "text": "我好冷喔。我是大熊，我可以進來嗎？",
+     "en": "I'm so cold. I'm Bear. May I come in?"
+    },
+    {
+     "who": "狐狸",
+     "tag": "surprised",
+     "text": "你這麼大，進不來啦！",
+     "en": "You're too big! You'll never fit!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，紅手套。",
+   "act": "大熊先把頭塞進手套，屁股卡在外面，兩隻後腳在雪地上亂踢；手套被撐得好大，裡面的小老鼠、兔子、狐狸被擠得臉貼著臉。最後大熊整個擠進去，手套口只露出一點點熊的毛。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大熊低著頭，好傷心。",
+     "en": "Bear hung his head sadly."
+    },
+    {
+     "who": "小老鼠",
+     "tag": "gentle",
+     "text": "大家再擠一擠，讓大熊進來吧！",
+     "en": "Everyone, let's squeeze a little more so Bear can come in!"
+    },
+    {
+     "who": "旁白",
+     "text": "大熊把頭伸進去，可是屁股進不去。",
+     "en": "Bear pushed his head inside, but his bottom wouldn't fit."
+    },
+    {
+     "who": "旁白",
+     "text": "一、二、三，用力！大熊擠進去了！",
+     "en": "One, two, three, heave! Bear squeezed all the way in!"
+    },
+    {
+     "who": "大熊",
+     "tag": "happy",
+     "text": "好溫暖喔，謝謝大家！",
+     "en": "Ah, so warm! Thank you, everyone!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，手套胖得圓滾滾的，毛線被撐得好薄，手套口快要擠不下了。",
+   "act": "小甲蟲出場：比小老鼠的鼻子還小，紅色的圓殼上有黑色小點點，頭上有兩根小觸角，站在手套前的雪地上抬頭問。手套口擠著大熊的鼻子、狐狸的尾巴、兔子的耳朵和小老鼠的臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，一個好小的聲音問：",
+     "en": "Just then, a tiny little voice asked,"
+    },
+    {
+     "who": "小甲蟲",
+     "tag": "gentle",
+     "text": "手套裡住著誰呀？我是小甲蟲，我可以進來嗎？",
+     "en": "Who lives in the mitten? I'm Beetle. May I come in?"
+    },
+    {
+     "who": "大熊",
+     "tag": "laughing",
+     "text": "你這麼小，擠一擠，進來吧！",
+     "en": "You're so tiny! Squeeze in, come on in!"
+    },
+    {
+     "who": "旁白",
+     "text": "小甲蟲爬呀爬，鑽進了手套。",
+     "en": "Beetle crawled and crawled, and wriggled into the mitten."
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，撐得好大的紅手套躺在雪地上，手套沒有破。",
+   "act": "手套「碰」的一聲，小老鼠、兔子、狐狸、大熊和小甲蟲像爆米花一樣從手套口彈出來，飛到半空中，再滾進軟軟的雪堆裡；大家滿身是雪，笑得東倒西歪，小甲蟲停在大熊的鼻子上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "手套撐呀撐，越撐越大。",
+     "en": "The mitten stretched and stretched, bigger and bigger."
+    },
+    {
+     "who": "旁白",
+     "text": "碰！大家像爆米花一樣，從手套裡彈了出來！",
+     "en": "Pop! Everyone popped out of the mitten like popcorn!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家飛到半空中，掉進好軟的雪堆裡。",
+     "en": "Up they flew, and down they landed in the soft, fluffy snow."
+    },
+    {
+     "who": "大熊",
+     "tag": "laughing",
+     "text": "真好玩！再來一次！",
+     "en": "What fun! Let's do it again!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，太陽偏西，雪地上有好多大大小小的腳印，一隻撐得好大的紅手套躺在雪地上。",
+   "act": "小老鼠、兔子、狐狸、大熊躲在一棵大樹後面，一個疊一個偷偷探出頭，小甲蟲坐在小老鼠的頭上。遠遠的小路上，小男孩拉著雪橇跑回來，低頭在雪地裡找東西；他後面跟著奶奶：白頭髮、披紅色毛線披肩，提著一盞燈籠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天快黑了，有人來了！動物們趕快躲到大樹後面。",
+     "en": "It was getting dark. Someone was coming! The animals hurried behind a big tree."
+    },
+    {
+     "who": "旁白",
+     "text": "原來，是小男孩跑回來找手套。",
+     "en": "It was the little boy, coming back for his mitten."
+    },
+    {
+     "who": "旁白",
+     "text": "他低著頭，在雪地裡找呀找。",
+     "en": "He looked and looked all over the snow."
+    },
+    {
+     "who": "小男孩",
+     "tag": "worried",
+     "text": "我的手套呢？我的手套去哪裡了？",
+     "en": "Where's my mitten? Where did my mitten go?"
+    }
+   ]
+  },
+  {
+   "scene": "同一片雪地，大樹後面躲著動物們。",
+   "act": "小男孩撿起紅手套戴上，奶奶在旁邊提著燈籠笑，手套大得蓋到他的手肘，他舉起手，張大嘴巴看著；大樹後面，小老鼠、兔子、狐狸、大熊和小甲蟲偷偷探出頭，摀著嘴巴偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小男孩找到手套，開心地戴上。",
+     "en": "The boy found his mitten and happily put it on."
+    },
+    {
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "咦？我的手套，怎麼變這麼大？",
+     "en": "Huh? How did my mitten get so big?"
+    },
+    {
+     "who": "旁白",
+     "text": "大樹後面，動物們都笑了起來。",
+     "en": "Behind the big tree, the animals giggled."
+    },
+    {
+     "who": "旁白",
+     "text": "這個祕密，森林裡的動物都知道喔！",
+     "en": "But that's a secret only the forest animals know!"
+    }
+   ]
+  }
+ ]
+}

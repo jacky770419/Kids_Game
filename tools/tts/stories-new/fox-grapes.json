@@ -1,0 +1,264 @@
+{
+ "id": "fox-grapes",
+ "title": "狐狸和葡萄",
+ "title_en": "The Fox and the Grapes",
+ "size": "短",
+ "roles": {
+  "狐狸": "愛吹牛、愛面子的狐狸，聲音神氣又誇張，跳不到時嘴硬，被拆穿時結結巴巴，最後老實承認、笑得有點不好意思；好笑不狡猾。",
+  "小鳥": "站在籬笆上看熱鬧的小鳥，聲音又小又甜，愛笑，嘴巴直但心地好。",
+  "小松鼠": "動作很快的小松鼠，聲音尖細可愛，熱心大方，很愛分享。"
+ },
+ "cast": {
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "小鳥": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小松鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第2頁『沒碰到』，第8頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第6頁『這一串給你』",
+   "read": "gěi"
+  },
+  {
+   "char": "沿",
+   "where": "第5頁『沿著葡萄藤』",
+   "read": "yán"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "夏天中午的果園，太陽很大；木頭搭的棚架上爬滿綠色的葡萄藤，最上面掛著一大串紫色的葡萄；棚架旁邊有一道矮木頭籬笆。",
+   "act": "狐狸：橘紅色的毛，白色胸口，大尾巴尖端是白色，脖子上繫一條綠色領巾。他吐著舌頭、擦著汗走進果園，抬頭看到葡萄，眼睛發亮，口水快流下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天好熱，狐狸走進果園。",
+     "en": "It was a hot summer day, and Fox wandered into an orchard."
+    },
+    {
+     "who": "旁白",
+     "text": "棚架上，掛著一大串紫葡萄。",
+     "en": "A big bunch of purple grapes hung high up on the vines."
+    },
+    {
+     "who": "狐狸",
+     "tag": "excited",
+     "text": "哇！又大又圓，一定好甜！",
+     "en": "Wow! So big and round. They must be so sweet!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個果園，葡萄棚架下；籬笆上停著一隻小鳥。",
+   "act": "狐狸挺起胸膛拍拍胸口，接著用力往上跳，前腳伸得好直，可是離葡萄還很遠。小鳥：黃色的小鳥，橘色的嘴巴，頭上一撮翹起來的毛，站在籬笆上，用翅膀遮著嘴偷笑。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "我是森林裡跳最高的狐狸，看我的！",
+     "en": "I'm the best jumper in the whole forest. Watch this!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸用力一跳。哎呀，沒碰到！",
+     "en": "Fox jumped as hard as he could. Oops! He missed."
+    },
+    {
+     "who": "旁白",
+     "text": "籬笆上的小鳥，笑了出來。",
+     "en": "A little bird on the fence burst out laughing."
+    },
+    {
+     "who": "小鳥",
+     "tag": "laughing",
+     "text": "嘻！好遠喔！",
+     "en": "Hee! Not even close!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個果園，葡萄棚架下的草地。",
+   "act": "狐狸從遠處助跑，衝過來往上跳；最後一跳沒碰到，咚一聲跌坐在草地上，屁股著地、眼冒金星。小鳥在籬笆上歪著頭，好心地伸出翅膀；狐狸把頭一撇。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "annoyed",
+     "text": "那一次不算！",
+     "en": "That one doesn't count!"
+    },
+    {
+     "who": "旁白",
+     "text": "他衝過來再跳。一次，兩次，三次！",
+     "en": "He ran and jumped again. Once, twice, three times!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！他跌坐在地上。",
+     "en": "Thump! He landed on his bottom."
+    },
+    {
+     "who": "小鳥",
+     "tag": "gentle",
+     "text": "狐狸，要不要我幫你？",
+     "en": "Fox, do you want some help?"
+    },
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "不用！我自己就可以！",
+     "en": "No thanks! I can do it myself!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個果園，葡萄棚架下。",
+   "act": "狐狸喘著氣，腿軟軟地站著，然後抬高鼻子、雙手抱胸，扭頭走開；可是他的眼睛偷偷往後瞄著那串葡萄。小鳥在籬笆上搖頭偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸跳到腿都軟了，喘個不停。",
+     "en": "Fox jumped until his legs were wobbly, and he couldn't stop panting."
+    },
+    {
+     "who": "狐狸",
+     "tag": "grumpy",
+     "text": "哼！這些葡萄一定很酸！我才不想吃呢！",
+     "en": "Hmph! Those grapes must be sour! I wouldn't eat them anyway!"
+    },
+    {
+     "who": "旁白",
+     "text": "他抬起鼻子走開，又回頭看了一眼。",
+     "en": "He stuck his nose in the air and walked away, but he took one more look back."
+    }
+   ]
+  },
+  {
+   "scene": "同一個果園，葡萄棚架上。",
+   "act": "小松鼠：咖啡色的毛，蓬蓬的大尾巴，肚子是米白色，頭上戴一個紅色小蝴蝶結。她沿著葡萄藤一路跑上棚架，抱著兩串紫色葡萄，咬了一口，臉頰鼓鼓的，好開心。狐狸停下腳步，耳朵豎起來，張大嘴巴回頭看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小松鼠跑來了。",
+     "en": "Just then, Squirrel came scampering by."
+    },
+    {
+     "who": "旁白",
+     "text": "她沿著葡萄藤跑上去，摘下兩串葡萄。",
+     "en": "She ran up the grapevine and picked two bunches of grapes."
+    },
+    {
+     "who": "小松鼠",
+     "tag": "happy",
+     "text": "嗯，好甜喔！",
+     "en": "Mmm, so sweet!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "surprised",
+     "text": "甜的？怎麼可能！",
+     "en": "Sweet? No way!"
+    }
+   ]
+  },
+  {
+   "scene": "葡萄棚架下的草地。",
+   "act": "小松鼠站在草地上，雙手捧著一串葡萄遞給狐狸；狐狸雙手抱胸、眼睛看旁邊，肚子卻發出聲音。小鳥在籬笆上笑得翅膀亂拍。",
+   "lines": [
+    {
+     "who": "小松鼠",
+     "tag": "happy",
+     "text": "狐狸哥哥，這一串給你！",
+     "en": "Fox, this bunch is for you!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "embarrassed",
+     "text": "我、我不吃酸葡萄的。",
+     "en": "I, um, I don't eat sour grapes."
+    },
+    {
+     "who": "旁白",
+     "text": "咕嚕，咕嚕！狐狸的肚子叫了起來。",
+     "en": "Grumble, grumble! Fox's tummy started to rumble."
+    },
+    {
+     "who": "小鳥",
+     "tag": "laughing",
+     "text": "嘻！你的肚子說，它想吃！",
+     "en": "Hee! Your tummy says it wants some!"
+    }
+   ]
+  },
+  {
+   "scene": "葡萄棚架下的草地。",
+   "act": "狐狸吃了一顆葡萄，眼睛睜得好大，尾巴翹起來；接著他臉頰變紅，低下頭，兩隻手指互相碰來碰去，小聲說話。小松鼠歪著頭聽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸吃了一顆，眼睛睜大了。",
+     "en": "Fox ate one grape, and his eyes went wide."
+    },
+    {
+     "who": "狐狸",
+     "tag": "surprised",
+     "text": "好甜！跟蜂蜜一樣甜！",
+     "en": "So sweet! Sweet as honey!"
+    },
+    {
+     "who": "旁白",
+     "text": "他的臉紅了，小聲地說。",
+     "en": "His face turned red, and he spoke softly."
+    },
+    {
+     "who": "狐狸",
+     "tag": "shy",
+     "text": "其實，我是跳不到，才說它酸的。",
+     "en": "The truth is, I couldn't reach them, so I said they were sour."
+    }
+   ]
+  },
+  {
+   "scene": "太陽快下山的果園，天空橘黃色，葡萄棚架下的草地上鋪著大葉子當桌布。",
+   "act": "小松鼠拍拍狐狸的手臂安慰他；狐狸不好意思地笑著抓抓耳朵。最後小鳥從籬笆飛下來，三個好朋友坐在葡萄藤下，一起吃葡萄，大家都笑得好開心。",
+   "lines": [
+    {
+     "who": "小松鼠",
+     "tag": "gentle",
+     "text": "沒關係！下次跳不到，就喊我一聲！",
+     "en": "That's okay! Next time you can't reach, just call me!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "laughing",
+     "text": "好！下次我會說：請幫我一下！",
+     "en": "Okay! Next time I'll just say, \"Could you help me, please?\""
+    },
+    {
+     "who": "小鳥",
+     "tag": "excited",
+     "text": "那我也要吃一顆！",
+     "en": "Then I want a grape too!"
+    },
+    {
+     "who": "旁白",
+     "text": "三個好朋友，一起吃葡萄。",
+     "en": "And the three friends ate the grapes together."
+    }
+   ]
+  }
+ ]
+}

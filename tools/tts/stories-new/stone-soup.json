@@ -1,0 +1,508 @@
+{
+ "id": "stone-soup",
+ "title": "石頭湯",
+ "title_en": "Stone Soup",
+ "size": "長",
+ "roles": {
+  "旅人大叔": "走遍各地的旅人大叔，胖胖的、愛笑，聲音渾厚又懶洋洋，很會逗大家好奇，說話慢條斯理，偶爾眨眼睛賣關子。",
+  "旅人小弟": "跟著大叔旅行的年輕小弟，聲音活潑輕快，肚子餓時有氣無力，喝到湯時又興奮又誇張。",
+  "村民奶奶": "村子裡的老奶奶，小女孩的奶奶，聲音慈祥、慢慢說，有點好奇，心很軟。",
+  "小女孩": "村民奶奶的孫女，六歲左右，聲音清脆，好奇愛問，發現祕密時又驚喜又得意。",
+  "村長": "村子的村長，白鬍子老爺爺，聲音低沉，一開始嘴硬不相信，拿出洋蔥時有點不好意思，最後喝湯喝得哈哈笑。"
+ },
+ "cast": {
+  "旅人大叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "旅人小弟": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "村民奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "村長": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "更",
+   "where": "第7、8、11、15頁『就更好喝了』",
+   "read": "gèng"
+  },
+  {
+   "char": "長",
+   "where": "第3、9、11、14頁『村長』",
+   "read": "zhǎng"
+  },
+  {
+   "char": "塞",
+   "where": "第3頁『塞進床底下』",
+   "read": "sāi"
+  },
+  {
+   "char": "什",
+   "where": "第14頁『是什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『沒下雨』『沒有多的』，第4頁『沒關係』，第5頁『沒聽過』，第9頁『一點用都沒有』，第13頁『好久沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第15頁『送給你們』",
+   "read": "gěi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "秋天的山路，黃土小路通往山腳下一個小村子，村子裡是紅磚屋頂的矮房子；路邊的樹葉變黃，天空灰藍色。",
+   "act": "旅人大叔：高大、胖胖的中年男人，咖啡色大鬍子，戴一頂舊草帽，穿綠色外套和咖啡色長褲，肩上扛著一個大黑鍋。旅人小弟：瘦瘦的年輕人，短黑髮，圍紅色圍巾、穿藍色外套，手上提著一個米色布袋，布袋口露出一顆灰色的圓石頭。兩人走在山路上，小弟摸著肚子，一臉沒力氣；大叔指著前面的村子笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山路上，走來兩個旅人。",
+     "en": "Two travelers came walking down a mountain road."
+    },
+    {
+     "who": "旁白",
+     "text": "大叔扛著大黑鍋，小弟的布袋裡有一顆圓石頭。",
+     "en": "The older one carried a big black pot. In the younger one's sack was a very round stone."
+    },
+    {
+     "who": "旁白",
+     "text": "他們走了好幾天，肚子好餓。",
+     "en": "They had walked for days, and they were very hungry."
+    },
+    {
+     "who": "旅人小弟",
+     "tag": "tired",
+     "text": "大叔，我的肚子一直叫，咕嚕，咕嚕！",
+     "en": "Uncle, my tummy keeps rumbling. Grumble, grumble!"
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "cheerful",
+     "text": "前面有個村子，我們去那裡問一下！",
+     "en": "There's a village up ahead. Let's go and ask!"
+    }
+   ]
+  },
+  {
+   "scene": "村子裡的石板路，兩旁是紅磚小房子，每戶都有木門和小窗戶。",
+   "act": "旅人大叔站在第一戶人家門口，脫下草帽，笑著敲門；門開了一半，馬上又關上。旁邊幾戶人家，有人在關窗戶，有人把門閂上；旅人小弟站在後面，嘴巴張開，一臉失望。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔敲了第一戶人家的門。叩、叩、叩。",
+     "en": "The older traveler knocked on the first door. Knock, knock, knock."
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "gentle",
+     "text": "你好，可以分我們一點吃的嗎？",
+     "en": "Hello! Could you spare us a little food?"
+    },
+    {
+     "who": "旁白",
+     "text": "碰！門馬上關起來了。",
+     "en": "Bang! The door shut right away."
+    },
+    {
+     "who": "旁白",
+     "text": "第二家、第三家，大家都很快地關上門，關上窗戶。",
+     "en": "At the second house and the third, everyone shut their doors and windows fast."
+    }
+   ]
+  },
+  {
+   "scene": "村子裡兩戶人家屋內的剖面圖：一間臥室、一間有衣櫃的房間；屋外是村子的小廣場，廣場中間有一口石井。",
+   "act": "一間臥室裡，一雙手正把紅蘿蔔塞進床底下（只畫手和黃色袖子，不畫臉，暗示是第5頁穿黃色洋裝的小女孩家）；另一間房間裡，一個包綠色頭巾的村民阿姨把一顆大高麗菜塞進衣櫃。村長：白鬍子老爺爺，戴黑色圓帽，穿咖啡色背心，拄著木頭拐杖，站在廣場上，對兩個旅人揮手要他們離開。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "原來，今年夏天沒下雨，菜園裡的菜不多。",
+     "en": "You see, it hadn't rained all summer, and the gardens were nearly bare."
+    },
+    {
+     "who": "旁白",
+     "text": "大家怕不夠吃，把食物都收起來了。",
+     "en": "Everyone was afraid there wouldn't be enough, so they put their food away."
+    },
+    {
+     "who": "旁白",
+     "text": "有人把紅蘿蔔塞進床底下，有人把高麗菜放進衣櫃裡！",
+     "en": "Someone stuffed carrots under the bed. Someone hid a cabbage in the closet!"
+    },
+    {
+     "who": "旁白",
+     "text": "村長拿著拐杖走過來。",
+     "en": "The village chief came over, with his cane."
+    },
+    {
+     "who": "村長",
+     "tag": "serious",
+     "text": "這裡沒有多的食物，你們走吧。",
+     "en": "There's no extra food here. Please move along."
+    }
+   ]
+  },
+  {
+   "scene": "村子的小廣場，中間有一口石井，四周是紅磚房子的窗戶。",
+   "act": "旅人小弟垂著肩膀很失望；旅人大叔對他眨一隻眼睛，雙手圍在嘴邊大聲說話。小弟從米色布袋裡拿出那顆灰色、很圓、很光滑的石頭，高高舉起。後面一戶人家的窗戶，悄悄打開一點。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小弟好失望，大叔卻眨了眨眼睛。",
+     "en": "The younger traveler looked sad, but the older one gave him a wink."
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "shouting",
+     "text": "沒關係！我們自己煮一鍋石頭湯！",
+     "en": "That's all right! We'll make a pot of stone soup!"
+    },
+    {
+     "who": "旅人小弟",
+     "tag": "excited",
+     "text": "對！用我們的神奇石頭！",
+     "en": "Yes! With our magic stone!"
+    },
+    {
+     "who": "旁白",
+     "text": "小弟拿出布袋裡那顆很圓的石頭。",
+     "en": "The younger traveler took the round stone out of his sack."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，有一個窗戶打開了。",
+     "en": "Just then, a window opened."
+    }
+   ]
+  },
+  {
+   "scene": "一戶紅磚房子的窗戶，窗台上放著一盆小紅花；窗外看得到廣場和兩個旅人。",
+   "act": "小女孩：六歲左右，綁兩條黑色辮子，穿黃色洋裝，趴在窗台上，眼睛睜得好大。村民奶奶：白頭髮梳成圓髮髻，戴圓眼鏡，穿紫色上衣、藍色圍裙，彎腰從小女孩後面往外看，一臉好奇。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "窗戶後面，是一個小女孩和她的奶奶。",
+     "en": "Behind the window were a little girl and her grandma."
+    },
+    {
+     "who": "小女孩",
+     "tag": "curious",
+     "text": "奶奶，石頭也能煮湯嗎？",
+     "en": "Grandma, can you really make soup with a stone?"
+    },
+    {
+     "who": "村民奶奶",
+     "tag": "surprised",
+     "text": "我活了這麼久，從來沒聽過呢。",
+     "en": "I've lived a long time, and I've never heard of such a thing."
+    },
+    {
+     "who": "村民奶奶",
+     "text": "走，我們出去瞧一瞧！",
+     "en": "Come on, let's go and see!"
+    }
+   ]
+  },
+  {
+   "scene": "廣場中間，石井旁邊；大黑鍋架在三根木頭搭的架子上，下面燒著柴火。",
+   "act": "旅人大叔從井裡提起一桶水倒進鍋子；旅人小弟用水把石頭洗乾淨，放進鍋裡。小女孩和村民奶奶站在前面看；後面幾個村民探頭探腦。村長雙手交叉在胸前，皺著眉頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩個旅人在廣場中間，架起大黑鍋。",
+     "en": "In the middle of the village square, the two travelers set up the big black pot."
+    },
+    {
+     "who": "旁白",
+     "text": "他們打了井水，把石頭洗乾淨，放進鍋子裡。",
+     "en": "They drew water from the well, washed the stone clean, and dropped it into the pot."
+    },
+    {
+     "who": "旁白",
+     "text": "柴火燒起來，村子裡的人，好奇地走出來看。",
+     "en": "The fire crackled, and the villagers came out to watch."
+    },
+    {
+     "who": "村長",
+     "tag": "grumpy",
+     "text": "哼，石頭怎麼可能煮成湯？",
+     "en": "Hmph. How could a stone ever turn into soup?"
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，大黑鍋冒著白色熱氣。",
+   "act": "旅人大叔用一支大木湯匙攪鍋子，嘗了一口，閉著眼睛，一臉很享受。村民奶奶舉起手，往自己家走去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔用大湯匙攪一攪，喝了一口。",
+     "en": "The older traveler stirred the pot with a big spoon and took a sip."
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "happy",
+     "text": "嗯，好喝！",
+     "en": "Mmm, delicious!"
+    },
+    {
+     "who": "旅人大叔",
+     "text": "如果再加一點鹽，就更好喝了。",
+     "en": "But if we added a little salt, it would be even better."
+    },
+    {
+     "who": "村民奶奶",
+     "tag": "gentle",
+     "text": "鹽？我家有一點鹽，我去拿！",
+     "en": "Salt? I have a little at home. I'll go get it!"
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，大黑鍋冒著熱氣；遠處是小女孩的家。",
+   "act": "村民奶奶把一小罐鹽撒進鍋裡。旅人小弟喝了一口，眼睛發亮。小女孩跑回家，從床底下拉出三根紅蘿蔔，抱著跑回來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小弟也喝了一口，眼睛一亮。",
+     "en": "The younger traveler took a sip, and his eyes lit up."
+    },
+    {
+     "who": "旅人小弟",
+     "tag": "excited",
+     "text": "哇，有鹹味了！如果再加一點紅蘿蔔，就更好喝了。",
+     "en": "Wow, now it's salty! But if we added a few carrots, it would be even better."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "紅蘿蔔？我知道哪裡有！",
+     "en": "Carrots? I know where some are!"
+    },
+    {
+     "who": "旁白",
+     "text": "她跑回家，從床底下拿出三根紅蘿蔔。",
+     "en": "She ran home and pulled three carrots out from under her bed."
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，大黑鍋旁邊圍了好幾個村民。",
+   "act": "第3頁那個包綠色頭巾的村民阿姨抱來一顆大高麗菜，一個村民叔叔提來一籃馬鈴薯，放進鍋裡。村長走到鍋邊，用湯匙喝了一口，皺起眉頭，嘴巴歪一邊。其他村民停下來，有人伸手想拿回自己的菜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有人拿來一顆高麗菜，有人拿來一籃馬鈴薯。",
+     "en": "Someone brought a cabbage. Someone brought a basket of potatoes."
+    },
+    {
+     "who": "旁白",
+     "text": "村長也走過來，喝了一口，皺起眉頭。",
+     "en": "Then the chief came over, took a sip, and frowned."
+    },
+    {
+     "who": "村長",
+     "tag": "grumpy",
+     "text": "這根本就是菜湯，石頭一點用都沒有！",
+     "en": "This is just vegetable soup. That stone doesn't do a thing!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都愣住了，有人想把菜拿回家。",
+     "en": "Everyone froze. Some people wanted to take their vegetables back home."
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，大黑鍋咕嘟冒泡，熱氣往上飄。",
+   "act": "旅人大叔笑呵呵地拍拍肚子；小女孩踮腳靠近鍋子，用力聞香味，一臉陶醉；村民奶奶牽著小女孩的手，對大家招手。村民們又圍回鍋子旁。",
+   "lines": [
+    {
+     "who": "旅人大叔",
+     "tag": "laughing",
+     "text": "別急，別急！湯要煮久一點，才會好喝喔。",
+     "en": "Don't worry! Soup needs time to cook before it gets good."
+    },
+    {
+     "who": "小女孩",
+     "tag": "hopeful",
+     "text": "可是，它聞起來好香！我想再等一下。",
+     "en": "But it already smells so good! I want to wait a little longer."
+    },
+    {
+     "who": "村民奶奶",
+     "tag": "gentle",
+     "text": "對呀，我們一起等吧！",
+     "en": "That's right. Let's all wait together!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家又圍到鍋子旁邊。",
+     "en": "So everyone gathered around the pot again."
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，所有村民圍著大黑鍋；村長家在廣場旁邊，門口掛著好幾串洋蔥。",
+   "act": "旅人小弟又喝一口，舉起手指說話。所有村民一起回頭看村長。村長摸著白鬍子，眼睛看旁邊，耳朵發紅；接著他抱來一大籃洋蔥。",
+   "lines": [
+    {
+     "who": "旅人小弟",
+     "tag": "happy",
+     "text": "如果再加一點洋蔥，就更好喝了。",
+     "en": "If we added an onion, it would be even better."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都看著村長。村長家的洋蔥，是全村最多的。",
+     "en": "Everyone looked at the chief. He had more onions than anyone in the village."
+    },
+    {
+     "who": "村長",
+     "tag": "embarrassed",
+     "text": "咳，我家剛好有幾顆啦。",
+     "en": "Ahem. Well, I just happen to have a few."
+    },
+    {
+     "who": "旁白",
+     "text": "村長抱來一大籃洋蔥，耳朵都紅了。",
+     "en": "The chief came back with a big basket of onions, and his ears turned red."
+    }
+   ]
+  },
+  {
+   "scene": "太陽要下山了，廣場上的天空變成橘紅色；大黑鍋裡滿是五顏六色的菜。",
+   "act": "村民們從家裡跑出來：有人拿玉米、有人拿香菇、有人拿豆子，放進鍋裡；有人搬來長木桌，有人捧著一疊碗走來，有人在屋簷下掛起紅燈籠。小女孩幫忙擺碗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這下子，大家都跑回家，拿出收起來的食物。",
+     "en": "Now everyone ran home and brought out the food they had put away."
+    },
+    {
+     "who": "旁白",
+     "text": "玉米、香菇、豆子，全都放進鍋子裡。",
+     "en": "Corn, mushrooms, and beans all went into the pot."
+    },
+    {
+     "who": "旁白",
+     "text": "有人搬來桌子，有人拿來碗，有人點起燈籠。",
+     "en": "Someone carried out tables. Someone brought bowls. Someone lit lanterns."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，廣場上掛滿紅燈籠，長木桌排在大黑鍋旁邊。",
+   "act": "旅人大叔舉起大湯匙，宣布湯煮好了。村長捧著碗喝了一大口，眼睛瞪大、鬍子翹起來，笑開了嘴。村民奶奶笑著擦眼鏡，看著坐滿長桌的村民。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鍋子裡飄出好香，好香的味道。",
+     "en": "A wonderful smell drifted out of the pot."
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "proud",
+     "text": "石頭湯煮好了！大家來喝吧！",
+     "en": "The stone soup is ready! Come and have some!"
+    },
+    {
+     "who": "村長",
+     "tag": "surprised",
+     "text": "好喝！這是我喝過最好喝的湯！",
+     "en": "Delicious! This is the best soup I've ever had!"
+    },
+    {
+     "who": "村民奶奶",
+     "tag": "happy",
+     "text": "我們村子，好久沒有一起吃飯了。",
+     "en": "Our village hasn't eaten together in such a long time."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，燈籠下的長木桌，大家坐在一起喝湯。",
+   "act": "村民們一邊喝湯一邊拍手唱歌。小女孩拉著旅人大叔的袖子說悄悄話；大叔彎下腰，用手指比一比鍋子。小女孩恍然大悟，扳著手指算鍋裡有誰的菜，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "那天晚上，大家一邊喝湯，一邊唱歌。",
+     "en": "That night, everyone sang while they ate their soup."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "大叔，這顆石頭的祕密是什麼？",
+     "en": "Mister, what's the secret of this stone?"
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "whispering",
+     "text": "妳想一想，鍋子裡，有誰的紅蘿蔔？",
+     "en": "Think about it. Whose carrots are in the pot?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "有我的紅蘿蔔，奶奶的鹽，村長的洋蔥！",
+     "en": "My carrots! Grandma's salt! The chief's onions!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "原來，是大家一起煮的！",
+     "en": "So everyone cooked it together!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，村子口的小路，天空很藍；右下角小圖：之後的某一天，廣場上大家又圍著大黑鍋。",
+   "act": "旅人小弟把灰色圓石頭放在小女孩手心；旅人大叔扛著大黑鍋，揮手道別。村長、村民奶奶和村民們站在村口揮手。小圖裡，石頭在湯裡，小女孩舉著湯匙大聲說話，大家都在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，旅人要出發了。",
+     "en": "The next morning, the travelers were ready to go."
+    },
+    {
+     "who": "旅人小弟",
+     "tag": "gentle",
+     "text": "這顆石頭，送給你們的村子。",
+     "en": "We'd like to give this stone to your village."
+    },
+    {
+     "who": "旅人大叔",
+     "tag": "happy",
+     "text": "想喝湯的時候，就把大家都叫來吧！",
+     "en": "Whenever you want soup, just call everyone together!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，村子每個月都煮一次石頭湯。",
+     "en": "From then on, the village made stone soup once a month."
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "如果再加一點笑聲，就更好喝了！",
+     "en": "And if we add a little laughter, it'll be even better!"
+    }
+   ]
+  }
+ ]
+}

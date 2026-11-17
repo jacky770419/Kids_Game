@@ -1,0 +1,519 @@
+{
+ "id": "selfish-giant",
+ "title": "巨人的花園",
+ "title_en": "The Selfish Giant",
+ "size": "長",
+ "roles": {
+  "巨人": "住在城堡裡的大巨人，聲音又低又粗、像打雷，一開始兇巴巴、很小氣，後來心軟了，說話變得溫柔，最後笑得好大聲。",
+  "小男孩": "大約四歲、全花園最小的男孩，聲音小小的，爬不上樹時哭得很委屈，被抱上樹後開心又害羞。",
+  "小女孩": "大約六歲的女孩，活潑愛玩，說話清亮，想念花園時嘟著嘴，看到巨人變溫柔時又驚又喜。",
+  "春天仙子": "帶來花和小鳥的春天仙子，年輕溫柔的女聲，沒有小孩的地方她就難過地不進去，孩子回來時開心又輕快。"
+ },
+ "cast": {
+  "巨人": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "春天仙子": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第4頁『沒有地方』，第5頁『沒有小孩』，第7頁『沒有來』，第8頁『沒有聽到』，第10頁『沒有走』，第13頁『沒有看到』",
+   "read": "méi"
+  },
+  {
+   "char": "誰",
+   "where": "第3頁『誰都不准』",
+   "read": "shéi"
+  },
+  {
+   "char": "什",
+   "where": "第2頁『做什麼』，第7頁『什麼也沒有』",
+   "read": "shén"
+  },
+  {
+   "char": "著",
+   "where": "第6頁『睡不著』",
+   "read": "zháo"
+  },
+  {
+   "char": "給",
+   "where": "第7頁『送給』",
+   "read": "gěi"
+  },
+  {
+   "char": "嚇",
+   "where": "第3頁、第12頁『嚇壞了』",
+   "read": "xià"
+  },
+  {
+   "char": "倒",
+   "where": "第11頁『推倒』，第15頁『倒下來』",
+   "read": "dǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一座好大的花園，春天的下午。軟軟的綠草地上開滿像星星一樣的白色和粉紅色小花，十二棵桃樹開滿粉紅色的花；花園四周是一道矮矮的石頭圍牆，遠處山坡上有一座灰色石頭大城堡。",
+   "act": "一群五到八歲的孩子，穿著各種顏色的衣服，在草地上追著跑、在桃樹下拍手。小女孩出場：大約六歲，綁兩條黑色辮子，穿黃色洋裝和紅色毛衣（全書一致），張開雙手在草地上轉圈。桃樹上停著幾隻藍色小鳥在唱歌。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一座好大、好美的花園。",
+     "en": "Once upon a time, there was a big, beautiful garden."
+    },
+    {
+     "who": "旁白",
+     "text": "草地又軟又綠，桃樹開滿了粉紅色的花。",
+     "en": "The grass was soft and green, and the peach trees were full of pink blossoms."
+    },
+    {
+     "who": "旁白",
+     "text": "每天放學，孩子們都跑來這裡玩。",
+     "en": "Every day after school, the children ran there to play."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "這裡是全世界最好玩的花園！",
+     "en": "This is the best garden in the whole world!"
+    }
+   ]
+  },
+  {
+   "scene": "同一座花園，花園外面的小路上。",
+   "act": "巨人出場：比圍牆高出很多的巨人，亂蓬蓬的咖啡色大鬍子、濃眉毛，穿深綠色背心、咖啡色長褲和黑色大靴子（全書一致）。他從小路大步走來，皺著眉頭、雙手叉腰，從矮牆上方往下瞪；孩子們停下來，抬頭看他，嚇了一跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這座花園的主人，是一個巨人。",
+     "en": "The garden belonged to a giant."
+    },
+    {
+     "who": "旁白",
+     "text": "巨人出遠門好久，有一天，終於回家了。",
+     "en": "He had been away for a long time, and one day, he finally came home."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！咚！咚！巨人的腳步好大聲。",
+     "en": "Boom! Boom! Boom! went the Giant's heavy feet."
+    },
+    {
+     "who": "巨人",
+     "tag": "angry",
+     "text": "你們在我的花園做什麼？",
+     "en": "What are you doing in my garden?"
+    }
+   ]
+  },
+  {
+   "scene": "花園四周，巨人蓋起一道比大樹高的灰色石頭牆，牆上掛著一塊木牌子，寫著「不准進來」。",
+   "act": "巨人把最後一塊大石頭放上牆頂，滿意地拍拍手；孩子們已經跑到牆外的小路上，回頭偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "孩子們嚇壞了，趕快跑走。",
+     "en": "The children were frightened and ran off as fast as they could."
+    },
+    {
+     "who": "巨人",
+     "tag": "shouting",
+     "text": "這是我的花園！誰都不准進來！",
+     "en": "This is my garden! Nobody comes in!"
+    },
+    {
+     "who": "旁白",
+     "text": "巨人蓋了一道好高的牆，把花園圍起來。",
+     "en": "The Giant built a tall wall all around the garden."
+    },
+    {
+     "who": "旁白",
+     "text": "他真是一個小氣的巨人。",
+     "en": "He was a very selfish giant."
+    }
+   ]
+  },
+  {
+   "scene": "高牆外面的石頭路，路上都是石頭和沙子，沒有花也沒有草；牆頭後面看得到一點桃樹的樹梢。",
+   "act": "孩子們坐在路邊，有的踢小石頭，有的托著下巴，看起來好無聊；小女孩抬頭望著高牆，嘟著嘴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "孩子們沒有地方玩了。",
+     "en": "Now the children had nowhere to play."
+    },
+    {
+     "who": "旁白",
+     "text": "他們在石頭路上走來走去，好無聊。",
+     "en": "They wandered up and down the stony road. It was so boring."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sad",
+     "text": "我好想念那個花園喔。",
+     "en": "I miss that garden so much."
+    },
+    {
+     "who": "旁白",
+     "text": "大家看著高牆，一起嘆了一口氣。",
+     "en": "Everyone looked at the tall wall and sighed."
+    }
+   ]
+  },
+  {
+   "scene": "春天的小村子：每家院子都開滿了花，小鳥在天上飛；只有巨人的花園被白雪蓋住，牆裡面的樹光禿禿的，樹枝掛著冰柱。",
+   "act": "春天仙子出場：年輕的仙女，長長的淡綠色頭髮上戴著花環，穿用花瓣做成的粉紅色長裙，光著腳，背上有一對透明的小翅膀，走過的地方會開出小花（全書一致）。她飛到巨人的牆頭，往裡面看，難過地搖搖頭，轉身飛走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "春天來了，村子裡開滿了花。",
+     "en": "Spring came, and flowers bloomed all over the village."
+    },
+    {
+     "who": "旁白",
+     "text": "春天仙子飛到巨人的牆邊，往裡面看了看。",
+     "en": "The Spring Fairy flew to the Giant's wall and peeked inside."
+    },
+    {
+     "who": "春天仙子",
+     "tag": "sad",
+     "text": "這裡沒有小孩，好安靜喔。我不要進去。",
+     "en": "There are no children here. It's so quiet. I won't go in."
+    },
+    {
+     "who": "旁白",
+     "text": "所以，巨人的花園裡，一直是冬天。",
+     "en": "So in the Giant's garden, it stayed winter."
+    }
+   ]
+  },
+  {
+   "scene": "巨人的花園，冬天，天空是灰色的。草地上蓋著厚厚的雪，樹枝上結滿銀白色的霜。",
+   "act": "北風畫成一團鼓著臉頰的灰白色大雲，披著灰色斗篷，繞著城堡吹，把煙囪的煙吹歪；白色的冰雹一顆一顆打在城堡屋頂上。北風沒有說話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "白雪像一條大被子，蓋住了草地。",
+     "en": "Snow covered the grass like a big white blanket."
+    },
+    {
+     "who": "旁白",
+     "text": "霜把每一根樹枝，都塗成了銀色。",
+     "en": "Frost painted every branch silver."
+    },
+    {
+     "who": "旁白",
+     "text": "北風也來了，呼！呼！繞著城堡吹個不停。",
+     "en": "The North Wind came too. Whoo! Whoo! It blew around the castle all day long."
+    },
+    {
+     "who": "旁白",
+     "text": "冰雹打在屋頂上，好吵，巨人都睡不著。",
+     "en": "Hail pounded on the roof and kept the Giant awake."
+    }
+   ]
+  },
+  {
+   "scene": "城堡裡巨人的房間，石頭牆、好大的木頭窗戶，窗外下著雪，白茫茫的花園。",
+   "act": "巨人裹著一條紅格子大毛毯，坐在窗邊發抖，鼻頭凍得紅通通的，看著窗外。窗外的遠方，別人家的果樹結滿黃色的梨子和紅色的蘋果，只有巨人的花園是白色的。",
+   "lines": [
+    {
+     "who": "巨人",
+     "tag": "sad",
+     "text": "好冷，好冷！春天怎麼一直不來呢？",
+     "en": "So cold, so cold! Why won't spring come?"
+    },
+    {
+     "who": "旁白",
+     "text": "夏天沒有來，秋天也沒有來。",
+     "en": "Summer never came, and autumn never came either."
+    },
+    {
+     "who": "旁白",
+     "text": "秋天把金黃色的水果，送給別的花園。",
+     "en": "Autumn brought golden fruit to all the other gardens."
+    },
+    {
+     "who": "旁白",
+     "text": "可是巨人的花園，什麼也沒有。",
+     "en": "But the Giant's garden got nothing at all."
+    }
+   ]
+  },
+  {
+   "scene": "巨人的房間，清晨，一道金色的陽光從窗戶照進來。",
+   "act": "巨人躺在大木床上，被子拉到下巴；窗台上停著一隻藍色小鳥，張著嘴巴在唱歌。巨人睜開一隻眼睛，耳朵豎起來，一臉驚訝。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天早上，巨人聽到一陣歌聲。",
+     "en": "One morning, the Giant heard someone singing."
+    },
+    {
+     "who": "旁白",
+     "text": "是一隻小鳥，在他的窗外唱歌。",
+     "en": "It was a little bird, singing outside his window."
+    },
+    {
+     "who": "旁白",
+     "text": "他好久，好久，沒有聽到小鳥唱歌了。",
+     "en": "He hadn't heard a bird sing in such a long, long time."
+    },
+    {
+     "who": "旁白",
+     "text": "冰雹停了，北風也不吹了。",
+     "en": "The hail stopped, and the North Wind was quiet."
+    },
+    {
+     "who": "巨人",
+     "tag": "surprised",
+     "text": "咦？是春天來了嗎？",
+     "en": "Huh? Has spring come at last?"
+    }
+   ]
+  },
+  {
+   "scene": "從城堡窗戶往下看到的花園：高牆下面有一個小洞；樹都開滿了花，草地冒出小花，小鳥飛來飛去。",
+   "act": "孩子們從牆上的小洞一個接一個爬進來，坐在樹最下面、又粗又平、離地不高（大約大人腰那麼高）的樹枝上笑；小女孩坐在一棵桃樹的樹枝上揮手。春天仙子站在草地中間張開雙手，腳邊開出一圈小花。巨人趴在窗邊，看呆了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人跑到窗邊一看，哇！",
+     "en": "The Giant ran to the window and looked out. Wow!"
+    },
+    {
+     "who": "旁白",
+     "text": "孩子們從牆上的小洞，爬進來了！",
+     "en": "The children had crawled in through a little hole in the wall!"
+    },
+    {
+     "who": "旁白",
+     "text": "每一棵樹最低的樹枝上，都坐著一個小孩。",
+     "en": "On the lowest branch of every tree sat a child."
+    },
+    {
+     "who": "旁白",
+     "text": "樹開花了，小鳥也飛回來了。",
+     "en": "The trees burst into blossom, and the birds came flying back."
+    },
+    {
+     "who": "春天仙子",
+     "tag": "happy",
+     "text": "孩子們回來了，我也回來了！",
+     "en": "The children are back, so I'm back too!"
+    }
+   ]
+  },
+  {
+   "scene": "花園最遠的那一邊，依舊是冬天：一棵大樹上蓋滿白雪，地上有雪，北風在樹頂上吹。",
+   "act": "小男孩出場：大約四歲，比其他孩子都小，咖啡色捲髮，穿藍色連帽外套和紅色小靴子（全書一致）。他站在樹下，踮著腳伸長手也摸不到最低的樹枝，揉著眼睛在哭。大樹努力把樹枝往下彎。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是花園最遠的那一邊，冬天沒有走。",
+     "en": "But in the far corner of the garden, winter had not gone away."
+    },
+    {
+     "who": "旁白",
+     "text": "一個小男孩站在樹下，傷心地哭。",
+     "en": "A little boy stood under a tree, crying."
+    },
+    {
+     "who": "旁白",
+     "text": "大樹把樹枝往下彎，可是小男孩太小了，摸不到。",
+     "en": "The tree bent its branches down, but the little boy was too small to reach them."
+    },
+    {
+     "who": "小男孩",
+     "tag": "crying",
+     "text": "我也想上去，可是我爬不上去。",
+     "en": "I want to go up too, but I can't climb up."
+    }
+   ]
+  },
+  {
+   "scene": "城堡的窗邊。",
+   "act": "巨人看著遠遠的小男孩，眉頭鬆開了，一隻大手按著胸口，眼睛濕濕的，臉上有一點不好意思。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人看著小男孩，心裡好難過。",
+     "en": "The Giant watched the little boy, and his heart felt heavy."
+    },
+    {
+     "who": "巨人",
+     "tag": "sad",
+     "text": "原來春天，是跟著孩子們來的。",
+     "en": "So spring comes with the children."
+    },
+    {
+     "who": "巨人",
+     "tag": "gentle",
+     "text": "我真是太小氣了。",
+     "en": "I have been so selfish."
+    },
+    {
+     "who": "巨人",
+     "tag": "determined",
+     "text": "我要去幫那個小男孩，然後，把牆推倒！",
+     "en": "I will go and help that little boy. And then, I will knock down the wall!"
+    }
+   ]
+  },
+  {
+   "scene": "花園，城堡的大門打開了。",
+   "act": "巨人輕手輕腳走出大門，伸出一隻大手；孩子們一看到他，嚇得從牆上的小洞跑出去，樹上的花一下子不見了，雪又飄下來。巨人停下腳步，一臉著急。遠遠的大樹下，小男孩低著頭在哭，沒有看到巨人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "巨人小心地打開門，走進花園。",
+     "en": "The Giant quietly opened the door and stepped into the garden."
+    },
+    {
+     "who": "旁白",
+     "text": "孩子們一看到他，嚇壞了，全都跑走。",
+     "en": "As soon as the children saw him, they all ran away."
+    },
+    {
+     "who": "旁白",
+     "text": "花一下子不見了，雪又飄了下來。",
+     "en": "The flowers vanished, and snow began to fall again."
+    },
+    {
+     "who": "巨人",
+     "tag": "sad",
+     "text": "不要走，我不是來罵你們的！",
+     "en": "Don't go! I'm not here to scold you!"
+    }
+   ]
+  },
+  {
+   "scene": "花園最遠的那一邊，那棵蓋滿雪的大樹下。",
+   "act": "巨人蹲下來，用兩隻大手輕輕捧起小男孩，把他放在一根又粗又平、離地不高的樹枝上，一隻大手一直在旁邊扶著他。樹上的雪變成粉紅色的花，小鳥飛來。小男孩抱著巨人的大手指，笑了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小男孩眼睛都是淚水，沒有看到巨人。",
+     "en": "The little boy's eyes were so full of tears that he didn't see the Giant."
+    },
+    {
+     "who": "旁白",
+     "text": "巨人小心地把他抱起來，放在樹枝上，用大手扶好。",
+     "en": "The Giant gently lifted him onto a branch and held him steady with his big hand."
+    },
+    {
+     "who": "旁白",
+     "text": "馬上，大樹開滿了花，小鳥也飛來唱歌。",
+     "en": "At once, the tree burst into bloom, and the birds flew over to sing."
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "謝謝你，巨人！",
+     "en": "Thank you, Giant!"
+    },
+    {
+     "who": "旁白",
+     "text": "小男孩伸出手，抱住巨人的大手指。",
+     "en": "The little boy reached out and hugged the Giant's big finger."
+    }
+   ]
+  },
+  {
+   "scene": "牆外的小路，牆上的小洞旁邊。",
+   "act": "孩子們躲在牆外，從小洞和牆角偷偷往裡面看；小女孩看到巨人扶著樹上的小男孩，驚訝地張大嘴，回頭叫大家。後面的孩子們開始跑進花園，花又開了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "孩子們躲在牆外，從小洞往裡面看。",
+     "en": "The children peeked in through the little hole in the wall."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "你們看！巨人在幫小男孩！",
+     "en": "Look! The Giant is helping the little boy!"
+    },
+    {
+     "who": "旁白",
+     "text": "巨人不兇了！大家開心地跑回花園。",
+     "en": "The Giant wasn't mean anymore! Everyone ran happily back into the garden."
+    },
+    {
+     "who": "旁白",
+     "text": "孩子們一回來，春天也跟著回來了。",
+     "en": "And when the children came back, spring came back too."
+    }
+   ]
+  },
+  {
+   "scene": "花園的一邊，高高的石頭牆前面；牆外是一大片沒有人的空草地。",
+   "act": "孩子們站在很遠的大樹下，摀著耳朵笑；巨人用兩隻大手推著石牆，大石頭往牆外的空草地倒下去，揚起一點灰塵。",
+   "lines": [
+    {
+     "who": "巨人",
+     "tag": "happy",
+     "text": "孩子們，從今天起，這是你們的花園了！",
+     "en": "Children, from today on, this is your garden!"
+    },
+    {
+     "who": "巨人",
+     "tag": "excited",
+     "text": "大家站遠一點喔！",
+     "en": "Everyone, stand way back!"
+    },
+    {
+     "who": "旁白",
+     "text": "巨人用力一推，轟隆！",
+     "en": "The Giant gave a mighty push. Crash!"
+    },
+    {
+     "who": "旁白",
+     "text": "那道高牆，倒下來了！",
+     "en": "Down came the tall wall!"
+    }
+   ]
+  },
+  {
+   "scene": "沒有圍牆的花園，夏天的下午，開滿了花，遠處看得到村子的屋頂。",
+   "act": "巨人盤腿坐在草地上，手拿一個大泡泡圈，吹出好多好大的彩色泡泡；小男孩坐在巨人旁邊的草地上拍手，小女孩和孩子們追著泡泡跑；春天仙子坐在桃樹上微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那天起，巨人每天和孩子們一起玩。",
+     "en": "From that day on, the Giant played with the children every day."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "巨人，明天也要一起玩喔！",
+     "en": "Giant, let's play again tomorrow!"
+    },
+    {
+     "who": "巨人",
+     "tag": "laughing",
+     "text": "好！明天、後天，每一天都一起玩！",
+     "en": "Yes! Tomorrow, and the day after, and every day!"
+    },
+    {
+     "who": "旁白",
+     "text": "巨人的花園，變成了全世界最熱鬧的花園。",
+     "en": "And the Giant's garden became the happiest garden in the whole world."
+    }
+   ]
+  }
+ ]
+}

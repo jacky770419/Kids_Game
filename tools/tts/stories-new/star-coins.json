@@ -1,0 +1,255 @@
+{
+ "id": "star-coins",
+ "title": "星星銀幣",
+ "title_en": "The Star Money",
+ "size": "短",
+ "roles": {
+  "小女孩": "住在小鎮的六歲小女孩，聲音溫柔甜美，很體貼，看到別人有困難就想幫忙，看到星星變銀幣時又驚又喜。",
+  "老爺爺": "坐在路邊長椅上的老爺爺，慈祥低沉的聲音，肚子餓時有氣無力，收到麵包時很感動，第二天開心又溫暖。",
+  "小男孩": "抱著小妹妹的五歲小男孩，聲音軟軟的，冷的時候小小聲，戴上帽子後變得開心有精神。"
+ },
+ "cast": {
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "老爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "給",
+   "where": "第2頁『包給您』，第3頁『給他』，第4頁『套給妹』，第8頁『個給老』『個給小』",
+   "read": "gěi"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『都沒吃』，第5頁『沒關』",
+   "read": "méi"
+  },
+  {
+   "char": "凍",
+   "where": "第3頁『凍紅』",
+   "read": "dòng"
+  },
+  {
+   "char": "喔",
+   "where": "第2頁『餓喔』，第3頁『冷喔』",
+   "read": "ō"
+  },
+  {
+   "char": "漂",
+   "where": "第6頁『漂亮』",
+   "read": "piào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "冬天的晚上，小鎮的石頭小路，路邊的房子窗戶透出黃色的燈光，地上有一層薄薄的白雪，天上剛出現第一顆星星。",
+   "act": "小女孩出場：大約六歲，黑色短髮、圓臉，戴一頂紅色毛線帽，穿藍色外套，裡面是黃色毛衣，圍著紅色圍巾，穿咖啡色靴子；她雙手抱著一條長長的麵包，邊走邊笑，嘴裡呼出白氣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天的晚上，小女孩買了一個麵包。",
+     "en": "One winter night, a little girl bought a loaf of bread."
+    },
+    {
+     "who": "旁白",
+     "text": "她戴著紅帽子，穿著藍外套。",
+     "en": "She wore a red hat and a blue coat."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "快點回家，和爸爸媽媽一起吃！",
+     "en": "I'll hurry home and share it with Mom and Dad!"
+    }
+   ]
+  },
+  {
+   "scene": "小路旁的一張木頭長椅，旁邊有一盞路燈，雪輕輕地飄。",
+   "act": "老爺爺出場：白頭髮、白鬍子，穿一件舊舊的灰色大衣，坐在長椅上摸著肚子；小女孩彎腰把麵包遞給他，老爺爺眼睛濕濕的，笑了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "路邊的椅子上，坐著一位老爺爺。",
+     "en": "On a bench by the road sat an old man."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "sad",
+     "text": "我一整天都沒吃東西，好餓喔。",
+     "en": "I haven't eaten all day. I'm so hungry."
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "爺爺，這個麵包給您！",
+     "en": "Here, sir, you can have my bread!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "謝謝妳，好心的孩子。",
+     "en": "Thank you, kind child."
+    }
+   ]
+  },
+  {
+   "scene": "一座石頭小橋邊，雪下得比較大，橋下的小河結了薄冰。",
+   "act": "小男孩出場：大約五歲，棕色捲髮，沒戴帽子，耳朵凍得紅紅的，穿一件綠色毛衣；他懷裡抱著包在小毯子裡的妹妹（大約一歲，粉紅色臉頰，戴白色小帽子）。小女孩拿下自己的紅色毛線帽，戴到小男孩頭上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小橋邊，有個小男孩抱著妹妹等媽媽。",
+     "en": "At the little bridge, a boy stood holding his baby sister, waiting for their mom."
+    },
+    {
+     "who": "小男孩",
+     "tag": "sad",
+     "text": "好冷喔，我的耳朵都凍紅了。",
+     "en": "It's so cold. My ears are red and frozen."
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩拿下紅帽子，給他戴上。",
+     "en": "The little girl took off her red hat and put it on his head."
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "好溫暖！謝謝妳！",
+     "en": "So warm! Thank you!"
+    }
+   ]
+  },
+  {
+   "scene": "同一座小橋邊。",
+   "act": "小妹妹在毯子裡發抖、打噴嚏；小女孩脫下藍色外套，包住小妹妹，小妹妹露出笑臉；小男孩戴著紅帽子，感動地看著小女孩。小女孩身上剩下黃色毛衣和紅圍巾。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，小妹妹冷到打噴嚏。",
+     "en": "But the baby sister was so cold, she sneezed."
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "我家就在前面，外套給妹妹穿吧！",
+     "en": "My house is just up ahead. Your sister can have my coat!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "妹妹笑了！妳真好！",
+     "en": "Look, my sister is smiling! You're so kind!"
+    }
+   ]
+  },
+  {
+   "scene": "回家的小路上，雪停了，天空又黑又深，滿天都是亮亮的星星。",
+   "act": "小女孩穿著黃色毛衣、圍著紅圍巾，搓著手呵氣，抬頭看星星，臉上帶著溫暖的笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小女孩穿著毛衣，圍著紅圍巾，手有點冰。",
+     "en": "The little girl still had her sweater and red scarf, but her hands were a little cold."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "沒關係，我的心裡很溫暖。",
+     "en": "That's okay. My heart feels warm."
+    },
+    {
+     "who": "旁白",
+     "text": "她抬起頭，滿天星星都在對她眨眼睛。",
+     "en": "She looked up, and all the stars were twinkling down at her."
+    }
+   ]
+  },
+  {
+   "scene": "同一條小路，星星像雪花一樣從天上飄下來，一碰到地面就變成閃亮的銀幣。",
+   "act": "小女孩睜大眼睛、張開手接；銀幣在她手上和雪地上閃閃發光；她把紅圍巾拉開，像小袋子一樣接住好多銀幣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "忽然，好多星星從天上飄下來。",
+     "en": "Suddenly, lots of stars came floating down from the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "叮！叮！叮！星星變成閃亮的銀幣！",
+     "en": "Clink! Clink! Clink! The stars turned into shiny silver coins!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "哇，是銀幣！好漂亮！",
+     "en": "Wow, silver coins! They're so pretty!"
+    },
+    {
+     "who": "旁白",
+     "text": "她用紅圍巾，接住了好多銀幣。",
+     "en": "She caught lots of them in her red scarf."
+    }
+   ]
+  },
+  {
+   "scene": "小女孩家的門口，木頭門打開，屋裡有暖爐和黃色燈光。",
+   "act": "媽媽（棕色長髮、綠色毛衣）和爸爸（短鬍子、紅格子襯衫）在門口蹲下來抱住小女孩；小女孩打開紅圍巾給他們看滿滿的銀幣，三個人臉上都是笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小女孩跑回家，爸爸媽媽緊緊抱住她。",
+     "en": "The little girl ran home, and Mom and Dad hugged her tight."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "我把麵包、帽子和外套，都送人了。",
+     "en": "I gave away my bread, my hat, and my coat."
+    },
+    {
+     "who": "小女孩",
+     "text": "可是你們看，星星送我好多銀幣！",
+     "en": "But look! The stars gave me lots of silver coins!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，小鎮的麵包店前，陽光照在白雪上，閃閃發亮；旁邊就是那張長椅和那座小橋。",
+   "act": "小女孩穿著新的藍色外套、戴新的紅帽子，提著一籃熱麵包；她把麵包送給長椅上的老爺爺，也送給小男孩和他的妹妹；老爺爺、小男孩、小妹妹和小女孩一起吃麵包，笑成一團。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，小女孩買了好多熱麵包。",
+     "en": "The next day, the little girl bought lots of warm bread."
+    },
+    {
+     "who": "旁白",
+     "text": "她送一個給老爺爺，送一個給小男孩。",
+     "en": "She gave one to the old man and one to the boy."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "今天的麵包，好香啊！",
+     "en": "Today's bread smells wonderful!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "我們一起吃吧！",
+     "en": "Let's all eat together!"
+    }
+   ]
+  }
+ ]
+}

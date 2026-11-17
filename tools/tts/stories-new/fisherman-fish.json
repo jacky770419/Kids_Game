@@ -1,0 +1,578 @@
+{
+ "id": "fisherman-fish",
+ "title": "漁夫和金魚",
+ "title_en": "The Fisherman and the Golden Fish",
+ "size": "長",
+ "roles": {
+  "漁夫爺爺": "住在海邊的老漁夫，慈祥溫和的老爺爺聲音，有點糊塗，很想讓老伴開心，許願時不好意思，害怕時聲音發抖，最後笑得很開懷。",
+  "老婆婆": "漁夫的老伴，誇張好笑的老奶奶聲音，說話又快又大聲、愛使喚人，可是心不壞，最後笑著承認還是小木屋好。",
+  "金魚": "大海裡會說話的金魚，年輕女生的聲音，溫柔清亮，一開始親切，後來越來越安靜、嚴肅。"
+ },
+ "cast": {
+  "漁夫爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "老婆婆": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "金魚": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "撒",
+   "where": "第2頁『撒進海裡』",
+   "read": "sā"
+  },
+  {
+   "char": "什",
+   "where": "第3頁『什麼都不要』，第3、5、7、9頁『想要什麼』，第4頁『什麼都沒要』，第13頁『什麼也沒說』，第16頁『什麼都不缺』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『沒想到』，第4頁『都沒要』『沒想到』，第10頁『沒有笑』，第11頁『沒有人』，第13頁『也沒說』，第15頁『城堡沒了』",
+   "read": "méi"
+  },
+  {
+   "char": "當",
+   "where": "第8、9、12頁『當女王』",
+   "read": "dāng"
+  },
+  {
+   "char": "冠",
+   "where": "第10頁、第15頁『皇冠』",
+   "read": "guān"
+  },
+  {
+   "char": "給",
+   "where": "第1頁『煮魚湯給妳喝』",
+   "read": "gěi"
+  },
+  {
+   "char": "少",
+   "where": "第4頁『至少』",
+   "read": "shǎo"
+  },
+  {
+   "char": "行",
+   "where": "第12頁『不行，不行』",
+   "read": "xíng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "藍色的大海旁邊，沙灘上有一間破舊的小木屋，屋頂用稻草補著破洞；門口放著一個裂開的舊木盆，正在漏水。",
+   "act": "漁夫爺爺：瘦瘦的老爺爺，白鬍子，戴藍色毛線帽，穿有補丁的灰色衣服，褲管捲起來，肩上掛著漁網。老婆婆：矮胖的老奶奶，灰白頭髮綁成包包頭，穿咖啡色舊衣服、紅色舊圍裙。老婆婆站在漏水的木盆旁邊，雙手插腰、皺著眉頭；漁夫爺爺笑著拍拍她的肩膀。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大海旁邊，有一間小木屋。",
+     "en": "By the sea, there was a little wooden hut."
+    },
+    {
+     "who": "旁白",
+     "text": "漁夫爺爺和老婆婆，在這裡住了好多年。",
+     "en": "An old fisherman and his wife had lived there for many years."
+    },
+    {
+     "who": "旁白",
+     "text": "他們很窮，連洗衣服的木盆，都裂開了。",
+     "en": "They were poor. Even their washtub had a crack in it."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "annoyed",
+     "text": "哎呀，木盆又漏水了！",
+     "en": "Oh no, the tub is leaking again!"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "gentle",
+     "text": "老伴別生氣，我去抓魚，晚上煮魚湯給妳喝。",
+     "en": "Don't be cross, dear. I'll go catch some fish and make you fish soup tonight."
+    }
+   ]
+  },
+  {
+   "scene": "早上，平靜的藍色大海，漁夫爺爺坐在一艘小木船上。",
+   "act": "漁夫爺爺三次拉起漁網：第一次網子裡是一團綠色海草，第二次是一隻破舊的咖啡色鞋子，他拿著鞋子笑；第三次網子裡有一條發著金光的小金魚，金色鱗片、大大的眼睛、長長的透明尾巴，像穿了一件紗裙。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "漁夫爺爺把漁網撒進海裡。",
+     "en": "The old fisherman cast his net into the sea."
+    },
+    {
+     "who": "旁白",
+     "text": "第一次，拉上來一堆海草。",
+     "en": "The first time, he pulled up a pile of seaweed."
+    },
+    {
+     "who": "旁白",
+     "text": "第二次，拉上來一隻破鞋子。",
+     "en": "The second time, he pulled up an old shoe."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "laughing",
+     "text": "哈，我不缺鞋子，我缺的是魚呀！",
+     "en": "Ha! I don't need a shoe. I need a fish!"
+    },
+    {
+     "who": "旁白",
+     "text": "第三次，漁網裡，有一條發著金光的小魚。",
+     "en": "The third time, there was a little fish in the net, shining like gold."
+    }
+   ]
+  },
+  {
+   "scene": "小木船上，海面閃著陽光。",
+   "act": "漁夫爺爺雙手捧著小金魚，嘴巴張得好大，嚇了一跳；小金魚抬頭看著他，溫柔地說話。最後他把金魚放回海裡，水花濺起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "沒想到，小金魚開口說話了！",
+     "en": "To his surprise, the little golden fish began to speak!"
+    },
+    {
+     "who": "金魚",
+     "tag": "gentle",
+     "text": "漁夫爺爺，請放我回大海。",
+     "en": "Old fisherman, please let me go back to the sea."
+    },
+    {
+     "who": "金魚",
+     "text": "你想要什麼，我都可以幫你。",
+     "en": "Whatever you wish for, I can help you."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "surprised",
+     "text": "會說話的魚！我什麼都不要，快回家吧！",
+     "en": "A talking fish! I don't need anything. Hurry home!"
+    },
+    {
+     "who": "旁白",
+     "text": "撲通！小金魚游走了。",
+     "en": "Splash! The little golden fish swam away."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小木屋裡，桌上一盞油燈。",
+   "act": "漁夫爺爺坐在木頭凳子上，比手畫腳說金魚的事；老婆婆兩手一攤，瞪大眼睛，指著門外那個裂開的木盆。漁夫爺爺抓抓頭，一臉恍然大悟。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回到家，漁夫爺爺告訴老婆婆。",
+     "en": "Back home, the old fisherman told his wife everything."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "shouting",
+     "text": "什麼？老頭子，你什麼都沒要？",
+     "en": "What? Old man, you didn't ask for anything?"
+    },
+    {
+     "who": "老婆婆",
+     "text": "我們的木盆破了，至少要一個新木盆呀！",
+     "en": "Our tub is broken. You could have at least asked for a new tub!"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "surprised",
+     "text": "對喔！我怎麼都沒想到！",
+     "en": "Oh, right! Why didn't I think of that?"
+    }
+   ]
+  },
+  {
+   "scene": "海邊的沙灘，大海很藍、很平靜，天空晴朗。",
+   "act": "漁夫爺爺站在沙灘上，雙手圍在嘴邊對大海喊；小金魚從藍色的海面探出頭。漁夫爺爺有點不好意思，搓著手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "漁夫爺爺跑到海邊。大海很藍，很平靜。",
+     "en": "The old fisherman ran to the shore. The sea was blue and calm."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "hopeful",
+     "text": "小金魚，小金魚，請妳出來！",
+     "en": "Little golden fish, little golden fish, please come out!"
+    },
+    {
+     "who": "金魚",
+     "tag": "gentle",
+     "text": "漁夫爺爺，你想要什麼？",
+     "en": "Old fisherman, what do you wish for?"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "shy",
+     "text": "我老伴，想要一個新木盆。",
+     "en": "My wife would like a new washtub."
+    },
+    {
+     "who": "金魚",
+     "tag": "happy",
+     "text": "回家吧，你們會有的。",
+     "en": "Go home. You'll have it."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，舊木盆不見了，換成一個發亮的新木盆，旁邊放著一籃衣服。",
+   "act": "老婆婆蹲在新木盆旁邊，開心地拍手；漁夫爺爺看著她笑，眼睛一亮，舉起一根手指想到好主意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "家門口，放著一個好漂亮的新木盆。",
+     "en": "By the door sat a beautiful new washtub."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "excited",
+     "text": "哇，不會漏水了！",
+     "en": "Wow! It doesn't leak!"
+    },
+    {
+     "who": "旁白",
+     "text": "漁夫爺爺想讓老伴再開心一點。",
+     "en": "The old fisherman wanted to make his wife even happier."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "excited",
+     "text": "老伴，我們跟金魚要一間新房子，好不好？",
+     "en": "Dear, why don't we ask the fish for a new house?"
+    },
+    {
+     "who": "老婆婆",
+     "tag": "excited",
+     "text": "好呀！要有大窗戶的！",
+     "en": "Oh yes! One with big windows!"
+    }
+   ]
+  },
+  {
+   "scene": "海邊的沙灘，大海變成綠色，起了小小的白色浪花，天上飄著幾朵白雲。",
+   "act": "漁夫爺爺又站在沙灘上喊；小金魚從綠色的海面探出頭，沒有上次那麼開心，靜靜地看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "漁夫爺爺回到海邊，大海變成綠色了。",
+     "en": "The old fisherman went back to the shore. The sea had turned green."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "hopeful",
+     "text": "小金魚，小金魚，請妳出來！",
+     "en": "Little golden fish, little golden fish, please come out!"
+    },
+    {
+     "who": "金魚",
+     "text": "漁夫爺爺，你想要什麼？",
+     "en": "Old fisherman, what do you wish for?"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "shy",
+     "text": "我們想要一間新房子。",
+     "en": "We'd like a new house."
+    },
+    {
+     "who": "金魚",
+     "tag": "calm",
+     "text": "回家吧，你們會有的。",
+     "en": "Go home. You'll have it."
+    }
+   ]
+  },
+  {
+   "scene": "海邊，小木屋不見了，變成一間紅色屋頂、白色牆壁的大房子，有大窗戶和開滿花的花園。",
+   "act": "左半邊：老婆婆穿著新的花裙子，在花園裡開心地轉圈。右半邊：三天後，她坐在大窗戶前，撐著下巴嘆氣，指著遠方的山丘，頭上冒出一個想像泡泡，裡面是一座城堡；漁夫爺爺端著茶站在旁邊，皺眉擔心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小木屋不見了，變成一間紅屋頂的大房子。",
+     "en": "The little hut was gone. In its place stood a big house with a red roof."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "happy",
+     "text": "有大窗戶，有花園，太棒了！",
+     "en": "Big windows and a garden! Wonderful!"
+    },
+    {
+     "who": "旁白",
+     "text": "才過了三天，老婆婆就嘆氣了。",
+     "en": "But only three days later, his wife began to sigh."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "bossy",
+     "text": "房子再大，也比不上城堡。我要當女王！",
+     "en": "A big house is nice, but it's no castle. I want to be a queen!"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "worried",
+     "text": "女王？這樣好嗎？",
+     "en": "A queen? Is that a good idea?"
+    }
+   ]
+  },
+  {
+   "scene": "海邊的沙灘，大海變成灰色，風很大，浪比上次大，天上是灰色的雲。",
+   "act": "老婆婆在大房子門口，雙手插腰，指著海邊；漁夫爺爺走在沙灘上，帽子被風吹歪，抓著帽子喊。小金魚從灰色的海面探出頭，表情嚴肅。",
+   "lines": [
+    {
+     "who": "老婆婆",
+     "tag": "bossy",
+     "text": "你不是想讓我開心嗎？快去！",
+     "en": "Don't you want to make me happy? Go on!"
+    },
+    {
+     "who": "旁白",
+     "text": "到了海邊，大海變成灰色，颳起了大風。",
+     "en": "At the shore, the sea had turned gray, and a strong wind was blowing."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "worried",
+     "text": "小金魚，小金魚，請妳出來！",
+     "en": "Little golden fish, little golden fish, please come out!"
+    },
+    {
+     "who": "金魚",
+     "tag": "serious",
+     "text": "漁夫爺爺，你想要什麼？",
+     "en": "Old fisherman, what do you wish for?"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "shy",
+     "text": "我老伴，想當女王。",
+     "en": "My wife would like to be a queen."
+    }
+   ]
+  },
+  {
+   "scene": "左半邊：灰色海面上，小金魚看著漁夫爺爺。右半邊：海邊山丘上一座白色城堡，有藍色尖屋頂和旗子，大廳裡鋪著紅地毯。",
+   "act": "小金魚安靜地看著漁夫爺爺，沒有笑。城堡大廳裡，老婆婆戴著金色皇冠、披著紅色斗篷，坐在金色大椅子上，旁邊站著好多僕人；漁夫爺爺穿著綠色的絲絨新衣服，得意地拉著衣角欣賞自己。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "金魚看了他好久，沒有笑。",
+     "en": "The fish looked at him for a long time and did not smile."
+    },
+    {
+     "who": "金魚",
+     "tag": "sad",
+     "text": "回家吧。",
+     "en": "Go home."
+    },
+    {
+     "who": "旁白",
+     "text": "大房子變成了一座城堡！",
+     "en": "The big house had become a castle!"
+    },
+    {
+     "who": "旁白",
+     "text": "老婆婆戴著金皇冠，好多僕人圍著她。",
+     "en": "His wife wore a golden crown, and many servants gathered around her."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "laughing",
+     "text": "嘿，我也有新衣服了！",
+     "en": "Hey! I've got new clothes too!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，城堡裡又長又暗的走廊，牆上掛著蠟燭，走廊兩邊有好多一樣的門。",
+   "act": "漁夫爺爺穿著綠色絲絨衣服，手裡拿著一根蠟燭，站在好幾條走廊的交叉口，左看右看，一臉迷路的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "城堡好大，有一百個房間。",
+     "en": "The castle was huge. It had a hundred rooms."
+    },
+    {
+     "who": "旁白",
+     "text": "晚上，漁夫爺爺找不到老婆婆，在走廊上迷路了。",
+     "en": "One night, the old fisherman couldn't find his wife, and he got lost in the hallways."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "sad",
+     "text": "老伴，妳在哪裡？",
+     "en": "Dear, where are you?"
+    },
+    {
+     "who": "旁白",
+     "text": "沒有人回答他。",
+     "en": "No one answered."
+    }
+   ]
+  },
+  {
+   "scene": "白天，城堡大廳，窗外看得到暗下來的大海。",
+   "act": "老婆婆從金色大椅子上站起來，舉起權杖指著窗外的大海；漁夫爺爺兩手搖個不停拒絕，最後低著頭，拖著腳步走出城堡大門。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，老婆婆又有新主意了。",
+     "en": "The next day, his wife had a new idea."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "proud",
+     "text": "我要當大海的女王，讓金魚每天幫我做事！",
+     "en": "I want to be Queen of the Sea, and that fish will work for me every day!"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "scared",
+     "text": "不行，不行！金魚是我們的朋友呀！",
+     "en": "No, no! The fish is our friend!"
+    },
+    {
+     "who": "老婆婆",
+     "tag": "bossy",
+     "text": "我是女王，你要聽我的！快去！",
+     "en": "I'm the queen, and you have to listen to me! Go!"
+    }
+   ]
+  },
+  {
+   "scene": "海邊的沙灘，大海很暗，接近黑色，烏雲很低；大浪打上沙灘，但沒有閃電，畫面是安靜的暗。",
+   "act": "漁夫爺爺還穿著綠色絲絨衣服，站在沙灘上，海浪打溼了他的鞋子和褲管，他雙手合十，小聲地喊。小金魚從暗暗的海面探出頭，聽完後一句話也沒說，甩一下金色尾巴，游進很深的海裡，只留下一圈金色的光。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這一次，大海暗下來了，像晚上一樣黑。",
+     "en": "This time, the sea had grown dark, as dark as night."
+    },
+    {
+     "who": "旁白",
+     "text": "大浪打上岸，打溼了他的鞋子。",
+     "en": "Big waves rolled up the beach and soaked his shoes."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "whispering",
+     "text": "小金魚，小金魚，請妳出來！",
+     "en": "Little golden fish, little golden fish, please come out!"
+    },
+    {
+     "who": "旁白",
+     "text": "金魚游過來，聽完他的話，什麼也沒說。",
+     "en": "The fish swam up and listened, but she said nothing at all."
+    },
+    {
+     "who": "旁白",
+     "text": "她甩了一下尾巴，游進很深的海裡。",
+     "en": "She flicked her tail and swam down into the deep sea."
+    }
+   ]
+  },
+  {
+   "scene": "海邊，城堡不見了，又是那間破舊的小木屋，屋頂補著稻草；門口放著那個裂開的舊木盆。天空慢慢亮起來。",
+   "act": "漁夫爺爺穿回有補丁的灰色衣服，站在小木屋前，緊張地抓著帽子。老婆婆穿回咖啡色舊衣服和紅色舊圍裙，坐在門口的台階上，低著頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "漁夫爺爺回到家，城堡不見了。",
+     "en": "When the old fisherman got home, the castle was gone."
+    },
+    {
+     "who": "旁白",
+     "text": "小木屋回來了，裂開的舊木盆也回來了。",
+     "en": "The little hut was back, and so was the old cracked tub."
+    },
+    {
+     "who": "旁白",
+     "text": "老婆婆穿著舊圍裙，坐在門口。",
+     "en": "His wife sat by the door in her old apron."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "scared",
+     "text": "老伴，妳生氣了嗎？",
+     "en": "Dear, are you angry?"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口的台階，太陽出來了，海面變回淡藍色。",
+   "act": "老婆婆先是嘟著嘴摸摸頭頂，沒有皇冠了；接著她抬頭看著漁夫爺爺，忍不住笑出來。兩個人坐在台階上，一起笑得前仰後合。",
+   "lines": [
+    {
+     "who": "老婆婆",
+     "tag": "sad",
+     "text": "我的城堡沒了，皇冠也沒了。",
+     "en": "My castle is gone, and so is my crown."
+    },
+    {
+     "who": "旁白",
+     "text": "她看著漁夫爺爺，看了好久，笑了出來。",
+     "en": "She looked at the old fisherman for a long time, and then she laughed."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "laughing",
+     "text": "可是，在城堡裡，我每天都找不到你！",
+     "en": "But in that castle, I could never find you!"
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "laughing",
+     "text": "我在走廊上，迷路了三次呢！",
+     "en": "I got lost in those hallways three times!"
+    },
+    {
+     "who": "老婆婆",
+     "tag": "gentle",
+     "text": "小木屋真好，一回頭就看到你。",
+     "en": "This little hut is best. I turn around, and there you are."
+    }
+   ]
+  },
+  {
+   "scene": "第二天，晴朗的海邊，大海又變回很藍的顏色；遠方的海面上，一道金光跳出水面。",
+   "act": "漁夫爺爺和老婆婆坐在小木屋門口，一起用木條和釘子把舊木盆補好；兩個人抬頭看見遠方的金光，一起揮手。老婆婆挽著漁夫爺爺的手臂。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，兩個人一起把舊木盆補好。",
+     "en": "The next day, the two of them fixed the old tub together."
+    },
+    {
+     "who": "旁白",
+     "text": "大海又變藍了。遠方，有一道金光跳出水面。",
+     "en": "The sea was blue again. Far away, a flash of gold leaped out of the water."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "happy",
+     "text": "謝謝妳，小金魚！我們什麼都不缺了！",
+     "en": "Thank you, little golden fish! We have everything we need!"
+    },
+    {
+     "who": "老婆婆",
+     "tag": "happy",
+     "text": "老頭子，我們回家煮晚飯吧！",
+     "en": "Come on, old man. Let's go home and cook dinner!"
+    }
+   ]
+  }
+ ]
+}

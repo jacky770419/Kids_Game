@@ -1,0 +1,632 @@
+{
+ "id": "wizard-oz",
+ "title": "綠野仙蹤",
+ "title_en": "The Wonderful Wizard of Oz",
+ "size": "長",
+ "roles": {
+  "桃樂絲": "住在堪薩斯大草原的六歲小女孩，聲音清亮、勇敢又貼心，很愛小狗托托，想家的時候小小聲、快哭了，找到回家的辦法時好開心。",
+  "稻草人": "玉米田裡的稻草人，年輕男生的聲音，活潑愛笑、說話輕快，以為自己沒有腦袋，想到好辦法時興奮大叫。",
+  "錫人": "森林裡全身是錫的錫人，溫和低沉的大叔聲，說話慢慢的、很溫柔，動不動就感動得想哭，好笑又可愛。",
+  "獅子": "膽小的大獅子，嗓門又粗又大，吼起來很響，可是一害怕就哭，誇張好笑不可怕。",
+  "好女巫": "北方的好女巫，溫柔的阿姨聲，說話輕柔、穩穩的，讓人安心。",
+  "奧茲": "綠寶石城的奧茲，先是故意裝出低沉神祕的大魔法師聲，被發現後變回和氣、有點不好意思的老爺爺，說話溫暖有智慧。"
+ },
+ "cast": {
+  "桃樂絲": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "稻草人": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "錫人": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "獅子": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "好女巫": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "奧茲": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "樂",
+   "where": "第1頁『桃樂絲』，第2頁『桃樂絲』，第4頁『桃樂絲』，第5頁『桃樂絲』，第8頁『桃樂絲』，第11頁『桃樂絲』，第14頁『桃樂絲』，第15頁『桃樂絲』，第16頁『桃樂絲』",
+   "read": "lè"
+  },
+  {
+   "char": "捲",
+   "where": "第2頁『龍捲風』",
+   "read": "juǎn"
+  },
+  {
+   "char": "嚇",
+   "where": "第3頁『嚇跑』",
+   "read": "xià"
+  },
+  {
+   "char": "沿",
+   "where": "第4頁『沿著』",
+   "read": "yán"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『臂會動』，第12頁『不會魔』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第7頁『什麼』，第9頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "給",
+   "where": "第3頁『送給妳』",
+   "read": "gěi"
+  },
+  {
+   "char": "沒",
+   "where": "第6頁『我沒有』，第10頁『他沒有』，第11頁『沒下雨』，第14頁『卻沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "誰",
+   "where": "第13頁『是誰』，第14頁『是誰』",
+   "read": "shéi"
+  },
+  {
+   "char": "間",
+   "where": "第2頁『整間』",
+   "read": "jiān"
+  },
+  {
+   "char": "漂",
+   "where": "第16頁『漂亮』",
+   "read": "piào"
+  },
+  {
+   "char": "吱",
+   "where": "第6頁『嘎吱』",
+   "read": "zhī"
+  },
+  {
+   "char": "嘎",
+   "where": "第6頁『嘎吱』",
+   "read": "gā"
+  },
+  {
+   "char": "提",
+   "where": "第11頁『提起』",
+   "read": "tí"
+  },
+  {
+   "char": "屏",
+   "where": "第12頁『屏風』",
+   "read": "píng"
+  },
+  {
+   "char": "倒",
+   "where": "第12頁『撞倒』",
+   "read": "dǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "美國堪薩斯的大草原，下午。四周是一望無際的灰色草地，中間有一間小小的灰色木頭房子；天邊飄來一朵又大又黑、像漏斗一樣的怪雲（畫得像一團旋轉的大棉花，不可怕）。",
+   "act": "桃樂絲出場：大約六歲的小女孩，淺金色頭髮綁兩條短辮子，戴一頂粉紅色的遮陽帽，穿藍白格子洋裝、白色短襪、咖啡色舊鞋。托托出場：一隻黑色捲毛小狗，眼睛又圓又亮。叔叔（灰鬍子、草帽、吊帶褲）和嬸嬸（灰色髮髻、灰色圍裙）站在屋子門口抬頭看天。桃樂絲抱著托托，指著遠方的黑雲，眼睛睜得好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "桃樂絲住在堪薩斯的大草原上。",
+     "en": "Dorothy lived on the wide prairie of Kansas."
+    },
+    {
+     "who": "旁白",
+     "text": "家裡有叔叔、嬸嬸，和一隻小黑狗托托。",
+     "en": "She lived with Uncle Henry, Aunt Em, and a little black dog named Toto."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，飄來一朵奇怪的雲。",
+     "en": "One day, a strange cloud came rolling across the sky."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "surprised",
+     "text": "托托，快看！那朵雲好大，好黑！",
+     "en": "Toto, look! That cloud is so big and so dark!"
+    }
+   ]
+  },
+  {
+   "scene": "天上的雲裡。小木屋被一陣旋轉的風托上半空，四周是白色的雲團和飄著的樹葉；風畫成柔和的螺旋線條，像在跳舞，不可怕。",
+   "act": "叔叔和嬸嬸已經躲進地下室，畫面上看不到。屋子裡，桃樂絲坐在小床上，緊緊抱著托托；房子像搖籃一樣輕輕傾斜，窗外有雲飄過。桃樂絲先是有點緊張，後來眼皮慢慢闔上，嘴角帶著笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "呼！呼！龍捲風把整間房子吹上了天。",
+     "en": "Whoosh, whoosh! A whirlwind lifted the whole house up into the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "房子在雲裡飄呀飄，像一個大搖籃。",
+     "en": "The house floated through the clouds like a big rocking cradle."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "gentle",
+     "text": "托托別怕，我抱著你。",
+     "en": "Don't be scared, Toto. I've got you."
+    },
+    {
+     "who": "旁白",
+     "text": "搖著，搖著，桃樂絲閉上了眼睛。",
+     "en": "Rocking and rocking, Dorothy closed her eyes."
+    }
+   ]
+  },
+  {
+   "scene": "一個色彩鮮豔的奇妙國度，白天。草地上開滿紅、黃、紫色的花，小河閃著光，遠處有藍色圓屋頂的小房子；小木屋穩穩地停在草地上，門口的草地上擺著一雙閃亮的銀鞋子。",
+   "act": "好女巫出場：慈祥的阿姨，銀白色頭髮，穿一件綴滿小星星的白色長袍，戴一頂掛著小銀鈴的白色尖帽子。她從花叢那邊笑著走過來；桃樂絲抱著托托站在小木屋門口，揉著眼睛，好驚訝。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚！房子停在一個開滿花的地方。",
+     "en": "Thump! The house came down in a land full of flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "一位好女巫笑著走過來。",
+     "en": "A good witch came toward her, smiling."
+    },
+    {
+     "who": "好女巫",
+     "tag": "happy",
+     "text": "歡迎妳！妳的房子把東邊的壞女巫嚇跑了。",
+     "en": "Welcome! Your house gave the Wicked Witch of the East such a fright that she ran away."
+    },
+    {
+     "who": "好女巫",
+     "text": "她跑太快，連銀鞋子都掉了。送給妳吧！",
+     "en": "She ran so fast, she left her silver shoes behind. They're yours now!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片花草地，小木屋前。一條金黃色的磚頭路從腳下一直延伸到遠方，路的盡頭隱約看得到一點綠色的光。",
+   "act": "桃樂絲已經穿上閃亮的銀鞋子，雙手捧著臉，眼睛泛著淚光；好女巫彎下腰，指著黃磚路；托托在旁邊搖尾巴。最後桃樂絲提著小籃子，帶著托托踏上黃磚路。",
+   "lines": [
+    {
+     "who": "桃樂絲",
+     "tag": "sad",
+     "text": "謝謝妳。可是，我好想回家。",
+     "en": "Thank you. But I really want to go home."
+    },
+    {
+     "who": "好女巫",
+     "tag": "gentle",
+     "text": "沿著黃磚路走，去綠寶石城找奧茲。",
+     "en": "Walk along the yellow brick road to the Emerald City, and find Oz."
+    },
+    {
+     "who": "好女巫",
+     "text": "奧茲是大魔法師，一定有辦法。",
+     "en": "Oz is a great wizard. He will know what to do."
+    },
+    {
+     "who": "旁白",
+     "text": "桃樂絲帶著托托出發了。",
+     "en": "So Dorothy set off with Toto by her side."
+    }
+   ]
+  },
+  {
+   "scene": "黃磚路旁的玉米田，白天，金色的玉米長在田裡，藍天白雲；田邊插著一根矮矮的木竿，跟桃樂絲差不多高。",
+   "act": "稻草人出場：用稻草塞成的人，穿有補丁的藍色衣服、戴藍色尖帽子，臉是用顏料畫的，袖口和領口露出稻草。他掛在矮木竿上對桃樂絲揮手；桃樂絲站在地上伸手把他抱下來，稻草人摸著自己的頭，一臉煩惱。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "走著，走著，有個稻草人在揮手。",
+     "en": "As she walked along, a scarecrow waved at her."
+    },
+    {
+     "who": "稻草人",
+     "tag": "happy",
+     "text": "嗨！可以抱我下來嗎？",
+     "en": "Hi there! Could you lift me down?"
+    },
+    {
+     "who": "旁白",
+     "text": "桃樂絲把他從竿子上抱了下來。",
+     "en": "Dorothy lifted him off his pole."
+    },
+    {
+     "who": "稻草人",
+     "tag": "sad",
+     "text": "我的頭裡都是稻草，我想要一個腦袋。",
+     "en": "My head is full of straw. I wish I had a brain."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "happy",
+     "text": "那就一起去找奧茲吧！",
+     "en": "Then come with us to find Oz!"
+    }
+   ]
+  },
+  {
+   "scene": "黃磚路穿過一片大森林，白天，大樹很高，地上有落葉；樹下放著一個小小的油罐。",
+   "act": "錫人出場：全身是銀灰色的錫做的，頭上戴一頂漏斗形的帽子，手裡舉著一把斧頭，全身生鏽、一動也不動，只有眼睛在動。桃樂絲拿油罐往他的手肘上油，稻草人在旁邊扶著他；錫人的手臂慢慢放下來，露出感激的笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林裡，站著一個錫做的人。",
+     "en": "In the forest stood a man made of tin."
+    },
+    {
+     "who": "錫人",
+     "tag": "sad",
+     "text": "拜託，用那個油罐，幫我上油。",
+     "en": "Please, use that oil can to oil my joints."
+    },
+    {
+     "who": "旁白",
+     "text": "嘎吱，嘎吱，錫人的手臂會動了！",
+     "en": "Creak, creak! The Tin Man could move his arms!"
+    },
+    {
+     "who": "錫人",
+     "tag": "sad",
+     "text": "謝謝妳。可是我沒有心，我想要一顆心。",
+     "en": "Thank you. But I have no heart. I wish I had one."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "happy",
+     "text": "那就一起去找奧茲吧！",
+     "en": "Then come with us to find Oz!"
+    }
+   ]
+  },
+  {
+   "scene": "森林深處的黃磚路，大樹很密，樹叢後面露出一條金色的大尾巴。",
+   "act": "獅子出場：金黃色的大獅子，鬃毛蓬蓬的，張大嘴巴從樹叢跳出來，可是尾巴在發抖；托托對著他叫；桃樂絲張開雙手擋在托托前面，皺著眉頭。下一刻獅子坐在地上，用尾巴擦眼淚，稻草人和錫人在旁邊看傻了眼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "吼！一隻大獅子跳出來，對著托托大叫。",
+     "en": "Roar! A big lion leaped out and roared at Toto."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "angry",
+     "text": "不可以欺負小狗！",
+     "en": "Don't you pick on my little dog!"
+    },
+    {
+     "who": "獅子",
+     "tag": "crying",
+     "text": "對不起！其實，我什麼都怕。",
+     "en": "I'm sorry! The truth is, I'm scared of everything."
+    },
+    {
+     "who": "獅子",
+     "text": "我是膽小的獅子，我想要勇氣。",
+     "en": "I'm a scaredy-cat lion. I wish I had courage."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "gentle",
+     "text": "那就一起去找奧茲吧！",
+     "en": "Then come with us to find Oz!"
+    }
+   ]
+  },
+  {
+   "scene": "黃磚路彎進一片開著小花的草地，白天，遠方地平線上有一點綠色的光。",
+   "act": "四個好朋友和托托排成一排走在黃磚路上。錫人蹲下來看一隻翅膀受傷的小瓢蟲，眼淚流下來，下巴生鏽張不開，嘴巴緊緊閉著；桃樂絲拿油罐幫他的下巴上油；稻草人和獅子在旁邊偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家一起走在黃磚路上。",
+     "en": "Together, they all walked along the yellow brick road."
+    },
+    {
+     "who": "旁白",
+     "text": "錫人看到一隻受傷的小蟲，難過地哭了。",
+     "en": "The Tin Man saw a little bug that was hurt, and he began to cry."
+    },
+    {
+     "who": "旁白",
+     "text": "眼淚一流，嘴巴就生鏽，張不開了！",
+     "en": "His tears made his jaw rust, and he couldn't open his mouth!"
+    },
+    {
+     "who": "旁白",
+     "text": "桃樂絲趕快幫他上油。",
+     "en": "Dorothy quickly oiled it."
+    },
+    {
+     "who": "錫人",
+     "tag": "laughing",
+     "text": "謝謝！下次哭，我要先擦眼淚。",
+     "en": "Thank you! Next time I cry, I'll wipe my tears first."
+    }
+   ]
+  },
+  {
+   "scene": "綠寶石城的大殿：牆壁、地板、柱子全是綠色的寶石，閃著綠光；窗外的房子和路也全是綠色的。大殿中間的綠色寶座上方，飄著一顆好大的頭（大眼睛、濃眉毛，樣子有點好笑，不可怕）；大殿角落立著一面綠色的大屏風。",
+   "act": "大家仰頭看著大頭，獅子躲在錫人後面發抖，稻草人和錫人緊緊牽著手，桃樂絲抱著托托往前站一步；托托歪著頭盯著角落的屏風。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "終於，他們來到了綠寶石城。",
+     "en": "At last, they came to the Emerald City."
+    },
+    {
+     "who": "旁白",
+     "text": "房子是綠的，路是綠的，連糖果都是綠的！",
+     "en": "The houses were green, the streets were green, and even the candy was green!"
+    },
+    {
+     "who": "奧茲",
+     "tag": "proud",
+     "text": "我是大魔法師奧茲！你們想要什麼？",
+     "en": "I am Oz, the great wizard! What do you want?"
+    },
+    {
+     "who": "旁白",
+     "text": "聽完願望，奧茲說：",
+     "en": "After hearing their wishes, Oz said,"
+    },
+    {
+     "who": "奧茲",
+     "text": "先去西邊，讓壞女巫不再欺負人！",
+     "en": "First, go to the West and stop the Wicked Witch from being mean!"
+    }
+   ]
+  },
+  {
+   "scene": "西邊的壞女巫城堡門口，黃色石頭城堡，天色有點暗；門邊有一口井，井旁放著一個裝滿水的木桶。",
+   "act": "壞女巫出場：矮矮胖胖的老婆婆，穿一件打補丁的黑斗篷，戴歪掉的黑色尖帽，一雙圓滾滾的大眼睛，手上拿著一把收起來的黑雨傘；她用雨傘彎彎的把手勾走桃樂絲的一隻銀鞋子，咧嘴大笑，樣子好笑不可怕。獅子在旁邊張大嘴吼，可是四條腿在發抖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "西邊的壞女巫，一看到銀鞋子，眼睛就發亮。",
+     "en": "When the Wicked Witch of the West saw the silver shoes, her eyes lit up."
+    },
+    {
+     "who": "旁白",
+     "text": "她用雨傘一勾，搶走一隻銀鞋子！",
+     "en": "She hooked one silver shoe with her umbrella and snatched it away!"
+    },
+    {
+     "who": "獅子",
+     "tag": "shouting",
+     "text": "吼！把鞋子交出來！",
+     "en": "Roar! Give back that shoe!"
+    },
+    {
+     "who": "旁白",
+     "text": "獅子的腿在發抖，可是他沒有逃走。",
+     "en": "The lion's legs were shaking, but he did not run away."
+    },
+    {
+     "who": "旁白",
+     "text": "壞女巫卻大笑起來。",
+     "en": "But the witch just laughed."
+    }
+   ]
+  },
+  {
+   "scene": "同一個城堡門口，井邊的木桶。",
+   "act": "稻草人指著壞女巫手上的雨傘，一臉想到好點子；桃樂絲提起木桶把水潑向壞女巫；壞女巫越變越小，最後跟老鼠一樣小，提著斗篷尖叫著逃進草叢，黑帽子留在地上；那隻銀鞋子掉在地上，桃樂絲彎腰撿起來，好開心。",
+   "lines": [
+    {
+     "who": "稻草人",
+     "tag": "excited",
+     "text": "我想到了！沒下雨她也撐傘，一定是怕水！",
+     "en": "I've got it! She carries an umbrella when it isn't even raining. She must be afraid of water!"
+    },
+    {
+     "who": "旁白",
+     "text": "桃樂絲提起一桶水，往壞女巫潑過去！",
+     "en": "Dorothy picked up a bucket of water and splashed it on the witch!"
+    },
+    {
+     "who": "旁白",
+     "text": "壞女巫越變越小，越變越小！",
+     "en": "The witch shrank smaller, and smaller, and smaller!"
+    },
+    {
+     "who": "旁白",
+     "text": "最後，她小到像老鼠，尖叫著跑掉了。",
+     "en": "At last she was as small as a mouse, and she ran away squeaking."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "happy",
+     "text": "我的銀鞋子回來了！",
+     "en": "My silver shoe is back!"
+    }
+   ]
+  },
+  {
+   "scene": "綠寶石城的大殿，大頭飄在寶座上方；角落的綠色屏風被撞倒在地上，屏風後面是一個擺著繩子和大喇叭的小角落。",
+   "act": "托托跑過去撞倒屏風，屏風後面站著一個小個子老爺爺（禿頭、圓臉、戴圓眼鏡、穿格子背心），正對著大喇叭說話，手上拉著控制大頭的繩子；他嚇一跳，不好意思地抓抓頭。稻草人和錫人張大嘴巴，好失望。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回到綠寶石城，托托撞倒了屏風。",
+     "en": "Back at the Emerald City, Toto knocked over a folding screen."
+    },
+    {
+     "who": "旁白",
+     "text": "屏風後面，有個老爺爺在對著喇叭說話。",
+     "en": "Behind the screen, an old man was talking into a big horn."
+    },
+    {
+     "who": "奧茲",
+     "tag": "gentle",
+     "text": "被你們發現了。我是奧茲，可是我不會魔法。",
+     "en": "Oh dear, you found me. I am Oz, but I can't do any magic."
+    },
+    {
+     "who": "稻草人",
+     "tag": "sad",
+     "text": "那我的腦袋呢？",
+     "en": "Then what about my brain?"
+    },
+    {
+     "who": "錫人",
+     "tag": "sad",
+     "text": "我的心呢？",
+     "en": "And my heart?"
+    }
+   ]
+  },
+  {
+   "scene": "綠寶石城的大殿，屏風倒在地上，大頭只是一個用紙和布做的大面具，掛在繩子上。",
+   "act": "奧茲老爺爺走到大家面前，笑著一個一個看他們的眼睛。獅子垂著頭；奧茲先指著稻草人，再指著錫人；稻草人和錫人互相看一眼，嘴巴慢慢張開，好驚訝。",
+   "lines": [
+    {
+     "who": "獅子",
+     "tag": "sad",
+     "text": "那我的勇氣呢？",
+     "en": "And my courage?"
+    },
+    {
+     "who": "奧茲",
+     "tag": "gentle",
+     "text": "稻草人，是誰想到壞女巫怕水？",
+     "en": "Scarecrow, who figured out that the witch was afraid of water?"
+    },
+    {
+     "who": "稻草人",
+     "tag": "surprised",
+     "text": "是我！",
+     "en": "It was me!"
+    },
+    {
+     "who": "奧茲",
+     "text": "錫人，是誰看到小蟲受傷就哭了？",
+     "en": "Tin Man, who cried when he saw a little bug get hurt?"
+    },
+    {
+     "who": "錫人",
+     "tag": "surprised",
+     "text": "是我！",
+     "en": "It was me!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個大殿，窗外的綠寶石城閃著光；大殿門外的廣場上停著一個條紋大熱氣球。",
+   "act": "奧茲拍拍獅子的頭；獅子挺起胸膛。稻草人、錫人和獅子開心地抱在一起轉圈，桃樂絲抱著托托在旁邊拍手。奧茲指向窗外的熱氣球。",
+   "lines": [
+    {
+     "who": "奧茲",
+     "text": "獅子，是誰的腿在發抖，卻沒有逃走？",
+     "en": "Lion, who was shaking, but still didn't run away?"
+    },
+    {
+     "who": "獅子",
+     "tag": "surprised",
+     "text": "是我！真的是我！",
+     "en": "It was me! It really was me!"
+    },
+    {
+     "who": "奧茲",
+     "tag": "gentle",
+     "text": "聰明、愛心和勇氣，你們早就有了。",
+     "en": "Brains, a loving heart, and courage. You had them all along."
+    },
+    {
+     "who": "旁白",
+     "text": "大家開心地抱在一起。",
+     "en": "Everyone hugged with joy."
+    },
+    {
+     "who": "旁白",
+     "text": "奧茲要坐熱氣球，送桃樂絲回家。",
+     "en": "Then Oz offered to take Dorothy home in a hot-air balloon."
+    }
+   ]
+  },
+  {
+   "scene": "綠寶石城的廣場，大家都來送行；條紋熱氣球已經飄到半空，下面的繩子鬆開了。",
+   "act": "奧茲在熱氣球的籃子裡，著急地揮手；桃樂絲剛抱起追小貓的托托，伸手追著熱氣球，快哭了。下一刻，好女巫在一團亮光裡出現，溫柔地蹲在桃樂絲身邊，指著她腳上的銀鞋子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是桃樂絲去追托托，熱氣球就先飛走了！",
+     "en": "But while Dorothy was chasing Toto, the balloon floated away without her!"
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "crying",
+     "text": "等一下！我要回家！",
+     "en": "Wait! I want to go home!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，好女巫又出現了。",
+     "en": "Just then, the Good Witch appeared again."
+    },
+    {
+     "who": "好女巫",
+     "tag": "gentle",
+     "text": "別哭。妳的銀鞋子，就能帶妳回家。",
+     "en": "Don't cry. Your silver shoes can take you home."
+    },
+    {
+     "who": "好女巫",
+     "text": "鞋跟碰三下，說出妳想去的地方。",
+     "en": "Knock your heels together three times, and say where you want to go."
+    }
+   ]
+  },
+  {
+   "scene": "堪薩斯的灰色大草原，下午；叔叔已經蓋好一間新的小木屋，屋前的草地上冒出一點綠芽。",
+   "act": "上半張：桃樂絲在綠寶石城和稻草人、錫人、獅子抱在一起說再見。下半張：桃樂絲穿著銀鞋子跑向新的小木屋，抱著托托；嬸嬸張開雙手跑出來緊緊抱住她，叔叔在後面笑；桃樂絲笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "桃樂絲和好朋友說再見。",
+     "en": "Dorothy said goodbye to her friends."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "excited",
+     "text": "銀鞋子，帶我回家！",
+     "en": "Silver shoes, take me home!"
+    },
+    {
+     "who": "旁白",
+     "text": "叩，叩，叩！一眨眼，她回到了堪薩斯。",
+     "en": "Click, click, click! In the blink of an eye, she was back in Kansas."
+    },
+    {
+     "who": "旁白",
+     "text": "嬸嬸跑出來，緊緊抱住她。",
+     "en": "Aunt Em came running out and hugged her tight."
+    },
+    {
+     "who": "桃樂絲",
+     "tag": "happy",
+     "text": "那裡好漂亮，可是我最想念的，就是家！",
+     "en": "It was a beautiful land, but home is what I missed most of all!"
+    }
+   ]
+  }
+ ]
+}

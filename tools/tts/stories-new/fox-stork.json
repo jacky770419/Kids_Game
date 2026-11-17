@@ -1,0 +1,242 @@
+{
+ "id": "fox-stork",
+ "title": "狐狸和鶴",
+ "title_en": "The Fox and the Crane",
+ "size": "短",
+ "roles": {
+  "狐狸": "愛開玩笑、只顧自己的狐狸，聲音輕快油滑，好笑不可怕，喝不到湯時垮著臉，道歉時真心又不好意思。",
+  "鶴": "優雅的鶴小姐，溫柔的年輕女聲，說話慢、有禮貌，被捉弄時委屈，回請時有點小心機，最後大方地笑。"
+ },
+ "cast": {
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "鶴": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "沒",
+   "where": "第7頁『沒有替妳想』",
+   "read": "méi"
+  },
+  {
+   "char": "替",
+   "where": "第7頁『替妳想一想』",
+   "read": "tì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林裡，狐狸的家：大樹下的樹洞小屋，有一扇紅色圓門；屋裡有一張木頭圓桌，桌上點著一根蠟燭，爐子上一鍋湯冒著熱氣。",
+   "act": "狐狸：橘紅色的毛，白色胸口，穿一件藍色背心，尖鼻子、嘴巴很寬。鶴：全身白色羽毛，翅膀尾端是黑色，頭頂一小塊紅色，細細的腳，嘴巴又尖又細，像一雙筷子，脖子上繫一條淡紫色絲巾。狐狸在門口彎腰歡迎，鶴站在門外微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸請鶴小姐來吃晚飯。",
+     "en": "Fox invited Miss Crane to his home for dinner."
+    },
+    {
+     "who": "旁白",
+     "text": "鶴的嘴巴又尖又細，像一雙筷子。",
+     "en": "Crane's beak was long and thin, like a pair of chopsticks."
+    },
+    {
+     "who": "狐狸",
+     "tag": "happy",
+     "text": "鶴小姐，我煮了玉米湯！",
+     "en": "Miss Crane, I made corn soup!"
+    },
+    {
+     "who": "鶴",
+     "tag": "happy",
+     "text": "謝謝你，好香喔！",
+     "en": "Thank you! It smells wonderful!"
+    }
+   ]
+  },
+  {
+   "scene": "狐狸家的木頭圓桌，桌上放著兩個很平的白盤子，盤子裡是一層薄薄的黃色玉米湯。",
+   "act": "狐狸坐在桌邊，伸出舌頭舔盤子，盤子已經快要乾淨了，他滿足地瞇起眼睛。鶴坐在對面，看著自己面前那個很平的盤子，愣住了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸端出兩個很平的盤子。",
+     "en": "Fox brought out two flat plates."
+    },
+    {
+     "who": "旁白",
+     "text": "他伸出舌頭，一下子就舔光了。",
+     "en": "He stuck out his tongue and licked his plate clean in no time."
+    },
+    {
+     "who": "狐狸",
+     "tag": "happy",
+     "text": "嗯，好喝！",
+     "en": "Mmm, yummy!"
+    }
+   ]
+  },
+  {
+   "scene": "狐狸家的木頭圓桌。",
+   "act": "鶴低頭用尖嘴巴去啄盤子，嘴巴碰到盤子底，湯一滴也沒喝到，眉頭垂下來好委屈。狐狸捧著肚子哈哈笑，把鶴的盤子拉到自己面前。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鶴用尖嘴巴去喝，叩、叩、叩。",
+     "en": "Crane tried to drink with her pointy beak. Tap, tap, tap."
+    },
+    {
+     "who": "旁白",
+     "text": "可是一口湯也喝不到。",
+     "en": "But she couldn't get a single sip."
+    },
+    {
+     "who": "鶴",
+     "tag": "sad",
+     "text": "這個盤子，我喝不到呀。",
+     "en": "I can't drink from this plate."
+    },
+    {
+     "who": "狐狸",
+     "tag": "laughing",
+     "text": "妳不喝？那我幫妳喝掉囉！",
+     "en": "You're not drinking it? Then I'll finish it for you!"
+    }
+   ]
+  },
+  {
+   "scene": "左半邊：晚上，森林小路，鶴一個人走回家，月亮掛在天上。右半邊：幾天後，河邊鶴的家：蘆葦搭的小屋，門口掛著貝殼風鈴。",
+   "act": "左邊，鶴摸著扁扁的肚子，慢慢走回家。右邊，鶴站在自己家門口，對狐狸揮翅膀邀請；狐狸開心地摸著肚子，舔著嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鶴餓著肚子回家了。過了幾天，她請狐狸來吃午飯。",
+     "en": "Crane went home hungry. A few days later, she invited Fox over for lunch."
+    },
+    {
+     "who": "鶴",
+     "tag": "gentle",
+     "text": "狐狸先生，我煮了你最愛的魚湯喔。",
+     "en": "Mr. Fox, I made your favorite fish soup."
+    },
+    {
+     "who": "狐狸",
+     "tag": "excited",
+     "text": "太好了！我的肚子已經在叫了！",
+     "en": "Hooray! My tummy is already rumbling!"
+    }
+   ]
+  },
+  {
+   "scene": "鶴的家裡，一張竹子做的桌子，桌上放著兩個很高、瓶口很細的藍色瓶子，瓶子裡是魚湯。",
+   "act": "鶴把尖嘴巴伸進瓶子裡，閉著眼睛，很享受地喝湯。狐狸坐在對面，盯著自己面前的高瓶子，口水直流。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鶴拿出兩個高瓶子，瓶口很細。",
+     "en": "Crane brought out two tall jars with very narrow necks."
+    },
+    {
+     "who": "旁白",
+     "text": "鶴把嘴巴伸進去，咕嚕，咕嚕，喝光了。",
+     "en": "Crane dipped her beak right in. Gulp, gulp! She drank it all up."
+    },
+    {
+     "who": "鶴",
+     "tag": "happy",
+     "text": "嗯，真好喝！",
+     "en": "Mmm, how delicious!"
+    }
+   ]
+  },
+  {
+   "scene": "鶴家的竹桌。",
+   "act": "狐狸把鼻子湊到瓶口，嘴巴太大伸不進去，只能聞香味，舌頭在瓶口外面打轉，一臉著急。鶴坐在對面，安靜地看著他，翅膀交疊在身前。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸的嘴巴太大，伸不進瓶口。",
+     "en": "Fox's mouth was too big to fit into the jar."
+    },
+    {
+     "who": "旁白",
+     "text": "他聞到香味，卻一口都喝不到。",
+     "en": "He could smell the soup, but he couldn't get a single sip."
+    },
+    {
+     "who": "狐狸",
+     "tag": "sad",
+     "text": "這個瓶子，我喝不到呀！",
+     "en": "I can't drink from this jar!"
+    },
+    {
+     "who": "鶴",
+     "tag": "gentle",
+     "text": "現在你知道，那天我有多餓了吧。",
+     "en": "Now you know how hungry I was that day."
+    }
+   ]
+  },
+  {
+   "scene": "鶴家的竹桌旁。",
+   "act": "狐狸低下頭，耳朵垂下來，尾巴也垂在地上；鶴也低下頭，用翅膀輕輕碰狐狸的肩膀。兩個都有點不好意思，接著狐狸抬起頭，眼睛一亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸低下頭，耳朵都垂下來了。",
+     "en": "Fox hung his head, and his ears drooped."
+    },
+    {
+     "who": "狐狸",
+     "tag": "sad",
+     "text": "對不起，那天我沒有替妳想一想。",
+     "en": "I'm sorry. That day, I didn't think about you at all."
+    },
+    {
+     "who": "鶴",
+     "tag": "shy",
+     "text": "我也要道歉，今天我是故意的。",
+     "en": "I'm sorry too. I did it on purpose today."
+    },
+    {
+     "who": "狐狸",
+     "tag": "hopeful",
+     "text": "那下次，我們換個辦法吧！",
+     "en": "Then next time, let's try something new!"
+    }
+   ]
+  },
+  {
+   "scene": "幾天後，森林裡一片開滿野花的草地，中間鋪著格子野餐布，放著一大鍋湯。",
+   "act": "狐狸面前是一個大大的平盤子，鶴面前是一個高高的細瓶子；狐狸幫鶴把湯倒進高瓶子，鶴幫狐狸把湯倒進平盤子。兩個好朋友一起喝湯，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "後來，他們一起煮湯。",
+     "en": "Later, they cooked soup together."
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸幫鶴準備高瓶子，鶴幫狐狸準備大盤子。",
+     "en": "Fox got a tall jar ready for Crane, and Crane got a wide plate ready for Fox."
+    },
+    {
+     "who": "鶴",
+     "tag": "happy",
+     "text": "用的不一樣，湯一樣好喝！",
+     "en": "Different dishes, same yummy soup!"
+    },
+    {
+     "who": "狐狸",
+     "tag": "laughing",
+     "text": "下次，換我煮妳最愛的湯！",
+     "en": "Next time, I'll make your favorite soup!"
+    }
+   ]
+  }
+ ]
+}

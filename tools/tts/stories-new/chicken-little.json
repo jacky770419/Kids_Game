@@ -1,0 +1,398 @@
+{
+ "id": "chicken-little",
+ "title": "天要塌下來了",
+ "title_en": "The Sky Is Falling",
+ "size": "中",
+ "roles": {
+  "小雞": "圓滾滾的小公雞，聲音又尖又細，一緊張就大叫，慌慌張張又認真，發現是橡實時不好意思地笑。",
+  "母雞": "戴草帽的母雞，溫柔的年輕女聲，聽到消息嚇一跳，馬上跟著跑。",
+  "鴨子": "胖胖的鴨子大叔，聲音厚厚的、慢吞吞，嚇到時拉高嗓門。",
+  "鵝": "愛漂亮的鵝小姐，聲音嬌嬌的、拖長音，膽子小。",
+  "狐狸": "戴紳士帽的狐狸，說話甜甜的、裝很有禮貌，打壞主意時小聲偷笑，被拆穿時慌張得好笑，不可怕。",
+  "國王": "戴金皇冠的老獅子國王，聲音低沉慈祥、慢慢說，愛笑。"
+ },
+ "cast": {
+  "小雞": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "母雞": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "鴨子": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "鵝": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "塌",
+   "where": "書名，第1、2、3、4、5、6、8、9、11頁『塌下來』『沒有塌』",
+   "read": "tā"
+  },
+  {
+   "char": "什",
+   "where": "第7頁『做什麼』，第11頁『什麼也沒吃到』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第9頁『沒有塌』，第11頁『沒吃到』",
+   "read": "méi"
+  },
+  {
+   "char": "嚇",
+   "where": "第4頁『嚇壞了』",
+   "read": "xià"
+  },
+  {
+   "char": "冠",
+   "where": "第7、9頁『皇冠』",
+   "read": "guān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "農場旁邊的一棵大橡樹下，秋天的早上，地上有黃色、咖啡色的落葉。",
+   "act": "小雞出場：圓滾滾的黃色小公雞，頭頂一撮翹起來的小毛，脖子上繫一條綠色小領巾（全書一致），正低頭在落葉裡找蟲吃。一顆咖啡色的橡實從樹上掉下來，打在他頭上，他閉著眼睛跳起來，沒有抬頭看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大橡樹下，小雞正在找蟲吃。",
+     "en": "Under a big oak tree, Chicken Little was looking for bugs to eat."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！有個東西，打到了他的頭。",
+     "en": "Bonk! Something hit him on the head."
+    },
+    {
+     "who": "小雞",
+     "tag": "scared",
+     "text": "哎喲！天要塌下來了！",
+     "en": "Ouch! The sky is falling!"
+    },
+    {
+     "who": "旁白",
+     "text": "小雞沒有抬頭看，撿起那個東西就跑。",
+     "en": "Without even looking up, Chicken Little grabbed the thing and ran."
+    },
+    {
+     "who": "小雞",
+     "tag": "shouting",
+     "text": "我要趕快去告訴國王！",
+     "en": "I must hurry and tell the King!"
+    }
+   ]
+  },
+  {
+   "scene": "農場的小路，路邊是木頭籬笆和一捆一捆的稻草。",
+   "act": "母雞出場：咖啡色的大母雞，頭上戴一頂小草帽（全書一致），手提一個菜籃，嚇得菜籃裡的紅蘿蔔掉出來。小雞翅膀下夾著那顆橡實，慌慌張張地跑來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小路上，小雞遇到了母雞阿姨。",
+     "en": "On the road, Chicken Little met Henny Penny."
+    },
+    {
+     "who": "母雞",
+     "tag": "surprised",
+     "text": "小雞，你跑這麼快，要去哪裡呀？",
+     "en": "Chicken Little, where are you going in such a hurry?"
+    },
+    {
+     "who": "小雞",
+     "tag": "scared",
+     "text": "天要塌下來了！我要去告訴國王！",
+     "en": "The sky is falling! I'm going to tell the King!"
+    },
+    {
+     "who": "母雞",
+     "tag": "scared",
+     "text": "天哪！我也跟你去！",
+     "en": "Oh my! I'll come with you!"
+    }
+   ]
+  },
+  {
+   "scene": "池塘邊，水面上有荷葉，岸邊長著高高的蘆葦。",
+   "act": "鴨子出場：胖胖的白鴨子，戴一頂藍色水手帽（全書一致），本來在池塘邊泡腳，看到小雞和母雞跑來，嘴巴張得好大，一隻腳還在水裡。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "跑到池塘邊，他們遇到了鴨子大叔。",
+     "en": "At the pond, they met Ducky Lucky."
+    },
+    {
+     "who": "鴨子",
+     "tag": "surprised",
+     "text": "你們跑這麼快，要去哪裡呀？",
+     "en": "Where are you going in such a hurry?"
+    },
+    {
+     "who": "小雞",
+     "text": "天要塌下來了！我們要去告訴國王！",
+     "en": "The sky is falling! We're going to tell the King!"
+    },
+    {
+     "who": "鴨子",
+     "tag": "scared",
+     "text": "天哪！我也跟你們去！",
+     "en": "Oh my! I'll come with you!"
+    }
+   ]
+  },
+  {
+   "scene": "草原上的小山坡，路邊開著小野花，有一個小水窪。",
+   "act": "鵝出場：雪白的大鵝，脖子好長，頭上綁一個紅色蝴蝶結（全書一致），本來對著小水窪照鏡子。小雞、母雞、鴨子排成一排跑過來，翅膀亂揮；鵝嚇得羽毛都豎起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "跑過山坡，他們遇到了鵝小姐。",
+     "en": "Over the hill, they met Goosey Loosey."
+    },
+    {
+     "who": "鵝",
+     "tag": "surprised",
+     "text": "你們跑這麼快，要去哪裡呀？",
+     "en": "Where are you all going in such a hurry?"
+    },
+    {
+     "who": "旁白",
+     "text": "小雞拍著翅膀，大聲喊：",
+     "en": "Chicken Little flapped his wings and shouted,"
+    },
+    {
+     "who": "小雞",
+     "tag": "shouting",
+     "text": "天要塌下來了！我們要去告訴國王！",
+     "en": "The sky is falling! We're going to tell the King!"
+    },
+    {
+     "who": "旁白",
+     "text": "鵝小姐嚇壞了，也跟著跑。",
+     "en": "Goosey Loosey got scared and ran along too."
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的小路，路邊有一塊大石頭。",
+   "act": "狐狸出場：瘦瘦的紅狐狸，蓬鬆的大尾巴，戴一頂黑色紳士帽、繫紫色領結（全書一致），從大石頭後面走出來，摘下帽子彎腰行禮，笑得很誇張。小雞、母雞、鴨子、鵝排成一排停下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大石頭後面，走出一隻紅狐狸。",
+     "en": "From behind a big rock stepped a red fox named Foxy Loxy."
+    },
+    {
+     "who": "狐狸",
+     "tag": "friendly",
+     "text": "各位好！跑這麼快，要去哪裡呀？",
+     "en": "Good day, friends! Where are you going in such a hurry?"
+    },
+    {
+     "who": "小雞",
+     "text": "天要塌下來了！我們要去告訴國王！",
+     "en": "The sky is falling! We're going to tell the King!"
+    },
+    {
+     "who": "狐狸",
+     "text": "我知道一條近路，跟我來吧！",
+     "en": "I know a shortcut. Follow me!"
+    }
+   ]
+  },
+  {
+   "scene": "山腳下一個好黑的山洞口，洞口旁邊長著一棵大橡樹，樹上結滿橡實。",
+   "act": "狐狸站在洞口，彎腰做出「請進」的手勢，背後偷偷舔嘴巴、流口水，樣子好笑不可怕；小雞、母雞、鴨子、鵝排成一排，鵝伸長脖子往洞裡看，縮著肩膀有點害怕。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "whispering",
+     "text": "嘿，嘿，今天的午餐，有雞，有鴨，也有鵝！",
+     "en": "Heh heh. Today's lunch is a chicken, a duck, and a goose!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸帶大家來到一個好黑的山洞。",
+     "en": "The fox led them to a very dark cave."
+    },
+    {
+     "who": "鵝",
+     "tag": "scared",
+     "text": "國王住在這麼黑的山洞裡嗎？",
+     "en": "Does the King really live in such a dark cave?"
+    },
+    {
+     "who": "狐狸",
+     "tag": "friendly",
+     "text": "對呀，國王怕天塌下來，躲在裡面呢。",
+     "en": "Oh yes. The King is scared of the sky falling, so he's hiding inside."
+    }
+   ]
+  },
+  {
+   "scene": "同一個山洞口，大橡樹下。",
+   "act": "國王出場：好大的老獅子，金色的鬃毛，頭上戴一頂小小的金皇冠，披紅色斗篷（全書一致），從橡樹後面走出來，歪著頭。狐狸嚇得跳起來，帽子歪到一邊；小雞的一隻腳已經踏到洞口。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，橡樹後面走出一隻大獅子。",
+     "en": "Just then, a big lion stepped out from behind the oak tree."
+    },
+    {
+     "who": "旁白",
+     "text": "他頭上戴著金皇冠，原來是國王！",
+     "en": "He wore a golden crown. It was the King!"
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦？大家在這裡做什麼？",
+     "en": "Hmm? What is everyone doing here?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個山洞口，大橡樹下。",
+   "act": "小雞捧著那顆咖啡色的橡實，高高舉給國王看，一臉認真；國王彎下腰低頭看，忍不住笑出來；母雞、鴨子、鵝圍在旁邊。",
+   "lines": [
+    {
+     "who": "小雞",
+     "tag": "shouting",
+     "text": "國王！天要塌下來了！",
+     "en": "Your Majesty! The sky is falling!"
+    },
+    {
+     "who": "小雞",
+     "text": "您看，這是掉下來的一塊天！",
+     "en": "Look! This is a piece of the sky that fell down!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王低頭一看，笑了出來。",
+     "en": "The King looked down and burst out laughing."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "這不是天，這是一顆橡實呀！",
+     "en": "That's not the sky. That's an acorn!"
+    }
+   ]
+  },
+  {
+   "scene": "大橡樹下，陽光從樹葉中間照下來。",
+   "act": "又一顆橡實掉在國王的金皇冠上，彈了起來；國王瞇著眼睛笑。小雞、母雞、鴨子、鵝一起抬頭，看到橡樹上結滿一顆顆的橡實，嘴巴張得好大。",
+   "lines": [
+    {
+     "who": "小雞",
+     "tag": "surprised",
+     "text": "可是，它真的是從天上掉下來的！",
+     "en": "But it really did fall from the sky!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！又一顆橡實，掉在國王的皇冠上。",
+     "en": "Bonk! Another acorn landed on the King's crown."
+    },
+    {
+     "who": "旁白",
+     "text": "大家抬頭一看，橡樹上掛滿了橡實。",
+     "en": "Everyone looked up. The oak tree was full of acorns."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "你們看，天沒有塌，是橡樹在掉橡實啦！",
+     "en": "You see? The sky isn't falling. The oak tree is just dropping acorns!"
+    }
+   ]
+  },
+  {
+   "scene": "大橡樹下，山洞口旁邊。",
+   "act": "小雞摸摸頭，不好意思地笑；母雞、鴨子、鵝你看我、我看你，笑成一團。國王轉頭看著狐狸，挑起一邊眉毛；狐狸躲在大家後面，抓著帽子冒冷汗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家你看我，我看你。",
+     "en": "Everyone looked at each other."
+    },
+    {
+     "who": "小雞",
+     "tag": "shy",
+     "text": "原來是橡實呀！",
+     "en": "Oh! It was just an acorn!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王回頭看著狐狸。",
+     "en": "Then the King turned to the fox."
+    },
+    {
+     "who": "國王",
+     "text": "狐狸，你要帶大家去哪裡呀？",
+     "en": "Foxy Loxy, where were you taking everyone?"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的小路，大橡樹的樹枝伸到路上。",
+   "act": "狐狸抱著帽子拔腿就跑，跑過橡樹下面時，一顆橡實正好打在他頭上，他嚇得尾巴都豎起來，邊跑邊大叫；國王、小雞、母雞、鴨子、鵝在後面笑。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "nervous",
+     "text": "沒、沒有啦！我要回家洗澡了！",
+     "en": "N-nowhere! I, um, have to go home and take a bath!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸拔腿就跑，咚！一顆橡實打到他的頭。",
+     "en": "Foxy Loxy took off running, and bonk! An acorn hit him on the head."
+    },
+    {
+     "who": "狐狸",
+     "tag": "scared",
+     "text": "哎喲！天要塌下來了！",
+     "en": "Ouch! The sky is falling!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸跑不見了，什麼也沒吃到。",
+     "en": "And off he ran, without a single bite of lunch."
+    }
+   ]
+  },
+  {
+   "scene": "大橡樹下，下午，陽光暖暖的。",
+   "act": "國王坐在橡樹下，小雞、母雞、鴨子、鵝圍著他，大家一起撿橡實排成一個大愛心；小雞抬頭看天空，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從那天起，小雞被東西打到頭，都會先抬頭看一看。",
+     "en": "From that day on, whenever something bonked Chicken Little on the head, he looked up first."
+    },
+    {
+     "who": "小雞",
+     "tag": "laughing",
+     "text": "天在上面，沒有掉下來喔！",
+     "en": "The sky is right where it belongs!"
+    }
+   ]
+  }
+ ]
+}

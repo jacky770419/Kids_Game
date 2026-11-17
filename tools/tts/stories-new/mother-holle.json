@@ -1,0 +1,515 @@
+{
+ "id": "mother-holle",
+ "title": "雪婆婆",
+ "title_en": "Mother Holle",
+ "size": "長",
+ "roles": {
+  "妹妹": "大約六歲的妹妹，勤勞又熱心，聲音甜甜的、很有精神，到了奇妙的地方好奇又驚喜，想家時小聲難過。",
+  "姊姊": "大約九歲的姊姊，愛睡懶覺、嬌嬌的，說話拖長音、愛抱怨，被泥巴淋到時大叫，後來不好意思地小聲改過，最後開心大喊。",
+  "雪婆婆": "住在井底下奇妙國度的雪婆婆，慈祥的老奶奶聲音，說話慢慢的、帶著笑，從來不生氣。",
+  "蘋果樹": "結滿蘋果的大蘋果樹，溫柔的年輕女聲，累得軟綿綿的，蘋果被搖下來後輕鬆又開心。",
+  "麵包爐": "紅磚做的麵包爐，胖胖的大叔聲音，急性子、愛嚷嚷，被幫忙後笑呵呵。"
+ },
+ "cast": {
+  "妹妹": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "姊姊": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "雪婆婆": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "蘋果樹": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "麵包爐": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第7頁『就會下雪』，第11頁『會弄髒』『會打到』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第12頁『沒有』，第14頁『沒有抖枕頭』『沒有雪』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第9頁『送給妳』，第10頁『說給大家聽』",
+   "read": "gěi"
+  },
+  {
+   "char": "鏟",
+   "where": "第4頁『鏟子』『鏟出來』",
+   "read": "chǎn"
+  },
+  {
+   "char": "捲",
+   "where": "第3頁、第10頁『捲了進去』",
+   "read": "juǎn"
+  },
+  {
+   "char": "乾",
+   "where": "第1頁『餅乾』，第14頁『乾淨』",
+   "read": "gān"
+  },
+  {
+   "char": "眨",
+   "where": "第9頁『一眨眼』",
+   "read": "zhǎ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下小村子裡的一間小木屋，秋天的早上。屋前有雞舍和小花圃，兩棵樹中間綁著一張吊床；屋子後院有一口圓形的石頭老井，井邊長滿小白花。",
+   "act": "妹妹出場：大約六歲，咖啡色短髮、齊瀏海，穿藍色洋裝和白色圍裙（全書一致），正在撒米餵雞。姊姊出場：大約九歲，咖啡色長髮綁高馬尾、繫粉紅色蝴蝶結，穿粉紅色洋裝（全書一致），躺在吊床上抱著一盒餅乾，打呵欠。奶奶：白頭髮梳成圓髻，披紫色毛線披肩，在門口掃地，對妹妹微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有一對姊妹，和奶奶住在小村子裡。",
+     "en": "Once upon a time, two sisters, Rose and Lily, lived with their grandma in a little village."
+    },
+    {
+     "who": "旁白",
+     "text": "妹妹每天幫奶奶掃地、餵雞、澆花。",
+     "en": "Every day, little Lily helped Grandma sweep the floor, feed the chickens, and water the flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊呢，最愛躺在吊床上吃餅乾。",
+     "en": "Her big sister Rose liked lying in the hammock, eating cookies."
+    },
+    {
+     "who": "姊姊",
+     "tag": "sleepy",
+     "text": "做事好累喔，我再睡一下。",
+     "en": "Chores are so tiring. I'll nap a little longer."
+    }
+   ]
+  },
+  {
+   "scene": "後院的老井：圓形的石頭井口，井邊長滿小白花，旁邊放著一張小木椅。",
+   "act": "妹妹坐在小木椅上，用兩根木棒織一條紅色圍巾；一顆紅色毛線球從她腿上滾下去，滾過草地，掉進井口。妹妹站起來，在離井口幾步遠的地方停住，沒有靠近井口，張大嘴巴伸出手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，妹妹坐在老井旁邊，幫奶奶織一條紅圍巾。",
+     "en": "One day, Lily sat beside the old well, knitting a red scarf for Grandma."
+    },
+    {
+     "who": "旁白",
+     "text": "哎呀！紅毛線球從腿上滾走了！",
+     "en": "Oops! The ball of red yarn rolled off her lap!"
+    },
+    {
+     "who": "妹妹",
+     "tag": "surprised",
+     "text": "等一下！別跑呀！",
+     "en": "Wait! Come back!"
+    },
+    {
+     "who": "旁白",
+     "text": "毛線球一路滾，咚！掉進了老井裡。",
+     "en": "It rolled and rolled, and plop! It dropped into the old well."
+    }
+   ]
+  },
+  {
+   "scene": "同一口老井，井裡飛出一大陣亮晶晶的白色雪花，像小小的旋風；接著是井底下奇妙的地方：開滿花的大草地，藍天白雲。",
+   "act": "妹妹站在井邊，沒有探頭進井口；雪花繞著她飛舞，把她輕輕捲起來，她的裙子飄起來，張大眼睛。下一個畫面，她像一片雪花一樣慢慢飄到花草地上，紅毛線球就在前面的小路上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咦？井裡飛出了好多雪花！",
+     "en": "Huh? Lots of snowflakes came flying out of the well!"
+    },
+    {
+     "who": "旁白",
+     "text": "雪花圍著妹妹跳舞，把她輕輕捲了進去。",
+     "en": "The snowflakes danced around Lily and gently swept her inside."
+    },
+    {
+     "who": "妹妹",
+     "tag": "surprised",
+     "text": "哇，我飛起來了！",
+     "en": "Whoa, I'm flying!"
+    },
+    {
+     "who": "旁白",
+     "text": "她像一片雪花，飄到一片開滿花的草地上。",
+     "en": "Like a snowflake, she floated down into a meadow full of flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "紅毛線球就在前面，自己往小路滾過去。",
+     "en": "The red ball of yarn was right in front of her, rolling down a little path all by itself."
+    }
+   ]
+  },
+  {
+   "scene": "小路旁邊一座圓頂的紅磚麵包爐，爐口冒出香噴噴的熱氣，爐旁靠著一支木頭麵包鏟和一個竹籃子。",
+   "act": "麵包爐出場：紅磚爐子上有一張圓圓的大臉，兩排磚頭像眉毛，一臉著急，頭頂冒著熱氣。妹妹站在爐子前面，雙手拿著木頭鏟子，把金黃色的麵包一條條鏟出來，放進竹籃子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "路邊有一座紅磚麵包爐，飄出好香的味道。",
+     "en": "By the path stood a red brick bread oven that smelled wonderful."
+    },
+    {
+     "who": "麵包爐",
+     "tag": "worried",
+     "text": "麵包烤好了！快拿出來，不然要烤焦了！",
+     "en": "The bread is done! Take it out quick, or it will burn!"
+    },
+    {
+     "who": "旁白",
+     "text": "妹妹拿起木頭鏟子，把麵包一條接一條鏟出來。",
+     "en": "Lily picked up the wooden paddle and took the loaves out, one after another."
+    },
+    {
+     "who": "麵包爐",
+     "tag": "happy",
+     "text": "謝謝妳！妳真是個好孩子。",
+     "en": "Thank you! What a good girl you are!"
+    }
+   ]
+  },
+  {
+   "scene": "花草地上一棵好大的蘋果樹，結滿又大又紅的蘋果，樹枝都被壓彎了。",
+   "act": "蘋果樹出場：樹幹上有一張溫柔的臉，皺著眉頭，看起來好累。妹妹抱著樹幹用力搖，紅蘋果掉在草地上；她再把蘋果撿起來，堆成一座小山。蘋果樹的樹枝翹起來，笑開了臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "妹妹往前走，看到一棵蘋果樹。",
+     "en": "Lily walked on and came to an apple tree."
+    },
+    {
+     "who": "蘋果樹",
+     "tag": "tired",
+     "text": "搖一搖我吧！我的蘋果太多，樹枝好痠喔。",
+     "en": "Please shake me! I have so many apples, my branches ache."
+    },
+    {
+     "who": "旁白",
+     "text": "妹妹抱住樹幹，用力搖呀搖。",
+     "en": "Lily hugged the trunk and shook it hard."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！咚！咚！紅蘋果掉滿了草地。",
+     "en": "Thump! Thump! Thump! Red apples tumbled all over the grass."
+    },
+    {
+     "who": "蘋果樹",
+     "tag": "happy",
+     "text": "好輕鬆呀！謝謝妳！",
+     "en": "Ah, that's so much better! Thank you!"
+    }
+   ]
+  },
+  {
+   "scene": "小路盡頭一間白色小屋，屋頂上蓋著雪，窗戶好大，窗台上擺著好多又白又胖的羽毛枕頭。",
+   "act": "雪婆婆出場：圓圓胖胖的老婆婆，白頭髮蓬蓬的像一朵雲，紅通通的臉頰，戴圓眼鏡，穿淡藍色長裙和雪白圍裙（全書一致）。她站在門口笑咪咪地招手；妹妹抱著紅毛線球，有一點害羞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小路的盡頭，有一間白色的小屋。",
+     "en": "At the end of the path stood a little white house."
+    },
+    {
+     "who": "旁白",
+     "text": "門口站著一位白頭髮的老婆婆。",
+     "en": "An old woman with snow-white hair stood at the door."
+    },
+    {
+     "who": "雪婆婆",
+     "tag": "gentle",
+     "text": "別怕，我是雪婆婆。妳願意留下來，幫我的忙嗎？",
+     "en": "Don't be afraid. I'm Mother Holle. Will you stay and help me?"
+    },
+    {
+     "who": "妹妹",
+     "tag": "happy",
+     "text": "好呀！我最喜歡幫忙了！",
+     "en": "Yes! I love to help!"
+    }
+   ]
+  },
+  {
+   "scene": "白色小屋的大窗戶邊，窗外是藍天白雲，往下看得到很遠很遠的人間小村子。",
+   "act": "雪婆婆在旁邊比出抖枕頭的動作；妹妹站在窗邊，兩手抓著羽毛枕頭用力抖，白色羽毛飛出窗外，在空中變成雪花飄下去。",
+   "lines": [
+    {
+     "who": "雪婆婆",
+     "tag": "gentle",
+     "text": "每天早上，把枕頭用力抖一抖。",
+     "en": "Every morning, give the pillows a good shake."
+    },
+    {
+     "who": "雪婆婆",
+     "text": "羽毛飛下去，人間就會下雪喔。",
+     "en": "When the feathers fly down, it snows in the world below."
+    },
+    {
+     "who": "旁白",
+     "text": "妹妹抓起枕頭，抖一抖，抖一抖！",
+     "en": "Lily grabbed a pillow. Shake, shake, shake!"
+    },
+    {
+     "who": "旁白",
+     "text": "小羽毛飛呀飛，變成了白色的雪花。",
+     "en": "The little feathers floated away and turned into white snowflakes."
+    },
+    {
+     "who": "妹妹",
+     "tag": "excited",
+     "text": "下雪囉！下雪囉！",
+     "en": "It's snowing! It's snowing!"
+    }
+   ]
+  },
+  {
+   "scene": "人間的小村子，冬天，雪從天上飄下來，屋頂和樹都白了；接著是雪婆婆的小屋裡。",
+   "act": "村子的孩子們穿著厚外套，在雪地裡堆雪人、張嘴接雪花。下一個畫面：雪婆婆的小屋裡，妹妹坐在窗邊看著遠方，眼睛紅紅的；雪婆婆彎腰摸她的頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雪花飄呀飄，飄到了人間，孩子們開心地堆雪人。",
+     "en": "The snowflakes drifted down to the world below, and the children happily built snowmen."
+    },
+    {
+     "who": "旁白",
+     "text": "過了好多天，妹妹開始想家了。",
+     "en": "After many days, Lily began to miss home."
+    },
+    {
+     "who": "妹妹",
+     "tag": "sad",
+     "text": "雪婆婆，我好想奶奶。我想回家。",
+     "en": "Mother Holle, I miss Grandma. I want to go home."
+    },
+    {
+     "who": "雪婆婆",
+     "tag": "gentle",
+     "text": "妳是一個好孩子，我送妳回家吧。",
+     "en": "You are a good child. I'll take you home."
+    }
+   ]
+  },
+  {
+   "scene": "雪婆婆小屋旁邊，一道好大的木頭拱門，門上纏著綠葉和小白花。",
+   "act": "金色的小金片像雨一樣，從拱門上面落在妹妹身上，她的裙子和頭髮都閃著金光；妹妹抬頭張開雙手，又驚又喜；雪婆婆把紅毛線球放回她手上，在旁邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雪婆婆帶妹妹，走到一道大門下面。",
+     "en": "Mother Holle led Lily to a great big gate."
+    },
+    {
+     "who": "旁白",
+     "text": "叮咚，叮咚！大門下，下起了金子雨！",
+     "en": "Tinkle, tinkle! Golden rain began to fall from the gate!"
+    },
+    {
+     "who": "雪婆婆",
+     "tag": "happy",
+     "text": "這是送給妳的，謝謝妳這麼認真幫忙。",
+     "en": "This is for you. Thank you for working so hard."
+    },
+    {
+     "who": "旁白",
+     "text": "一眨眼，妹妹就回到了家門口。",
+     "en": "In the blink of an eye, Lily was back at her own front door."
+    }
+   ]
+  },
+  {
+   "scene": "姊妹家的院子，冬天，地上的雪快融化了，只剩薄薄一點，後院的老井旁邊。",
+   "act": "奶奶張開雙手抱住全身閃著金光的妹妹；姊姊從屋裡跑出來，眼睛瞪得好大，指著金子；下一個畫面，姊姊站在井邊把紅毛線球丟進井裡（沒有探頭進井口），井裡飛出的雪花繞著她，把她輕輕捲了進去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "奶奶看到妹妹回來，緊緊抱住她。",
+     "en": "When Grandma saw Lily, she hugged her tight."
+    },
+    {
+     "who": "旁白",
+     "text": "妹妹把雪婆婆的事，全都說給大家聽。",
+     "en": "Lily told them all about Mother Holle."
+    },
+    {
+     "who": "姊姊",
+     "tag": "excited",
+     "text": "哇！金子！我也要去！",
+     "en": "Wow! Gold! I want to go too!"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊把毛線球丟進老井，雪花也把她捲了進去。",
+     "en": "Rose tossed the ball of yarn into the old well, and the snowflakes swept her inside too."
+    }
+   ]
+  },
+  {
+   "scene": "井底下的花草地和小路，紅磚麵包爐和大蘋果樹。",
+   "act": "姊姊大步走過麵包爐，揮揮手、頭也不回；麵包爐冒著熱氣一臉著急。後面的蘋果樹樹枝垂得好低，姊姊兩手抱著頭，噘著嘴走開。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "姊姊也來到了麵包爐旁邊。",
+     "en": "Rose came to the bread oven, too."
+    },
+    {
+     "who": "麵包爐",
+     "tag": "worried",
+     "text": "麵包烤好了！快拿出來呀！",
+     "en": "The bread is done! Take it out, quick!"
+    },
+    {
+     "who": "姊姊",
+     "tag": "annoyed",
+     "text": "我才不要，會弄髒我的手。",
+     "en": "No way. I'll get my hands dirty."
+    },
+    {
+     "who": "旁白",
+     "text": "她走到蘋果樹下，蘋果樹也請她幫忙。",
+     "en": "Then she came to the apple tree, and the tree asked for help too."
+    },
+    {
+     "who": "姊姊",
+     "tag": "annoyed",
+     "text": "不要！蘋果會打到我的頭啦！",
+     "en": "No! The apples will bonk me on the head!"
+    }
+   ]
+  },
+  {
+   "scene": "雪婆婆的白色小屋裡，窗台上的羽毛枕頭一個也沒有動；窗外的人間小村子，地上沒有雪。",
+   "act": "姊姊躺在床上蓋著被子打呵欠，枕頭丟在床邊；雪婆婆站在門口，抱著枕頭看她，表情溫和。窗外遠遠的村子裡，孩子們拖著雪橇站在泥土地上，抬頭看天空，好失望。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第一天，姊姊想著金子，抖了好多枕頭。",
+     "en": "On the first day, Rose thought about the gold and shook lots of pillows."
+    },
+    {
+     "who": "旁白",
+     "text": "第二天，她抖了兩下。第三天，她睡到中午。",
+     "en": "On the second day, she gave them two little shakes. On the third day, she slept until noon."
+    },
+    {
+     "who": "姊姊",
+     "tag": "sleepy",
+     "text": "抖枕頭好累喔，明天再抖吧。",
+     "en": "Shaking pillows is so tiring. I'll do it tomorrow."
+    },
+    {
+     "who": "旁白",
+     "text": "人間一片雪也沒有，孩子們好失望。",
+     "en": "Not a single snowflake fell in the world below, and the children were so disappointed."
+    }
+   ]
+  },
+  {
+   "scene": "雪婆婆小屋旁邊的大木頭拱門。",
+   "act": "咖啡色的泥巴像雨一樣從拱門上淋下來，姊姊從頭髮黏到鞋子，閉著眼睛張大嘴巴；雪婆婆站在旁邊，表情溫和，沒有生氣。",
+   "lines": [
+    {
+     "who": "姊姊",
+     "tag": "excited",
+     "text": "雪婆婆，我要回家了！我的金子呢？",
+     "en": "Mother Holle, I want to go home now! Where's my gold?"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊一走到大門下，啪！下起了泥巴雨！",
+     "en": "As soon as Rose stepped under the gate, splat! Mud came pouring down!"
+    },
+    {
+     "who": "姊姊",
+     "tag": "shouting",
+     "text": "哎呀！怎麼是泥巴？好黏喔！",
+     "en": "Yuck! Mud? It's so sticky!"
+    },
+    {
+     "who": "雪婆婆",
+     "tag": "gentle",
+     "text": "泥巴可以洗掉。下次，妳也來幫忙吧。",
+     "en": "Mud washes off. Next time, why not lend a hand?"
+    }
+   ]
+  },
+  {
+   "scene": "姊妹家裡，冬天的晚上，木頭浴盆旁邊；窗外的村子地上沒有雪。",
+   "act": "姊姊坐在木頭浴盆裡噘著嘴，妹妹拿著毛巾幫她洗頭髮上的泥巴，奶奶在旁邊端來熱水。窗外，村子的孩子們抬著頭看天空。姊姊看著窗外，慢慢低下頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "姊姊洗了好久，泥巴才洗乾淨。",
+     "en": "Rose scrubbed and scrubbed until the mud was finally gone."
+    },
+    {
+     "who": "旁白",
+     "text": "窗外，孩子們抬著頭，一直在等下雪。",
+     "en": "Outside the window, the children kept looking up, waiting for snow."
+    },
+    {
+     "who": "姊姊",
+     "tag": "sad",
+     "text": "都是我沒有抖枕頭，大家才沒有雪。",
+     "en": "It's my fault. I didn't shake the pillows, so nobody got any snow."
+    },
+    {
+     "who": "姊姊",
+     "tag": "shy",
+     "text": "妹妹，下次，妳可以帶我一起去嗎？",
+     "en": "Lily, next time, will you take me with you?"
+    }
+   ]
+  },
+  {
+   "scene": "雪婆婆白色小屋的大窗戶邊；窗外往下看，人間的村子正在下大雪。",
+   "act": "姊姊和妹妹並肩站在窗邊，一起用力抖枕頭，羽毛像雪一樣飛；雪婆婆在後面拍手笑。窗外遠遠的村子裡，孩子們在雪地裡歡呼、堆雪人。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二年冬天，兩姊妹一起來到雪婆婆家。",
+     "en": "The next winter, the two sisters went to Mother Holle's house together."
+    },
+    {
+     "who": "旁白",
+     "text": "她們幫麵包爐拿麵包，幫蘋果樹搖蘋果。",
+     "en": "They took out the bread for the oven and shook the apples from the tree."
+    },
+    {
+     "who": "姊姊",
+     "tag": "excited",
+     "text": "抖一抖，下雪囉！",
+     "en": "Shake, shake! Let it snow!"
+    },
+    {
+     "who": "雪婆婆",
+     "tag": "happy",
+     "text": "妳們兩個，都是我的好幫手！",
+     "en": "You two are my very best helpers!"
+    },
+    {
+     "who": "旁白",
+     "text": "那年冬天，人間下了好大、好美的雪。",
+     "en": "That winter, the biggest, most beautiful snow fell on the world below."
+    }
+   ]
+  }
+ ]
+}

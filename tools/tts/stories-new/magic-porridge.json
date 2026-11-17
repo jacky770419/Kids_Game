@@ -1,0 +1,399 @@
+{
+ "id": "magic-porridge",
+ "title": "會煮粥的小鍋子",
+ "title_en": "The Magic Porridge Pot",
+ "size": "中",
+ "roles": {
+  "小女孩": "住在小村子的六歲小女孩，聲音清脆甜美、好心又機靈，念口令時一個字一個字很認真，看到整條街都是粥時又驚又好笑。",
+  "老婆婆": "森林裡神祕又慈祥的老婆婆，奶奶的聲音，說話慢慢的、帶著笑，教口令時清楚又溫柔。",
+  "媽媽": "小女孩的媽媽，溫柔的女聲，平常輕聲細語，忘了口令時又急又慌、好笑不可怕，最後自己也笑出來。"
+ },
+ "cast": {
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "老婆婆": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第3頁『就會煮』『就會停』，第6頁『也會』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『也沒有』，第12頁『也沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第1頁『什麼』，第7頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "給",
+   "where": "第2頁『半給她』『送給妳』",
+   "read": "gěi"
+  },
+  {
+   "char": "分",
+   "where": "第2頁『以分我』『分了』",
+   "read": "fēn"
+  },
+  {
+   "char": "嚕",
+   "where": "第4頁『咕嚕』，第6頁『咕嚕』",
+   "read": "lū"
+  },
+  {
+   "char": "冒",
+   "where": "第4頁『冒出』，第6頁『冒出』",
+   "read": "mào"
+  },
+  {
+   "char": "中",
+   "where": "第5頁『中午』",
+   "read": "zhōng"
+  },
+  {
+   "char": "呆",
+   "where": "第4頁『看呆』，第9頁『看呆』",
+   "read": "dāi"
+  },
+  {
+   "char": "肚",
+   "where": "第6頁『肚子』",
+   "read": "dù"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "村子邊的一間小石頭屋，早上。屋裡有一張木頭桌子、兩張小椅子，牆角放著一個打開蓋子的米缸，裡面什麼都沒有。",
+   "act": "小女孩出場：大約六歲，金色短髮、頭上綁一個紅色蝴蝶結，穿黃色洋裝和咖啡色小靴子，手提一個小竹籃。媽媽出場：棕色頭髮綁成髮髻，穿綠色長裙和白色圍裙。媽媽彎腰看著米缸，摸摸肚子；小女孩提著籃子站在門口，笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有個小女孩和媽媽，住在小村子裡。",
+     "en": "Once upon a time, a little girl lived with her mother in a small village."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，家裡一粒米也沒有了。",
+     "en": "One day, there wasn't a single grain of rice left in the house."
+    },
+    {
+     "who": "媽媽",
+     "tag": "sad",
+     "text": "唉，今天要吃什麼呢？",
+     "en": "Oh dear, what will we eat today?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "媽媽，我去森林摘果子回來！",
+     "en": "Mom, I'll go to the forest and pick some berries!"
+    }
+   ]
+  },
+  {
+   "scene": "森林裡，一棵大橡樹下，四周有幾叢紅色的野莓，陽光從樹葉縫裡照下來。",
+   "act": "老婆婆出場：白頭髮、彎著腰、披一條紅色披肩，拄著木頭柺杖，坐在大樹下的石頭上，身邊放著一個小小的黑色鐵鍋（兩邊有圓圓的小把手）。小女孩蹲在她面前，把籃子裡的紅莓果分一半到老婆婆手上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林裡，有一位老婆婆坐在大樹下。",
+     "en": "In the forest, an old woman was sitting under a big tree."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "gentle",
+     "text": "小妹妹，妳的果子，可以分我一點嗎？",
+     "en": "Little one, could you spare me a few berries?"
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩把籃子裡的果子，分了一半給她。",
+     "en": "The little girl gave her half of the berries in her basket."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "happy",
+     "text": "好心的孩子，這個小鍋子送給妳。",
+     "en": "What a kind child. This little pot is for you."
+    }
+   ]
+  },
+  {
+   "scene": "同一棵大樹下。",
+   "act": "老婆婆把小黑鍋放到小女孩手上，豎起一根手指，認真地教她；小女孩捧著小鍋子，跟著念，用力點頭。最後一格：大樹下只剩一塊石頭，老婆婆不見了，小女孩回頭找，一臉驚訝。",
+   "lines": [
+    {
+     "who": "老婆婆",
+     "tag": "gentle",
+     "text": "妳說：「小鍋子，煮吧！」它就會煮粥。",
+     "en": "Say, \"Little pot, cook!\" and it will cook porridge."
+    },
+    {
+     "who": "老婆婆",
+     "text": "妳說：「小鍋子，停！」它就會停下來。",
+     "en": "Say, \"Little pot, stop!\" and it will stop."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "小鍋子，煮吧！小鍋子，停！我記住了！",
+     "en": "Little pot, cook! Little pot, stop! I'll remember!"
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩抬起頭，老婆婆已經不見了。",
+     "en": "When the little girl looked up, the old woman was gone."
+    }
+   ]
+  },
+  {
+   "scene": "小石頭屋的廚房，白天。小黑鍋放在木頭桌子中間。",
+   "act": "小女孩趴在桌邊對著小鍋子說話；小鍋子冒出白白的熱氣，裡面是黃色的粥，冒著泡泡；媽媽站在旁邊，張大嘴巴，眼睛睜得好圓。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小女孩跑回家，把小鍋子放在桌上。",
+     "en": "The little girl ran home and set the little pot on the table."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "小鍋子，煮吧！",
+     "en": "Little pot, cook!"
+    },
+    {
+     "who": "旁白",
+     "text": "咕嚕，咕嚕，鍋子裡冒出很香的粥！",
+     "en": "Bubble, bubble! The pot filled up with sweet-smelling porridge!"
+    },
+    {
+     "who": "小女孩",
+     "text": "小鍋子，停！",
+     "en": "Little pot, stop!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鍋子馬上停了。媽媽都看呆了。",
+     "en": "The little pot stopped right away. Mom could hardly believe her eyes."
+    }
+   ]
+  },
+  {
+   "scene": "同一個廚房，晚上，桌上點著一根蠟燭，擺著兩碗粥和兩根湯匙。",
+   "act": "媽媽和小女孩面對面坐著，捧著碗大口吃粥，嘴角沾著粥，兩個人笑得好開心；小黑鍋放在桌子中間。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "happy",
+     "text": "好香的粥！我們有東西吃了！",
+     "en": "What lovely porridge! Now we have food to eat!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，她們每天都有很甜的粥可以吃。",
+     "en": "From that day on, they had sweet porridge every day."
+    },
+    {
+     "who": "旁白",
+     "text": "早上一碗，中午一碗，晚上也一碗！",
+     "en": "A bowl in the morning, a bowl at noon, and a bowl at night!"
+    }
+   ]
+  },
+  {
+   "scene": "小石頭屋，白天。門外是一條通往村子的石板小路，屋裡桌上放著小黑鍋。",
+   "act": "小女孩戴著紅色蝴蝶結，在門外揮手，往小路上跑去；屋裡的媽媽摸著肚子，看著桌上的小鍋子，然後雙手扠腰，自信地對小鍋子說話；小鍋子開始冒熱氣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，小女孩去朋友家玩。",
+     "en": "One day, the little girl went to play at a friend's house."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽肚子餓了，看著桌上的小鍋子。",
+     "en": "Mom got hungry and looked at the little pot on the table."
+    },
+    {
+     "who": "媽媽",
+     "tag": "proud",
+     "text": "我也會！小鍋子，煮吧！",
+     "en": "I can do it too! Little pot, cook!"
+    },
+    {
+     "who": "旁白",
+     "text": "咕嚕，咕嚕，鍋子裡又冒出很香的粥。",
+     "en": "Bubble, bubble! Sweet porridge filled the pot again."
+    }
+   ]
+  },
+  {
+   "scene": "同一個廚房。黃色的粥已經滿到鍋邊，開始流到桌上。",
+   "act": "媽媽一手拿著空碗，一手抓著頭，眉頭皺在一起，努力地想；小鍋子還在冒泡泡，粥越堆越高。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "粥滿了，媽媽要它停下來。",
+     "en": "When the pot was full, Mom wanted it to stop."
+    },
+    {
+     "who": "媽媽",
+     "tag": "surprised",
+     "text": "咦？要說什麼？我忘了！",
+     "en": "Huh? What do I say? I forgot!"
+    },
+    {
+     "who": "媽媽",
+     "text": "小鍋子，好了！",
+     "en": "Little pot, that's enough!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鍋子不聽，一直煮，一直煮。",
+     "en": "The little pot didn't listen. It kept cooking and cooking."
+    }
+   ]
+  },
+  {
+   "scene": "同一個廚房，地上都是黃色的粥，粥從門口流到外面的小路上。",
+   "act": "粥流過桌子、椅子和地板，淹到媽媽的腳踝；媽媽兩手揮來揮去，對著小鍋子喊，一臉著急又好笑；粥像一條黃色的小河，從大門流出去。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "shouting",
+     "text": "小鍋子，夠了！",
+     "en": "Little pot, no more!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鍋子一直煮。",
+     "en": "The little pot kept on cooking."
+    },
+    {
+     "who": "媽媽",
+     "tag": "shouting",
+     "text": "小鍋子，休息吧！",
+     "en": "Little pot, take a rest!"
+    },
+    {
+     "who": "旁白",
+     "text": "粥流到地上，流出門口，流到街上去了！",
+     "en": "The porridge ran onto the floor, out the door, and into the street!"
+    }
+   ]
+  },
+  {
+   "scene": "村子的石板街道，兩旁是紅屋頂的小房子，整條街都是黃色的粥，像一條慢慢流動的河。",
+   "act": "鄰居們打開窗戶探頭看，嘴巴張得好大；一隻白色小狗站在粥邊開心地舔；一個大叔的手推車輪子陷在粥裡，推不動；兩個小朋友拿著湯匙跑出來；畫面熱鬧好笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "整條街，都變成了粥的河！",
+     "en": "The whole street turned into a river of porridge!"
+    },
+    {
+     "who": "旁白",
+     "text": "小狗開心地舔著粥，推車也推不動了。",
+     "en": "A puppy happily licked it up, and a cart got stuck."
+    },
+    {
+     "who": "旁白",
+     "text": "鄰居們打開窗戶，大家都看呆了。",
+     "en": "The neighbors opened their windows and stared."
+    }
+   ]
+  },
+  {
+   "scene": "村子的路口，一大片黃色的粥擋在前面；遠處是小石頭屋，媽媽從窗戶探出頭。",
+   "act": "小女孩站在粥的邊上，雙手放在臉頰，嚇了一跳；媽媽在窗口拚命揮手；接著小女孩兩手圍在嘴邊，大聲喊口令。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小女孩回來了。",
+     "en": "Just then, the little girl came home."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "天啊！整條街都是粥！",
+     "en": "Oh my! The whole street is full of porridge!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "shouting",
+     "text": "快來呀！我忘了那句話！",
+     "en": "Hurry! I forgot the words!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "shouting",
+     "text": "小鍋子，停！",
+     "en": "Little pot, stop!"
+    },
+    {
+     "who": "旁白",
+     "text": "小鍋子馬上停了下來。",
+     "en": "And the little pot stopped at once."
+    }
+   ]
+  },
+  {
+   "scene": "同一條街，粥不再流了；太陽快要下山，天空是橘紅色的。",
+   "act": "鄰居們拿著碗和湯匙，坐在粥的旁邊大口吃，一邊吃一邊往前走；小女孩和媽媽手牽手，也在吃粥；小狗的肚子吃得圓滾滾；大家笑成一團。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，路上都是粥，怎麼回家呢？",
+     "en": "But the street was full of porridge. How could anyone get home?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "一邊吃，一邊走回家吧！",
+     "en": "Let's eat our way home!"
+    },
+    {
+     "who": "旁白",
+     "text": "鄰居們拿著碗和湯匙，一口接一口，吃出一條路。",
+     "en": "The neighbors brought bowls and spoons, and bite by bite, they ate a path home."
+    }
+   ]
+  },
+  {
+   "scene": "小石頭屋的廚房，晚上，乾淨的木頭桌子上放著小黑鍋，牆上貼著一張大紙，紙上畫著小鍋子和兩句口令。",
+   "act": "媽媽拿著筆，剛把大紙貼到牆上，不好意思地笑；小女孩指著紙，兩個人一起大聲念，笑得好開心。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "laughing",
+     "text": "這次，我要把口令寫下來！",
+     "en": "This time, I'm writing the words down!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "我們一起念：小鍋子，煮吧！小鍋子，停！",
+     "en": "Let's say it together: Little pot, cook! Little pot, stop!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此以後，粥再也沒有滿出來了。",
+     "en": "And from then on, the porridge never spilled over again."
+    }
+   ]
+  }
+ ]
+}
