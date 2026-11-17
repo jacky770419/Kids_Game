@@ -162,7 +162,7 @@ def cmd_build():
         'window.LogicAudio = [\n' + body + '];\n')
     size = sum(os.path.getsize(os.path.join(ROOT, p)) for p in paths)
     print('收進 %d 個檔，共 %.2f MB；還沒錄或台詞改過的 %d 句（網站會用系統語音）' % (len(paths), size / 1048576, stale))
-    print('接著：把這些檔加進 sw.js 的 PRECACHE、升 CACHE_VERSION，再跑 node tools/check_precache.js 和 node tools/check_logic.js')
+    print('接著：新增的檔加進 sw.js 的 PRECACHE（已經上線過的版本才要升 CACHE_VERSION），再跑 node tools/check_precache.js 和 node tools/check_logic.js')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,41 @@
+[
+ {
+  "open": "logic.html?h=tidy&l=0&lang=both",
+  "settle": 2500
+ },
+ {
+  "expect": "Array.isArray(window.LogicAudio) && window.LogicAudio.length === 126",
+  "why": "語音清單有 126 個檔（中英各 63 句）"
+ },
+ {
+  "tap": ".bubble"
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "performance.getEntriesByType('resource').some((e) => e.name.endsWith('assets/logic/audio/zh/tidy.ask1.mp3'))",
+  "why": "點泡泡會播中文錄音（不是系統語音）"
+ },
+ {
+  "wait": 7000
+ },
+ {
+  "expect": "performance.getEntriesByType('resource').some((e) => e.name.endsWith('assets/logic/audio/en/tidy.ask1.mp3'))",
+  "why": "都念：中文念完接著播英文錄音"
+ },
+ {
+  "open": "logic.html?h=river&l=1&lang=en",
+  "settle": 2500
+ },
+ {
+  "tap": ".bubble"
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "performance.getEntriesByType('resource').some((e) => e.name.endsWith('assets/logic/audio/en/river.ask3.mp3')) && !performance.getEntriesByType('resource').some((e) => e.name.includes('audio/zh/'))",
+  "why": "英文模式只播英文錄音"
+ }
+]

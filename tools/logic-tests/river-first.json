@@ -26,7 +26,7 @@
   "why": "第2關：題目還在念，讓大野狼上船也不插嘴"
  },
  {
-  "wait": 2600
+  "wait": 4600
  },
  {
   "expect": "window.__han().startsWith('先載小羊')",
@@ -48,7 +48,7 @@
   "tap": ".lg-dot:nth-child(2)"
  },
  {
-  "wait": 3600
+  "wait": 5000
  },
  {
   "expect": "window.__han().startsWith('把大野狼') && !window.__seen.some((t) => t.startsWith('先載小羊'))",
@@ -77,7 +77,7 @@
   "tap": ".lg-dot:nth-child(2)"
  },
  {
-  "wait": 10500
+  "wait": 13500
  },
  {
   "expect": "window.__seen.some((t) => t.startsWith('先載小羊'))",

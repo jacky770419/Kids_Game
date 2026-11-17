@@ -68,8 +68,10 @@
   板面固定 4:3，裡面一律 % 定位、`cqw` 定大小。板面裡以粉色、藍色為主（照她的喜好）。圖有三種來源：現成的貼紙和故事角色、替這個遊戲補畫的 19 張（`assets/logic/`，原圖在 `assets/logic-src/`；六樣玩具、公主蛋糕、白菜、餐廳和河岸背景是 Codex 畫的，熊爸爸、扮鬼臉的大野狼、小羊、握槳的老爺爺、兩張公主是 Modal 從現有角色改姿勢的，清單和提示詞在 `docs/動動腦_補圖清單.md`）、程式畫的 SVG（珠子、籃子、船、門、線索圖）。
   **題目全靠念的**：孩子不識字，小熊泡泡顯示國字＋注音（注音表沿用 `js/story-data.js`，缺的字用 `Logic.zy()` 補），點泡泡再聽一次。
   念題目只有一個出口：有錄音就播 `assets/logic/audio/<zh|en>/<台詞編號>.mp3`（`js/logic-audio.js` 列出已經錄好的），沒有就退回系統語音。
+  目前 63 句中英文都錄好了（旁白 Yui，126 個檔約 3.2 MB，收在核心離線包）；小屋名字不念，所以沒錄。
   語言在大人專區選（`kidsLogicLang`）：中文／English／都念（中文念完接英文）。
-  錄音：`python tools/logic-tts/el_logic.py dry|trial|record|build`（台詞直接從程式讀，改了台詞只會重錄那一句；母帶在 `_logic_tts/`，不進版本庫）。
+  錄音：`python tools/logic-tts/el_logic.py dry|trial|record|build`（台詞直接從程式讀，改了台詞只會重錄那一句；母帶在 `_logic_tts/`，不進版本庫），
+  `python tools/logic-tts/listen_page.py` 產生給大人抽聽的試聽頁（最上面是容易念錯的幾句）。
   檢查：`node tools/check_logic.js`（台詞中英齊全、每個字有注音、台詞編號沒打錯、每間小屋的關卡解得開而且答案唯一；加 `--print` 把注音印出來看破音字）；
   `node tools/logic_drive.js tools/logic-tests/<檔>.json --out <資料夾>` 用無頭 Edge 真的拖、真的點再截圖（要先 `python .claude/serve_nosw.py . 8091`）。
   加一間小屋：新增那兩支檔 → `logic.html` 掛上 → `sw.js` 的 PRECACHE 加檔、升版 → 跑上面兩個檢查和 `node tools/check_precache.js`
