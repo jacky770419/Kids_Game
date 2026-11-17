@@ -2,11 +2,12 @@
  "id": "bear-tooth",
  "title": "小熊掉牙了",
  "title_en": "Little Bear's Wiggly Tooth",
- "size": "短",
+ "size": "中",
  "roles": {
-  "小熊": "就是《小熊不想睡覺》《小熊看牙醫》裡的小熊：小男孩的聲音，活潑、愛撒嬌，發現牙齒會動時嚇一跳、快哭了，聽醫生說完放心又好奇，牙齒掉下來時又驚又得意。",
+  "小熊": "就是《小熊不想睡覺》《小熊看牙醫》裡的小熊：小男孩的聲音，活潑、愛撒嬌，發現牙齒會動時嚇一跳、快哭了，聽醫生說完放心又好奇，牙齒掉下來時又驚又得意，發現說話漏風時自己也笑個不停。",
   "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑。",
-  "河馬醫生": "就是《小熊看牙醫》裡的河馬醫生：溫和的大河馬牙醫，中年男聲，低沉溫暖、說話慢，愛逗小孩笑。"
+  "河馬醫生": "就是《小熊看牙醫》裡的河馬醫生：溫和的大河馬牙醫，中年男聲，低沉溫暖、說話慢，愛逗小孩笑。",
+  "熊爸爸": "小熊的爸爸，高大溫和的熊，中年男聲，爽朗愛笑，喜歡逗小熊。"
  },
  "cast": {
   "小熊": {
@@ -20,23 +21,32 @@
   "河馬醫生": {
    "find": "YCHuang",
    "en": "Brian"
+  },
+  "熊爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
   }
  },
  "polyphones": [
   {
    "char": "晃",
-   "where": "第2頁、第5頁『晃一晃』",
+   "where": "第2頁、第5頁、第6頁『晃一晃』",
    "read": "huàng"
   },
   {
    "char": "會",
-   "where": "第1頁『會動』、第3頁『也會搬家』、第4頁『會像』",
+   "where": "第1頁『會動』、第3頁『也會搬家』、第4頁『會自己掉』『會像』、第9頁『就會往上冒』",
    "read": "huì"
   },
   {
    "char": "沒",
-   "where": "第4頁『沒有我這麼大』、第8頁『有沒有』",
+   "where": "第4頁『沒有我這麼大』、第11頁『有沒有』",
    "read": "méi"
+  },
+  {
+   "char": "冒",
+   "where": "第9頁『往上冒』『往下冒』、第11頁『冒出來』",
+   "read": "mào"
   }
  ],
  "pages": [
@@ -58,7 +68,7 @@
      "who": "小熊",
      "tag": "scared",
      "text": "媽媽，我的牙齒會動！",
-     "en": "Mama, my tooth is moving!"
+     "en": "Mama, my tooth is wiggly!"
     }
    ]
   },
@@ -89,6 +99,11 @@
    "scene": "牙醫診所，明亮乾淨：白色的牆上貼著一張笑臉牙齒的海報，中間有一張藍色的大椅子，椅子上方有一盞燈。",
    "act": "河馬醫生是淡紫灰色的大河馬，穿白色醫生袍、戴圓眼鏡，胸前口袋插著一支大牙刷；牙齒畫成方方的、白色圓鈍的大門牙，不要畫尖牙或獠牙。小熊坐在藍色大椅子上張大嘴巴，河馬醫生拿著小鏡子看，笑咪咪的；熊媽媽站在椅子旁邊。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "河馬醫生戴著圓眼鏡，笑著等小熊。",
+     "en": "Doctor Hippo, in his round glasses, smiles at Little Bear."
+    },
     {
      "who": "河馬醫生",
      "tag": "gentle",
@@ -121,8 +136,13 @@
     },
     {
      "who": "河馬醫生",
-     "text": "下面有一顆新牙，正在往上推。",
-     "en": "Underneath, a new tooth is pushing its way up."
+     "text": "新牙在下面用力推，把乳牙推出去，換它來住。",
+     "en": "A new tooth underneath is pushing hard. It pushes the baby tooth out, so it can move in."
+    },
+    {
+     "who": "河馬醫生",
+     "text": "這很正常，乳牙會自己掉下來，不用怕。",
+     "en": "That's normal. Your baby tooth will come out all by itself. Don't worry."
     },
     {
      "who": "小熊",
@@ -140,7 +160,7 @@
   },
   {
    "scene": "晚上，小熊家的餐桌：桌上有一盤黃色的玉米、熱湯和飯。",
-   "act": "小熊坐在餐桌前，用舌頭頂著搖動的門牙，兩手抓起一根玉米準備咬下去；熊媽媽坐在對面看著他微笑。",
+   "act": "熊爸爸是比熊媽媽還高大的深棕色熊，穿藍色格子襯衫，剛下班回家，笑著坐到餐桌旁，把一根玉米遞給小熊；小熊用舌頭頂著搖動的門牙；熊媽媽坐在對面微笑。",
    "lines": [
     {
      "who": "旁白",
@@ -149,20 +169,31 @@
     },
     {
      "who": "小熊",
-     "text": "搖一搖，晃一晃，小牙你要走了嗎？",
+     "text": "搖一搖，晃一晃，小牙，你要走了嗎？",
      "en": "Wiggle, wobble. Little tooth, are you leaving?"
     },
     {
      "who": "旁白",
-     "text": "晚飯的時候，小熊咬了一口玉米。",
-     "en": "At dinner, Little Bear takes a bite of corn."
+     "text": "晚飯的時候，熊爸爸也回家了。",
+     "en": "At dinnertime, Papa Bear comes home too."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "happy",
+     "text": "今天吃玉米！小熊，大口咬！",
+     "en": "Corn tonight! Take a big bite, Little Bear!"
     }
    ]
   },
   {
    "scene": "晚上，小熊家的餐桌。",
-   "act": "小熊舉著玉米，玉米上黏著一顆小小的白牙齒；小熊張大嘴巴，嘴裡少了一顆下排門牙；熊媽媽拍手。",
+   "act": "小熊舉著玉米，玉米上黏著一顆小小的白牙齒；小熊張大嘴巴，嘴裡少了一顆下排門牙；熊爸爸和熊媽媽一起拍手歡呼。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊大口咬玉米，搖一搖，晃一晃。",
+     "en": "Little Bear takes a big bite of corn. Wiggle, wobble."
+    },
     {
      "who": "旁白",
      "text": "咦？玉米上，黏著一顆小白牙！",
@@ -175,39 +206,137 @@
      "en": "My tooth came out! It doesn't hurt at all!"
     },
     {
-     "who": "熊媽媽",
-     "tag": "happy",
-     "text": "恭喜你，小熊！",
-     "en": "Congratulations, Little Bear!"
+     "who": "熊爸爸",
+     "tag": "excited",
+     "text": "太棒了！小熊掉了第一顆牙！",
+     "en": "Hooray! Little Bear lost his first tooth!"
     }
    ]
   },
   {
-   "scene": "晚上，小熊家的浴室：洗手台、鏡子和一張小板凳；洗手台上有一個紅色的小盒子。",
-   "act": "小熊站在小板凳上，對著鏡子咧嘴大笑，下排門牙的地方缺了一格；他把小白牙放進紅色小盒子裡，熊媽媽在後面笑著看。",
+   "scene": "晚上，小熊家的餐桌；桌上有一個紅色的小盒子。",
+   "act": "熊媽媽拿出一個紅色小盒子，把小白牙放進去，交給小熊；小熊捧著盒子張嘴說話，缺牙的地方有一小陣風吹出來，畫幾條好笑的小風線；熊爸爸笑得仰起頭，小熊自己也摀著嘴笑。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "來，小白牙放進這個紅色小盒子。",
+     "en": "Here, let's put your little tooth in this red box."
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "呼謝媽媽！",
+     "en": "Fank you, Mama!"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "laughing",
+     "text": "呼謝？哈，是謝謝吧！",
+     "en": "Fank you? You mean thank you!"
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "咦？我的牙齒，漏風了！",
+     "en": "Huh? I sound funny with a gap in my teeth!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了，小熊自己也笑了。",
+     "en": "Everyone laughs, and Little Bear laughs too."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊家的浴室：洗手台、鏡子和一張小板凳；洗手台上放著紅色小盒子。",
+   "act": "小熊站在小板凳上，對著鏡子咧嘴大笑，下排門牙的地方缺了一格；接著他嘟起嘴巴想吹口哨，只吹出幾條小風線，沒有聲音；熊媽媽在後面笑著看。",
    "lines": [
     {
      "who": "小熊",
      "tag": "laughing",
-     "text": "媽媽妳看，我的嘴巴開了一個小門！",
+     "text": "媽媽，妳看，我的嘴巴開了一個小門！",
      "en": "Look, Mama! My mouth has a little door now!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊想吹口哨。呼，呼，吹出來的都是風！",
+     "en": "Little Bear tries to whistle. Whoo, whoo. Nothing but air comes out!"
     },
     {
      "who": "熊媽媽",
      "tag": "gentle",
-     "text": "那是新牙齒的位置喔。",
-     "en": "That spot is for your new tooth."
+     "text": "那個小門，是新牙齒的位置喔。",
+     "en": "That little door is the spot for your new tooth."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊家的客廳，窗外看得到院子和小屋子的屋頂，天上有月亮。",
+   "act": "小熊捧著紅色小盒子，抬頭看熊媽媽；熊媽媽指著窗外的屋頂；熊爸爸蹲下來，一手比著往上，一手指著地板往下，笑咪咪的。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "媽媽，小白牙要怎麼辦呢？",
+     "en": "Mama, what do we do with my little tooth?"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "下排的牙齒掉了，要丟到屋頂上。",
+     "en": "When a bottom tooth comes out, we toss it up on the roof."
+    },
+    {
+     "who": "熊媽媽",
+     "text": "這樣新牙齒，就會往上冒喔。",
+     "en": "Then the new tooth will pop up."
+    },
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "那上排的牙齒呢？",
+     "en": "What about a top tooth?"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "happy",
+     "text": "上排的丟到床底下，新牙就往下冒！",
+     "en": "That one goes under the bed, so the new tooth pops down!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊家的院子，木頭小屋的屋頂在月光下，天上有星星。",
+   "act": "熊爸爸把小熊抱起來舉到肩膀那麼高，小熊用力把小白牙往屋頂丟；小白牙在空中畫出一條弧線，落在屋頂的瓦片上；熊媽媽站在旁邊拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "熊爸爸把小熊抱起來，好高喔！",
+     "en": "Papa Bear lifts Little Bear up high!"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "excited",
+     "text": "準備好了嗎？一、二、三！",
+     "en": "Ready? One, two, three!"
+    },
+    {
+     "who": "小熊",
+     "tag": "shouting",
+     "text": "小白牙，飛上屋頂吧！",
+     "en": "Fly up to the roof, little tooth!"
     },
     {
      "who": "旁白",
-     "text": "小熊把小白牙，放進一個小盒子裡。",
-     "en": "Little Bear puts his little white tooth into a tiny box."
+     "text": "小白牙飛起來，叮！停在屋頂上了。",
+     "en": "Up flies the little tooth. Tink! It lands on the roof."
     },
     {
      "who": "小熊",
      "tag": "gentle",
-     "text": "小白牙，謝謝你，再見！",
-     "en": "Thank you, little tooth. Goodbye!"
+     "text": "小白牙，呼謝你，再見！",
+     "en": "Fank you, little tooth. Goodbye!"
     }
    ]
   },
@@ -219,6 +348,11 @@
      "who": "旁白",
      "text": "過了好多天，小熊照鏡子。",
      "en": "Many days later, Little Bear looks in the mirror."
+    },
+    {
+     "who": "旁白",
+     "text": "他用舌頭推一推，咦？",
+     "en": "He pushes with his tongue. Huh?"
     },
     {
      "who": "小熊",

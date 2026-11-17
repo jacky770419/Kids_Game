@@ -53,7 +53,7 @@
      "who": "小熊",
      "tag": "grumpy",
      "text": "綠色的，我不要吃！",
-     "en": "They're green. I don't want them!"
+     "en": "Green ones? Yucky! I don't want them!"
     },
     {
      "who": "熊媽媽",
@@ -75,14 +75,14 @@
     {
      "who": "小兔",
      "tag": "excited",
-     "text": "小熊，我們去菜園摘菜，好不好？",
-     "en": "Little Bear, do you want to pick vegetables in the garden?"
+     "text": "小熊，來我家菜園摘菜，好不好？",
+     "en": "Little Bear, want to come pick veggies in my garden?"
     },
     {
      "who": "小熊",
      "tag": "happy",
      "text": "摘菜？好啊，我要去！",
-     "en": "Pick vegetables? Okay, I want to go!"
+     "en": "Pick veggies? Yes, I want to go!"
     }
    ]
   },
@@ -161,8 +161,8 @@
     },
     {
      "who": "旁白",
-     "text": "小熊把四季豆洗乾淨，折成小段。",
-     "en": "Little Bear washes the beans and snaps them into little pieces."
+     "text": "小熊把四季豆洗乾淨，啪，啪，折成小段。",
+     "en": "Little Bear washes the beans. Snap, snap! He breaks them into little pieces."
     },
     {
      "who": "旁白",
@@ -250,8 +250,8 @@
     },
     {
      "who": "旁白",
-     "text": "自己摘的菜，最好吃。你也來試一次吧！",
-     "en": "Veggies you pick yourself taste the best. Why not give it a try?"
+     "text": "自己摘的菜，最好吃。你也來試吃一口青菜吧！",
+     "en": "Veggies you pick yourself taste the best. Why not try a bite of your veggies, too?"
     }
    ]
   }

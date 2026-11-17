@@ -6,8 +6,8 @@
  "roles": {
   "小熊": "就是《小熊的抱抱》《小熊不想睡覺》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌，愛吃，秋天吃東西時開心大聲，跟朋友說再見時有點捨不得，快睡著時聲音又小又慢，春天醒來又驚喜又興奮。",
   "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，講冬眠的事像在說一個溫暖的祕密，說晚安時很輕很柔。",
-  "松鼠": "橘紅色的小松鼠，聲音又尖又細、說話很快，忙個不停，熱心又愛笑。",
-  "小鳥": "藍色的小鳥，像小妹妹的聲音，又甜又輕快，說再見時溫柔，回來時好興奮。"
+  "松鼠": "橘紅色的小松鼠，聲音又尖又細，說話又快又急、像連珠炮，忙個不停，熱心又愛笑。",
+  "小鳥": "藍色的小鳥，溫柔的大姊姊聲音，說話慢慢的、像在唱歌，說再見時溫柔，回來時好開心。"
  },
  "cast": {
   "小熊": {
@@ -23,8 +23,8 @@
    "en": "kids_Macy"
   },
   "小鳥": {
-   "find": "Lulu",
-   "en": "Cherry Twinkle"
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
   }
  },
  "polyphones": [
@@ -35,7 +35,7 @@
   },
   {
    "char": "會",
-   "where": "第2頁『會冬眠』『會變成』、第4頁『會出來』",
+   "where": "第2頁『會冬眠』『會存在身上』、第4頁『會出來』",
    "read": "huì"
   },
   {
@@ -86,8 +86,8 @@
     {
      "who": "熊媽媽",
      "tag": "gentle",
-     "text": "冬天好冷，森林裡找不到東西吃。",
-     "en": "Winter is very cold. There is no food to find in the forest."
+     "text": "冬天好冷，森林裡很難找到東西吃。",
+     "en": "Winter is very cold, and it's hard to find food in the forest."
     },
     {
      "who": "熊媽媽",
@@ -96,8 +96,8 @@
     },
     {
      "who": "熊媽媽",
-     "text": "秋天吃的東西，會變成脂肪，陪我們過冬。",
-     "en": "The food we eat in autumn turns into fat. It keeps us going all winter."
+     "text": "秋天吃的東西，會存在身上，變成冬天的力氣。",
+     "en": "The food we eat in autumn gets saved in our bodies. It gives us energy all winter."
     }
    ]
   },
@@ -114,7 +114,7 @@
      "who": "小熊",
      "tag": "laughing",
      "text": "吃一口，再吃一口！",
-     "en": "One bite, and another bite!"
+     "en": "One bite, then another!"
     },
     {
      "who": "旁白",
@@ -125,13 +125,13 @@
      "who": "小熊",
      "tag": "proud",
      "text": "媽媽妳看，我變胖了！",
-     "en": "Look, Mama! I'm getting fat!"
+     "en": "Look, Mama! I'm getting so big and round!"
     },
     {
      "who": "熊媽媽",
      "tag": "laughing",
-     "text": "變胖沒關係，冬天就靠它了。",
-     "en": "That's okay! Your fat will help you all winter."
+     "text": "變胖沒關係，那是冬天的力氣喔。",
+     "en": "That's okay! That's your energy for the winter."
     }
    ]
   },
@@ -154,7 +154,7 @@
      "who": "松鼠",
      "tag": "excited",
      "text": "我在收果子！收進樹洞裡，冬天再拿出來吃。",
-     "en": "I'm gathering nuts! I put them in my tree hole, and in winter I take them out to eat."
+     "en": "I'm gathering nuts! I'm saving them in my tree hole to eat in winter."
     },
     {
      "who": "小熊",
@@ -178,7 +178,7 @@
      "who": "小鳥",
      "tag": "happy",
      "text": "小熊，松鼠，我要飛走了！",
-     "en": "Little Bear, Squirrel, I'm flying away!"
+     "en": "Little Bear, Squirrel, it's time for me to fly away!"
     },
     {
      "who": "小熊",
@@ -288,7 +288,7 @@
   },
   {
    "scene": "冬天，整座山都是白色的雪，山洞口被雪蓋住一半；旁邊大橡樹的樹洞口也積著雪。",
-   "act": "畫面分兩邊：左邊是山洞裡，小熊和熊媽媽靠在一起睡，肚子慢慢一起一伏，小熊懷裡還抱著松果；右邊是大橡樹，松鼠從樹洞探出頭，抱著一顆橡實在吃。",
+   "act": "畫面分兩邊：左邊是山洞裡，小熊和熊媽媽靠在一起睡，肚子慢慢一起一伏，小熊懷裡還抱著松果，頭上冒出一個夢的泡泡，裡面是春天的花、松鼠和小鳥；右邊是大橡樹，松鼠從樹洞探出頭，抱著一顆橡實在吃。",
    "lines": [
     {
      "who": "旁白",
@@ -302,8 +302,13 @@
     },
     {
      "who": "旁白",
-     "text": "他們不吃東西，靠身上的脂肪過冬。",
-     "en": "They don't eat anything. The fat on their bodies keeps them going."
+     "text": "他們不吃東西，靠身上存的力氣過冬。",
+     "en": "They eat nothing at all. The energy saved in their bodies keeps them going."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊夢到了春天，和他的好朋友。",
+     "en": "Little Bear dreams of spring and his friends."
     },
     {
      "who": "旁白",
@@ -335,8 +340,8 @@
     {
      "who": "熊媽媽",
      "tag": "gentle",
-     "text": "你的脂肪，陪你過完冬天了。",
-     "en": "Your fat kept you going all winter long."
+     "text": "你身上存的力氣，陪你過完冬天了。",
+     "en": "Your saved-up energy got you through the winter."
     },
     {
      "who": "小熊",

@@ -25,34 +25,34 @@
  "polyphones": [
   {
    "char": "會",
-   "where": "第2頁、第3頁『一定會喜歡』",
+   "where": "第2、3、5頁『一定會喜歡』",
    "read": "huì"
   },
   {
    "char": "沒",
-   "where": "第4頁『花沒了』『沒有禮物』",
+   "where": "第6頁『花沒了』『沒有禮物』",
    "read": "méi"
   },
   {
    "char": "什",
-   "where": "第5頁『喜歡什麼』、第6頁『是什麼』",
+   "where": "第6頁『喜歡什麼』",
    "read": "shén"
   },
   {
    "char": "給",
-   "where": "第7頁『送給妳』、第8頁『給媽媽』",
+   "where": "第5頁『畫給媽媽』、第7頁『送給妳』",
    "read": "gěi"
   }
  ],
  "pages": [
   {
    "scene": "早上，小熊家門口的院子，旁邊有一片開滿花的小花園。",
-   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花，提著菜籃走出院子，回頭揮手。熊爸爸是比熊媽媽還要高大的深棕色公熊，穿藍色格子襯衫，他彎下腰，用手遮著嘴巴，對小熊說悄悄話；小熊捂著嘴巴偷笑。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花，拿著一個小手提包走出院子，要去外婆家，回頭揮手。熊爸爸是比熊媽媽還要高大的深棕色公熊，穿藍色格子襯衫，他彎下腰，用手遮著嘴巴，對小熊說悄悄話；小熊捂著嘴巴偷笑。",
    "lines": [
     {
      "who": "旁白",
-     "text": "今天是母親節，媽媽出門買菜了。",
-     "en": "Today is Mother's Day. Mama goes out to buy groceries."
+     "text": "今天是母親節，媽媽去外婆家了。",
+     "en": "Today is Mother's Day. Mama goes to visit Grandma."
     },
     {
      "who": "熊爸爸",
@@ -96,8 +96,8 @@
     },
     {
      "who": "旁白",
-     "text": "小熊跑呀跑，停下來一看，花瓣都掉光了。",
-     "en": "Little Bear runs and runs. When he stops, all the petals are gone."
+     "text": "小熊跑呀跑，花瓣都掉光了。",
+     "en": "Little Bear runs and runs, and all the petals fall off."
     }
    ]
   },
@@ -120,7 +120,7 @@
      "who": "熊爸爸",
      "tag": "laughing",
      "text": "哈哈，你變成小白熊了！",
-     "en": "Ha ha! You've turned into a little white bear!"
+     "en": "Ha ha! You look like a little polar bear!"
     },
     {
      "who": "小熊",
@@ -132,31 +132,65 @@
   },
   {
    "scene": "小熊家的廚房，烤箱的門打開，冒出一縷灰色的煙。",
-   "act": "熊爸爸戴著隔熱手套，端出一個黑色、焦掉的圓蛋糕；小熊捏著鼻子，眼眶紅了，旁邊的杯子裡插著一把掉光花瓣的花梗。",
+   "act": "熊爸爸戴著隔熱手套，端出一個黑色、焦掉的圓蛋糕，另一手抓抓頭，不好意思地笑；小熊捏著鼻子，嘴巴扁扁的。",
    "lines": [
     {
      "who": "旁白",
-     "text": "叮！蛋糕烤好了。可是，蛋糕變成黑色的了。",
-     "en": "Ding! The cake is done. But it has turned black!"
+     "text": "叮！蛋糕烤好了，可是變成黑色的了。",
+     "en": "Ding! The cake is ready. But it has turned black!"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "surprised",
+     "text": "哎呀，爸爸忘了看時間！",
+     "en": "Oops! Papa forgot to watch the clock!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的廚房餐桌：一張白紙、一盒蠟筆，旁邊是做蛋糕剩下的一大罐蜂蜜。",
+   "act": "左邊：小熊趴在桌上，用蠟筆認真畫熊媽媽和她頭上的粉紅小花。右邊：小熊的手肘碰翻蜂蜜罐，金黃色的蜂蜜流到畫上，畫黏成一團，小熊張大嘴巴。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "那我畫一張畫給媽媽！",
+     "en": "Then I'll draw Mama a picture!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊畫了媽媽和粉紅小花。",
+     "en": "Little Bear draws Mama and her pink flower."
     },
     {
      "who": "小熊",
+     "tag": "happy",
+     "text": "媽媽一定會喜歡！",
+     "en": "Mama will love it!"
+    },
+    {
+     "who": "旁白",
+     "text": "糟糕！蜂蜜罐翻了，畫黏住了。",
+     "en": "Uh-oh! The honey jar tips over. The picture is all sticky!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，一張大沙發；茶几上放著黑色的蛋糕、黏著蜂蜜的畫，和插在杯子裡、掉光花瓣的花梗。",
+   "act": "熊爸爸坐在沙發上，把小熊抱在腿上，用毛巾擦掉他臉上的麵粉和蜂蜜；小熊眼眶紅了，歪著頭想，頭上冒出一個想像泡泡，裡面是他抱著熊媽媽、熊媽媽開心大笑的畫面，小熊眼睛一亮。",
+   "lines": [
+    {
+     "who": "小熊",
      "tag": "crying",
-     "text": "花沒了，蛋糕也焦了。",
-     "en": "The flowers are gone, and the cake is burnt."
+     "text": "花沒了，蛋糕焦了，畫也黏住了。",
+     "en": "The flowers are gone, the cake is burnt, and the picture is sticky."
     },
     {
      "who": "小熊",
      "tag": "sad",
      "text": "我沒有禮物了。",
      "en": "Now I don't have a present."
-    }
-   ]
-  },
-  {
-   "scene": "小熊家的客廳，一張大沙發。",
-   "act": "熊爸爸坐在沙發上，把小熊抱在腿上，用毛巾擦掉他臉上的麵粉；小熊歪著頭想，頭上冒出一個想像泡泡，裡面是他抱著熊媽媽的畫面，眼睛一亮。",
-   "lines": [
+    },
     {
      "who": "熊爸爸",
      "tag": "gentle",
@@ -165,8 +199,8 @@
     },
     {
      "who": "旁白",
-     "text": "小熊想啊想。媽媽每天都說，她最喜歡小熊的抱抱。",
-     "en": "Little Bear thinks and thinks. Every day, Mama says she loves Little Bear's hugs the most."
+     "text": "小熊想啊想。每次抱媽媽，媽媽都好開心。",
+     "en": "Little Bear thinks and thinks. Every time he hugs Mama, she is so happy."
     },
     {
      "who": "小熊",
@@ -178,12 +212,12 @@
   },
   {
    "scene": "太陽要下山了，小熊家的院子門口，天空是橘色的。",
-   "act": "熊媽媽提著裝滿蔬菜的菜籃走進院子；小熊從門後跑出來，站在媽媽面前，兩手背在身後，神祕地笑；熊爸爸躲在門後偷看。",
+   "act": "熊媽媽拿著小手提包和一束外婆送的花，閉著眼睛蹲在院子門口；小熊張開雙手跳起來，緊緊抱住媽媽的脖子，旁邊冒出好多粉紅色的小愛心；熊爸爸躲在門後偷看，笑咪咪的。",
    "lines": [
     {
      "who": "旁白",
-     "text": "太陽要下山了，媽媽回來了。",
-     "en": "The sun is going down. Mama comes home."
+     "text": "媽媽從外婆家回來了。",
+     "en": "Mama comes home from Grandma's."
     },
     {
      "who": "小熊",
@@ -191,18 +225,6 @@
      "text": "媽媽，閉上眼睛！我有禮物！",
      "en": "Mama, close your eyes! I have a present!"
     },
-    {
-     "who": "熊媽媽",
-     "tag": "surprised",
-     "text": "哇，是什麼呢？",
-     "en": "Ooh, what could it be?"
-    }
-   ]
-  },
-  {
-   "scene": "小熊家的院子門口，橘色的天空。",
-   "act": "熊媽媽閉著眼睛蹲下來；小熊張開雙手跳起來，緊緊抱住媽媽的脖子，旁邊冒出好多粉紅色的小愛心；菜籃放在地上。",
-   "lines": [
     {
      "who": "旁白",
      "text": "小熊張開手，用力抱住媽媽。",
@@ -219,19 +241,18 @@
      "tag": "happy",
      "text": "哇，這是最棒的禮物！",
      "en": "Oh! This is the best present of all!"
-    },
-    {
-     "who": "熊媽媽",
-     "tag": "gentle",
-     "text": "這個禮物，媽媽每天都想要。",
-     "en": "Mama wants this present every single day."
     }
    ]
   },
   {
-   "scene": "晚上，小熊家的餐桌，桌上放著那個黑色的蛋糕，旁邊的杯子裡插著那把沒有花瓣的花梗。",
-   "act": "熊媽媽咬了一口黑蛋糕，笑得眯起眼睛；熊爸爸張開手臂，把熊媽媽和小熊一起抱住，一家三口抱成一團。最後一句是對著聽故事的小孩說。",
+   "scene": "晚上，小熊家的餐桌，桌上放著那個黑色的蛋糕，旁邊有那張黏著蜂蜜的畫，和插著花梗的杯子。",
+   "act": "熊爸爸把黑蛋糕端上桌；熊媽媽咬了一口黑蛋糕，笑得眯起眼睛；接著熊爸爸張開手臂，把熊媽媽和小熊一起抱住，一家三口抱成一團。最後一句是對著聽故事的小孩說。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸端出黑蛋糕。",
+     "en": "Papa brings out the black cake."
+    },
     {
      "who": "熊媽媽",
      "tag": "laughing",
@@ -251,8 +272,8 @@
     },
     {
      "who": "旁白",
-     "text": "今天，你也給媽媽一個抱抱吧！",
-     "en": "Today, why not give your mom a hug, too?"
+     "text": "今天，你也去抱一抱你愛的家人吧！",
+     "en": "Today, why not give someone you love a big hug, too?"
     }
    ]
   }

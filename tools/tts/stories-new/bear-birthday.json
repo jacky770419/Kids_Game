@@ -40,12 +40,12 @@
   },
   {
    "char": "沒",
-   "where": "第5頁『沒有了』、第9頁『沒有忘記』",
+   "where": "第8頁『沒有忘記』",
    "read": "méi"
   },
   {
    "char": "給",
-   "where": "第1頁『給我驚喜』、第9頁『送給你』",
+   "where": "第1頁『給我驚喜』、第8頁『給你一個大驚喜』、第9頁『送給你』",
    "read": "gěi"
   },
   {
@@ -85,7 +85,7 @@
   },
   {
    "scene": "小熊家的廚房：木頭餐桌、爐子上有平底鍋，流理台上放著麵粉袋、雞蛋和一大罐蜂蜜。",
-   "act": "熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花。熊媽媽背對流理台站著，兩手藏在身後，偷偷遮住一個裝著麵糊的大碗；小熊站在門口，眼睛亮亮地看著她。",
+   "act": "熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花。熊媽媽站在爐子前，低頭用平底鍋煎荷包蛋，身體偷偷擋住流理台上一個裝著麵糊的大碗；小熊站在門口，眼睛亮亮地看著她。",
    "lines": [
     {
      "who": "小熊",
@@ -162,8 +162,8 @@
     },
     {
      "who": "旁白",
-     "text": "小熊愣在池塘邊，眨了眨眼睛。",
-     "en": "Little Bear just stands by the pond and blinks."
+     "text": "小熊站在池塘邊，眨了眨眼睛。咦？",
+     "en": "Little Bear stands by the pond and blinks. Huh?"
     }
    ]
   },
@@ -194,8 +194,8 @@
     },
     {
      "who": "旁白",
-     "text": "小熊連撥開的力氣都沒有了。",
-     "en": "Little Bear is too sad to even brush it off."
+     "text": "小熊吸了吸鼻子，好想回家喔。",
+     "en": "Little Bear sniffles. He just wants to go home."
     }
    ]
   },
@@ -282,22 +282,22 @@
      "en": "The room is full of balloons and colorful flags."
     },
     {
-     "who": "熊爸爸",
-     "tag": "laughing",
-     "text": "我們準備了好久呢！",
-     "en": "We've been getting ready for ages!"
-    },
-    {
      "who": "小熊",
      "tag": "surprised",
-     "text": "哇！",
-     "en": "Wow!"
+     "text": "哇！原來大家都沒有忘記！",
+     "en": "Wow! Nobody forgot after all!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "我們是故意假裝忘記，想給你一個大驚喜！",
+     "en": "We only pretended to forget. We wanted to surprise you!"
     }
    ]
   },
   {
    "scene": "小熊家的客廳，同一個下午，茶几上擺著一個蜂蜜蛋糕。",
-   "act": "小青蛙踮起腳，把一頂黃色的紙皇冠戴到小熊頭上，皇冠上貼著亮晶晶的星星；熊爸爸從沙發後面拿出綁紅色緞帶的禮物盒；熊媽媽指著蛋糕微笑。",
+   "act": "小青蛙踮起腳，把一頂黃色的紙皇冠戴到小熊頭上，皇冠上貼著亮晶晶的星星；熊媽媽指著蛋糕微笑；熊爸爸從沙發後面拿出綁紅色緞帶的禮物盒，小熊打開盒子，裡面是一個紅色的風箏，小熊開心地抱住它。",
    "lines": [
     {
      "who": "小青蛙",
@@ -315,13 +315,18 @@
      "who": "熊爸爸",
      "tag": "laughing",
      "text": "爸爸的禮物，一直躲在沙發後面！",
-     "en": "And Papa's present was hiding behind the sofa all along!"
+     "en": "And Papa's present has been hiding behind the sofa all day!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊打開一看，是一個紅色的新風箏！",
+     "en": "Little Bear opens it. It's a brand-new red kite!"
     },
     {
      "who": "小熊",
      "tag": "happy",
-     "text": "原來，大家都沒有忘記我的生日！",
-     "en": "So nobody forgot my birthday after all!"
+     "text": "謝謝媽媽，謝謝爸爸，謝謝小青蛙！",
+     "en": "Thank you, Mama! Thank you, Papa! Thank you, Little Frog!"
     }
    ]
   },
@@ -353,7 +358,7 @@
    ]
   },
   {
-   "scene": "小熊家的客廳，燈又打開了；地上有拆開的禮物紙，盒子裡是一個紅色的風箏。",
+   "scene": "小熊家的客廳，燈又打開了；地上有拆開的禮物紙和空的禮物盒。",
    "act": "小熊戴著紙皇冠，抱著紅色風箏，嘴邊沾著蛋糕奶油，笑得好開心；小青蛙湊過來好奇地問；熊爸爸、熊媽媽坐在沙發上互看一眼，笑了。最後一句是對著聽故事的小孩說。",
    "lines": [
     {
