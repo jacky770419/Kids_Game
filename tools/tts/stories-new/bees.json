@@ -1,0 +1,346 @@
+{
+ "id": "bees",
+ "title": "小蜜蜂的一天",
+ "title_en": "A Little Bee's Busy Day",
+ "size": "中",
+ "roles": {
+  "小蜜蜂": "主角，第一次出門採蜜的小工蜂，像四五歲的小女生，聲音可愛有精神；迷路時快哭，跳舞時很得意。",
+  "蜂后媽媽": "蜂巢裡的蜂后，溫柔的媽媽聲音，說話輕輕慢慢、帶著笑。",
+  "花朵": "果園裡一朵粉白色的蘋果花，像五六歲的小女孩，說話甜甜的、很有禮貌。",
+  "大黃蜂": "圓滾滾、毛茸茸的大黃蜂，活潑的年輕男生聲音，愛說大話、常常撞到東西，好笑不可怕。"
+ },
+ "cast": {
+  "小蜜蜂": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "蜂后媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "花朵": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "大黃蜂": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "嗡",
+   "where": "第1、11頁『嗡，嗡，嗡』，第10頁『嗡的一聲』",
+   "read": "wēng"
+  },
+  {
+   "char": "教",
+   "where": "第11頁『教我跳』",
+   "read": "jiāo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上，森林邊一棵大樹的樹洞裡，是一個好大的蜂巢：一格一格金黃色的六角形小房間，陽光從洞口照進來。",
+   "act": "小蜜蜂第一次出場：圓圓的身體有黃黑相間的條紋，一對透明的小翅膀，頭上兩根短短的觸角，大眼睛、粉紅色臉頰，脖子上一圈毛茸茸的黃毛。她站在洞口拍著翅膀，好興奮；後面有好多一樣是黃黑條紋的蜜蜂姊姊在忙著工作。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大樹洞的蜂巢裡，住著好多工蜂，她們都是女生。",
+     "en": "In a hive inside a hollow tree live lots of worker bees, and they are all girls."
+    },
+    {
+     "who": "旁白",
+     "text": "今天，小蜜蜂第一次出門採花蜜！",
+     "en": "Today, Little Bee is going out to collect nectar for the very first time!"
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "excited",
+     "text": "嗡，嗡，嗡，飛呀飛，找花蜜！",
+     "en": "Buzz, buzz, buzz! Fly, fly, find the nectar!"
+    }
+   ]
+  },
+  {
+   "scene": "蜂巢的最裡面，一間一間六角形的小房間，有些房間裡放著一顆白色的小蛋。",
+   "act": "蜂后媽媽第一次出場：比其他蜜蜂大很多，身體細長，頭上戴一頂小小的金色皇冠。她正把一顆白色的小蛋放進小房間，回頭溫柔地看著小蜜蜂；小蜜蜂在旁邊用力點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "蜂巢最裡面，住著蜂后媽媽。",
+     "en": "Deep inside the hive lives Queen Mama."
+    },
+    {
+     "who": "旁白",
+     "text": "她的工作就是下蛋，一天能下一千多顆！",
+     "en": "Her job is laying eggs. She can lay more than a thousand in a single day!"
+    },
+    {
+     "who": "蜂后媽媽",
+     "tag": "gentle",
+     "text": "孩子，迷路了，就抬頭找太陽。",
+     "en": "Sweetheart, if you get lost, look up and find the sun."
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "happy",
+     "text": "知道了！媽媽，我出門囉！",
+     "en": "Okay! Bye, Mama! I'm off!"
+    }
+   ]
+  },
+  {
+   "scene": "果園裡，一排蘋果樹開滿了粉白色的蘋果花，綠色的草地，藍色的天空。",
+   "act": "大黃蜂第一次出場：比小蜜蜂大兩倍，圓滾滾、毛茸茸，黃黑相間的毛像穿了一件毛衣，翅膀卻小小的。他一頭撞上一朵蘋果花，跌坐在樹枝上，眼睛冒出小星星；小蜜蜂在旁邊遮著嘴偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蜜蜂飛到果園，遇到一隻大黃蜂。",
+     "en": "Little Bee flies to the orchard and meets a bumblebee."
+    },
+    {
+     "who": "大黃蜂",
+     "tag": "proud",
+     "text": "讓開，讓開！飛最快的就是我！",
+     "en": "Out of the way! I'm the fastest flyer around!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！他撞到一朵花，跌坐在樹枝上。",
+     "en": "Bonk! He crashes into a flower and plops down on a branch."
+    },
+    {
+     "who": "大黃蜂",
+     "tag": "surprised",
+     "text": "哎喲！這朵花怎麼不讓路？",
+     "en": "Ouch! Why didn't that flower move?"
+    }
+   ]
+  },
+  {
+   "scene": "果園裡，蘋果樹的樹枝上，近看一朵粉白色的蘋果花。",
+   "act": "花朵第一次出場：五片粉白色的花瓣，中間黃色的花心上有一張小女孩的笑臉。大黃蜂揉著頭飛走了；小蜜蜂停在花心上，把細細的舌頭伸進花裡喝花蜜，一臉陶醉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "那朵蘋果花笑了。",
+     "en": "The apple blossom giggles."
+    },
+    {
+     "who": "花朵",
+     "tag": "laughing",
+     "text": "大黃蜂，你撞到我了，好癢喔！",
+     "en": "Bumblebee, you bumped into me! That tickles!"
+    },
+    {
+     "who": "花朵",
+     "tag": "happy",
+     "text": "小蜜蜂，請來喝我的花蜜吧！",
+     "en": "Little Bee, please come have some of my nectar!"
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "happy",
+     "text": "好甜喔！",
+     "en": "So sweet!"
+    }
+   ]
+  },
+  {
+   "scene": "果園，好多朵蘋果花開在同一根樹枝上。",
+   "act": "小蜜蜂毛茸茸的身體和腳上沾滿黃色的花粉，後腳上黏著兩團黃色的花粉球；她從第一朵花飛到隔壁的花，花粉撒在花心上。第一朵花在後面揮著花瓣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蜜蜂的身上，沾滿了黃色的花粉。",
+     "en": "Little Bee's fuzzy body is covered with yellow pollen."
+    },
+    {
+     "who": "花朵",
+     "tag": "gentle",
+     "text": "請妳把花粉，送給隔壁的花朋友。",
+     "en": "Please take my pollen to the flower next door."
+    },
+    {
+     "who": "花朵",
+     "tag": "happy",
+     "text": "有了花粉，秋天我們就能變成蘋果喔！",
+     "en": "With pollen, we can turn into apples in the fall!"
+    },
+    {
+     "who": "旁白",
+     "text": "小蜜蜂一朵接一朵送花粉。",
+     "en": "Little Bee carries the pollen from flower to flower."
+    }
+   ]
+  },
+  {
+   "scene": "果園，天空忽然變成灰色，下著大雨，遠處閃著一道閃電。",
+   "act": "第一格：小蜜蜂躲在一片大大的綠葉子下面，翅膀濕答答地垂著，縮成一團；雨點打在葉子上。第二格：雨停了，四周都是水珠，樹看起來全都一樣，小蜜蜂東張西望，眼睛含著淚。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "轟隆！下大雨了，小蜜蜂躲到葉子下面。",
+     "en": "Boom! Rain pours down, and Little Bee hides under a leaf."
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "scared",
+     "text": "我的翅膀濕了，飛不動了！",
+     "en": "My wings are all wet! I can't fly!"
+    },
+    {
+     "who": "旁白",
+     "text": "雨停了，四周看起來都不一樣了。",
+     "en": "The rain stops, but everything around her looks different."
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "crying",
+     "text": "我的家在哪裡？我迷路了！",
+     "en": "Where's my home? I'm lost!"
+    }
+   ]
+  },
+  {
+   "scene": "雨後的果園，葉子上掛滿水珠。",
+   "act": "大黃蜂從旁邊另一片葉子下面爬出來，用力抖身體，水珠全噴到小蜜蜂臉上，小蜜蜂閉著眼睛、皺著臉。接著大黃蜂熱情地張開手臂邀請；小蜜蜂退後一步，有禮貌地搖搖頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大黃蜂爬出來抖一抖，水珠噴了小蜜蜂一臉。",
+     "en": "Bumblebee crawls out and shakes himself off, spraying water all over Little Bee's face."
+    },
+    {
+     "who": "大黃蜂",
+     "tag": "laughing",
+     "text": "哎呀，對不起！別哭，來我家住吧！",
+     "en": "Oops, sorry! Don't cry. Come stay at my house!"
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "gentle",
+     "text": "謝謝你，可是媽媽說，不可以跟陌生人走。",
+     "en": "Thank you, but Mama says I shouldn't go anywhere with strangers."
+    }
+   ]
+  },
+  {
+   "scene": "雨後的果園，雲散開了，太陽從雲後面露出來，天邊有一道淡淡的彩虹。",
+   "act": "小蜜蜂抬頭看太陽，伸出小手指著一個方向，眼睛發亮；大黃蜂在樹枝上用力揮手，揮太用力，一頭撞上旁邊的樹枝，頭上冒出小星星。",
+   "lines": [
+    {
+     "who": "小蜜蜂",
+     "tag": "surprised",
+     "text": "對了！迷路了，就抬頭找太陽！",
+     "en": "Oh! If I get lost, I should look up and find the sun!"
+    },
+    {
+     "who": "旁白",
+     "text": "太陽出來了，小蜜蜂找到回家的方向。",
+     "en": "The sun comes out, and Little Bee finds her way home."
+    },
+    {
+     "who": "大黃蜂",
+     "tag": "excited",
+     "text": "小蜜蜂，加油！",
+     "en": "You can do it, Little Bee!"
+    },
+    {
+     "who": "旁白",
+     "text": "他揮太用力，咚！又撞上樹枝。",
+     "en": "He waves so hard that, bonk! He bumps into a branch again."
+    }
+   ]
+  },
+  {
+   "scene": "回到大樹洞裡的蜂巢，一片直直立著的金黃色六角形蜂巢牆。",
+   "act": "蜜蜂姊姊們圍成一圈；小蜜蜂在直立的蜂巢牆上扭著屁股，沿著一條直線往上走，走完再繞一個圈回到起點；畫面用虛線畫出她走的路線，像一個數字八。姊姊們瞪大眼睛看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小蜜蜂飛回家，姊姊們都圍過來。",
+     "en": "Little Bee flies home, and her sisters crowd around her."
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "excited",
+     "text": "我找到好多蘋果花！我跳給妳們看！",
+     "en": "I found lots of apple blossoms! Let me show you with a dance!"
+    },
+    {
+     "who": "旁白",
+     "text": "她扭一扭屁股往前走，再繞一圈回來。",
+     "en": "She wiggles her bottom as she walks forward, then circles back around."
+    },
+    {
+     "who": "旁白",
+     "text": "這是搖擺舞，告訴姊妹花在哪裡。",
+     "en": "This is the waggle dance. It tells her sisters where the flowers are."
+    }
+   ]
+  },
+  {
+   "scene": "蜂巢的洞口，外面陽光燦爛，遠處看得到開滿蘋果花的果園；洞口旁的一格小房間裝滿金黃色的蜂蜜，小蜜蜂剛把帶回來的花蜜放進去。",
+   "act": "小蜜蜂一邊往上扭屁股一邊比給姊姊們看，臉上很得意；姊姊們排成一列，從洞口一起飛出去，往太陽和果園的方向飛。蜂后媽媽戴著金色皇冠，從巢裡面探出頭，溫柔地摸摸小蜜蜂的頭。",
+   "lines": [
+    {
+     "who": "小蜜蜂",
+     "tag": "proud",
+     "text": "扭著屁股往上走，就是往太陽那邊飛。",
+     "en": "Wiggling straight up means fly toward the sun."
+    },
+    {
+     "who": "小蜜蜂",
+     "text": "扭越久，花就越遠喔！",
+     "en": "The longer you wiggle, the farther away the flowers are!"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊們看懂了，嗡的一聲，一起飛出去。",
+     "en": "Her sisters understand. Buzz! Off they fly together."
+    },
+    {
+     "who": "旁白",
+     "text": "小蜜蜂帶回來的花蜜，放久了就變成蜂蜜。",
+     "en": "The nectar Little Bee brought home will slowly turn into honey."
+    },
+    {
+     "who": "蜂后媽媽",
+     "tag": "proud",
+     "text": "孩子，妳今天好勇敢！",
+     "en": "Sweetheart, you were so brave today!"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，果園裡，蘋果樹開滿粉白色的蘋果花，陽光燦爛，藍色的天空。",
+   "act": "大黃蜂在蘋果花旁邊學搖擺舞，扭著圓滾滾的屁股，扭到一屁股跌坐在草地上，自己也哈哈大笑；小蜜蜂和姊姊們停在蘋果花上笑成一團。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，大黃蜂在果園又遇到小蜜蜂。",
+     "en": "The next day, Bumblebee meets Little Bee in the orchard again."
+    },
+    {
+     "who": "大黃蜂",
+     "tag": "excited",
+     "text": "小蜜蜂，教我跳搖擺舞好不好？",
+     "en": "Little Bee, will you teach me the waggle dance?"
+    },
+    {
+     "who": "旁白",
+     "text": "大黃蜂扭呀扭，咚！一屁股坐在地上。",
+     "en": "Bumblebee wiggles and wiggles, and bump! He lands right on his bottom."
+    },
+    {
+     "who": "小蜜蜂",
+     "tag": "laughing",
+     "text": "嗡，嗡，嗡，我們一起飛呀飛，找花蜜！",
+     "en": "Buzz, buzz, buzz! Let's fly, fly, and find nectar together!"
+    }
+   ]
+  }
+ ]
+}

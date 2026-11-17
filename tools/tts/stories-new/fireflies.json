@@ -1,0 +1,264 @@
+{
+ "id": "fireflies",
+ "title": "螢火蟲的燈籠",
+ "title_en": "The Fireflies Light the Way",
+ "size": "短",
+ "roles": {
+  "小男孩": "小哲，五歲小男孩，好奇又興奮，一高興就大聲，想抓螢火蟲時有點小貪心，最後自己忍住、輕聲說話。",
+  "爸爸": "小哲的爸爸，溫和的大叔聲音，在山上說話都壓低聲音，耐心又沉穩。",
+  "小螢火蟲": "一隻小螢火蟲，又小又甜的聲音，活潑友善，怕被抓時會緊張。"
+ },
+ "cast": {
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "小螢火蟲": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "噓",
+   "where": "第4頁『噓，小聲一點』",
+   "read": "xū"
+  },
+  {
+   "char": "嚇",
+   "where": "第4頁『大家會嚇到』",
+   "read": "xià"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『一隻都沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『大家會嚇到』『屁股會發亮』",
+   "read": "huì"
+  },
+  {
+   "char": "股",
+   "where": "第4頁『屁股』",
+   "read": "gǔ"
+  },
+  {
+   "char": "籠",
+   "where": "第1頁、第7頁『燈籠』",
+   "read": "lóng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "四月的晚上，台灣山上的步道入口：木頭階梯往樹林裡延伸，旁邊立著一塊畫了螢火蟲的木頭告示牌；天空是深藍色，太陽剛下山。",
+   "act": "小哲是五歲小男孩，短短的黑頭髮，穿橘色長袖上衣、深藍色長褲和運動鞋；爸爸個子高，戴眼鏡，穿灰色外套，手上拿著一支包了紅色玻璃紙的手電筒。爸爸牽著小哲的手；小哲另一隻手高高舉著一個透明的小罐子，笑得好興奮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "四月的晚上，爸爸帶小哲上山看螢火蟲。",
+     "en": "One April night, Dad takes Ben up the mountain to see the fireflies."
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "四月、五月，螢火蟲最多。跟好爸爸，別離開步道。",
+     "en": "April and May are firefly time. Stay close to me, and don't leave the trail."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "我要抓一隻，做成燈籠！",
+     "en": "I'm going to catch one and make a lantern!"
+    },
+    {
+     "who": "旁白",
+     "text": "他手上拿著小罐子。",
+     "en": "He is holding a little jar."
+    }
+   ]
+  },
+  {
+   "scene": "樹林裡的步道，天黑了，四周是高高的樹和草叢；手電筒的紅光只照著腳前的階梯。",
+   "act": "爸爸把手電筒往地上照，紅色的光圈落在腳前；小哲東張西望，皺著眉頭，有點失望。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "tag": "whispering",
+     "text": "手電筒往地上照，不要照螢火蟲。",
+     "en": "Point the flashlight at the ground, never at the fireflies."
+    },
+    {
+     "who": "小男孩",
+     "tag": "sad",
+     "text": "怎麼一隻都沒有？",
+     "en": "Why can't I see any?"
+    },
+    {
+     "who": "爸爸",
+     "tag": "whispering",
+     "text": "說話小聲，腳步放輕，等一下。",
+     "en": "Speak softly, step lightly, and wait."
+    }
+   ]
+  },
+  {
+   "scene": "同一條步道，手電筒關掉了，四周很暗，只看得到樹的黑影；草叢裡亮起幾點黃綠色的小光。",
+   "act": "爸爸蹲下來，關掉手電筒；小哲蹲在爸爸旁邊，先看到草叢裡一點黃綠色的光，接著兩點、三點，越來越多。小哲張大嘴巴，兩手舉高大叫，爸爸嚇了一跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸關掉手電筒，草叢亮起一點光。",
+     "en": "Dad switches off the flashlight, and a tiny light glows in the grass."
+    },
+    {
+     "who": "旁白",
+     "text": "一閃，一閃，越來越多。",
+     "en": "Blink, blink, more and more."
+    },
+    {
+     "who": "小男孩",
+     "tag": "shouting",
+     "text": "哇！好多螢火蟲！",
+     "en": "Wow! So many fireflies!"
+    }
+   ]
+  },
+  {
+   "scene": "步道旁的草叢，好多黃綠色的小光點；有一隻螢火蟲飛到小哲的鼻子前面。",
+   "act": "小螢火蟲是一隻小小的黑色甲蟲，紅色的小頭，兩根細細的觸角，大大的圓眼睛，屁股發著黃綠色的光。牠豎起一根小腳放在嘴巴前比「噓」；小哲趕快用兩手遮住嘴巴，又忍不住笑彎了腰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一隻小螢火蟲，飛到小哲面前。",
+     "en": "A little firefly flies right up to Ben."
+    },
+    {
+     "who": "小螢火蟲",
+     "tag": "whispering",
+     "text": "噓，小聲一點，大家會嚇到喔。",
+     "en": "Shh, not so loud. You'll scare everyone."
+    },
+    {
+     "who": "小螢火蟲",
+     "tag": "happy",
+     "text": "我用屁股上的小燈，跟你打招呼！",
+     "en": "I'm saying hi with the little light on my bottom!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "laughing",
+     "text": "屁股會發亮？真好笑！",
+     "en": "A glowing bottom? That is so funny!"
+    }
+   ]
+  },
+  {
+   "scene": "步道旁的草叢，螢火蟲的光點在小哲身邊飛。",
+   "act": "小螢火蟲在小哲面前一閃一閃；小哲壓低身子，小聲地跟牠揮手。小哲低頭看著手上的透明罐子，眼睛亮亮的，好想抓。",
+   "lines": [
+    {
+     "who": "小螢火蟲",
+     "tag": "happy",
+     "text": "我們一閃，一閃，是在找朋友。",
+     "en": "When we blink, blink, we're looking for friends."
+    },
+    {
+     "who": "小男孩",
+     "tag": "whispering",
+     "text": "嗨，小螢火蟲。",
+     "en": "Hi, Little Firefly."
+    },
+    {
+     "who": "旁白",
+     "text": "小哲看著罐子，好想抓一隻回家。",
+     "en": "Ben looks at his jar. He really wants to take one home."
+    }
+   ]
+  },
+  {
+   "scene": "步道旁的草叢，螢火蟲在空中飛。",
+   "act": "小哲打開罐子的蓋子，另一隻手伸向小螢火蟲；小螢火蟲往後退，光一下子變暗，眼睛裡含著淚。小哲的手停在半路，咬著嘴唇想了想，把罐子的蓋子蓋回去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他打開罐子，伸出了手。",
+     "en": "He opens the jar and reaches out."
+    },
+    {
+     "who": "小螢火蟲",
+     "tag": "scared",
+     "text": "不要抓我！關起來，朋友就找不到我了。",
+     "en": "Please don't catch me! If I'm shut away, my friends can't find me."
+    },
+    {
+     "who": "旁白",
+     "text": "小哲的手停住了。他想了好久，蓋上罐子。",
+     "en": "Ben stops. He thinks for a long time, and then he closes the jar."
+    },
+    {
+     "who": "小男孩",
+     "tag": "gentle",
+     "text": "我不抓你，我用眼睛看就好。",
+     "en": "I won't catch you. I'll just look with my eyes."
+    }
+   ]
+  },
+  {
+   "scene": "整片山坡和步道兩旁，滿滿的黃綠色光點，像一串一串的小燈籠，把步道照亮。",
+   "act": "小螢火蟲高興地繞著小哲飛一圈，草叢裡的螢火蟲一起亮起來；爸爸蹲在小哲旁邊，摟著他的肩膀，兩個人都小聲地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "螢火蟲一起亮起來，像一大串小燈籠。",
+     "en": "The fireflies light up together, like a long string of tiny lanterns."
+    },
+    {
+     "who": "爸爸",
+     "tag": "whispering",
+     "text": "你看，整座山都是小燈籠。",
+     "en": "Look, the whole mountain is full of tiny lanterns."
+    },
+    {
+     "who": "小男孩",
+     "tag": "whispering",
+     "text": "說話小聲，腳步放輕，真好看。",
+     "en": "Speak softly, step lightly. It's so beautiful."
+    }
+   ]
+  },
+  {
+   "scene": "回程的步道，手電筒的紅光照著腳前的階梯，身後草叢裡還有點點黃綠色的光。",
+   "act": "爸爸牽著小哲往下走，手電筒往地上照；小哲回頭揮手，透明罐子空空的掛在手上。小螢火蟲停在草葉上，屁股的燈閃了兩下。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回家時，手電筒一樣往地上照。",
+     "en": "On the way home, the flashlight points at the ground again."
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "再見！明年四月，我再來。",
+     "en": "Bye! I'll come back next April."
+    },
+    {
+     "who": "旁白",
+     "text": "小螢火蟲閃了一下，又閃了一下。",
+     "en": "The little firefly blinks once, and then once more."
+    },
+    {
+     "who": "小螢火蟲",
+     "tag": "happy",
+     "text": "這是說，再見，要再來喔！",
+     "en": "That means goodbye, come back soon!"
+    }
+   ]
+  }
+ ]
+}

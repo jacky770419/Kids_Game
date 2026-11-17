@@ -1,0 +1,356 @@
+{
+ "id": "recycle",
+ "title": "垃圾車來了",
+ "title_en": "Here Comes the Garbage Truck",
+ "size": "中",
+ "roles": {
+  "小薇": "主角，六歲的小女孩，好奇又熱心；聽到寶特瓶說話很驚訝，追垃圾車時又急又興奮。",
+  "爸爸": "小薇的爸爸，溫和幽默的爸爸聲音，說話穩穩的、帶著笑。",
+  "寶特瓶": "一個喝完的寶特瓶，聲音可愛有精神，說話輕快，好期待變成新東西。",
+  "紙箱": "一個大紙箱，懶洋洋的胖叔叔聲音，說話慢慢的、愛開玩笑。",
+  "清潔隊員": "垃圾車上的清潔隊大哥哥，年輕有精神，說話爽朗、親切。"
+ },
+ "cast": {
+  "小薇": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "寶特瓶": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "紙箱": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "清潔隊員": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第3頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "樂",
+   "where": "第1、6、10、11頁『音樂』",
+   "read": "yuè"
+  },
+  {
+   "char": "倒",
+   "where": "第5、8頁『倒進廚餘桶』",
+   "read": "dào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上，小薇家的客廳，窗外是一條小巷子，路燈亮著；遠遠的巷子口有一台黃色垃圾車的燈光。",
+   "act": "小薇第一次出場：六歲的女孩，齊瀏海的短頭髮，穿粉紅色上衣和白色長褲。爸爸第一次出場：戴黑框眼鏡、穿灰色上衣和藍色短褲的爸爸。小薇趴在窗邊豎起耳朵；爸爸從沙發上跳起來，抓抓頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，巷子口傳來一陣音樂。",
+     "en": "One evening, music drifts in from the end of the lane."
+    },
+    {
+     "who": "小薇",
+     "tag": "excited",
+     "text": "音樂響起來，垃圾車來了！",
+     "en": "When the music plays, the garbage truck is on its way!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "surprised",
+     "text": "糟糕，垃圾要先分類，快來幫忙！",
+     "en": "Oh no, we have to sort the trash first! Come help, quick!"
+    },
+    {
+     "who": "旁白",
+     "text": "在台灣，垃圾車一邊開，一邊放音樂。",
+     "en": "In Taiwan, garbage trucks play music as they drive along."
+    },
+    {
+     "who": "旁白",
+     "text": "聽到音樂，大家就提著垃圾出來等。",
+     "en": "When people hear it, they carry their trash outside to wait."
+    }
+   ]
+  },
+  {
+   "scene": "小薇家的廚房，地上擺著三樣東西：一個綠色的垃圾袋、一個裝回收物的透明大袋子、一個有蓋子的小廚餘桶。",
+   "act": "小薇拿著一個喝完的寶特瓶，正要丟進綠色垃圾袋。寶特瓶第一次出場：透明的瓶子，藍色瓶蓋像一頂小帽子，瓶身上有一雙大眼睛和張得好大的嘴巴，兩隻小手拚命揮。小薇嚇了一跳，停在半空中。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小薇拿起一個寶特瓶，正要丟進垃圾袋。",
+     "en": "Emma picks up a plastic bottle and is about to toss it into the trash bag."
+    },
+    {
+     "who": "寶特瓶",
+     "tag": "shouting",
+     "text": "等一下！不要丟我！",
+     "en": "Wait! Don't throw me away!"
+    },
+    {
+     "who": "小薇",
+     "tag": "surprised",
+     "text": "咦？寶特瓶在說話！",
+     "en": "Huh? The bottle is talking!"
+    }
+   ]
+  },
+  {
+   "scene": "小薇家的廚房，水槽旁邊。",
+   "act": "寶特瓶站在流理台上，挺起胸膛，得意地比手畫腳；畫面上有兩個想像泡泡，一個是新的寶特瓶，一個是一件藍色的新衣服。小薇蹲著，好奇地看著它。後半頁小薇把寶特瓶用水沖乾淨，放進透明的回收袋。",
+   "lines": [
+    {
+     "who": "寶特瓶",
+     "tag": "excited",
+     "text": "我可以回收，變成新東西喔！",
+     "en": "I can be recycled and turned into something new!"
+    },
+    {
+     "who": "小薇",
+     "tag": "curious",
+     "text": "你可以變成什麼？",
+     "en": "What can you turn into?"
+    },
+    {
+     "who": "寶特瓶",
+     "tag": "proud",
+     "text": "新的瓶子，或是一件新衣服！",
+     "en": "A new bottle, or even a new shirt!"
+    },
+    {
+     "who": "寶特瓶",
+     "text": "先把我沖乾淨，再放進回收袋喔。",
+     "en": "Just rinse me out first, then put me in the recycling bag."
+    }
+   ]
+  },
+  {
+   "scene": "小薇家的廚房，牆邊靠著一個大紙箱。",
+   "act": "紙箱第一次出場：一個好大的咖啡色紙箱，上面的蓋子一開一合像嘴巴，畫著一對半瞇的眼睛，懶洋洋地靠在牆邊打哈欠。後半頁小薇把紙箱壓扁放在地上，雙腳站上去用力踩，紙箱扁扁的，臉上卻笑得好舒服。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，牆邊的大紙箱打了一個哈欠。",
+     "en": "Just then, a big cardboard box by the wall gives a great big yawn."
+    },
+    {
+     "who": "紙箱",
+     "tag": "sleepy",
+     "text": "小妹妹，也別忘了我呀。",
+     "en": "Hey there, little one. Don't forget about me."
+    },
+    {
+     "who": "紙箱",
+     "text": "把我壓扁，綁起來，我可以變成新的紙。",
+     "en": "Flatten me and tie me up, and I can become new paper."
+    },
+    {
+     "who": "旁白",
+     "text": "小薇站上紙箱，用力一踩，紙箱變扁了。",
+     "en": "Emma stands on the box and stomps. It goes flat!"
+    },
+    {
+     "who": "紙箱",
+     "tag": "laughing",
+     "text": "哎喲，好舒服！",
+     "en": "Oof! That feels great!"
+    }
+   ]
+  },
+  {
+   "scene": "小薇家的廚房，餐桌上有吃完的碗盤。",
+   "act": "爸爸拿著香蕉皮和一小碗吃剩的飯，倒進有蓋子的廚餘桶；小薇捏著鼻子歪著頭問。畫面一角有一個想像泡泡：菜園裡綠油油的青菜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸把香蕉皮和剩飯，倒進廚餘桶。",
+     "en": "Daddy puts the banana peels and leftover rice into the food scrap bin."
+    },
+    {
+     "who": "小薇",
+     "tag": "curious",
+     "text": "香蕉皮不能丟進垃圾袋嗎？",
+     "en": "Can't banana peels go in the trash bag?"
+    },
+    {
+     "who": "爸爸",
+     "tag": "gentle",
+     "text": "廚餘要分開，可以變成肥料。",
+     "en": "Food scraps go in their own bin. They can turn into compost."
+    },
+    {
+     "who": "爸爸",
+     "text": "有了肥料，菜園的青菜就能變高變壯。",
+     "en": "With compost, vegetables in the garden can grow big and strong."
+    }
+   ]
+  },
+  {
+   "scene": "公寓樓下的巷子，路燈亮著；黃色的垃圾車亮著燈正要往前開，後面跟著一台白色的資源回收車。",
+   "act": "爸爸一手提垃圾袋、一手牽著小薇，廚餘桶掛在爸爸手臂上；小薇抱著透明回收袋和壓扁的紙箱，兩人從公寓大門快步走出來，小薇張大嘴巴喊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他們提著袋子下樓，音樂越來越大聲。",
+     "en": "They carry the bags downstairs. The music gets louder and louder."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，垃圾車已經往前開了！",
+     "en": "But the garbage truck is already starting to pull away!"
+    },
+    {
+     "who": "小薇",
+     "tag": "shouting",
+     "text": "等一下！我們來了！",
+     "en": "Wait! Here we come!"
+    },
+    {
+     "who": "爸爸",
+     "text": "牽好爸爸，我們快一點！",
+     "en": "Hold Daddy's hand. Let's hurry!"
+    }
+   ]
+  },
+  {
+   "scene": "巷子裡，黃色垃圾車停下來了，後面是白色的資源回收車；鄰居們提著袋子在車後面排隊。",
+   "act": "清潔隊員第一次出場：穿橘色反光背心、戴藍色帽子和手套的年輕大哥哥，站在垃圾車後面，舉起一隻手請司機停車，笑著向小薇和爸爸揮手；爸爸鬆了一口氣，點頭道謝。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "垃圾車後面的清潔隊大哥哥，看到了他們。",
+     "en": "The worker at the back of the truck sees them."
+    },
+    {
+     "who": "清潔隊員",
+     "tag": "happy",
+     "text": "別急，別急，我們等你們！",
+     "en": "No rush! We'll wait for you!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "happy",
+     "text": "謝謝你，辛苦了！",
+     "en": "Thank you. You work so hard!"
+    }
+   ]
+  },
+  {
+   "scene": "巷子裡，黃色的垃圾車、白色的資源回收車，垃圾車旁邊掛著一個大廚餘桶。",
+   "act": "清潔隊員用手比給小薇看：一般垃圾往黃色垃圾車、廚餘往旁邊的大桶子、寶特瓶和紙箱往後面的白色回收車。爸爸把綠色垃圾袋丟進垃圾車，再牽著抱著回收袋的小薇，一起走到白色回收車後面。",
+   "lines": [
+    {
+     "who": "清潔隊員",
+     "text": "一般垃圾，丟進黃色的垃圾車。",
+     "en": "Regular trash goes into the yellow garbage truck."
+    },
+    {
+     "who": "清潔隊員",
+     "text": "廚餘，倒進旁邊的廚餘桶。",
+     "en": "Food scraps go into the bin on the side."
+    },
+    {
+     "who": "清潔隊員",
+     "text": "寶特瓶和紙箱，放進後面的回收車。",
+     "en": "Bottles and boxes go into the recycling truck behind."
+    },
+    {
+     "who": "旁白",
+     "text": "爸爸丟好垃圾，牽著小薇走到回收車旁邊。",
+     "en": "Daddy tosses in the trash, then walks Emma over to the recycling truck."
+    }
+   ]
+  },
+  {
+   "scene": "白色的資源回收車後面，車上堆著一捆一捆的紙箱和一袋一袋的瓶瓶罐罐。",
+   "act": "小薇踮著腳把寶特瓶和壓扁的紙箱交給清潔隊員；寶特瓶在車上揮著小手，紙箱眨著半瞇的眼睛笑；小薇用力揮手說再見。最後回收車慢慢開走，車尾燈紅紅的。",
+   "lines": [
+    {
+     "who": "寶特瓶",
+     "tag": "happy",
+     "text": "謝謝妳，小薇！我要去變成新衣服囉！",
+     "en": "Thank you, Emma! I'm off to become a new shirt!"
+    },
+    {
+     "who": "紙箱",
+     "tag": "happy",
+     "text": "說不定，下次我就是妳的圖畫本了！",
+     "en": "Who knows? Next time, I might be your sketchbook!"
+    },
+    {
+     "who": "小薇",
+     "tag": "excited",
+     "text": "再見！要變成很棒的東西喔！",
+     "en": "Bye! Become something wonderful!"
+    },
+    {
+     "who": "旁白",
+     "text": "回收車帶著它們，往前開走了。",
+     "en": "The recycling truck drives off with them."
+    }
+   ]
+  },
+  {
+   "scene": "回家的巷子，路燈亮著，天上有幾顆星星；遠遠的垃圾車轉進下一條巷子。",
+   "act": "爸爸牽著小薇的手走回家，兩個人手上都空空的；小薇一邊走一邊蹦蹦跳跳，爸爸低頭笑著看她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "音樂越來越小聲，垃圾車開到下一條巷子了。",
+     "en": "The music grows softer as the truck moves on to the next lane."
+    },
+    {
+     "who": "小薇",
+     "tag": "happy",
+     "text": "爸爸，下次我也要幫忙分類！",
+     "en": "Daddy, next time I want to help sort too!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "proud",
+     "text": "好啊，妳是我們家的分類小幫手！",
+     "en": "You got it. You're our family's sorting helper!"
+    }
+   ]
+  },
+  {
+   "scene": "幾天後的早上，小薇的房間，書桌靠著窗戶，陽光照進來。",
+   "act": "爸爸把一本新的圖畫本遞給小薇；小薇抱著圖畫本，盯著封面想事情。後半頁小薇趴在書桌上畫畫，第一頁畫著黃色垃圾車、寶特瓶和紙箱；圖畫本的封面上，好像有一對半瞇的眼睛在對她眨眼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，爸爸買了一本新的圖畫本給小薇。",
+     "en": "A few days later, Daddy buys Emma a new sketchbook."
+    },
+    {
+     "who": "小薇",
+     "tag": "whispering",
+     "text": "這是不是那個紙箱變的呢？",
+     "en": "Could this be that cardboard box?"
+    },
+    {
+     "who": "旁白",
+     "text": "小薇在第一頁，畫了垃圾車、寶特瓶和紙箱。",
+     "en": "On the first page, Emma draws the garbage truck, the bottle, and the box."
+    },
+    {
+     "who": "小薇",
+     "tag": "happy",
+     "text": "音樂響起來，垃圾車來了！",
+     "en": "When the music plays, the garbage truck is on its way!"
+    }
+   ]
+  }
+ ]
+}

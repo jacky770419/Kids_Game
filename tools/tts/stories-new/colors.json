@@ -1,0 +1,265 @@
+{
+ "id": "colors",
+ "title": "顏色變變變",
+ "title_en": "Color Magic",
+ "size": "短",
+ "roles": {
+  "紅色": "紅色顏料寶寶，嬌嬌的小姊姊聲音，愛漂亮、有點臭美，看到咖啡色時誇張地哀叫，好笑不討厭。",
+  "黃色": "黃色顏料寶寶，又小又甜的小女生聲音，像太陽一樣開朗，最愛出點子。",
+  "藍色": "藍色顏料寶寶，活潑的小男生聲音，覺得自己很酷，愛跟大家玩。",
+  "小女孩": "小彤，五歲小女孩，愛畫畫，聲音天真、好奇，看到新顏色會驚喜。"
+ },
+ "cast": {
+  "紅色": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "黃色": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "藍色": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "調",
+   "where": "第1頁、第7頁『調色盤』",
+   "read": "tiáo"
+  },
+  {
+   "char": "誰",
+   "where": "第7頁『誰在我的調色盤上玩』",
+   "read": "shéi"
+  },
+  {
+   "char": "幹",
+   "where": "第7頁『畫樹幹』",
+   "read": "gàn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "白天，小彤的房間：窗邊一張木頭小書桌，桌上鋪著一張白色圖畫紙，旁邊一個白色圓形調色盤，上面有三坨顏料；桌角放著畫筆和一個空的小水杯。",
+   "act": "小彤是五歲小女孩，黑色短髮綁兩個小辮子，穿黃色上衣、藍色吊帶褲，袖子上沾了一點顏料。她剛把紅、黃、藍三坨顏料擠在調色盤上，拿著小水杯往門口跑，回頭揮手。她一走，三坨顏料張開了小眼睛：紅色寶寶頭頂有一小撮捲捲的尖角，黃色寶寶圓滾滾的，藍色寶寶頭頂翹著一根像瀏海的尖尖。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小彤要畫圖了。",
+     "en": "Ella is going to paint a picture."
+    },
+    {
+     "who": "旁白",
+     "text": "她在調色盤上，擠了紅色、黃色和藍色。",
+     "en": "She squeezes red, yellow, and blue paint onto her palette."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "我去裝水，馬上回來！",
+     "en": "I'll go get some water. Be right back!"
+    },
+    {
+     "who": "旁白",
+     "text": "小彤一走，三個顏料寶寶就醒了。",
+     "en": "As soon as Ella leaves, the three paint babies wake up."
+    }
+   ]
+  },
+  {
+   "scene": "同一張書桌，白色調色盤近看，像一個小舞台。",
+   "act": "三個顏料寶寶在調色盤上各自擺姿勢：紅色寶寶手扠腰、抬高下巴；黃色寶寶張開雙手，身上閃著光；藍色寶寶戴上一副小墨鏡比讚。三個都很得意。",
+   "lines": [
+    {
+     "who": "紅色",
+     "tag": "proud",
+     "text": "我是紅色，像蘋果，我最漂亮！",
+     "en": "I'm Red, like an apple. I'm the prettiest!"
+    },
+    {
+     "who": "黃色",
+     "tag": "happy",
+     "text": "我是黃色，像太陽，我最亮！",
+     "en": "I'm Yellow, like the sun. I'm the brightest!"
+    },
+    {
+     "who": "藍色",
+     "tag": "proud",
+     "text": "我是藍色，像大海，我最酷！",
+     "en": "I'm Blue, like the sea. I'm the coolest!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家在調色盤上跳來跳去。",
+     "en": "They all hop around the palette."
+    }
+   ]
+  },
+  {
+   "scene": "白色調色盤上。",
+   "act": "紅色寶寶跳太快，咚一聲撞到黃色寶寶；兩個碰在一起的地方，冒出一個圓滾滾的橘色新寶寶。紅色和黃色張大嘴巴看著，橘色寶寶眨眨眼睛笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "紅色跳太快，咚！撞到了黃色。",
+     "en": "Red hops too fast and, bump! She crashes into Yellow."
+    },
+    {
+     "who": "旁白",
+     "text": "碰到的地方，變出新顏色了！",
+     "en": "Right where they touch, a new color pops out!"
+    },
+    {
+     "who": "黃色",
+     "tag": "excited",
+     "text": "是橘色！像橘子一樣！",
+     "en": "It's orange, just like an orange!"
+    },
+    {
+     "who": "紅色",
+     "tag": "laughing",
+     "text": "碰一碰，變！變！變！",
+     "en": "Bump and mix, colors switch!"
+    }
+   ]
+  },
+  {
+   "scene": "白色調色盤上，旁邊多了一個橘色寶寶。",
+   "act": "藍色寶寶摘下墨鏡，衝過去碰了一下黃色寶寶；碰在一起的地方冒出一個綠色寶寶，頭上長著兩片小草葉子。黃色寶寶嚇一跳又笑開，藍色寶寶舉手歡呼。",
+   "lines": [
+    {
+     "who": "藍色",
+     "tag": "excited",
+     "text": "我也要玩！",
+     "en": "I want to play too!"
+    },
+    {
+     "who": "旁白",
+     "text": "藍色跑過去，碰了一下黃色。",
+     "en": "Blue runs over and bumps into Yellow."
+    },
+    {
+     "who": "黃色",
+     "tag": "surprised",
+     "text": "哇，變成綠色了，像小草！",
+     "en": "Wow, it's green, like grass!"
+    },
+    {
+     "who": "藍色",
+     "tag": "laughing",
+     "text": "碰一碰，變！變！變！",
+     "en": "Bump and mix, colors switch!"
+    }
+   ]
+  },
+  {
+   "scene": "白色調色盤上，有紅、黃、藍、橘、綠五個顏料寶寶。",
+   "act": "紅色寶寶拉著藍色寶寶的手，兩個輕輕碰一下；碰在一起的地方冒出一個紫色寶寶，頭頂掛著一串小葡萄。橘色和綠色寶寶在旁邊拍手。",
+   "lines": [
+    {
+     "who": "紅色",
+     "tag": "happy",
+     "text": "藍色，換我們碰一碰！",
+     "en": "Blue, now it's our turn!"
+    },
+    {
+     "who": "旁白",
+     "text": "紅色和藍色碰在一起，變出了紫色。",
+     "en": "Red and Blue bump together and make purple."
+    },
+    {
+     "who": "藍色",
+     "tag": "excited",
+     "text": "紫色，像葡萄！",
+     "en": "Purple, like grapes!"
+    }
+   ]
+  },
+  {
+   "scene": "白色調色盤中間。",
+   "act": "紅、黃、藍三個寶寶同時往中間撲，咚咚咚撞在一起；撞在一起的地方冒出一個咖啡色的新寶寶，看起來像一團泥巴，一臉傻笑。紅色寶寶看著它，雙手抱頭大哭；藍色寶寶轉頭看門口，嚇得豎起頭頂的尖尖。",
+   "lines": [
+    {
+     "who": "黃色",
+     "tag": "excited",
+     "text": "那我們三個，一起碰！",
+     "en": "Then let's all three bump together!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！咚！咚！三個撞在一起。",
+     "en": "Bump! Bump! Bump! All three crash together."
+    },
+    {
+     "who": "紅色",
+     "tag": "crying",
+     "text": "哎呀，變成咖啡色，像泥巴！一點都不漂亮！",
+     "en": "Oh no! Brown, like mud! That's not pretty at all!"
+    },
+    {
+     "who": "藍色",
+     "tag": "scared",
+     "text": "噓，小彤回來了！",
+     "en": "Shh, Ella's coming back!"
+    }
+   ]
+  },
+  {
+   "scene": "小彤的書桌，小彤端著裝了水的小水杯回來。",
+   "act": "小彤彎腰看調色盤，眼睛睜得好大。調色盤上有紅、黃、藍、橘、綠、紫和一坨咖啡色，每個顏料寶寶都閉著眼睛、一動也不動，假裝自己只是顏料。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "咦？誰在我的調色盤上玩？",
+     "en": "Huh? Who's been playing on my palette?"
+    },
+    {
+     "who": "旁白",
+     "text": "大家一動也不敢動。",
+     "en": "Nobody dares to move."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "好多新顏色！咖啡色剛好畫樹幹！",
+     "en": "So many new colors! And brown is just right for a tree trunk!"
+    }
+   ]
+  },
+  {
+   "scene": "書桌上的圖畫紙：畫好一棵咖啡色樹幹、綠色樹葉的大樹，大樹後面一道彩虹，從上到下是紅、橘、黃、綠、藍、紫。",
+   "act": "小彤舉起畫好的圖，開心地笑。調色盤上的顏料寶寶們偷偷睜開一隻眼睛，咖啡色寶寶挺起胸膛很驕傲，紅色寶寶拍拍它；黃色寶寶小聲地對大家眨眼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小彤畫了一棵大樹，又畫了一道彩虹。",
+     "en": "Ella paints a big tree, and then a rainbow."
+    },
+    {
+     "who": "旁白",
+     "text": "紅色、橘色、黃色、綠色、藍色、紫色，真漂亮！",
+     "en": "Red, orange, yellow, green, blue, and purple. How beautiful!"
+    },
+    {
+     "who": "紅色",
+     "tag": "whispering",
+     "text": "原來咖啡色也有用！",
+     "en": "So brown is useful too!"
+    },
+    {
+     "who": "黃色",
+     "tag": "whispering",
+     "text": "下次再來，碰一碰，變！變！變！",
+     "en": "Next time, let's bump and mix, colors switch!"
+    }
+   ]
+  }
+ ]
+}

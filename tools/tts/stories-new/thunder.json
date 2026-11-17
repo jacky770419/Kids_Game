@@ -1,0 +1,255 @@
+{
+ "id": "thunder",
+ "title": "打雷不可怕",
+ "title_en": "Thunder Is Not Scary",
+ "size": "短",
+ "roles": {
+  "小女孩": "五歲的小女孩小琪，童稚的女孩聲音，一開始怕得發抖、躲在被子裡小小聲，後來自己慢慢算越來越有勇氣，最後大聲又得意，睡前軟軟的、想睡。",
+  "奶奶": "小琪的奶奶，慈祥的奶奶聲音，說話慢慢的、輕輕的，帶著笑，不急也不說教，像在陪孩子玩遊戲。"
+ },
+ "cast": {
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "鑽",
+   "where": "第1頁『鑽進』，第5頁『鑽回』",
+   "read": "zuān"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『會不會』",
+   "read": "huì"
+  },
+  {
+   "char": "著",
+   "where": "第8頁『睡著了』",
+   "read": "zháo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上，小琪的臥室：一張小床、黃色的小夜燈，窗外下著大雨，雨水流過玻璃；窗外天空忽然一片白亮。",
+   "act": "小琪第一次出場：五歲的小女孩，綁兩條短短的辮子，穿粉紅色的睡衣，懷裡抱著一隻咖啡色的小熊娃娃。閃電一亮，她嚇得整個人鑽進被子裡，被子鼓成一顆圓球，只露出小熊的一隻耳朵。全書小琪都是這個樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "下大雨的晚上，小琪抱著小熊睡覺。",
+     "en": "On a rainy night, Ruby is in bed, hugging her teddy bear."
+    },
+    {
+     "who": "旁白",
+     "text": "窗外忽然一亮，接著，轟隆！",
+     "en": "Suddenly, the window flashes bright. Then, rumble, BOOM!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "scared",
+     "text": "奶奶！好可怕！",
+     "en": "Grandma! It's so scary!"
+    },
+    {
+     "who": "旁白",
+     "text": "小琪鑽進被子裡，變成一顆圓球。",
+     "en": "Ruby dives under her blanket and curls up into a little ball."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，小夜燈亮著。",
+   "act": "奶奶第一次出場：白頭髮在腦後盤成一個髮髻，戴圓眼鏡，穿紫色的毛衣。奶奶坐在床邊，一手輕輕放在那顆被子圓球上，笑咪咪的；被子圓球縮得更緊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "奶奶來了，輕輕摸著那顆圓球。",
+     "en": "Grandma comes in and gently pats the little ball."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "我們來玩一個遊戲，好不好？",
+     "en": "Shall we play a game?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "我不要出來。",
+     "en": "I'm not coming out."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "妳在被子裡聽就好。",
+     "en": "You can listen from in there."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，窗外下著雨。",
+   "act": "奶奶豎起一根手指，好像在說祕密；被子掀開一條小縫，露出小琪的一隻眼睛，偷偷往外看。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "text": "光比聲音快，所以先看到閃電，再聽到轟隆。",
+     "en": "Light is faster than sound, so first we see the lightning, then we hear the boom."
+    },
+    {
+     "who": "奶奶",
+     "text": "閃電一亮，就一起慢慢算，算到轟隆。",
+     "en": "When the lightning flashes, we count slowly together until the boom."
+    },
+    {
+     "who": "旁白",
+     "text": "被子裡，露出了一隻眼睛。",
+     "en": "From under the blanket, one eye peeks out."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，窗外閃電一亮，房間被照得一片白。",
+   "act": "奶奶伸出手指，一根一根比著算；小琪從被子裡伸出頭來，跟著動嘴巴，眼睛睜得好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "閃電來了！",
+     "en": "Here comes the lightning!"
+    },
+    {
+     "who": "奶奶",
+     "text": "一、二、三、四、五、六。",
+     "en": "One, two, three, four, five, six."
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆。雷聲好小。",
+     "en": "Rumble. The thunder is very soft."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "算到六，雷很遠嗎？",
+     "en": "We got to six. Is the thunder far away?"
+    },
+    {
+     "who": "奶奶",
+     "text": "對呀。算越久，雷就越遠。",
+     "en": "Yes. The longer we count, the farther away it is."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，窗外又是一道好亮的閃電。",
+   "act": "小琪剛坐起來，豎起一根手指要算，轟隆一聲好大，她嚇得又鑽回被子裡，被子又變回一顆圓球，抖個不停；奶奶張開雙手抱住被子圓球。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "窗外又一亮，才剛算到一，轟隆！好大聲！",
+     "en": "Another flash! They only get to one, and BOOM! So loud!"
+    },
+    {
+     "who": "旁白",
+     "text": "小琪又鑽回被子裡了。",
+     "en": "Ruby dives back under the blanket."
+    },
+    {
+     "who": "小女孩",
+     "tag": "crying",
+     "text": "雷好近！它會不會跑進來？",
+     "en": "The thunder is so close! Will it come inside?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "我們在家裡，雨淋不到，雷也進不來。",
+     "en": "We're at home. The rain can't get us, and the thunder can't come in."
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，奶奶抱著被子圓球。",
+   "act": "被子圓球旁邊畫一個「咕嚕」的小字；奶奶歪著頭、假裝很驚訝地把耳朵貼在被子上；下一格小琪掀開被子笑出來，摸著肚子，臉紅紅的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咕嚕！被子裡響了一聲。",
+     "en": "Grumble! There is a sound under the blanket."
+    },
+    {
+     "who": "奶奶",
+     "tag": "laughing",
+     "text": "咦？被子裡也在打雷嗎？",
+     "en": "Oh? Is there thunder under the blanket too?"
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "不是啦，是我肚子餓了！",
+     "en": "No, Grandma! That's my tummy. I'm hungry!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，床邊小桌上放著一杯熱牛奶；窗外遠遠的天邊一道小閃電。",
+   "act": "小琪坐在床上，一手抱小熊、一手扳著手指頭算，嘴巴張得大大的；奶奶在旁邊笑咪咪地看著，沒有出聲。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "proud",
+     "text": "奶奶，下一次，我自己算！",
+     "en": "Grandma, next time, I will count by myself!"
+    },
+    {
+     "who": "小女孩",
+     "text": "一、二、三、四、五、六、七、八！",
+     "en": "One, two, three, four, five, six, seven, eight!"
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆。雷聲好小，像小貓在打呼。",
+     "en": "Rumble. The thunder is so soft, like a kitten snoring."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "算到八！雷跑遠了！",
+     "en": "Eight! The thunder ran far away!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間臥室，雨變小了，窗外的天空慢慢安靜，小夜燈亮著。",
+   "act": "小琪躺好，把小熊抱在胸前，對著小熊的耳朵說悄悄話；奶奶幫她蓋好被子；最後小琪閉上眼睛，嘴角笑著睡著了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雨變小了，雷聲越來越遠。",
+     "en": "The rain gets lighter, and the thunder moves farther away."
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "小熊別怕，先看到閃電，再聽到轟隆。",
+     "en": "Don't be scared, Teddy. First the lightning, then the boom."
+    },
+    {
+     "who": "小女孩",
+     "tag": "sleepy",
+     "text": "奶奶晚安。轟隆，也晚安。",
+     "en": "Good night, Grandma. Good night, thunder."
+    },
+    {
+     "who": "旁白",
+     "text": "小琪笑著睡著了。",
+     "en": "Ruby falls asleep with a smile."
+    }
+   ]
+  }
+ ]
+}

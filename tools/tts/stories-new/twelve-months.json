@@ -1,0 +1,401 @@
+{
+ "id": "twelve-months",
+ "title": "十二個月",
+ "title_en": "The Twelve Months",
+ "size": "中",
+ "roles": {
+  "瑪露莎": "瑪露莎，六歲左右的小女孩，聲音天真溫柔、有禮貌，冷的時候有點可憐，看到花開時好驚喜。",
+  "姊姊": "瑪露莎的姊姊，嬌嬌的少女聲音，任性愛使喚人，吵著要東西時又急又嬌；發現妹妹凍壞了，聲音變得軟軟的、很不好意思。",
+  "一月爺爺": "一月爺爺，十二個月兄弟裡最老的，聲音低沉慢慢、很慈祥，像冬天的爐火一樣讓人安心。",
+  "三月哥哥": "三月哥哥，活潑的年輕男生，聲音明亮、愛笑，帶來春天時很得意。"
+ },
+ "cast": {
+  "瑪露莎": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "姊姊": {
+   "find": "Anna Su",
+   "en": "Ditzy - Young, Spoiled"
+  },
+  "一月爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "三月哥哥": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "露",
+   "where": "全書『瑪露莎』",
+   "read": "lù"
+  },
+  {
+   "char": "束",
+   "where": "第2頁『一束紫羅蘭』",
+   "read": "shù"
+  },
+  {
+   "char": "趴",
+   "where": "第2頁『趴在床上』",
+   "read": "pā"
+  },
+  {
+   "char": "掃",
+   "where": "第1頁、第11頁『掃地』",
+   "read": "sǎo"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有花』、第7頁『沒錯』",
+   "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『會帶來春天』、第10頁『怎麼會有』",
+   "read": "huì"
+  },
+  {
+   "char": "冒",
+   "where": "第8頁『冒出來』",
+   "read": "mào"
+  },
+  {
+   "char": "把",
+   "where": "第9頁『一小把』",
+   "read": "bǎ"
+  },
+  {
+   "char": "片",
+   "where": "第9頁『一大片』",
+   "read": "piàn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "一月的白天，山腳下一間小木屋，屋頂和四周都蓋著厚厚的白雪，天上還在下大雪；屋裡有一個小火爐，窗邊一張小床。",
+   "act": "瑪露莎是六歲左右的小女孩，咖啡色長辮子，綁一條紅頭巾，穿深綠色毛衣和咖啡色長裙，正抱著一捆木柴進門，臉頰紅紅的。姊姊大約十二歲，金色捲髮，穿粉紅色毛衣和白色長裙，裹著被子坐在窗邊小床上，伸手指揮妹妹。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一月，山腳下的小木屋外，下著好大的雪。",
+     "en": "It's January. Outside a little cabin at the foot of a mountain, the snow is falling hard."
+    },
+    {
+     "who": "旁白",
+     "text": "屋裡住著瑪露莎，和她的姊姊。",
+     "en": "Inside live Marushka and her big sister."
+    },
+    {
+     "who": "旁白",
+     "text": "瑪露莎每天掃地、煮湯、搬木柴。",
+     "en": "Every day, Marushka sweeps the floor, cooks the soup, and carries in the firewood."
+    },
+    {
+     "who": "姊姊",
+     "tag": "impatient",
+     "text": "瑪露莎，我要毯子！我要點心！",
+     "en": "Marushka, I want a blanket! I want a snack!"
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，火爐的火光，窗外大雪紛飛。",
+   "act": "姊姊從床上坐起來，兩手合在胸前，眼睛閃亮地說出生日願望；瑪露莎手上拿著毯子，愣住了。接著姊姊鼓起臉、扁著嘴，指著窗外的山，撲到床上捶枕頭大哭。",
+   "lines": [
+    {
+     "who": "姊姊",
+     "tag": "excited",
+     "text": "明天是我的生日，我想要一束紫羅蘭！",
+     "en": "Tomorrow is my birthday. I want a bunch of violets!"
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "surprised",
+     "text": "可是，紫羅蘭要等三月才開呀。",
+     "en": "But violets don't bloom until March."
+    },
+    {
+     "who": "姊姊",
+     "tag": "angry",
+     "text": "我不管！妳去山上找！",
+     "en": "I don't care! Go find some on the mountain!"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊趴在床上，哭個不停。",
+     "en": "Big Sister flops onto the bed and won't stop crying."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口，門外是一片白雪，遠方是一座被雪蓋住的高山。",
+   "act": "瑪露莎站在窗邊看著大雪，咬著嘴唇想了想；然後穿上紅色厚外套、圍上白色圍巾、戴上紅色毛線手套，提著一個小籃子，推開門走進雪裡。姊姊從被子裡偷偷看她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "瑪露莎看著窗外的大雪，想了好久。",
+     "en": "Marushka looks out at the heavy snow and thinks for a long time."
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "gentle",
+     "text": "好吧，我去山上看一看。",
+     "en": "All right. I'll go up the mountain and take a look."
+    },
+    {
+     "who": "旁白",
+     "text": "她穿上紅外套，走進雪裡。",
+     "en": "She puts on her red coat and walks out into the snow."
+    }
+   ]
+  },
+  {
+   "scene": "山上的樹林，雪深到膝蓋，光禿禿的樹枝上都是雪，風把雪花吹得斜斜的；遠遠的山頂上有一團橘紅色的火光。",
+   "act": "瑪露莎縮著肩膀，兩手抱著自己，一步一步在雪地裡走，眉毛上沾著雪花；她抬頭看到山頂的火光，眼睛一亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山上的雪好深，風呼呼地吹。",
+     "en": "Up on the mountain, the snow is deep and the wind goes whoosh."
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "sad",
+     "text": "好冷，好冷！哪裡都沒有花。",
+     "en": "So cold, so cold! There are no flowers anywhere."
+    },
+    {
+     "who": "旁白",
+     "text": "忽然，她看到山頂有火光。",
+     "en": "Suddenly, she sees a fire glowing on the mountaintop."
+    }
+   ]
+  },
+  {
+   "scene": "山頂上一片平地，中間燒著一大堆暖暖的營火，四周圍著十二塊大石頭；營火外面還是白雪。",
+   "act": "十二個男人圍著火堆坐在石頭上：冬天的三位是白鬍子老爺爺，穿白色和銀色的毛斗篷；春天的三位是年輕哥哥，穿嫩綠色斗篷；夏天的三位穿金黃色和紅色斗篷；秋天的三位穿咖啡色和橘色斗篷。一月爺爺是最老的一位，鬍子長到肚子，穿白色毛斗篷，手上拿一根木頭手杖。瑪露莎站在火光邊上，有禮貌地彎腰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "火堆旁坐著十二個人，最老的是白鬍子爺爺。",
+     "en": "Around the fire sit twelve men. The oldest has a long white beard."
+    },
+    {
+     "who": "一月爺爺",
+     "tag": "gentle",
+     "text": "小姑娘，妳怎麼一個人上山來？",
+     "en": "Little girl, why have you come up the mountain all alone?"
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "shy",
+     "text": "爺爺好。請問，我可以過來烤火嗎？",
+     "en": "Hello, sir. Excuse me, may I warm up by your fire?"
+    }
+   ]
+  },
+  {
+   "scene": "山頂的營火旁，火光把雪地照成橘色。",
+   "act": "瑪露莎坐在一月爺爺旁邊伸手烤火，一月爺爺用手杖一個一個指給她看；三月哥哥是年輕的哥哥，淡棕色短髮，頭上戴一圈小花編的花環，穿嫩綠色斗篷，對瑪露莎眨眼揮手。",
+   "lines": [
+    {
+     "who": "一月爺爺",
+     "tag": "gentle",
+     "text": "我們是十二個月兄弟。我是一月，帶來大雪。",
+     "en": "We are the Twelve Months, all brothers. I am January, and I bring the snow."
+    },
+    {
+     "who": "旁白",
+     "text": "穿綠衣服的三月哥哥，會帶來春天。",
+     "en": "The young man in green is Brother March. He brings the spring."
+    },
+    {
+     "who": "旁白",
+     "text": "七月帶來夏天，十月帶來秋天。",
+     "en": "July brings the summer, and October brings the fall."
+    }
+   ]
+  },
+  {
+   "scene": "山頂的營火旁。",
+   "act": "瑪露莎抱著空空的籃子，低著頭說話，眼睛濕濕的；一月爺爺摸著長鬍子點點頭；三月哥哥從石頭上跳起來，舉起手。",
+   "lines": [
+    {
+     "who": "一月爺爺",
+     "tag": "gentle",
+     "text": "妳上山來，要做什麼呢？",
+     "en": "So, what brings you up the mountain?"
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "sad",
+     "text": "姊姊想要紫羅蘭，可是紫羅蘭要等三月才開。",
+     "en": "My sister wants violets, but violets don't bloom until March."
+    },
+    {
+     "who": "一月爺爺",
+     "tag": "gentle",
+     "text": "沒錯，紫羅蘭要等三月才開。",
+     "en": "That's right. Violets don't bloom until March."
+    },
+    {
+     "who": "三月哥哥",
+     "tag": "excited",
+     "text": "一月爺爺，換我來一下子吧！",
+     "en": "Old January, let me take a turn, just for a little while!"
+    }
+   ]
+  },
+  {
+   "scene": "山頂的營火旁，雪開始融化，雪地裡冒出一片一片的綠色小草，可是還沒有花。",
+   "act": "一月爺爺把木頭手杖交給三月哥哥；三月哥哥站上大石頭，把手杖往空中一揮，四周的雪化了，小草冒出來。瑪露莎左看右看，歪著頭，找不到花。",
+   "lines": [
+    {
+     "who": "一月爺爺",
+     "tag": "gentle",
+     "text": "好，就一下子。",
+     "en": "All right, but just for a little while."
+    },
+    {
+     "who": "旁白",
+     "text": "一月爺爺拿起手杖，交給三月哥哥。",
+     "en": "Old January hands his wooden staff to Brother March."
+    },
+    {
+     "who": "三月哥哥",
+     "tag": "excited",
+     "text": "春天，快來吧！",
+     "en": "Spring, come quick!"
+    },
+    {
+     "who": "旁白",
+     "text": "手杖一揮，雪化了，小草冒出來了。",
+     "en": "With one wave of the staff, the snow melts and little green shoots pop up."
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "surprised",
+     "text": "咦？可是，花呢？",
+     "en": "Huh? But where are the flowers?"
+    }
+   ]
+  },
+  {
+   "scene": "山頂的樹下，開滿了一大片紫色的紫羅蘭，小鳥在樹枝上，陽光暖暖地照下來；營火還在燒。",
+   "act": "三月哥哥笑著再揮一次手杖，樹下一下子開滿紫羅蘭；瑪露莎跪在花旁邊，閉上眼睛聞花香，只摘了一小把放進籃子；一月爺爺在一旁指著天空，天邊飄來一朵灰色的雪雲。",
+   "lines": [
+    {
+     "who": "三月哥哥",
+     "tag": "laughing",
+     "text": "別急，再揮一次！春天，快來吧！",
+     "en": "Don't worry, one more wave! Spring, come quick!"
+    },
+    {
+     "who": "旁白",
+     "text": "樹下開出一大片紫羅蘭，好香啊！",
+     "en": "Under the trees, a whole carpet of violets blooms. They smell so sweet!"
+    },
+    {
+     "who": "瑪露莎",
+     "tag": "happy",
+     "text": "謝謝你們！我摘一小把就好。",
+     "en": "Thank you! I'll pick just a small bunch."
+    },
+    {
+     "who": "一月爺爺",
+     "tag": "gentle",
+     "text": "快回家吧，雪又要來了。",
+     "en": "Hurry home now. The snow is coming back."
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小木屋裡，火爐的火光；窗外又下起大雪。",
+   "act": "瑪露莎抱著一籃紫羅蘭進門，頭髮和外套上都是雪；姊姊從床上跳下來，張大嘴巴，伸手去搶花，手指碰到了瑪露莎冰冷的手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "瑪露莎抱著紫羅蘭，跑回小木屋。",
+     "en": "Marushka hugs the violets and hurries home to the cabin."
+    },
+    {
+     "who": "姊姊",
+     "tag": "surprised",
+     "text": "紫羅蘭？一月怎麼會有紫羅蘭？",
+     "en": "Violets? How can there be violets in January?"
+    },
+    {
+     "who": "姊姊",
+     "tag": "excited",
+     "text": "快給我！明天我要戴在頭上！",
+     "en": "Give them here! I'm going to wear them in my hair tomorrow!"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊伸手一拿，碰到了妹妹的手。",
+     "en": "Big Sister reaches for the flowers and touches her little sister's hand."
+    }
+   ]
+  },
+  {
+   "scene": "小木屋裡，火爐前。",
+   "act": "姊姊握住妹妹凍紅的小手，愣住了，看看窗外的大雪，又看看妹妹，眼眶紅了；接著她把自己的毯子包在瑪露莎身上，讓她坐到火爐前，自己在爐子上煮一鍋熱湯。姊姊坐在妹妹旁邊，紅著臉說明天換她做家事。",
+   "lines": [
+    {
+     "who": "姊姊",
+     "tag": "surprised",
+     "text": "妳的手好冰！臉也凍紅了！",
+     "en": "Your hands are freezing! And your cheeks are red with cold!"
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊看著窗外的大雪，說不出話。",
+     "en": "Big Sister looks at the heavy snow outside, and she can't say a word."
+    },
+    {
+     "who": "姊姊",
+     "tag": "sad",
+     "text": "瑪露莎，對不起，我不該叫妳去的。",
+     "en": "Marushka, I'm sorry. I shouldn't have sent you out there."
+    },
+    {
+     "who": "旁白",
+     "text": "姊姊用毯子包住妹妹，煮了一鍋熱湯。",
+     "en": "She wraps her sister in a blanket and cooks a pot of hot soup."
+    },
+    {
+     "who": "姊姊",
+     "tag": "gentle",
+     "text": "明天，換我掃地，換我煮湯。",
+     "en": "Tomorrow, I'll sweep the floor and cook the soup."
+    }
+   ]
+  },
+  {
+   "scene": "三月的白天，同一座山上，雪都化了，滿山青草，樹下開滿紫羅蘭；遠方山頂上有一個穿嫩綠色斗篷、戴花環的身影。",
+   "act": "姊妹兩個手牽手走上開滿紫羅蘭的山坡，姊姊頭上戴著一朵紫羅蘭，兩個人一起對遠方的三月哥哥揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "到了三月，姊妹兩個手牽手，一起上山。",
+     "en": "When March comes, the two sisters walk up the mountain hand in hand."
+    },
+    {
+     "who": "旁白",
+     "text": "山上開滿紫羅蘭，遠方的三月哥哥，在對她們揮手。",
+     "en": "The mountain is covered in violets, and far away, Brother March waves to them."
+    },
+    {
+     "who": "姊姊",
+     "tag": "happy",
+     "text": "妳看，紫羅蘭真的等到三月才開！",
+     "en": "Look! The violets really did wait for March to bloom!"
+    }
+   ]
+  }
+ ]
+}

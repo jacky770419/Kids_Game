@@ -1,0 +1,262 @@
+{
+ "id": "germs",
+ "title": "洗手打敗細菌",
+ "title_en": "Wash Away the Germs",
+ "size": "短",
+ "roles": {
+  "小翔": "主角，五歲的小男孩，活潑愛玩、有點急性子；聽到手在偷笑時很驚訝，最後自己決定去洗手，很得意。",
+  "媽媽": "小翔的媽媽，溫柔有耐心的女聲，說話輕輕慢慢、帶著笑。",
+  "細菌小怪": "住在小翔手上、看不見的一群小細菌的帶頭老大，圓滾滾的綠色小球，說話調皮、愛偷笑，好笑不可怕；碰到肥皂泡泡就慌張大叫。"
+ },
+ "cast": {
+  "小翔": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "細菌小怪": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "菌",
+   "where": "全書『細菌』",
+   "read": "jùn"
+  },
+  {
+   "char": "抹",
+   "where": "第5頁『抹上肥皂』",
+   "read": "mǒ"
+  },
+  {
+   "char": "弄",
+   "where": "第5頁『把手弄濕』",
+   "read": "nòng"
+  },
+  {
+   "char": "縫",
+   "where": "第6頁『指縫』",
+   "read": "fèng"
+  },
+  {
+   "char": "背",
+   "where": "第6頁『手背』",
+   "read": "bèi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "下午，公園的沙坑，旁邊有鞦韆和一棵大樹，陽光暖暖的。",
+   "act": "小翔第一次出場：五歲的男孩，短短的黑頭髮，穿藍白條紋上衣和紅色短褲。他坐在沙坑裡用小鏟子挖沙，手上和膝蓋上都是沙子；後半頁他伸手摸鞦韆的鐵鍊、摸大樹的樹皮，最後摸摸肚子，往家的方向跑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小翔在公園玩沙子，玩了好久。",
+     "en": "Owen plays in the sandbox at the park for a long, long time."
+    },
+    {
+     "who": "旁白",
+     "text": "他又摸鞦韆，又摸大樹。",
+     "en": "He touches the swing, and he touches the big tree."
+    },
+    {
+     "who": "小翔",
+     "tag": "happy",
+     "text": "真好玩！我肚子餓了！",
+     "en": "That was fun! I'm hungry!"
+    }
+   ]
+  },
+  {
+   "scene": "小翔家的餐桌，桌上一盤巧克力餅乾和一杯牛奶。",
+   "act": "小翔衝到桌邊，伸出沾著沙子的手要拿餅乾。畫面用一個大圓圈放大小翔的手：手上住著好多綠色、藍色、紫色的小圓球細菌，戴著各種小帽子，有的翹腳，有的偷笑。細菌小怪第一次出場：戴紅色小帽子的綠色小圓球，有兩顆大門牙，盯著餅乾，眼睛發亮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小翔一回家，就跑去拿餅乾。",
+     "en": "As soon as Owen gets home, he runs to grab a cookie."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，他的手上有看不見的小東西。",
+     "en": "But there are tiny things on his hands that nobody can see."
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "laughing",
+     "text": "嘻！我們是細菌小怪！",
+     "en": "Hee hee! We're the Germies!"
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "whispering",
+     "text": "等他拿餅乾，我們就跳進他肚子搗蛋！",
+     "en": "When he grabs that cookie, we'll jump into his tummy and make trouble!"
+    }
+   ]
+  },
+  {
+   "scene": "小翔家的餐桌旁，廚房門口。",
+   "act": "媽媽第一次出場：綁馬尾、穿淡紫色上衣、繫白色圍裙的媽媽，從廚房探出頭，溫柔地問。小翔停下手，舉起兩隻手翻來翻去看，一臉不服氣；手上的細菌小怪們躲在指頭後面偷看。",
+   "lines": [
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "小翔，你玩完沙子，洗手了嗎？",
+     "en": "Owen, you played in the sand. Did you wash your hands?"
+    },
+    {
+     "who": "小翔",
+     "text": "我的手看起來很乾淨啊！",
+     "en": "But my hands look clean!"
+    },
+    {
+     "who": "媽媽",
+     "tag": "gentle",
+     "text": "細菌好小，小到眼睛看不見喔。",
+     "en": "Germs are so tiny that your eyes can't see them."
+    }
+   ]
+  },
+  {
+   "scene": "同一個餐桌旁。",
+   "act": "小翔把手放到耳朵旁邊，歪著頭仔細聽，眼睛睜得好大；放大的圓圈裡，細菌小怪們抱著肚子大笑。接著小翔握起拳頭，轉身往浴室走；細菌小怪們嚇得抱成一團。",
+   "lines": [
+    {
+     "who": "細菌小怪",
+     "tag": "laughing",
+     "text": "嘻！他找不到我們！",
+     "en": "Hee hee! He can't find us!"
+    },
+    {
+     "who": "小翔",
+     "tag": "surprised",
+     "text": "咦？我的手好像在偷笑？",
+     "en": "Huh? Are my hands giggling?"
+    },
+    {
+     "who": "小翔",
+     "tag": "determined",
+     "text": "我才不要把細菌吃進肚子！我要自己去洗手！",
+     "en": "No way am I eating germs! I'm going to wash my hands all by myself!"
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "scared",
+     "text": "哎呀，不好了！",
+     "en": "Uh-oh! Oh no!"
+    }
+   ]
+  },
+  {
+   "scene": "浴室的洗手台，洗手台很矮，剛好給小孩用；旁邊有一塊黃色的肥皂和一條綠色的小毛巾。",
+   "act": "小翔打開水龍頭把手弄濕，抹上肥皂，手上冒出好多白色泡泡；細菌小怪們在泡泡上滑來滑去，慌張地揮手。小翔笑嘻嘻地搓手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小翔把手弄濕，抹上肥皂。",
+     "en": "Owen wets his hands and rubs on some soap."
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "scared",
+     "text": "是肥皂泡！好滑，抓不住了！",
+     "en": "Soap bubbles! It's so slippery! We can't hold on!"
+    },
+    {
+     "who": "小翔",
+     "tag": "excited",
+     "text": "搓一搓，沖一沖，細菌再見囉！",
+     "en": "Scrub, scrub, rinse, rinse! Bye-bye, germs!"
+    }
+   ]
+  },
+  {
+   "scene": "浴室的洗手台，近看小翔滿是泡泡的雙手。",
+   "act": "分三格畫：第一格兩個手心貼在一起搓；第二格一隻手的手心搓另一隻手的手背；第三格十根手指頭交叉，搓指縫。每一格都有細菌小怪們被泡泡擠出來，笑到滾來滾去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "先把兩個手心貼在一起，搓一搓。",
+     "en": "First, he presses his palms together and rubs."
+    },
+    {
+     "who": "旁白",
+     "text": "再用手心，搓另一隻手的手背。",
+     "en": "Next, he rubs the back of one hand with the other palm."
+    },
+    {
+     "who": "旁白",
+     "text": "然後十根手指頭交叉，搓一搓指縫。",
+     "en": "Then he laces his fingers together and scrubs between them."
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "laughing",
+     "text": "哈！好癢喔！",
+     "en": "Ha! That tickles!"
+    }
+   ]
+  },
+  {
+   "scene": "浴室的洗手台，水龍頭的水流下來。",
+   "act": "分三格畫：第一格一隻手握住另一隻手的大拇指搓；第二格指尖放在另一隻手的手心上抓；第三格一手握住另一隻手的手腕上下搓。最後一大格：水沖下來，細菌小怪們坐在泡泡上，像坐滑水道一樣滑進水槽，邊滑邊揮手說再見。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "接著，握住大拇指，搓一搓。",
+     "en": "Next, he holds each thumb and scrubs it."
+    },
+    {
+     "who": "旁白",
+     "text": "再用指尖，在手心上抓一抓。",
+     "en": "Then he scratches his palm with his fingertips."
+    },
+    {
+     "who": "旁白",
+     "text": "最後，握住手腕，上下搓一搓。",
+     "en": "Last, he holds his wrist and scrubs up and down."
+    },
+    {
+     "who": "旁白",
+     "text": "水一沖，細菌小怪都滑進水槽了。",
+     "en": "The water rinses down, and the Germies slide into the sink."
+    },
+    {
+     "who": "細菌小怪",
+     "tag": "shouting",
+     "text": "好滑喔！我們被沖走啦！",
+     "en": "So slippery! We're washing away!"
+    }
+   ]
+  },
+  {
+   "scene": "小翔家的餐桌，盤子裡的巧克力餅乾，窗外的天空是橘色的。",
+   "act": "小翔用綠色的小毛巾把手擦乾，舉起乾乾淨淨的雙手，拿起一塊巧克力餅乾，笑得好得意；媽媽彎下腰聞聞他的手，開心地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小翔用毛巾把手擦乾，拿起一塊餅乾。",
+     "en": "Owen dries his hands with a towel and picks up a cookie."
+    },
+    {
+     "who": "媽媽",
+     "tag": "happy",
+     "text": "哇，好香的手！",
+     "en": "Wow, what nice-smelling hands!"
+    },
+    {
+     "who": "小翔",
+     "tag": "proud",
+     "text": "我打敗細菌了！搓一搓，沖一沖，細菌再見囉！",
+     "en": "I beat the germs! Scrub, scrub, rinse, rinse! Bye-bye, germs!"
+    }
+   ]
+  }
+ ]
+}
