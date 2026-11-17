@@ -17,7 +17,7 @@
    判定、下一步、最短解（BFS）都是不碰畫面的純函式，提示就用同一個 BFS，test() 也驗它。
 
    外觀是粉色＋藍色（她喜歡的顏色）：藍色的河、淡粉色的岸、粉色的船。
-   程式畫的東西和角色的圖都集中在「圖」那一段，之後要換成圖檔的地方標了【可換圖】。 */
+   背景、白菜、角色都是畫好的圖檔，只有船是程式畫的；用哪張圖都集中在「圖」那一段。 */
 (() => {
   'use strict';
   if (!window.Logic) return;
@@ -199,100 +199,44 @@
   }
 
   /* ---------- 圖 ----------
-     【可換圖】這一段的每一樣東西，都是「一個小函式＝一張圖」或「一張表」，畫面只從這裡拿圖。
-     之後補畫了圖檔，就把那個函式的內容換成 '<img src="assets/logic/xxx.png" alt="">'，
-     或改表上的路徑；外面包它的框（CSS 裡的 .river-…）已經定好位置和大小，圖會自己撐滿。
-     每個函式的註解寫了現在的比例和大小（1cqw＝板面寬的 1%）。 */
+     畫面只從這一段拿圖。背景、白菜、角色是畫好的圖檔（路徑都寫在下面這張表和 bgPic()），
+     船是程式畫的 SVG。外面包它的框（CSS 裡的 .river-…）定位置和大小；圖檔比例都不一樣，
+     在框裡一律 object-fit: contain、腳貼著框的下緣，不拉伸。1cqw＝板面寬的 1%。 */
 
   const INK = '#33274F';
-  const PINK = '#FF7FB0', PINK_DEEP = '#DB5890', PINK_DOT = '#FFC4DA', BANK = '#FFE9F1';
-  const BLUE = '#4AA8EE', WATER = '#9FD8FA';
-  const svg = (inner) => '<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="' + INK + '" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' + inner + '</g></svg>';
+  const PINK = '#FF7FB0', PINK_DEEP = '#DB5890', BLUE = '#4AA8EE';
 
-  /* 【可換圖】角色：哪個狀態用哪張圖，都在這張表。之後補畫了新姿勢，只改這裡的路徑。
-     岸上、船上的角色框是正方形 15cqw，圖去背、腳貼著框的下緣（規則卡上的小圖用 stand 那張）。
-       wolf.tease　大野狼捉弄小羊　→ 之後換「吐舌頭扮鬼臉」
-       goat.shiver 小羊被捉弄　　　→ 之後換「發抖」
-       goat.nibble 小羊偷吃白菜　　→ 之後換「嚼白菜」
-       grandpa.row 老爺爺在船上　　→ 之後換「坐著划船」（現在只露出上半身：框 13.2×12cqw，圖寬撐滿、下面裁掉；
-                                     新圖如果本來就只畫到腰，把 CSS 的 .river-gp 高度改成圖的比例就好） */
+  /* 三樣東西和老爺爺：哪個樣子用哪張圖。岸上、船上的框是正方形 15cqw（白菜縮成 .86）；
+     規則卡上的小圖用 stand 那張。同一樣東西的幾個樣子疊在同一個框裡，一次只露出一個（mount 裡的 pose()）。
+       wolf.tease　　　大野狼捉弄小羊：吐舌頭扮鬼臉（414×512）
+       goat.shiver　　 小羊被捉弄：站著發抖，兩邊有抖動線所以圖比較寬（512×457）
+       goat.nibble　　 小羊偷吃白菜：嚼著菜葉，跟平常那張一樣是跳起來的姿勢（512×467）
+       cabbage.bitten　被小羊咬一口的白菜：跟完整的同尺寸、同位置（387×512），換過去不會跳
+       grandpa.row　　 老爺爺坐著握槳（512×504）。腿和槳葉在圖的下面三成，進了船被船身蓋住，
+                       只露出上半身和斜跨身體的槳桿（框和裁切看 CSS 的 .river-gp）。 */
   const ART = {
-    wolf: { stand: 'assets/story/chars/wolf-stand.png', tease: 'assets/story/chars/wolf-blow.png' },
-    goat: { stand: 'assets/logic/goat.png', shiver: 'assets/logic/goat.png', nibble: 'assets/logic/goat.png' },
-    grandpa: { row: 'assets/story/chars/grandpa-cheer.png' }
+    wolf: { stand: 'assets/story/chars/wolf-stand.png', tease: 'assets/logic/wolf-tease.png' },
+    goat: { stand: 'assets/logic/goat.png', shiver: 'assets/logic/goat-shiver.png', nibble: 'assets/logic/goat-nibble.png' },
+    cabbage: { stand: 'assets/logic/cabbage.png', bitten: 'assets/logic/cabbage-bitten.png' },
+    grandpa: { row: 'assets/logic/grandpa-row.png' }
   };
   const charPic = (who, pose) => '<img src="' + ART[who][pose] + '" alt="">';
 
-  /* 【可換圖】白菜（完整的）：正方形（viewBox 100×100），岸上約 13cqw 見方（15cqw 的框縮成 .86），
-     規則卡上約 6cqw。淡綠的葉子、白色的菜梗。 */
-  const LEAF = '#CDE9A0';
-  const STALK = '<path d="M38 91c-3-20 2-38 12-50 10 12 15 30 12 50z" fill="#FFFDF2" stroke-width="3.4"/>' +
-    '<path d="M50 52v36M44 68l6 7M56 68l-6 7" fill="none" stroke-width="2.6"/>';
-  const cabbagePic = () => svg(
-    '<path d="M50 9C30 9 15 28 15 52c0 24 14 40 35 40s35-16 35-40C85 28 70 9 50 9z" fill="' + LEAF + '"/>' +
-    '<path d="M27 31c6 8 9 18 9 29M73 31c-6 8-9 18-9 29M50 9v14" fill="none" stroke-width="3"/>' + STALK);
+  /* 河與兩岸的背景：assets/logic/bg-river.jpg（1200×900，4:3），鋪滿整個板面。
+     圖上的河占寬度 23.7%～76.3%，兩岸各寬約 23.5%；左右岸邊各畫了一個藍色碼頭（伸進河裡約 9%、
+     從上面算下來 42.5～51.7cqw）、對岸右下角有一串三角旗（80%～98%、54～62cqw）。
+     下面「位置」那幾個數字是對著這張圖量的，背景重畫了要跟著對。 */
+  const bgPic = () => '<img src="assets/logic/bg-river.jpg" alt="">';
 
-  /* 【可換圖】白菜（被咬一口的）：跟完整的同一個大小、同一個位置，換過去不會跳。
-     右上缺一角（三口牙印）、旁邊掉三片碎葉。 */
-  const cabbageBitPic = () => svg(
-    '<path d="M50 9C30 9 15 28 15 52c0 24 14 40 35 40s35-16 35-40c0-2-.2-4-.5-6a11 11 0 0 1-15-6a11 11 0 0 1-6-15a11 11 0 0 1-9-14C53 9.2 51.5 9 50 9z" fill="' + LEAF + '"/>' +
-    '<path d="M27 31c6 8 9 18 9 29M66 51c-1.4 3.4-2 6-2 9M50 9v14" fill="none" stroke-width="3"/>' + STALK +
-    '<path d="M73 10l8 2-5 6zM84 23l7 4-8 4zM92 38l6 5-8 2z" fill="' + LEAF + '" stroke-width="2"/>');
-
-  /* 三樣東西各有哪幾個樣子（疊在同一個框裡，一次只露出一個；換樣子用 mount 裡的 pose()） */
-  const LOOKS = {
-    wolf: { stand: () => charPic('wolf', 'stand'), tease: () => charPic('wolf', 'tease') },
-    goat: { stand: () => charPic('goat', 'stand'), shiver: () => charPic('goat', 'shiver'), nibble: () => charPic('goat', 'nibble') },
-    cabbage: { stand: cabbagePic, bitten: cabbageBitPic }
-  };
-
-  /* 【可換圖】河與兩岸的背景：4:3（viewBox 400×300），鋪滿整個板面。
-     河在中間（左右各留約 21% 的岸：x＝84～316），岸是很淡的粉色，上面撒幾顆白色、粉色的小圓點和小花。
-     換成圖檔時，河岸的位置要對得上（三樣東西站在左右各 20% 以內，船在 21%～79% 之間划）。 */
-  const flower = (x, y, petal, mid) => {
-    let s = '';
-    for (let i = 0; i < 5; i++) {
-      const a = i * 1.2566 - 1.5708;
-      s += '<circle cx="' + (x + 3.6 * Math.cos(a)).toFixed(1) + '" cy="' + (y + 3.6 * Math.sin(a)).toFixed(1) + '" r="2.7" fill="' + petal + '"/>';
-    }
-    return s + '<circle cx="' + x + '" cy="' + y + '" r="2.1" fill="' + mid + '"/>';
-  };
-  const dots = (fill, list) => list.map((p) => '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="2.3" fill="' + fill + '"/>').join('');
-  const bgPic = () =>
-    '<svg viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">' +
-    '<rect x="-4" y="-4" width="408" height="308" fill="' + BANK + '"/>' +
-    dots('#fff', [[12, 66], [66, 128], [8, 204], [44, 256], [72, 290], [336, 96], [392, 132], [330, 190], [388, 226], [324, 14], [70, 58]]) +
-    dots(PINK_DOT, [[40, 60], [6, 142], [72, 214], [14, 250], [56, 276], [366, 58], [394, 178], [393, 242], [326, 128], [76, 12]]) +
-    flower(22, 276, PINK_DOT, '#fff') + flower(62, 248, '#fff', '#FFD84D') + flower(327, 240, PINK_DOT, '#fff') + flower(336, 60, '#fff', '#FFD84D') +
-    '<path d="M84-6C92 30 76 60 84 96c8 34-6 74 0 108 6 36-4 66 2 102h230c-6-36 4-66-2-102-6-34 8-74 0-108-8-36 8-66 0-102z" fill="' + WATER + '" stroke="' + INK + '" stroke-width="2"/>' +
-    '<g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round">' +
-    '<path d="M118 70q7-6 14 0t14 0M244 84q7-6 14 0t14 0M176 108q7-6 14 0t14 0M112 232q7-6 14 0t14 0M236 246q7-6 14 0t14 0M262 150q6-5 12 0M120 150q6-5 12 0M274 206q6-5 12 0"/></g>' +
-    '</svg>';
-
-  /* 【可換圖】碼頭：橫的長方形 13:8（約 7×4.5cqw），兩岸各一個，跨在岸邊上（一半在岸上、一半在水上）。
-     新的背景圖如果已經把碼頭畫進去，就把 mount 裡放 .river-dock 的那一行拿掉。 */
-  const dockPic = () =>
-    '<svg viewBox="-1 -1 28 18" aria-hidden="true"><g stroke="' + INK + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">' +
-    '<path d="M0 0h26v16H0z" fill="' + BLUE + '"/><path d="M9 0v16M17 0v16" fill="none" stroke-width="1.4"/></g></svg>';
-
-  /* 【可換圖】旗子：對岸右下角市集的一串小旗子，35:24（約 17.5×12cqw），兩根竿子拉一條線、掛四面三角旗。
-     新的背景圖如果已經把旗子畫進去，就把 mount 裡放 .river-flag 的那一行拿掉。 */
-  const flagPic = () =>
-    '<svg viewBox="326 248 70 48" aria-hidden="true"><g stroke="' + INK + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">' +
-    '<path d="M330 292v-34M392 292v-40" fill="none" stroke-width="2.4"/><path d="M330 260q31 12 62-6" fill="none" stroke-width="1.4"/>' +
-    '<path d="M336 262l10 3-7 11z" fill="' + PINK + '"/><path d="M351 265l11 0-5 12z" fill="' + BLUE + '"/>' +
-    '<path d="M367 264l10-3-3 13z" fill="#fff"/><path d="M381 260l9-5-1 13z" fill="' + PINK + '"/>' +
-    '</g></svg>';
-
-  /* 船分前後兩層，乘客夾在中間，看起來像坐在船裡。兩層一樣寬（29cqw）、左右對齊。 */
-  /* 【可換圖】船（後面那層）：船的內側，在乘客後面。26:21（29×23.4cqw）；
+  /* 船是程式畫的，分前後兩層，乘客夾在中間，看起來像坐在船裡。兩層一樣寬（29cqw）、左右對齊。 */
+  /* 船（後面那層）：船的內側，在乘客後面。26:21（29×23.4cqw）；
      只有最下面那一條（從上面算下來 50%～58%）有畫東西，上面一半是空的，留給老爺爺和乘客。 */
   const boatBackPic = () =>
     '<svg viewBox="0 0 260 210" aria-hidden="true">' +
     '<path d="M20 104h220l14 18H6z" fill="' + PINK_DEEP + '" stroke="' + INK + '" stroke-width="5" stroke-linejoin="round"/>' +
     '</svg>';
 
-  /* 【可換圖】船（前面那層）：粉色的船身、白色的邊條、一條藍色的線，蓋住乘客的腳。13:5（29×11.15cqw）。
+  /* 船（前面那層）：粉色的船身、白色的邊條、一條藍色的線，蓋住乘客的腳。13:5（29×11.15cqw）。
      選小屋那張卡片上的船也是這一張。 */
   const boatFrontPic = () =>
     '<svg viewBox="0 0 260 100" aria-hidden="true"><g stroke="' + INK + '" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">' +
@@ -303,13 +247,6 @@
     '<path d="M6 12h248c-4 40-26 72-58 72H64C32 84 10 52 6 12z" fill="none"/>' +
     '</g></svg>';
 
-  /* 【可換圖】槳：木頭色的桿子、白色的槳葉，疊在船前面那層上（同一個 13:5 的框，桿子上端會超出框的上緣）。
-     划的時候整個框繞著桿子上端前後擺。新的「老爺爺坐著划船」如果手上已經拿著槳，就把 mount 裡放 .river-paddle 的那一段拿掉。 */
-  const paddlePic = () =>
-    '<svg viewBox="0 0 260 100" aria-hidden="true"><g stroke="' + INK + '" stroke-linejoin="round" stroke-linecap="round">' +
-    '<path d="M112-26L82 74" fill="none" stroke-width="10"/><path d="M112-26L82 74" fill="none" stroke="#C98A4B" stroke-width="4.5"/>' +
-    '<path d="M88 56c9 3 13 11 10 22s-12 21-21 18-12-11-9-22 11-21 20-18z" fill="#fff" stroke-width="4"/></g></svg>';
-
   /* 下面這幾個是介面上的記號，不是插圖，不用換 */
   const SEAT = '<svg viewBox="0 0 124 124" aria-hidden="true"><circle cx="62" cy="62" r="56" fill="rgba(255,255,255,.4)" stroke="#fff" stroke-width="5" stroke-dasharray="10 11" stroke-linecap="round"/></svg>';
   const RED_X = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#FF5C5C" stroke-width="5.5" stroke-linecap="round"/></svg>';
@@ -317,13 +254,15 @@
     '<path d="M12.4 8.6c1.4-3.8 4.8-6 8.8-5.8.2 4-2 7.4-5.8 8.8z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>';
   const ARROW_IC = '<svg class="river-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-  /* 位置（單位 cqw）：每樣東西在兩岸各有一個固定的位子，孩子一眼看得出誰在哪一岸。
-     船靠岸時船頭剛好貼著岸邊（21 和 79），一趟划 29cqw——河面全寬，看得出是「過河」。 */
-  const SIZE = 15;
-  const ROW = { wolf: 15, goat: 31.5, cabbage: 48 };
-  const COL = { wolf: 2, goat: 5, cabbage: 2 };            // 這邊的岸；對岸左右對稱
-  const BOAT_X = [21, 50];
-  const SEAT_AT = { x: 13.4, y: 27.8 };                    // 乘客坐的位子（x 是離船左緣多遠）
+  /* 位置（單位 cqw），對著背景圖量的：每樣東西在兩岸各有一個固定的位子，孩子一眼看得出誰在哪一岸。
+     三樣由上到下排在上面那排按鈕（到 12.7）和對岸的三角旗（從 54.2 起）之間；對岸的位子是這邊的整組往右搬 FAR，
+     兩岸排法一樣（不是鏡射），出事的演出兩邊就用同一套動作；白菜在對岸剛好站在兩根旗竿中間的上面。
+     船靠岸時船頭貼著那一側的岸邊（河是 23.7～76.3）、船底在碼頭的上緣旁邊（高度在 CSS），一趟划 24.2cqw。 */
+  const ROW = { wolf: 13.8, goat: 27.3, cabbage: 39.6 };
+  const COL = { wolf: 3.5, goat: 7, cabbage: 4.5 };        // 這邊的岸
+  const FAR = 76.6;                                        // 對岸＝這邊的位子＋FAR
+  const BOAT_X = [23.4, 47.6];
+  const SEAT_AT = { x: 13.4, y: 19.8 };                    // 乘客坐的位子（x 是離船左緣多遠）
   const ROW_MS = 1500;                                     // 划一趟要多久
 
   /* ---------- 畫面 ---------- */
@@ -341,9 +280,6 @@
     let firstDue = !!L.first;         // 第 2 關：「先載小羊…」那句提醒還沒念
 
     stage.appendChild(el('div', 'river-bg river-pic', bgPic()));
-    stage.appendChild(el('div', 'river-dock l river-pic', dockPic()));
-    stage.appendChild(el('div', 'river-dock r river-pic', dockPic()));
-    stage.appendChild(el('div', 'river-flag river-pic', flagPic()));
     const banks = [el('div', 'river-bank l'), el('div', 'river-bank r')];
     banks.forEach((b) => stage.appendChild(b));
 
@@ -351,7 +287,7 @@
     const cards = {};
     const RULES = { wolf: ['wolf', 'goat'], goat: ['goat', 'cabbage'] };
     (L.items.length === 3 ? ['wolf', 'goat'] : ['goat']).forEach((k, i) => {
-      const c = el('button', 'btn river-rule', '<i>' + LOOKS[RULES[k][0]].stand() + '</i><b>' + RED_X + '</b><i>' + LOOKS[RULES[k][1]].stand() + '</i>');
+      const c = el('button', 'btn river-rule', '<i>' + charPic(RULES[k][0], 'stand') + '</i><b>' + RED_X + '</b><i>' + charPic(RULES[k][1], 'stand') + '</i>');
       c.type = 'button';
       c.dataset.rule = k;
       c.style.left = (2 + i * 17.7) + 'cqw';
@@ -372,7 +308,7 @@
     const trips = el('div', 'river-trips');
     stage.appendChild(trips);
 
-    // 船：老爺爺固定坐在左邊，右邊一個空位（虛線圈）。後面那層 → 乘客 → 前面那層＋槳，照這個順序疊。
+    // 船：老爺爺固定坐在左邊（槳在他手上），右邊一個空位（虛線圈）。後面那層＋老爺爺 → 乘客 → 前面那層，照這個順序疊。
     const boat = el('div', 'river-boat',
       '<span class="river-pic">' + boatBackPic() + '</span>' +
       '<span class="river-seat">' + SEAT + '</span>' +
@@ -380,18 +316,16 @@
     stage.appendChild(boat);
     const nodes = {};
     L.items.forEach((id) => {
-      const looks = Object.keys(LOOKS[id]).map((k) => '<span class="river-pose' + (k === 'stand' ? ' on' : '') + '" data-pose="' + k + '">' + LOOKS[id][k]() + '</span>').join('');
+      const looks = Object.keys(ART[id]).map((k) => '<span class="river-pose' + (k === 'stand' ? ' on' : '') + '" data-pose="' + k + '">' + charPic(id, k) + '</span>').join('');
       const n = el('div', 'river-item', '<div class="river-art">' + looks + '</div>');
       n.dataset.item = id;
       stage.appendChild(n);
       nodes[id] = { el: n, art: n.firstChild };
     });
-    const hullEl = el('div', 'river-hull',
-      '<span class="river-pic">' + boatFrontPic() + '</span>' +
-      '<span class="river-paddle river-pic">' + paddlePic() + '</span>');
+    const hullEl = el('div', 'river-hull river-pic', boatFrontPic());
     stage.appendChild(hullEl);
 
-    /* 換樣子：name 是 LOOKS 裡的名字（stand 平常、tease 扮鬼臉、shiver 發抖、nibble 嚼、bitten 被咬一口） */
+    /* 換樣子：name 是 ART 表上的名字（stand 平常、tease 扮鬼臉、shiver 發抖、nibble 嚼、bitten 被咬一口） */
     function pose(id, name) {
       if (!nodes[id]) return;
       Array.prototype.forEach.call(nodes[id].art.children, (p) => p.classList.toggle('on', p.dataset.pose === name));
@@ -406,7 +340,7 @@
         const n = nodes[id].el;
         const on = cargo === id;
         const side = state.at[id];
-        n.style.left = (on ? bx + SEAT_AT.x : (side ? 100 - SIZE - COL[id] : COL[id])) + 'cqw';
+        n.style.left = (on ? bx + SEAT_AT.x : COL[id] + (side ? FAR : 0)) + 'cqw';
         n.style.top = (on ? SEAT_AT.y : ROW[id]) + 'cqw';
         n.classList.toggle('river-aboard', on);
       });
@@ -541,17 +475,14 @@
 
     /* 出事：船划到河中間，岸上演一次，再退回來。提示照累計次數一階一階給。 */
     function trouble(bad) {
-      const side = state.boat;                    // 船離開的那一岸
       const actorId = bad === 'wolf' ? 'wolf' : 'goat';
       const victimId = bad === 'wolf' ? 'goat' : 'cabbage';
       const actor = nodes[actorId].el;
       const victim = nodes[victimId].el;
-      const toward = (bad === 'wolf' ? 1 : -1) * (side === 0 ? 1 : -1);   // 演的那個往另一個靠過去的方向
       stage.style.setProperty('--row', '.8s');
       place((BOAT_X[0] + BOAT_X[1]) / 2);
       api.after(620, () => {
         const n = api.miss('row');
-        actor.style.setProperty('--dx', toward);
         actor.classList.add(bad === 'wolf' ? 'river-tease' : 'river-nibble');
         victim.classList.add(bad === 'wolf' ? 'river-shiver' : 'river-bitten');
         pose(actorId, bad === 'wolf' ? 'tease' : 'nibble');
@@ -631,11 +562,11 @@
     levels: LEVELS.length,
     intro: ['river.intro1', 'river.intro2'],
     card: (pic) => {
-      // 老爺爺跟小羊坐在粉色的船上（圖都從上面「圖」那一段拿，那邊換了這裡跟著換）
+      // 老爺爺握著槳、跟小羊坐在粉色的船上（圖都從上面「圖」那一段拿，那邊換了這裡跟著換）
       pic.innerHTML =
         '<span class="river-card-water"></span>' +
-        '<span class="river-card-who" style="left:9%;top:17%;width:38%">' + charPic('grandpa', 'row') + '</span>' +
-        '<span class="river-card-who" style="left:45%;top:27%;width:44%">' + charPic('goat', 'stand') + '</span>' +
+        '<span class="river-card-who river-card-gp">' + charPic('grandpa', 'row') + '</span>' +
+        '<span class="river-card-who river-card-goat">' + charPic('goat', 'stand') + '</span>' +
         '<span class="river-card-hull river-pic">' + boatFrontPic() + '</span>';
     },
     mount: mount,

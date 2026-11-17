@@ -43,6 +43,10 @@
   "why": "出事時白菜換成被咬一口的、小羊換成嚼的樣子"
  },
  {
+  "expect": "document.querySelector('.river-item[data-item=\"cabbage\"] .river-pose[data-pose=\"bitten\"] img').getAttribute('src')==='assets/logic/cabbage-bitten.png' && document.querySelector('.river-item[data-item=\"goat\"] .river-pose[data-pose=\"nibble\"] img').getAttribute('src')==='assets/logic/goat-nibble.png'",
+  "why": "被咬一口的白菜、嚼菜葉的小羊用的是補畫的圖"
+ },
+ {
   "wait": 2600
  },
  {
@@ -82,6 +86,10 @@
  {
   "expect": "document.querySelector('.river-item[data-item=\"wolf\"] .river-pose.on').dataset.pose==='tease' && document.querySelector('.river-item[data-item=\"goat\"] .river-pose.on').dataset.pose==='shiver'",
   "why": "出事時大野狼換成扮鬼臉的、小羊換成發抖的樣子"
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"wolf\"] .river-pose[data-pose=\"tease\"] img').getAttribute('src')==='assets/logic/wolf-tease.png' && document.querySelector('.river-item[data-item=\"goat\"] .river-pose[data-pose=\"shiver\"] img').getAttribute('src')==='assets/logic/goat-shiver.png'",
+  "why": "扮鬼臉的大野狼、發抖的小羊用的是補畫的圖"
  },
  {
   "wait": 2600

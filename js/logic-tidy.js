@@ -11,8 +11,8 @@
    試讀時孩子在「小汽車也會叭叭叫」猶豫過，所以每樣玩具只演一種特徵（小汽車只會滾）。
    放錯不扣分：玩具彈回去、自己演一次特徵；同一樣錯兩次，對的籃子會亮起來。
 
-   【可換圖】之後會補畫新圖：六樣玩具（TOYS 的 art）、籃子上的圖示（BADGE）、籃子（css/logic-tidy.css 的 .tidy-basket）。
-   換的時候只改各自那一處；熊媽媽現在用 assets/logic/mama.png。 */
+   六樣玩具是畫好的圖（assets/logic/toy-*.png，TOYS 的 art）；熊媽媽用 assets/logic/mama.png。
+   【可換圖】還是程式畫的：籃子上的圖示（BADGE）、籃子（css/logic-tidy.css 的 .tidy-basket）。換的時候只改各自那一處。 */
 (() => {
   'use strict';
   if (!window.Logic) return;
@@ -47,47 +47,17 @@
   const svg = (inner) => '<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="' + INK + '" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' + inner + '</g></svg>';
   const STITCH = 'fill="none" stroke-width="2.4" stroke-dasharray="4 5"';
 
-  /* 【可換圖】六樣玩具：程式畫的，粗黑線、平塗，跟貼紙同一個味道。布做的那兩樣有縫線和補丁。
-     每樣都是正方形（viewBox 100×100）：地上約 13cqw 見方、籃子裡約 11cqw。換成圖檔時把 art 改成
-     '<img src="assets/logic/toy-ball.png" alt="">' 這種字串就好（css 的 .tidy-art svg 那幾條要加上 img）。 */
+  /* 六樣玩具：畫好的圖（去背 PNG、粗黑線平塗，跟貼紙同一套）。六張比例都不一樣（球接近正方、小汽車是橫的、
+     小雞和魔法棒是直的），一律放進正方形的框 .tidy-art 裡等比縮放、置中（css 的 .tidy-art img）：
+     地上 13cqw 見方、籃子裡 11cqw（兩籃那關 12.5cqw）。選單卡片上的三樣也是用這裡的 art。
+     魔法棒整支是粉紅色（星星也是），只有一顆很小的淡金色鈴鐺，照顏色分的時候還是粉紅色那一籃。 */
   const TOYS = [
-    { id: 'ball', color: 'pink', kind: 'roll', animal: false, art: svg(
-      '<circle cx="50" cy="52" r="36" fill="' + C.pink + '"/>' +
-      '<path d="M17 44c20 12 46 12 66 0" fill="none" stroke="#fff" stroke-width="7"/>' +
-      '<circle cx="38" cy="32" r="6" fill="#fff" stroke="none"/>') },
-    { id: 'car', color: 'blue', kind: 'roll', animal: false, art: svg(
-      '<path d="M10 62V50c0-5 4-8 9-8h8l9-15h28l10 15h8c5 0 8 3 8 8v12z" fill="' + C.blue + '"/>' +
-      '<path d="M33 42l6-10h10v10zM55 32h8l7 10H55z" fill="#DFF3FF" stroke-width="3"/>' +
-      '<circle cx="29" cy="66" r="11" fill="#fff"/><circle cx="71" cy="66" r="11" fill="#fff"/>' +
-      '<circle cx="29" cy="66" r="3" fill="' + INK + '"/><circle cx="71" cy="66" r="3" fill="' + INK + '"/>') },
-    { id: 'duck', color: 'yellow', kind: 'sound', animal: true, art: svg(
-      '<path d="M16 62c0-10 8-16 20-14 4-2 8-3 12-3 20 0 36 12 36 26 0 9-8 13-34 13S16 76 16 62z" fill="' + C.yellow + '"/>' +
-      '<circle cx="36" cy="36" r="18" fill="' + C.yellow + '"/>' +
-      '<path d="M20 36c-8 0-12 3-12 6s5 5 12 4z" fill="#FFA228"/>' +
-      '<circle cx="33" cy="31" r="3.4" fill="' + INK + '" stroke="none"/>' +
-      '<path d="M54 64c6 6 16 6 22-2" fill="none" stroke-width="3"/>') },
-    // 魔法棒：整支都是粉紅色（棒子和星星），照顏色分的時候才不會被看成別的顏色；旁邊兩道弧線表示「搖了有聲音」
-    { id: 'wand', color: 'pink', kind: 'sound', animal: false, art: svg(
-      '<path d="M56 48L20 90" fill="none" stroke-width="16"/>' +
-      '<path d="M56 48L20 90" fill="none" stroke="' + C.pink + '" stroke-width="9"/>' +
-      '<path d="M66 6l7.3 17.7 19 1.6-14.4 12.5 4.4 18.6L66 46.3 49.700 56.4l4.4-18.6L39.700 25.300l19-1.6z" fill="' + C.pink + '"/>' +
-      '<circle cx="66" cy="31" r="5" fill="#fff" stroke="none"/>' +
-      '<path d="M90 50c3 4 3 9 0 13M83 55c2 2 2 5 0 7" fill="none" stroke-width="3"/>' +
-      '') },
-    { id: 'fish', color: 'blue', kind: 'cloth', animal: true, art: svg(
-      '<path d="M8 50c12-18 30-26 46-24 10 1 18 6 24 14l16-12v44L78 60c-6 8-14 13-24 14-16 2-34-6-46-24z" fill="' + C.blue + '"/>' +
-      '<path d="M16 50c10-12 24-18 36-17 8 1 15 5 20 11" ' + STITCH + '/>' +
-      '<rect x="44" y="48" width="16" height="14" rx="2" fill="#FFE9A8" stroke-width="2.6"/>' +
-      '<path d="M48 52l8 6M56 52l-8 6" fill="none" stroke-width="2.2"/>' +
-      '<circle cx="26" cy="44" r="3.4" fill="' + INK + '" stroke="none"/>') },
-    { id: 'chick', color: 'yellow', kind: 'cloth', animal: true, art: svg(
-      '<ellipse cx="50" cy="60" rx="32" ry="28" fill="' + C.yellow + '"/>' +
-      '<circle cx="50" cy="30" r="20" fill="' + C.yellow + '"/>' +
-      '<path d="M44 34l6 8 6-8z" fill="#FFA228" stroke-width="3"/>' +
-      '<circle cx="42" cy="26" r="3" fill="' + INK + '" stroke="none"/><circle cx="58" cy="26" r="3" fill="' + INK + '" stroke="none"/>' +
-      '<path d="M24 62c6 14 18 20 26 20s20-6 26-20" ' + STITCH + '/>' +
-      '<rect x="56" y="56" width="15" height="13" rx="2" fill="#FFB3C7" stroke-width="2.6"/>' +
-      '<path d="M60 60l7 5M67 60l-7 5" fill="none" stroke-width="2.2"/>') }
+    { id: 'ball', color: 'pink', kind: 'roll', animal: false, art: '<img src="assets/logic/toy-ball.png" alt="">' },
+    { id: 'car', color: 'blue', kind: 'roll', animal: false, art: '<img src="assets/logic/toy-car.png" alt="">' },
+    { id: 'duck', color: 'yellow', kind: 'sound', animal: true, art: '<img src="assets/logic/toy-duck.png" alt="">' },
+    { id: 'wand', color: 'pink', kind: 'sound', animal: false, art: '<img src="assets/logic/toy-wand.png" alt="">' },
+    { id: 'fish', color: 'blue', kind: 'cloth', animal: true, art: '<img src="assets/logic/toy-fish.png" alt="">' },
+    { id: 'chick', color: 'yellow', kind: 'cloth', animal: true, art: '<img src="assets/logic/toy-chick.png" alt="">' }
   ];
 
   /* 【可換圖】籃子上的圖：會滾＝輪子在滾、會出聲音＝音符、布做的＝補丁、顏色＝一坨顏料、動物＝腳印、不是動物＝腳印打叉 */
@@ -276,9 +246,9 @@
     intro: ['tidy.intro1', 'tidy.intro2'],
     card: (pic) => {
       pic.innerHTML =
-        '<span class="tidy-card-toy" style="left:8%;top:10%;width:40%">' + TOYS[0].art + '</span>' +
-        '<span class="tidy-card-toy" style="right:6%;top:14%;width:46%">' + TOYS[1].art + '</span>' +
-        '<span class="tidy-card-toy" style="left:28%;bottom:4%;width:46%">' + TOYS[2].art + '</span>';
+        '<span class="tidy-card-toy" style="left:6%;top:8%;width:38%">' + TOYS[0].art + '</span>' +
+        '<span class="tidy-card-toy" style="right:4%;top:13%;width:46%">' + TOYS[1].art + '</span>' +
+        '<span class="tidy-card-toy" style="left:27%;bottom:3%;width:48%">' + TOYS[2].art + '</span>';
     },
     mount: mount
   });

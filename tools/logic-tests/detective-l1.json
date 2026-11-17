@@ -25,7 +25,7 @@
   "shot": "l1-big1.png"
  },
  {
-  "wait": 8500
+  "wait": 12000
  },
  {
   "expect": "!!document.querySelector('.detective-slot.now')",
@@ -105,7 +105,7 @@
   "shot": "l1-big2.png"
  },
  {
-  "wait": 8500
+  "wait": 12000
  },
  {
   "expect": "!!document.querySelector('.detective-slot.now')",

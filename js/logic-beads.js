@@ -243,11 +243,11 @@
       '<path d="M50 88C22 66 8 49 8 31C8 17 18 8 30 8C39 8 46 13 50 21C54 13 61 8 70 8C82 8 92 17 92 31C92 49 78 66 50 88Z" fill="#FFD84D" stroke="' + INK + '" stroke-width="8" stroke-linejoin="round"/></svg></div>';
   }
 
-  /* 【可換圖】公主（就是孩子自己）。只在 mount() 裡用一次，站在板面右下角，串完一條會跳一下。
-     現在用現成的貼紙（349×512，直的）；外框 .beads-princess 高 23cqw、寬約 15.7cqw，圖在框裡等比縮放、貼齊底邊。
-     之後補畫「戴著項鍊的公主」：換這裡的 src 就好（直的、去背，比例接近 2:3）。 */
+  /* 公主（就是孩子自己）：畫好的圖「捧著粉藍項鍊的公主」（348×512，直的、去背，跟貼紙 princess.png 是同一位）。
+     只在 mount() 裡用一次，站在板面右下角，串完一條會跳一下。
+     外框 .beads-princess 高 23cqw、寬約 15.7cqw，圖在框裡等比縮放、貼齊底邊。 */
   function princessArt() {
-    return '<img src="assets/stickers/princess.png" alt="">';
+    return '<img src="assets/logic/princess-necklace.png" alt="">';
   }
 
   /* 項鍊是一條往下垂的弧線。單位是 cqw（板面寬 100、高 75）。 */

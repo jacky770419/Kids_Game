@@ -17,6 +17,10 @@
   "why": "公主有載到圖、在板面裡、沒擋到項鍊和珠寶盒"
  },
  {
+  "expect": "(()=>{const p=document.querySelector('.beads-princess img');return /assets\\/logic\\/princess-necklace\\.png$/.test(p.getAttribute('src'))&&p.naturalWidth===348&&getComputedStyle(p).objectFit==='contain'})()",
+  "why": "公主用的是捧著項鍊那一張，等比縮放"
+ },
+ {
   "expect": "(()=>{const f=[...document.querySelectorAll('.beads-src circle')].map(c=>c.getAttribute('fill').toUpperCase()).sort().join();return f==='#4AA8EE,#FF7FB0'})()",
   "why": "第一條是粉＋藍"
  },

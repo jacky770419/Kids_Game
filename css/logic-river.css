@@ -2,25 +2,22 @@
    左邊是這邊的岸、中間是河、右邊是對岸。三樣東西在兩岸各有固定的位子（用 left／top 擺，
    換位子時滑過去）；船分兩層，乘客夾在中間，看起來像坐在船裡。
 
-   配色是粉色＋藍色：藍色的河（#9FD8FA）、淡粉色的岸（#FFE9F1）、粉色的船（#FF7FB0）。
+   配色是粉色＋藍色：背景圖上藍色的河（#6DDBFE）、淡粉色的岸（#FDCADB），加上粉色的船（#FF7FB0）。
    綠色只留給槳（往下走的按鈕）。
 
-   【可換圖】插圖都畫在 js/logic-river.js 的「圖」那一段；這裡的 .river-pic 是「裝一張圖的框」：
-   框決定位置和大小，裡面的 svg 或 img 一律撐滿，所以之後把 SVG 換成圖檔不用改這支。 */
+   用哪張圖寫在 js/logic-river.js 的「圖」那一段；這裡的 .river-pic 是「裝一張圖的框」：
+   框決定位置和大小，裡面的 svg 或 img 撐滿。位置是對著背景圖 assets/logic/bg-river.jpg 量的。 */
 
-.lg-river { background: #9FD8FA; }
+.lg-river { background: #6DDBFE; }             /* 背景圖還沒載到時先墊河的顏色 */
 
 .river-pic > svg, .river-pic > img { display: block; width: 100%; height: 100%; }
 
-/* 背景（河與兩岸）鋪滿板面；碼頭跨在岸邊上、旗子在對岸右下角，都只是看的 */
+/* 背景圖（河、兩岸、碼頭、三角旗都畫在裡面）鋪滿板面 */
 .river-bg { position: absolute; inset: 0; }
-.river-dock { position: absolute; top: 46.3cqw; width: 7cqw; height: 4.5cqw; pointer-events: none; }
-.river-dock.l { left: 17.2cqw; }
-.river-dock.r { right: 17.2cqw; }
-.river-flag { position: absolute; left: 81.5cqw; top: 62cqw; width: 17.5cqw; height: 12cqw; pointer-events: none; }
+.river-bg > img { object-fit: cover; }
 
 /* 兩岸：看不到的框，只拿來當「拖下船」的落點 */
-.river-bank { position: absolute; top: 14%; height: 74%; width: 21%; pointer-events: none; }
+.river-bank { position: absolute; top: 14%; height: 74%; width: 23.5%; pointer-events: none; }
 .river-bank.l { left: 0; }
 .river-bank.r { right: 0; }
 
@@ -28,7 +25,7 @@
 .river-rule.btn {
   --lip: #DB5890;               /* 規則卡的底邊跟著船用粉色 */
   position: absolute;
-  top: 2.4cqw;
+  top: 1.8cqw;
   width: 16.5cqw;
   height: 10cqw;
   padding: 0 .8cqw;
@@ -52,7 +49,7 @@
 .river-oar.btn {
   position: absolute;
   left: 50%;
-  top: 2.4cqw;
+  top: 1.8cqw;
   width: 16cqw;
   height: 10cqw;
   margin-left: -8cqw;
@@ -71,7 +68,7 @@
 .river-undo.btn {
   position: absolute;
   right: 2.4cqw;
-  top: 2.4cqw;
+  top: 1.8cqw;
   width: 11cqw;
   height: 10cqw;
   border-radius: 3cqw;
@@ -105,26 +102,33 @@
 .river-trips b.on { background: #FF7FB0; }
 
 /* ----- 船 -----
-   .river-boat（後面那層＋老爺爺＋空位的虛線圈）在乘客後面，.river-hull（前面那層＋槳）在乘客前面。 */
+   .river-boat（後面那層＋老爺爺＋空位的虛線圈）在乘客後面，.river-hull（前面那層）在乘客前面。 */
 .river-boat, .river-hull {
   position: absolute;
   width: 29cqw;
   pointer-events: none;
   transition: left var(--row, 1.5s) ease-in-out;
 }
-.river-boat { top: 28cqw; height: 23.42cqw; z-index: 2; }
-.river-hull { top: 40.27cqw; height: 11.15cqw; z-index: 4; }
-.river-boat > .river-pic, .river-hull > .river-pic { position: absolute; inset: 0; }
+/* 高度對著背景圖的碼頭：船底（41.9cqw）剛好在碼頭上緣（42.5cqw）的上面，船停在碼頭旁邊、不蓋住它 */
+.river-boat { top: 20cqw; height: 23.42cqw; z-index: 2; }
+.river-hull { top: 32.27cqw; height: 11.15cqw; z-index: 4; }
+.river-boat > .river-pic { position: absolute; inset: 0; }
 .river-boat svg, .river-hull svg { overflow: visible; }
+/* 老爺爺（grandpa-row.png，512×504，顯示成 16.4cqw 寬）：坐著、兩腿張開、槳斜跨身體，槳葉在圖的左下。
+   這個框只露出圖上面七成多（到手和腰），腿和槳葉裁掉、接縫藏在船前面那層後面；
+   框的左緣比圖往右 2.8cqw，免得槳葉從船頭外面露出一小角。 */
 .river-gp {
   position: absolute;
-  left: .45cqw;
-  top: 3.6cqw;
-  width: 13.2cqw;
-  height: 12cqw;
+  left: .7cqw;
+  top: 1.95cqw;
+  width: 13.6cqw;
+  height: 12.4cqw;
   overflow: hidden;
 }
-.river-gp img { display: block; width: 100%; }
+.river-gp img { display: block; width: 16.4cqw; max-width: none; margin-left: -2.8cqw; transform-origin: 52% 72%; }
+/* 划的時候老爺爺握著槳前後擺 */
+.river-rowing .river-gp img { animation: riverRow .46s ease-in-out infinite alternate; }
+@keyframes riverRow { from { rotate: -4deg; } to { rotate: 4deg; } }
 /* 空位：白色虛線圈，有人坐上去就不見 */
 .river-seat {
   position: absolute;
@@ -136,10 +140,6 @@
 }
 .river-seat svg { display: block; width: 100%; height: 100%; }
 .river-boat.full .river-seat { opacity: 0; }
-/* 划的時候槳繞著桿子上端前後擺（框跟船前面那層一樣大，桿子上端在框的上緣外面一點） */
-.river-paddle { transform-origin: 43.08% -26%; }
-.river-rowing .river-paddle { animation: riverPaddle .46s ease-in-out infinite alternate; }
-@keyframes riverPaddle { from { rotate: -9deg; } to { rotate: 12deg; } }
 
 /* ----- 三樣東西 -----
    每一樣是一個 15cqw 的正方形框，裡面疊著它的幾個樣子（.river-pose），只有 .on 的那個看得到。 */
@@ -155,26 +155,28 @@
 .river-pose { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
 .river-pose.on { opacity: 1; }
 .river-pose > img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
-.river-pose > svg { display: block; width: 100%; height: 100%; overflow: visible; }
+/* 白菜的圖是直的（387×512），框縮成 .86：畫出來約 7.5×12cqw，跟站著的大野狼、小羊差不多高就太大了 */
 [data-item="cabbage"] .river-art { scale: .86; transform-origin: center bottom; }
 
-/* 大野狼捉弄小羊：往小羊靠過去搖來搖去；小羊發抖（圖換成哪一張，看 js 的 ART 那張表） */
+/* 大野狼捉弄小羊：換成吐舌頭扮鬼臉那張（正面），往右下的小羊靠過去、左右搖；
+   小羊換成發抖那張（圖上已經有抖動線），再整隻小小地抖 */
 .river-tease { z-index: 6; }
-.river-tease .river-art { animation: riverTease .42s ease-in-out infinite alternate; }
+.river-tease .river-art { transform-origin: 50% 90%; animation: riverTease .42s ease-in-out infinite alternate; }
 @keyframes riverTease {
-  from { translate: calc(var(--dx, 1) * 1cqw) 1.6cqw; rotate: -9deg; }
-  to { translate: calc(var(--dx, 1) * 2.4cqw) 2.8cqw; rotate: 9deg; }
+  from { translate: .8cqw .6cqw; rotate: -8deg; }
+  to { translate: 2.2cqw 1.6cqw; rotate: 8deg; }
 }
 .river-shiver .river-art { animation: riverShiver .1s linear infinite alternate; }
-@keyframes riverShiver { from { translate: -.45cqw 0; } to { translate: .45cqw 0; } }
+@keyframes riverShiver { from { translate: -.35cqw 0; } to { translate: .35cqw 0; } }
 
-/* 小羊偷咬白菜：小羊湊過去咬一口，回到原地嚼一嚼；白菜（js 在咬下去那一刻換成缺一角的）晃一晃 */
+/* 小羊偷咬白菜：小羊低頭湊到白菜的右上角咬一口，回到原地換成嚼菜葉那張嚼一嚼；
+   白菜（js 在咬下去那一刻換成缺一角的）晃一晃 */
 .river-nibble { z-index: 6; }
 .river-nibble .river-art { animation: riverNibble 2.2s ease-in-out both; }
 @keyframes riverNibble {
   0% { translate: 0 0; rotate: 0deg; }
-  14%, 30% { translate: calc(var(--dx, -1) * 2.6cqw) 8.2cqw; rotate: calc(var(--dx, -1) * 8deg); }
-  22% { translate: calc(var(--dx, -1) * 2.6cqw) 9.4cqw; rotate: calc(var(--dx, -1) * 8deg); }
+  14%, 30% { translate: 1.4cqw 5.4cqw; rotate: -8deg; }
+  22% { translate: 1.4cqw 6.4cqw; rotate: -8deg; }
   44% { translate: 0 0; rotate: 0deg; scale: 1; }
   52%, 68%, 84% { scale: 1.07 .93; }
   60%, 76%, 92% { scale: .96 1.05; }
@@ -183,12 +185,15 @@
 .river-bitten .river-art { animation: riverBitten .28s ease-in-out .5s 4 alternate; }
 @keyframes riverBitten { from { rotate: -5deg; } to { rotate: 5deg; } }
 
-/* ----- 選小屋那張卡：老爺爺跟小羊坐在粉色的船上 ----- */
-.river-card-water { position: absolute; left: 0; right: 0; bottom: 0; height: 42%; background: #9FD8FA; }
+/* ----- 選小屋那張卡：老爺爺握著槳、跟小羊坐在粉色的船上 -----
+   老爺爺的框跟板面上一樣只露出圖上面七成多，腿和槳葉藏在船身後面 */
+.river-card-water { position: absolute; left: 0; right: 0; bottom: 0; height: 42%; background: #6DDBFE; }
 .river-card-who { position: absolute; }
 .lg-card-pic .river-card-who img { position: static; display: block; width: 100%; }
+.river-card-gp { left: 1%; top: 20.5%; width: 54%; aspect-ratio: 512 / 372; overflow: hidden; }
+.river-card-goat { left: 49%; top: 27%; width: 42%; }
 .river-card-hull { position: absolute; left: 6%; top: 55%; width: 88%; aspect-ratio: 2.6; }
 
 @media (prefers-reduced-motion: reduce) {
-  .river-rowing .river-paddle, .river-shiver .river-art { animation: none; }
+  .river-rowing .river-gp img, .river-shiver .river-art { animation: none; }
 }

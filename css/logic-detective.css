@@ -1,30 +1,31 @@
 /* 動動腦小屋：小偵探。
-   上半是餐廳現場（牆上一排線索、椅子、桌子、放大鏡點），左下是名單（嫌疑犯的卡），右邊一整條是門（請出去的地方）。
-   板面最下面 12% 只有地板，不放能拖的東西。
+   背景是一整張餐廳的圖（assets/logic/bg-dining.jpg：牆、窗、椅子、桌子、空盤子、地板都在圖裡）。
+   牆上（左上）一排線索；桌上疊被吃掉的蛋糕；桌子右邊站著拿放大鏡的公主（孩子的替身）；右邊是門（請出去的地方）。
+   地板上（背景的 59% 以下）左邊是名單（嫌疑犯的卡），右邊門口的地板放腳印和水的放大鏡點；毛線的放大鏡點在椅背上。
+   板面最下面 12% 只有地板，不放能按、能拖的東西。
 
-   配色：牆淡粉、地板白藍格子、門窗藍、桌椅白＋粉。
    「粉色底邊＝可以動手」（嫌疑犯的卡、放大鏡點）；「看這裡」的框一律紫色 #9A7BF5。
-
-   結構：背景（.detective-room）是一整張鋪滿板面的圖，椅子、桌子、門各自一塊疊在上面；
-   每一塊裡面現在是程式畫的 svg，之後換成 img 也吃同一組樣式（所以選擇器都寫 svg, img 兩種）。 */
+   線索圖、標記、放大鏡、門是程式畫的 svg；之後換成 img 也吃同一組樣式（所以那幾塊的選擇器都寫 svg, img 兩種）。 */
 
 .lg-detective { background: #EDF6FF; }
 
-/* 背景：整張板面 */
+/* 背景：整張板面（圖和板面都是 4:3） */
 .detective-room { position: absolute; inset: 0; pointer-events: none; }
-.detective-room > svg, .detective-room > img { display: block; width: 100%; height: 100%; }
+.detective-room > img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
-/* 椅子、桌子：疊在背景上，不能互動 */
-.detective-chair, .detective-table { position: absolute; pointer-events: none; }
-.detective-chair { left: 5.5%; top: 13.333%; width: 15%; height: 25cqw; }
-.detective-table { left: 35.5%; top: 20%; width: 27%; height: 22cqw; }
-.detective-chair > svg, .detective-chair > img,
-.detective-table > svg, .detective-table > img { display: block; width: 100%; height: 100%; }
+/* 被吃掉的蛋糕：圖上的盤子（中心在圖的 50%、78%，寬是圖的 93%）對準背景的空盤子（中心在板面 41.25%、35.3%，寬 12.8cqw），
+   比它大一點點，剛好蓋住。不能互動 */
+.detective-eaten { position: absolute; left: 33.5%; top: 19.8%; width: 15.5cqw; height: 14.93cqw; pointer-events: none; }
+.detective-eaten > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+/* 拿放大鏡的公主：站在桌子右邊、窗戶下面，腳踩在踢腳板前面。平的（不能按） */
+.detective-hero { position: absolute; left: 59.9%; top: 35.8%; width: 13cqw; height: 18cqw; pointer-events: none; }
+.detective-hero > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 /* ===== 線索列：釘在牆上，找到的線索一直留著。平的（不能按） ===== */
 .detective-clues {
   position: absolute;
-  left: 23%; width: 36%; top: 2.6%;
+  left: 1.5%; width: 43%; top: 2.6%;
   height: 9.6cqw;
   display: flex;
   justify-content: center;
@@ -110,18 +111,19 @@
 /* ===== 門：一整條都可以放。平的；有人被拖起來的時候亮起來 ===== */
 .detective-door {
   position: absolute;
-  left: 74.5%; width: 24%; top: 3.4%;
-  height: 60cqw;
+  left: 74.5%; width: 24%; top: 4%;
+  height: 42.5cqw;
 }
 .detective-door > svg, .detective-door > img { display: block; width: 100%; height: 100%; }
 .lg-detective:has(.detective-card.lg-drag) .detective-door { filter: drop-shadow(0 0 1.4cqw rgba(154, 123, 245, .95)); }
 /* 真正算「放進門」的範圍：左邊縮進來一點。外殼的命中範圍會往外多算一圈，
-   不縮的話最右邊那張卡輕輕動一下就算拖到門了。 */
-.detective-zone { position: absolute; inset: 0 0 0 4.2cqw; pointer-events: none; }
+   不縮的話最右邊那張卡輕輕動一下就算拖到門了。
+   下面多算到門口的地板（卡片在門的左下方，她多半是橫著往右拖，放在門口也算出去）。 */
+.detective-zone { position: absolute; inset: 0 0 -20cqw 4.2cqw; pointer-events: none; }
 .detective-outside {
   position: absolute;
-  left: 22%; right: 6%; bottom: 5%;
-  height: 60%;
+  left: 22%; right: 6%; bottom: 3%;
+  height: 62%;
   display: flex;
   flex-wrap: wrap-reverse;
   align-content: flex-start;
@@ -140,11 +142,12 @@
   100% { translate: 0 0; }
 }
 
-/* ===== 名單：嫌疑犯的卡。浮起來的（能拖，粉色底邊） ===== */
+/* ===== 名單：嫌疑犯的卡。浮起來的（能拖，粉色底邊） =====
+   整張卡都在地板上：上緣貼著踢腳板下面那條線（59.5%），下緣到 87.9%（最下面 12% 不放能拖的東西）。 */
 .detective-list {
   --m: 5.1cqw;
   position: absolute;
-  left: 1%; width: 72.5%; top: 55.4%;
+  left: 1%; width: 72.5%; top: 59.5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -159,10 +162,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5cqw;
+  gap: .3cqw;
   width: 17.3cqw;
-  height: 22.6cqw;
-  padding: .7cqw .3cqw .6cqw;
+  height: 21.3cqw;
+  padding: .4cqw .3cqw .4cqw;
   border-radius: 2.8cqw;
   border: .4cqw solid transparent;
   background: #fff;
@@ -212,8 +215,8 @@
 .detective-card.caught .detective-mark { background: #fff; }
 .detective-oops {
   position: absolute;
-  width: 8.4cqw;
-  height: 4.2cqw;
+  width: calc(8.4cqw * var(--k, 1));     /* --k：臉比較小的圖縮一點（js 的 mouth 第三個數字） */
+  height: calc(4.2cqw * var(--k, 1));
   translate: -50% -50%;
   animation: lgPop .45s ease;
 }
@@ -221,4 +224,4 @@
 
 /* 選小屋那張卡上的圖（公主蛋糕、放大鏡） */
 .detective-card-pic { position: absolute; aspect-ratio: 1; }
-.detective-card-pic > svg, .detective-card-pic > img { display: block; width: 100%; height: 100%; }
+.detective-card-pic > svg, .detective-card-pic > img { display: block; left: 0; top: 0; width: 100%; height: 100%; object-fit: contain; }

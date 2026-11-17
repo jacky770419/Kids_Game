@@ -9,7 +9,7 @@
   "tap": ".detective-spot.on"
  },
  {
-  "wait": 9500
+  "wait": 12500
  },
  {
   "expect": "!!document.querySelector('.detective-slot.now')",
@@ -21,5 +21,28 @@
  {
   "expect": "(() => { const c = document.querySelector('.detective-card:nth-child(4)'); const r = c.getBoundingClientRect(); const z = document.querySelector('.detective-zone').getBoundingClientRect(); return z.left - 28 > r.right + 14; })()",
   "why": "門的命中範圍（含外殼多算的 28px）碰不到最右邊那張卡"
+ },
+ {
+  "eval": "(() => { const s = document.querySelector('.detective-slot.now'); const f = s.dataset.feat, v = s.dataset.value; document.querySelectorAll('.detective-card').forEach(c => { delete c.dataset.t; }); document.querySelectorAll('.detective-card:not(.gone)').forEach(c => { c.dataset.t = c.querySelector('[data-f=' + f + ']').dataset.v === v ? 'stay' : 'out'; }); return f + '=' + v + ' out=' + document.querySelectorAll('[data-t=out]').length + ' stay=' + document.querySelectorAll('[data-t=stay]').length; })()"
+ },
+ {
+  "eval": "(() => { const m = document.createElement('div'); m.id = 'floorMark'; m.style.cssText = 'position:absolute;left:87%;top:80%;width:2px;height:2px;pointer-events:none'; document.querySelector('.lg-stage').appendChild(m); const d = document.querySelector('.detective-door').getBoundingClientRect(), r = m.getBoundingClientRect(); return 'door bottom=' + Math.round(d.bottom) + ' mark y=' + Math.round(r.top); })()"
+ },
+ {
+  "expect": "document.getElementById('floorMark').getBoundingClientRect().top > document.querySelector('.detective-door').getBoundingClientRect().bottom + 28",
+  "why": "記號在門的下面（門口的地板上），不在門本身的命中範圍裡"
+ },
+ {
+  "drag": [
+   ".detective-card[data-t=out]",
+   "#floorMark"
+  ]
+ },
+ {
+  "wait": 500
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card.gone').length === 1 && document.querySelectorAll('.detective-outie').length === 1",
+  "why": "拖到門口的地板放開，也算請出去"
  }
 ]

@@ -15,8 +15,10 @@
 
 .tidy-toy { width: 13cqw; aspect-ratio: 1; flex: none; }
 .tidy-art { width: 100%; height: 100%; }
-.tidy-art svg { display: block; width: 100%; height: 100%; overflow: visible; }
-.tidy-floor > .tidy-toy .tidy-art svg { rotate: var(--tilt, 0deg); }
+/* 玩具是圖檔，六張比例不同：在正方形的框裡等比縮放、置中。圖本身不接手指（拖和點都算在外面那個框上，
+   iPad 長按也不會跳出「儲存影像」）。點了演的特徵動畫加在 .tidy-art 上，圖跟著一起動。 */
+.tidy-art img { display: block; width: 100%; height: 100%; object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
+.tidy-floor > .tidy-toy .tidy-art img { rotate: var(--tilt, 0deg); }
 
 /* 點玩具：它自己演一次特徵（會滾／會叫／軟軟的） */
 .tidy-roll { animation: tidyRoll .9s ease-in-out; }
@@ -100,4 +102,4 @@
 
 /* 選小屋那張卡上的三樣玩具 */
 .tidy-card-toy { position: absolute; aspect-ratio: 1; }
-.tidy-card-toy svg { width: 100%; height: 100%; display: block; }
+.lg-card-pic .tidy-card-toy img { position: static; display: block; width: 100%; height: 100%; object-fit: contain; }

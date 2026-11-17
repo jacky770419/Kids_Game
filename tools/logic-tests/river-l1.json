@@ -11,6 +11,14 @@
   "why": "圖都載到了"
  },
  {
+  "expect": "document.querySelector('.river-bg img').getAttribute('src')==='assets/logic/bg-river.jpg' && !document.querySelector('.river-dock, .river-flag, .river-paddle')",
+  "why": "背景是畫好的那張圖，碼頭、旗子、槳不再另外疊"
+ },
+ {
+  "expect": "document.querySelector('.river-gp img').getAttribute('src')==='assets/logic/grandpa-row.png' && document.querySelector('.river-item[data-item=\"cabbage\"] .river-pose[data-pose=\"stand\"] img').getAttribute('src')==='assets/logic/cabbage.png' && document.querySelector('.river-rule i:last-child img').getAttribute('src')==='assets/logic/cabbage.png'",
+  "why": "老爺爺是握槳那張；岸上和規則卡上的白菜都是圖檔"
+ },
+ {
   "shot": "l1-start.png"
  },
  {

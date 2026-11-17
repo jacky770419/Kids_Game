@@ -66,7 +66,7 @@
 .beads-band { position: absolute; left: 0; right: 0; top: 16%; height: 36%; pointer-events: none; }
 
 /* 公主（就是孩子自己）：站在右下角、珠寶盒旁邊，不能按。串完一條跳一下，整關過關跳兩下。
-   圖在框裡等比縮放、貼齊底邊，之後換成別張直的圖也不用改這裡。 */
+   圖是 assets/logic/princess-necklace.png（捧著項鍊的公主，348×512），在框裡等比縮放、貼齊底邊。 */
 .beads-princess {
   position: absolute;
   right: 2cqw;
