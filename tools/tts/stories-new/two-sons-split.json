@@ -1,0 +1,291 @@
+{
+ "id": "two-sons-split",
+ "title": "什麼都切一半",
+ "title_en": "Cut Everything in Half",
+ "size": "短",
+ "roles": {
+  "哥哥": "二十多歲的年輕人，已經是大人了，活潑、嗓門大、做事很快，口頭禪是「一人一半，最公平！」；做錯了會愣一下，然後自己笑出來。",
+  "弟弟": "哥哥的弟弟，二十歲左右的年輕人，聲音比哥哥亮一點、像大男孩，愛跟著哥哥喊「一人一半」，也愛笑哥哥。",
+  "老爺爺": "住在隔壁的老爺爺，慈祥、說話慢、帶著笑，不罵人，用問的、用教的。"
+ },
+ "cast": {
+  "哥哥": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "弟弟": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "老爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "切",
+   "where": "第2頁『切成』，第5頁『切開』『不用切』",
+   "read": "qiē"
+  },
+  {
+   "char": "分",
+   "where": "第1頁『自己分』，第2頁『先分』，第5頁『怎麼分』",
+   "read": "fēn"
+  },
+  {
+   "char": "得",
+   "where": "第2頁『吃得到』，第3頁『穿得起來』",
+   "read": "de"
+  },
+  {
+   "char": "挑",
+   "where": "第6頁『輪流挑』，第7頁『哥哥挑』『弟弟先挑』",
+   "read": "tiāo"
+  },
+  {
+   "char": "為",
+   "where": "第4、6、7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "只",
+   "where": "第4頁『只有』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "隻",
+   "where": "第4頁『一隻袖子』",
+   "read": "zhī"
+  },
+  {
+   "char": "間",
+   "where": "第1、6頁『兩間』，第3頁『中間』",
+   "read": "jiān"
+  },
+  {
+   "char": "教",
+   "where": "第8頁『教他們』",
+   "read": "jiāo"
+  },
+  {
+   "char": "縫",
+   "where": "第8頁『縫成』",
+   "read": "féng"
+  },
+  {
+   "char": "把",
+   "where": "第2頁『把它』，第3頁『把外套』",
+   "read": "bǎ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，鄉下一間木頭老房子的客廳：土黃色的牆、木頭窗戶，窗外看得到隔壁的竹籬笆。客廳中間一張大方木桌，桌上放著六樣東西：一個白色的大饅頭（放在盤子上）、一件摺好的深藍色的舊外套（長袖、兩隻袖子、前面一排木頭扣子、手肘有一塊灰色補丁）、一個藍花白底的大碗、一條紅色碎花的厚被子（摺好）、一個黑色的鐵鍋子、一把黃色的油紙雨傘。門口放著兩個還沒裝東西的竹籃。",
+   "act": "哥哥第一次出場：二十多歲的年輕人（是大人，不是小孩），高高瘦瘦，黑色短髮，穿綠色短袖上衣、咖啡色長褲、布鞋。弟弟第一次出場：二十歲左右的年輕人（也是大人），比哥哥矮半個頭，圓臉，頭頂有一撮翹起來的頭髮，穿橘色短袖上衣、藍色長褲、布鞋。兩個人站在桌子兩邊，哥哥舉起一隻手、伸出食指，很有把握地笑；弟弟用力點頭。門口，媽媽（五十多歲、頭髮盤起來、穿紫色上衣，只出現這一頁）提著一個小包袱正要出門，回頭笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥和弟弟是大人了，要搬進兩間新房子。",
+     "en": "Two brothers were all grown up, and each was moving into a new house of his own."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽說，東西你們自己分，要公平喔。",
+     "en": "\"Divide up our things between you,\" said their mother. \"And be fair!\""
+    },
+    {
+     "who": "哥哥",
+     "tag": "happy",
+     "text": "一人一半，最公平！",
+     "en": "Half for you, half for me. That's fair!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間客廳，大方木桌旁邊。",
+   "act": "桌上的盤子裡，大饅頭已經從正中間切成一樣大的兩半（刀子不要畫出來）。哥哥和弟弟一人拿著半個饅頭，咬了一大口，臉頰鼓鼓的，笑得眼睛瞇起來。桌上其他五樣東西（深藍色舊外套、藍花大碗、紅色碎花被子、黑鍋子、黃雨傘）都還好好的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "先分大饅頭。哥哥把它切成兩半。",
+     "en": "First came a big steamed bun. The older brother cut it in half."
+    },
+    {
+     "who": "哥哥",
+     "text": "你一半，我一半，都吃得到！",
+     "en": "Half for you, half for me. We both get to eat!"
+    },
+    {
+     "who": "弟弟",
+     "tag": "happy",
+     "text": "一人一半，最公平！",
+     "en": "Half for you, half for me. That's fair!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間客廳，大方木桌旁邊。",
+   "act": "深藍色的舊外套已經從背後正中間直直剪成左右兩半，一把剪刀放在桌上（沒有人拿著）。哥哥兩手提著左半邊，弟弟兩手提著右半邊，每一半都只有一隻袖子；兩個人都還沒穿，很滿意地看著手上的半件外套。這一頁不要畫出穿上去的樣子。桌上還有四樣完整的東西：藍花大碗、紅色碎花被子、黑鍋子、黃雨傘。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "再來是一件舊外套，就這一件。",
+     "en": "Next came an old coat. It was the only one they had."
+    },
+    {
+     "who": "哥哥",
+     "text": "這個也一人一半！",
+     "en": "Half for you, half for me again!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們把外套從中間剪開。",
+     "en": "So they cut the coat right down the middle."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，一半的外套，穿得起來嗎？",
+     "en": "Can you guess? Could anyone wear half a coat?"
+    }
+   ]
+  },
+  {
+   "scene": "同一間客廳，大方木桌旁邊。",
+   "act": "哥哥把左半邊外套穿上：只有左手伸進袖子，右邊的肩膀、右邊的肚子（綠色上衣）整個露在外面，半件外套掛在身上一直往下滑。弟弟也穿著右半邊外套，只有右手有袖子，左邊的肚子（橘色上衣）露在外面。兩個人先是一臉發呆，接著互相指著對方露出來的肚子，一起笑到彎腰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "穿不起來！",
+     "en": "No, nobody could!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為一半的外套只有一隻袖子，包不住身體。",
+     "en": "Because half a coat has only one sleeve, and it can't wrap around your body."
+    },
+    {
+     "who": "弟弟",
+     "tag": "laughing",
+     "text": "哈，我們的肚子都跑出來了！",
+     "en": "Ha! Our tummies are sticking out!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間客廳，大方木桌旁邊，門開著。",
+   "act": "弟弟兩手捧著藍花大碗，高高舉起來（碗是完整的，沒有破，旁邊沒有刀子或剪刀）；兩半外套放在椅子上。老爺爺第一次出場：住在隔壁，七十歲左右，瘦瘦的，白色短頭髮、白色短鬍子，戴一頂草帽，穿灰藍色長衫、黑布鞋，拿一根竹拐杖。他站在門口，伸出一隻手掌比「停」，眼睛睜大但是帶著笑。哥哥站在桌邊回頭看。四樣完整的東西：藍花大碗（弟弟手上）、紅色碎花被子、黑鍋子、黃雨傘（三樣在桌上）。",
+   "lines": [
+    {
+     "who": "弟弟",
+     "text": "那碗也一人一半！",
+     "en": "Then the bowl! Half for you, half for me!"
+    },
+    {
+     "who": "旁白",
+     "text": "隔壁的老爺爺走進來。",
+     "en": "Just then, the old man from next door walked in."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "surprised",
+     "text": "等一下！饅頭切開能吃。半個碗，裝不住湯呀！",
+     "en": "Wait! Half a bun is still good to eat. But half a bowl can't hold soup!"
+    },
+    {
+     "who": "旁白",
+     "text": "剩下四樣：碗、被子、鍋子、雨傘。",
+     "en": "Four things were left: a bowl, a quilt, a pot, and an umbrella."
+    },
+    {
+     "who": "旁白",
+     "text": "不用切，怎麼分才公平呢？",
+     "en": "How could they share them fairly without cutting?"
+    }
+   ]
+  },
+  {
+   "scene": "同一間客廳，大方木桌旁邊。桌上排著四樣完整的東西：藍花大碗、紅色碎花被子、黑鍋子、黃雨傘。",
+   "act": "老爺爺坐在桌邊的椅子上，草帽放在膝蓋上，笑著摸鬍子。弟弟舉手搶著說，哥哥摸著下巴想。老爺爺先笑著搖搖手，最後伸出手，先指哥哥、再指弟弟，像在發東西的樣子。",
+   "lines": [
+    {
+     "who": "弟弟",
+     "text": "輪流用！",
+     "en": "We can take turns using them!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "很麻煩喔，因為你們住兩間房子。",
+     "en": "That would be a lot of trouble, because you'll live in two houses."
+    },
+    {
+     "who": "哥哥",
+     "text": "再買新的！",
+     "en": "Then let's buy new ones!"
+    },
+    {
+     "who": "老爺爺",
+     "text": "可以，可是要花錢。",
+     "en": "You could, but that costs money."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "一個給你，一個給我，輪流挑！",
+     "en": "Try this. One for you, one for me. Take turns picking!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間客廳，大方木桌旁邊。桌子已經空了。",
+   "act": "哥哥站在桌子左邊，懷裡抱著紅色碎花被子，被子上面放著藍花大碗，一共兩樣。弟弟站在桌子右邊，一手提著黑鍋子、一手拿著黃雨傘，也是兩樣。四樣東西都是完整的。挑的順序是：哥哥先挑被子、弟弟挑鍋子；第二輪換弟弟先挑雨傘、哥哥挑碗。兩個人笑著互相看；老爺爺站在中間，兩手攤開，一邊指一個。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "哥哥挑被子，弟弟挑鍋子。",
+     "en": "The older brother picked the quilt. The younger brother picked the pot."
+    },
+    {
+     "who": "旁白",
+     "text": "再換弟弟先挑雨傘，哥哥挑碗。",
+     "en": "This time the younger brother picked first. He took the umbrella, and the older brother took the bowl."
+    },
+    {
+     "who": "老爺爺",
+     "text": "因為拿到一樣多，東西都是整個的，所以公平。",
+     "en": "You each got the same number of things, and every one is whole. So it is fair."
+    },
+    {
+     "who": "弟弟",
+     "tag": "happy",
+     "text": "一個給你，一個給我！",
+     "en": "One for you, one for me!"
+    }
+   ]
+  },
+  {
+   "scene": "老房子的門口，太陽很大，門前一條小路分成左右兩條，遠遠的兩邊各有一間新的小木屋。",
+   "act": "哥哥和弟弟各斜掛著一個深藍色的袋子：是用半件舊外套對摺縫成的，那一隻袖子變成掛在肩膀上的帶子，袋子上還看得到一排木頭扣子（哥哥的袋子上看得到那塊灰色補丁）。哥哥的袋子裡露出藍花大碗，他另一手抱著紅色碎花被子；弟弟的袋子裡露出黑鍋子的把手，另一手拿著黃雨傘。兩個人各站在一條小路上，回頭互相指著對方的袋子哈哈大笑。老爺爺站在門口，手上拿著針線包，笑著揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "剪開的外套，老爺爺教他們縫成兩個袋子。",
+     "en": "As for the cut-up coat, the old neighbor showed them how to sew it into two bags."
+    },
+    {
+     "who": "弟弟",
+     "tag": "laughing",
+     "text": "這一次，真的一人一半！",
+     "en": "This time it really is half for you, half for me!"
+    },
+    {
+     "who": "哥哥",
+     "tag": "laughing",
+     "text": "最公平！",
+     "en": "That's fair!"
+    }
+   ]
+  }
+ ]
+}

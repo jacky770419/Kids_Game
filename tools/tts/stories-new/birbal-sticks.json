@@ -1,0 +1,360 @@
+{
+ "id": "birbal-sticks",
+ "title": "會變長的木棍",
+ "title_en": "The Stick That Grows",
+ "size": "中",
+ "roles": {
+  "國王": "很久以前印度的阿克巴國王，慈祥的老國王聲音，愛吃甜點、愛笑，笑聲很大。",
+  "比爾巴": "國王身邊最聰明的人，說話不急不忙、帶著笑，像個溫和的智者。",
+  "大臣": "愛搶著說話的大臣，平常愛炫耀、說話快又得意；這一本他心虛，說話變小聲，被發現後不好意思，最後跟大家一起笑。好笑不可怕。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "比爾巴": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大臣": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "書名『會變長』，第3頁『一樣長』『會變長』『變長』，第4頁『會變長』『變長』，第5頁『一樣長』，第6頁『一樣長』『會變長』，第7頁『變長』『一樣長』『會變長』，第9頁『會變長』",
+   "read": "cháng"
+  },
+  {
+   "char": "切",
+   "where": "第7頁『切口』『切的』『切短』，第9頁『不切』",
+   "read": "qiē"
+  },
+  {
+   "char": "誰",
+   "where": "第3頁『誰拿了』",
+   "read": "shéi"
+  },
+  {
+   "char": "為",
+   "where": "第5頁『因為』『為什麼』，第6頁『為什麼』，第7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『沒說話』",
+   "read": "méi"
+  },
+  {
+   "char": "著",
+   "where": "第5頁『睡不著』",
+   "read": "zháo"
+  },
+  {
+   "char": "只",
+   "where": "第7頁『只有』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『為什麼』，第6頁『為什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "都",
+   "where": "第1頁『都用它』，第2頁『都沒說話』，第5頁『都一樣長』，第6頁『都一樣長』，第10頁『也都笑了』",
+   "read": "dōu"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的印度王宮：白色大理石宮殿，圓圓的洋蔥形屋頂，一排拱門；國王吃點心的小房間，紅色地毯，拱形窗戶外面看得到棕櫚樹和藍天。",
+   "act": "國王和比爾巴第一次出場。國王（阿克巴國王）：六十多歲，圓臉、灰白色的大鬍子，戴金色頭巾、頭巾中間一顆紅寶石，穿白色長袍、外面罩紅色金邊長背心，坐在有軟墊的矮椅子上，前面一張矮桌，桌上一碗白色的甜點（撒著堅果的牛奶甜點）；他手上舉著一支亮晶晶的金湯匙，笑得眼睛瞇起來。比爾巴：四十歲左右，瘦瘦的，黑色短鬍子，戴橘色頭巾，穿淡綠色長袍、白色褲子，眼睛笑得彎彎的，安靜地站在國王旁邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，在很遠的印度，有一位阿克巴國王。",
+     "en": "Long ago, in faraway India, there lived a king named Akbar."
+    },
+    {
+     "who": "旁白",
+     "text": "他身邊最聰明的人，叫比爾巴。",
+     "en": "The cleverest man at his side was called Birbal."
+    },
+    {
+     "who": "旁白",
+     "text": "國王有一支金湯匙，吃甜點都用它。",
+     "en": "The king had a golden spoon. He used it every time he ate dessert."
+    }
+   ]
+  },
+  {
+   "scene": "國王吃點心的小房間，矮桌上放著一碗甜點，旁邊原本放湯匙的小金盤是空的。",
+   "act": "大臣、廚師、園丁第一次出場，三個人並排站在矮桌前面。大臣：胖胖的，一撇往上翹的黑色小鬍子，戴很大的紫色頭巾、上面插一根孔雀羽毛，穿紫色金邊長袍，手上好多戒指，兩手背在後面，眼睛看著天花板。廚師：圓滾滾的中年男人，紅臉頰、小鬍子，戴白色頭巾、穿白色圍裙，手上端著一個托盤。園丁：瘦高的年輕人，戴草綠色頭巾，穿捲起袖子的黃色上衣，懷裡抱著一把紅色和黃色的鮮花。國王兩手攤開，低頭看著空空的小金盤，一臉驚訝。比爾巴摸著鬍子，看著三個人。畫面上任何地方都不要畫出金湯匙。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這一天，廚師端來甜點，園丁送來鮮花。",
+     "en": "One day, the cook brought in the dessert, and the gardener brought fresh flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "有一位愛搶著說話的大臣，也在房間裡。",
+     "en": "A minister who always wanted to speak first was in the room too."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦？我的金湯匙呢？剛才就放在桌上！",
+     "en": "Huh? Where is my golden spoon? It was right here on the table!"
+    },
+    {
+     "who": "旁白",
+     "text": "三個人你看我，我看你，都沒說話。",
+     "en": "The three of them looked at one another. Nobody said a word."
+    }
+   ]
+  },
+  {
+   "scene": "同一個小房間，矮桌旁邊的紅色地毯上。",
+   "act": "比爾巴蹲下來，把三根木棍並排放在地毯上：三根都是淺棕色的直木棍，大約一隻手臂那麼長，兩頭對齊，看得出一樣長。下一格：比爾巴站起來，一手伸出一根食指，另一手用兩根手指比出「一根手指那麼長」的一小段。大臣、廚師、園丁圍著看；國王坐在矮椅子上，好奇地伸長脖子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "比爾巴拿來三根木棍，排在一起。",
+     "en": "Birbal brought three sticks and laid them side by side."
+    },
+    {
+     "who": "比爾巴",
+     "tag": "calm",
+     "text": "大家看，三根木棍一樣長。",
+     "en": "Look, everyone. All three sticks are the same length."
+    },
+    {
+     "who": "比爾巴",
+     "text": "這是神奇的木棍，一人拿一根回去。",
+     "en": "These are magic sticks. Each of you, take one with you."
+    },
+    {
+     "who": "比爾巴",
+     "text": "誰拿了湯匙，他的木棍明天會變長。",
+     "en": "Whoever took the spoon will find his stick longer tomorrow."
+    },
+    {
+     "who": "比爾巴",
+     "tag": "playful",
+     "text": "會變長一根手指那麼多喔！",
+     "en": "It will grow by the length of one finger!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的走廊，一排拱門，太陽快下山，地上有長長的影子。",
+   "act": "三個人各拿著一根一樣長的木棍，往走廊三個方向走。廚師把木棍夾在手臂下面，笑咪咪的；園丁把木棍扛在肩上，吹著口哨。大臣兩手握著木棍舉在眼睛前面，皺著眉頭、斜著眼睛盯著它看，額頭一滴汗，孔雀羽毛垂下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "廚師和園丁笑著拿了木棍，大臣卻皺著眉頭。",
+     "en": "The cook and the gardener took their sticks with a smile. But the minister frowned."
+    },
+    {
+     "who": "大臣",
+     "tag": "nervous",
+     "text": "真的會變長嗎？",
+     "en": "Will it really grow?"
+    },
+    {
+     "who": "旁白",
+     "text": "三個人回房間去了。",
+     "en": "Then the three of them went back to their rooms."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，木頭做的棍子，真的會自己變長嗎？",
+     "en": "What do you think? Can a wooden stick really grow all by itself?"
+    }
+   ]
+  },
+  {
+   "scene": "左半：王宮的花園，一棵小樹苗種在土裡。右半：夜晚的王宮，月亮很亮，一扇拱形窗戶亮著燈。",
+   "act": "左半畫對照圖：一棵綠色的小樹苗，旁邊三個小箭頭表示它一天比一天高；樹苗旁邊橫放著一根木棍，木棍旁邊畫一個等號，表示它一直一樣長。右半：亮著燈的窗戶裡只看得到一個人的黑色影子，坐在床邊，兩手舉著一根木棍盯著看；影子看不出是誰（不要畫出頭巾的形狀和羽毛），也不要畫出刀子或任何切東西的動作。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "不會。小樹苗會一天，一天變高。",
+     "en": "No. A little tree grows taller day by day."
+    },
+    {
+     "who": "旁白",
+     "text": "因為木棍是砍下來的木頭，所以放多久都一樣長。",
+     "en": "But because a stick is only a piece of cut wood, it stays the same length, no matter how long you wait."
+    },
+    {
+     "who": "旁白",
+     "text": "比爾巴為什麼這樣說呢，明天就知道了。",
+     "en": "We'll find out tomorrow why Birbal said that."
+    },
+    {
+     "who": "旁白",
+     "text": "那天晚上，有一個人睡不著。",
+     "en": "That night, one person couldn't sleep."
+    },
+    {
+     "who": "旁白",
+     "text": "他盯著木棍，越看越緊張。",
+     "en": "He stared at his stick, and the more he stared, the more nervous he got."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，國王吃點心的小房間，陽光從拱形窗戶照進來。",
+   "act": "三根木棍並排放在矮桌上（大臣、廚師、園丁各自放上來的），一頭對齊：兩根一樣長，第三根短了一截，短的那一段大約是一根手指的長度。畫面上看不出哪一根是誰的。國王彎腰指著短的那一根，眼睛瞪得好大。大臣、廚師、園丁站在後面；大臣用袖子擦額頭的汗，眼睛看著別的地方。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天亮了。三個人把木棍拿來，排在一起。",
+     "en": "Morning came. The three of them brought back their sticks and laid them side by side."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦？兩根一樣長，有一根短了一截！",
+     "en": "Huh? Two are the same length, but one is a little shorter!"
+    },
+    {
+     "who": "旁白",
+     "text": "昨天，三根都一樣長。",
+     "en": "Yesterday, all three were the same length."
+    },
+    {
+     "who": "旁白",
+     "text": "比爾巴說，拿湯匙的人，木棍會變長。",
+     "en": "And Birbal said the stick of the one who took the spoon would grow longer."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，為什麼有一根變短了呢？",
+     "en": "So can you guess why one stick got shorter?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個小房間，矮桌上放著三根木棍。",
+   "act": "國王用兩根手指學老鼠的牙齒，做出咬東西的樣子。比爾巴拿起短的那根木棍，把切過的那一頭轉向國王：切口平平的。比爾巴頭上一個回憶泡泡：夜裡亮著燈的房間，一個人的黑色影子拿著小刀，把木棍的一頭切掉一小截，切下來的那一小截掉在地上（影子還是看不出是誰）。",
+   "lines": [
+    {
+     "who": "國王",
+     "text": "是被老鼠咬短的嗎？",
+     "en": "Did a mouse nibble it?"
+    },
+    {
+     "who": "比爾巴",
+     "tag": "gentle",
+     "text": "不是。切口很平，是用刀子切的。",
+     "en": "No. The end is flat and smooth. It was cut with a knife."
+    },
+    {
+     "who": "比爾巴",
+     "text": "因為拿湯匙的人怕木棍變長，所以先切短一截。",
+     "en": "Because the one who took the spoon was afraid his stick would grow, he cut a piece off first."
+    },
+    {
+     "who": "比爾巴",
+     "text": "他想，變長以後，就跟別人一樣長。",
+     "en": "He thought that once it grew, it would be just as long as the others."
+    },
+    {
+     "who": "比爾巴",
+     "text": "可是木棍不會變長，所以只有他的變短了。",
+     "en": "But sticks don't grow. So his is the only one that got shorter."
+    }
+   ]
+  },
+  {
+   "scene": "同一個小房間。",
+   "act": "比爾巴把短的木棍輕輕放到大臣手上。大臣的臉紅得像番茄，一手把很大的紫色頭巾掀開一個角，另一手從頭巾裡拿出亮晶晶的金湯匙，孔雀羽毛歪到一邊；他低著頭，把湯匙遞給國王。廚師和園丁張大嘴巴，接著互相看一眼，鬆了一口氣。國王伸手接湯匙，沒有生氣，嘴角是往上的。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "短的那一根，是大臣的。",
+     "en": "The short stick was the minister's."
+    },
+    {
+     "who": "旁白",
+     "text": "大臣的臉紅了，從大頭巾裡拿出金湯匙。",
+     "en": "The minister turned red and pulled the golden spoon out of his big turban."
+    },
+    {
+     "who": "大臣",
+     "tag": "embarrassed",
+     "text": "我想先吃一口甜點，吃完順手放進頭巾。",
+     "en": "I only wanted one little taste of dessert. Then I tucked the spoon in my turban without thinking."
+    },
+    {
+     "who": "大臣",
+     "text": "後來我不敢說。國王，對不起。",
+     "en": "After that, I was too scared to tell you. I'm sorry, Your Majesty."
+    }
+   ]
+  },
+  {
+   "scene": "同一個小房間，陽光很亮。",
+   "act": "國王一手拿著金湯匙，一手拍著大臣的肩膀，仰頭大笑，鬍子一抖一抖。大臣拿著那根短木棍，歪著頭問比爾巴。比爾巴笑著搖搖頭，一手指著自己的頭。下一格：大臣把短木棍和另外兩根長木棍比一比，一手拍在自己額頭上，也笑了。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！下次想吃，說一聲，我們一起吃！",
+     "en": "Ha! Next time you want some, just say so, and we'll eat together!"
+    },
+    {
+     "who": "大臣",
+     "text": "比爾巴，木棍真的會變長嗎？",
+     "en": "Birbal, do the sticks really grow?"
+    },
+    {
+     "who": "比爾巴",
+     "tag": "gentle",
+     "text": "不會。那是我想出來的辦法。",
+     "en": "No, they don't. That was just my way of finding the spoon."
+    },
+    {
+     "who": "大臣",
+     "tag": "laughing",
+     "text": "哎呀，早知道我就不切了！",
+     "en": "Oh my! If only I'd known, I wouldn't have cut mine!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園涼亭，有柱子和紅色的布簾，旁邊是水池和棕櫚樹。",
+   "act": "涼亭的矮桌上一大盤白色的甜點和好幾支小木湯匙。國王、比爾巴、大臣、廚師、園丁五個人圍著矮桌坐在軟墊上，一人一小碗。大臣規規矩矩地舉起一隻手發問；國王拿著金湯匙哈哈大笑，點頭。那根短木棍插在大臣的頭巾上、孔雀羽毛旁邊，像一個好笑的裝飾。大家都在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "廚師端來一大盤甜點，大家一起吃。",
+     "en": "The cook brought out a big plate of dessert, and everyone ate together."
+    },
+    {
+     "who": "大臣",
+     "text": "國王，我可以吃一口嗎？",
+     "en": "Your Majesty, may I have a taste?"
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "可以！先問再吃，最好吃！",
+     "en": "Yes! Dessert tastes best when you ask first!"
+    },
+    {
+     "who": "旁白",
+     "text": "大臣笑了，大家也都笑了。",
+     "en": "The minister laughed, and so did everyone else."
+    }
+   ]
+  }
+ ]
+}

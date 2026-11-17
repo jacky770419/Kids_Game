@@ -1,0 +1,252 @@
+{
+ "id": "birbal-crows",
+ "title": "城裡有幾隻烏鴉",
+ "title_en": "How Many Crows?",
+ "size": "短",
+ "roles": {
+  "國王": "很久以前印度的阿克巴國王，慈祥的老國王聲音，愛出難題、愛笑，笑聲很大。",
+  "比爾巴": "國王身邊最聰明的人，說話不急不忙、帶著笑，像個溫和的智者。",
+  "大臣": "愛搶著回答的大臣，愛炫耀、說話快又得意，常常答錯，好笑不可怕，最後跟著大家一起笑。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "比爾巴": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大臣": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "隻",
+   "where": "書名『幾隻』，第2頁『幾隻』『一隻』，第3頁『一隻』『第一隻』，第4頁『一隻』，第5頁『九百九十九隻』，第6頁『幾隻』，第8頁『一隻』『第一隻』",
+   "read": "zhī"
+  },
+  {
+   "char": "為",
+   "where": "第4頁『因為』，第6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒辦法』『沒點』，第7頁『沒辦法』",
+   "read": "méi"
+  },
+  {
+   "char": "少",
+   "where": "第5頁『比較少』，第6頁『比較少』",
+   "read": "shǎo"
+  },
+  {
+   "char": "都",
+   "where": "第6頁『都不是』，第7頁『都對』，第8頁『都笑了』",
+   "read": "dōu"
+  },
+  {
+   "char": "難",
+   "where": "第7頁『難怪』",
+   "read": "nán"
+  },
+  {
+   "char": "答",
+   "where": "第2頁『回答』，第7頁『答案』",
+   "read": "dá"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的印度王宮：白色大理石宮殿，圓圓的洋蔥形屋頂，高高的陽台看得到整座城；城裡是一片土黃色的平屋頂和幾棵大樹，天空很藍。",
+   "act": "國王和比爾巴第一次出場，站在陽台上。國王（阿克巴國王）：六十多歲，圓臉、灰白色的大鬍子，戴金色頭巾、頭巾中間一顆紅寶石，穿白色長袍、外面罩紅色金邊長背心，一手搭在眉毛上，抬頭看天空。比爾巴：四十歲左右，瘦瘦的，黑色短鬍子，戴橘色頭巾，穿淡綠色長袍、白色褲子，眼睛笑得彎彎的，站在國王旁邊，也抬著頭。天上、屋頂上、樹上到處是黑色的烏鴉，有的在飛、有的停著，多到算不清楚。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，在很遠的印度，有一位阿克巴國王。",
+     "en": "Long ago, in faraway India, there lived a king named Akbar."
+    },
+    {
+     "who": "旁白",
+     "text": "他身邊最聰明的人，叫比爾巴。",
+     "en": "The cleverest man at his side was called Birbal."
+    },
+    {
+     "who": "旁白",
+     "text": "這一天，天上好多烏鴉。",
+     "en": "One day, the sky was full of crows."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的陽台，後面是城裡的屋頂和滿天的烏鴉。",
+   "act": "國王轉過身，笑咪咪地舉起一根手指出題目。大臣第一次出場：大臣：胖胖的，一撇往上翹的黑色小鬍子，戴很大的紫色頭巾、上面插一根孔雀羽毛，穿紫色金邊長袍，手上好多戒指；他從陽台另一頭衝過來，一隻手舉得好高，孔雀羽毛晃來晃去，一臉得意。比爾巴在旁邊摸著鬍子微笑。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "playful",
+     "text": "城裡一共有幾隻烏鴉呢？",
+     "en": "How many crows are there in our city?"
+    },
+    {
+     "who": "旁白",
+     "text": "愛搶著回答的大臣，馬上舉手。",
+     "en": "The minister, who always wanted to answer first, shot up his hand."
+    },
+    {
+     "who": "大臣",
+     "tag": "proud",
+     "text": "我來，我來！我一隻，一隻點！",
+     "en": "Me, me! I'll count them one by one!"
+    }
+   ]
+  },
+  {
+   "scene": "陽台的欄杆邊，對面的屋頂上停著一排烏鴉，天上還有好多隻在飛。",
+   "act": "大臣趴在欄杆上，伸出一根手指，一隻一隻指著對面屋頂上停著的烏鴉；他指到的前三隻烏鴉頭上各有一個小小的號碼牌泡泡（一、二、三），三隻都還好好地停著。天上另外有很多烏鴉在飛。這一頁不要畫出屋頂上的烏鴉飛走、飛來或換位子，那是下一頁的答案。",
+   "lines": [
+    {
+     "who": "大臣",
+     "text": "這是第一隻，這是第二隻，這是第三隻。",
+     "en": "This is the first crow. This is the second. This is the third."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，烏鴉會飛來飛去。",
+     "en": "But crows fly here and there."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，真的有辦法一隻，一隻點完嗎？",
+     "en": "What do you think? Can anyone really count every single one?"
+    }
+   ]
+  },
+  {
+   "scene": "陽台的欄杆邊，對面的屋頂。",
+   "act": "第三隻烏鴉飛走了，只剩一根羽毛飄下來；兩隻新的烏鴉落在第一隻和第二隻中間，四隻烏鴉擠在一起、長得一模一樣，號碼牌泡泡變成一堆問號。大臣的手指停在半空中，眼睛轉圈圈，紫色頭巾歪到一邊。國王遮著嘴偷笑，比爾巴微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "沒辦法。第三隻飛走了，又飛來兩隻。",
+     "en": "No. The third crow flew away, and two new ones flew in."
+    },
+    {
+     "who": "大臣",
+     "tag": "confused",
+     "text": "哎呀，哪一隻點過了？",
+     "en": "Oh my! Which ones did I count already?"
+    },
+    {
+     "who": "旁白",
+     "text": "因為點過的會飛走，沒點的會飛來，所以點不完。",
+     "en": "Because the counted crows fly off and new crows fly in, the counting never ends."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的陽台。",
+   "act": "比爾巴向國王彎腰行禮，一手指著天上的烏鴉，很有把握地微笑，一隻眼睛眨了一下。國王一手摸鬍子，一手指著比爾巴，眉毛挑得高高的，像在說「你確定？」。大臣在後面扶正頭巾，伸長脖子聽。",
+   "lines": [
+    {
+     "who": "比爾巴",
+     "tag": "playful",
+     "text": "國王，有九百九十九隻。",
+     "en": "Your Majesty, there are nine hundred and ninety-nine."
+    },
+    {
+     "who": "國王",
+     "tag": "playful",
+     "text": "要是我派人去點，不是九百九十九隻呢？",
+     "en": "And what if I send someone to count, and it isn't nine hundred and ninety-nine?"
+    },
+    {
+     "who": "旁白",
+     "text": "點出來比較多，或比較少，你猜，比爾巴會怎麼說？",
+     "en": "If there turn out to be more, or fewer, what do you think Birbal will say?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的陽台，遠處看得到另一座城的屋頂。",
+   "act": "大臣搶著舉手，學比爾巴彎腰道歉的樣子；國王伸出一根手指，做出「再來一次」的手勢。比爾巴笑著搖頭，兩手各指一個方向，最後一手指著天上飛來飛去的烏鴉。他頭上兩個想像泡泡：左邊泡泡，一群揹著小包袱的烏鴉從遠處另一座城飛過來作客；右邊泡泡，幾隻本地的烏鴉揮著翅膀飛出城，去找朋友。",
+   "lines": [
+    {
+     "who": "大臣",
+     "tag": "laughing",
+     "text": "他會說，對不起，我說錯了！",
+     "en": "He'll say, \"Sorry, I got it wrong!\""
+    },
+    {
+     "who": "國王",
+     "text": "或是說，請再點一次？",
+     "en": "Or maybe, \"Please count again\"?"
+    },
+    {
+     "who": "比爾巴",
+     "tag": "playful",
+     "text": "都不是。比較多，是別的城的烏鴉來作客。",
+     "en": "Neither. If there are more, crows from other cities have come to visit."
+    },
+    {
+     "who": "比爾巴",
+     "text": "比較少，是我們的烏鴉出門找朋友了。",
+     "en": "If there are fewer, some of our crows have gone off to see their friends."
+    },
+    {
+     "who": "比爾巴",
+     "text": "因為烏鴉會飛來飛去，所以有幾隻，一直在變。",
+     "en": "Because crows fly in and out, the number of crows keeps changing."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的陽台，天上的烏鴉飛進飛出。",
+   "act": "國王抱著肚子大笑，頭巾上的紅寶石閃閃發亮，一手指著比爾巴。比爾巴微笑著行禮。大臣一手拍自己的額頭，恍然大悟。天空中畫幾個箭頭：有的烏鴉飛進城，有的烏鴉飛出城。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！你怎麼說都對！",
+     "en": "Ha! You're right either way!"
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "難怪我點不完！",
+     "en": "No wonder I couldn't finish!"
+    },
+    {
+     "who": "國王",
+     "text": "沒辦法點的題目，你就給我好玩的答案！",
+     "en": "Nobody can count them all, so you gave me a fun answer!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的陽台，太陽快下山，天空橘紅色。",
+   "act": "一隻烏鴉停在大臣很大的紫色頭巾上、孔雀羽毛旁邊，歪著頭往下看。大臣眼睛往上看，一動也不敢動，伸出一根手指指著頭上，笑得好開心。國王和比爾巴笑成一團。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一隻烏鴉停在大臣的頭巾上。",
+     "en": "Just then, a crow landed on the minister's turban."
+    },
+    {
+     "who": "大臣",
+     "tag": "excited",
+     "text": "這是第一隻！牠是來作客的嗎？",
+     "en": "This is the first crow! Is it here for a visit?"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了。",
+     "en": "Everyone laughed."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "id": "lion-rabbit",
+ "title": "兔子和井裡的獅子",
+ "title_en": "The Lion and the Clever Rabbit",
+ "size": "中",
+ "roles": {
+  "獅子": "森林裡嗓門最大、愛兇人的獅子，聲音低沉沙啞；吼起來很大聲，其實不壞。看到井裡的獅子時又氣又有點怕，被水噴到以後愣住，最後不好意思、說話變小聲。",
+  "小兔子": "個子小、腦筋快的小兔子（用「她」），聲音又小又甜、說話輕快；跟獅子說話時不害怕、很認真，最後笑著鼓勵他，不嘲笑他。",
+  "大象": "好脾氣的大象，溫和的大叔聲音，說話慢慢的、不跟人吵架。"
+ },
+ "cast": {
+  "獅子": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小兔子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "大象": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "模",
+   "where": "第3、8頁『一模一樣』",
+   "read": "mú"
+  },
+  {
+   "char": "為",
+   "where": "第6、8頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "喝",
+   "where": "第1、11頁『喝水』，第2頁『喝一口』，第3頁『喝不到』",
+   "read": "hē"
+  },
+  {
+   "char": "什",
+   "where": "第4頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第7頁『會嚇跑』，第8頁『會跟著做』，第11頁『也會笑』",
+   "read": "huì"
+  },
+  {
+   "char": "爪",
+   "where": "第9頁『大爪子』（臺灣「爪子」讀 zhuǎ）",
+   "read": "zhuǎ"
+  },
+  {
+   "char": "噴",
+   "where": "第9頁『水花噴了他一臉』",
+   "read": "pēn"
+  },
+  {
+   "char": "個",
+   "where": "第3頁『個子小』",
+   "read": "gè"
+  },
+  {
+   "char": "還",
+   "where": "第7頁『還是也張大嘴巴』",
+   "read": "hái"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晴朗的白天，森林中間一片空地上的水池：圓形的水池，水很清，池邊有草和幾塊大石頭，四周是高大的樹。",
+   "act": "獅子是一隻金黃色的大公獅，脖子一圈深咖啡色的鬃毛，尾巴尖有一撮深咖啡色的毛，粗眉毛。他趴在水池邊最大的石頭上，一隻前腳橫在水邊擋著路，張大嘴巴大吼，皺著眉頭，樣子很兇。小兔子是奶茶色的小兔子，白色的肚子和白色的圓尾巴，長耳朵內側粉紅色，左耳上別著一朵藍色小花，不穿衣服（跟小熊系列的白色小兔不是同一隻）。大象是灰色的大象，大耳朵、短短的白色象牙、小眼睛笑笑的，比獅子高大很多。小兔子、大象、一隻小鹿、一隻猴子、一隻烏龜擠在遠遠的樹後面，伸著舌頭、很渴的樣子，又害怕地縮著身體，不敢靠近水池。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "森林裡有一個水池，大家都來喝水。",
+     "en": "In the forest there was a pond where everyone came to drink."
+    },
+    {
+     "who": "旁白",
+     "text": "可是獅子每天躺在水池邊。",
+     "en": "But every day, Lion lay down right beside it."
+    },
+    {
+     "who": "獅子",
+     "tag": "shouting",
+     "text": "吼！我是這裡最兇的，水都是我的！",
+     "en": "ROAR! I am the fiercest one here, and all the water is mine!"
+    },
+    {
+     "who": "旁白",
+     "text": "動物們又渴又怕。",
+     "en": "The animals were thirsty and scared."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林中間一片空地上的水池：圓形的水池，水很清，池邊有草和幾塊大石頭，四周是高大的樹。",
+   "act": "大象慢慢走到水池邊，低著頭、鼻子垂著，客氣地跟獅子說話。獅子從石頭上站起來，鬃毛都豎起來，對著大象張大嘴巴吼。下一刻大象嘆氣、搖搖頭，轉身慢慢走開（大象比獅子大很多，可是不跟他吵）。小兔子和其他動物躲在樹後面看，耳朵都垂下來。",
+   "lines": [
+    {
+     "who": "大象",
+     "tag": "gentle",
+     "text": "獅子，讓大家喝一口，好不好？",
+     "en": "Lion, could everyone have just one sip?"
+    },
+    {
+     "who": "獅子",
+     "tag": "shouting",
+     "text": "不行！我是這裡最兇的，水都是我的！",
+     "en": "No! I am the fiercest one here, and all the water is mine!"
+    },
+    {
+     "who": "旁白",
+     "text": "好脾氣的大象不想吵架，走開了。",
+     "en": "Gentle Elephant did not want a fight, so he walked away."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "小兔子一個人站在井邊那塊平平的大石頭上，兩隻前腳搭著井口的石頭矮牆，探頭往井裡看（身體在牆外面，站得很穩）。她伸長一隻前腳，離水面還有一大段，碰不到水。井水像鏡子，水面上清清楚楚照出一隻一模一樣的小兔子：一樣的奶茶色、左耳一樣別著藍色小花。小兔子眨一隻眼睛、兩隻長耳朵左右搖，水裡的小兔子也眨同一隻眼睛、一樣搖耳朵。小兔子驚訝地張大嘴巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔子好渴，跑到山坡上的老井。",
+     "en": "Little Rabbit was so thirsty. She hopped up the hill to an old well."
+    },
+    {
+     "who": "旁白",
+     "text": "井水不多，她個子小，喝不到。",
+     "en": "There was only a little water, and she was too small to reach it."
+    },
+    {
+     "who": "旁白",
+     "text": "她往下看，眨一下眼睛，水裡的小兔子也眨眼。",
+     "en": "She looked down and blinked, and the little rabbit in the water blinked too."
+    },
+    {
+     "who": "旁白",
+     "text": "她搖耳朵，水裡的也搖耳朵。",
+     "en": "She wiggled her ears, and the one in the water wiggled its ears."
+    },
+    {
+     "who": "小兔子",
+     "tag": "surprised",
+     "text": "跟我一模一樣！像照鏡子！",
+     "en": "It looks just like me! It's like looking in a mirror!"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林中間一片空地上的水池：圓形的水池，水很清，池邊有草和幾塊大石頭，四周是高大的樹。",
+   "act": "小兔子跑回水池邊，站在獅子面前（隔著幾步的距離），一隻前腳指向遠處的小山坡，抬頭看著獅子，不害怕。獅子從石頭上跳起來，鬃毛豎起來，瞪大眼睛，尾巴甩得很高，很生氣。樹後面的大象和小鹿、猴子、烏龜探出頭來看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔子有辦法了，跑去找獅子。",
+     "en": "Little Rabbit had an idea, and she ran to find Lion."
+    },
+    {
+     "who": "小兔子",
+     "text": "獅子，山坡上的井裡，可以看到一隻獅子！",
+     "en": "Lion, you can see a lion in the well up on the hill!"
+    },
+    {
+     "who": "小兔子",
+     "text": "跟你一樣大，看起來跟你一樣兇！",
+     "en": "He is as big as you, and he looks as fierce as you!"
+    },
+    {
+     "who": "獅子",
+     "tag": "angry",
+     "text": "什麼？最兇的是我！帶我去！",
+     "en": "What? I am the fiercest! Take me there!"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "獅子站在井邊，兩隻前腳搭在井口的石頭矮牆上，探頭往井裡看（身體在牆外面）。井水水面上照出一隻一模一樣的大獅子：一樣的金黃色、一樣的深咖啡色鬃毛、一樣皺著眉頭瞪大眼睛，正好跟獅子面對面互瞪。小兔子站在井邊的大石頭上；大象、小鹿、猴子、烏龜站在後面幾步遠的地方，伸長脖子看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "獅子跑到井邊，大家跟在後面。",
+     "en": "Lion ran to the well, and everyone followed behind."
+    },
+    {
+     "who": "旁白",
+     "text": "他往下看，井水裡有一隻大獅子，瞪著他。",
+     "en": "He looked down. In the water, a big lion was glaring up at him."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，井水裡的大獅子是誰呢？",
+     "en": "Who was that big lion in the water? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "從井口上方往下看的角度：畫面上半是獅子探出井口的頭，畫面下半是井水水面上照出的獅子的臉，兩張臉一模一樣、上下相對，看得出水裡的就是他自己的樣子。獅子伸出一隻前腳指著水裡的獅子，氣得鬃毛都豎起來；水裡的獅子也伸出同一隻前腳指回來。旁邊的小兔子用前腳遮著嘴，沒有笑出聲。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是獅子自己！",
+     "en": "It was Lion himself!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為井水像鏡子，誰往下看，就照出誰。",
+     "en": "Because the water in the well was like a mirror. It showed whoever looked down."
+    },
+    {
+     "who": "旁白",
+     "text": "就像小兔子看到自己。",
+     "en": "Just as Little Rabbit saw herself."
+    },
+    {
+     "who": "旁白",
+     "text": "可是獅子不知道。",
+     "en": "But Lion did not know that."
+    },
+    {
+     "who": "獅子",
+     "tag": "angry",
+     "text": "你是誰？這裡的水都是我的！",
+     "en": "Who are you? All the water here is mine!"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "獅子兩隻前腳搭在井口的石頭矮牆上，深深吸一口氣，把嘴巴張到最大，對著井裡大吼，鬃毛都飛起來。這一頁只畫井口上面的獅子，不要畫出水面（下一頁才揭曉水裡的樣子）。小兔子兩隻前腳按著自己的長耳朵；後面的大象用大耳朵蓋住眼睛，小鹿、猴子、烏龜嚇得抱在一起。角落一個小小的回想泡泡：小兔子眨眼，水裡的小兔子也眨眼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "剛才，小兔子眨眼，水裡的兔子也眨眼。",
+     "en": "A while ago, Little Rabbit blinked, and the rabbit in the water blinked too."
+    },
+    {
+     "who": "旁白",
+     "text": "現在，獅子張大嘴巴，對著井裡大吼。",
+     "en": "Now Lion opened his mouth wide and roared down the well."
+    },
+    {
+     "who": "獅子",
+     "tag": "shouting",
+     "text": "吼！",
+     "en": "ROAR!"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，井裡的獅子會嚇跑，還是也張大嘴巴？",
+     "en": "Would the lion in the well run away, or open his mouth wide too? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "從井口上方往下看的角度：獅子張大嘴巴、露出牙齒；井水水面上的獅子也張大嘴巴、露出牙齒，兩張臉一模一樣、一樣兇。獅子自己嚇了一跳，眼睛瞪圓、身體往後縮了一點，嘴巴還開著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "井裡的獅子沒有跑，也張大嘴巴，一樣兇！",
+     "en": "The lion in the well did not run away. He opened his mouth wide too, and looked just as fierce!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為水裡的影子，會跟著做一模一樣的動作。",
+     "en": "Because a reflection in the water copies everything you do."
+    },
+    {
+     "who": "獅子",
+     "tag": "scared",
+     "text": "他跟我一樣兇！",
+     "en": "He's as fierce as I am!"
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "左邊：獅子站在井外，一隻前腳伸進井口用力往水面一拍（只有前腳伸進去，身體和後腳都在石頭矮牆外面），水花噴上來，噴得他滿臉都是水，他閉著眼睛、鬃毛濕了一撮一撮；水面上都是波紋，照不出任何東西。右邊：水面平靜了，又照出獅子的臉，水裡的獅子臉上和鬃毛也一樣在滴水，表情一樣呆呆的。小兔子和後面的動物忍著笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "獅子伸出大爪子，往水裡一拍。",
+     "en": "Lion reached out his big paw and slapped the water."
+    },
+    {
+     "who": "旁白",
+     "text": "水花噴了他一臉。井裡的獅子碎掉，不見了。",
+     "en": "Water splashed all over his face. The lion in the well broke into pieces and was gone."
+    },
+    {
+     "who": "獅子",
+     "tag": "proud",
+     "text": "哼，他跑掉了！",
+     "en": "Hmph! He ran away!"
+    },
+    {
+     "who": "旁白",
+     "text": "水不動了，井裡的獅子又出現了，臉上也都是水。",
+     "en": "But when the water was still again, the lion in the well came back, with a wet face too."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林邊小山坡上的一口老井：圓形的井，井口圍著一圈灰色石頭砌的矮牆（大約到獅子的胸口，比小兔子高很多），石頭上長著青苔；井邊緊靠著一塊平平的大石頭可以踩。井不深，井底只有一點點水（不夠大家喝），水很清、很平，水面離井口大約獅子一隻前腳那麼長（獅子伸長前腳碰得到，小兔子碰不到），像一面鏡子。山坡下面看得到森林和遠處的水池。",
+   "act": "大象站到獅子旁邊，把頭探到井口上面，鼻子舉高搖一搖。井水水面上現在照出兩張臉：濕答答的獅子和搖著鼻子的大象，都跟井口上面的一模一樣。獅子一隻前腳摸著自己濕的臉頰，水裡的獅子也用同一隻前腳摸臉；獅子的眉毛垂下來，眼睛睜得圓圓的，又驚訝又不好意思，耳朵往後貼。小兔子站在大石頭上，安靜地看著他，沒有笑他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象走過來，也往井裡看。",
+     "en": "Elephant came over and looked into the well too."
+    },
+    {
+     "who": "大象",
+     "tag": "gentle",
+     "text": "你看，井裡是大象。我搖鼻子，他也搖鼻子。",
+     "en": "Look. Now there's an elephant in the well. I wave my trunk, and he waves his trunk."
+    },
+    {
+     "who": "旁白",
+     "text": "獅子摸一摸濕的臉，井裡的獅子也摸臉。",
+     "en": "Lion touched his wet face. The lion in the well touched his face too."
+    },
+    {
+     "who": "獅子",
+     "tag": "surprised",
+     "text": "那是我？原來我兇起來是這個樣子。",
+     "en": "That's me? So that is what I look like when I'm fierce."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，森林中間一片空地上的水池：圓形的水池，水很清，池邊有草和幾塊大石頭，四周是高大的樹。",
+   "act": "大家回到水池邊。小鹿、猴子、烏龜、大象一字排開在池邊低頭喝水，大象用鼻子吸水。獅子站在隊伍的最後面，鬃毛還有一點濕，低頭看著水池的水面：水裡照出他自己的臉。小兔子喝完水，站在獅子腳邊，抬頭對他笑，一隻前腳指著水面。獅子不好意思地笑了，露出一點牙齒、眼睛彎彎的；水面上的獅子也是一樣的笑臉。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "獅子不好意思地回到水池邊。",
+     "en": "Feeling a little shy, Lion went back to the pond."
+    },
+    {
+     "who": "獅子",
+     "tag": "gentle",
+     "text": "大家來喝水吧。我排最後一個。",
+     "en": "Come and drink, everyone. I'll go last."
+    },
+    {
+     "who": "小兔子",
+     "tag": "happy",
+     "text": "獅子，你笑一個，水裡的也會笑喔！",
+     "en": "Lion, give him a smile. The one in the water will smile too!"
+    },
+    {
+     "who": "旁白",
+     "text": "獅子對著水池笑了。水裡的獅子，也笑了。",
+     "en": "Lion smiled at the pond. And the lion in the water smiled back."
+    }
+   ]
+  }
+ ]
+}

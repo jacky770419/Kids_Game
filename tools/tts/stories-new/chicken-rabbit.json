@@ -1,0 +1,351 @@
+{
+ "id": "chicken-rabbit",
+ "title": "雞兔同籠",
+ "title_en": "Chickens and Rabbits in a Cage",
+ "size": "中",
+ "roles": {
+  "阿福": "就是《年獸來了》《小美的串珠項鍊》裡的阿福：六歲左右的小男孩，聲音清亮、很有精神，性子急、愛搶先猜；猜錯了自己也笑，學雞學兔子時很起勁。",
+  "小美": "就是《年獸來了》《小美的串珠項鍊》裡的小美：五歲左右的小女孩，聲音細細甜甜的，腦筋動得快；排石頭時很認真，講理由時一句一句慢慢說。",
+  "奶奶": "阿福和小美的奶奶，聲音慈祥溫和、笑咪咪的，說話慢慢的；出題時把「三隻」「八隻腳」念得很清楚，中間有停頓。"
+ },
+ "cast": {
+  "阿福": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小美": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "為",
+   "where": "第6、8頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "幾",
+   "where": "第1頁『幾隻雞』『幾隻兔子』，第5、10頁『幾隻腳』",
+   "read": "jǐ"
+  },
+  {
+   "char": "假",
+   "where": "第5頁『假裝』",
+   "read": "jiǎ"
+  },
+  {
+   "char": "籠",
+   "where": "書名『雞兔同籠』，第1頁『竹籠子』『同一個籠子』",
+   "read": "lóng"
+  },
+  {
+   "char": "掀",
+   "where": "第9頁『掀開布』",
+   "read": "xiān"
+  },
+  {
+   "char": "鑽",
+   "where": "第11頁『鑽到大花布下面』",
+   "read": "zuān"
+  },
+  {
+   "char": "還",
+   "where": "第7頁『還是兔子的』",
+   "read": "hái"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "奶奶就是《年獸來了》裡的奶奶：灰白頭髮梳成髮髻、不戴眼鏡，穿深綠色短袖盤扣薄衫、黑褲，笑咪咪的。阿福就是《年獸來了》裡的阿福：約六歲的男孩，黑色短髮，穿藍色短袖盤扣上衣、黑褲、黑布鞋。小美就是《年獸來了》裡的小美：約五歲的女孩，綁兩個包包頭、繫紅色髮圈，穿粉紅色短袖盤扣上衣、紅褲紅鞋。奶奶站在蓋著花布的籠子旁邊，一手輕輕放在布上，另一手伸出三根手指；阿福和小美蹲在籠子前面，歪著頭、睜大眼睛盯著花布。花布蓋得很嚴，看不到任何動物的頭或腳。院子角落的籬笆邊，另外有一隻黑色的母雞在地上啄米（第10頁會用到）。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "奶奶的院子裡有一個竹籠子，蓋著一塊大花布。",
+     "en": "In Grandma's yard sat a bamboo cage with a big flowered cloth over it."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "雞和兔子，關在同一個籠子裡。",
+     "en": "Chickens and rabbits, all in the same cage."
+    },
+    {
+     "who": "奶奶",
+     "text": "一共三隻。我剛才點過腳，一共八隻腳。",
+     "en": "Three animals in all. I just counted their feet. Eight feet in all."
+    },
+    {
+     "who": "奶奶",
+     "text": "猜一猜，幾隻雞？幾隻兔子？",
+     "en": "Can you guess? How many chickens? How many rabbits?"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "阿福蹲在籠子前面，一手捏住花布的一角想掀起來偷看；奶奶笑著用手掌把那一角的布按回地上（布沒有被掀開，還是什麼都看不到）。奶奶另一手先伸出兩根手指，再伸出四根手指。小美站在旁邊，學奶奶一手比二、一手比四，很認真地跟著念。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿福想偷看，奶奶笑著按住布。",
+     "en": "Afu tried to peek, but Grandma held the cloth down with a smile."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "不能看，用想的！一隻雞兩隻腳，一隻兔子四隻腳。",
+     "en": "No peeking! Use your head. A chicken has two feet. A rabbit has four feet."
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "雞兩隻腳，兔子四隻腳。",
+     "en": "Chicken, two feet. Rabbit, four feet."
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "左邊：阿福兩隻腳站得直直的，兩手縮在身體兩邊像翅膀，抬頭挺胸學雞，腳邊畫兩個小箭頭指著他的兩隻腳。右邊：阿福趴在地上，兩隻手掌和兩隻腳都碰著地（一共四個地方碰地，畫四個小箭頭），屁股翹高，正在學兔子往前跳。小美在旁邊笑得彎腰，伸出兩根手指；奶奶在後面掩著嘴笑。籠子還是蓋著花布。",
+   "lines": [
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "我站著，兩隻腳，我是雞！",
+     "en": "I'm standing up. Two feet. I'm a chicken!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿福趴下去，兩隻手也放到地上。",
+     "en": "Afu got down and put both hands on the ground too."
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "現在四隻腳，我是兔子！跳，跳！",
+     "en": "Now I have four feet. I'm a rabbit! Hop, hop!"
+    },
+    {
+     "who": "小美",
+     "tag": "laughing",
+     "text": "兔子比雞多兩隻腳！",
+     "en": "A rabbit has two more feet than a chicken!"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "阿福站著，高高舉起三根手指，很有把握。小美蹲在籠子前面的泥土地上，她撿來十二顆灰色小石頭（每顆像花生米那麼大），全部排在地上：三堆，每一堆四顆，一共十二顆（畫得出來剛好四顆、四顆、四顆），身邊沒有剩下的石頭。小美指著石頭對阿福搖頭；阿福低頭看，抓抓頭，不好意思地笑。奶奶站在籠子旁邊，伸出八根手指。籠子還是蓋著花布。",
+   "lines": [
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "我猜，三隻都是兔子！",
+     "en": "My guess is three rabbits!"
+    },
+    {
+     "who": "旁白",
+     "text": "小美撿來小石頭，一顆是一隻腳。一隻兔子排四顆。",
+     "en": "Mei picked up some pebbles. One pebble for one foot. Four pebbles for each rabbit."
+    },
+    {
+     "who": "旁白",
+     "text": "四顆，再四顆，再四顆，一共十二顆。",
+     "en": "Four, and four more, and four more. Twelve pebbles in all."
+    },
+    {
+     "who": "小美",
+     "text": "十二隻腳，太多了。奶奶說八隻。",
+     "en": "Twelve feet. That's too many. Grandma said eight."
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "小美把地上的十二顆小石頭全部撥回身邊，堆成一小堆，面前的地上是空的；她手裡捏著兩顆石頭，正要開始排，眼睛發亮。阿福蹲在她對面，兩手撐著膝蓋看。奶奶在後面笑咪咪地看，不說話。籠子還是蓋著花布。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "那先假裝三隻全部都是雞！",
+     "en": "Then first, let's pretend all three are chickens!"
+    },
+    {
+     "who": "旁白",
+     "text": "小美把石頭收回來，再排一次。",
+     "en": "Mei gathered up the pebbles to lay them out again."
+    },
+    {
+     "who": "旁白",
+     "text": "一隻雞兩隻腳。",
+     "en": "A chicken has two feet."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，如果三隻全部都是雞，一共幾隻腳？",
+     "en": "If all three were chickens, how many feet would there be? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "小美面前的地上排了三堆小石頭，每一堆兩顆，一共六顆（畫得出來剛好兩顆、兩顆、兩顆）；剩下的六顆石頭堆在她身邊。小美用手指一堆一堆點過去。阿福站起來，一手指著蓋著花布的籠子，另一手伸出手指比「八」，皺著眉頭。奶奶在後面點點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩顆，再兩顆，再兩顆。現在地上有六顆小石頭。",
+     "en": "Two, and two more, and two more. Now there were six pebbles on the ground."
+    },
+    {
+     "who": "小美",
+     "text": "因為一隻雞兩隻腳，三隻雞，所以是六隻腳。",
+     "en": "Because a chicken has two feet, and there are three chickens, that makes six feet."
+    },
+    {
+     "who": "阿福",
+     "tag": "worried",
+     "text": "可是奶奶說八隻腳！",
+     "en": "But Grandma said eight feet!"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "地上還是三堆小石頭，每一堆兩顆（兩顆、兩顆、兩顆）；阿福從小美身邊那一小堆裡拿了兩顆，放在三堆的右邊，這兩顆單獨放著、沒有併進任何一堆。地上一共八顆（小美身邊還剩四顆）。阿福蹲著，一手指著那兩顆多出來的石頭，另一手舉起四根手指，很有把握；小美搖搖頭，舉起三根手指，另一手指著蓋著花布的籠子，嘴裡念著「雞兩隻腳，兔子四隻腳」。籠子還是蓋著花布，奶奶在旁邊微笑。這一頁不要畫出兔子，也不要把那兩顆石頭併進哪一堆（下一頁才揭曉）。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿福再放兩顆。六顆加兩顆，是八顆。",
+     "en": "Afu put down two more. Six and two make eight."
+    },
+    {
+     "who": "旁白",
+     "text": "現在地上有三堆，每堆兩顆。旁邊多出兩顆。",
+     "en": "Now there were three piles of two on the ground, and two extra pebbles beside them."
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "那是第四隻雞！",
+     "en": "Then that's a fourth chicken!"
+    },
+    {
+     "who": "小美",
+     "text": "不行，奶奶說一共三隻。雞兩隻腳，兔子四隻腳。",
+     "en": "No. Grandma said three animals in all. Chicken, two feet. Rabbit, four feet."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，多出來的兩隻腳，是雞的，還是兔子的？",
+     "en": "Are the two extra feet a chicken's, or a rabbit's? Can you guess?"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），整個籠子蓋著一塊藍底白花的大花布，布一直垂到地上，完全看不到籠子裡面。",
+   "act": "小美用手把那兩顆多出來的石頭推進最右邊那一堆。現在地上三堆：左邊兩顆、中間兩顆、右邊四顆，一共八顆。小美指著四顆的那一堆，另一手在頭上比兔子耳朵，很興奮；阿福張大嘴巴，拍了一下手。奶奶在籠子旁邊笑著點頭，一手已經放在花布上，準備掀開（布還沒掀）。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "是兔子的！",
+     "en": "They're a rabbit's!"
+    },
+    {
+     "who": "旁白",
+     "text": "小美把多的兩顆，推進最後一堆。這一堆變成四顆。",
+     "en": "Mei pushed the two extra pebbles into the last pile. Now that pile had four."
+    },
+    {
+     "who": "小美",
+     "text": "因為雞才兩隻腳，所以四隻腳的這一隻，是兔子！",
+     "en": "Because a chicken only has two feet, the one with four feet must be a rabbit!"
+    },
+    {
+     "who": "旁白",
+     "text": "現在地上是兩顆，兩顆，四顆。兩隻雞，一隻兔子。",
+     "en": "Now the piles were two, two, and four. Two chickens and one rabbit."
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），花布已經掀開，放在籠子旁邊的地上，隔著竹條看得到籠子裡的動物。",
+   "act": "奶奶把花布整塊掀起來拿在手上。竹籠子裡有三隻動物，排成一排：左邊一隻咖啡色的母雞，中間一隻白色的母雞（兩隻雞都是紅色雞冠，各有兩隻黃色的腳，看得很清楚），右邊一隻白色的兔子（長耳朵內側粉紅色，四隻腳都看得到），兔子嘴裡嚼著一片菜葉，一臉沒事的樣子。籠子前面的地上，三堆小石頭剛好對著三隻動物：兩顆、兩顆、四顆。阿福和小美跳起來歡呼，阿福用手指一隻一隻點動物的腳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "奶奶掀開布。兩隻雞，一隻白兔子！",
+     "en": "Grandma lifted the cloth. Two chickens and one white rabbit!"
+    },
+    {
+     "who": "旁白",
+     "text": "雞兩隻腳，雞兩隻腳，兔子四隻腳。",
+     "en": "Chicken, two feet. Chicken, two feet. Rabbit, four feet."
+    },
+    {
+     "who": "旁白",
+     "text": "二加二是四，四加四是八。八隻腳，猜對了！",
+     "en": "Two and two make four. Four and four make eight. Eight feet. They got it right!"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），花布已經掀開，放在籠子旁邊的地上，隔著竹條看得到籠子裡的動物。",
+   "act": "奶奶把籠子掀起一邊，把院子角落那隻黑色的母雞輕輕抱進籠子裡（兩手托著雞的身體，雞很安穩）。現在籠子裡有四隻動物：咖啡色母雞、白色母雞、白色兔子、黑色母雞。阿福蹲在地上，在原來的三堆石頭（兩顆、兩顆、四顆）右邊再放一堆兩顆（從小美身邊剩下的四顆裡拿的），地上一共十顆；他舉起兩手，十根手指全部張開，笑得很得意。小美在旁邊拍手。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "我再放進一隻雞。現在一共幾隻腳？",
+     "en": "I'll put in one more chicken. How many feet are there now?"
+    },
+    {
+     "who": "旁白",
+     "text": "阿福在地上再加兩顆石頭。",
+     "en": "Afu added two more pebbles on the ground."
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "八加二是十，十隻腳！",
+     "en": "Eight and two make ten. Ten feet!"
+    }
+   ]
+  },
+  {
+   "scene": "很久以前的春天早上，山腳下小村子裡，奶奶家的院子：泥土地，後面是灰瓦白牆的矮房子和木門，旁邊有一道矮竹籬笆和一棵開白花的李樹。院子中間的地上放著一個倒扣的圓形竹編籠子（大約到小孩的腰那麼高），花布已經掀開，放在籠子旁邊的地上，隔著竹條看得到籠子裡的動物。",
+   "act": "阿福和小美把那塊藍底白花的大花布披在身上，兩個人蹲著躲在布下面，整塊布鼓成一個小山，只有布的下緣露出四隻腳：阿福的兩隻黑布鞋、小美的兩隻紅鞋。奶奶彎著腰站在花布前面，一手伸出兩根手指，笑得眼睛瞇起來。下一刻阿福從布裡探出頭，哈哈大笑。旁邊的竹籠子裡，三隻雞和一隻白兔子都歪著頭看這塊會動的花布。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿福和小美鑽到大花布下面。",
+     "en": "Afu and Mei crawled under the big flowered cloth."
+    },
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "奶奶，布下面有兩隻，四隻腳。猜一猜是誰？",
+     "en": "Grandma, there are two of us under here, with four feet. Guess who?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "laughing",
+     "text": "每隻兩隻腳，那是兩隻小雞！",
+     "en": "Two feet each. That must be two little chickens!"
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "不對，是阿福和小美！",
+     "en": "No! It's Afu and Mei!"
+    }
+   ]
+  }
+ ]
+}

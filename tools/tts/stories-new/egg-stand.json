@@ -1,0 +1,308 @@
+{
+ "id": "egg-stand",
+ "title": "立起來的蛋",
+ "title_en": "The Egg That Stood Up",
+ "size": "短",
+ "roles": {
+  "船長": "大鬍子船長（不取名），剛坐船從很遠的地方回來，聲音厚、穩、愛笑，不生氣、不炫耀，喜歡出題目讓大家動腦。",
+  "阿姨": "來吃飯的客人阿姨，嗓門大、有點神氣，口頭禪是「這有什麼難！」；被說中了自己哈哈笑，很好笑不討人厭。",
+  "年輕人": "另一位客人，二十歲左右的年輕人，活潑、愛搶著試，蛋滾走時大呼小叫。",
+  "小女孩": "阿姨的女兒，六歲左右，安靜、肯動手試，聲音清脆。"
+ },
+ "cast": {
+  "船長": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "阿姨": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "年輕人": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "長",
+   "where": "第1、2頁『船長』",
+   "read": "zhǎng"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰能』",
+   "read": "shéi"
+  },
+  {
+   "char": "倒",
+   "where": "第3頁『蛋倒了』，第4頁『就倒』，第6頁『會倒』",
+   "read": "dǎo"
+  },
+  {
+   "char": "熟",
+   "where": "第2頁『煮熟』",
+   "read": "shú"
+  },
+  {
+   "char": "難",
+   "where": "第1、2、7頁『什麼難』，第7頁『不難』，第7頁『難的』",
+   "read": "nán"
+  },
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』，第5頁『為什麼』",
+   "read": "wèi"
+  },
+  {
+   "char": "得",
+   "where": "第5頁『站得住』",
+   "read": "de"
+  },
+  {
+   "char": "殼",
+   "where": "第8頁『蛋殼』",
+   "read": "ké"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『會滾』，第6頁『會倒』，第6頁『不會』，第7頁『也會』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第1、2、5、7頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "把",
+   "where": "第8頁『把蛋』",
+   "read": "bǎ"
+  },
+  {
+   "char": "只",
+   "where": "第5頁『我只說』",
+   "read": "zhǐ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，海邊小鎮上一間石頭房子的餐廳：木頭天花板、石頭牆，牆上掛著一張舊海圖和一個木頭船舵；窗外看得到港口和一條收起白帆的大木船。長木桌鋪著白色桌布，桌上有：一個大盤子裝著六顆煮熟的白色的蛋（帶殼）、一籃麵包、一鍋湯、幾個玻璃杯、一個有蓋子的小陶罐（裡面是鹽）、蠟燭。",
+   "act": "船長第一次出場：五十歲左右，高大、肩膀寬，臉曬得紅紅的，一把棕色的大鬍子蓋住半張臉，戴深藍色船長帽，穿深藍色長外套（金色扣子）、白襯衫、黑靴子。他站在桌子的主位，張開雙手歡迎大家。阿姨第一次出場：四十歲左右，紅褐色捲髮高高盤在頭上，戴一對大珍珠耳環，穿紫色長裙，下巴抬得高高的，一手揮著扇子。年輕人第一次出場：二十歲左右，瘦瘦高高，金色短髮，穿白襯衫、綠色背心。小女孩第一次出場：阿姨的女兒，六歲左右，棕色頭髮綁兩條辮子，穿黃色洋裝，坐在阿姨旁邊，眼睛看著那盤蛋。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大鬍子船長坐船，去了很遠的地方。",
+     "en": "A captain with a big beard sailed his ship to a land far, far away."
+    },
+    {
+     "who": "旁白",
+     "text": "他回來請大家吃飯。一位阿姨說話了。",
+     "en": "When he came home, he invited everyone to dinner. One lady spoke up."
+    },
+    {
+     "who": "阿姨",
+     "text": "坐船而已，這有什麼難？",
+     "en": "It's only sailing a ship. What's so hard about that?"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌旁邊。",
+   "act": "船長笑著，用兩根手指拿起一顆白色的蛋，舉到大家面前：蛋比較尖的那一頭在上面，比較圓、比較大的那一頭在下面。他另一隻手先搖一搖（表示不能扶），再指一指桌上的玻璃杯（表示不能靠）。阿姨把扇子一收，下巴抬得更高。年輕人捲起袖子；小女孩兩手托著臉認真聽。盤子裡還有五顆蛋。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "船長笑了，拿起一顆煮熟的蛋。",
+     "en": "The Captain smiled and picked up a boiled egg."
+    },
+    {
+     "who": "船長",
+     "text": "誰能讓蛋自己站著，尖的那頭在上面？",
+     "en": "Who can make this egg stand all by itself, pointy end up?"
+    },
+    {
+     "who": "船長",
+     "text": "不能用手扶，旁邊也不能靠東西。",
+     "en": "No holding it with your hands, and nothing beside it to lean on."
+    },
+    {
+     "who": "阿姨",
+     "tag": "proud",
+     "text": "這有什麼難！",
+     "en": "What's so hard about that!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌的桌面。",
+   "act": "阿姨面前的一顆蛋橫躺在桌布上，她兩手還停在半空中，眼睛瞪得圓圓的。年輕人整個人趴在桌上，兩手在桌子邊緣抱住一顆快要滾下去的蛋（蛋沒有掉到地上），頭髮亂了，嘴巴張得很大。小女孩看著桌上的小鹽罐，歪著頭在想。船長一手拿著自己那顆蛋，另一手先搖一搖（不能扶）、再指一指玻璃杯（不能靠），然後兩手一攤，摸著大鬍子笑。盤子裡還有三顆蛋。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿姨手一放，蛋倒了。",
+     "en": "The lady let go of her egg, and it fell over."
+    },
+    {
+     "who": "旁白",
+     "text": "年輕人來試，蛋滾到桌子邊。",
+     "en": "A young man tried, and his egg rolled to the edge of the table."
+    },
+    {
+     "who": "年輕人",
+     "tag": "surprised",
+     "text": "哎呀，蛋要跑掉了！",
+     "en": "Oh no, my egg is running away!"
+    },
+    {
+     "who": "船長",
+     "text": "不能扶，不能靠。別的都可以試！",
+     "en": "No holding and no leaning. Anything else, you may try!"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，要怎麼讓蛋自己站住呢？",
+     "en": "Can you guess how to make the egg stand by itself?"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌旁邊。",
+   "act": "畫面分左右兩格。左格：年輕人用兩根手指扶著立起來的蛋，調皮地笑著看船長；船長笑著搖搖手。右格：阿姨把蛋斜斜靠在一個玻璃杯上，一手指著它；船長笑著指指那個杯子、再搖搖手。小女孩在旁邊打開小鹽罐的蓋子。",
+   "lines": [
+    {
+     "who": "年輕人",
+     "text": "我用手扶著，可以嗎？",
+     "en": "Can I just hold it up with my hand?",
+     "tag": "laughing"
+    },
+    {
+     "who": "船長",
+     "text": "不算喔，因為手一放就倒。",
+     "en": "That doesn't count, because it falls as soon as you let go."
+    },
+    {
+     "who": "阿姨",
+     "text": "那靠著杯子！",
+     "en": "Then lean it against a cup!"
+    },
+    {
+     "who": "船長",
+     "tag": "laughing",
+     "text": "不能靠著東西呀。",
+     "en": "No leaning on things, remember?"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌的桌面特寫。",
+   "act": "畫面分左右兩格。左格：桌布上有一小堆白色的鹽（大約一個瓶蓋那麼大），一顆蛋圓的那一頭坐在鹽堆上、尖的那一頭在上面，自己站著，旁邊沒有靠任何東西；小女孩兩手舉高、離開蛋，笑得很開心；船長在旁邊對她豎起大拇指，小鹽罐打開放在旁邊。右格：船長用三根手指捏著自己那顆蛋，尖的那一頭在上面，把圓的那一頭往桌面輕輕敲下去；接著蛋自己站在桌上，蛋底的殼有一小圈細細的裂痕、變平了（沒有蛋汁流出來，因為是煮熟的蛋）。阿姨和年輕人湊過來，嘴巴張得圓圓的。盤子裡還有兩顆蛋。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小女孩放一小堆鹽，放上蛋。",
+     "en": "The little girl made a little pile of salt and set an egg on top."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "站住了！鹽在下面，不在旁邊！",
+     "en": "It's standing! The salt is under it, not beside it!"
+    },
+    {
+     "who": "船長",
+     "tag": "happy",
+     "text": "算妳對！我只說旁邊不能靠。",
+     "en": "That counts! I only said nothing beside it."
+    },
+    {
+     "who": "旁白",
+     "text": "他拿蛋的底輕敲桌子，也站住了。",
+     "en": "Then he gave the bottom of his own egg a gentle tap on the table, and it stood up too."
+    },
+    {
+     "who": "旁白",
+     "text": "底敲平了，為什麼就站得住呢？",
+     "en": "The bottom was flat now. Why did that make the egg stand?"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌旁邊。",
+   "act": "船長的那顆蛋站在桌上，蛋底平平地貼著桌面。小女孩一手指著那顆蛋；她頭上兩個並排的想像泡泡：左邊泡泡是一顆紅色的球在桌上滾走（旁邊有滾動的線條），右邊泡泡是一塊黃色的方形積木穩穩放在桌上。阿姨和年輕人彎腰看蛋的底，船長笑著點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "因為圓的會滾、會倒。",
+     "en": "Because round things roll and tip over."
+    },
+    {
+     "who": "旁白",
+     "text": "平的貼著桌子，就不會滾。",
+     "en": "A flat part sits snug on the table, so it doesn't roll."
+    },
+    {
+     "who": "小女孩",
+     "text": "球是圓的，會滾。積木是平的，不會動！",
+     "en": "A ball is round, so it rolls. A block is flat, so it stays put!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌旁邊。",
+   "act": "阿姨拿起自己那顆蛋，尖的那一頭在上面，往桌上輕輕一敲，蛋站住了；她一手叉腰、下巴抬高，接著聽了船長的話，用扇子遮著嘴巴哈哈大笑。船長摸著大鬍子，笑得眼睛瞇起來。桌上現在站著三顆蛋：一顆在鹽堆上（小女孩的）、兩顆敲平了底（船長的、阿姨的）。年輕人拿著自己那顆蛋，和小女孩一起拍手。",
+   "lines": [
+    {
+     "who": "阿姨",
+     "tag": "proud",
+     "text": "這有什麼難，我也會！",
+     "en": "What's so hard about that? I can do it too!"
+    },
+    {
+     "who": "旁白",
+     "text": "她一敲，蛋站住了。",
+     "en": "She gave her egg a tap, and it stood up."
+    },
+    {
+     "who": "船長",
+     "tag": "laughing",
+     "text": "是呀，看過就不難了。難的是第一個想到。",
+     "en": "Yes. Once you've seen it, it's easy. The hard part is thinking of it first."
+    },
+    {
+     "who": "阿姨",
+     "tag": "laughing",
+     "text": "哈，也對！",
+     "en": "Ha, you're right!"
+    }
+   ]
+  },
+  {
+   "scene": "同一間餐廳，長木桌旁邊，蠟燭亮著，窗外天黑了，港口的大木船亮著一盞燈。",
+   "act": "大家坐在桌邊吃蛋：四個人每個人面前的小盤子上有蛋殼，手上拿著拿掉殼的白色的蛋，沾桌上小碟子裡的鹽；大盤子裡還有兩顆沒動過的蛋。小女孩咬了一口，臉頰鼓鼓的。阿姨第一個把整顆蛋吃完，舉起空空的手，得意又好笑；船長和年輕人笑到往後仰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家把蛋殼拿掉，沾一點鹽吃。",
+     "en": "Everyone peeled their eggs and ate them with a little salt."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "真好吃！",
+     "en": "Yummy!"
+    },
+    {
+     "who": "阿姨",
+     "tag": "laughing",
+     "text": "吃蛋，我第一個想到！",
+     "en": "Eating eggs? Now that I thought of first!"
+    }
+   ]
+  }
+ ]
+}

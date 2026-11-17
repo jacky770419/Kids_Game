@@ -1,0 +1,411 @@
+{
+ "id": "birbal-khichdi",
+ "title": "比爾巴煮粥",
+ "title_en": "Birbal Cooks the Rice",
+ "size": "中",
+ "roles": {
+  "國王": "很久以前印度的阿克巴國王，慈祥的老國王聲音，愛笑、笑聲很大；發現自己想錯了會大方認錯。",
+  "比爾巴": "國王身邊最聰明的人，說話不急不忙、帶著笑，像個溫和的智者；這一本他故意裝傻。",
+  "大臣": "愛搶著說話的大臣，愛炫耀、說話快又得意，常常說錯，好笑不可怕，最後不好意思地跟著大家一起笑。",
+  "叔叔": "在王宮守夜的叔叔，四十多歲，老實、說話慢、聲音厚厚的很溫暖，有什麼說什麼。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "比爾巴": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大臣": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "叔叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "粥",
+   "where": "書名『煮粥』，第6頁『吃粥』『粥好了』，第7頁『粥煮』，第8頁『粥怎麼』，第9頁『粥煮』，第11頁『吃粥』，第12頁『粥很快』『熱粥』『這碗粥』",
+   "read": "zhōu"
+  },
+  {
+   "char": "熟",
+   "where": "第6頁『快熟了』，第7頁『煮得熟』，第8頁『快熟了』『煮得熟』『煮不熟』，第9頁『煮不熟』，第12頁『就熟了』",
+   "read": "shú"
+  },
+  {
+   "char": "得",
+   "where": "第7頁『煮得熟』，第8頁『煮得熟』",
+   "read": "de"
+  },
+  {
+   "char": "更",
+   "where": "第10頁『更遠』",
+   "read": "gèng"
+  },
+  {
+   "char": "了",
+   "where": "第8頁『到不了』，第9頁『到不了』，第10頁『到不了』",
+   "read": "liǎo"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰能』",
+   "read": "shéi"
+  },
+  {
+   "char": "為",
+   "where": "第8頁『因為』，第10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『沒有給』，第6頁『好了沒有』，第10頁『沒有靠』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第5頁『給金幣』，第11頁『交給他』",
+   "read": "gěi"
+  },
+  {
+   "char": "盞",
+   "where": "第3頁『一盞』，第9頁『一盞』",
+   "read": "zhǎn"
+  },
+  {
+   "char": "都",
+   "where": "第5頁『全都聽到』，第12頁『都笑了』",
+   "read": "dōu"
+  },
+  {
+   "char": "著",
+   "where": "第3頁『穿著』『哼著』『亮著』，第4頁『看著』『想著』",
+   "read": "zhe"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的印度王宮，冬天的晚上：白色大理石宮殿，圓圓的洋蔥形屋頂，一排拱門；大廳裡點著好多油燈，窗外是深藍色的夜空和星星。",
+   "act": "國王和比爾巴第一次出場。國王（阿克巴國王）：六十多歲，圓臉、灰白色的大鬍子，戴金色頭巾、頭巾中間一顆紅寶石，穿白色長袍、外面罩紅色金邊長背心，肩上多披一條毛毯，坐在有軟墊的矮椅子上，兩手搓一搓。比爾巴：四十歲左右，瘦瘦的，黑色短鬍子，戴橘色頭巾，穿淡綠色長袍、白色褲子，眼睛笑得彎彎的，脖子上多圍一條白色圍巾，安靜地站在國王旁邊。兩個人說話時嘴邊都有一小團白色的霧氣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，在很遠的印度，有一位阿克巴國王。",
+     "en": "Long ago, in faraway India, there lived a king named Akbar."
+    },
+    {
+     "who": "旁白",
+     "text": "他身邊最聰明的人，叫比爾巴。",
+     "en": "The cleverest man at his side was called Birbal."
+    },
+    {
+     "who": "旁白",
+     "text": "冬天到了，晚上好冷，好冷。",
+     "en": "Winter had come, and the nights were very, very cold."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，紅色地毯，拱門外面看得到院子。",
+   "act": "國王一手舉著一個鼓鼓的紅色小布袋（裡面是金幣，袋口露出一點金色），一手指著拱門外的院子。守夜的叔叔第一次出場，站在門邊。守夜的叔叔：四十多歲，壯壯的，黑色大鬍子，戴藍色頭巾，穿棕色的厚長外套，圍一條黃色圍巾，手拿一根木杖，表情老實；他舉起一隻手。比爾巴在旁邊看。大廳角落有一個燒著炭火的火盆，火盆上面畫一個紅色的小叉叉（表示不能靠火）。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "playful",
+     "text": "誰能在院子裡，站一整個晚上？",
+     "en": "Who can stand out in the courtyard all night long?"
+    },
+    {
+     "who": "國王",
+     "text": "不能靠火取暖喔！站到天亮，我送他一袋金幣！",
+     "en": "No fire to keep you warm! Stay till morning, and I'll give you a bag of gold coins!"
+    },
+    {
+     "who": "旁白",
+     "text": "一位守夜的叔叔，舉起手來。",
+     "en": "A night watchman raised his hand."
+    },
+    {
+     "who": "叔叔",
+     "tag": "calm",
+     "text": "國王，我來試一試。",
+     "en": "Your Majesty, I'll give it a try."
+    }
+   ]
+  },
+  {
+   "scene": "夜晚的王宮院子，石板地、水池、棕櫚樹，滿天星星；院子裡沒有任何火。很遠很遠的地方有一座細細高高的石塔，塔頂一點小小的黃色燈光，小得像一顆星星。",
+   "act": "叔叔穿著厚外套、圍著圍巾，站在院子中間，一腳抬起來踏地，嘴巴張開在哼歌，旁邊幾個小音符；他抬頭看著遠處塔頂的小燈，表情平靜，不發抖、不難受。畫面要看得出燈離院子非常遠、非常小。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，叔叔穿著厚外套，站在院子裡。",
+     "en": "That night, the watchman stood in the courtyard in his thick coat."
+    },
+    {
+     "who": "旁白",
+     "text": "他哼著歌，踏一踏腳，抬頭看星星。",
+     "en": "He hummed a song, stamped his feet, and looked up at the stars."
+    },
+    {
+     "who": "旁白",
+     "text": "很遠，很遠的高塔上，亮著一盞小燈。",
+     "en": "Far, far away, at the top of a tall tower, one little lamp was shining."
+    },
+    {
+     "who": "叔叔",
+     "tag": "gentle",
+     "text": "小燈，小燈，你看起來好暖。",
+     "en": "Little lamp, little lamp, you look so warm."
+    }
+   ]
+  },
+  {
+   "scene": "早上的王宮院子，太陽剛出來，天空粉紅色；遠處的高塔還看得到。",
+   "act": "叔叔站在原來的地方，伸一個大懶腰，臉上帶著笑。國王披著毛毯從拱門走出來，驚訝地張開兩手。叔叔老實地用木杖指著遠處的高塔。比爾巴跟在國王後面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天亮了。叔叔真的站了一整個晚上。",
+     "en": "Morning came. The watchman really had stood there all night."
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "你是怎麼站到天亮的？",
+     "en": "How did you make it till morning?"
+    },
+    {
+     "who": "叔叔",
+     "text": "我一直看著高塔上的小燈，想著它很暖。",
+     "en": "I kept looking at the little lamp on the tower and thinking how warm it must be."
+    }
+   ]
+  },
+  {
+   "scene": "早上的王宮院子。",
+   "act": "大臣第一次出場，從國王背後擠到前面。大臣：胖胖的，一撇往上翹的黑色小鬍子，戴很大的紫色頭巾、上面插一根孔雀羽毛，穿紫色金邊長袍，手上好多戒指；他一手叉腰，一手指著遠處的高塔，下巴抬得高高的。國王摸著鬍子想事情，把紅色小布袋收回袖子裡。叔叔抓抓頭，沒有生氣，轉身慢慢走開。比爾巴站在旁邊，一手摸著鬍子，看看高塔、再看看叔叔，眼睛亮了一下。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "愛搶著說話的大臣，馬上跳出來。",
+     "en": "The minister, who always wanted to speak first, jumped right in."
+    },
+    {
+     "who": "大臣",
+     "tag": "proud",
+     "text": "那你就是靠燈取暖了，不算！",
+     "en": "Then the lamp kept you warm. That doesn't count!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王想了想，沒有給金幣。",
+     "en": "The king thought it over, and he did not give him the gold."
+    },
+    {
+     "who": "旁白",
+     "text": "比爾巴在旁邊，全都聽到了。",
+     "en": "Birbal was standing nearby, and he heard it all."
+    }
+   ]
+  },
+  {
+   "scene": "第二天，比爾巴家的院子：土黃色的小房子，院子裡一棵很高的大樹；樹下鋪著地毯、擺著矮桌和軟墊。這一頁只畫矮桌這一邊，不要畫出鍋子和火。",
+   "act": "國王坐在軟墊上，面前一個空碗和一支湯匙，一手摸著肚子，肚子旁邊畫幾條咕嚕叫的小波浪線。比爾巴站在旁邊，笑著伸出手掌，做「再等一下」的手勢。大臣坐在國王旁邊，也拿著空碗，伸長脖子東看西看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，比爾巴請國王和大臣來吃粥。",
+     "en": "The next day, Birbal invited the king and the minister to come and eat rice porridge."
+    },
+    {
+     "who": "旁白",
+     "text": "國王等了又等，肚子咕嚕叫。",
+     "en": "The king waited and waited. His tummy rumbled."
+    },
+    {
+     "who": "國王",
+     "text": "比爾巴，粥好了沒有？",
+     "en": "Birbal, is the porridge ready yet?"
+    },
+    {
+     "who": "比爾巴",
+     "tag": "calm",
+     "text": "再等一下，就快熟了。",
+     "en": "Just a little longer. It's almost cooked."
+    }
+   ]
+  },
+  {
+   "scene": "比爾巴家院子的大樹下。",
+   "act": "國王站在大樹下，仰著頭、張著嘴往上看。一個黑色的鍋子用長繩子吊在很高的樹枝上，比屋頂還高。樹下的地上有一小堆柴火，燒著小小的火，火苗只到國王的膝蓋那麼高，離鍋子好遠。比爾巴站在火堆旁邊顧著火，一臉認真。大臣跟在國王後面，也仰著頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王等了又等，自己走去看。",
+     "en": "The king waited and waited. Then he went to see for himself."
+    },
+    {
+     "who": "旁白",
+     "text": "鍋子吊在很高的樹枝上，火卻生在地上。",
+     "en": "The pot was hanging from a very high branch, but the fire was down on the ground."
+    },
+    {
+     "who": "國王",
+     "text": "鍋子那麼高，火在地上那麼遠！",
+     "en": "The pot is so high, and the fire is so far below!",
+     "tag": "surprised"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，粥煮得熟嗎？",
+     "en": "What do you think? Will the porridge ever cook?"
+    }
+   ]
+  },
+  {
+   "scene": "比爾巴家院子的大樹下。",
+   "act": "小插圖：鍋子的剖面，裡面的水是冷的、沒有冒泡，米一粒一粒沉在鍋底；地上的火冒出的熱氣（幾條波浪線）往上飄到一半就散掉，碰不到鍋子。國王指著高高的鍋子哈哈大笑。比爾巴一本正經地蹲在火堆旁邊加一根柴，裝作沒事的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "煮不熟。因為火離鍋子太遠，所以熱到不了鍋子。",
+     "en": "No, it won't. Because the fire was too far from the pot, its heat couldn't reach it."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！火這麼遠，粥怎麼煮得熟！",
+     "en": "Ha! With the fire so far away, how can the porridge ever cook!"
+    },
+    {
+     "who": "比爾巴",
+     "tag": "playful",
+     "text": "再等一下，就快熟了。",
+     "en": "Just a little longer. It's almost cooked."
+    }
+   ]
+  },
+  {
+   "scene": "比爾巴家院子的大樹下，遠遠的天邊看得到那座高塔。",
+   "act": "國王一手指著地上的火、一手指著高高的鍋子，話說到一半停住，嘴巴還張著，眼睛慢慢轉向遠處的高塔。他頭上一個回憶泡泡：夜裡的院子，叔叔站著，很遠很遠的高塔上一點小小的燈光。比爾巴低頭顧火，嘴角偷偷往上。大臣抓著頭。",
+   "lines": [
+    {
+     "who": "國王",
+     "text": "太遠了，熱到不了的！",
+     "en": "It's too far! The heat can't get there!"
+    },
+    {
+     "who": "旁白",
+     "text": "說到這裡，國王想起那位叔叔和小燈。",
+     "en": "As he said this, the king remembered the watchman and the little lamp."
+    },
+    {
+     "who": "旁白",
+     "text": "火離鍋子這麼遠，粥煮不熟。",
+     "en": "The fire was this far from the pot, and the porridge could not cook."
+    },
+    {
+     "who": "旁白",
+     "text": "那麼，很遠的高塔上一盞小燈，能讓叔叔變暖嗎？",
+     "en": "So could one little lamp on a faraway tower keep the watchman warm?"
+    }
+   ]
+  },
+  {
+   "scene": "比爾巴家院子的大樹下。",
+   "act": "對照小圖並排兩格：左格，地上的火和高高的鍋子，中間的熱氣到不了；右格，很遠的高塔上一盞小燈和院子裡的叔叔，中間隔得更遠，小燈的熱氣一出來就散掉。國王一手拍在自己額頭上，眼睛睜得好大。大臣的臉紅了，兩手手指碰在一起，孔雀羽毛垂下來。比爾巴站起來，笑得眼睛彎彎的，什麼都沒說。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "不能！小燈離叔叔更遠，又那麼小，熱到不了他。",
+     "en": "No! The lamp was even farther from him, and so small. Its heat could never reach him."
+    },
+    {
+     "who": "國王",
+     "text": "所以他沒有靠燈取暖，是靠自己站到天亮的！",
+     "en": "So the lamp didn't keep him warm. He made it through the night all by himself!"
+    },
+    {
+     "who": "國王",
+     "text": "哎呀，是我想錯了。",
+     "en": "Oh dear. I got it wrong."
+    },
+    {
+     "who": "大臣",
+     "tag": "embarrassed",
+     "text": "我也說錯了，真不好意思。",
+     "en": "I got it wrong too. I'm so sorry."
+    }
+   ]
+  },
+  {
+   "scene": "比爾巴家的院子，大樹旁邊。",
+   "act": "國王兩手把鼓鼓的紅色金幣袋交到叔叔手上，微微低頭道歉。叔叔兩手捧著袋子，笑得鬍子都翹起來。大臣在旁邊跟著彎腰。比爾巴站在後面，笑著指向大樹上吊得高高的鍋子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王請叔叔回來，把一袋金幣交給他。",
+     "en": "The king called the watchman back and handed him a bag of gold coins."
+    },
+    {
+     "who": "國王",
+     "tag": "gentle",
+     "text": "對不起，這袋金幣是你的。",
+     "en": "I'm sorry. This gold is yours."
+    },
+    {
+     "who": "叔叔",
+     "tag": "happy",
+     "text": "謝謝國王！",
+     "en": "Thank you, Your Majesty!"
+    },
+    {
+     "who": "比爾巴",
+     "text": "我把鍋子放下來，大家一起吃粥吧！",
+     "en": "I'll bring the pot down. Let's all have some porridge!",
+     "tag": "happy"
+    }
+   ]
+  },
+  {
+   "scene": "比爾巴家院子的大樹下，太陽快下山，天空橘紅色。",
+   "act": "鍋子從樹上拿下來了，放在地上的火堆上面（用三塊石頭架著），鍋裡的粥冒泡、冒著白色的熱氣；比爾巴拿長湯匙在攪，火由他顧著。國王、大臣、叔叔圍著矮桌坐在軟墊上，一人捧一碗熱粥；叔叔把碗貼在臉頰旁邊，笑得好開心，金幣袋放在他腿上。大臣的小鬍子上沾了一粒米。大家都在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "比爾巴把鍋子放到火上面。",
+     "en": "Birbal set the pot right over the fire."
+    },
+    {
+     "who": "旁白",
+     "text": "火很近，粥很快就熟了。",
+     "en": "With the fire so close, the porridge was soon cooked."
+    },
+    {
+     "who": "旁白",
+     "text": "大家一起吃熱粥。",
+     "en": "Everyone ate hot porridge together."
+    },
+    {
+     "who": "叔叔",
+     "tag": "laughing",
+     "text": "這碗粥，比小燈暖多了！",
+     "en": "This porridge is much warmer than that little lamp!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了。",
+     "en": "And everyone laughed."
+    }
+   ]
+  }
+ ]
+}

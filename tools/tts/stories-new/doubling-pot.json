@@ -1,0 +1,430 @@
+{
+ "id": "doubling-pot",
+ "title": "變兩倍的大鍋子",
+ "title_en": "The Doubling Pot",
+ "size": "中",
+ "roles": {
+  "老爺爺": "種田的老爺爺，憨厚、愛笑、說話慢，鄉下口氣；被兩個老婆婆一起使喚時苦笑，想到辦法時很得意。鍋子變出來的第二個老爺爺也用這個聲音。",
+  "老婆婆": "老爺爺的太太，急性子、說話快、愛催人，口頭禪是「快，快！」；猜錯了自己哈哈笑。鍋子變出來的第二個老婆婆也用這個聲音（兩個一模一樣）。",
+  "阿伯": "隔壁的鄰居阿伯，年紀大的男聲，熱心、好奇，愛幫忙想辦法。"
+ },
+ "cast": {
+  "老爺爺": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "老婆婆": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "阿伯": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "模",
+   "where": "第2、7頁『一模一樣』",
+   "read": "mú"
+  },
+  {
+   "char": "倍",
+   "where": "第4頁『兩倍』",
+   "read": "bèi"
+  },
+  {
+   "char": "為",
+   "where": "第4、7、9頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "還",
+   "where": "第2頁『還有』",
+   "read": "hái"
+  },
+  {
+   "char": "只",
+   "where": "第8頁『只有』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "幾",
+   "where": "第3、4頁『幾個』，第5頁『幾次』",
+   "read": "jǐ"
+  },
+  {
+   "char": "分",
+   "where": "第5頁『分給』",
+   "read": "fēn"
+  },
+  {
+   "char": "當",
+   "where": "第10頁『當好鄰居』",
+   "read": "dāng"
+  },
+  {
+   "char": "掃",
+   "where": "第8頁『掃地』",
+   "read": "sǎo"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『會變』，第6頁『會怎麼樣』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第1、7頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第12頁『沒米』",
+   "read": "méi"
+  },
+  {
+   "char": "行",
+   "where": "第9頁『不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "把",
+   "where": "第9頁『把一個』，第11頁『把鍋子』",
+   "read": "bǎ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，鄉下的一塊菜田，遠遠的有青色的山；田邊一間土牆、茅草屋頂的小房子，房子前面是一塊泥土地的院子，院子邊有一道竹籬笆。",
+   "act": "老爺爺第一次出場：七十歲左右，瘦瘦的、皮膚曬得黑，白色短鬍子，戴斗笠，穿淺褐色短上衣、深藍色褲子（褲管捲到膝蓋）、草鞋，總是笑笑的。他把鋤頭放在一邊，兩手拉著大銅鍋的把手，把鍋子從田裡拖到院子中間。大銅鍋：金褐色、帶一點綠色銅鏽，又大又淺，像一個圓形洗澡盆（寬度大約一個大人張開兩隻手臂，高度只到大人的小腿），鍋邊又寬又平、可以坐人，兩邊各有一個圓環把手；鍋子平放在地上，裡面沒有水，下面沒有火。老婆婆第一次出場：矮矮圓圓，白頭髮在腦後梳成一個圓髻、插一根木簪，穿紫紅色上衣、深灰色褲子、藍色圍裙、黑布鞋。她從屋子門口小跑步出來，兩手叉腰，歪著頭看鍋子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老爺爺在田裡挖到一個大銅鍋。",
+     "en": "An old man was digging in his field when he found a big copper pot."
+    },
+    {
+     "who": "旁白",
+     "text": "鍋子又大又淺，像洗澡盆。",
+     "en": "The pot was wide and shallow, like a bathtub."
+    },
+    {
+     "who": "旁白",
+     "text": "他拖回家，老婆婆跑出來看。",
+     "en": "He dragged it home, and his wife ran out to look."
+    },
+    {
+     "who": "老婆婆",
+     "text": "快說，舊鍋子能做什麼？",
+     "en": "Quick, tell me. What good is this old pot?"
+    }
+   ]
+  },
+  {
+   "scene": "小房子前面的院子，大銅鍋平放在院子中間的地上。",
+   "act": "老爺爺站在鍋子旁邊，右手拿著一個白色的饅頭（剛從鍋子裡撿起來的），左手指著鍋子裡面；鍋底還躺著另一個一模一樣的白饅頭。他嘴巴張得圓圓的，斗笠歪了。老婆婆湊過來，眼睛睜得很大。一共兩個饅頭：老爺爺手上一個、鍋子裡一個。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚！老爺爺的饅頭掉進鍋子裡。",
+     "en": "Plop! The old man's steamed bun fell into the pot."
+    },
+    {
+     "who": "旁白",
+     "text": "他撿起來，鍋子裡還有一個！",
+     "en": "He picked it up, but there was still a bun in the pot!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "surprised",
+     "text": "咦？一個變兩個，一模一樣！",
+     "en": "Huh? One bun turned into two. They're exactly alike!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大銅鍋旁邊。",
+   "act": "老婆婆急得原地小跳，一手拉著老爺爺的袖子，另一手伸出三根手指。老爺爺彎著腰，兩手各拿一個饅頭，正把兩個饅頭一起輕輕放到鍋底（饅頭還在他手上，剛碰到鍋底）。這一頁鍋子裡只看得到這兩個饅頭，不要畫出結果。",
+   "lines": [
+    {
+     "who": "老婆婆",
+     "tag": "excited",
+     "text": "快，快，兩個都放進去！我猜會變三個！",
+     "en": "Quick, quick! Put them both in! I bet we'll get three!"
+    },
+    {
+     "who": "旁白",
+     "text": "鍋子會讓每個饅頭，都多出一個一樣的。",
+     "en": "The pot gives every bun one more just like it."
+    },
+    {
+     "who": "旁白",
+     "text": "這次放兩個，你猜，會變幾個呢？",
+     "en": "This time two went in. Can you guess how many came out?"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大銅鍋旁邊。",
+   "act": "鍋底整齊地排著四個一模一樣的白饅頭：左邊兩個、右邊兩個。老爺爺蹲在鍋邊，伸出四根手指，笑得很開心。老婆婆一手拍著自己的額頭，仰頭哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是四個！",
+     "en": "Four!"
+    },
+    {
+     "who": "老爺爺",
+     "text": "因為兩個饅頭，各多出一個，就是四個。",
+     "en": "Because each of the two buns got one more. That makes four."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "放進去幾個，就多出幾個！",
+     "en": "However many go in, that many more come out!"
+    },
+    {
+     "who": "旁白",
+     "text": "這叫變兩倍。",
+     "en": "That's called doubling."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "laughing",
+     "text": "哈，我猜錯了！",
+     "en": "Ha, I guessed wrong!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡。大銅鍋旁邊鋪著一張大竹蓆，竹蓆上的白饅頭堆成一座小山；竹籬笆的門開著。",
+   "act": "畫面角落一個小圓框：鍋底排著八個饅頭，四個一排、一共兩排。老婆婆抱著一大籃饅頭，快步走到籬笆門口。阿伯第一次出場：住在隔壁，六十多歲，高高壯壯，灰色短頭髮、沒有鬍子，穿綠色短上衣、黑色褲子，脖子上掛一條白毛巾。他站在籬笆門口，兩手接過那一大籃饅頭，笑得嘴巴很大。老爺爺坐在饅頭山旁邊擦汗、傻笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "四個放進去，多出四個，變成八個。",
+     "en": "Four went in, and four more came out. That made eight."
+    },
+    {
+     "who": "旁白",
+     "text": "再放幾次，饅頭變成一大堆！",
+     "en": "A few more times, and there was a great big pile of buns!"
+    },
+    {
+     "who": "旁白",
+     "text": "吃不完，老婆婆分給隔壁的阿伯。",
+     "en": "It was far too many to eat, so the old woman shared them with their neighbor."
+    },
+    {
+     "who": "阿伯",
+     "tag": "happy",
+     "text": "哇，好多饅頭！謝謝！",
+     "en": "Wow, so many buns! Thank you!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大銅鍋旁邊，鍋子是空的。",
+   "act": "老婆婆側身坐在又寬又平的鍋邊上（鍋邊只到小腿高，像坐矮凳子），扭著身體、伸長脖子往鍋子裡面看；下一刻她身體往後一歪，兩手往上揮，兩隻腳翹起來，圍裙飄起來，屁股往又大又淺的鍋子裡坐下去（是好笑的一屁股坐下去，不是頭下腳上，鍋子裡沒有水、下面沒有火）。老爺爺在後面伸手要拉，來不及。這一頁不要畫出鍋子裡的結果。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老婆婆想看饅頭從哪裡跑出來。",
+     "en": "The old woman wanted to see where the extra buns came from."
+    },
+    {
+     "who": "旁白",
+     "text": "她坐在鍋子邊上看，身體一歪。",
+     "en": "She sat on the edge of the pot to peek inside, and over she tipped."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "surprised",
+     "text": "哎喲！",
+     "en": "Whoops!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！她一屁股坐進鍋子裡。你猜，會怎麼樣呢？",
+     "en": "Plop! She landed on her bottom, right in the pot. Can you guess what happened?"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大銅鍋旁邊。",
+   "act": "兩個一模一樣的老婆婆（一樣的圓髻和木簪、紫紅色上衣、深灰色褲子、藍色圍裙）一左一右，各自扶著鍋邊從鍋子裡跨出來，互相瞪大眼睛看著對方，動作像照鏡子。老爺爺驚訝得往後坐在地上，斗笠掉了，一手指著左邊的老婆婆、一手指著右邊的老婆婆。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鍋子裡爬出兩個老婆婆，一模一樣！",
+     "en": "Two old women climbed out of the pot, exactly alike!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為鍋子不管放進什麼，都多出一個一樣的。",
+     "en": "Because whatever goes into the pot, one more just like it comes out."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "surprised",
+     "text": "哎呀！放進老婆婆，就多出一個老婆婆！",
+     "en": "Oh my! My wife went in, so one more wife came out!"
+    }
+   ]
+  },
+  {
+   "scene": "小房子的門口，門開著，看得到裡面的灶和一把掃把。",
+   "act": "兩個一模一樣的老婆婆一左一右站在門口，都一手叉腰：左邊的老婆婆把掃把塞給老爺爺，右邊的老婆婆把一支大飯勺塞給老爺爺。老爺爺（只有一個）站在中間，一手掃把、一手飯勺，肩膀垮下來，苦笑。",
+   "lines": [
+    {
+     "who": "老婆婆",
+     "tag": "angry",
+     "text": "這是我家！老爺爺，快去掃地！",
+     "en": "This is my house! Old man, quick, sweep the floor!"
+    },
+    {
+     "who": "旁白",
+     "text": "另一個也說。",
+     "en": "Then the other old woman spoke up."
+    },
+    {
+     "who": "老婆婆",
+     "tag": "angry",
+     "text": "這是我家！老爺爺，快去煮飯！",
+     "en": "This is my house! Old man, quick, cook the rice!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "worried",
+     "text": "哎呀，我只有一個人呀！",
+     "en": "Oh dear, there's only one of me!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個老婆婆都說這是我家。你猜，怎麼辦呢？",
+     "en": "Both old women said the house was theirs. What do you think they should do?"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大銅鍋旁邊。",
+   "act": "阿伯（綠色短上衣、脖子掛白毛巾）站在鍋子旁邊，一手指著鍋子，認真地出主意。老爺爺拿著掃把和飯勺，急得猛搖頭，伸出三根手指；他頭上一個想像泡泡：三個一模一樣的老婆婆排成一排。兩個老婆婆並排站著，同時雙手抱胸、同時把頭撇向一邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿伯也來想辦法。",
+     "en": "The neighbor came over to help them think."
+    },
+    {
+     "who": "阿伯",
+     "text": "把一個老婆婆放回鍋子裡？",
+     "en": "Put one of them back in the pot?"
+    },
+    {
+     "who": "老爺爺",
+     "text": "不行！因為放進去一個，就多出一個，變三個！",
+     "en": "No, no! One goes in, and one more comes out. Then we'd have three!"
+    },
+    {
+     "who": "阿伯",
+     "text": "那輪流住呢？",
+     "en": "Then how about taking turns living here?"
+    },
+    {
+     "who": "老婆婆",
+     "tag": "angry",
+     "text": "不要！我要每天住我家！",
+     "en": "No! I want to live in my house every day!"
+    }
+   ]
+  },
+  {
+   "scene": "畫面分左右兩格。左格：院子裡的大銅鍋。右格：原來的小房子和隔壁一間剛蓋好的新房子，兩間長得一模一樣（土牆、茅草屋頂），中間隔著竹籬笆，籬笆上開了一個小門。",
+   "act": "左格：兩個一模一樣的老爺爺（一樣的斗笠、白色短鬍子、淺褐色短上衣、捲褲管的深藍色褲子）一左一右從鍋子裡跨出來，都笑得很得意。右格：原來的房子門口站著一個老爺爺和一個老婆婆，新房子門口也站著一個老爺爺和一個老婆婆，一共四個人、兩對，隔著籬笆互相揮手；阿伯扛著兩塊木板站在新房子旁邊擦汗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "老爺爺想到了，自己坐進鍋子裡！",
+     "en": "Then the old man had an idea. He sat down in the pot himself!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚！爬出兩個老爺爺。",
+     "en": "Plop! Two old men climbed out."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "happy",
+     "text": "兩個老爺爺，兩個老婆婆，所以剛好兩個家！",
+     "en": "Two old men and two old women. So now we make two families!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家在隔壁蓋了新房子，當好鄰居。",
+     "en": "Everyone built a new house right next door, and the two families became good neighbors."
+    }
+   ]
+  },
+  {
+   "scene": "兩間房子中間的院子，竹籬笆的小門開著。屋簷下堆著好幾籃吃不完的饅頭。",
+   "act": "兩個一模一樣的老婆婆並排站著，同時一手叉腰、一手指著那幾籃饅頭，嘴巴張得一樣大。兩個一模一樣的老爺爺一起把一個大木頭蓋子蓋在大銅鍋上，其中一個用小指頭挖耳朵、苦笑，另一個也苦笑。蓋好的鍋子旁邊放著一條粗繩子，準備綁起來收進柴房。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，東西太多也麻煩。",
+     "en": "But having too much of everything was a bother too."
+    },
+    {
+     "who": "老婆婆",
+     "text": "饅頭都放硬了！",
+     "en": "All these buns have gone hard!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "sad",
+     "text": "兩個老婆婆一起念，耳朵好忙呀。",
+     "en": "Two wives fussing at once. My poor ears are so busy!"
+    },
+    {
+     "who": "旁白",
+     "text": "他們把鍋子蓋好收起來，有人要幫忙才用。",
+     "en": "So they put a lid on the pot and tucked it away, to use only when someone needed help."
+    }
+   ]
+  },
+  {
+   "scene": "兩間房子中間的院子，大銅鍋搬出來放在地上，蓋子打開放在旁邊。",
+   "act": "阿伯（綠色短上衣、脖子掛白毛巾）腳邊放著一個扁扁的空布袋；鍋子旁邊的地上立著兩袋一模一樣的白色布米袋（袋口用紅繩綁著），一共兩袋。阿伯彎著腰、屁股正要往又寬又平的鍋邊上坐下去，扭頭往鍋子裡面看，姿勢跟第 6 頁的老婆婆一樣。兩個老爺爺、兩個老婆婆四個人一起衝過來，一人拉住阿伯的一隻手臂或衣角；阿伯回頭看大家，自己也笑出來，大家都在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，阿伯家沒米了。",
+     "en": "One day, the neighbor ran out of rice."
+    },
+    {
+     "who": "旁白",
+     "text": "一袋米放進鍋子，變成兩袋。",
+     "en": "One bag of rice went into the pot, and two bags came out."
+    },
+    {
+     "who": "旁白",
+     "text": "阿伯也想坐在鍋子邊上。",
+     "en": "Then the neighbor went to sit on the edge of the pot."
+    },
+    {
+     "who": "老爺爺",
+     "tag": "shouting",
+     "text": "阿伯，不要坐進去！",
+     "en": "Neighbor, don't sit in it!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了。",
+     "en": "And everyone laughed."
+    }
+   ]
+  }
+ ]
+}

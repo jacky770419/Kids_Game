@@ -1,0 +1,412 @@
+{
+ "id": "tenali-thieves",
+ "title": "天納里和兩個小偷",
+ "title_en": "Tenali and the Thieves",
+ "size": "中",
+ "roles": {
+  "天納里": "很久以前印度南邊一位很會想辦法的叔叔，三十多歲，聲音活潑、愛開玩笑，遇到事情不慌。",
+  "太太": "天納里的太太，溫柔又開朗的年輕女聲，跟先生很有默契，愛笑。",
+  "高個子": "兩個小偷裡高的那個，愛出主意、裝得很厲害，其實笨手笨腳，好笑不可怕，最後不好意思地道歉。",
+  "矮個子": "兩個小偷裡矮的那個，胖胖的、懶洋洋，老是喊酸喊累，傻氣好笑，最後吃得很開心。"
+ },
+ "cast": {
+  "天納里": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "太太": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "高個子": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "矮個子": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "乾",
+   "where": "第1頁『快乾了』",
+   "read": "gān"
+  },
+  {
+   "char": "倒",
+   "where": "第2頁『倒在井邊』，第6頁『倒掉』",
+   "read": "dào"
+  },
+  {
+   "char": "重",
+   "where": "第5頁『好重』，第9頁『好重』『這麼重』",
+   "read": "zhòng"
+  },
+  {
+   "char": "得",
+   "where": "第4頁『拿得到』，第11頁『澆得』",
+   "read": "de"
+  },
+  {
+   "char": "種",
+   "where": "第12頁『種花』",
+   "read": "zhòng"
+  },
+  {
+   "char": "只",
+   "where": "第10頁『只有』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "為",
+   "where": "第6頁『因為』，第10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒下雨』，第4頁『沒人』，第9頁『沒有寶』，第10頁『沒有寶』",
+   "read": "méi"
+  },
+  {
+   "char": "喝",
+   "where": "第8頁『喝飽』",
+   "read": "hē"
+  },
+  {
+   "char": "哪",
+   "where": "第4頁『哪有』",
+   "read": "nǎ"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『做什麼』，第9頁『是什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "噓",
+   "where": "第3頁『噓』",
+   "read": "xū"
+  },
+  {
+   "char": "叢",
+   "where": "第3頁『樹叢』",
+   "read": "cóng"
+  },
+  {
+   "char": "鉤",
+   "where": "第7頁『鉤不到』，第9頁『鉤上來』",
+   "read": "gōu"
+  },
+  {
+   "char": "了",
+   "where": "第3頁『腳麻了』，第4頁『拿得到了』，第9頁『鉤上來了』",
+   "read": "le"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前印度南邊的一個村子：土黃色的小房子，茅草屋頂，屋子前面一座用矮石牆圍起來的花園，種著茉莉、萬壽菊和幾棵香蕉樹；太陽很大，土地乾得裂開，花和葉子都垂著頭。",
+   "act": "天納里和太太第一次出場，站在花園裡。天納里：三十多歲的叔叔，瘦瘦的，黑色短髮、一撇小鬍子，穿白色上衣和橘黃色的寬褲子，肩上搭一條紅色布巾，眼睛很有精神；他蹲著，摸一摸垂下來的花。太太：年輕的阿姨，黑色長辮子，穿綠色金邊的長裙和上衣，手上戴幾個手環，笑起來很溫柔；她一手遮著太陽，抬頭看沒有雲的天空。花園角落有一口圓形的石頭井，井上面架著木頭架子、掛著繩子和木桶。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，在印度的南邊，有一位叔叔叫天納里。",
+     "en": "Long ago, in the south of India, there lived a man named Tenali."
+    },
+    {
+     "who": "旁白",
+     "text": "他最會想辦法。",
+     "en": "He was very good at thinking up clever ideas."
+    },
+    {
+     "who": "旁白",
+     "text": "好久沒下雨，他和太太的花園快乾了。",
+     "en": "It had not rained for a long time, and the garden Tenali and his wife loved was drying up."
+    }
+   ]
+  },
+  {
+   "scene": "花園角落的石頭井邊。井旁邊的地上有一條淺淺的小水溝，從井邊一路通到花園的花圃裡。",
+   "act": "天納里拉著繩子，把一桶水從井裡拉上來；太太把另一桶水倒在井邊的小水溝裡，水順著水溝往花園流。兩個人滿頭大汗，太太甩一甩手。畫面要看得清楚小水溝從井邊通到花圃。井邊不遠的地方有一堆灰色的石頭（砌牆剩下的）和一個舊木箱。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩個人從井裡打水澆花。一桶，又一桶。",
+     "en": "So the two of them pulled water up from the well for the flowers. One bucket, then another."
+    },
+    {
+     "who": "太太",
+     "tag": "tired",
+     "text": "要打好多桶才夠，我的手好酸。",
+     "en": "It takes so many buckets. My arms are so sore."
+    },
+    {
+     "who": "旁白",
+     "text": "井邊有一條小水溝。水倒在井邊，就流進花園。",
+     "en": "Beside the well ran a little ditch. Water poured out by the well ran down the ditch into the garden."
+    }
+   ]
+  },
+  {
+   "scene": "花園的矮石牆邊，一大叢綠色的樹叢；太陽快下山，天空橘紅色，光線很亮。",
+   "act": "兩個小偷第一次出場，蹲在樹叢後面，藏得很差：樹叢下面露出兩雙鞋子（一雙很長、一雙很小），樹叢上面冒出兩頂戴歪的帽子，一頂高、一頂低。高個子：又高又瘦，長鼻子，穿藍色舊上衣，頭上一頂戴歪的灰色布帽，一根手指放在嘴巴前面。矮個子：矮矮胖胖，圓鼻子，穿棕色舊上衣，頭上一頂戴歪的紅色布帽，抱著一隻腳，臉皺成一團。兩個人笨手笨腳，好笑不可怕。花園另一頭，天納里看到了帽子和鞋子，不慌不忙，轉頭對太太眨一隻眼睛；太太遮著嘴偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽快下山了。樹叢下面躲著兩個小偷。",
+     "en": "The sun was going down. Under the bushes, two thieves were hiding."
+    },
+    {
+     "who": "矮個子",
+     "tag": "whispering",
+     "text": "高個子，我的腳麻了。",
+     "en": "Hey, Tall One, my foot's gone to sleep."
+    },
+    {
+     "who": "高個子",
+     "tag": "whispering",
+     "text": "噓！小聲一點，矮個子！",
+     "en": "Shh! Keep it down, Short One!"
+    },
+    {
+     "who": "旁白",
+     "text": "天納里看到了，對太太眨了眨眼。",
+     "en": "Tenali spotted them, and he gave his wife a wink."
+    }
+   ]
+  },
+  {
+   "scene": "花園的井邊，旁邊是那堆灰色的石頭和舊木箱；遠處的樹叢上面看得到兩頂帽子。",
+   "act": "左格：天納里兩手圈在嘴邊，朝著樹叢的方向大聲說話；樹叢上面的兩頂帽子一下子豎起來。太太靠近他的耳朵小聲問，一臉不懂。右格：天納里背對著畫面，蹲在石頭堆旁邊，身體擋住舊木箱，看不到他往箱子裡放什麼（不要畫出箱子裡面）；他回頭對太太笑。",
+   "lines": [
+    {
+     "who": "天納里",
+     "tag": "shouting",
+     "text": "太太，聽說附近有小偷！",
+     "en": "My dear, I hear there are thieves about!"
+    },
+    {
+     "who": "天納里",
+     "text": "我們把寶箱丟進井裡，就沒人拿得到了！",
+     "en": "Let's drop our treasure chest into the well. Nobody can get it there!"
+    },
+    {
+     "who": "太太",
+     "tag": "whispering",
+     "text": "我們家哪有寶箱呀？",
+     "en": "But we don't have a treasure chest, do we?"
+    },
+    {
+     "who": "旁白",
+     "text": "天納里笑了笑，在石頭堆旁邊裝了一箱東西。",
+     "en": "Tenali just smiled. Over by the pile of rocks, he filled up an old chest."
+    }
+   ]
+  },
+  {
+   "scene": "花園的井邊。",
+   "act": "天納里和太太一人抬一邊，把蓋緊的舊木箱抬到井口，兩個人的手臂都往下沉，看得出箱子很重；箱子掉進井裡，井口濺起一圈水花；旁邊一個小剖面圖：箱子沉在深深的井水底下。遠處的樹叢上面，兩頂帽子下面露出兩雙發亮的眼睛，盯著井看。箱子是關著的，不要畫出裡面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "撲通！好重的箱子，沉到井水底下了。",
+     "en": "Splash! The heavy chest sank deep under the water in the well."
+    },
+    {
+     "who": "旁白",
+     "text": "天納里早就看到小偷了，卻故意說給他們聽。",
+     "en": "Tenali knew the thieves were there, but he said it out loud for them to hear, on purpose."
+    },
+    {
+     "who": "旁白",
+     "text": "花園要好多水，井邊有小水溝。",
+     "en": "Remember, the garden needed lots of water, and a little ditch ran from the well."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，他想讓小偷做什麼？",
+     "en": "Can you guess what he wanted the thieves to do?"
+    }
+   ]
+  },
+  {
+   "scene": "天納里家的屋子門口，門開著一條縫，看得到外面的花園和井。",
+   "act": "天納里和太太站在門裡面，頭靠在一起說悄悄話；太太先兩手做出抓人的動作、再做出揮手趕人的動作，天納里搖搖手，再做出拉繩子打水的動作。他頭上一個想像泡泡：兩個小偷在井邊拉水桶，倒出來的水順著小水溝流進花圃，花抬起頭來。",
+   "lines": [
+    {
+     "who": "太太",
+     "tag": "whispering",
+     "text": "你是想抓住他們，或是嚇跑他們？",
+     "en": "Are you trying to catch them, or scare them away?"
+    },
+    {
+     "who": "天納里",
+     "tag": "whispering",
+     "text": "都不是，我想請他們幫忙打水。",
+     "en": "Neither. I want them to pull up water for us."
+    },
+    {
+     "who": "旁白",
+     "text": "因為小偷想拿井底的箱子，就要先把井水打上來。",
+     "en": "Because the thieves wanted the chest at the bottom of the well, they would have to pull the water out first."
+    },
+    {
+     "who": "旁白",
+     "text": "所以倒掉的水，會順著小水溝流進花園。",
+     "en": "So all the water they poured out would run down the ditch into the garden."
+    }
+   ]
+  },
+  {
+   "scene": "晚上的花園，又大又圓的月亮，花園被月光照得很亮；屋子的門窗關著，窗戶裡透出暖黃色的燈光。",
+   "act": "高個子和矮個子站在井邊（不爬進井裡）。高個子拿一根綁著鐵鉤的長繩子往井裡放，鉤子碰不到箱子，他搖搖頭，指著水桶。矮個子捲起袖子，抓著水桶的繩子，很有精神。第一桶水倒在井邊，順著小水溝往花園流。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "月亮出來了。兩個小偷跑到井邊。",
+     "en": "The moon came out. The two thieves crept up to the well."
+    },
+    {
+     "who": "高個子",
+     "text": "井水好深，鉤不到箱子，先把水打上來！",
+     "en": "The water's too deep. We can't hook the chest. Pull the water out first!"
+    },
+    {
+     "who": "矮個子",
+     "tag": "excited",
+     "text": "好！一桶，又一桶！",
+     "en": "Right! One bucket, then another!"
+    },
+    {
+     "who": "旁白",
+     "text": "水流進小水溝，流到花園裡。",
+     "en": "The water ran into the little ditch and down to the garden."
+    }
+   ]
+  },
+  {
+   "scene": "月光下的花園和井邊，月亮已經移到天空另一邊。",
+   "act": "矮個子拉著水桶，舌頭伸出來，兩隻手臂軟軟地垂著，紅色帽子快掉了。高個子一手扶著腰，一手倒水，灰色帽子滑到眼睛上。小水溝裡的水一直流；花圃裡的茉莉和萬壽菊喝飽了水，一朵一朵挺起來，葉子上掛著水珠。屋子的窗戶邊，天納里和太太露出半張臉偷看，笑得很開心。",
+   "lines": [
+    {
+     "who": "矮個子",
+     "tag": "tired",
+     "text": "一桶，又一桶。我的手好酸。",
+     "en": "One bucket, then another. My arms are so sore."
+    },
+    {
+     "who": "高個子",
+     "tag": "tired",
+     "text": "一桶，又一桶。我的腰好酸。",
+     "en": "One bucket, then another. My back is so sore."
+    },
+    {
+     "who": "旁白",
+     "text": "花園裡的花喝飽了水，全都抬起頭來。",
+     "en": "In the garden, the flowers drank and drank, and they all lifted their heads."
+    }
+   ]
+  },
+  {
+   "scene": "早上的花園，太陽剛出來，天空粉紅色；花園裡的土是濕的深棕色，花全開了。",
+   "act": "井邊，高個子和矮個子一起拉著綁鐵鉤的繩子，把濕答答的舊木箱從井裡拉到井邊的地上；兩個人咬著牙、彎著腰，看得出箱子很重。矮個子眼睛發亮，兩手張開要抱箱子。箱子還蓋著，不要畫出裡面。井邊那堆灰色的石頭比昨天少了一些。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天亮了，井水變淺了，箱子鉤上來了。",
+     "en": "By morning, the water was low, and they hooked the chest and hauled it up."
+    },
+    {
+     "who": "矮個子",
+     "tag": "excited",
+     "text": "哇，好重！一定裝滿了寶物！",
+     "en": "Wow, it's heavy! It must be full of treasure!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是太太說過，家裡沒有寶箱。",
+     "en": "But remember, Tenali's wife said they had no treasure chest."
+    },
+    {
+     "who": "旁白",
+     "text": "箱子是在石頭堆旁邊裝的，又這麼重。",
+     "en": "The chest was filled beside the pile of rocks, and it was very heavy."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，箱子裡是什麼？",
+     "en": "Can you guess what was inside?"
+    }
+   ]
+  },
+  {
+   "scene": "早上的井邊。",
+   "act": "舊木箱的蓋子打開了，裡面滿滿的灰色石頭。矮個子兩手各拿一顆石頭，嘴巴張得好大；高個子一屁股坐在地上，帽子掉在旁邊。兩個人累得坐在地上，背靠著背，樣子好笑不可憐。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "打開一看，全是石頭！",
+     "en": "They opened it. Rocks! Nothing but rocks!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為家裡沒有寶物，所以天納里裝的是石頭。",
+     "en": "Because there was no treasure in the house, Tenali had filled the chest with rocks."
+    },
+    {
+     "who": "矮個子",
+     "tag": "tired",
+     "text": "打了一個晚上，只有石頭！",
+     "en": "We pulled up water all night long, and all we got is rocks!"
+    }
+   ]
+  },
+  {
+   "scene": "早上的花園，花開得很漂亮，井邊。",
+   "act": "天納里和太太從屋子走出來，太太端著一個大盤子，上面有熱騰騰的白色米餅和一壺水；天納里兩手張開，笑著指著開滿花的花園。高個子和矮個子從地上站起來，高個子把帽子拿在胸前，低著頭、臉紅紅的；矮個子看著盤子吞口水。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天納里和太太端來早餐。",
+     "en": "Tenali and his wife came out with breakfast."
+    },
+    {
+     "who": "天納里",
+     "tag": "happy",
+     "text": "謝謝你們，把花園澆得這麼好！",
+     "en": "Thank you for watering our garden so well!"
+    },
+    {
+     "who": "高個子",
+     "tag": "embarrassed",
+     "text": "對不起，我們以後不拿別人的東西了。",
+     "en": "We're sorry. We won't take other people's things anymore."
+    }
+   ]
+  },
+  {
+   "scene": "幾天後的花園，早上，花開得滿園都是，有蝴蝶在飛。",
+   "act": "高個子和矮個子在井邊打水，一個拉繩子、一個倒水，水順著小水溝流進花園；兩個人都笑得很開心，帽子這次戴得正正的。太太在花圃裡教他們種下新的花苗。天納里坐在屋子前面，一手拿著米餅，對著畫面外眨一隻眼睛。",
+   "lines": [
+    {
+     "who": "太太",
+     "tag": "gentle",
+     "text": "留下來幫忙種花吧，每天都有飯吃。",
+     "en": "Stay and help us in the garden. There'll be a meal for you every day."
+    },
+    {
+     "who": "矮個子",
+     "tag": "happy",
+     "text": "靠自己的力氣吃飯，真香！",
+     "en": "Food you work for with your own two hands tastes the best!"
+    },
+    {
+     "who": "旁白",
+     "text": "從此，兩個人笑著打水。一桶，又一桶。",
+     "en": "From then on, the two of them pulled up water with a smile. One bucket, then another."
+    }
+   ]
+  }
+ ]
+}
