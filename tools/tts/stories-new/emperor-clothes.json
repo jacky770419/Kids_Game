@@ -1,7 +1,7 @@
 {
  "id": "emperor-clothes",
  "title": "國王的新衣",
- "title_en": "The Emperor's New Clothes",
+ "title_en": "The King's New Clothes",
  "size": "長",
  "roles": {
   "國王": "就是《青蛙王子》裡那位慈祥的老國王，聲音低沉溫暖，這本裡有點愛面子、好笑可愛，最後大笑著承認。",
@@ -50,7 +50,7 @@
   },
   {
    "char": "給",
-   "where": "第3頁『國王給他們』，第15頁『交給你』",
+   "where": "第3頁『國王給他們』",
    "read": "gěi"
   },
   {
@@ -133,7 +133,7 @@
   },
   {
    "scene": "城堡裡一間大房間，中間擺著兩台大木頭織布機，旁邊的桌子上堆著一袋一袋金幣和一捲一捲金線。",
-   "act": "國王把一大袋金幣和金線交給騙子乙；騙子乙趁國王轉身，偷偷把金線塞進自己的大布袋，對騙子甲眨眼睛；騙子甲坐在空空的織布機前，雙手在空中假裝織布，表情很認真。",
+   "act": "國王把一大袋金幣和金線交給騙子乙；騙子乙趁國王轉身，偷偷把金線塞進自己的大布袋，對騙子甲眨眼睛；騙子甲坐在空空的織布機前，雙手在空空的織布機上比來比去，假裝在織布，表情很認真。",
    "lines": [
     {
      "who": "國王",
@@ -153,8 +153,8 @@
     },
     {
      "who": "旁白",
-     "text": "然後，他們坐在織布機前，從早織到晚。",
-     "en": "Then they sat at the looms and wove from morning till night."
+     "text": "然後，他們坐在織布機前，假裝織布，從早忙到晚。",
+     "en": "Then they sat at the looms and pretended to weave from morning till night."
     },
     {
      "who": "旁白",
@@ -200,7 +200,7 @@
   },
   {
    "scene": "城堡的大廳，紅地毯和金色寶座。",
-   "act": "大臣跑回大廳，一邊擦額頭的汗，一邊張開雙手，比出好大一塊布的樣子；國王從寶座上站起來，眼睛發亮。",
+   "act": "大臣跑回大廳，一邊擦額頭的汗，一邊張開雙手，比出好大一塊布的樣子，說到月亮時還用手比了一個大圓圈；國王從寶座上站起來，眼睛發亮。",
    "lines": [
     {
      "who": "旁白",
@@ -215,8 +215,8 @@
     },
     {
      "who": "大臣",
-     "text": "有金色的花，也有藍色的星星！",
-     "en": "It has golden flowers and blue stars!"
+     "text": "有金色的花、藍色的星星，連月亮都有喔！",
+     "en": "It has golden flowers, blue stars, and even a moon!"
     },
     {
      "who": "國王",
@@ -244,8 +244,8 @@
     {
      "who": "國王",
      "tag": "worried",
-     "text": "可是我是國王，不能不聰明呀！",
-     "en": "But I'm the king! I have to be clever!"
+     "text": "可是我是國王，一定要很聰明才對呀！",
+     "en": "But I'm the king! I'm supposed to be very clever!"
     },
     {
      "who": "國王",
@@ -372,7 +372,7 @@
   },
   {
    "scene": "同一條大街。",
-   "act": "街上的人先是一愣，張大嘴巴，接著一個接一個捂著嘴偷笑；小男孩在爸爸肩膀上笑著指國王；一陣風吹過，國王停下腳步，抱著手臂發抖。",
+   "act": "街上的人先是一愣，張大嘴巴，接著一個接一個遮著嘴偷笑；小男孩在爸爸肩膀上笑著指國王；一陣風吹過，國王停下腳步，抱著手臂發抖。",
    "lines": [
     {
      "who": "小男孩",
@@ -426,8 +426,8 @@
     {
      "who": "國王",
      "tag": "gentle",
-     "text": "我太怕別人說我不聰明，就不敢說實話。",
-     "en": "I was so afraid of not looking clever that I didn't tell the truth."
+     "text": "我好怕別人說我笨，就不敢說實話了。",
+     "en": "I was so afraid of being called silly that I didn't dare to tell the truth."
     }
    ]
   },
@@ -437,8 +437,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小男孩的爸爸，把大外套披在國王身上。",
-     "en": "The boy's dad wrapped his big coat around the king."
+     "text": "小男孩的爸爸，把咖啡色的大外套，披在國王身上。",
+     "en": "The boy's dad wrapped his big brown coat around the king."
     },
     {
      "who": "國王",
@@ -466,8 +466,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "這時候，兩個騙子抱著大袋子，想要溜走。",
-     "en": "Just then, the two tricksters tried to sneak away with their big bag."
+     "text": "這時候，兩個騙子抱著大袋子，想要趕快跑走。",
+     "en": "Just then, the two tricksters tried to hurry off with their big bag."
     },
     {
      "who": "大臣",
@@ -501,8 +501,8 @@
     {
      "who": "騙子乙",
      "tag": "sad",
-     "text": "金子和金線，都交給你！",
-     "en": "Here, take back all the gold and thread!"
+     "text": "金子和金線，請您收回去！",
+     "en": "Here, please take back all the gold and thread!"
     },
     {
      "who": "騙子甲",
@@ -535,7 +535,7 @@
     {
      "who": "旁白",
      "text": "那件咖啡色的大外套，變成了國王最喜歡的衣服。",
-     "en": "And the big brown coat became the king's favorite thing to wear."
+     "en": "The big brown coat became the king's very favorite."
     },
     {
      "who": "國王",

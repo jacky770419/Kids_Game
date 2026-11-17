@@ -4,8 +4,8 @@
  "title_en": "The Goose That Laid Golden Eggs",
  "size": "中",
  "roles": {
-  "農夫": "鄉下的胖農夫，懶洋洋又憨厚的大叔聲音，發財時得意大笑，貪心時急急忙忙，道歉時真心又難過。",
-  "農夫太太": "農夫的太太，誇張好笑的中年女聲，愛使喚人、說話又快又大聲，但心不壞，道歉時很誠懇。",
+  "農夫": "鄉下的胖農夫，憨厚的大叔聲音，發財時得意大笑，貪心時急急忙忙，著急時會亂怪人，道歉時真心又難過。",
+  "農夫太太": "農夫的太太，誇張好笑的中年女聲，急性子、說話又快又大聲，但心不壞，道歉時很誠懇。",
   "鵝": "白色的鵝，小女生的聲音，甜美可愛、有禮貌，累的時候小小聲，恢復精神後又活潑開朗。"
  },
  "cast": {
@@ -30,24 +30,24 @@
   },
   {
    "char": "散",
-   "where": "第6頁『不能散步』，第11頁『每天散步』",
+   "where": "第3頁、第6頁、第12頁『散步』",
    "read": "sàn"
   },
   {
    "char": "沒",
-   "where": "第7頁『都沒有』，第9頁『沒關係』",
+   "where": "第7頁『都沒有』，第8頁『沒有』，第10頁『沒關係』",
    "read": "méi"
   },
   {
    "char": "鋪",
-   "where": "第9頁『鋪了一個很軟的新窩』",
+   "where": "第10頁『鋪了一個很軟的新窩』",
    "read": "pū"
   }
  ],
  "pages": [
   {
    "scene": "鄉下的一間小農舍，早上：歪歪的茅草屋頂、木頭籬笆、一個小池塘，院子角落有一個稻草鋪的鵝窩。",
-   "act": "農夫圓圓胖胖的，紅通通的臉，棕色八字鬍，戴草帽，穿紅色格子襯衫和藍色吊帶褲，褲子上有補丁；農夫太太又高又瘦，紅色捲髮盤成一個包包頭，穿綠色長裙、繫黃色圍裙，鼻子尖尖的。鵝是一隻雪白的鵝，橘色的嘴巴和腳掌，脖子上繫著一個藍色小蝴蝶結。鵝站在院子裡抬頭挺胸，跟農夫夫妻打招呼。",
+   "act": "農夫圓圓胖胖的，紅通通的臉，棕色八字鬍，戴草帽，穿紅色格子襯衫和藍色吊帶褲，褲子上有補丁；農夫太太又高又瘦，紅色捲髮盤成一個包包頭，穿綠色長裙、繫黃色圍裙，臉上有雀斑，笑起來很大聲。鵝是一隻雪白的鵝，橘色的嘴巴和腳掌，脖子上繫著一個藍色小蝴蝶結。鵝站在院子裡抬頭挺胸，跟農夫夫妻打招呼。",
    "lines": [
     {
      "who": "旁白",
@@ -97,8 +97,8 @@
    ]
   },
   {
-   "scene": "熱鬧的市場，攤位上有麵包、布料和鞋子。",
-   "act": "農夫穿著新外套，農夫太太戴著一頂插著大紅花的新帽子，兩個人手上抱滿麵包和新鞋子，笑得合不攏嘴；鵝走在旁邊，也很開心。",
+   "scene": "左半邊是熱鬧的市場，攤位上有麵包、布料和鞋子；右半邊是農舍的小池塘。",
+   "act": "左邊：農夫穿著新外套，農夫太太戴著一頂插著大紅花的新帽子，兩個人手上抱滿麵包和新鞋子，笑得合不攏嘴。右邊：鵝在池塘邊散步，再跳進池塘游泳，一臉開心。",
    "lines": [
     {
      "who": "旁白",
@@ -107,19 +107,19 @@
     },
     {
      "who": "旁白",
-     "text": "農夫把金蛋拿去市場賣。",
-     "en": "The farmer sold the eggs at the market."
-    },
-    {
-     "who": "旁白",
-     "text": "他們買了新衣服、新鞋子，和好多麵包。",
-     "en": "They bought new clothes, new shoes, and lots of bread."
+     "text": "農夫把金蛋拿去市場，買了新衣服和好多麵包。",
+     "en": "The farmer sold the eggs at the market and bought new clothes and lots of bread."
     },
     {
      "who": "農夫",
      "tag": "laughing",
      "text": "哈，我們有錢了！",
      "en": "Ha! We're rich!"
+    },
+    {
+     "who": "旁白",
+     "text": "鵝每天先散步、游泳，再下蛋。",
+     "en": "Every day, the goose took a walk and went for a swim before laying her egg."
     },
     {
      "who": "鵝",
@@ -131,7 +131,7 @@
   },
   {
    "scene": "晚上，農舍的廚房，桌上點著一盞油燈，旁邊放著一排金蛋。",
-   "act": "農夫太太伸出手指一顆一顆點著金蛋，皺著眉頭；農夫托著下巴，眼睛冒出金光，想像自己坐在一座金子山上。",
+   "act": "農夫和農夫太太一起伸出手指，一顆一顆點著桌上的金蛋，兩個人都皺著眉頭；接著兩人托著下巴，眼睛冒出金光，頭上冒出想像的泡泡：農夫想著一間大房子，農夫太太想著一輛大馬車。",
    "lines": [
     {
      "who": "旁白",
@@ -145,21 +145,28 @@
      "en": "Just one a day? That's not enough!"
     },
     {
+     "who": "農夫",
+     "tag": "excited",
+     "text": "我要一間大房子！",
+     "en": "I want a big house!"
+    },
+    {
      "who": "農夫太太",
-     "text": "我要一間大房子，一輛大馬車！",
-     "en": "I want a big house and a fancy carriage!"
+     "tag": "excited",
+     "text": "我要一輛大馬車！",
+     "en": "I want a fancy carriage!"
     },
     {
      "who": "農夫",
      "tag": "excited",
-     "text": "對！如果一天下十顆，我們就是大富翁了！",
-     "en": "Right! If she laid ten a day, we'd be the richest people around!"
+     "text": "如果一天下十顆，我們就是大富翁了！",
+     "en": "If she laid ten a day, we'd be the richest people around!"
     }
    ]
   },
   {
    "scene": "第二天一大早，院子裡的鵝窩旁邊。",
-   "act": "農夫抱來一大桶玉米倒在鵝面前，農夫太太叉著腰站在旁邊；鵝看著堆成小山的玉米，嚇得往後退，蝴蝶結都歪了。",
+   "act": "農夫抱來一大桶玉米倒在鵝面前，農夫太太捧著一盆玉米跟在後面；鵝看著堆成小山的玉米，嚇得往後退，蝴蝶結都歪了。",
    "lines": [
     {
      "who": "農夫",
@@ -169,7 +176,7 @@
     },
     {
      "who": "農夫太太",
-     "tag": "bossy",
+     "tag": "excited",
      "text": "多吃一點，就能多下一點！",
      "en": "Eat more, and you can lay more!"
     },
@@ -182,13 +189,13 @@
      "who": "鵝",
      "tag": "worried",
      "text": "可是，我一天就下一顆蛋呀。",
-     "en": "But I can lay only one egg a day."
+     "en": "But I can only lay one egg a day."
     }
    ]
   },
   {
    "scene": "院子裡，太陽下山後，天黑了，天上有星星，鵝窩旁邊掛著一盞燈。",
-   "act": "農夫拿著燈籠守在鵝窩旁拍手催促，農夫太太拿著籃子等著接蛋；鵝縮在窩裡，眼睛快要閉起來，羽毛掉了好幾根。遠處的小池塘在月光下發亮，沒有鵝在游。",
+   "act": "農夫拿著燈籠守在鵝窩旁拍手催促，農夫太太拿著籃子等著接蛋；鵝縮在窩裡，張大嘴巴打了一個好大的哈欠，眼睛快要閉起來。遠處的小池塘在月光下發亮，沒有鵝在游。",
    "lines": [
     {
      "who": "農夫",
@@ -197,27 +204,32 @@
      "en": "Hurry! Hurry! One more!"
     },
     {
-     "who": "旁白",
-     "text": "鵝不能散步，不能游泳，晚上也不能睡。",
-     "en": "The goose couldn't go for walks. She couldn't swim. She couldn't even sleep at night."
+     "who": "農夫太太",
+     "tag": "impatient",
+     "text": "不能睡喔！十顆蛋呢？",
+     "en": "No sleeping! Where are the ten eggs?"
     },
     {
-     "who": "農夫太太",
-     "tag": "bossy",
-     "text": "不能睡喔！十顆蛋呢？",
-     "en": "No sleeping! Where are my ten eggs?"
+     "who": "旁白",
+     "text": "那天，鵝不能散步，晚上也不能睡。",
+     "en": "That day, the goose couldn't go for a walk, and she couldn't sleep at night."
+    },
+    {
+     "who": "旁白",
+     "text": "鵝打了一個好大的哈欠。",
+     "en": "The goose let out a great big yawn."
     },
     {
      "who": "鵝",
-     "tag": "sad",
-     "text": "我好累，好累喔。",
-     "en": "I'm so tired. So very tired."
+     "tag": "sleepy",
+     "text": "可是，我一天就下一顆蛋呀。",
+     "en": "But I can only lay one egg a day."
     }
    ]
   },
   {
    "scene": "隔天早上，院子角落的鵝窩，稻草亂糟糟的。",
-   "act": "鵝趴在稻草上，羽毛亂七八糟，眼睛半睜半閉，打著大大的哈欠，一臉好睏；鵝窩裡一顆蛋也沒有。農夫太太拿著空籃子，嘴巴張得好大；農夫抓著草帽，愣住了。",
+   "act": "鵝趴在稻草上，羽毛亂七八糟，眼睛半睜半閉；鵝窩裡一顆蛋也沒有。農夫太太拿著空籃子，嘴巴張得好大；農夫氣得滿臉通紅，指著鵝跺腳。",
    "lines": [
     {
      "who": "旁白",
@@ -231,32 +243,60 @@
      "en": "Where are the golden eggs? Not even one?"
     },
     {
+     "who": "農夫",
+     "tag": "angry",
+     "text": "一定是妳偷懶！快下蛋呀！",
+     "en": "You must be lazy! Lay an egg, now!"
+    },
+    {
      "who": "鵝",
      "tag": "whispering",
      "text": "我太累了，一顆也下不出來。",
      "en": "I'm too tired. I can't lay a single egg."
-    },
+    }
+   ]
+  },
+  {
+   "scene": "院子角落的鵝窩，中午，裝玉米的小碗放在旁邊，玉米一顆也沒有少。",
+   "act": "鵝縮成一團趴在稻草上，閉著眼睛，脖子垂下來，藍色蝴蝶結鬆掉了；農夫蹲下來摸著鵝的背，愣住了；農夫太太跪在旁邊，雙手捧著鵝的頭，一臉擔心。",
+   "lines": [
     {
      "who": "旁白",
      "text": "鵝趴在稻草上，眼睛都睜不開了。",
      "en": "The goose lay in the straw. She could hardly open her eyes."
+    },
+    {
+     "who": "旁白",
+     "text": "她不吃玉米，也不說早安了。",
+     "en": "She wouldn't eat her corn. She didn't even say good morning."
+    },
+    {
+     "who": "農夫太太",
+     "tag": "worried",
+     "text": "鵝，妳是不是生病了？",
+     "en": "Goose, are you sick?"
+    },
+    {
+     "who": "旁白",
+     "text": "農夫摸了摸鵝，鵝一點力氣也沒有。",
+     "en": "The farmer stroked the goose. She had no strength left at all."
     }
    ]
   },
   {
    "scene": "院子角落的鵝窩旁邊。",
-   "act": "農夫蹲下來，脫下草帽抱在胸前，輕輕摸鵝的頭，眼眶紅紅的；農夫太太也蹲在旁邊，低著頭，手指絞著圍裙。",
+   "act": "農夫脫下草帽抱在胸前，眼眶紅紅的；農夫太太也低著頭，手指絞著圍裙；兩個人輕輕摸著鵝。",
    "lines": [
     {
      "who": "旁白",
-     "text": "農夫看著累壞的鵝，心裡好難過。",
-     "en": "The farmer looked at the worn-out goose and felt very sad."
+     "text": "農夫和太太看著累壞的鵝，好難過。",
+     "en": "The farmer and his wife looked at the worn-out goose and felt very sad."
     },
     {
      "who": "農夫",
      "tag": "sad",
-     "text": "都是我們太貪心，把妳累壞了。",
-     "en": "We were too greedy, and we wore you out."
+     "text": "妳不是偷懶，是我們太貪心，把妳累壞了。",
+     "en": "You weren't lazy. We were too greedy, and we wore you out."
     },
     {
      "who": "農夫太太",
@@ -277,8 +317,8 @@
     },
     {
      "who": "旁白",
-     "text": "太太帶她去池塘游泳，餵她吃青菜。",
-     "en": "His wife took her swimming in the pond and fed her fresh greens."
+     "text": "太太陪她去池塘游泳，餵她吃青菜。",
+     "en": "His wife took her to the pond for a swim and fed her fresh greens."
     },
     {
      "who": "農夫",
@@ -318,7 +358,7 @@
   },
   {
    "scene": "農舍的院子，早上，陽光燦爛，池塘閃閃發亮。",
-   "act": "農夫捧著一顆金蛋，農夫太太摟著鵝的脖子，三個一起笑；鵝張開翅膀，好像在跟大家揮手。",
+   "act": "早上的院子：鵝走在前面，農夫和農夫太太跟在後面，三個一起沿著池塘散步；農夫手上捧著一顆金蛋，農夫太太伸著懶腰笑；鵝張開翅膀，好像在跟大家揮手。",
    "lines": [
     {
      "who": "農夫",
@@ -329,13 +369,13 @@
     {
      "who": "農夫太太",
      "tag": "happy",
-     "text": "有妳陪著我們，比金蛋寶貝多了！",
-     "en": "Having you with us is worth more than any golden egg!"
+     "text": "以後，我們陪妳一起散步！",
+     "en": "From now on, we'll take walks with you!"
     },
     {
      "who": "旁白",
-     "text": "從此，鵝每天散步、游泳，開心地下蛋。",
-     "en": "From then on, the goose took walks, went swimming, and happily laid her eggs."
+     "text": "從此，鵝每天散步、游泳，一天下一顆蛋。",
+     "en": "From then on, the goose took walks, went swimming, and laid one egg a day."
     },
     {
      "who": "鵝",

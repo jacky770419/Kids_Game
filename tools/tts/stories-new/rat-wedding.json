@@ -67,12 +67,22 @@
    "char": "轎",
    "where": "第14頁『小花轎』",
    "read": "jiào"
+  },
+  {
+   "char": "擋",
+   "where": "第11頁『牆擋住北風』",
+   "read": "dǎng"
+  },
+  {
+   "char": "會",
+   "where": "第16頁『老鼠也會辦婚禮』，第13頁『我會每天』",
+   "read": "huì"
   }
  ],
  "pages": [
   {
    "scene": "一面老舊的紅磚牆，牆腳下有一個小圓洞，洞裡是老鼠的家：火柴盒做的床、瓶蓋做的桌子、頂針當杯子；白天，牆外是草地和藍天。",
-   "act": "老鼠爸爸（灰色的毛、粉紅色的大耳朵、圓滾滾的肚子，戴一頂咖啡色小瓜皮帽、繫藍色領巾）摸著女兒的頭，得意地挺起肚子；老鼠姑娘（灰色的毛、粉紅色的大耳朵，繫粉紅色領巾，右耳旁別一朵小黃花）舉起一隻手想說話，可是爸爸搖著手指不讓她說。",
+   "act": "老鼠爸爸（灰色的毛、粉紅色的大耳朵、圓滾滾的肚子，戴一頂咖啡色小瓜皮帽、繫藍色領巾）摸著女兒的頭，得意地挺起肚子；老鼠姑娘（灰色的毛、粉紅色的大耳朵，圍一條粉紅色小圍巾，右耳旁別一朵小黃花）舉起一隻手想說話，可是爸爸搖著手指不讓她說。",
    "lines": [
     {
      "who": "旁白",
@@ -151,8 +161,8 @@
     {
      "who": "太陽",
      "tag": "gentle",
-     "text": "謝謝你。可是，我不是最厲害的喔。",
-     "en": "Thank you. But I'm not the strongest."
+     "text": "謝謝你這麼說。可是，我不是最厲害的喔。",
+     "en": "That's kind of you to say. But I'm not the strongest."
     },
     {
      "who": "太陽",
@@ -208,7 +218,7 @@
   },
   {
    "scene": "同一個紅瓦屋頂，風好大，樹葉在天上飛。",
-   "act": "北風（灰藍色蓬蓬的雲朵臉、兩道濃眉、鼓著臉頰、沒有手）用力吹氣，雲朵被吹得往旁邊飄走、轉圈圈；老鼠爸爸兩手按住帽子，老鼠姑娘抱住屋頂上的煙囪，領巾被風吹得飛起來。",
+   "act": "北風（灰藍色蓬蓬的雲朵臉、兩道濃眉、鼓著臉頰、沒有手）用力吹氣，雲朵被吹得往旁邊飄走、轉圈圈；老鼠爸爸兩手按住帽子，老鼠姑娘抱住屋頂上的煙囪，圍巾被風吹得飛起來。",
    "lines": [
     {
      "who": "老鼠爸爸",
@@ -231,7 +241,7 @@
     {
      "who": "老鼠姑娘",
      "tag": "scared",
-     "text": "哇！我的領巾要飛走了！",
+     "text": "哇！我的圍巾要飛走了！",
      "en": "Whoa! My scarf is blowing away!"
     }
    ]
@@ -406,18 +416,18 @@
   },
   {
    "scene": "紅磚老牆前面的草地，天上有太陽、雲朵，遠遠的還有北風探頭偷看。",
-   "act": "老鼠爸爸伸出手指，一隻一隻指過去：指著天上的太陽、旁邊的雲朵、遠處的北風、身後的牆爺爺，最後指著阿灰；阿灰抓著頭，臉紅到耳朵。",
+   "act": "老鼠爸爸伸出手指，一個一個指過去：指著天上的太陽、旁邊的雲朵、遠處的北風、身後的牆爺爺，最後指著阿灰；阿灰抓著頭，臉紅到耳朵。",
    "lines": [
     {
      "who": "老鼠爸爸",
      "tag": "excited",
-     "text": "太陽怕雲朵，雲朵怕北風。",
-     "en": "The Sun is afraid of Cloud. Cloud is afraid of North Wind."
+     "text": "雲朵遮住太陽，北風吹走雲朵。",
+     "en": "Cloud covers the Sun. North Wind blows Cloud away."
     },
     {
      "who": "老鼠爸爸",
-     "text": "北風怕牆，牆怕老鼠。",
-     "en": "North Wind is afraid of the Wall. The Wall is afraid of mice."
+     "text": "牆擋住北風，老鼠在牆腳挖洞！",
+     "en": "The Wall stops North Wind. And mice dig under the Wall!"
     },
     {
      "who": "老鼠爸爸",
@@ -459,6 +469,12 @@
      "tag": "surprised",
      "text": "原來妳一直想說的，就是這個呀！",
      "en": "So that's what you've been trying to tell me!"
+    },
+    {
+     "who": "老鼠爸爸",
+     "tag": "gentle",
+     "text": "都怪爸爸，一直不讓妳說。下次，爸爸先聽妳說！",
+     "en": "It's my fault. I never let you talk. Next time, Papa will listen first!"
     }
    ]
   },
@@ -513,8 +529,8 @@
     },
     {
      "who": "旁白",
-     "text": "小花轎一路搖呀搖，搖到阿灰家。",
-     "en": "The little wedding chair swayed all the way to Gray's home."
+     "text": "新娘子坐在小花轎裡，一路搖呀搖，搖到阿灰家。",
+     "en": "The bride rode in a little red sedan chair that swayed all the way to Gray's home."
     },
     {
      "who": "阿灰",
@@ -576,8 +592,8 @@
     },
     {
      "who": "旁白",
-     "text": "老人家說，大年初三，老鼠也會辦喜事。",
-     "en": "Old folks say that on the third day of the New Year, mice have weddings too."
+     "text": "老人家說，大年初三，老鼠也會辦婚禮。",
+     "en": "Old folks say that on the third day of the Lunar New Year, mice have weddings too."
     },
     {
      "who": "旁白",

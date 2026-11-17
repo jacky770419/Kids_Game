@@ -2,11 +2,12 @@
  "id": "oak-reed",
  "title": "大樹和小草",
  "title_en": "The Oak and the Reed",
- "size": "短",
+ "size": "中",
  "roles": {
   "大樹": "河邊的老橡樹，低沉宏亮的大叔聲音，一開始驕傲愛炫耀，斷了樹枝後變得溫和謙虛。",
   "小草": "大樹腳邊的小草，聲音又小又甜，開朗溫柔，一點也不生氣。",
-  "北風": "同《北風與太陽》的北風，愛逞強但不壞的大哥哥，聲音宏亮、有點驕傲。"
+  "小鳥": "住在大樹上的小鳥，聲音尖細可愛、活潑愛說話，每天早上都飛下來找小草。",
+  "北風": "愛逞強但不壞的大哥哥，聲音宏亮、有點驕傲，吹不倒小草時會嚇一跳。"
  },
  "cast": {
   "大樹": {
@@ -17,6 +18,10 @@
    "find": "Lulu",
    "en": "Cherry Twinkle"
   },
+  "小鳥": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
   "北風": {
    "find": "WangSong",
    "en": "Austin - Deep, Raspy"
@@ -24,30 +29,30 @@
  },
  "polyphones": [
   {
-   "char": "什",
-   "where": "第2頁『什麼風』",
-   "read": "shén"
+   "char": "誰",
+   "where": "第4頁『誰說不彎腰』",
+   "read": "shéi"
   },
   {
-   "char": "教",
-   "where": "第8頁『教我彎腰』",
-   "read": "jiāo"
+   "char": "倒",
+   "where": "第5頁『吹不倒』",
+   "read": "dǎo"
   },
   {
    "char": "沒",
-   "where": "第2頁『沒關係』，第6頁『沒事吧』",
+   "where": "第2頁『沒聽到』，第3頁『沒關係』，第8頁『沒事吧』",
    "read": "méi"
   },
   {
-   "char": "誰",
-   "where": "第3頁『誰說不怕我』",
-   "read": "shéi"
+   "char": "教",
+   "where": "第10頁『教我彎腰』",
+   "read": "jiāo"
   }
  ],
  "pages": [
   {
    "scene": "晴朗的白天，一條小河旁邊的綠色山坡，河水清清的，天空很藍，飄著幾朵白雲。",
-   "act": "大樹（河邊山坡上一棵高大的橡樹，粗壯的咖啡色樹幹上有一張臉：兩道粗眉毛、大鼻子、大嘴巴；樹冠是濃綠色的，樹枝上有一個小鳥窩）挺起樹幹，張開樹枝，得意地抬高下巴；小草（大樹腳邊、河岸上一叢細長的綠色小草，像蘆葦，最高的一根頂端有一束米色的毛茸茸穗子，草葉上有一張小笑臉：圓眼睛、紅臉頰）在大樹腳邊隨著微風輕輕擺動，笑著跟大樹打招呼。",
+   "act": "大樹（河邊山坡上一棵高大的橡樹，粗壯的咖啡色樹幹上有一張臉：兩道粗眉毛、大鼻子、大嘴巴；樹冠是濃綠色的，左邊一根粗樹枝上有一個小鳥窩）挺起樹幹，張開樹枝，得意地抬高下巴；小鳥（圓滾滾的黃色小鳥，橘色的嘴巴，翅膀尖是淺藍色的）從樹枝上的鳥窩探出頭；小草（大樹腳邊、河岸上一株細長的綠色小草，像蘆葦，頂端有一束米色的毛茸茸穗子，草葉上有一張小笑臉：圓眼睛、紅臉頰）在大樹腳邊隨著微風輕輕擺動。",
    "lines": [
     {
      "who": "旁白",
@@ -62,32 +67,70 @@
     },
     {
      "who": "旁白",
-     "text": "大樹的腳邊，住著一叢小草。",
-     "en": "At the oak's feet lived a little reed, thin and green like grass."
+     "text": "大樹的樹枝上，住著一隻小鳥。",
+     "en": "A little bird lived up in the oak's branches."
+    },
+    {
+     "who": "旁白",
+     "text": "大樹的腳邊，住著一株小草。",
+     "en": "At the oak's feet lived a little reed, thin and green."
+    }
+   ]
+  },
+  {
+   "scene": "晴朗的白天，一條小河旁邊的綠色山坡，河水清清的，天空很藍，飄著幾朵白雲。",
+   "act": "小鳥從鳥窩飛下來，停在小草的穗子旁邊，拍著翅膀打招呼；小草彎著身子笑咪咪地回答；小鳥再抬頭跟大樹揮翅膀，大樹卻抬高下巴看著遠方，假裝沒聽到。",
+   "lines": [
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "小草，早安！",
+     "en": "Good morning, Little Reed!"
     },
     {
      "who": "小草",
      "tag": "happy",
-     "text": "大樹，早安！今天的風好舒服喔！",
-     "en": "Good morning, Big Oak! The breeze feels so nice today!"
+     "text": "小鳥，早安！今天的風好舒服喔！",
+     "en": "Good morning, Little Bird! The breeze feels so nice today!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "大樹，你也早安！",
+     "en": "Good morning to you too, Big Oak!"
+    },
+    {
+     "who": "旁白",
+     "text": "大樹抬高下巴，假裝沒聽到。",
+     "en": "The oak lifted his chin and pretended not to hear."
+    },
+    {
+     "who": "旁白",
+     "text": "小鳥每天早上，都飛下來跟小草說話。",
+     "en": "Every morning, the little bird flew down to chat with the reed."
     }
    ]
   },
   {
    "scene": "同一個河邊山坡，微風吹過，小草往一邊彎。",
-   "act": "一陣小風吹過，小草彎下腰又站起來；大樹低頭看著小草，咧開大嘴巴哈哈笑；接著大樹把樹幹挺得直直的，一片葉子也不動。",
+   "act": "一陣小風吹過，小草彎下腰又站起來；大樹低頭看著小草，咧開大嘴巴哈哈笑，接著把樹幹挺得直直的，一片葉子也不動；小鳥站在小草旁邊，歪著頭看大樹。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "一陣小風吹過，小草彎下了腰。",
+     "en": "A little breeze blew by, and the reed bent over."
+    },
     {
      "who": "大樹",
      "tag": "laughing",
-     "text": "小草，妳好軟喔。風一吹，妳就彎腰了。",
-     "en": "Little Reed, you're so floppy. One little breeze and you bend over."
+     "text": "哈，哈！小草，妳好軟喔。風一吹，妳就彎腰了。",
+     "en": "Ha ha! Little Reed, you're so floppy. One little breeze and you bend over."
     },
     {
      "who": "大樹",
      "tag": "proud",
-     "text": "妳看我，不管什麼風，我都不彎腰！",
-     "en": "Look at me. No matter what wind comes, I never bend!"
+     "text": "妳看我，我不彎！我最壯！",
+     "en": "Look at me. I won't bend! I'm the strongest!"
     },
     {
      "who": "小草",
@@ -99,7 +142,7 @@
   },
   {
    "scene": "同一個河邊山坡，天空忽然變成灰色，烏雲從山後面湧過來，河面起了波浪。",
-   "act": "北風（灰藍色蓬蓬的雲朵臉、兩道濃眉、鼓著臉頰、沒有手）從遠方的山後面飛過來，鼓起臉頰；大樹挺起胸膛瞪著北風；小草抬頭看北風，有一點緊張。",
+   "act": "北風（灰藍色蓬蓬的雲朵臉、兩道濃眉、鼓著臉頰、沒有手）從遠方的山後面飛過來，鼓起臉頰；大樹挺起胸膛瞪著北風；小鳥拍著翅膀飛回樹枝上的鳥窩，只露出一個小腦袋；小草抬頭看北風，有一點緊張。",
    "lines": [
     {
      "who": "旁白",
@@ -109,20 +152,26 @@
     {
      "who": "北風",
      "tag": "proud",
-     "text": "呼！誰說不怕我？看我的！",
-     "en": "Whoosh! Who says they're not afraid of me? Watch this!"
+     "text": "呼！誰說不彎腰？看我的！",
+     "en": "Whoosh! Who says they won't bend? Watch this!"
     },
     {
      "who": "大樹",
      "tag": "proud",
-     "text": "我不怕你！我最壯！",
-     "en": "I'm not afraid of you! I'm the strongest!"
+     "text": "我不怕你！我不彎！我最壯！",
+     "en": "I'm not afraid of you! I won't bend! I'm the strongest!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "scared",
+     "text": "好大的風！我要躲回窩裡！",
+     "en": "What a big wind! I'm hiding in my nest!"
     }
    ]
   },
   {
    "scene": "同一個河邊山坡，大風把河水吹出白色的浪花，草地上的花瓣都飛起來。",
-   "act": "北風鼓著臉頰用力吹；小草整叢彎下來，貼在地上，閉著眼睛微笑；風從小草身上吹過去。",
+   "act": "北風鼓著臉頰用力吹；小草整株彎下來，貼在地上，閉著眼睛微笑；風從小草身上吹過去；北風睜大眼睛，眉毛挑得高高的，一臉不敢相信。",
    "lines": [
     {
      "who": "旁白",
@@ -139,23 +188,51 @@
      "who": "旁白",
      "text": "小草趴在地上，風從她身上吹過去了。",
      "en": "The reed bent all the way down, and the wind rushed right over her."
+    },
+    {
+     "who": "北風",
+     "tag": "surprised",
+     "text": "咦？這株小草，怎麼吹不倒？",
+     "en": "Huh? Why can't I knock over this little reed?"
     }
    ]
   },
   {
    "scene": "同一個河邊山坡，風更大了，樹葉滿天飛。",
-   "act": "北風對著大樹拚命吹；大樹咬著牙、樹幹挺得直直的，一動也不動，樹葉一片一片被吹走；一根樹枝「喀啦」一聲斷了，掉到地上；大樹痛得皺起眉頭；樹枝上的小鳥窩還好好的。",
+   "act": "北風鼓起臉頰，對著大樹拚命吹；大樹的樹葉一片一片被吹走，樹枝上的鳥窩跟著搖，小鳥在窩裡緊緊閉著眼睛；小草貼在地上，抬頭朝大樹大喊；大樹咬著牙，樹幹挺得直直的。",
    "lines": [
     {
-     "who": "大樹",
-     "tag": "angry",
-     "text": "我不彎！我不彎！",
-     "en": "I won't bend! I won't bend!"
+     "who": "旁白",
+     "text": "北風鼓起臉頰，對著大樹用力吹。",
+     "en": "North Wind puffed up his cheeks and blew hard at the oak."
     },
     {
      "who": "旁白",
-     "text": "北風再用力一吹，好多樹葉都飛走了。",
-     "en": "North Wind blew even harder, and lots of leaves went flying."
+     "text": "好多樹葉都飛走了，鳥窩也在搖。",
+     "en": "Lots of leaves flew away, and the bird's nest started to sway."
+    },
+    {
+     "who": "小草",
+     "tag": "shouting",
+     "text": "大樹，彎一下腰呀！",
+     "en": "Big Oak, bend a little!"
+    },
+    {
+     "who": "大樹",
+     "tag": "angry",
+     "text": "我不要！我不彎！我最壯！",
+     "en": "No way! I won't bend! I'm the strongest!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個河邊山坡，狂風中，樹葉滿天飛。",
+   "act": "右邊一根樹枝「喀啦」一聲斷了，掉到地上；大樹痛得皺起眉頭；左邊樹枝上的小鳥窩還好好的，小鳥從窩裡探出頭，鬆了一口氣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "北風再用力一吹。",
+     "en": "North Wind blew harder still."
     },
     {
      "who": "旁白",
@@ -167,17 +244,22 @@
      "tag": "crying",
      "text": "哎喲！我的樹枝！",
      "en": "Ouch! My branch!"
+    },
+    {
+     "who": "旁白",
+     "text": "幸好，鳥窩在另一根樹枝上。",
+     "en": "Luckily, the bird's nest was on a different branch."
     }
    ]
   },
   {
    "scene": "同一個河邊山坡，烏雲散開了，天空又變藍；地上躺著一根斷掉的樹枝和好多葉子。",
-   "act": "北風飛回遠方的山後面，只剩一個小小的背影；小草一根一根站起來，伸伸懶腰；大樹垂著樹枝，難過地看著地上的斷樹枝；小草抬頭，關心地看著大樹。",
+   "act": "北風飛回遠方的山後面，只剩一個小小的身影；小草慢慢站起來，伸伸懶腰；大樹垂著樹枝，難過地看著地上的斷樹枝；小草抬頭，關心地看著大樹。",
    "lines": [
     {
      "who": "旁白",
-     "text": "北風吹累了，飛回山後面去了。",
-     "en": "At last North Wind got tired and flew back behind the mountains."
+     "text": "風停了，北風飛回山後面去了。",
+     "en": "At last the wind died down, and North Wind flew back behind the mountains."
     },
     {
      "who": "小草",
@@ -199,8 +281,8 @@
    ]
   },
   {
-   "scene": "同一個河邊山坡，風停了，陽光照下來；大樹的葉子少了一大半，地上散著落葉和那根斷樹枝。",
-   "act": "大樹低下頭，不好意思地看著小草，臉有一點紅；小草仰起頭，笑咪咪地指著樹枝上的小鳥窩，兩隻小鳥從窩裡探出頭。",
+   "scene": "同一個河邊山坡，風停了，陽光照下來；大樹的葉子少了一大半，地上散著葉子和那根斷樹枝。",
+   "act": "大樹低下頭，不好意思地看著小草，臉有一點紅；小草仰起頭，笑咪咪地指著樹枝上的小鳥窩；小鳥從窩裡飛出來，停在大樹的樹枝上，張開翅膀抱住樹枝。",
    "lines": [
     {
      "who": "大樹",
@@ -212,19 +294,25 @@
      "who": "大樹",
      "tag": "gentle",
      "text": "原來，會彎腰，也很厲害。",
-     "en": "Being able to bend is strong too."
+     "en": "So bending can be a kind of strong, too!"
     },
     {
      "who": "小草",
      "tag": "happy",
-     "text": "你也很厲害呀！小鳥都住在你身上呢。",
-     "en": "You're strong too! The birds all live in your branches."
+     "text": "你也很厲害呀！小鳥就住在你身上呢。",
+     "en": "You're strong too! The little bird lives in your branches."
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "對呀，大樹是我最棒的家！",
+     "en": "That's right! Big Oak is the best home ever!"
     }
    ]
   },
   {
    "scene": "春天的河邊山坡，陽光溫暖，河邊開滿小黃花；大樹斷掉樹枝的地方，冒出一小簇嫩綠色的新芽。",
-   "act": "大樹低頭看著新芽，笑得很溫柔；一陣微風吹來，大樹也輕輕擺動樹枝，跟小草一起搖擺，好像在跳舞；小鳥在鳥窩邊拍著翅膀。",
+   "act": "大樹低頭看著新芽，笑得很溫柔；小草在大樹腳邊抬頭笑；小鳥站在新芽旁邊。",
    "lines": [
     {
      "who": "旁白",
@@ -242,6 +330,35 @@
      "tag": "laughing",
      "text": "好呀！風來了，我們一起跳舞！",
      "en": "Sure! When the wind comes, we'll dance together!"
+    }
+   ]
+  },
+  {
+   "scene": "春天的河邊山坡，微風吹過，小黃花和青草都往同一邊擺。",
+   "act": "一陣微風吹來，大樹輕輕彎下樹枝，跟小草一起往同一邊搖擺，好像在跳舞；小鳥站在大樹的樹枝上，跟著樹枝一上一下，張開翅膀開心大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一陣微風吹來，大樹和小草，一起彎腰，一起搖擺。",
+     "en": "A soft breeze blew. The oak and the reed bent and swayed together."
+    },
+    {
+     "who": "小鳥",
+     "tag": "laughing",
+     "text": "哇！樹枝搖來搖去，好像盪鞦韆！",
+     "en": "Wow! The branch is swaying back and forth, just like a swing!"
+    },
+    {
+     "who": "小草",
+     "tag": "happy",
+     "text": "大樹，你也會彎腰了！",
+     "en": "Big Oak, you can bend too!"
+    },
+    {
+     "who": "大樹",
+     "tag": "laughing",
+     "text": "呵，彎一彎腰，真好玩！",
+     "en": "Ho ho! Bending is so much fun!"
     }
    ]
   }

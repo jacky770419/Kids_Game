@@ -40,12 +40,12 @@
   },
   {
    "char": "磨",
-   "where": "第6頁『磨成麵粉』，第7頁『磨成』，第11頁『磨麵粉』",
+   "where": "第6頁『磨成麵粉』，第11頁『磨麵粉』",
    "read": "mò"
   },
   {
    "char": "誰",
-   "where": "第2、4、6、8頁『誰要幫我』，第10頁『誰要吃麵包』",
+   "where": "第2、4、6、8、12頁『誰要幫我』，第10頁『誰要吃麵包』",
    "read": "shéi"
   },
   {
@@ -55,8 +55,23 @@
   },
   {
    "char": "沒",
-   "where": "第11頁『沒有幫忙』，第12頁『沒關係』",
+   "where": "第11頁『沒有幫忙』『沒關係』",
    "read": "méi"
+  },
+  {
+   "char": "會",
+   "where": "第1頁『就會冒出』",
+   "read": "huì"
+  },
+  {
+   "char": "場",
+   "where": "第1頁『農場』",
+   "read": "chǎng"
+  },
+  {
+   "char": "膀",
+   "where": "第10頁『翅膀』",
+   "read": "bǎng"
   }
  ],
  "pages": [
@@ -77,13 +92,13 @@
     {
      "who": "旁白",
      "text": "有一天，小紅母雞在地上找到一把麥子。",
-     "en": "One day, the Little Red Hen found some wheat seeds on the ground."
+     "en": "One day, the Little Red Hen found some grains of wheat on the ground."
     },
     {
      "who": "小紅母雞",
      "tag": "excited",
      "text": "把麥子撒在土裡，就會冒出好多麥子！",
-     "en": "If I scatter these seeds in the soil, lots of wheat will grow!"
+     "en": "If I scatter these grains in the soil, lots of wheat will grow!"
     }
    ]
   },
@@ -163,8 +178,8 @@
     {
      "who": "貓",
      "tag": "sleepy",
-     "text": "不要，我要曬太陽。",
-     "en": "Not me. I'm lying in the sun."
+     "text": "不要，我要換一邊曬太陽。",
+     "en": "Not me. I'm sunning my other side."
     },
     {
      "who": "狗",
@@ -233,8 +248,8 @@
     {
      "who": "鴨子",
      "tag": "lazy",
-     "text": "不要，我要去游泳。",
-     "en": "Not me. I'm going swimming."
+     "text": "不要，我要在水裡翻個身。",
+     "en": "Not me. I'm rolling over in the water."
     },
     {
      "who": "小紅母雞",
@@ -268,7 +283,7 @@
   },
   {
    "scene": "小紅母雞的小廚房，窗戶開著，看得到外面的農場。",
-   "act": "小紅母雞捧著一大盆麵粉站在窗口問大家；窗外，貓在打哈欠，狗在追蝴蝶，鴨子在池塘裡；小紅母雞把白色小圍裙綁緊，準備揉麵團。",
+   "act": "小紅母雞捧著一大盆麵粉站在窗口問大家；窗外，貓在打哈欠，狗在追另一隻藍色的蝴蝶，鴨子在池塘裡；小紅母雞把白色小圍裙綁緊，準備揉麵團。",
    "lines": [
     {
      "who": "小紅母雞",
@@ -285,8 +300,8 @@
     {
      "who": "狗",
      "tag": "excited",
-     "text": "不要，我要追蝴蝶。",
-     "en": "Not me. I'm chasing butterflies."
+     "text": "不要，我要追第二隻蝴蝶。",
+     "en": "Not me. I'm chasing another butterfly."
     },
     {
      "who": "鴨子",
@@ -338,7 +353,7 @@
   },
   {
    "scene": "小紅母雞的廚房門口，桌上放著冒熱氣的金黃色大麵包。",
-   "act": "小紅母雞捧著麵包站在門口；貓、狗、鴨子擠在門外，三個一起高高舉起手和翅膀，眼睛閃閃發亮，口水都快流下來了。",
+   "act": "小紅母雞捧著麵包站在門口；貓、狗、鴨子擠在門外，三個一起高高舉起腳掌和翅膀，眼睛閃閃發亮，口水都快流下來了。",
    "lines": [
     {
      "who": "小紅母雞",
@@ -366,25 +381,25 @@
     },
     {
      "who": "旁白",
-     "text": "三個好朋友，一下子都舉起手來。",
-     "en": "All three friends put their hands up at once."
+     "text": "三個好朋友，一下子都舉起腳掌和翅膀。",
+     "en": "All three friends shot their paws and wings up at once."
     }
    ]
   },
   {
    "scene": "小紅母雞的廚房門口。",
-   "act": "小紅母雞抱著麵包，溫柔地看著大家，沒有生氣；貓、狗、鴨子慢慢放下手，低著頭、耳朵垂下來，貓用腳尖畫圈圈，鴨子抓抓帽子。",
+   "act": "小紅母雞抱著麵包，溫柔地看著大家，沒有生氣；貓、狗、鴨子慢慢放下腳掌和翅膀，低著頭、耳朵垂下來，貓用腳尖畫圈圈，鴨子抓抓帽子。最後，小紅母雞笑著把麵包分成四塊，遞給大家，貓、狗、鴨子又驚訝又開心。",
    "lines": [
     {
      "who": "小紅母雞",
      "tag": "gentle",
-     "text": "撒麥子的時候，你們在哪裡？",
-     "en": "Where were you when I scattered the seeds?"
+     "text": "撒麥子、割麥子的時候，你們在哪裡？",
+     "en": "Where were you when I scattered the seeds and cut the wheat?"
     },
     {
      "who": "小紅母雞",
-     "text": "磨麵粉的時候，你們在哪裡？",
-     "en": "Where were you when I ground the flour?"
+     "text": "磨麵粉、烤麵包的時候，你們在哪裡？",
+     "en": "Where were you when I ground the flour and baked the bread?"
     },
     {
      "who": "旁白",
@@ -394,42 +409,49 @@
     {
      "who": "貓",
      "tag": "sad",
-     "text": "對不起，都是妳一個人做的。",
-     "en": "We're sorry. You did it all by yourself."
+     "text": "對不起，我們都沒有幫忙。",
+     "en": "We're sorry. None of us helped."
     },
     {
-     "who": "鴨子",
-     "tag": "sad",
-     "text": "我們都沒有幫忙。",
-     "en": "None of us helped."
+     "who": "小紅母雞",
+     "tag": "happy",
+     "text": "沒關係，這個麵包，我們一起吃。下次，我們也要一起做喔！",
+     "en": "That's okay. Let's share this bread. But next time, let's make it together too!"
     }
    ]
   },
   {
    "scene": "第二年春天的農場，田裡的土剛翻好，天空很藍；角落一張小桌子上放著一個烤好的大麵包。",
-   "act": "上半張：小紅母雞、貓、狗、鴨子排成一排，一起把麥子撒進田裡，狗撒得最用力，貓的蝴蝶結沾到泥土也在笑；下半張：四個好朋友圍著小桌子，一人一塊麵包，吃得好開心。",
+   "act": "上半張：小紅母雞捧著麥子問大家，貓、狗、鴨子一起跳起來搶著舉起腳掌和翅膀；接著四個好朋友排成一排，一起把麥子撒進田裡，狗撒得最用力，貓的蝴蝶結沾到泥土也在笑。下半張：麥子收成後，四個好朋友圍著小桌子，一人一塊大麵包，吃得好開心。",
    "lines": [
     {
      "who": "小紅母雞",
      "tag": "happy",
-     "text": "沒關係。下次，我們一起做，一起吃！",
-     "en": "That's okay. Next time, let's make it together and eat it together!"
+     "text": "春天又來了！誰要幫我撒麥子？",
+     "en": "Spring is here again! Who will help me scatter the seeds?"
+    },
+    {
+     "who": "貓",
+     "tag": "excited",
+     "text": "我來幫忙！",
+     "en": "I will!"
     },
     {
      "who": "狗",
      "tag": "excited",
-     "text": "好！說好了喔！",
-     "en": "Yes! It's a promise!"
+     "text": "我來幫忙！",
+     "en": "I will!"
+    },
+    {
+     "who": "鴨子",
+     "tag": "excited",
+     "text": "我也來幫忙！",
+     "en": "Me too!"
     },
     {
      "who": "旁白",
-     "text": "第二年春天，四個好朋友一起撒麥子。",
-     "en": "The next spring, the four friends scattered the seeds together."
-    },
-    {
-     "who": "旁白",
-     "text": "麵包烤好了，大家一起吃，好香喔！",
-     "en": "When the bread was ready, they all ate it together. Yum!"
+     "text": "四個好朋友一起做，一起吃，麵包好香喔！",
+     "en": "The four friends made the bread together and ate it together. It was so yummy!"
     }
    ]
   }

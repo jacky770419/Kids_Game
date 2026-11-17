@@ -50,7 +50,7 @@
   },
   {
    "char": "沒",
-   "where": "第11頁『都沒有』，第12頁『都沒有』，第13頁『沒多久』",
+   "where": "第11頁『都沒有』，第12頁『都沒有』，第13頁『沒多久』；第10頁『沒關好』",
    "read": "méi"
   },
   {
@@ -67,6 +67,11 @@
    "char": "嚇",
    "where": "第15頁『嚇了一大跳』",
    "read": "xià"
+  },
+  {
+   "char": "扇",
+   "where": "第10頁『哪一扇窗戶』",
+   "read": "shàn"
   }
  ],
  "pages": [
@@ -82,7 +87,7 @@
     {
      "who": "旁白",
      "text": "每隻小羊都戴著鈴鐺，一走路就叮噹響。",
-     "en": "Each little goat wore a bell that went ding-dong with every step."
+     "en": "Each little goat wore a bell that went jingle-jingle with every step."
     },
     {
      "who": "小羊們",
@@ -93,8 +98,8 @@
     {
      "who": "最小的小羊",
      "tag": "proud",
-     "text": "我最小，可是我最聰明！",
-     "en": "I'm the littlest, but I'm the smartest!"
+     "text": "我最小，可是我很聰明！",
+     "en": "I'm the littlest, but I'm very clever!"
     }
    ]
   },
@@ -128,8 +133,8 @@
    ]
   },
   {
-   "scene": "小木屋的客廳，門和窗戶都關好了。",
-   "act": "羊媽媽彎下腰，手放在嘴邊，小聲說悄悄話；小羊們把耳朵湊過去，眼睛睜得好大。最後一格畫面：窗外遠遠的大樹後面，露出一隻灰色尖耳朵和半張灰色的臉，圓圓的黑眼睛正在偷看。",
+   "scene": "小木屋的客廳，大門關得好好的。",
+   "act": "羊媽媽彎下腰，手放在嘴邊，小聲說悄悄話；小羊們把耳朵湊過去，眼睛睜得好大。最後一格：羊媽媽抱抱每一隻小羊，手臂掛著空籃子出門。",
    "lines": [
     {
      "who": "羊媽媽",
@@ -138,32 +143,39 @@
      "en": "When I come home, I'll say a secret password first."
     },
     {
+     "who": "最小的小羊",
+     "tag": "curious",
+     "text": "暗號是什麼？",
+     "en": "What's a password?"
+    },
+    {
      "who": "羊媽媽",
-     "text": "暗號是：青草香，鈴鐺響。",
-     "en": "The password is: Sweet green grass, ring the bells."
+     "tag": "whispering",
+     "text": "暗號就是我們家的祕密話：青草香，鈴鐺響。別人都不知道喔！",
+     "en": "A password is a secret just for our family: Sweet green grass, jingle bells! Nobody else knows it."
     },
     {
      "who": "小羊們",
      "tag": "whispering",
      "text": "青草香，鈴鐺響！",
-     "en": "Sweet green grass, ring the bells!"
+     "en": "Sweet green grass, jingle bells!"
     },
     {
      "who": "旁白",
      "text": "羊媽媽抱了抱每一隻小羊，就出門了。",
      "en": "Mother Goat hugged every little goat and set off."
-    },
-    {
-     "who": "旁白",
-     "text": "可是，大樹後面，有一雙眼睛正在偷看。",
-     "en": "But from behind a big tree, someone was watching."
     }
    ]
   },
   {
    "scene": "小木屋門口，綠色木門關著，旁邊的小窗戶也關著。",
-   "act": "大野狼就是《小紅帽》《三隻小豬》裡那隻灰狼：灰色的毛、白色的肚子和嘴巴、粉紅色臉頰、圓圓的黑眼睛、尖耳朵裡面是粉紅色、一條好大的蓬鬆尾巴，尾巴尖端是白色，樣子滑稽不可怕。牠舉起爪子敲門，壓低嗓子裝媽媽；門裡的小羊們擠在一起，搖頭。",
+   "act": "第一格：羊媽媽提著菜籃走遠了，小木屋旁的大樹後面，探出一隻灰色尖耳朵和半張灰色的臉，正在偷看。接著，大野狼就是《小紅帽》《三隻小豬》裡那隻灰狼：灰色的毛、白色的肚子和嘴巴、粉紅色臉頰、圓圓的黑眼睛、尖耳朵裡面是粉紅色、一條好大的蓬鬆尾巴，尾巴尖端是白色，樣子滑稽不可怕。牠舉起爪子敲門，壓低嗓子裝媽媽；門裡的小羊們擠在一起，搖頭。",
    "lines": [
+    {
+     "who": "旁白",
+     "text": "可是，大樹後面，有一雙眼睛正在偷看。",
+     "en": "But from behind a big tree, someone was watching."
+    },
     {
      "who": "旁白",
      "text": "是大野狼！牠舔了一下嘴巴，走到門口。",
@@ -336,13 +348,13 @@
   },
   {
    "scene": "小木屋的客廳：床、木頭櫃子、大桌子、長窗簾、洗衣籃、搖椅，牆邊是那座高高的大鐘。",
-   "act": "窗外大野狼氣得跳腳，尾巴豎起來；屋裡小羊們四處跑去躲：紅鈴鐺鑽到床底下，橙鈴鐺躲進櫃子，黃鈴鐺躲在桌子下，綠鈴鐺躲在窗簾後面，藍鈴鐺鑽進洗衣籃，紫鈴鐺蓋著被子。",
+   "act": "窗外大野狼氣得跳腳，尾巴豎起來，一扇一扇推窗戶，找到一扇沒關緊的窗；屋裡小羊們四處跑去躲：紅鈴鐺鑽到床底下，橙鈴鐺躲進櫃子，黃鈴鐺躲在桌子下，綠鈴鐺躲在窗簾後面，藍鈴鐺鑽進洗衣籃，紫鈴鐺蓋著被子。",
    "lines": [
     {
      "who": "大野狼",
      "tag": "angry",
-     "text": "不開門？那我從窗戶爬進去！",
-     "en": "You won't open the door? Then I'll climb in the window!"
+     "text": "不開門？哼！我來找一找，哪一扇窗戶沒關好！",
+     "en": "You won't open the door? Hmph! I'll find a window that isn't shut tight!"
     },
     {
      "who": "最小的小羊",
@@ -445,7 +457,7 @@
      "who": "羊媽媽",
      "tag": "gentle",
      "text": "青草香，鈴鐺響！",
-     "en": "Sweet green grass, ring the bells!"
+     "en": "Sweet green grass, jingle bells!"
     }
    ]
   },
@@ -495,7 +507,7 @@
     {
      "who": "旁白",
      "text": "咚！咚！咚！叮噹！叮噹！",
-     "en": "Bang! Bang! Bang! Ding-dong! Ding-dong!"
+     "en": "Bang! Bang! Bang! Jingle! Jingle!"
     },
     {
      "who": "旁白",
@@ -504,7 +516,7 @@
     },
     {
      "who": "旁白",
-     "text": "牠一溜煙跑回森林，再也不敢來了。",
+     "text": "牠一路跑回森林，再也不敢來了。",
      "en": "He ran all the way back to the forest and never came back again."
     }
    ]

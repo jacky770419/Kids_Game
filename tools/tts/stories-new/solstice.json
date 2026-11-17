@@ -6,7 +6,8 @@
  "roles": {
   "阿福": "六歲左右的小男孩，聲音清亮、很有精神，愛現又好勝，搓出大湯圓時得意洋洋，等湯圓時又急又可愛。",
   "小美": "五歲左右的小女孩，聲音細細甜甜的，愛笑愛發現，變出粉紅色湯圓時又驚又喜。",
-  "奶奶": "村子裡的老奶奶，聲音慈祥溫和、笑咪咪的，說話慢慢的，像在說悄悄話。"
+  "奶奶": "阿福和小美的奶奶，聲音慈祥溫和、笑咪咪的，說話慢慢的，像在說悄悄話。",
+  "媽媽": "阿福和小美的媽媽，三十多歲的女聲，溫柔開朗，下班回家看到孩子時笑著誇獎。"
  },
  "cast": {
   "阿福": {
@@ -20,17 +21,21 @@
   "奶奶": {
    "find": "冰璃_Jui",
    "en": "Clara"
+  },
+  "媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
   }
  },
  "polyphones": [
   {
    "char": "搓",
-   "where": "書名『冬至搓湯圓』，第2頁『搓湯圓』『我要搓』，第3、5、12頁『搓一搓』",
+   "where": "書名『冬至搓湯圓』，第2頁『搓湯圓』『我要搓』，第3、5、14頁『搓一搓』，第7頁『我搓的』",
    "read": "cuō"
   },
   {
    "char": "熟",
-   "where": "第4頁『才會熟』，第7頁『就熟了』",
+   "where": "第4頁『才會熟』，第8頁『就熟了』",
    "read": "shú"
   },
   {
@@ -42,6 +47,26 @@
    "char": "什",
    "where": "第5頁『變出了什麼呢』",
    "read": "shén"
+  },
+  {
+   "char": "鬧",
+   "where": "第6頁『好熱鬧』",
+   "read": "nào"
+  },
+  {
+   "char": "齊",
+   "where": "第7頁『都到齊了』",
+   "read": "qí"
+  },
+  {
+   "char": "切",
+   "where": "第11頁『切成小塊』",
+   "read": "qiē"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『才會熟』，第12頁『會變成』，第13頁『就會每天』",
+   "read": "huì"
   }
  ],
  "pages": [
@@ -52,7 +77,7 @@
     {
      "who": "旁白",
      "text": "這天早上，好冷喔。",
-     "en": "That morning, it was very cold."
+     "en": "It was a very, very cold morning."
     },
     {
      "who": "阿福",
@@ -87,6 +112,11 @@
      "tag": "happy",
      "text": "冬至要吃湯圓，我們一起來搓湯圓吧！",
      "en": "On the Winter Solstice, we eat tangyuan, little rice balls. Let's roll some together!"
+    },
+    {
+     "who": "奶奶",
+     "text": "晚上爸爸媽媽回來，一家人一起吃。",
+     "en": "Tonight, when Mom and Dad get home from work, we'll all eat together."
     },
     {
      "who": "小美",
@@ -133,7 +163,7 @@
   },
   {
    "scene": "同一張木頭大桌，竹篩上已經排了幾顆小小的紅湯圓和白湯圓。",
-   "act": "阿福得意地舉起一顆跟他拳頭一樣大的白湯圓，像一顆棒球；小美睜大眼睛、嘴巴張成圓形；奶奶摀著嘴笑。",
+   "act": "阿福得意地舉起一顆跟他拳頭一樣大的白湯圓，像一顆棒球；小美睜大眼睛、嘴巴張成圓形；奶奶用手遮著嘴笑。",
    "lines": [
     {
      "who": "阿福",
@@ -190,8 +220,8 @@
    ]
   },
   {
-   "scene": "同一張木頭大桌，竹篩上排滿了紅色、白色的小湯圓，中間有一顆粉紅色的，和一顆特別大的白湯圓。",
-   "act": "奶奶摟著阿福和小美，指著竹篩上的湯圓說話；阿福歪著頭問問題；小美靠在奶奶身上笑。",
+   "scene": "同一張木頭大桌，竹篩上排滿了紅色、白色的小湯圓，還有一顆粉紅色的，和一顆特別大的白湯圓。",
+   "act": "奶奶摟著阿福和小美坐在桌邊；阿福歪著頭問問題，接著把五顆湯圓在竹篩上排成一個圓圈：一顆白的、兩顆紅的、那顆粉紅色的，和那顆特別大的白湯圓；小美靠在奶奶身上笑。",
    "lines": [
     {
      "who": "阿福",
@@ -202,25 +232,65 @@
     {
      "who": "奶奶",
      "tag": "gentle",
-     "text": "紅色和白色放在一起，看起來好喜氣。",
-     "en": "Red and white together look so cheerful and lucky."
+     "text": "紅色和白色放在一起，看起來好熱鬧、好開心。",
+     "en": "Red and white together look so bright and happy."
+    },
+    {
+     "who": "旁白",
+     "text": "阿福把五顆湯圓，排成一個圓圈。",
+     "en": "Afu put five tangyuan in a circle."
+    },
+    {
+     "who": "阿福",
+     "tag": "proud",
+     "text": "這顆是奶奶，這是爸爸、媽媽、小美，最大的是我！",
+     "en": "This one is Grandma. These are Dad, Mom, and Mei. And the biggest one is me!"
     },
     {
      "who": "奶奶",
-     "text": "湯圓是圓的，就像一家人，大家都在一起。",
-     "en": "And tangyuan are round, like a family all together."
+     "tag": "laughing",
+     "text": "湯圓是圓的，就像一家人，圍成一圈在一起。",
+     "en": "Tangyuan are round, like a family sitting together in a circle."
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家的大門口和廚房，窗外天已經全黑了，牆上的時鐘指著五點半；門邊的衣架掛著外套，屋裡亮著黃色的燈。",
+   "act": "大門打開，爸爸（黑色短髮、戴黑框眼鏡，穿灰色大衣、圍深藍色圍巾）和媽媽（黑色長髮綁成馬尾，穿米色大衣、圍紅色圍巾）提著包包走進來，臉頰被風吹得紅紅的；阿福捧著他的大湯圓衝過去給他們看；小美指著窗外黑漆漆的天；奶奶在廚房門口笑咪咪。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "才五點多，天就黑了。",
+     "en": "It was only a little after five, and it was already dark."
     },
     {
      "who": "小美",
+     "tag": "surprised",
+     "text": "天又黑了！今天的白天，好短喔。",
+     "en": "It's dark again! Today's daytime was so short."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，門打開了，爸爸媽媽下班回來了！",
+     "en": "Just then, the door opened. Mom and Dad were home from work!"
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "爸爸，媽媽，你們看！這是我搓的大湯圓！",
+     "en": "Dad, Mom, look! I made this big tangyuan!"
+    },
+    {
+     "who": "媽媽",
      "tag": "happy",
-     "text": "我們一家人，都在一起！",
-     "en": "Our family is all together!"
+     "text": "好大喔！一家人都到齊了，我們來煮湯圓吧！",
+     "en": "Wow, it's so big! The whole family is here. Let's cook the tangyuan!"
     }
    ]
   },
   {
    "scene": "廚房的爐子，大鍋子裡的水滾了，冒出好多白色的熱氣。",
-   "act": "奶奶站在爐子前，用大湯勺把湯圓一顆一顆放進滾水裡；阿福和小美站在奶奶後面一步遠，墊著腳尖探頭看鍋子；湯圓都沉在鍋底。",
+   "act": "奶奶站在爐子前，用大湯勺把湯圓一顆一顆放進滾水裡；阿福和小美站在奶奶後面一步遠，墊著腳尖探頭看鍋子；爸爸媽媽站在孩子後面，一手搭著他們的肩膀；湯圓都沉在鍋底。",
    "lines": [
     {
      "who": "旁白",
@@ -276,7 +346,7 @@
   },
   {
    "scene": "同一個爐子，鍋子裡的熱氣往上飄。",
-   "act": "那顆特別大的白湯圓終於浮上來，在一群小湯圓中間，像一個大月亮；阿福高興得雙手舉高跳起來；小美拍手；奶奶笑咪咪。",
+   "act": "那顆特別大的白湯圓終於浮上來，在一群小湯圓中間，像一個大月亮；阿福高興得雙手舉高跳起來；小美拍手；奶奶和爸爸媽媽都笑咪咪。",
    "lines": [
     {
      "who": "旁白",
@@ -298,13 +368,47 @@
    ]
   },
   {
-   "scene": "廚房的木頭餐桌，三個小碗裡裝著紅白湯圓和咖啡色的黑糖湯，冒著熱氣；窗外天已經黑了，牆上的時鐘才五點半。",
-   "act": "阿福張大嘴巴，想一口吃下大湯圓；小美用湯匙舀起粉紅色湯圓，對著它吹氣；奶奶伸出一根手指，笑著比一個「一」。",
+   "scene": "廚房的木頭餐桌，五個小碗裡裝著紅白湯圓和咖啡色的黑糖湯，冒著熱氣；窗外天已經黑了。",
+   "act": "奶奶用湯匙把阿福碗裡的大湯圓切成小塊；阿福捧著碗，乖乖等著；小美用湯匙舀起粉紅色湯圓，嘟起嘴對著它吹氣；爸爸媽媽坐在旁邊，也拿起湯匙吹一吹。",
    "lines": [
     {
      "who": "旁白",
      "text": "奶奶把湯圓裝進碗裡，再加上香甜的黑糖湯。",
      "en": "Grandma put the tangyuan into bowls and added sweet brown sugar soup."
+    },
+    {
+     "who": "旁白",
+     "text": "她用湯匙把阿福的大湯圓切成小塊。",
+     "en": "With a spoon, she cut Afu's big tangyuan into little pieces."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "湯圓又燙又黏，要一小口，一小口吃喔！",
+     "en": "Tangyuan are hot and sticky. Take small bites, one at a time!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家拿起湯匙，呼，呼，吹一吹。",
+     "en": "Everyone picked up a spoon and blew. Whoo, whoo!"
+    }
+   ]
+  },
+  {
+   "scene": "同一張木頭餐桌，五個人圍著桌子坐，碗裡冒著熱氣；窗外天黑了。",
+   "act": "小美吃了一口粉紅色湯圓，眼睛瞇起來，一手捧著臉頰；阿福用湯匙舀起一小塊大湯圓放進嘴裡，得意地比一個讚；奶奶伸出一根手指，笑著比一個「一」；爸爸媽媽看著孩子笑。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "好燙！可是好甜，又好軟！",
+     "en": "It's hot! But it's so sweet and soft!"
+    },
+    {
+     "who": "阿福",
+     "tag": "proud",
+     "text": "我的大湯圓，最好吃！",
+     "en": "My big tangyuan is the yummiest!"
     },
     {
      "who": "奶奶",
@@ -328,12 +432,12 @@
   },
   {
    "scene": "晚上，奶奶家的窗外天全黑了，一彎月亮和好多星星，冷風吹著院子裡的樹；屋裡亮著溫暖的黃色燈光。",
-   "act": "奶奶、阿福、小美坐在桌邊，捧著碗喝甜湯，臉頰紅通通；阿福嘴邊沾著黑糖湯；小美靠在奶奶身上；阿福對著窗外的天空揮手。",
+   "act": "奶奶、爸爸、媽媽、阿福、小美圍坐在桌邊，捧著碗喝甜湯，臉頰紅通通；阿福嘴邊沾著黑糖湯；小美靠在奶奶身上；阿福對著窗外的天空揮手。",
    "lines": [
     {
      "who": "旁白",
-     "text": "外面天黑了，冷風吹個不停。",
-     "en": "Outside it was dark, and the cold wind kept blowing."
+     "text": "窗外，冷風吹個不停。",
+     "en": "Outside the window, the cold wind kept blowing."
     },
     {
      "who": "小美",
@@ -357,7 +461,7 @@
   },
   {
    "scene": "奶奶家的廚房，木頭桌上擺著一盤紅白湯圓，窗外是星星。",
-   "act": "阿福和小美面對畫面外的小讀者，兩手合起來做搓湯圓的動作，笑得好開心；奶奶在後面捧著一碗湯圓，笑咪咪。",
+   "act": "阿福和小美面對畫面外的小讀者，兩手合起來做搓湯圓的動作，笑得好開心；奶奶、爸爸、媽媽在後面捧著一碗湯圓，笑咪咪。",
    "lines": [
     {
      "who": "旁白",
@@ -374,7 +478,7 @@
      "who": "小美",
      "tag": "happy",
      "text": "冬至吃湯圓，一家人在一起！",
-     "en": "Tangyuan on Solstice Day, with the whole family together!"
+     "en": "Tangyuan on the longest night, with our family snug and tight!"
     }
    ]
   }

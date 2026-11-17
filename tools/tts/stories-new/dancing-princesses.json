@@ -7,7 +7,7 @@
   "國王": "就是《青蛙王子》裡那位慈祥的老國王，聲音低沉溫暖、慢慢說，看到破鞋子就著急又好笑，最後開心地笑。",
   "大公主": "十二個公主裡最大的姊姊，聲音嬌嬌的、愛帶頭、有點得意，被發現時不好意思。",
   "小公主": "十二個公主裡最小的妹妹，聲音甜美、膽子小、心地好，很有禮貌。",
-  "園丁小伙子": "城堡花園裡的年輕園丁，聲音清亮有精神，好奇又勇敢，做事認真。"
+  "園丁哥哥": "城堡花園裡的年輕園丁，聲音清亮有精神，好奇又勇敢，做事認真。"
  },
  "cast": {
   "國王": {
@@ -22,7 +22,7 @@
    "find": "Yu-Ting",
    "en": "Libby - Animated"
   },
-  "園丁小伙子": {
+  "園丁哥哥": {
    "find": "Xiaobao",
    "en": "Ryan Quin"
   }
@@ -30,12 +30,12 @@
  "polyphones": [
   {
    "char": "會",
-   "where": "第1頁『都會』，第2頁『怎麼會』，第12頁『會發光』，第16頁『舞會』",
+   "where": "第1頁『都會』，第2頁『怎麼會』，第5頁『就會想睡』，第12頁『會發光』，第15頁『會想睡』，第16頁『舞會』",
    "read": "huì"
   },
   {
    "char": "給",
-   "where": "第6頁『送給妳』，第7頁『公主給你』，第9頁『餵給了』",
+   "where": "第6頁『送給妳』，第7頁『公主給你』",
    "read": "gěi"
   },
   {
@@ -75,7 +75,7 @@
   },
   {
    "char": "喝",
-   "where": "第7頁『不要喝』",
+   "where": "第5頁『喝了』『喝完』，第7頁『不要喝』，第9頁『喝杯』，第15頁『喝會想睡的牛奶』",
    "read": "hē"
   },
   {
@@ -87,6 +87,11 @@
    "char": "祕",
    "where": "第4、6、15頁『祕密』",
    "read": "mì"
+  },
+  {
+   "char": "倒",
+   "where": "第9頁『倒進花盆』",
+   "read": "dào"
   }
  ],
  "pages": [
@@ -162,8 +167,8 @@
     },
     {
      "who": "旁白",
-     "text": "城裡的鞋匠爺爺，每天都忙著做新鞋。",
-     "en": "The old shoemaker in town was busy making new shoes every single day."
+     "text": "城裡的鞋匠爺爺，每天做新鞋，做到手都痠了。",
+     "en": "The old shoemaker in town made new shoes every single day, until his hands ached."
     },
     {
      "who": "旁白",
@@ -200,8 +205,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "可是，大公主送來一杯熱牛奶。",
-     "en": "But the eldest princess brought each of them a cup of warm milk."
+     "text": "可是，大公主送來熱牛奶，喝了就會想睡。",
+     "en": "But the eldest princess brought them warm milk that made them very sleepy."
     },
     {
      "who": "旁白",
@@ -222,15 +227,15 @@
   },
   {
    "scene": "城堡的花園，早上。開滿玫瑰和向日葵，有一口小水井和一間小工具屋。",
-   "act": "園丁小伙子出場：大約十五歲，棕色捲髮，戴一頂草帽，穿綠色背心和咖啡色長褲，繫一件綠色圍裙。他把一朵黃色小花送給小公主；小公主現在穿淺紫色長裙，黑色短髮、粉紅色蝴蝶結，她笑著接過花；她腳上的鞋子破了一個洞。",
+   "act": "園丁哥哥出場：大約十五歲，棕色捲髮，戴一頂草帽，穿綠色背心和咖啡色長褲，繫一件綠色圍裙。他把一朵黃色小花送給小公主；小公主現在穿淺紫色長裙，黑色短髮、粉紅色蝴蝶結，她笑著接過花；她腳上的鞋子破了一個洞。",
    "lines": [
     {
      "who": "旁白",
-     "text": "城堡的花園裡，有一位園丁小伙子。",
+     "text": "城堡的花園裡，有一位園丁哥哥。",
      "en": "In the castle garden, there worked a young gardener."
     },
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "tag": "happy",
      "text": "小公主，早安！這朵花送給妳。",
      "en": "Good morning, Little Princess! This flower is for you."
@@ -242,7 +247,7 @@
      "en": "Thank you! You're kind to me every day."
     },
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "tag": "curious",
      "text": "咦？妳的鞋子，怎麼又破了？",
      "en": "Huh? Why are your shoes worn out again?"
@@ -257,12 +262,12 @@
   },
   {
    "scene": "城堡外面的小路，下午，路邊有一棵大橡樹。",
-   "act": "園丁小伙子幫一位彎著腰、白頭髮、圍著紅色披肩的老奶奶提著一個大籃子；老奶奶從籃子裡拿出一件灰色的斗篷送給他，對他眨眼睛。",
+   "act": "園丁哥哥幫一位彎著腰、白頭髮、圍著紅色披肩的老奶奶提著一個大籃子；老奶奶從籃子裡拿出一件灰色的斗篷送給他，對他眨眼睛。",
    "lines": [
     {
      "who": "旁白",
-     "text": "這天，小伙子幫一位老奶奶，提了一個大籃子。",
-     "en": "That day, the young gardener helped an old granny carry a big basket."
+     "text": "這天，園丁哥哥幫一位老奶奶，提了一個大籃子。",
+     "en": "That day, the gardener helped an old granny carry a big basket."
     },
     {
      "who": "旁白",
@@ -283,10 +288,10 @@
   },
   {
    "scene": "城堡大廳，紅地毯和金色寶座。",
-   "act": "園丁小伙子摘下草帽、拿在胸前，站在寶座前，表情很認真；灰色斗篷摺好夾在手臂下；國王摸著白鬍子，挑起眉毛，先是驚訝，然後笑咪咪。",
+   "act": "園丁哥哥摘下草帽、拿在胸前，站在寶座前，表情很認真；灰色斗篷摺好夾在手臂下；國王摸著白鬍子，挑起眉毛，先是驚訝，然後笑咪咪。",
    "lines": [
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "tag": "brave",
      "text": "國王，讓我試一試！",
      "en": "Your Majesty, let me try!"
@@ -294,11 +299,11 @@
     {
      "who": "國王",
      "tag": "surprised",
-     "text": "你？你是園丁小伙子呀！",
+     "text": "你？你是花園的園丁呀！",
      "en": "You? But you're the gardener!"
     },
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "text": "我想幫小公主，也想幫您。",
      "en": "I want to help the little princess, and you too."
     },
@@ -312,21 +317,21 @@
   },
   {
    "scene": "公主臥室外面的小房間，晚上，牆角有一個大花盆，裡面是一棵綠色的小樹；通往公主臥室的門半開著。",
-   "act": "大公主（紅色長捲髮、穿白色睡衣）笑咪咪地端來一杯熱牛奶；園丁小伙子趁她轉身，把牛奶倒進花盆裡；接著靠在沙發椅上假裝打呼，一隻眼睛偷偷睜開一條縫。",
+   "act": "大公主（紅色長捲髮、穿白色睡衣）笑咪咪地端來一杯熱牛奶；園丁哥哥趁她轉身，把牛奶倒進花盆裡；接著靠在沙發椅上假裝打呼，一隻眼睛偷偷睜開一條縫。",
    "lines": [
     {
      "who": "大公主",
      "tag": "sweet",
-     "text": "園丁小伙子，喝杯熱牛奶，早點睡吧。",
-     "en": "Here, gardener. Have some warm milk and get some sleep."
+     "text": "園丁哥哥，喝杯熱牛奶，早點睡吧。",
+     "en": "Here, dear gardener. Have some warm milk and get some sleep."
     },
     {
      "who": "旁白",
-     "text": "小伙子想起老奶奶的話，把牛奶餵給了花盆。",
-     "en": "The gardener remembered the granny's words and fed the milk to a flowerpot."
+     "text": "園丁哥哥想起老奶奶的話，把牛奶倒進花盆。",
+     "en": "The gardener remembered the granny's words and poured the milk into a flowerpot."
     },
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "tag": "sleepy",
      "text": "呼，呼，呼！",
      "en": "Snore, snore, snore!"
@@ -341,7 +346,7 @@
   },
   {
    "scene": "公主們的大臥室，晚上，點著蠟燭。大公主的床往下沉，地板上出現一個方形的洞，裡面有一條石頭樓梯往下，透出金色的光。",
-   "act": "十二個公主換上彩色的舞裙和新鞋子，在洞口排好隊；大公主彎腰敲著床頭；園丁小伙子披著灰色斗篷，畫成半透明的淡淡輪廓，跟在最後面的小公主後面。",
+   "act": "十二個公主換上彩色的舞裙和新鞋子，在洞口排好隊；大公主彎腰敲著床頭；園丁哥哥披著灰色斗篷，畫成半透明的淡淡輪廓，跟在最後面的小公主後面。",
    "lines": [
     {
      "who": "旁白",
@@ -360,18 +365,18 @@
     },
     {
      "who": "旁白",
-     "text": "小伙子披上斗篷，跟在小公主的後面。",
+     "text": "園丁哥哥披上斗篷，跟在小公主的後面。",
      "en": "The gardener put on the cloak and followed the little princess."
     }
    ]
   },
   {
    "scene": "往下的石頭樓梯，又窄又暗，牆上嵌著會發光的小石頭。",
-   "act": "半透明的園丁小伙子不小心踩到小公主淺紫色舞裙的裙角，趕快捂住嘴巴；小公主回頭，嚇了一跳；走在前面的大公主回頭揮手，要她快點。",
+   "act": "半透明的園丁哥哥不小心踩到小公主淺紫色舞裙的裙角，趕快遮住嘴巴；小公主回頭，嚇了一跳；走在前面的大公主回頭揮手，要她快點。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小伙子不小心，踩到小公主的裙子。",
+     "text": "園丁哥哥不小心，踩到小公主的裙子。",
      "en": "The gardener accidentally stepped on the little princess's dress."
     },
     {
@@ -388,14 +393,14 @@
     },
     {
      "who": "旁白",
-     "text": "小伙子遮住嘴巴，不敢出聲。",
+     "text": "園丁哥哥遮住嘴巴，不敢出聲。",
      "en": "The gardener covered his mouth and stayed very quiet."
     }
    ]
   },
   {
    "scene": "地底下一座會發光的樹林：近處是銀色葉子的樹，再過去是金色葉子的樹，最遠的樹像鑽石一樣閃亮；樹葉發出柔和的光，地上也亮亮的。",
-   "act": "公主們排成一排走在發光的樹中間，抬頭欣賞；半透明的小伙子伸手摘下一根銀色小樹枝；小公主嚇得轉頭看；大公主開心地張開雙手。",
+   "act": "公主們排成一排走在發光的樹中間，抬頭欣賞；半透明的園丁哥哥伸手摘下一根銀色小樹枝；小公主嚇得轉頭看；大公主開心地張開雙手。",
    "lines": [
     {
      "who": "旁白",
@@ -409,7 +414,7 @@
     },
     {
      "who": "旁白",
-     "text": "小伙子摘下一根銀色的小樹枝。啪！",
+     "text": "園丁哥哥摘下一根銀色的小樹枝。啪！",
      "en": "The gardener snapped off a little silver twig. Snap!"
     },
     {
@@ -427,8 +432,8 @@
    ]
   },
   {
-   "scene": "樹林後面一座好大的湖，湖水是深藍色，水裡有發光的小魚，水面上漂著睡蓮；湖邊停著十二條小白船，每艘船頭掛著一盞小燈；湖的對面有一座亮著燈的玻璃舞廳。",
-   "act": "公主們一人一艘小船，划向對岸；半透明的小伙子坐在小公主的船尾，小船往下沉了一點；小公主划得滿頭大汗，嘟著嘴巴。",
+   "scene": "樹林後面一座好大的湖，湖水是深藍色，水裡有發光的小魚，水面上漂著睡蓮；湖邊停著十二條小白船，每條船頭掛著一盞小燈；湖的對面有一座亮著燈的玻璃舞廳。",
+   "act": "公主們一人一條小船，划向對岸；半透明的園丁哥哥坐在小公主的船尾，小船往下沉了一點；小公主划得滿頭大汗，嘟著嘴巴。",
    "lines": [
     {
      "who": "旁白",
@@ -442,7 +447,7 @@
     },
     {
      "who": "旁白",
-     "text": "小伙子坐在小公主的船上。",
+     "text": "園丁哥哥坐在小公主的船上。",
      "en": "The gardener sat in the little princess's boat."
     },
     {
@@ -455,7 +460,7 @@
   },
   {
    "scene": "湖對面的玻璃舞廳，屋頂掛滿像星星一樣的小燈，四周開著會發光的花；拇指大的小精靈們，背上有透明翅膀、穿彩色衣服，坐在發光的花朵上吹笛子、打小鼓。",
-   "act": "十二個公主穿著彩色舞裙開心地跳舞，裙子像花一樣張開；大公主拉著小公主的手跳；半透明的小伙子在角落學著跳，踩到自己的腳，差點跌倒，好笑；公主們的鞋底越磨越薄。",
+   "act": "十二個公主穿著彩色舞裙開心地跳舞，裙子像花一樣張開；大公主拉著小公主的手跳；半透明的園丁哥哥在角落學著跳，踩到自己的腳，差點跌倒，好笑；公主們的鞋底越磨越薄。",
    "lines": [
     {
      "who": "旁白",
@@ -475,7 +480,7 @@
     },
     {
      "who": "旁白",
-     "text": "小伙子也跟著跳，一直踩到自己的腳。",
+     "text": "園丁哥哥也跟著跳，一直踩到自己的腳。",
      "en": "The gardener danced too, and kept stepping on his own feet."
     },
     {
@@ -487,47 +492,48 @@
   },
   {
    "scene": "城堡大廳，早上，陽光照進來，國王坐在金色寶座上。",
-   "act": "園丁小伙子拿著銀色的小樹枝給國王看；十二個公主站成一排，手上提著破鞋子，臉紅紅的；大公主低著頭，小公主偷偷對小伙子笑；國王張大嘴巴，好驚訝。",
+   "act": "園丁哥哥拿著銀色的小樹枝給國王看；十二個公主站成一排，手上提著破鞋子，臉紅紅的；大公主低著頭，小公主偷偷對園丁哥哥笑；國王張大嘴巴，好驚訝。",
    "lines": [
     {
      "who": "旁白",
-     "text": "天快亮了，小伙子先跑回去，躺好打呼。",
+     "text": "天快亮了，園丁哥哥先跑回去，躺好打呼。",
      "en": "Before dawn, the gardener hurried back first and lay down, snoring."
     },
     {
      "who": "國王",
      "tag": "curious",
-     "text": "園丁小伙子，你找到祕密了嗎？",
-     "en": "Gardener, did you find the secret?"
+     "text": "怎麼樣？你找到祕密了嗎？",
+     "en": "Well? Did you find the secret?"
     },
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "tag": "excited",
-     "text": "找到了！公主們去地底下的樹林跳舞了！",
-     "en": "I did! The princesses went to a forest under the ground to dance!"
-    },
-    {
-     "who": "旁白",
-     "text": "他拿出那根銀色的小樹枝。",
-     "en": "He held up the little silver twig."
+     "text": "找到了！公主們去地底下的樹林跳舞！看，這根銀樹枝！",
+     "en": "I did! The princesses went down to an underground forest to dance! Look at this silver twig!"
     },
     {
      "who": "大公主",
      "tag": "shy",
      "text": "對不起，爸爸。我們好愛跳舞，怕你不讓我們去。",
      "en": "We're sorry, Father. We love to dance, and we were afraid you'd say no."
+    },
+    {
+     "who": "大公主",
+     "tag": "sad",
+     "text": "我們不該讓王子們喝會想睡的牛奶，也不該說謊。",
+     "en": "We shouldn't have given the princes sleepy milk, or fibbed to you."
     }
    ]
   },
   {
    "scene": "城堡的大廳變成了舞廳，晚上，掛滿彩帶和燈，樂隊在演奏；鞋匠爺爺坐在旁邊。",
-   "act": "國王牽著大公主跳舞，皇冠歪到一邊，笑得好開心；其他公主手牽手跳成一圈；小公主拉著園丁小伙子（換上乾淨的白襯衫、還是戴著草帽）的手跳舞；鞋匠爺爺坐在旁邊拍手，腳邊放著一大箱新鞋子。",
+   "act": "國王牽著大公主跳舞，皇冠歪到一邊，笑得好開心；其他公主手牽手跳成一圈；小公主拉著園丁哥哥（換上乾淨的白襯衫、還是戴著草帽）的手跳舞；鞋匠爺爺坐在旁邊拍手，腳邊放著一大箱新鞋子。",
    "lines": [
     {
      "who": "國王",
      "tag": "laughing",
      "text": "傻孩子！想跳舞，跟爸爸說就好呀！",
-     "en": "Silly girls! If you want to dance, just tell me!"
+     "en": "Oh, my dear girls! If you want to dance, just tell me!"
     },
     {
      "who": "旁白",
@@ -537,17 +543,17 @@
     {
      "who": "國王",
      "tag": "happy",
-     "text": "園丁小伙子是大英雄！大家一起來跳舞！",
-     "en": "The gardener is our hero! Everyone, come and dance!"
+     "text": "這位園丁，是大英雄！大家一起來跳舞！",
+     "en": "This gardener is our hero! Everyone, come and dance!"
     },
     {
      "who": "小公主",
      "tag": "shy",
      "text": "園丁哥哥，你要跟我跳舞嗎？",
-     "en": "Gardener, will you dance with me?"
+     "en": "Will you dance with me, dear gardener?"
     },
     {
-     "who": "園丁小伙子",
+     "who": "園丁哥哥",
      "tag": "happy",
      "text": "好呀！我們是好朋友！",
      "en": "Sure! We're good friends!"
