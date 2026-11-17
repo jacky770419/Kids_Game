@@ -1,0 +1,255 @@
+[
+ {
+  "open": "logic.html?h=river&l=2",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "Array.from(document.querySelectorAll('#lgStage img')).every(i=>i.naturalWidth>0)",
+  "why": "圖都載到了"
+ },
+ {
+  "shot": "l3-start.png"
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 沒有發亮"
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1000
+ },
+ {
+  "shot": "l3-miss-goat-dip.png"
+ },
+ {
+  "wait": 800
+ },
+ {
+  "shot": "l3-miss-goat-eats.png"
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "expect": "parseFloat(document.querySelector('.river-item[data-item=\"wolf\"]').style.left) <50",
+  "why": "wolf 在這邊"
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===0",
+  "why": "亮了 0 顆"
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 沒有發亮"
+ },
+ {
+  "tap": ".river-item[data-item=\"cabbage\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "shot": "l3-swap.png"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1700
+ },
+ {
+  "shot": "l3-miss-wolf-teases.png"
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 沒有發亮"
+ },
+ {
+  "tap": ".river-item[data-item=\"cabbage\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1700
+ },
+ {
+  "shot": "l3-miss-empty.png"
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 發亮"
+ },
+ {
+  "shot": "l3-hint-goat.png"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "expect": "document.querySelector('.river-oar').classList.contains('lg-glow')",
+  "why": ".river-oar 發亮"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===3",
+  "why": "亮了 3 顆"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1700
+ },
+ {
+  "shot": "l3-miss-right-bank.png"
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 發亮"
+ },
+ {
+  "shot": "l3-hint-back.png"
+ },
+ {
+  "tap": ".river-undo"
+ },
+ {
+  "wait": 900
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===2",
+  "why": "亮了 2 顆"
+ },
+ {
+  "expect": "parseFloat(document.querySelector('.river-item[data-item=\"wolf\"]').style.left) <50",
+  "why": "wolf 在這邊"
+ },
+ {
+  "shot": "l3-undo.png"
+ },
+ {
+  "tap": ".river-item[data-item=\"cabbage\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 沒有發亮"
+ },
+ {
+  "shot": "l3-trip6.png"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===7",
+  "why": "亮了 7 顆"
+ },
+ {
+  "wait": 3600
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l3-win.png"
+ }
+]

@@ -1,0 +1,179 @@
+/* 動動腦小屋：一次只能載一個（過河）。
+   左邊是這邊的岸、中間是河、右邊是對岸。三樣東西在兩岸各有固定的位子（用 left／top 擺，
+   換位子時滑過去）；船分兩層，乘客夾在中間，看起來像坐在船裡。 */
+
+.lg-river { background: #9ADBF8; }
+
+.river-bg { position: absolute; inset: 0; }
+.river-bg svg { display: block; width: 100%; height: 100%; }
+
+/* 兩岸：看不到的框，只拿來當「拖下船」的落點 */
+.river-bank { position: absolute; top: 14%; height: 74%; width: 24%; pointer-events: none; }
+.river-bank.l { left: 0; }
+.river-bank.r { right: 0; }
+
+/* ----- 上面那一排：規則卡（左）、槳（中）、上一步（右） ----- */
+.river-rule.btn {
+  position: absolute;
+  top: 2.4cqw;
+  width: 16.5cqw;
+  height: 10cqw;
+  padding: 0 .8cqw;
+  gap: .2cqw;
+  border-radius: 2.8cqw;
+  box-shadow: 0 .9cqw 0 var(--lip);
+  z-index: 5;
+}
+.river-rule.btn:active { transform: none; translate: 0 .6cqw; box-shadow: 0 .3cqw 0 var(--lip); }
+.river-rule i { display: block; width: 6.2cqw; height: 7cqw; flex: none; }
+.river-rule i img, .river-rule i svg { display: block; width: 100%; height: 100%; object-fit: contain; }
+.river-rule b { display: block; width: 2.8cqw; height: 2.8cqw; flex: none; }
+.river-rule b svg { display: block; width: 100%; height: 100%; }
+/* 出事時，對應的那張閃一下 */
+.river-flash { animation: riverFlash 1.8s ease; }
+@keyframes riverFlash {
+  0%, 40%, 80% { scale: 1.16; box-shadow: 0 .9cqw 0 var(--lip), 0 0 0 .8cqw #FF5C5C; }
+  20%, 60%, 100% { scale: 1; box-shadow: 0 .9cqw 0 var(--lip), 0 0 0 0 #FF5C5C; }
+}
+
+.river-oar.btn {
+  position: absolute;
+  left: 50%;
+  top: 2.4cqw;
+  width: 16cqw;
+  height: 10cqw;
+  margin-left: -8cqw;
+  gap: .6cqw;
+  border-radius: 3cqw;
+  box-shadow: 0 .9cqw 0 var(--lip);
+  z-index: 5;
+}
+.river-oar.btn:active { transform: none; translate: 0 .6cqw; box-shadow: 0 .3cqw 0 var(--lip); }
+.river-oar.btn:disabled { transform: none; translate: 0 .9cqw; box-shadow: none; }
+.river-oar-ic { width: 6.4cqw; height: 6.4cqw; flex: none; }
+.river-arrow { width: 5.4cqw; height: 5.4cqw; flex: none; transition: scale .3s ease; }
+.river-oar.back .river-arrow { scale: -1 1; }
+.river-oar.back { flex-direction: row-reverse; }
+
+.river-undo.btn {
+  position: absolute;
+  right: 2.4cqw;
+  top: 2.4cqw;
+  width: 11cqw;
+  height: 10cqw;
+  border-radius: 3cqw;
+  box-shadow: 0 .9cqw 0 var(--lip);
+  z-index: 5;
+}
+.river-undo.btn:active { transform: none; translate: 0 .6cqw; box-shadow: 0 .3cqw 0 var(--lip); }
+.river-undo.btn:disabled { transform: none; translate: 0 .9cqw; box-shadow: none; }
+.river-undo .ic { width: 5.6cqw; height: 5.6cqw; }
+
+/* ----- 划了幾趟：一排小圓點（平的，不能按），每划成功一趟亮一顆 ----- */
+.river-trips {
+  position: absolute;
+  left: 28%;
+  right: 28%;
+  bottom: 2.6cqw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .9cqw;
+  pointer-events: none;
+  z-index: 1;
+}
+.river-trips b {
+  width: 2.8cqw;
+  height: 2.8cqw;
+  border-radius: 50%;
+  border: .5cqw solid #33274F;
+  background: rgba(255, 255, 255, .55);
+}
+.river-trips b.on { background: #FFA228; }
+
+/* ----- 船 ----- */
+.river-boat, .river-hull {
+  position: absolute;
+  width: 29cqw;
+  pointer-events: none;
+  transition: left var(--row, 1.3s) ease-in-out;
+}
+.river-boat { top: 28cqw; height: 23.42cqw; z-index: 2; }
+.river-hull { top: 40.27cqw; height: 11.15cqw; z-index: 4; }
+.river-boat svg, .river-hull svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.river-gp {
+  position: absolute;
+  left: .45cqw;
+  top: 3.6cqw;
+  width: 13.2cqw;
+  height: 12cqw;
+  overflow: hidden;
+}
+.river-gp img { display: block; width: 100%; }
+.river-seat { transition: opacity .2s ease; }
+.river-boat.full .river-seat { opacity: 0; }
+/* 划的時候槳前後擺 */
+.river-paddle { transform-origin: 112px -26px; }
+.river-rowing .river-paddle { animation: riverPaddle .46s ease-in-out infinite alternate; }
+@keyframes riverPaddle { from { rotate: -9deg; } to { rotate: 12deg; } }
+
+/* ----- 三樣東西 ----- */
+.river-item {
+  position: absolute;
+  width: 15cqw;
+  height: 15cqw;
+  z-index: 3;
+  transition: left .35s ease, top .35s ease;
+}
+.river-rowing .river-item { transition: left var(--row, 1.3s) ease-in-out, top .35s ease; }
+.river-art { position: relative; width: 100%; height: 100%; }
+.river-art img, .river-art span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  pointer-events: none;
+}
+.river-art svg { display: block; width: 100%; height: 100%; overflow: visible; }
+[data-item="cabbage"] .river-art { scale: .86; transform-origin: center bottom; }
+
+/* 大野狼捉弄小羊：換成鼓著臉的那張，往小羊靠過去搖來搖去；小羊發抖 */
+.river-w2, .river-c2 { opacity: 0; }
+.river-tease .river-w1 { opacity: 0; }
+.river-tease .river-w2 { opacity: 1; }
+.river-tease { z-index: 6; }
+.river-tease .river-art { animation: riverTease .42s ease-in-out infinite alternate; }
+@keyframes riverTease {
+  from { translate: calc(var(--dx, 1) * 1cqw) 1.6cqw; rotate: -9deg; }
+  to { translate: calc(var(--dx, 1) * 2.4cqw) 2.8cqw; rotate: 9deg; }
+}
+.river-shiver .river-art { animation: riverShiver .1s linear infinite alternate; }
+@keyframes riverShiver { from { translate: -.45cqw 0; } to { translate: .45cqw 0; } }
+
+/* 小羊偷咬白菜：小羊湊過去咬一口，回到原地嚼嚼嚼；白菜換成缺一角的那張、晃一晃 */
+.river-nibble { z-index: 6; }
+.river-nibble .river-art { animation: riverNibble 2.2s ease-in-out both; }
+@keyframes riverNibble {
+  0% { translate: 0 0; rotate: 0deg; }
+  14%, 30% { translate: calc(var(--dx, -1) * 2.6cqw) 8.2cqw; rotate: calc(var(--dx, -1) * 8deg); }
+  22% { translate: calc(var(--dx, -1) * 2.6cqw) 9.4cqw; rotate: calc(var(--dx, -1) * 8deg); }
+  44% { translate: 0 0; rotate: 0deg; scale: 1; }
+  52%, 68%, 84% { scale: 1.07 .93; }
+  60%, 76%, 92% { scale: .96 1.05; }
+  100% { scale: 1; }
+}
+.river-bitten .river-c1 { opacity: 0; transition: opacity 0s .5s; }
+.river-bitten .river-c2 { opacity: 1; transition: opacity 0s .5s; }
+.river-bitten .river-art { animation: riverBitten .28s ease-in-out .5s 4 alternate; }
+@keyframes riverBitten { from { rotate: -5deg; } to { rotate: 5deg; } }
+
+/* ----- 選小屋那張卡：老爺爺和小羊坐在船上 ----- */
+.river-card-water { position: absolute; left: 0; right: 0; bottom: 0; height: 42%; background: #9ADBF8; }
+.river-card-hull { position: absolute; left: 6%; top: 55%; width: 88%; aspect-ratio: 2.6; }
+.river-card-hull svg { display: block; width: 100%; height: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .river-rowing .river-paddle, .river-shiver .river-art { animation: none; }
+}

@@ -241,3 +241,28 @@ body.home {
 .sheet .track { flex: 1; height: 14px; border-radius: 7px; background: var(--line); overflow: hidden; }
 .sheet #verBar { width: 0; height: 100%; border-radius: 7px; background: #4AA8EE; }
 .sheet .pct { font-family: var(--num); font-weight: 500; font-size: 20px; font-variant-numeric: tabular-nums; }
+
+/* --- 第七扇門：動動腦（邏輯小遊戲） ---
+   直的一扇放最右邊、跨兩列：前面六扇的位置和順序都不動（孩子不用重新認），只是各窄一點。
+   直放時改成橫的一扇放最下面。寫在檔尾是為了蓋過上面 .doors 的格線，不去改原本那幾行。 */
+.doors { grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, .8fr); max-width: 1180px; }
+.d-logic { --c: #F2B705; --d: #C08A00; --t: #FFF3C4; grid-column: 4; grid-row: 1 / span 2; }
+/* 這扇門比較窄，名字小一號才不會凸出去 */
+.d-logic .name { font-size: 34px; padding: 6px 12px 6px 14px; }
+.door .lbeads { position: absolute; left: 0; right: 0; top: 6%; display: flex; justify-content: center; gap: 4%; }
+.door .lbeads b { width: 17%; aspect-ratio: 1; border-radius: 50%; border: 3px solid #33274F; }
+/* 窗是直的、很窄：圖用寬度定大小（用高度會被左右裁掉） */
+.door .l1 { left: 14%; top: 17%; width: 72%; height: auto; }
+.door .l2 { left: 8%; bottom: 5%; width: 84%; height: auto; }
+@media (orientation: portrait) {
+  .doors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr)) minmax(0, .62fr);
+  }
+  .d-logic { grid-column: 1 / span 2; grid-row: 4; flex-direction: row; gap: 18px; }
+  .d-logic .win { height: 100%; }
+  .door .lbeads { top: 50%; left: 34%; right: 34%; transform: translateY(-50%); }
+  .door .lbeads b { width: 20%; }
+  .door .l1 { left: 5%; top: 6%; width: auto; height: 88%; }
+  .door .l2 { left: auto; right: 5%; bottom: 6%; width: auto; height: 88%; }
+}

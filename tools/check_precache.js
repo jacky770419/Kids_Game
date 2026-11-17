@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const HTML_PAGES = ['index.html', 'coloring.html', 'puzzle.html', 'words.html', 'stickers.html', 'cake.html', 'story.html'];
+const HTML_PAGES = ['index.html', 'coloring.html', 'puzzle.html', 'words.html', 'stickers.html', 'cake.html', 'story.html', 'logic.html'];
 
 const problems = [];   // 逐筆缺漏，最後一次印出
 function fail(msg) { problems.push(msg); }
@@ -92,6 +92,12 @@ for (const [file, why] of [['js/pictures-data.js', '拼圖圖片'], ['js/lineart
 for (const [file, why] of [['js/story-data.js', '故事書的圖'], ['js/story-script.js', '故事書的配音']]) {
   const src = stripComments(readFile(file));
   for (const mm of src.matchAll(/['"](assets\/[^'"]+\.(?:png|jpg|mp3|svg))['"]/g)) need(mm[1], why);
+}
+
+// 2b-3. 動動腦：外殼與小屋程式裡的圖、已錄好的題目語音清單（js/logic-audio.js），都是完整路徑字面
+for (const file of fs.readdirSync(path.join(ROOT, 'js')).filter((f) => /^logic.*\.js$/.test(f))) {
+  const src = stripComments(readFile('js/' + file));
+  for (const mm of src.matchAll(/['"](assets\/[^'"]+\.(?:png|jpg|mp3|svg))['"]/g)) need(mm[1], '動動腦（js/' + file + '）');
 }
 
 // 2c. words.json 的單字圖

@@ -1,0 +1,187 @@
+/* 動動腦（邏輯小遊戲）共用樣式。每間小屋另外一支 css/logic-<id>.css。
+
+   房間色是黃色。板面（.lg-stage）固定 4:3、放到最大；小屋裡的東西一律用 % 定位、
+   用 cqw 定大小（1cqw＝板面寬的 1%，100cqh＝75cqw），橫放直放都是同一張圖放大縮小。 */
+
+body.logic {
+  --room: #F2B705;
+  --lip: #C08A00;
+  --tint: #FFF3C4;
+  display: flex;
+  flex-direction: column;
+}
+
+.logic .top { padding-bottom: 10px; }
+.logic .nav { display: flex; gap: 16px; flex: none; }
+.logic .guide { flex: 1; }
+
+/* 泡泡：題目比別頁長，放得下就一行，放不下就小一號、折成兩行 */
+.logic .bubble { font-size: 32px; text-align: left; }
+.logic .bubble-txt { flex-wrap: wrap; row-gap: 4px; }
+.logic .bubble.lg-long { white-space: normal; font-size: 26px; line-height: 1.15; }
+.lg-en { font-family: var(--en); font-size: .86em; line-height: 1.25; white-space: normal; }
+
+/* ===== 選小屋 ===== */
+#lgSelect {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 calc(40px + var(--sr)) calc(36px + var(--sb)) calc(40px + var(--sl));
+}
+.lg-grid {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+.lg-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 12px 16px;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0 10px 0 var(--lip);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.lg-card:active { transform: translateY(7px); box-shadow: 0 3px 0 var(--lip); }
+.lg-card-pic {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 26px;
+  background: var(--tint);
+  overflow: hidden;
+}
+.lg-card-pic img { position: absolute; object-fit: contain; pointer-events: none; }
+.lg-card-name { display: inline-flex; align-items: center; font-size: 30px; line-height: 1; white-space: nowrap; }
+.lg-card-stars { display: flex; gap: 6px; }
+.lg-card-stars b {
+  width: 26px;
+  height: 26px;
+  background: var(--flat);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.lg-card-stars b.on { background: #FFC83D; }
+
+/* ===== 玩 ===== */
+#lgPlay {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 16px;
+  padding: 0 calc(24px + var(--sr)) calc(20px + var(--sb)) calc(24px + var(--sl));
+}
+.lg-fit {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  container-type: size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lg-stage {
+  position: relative;
+  width: min(100cqw, 100cqh * 4 / 3);
+  height: min(100cqh, 100cqw * 3 / 4);
+  container-type: size;
+  border-radius: 32px;
+  background: #fff;
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* 小關圓點：過了的打勾（綠）、現在這關是房間色、還沒開的灰灰平平 */
+.lg-dots {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 76px;
+}
+.lg-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--num);
+  font-size: 30px;
+  box-shadow: 0 6px 0 var(--lip);
+}
+.lg-dot .ic { width: 34px; height: 34px; }
+.lg-dot.ok { background: var(--go); color: #fff; box-shadow: 0 6px 0 var(--go-lip); }
+.lg-dot.now {
+  background: var(--room);
+  color: #fff;
+  transform: translateY(3px);
+  box-shadow: 0 0 0 4px var(--tint), 0 0 0 8px var(--ink);
+}
+.lg-dot.shut { background: var(--flat); color: var(--flat-ink); box-shadow: none; transform: translateY(6px); pointer-events: none; }
+
+/* ===== 過關 ===== */
+.lg-win { gap: 20px; }
+.lg-win-bear { height: min(300px, 38vh); animation: lgBounce .7s ease infinite alternate; pointer-events: none; }
+.lg-win .btn.xl { width: 128px; height: 116px; border-radius: 34px; }
+.lg-win .btn.go { width: 168px; }
+.lg-win .btn .ic { width: 64px; height: 64px; }
+@keyframes lgBounce { from { transform: translateY(0) rotate(-3deg); } to { transform: translateY(-18px) rotate(3deg); } }
+
+/* ===== 小屋共用的小零件 ===== */
+/* 拖得動的東西：拖的時候浮到最上面 */
+.lg-draggable { touch-action: none; cursor: grab; }
+.lg-drag { z-index: 50; filter: drop-shadow(0 10px 0 rgba(51, 39, 79, .18)); cursor: grabbing; }
+.lg-locked { pointer-events: none; }
+
+/* 動畫（Logic 的 api.anim(el, 'lg-shake') 觸發） */
+.lg-shake { animation: lgShake .5s ease; }
+.lg-pop { animation: lgPop .45s ease; }
+.lg-nod { animation: lgNod .6s ease; }
+@keyframes lgShake {
+  20% { translate: -2.2cqw 0; } 40% { translate: 2cqw 0; } 60% { translate: -1.4cqw 0; } 80% { translate: 1cqw 0; }
+}
+@keyframes lgPop { 40% { scale: 1.18; } 70% { scale: .95; } }
+@keyframes lgNod { 30% { translate: 0 -2.4cqw; } 60% { translate: 0 .6cqw; } }
+
+/* 提示：「看這裡」的光圈 */
+.lg-glow { animation: lgGlow .9s ease-in-out infinite alternate; }
+@keyframes lgGlow {
+  from { filter: drop-shadow(0 0 0 rgba(255, 200, 61, 0)); }
+  to { filter: drop-shadow(0 0 1.6cqw rgba(255, 176, 0, .95)); }
+}
+
+/* 板面上的綠色「好了」鈕（放右上，不放下緣——手腕會壓到） */
+.lg-go {
+  position: absolute;
+  right: 2.4cqw;
+  top: 2.4cqw;
+  width: 11cqw;
+  height: 10cqw;
+  border-radius: 3cqw;
+}
+.lg-go .ic { width: 6cqw; height: 6cqw; }
+
+/* ===== 直放 ===== */
+@media (orientation: portrait) {
+  .lg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 640px; }
+  #lgPlay { flex-direction: column; }
+  .lg-dots { flex-direction: row; width: auto; height: 76px; }
+  .logic .bubble { font-size: 26px; white-space: normal; }
+  .logic .bubble.lg-long { font-size: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lg-win-bear, .lg-glow { animation: none; }
+}

@@ -11,7 +11,7 @@
    汰舊方式：改動任何被快取的檔案時，把 CACHE_VERSION 往上加一號。
    activate 會刪掉所有 kids- 開頭但版本不符的 cache，不會留下舊檔混用。 */
 
-const CACHE_VERSION = 'v31';
+const CACHE_VERSION = 'v32';
 const CACHE_NAME = 'kids-' + CACHE_VERSION;
 /* 新書（js/story-books.js 書單上的）不在預先快取裡：js/book-sync.js 在背景一本一本抓進這個 cache，
    它不跟版號走（改版不刪、不重抓），每個檔用書單上的雜湊判斷要不要更新。
@@ -30,6 +30,7 @@ const PRECACHE = [
   'stickers.html',
   'cake.html',
   'story.html',
+  'logic.html',
   'manifest.json',
   // 樣式：base 是共用的（按鈕、注音、小熊泡泡、完成畫面），其餘一頁一支
   'css/base.css',
@@ -40,6 +41,12 @@ const PRECACHE = [
   'css/stickers.css',
   'css/cake.css',
   'css/story.css',
+  // 動動腦（邏輯小遊戲）：外殼一支，一間小屋一支
+  'css/logic.css',
+  'css/logic-tidy.css',
+  'css/logic-beads.css',
+  'css/logic-detective.css',
+  'css/logic-river.css',
   // 程式
   'js/ui.js',
   'js/home.js',
@@ -77,6 +84,15 @@ const PRECACHE = [
   'js/book-sync.js',
   'js/story.js',
   'js/words.js',
+  // 動動腦：外殼、四間小屋、已錄好的題目語音清單；圖只有兩張是新放的（其餘用現成的貼紙和故事角色）
+  'js/logic.js',
+  'js/logic-audio.js',
+  'js/logic-tidy.js',
+  'js/logic-beads.js',
+  'js/logic-detective.js',
+  'js/logic-river.js',
+  'assets/logic/goat.png',
+  'assets/logic/mama.png',
   // 字型與圖示
   'assets/icon-192.png',
   'assets/icon-512.png',

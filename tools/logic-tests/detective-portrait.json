@@ -1,0 +1,29 @@
+[
+ {
+  "open": "logic.html?h=detective&l=2"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "shot": "portrait-l2.png"
+ },
+ {
+  "tap": ".detective-spot.on"
+ },
+ {
+  "wait": 900
+ },
+ {
+  "shot": "portrait-big.png"
+ },
+ {
+  "open": "logic.html?h=detective&l=0"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "shot": "portrait-l0.png"
+ }
+]

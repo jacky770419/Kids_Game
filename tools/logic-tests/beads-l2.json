@@ -1,0 +1,145 @@
+[
+ {
+  "open": "logic.html?h=beads&l=2",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "l2-start.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src:not(.t-ok):not(.beads-off)",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 1800
+ },
+ {
+  "shot": "l2-wrong1.png"
+ },
+ {
+  "wait": 2500
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l2-r1-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l2-r2.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l2-r2-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l2-r3.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 4300
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l2-win.png"
+ }
+]

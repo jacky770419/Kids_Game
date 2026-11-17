@@ -1,0 +1,74 @@
+[
+ {
+  "open": "logic.html?h=beads&l=3",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "p-l3.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src:not(.t-ok):not(.beads-off)",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "shot": "p-l3-wrong.png"
+ },
+ {
+  "open": "logic.html?h=beads&l=5",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "drag": [
+   ".beads-cell:nth-child(1) .beads-src",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src"
+ },
+ {
+  "tap": ".beads-cell:nth-child(3) .beads-src"
+ },
+ {
+  "tap": ".beads-cell:nth-child(1) .beads-src"
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src"
+ },
+ {
+  "shot": "p-l5.png"
+ },
+ {
+  "open": "logic.html?h=beads&l=2",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "p-l2.png"
+ }
+]

@@ -1,0 +1,134 @@
+[
+ {
+  "open": "logic.html?h=river&l=1",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "Array.from(document.querySelectorAll('#lgStage img')).every(i=>i.naturalWidth>0)",
+  "why": "圖都載到了"
+ },
+ {
+  "shot": "l2-start.png"
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 發亮"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "expect": "document.querySelector('.river-oar').classList.contains('lg-glow')",
+  "why": ".river-oar 發亮"
+ },
+ {
+  "shot": "l2-goat-aboard.png"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "!document.querySelector('.river-oar').classList.contains('lg-glow')",
+  "why": ".river-oar 沒有發亮"
+ },
+ {
+  "expect": "parseFloat(document.querySelector('.river-item[data-item=\"goat\"]').style.left) >50",
+  "why": "goat 在對岸"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "shot": "l2-trip3.png"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "shot": "l2-goat-back-aboard.png"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "parseFloat(document.querySelector('.river-item[data-item=\"goat\"]').style.left) <50",
+  "why": "goat 在這邊"
+ },
+ {
+  "tap": ".river-item[data-item=\"cabbage\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "shot": "l2-trip5.png"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===7",
+  "why": "亮了 7 顆"
+ },
+ {
+  "wait": 3600
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l2-win.png"
+ }
+]

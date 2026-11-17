@@ -1,0 +1,101 @@
+[
+ {
+  "open": "logic.html?h=beads&l=4",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "l4-start.png"
+ },
+ {
+  "expect": "(()=>{const s=[...document.querySelectorAll('.beads-slot')];const i=s.findIndex(x=>x.classList.contains('empty'));return i>0&&i<s.length-1&&s.filter(x=>x.classList.contains('empty')).length===1})()",
+  "why": "空位一個、不在頭尾"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src:not(.t-ok):not(.beads-off)",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "shot": "l4-wrong1.png"
+ },
+ {
+  "wait": 2500
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l4-r1-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l4-r2.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l4-r2-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l4-r3.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 4300
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l4-win.png"
+ }
+]

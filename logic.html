@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="小小遊樂園">
+<title>動動腦 - 小小遊樂園</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/logic.css">
+<link rel="stylesheet" href="css/logic-tidy.css">
+<link rel="stylesheet" href="css/logic-beads.css">
+<link rel="stylesheet" href="css/logic-detective.css">
+<link rel="stylesheet" href="css/logic-river.css">
+</head>
+<body class="logic">
+
+<!-- 每一頁左上都一樣：回家（要按住）、上一層、小熊泡泡。小熊念的是現在這一關的題目，點泡泡再聽一次。 -->
+<header class="top">
+  <div class="nav">
+    <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
+    <button id="backBtn" type="button" class="btn xl" aria-label="回去選小屋" hidden><i data-ic="back"></i></button>
+  </div>
+  <div id="lgGuide" class="guide"></div>
+</header>
+
+<!-- 選小屋：一間小屋是一本邏輯故事的謎題；卡片下面的星星是過了幾小關 -->
+<main id="lgSelect">
+  <div id="lgGrid" class="lg-grid"></div>
+</main>
+
+<!-- 玩：左邊是板面（每間小屋自己畫），右邊一排小關圓點 -->
+<main id="lgPlay" hidden>
+  <div class="lg-fit"><div id="lgStage" class="lg-stage"></div></div>
+  <aside id="lgDots" class="lg-dots" aria-label="小關"></aside>
+</main>
+
+<canvas id="confettiCanvas"></canvas>
+
+<!-- 過關：小熊拍手，下面三顆圖示（再一次、回去選小屋、綠色下一關） -->
+<div id="lgWin" class="overlay lg-win" hidden>
+  <img class="lg-win-bear" src="assets/stickers/bear.png" alt="">
+  <div class="overlay-row">
+    <button id="lgAgain" type="button" class="btn xl" aria-label="再玩一次"><i data-ic="replay"></i></button>
+    <button id="lgHouses" type="button" class="btn xl" aria-label="回去選小屋"><i data-ic="grid"></i></button>
+    <button id="lgNext" type="button" class="btn xl go" aria-label="下一關"><i data-ic="next"></i></button>
+  </div>
+</div>
+
+<script src="js/kiosk.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/music.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/story-data.js"></script>
+<script src="js/logic-audio.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/logic-tidy.js"></script>
+<script src="js/logic-beads.js"></script>
+<script src="js/logic-detective.js"></script>
+<script src="js/logic-river.js"></script>
+<script src="js/book-sync.js"></script>
+<script>
+/* 註冊 service worker：離線可玩全靠它。失敗（不支援、file:// 開啟、
+   權限被擋）就靜默略過，網頁照常運作，只是沒有離線能力。 */
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

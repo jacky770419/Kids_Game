@@ -1,0 +1,172 @@
+[
+ {
+  "open": "logic.html?h=beads&l=0",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "l0-start.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src:not(.t-ok):not(.beads-off)",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 900
+ },
+ {
+  "shot": "l0-wrong1.png"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===6",
+  "why": "放錯的珠子沒有留在項鍊上"
+ },
+ {
+  "expect": "!document.querySelector('.beads-src.lg-glow')",
+  "why": "錯一次還不發亮"
+ },
+ {
+  "wait": 3000
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src:not(.t-ok):not(.beads-off)"
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "shot": "l0-wrong2.png"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "shot": "l0-wrong2b.png"
+ },
+ {
+  "expect": "document.querySelector('.beads-src.t-ok').classList.contains('lg-glow')",
+  "why": "只有兩種：錯第 2 次對的發亮"
+ },
+ {
+  "wait": 2500
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.empty:not(.now)"
+  ]
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===6",
+  "why": "放到後面的空位不收"
+ },
+ {
+  "shot": "l0-later-slot.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   [
+    590,
+    300
+   ]
+  ]
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===7",
+  "why": "拖到項鍊附近放手也算放在下一個空位"
+ },
+ {
+  "expect": "!document.querySelector('.beads-src.lg-glow')",
+  "why": "放對之後提示收掉"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l0-r1-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "shot": "l0-r2.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "wait": 4400
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l0-r3.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 4300
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l0-win.png"
+ }
+]

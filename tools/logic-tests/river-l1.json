@@ -1,0 +1,88 @@
+[
+ {
+  "open": "logic.html?h=river&l=0",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "Array.from(document.querySelectorAll('#lgStage img')).every(i=>i.naturalWidth>0)",
+  "why": "圖都載到了"
+ },
+ {
+  "shot": "l1-start.png"
+ },
+ {
+  "expect": "document.querySelector('.river-oar').disabled",
+  "why": "第1關空船時槳是灰的"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "shot": "l1-aboard.png"
+ },
+ {
+  "expect": "!document.querySelector('.river-oar').disabled",
+  "why": "上船後槳能按"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 700
+ },
+ {
+  "shot": "l1-rowing.png"
+ },
+ {
+  "wait": 1300
+ },
+ {
+  "expect": "parseFloat(document.querySelector('.river-item[data-item=\"goat\"]').style.left) >50",
+  "why": "goat 在對岸"
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===1",
+  "why": "亮了 1 顆"
+ },
+ {
+  "shot": "l1-trip1.png"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===2",
+  "why": "亮了 2 顆"
+ },
+ {
+  "tap": ".river-item[data-item=\"cabbage\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l1-win.png"
+ }
+]

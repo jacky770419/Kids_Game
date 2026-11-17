@@ -33,6 +33,11 @@
     $('pCaseUp').checked = !lower;
     $('pListen').checked = w.listenOnly === true;
     $('pCakeListen').checked = get('kidsCakeListen') === '1';
+    // 動動腦念題目的語言：zh 中文（預設）／en 英文／both 中文念完接英文
+    const lg = get('kidsLogicLang');
+    $('pLogicEn').checked = lg === 'en';
+    $('pLogicBoth').checked = lg === 'both';
+    $('pLogicZh').checked = lg !== 'en' && lg !== 'both';
   }
 
   $('pMusic').addEventListener('change', (e) => {
@@ -42,6 +47,9 @@
   $('pSpeech').addEventListener('change', (e) => { if (window.Speech) Speech.setOn(e.target.checked); });
   $('pLangZh').addEventListener('change', () => set('kidsStoryLang', 'zh'));
   $('pLangEn').addEventListener('change', () => set('kidsStoryLang', 'en'));
+  $('pLogicZh').addEventListener('change', () => set('kidsLogicLang', 'zh'));
+  $('pLogicEn').addEventListener('change', () => set('kidsLogicLang', 'en'));
+  $('pLogicBoth').addEventListener('change', () => set('kidsLogicLang', 'both'));
   $('pCaseLo').addEventListener('change', () => setWords({ lower: true }));
   $('pCaseUp').addEventListener('change', () => setWords({ lower: false }));
   $('pListen').addEventListener('change', (e) => setWords({ listenOnly: e.target.checked }));

@@ -1,0 +1,209 @@
+/* 動動腦小屋：小熊偵探。
+   上半是餐廳現場（牆上一排線索、椅子、桌子、放大鏡點），左下是名單（嫌疑犯的卡），右邊一整條是門（請出去的地方）。
+   板面最下面 12% 只有地板，不放能拖的東西。 */
+
+.lg-detective { background: #F3CD8E; }
+
+.detective-room { position: absolute; inset: 0; pointer-events: none; }
+.detective-room svg { display: block; width: 100%; height: 100%; }
+
+/* ===== 線索列：釘在牆上，找到的線索一直留著。平的（不能按） ===== */
+.detective-clues {
+  position: absolute;
+  left: 23%; width: 36%; top: 2.6%;
+  height: 9.6cqw;
+  display: flex;
+  justify-content: center;
+  gap: 1.8cqw;
+  pointer-events: none;
+}
+.detective-slot {
+  position: relative;
+  flex: none;
+  width: 9.6cqw;
+  height: 9.6cqw;
+  padding: 2.2cqw;
+  border-radius: 2.2cqw;
+  border: .45cqw dashed #C9A25A;
+  background: rgba(255, 255, 255, .5);
+}
+.detective-slot svg { display: block; width: 100%; height: 100%; }
+.detective-slot:not(.has) svg { opacity: .3; }
+.detective-slot.has { padding: .9cqw; border: .45cqw solid #33274F; background: #fff; }
+.detective-slot.now { scale: 1.14; box-shadow: 0 0 0 .8cqw #FFA228; z-index: 2; }
+.detective-tick {
+  position: absolute;
+  right: -1.3cqw; bottom: -1.3cqw;
+  width: 4.2cqw; height: 4.2cqw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #33274F;
+  color: #fff;
+  animation: lgPop .45s ease;
+}
+.detective-tick .ic { width: 68%; height: 68%; stroke-width: 3.4; }
+
+/* 線索放大給他看：先在現場正中間，念完縮到線索列的格子裡 */
+.detective-big {
+  position: absolute;
+  left: 26%; top: 9%;
+  width: 28%; height: 37.34%;
+  padding: 2.4cqw;
+  border-radius: 4cqw;
+  border: .6cqw solid #33274F;
+  background: #fff;
+  z-index: 40;
+  pointer-events: none;
+  transition: left .45s ease, top .45s ease, width .45s ease, height .45s ease, padding .45s ease, border-radius .45s ease;
+}
+.detective-big.fly { padding: .9cqw; border-radius: 2.2cqw; }
+.detective-big svg { display: block; width: 100%; height: 100%; }
+
+/* ===== 現場的放大鏡點：浮起來的（能按），一閃一閃 ===== */
+.detective-spot {
+  position: absolute;
+  display: none;
+  width: 9.8cqw;
+  height: 9.8cqw;
+  margin: -4.9cqw 0 0 -4.9cqw;
+  padding: 1.5cqw;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 .9cqw 0 #B98A45;
+  z-index: 3;
+}
+.detective-spot.on { display: block; animation: lgGlow .9s ease-in-out infinite alternate, detectiveBeat .9s ease-in-out infinite alternate; }
+.detective-spot:active { translate: 0 .6cqw; box-shadow: 0 .3cqw 0 #B98A45; }
+.detective-spot svg { display: block; width: 100%; height: 100%; pointer-events: none; }
+@keyframes detectiveBeat { to { scale: 1.08; } }
+
+/* 找到以後留在現場的痕跡（腳印、水、毛線） */
+.detective-trace {
+  position: absolute;
+  display: none;
+  width: 7.6cqw;
+  height: 7.6cqw;
+  margin: -3.8cqw 0 0 -3.8cqw;
+  pointer-events: none;
+  z-index: 1;
+}
+.detective-trace.on { display: block; }
+.detective-trace.t-scarf { width: 6.4cqw; height: 6.4cqw; margin: -3.2cqw 0 0 -3.2cqw; rotate: -14deg; }
+.detective-trace svg { display: block; width: 100%; height: 100%; }
+
+/* ===== 門：一整條都可以放。平的；有人被拖起來的時候亮起來 ===== */
+.detective-door {
+  position: absolute;
+  left: 74.5%; width: 24%; top: 3.4%;
+  height: 60cqw;
+}
+.detective-door > svg { display: block; width: 100%; height: 100%; }
+.lg-detective:has(.detective-card.lg-drag) .detective-door { filter: drop-shadow(0 0 1.4cqw rgba(255, 176, 0, .95)); }
+/* 真正算「放進門」的範圍：左邊縮進來一點。外殼的命中範圍會往外多算一圈，
+   不縮的話最右邊那張卡輕輕動一下就算拖到門了。 */
+.detective-zone { position: absolute; inset: 0 0 0 4.2cqw; pointer-events: none; }
+.detective-outside {
+  position: absolute;
+  left: 22%; right: 6%; bottom: 5%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-content: flex-start;
+  justify-content: center;
+  gap: .4cqw .6cqw;
+  pointer-events: none;
+}
+.detective-outie { flex: none; width: 8.2cqw; height: 8.2cqw; }
+.detective-outie img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.detective-hop { animation: detectiveHop .9s ease; }
+@keyframes detectiveHop {
+  0% { scale: .4; translate: -6cqw 0; }
+  30% { scale: 1.1; translate: 0 -3cqw; }
+  50% { scale: 1; translate: 0 0; }
+  70% { translate: 0 -1.6cqw; }
+  100% { translate: 0 0; }
+}
+
+/* ===== 名單：嫌疑犯的卡。浮起來的（能拖） ===== */
+.detective-list {
+  --m: 5.1cqw;
+  position: absolute;
+  left: 1%; width: 72.5%; top: 55.4%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.1cqw;
+}
+.detective-list.f2 { --m: 7.4cqw; }
+.detective-list.f2 .detective-marks { gap: .7cqw; }
+.detective-list.n3 { gap: 3cqw; }
+.detective-card {
+  position: relative;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5cqw;
+  width: 17.3cqw;
+  height: 22.6cqw;
+  padding: .7cqw .3cqw .6cqw;
+  border-radius: 2.8cqw;
+  border: .4cqw solid transparent;
+  background: #fff;
+  box-shadow: 0 .9cqw 0 #B98A45;
+}
+.detective-list.n3 .detective-card { width: 18.4cqw; }
+.detective-card > * { pointer-events: none; }
+.detective-face {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detective-pic { position: relative; height: 100%; max-width: 100%; }
+.detective-pic img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.detective-marks { flex: none; display: flex; justify-content: center; gap: .3cqw; height: var(--m); }
+.detective-mark {
+  position: relative;
+  flex: none;
+  width: var(--m);
+  height: var(--m);
+  padding: .2cqw;
+  border-radius: 1.2cqw;
+  background: #FFF1CC;
+}
+.detective-mark svg { display: block; width: 100%; height: 100%; }
+
+/* 提示「是這一位」：共用的光圈在木頭地板上不夠明顯，卡片再加一圈橘色 */
+.detective-card.lg-glow { box-shadow: 0 .9cqw 0 #B98A45, 0 0 0 .7cqw #FFA228; }
+
+/* 被請出去的：名單上留一個虛線的空位 */
+.detective-card.gone { background: transparent; border: .4cqw dashed rgba(51, 39, 79, .28); box-shadow: none; }
+.detective-card.gone > * { visibility: hidden; }
+
+/* 拖錯：線索的圖和卡上那個標記一起放大閃兩下 */
+.detective-cmp { animation: detectiveCmp 1.5s ease; z-index: 6; }
+@keyframes detectiveCmp {
+  12%, 52% { scale: 1.5; box-shadow: 0 0 0 .7cqw #FFA228; }
+  32% { scale: 1.15; box-shadow: 0 0 0 .7cqw #FFA228; }
+  80% { scale: 1.15; box-shadow: 0 0 0 .7cqw #FFA228; }
+}
+
+/* 最後那一位：臉紅、嘴邊有蛋糕屑 */
+.detective-card.caught { background: #FFE3EE; }
+.detective-oops {
+  position: absolute;
+  width: 8.4cqw;
+  height: 4.2cqw;
+  translate: -50% -50%;
+  animation: lgPop .45s ease;
+}
+.detective-oops svg { display: block; width: 100%; height: 100%; overflow: visible; }
+
+/* 選小屋那張卡上的放大鏡 */
+.detective-card-mag { position: absolute; aspect-ratio: 1; }
+.detective-card-mag svg { display: block; width: 100%; height: 100%; }

@@ -1,0 +1,66 @@
+[
+ {
+  "open": "logic.html?h=detective&l=2"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "eval": "(() => { const T = {\"rabbit\":[323,512,46,57],\"frog\":[512,455,50,33],\"elephant\":[512,512,42,47],\"duck\":[507,512,46,45],\"monkey\":[512,498,47,45],\"owl\":[479,512,49,47],\"panda\":[430,512,48,50],\"penguin\":[483,512,50,32],\"pig\":[512,495,31,54]}; const ids = [\"rabbit\",\"frog\",\"duck\",\"monkey\"]; document.querySelectorAll('.detective-card').forEach((c, i) => { const a = T[ids[i]]; const p = c.querySelector('.detective-pic'); p.style.aspectRatio = a[0] + ' / ' + a[1]; p.querySelector('img').src = 'assets/stickers/' + ids[i] + '.png'; const o = document.createElement('div'); o.className = 'detective-oops'; o.style.left = a[2] + '%'; o.style.top = a[3] + '%'; o.innerHTML = '<svg viewBox=\"0 0 100 50\"><ellipse cx=\"13\" cy=\"16\" rx=\"12\" ry=\"8\" fill=\"#FF7FB0\" opacity=\".8\"/><ellipse cx=\"87\" cy=\"16\" rx=\"12\" ry=\"8\" fill=\"#FF7FB0\" opacity=\".8\"/><circle cx=\"39\" cy=\"33\" r=\"5.5\" fill=\"#FFA228\"/><circle cx=\"52\" cy=\"41\" r=\"6\" fill=\"#FFD84D\"/><circle cx=\"64\" cy=\"32\" r=\"5\" fill=\"#FFA228\"/></svg>'; p.appendChild(o); }); return ids.join(); })()"
+ },
+ {
+  "wait": 3000
+ },
+ {
+  "shot": "faces-a.png"
+ },
+ {
+  "open": "logic.html?h=detective&l=2"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "eval": "(() => { const T = {\"rabbit\":[323,512,46,57],\"frog\":[512,455,50,33],\"elephant\":[512,512,42,47],\"duck\":[507,512,46,45],\"monkey\":[512,498,47,45],\"owl\":[479,512,49,47],\"panda\":[430,512,48,50],\"penguin\":[483,512,50,32],\"pig\":[512,495,31,54]}; const ids = [\"owl\",\"panda\",\"penguin\",\"elephant\"]; document.querySelectorAll('.detective-card').forEach((c, i) => { const a = T[ids[i]]; const p = c.querySelector('.detective-pic'); p.style.aspectRatio = a[0] + ' / ' + a[1]; p.querySelector('img').src = 'assets/stickers/' + ids[i] + '.png'; const o = document.createElement('div'); o.className = 'detective-oops'; o.style.left = a[2] + '%'; o.style.top = a[3] + '%'; o.innerHTML = '<svg viewBox=\"0 0 100 50\"><ellipse cx=\"13\" cy=\"16\" rx=\"12\" ry=\"8\" fill=\"#FF7FB0\" opacity=\".8\"/><ellipse cx=\"87\" cy=\"16\" rx=\"12\" ry=\"8\" fill=\"#FF7FB0\" opacity=\".8\"/><circle cx=\"39\" cy=\"33\" r=\"5.5\" fill=\"#FFA228\"/><circle cx=\"52\" cy=\"41\" r=\"6\" fill=\"#FFD84D\"/><circle cx=\"64\" cy=\"32\" r=\"5\" fill=\"#FFA228\"/></svg>'; p.appendChild(o); }); return ids.join(); })()"
+ },
+ {
+  "wait": 3000
+ },
+ {
+  "shot": "faces-b.png"
+ },
+ {
+  "open": "logic.html?h=detective&l=3"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "shot": "l3-pick.png"
+ },
+ {
+  "eval": "localStorage.removeItem('kidsLogic'); 1"
+ },
+ {
+  "open": "logic.html"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "shot": "select.png"
+ },
+ {
+  "tap": ".lg-card[data-house=detective]"
+ },
+ {
+  "wait": 900
+ },
+ {
+  "shot": "intro.png"
+ },
+ {
+  "expect": "document.querySelector('.bubble-txt').textContent.includes('蜂')",
+  "why": "第一次進來先念開場"
+ }
+]

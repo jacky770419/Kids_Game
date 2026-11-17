@@ -1,0 +1,133 @@
+/* 動動腦小屋：小美的串珠項鍊。上面一條往下垂的項鍊，下面是珠子盒。
+   項鍊上的東西都不能按（平的）；能拖能點的只有盒子裡的珠子。 */
+
+.lg-beads { background: #FFFAF0; }
+
+/* 第幾條／共 3 條：左上角三顆小圓點（平的，不能按）。做完的打勾、現在這條有外圈。 */
+.beads-dots {
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  display: flex;
+  align-items: center;
+  gap: 1.4cqw;
+  pointer-events: none;
+}
+.beads-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2cqw;
+  height: 4.2cqw;
+  border-radius: 50%;
+  background: #E7E4F0;
+  color: #fff;
+}
+.beads-dot .ic { width: 70%; height: 70%; stroke-width: 3.6; visibility: hidden; }
+.beads-dot.now { background: #fff; border: .7cqw solid #F2B705; }
+.beads-dot.ok { background: #F2B705; }
+.beads-dot.ok .ic { visibility: visible; }
+
+/* 一條項鍊：繩子＋一格一格的位置。換下一條時整層滑出去、新的滑進來。 */
+.beads-lace { position: absolute; inset: 0; pointer-events: none; }
+.beads-string { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.beads-slot {
+  position: absolute;
+  width: 9.6cqw;
+  height: 9.6cqw;
+  margin: -4.8cqw 0 0 -4.8cqw;
+}
+.beads-slot svg { display: block; width: 100%; height: 100%; overflow: visible; }
+
+/* 空位：淡淡的虛線圈；「下一個空位」是白底粗虛線、會呼吸（不用黃底：會被看成一顆黃珠子） */
+.beads-slot.empty { opacity: .4; }
+.beads-slot.empty.now { opacity: 1; }
+.beads-slot.empty.now circle { stroke-width: 5.5; stroke-dasharray: 11 10; }
+.beads-slot.empty.now svg { animation: beadsNow .9s ease-in-out infinite alternate; }
+@keyframes beadsNow { to { scale: 1.12; } }
+
+/* 一顆一顆亮起來（配一個音）、空位自己跳一下 */
+.beads-ping { animation: beadsPing .42s ease; z-index: 2; }
+@keyframes beadsPing { 35% { scale: 1.32; translate: 0 -1.4cqw; } }
+/* 大小關不放大（放大了會看不出誰大誰小），只往上跳 */
+.beads-sized .beads-ping { animation-name: beadsHop; }
+@keyframes beadsHop { 35% { translate: 0 -2.8cqw; } }
+.beads-ask { animation: beadsAsk .6s ease; }
+@keyframes beadsAsk { 25% { scale: 1.3; } 55% { scale: .9; } 80% { scale: 1.1; } }
+
+.beads-in { animation: beadsIn .45s cubic-bezier(.2, .9, .3, 1); }
+.beads-out { animation: beadsOut .4s ease-in forwards; }
+@keyframes beadsIn { from { translate: 104cqw 0; } }
+@keyframes beadsOut { to { translate: -104cqw 0; } }
+
+/* 拖到這一帶放手，就算放在下一個空位（看不見） */
+.beads-band { position: absolute; left: 0; right: 0; top: 16%; height: 36%; pointer-events: none; }
+
+/* 珠子盒：平的木盒子，一格一種珠子。只有珠子本身能拖、能點。 */
+.beads-tray {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60.5%;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.2cqw;
+  padding: 1.3cqw;
+  border-radius: 3.6cqw;
+  background: #EBC27F;
+  border: .6cqw solid #C4914A;
+}
+.beads-cell {
+  width: 17cqw;
+  height: 15cqw;
+  border-radius: 2.4cqw;
+  background: #FFF3D6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beads-src {
+  width: 12.6cqw;
+  height: 12.6cqw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beads-art { width: 9.6cqw; height: 9.6cqw; filter: drop-shadow(0 .7cqw 0 rgba(51, 39, 79, .22)); }
+.beads-art svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.beads-src.lg-drag .beads-art { filter: none; }
+
+/* 提示：多的錯珠子變淡、不能選 */
+.beads-off { opacity: .22; filter: grayscale(1); }
+.beads-off .beads-art { filter: none; }
+
+/* 出題關：最後一顆可以點掉（右上角一個小叉叉） */
+.beads-slot.last { pointer-events: auto; cursor: pointer; }
+.beads-x {
+  position: absolute;
+  right: -1.2cqw;
+  top: -1.2cqw;
+  width: 4.4cqw;
+  height: 4.4cqw;
+  border-radius: 50%;
+  background: #fff;
+  color: #33274F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 .5cqw 0 #C4914A;
+}
+.beads-x .ic { width: 62%; height: 62%; stroke-width: 3.4; }
+
+/* 選小屋那張卡：五顆珠子掛在一條線上 */
+.beads-card-line { position: absolute; inset: 0; width: 100%; height: 100%; }
+.beads-card-bead { position: absolute; width: 21%; aspect-ratio: 1; }
+.beads-card-bead svg { display: block; width: 100%; height: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .beads-slot.empty.now svg { animation: none; }
+}
+
+/* 發亮的那一顆同時輕輕變大變小（光圈在淺色底上不夠顯眼） */
+.beads-src.lg-glow .beads-art { animation: beadsNow .9s ease-in-out infinite alternate; }

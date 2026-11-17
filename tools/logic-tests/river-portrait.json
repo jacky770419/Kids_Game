@@ -1,0 +1,31 @@
+[
+ {
+  "open": "logic.html?h=river&l=1",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "Array.from(document.querySelectorAll('#lgStage img')).every(i=>i.naturalWidth>0)",
+  "why": "圖都載到了"
+ },
+ {
+  "shot": "portrait-start.png"
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1700
+ },
+ {
+  "shot": "portrait-miss.png"
+ }
+]

@@ -1,0 +1,25 @@
+[
+ {
+  "open": "logic.html?h=detective&l=2"
+ },
+ {
+  "wait": 4000
+ },
+ {
+  "tap": ".detective-spot.on"
+ },
+ {
+  "wait": 9500
+ },
+ {
+  "expect": "!!document.querySelector('.detective-slot.now')",
+  "why": "線索進了線索列"
+ },
+ {
+  "eval": "(() => { const c = document.querySelector('.detective-card:nth-child(4)'); const r = c.getBoundingClientRect(); window.__p = [r.right - 6, r.top + r.height / 2]; const z = document.querySelector('.detective-zone').getBoundingClientRect(); return 'card right=' + Math.round(r.right) + ' zone left=' + Math.round(z.left); })()"
+ },
+ {
+  "expect": "(() => { const c = document.querySelector('.detective-card:nth-child(4)'); const r = c.getBoundingClientRect(); const z = document.querySelector('.detective-zone').getBoundingClientRect(); return z.left - 28 > r.right + 14; })()",
+  "why": "門的命中範圍（含外殼多算的 28px）碰不到最右邊那張卡"
+ }
+]

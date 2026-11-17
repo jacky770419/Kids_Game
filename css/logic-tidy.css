@@ -1,0 +1,94 @@
+/* 動動腦小屋：小熊收玩具。上半是地板（玩具散在上面），下半是籃子。 */
+
+.lg-tidy { background: #FFF9E6; }
+
+.tidy-floor {
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 2cqw;
+}
+.lg-stage:has(> .lg-go) .tidy-floor { padding-right: 15cqw; }
+
+.tidy-toy { width: 13cqw; aspect-ratio: 1; flex: none; }
+.tidy-art { width: 100%; height: 100%; }
+.tidy-art svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.tidy-floor > .tidy-toy .tidy-art svg { rotate: var(--tilt, 0deg); }
+
+/* 點玩具：它自己演一次特徵（會滾／會叫／軟軟的） */
+.tidy-roll { animation: tidyRoll .9s ease-in-out; }
+.tidy-squeak { animation: tidySqueak .5s ease; }
+.tidy-soft { animation: tidySoft .7s ease; }
+@keyframes tidyRoll { 50% { translate: 3cqw 0; rotate: 200deg; } 100% { rotate: 360deg; } }
+@keyframes tidySqueak { 35% { scale: 1.18 .78; } 70% { scale: .92 1.1; } }
+@keyframes tidySoft { 25% { rotate: -12deg; scale: .94 1.04; } 60% { rotate: 10deg; scale: 1.05 .95; } }
+
+/* 籃子：平的（不能按），上面那顆圖示才是浮起來的（點了會念） */
+.tidy-baskets {
+  position: absolute;
+  left: 3%; right: 3%; bottom: 4%;
+  height: 46%;
+  display: flex;
+  gap: 3cqw;
+}
+.tidy-basket {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin-top: 7cqw;
+  border-radius: 2cqw 2cqw 5cqw 5cqw;
+  background: #EBC27F;
+  border: .6cqw solid #C4914A;
+  background-image: repeating-linear-gradient(0deg, transparent 0 3.2cqw, rgba(196, 145, 74, .45) 3.2cqw 3.7cqw);
+}
+.tidy-basket.tint-red { background-color: #FFB0AE; border-color: #D63C43; }
+.tidy-basket.tint-blue { background-color: #A9D8FA; border-color: #2B82C9; }
+.tidy-basket.tint-yellow { background-color: #FFE78F; border-color: #D9A400; }
+.tidy-badge {
+  position: absolute;
+  left: 50%;
+  top: -7.5cqw;
+  width: 12cqw;
+  height: 11cqw;
+  margin-left: -6cqw;
+  padding: 1.2cqw;
+  border-radius: 3cqw;
+  background: #fff;
+  box-shadow: 0 .9cqw 0 #C4914A;
+}
+.tidy-badge:active { translate: 0 .6cqw; box-shadow: 0 .3cqw 0 #C4914A; }
+.tidy-badge svg { width: 100%; height: 100%; display: block; }
+.tidy-slots {
+  position: absolute;
+  inset: 5cqw 1cqw 1.5cqw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: .6cqw 1cqw;
+}
+.tidy-slots .tidy-toy { width: 11cqw; }
+.tidy-baskets.n2 .tidy-slots .tidy-toy { width: 12.5cqw; }
+
+/* 第 2 關：媽媽在左邊，右邊三張「照什麼分」的圖卡 */
+.tidy-guess .tidy-floor { justify-content: flex-start; gap: 2cqw; padding-left: 3cqw; }
+.tidy-guess .tidy-basket { margin-top: 2cqw; }
+.tidy-guess .tidy-slots { inset: 2cqw 1cqw 1.5cqw; }
+.tidy-mama { height: 30cqw; flex: none; pointer-events: none; }
+.tidy-cards { flex: 1; display: flex; justify-content: space-evenly; align-items: center; }
+.tidy-card.btn {
+  width: 23cqw;
+  height: 15cqw;
+  border-radius: 3.4cqw;
+  gap: .8cqw;
+  box-shadow: 0 1.1cqw 0 var(--lip);
+}
+.tidy-card i { display: block; width: 6.2cqw; height: 6.2cqw; flex: none; }
+.tidy-card i svg { width: 100%; height: 100%; display: block; }
+
+/* 選小屋那張卡上的三樣玩具 */
+.tidy-card-toy { position: absolute; aspect-ratio: 1; }
+.tidy-card-toy svg { width: 100%; height: 100%; display: block; }

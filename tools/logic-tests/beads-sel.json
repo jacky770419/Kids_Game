@@ -1,0 +1,21 @@
+[
+ {
+  "open": "logic.html",
+  "settle": 3500
+ },
+ {
+  "wait": 400
+ },
+ {
+  "shot": "select.png"
+ },
+ {
+  "tap": ".lg-card[data-house=beads]"
+ },
+ {
+  "wait": 800
+ },
+ {
+  "shot": "enter.png"
+ }
+]

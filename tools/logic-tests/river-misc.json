@@ -1,0 +1,143 @@
+[
+ {
+  "open": "logic.html?h=river&l=2",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "Array.from(document.querySelectorAll('#lgStage img')).every(i=>i.naturalWidth>0)",
+  "why": "圖都載到了"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "document.querySelector('.river-oar').classList.contains('lg-glow')",
+  "why": ".river-oar 發亮"
+ },
+ {
+  "shot": "loop-hint.png"
+ },
+ {
+  "tap": ".river-rule[data-rule=\"wolf\"]"
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "rule-tap.png"
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 300
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"wolf\"]').classList.contains('river-aboard')",
+  "why": "wolf 不在船上"
+ },
+ {
+  "open": "logic.html?h=river&l=2",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "drag": [
+   ".river-item[data-item=\"wolf\"]",
+   ".river-boat"
+  ]
+ },
+ {
+  "wait": 400
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"wolf\"]').classList.contains('river-aboard')",
+  "why": "wolf 在船上"
+ },
+ {
+  "shot": "drag-aboard.png"
+ },
+ {
+  "drag": [
+   ".river-item[data-item=\"cabbage\"]",
+   ".river-boat"
+  ]
+ },
+ {
+  "wait": 400
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"cabbage\"]').classList.contains('river-aboard')",
+  "why": "cabbage 在船上"
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"wolf\"]').classList.contains('river-aboard')",
+  "why": "wolf 不在船上"
+ },
+ {
+  "drag": [
+   ".river-item[data-item=\"cabbage\"]",
+   ".river-bank.l"
+  ]
+ },
+ {
+  "wait": 400
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"cabbage\"]').classList.contains('river-aboard')",
+  "why": "cabbage 不在船上"
+ },
+ {
+  "drag": [
+   ".river-item[data-item=\"goat\"]",
+   ".river-bank.r"
+  ]
+ },
+ {
+  "wait": 500
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('river-aboard')",
+  "why": "goat 不在船上"
+ },
+ {
+  "expect": "parseFloat(document.querySelector('.river-item[data-item=\"goat\"]').style.left)<50",
+  "why": "不能直接拖到對岸"
+ },
+ {
+  "open": "logic.html",
+  "settle": 3500
+ },
+ {
+  "wait": 800
+ },
+ {
+  "shot": "menu.png"
+ }
+]

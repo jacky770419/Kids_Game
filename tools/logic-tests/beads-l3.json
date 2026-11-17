@@ -1,0 +1,194 @@
+[
+ {
+  "open": "logic.html?h=beads&l=3",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "l3-start.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src:not(.t-ok):not(.beads-off)",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "shot": "l3-wrong1.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src:not(.t-ok):not(.beads-off)",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 600
+ },
+ {
+  "shot": "l3-wrong2.png"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-src.beads-off').length===1",
+  "why": "三種：錯第 2 次有一顆錯的變淡"
+ },
+ {
+  "expect": "!document.querySelector('.beads-src.lg-glow')",
+  "why": "錯第 2 次還不發亮"
+ },
+ {
+  "tap": ".beads-src.beads-off"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===6",
+  "why": "變淡的不能選"
+ },
+ {
+  "wait": 3000
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src:not(.t-ok):not(.beads-off)"
+ },
+ {
+  "wait": 700
+ },
+ {
+  "shot": "l3-wrong3.png"
+ },
+ {
+  "expect": "document.querySelector('.beads-src.t-ok').classList.contains('lg-glow')",
+  "why": "錯第 3 次對的發亮"
+ },
+ {
+  "wait": 2800
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l3-r1-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l3-r2.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l3-r2-done.png"
+ },
+ {
+  "wait": 3200
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "shot": "l3-r3.png"
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "tap": ".beads-src.t-ok",
+  "settle": 420
+ },
+ {
+  "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
+ },
+ {
+  "drag": [
+   ".beads-src.t-ok",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "wait": 4300
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l3-win.png"
+ }
+]

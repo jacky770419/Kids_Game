@@ -1,0 +1,159 @@
+[
+ {
+  "open": "logic.html?h=river&l=3",
+  "settle": 3500
+ },
+ {
+  "wait": 1500
+ },
+ {
+  "expect": "Array.from(document.querySelectorAll('#lgStage img')).every(i=>i.naturalWidth>0)",
+  "why": "圖都載到了"
+ },
+ {
+  "shot": "l4-start.png"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 4400
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 4400
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 4400
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 沒有發亮"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "!document.querySelector('.river-item[data-item=\"goat\"]').classList.contains('lg-glow')",
+  "why": ".river-item[data-item=\"goat\"] 沒有發亮"
+ },
+ {
+  "expect": "!document.querySelector('.river-oar').classList.contains('lg-glow')",
+  "why": ".river-oar 沒有發亮"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"cabbage\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 450
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 1900
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===9",
+  "why": "亮了 9 顆"
+ },
+ {
+  "shot": "l4-end.png"
+ },
+ {
+  "wait": 4600
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l4-win.png"
+ }
+]

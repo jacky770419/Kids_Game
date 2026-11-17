@@ -1,0 +1,206 @@
+[
+ {
+  "open": "logic.html?h=detective&l=3"
+ },
+ {
+  "wait": 3000
+ },
+ {
+  "shot": "l3-pick.png"
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card').length === 4 && document.querySelectorAll('.detective-mark').length === 0 && document.querySelectorAll('.detective-spot').length === 0",
+  "why": "第 4 關：先選人，卡上還沒有標記、沒有放大鏡"
+ },
+ {
+  "drag": [
+   ".detective-card:nth-child(1)",
+   ".detective-door"
+  ]
+ },
+ {
+  "wait": 500
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card.gone').length === 0",
+  "why": "出題時拖人：彈回去"
+ },
+ {
+  "tap": ".detective-card:nth-child(2)"
+ },
+ {
+  "wait": 600
+ },
+ {
+  "shot": "l3-picked.png"
+ },
+ {
+  "eval": "document.querySelector('.detective-card:nth-child(2)').dataset.picked = '1'; Array.from(document.querySelectorAll('.detective-card')).map(c => c.dataset.who + ':' + Array.from(c.querySelectorAll('.detective-mark')).map(m => m.dataset.v).join('/')).join('  ')"
+ },
+ {
+  "wait": 30000
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-spot.on').length === 3 && document.querySelectorAll('.detective-mark').length === 12",
+  "why": "選完：標記出現、3 個放大鏡"
+ },
+ {
+  "shot": "l3-start.png"
+ },
+ {
+  "tap": ".detective-spot.on"
+ },
+ {
+  "wait": 700
+ },
+ {
+  "shot": "l3-big1.png"
+ },
+ {
+  "wait": 8500
+ },
+ {
+  "expect": "!!document.querySelector('.detective-slot.now')",
+  "why": "l3 線索 1 進了線索列"
+ },
+ {
+  "eval": "(() => { const s = document.querySelector('.detective-slot.now'); const f = s.dataset.feat, v = s.dataset.value; document.querySelectorAll('.detective-card').forEach(c => { delete c.dataset.t; }); document.querySelectorAll('.detective-card:not(.gone)').forEach(c => { c.dataset.t = c.querySelector('[data-f=' + f + ']').dataset.v === v ? 'stay' : 'out'; }); return f + '=' + v + ' out=' + document.querySelectorAll('[data-t=out]').length + ' stay=' + document.querySelectorAll('[data-t=stay]').length; })()"
+ },
+ {
+  "expect": "document.querySelectorAll('[data-t=out]').length === 1",
+  "why": "l3 線索 1 剛好請走一位"
+ },
+ {
+  "drag": [
+   ".detective-card[data-t=out]",
+   ".detective-door"
+  ]
+ },
+ {
+  "wait": 500
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card.gone').length === 1 && document.querySelectorAll('.detective-outie').length === 1",
+  "why": "l3 拖對：第 1 位到門外"
+ },
+ {
+  "shot": "l3-out1.png"
+ },
+ {
+  "wait": 8500
+ },
+ {
+  "tap": ".detective-spot.on"
+ },
+ {
+  "wait": 700
+ },
+ {
+  "shot": "l3-big2.png"
+ },
+ {
+  "wait": 8500
+ },
+ {
+  "expect": "!!document.querySelector('.detective-slot.now')",
+  "why": "l3 線索 2 進了線索列"
+ },
+ {
+  "eval": "(() => { const s = document.querySelector('.detective-slot.now'); const f = s.dataset.feat, v = s.dataset.value; document.querySelectorAll('.detective-card').forEach(c => { delete c.dataset.t; }); document.querySelectorAll('.detective-card:not(.gone)').forEach(c => { c.dataset.t = c.querySelector('[data-f=' + f + ']').dataset.v === v ? 'stay' : 'out'; }); return f + '=' + v + ' out=' + document.querySelectorAll('[data-t=out]').length + ' stay=' + document.querySelectorAll('[data-t=stay]').length; })()"
+ },
+ {
+  "expect": "document.querySelectorAll('[data-t=out]').length === 1",
+  "why": "l3 線索 2 剛好請走一位"
+ },
+ {
+  "drag": [
+   ".detective-card[data-t=out]",
+   ".detective-door"
+  ]
+ },
+ {
+  "wait": 500
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card.gone').length === 2 && document.querySelectorAll('.detective-outie').length === 2",
+  "why": "l3 拖對：第 2 位到門外"
+ },
+ {
+  "shot": "l3-out2.png"
+ },
+ {
+  "wait": 8500
+ },
+ {
+  "tap": ".detective-spot.on"
+ },
+ {
+  "wait": 700
+ },
+ {
+  "shot": "l3-big3.png"
+ },
+ {
+  "wait": 8500
+ },
+ {
+  "expect": "!!document.querySelector('.detective-slot.now')",
+  "why": "l3 線索 3 進了線索列"
+ },
+ {
+  "eval": "(() => { const s = document.querySelector('.detective-slot.now'); const f = s.dataset.feat, v = s.dataset.value; document.querySelectorAll('.detective-card').forEach(c => { delete c.dataset.t; }); document.querySelectorAll('.detective-card:not(.gone)').forEach(c => { c.dataset.t = c.querySelector('[data-f=' + f + ']').dataset.v === v ? 'stay' : 'out'; }); return f + '=' + v + ' out=' + document.querySelectorAll('[data-t=out]').length + ' stay=' + document.querySelectorAll('[data-t=stay]').length; })()"
+ },
+ {
+  "expect": "document.querySelectorAll('[data-t=out]').length === 1",
+  "why": "l3 線索 3 剛好請走一位"
+ },
+ {
+  "drag": [
+   ".detective-card[data-t=out]",
+   ".detective-door"
+  ]
+ },
+ {
+  "wait": 500
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card.gone').length === 3 && document.querySelectorAll('.detective-outie').length === 3",
+  "why": "l3 拖對：第 3 位到門外"
+ },
+ {
+  "shot": "l3-out3.png"
+ },
+ {
+  "wait": 8500
+ },
+ {
+  "expect": "document.querySelector('.detective-card:not(.gone)').dataset.picked === '1'",
+  "why": "第 4 關：剩下的就是孩子選的那位"
+ },
+ {
+  "expect": "document.querySelectorAll('.detective-card:not(.gone)').length === 1 && document.querySelectorAll('.detective-spot.on').length === 0",
+  "why": "l3 只剩一位"
+ },
+ {
+  "shot": "l3-last.png"
+ },
+ {
+  "tap": ".detective-card:not(.gone)"
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l3-confess.png"
+ },
+ {
+  "wait": 5200
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "l3 過關"
+ },
+ {
+  "shot": "l3-win.png"
+ }
+]

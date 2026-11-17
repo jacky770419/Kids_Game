@@ -1,0 +1,160 @@
+[
+ {
+  "open": "logic.html?h=beads&l=5",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "shot": "l5-start.png"
+ },
+ {
+  "drag": [
+   ".beads-cell:nth-child(1) .beads-src",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src"
+ },
+ {
+  "drag": [
+   ".beads-cell:nth-child(3) .beads-src",
+   [
+    600,
+    330
+   ]
+  ]
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===3",
+  "why": "串了 3 顆"
+ },
+ {
+  "expect": "document.querySelector('.lg-go').disabled===true",
+  "why": "3 顆還不能按好了"
+ },
+ {
+  "tap": ".lg-go"
+ },
+ {
+  "wait": 300
+ },
+ {
+  "expect": "document.getElementById('lgWin').hidden",
+  "why": "還沒過關"
+ },
+ {
+  "tap": ".beads-cell:nth-child(1) .beads-src"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===4",
+  "why": "串了 4 顆"
+ },
+ {
+  "expect": "document.querySelector('.lg-go').disabled===false",
+  "why": "4 顆可以按好了"
+ },
+ {
+  "shot": "l5-four.png"
+ },
+ {
+  "tap": ".beads-slot.last"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===3",
+  "why": "點最後一顆拿掉"
+ },
+ {
+  "expect": "document.querySelector('.lg-go').disabled===true",
+  "why": "拿掉後又不能按"
+ },
+ {
+  "tap": ".beads-slot:not(.empty):not(.last)"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===3",
+  "why": "不是最後一顆點了沒事"
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src"
+ },
+ {
+  "tap": ".beads-cell:nth-child(3) .beads-src"
+ },
+ {
+  "drag": [
+   ".beads-cell:nth-child(1) .beads-src",
+   ".beads-slot.now"
+  ]
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src"
+ },
+ {
+  "tap": ".beads-cell:nth-child(3) .beads-src"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===8",
+  "why": "串滿 8 顆"
+ },
+ {
+  "tap": ".beads-cell:nth-child(1) .beads-src"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===8",
+  "why": "滿了不能再加"
+ },
+ {
+  "shot": "l5-full.png"
+ },
+ {
+  "tap": ".beads-slot.last"
+ },
+ {
+  "tap": ".beads-slot.last"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===6",
+  "why": "滿了也能一顆一顆拿掉"
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src",
+  "settle": 20
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src",
+  "settle": 400
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===7",
+  "why": "連點兩下只算一顆"
+ },
+ {
+  "tap": ".beads-cell:nth-child(2) .beads-src"
+ },
+ {
+  "expect": "document.querySelectorAll('.beads-slot:not(.empty)').length===8",
+  "why": "隔一下再點就算"
+ },
+ {
+  "tap": ".lg-go"
+ },
+ {
+  "wait": 1200
+ },
+ {
+  "shot": "l5-play.png"
+ },
+ {
+  "wait": 6200
+ },
+ {
+  "expect": "!document.getElementById('lgWin').hidden",
+  "why": "過關畫面出現"
+ },
+ {
+  "shot": "l5-win.png"
+ }
+]
