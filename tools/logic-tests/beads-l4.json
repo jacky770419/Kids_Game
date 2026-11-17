@@ -10,6 +10,10 @@
   "shot": "l4-start.png"
  },
  {
+  "expect": "(()=>{const p=document.querySelector('.beads-princess img');const s=document.getElementById('lgStage').getBoundingClientRect();if(!p||!p.naturalWidth)return false;const r=p.getBoundingClientRect();const hit=[...document.querySelectorAll('.beads-slot,.beads-tray')].some(e=>{const b=e.getBoundingClientRect();return b.left<r.right&&b.right>r.left&&b.top<r.bottom&&b.bottom>r.top});return !hit&&r.left>=s.left&&r.right<=s.right&&r.top>=s.top&&r.bottom<=s.bottom})()",
+  "why": "公主有載到圖、在板面裡、沒擋到項鍊和珠寶盒"
+ },
+ {
   "expect": "(()=>{const s=[...document.querySelectorAll('.beads-slot')];const i=s.findIndex(x=>x.classList.contains('empty'));return i>0&&i<s.length-1&&s.filter(x=>x.classList.contains('empty')).length===1})()",
   "why": "空位一個、不在頭尾"
  },

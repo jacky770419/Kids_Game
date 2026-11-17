@@ -1,7 +1,8 @@
-/* 動動腦小屋：小美的串珠項鍊。上面一條往下垂的項鍊，下面是珠子盒。
-   項鍊上的東西都不能按（平的）；能拖能點的只有盒子裡的珠子。 */
+/* 動動腦小屋：公主串項鍊。上面一條往下垂的項鍊，下面是粉色的珠寶盒，右下角站著公主（就是孩子自己）。
+   項鍊上的東西都不能按（平的）；能拖能點的只有盒子裡的珠子。
+   配色照她的喜好：粉＋藍為主。板面很淡的藍，盒子粉色，線和進度圓點是藍和粉。 */
 
-.lg-beads { background: #FFFAF0; }
+.lg-beads { background: #EEF7FF; }
 
 /* 第幾條／共 3 條：左上角三顆小圓點（平的，不能按）。做完的打勾、現在這條有外圈。 */
 .beads-dots {
@@ -20,12 +21,12 @@
   width: 4.2cqw;
   height: 4.2cqw;
   border-radius: 50%;
-  background: #E7E4F0;
+  background: #C9DFF5;
   color: #fff;
 }
 .beads-dot .ic { width: 70%; height: 70%; stroke-width: 3.6; visibility: hidden; }
-.beads-dot.now { background: #fff; border: .7cqw solid #F2B705; }
-.beads-dot.ok { background: #F2B705; }
+.beads-dot.now { background: #fff; border: .7cqw solid #FF7FB0; }
+.beads-dot.ok { background: #FF7FB0; }
 .beads-dot.ok .ic { visibility: visible; }
 
 /* 一條項鍊：繩子＋一格一格的位置。換下一條時整層滑出去、新的滑進來。 */
@@ -37,9 +38,10 @@
   height: 9.6cqw;
   margin: -4.8cqw 0 0 -4.8cqw;
 }
-.beads-slot svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.beads-slot svg, .beads-slot img { display: block; width: 100%; height: 100%; overflow: visible; }
 
-/* 空位：淡淡的虛線圈；「下一個空位」是白底粗虛線、會呼吸（不用黃底：會被看成一顆黃珠子） */
+/* 空位：淡淡的虛線圈；「下一個空位」是粗虛線、會呼吸。
+   裡面是板面的底色（不用白底：會被看成一顆白珠子；也不用黃底：會被看成黃珠子） */
 .beads-slot.empty { opacity: .4; }
 .beads-slot.empty.now { opacity: 1; }
 .beads-slot.empty.now circle { stroke-width: 5.5; stroke-dasharray: 11 10; }
@@ -63,26 +65,80 @@
 /* 拖到這一帶放手，就算放在下一個空位（看不見） */
 .beads-band { position: absolute; left: 0; right: 0; top: 16%; height: 36%; pointer-events: none; }
 
-/* 珠子盒：平的木盒子，一格一種珠子。只有珠子本身能拖、能點。 */
+/* 公主（就是孩子自己）：站在右下角、珠寶盒旁邊，不能按。串完一條跳一下，整關過關跳兩下。
+   圖在框裡等比縮放、貼齊底邊，之後換成別張直的圖也不用改這裡。 */
+.beads-princess {
+  position: absolute;
+  right: 2cqw;
+  bottom: 5cqw;
+  width: 15.7cqw;
+  height: 23cqw;
+  pointer-events: none;
+  transform-origin: 50% 100%;
+}
+.beads-princess img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 100%;
+}
+.beads-joy { animation: beadsJoy .7s ease; }
+.beads-joy2 { animation: beadsJoy2 1.2s ease; }
+@keyframes beadsJoy {
+  18% { scale: 1.06 .92; }
+  45% { translate: 0 -4.2cqw; scale: .97 1.05; rotate: -4deg; }
+  75% { translate: 0 0; scale: 1.05 .94; rotate: 0deg; }
+}
+@keyframes beadsJoy2 {
+  10% { scale: 1.06 .92; }
+  26% { translate: 0 -4.2cqw; scale: .97 1.05; rotate: -5deg; }
+  44% { translate: 0 0; scale: 1.05 .94; rotate: 0deg; }
+  56% { scale: 1.06 .92; }
+  72% { translate: 0 -4.2cqw; scale: .97 1.05; rotate: 5deg; }
+  90% { translate: 0 0; scale: 1.04 .95; rotate: 0deg; }
+}
+
+/* 珠寶盒：平的粉色盒子，一格一種珠子。只有珠子本身能拖、能點。
+   盒子的樣子畫在 .beads-box（鋪在格子後面那一層，js 的 boxArt()），之後可以整層換成一張圖。 */
 .beads-tray {
   position: absolute;
   left: 0;
   right: 0;
   top: 60.5%;
+  z-index: 0;                 /* 自成一層，.beads-box 才能墊在格子後面、又不會掉到板面後面 */
   width: fit-content;
   margin: 0 auto;
   display: flex;
   gap: 1.2cqw;
-  padding: 1.3cqw;
+  padding: 1.9cqw;
+}
+.beads-box {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   border-radius: 3.6cqw;
-  background: #EBC27F;
-  border: .6cqw solid #C4914A;
+  background: #FF7FB0;
+  border: .6cqw solid #DB5890;
+  pointer-events: none;
+}
+img.beads-box { border: 0; background: none; border-radius: 0; width: 100%; height: 100%; }
+/* 盒子前面的愛心扣（裝飾，平的） */
+.beads-clasp {
+  position: absolute;
+  left: 50%;
+  bottom: -2.9cqw;
+  width: 4.6cqw;
+  height: 4.6cqw;
+  margin-left: -2.3cqw;
+  display: block;
+  overflow: visible;
 }
 .beads-cell {
   width: 17cqw;
   height: 15cqw;
   border-radius: 2.4cqw;
-  background: #FFF3D6;
+  background: #FFE3EE;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +151,7 @@
   justify-content: center;
 }
 .beads-art { width: 9.6cqw; height: 9.6cqw; filter: drop-shadow(0 .7cqw 0 rgba(51, 39, 79, .22)); }
-.beads-art svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.beads-art svg, .beads-art img { display: block; width: 100%; height: 100%; overflow: visible; }
 .beads-src.lg-drag .beads-art { filter: none; }
 
 /* 提示：多的錯珠子變淡、不能選 */
@@ -116,14 +172,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 .5cqw 0 #C4914A;
+  box-shadow: 0 .5cqw 0 #4AA8EE;
 }
 .beads-x .ic { width: 62%; height: 62%; stroke-width: 3.4; }
 
-/* 選小屋那張卡：五顆珠子掛在一條線上 */
+/* 選小屋那張卡：五顆粉藍珠子掛在一條線上 */
 .beads-card-line { position: absolute; inset: 0; width: 100%; height: 100%; }
 .beads-card-bead { position: absolute; width: 21%; aspect-ratio: 1; }
-.beads-card-bead svg { display: block; width: 100%; height: 100%; }
+.beads-card-bead svg, .beads-card-bead img { display: block; width: 100%; height: 100%; }
 
 @media (prefers-reduced-motion: reduce) {
   .beads-slot.empty.now svg { animation: none; }

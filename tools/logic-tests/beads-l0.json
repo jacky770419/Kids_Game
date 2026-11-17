@@ -10,6 +10,17 @@
   "shot": "l0-start.png"
  },
  {
+  "eval": "(()=>{const p=document.querySelector('.beads-princess');window.__joy=0;window.__joy2=0;if(!p)return 'no princess';new MutationObserver(()=>{if(p.classList.contains('beads-joy'))window.__joy++;if(p.classList.contains('beads-joy2'))window.__joy2++;}).observe(p,{attributes:true,attributeFilter:['class']});return 'watching'})()"
+ },
+ {
+  "expect": "(()=>{const p=document.querySelector('.beads-princess img');const s=document.getElementById('lgStage').getBoundingClientRect();if(!p||!p.naturalWidth)return false;const r=p.getBoundingClientRect();const hit=[...document.querySelectorAll('.beads-slot,.beads-tray')].some(e=>{const b=e.getBoundingClientRect();return b.left<r.right&&b.right>r.left&&b.top<r.bottom&&b.bottom>r.top});return !hit&&r.left>=s.left&&r.right<=s.right&&r.top>=s.top&&r.bottom<=s.bottom})()",
+  "why": "公主有載到圖、在板面裡、沒擋到項鍊和珠寶盒"
+ },
+ {
+  "expect": "(()=>{const f=[...document.querySelectorAll('.beads-src circle')].map(c=>c.getAttribute('fill').toUpperCase()).sort().join();return f==='#4AA8EE,#FF7FB0'})()",
+  "why": "第一條是粉＋藍"
+ },
+ {
   "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
  },
  {
@@ -110,7 +121,17 @@
   "shot": "l0-r1-done.png"
  },
  {
-  "wait": 3200
+  "wait": 600
+ },
+ {
+  "shot": "l0-r1-joy.png"
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "expect": "window.__joy===1&&window.__joy2===0",
+  "why": "串完第一條公主跳一下"
  },
  {
   "shot": "l0-r2.png"
@@ -165,6 +186,10 @@
  {
   "expect": "!document.getElementById('lgWin').hidden",
   "why": "過關畫面出現"
+ },
+ {
+  "expect": "window.__joy===2&&window.__joy2===1",
+  "why": "三條各跳一次，最後一條（過關）跳兩下"
  },
  {
   "shot": "l0-win.png"

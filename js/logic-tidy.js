@@ -1,13 +1,18 @@
 /* 動動腦小屋：小熊收玩具（分一分）。對應故事《小熊收玩具》（bear-tidy）。
 
-   練的是「同一堆東西可以有很多種分法」。六樣玩具跟故事裡一樣，三種分法每樣都只進得了一籃：
-     會滾（球、小汽車）／會出聲音（小鴨、小喇叭）／布做的（小魚、小雞）
-     紅（球、喇叭）／藍（汽車、魚）／黃（鴨、雞）
-     動物（鴨、魚、雞）／不是動物（球、汽車、喇叭）
+   練的是「同一堆東西可以有很多種分法」。六樣玩具、三種分法，每樣都只進得了一籃：
+     會滾（球、小汽車）／會出聲音（小鴨、魔法棒）／布做的（小魚、小雞）
+     粉紅（球、魔法棒）／藍（汽車、魚）／黃（鴨、雞）
+     動物（鴨、魚、雞）／不是動物（球、汽車、魔法棒）
+   跟故事不一樣的地方（照她的喜好換的：她喜歡粉色、藍色和公主）：故事裡的球和小喇叭是紅色的，
+   這裡球改成粉紅色、紅色小喇叭換成粉紅色的魔法棒（一搖就響，一樣是「會出聲音」那一籃）。分法和答案都沒變。
    四小關：1 照籃子上的圖分　2 媽媽分好了，猜她照什麼分（顏色）　3 動物和不是動物　4 自己分，考大人。
 
    試讀時孩子在「小汽車也會叭叭叫」猶豫過，所以每樣玩具只演一種特徵（小汽車只會滾）。
-   放錯不扣分：玩具彈回去、自己演一次特徵；同一樣錯兩次，對的籃子會亮起來。 */
+   放錯不扣分：玩具彈回去、自己演一次特徵；同一樣錯兩次，對的籃子會亮起來。
+
+   【可換圖】之後會補畫新圖：六樣玩具（TOYS 的 art）、籃子上的圖示（BADGE）、籃子（css/logic-tidy.css 的 .tidy-basket）。
+   換的時候只改各自那一處；熊媽媽現在用 assets/logic/mama.png。 */
 (() => {
   'use strict';
   if (!window.Logic) return;
@@ -15,7 +20,7 @@
   Logic.lines({
     'tidy.name': { zh: '小熊收玩具', en: 'Bear Tidies Up' },
     'tidy.intro1': { zh: '小熊的玩具丟了滿地。', en: 'Little Bear\'s toys are all over the floor.' },
-    'tidy.intro2': { zh: '我們幫他收進籃子裡！', en: 'Let\'s help him put them in the baskets!' },
+    'tidy.intro2': { zh: '你來幫他收進籃子裡！', en: 'Come help him put them in the baskets!' },
     'tidy.ask1': { zh: '看籃子上的圖，把玩具放進去。', en: 'Look at the picture on each basket. Put the toys in.' },
     'tidy.ask2': { zh: '媽媽分好了。你猜媽媽是照什麼分的？點一張圖。', en: 'Mama sorted them. Can you guess how? Tap a card.' },
     'tidy.ask3': { zh: '這次分兩籃。一籃放動物，一籃放不是動物的。', en: 'This time there are two baskets. One for animals, and one for things that are not animals.' },
@@ -29,23 +34,25 @@
     'tidy.b.cloth': { zh: '布做的放這裡。', en: 'Things made of cloth go here.' },
     'tidy.b.animal': { zh: '動物放這裡。', en: 'Animals go here.' },
     'tidy.b.other': { zh: '不是動物的放這裡。', en: 'Things that are not animals go here.' },
-    'tidy.t.ball': { zh: '紅色的球，會滾。', en: 'The red ball rolls.' },
+    'tidy.t.ball': { zh: '粉紅色的球，會滾。', en: 'The pink ball rolls.' },
     'tidy.t.car': { zh: '藍色的小汽車，有輪子，會滾。', en: 'The blue car has wheels. It rolls.' },
     'tidy.t.duck': { zh: '黃色的小鴨，一捏就叫。', en: 'The yellow duck squeaks when you squeeze it.' },
-    'tidy.t.horn': { zh: '紅色的小喇叭，一吹就響。', en: 'The red horn toots when you blow it.' },
+    'tidy.t.wand': { zh: '粉紅色的魔法棒，一搖就有聲音。', en: 'The pink magic wand makes a sound when you shake it.' },
     'tidy.t.fish': { zh: '藍色的小魚，是布做的。', en: 'The blue fish is made of cloth.' },
     'tidy.t.chick': { zh: '黃色的小雞，是布做的。', en: 'The yellow chick is made of cloth.' }
   });
 
   const INK = '#33274F';
-  const C = { red: '#FF5C5C', blue: '#4AA8EE', yellow: '#FFD84D' };
+  const C = { pink: '#FF7FB0', blue: '#4AA8EE', yellow: '#FFD84D' };
   const svg = (inner) => '<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="' + INK + '" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' + inner + '</g></svg>';
   const STITCH = 'fill="none" stroke-width="2.4" stroke-dasharray="4 5"';
 
-  /* 六樣玩具：程式畫的，粗黑線、平塗，跟貼紙同一個味道。布做的那兩樣有縫線和補丁。 */
+  /* 【可換圖】六樣玩具：程式畫的，粗黑線、平塗，跟貼紙同一個味道。布做的那兩樣有縫線和補丁。
+     每樣都是正方形（viewBox 100×100）：地上約 13cqw 見方、籃子裡約 11cqw。換成圖檔時把 art 改成
+     '<img src="assets/logic/toy-ball.png" alt="">' 這種字串就好（css 的 .tidy-art svg 那幾條要加上 img）。 */
   const TOYS = [
-    { id: 'ball', color: 'red', kind: 'roll', animal: false, art: svg(
-      '<circle cx="50" cy="52" r="36" fill="' + C.red + '"/>' +
+    { id: 'ball', color: 'pink', kind: 'roll', animal: false, art: svg(
+      '<circle cx="50" cy="52" r="36" fill="' + C.pink + '"/>' +
       '<path d="M17 44c20 12 46 12 66 0" fill="none" stroke="#fff" stroke-width="7"/>' +
       '<circle cx="38" cy="32" r="6" fill="#fff" stroke="none"/>') },
     { id: 'car', color: 'blue', kind: 'roll', animal: false, art: svg(
@@ -59,11 +66,14 @@
       '<path d="M20 36c-8 0-12 3-12 6s5 5 12 4z" fill="#FFA228"/>' +
       '<circle cx="33" cy="31" r="3.4" fill="' + INK + '" stroke="none"/>' +
       '<path d="M54 64c6 6 16 6 22-2" fill="none" stroke-width="3"/>') },
-    { id: 'horn', color: 'red', kind: 'sound', animal: false, art: svg(
-      '<path d="M14 44l34-8 28-16v60L48 64l-34-8z" fill="' + C.red + '"/>' +
-      '<rect x="6" y="42" width="10" height="16" rx="4" fill="#FFD84D"/>' +
-      '<path d="M76 20c8 8 12 18 12 30s-4 22-12 30" fill="#FFD84D"/>' +
-      '<path d="M48 36v28" fill="none" stroke-width="3"/>') },
+    // 魔法棒：整支都是粉紅色（棒子和星星），照顏色分的時候才不會被看成別的顏色；旁邊兩道弧線表示「搖了有聲音」
+    { id: 'wand', color: 'pink', kind: 'sound', animal: false, art: svg(
+      '<path d="M56 48L20 90" fill="none" stroke-width="16"/>' +
+      '<path d="M56 48L20 90" fill="none" stroke="' + C.pink + '" stroke-width="9"/>' +
+      '<path d="M66 6l7.3 17.7 19 1.6-14.4 12.5 4.4 18.6L66 46.3 49.700 56.4l4.4-18.6L39.700 25.300l19-1.6z" fill="' + C.pink + '"/>' +
+      '<circle cx="66" cy="31" r="5" fill="#fff" stroke="none"/>' +
+      '<path d="M90 50c3 4 3 9 0 13M83 55c2 2 2 5 0 7" fill="none" stroke-width="3"/>' +
+      '') },
     { id: 'fish', color: 'blue', kind: 'cloth', animal: true, art: svg(
       '<path d="M8 50c12-18 30-26 46-24 10 1 18 6 24 14l16-12v44L78 60c-6 8-14 13-24 14-16 2-34-6-46-24z" fill="' + C.blue + '"/>' +
       '<path d="M16 50c10-12 24-18 36-17 8 1 15 5 20 11" ' + STITCH + '/>' +
@@ -80,26 +90,27 @@
       '<path d="M60 60l7 5M67 60l-7 5" fill="none" stroke-width="2.2"/>') }
   ];
 
-  /* 籃子上的圖：會滾＝輪子在滾、會出聲音＝音符、布做的＝補丁、顏色＝一坨顏料、動物＝腳印、不是動物＝腳印打叉 */
+  /* 【可換圖】籃子上的圖：會滾＝輪子在滾、會出聲音＝音符、布做的＝補丁、顏色＝一坨顏料、動物＝腳印、不是動物＝腳印打叉 */
   const PAW = '<ellipse cx="50" cy="62" rx="20" ry="16" fill="' + INK + '" stroke="none"/><circle cx="26" cy="40" r="8" fill="' + INK + '" stroke="none"/><circle cx="43" cy="28" r="8" fill="' + INK + '" stroke="none"/><circle cx="60" cy="28" r="8" fill="' + INK + '" stroke="none"/><circle cx="76" cy="40" r="8" fill="' + INK + '" stroke="none"/>';
   const blob = (c) => svg('<path d="M50 14c18 0 34 12 34 30 0 10-8 12-8 20 0 12-12 22-28 22S16 74 16 56c0-22 14-42 34-42z" fill="' + C[c] + '"/>');
   const BADGE = {
     roll: svg('<circle cx="56" cy="52" r="28" fill="#fff"/><circle cx="56" cy="52" r="7" fill="' + INK + '"/><path d="M56 24v56M28 52h56" fill="none" stroke-width="3"/><path d="M8 38h14M4 52h16M8 66h14" fill="none"/>'),
     sound: svg('<path d="M38 70V26l36-8v44" fill="none" stroke-width="6"/><ellipse cx="28" cy="72" rx="12" ry="9" fill="' + INK + '"/><ellipse cx="64" cy="64" rx="12" ry="9" fill="' + INK + '"/>'),
     cloth: svg('<rect x="18" y="20" width="64" height="60" rx="8" fill="#FFB3C7"/><rect x="27" y="29" width="46" height="42" rx="4" ' + STITCH + '/><path d="M40 42l20 16M60 42L40 58" fill="none" stroke-width="3.4"/>'),
-    red: blob('red'), blue: blob('blue'), yellow: blob('yellow'),
+    pink: blob('pink'), blue: blob('blue'), yellow: blob('yellow'),
     animal: svg(PAW),
-    other: svg('<g opacity=".35">' + PAW + '</g><path d="M18 18l64 64M82 18L18 82" fill="none" stroke="#FF5C5C" stroke-width="9"/>')
+    other: svg('<g opacity=".35">' + PAW + '</g><path d="M18 18l64 64M82 18L18 82" fill="none" stroke="#FF7FB0" stroke-width="9"/>')
   };
 
   /* 每一關：籃子的 key，跟「這樣玩具該進哪一籃」 */
   const LEVELS = [
     { baskets: ['roll', 'sound', 'cloth'], of: (t) => t.kind, ask: 'tidy.ask1' },
-    { baskets: ['red', 'blue', 'yellow'], of: (t) => t.color, ask: 'tidy.ask2', guess: true },
+    { baskets: ['pink', 'blue', 'yellow'], of: (t) => t.color, ask: 'tidy.ask2', guess: true },
     { baskets: ['animal', 'other'], of: (t) => (t.animal ? 'animal' : 'other'), ask: 'tidy.ask3' },
     { baskets: ['a', 'b', 'c'], of: null, ask: 'tidy.ask4', free: true }
   ];
   const DEMO = { roll: 'tidy-roll', sound: 'tidy-squeak', cloth: 'tidy-soft' };
+  const DEMO_OF = { wand: 'tidy-wave' };      // 魔法棒是用搖的，不是捏的
 
   function mount(stage, api, level) {
     const L = LEVELS[level];
@@ -136,7 +147,11 @@
       return { t: t, el: node, art: node.firstChild };
     });
 
-    const demo = (toy) => { api.anim(toy.art, DEMO[toy.t.kind]); };
+    const demo = (toy) => {
+      api.anim(toy.art, DEMO_OF[toy.t.id] || DEMO[toy.t.kind]);
+      // 魔法棒搖一搖有聲音：三個往上的音
+      if (toy.t.id === 'wand') [1047, 1319, 1568].forEach((f, i) => api.after(120 + i * 130, () => api.tone(f, 0.22)));
+    };
 
     function put(toy, basket) {
       placed[toy.t.id] = basket.key;
@@ -163,7 +178,7 @@
       const cards = el('div', 'tidy-cards');
       floor.appendChild(cards);
       const RULES = [
-        { key: 'color', art: '<i>' + BADGE.red + '</i><i>' + BADGE.blue + '</i><i>' + BADGE.yellow + '</i>' },
+        { key: 'color', art: '<i>' + BADGE.pink + '</i><i>' + BADGE.blue + '</i><i>' + BADGE.yellow + '</i>' },
         { key: 'kind', art: '<i>' + BADGE.roll + '</i><i>' + BADGE.sound + '</i><i>' + BADGE.cloth + '</i>' },
         { key: 'animal', art: '<i>' + BADGE.animal + '</i><i>' + BADGE.other + '</i>' }
       ].sort(() => Math.random() - 0.5);
@@ -185,7 +200,7 @@
           const n = api.miss('guess');
           api.anim(c, 'lg-shake');
           api.say('tidy.hint2');
-          // 錯兩次：一籃一籃染上顏色給他看；錯三次：對的那張卡亮起來
+          // 錯兩次：一籃一籃染上顏色給她看；錯三次：對的那張卡亮起來
           if (n >= 2) baskets.forEach((b, i) => api.after(500 + i * 700, () => { b.el.classList.add('tint-' + b.key); api.anim(b.el, 'lg-pop'); }));
           if (n >= 3) cards.querySelector('[data-rule="color"]').classList.add('lg-glow');
         });

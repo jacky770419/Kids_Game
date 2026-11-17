@@ -10,6 +10,14 @@
   "shot": "l1-start.png"
  },
  {
+  "expect": "(()=>{const p=document.querySelector('.beads-princess img');const s=document.getElementById('lgStage').getBoundingClientRect();if(!p||!p.naturalWidth)return false;const r=p.getBoundingClientRect();const hit=[...document.querySelectorAll('.beads-slot,.beads-tray')].some(e=>{const b=e.getBoundingClientRect();return b.left<r.right&&b.right>r.left&&b.top<r.bottom&&b.bottom>r.top});return !hit&&r.left>=s.left&&r.right<=s.right&&r.top>=s.top&&r.bottom<=s.bottom})()",
+  "why": "公主有載到圖、在板面裡、沒擋到項鍊和珠寶盒"
+ },
+ {
+  "expect": "(()=>{const f=[...document.querySelectorAll('.beads-src circle')].map(c=>c.getAttribute('fill').toUpperCase()).sort().join();return f==='#4AA8EE,#FF7FB0'})()",
+  "why": "第一條是粉＋藍"
+ },
+ {
   "eval": "(()=>{const n=document.querySelector('.beads-slot.now');document.querySelectorAll('.beads-src').forEach(s=>s.classList.toggle('t-ok',!!n&&s.dataset.kind===n.dataset.want));return n?n.dataset.want:null})()"
  },
  {

@@ -9,7 +9,7 @@
  {"drag":[".tidy-toy[data-toy=ball]",".tidy-basket[data-key=roll]"]},
  {"drag":[".tidy-toy[data-toy=car]",".tidy-basket[data-key=roll]"]},
  {"drag":[".tidy-toy[data-toy=duck]",".tidy-basket[data-key=sound]"]},
- {"drag":[".tidy-toy[data-toy=horn]",".tidy-basket[data-key=sound]"]},
+ {"drag":[".tidy-toy[data-toy=wand]",".tidy-basket[data-key=sound]"]},
  {"drag":[".tidy-toy[data-toy=fish]",".tidy-basket[data-key=cloth]"]},
  {"shot":"tidy0-mid.png"},
  {"drag":[".tidy-toy[data-toy=chick]",".tidy-basket[data-key=cloth]"]},

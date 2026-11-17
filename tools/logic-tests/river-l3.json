@@ -39,6 +39,10 @@
   "shot": "l3-miss-goat-eats.png"
  },
  {
+  "expect": "document.querySelector('.river-item[data-item=\"cabbage\"] .river-pose.on').dataset.pose==='bitten' && document.querySelector('.river-item[data-item=\"goat\"] .river-pose.on').dataset.pose==='nibble'",
+  "why": "出事時白菜換成被咬一口的、小羊換成嚼的樣子"
+ },
+ {
   "wait": 2600
  },
  {
@@ -63,6 +67,10 @@
   "shot": "l3-swap.png"
  },
  {
+  "expect": "['wolf','goat','cabbage'].every((k) => document.querySelector('.river-item[data-item=\"' + k + '\"] .river-pose.on').dataset.pose === 'stand')",
+  "why": "演完退回來，三樣都變回平常的樣子"
+ },
+ {
   "tap": ".river-oar"
  },
  {
@@ -70,6 +78,10 @@
  },
  {
   "shot": "l3-miss-wolf-teases.png"
+ },
+ {
+  "expect": "document.querySelector('.river-item[data-item=\"wolf\"] .river-pose.on').dataset.pose==='tease' && document.querySelector('.river-item[data-item=\"goat\"] .river-pose.on').dataset.pose==='shiver'",
+  "why": "出事時大野狼換成扮鬼臉的、小羊換成發抖的樣子"
  },
  {
   "wait": 2600

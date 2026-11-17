@@ -1,6 +1,6 @@
 /* 動動腦（邏輯小遊戲）共用樣式。每間小屋另外一支 css/logic-<id>.css。
 
-   房間色是黃色。板面（.lg-stage）固定 4:3、放到最大；小屋裡的東西一律用 % 定位、
+   房間色是黃色（首頁那扇門的顏色）；板面裡面以粉色、藍色為主（她喜歡的顏色）。板面（.lg-stage）固定 4:3、放到最大；小屋裡的東西一律用 % 定位、
    用 cqw 定大小（1cqw＝板面寬的 1%，100cqh＝75cqw），橫放直放都是同一張圖放大縮小。 */
 
 body.logic {
@@ -58,6 +58,9 @@ body.logic {
   background: var(--tint);
   overflow: hidden;
 }
+/* 卡片上的圖：底色粉、藍輪流 */
+.lg-card:nth-child(odd) .lg-card-pic { background: #FFE3EE; }
+.lg-card:nth-child(even) .lg-card-pic { background: #DCEEFF; }
 .lg-card-pic img { position: absolute; object-fit: contain; pointer-events: none; }
 .lg-card-name { display: inline-flex; align-items: center; font-size: 30px; line-height: 1; white-space: nowrap; }
 .lg-card-stars { display: flex; gap: 6px; }

@@ -1,6 +1,6 @@
 /* 動動腦小屋：小熊收玩具。上半是地板（玩具散在上面），下半是籃子。 */
 
-.lg-tidy { background: #FFF9E6; }
+.lg-tidy { background: #FFF1F6; }
 
 .tidy-floor {
   position: absolute;
@@ -22,6 +22,8 @@
 .tidy-roll { animation: tidyRoll .9s ease-in-out; }
 .tidy-squeak { animation: tidySqueak .5s ease; }
 .tidy-soft { animation: tidySoft .7s ease; }
+.tidy-wave { animation: tidyWave .8s ease; }
+@keyframes tidyWave { 20% { rotate: -18deg; } 45% { rotate: 16deg; } 70% { rotate: -10deg; } 90% { rotate: 6deg; } }
 @keyframes tidyRoll { 50% { translate: 3cqw 0; rotate: 200deg; } 100% { rotate: 360deg; } }
 @keyframes tidySqueak { 35% { scale: 1.18 .78; } 70% { scale: .92 1.1; } }
 @keyframes tidySoft { 25% { rotate: -12deg; scale: .94 1.04; } 60% { rotate: 10deg; scale: 1.05 .95; } }
@@ -40,13 +42,20 @@
   min-width: 0;
   margin-top: 7cqw;
   border-radius: 2cqw 2cqw 5cqw 5cqw;
-  background: #EBC27F;
-  border: .6cqw solid #C4914A;
-  background-image: repeating-linear-gradient(0deg, transparent 0 3.2cqw, rgba(196, 145, 74, .45) 3.2cqw 3.7cqw);
+  /* 【可換圖】籃子：粉、藍、紫三個顏色輪流（她喜歡粉色和藍色），一條一條的橫紋當編織的紋路 */
+  --bk: #FFC2DA;
+  --bk-line: #DB5890;
+  background-color: var(--bk);
+  border: .6cqw solid var(--bk-line);
+  background-image: repeating-linear-gradient(0deg, transparent 0 3.2cqw, rgba(255, 255, 255, .5) 3.2cqw 3.7cqw);
 }
-.tidy-basket.tint-red { background-color: #FFB0AE; border-color: #D63C43; }
-.tidy-basket.tint-blue { background-color: #A9D8FA; border-color: #2B82C9; }
-.tidy-basket.tint-yellow { background-color: #FFE78F; border-color: #D9A400; }
+.tidy-basket:nth-child(2) { --bk: #B5DCFA; --bk-line: #2B82C9; }
+.tidy-basket:nth-child(3) { --bk: #D9CCFB; --bk-line: #7355D1; }
+/* 猜「媽媽照什麼分」那一關：籃子先是素的（顏色會洩漏答案），猜對或給提示時才染上那一籃的顏色 */
+.tidy-guess .tidy-basket { --bk: #F4F0FB; --bk-line: #B9AEDD; }
+.tidy-guess .tidy-basket.tint-pink { --bk: #FFC2DA; --bk-line: #DB5890; }
+.tidy-guess .tidy-basket.tint-blue { --bk: #B5DCFA; --bk-line: #2B82C9; }
+.tidy-guess .tidy-basket.tint-yellow { --bk: #FFE78F; --bk-line: #D9A400; }
 .tidy-badge {
   position: absolute;
   left: 50%;
@@ -57,9 +66,9 @@
   padding: 1.2cqw;
   border-radius: 3cqw;
   background: #fff;
-  box-shadow: 0 .9cqw 0 #C4914A;
+  box-shadow: 0 .9cqw 0 #B9AEDD;
 }
-.tidy-badge:active { translate: 0 .6cqw; box-shadow: 0 .3cqw 0 #C4914A; }
+.tidy-badge:active { translate: 0 .6cqw; box-shadow: 0 .3cqw 0 #B9AEDD; }
 .tidy-badge svg { width: 100%; height: 100%; display: block; }
 .tidy-slots {
   position: absolute;

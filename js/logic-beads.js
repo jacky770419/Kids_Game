@@ -1,12 +1,19 @@
-/* 動動腦小屋：小美的串珠項鍊（找規律、接下去）。對應故事《小美的串珠項鍊》（mei-beads）。
+/* 動動腦小屋：公主串項鍊（找規律、接下去）。對應故事《小美的串珠項鍊》（mei-beads）。
+
+   故事裡是小美串項鍊送奶奶；遊戲把主角換成孩子自己——「今天你是公主，要自己串項鍊」。
+   原因：她喜歡公主，而且要當動手解謎的主角（不是去幫別人的忙，也不是公主等人來幫）。
+   所以台詞裡沒有小美和奶奶，畫面上站在旁邊的公主就是她自己：每串完一條，公主開心跳一下。
+   配色照她的喜好：粉、藍為主，板面是很淡的藍，珠子盒是粉色的珠寶盒。
 
    練的是「照一樣的順序排下去」。試讀時 5 歲孩子卡在「一口氣念七顆顏色，只用聽的記不住」，
-   所以整條項鍊一直擺在畫面上讓他用看的；小熊不逐顆念顏色，改成每一種珠子一個音高，
-   答錯時項鍊從頭一顆一顆亮起來、一顆一個音，讓他「聽」出節奏。
+   所以整條項鍊一直擺在畫面上讓她用看的；小熊不逐顆念顏色，改成每一種珠子一個音高，
+   答錯時項鍊從頭一顆一顆亮起來、一顆一個音，讓她「聽」出節奏。
 
    六小關（前五關每關連做 3 條才過關，題目由程式隨機出）：
      1 兩色交替 ABAB（給 6 接 2）　2 AAB 或 ABB（給 6 接 3）　3 同色大小珠：大小交替、大小小、大大小（給 6 接 3）
-     4 三色 ABC（給 6 接 3）　5 找少掉的那一顆（故事裡奶奶的舊項鍊）　6 換你出題：自己串，考大人，不驗對錯
+     4 三色 ABC（給 6 接 3）　5 找少掉的那一顆（故事裡奶奶的舊項鍊；遊戲裡只說「這條項鍊掉了一顆」）
+     6 換你出題：自己串，考大人，不驗對錯
+   第 1、2 關的第一條固定用粉＋藍（她最喜歡的兩色），其他的隨機。
    放錯不扣分：珠子滑回盒子、項鍊從頭亮一遍。同一個空位錯第 2 次，盒子裡多的錯珠子變淡
    （本來只有兩種就讓對的發亮）；錯第 3 次，對的那顆發亮。 */
 (() => {
@@ -14,9 +21,9 @@
   if (!window.Logic) return;
 
   Logic.lines({
-    'beads.name': { zh: '小美串項鍊', en: 'Mei\'s Necklace' },
-    'beads.intro1': { zh: '小美要串一條項鍊，送給奶奶。', en: 'Mei is making a necklace for Grandma.' },
-    'beads.intro2': { zh: '珠子都照順序排隊，我們幫小美接下去！', en: 'The beads line up in a pattern. Let\'s help Mei keep it going!' },
+    'beads.name': { zh: '公主串項鍊', en: 'Princess Necklaces' },
+    'beads.intro1': { zh: '今天你是公主，要自己串項鍊。', en: 'Today you are the princess! You get to make the necklaces all by yourself.' },
+    'beads.intro2': { zh: '珠子照順序排隊，你來接下去！', en: 'The beads line up in a pattern. You keep it going!' },
     'beads.ask1': { zh: '下一顆是什麼顏色？把它串上去。', en: 'What color comes next? Put it on the string.' },
     'beads.ask3': { zh: '下一顆是大的，還是小的？', en: 'What comes next? A big one, or a small one?' },
     'beads.ask5': { zh: '這條項鍊掉了一顆。掉的是什麼顏色？把它放回去。', en: 'This necklace lost a bead. What color is missing? Put it back.' },
@@ -25,18 +32,20 @@
     'beads.hint': { zh: '從頭看一遍，聽聽看。', en: 'Let\'s look from the start. Listen!' },
     'beads.hint2': { zh: '再聽一次。珠子是怎麼排隊的？', en: 'Listen again. How do the beads line up?' },
     'beads.hint3': { zh: '試試看發亮的這一顆。', en: 'Try the one that is glowing.' },
-    'beads.next': { zh: '好棒！再來一條。', en: 'Great! Here comes another one.' }
+    'beads.next': { zh: '串好了，真漂亮！再來一條。', en: 'You finished it, and it is so pretty! Here comes another one.' }
   });
   Logic.zy({
     chars: { '串': 'ㄔㄨㄢˋ', '珠': 'ㄓㄨ', '順': 'ㄕㄨㄣˋ', '序': 'ㄒㄩˋ', '隊': 'ㄉㄨㄟˋ', '遍': 'ㄅㄧㄢˋ' }
   });
 
   const INK = '#33274F';
-  /* 珠子只用這六色（綠色留給「好了」的按鈕） */
-  const COLORS = { red: '#FF5C5C', yellow: '#FFD84D', blue: '#4AA8EE', purple: '#9A7BF5', orange: '#FFA228', pink: '#FF7FB0' };
+  const BOARD = '#EEF7FF';          // 板面的底色（css 的 .lg-beads 也是這一色）；空位用它，才不會被看成一顆白珠子
+  /* 珠子只用這六色：粉、藍為主，不用紅、橘、綠（綠色留給「好了」的按鈕） */
+  const COLORS = { pink: '#FF7FB0', blue: '#4AA8EE', purple: '#9A7BF5', yellow: '#FFD84D', cyan: '#22C3B6', white: '#FFFFFF' };
   const NAMES = Object.keys(COLORS);
   /* 同一條項鍊不同時出現的顏色：小孩在螢幕上容易看成同一色 */
-  const CLASH = [['red', 'pink'], ['red', 'orange'], ['orange', 'yellow']];
+  const CLASH = [['blue', 'cyan']];
+  const FAVE = ['pink', 'blue'];    // 第 1、2 關的第一條用這兩色
   const ROUNDS = 3;                 // 每一小關連做幾條
   const FREE = 5;                   // 第 6 小關：換你出題
   const FREE_MAX = 8, FREE_MIN = 4;
@@ -81,7 +90,7 @@
        seq    整條項鍊每一顆是哪一種
        blanks 要孩子放的位置（由前到後）
        box    盒子裡從左到右擺哪幾種 */
-  function makePuzzle(level, unit, rnd, not) {
+  function makePuzzle(level, unit, rnd, not, colors) {
     const sized = level === 2;
     const missing = level === 4;
     let kinds;
@@ -90,7 +99,7 @@
       kinds = [{ color: c, size: 'L' }, { color: c, size: 'S' }];
     } else {
       const used = Math.max.apply(null, unit) + 1;
-      kinds = pickColors(missing ? 3 : used, rnd, not).map((c) => ({ color: c, size: 'L' }));   // 第 5 關盒子一律三種，多的那種是陪襯
+      kinds = (colors || pickColors(missing ? 3 : used, rnd, not)).map((c) => ({ color: c, size: 'L' }));   // 第 5 關盒子一律三種，多的那種是陪襯
     }
     const total = missing ? (unit.length === 2 ? 8 : 9) : 6 + (level === 0 ? 2 : 3);
     const seq = Array.from({ length: total }, (_, i) => unit[i % unit.length]);
@@ -102,8 +111,9 @@
 
   function makeSet(level, rnd) {
     let not = '';
-    return planUnits(level, rnd).map((unit) => {
-      const p = makePuzzle(level, unit, rnd, not);
+    return planUnits(level, rnd).map((unit, i) => {
+      const fave = (i === 0 && level < 2) ? shuffle(FAVE, rnd) : null;      // 哪一色排前面隨機
+      const p = makePuzzle(level, unit, rnd, not, fave);
       not = colorKey(p.kinds);
       return p;
     });
@@ -172,6 +182,9 @@
 
   function test() {
     const errs = [];
+    if (NAMES.join() !== 'pink,blue,purple,yellow,cyan,white') errs.push('珠子的顏色應該是粉、藍、紫、黃、青、白');
+    CLASH.concat([FAVE]).forEach((c) => c.forEach((n) => { if (!COLORS[n]) errs.push('規則裡有不在表上的顏色 ' + n); }));
+    if (clash(FAVE[0], FAVE[1])) errs.push('第一條要用的兩色不能是容易看錯的一對');
     let seed = 20240607;
     const rnd = () => { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; };
     for (let level = 0; level < FREE; level++) {
@@ -181,6 +194,7 @@
         set.forEach((p, i) => {
           checkPuzzle(p).forEach((e) => errs.push(e));
           if (i && colorKey(p.kinds) === colorKey(set[i - 1].kinds)) errs.push('第 ' + (level + 1) + ' 關連著兩條顏色一樣');
+          if (!i && level < 2 && colorKey(p.kinds) !== FAVE.slice().sort().join('+')) errs.push('第 ' + (level + 1) + ' 關的第一條應該是粉＋藍');
           if (p.kinds.some((_, k) => !(noteOf(p, k) > 0))) errs.push('第 ' + (level + 1) + ' 關有珠子沒有音');
           const want = level === 0 ? 2 : level === 4 ? 1 : 3;
           if (p.blanks.length !== want) errs.push('第 ' + (level + 1) + ' 關要接 ' + want + ' 顆，出了 ' + p.blanks.length + ' 顆');
@@ -200,17 +214,41 @@
 
   const svg = (inner) => '<svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="' + INK + '" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' + inner + '</g></svg>';
 
-  /* 珠子：圓、粗黑線、左上一點白色高光、右下一道淡淡的影子。大珠小珠只差半徑。 */
+  /* 【可換圖】珠子。項鍊上、珠寶盒裡、選單卡片上的珠子都從這一個函式來。
+     現在是程式畫的：圓、粗墨線、左上一點白色高光、右下一道淡淡的影子；大珠小珠只差半徑。
+     白珠子沒有顏色可以靠，所以影子畫深一點、寬一點（高光在白底上看不見，就不畫）。
+     之後換圖：這裡改成回傳 '<img src="assets/logic/bead-' + kind.color + '.png" alt="">' 就好
+     （正方形、去背、珠子佔滿約 88%；小珠是同一張圖縮成 61%，可以在 img 上加 style="scale:.61"）。
+     外框是正方形 9.6cqw（卡片上是卡片寬的 21%）。 */
   function beadArt(kind) {
     const r = kind.size === 'S' ? 27 : 44;
+    const white = kind.color === 'white';
     const hx = 50 - r * 0.4, hy = 50 - r * 0.42;
-    const q = r * 0.7;
+    const q = r * (white ? 0.66 : 0.7);
     return svg(
       '<circle cx="50" cy="50" r="' + r + '" fill="' + COLORS[kind.color] + '"/>' +
-      '<path d="M' + (50 + q) + ' ' + (50 - q * 0.25).toFixed(1) + 'A' + q + ' ' + q + ' 0 0 1 ' + (50 - q * 0.25).toFixed(1) + ' ' + (50 + q) + '" fill="none" stroke-opacity=".16" stroke-width="' + (r * 0.16).toFixed(1) + '"/>' +
-      '<ellipse cx="' + hx.toFixed(1) + '" cy="' + hy.toFixed(1) + '" rx="' + (r * 0.24).toFixed(1) + '" ry="' + (r * 0.15).toFixed(1) + '" fill="#fff" stroke="none" transform="rotate(-38 ' + hx.toFixed(1) + ' ' + hy.toFixed(1) + ')"/>');
+      '<path d="M' + (50 + q).toFixed(1) + ' ' + (50 - q * 0.25).toFixed(1) + 'A' + q.toFixed(1) + ' ' + q.toFixed(1) + ' 0 0 1 ' + (50 - q * 0.25).toFixed(1) + ' ' + (50 + q).toFixed(1) + '" fill="none" stroke-opacity="' + (white ? '.2' : '.16') + '" stroke-width="' + (r * (white ? 0.24 : 0.16)).toFixed(1) + '"/>' +
+      (white ? '' : '<ellipse cx="' + hx.toFixed(1) + '" cy="' + hy.toFixed(1) + '" rx="' + (r * 0.24).toFixed(1) + '" ry="' + (r * 0.15).toFixed(1) + '" fill="#fff" stroke="none" transform="rotate(-38 ' + hx.toFixed(1) + ' ' + hy.toFixed(1) + ')"/>'));
   }
-  const EMPTY = svg('<circle cx="50" cy="50" r="40" fill="#fff" stroke-width="3.6" stroke-dasharray="9 10"/>');
+  /* 空位：虛線圈，裡面是板面的底色（不用白色：白色現在是一種珠子） */
+  const EMPTY = svg('<circle cx="50" cy="50" r="40" fill="' + BOARD + '" stroke-width="3.6" stroke-dasharray="9 10"/>');
+
+  /* 【可換圖】珠寶盒（裝珠子的盒子，平的、不能按）。只在 start() 裡用一次，鋪在一格一格的珠子後面。
+     現在是 css 畫的粉色圓角盒（.beads-box）加前面一顆愛心扣。
+     之後換圖：這裡改成回傳 '<img class="beads-box" src="assets/logic/jewel-box.png" alt="">'，
+     圖會被拉成盒子的大小——三種珠子時 57.2×18.8cqw（約 3:1）、兩種時 39×18.8cqw（約 2:1），
+     所以要嘛畫成可以橫向拉伸的樣子，要嘛兩種寬度各一張。格子（.beads-cell，17×15cqw）的淡粉底要不要留看圖決定。 */
+  function boxArt() {
+    return '<div class="beads-box"><svg class="beads-clasp" viewBox="0 0 100 100" aria-hidden="true">' +
+      '<path d="M50 88C22 66 8 49 8 31C8 17 18 8 30 8C39 8 46 13 50 21C54 13 61 8 70 8C82 8 92 17 92 31C92 49 78 66 50 88Z" fill="#FFD84D" stroke="' + INK + '" stroke-width="8" stroke-linejoin="round"/></svg></div>';
+  }
+
+  /* 【可換圖】公主（就是孩子自己）。只在 mount() 裡用一次，站在板面右下角，串完一條會跳一下。
+     現在用現成的貼紙（349×512，直的）；外框 .beads-princess 高 23cqw、寬約 15.7cqw，圖在框裡等比縮放、貼齊底邊。
+     之後補畫「戴著項鍊的公主」：換這裡的 src 就好（直的、去背，比例接近 2:3）。 */
+  function princessArt() {
+    return '<img src="assets/stickers/princess.png" alt="">';
+  }
 
   /* 項鍊是一條往下垂的弧線。單位是 cqw（板面寬 100、高 75）。 */
   const PITCH = 10.2, TOP = 20, SAG = 12;
@@ -218,7 +256,7 @@
   const STRING = (() => {
     let d = '';
     for (let x = -2; x <= 102; x += 4) d += (d ? 'L' : 'M') + x + ' ' + yAt(x).toFixed(2);
-    return '<svg class="beads-string" viewBox="0 0 100 75" aria-hidden="true"><path d="' + d + '" fill="none" stroke="' + INK + '" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    return '<svg class="beads-string" viewBox="0 0 100 75" aria-hidden="true"><path d="' + d + '" fill="none" stroke="#2B82C9" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   })();
 
   function mount(stage, api, level) {
@@ -243,7 +281,9 @@
     /* 拖到項鍊附近就算數（小手指對不準那一格），算放在「下一個空位」 */
     const band = el('div', 'beads-band');
     const tray = el('div', 'beads-tray');
+    const princess = el('div', 'beads-princess', princessArt());
     stage.appendChild(band);
+    stage.appendChild(princess);
     stage.appendChild(tray);
 
     let goBtn = null;
@@ -260,7 +300,7 @@
         srcs.forEach((s) => s.el.classList.add('lg-locked'));
         goBtn.disabled = true;
         api.sfx('click');
-        playAll(170, () => api.win({ line: 'beads.done6', delay: 4400 }));
+        playAll(170, () => { api.anim(princess, 'beads-joy2'); api.win({ line: 'beads.done6', delay: 4400 }); });
       });
       stage.appendChild(goBtn);
     }
@@ -338,13 +378,13 @@
         srcOf(right).classList.add('lg-glow');
         line = 'beads.hint3';
       } else if (n === 2) {
-        // 只留對的和一顆錯的：留規律裡有的那一種，兩種都有就留他剛才沒選的
+        // 只留對的和一顆錯的：留規律裡有的那一種，兩種都有就留她剛才沒選的
         const inUnit = wrongs.filter((x) => p.unit.indexOf(x) >= 0);
         const keep = inUnit.find((x) => x !== k) !== undefined ? inUnit.find((x) => x !== k) : (inUnit.length ? inUnit[0] : wrongs[0]);
         wrongs.forEach((x) => { if (x !== keep) srcOf(x).classList.add('beads-off', 'lg-locked'); });
         line = 'beads.hint2';
       }
-      // 先把提示念完，再從頭一顆一顆亮：同時來的話語音會蓋住要他聽的音高
+      // 先把提示念完，再從頭一顆一顆亮：同時來的話語音會蓋住要她聽的音高
       api.say(line).then(() => replay());
     }
 
@@ -372,6 +412,7 @@
       api.after(520, () => {
         playAll(150, () => {
           api.anim(lace, 'lg-nod');             // 整條跳一下：串好了
+          api.anim(princess, round + 1 >= ROUNDS ? 'beads-joy2' : 'beads-joy');   // 公主開心跳一下（整關過關跳兩下）
           if (round + 1 >= ROUNDS) {
             dots[round].classList.add('ok');
             dots[round].classList.remove('now');
@@ -443,13 +484,14 @@
           },
           onDrop: (zone) => {
             if (!zone || busy) return false;
-            // 放到後面的空位：不算錯，讓「下一個空位」跳一下告訴他先放這裡
+            // 放到後面的空位：不算錯，讓「下一個空位」跳一下告訴她先放這裡
             if (!zone.front) { const f = frontIdx(); if (f >= 0) api.anim(slots[f], 'beads-ask'); return false; }
             return place(k, src, false);
           }
         });
         return { k: k, el: src };
       });
+      tray.insertAdjacentHTML('beforeend', boxArt());
       busy = false;
       markFront();
     }
@@ -465,9 +507,9 @@
     levels: 6,
     intro: ['beads.intro1', 'beads.intro2'],
     card: (pic) => {
-      const cs = ['red', 'yellow', 'red', 'yellow', 'red'];
+      const cs = ['pink', 'blue', 'pink', 'blue', 'pink'];
       pic.innerHTML =
-        '<svg class="beads-card-line" viewBox="0 0 100 100" aria-hidden="true"><path d="M-2 28Q50 84 102 28" fill="none" stroke="' + INK + '" stroke-width="2.4" stroke-linecap="round"/></svg>' +
+        '<svg class="beads-card-line" viewBox="0 0 100 100" aria-hidden="true"><path d="M-2 28Q50 84 102 28" fill="none" stroke="#2B82C9" stroke-width="2.4" stroke-linecap="round"/></svg>' +
         cs.map((c, i) => {
           const x = 14 + i * 18, t = (x + 2) / 104;
           const y = 28 + 112 * t * (1 - t);

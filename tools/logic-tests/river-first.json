@@ -1,0 +1,114 @@
+[
+ {
+  "open": "logic.html?h=river&l=0&all=1",
+  "settle": 3500
+ },
+ {
+  "wait": 500
+ },
+ {
+  "eval": "(speechSynthesis.speak = (u) => setTimeout(() => u.onend && u.onend(), 2500), window.__seen = [], window.__han = () => document.querySelector('.bubble-txt').textContent.replace(/[^\\u4e00-\\u9fff]/g, ''), new MutationObserver(() => window.__seen.push(window.__han())).observe(document.querySelector('.bubble-txt'), { childList: true, subtree: true }), '把念一句話假裝成 2.5 秒，並記下泡泡出現過哪些句子')"
+ },
+ {
+  "tap": ".lg-dot:nth-child(2)"
+ },
+ {
+  "wait": 400
+ },
+ {
+  "tap": ".river-item[data-item=\"wolf\"]"
+ },
+ {
+  "wait": 300
+ },
+ {
+  "expect": "window.__han().startsWith('把大野狼') && !window.__seen.some((t) => t.startsWith('先載小羊'))",
+  "why": "第2關：題目還在念，讓大野狼上船也不插嘴"
+ },
+ {
+  "wait": 2600
+ },
+ {
+  "expect": "window.__han().startsWith('先載小羊')",
+  "why": "第2關：題目念完、船上有人，才念「先載小羊…」"
+ },
+ {
+  "shot": "first-reminder.png"
+ },
+ {
+  "tap": ".lg-dot:nth-child(3)"
+ },
+ {
+  "wait": 400
+ },
+ {
+  "eval": "(window.__seen = [], '清掉紀錄')"
+ },
+ {
+  "tap": ".lg-dot:nth-child(2)"
+ },
+ {
+  "wait": 3600
+ },
+ {
+  "expect": "window.__han().startsWith('把大野狼') && !window.__seen.some((t) => t.startsWith('先載小羊'))",
+  "why": "第2關：題目念完，都沒動，提醒還沒念"
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "wait": 300
+ },
+ {
+  "expect": "window.__han().startsWith('先載小羊')",
+  "why": "第2關：讓小羊上船（還沒按槳）就念「先載小羊…」"
+ },
+ {
+  "tap": ".lg-dot:nth-child(3)"
+ },
+ {
+  "wait": 400
+ },
+ {
+  "eval": "(window.__seen = [], '清掉紀錄')"
+ },
+ {
+  "tap": ".lg-dot:nth-child(2)"
+ },
+ {
+  "wait": 10500
+ },
+ {
+  "expect": "window.__seen.some((t) => t.startsWith('先載小羊'))",
+  "why": "第2關：題目念完 7 秒都沒人上船，自己念「先載小羊…」"
+ },
+ {
+  "tap": ".lg-dot:nth-child(3)"
+ },
+ {
+  "wait": 400
+ },
+ {
+  "eval": "(window.__seen = [], '清掉紀錄')"
+ },
+ {
+  "tap": ".lg-dot:nth-child(2)"
+ },
+ {
+  "wait": 300
+ },
+ {
+  "tap": ".river-item[data-item=\"goat\"]"
+ },
+ {
+  "tap": ".river-oar"
+ },
+ {
+  "wait": 11000
+ },
+ {
+  "expect": "document.querySelectorAll('.river-trips b.on').length===1 && !window.__seen.some((t) => t.startsWith('先載小羊'))",
+  "why": "第2關：題目還沒念完就自己載小羊划走了，提醒就不念"
+ }
+]

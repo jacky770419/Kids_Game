@@ -10,6 +10,17 @@
   "shot": "l5-start.png"
  },
  {
+  "eval": "(()=>{const p=document.querySelector('.beads-princess');window.__joy=0;window.__joy2=0;if(!p)return 'no princess';new MutationObserver(()=>{if(p.classList.contains('beads-joy'))window.__joy++;if(p.classList.contains('beads-joy2'))window.__joy2++;}).observe(p,{attributes:true,attributeFilter:['class']});return 'watching'})()"
+ },
+ {
+  "expect": "(()=>{const p=document.querySelector('.beads-princess img');const s=document.getElementById('lgStage').getBoundingClientRect();if(!p||!p.naturalWidth)return false;const r=p.getBoundingClientRect();const hit=[...document.querySelectorAll('.beads-slot,.beads-tray')].some(e=>{const b=e.getBoundingClientRect();return b.left<r.right&&b.right>r.left&&b.top<r.bottom&&b.bottom>r.top});return !hit&&r.left>=s.left&&r.right<=s.right&&r.top>=s.top&&r.bottom<=s.bottom})()",
+  "why": "公主有載到圖、在板面裡、沒擋到項鍊和珠寶盒"
+ },
+ {
+  "expect": "(()=>{const r=document.querySelector('.beads-princess').getBoundingClientRect(),b=document.querySelector('.lg-go').getBoundingClientRect();return !(b.left<r.right&&b.right>r.left&&b.top<r.bottom&&b.bottom>r.top)})()",
+  "why": "公主沒擋到綠色按鈕"
+ },
+ {
   "drag": [
    ".beads-cell:nth-child(1) .beads-src",
    ".beads-slot.now"
@@ -153,6 +164,10 @@
  {
   "expect": "!document.getElementById('lgWin').hidden",
   "why": "過關畫面出現"
+ },
+ {
+  "expect": "window.__joy===0&&window.__joy2===1",
+  "why": "按好了之後公主跳兩下"
  },
  {
   "shot": "l5-win.png"

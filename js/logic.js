@@ -8,7 +8,7 @@
    * 五歲小聽眾卡住多半是「記不住」而不是「想不通」，所以要用到的東西一直擺在畫面上，
      題目隨時可以點小熊再聽一次。
    * 沒有計時、沒有扣分、沒有失敗畫面。答錯只會演出後果、退回去，再給多一點提示。
-   * 孩子不識字、看注音：題目一律用念的，泡泡裡是國字＋注音（英文模式是英文）。
+   * 她不識字、看注音：題目一律用念的，泡泡裡是國字＋注音（英文模式是英文）。
 
    念題目只有一個出口：speak()。有錄音檔就播錄音（js/logic-audio.js 列出已經錄好的檔），
    沒有就退回系統語音——錄音還沒好之前照樣能玩，錄好只要重新產生那份清單。
@@ -36,7 +36,7 @@
     return (v === 'en' || v === 'both') ? v : 'zh';
   }
 
-  /* 進度：{ 小屋id: { done: 過了幾關, intro: 聽過開場了 } } */
+  /* 進度：{ 小屋id: { done: 過了幾關 } } */
   function loadSave() {
     try {
       const s = JSON.parse(get(SAVE_KEY) || '{}');
@@ -45,7 +45,7 @@
   }
   let save = loadSave();
   function houseSave(id) {
-    if (!save[id] || typeof save[id] !== 'object') save[id] = { done: 0, intro: false };
+    if (!save[id] || typeof save[id] !== 'object') save[id] = { done: 0 };
     return save[id];
   }
   function persist() { set(SAVE_KEY, JSON.stringify(save)); }
@@ -353,6 +353,9 @@
   /* ---------- 畫面切換 ---------- */
 
   let cur = null;                   // { house, level, timers, misses, ctl }
+  /* 這次打開網頁已經念過開場的小屋。不存起來：每次打開、第一次進那間小屋都會再念一次開場
+     （「今天你是公主」「你來當偵探」是讓她知道自己是主角的話，只在第一天聽到一次太可惜）。 */
+  const introSaid = new Set();
 
   function el(tag, cls, html) {
     const n = document.createElement(tag);
@@ -399,9 +402,8 @@
       /* 出題。opts.before 是出題前要先念的句子（例如剛找到的線索）；第一次進這間小屋會再往前加開場 */
       ask: (id, opts) => {
         if (!alive()) return Promise.resolve();
-        const hs = houseSave(h.id);
         let before = (opts && opts.before) || [];
-        if (!hs.intro && h.intro && h.intro.length) { before = h.intro.concat(before); hs.intro = true; persist(); }
+        if (!introSaid.has(h.id) && h.intro && h.intro.length) { before = h.intro.concat(before); introSaid.add(h.id); }
         return ask(id, before);
       },
       say: (id) => (alive() ? say(id) : Promise.resolve(false)),
@@ -522,7 +524,7 @@
     // 測試用：logic.html?h=tidy&l=2 直接開那間小屋的第 3 小關
     const h = houses.find((x) => x.id === q.get('h'));
     if (h) {
-      houseSave(h.id).intro = true;
+      introSaid.add(h.id);
       openLevel(h, Math.max(0, Math.min(h.levels - 1, parseInt(q.get('l') || '0', 10) || 0)));
     } else {
       showSelect();
@@ -544,7 +546,7 @@
   window.Logic.zy({
     chars: {
       '具': 'ㄐㄩˋ', '圖': 'ㄊㄨˊ', '分': 'ㄈㄣ', '題': 'ㄊㄧˊ', '同': 'ㄊㄨㄥˊ', '顏': 'ㄧㄢˊ',
-      '布': 'ㄅㄨˋ', '汽': 'ㄑㄧˋ', '黃': 'ㄏㄨㄤˊ', '鴨': 'ㄧㄚ', '喇': 'ㄌㄚˇ', '叭': '˙ㄅㄚ'
+      '布': 'ㄅㄨˋ', '汽': 'ㄑㄧˋ', '黃': 'ㄏㄨㄤˊ', '鴨': 'ㄧㄚ', '喇': 'ㄌㄚˇ', '叭': '˙ㄅㄚ', '粉': 'ㄈㄣˇ'
     },
     phrases: {
       '滿地': ['ㄇㄢˇ', 'ㄉㄧˋ'],       // 注音表的「地」是「慢慢地」的輕聲

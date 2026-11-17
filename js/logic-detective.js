@@ -1,33 +1,38 @@
-/* 動動腦小屋：小熊偵探（用線索一個一個排除）。對應故事《小熊偵探：誰吃了蜂蜜蛋糕？》（bear-detective）。
+/* 動動腦小屋：小偵探（用線索一個一個排除）。對應故事《小熊偵探：誰吃了蜂蜜蛋糕？》（bear-detective）。
+   偵探是孩子自己；小熊是出題、陪她的夥伴。
 
    練的是「一條線索請走一位，最後剩下的就是答案」。試讀時 5 歲孩子卡在兩個地方：
      1. 名單和線索只用聽的記不住 → 名單（嫌疑犯的卡）和找到的線索（牆上的線索列）一直擺在畫面上。
      2.「不是誰？」這種反過來的問法會聽成「是誰」→ 不問問句，改成動作：把跟線索不一樣的那一位拖到門外。
 
    孩子不需要動物常識，全部用看的比對。每位嫌疑犯一張卡，頭像下面一排標記：
-     腳印（大／小）、身上（濕＝水滴／乾＝水滴打叉）、圍巾（紅／藍／黃）
+     腳印（大／小）、身上（濕＝水滴／乾＝水滴打叉）、圍巾（粉／藍／黃）
    現場的放大鏡點一下就找到一條線索，線索的圖跟卡上的標記是同一套畫法：
      地板上的腳印是大的（小的）→ 腳印不一樣的請出去
      地板乾乾的 → 濕的請出去；地板濕濕的 → 乾的請出去
-     椅子上勾到紅（藍／黃）毛線 → 圍巾不是那個顏色的請出去
+     椅子上勾到粉（藍／黃）毛線 → 圍巾不是那個顏色的請出去
 
    動物的替換：故事裡的名單是小兔、小青蛙、熊爸爸，可是沒有熊爸爸的現成圖，嫌疑犯一律用動物貼紙。
    第 1 案用小兔、小青蛙、大象——大象頂替熊爸爸當「腳很大」的那一位（貼紙裡他的腳最大，一看就懂）。
-   貼紙裡的小熊不當嫌疑犯（他是偵探，也是過關畫面拍手的那一隻）；長頸鹿太瘦長、鯨魚沒有腳，也不用。
+   貼紙裡的小熊不當嫌疑犯（他是陪孩子辦案的夥伴，也是過關畫面拍手的那一隻）；長頸鹿太瘦長、鯨魚沒有腳，也不用。
    貼紙本身就看得出來的特徵是固定的（FIX）：大象一定大腳、小兔一定小腳、青蛙（坐荷葉）和小鴨（腳邊有水）一定是濕的，
    免得卡上的標記跟圖打架。第 4 關要先選人再指派特徵，所以只用沒有固定特徵的動物。
 
    四小關：1 故事裡那一案（固定，線索照順序開放）　2 隨機 3 位 2 條線索　3 隨機 4 位 3 條線索
-           4 換你出題：孩子偷偷選一位，程式照他選的編一案，請大人來當偵探。
-   拖錯不扣分：他搖搖頭回到名單，線索的圖和他卡上那個標記一起放大閃一下；同一條線索錯第 2 次，該請出去的那位會發亮。 */
+           4 換你出題：孩子偷偷選一位，程式照她選的編一案，請大人來當偵探。
+   拖錯不扣分：他搖搖頭回到名單，線索的圖和他卡上那個標記一起放大閃一下；同一條線索錯第 2 次，該請出去的那位會發亮。
+
+   配色（第二輪，照她的喜好）：牆淡粉、地板白藍格子、門窗藍、桌椅白＋粉。
+   「粉色底邊＝可以動手」（嫌疑犯的卡、放大鏡點）；「看這裡」的框一律紫色。
+   之後會補畫圖檔來換的東西都標了【可換圖】，每一樣只有一個地方在用。 */
 (() => {
   'use strict';
   if (!window.Logic) return;
 
   Logic.lines({
-    'detective.name': { zh: '小熊偵探', en: 'Detective Bear' },
-    'detective.intro1': { zh: '哎呀！蜂蜜蛋糕不見了！', en: 'Oh no! The honey cake is gone!' },
-    'detective.intro2': { zh: '小熊偵探要找出是誰吃的。', en: 'Detective Little Bear will find out who ate it.' },
+    'detective.name': { zh: '小偵探', en: 'Little Detective' },
+    'detective.intro1': { zh: '哎呀！桌上的蛋糕不見了！', en: 'Oh no! The cake on the table is gone!' },
+    'detective.intro2': { zh: '你來當偵探，找出是誰吃的！', en: 'You are the detective. Find out who ate it!' },
     'detective.find': { zh: '點一下放大鏡，找線索。', en: 'Tap a magnifying glass to look for a clue.' },
     'detective.c.big': { zh: '地板上有一個很大的腳印。', en: 'There is a great big footprint on the floor.' },
     'detective.c.small': { zh: '地板上有一個很小的腳印。', en: 'There is a tiny little footprint on the floor.' },
@@ -50,13 +55,15 @@
   });
 
   const INK = '#33274F';
-  const C = { red: '#FF5C5C', blue: '#4AA8EE', yellow: '#FFD84D' };
-  const HONEY = '#FFA228', WOOD = '#C98B4A', WOOD2 = '#E3A862', WALL = '#FFE8B5';
+  const C = { pink: '#FF7FB0', blue: '#4AA8EE', yellow: '#FFD84D' };      // 圍巾／毛線的三種顏色
+  const PINK = '#FF7FB0', PINK2 = '#DB5890', PINK_MID = '#FFC4DA';
+  const BLUE = '#4AA8EE', BLUE_BG = '#DCEEFF', BLUE_MID = '#8CCBF7', SKY = '#CDEBFF';
+  const PURPLE = '#9A7BF5', YELLOW = '#FFD84D', WALL = '#FFEAF2';
 
   /* ---------- 純邏輯（不碰畫面，test() 也用這一段） ---------- */
 
   const FEATS = ['foot', 'water', 'scarf'];                 // 卡上標記的順序也照這個
-  const VALUES = { foot: ['big', 'small'], water: ['wet', 'dry'], scarf: ['red', 'blue', 'yellow'] };
+  const VALUES = { foot: ['big', 'small'], water: ['wet', 'dry'], scarf: ['pink', 'blue', 'yellow'] };
 
   /* 嫌疑犯。w／h 是貼紙的長寬，mouth 是嘴巴在圖上的位置（%）——最後道歉時蛋糕屑疊在那裡。
      fix 是貼紙本身就看得出來的特徵，出題時不可以跟它相反。 */
@@ -198,6 +205,13 @@
     if (second.join() !== '0' || CASE1.suspects[0].animal !== 'rabbit') errs.push('第 1 案：第二條線索要請走小兔');
     if (CASE1.suspects[CASE1.culprit].animal !== 'elephant') errs.push('第 1 案：剩下的要是大象');
     if (FREE.length < 4) errs.push('沒有固定特徵的動物不到 4 隻，第 4 關排不出來');
+    // 圍巾是粉／藍／黃；每一種特徵的每一個值，卡上的標記、線索、現場的痕跡都要有圖
+    if (VALUES.scarf.join() !== 'pink,blue,yellow') errs.push('圍巾的顏色要是 pink、blue、yellow');
+    VALUES.scarf.forEach((v) => { if (!C[v]) errs.push('圍巾顏色沒有色碼：' + v); });
+    FEATS.forEach((f) => VALUES[f].forEach((v) => {
+      const k = { feat: f, value: v };
+      [markName(f, v), clueName(k), traceName(k)].forEach((name) => { if (!pic(name)) errs.push('沒有這張線索圖：' + name); });
+    }));
     for (let i = 0; i < 400 && errs.length < 8; i++) {
       errs = errs.concat(checkCase(makeCase(3), 3, '隨機 3 位'));
       errs = errs.concat(checkCase(makeCase(4), 4, '隨機 4 位'));
@@ -216,21 +230,17 @@
   const art = (box, sw, inner) => '<svg viewBox="' + box + '" aria-hidden="true"><g stroke="' + INK + '" stroke-width="' + sw + '" stroke-linejoin="round" stroke-linecap="round">' + inner + '</g></svg>';
   const svg = (inner) => art('0 0 100 100', 4, inner);
 
-  /* 腳印：大的佔滿、小的是同一個形狀縮小 */
-  const PAW = '<ellipse cx="50" cy="65" rx="25" ry="20" fill="' + HONEY + '"/>' +
-    '<ellipse cx="19" cy="39" rx="9" ry="11" fill="' + HONEY + '"/><ellipse cx="39" cy="22" rx="9" ry="11" fill="' + HONEY + '"/>' +
-    '<ellipse cx="61" cy="22" rx="9" ry="11" fill="' + HONEY + '"/><ellipse cx="81" cy="39" rx="9" ry="11" fill="' + HONEY + '"/>';
+  /* 腳印：大的佔滿、小的是同一個形狀縮小。紫色——不跟圍巾的粉／藍／黃撞色 */
+  const PAW = '<ellipse cx="50" cy="65" rx="25" ry="20" fill="' + PURPLE + '"/>' +
+    '<ellipse cx="19" cy="39" rx="9" ry="11" fill="' + PURPLE + '"/><ellipse cx="39" cy="22" rx="9" ry="11" fill="' + PURPLE + '"/>' +
+    '<ellipse cx="61" cy="22" rx="9" ry="11" fill="' + PURPLE + '"/><ellipse cx="81" cy="39" rx="9" ry="11" fill="' + PURPLE + '"/>';
   const paw = (size) => svg(size === 'big' ? PAW : '<g transform="translate(50 52) scale(.5) translate(-50 -48)" stroke-width="6.5">' + PAW + '</g>');
 
   /* 水滴：濕＝三顆藍水滴；乾＝一顆灰水滴打叉 */
   const drop = (x, y, k, fill) => '<path transform="translate(' + x + ' ' + y + ') scale(' + k + ')" stroke-width="' + (4 / k) + '" ' +
     'd="M0-38C12-18 26-4 26 12a26 26 0 0 1-52 0C-26-4-12-18 0-38z" fill="' + fill + '"/>';
-  const WET = svg(drop(27, 36, .5, C.blue) + drop(73, 36, .5, C.blue) + drop(50, 72, .5, C.blue));
-  const DRY = svg(drop(50, 52, 1, '#E7E4F0') + '<path d="M18 20l64 64M82 20L18 84" fill="none" stroke="' + C.red + '" stroke-width="10"/>');
-  const PUDDLE = '<path d="M10 78c0-9 16-14 40-14s40 5 40 14-16 13-40 13S10 87 10 78z" fill="' + C.blue + '"/>' +
+  const PUDDLE = '<path d="M10 78c0-9 16-14 40-14s40 5 40 14-16 13-40 13S10 87 10 78z" fill="' + BLUE + '"/>' +
     '<path d="M30 76c6-3 14-4 22-4" fill="none" stroke="#fff" stroke-width="4"/>';
-  const WET_FLOOR = svg(PUDDLE + drop(30, 34, .44, C.blue) + drop(70, 30, .44, C.blue) + drop(50, 50, .36, C.blue));
-  const SHINE = svg('<path d="M30 20l5 13 13 5-13 5-5 13-5-13-13-5 13-5zM70 46l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff" stroke-width="3"/>');
 
   /* 圍巾（卡上的標記）和毛線（線索）：靠顏色對起來 */
   const scarf = (c) => svg(
@@ -242,45 +252,106 @@
     '<path d="' + YARN_D + '" fill="none" stroke-width="19"/>' +
     '<path d="' + YARN_D + '" fill="none" stroke="' + C[c] + '" stroke-width="11"/>');
 
+  /* 【可換圖】線索圖：腳印、水滴、毛線、圍巾，全部正方形、去背。
+     同一張圖會用在三個大小：卡上的標記（約 5～7cqw）、線索（放大時約 23cqw、線索列裡約 8cqw）、留在現場的痕跡（約 7cqw）。
+     全部只從下面的 pic() 拿——之後換成圖檔只要改 pic() 這一行：
+       return '<img src="assets/logic/detective-' + name + '.png" alt="">';
+     （樣式已經同時認 svg 和 img。）圖的名字就是下面這些 key。 */
+  const PICS = {
+    'foot-big': paw('big'),                 // 很大的腳印
+    'foot-small': paw('small'),             // 很小的腳印
+    'drops': svg(drop(27, 36, .5, BLUE) + drop(73, 36, .5, BLUE) + drop(50, 72, .5, BLUE)),     // 卡上：身上是濕的
+    'nodrop': svg(drop(50, 52, 1, '#E7E4F0') +                                                 // 卡上：身上是乾的；線索：地板是乾的
+      '<path d="M18 20l64 64M82 20L18 84" fill="none" stroke="' + PINK2 + '" stroke-width="10"/>'),
+    'wetfloor': svg(PUDDLE + drop(30, 34, .44, BLUE) + drop(70, 30, .44, BLUE) + drop(50, 50, .36, BLUE)),   // 線索：地板是濕的
+    'puddle': svg(PUDDLE),                  // 現場：地板上的一灘水
+    'shine': svg('<path d="M30 20l5 13 13 5-13 5-5 13-5-13-13-5 13-5zM70 46l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="' + YELLOW + '" stroke-width="3"/>')   // 現場：地板乾得發亮
+  };
+  Object.keys(C).forEach((c) => {
+    PICS['scarf-' + c] = scarf(c);          // 卡上：圍巾（pink／blue／yellow）
+    PICS['yarn-' + c] = yarn(c);            // 線索＋現場：勾在椅子上的毛線
+  });
+  const pic = (name) => PICS[name];
+
+  /* 哪裡用哪一張：卡上的標記、線索（放大給她看＋線索列）、留在現場的痕跡 */
+  const markName = (f, v) => (f === 'foot' ? 'foot-' + v : f === 'water' ? (v === 'wet' ? 'drops' : 'nodrop') : 'scarf-' + v);
+  const clueName = (k) => (k.feat === 'foot' ? 'foot-' + k.value : k.feat === 'water' ? (k.value === 'wet' ? 'wetfloor' : 'nodrop') : 'yarn-' + k.value);
+  const traceName = (k) => (k.feat === 'foot' ? 'foot-' + k.value : k.feat === 'water' ? (k.value === 'wet' ? 'puddle' : 'shine') : 'yarn-' + k.value);
+  const markPic = (f, v) => pic(markName(f, v));
+  const cluePic = (k) => pic(clueName(k));
+  const tracePic = (k) => pic(traceName(k));
+
+  /* 放大鏡（藍色鏡框、粉色握把）：線索列的空格、現場能按的放大鏡點、選單卡片共用。是介面的記號，不是道具。 */
   const MAG = svg(
-    '<path d="M62 62l25 25" fill="none" stroke-width="15"/><path d="M64 64l23 23" fill="none" stroke="' + WOOD + '" stroke-width="7"/>' +
-    '<circle cx="42" cy="42" r="30" fill="#DFF3FF"/>' +
-    '<path d="M25 40c2-9 9-15 17-16" fill="none" stroke="#fff" stroke-width="5"/>');
+    '<path d="M64 64l23 23" fill="none" stroke-width="16"/><path d="M65 65l22 22" fill="none" stroke="' + PINK + '" stroke-width="8"/>' +
+    '<circle cx="42" cy="42" r="31" fill="' + BLUE + '"/>' +
+    '<circle cx="42" cy="42" r="21" fill="#EAF7FF" stroke-width="3"/>' +
+    '<path d="M30 41c1-6 5-10 11-11" fill="none" stroke="#fff" stroke-width="5"/>');
 
-  const markPic = (f, v) => (f === 'foot' ? paw(v) : f === 'water' ? (v === 'wet' ? WET : DRY) : scarf(v));
-  const cluePic = (k) => (k.feat === 'foot' ? paw(k.value) : k.feat === 'water' ? (k.value === 'wet' ? WET_FLOOR : DRY) : yarn(k.value));
-  const tracePic = (k) => (k.feat === 'foot' ? paw(k.value) : k.feat === 'water' ? (k.value === 'wet' ? svg(PUDDLE) : SHINE) : yarn(k.value));
-
-  /* 道歉時疊在臉上的：兩團臉紅＋嘴邊的蛋糕屑 */
+  /* 【可換圖】蛋糕屑：道歉時疊在臉上的兩團臉紅＋嘴邊的蛋糕屑（粉色的蛋糕、黃色的蛋糕體）。
+     橫的長方形 2:1（8.4cqw × 4.2cqw），中心對在貼紙的嘴巴上。只有 confess() 一處在用。 */
   const OOPS = art('0 0 100 50', 2.4,
-    '<ellipse cx="13" cy="16" rx="12" ry="8" fill="#FF7FB0" stroke="none" opacity=".8"/><ellipse cx="87" cy="16" rx="12" ry="8" fill="#FF7FB0" stroke="none" opacity=".8"/>' +
-    '<circle cx="39" cy="33" r="5.5" fill="' + HONEY + '"/><circle cx="52" cy="41" r="6" fill="#FFD84D"/>' +
-    '<circle cx="64" cy="32" r="5" fill="' + HONEY + '"/><circle cx="51" cy="26" r="4" fill="#FFD84D"/>');
+    '<ellipse cx="13" cy="16" rx="12" ry="8" fill="' + PINK + '" stroke="none" opacity=".8"/><ellipse cx="87" cy="16" rx="12" ry="8" fill="' + PINK + '" stroke="none" opacity=".8"/>' +
+    '<circle cx="39" cy="33" r="5.5" fill="' + PINK + '"/><circle cx="52" cy="41" r="6" fill="' + YELLOW + '"/>' +
+    '<circle cx="64" cy="32" r="5" fill="' + PINK + '"/><circle cx="51" cy="26" r="4" fill="' + YELLOW + '"/>');
 
-  /* 餐廳：牆、木頭地板、窗、椅子、桌子和只剩蛋糕屑的盤子（整張板面，4:3） */
-  const ROOM = art('0 0 100 75', .55,
-    '<rect x="-1" y="-1" width="102" height="24" fill="' + WALL + '" stroke="none"/>' +
-    '<rect x="-1" y="23" width="102" height="53" fill="#F3CD8E" stroke="none"/>' +
-    '<path d="M-1 37h102M-1 51h102M-1 65h102M18 23v14M52 23v14M36 37v14M66 37v14M12 51v14M48 51v14M30 65v10M62 65v10" fill="none" stroke="#DDB06A" stroke-width=".4"/>' +
-    '<path d="M-1 23h102" fill="none"/>' +
-    '<rect x="63" y="5" width="8" height="10" rx="1" fill="#BFE6FF"/><path d="M67 5v10M63 10h8" fill="none" stroke-width=".4"/>' +
-    '<rect x="7.5" y="10.5" width="11" height="13.5" rx="1.6" fill="' + WOOD + '"/>' +
-    '<rect x="9.7" y="12.7" width="6.6" height="7" rx="1" fill="' + WALL + '"/>' +
-    '<rect x="7.6" y="26" width="1.9" height="8.6" fill="' + WOOD + '"/><rect x="16.5" y="26" width="1.9" height="8.6" fill="' + WOOD + '"/>' +
-    '<rect x="6" y="23" width="14" height="3.4" rx="1.2" fill="' + WOOD2 + '"/>' +
-    '<rect x="39.5" y="23" width="2.2" height="13.6" fill="' + WOOD + '"/><rect x="56.3" y="23" width="2.2" height="13.6" fill="' + WOOD + '"/>' +
-    '<rect x="36" y="19.6" width="26" height="4.4" rx="1.6" fill="' + WOOD2 + '"/>' +
-    '<ellipse cx="49" cy="19.1" rx="6.6" ry="2" fill="#fff"/><ellipse cx="49" cy="18.9" rx="3.8" ry="1" fill="none" stroke-width=".3"/>' +
-    '<circle cx="46.6" cy="18.8" r=".45" fill="' + HONEY + '" stroke="none"/><circle cx="49.6" cy="19.3" r=".5" fill="' + HONEY + '" stroke="none"/>' +
-    '<circle cx="51.6" cy="18.6" r=".4" fill="' + HONEY + '" stroke="none"/>');
+  /* 【可換圖】餐廳背景（牆、地板、窗）：一整張鋪滿板面，4:3（100cqw × 75cqw），不能互動。
+     淡粉的牆（很淡的圓點壁紙）、白色踢腳板、白藍格子地板、藍框的窗。牆和地板的交界在板面高度的 30.7%（y＝23）。
+     只有 mount() 開頭那一處在用。換成圖檔時，椅子、桌子、門是另外疊上去的，背景圖裡不要畫。 */
+  const ROOM = (() => {
+    let dots = '', tiles = '';
+    for (let r = 0; r < 4; r++) for (let x = (r % 2 ? 4.5 : 1.75); x < 100; x += 5.5) dots += 'M' + x + ' ' + (3 + r * 5.3) + 'h.01';
+    for (let r = 0; r < 8; r++) for (let c = 0; c < 16; c++) if ((r + c) % 2 === 0) tiles += 'M' + (c * 6.5 - 2) + ' ' + (23 + r * 6.5) + 'h6.5v6.5h-6.5z';
+    return art('0 0 100 75', .55,
+      '<rect x="-1" y="-1" width="102" height="24" fill="' + WALL + '" stroke="none"/>' +
+      '<path d="' + dots + '" fill="none" stroke="#FFD6E5" stroke-width="1"/>' +
+      '<rect x="-1" y="23" width="102" height="53" fill="#EDF6FF" stroke="none"/>' +
+      '<path d="' + tiles + '" fill="' + BLUE_BG + '" stroke="none"/>' +
+      '<rect x="-1" y="21.2" width="102" height="1.8" fill="#fff" stroke="none"/>' +
+      '<path d="M-1 21.2h102" fill="none" stroke="#F7B5CD" stroke-width=".3"/><path d="M-1 23h102" fill="none"/>' +
+      '<rect x="62.4" y="3.8" width="9.8" height="12.2" rx="1.5" fill="' + BLUE + '"/>' +
+      '<g stroke-width=".35" fill="' + SKY + '"><rect x="63.6" y="5" width="3.25" height="4.45" rx=".4"/><rect x="67.75" y="5" width="3.25" height="4.45" rx=".4"/>' +
+      '<rect x="63.6" y="10.35" width="3.25" height="4.45" rx=".4"/><rect x="67.75" y="10.35" width="3.25" height="4.45" rx=".4"/></g>' +
+      '<rect x="61.6" y="15.4" width="11.4" height="1.5" rx=".7" fill="' + BLUE_MID + '"/>');
+  })();
 
-  /* 門：門框、推開的門板、外面的天空和太陽。被請出去的朋友站在門外。 */
+  /* 【可換圖】椅子：白色椅子、粉色椅背板和坐墊。直的長方形 3:5（15cqw × 25cqw），椅腳踩在地板上。
+     毛線的放大鏡點和毛線會疊在椅背正中間。只有 mount() 開頭那一處在用。 */
+  const CHAIR = art('5.5 10 15 25', .55,
+    '<rect x="7.6" y="26" width="1.9" height="8.6" fill="#fff"/><rect x="16.5" y="26" width="1.9" height="8.6" fill="#fff"/>' +
+    '<rect x="7.5" y="10.5" width="11" height="13.5" rx="1.8" fill="#fff"/>' +
+    '<rect x="9.5" y="12.5" width="7" height="7.6" rx="1.2" fill="' + PINK_MID + '"/>' +
+    '<rect x="6" y="23" width="14" height="3.4" rx="1.4" fill="' + PINK + '"/>');
+
+  /* 【可換圖】桌子＋盤子：白色桌子、粉色桌巾，盤子上只剩蛋糕屑和一頂掉下來的小皇冠（不見的是公主蛋糕）。
+     橫的長方形 27:22（27cqw × 22cqw），桌腳踩在地板上。腳印的放大鏡點在桌子底下、兩隻桌腳中間。只有 mount() 開頭那一處在用。 */
+  const TABLE = art('35.5 15 27 22', .55,
+    '<rect x="39.5" y="23" width="2.2" height="13.6" fill="#fff"/><rect x="56.3" y="23" width="2.2" height="13.6" fill="#fff"/>' +
+    '<rect x="36" y="19.6" width="26" height="4.4" rx="1.6" fill="#fff"/>' +
+    '<path d="M41 19.6h16v6.2q-2 2.2-4 0q-2 2.2-4 0q-2 2.2-4 0q-2 2.2-4 0z" fill="' + PINK + '"/>' +
+    '<ellipse cx="49" cy="19.1" rx="6.6" ry="2" fill="#fff"/><ellipse cx="49" cy="18.9" rx="3.8" ry="1" fill="none" stroke="' + PINK_MID + '" stroke-width=".35"/>' +
+    '<circle cx="45.4" cy="18.9" r=".45" fill="' + PINK + '" stroke="none"/><circle cx="47.6" cy="19.5" r=".5" fill="' + YELLOW + '" stroke="none"/>' +
+    '<circle cx="48.4" cy="18.5" r=".4" fill="' + PINK + '" stroke="none"/>' +
+    '<path transform="rotate(16 51.6 18)" d="M50 18.9l-.5-2.2 1.2 1 .9-1.6.9 1.6 1.2-1-.5 2.2z" fill="' + YELLOW + '" stroke-width=".32"/>');
+
+  /* 【可換圖】門：藍色門框、推開的門板、外面的天空、太陽、雲和草地。直的長方形 2:5（24cqw × 60cqw）。
+     被請出去的朋友（貼紙）會疊在門洞的下半。只有 mount() 開頭那一處在用。 */
   const DOOR = art('0 0 48 120', 1.1,
-    '<rect x="1" y="1" width="46" height="118" rx="8" fill="' + WOOD + '"/>' +
-    '<rect x="5.5" y="5.5" width="37" height="109" rx="5" fill="#BFE6FF"/>' +
-    '<circle cx="32" cy="21" r="6.5" fill="#FFD84D"/>' +
-    '<path d="M5.5 72c8-6 15-6 21-2s11 3 16-1v40.5a5 5 0 0 1-5 5h-27a5 5 0 0 1-5-5z" fill="#FFE9A8"/>' +
-    '<path d="M5.5 5.5l5.5 6v97l-5.5 6z" fill="' + WOOD2 + '"/><circle cx="8.4" cy="62" r="1.1" fill="' + INK + '" stroke="none"/>');
+    '<rect x="1" y="1" width="46" height="118" rx="8" fill="' + BLUE + '"/>' +
+    '<rect x="5.5" y="5.5" width="37" height="109" rx="5" fill="' + SKY + '"/>' +
+    '<circle cx="32" cy="21" r="6.5" fill="' + YELLOW + '"/>' +
+    '<path d="M15 42a4 4 0 0 1 4-4 5 5 0 0 1 9-1 4.5 4.5 0 0 1 4 5z" fill="#fff" stroke-width=".8"/>' +
+    '<path d="M5.5 72c8-6 15-6 21-2s11 3 16-1v40.5a5 5 0 0 1-5 5h-27a5 5 0 0 1-5-5z" fill="#CFF2EC"/>' +
+    '<path d="M5.5 5.5l5.5 6v97l-5.5 6z" fill="' + BLUE_MID + '"/><circle cx="8.3" cy="62" r="1.3" fill="' + YELLOW + '" stroke-width=".6"/>');
+
+  /* 【可換圖】公主蛋糕（不見的那一個）：粉色蛋糕、白色奶油、上面一頂小皇冠。正方形（選單卡片寬度的 64%）。
+     只有選單卡片（addHouse 的 card）一處在用。 */
+  const CAKE = svg(
+    '<ellipse cx="50" cy="86" rx="45" ry="9" fill="#fff"/>' +
+    '<path d="M16 50h68v30a6 6 0 0 1-6 6H22a6 6 0 0 1-6-6z" fill="' + PINK + '"/>' +
+    '<path d="M16 54v-8a8 8 0 0 1 8-8h52a8 8 0 0 1 8 8v8q-5.5 9-11 0q-6 9-11.5 0q-5.5 9-11.5 0q-6 9-11.5 0q-5.5 9-11 0q-5.5 9-11.5 0z" fill="#fff"/>' +
+    '<path d="M35 38l-4-19 11 8 8-13 8 13 11-8-4 19z" fill="' + YELLOW + '"/>' +
+    '<circle cx="50" cy="30" r="3" fill="' + PINK + '" stroke-width="2.4"/>');
 
   /* 放大鏡點在現場的位置（板面的 %）：腳印在桌子底下、水在椅子和桌子中間的地板、毛線在椅背 */
   const SPOT = { foot: [49, 44], water: [28, 45], scarf: [13, 23] };
@@ -298,7 +369,10 @@
     let cards = [];
     const slots = [], spots = [], traces = [];
 
+    // 背景一整張鋪滿板面；椅子、桌子、門各自一塊疊在上面（之後換圖也是一塊換一塊）
     stage.appendChild(el('div', 'detective-room', ROOM));
+    stage.appendChild(el('div', 'detective-chair', CHAIR));
+    stage.appendChild(el('div', 'detective-table', TABLE));
     const board = el('div', 'detective-clues');
     const door = el('div', 'detective-door', DOOR);
     const zone = el('div', 'detective-zone');
@@ -386,7 +460,7 @@
       api.ask('detective.find');
     }
 
-    /* 點放大鏡：線索放大給他看、小熊念一句，念完縮成小卡飛到線索列，題目換成「請出去」 */
+    /* 點放大鏡：線索放大給她看、小熊念一句，念完縮成小卡飛到線索列，題目換成「請出去」 */
     function findClue(k) {
       if (phase !== 'find' || done[k]) return;
       const clue = c.clues[k];
@@ -503,7 +577,7 @@
       api.win({ line: 'detective.sorry', delay: 5200 });
     }
 
-    /* 第 4 關：出題的人選好了。照他選的編一案，每張卡同時跳一下（看不出選了誰） */
+    /* 第 4 關：出題的人選好了。照她選的編一案，每張卡同時跳一下（看不出選了誰） */
     function choose(i) {
       phase = 'wait';
       api.sfx('click');
@@ -534,8 +608,8 @@
     intro: ['detective.intro1', 'detective.intro2'],
     card: (pic) => {
       pic.innerHTML =
-        '<img src="assets/stickers/cake.svg" alt="" style="left:6%;top:8%;width:58%;height:58%">' +
-        '<span class="detective-card-mag" style="right:4%;bottom:4%;width:58%">' + MAG + '</span>';
+        '<span class="detective-card-pic" style="left:5%;top:5%;width:64%">' + CAKE + '</span>' +
+        '<span class="detective-card-pic" style="right:4%;bottom:4%;width:54%">' + MAG + '</span>';
     },
     mount: mount,
     test: test
