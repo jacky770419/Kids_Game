@@ -1,0 +1,248 @@
+{
+ "id": "dog-bone",
+ "title": "小狗和水裡的骨頭",
+ "title_en": "The Dog and Its Reflection",
+ "size": "短",
+ "roles": {
+  "小狗": "愛吃骨頭的小狗，活潑的年輕男生聲音，得意時很神氣，生氣時兇巴巴但好笑，發現真相時又糗又好笑。",
+  "小貓": "小狗的朋友小貓，可愛的小女生聲音，愛笑、大方，說話甜甜的。"
+ },
+ "cast": {
+  "小狗": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "小貓": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "吐",
+   "where": "第7頁『吐舌頭』",
+   "read": "tǔ"
+  },
+  {
+   "char": "分",
+   "where": "第8頁『分你一半』",
+   "read": "fēn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "村子外的草地，早上，遠處有一條小河和一座小木橋。",
+   "act": "小狗第一次出場：咖啡色的小狗，一隻耳朵豎起來、一隻耳朵垂下來，脖子上繫一條紅色項圈，尾巴捲捲的。他從草堆裡找到一根好大的白骨頭，用兩隻前腳抱著，尾巴搖得像風車，一臉得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小狗撿到一根大骨頭。",
+     "en": "Puppy found a big bone."
+    },
+    {
+     "who": "小狗",
+     "tag": "excited",
+     "text": "汪！好大的骨頭！",
+     "en": "Woof! What a big bone!"
+    },
+    {
+     "who": "小狗",
+     "tag": "proud",
+     "text": "我的骨頭，最好吃！",
+     "en": "My bone is the yummiest!"
+    },
+    {
+     "who": "旁白",
+     "text": "他咬著骨頭，開心地回家去。",
+     "en": "He picked it up in his mouth and happily headed home."
+    }
+   ]
+  },
+  {
+   "scene": "小河上的小木橋，橋的兩邊有矮的木頭欄杆，河水很平靜，像一面鏡子，水面清楚映出橋和天空。",
+   "act": "小狗叼著骨頭走到橋中間，從欄杆中間低頭看水；水面上映著一隻一模一樣的咖啡色小狗，也叼著一根大骨頭。小狗的眼睛瞪得圓圓的，耳朵豎起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回家要走過一座小木橋。",
+     "en": "On the way home, he had to cross a little wooden bridge."
+    },
+    {
+     "who": "旁白",
+     "text": "走到橋中間，小狗往下一看。",
+     "en": "In the middle of the bridge, Puppy looked down."
+    },
+    {
+     "who": "旁白",
+     "text": "咦？水裡也有一隻小狗！",
+     "en": "Huh? There was a puppy in the water too!"
+    },
+    {
+     "who": "旁白",
+     "text": "也咬著一根大骨頭！",
+     "en": "And it had a big bone in its mouth too!"
+    }
+   ]
+  },
+  {
+   "scene": "小木橋上，同一個水面。",
+   "act": "連續兩格好笑的畫面：小狗瞪眼，水裡的狗也瞪眼；小狗皺起鼻子，水裡的狗也皺鼻子。小狗越來越氣，臉鼓起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小狗瞪眼睛，水裡的狗也瞪眼睛。",
+     "en": "Puppy glared. The puppy in the water glared back."
+    },
+    {
+     "who": "旁白",
+     "text": "小狗皺鼻子，水裡的狗也皺鼻子。",
+     "en": "Puppy wrinkled his nose. So did the puppy in the water."
+    },
+    {
+     "who": "旁白",
+     "text": "小狗心裡想，哼，敢學我！",
+     "en": "Puppy thought, Hmph! Stop copying me!"
+    }
+   ]
+  },
+  {
+   "scene": "小木橋上。",
+   "act": "小狗盯著水裡那根骨頭，口水快流下來，頭上冒出一個想像泡泡：泡泡裡小狗左邊抱一根骨頭、右邊抱一根骨頭，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "水裡的骨頭，好像比他的大一點。",
+     "en": "The bone in the water looked a little bigger than his."
+    },
+    {
+     "who": "旁白",
+     "text": "他心裡想，兩根骨頭，一定比一根好吃！",
+     "en": "He thought, Two bones would be yummier than one!"
+    },
+    {
+     "who": "旁白",
+     "text": "他張大嘴巴，對著水裡大叫。",
+     "en": "He opened his mouth wide and barked at the water."
+    },
+    {
+     "who": "小狗",
+     "tag": "shouting",
+     "text": "汪！把骨頭給我！",
+     "en": "Woof! Give me that bone!"
+    }
+   ]
+  },
+  {
+   "scene": "小木橋上，河面濺起一圈一圈的水花。",
+   "act": "小狗張大嘴巴，骨頭從嘴裡掉下去，撲通一聲掉進河裡，水面一圈一圈晃開，水裡的小狗和骨頭都看不清楚了；小狗趴在欄杆後面，從欄杆中間往下看，兩眼發直，嘴巴還張著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "撲通！他的骨頭，掉進河裡了。",
+     "en": "Splash! His bone fell into the river."
+    },
+    {
+     "who": "旁白",
+     "text": "水裡那根骨頭，也不見了。",
+     "en": "The bone in the water was gone too."
+    },
+    {
+     "who": "小狗",
+     "tag": "surprised",
+     "text": "咦？我的骨頭呢？",
+     "en": "Huh? Where did my bone go?"
+    }
+   ]
+  },
+  {
+   "scene": "小木橋上，旁邊的河岸開著黃色小花。",
+   "act": "小狗趴在橋上，兩隻耳朵垂下來，眼睛含著淚；小貓第一次出場：白色的小貓，背上有橘色斑點，戴一條藍色領巾，提著一個裝滿小魚點心的竹籃，從橋的另一頭走過來，歪著頭看小狗。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小狗趴在橋上，耳朵垂下來。",
+     "en": "Puppy lay down on the bridge, ears drooping."
+    },
+    {
+     "who": "小狗",
+     "tag": "crying",
+     "text": "我的骨頭沒有了！",
+     "en": "My bone is gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "小貓提著一籃點心走過來。",
+     "en": "Kitty came along with a basket of snacks."
+    },
+    {
+     "who": "小貓",
+     "tag": "gentle",
+     "text": "小狗，你怎麼了？",
+     "en": "Puppy, what's wrong?"
+    }
+   ]
+  },
+  {
+   "scene": "小木橋上，河面又平靜下來，像鏡子一樣。",
+   "act": "小狗氣呼呼地指著河水；小貓放下竹籃，趴在欄杆後面，從欄杆中間對著水面吐舌頭，水裡也映出一隻吐舌頭的小貓；小狗看看水面、看看小貓，嘴巴張成一個圓。",
+   "lines": [
+    {
+     "who": "小狗",
+     "tag": "angry",
+     "text": "都是水裡那隻壞狗！",
+     "en": "It's all because of that bad dog in the water!"
+    },
+    {
+     "who": "旁白",
+     "text": "小貓對著水，吐一下舌頭。",
+     "en": "Kitty stuck her tongue out at the water."
+    },
+    {
+     "who": "旁白",
+     "text": "水裡的小貓，也吐一下舌頭。",
+     "en": "The kitty in the water stuck her tongue out too."
+    },
+    {
+     "who": "小貓",
+     "tag": "laughing",
+     "text": "嘻，水裡那隻狗，就是你自己呀！",
+     "en": "Hee hee! The dog in the water was you!"
+    }
+   ]
+  },
+  {
+   "scene": "小木橋上，夕陽照在河面，金色的光一閃一閃。",
+   "act": "小狗抓抓頭、吐舌頭，不好意思地笑；小貓把小魚點心分一半給小狗；兩個並排坐在橋中間，背靠著欄杆，一起吃點心，笑得好開心。",
+   "lines": [
+    {
+     "who": "小狗",
+     "tag": "laughing",
+     "text": "原來，我是在跟自己搶骨頭！",
+     "en": "So I was trying to grab a bone from myself!"
+    },
+    {
+     "who": "小狗",
+     "text": "我有一根就夠了，不該貪心。",
+     "en": "One bone was plenty. I shouldn't have been greedy."
+    },
+    {
+     "who": "小貓",
+     "tag": "happy",
+     "text": "別難過，我的點心分你一半！",
+     "en": "Don't be sad. You can have half of my snacks!"
+    },
+    {
+     "who": "旁白",
+     "text": "小狗和小貓坐在橋上，一起吃點心。",
+     "en": "Puppy and Kitty sat on the bridge and ate snacks together."
+    },
+    {
+     "who": "小狗",
+     "tag": "happy",
+     "text": "跟朋友一起吃，最好吃！",
+     "en": "Sharing with a friend is the yummiest!"
+    }
+   ]
+  }
+ ]
+}

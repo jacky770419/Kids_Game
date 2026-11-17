@@ -1,0 +1,432 @@
+{
+ "id": "monkey-king",
+ "title": "美猴王出世",
+ "title_en": "The Monkey King Is Born",
+ "size": "中",
+ "roles": {
+  "美猴王": "從仙石裡跳出來的石猴，後來當上美猴王：活潑的年輕男聲，淘氣、有勁、天不怕地不怕，說話又快又響亮，對龍王很有禮貌（錄音前要試錄新聲音）。",
+  "老猴子": "花果山最老的猴子，白鬍子老爺爺的聲音，慢慢說、很慈祥，宣布大事時很有精神。",
+  "小猴子": "花果山的一隻小猴子，聲音又小又甜，膽子小，看到瀑布會害怕，歡呼時很興奮。",
+  "龍王": "東海龍宮的龍王，大嗓門、聲音低沉，可是很和氣、愛笑，被石猴的禮貌逗得哈哈笑。"
+ },
+ "cast": {
+  "美猴王": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "老猴子": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小猴子": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "龍王": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "裂",
+   "where": "第1頁『裂開了』",
+   "read": "liè"
+  },
+  {
+   "char": "瀑",
+   "where": "第3、5、6頁『瀑布』",
+   "read": "pù"
+  },
+  {
+   "char": "什",
+   "where": "第3頁『有什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第3頁『誰敢』，第4頁『誰能』『誰都不敢』",
+   "read": "shéi"
+  },
+  {
+   "char": "當",
+   "where": "第4、7頁『當大王』",
+   "read": "dāng"
+  },
+  {
+   "char": "簾",
+   "where": "第5、6頁『水簾洞』『門簾』",
+   "read": "lián"
+  },
+  {
+   "char": "會",
+   "where": "第12頁『我會』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第11頁『沒有猴子搬動過』",
+   "read": "méi"
+  },
+  {
+   "char": "挑",
+   "where": "第9頁『你自己挑吧』",
+   "read": "tiāo"
+  },
+  {
+   "char": "箍",
+   "where": "第11、12頁『金箍棒』",
+   "read": "gū"
+  },
+  {
+   "char": "給",
+   "where": "第12頁『借給你』",
+   "read": "gěi"
+  },
+  {
+   "char": "處",
+   "where": "第9頁『到處』",
+   "read": "chù"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "花果山全景，白天。一座綠色的大山，山上開滿紅、粉、黃色的花，樹上掛滿桃子和香蕉；山頂有一塊好大的圓形灰白色仙石，石頭上有彩色的光點。",
+   "act": "仙石中間出現一道發光的裂縫，碎石往外飛，金光從裂縫裡照出來；樹上的小鳥嚇得飛起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，有一座花果山。",
+     "en": "Long, long ago, there was a mountain called the Mountain of Flowers and Fruit."
+    },
+    {
+     "who": "旁白",
+     "text": "山上開滿了花，樹上掛滿了果子。",
+     "en": "Flowers covered the hills, and the trees were full of fruit."
+    },
+    {
+     "who": "旁白",
+     "text": "山頂有一塊好大的仙石。",
+     "en": "At the very top sat a giant magic stone."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，轟隆一聲，仙石裂開了！",
+     "en": "One day, with a big BOOM, the magic stone cracked open!"
+    }
+   ]
+  },
+  {
+   "scene": "花果山山頂，裂開的仙石旁邊，碎石散在草地上。",
+   "act": "石猴第一次出場：金黃色毛的小猴子，臉是淡粉紅色，眼睛又大又亮，尾巴翹起來，不穿衣服，站在裂開的石頭上伸懶腰、對大家揮手。一群猴子從樹後探出頭；小猴子是一隻咖啡色的小猴，頭上戴一朵小黃花，從樹後跑到石猴面前，歪著頭問他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "石頭裡跳出一隻金色的猴子，大家叫他石猴。",
+     "en": "Out of the stone jumped a golden monkey, and everyone called him Stone Monkey."
+    },
+    {
+     "who": "旁白",
+     "text": "一隻小猴子跑來問：",
+     "en": "A little monkey ran over and asked,"
+    },
+    {
+     "who": "小猴子",
+     "tag": "surprised",
+     "text": "你是從石頭裡出來的嗎？",
+     "en": "Did you come out of that rock?"
+    },
+    {
+     "who": "美猴王",
+     "tag": "excited",
+     "text": "對呀！我們一起玩吧！",
+     "en": "Yes! Let's play together!"
+    }
+   ]
+  },
+  {
+   "scene": "花果山的山谷裡，一條好大的白色瀑布從高高的山崖上往下沖，下面是水潭，水花四濺，旁邊有彩虹。",
+   "act": "石猴和一群猴子站在離瀑布很遠的草地上，抬頭看瀑布。老猴子第一次出場：灰白色的毛，長長的白鬍子垂到胸前，拄著一根彎彎的樹枝當拐杖，站在大家中間。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，猴子們來到一條大瀑布前。",
+     "en": "One day, the monkeys came to a great big waterfall."
+    },
+    {
+     "who": "旁白",
+     "text": "轟隆，轟隆！水好大呀。",
+     "en": "Roar, roar! The water came crashing down."
+    },
+    {
+     "who": "旁白",
+     "text": "白鬍子的老猴子說：",
+     "en": "Old Monkey, who had a long white beard, said,"
+    },
+    {
+     "who": "老猴子",
+     "tag": "curious",
+     "text": "瀑布後面有什麼呢？誰敢去看一看？",
+     "en": "What is behind the waterfall? Who is brave enough to go and see?"
+    }
+   ]
+  },
+  {
+   "scene": "瀑布前面的草地，同一個時候。",
+   "act": "猴子們縮成一團，你看我、我看你；小猴子抱住自己的尾巴發抖。石猴從猴群裡跳出來，一手舉高，挺起胸膛，笑得好有自信。",
+   "lines": [
+    {
+     "who": "老猴子",
+     "text": "誰能進去看，再平安回來，就請他當大王！",
+     "en": "Whoever can go in and come back safely will be our king!"
+    },
+    {
+     "who": "旁白",
+     "text": "猴子們你看我，我看你，誰都不敢去。",
+     "en": "The monkeys looked at each other. No one dared to go."
+    },
+    {
+     "who": "小猴子",
+     "tag": "scared",
+     "text": "水那麼大，好可怕喔！",
+     "en": "The water is so strong. It's scary!"
+    },
+    {
+     "who": "美猴王",
+     "tag": "brave",
+     "text": "我來試一試！",
+     "en": "I'll give it a try!"
+    }
+   ]
+  },
+  {
+   "scene": "瀑布後面：一個好大的山洞，洞裡很乾，有石頭桌子、石頭椅子、石頭床和石頭碗；洞口外是瀑布的水，像一片白色的門簾。",
+   "act": "石猴先站在瀑布旁邊瞇著眼睛仔細看；下一格他閉著眼睛、縮成一團跳過水幕；最後他站在洞裡，張大嘴巴，兩手張開，又驚又喜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "石猴先仔細看了看，瀑布後面好像有亮光。",
+     "en": "Stone Monkey looked carefully first. There seemed to be light behind the water."
+    },
+    {
+     "who": "旁白",
+     "text": "他閉上眼睛，用力一跳，咻！",
+     "en": "He shut his eyes and jumped with all his might. Whoosh!"
+    },
+    {
+     "who": "旁白",
+     "text": "裡面竟然有一個大山洞！",
+     "en": "Behind the water was a huge cave!"
+    },
+    {
+     "who": "美猴王",
+     "tag": "excited",
+     "text": "瀑布像水做的門簾，這裡就叫水簾洞！",
+     "en": "The waterfall is like a curtain made of water. I'll call this the Water Curtain Cave!"
+    }
+   ]
+  },
+  {
+   "scene": "瀑布前面的草地，水簾洞的洞口在瀑布後面若隱若現。",
+   "act": "石猴從瀑布裡跳出來，身上滴著水，笑嘻嘻地向大家揮手；小猴子還在發抖，石猴蹲下來伸出手；下一格大家一隻牽一隻，排成一條長長的隊伍，跟著石猴一起跳。",
+   "lines": [
+    {
+     "who": "美猴王",
+     "tag": "shouting",
+     "text": "瀑布後面有山洞，不怕風也不怕雨！",
+     "en": "There's a cave behind the waterfall. No wind, no rain!"
+    },
+    {
+     "who": "小猴子",
+     "tag": "scared",
+     "text": "可是，我不敢跳。",
+     "en": "But I'm too scared to jump."
+    },
+    {
+     "who": "美猴王",
+     "tag": "gentle",
+     "text": "別怕，牽著我的手，我們一起跳！",
+     "en": "Don't be afraid. Hold my hand, and we'll jump together!"
+    },
+    {
+     "who": "旁白",
+     "text": "一、二、三，咻！大家都跳進了水簾洞。",
+     "en": "One, two, three, whoosh! Everyone jumped into the Water Curtain Cave."
+    }
+   ]
+  },
+  {
+   "scene": "水簾洞裡，猴子們圍成一圈，中間是一張大石椅。",
+   "act": "老猴子把一頂用花和樹葉編的花冠戴在石猴頭上；石猴坐在大石椅上，臉紅紅的，笑得好開心；猴子們跳起來拍手歡呼，小猴子跳得最高。",
+   "lines": [
+    {
+     "who": "老猴子",
+     "tag": "proud",
+     "text": "石猴最勇敢，我們請他當大王！",
+     "en": "Stone Monkey is the bravest. Let's make him our king!"
+    },
+    {
+     "who": "旁白",
+     "text": "猴子們一起拍手，一起大聲喊：",
+     "en": "All the monkeys clapped and shouted together,"
+    },
+    {
+     "who": "小猴子",
+     "tag": "excited",
+     "text": "美猴王！美猴王！",
+     "en": "Monkey King! Monkey King!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，石猴就是美猴王了。",
+     "en": "From that day on, Stone Monkey was the Monkey King."
+    }
+   ]
+  },
+  {
+   "scene": "花果山海邊的沙灘，藍色的大海一望無際。",
+   "act": "美猴王頭戴花冠，站在海邊，兩手合起來客氣地對大海說話；海水往兩邊分開，中間出現一條通往海底的沙子小路，路兩邊是透明的水牆，看得到小魚；老猴子在後面揮手送他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "美猴王想找一根好棍子，保護花果山。",
+     "en": "The Monkey King wanted a good staff to protect the Mountain of Flowers and Fruit."
+    },
+    {
+     "who": "老猴子",
+     "tag": "gentle",
+     "text": "聽說東海的龍宮，有好多寶貝。",
+     "en": "They say the Dragon Palace in the Eastern Sea has lots of treasures."
+    },
+    {
+     "who": "美猴王",
+     "tag": "happy",
+     "text": "大海，請讓一讓！",
+     "en": "Sea, please make way for me!"
+    },
+    {
+     "who": "旁白",
+     "text": "美猴王會法術，海水真的分開一條路！",
+     "en": "The Monkey King knew magic, and the water really did part to make a path!"
+    }
+   ]
+  },
+  {
+   "scene": "海底的龍宮：珊瑚做的柱子，地上鋪滿發亮的珍珠，小魚和螃蟹游來游去。",
+   "act": "龍王第一次出場：一條好大的青綠色的龍，頭上有兩根金色的角，白色的大鬍子，身穿紅色龍袍，坐在珊瑚寶座上。美猴王雙手抱拳，彎腰鞠躬；龍王低下頭，眼睛笑成兩條線。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "龍宮裡到處是珍珠和珊瑚。",
+     "en": "The Dragon Palace was full of pearls and coral."
+    },
+    {
+     "who": "美猴王",
+     "tag": "polite",
+     "text": "龍王你好，我是花果山的美猴王。",
+     "en": "Hello, Dragon King. I am the Monkey King of the Mountain of Flowers and Fruit."
+    },
+    {
+     "who": "美猴王",
+     "text": "請問，可以借我一根棍子嗎？",
+     "en": "May I please borrow a staff?"
+    },
+    {
+     "who": "龍王",
+     "tag": "laughing",
+     "text": "好有禮貌的猴子！你自己挑吧。",
+     "en": "What a polite monkey! Go ahead and choose one."
+    }
+   ]
+  },
+  {
+   "scene": "龍宮的寶物房，牆上掛著好多根鐵棍；房間最裡面立著一根好大好粗的柱子，從地上一直通到屋頂。",
+   "act": "龍王在旁邊拿出一根又一根鐵棍。美猴王拿著一根細鐵棍揮一揮，皺著眉；下一格他手裡的鐵棍斷成兩截，他吐吐舌頭，抓抓頭；房間最裡面的大柱子發出金色的光，大家轉頭看它。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "美猴王揮一揮鐵棍，太輕了。",
+     "en": "The Monkey King swung an iron staff. Too light."
+    },
+    {
+     "who": "旁白",
+     "text": "換一根，啪！斷了。",
+     "en": "He tried another one. Snap! It broke."
+    },
+    {
+     "who": "美猴王",
+     "tag": "sad",
+     "text": "哎呀，對不起，我把它弄斷了。",
+     "en": "Oh no, I'm sorry. I broke it."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，大柱子發出了金光。",
+     "en": "Just then, a giant pillar began to glow gold."
+    }
+   ]
+  },
+  {
+   "scene": "龍宮的寶物房，金光照亮了整個房間。",
+   "act": "美猴王兩手抱住大柱子用力推，臉都漲紅了，柱子動也不動；下一格他把臉貼近柱子小聲說話，柱子縮成一根普通大小的棍子，金色的棍身，兩頭各有一圈金箍，他開心地舉起來。",
+   "lines": [
+    {
+     "who": "龍王",
+     "text": "那根柱子，沒有猴子搬動過喔。",
+     "en": "No monkey has ever moved that pillar."
+    },
+    {
+     "who": "美猴王",
+     "tag": "brave",
+     "text": "我來試一試！",
+     "en": "I'll give it a try!"
+    },
+    {
+     "who": "旁白",
+     "text": "他用力推，柱子動也不動。",
+     "en": "He pushed and pushed, but it would not budge."
+    },
+    {
+     "who": "美猴王",
+     "tag": "whispering",
+     "text": "柱子，柱子，請你變小一點。",
+     "en": "Pillar, pillar, please get a little smaller."
+    },
+    {
+     "who": "旁白",
+     "text": "柱子變小了，變成一根金箍棒！",
+     "en": "The pillar shrank and turned into a Golden Staff!"
+    }
+   ]
+  },
+  {
+   "scene": "左邊是龍宮門口，右邊是花果山水簾洞前的草地，太陽快要下山了，天空是橘色的。",
+   "act": "左邊：龍王笑著揮手；美猴王把金箍棒變得像一根針那麼小，夾在耳朵後面，彎腰說謝謝。右邊：美猴王回到花果山，把金箍棒舉高給大家看，猴子們圍著他跳舞歡呼，老猴子摸著鬍子微笑。",
+   "lines": [
+    {
+     "who": "龍王",
+     "tag": "happy",
+     "text": "你這麼有禮貌，金箍棒就借給你吧！",
+     "en": "You're so polite, I'll lend you the Golden Staff!"
+    },
+    {
+     "who": "美猴王",
+     "tag": "happy",
+     "text": "謝謝龍王！我會用它保護大家。",
+     "en": "Thank you, Dragon King! I will use it to protect everyone."
+    },
+    {
+     "who": "旁白",
+     "text": "美猴王回到家，大家都跑來歡迎他。",
+     "en": "When the Monkey King came home, everyone ran to greet him."
+    },
+    {
+     "who": "小猴子",
+     "tag": "excited",
+     "text": "美猴王！美猴王！",
+     "en": "Monkey King! Monkey King!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "id": "elephant-touch",
+ "title": "蒙眼摸大象",
+ "title_en": "The Friends and the Elephant",
+ "size": "短",
+ "roles": {
+  "小凱": "五六歲的小男孩，聲音清亮、急性子，第一個搶著猜，很有把握。",
+  "小玲": "五六歲的小女孩，聲音清脆、愛笑，大家吵起來時溫柔地出主意。",
+  "小兔": "小白兔，聲音又小又甜，容易被嚇一跳，驚訝時聲音拉高。",
+  "小猴": "愛玩的小猴子，活潑的年輕男聲，說話快、愛帶頭，有點得意。",
+  "大象": "大象伯伯，懶洋洋的胖叔叔聲音，說話慢、很和氣，愛偷笑。"
+ },
+ "cast": {
+  "小凱": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小玲": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小猴": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "大象": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "蒙",
+   "where": "書名『蒙眼摸大象』，第1頁『蒙眼遊戲』『蒙起來』",
+   "read": "méng"
+  },
+  {
+   "char": "噴",
+   "where": "第5頁『噴出』『噴氣』",
+   "read": "pēn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晴朗的早上，森林邊一大片綠色草地，開著黃色和白色的小花，遠處有幾棵大樹。",
+   "act": "四個好朋友第一次出場。小凱：五六歲的小男孩，短短的黑頭髮，穿橘色T恤、藍色短褲。小玲：五六歲的小女孩，綁兩條辮子，穿黃色洋裝。小兔：白色小兔子，長耳朵內側粉紅色，脖子上繫綠色小領巾。小猴：咖啡色小猴子，捲尾巴，戴一頂紅色棒球帽。小猴站在中間，手裡揮著四條彩色布條當眼罩，其他三個圍著他，興奮地拍手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小凱、小玲、小兔和小猴，是四個好朋友。",
+     "en": "Kai, Lena, Bunny, and Monkey are four good friends."
+    },
+    {
+     "who": "旁白",
+     "text": "今天，他們在草地上玩蒙眼遊戲。",
+     "en": "Today, they're playing a blindfold game in the meadow."
+    },
+    {
+     "who": "旁白",
+     "text": "小猴最愛玩，他大聲說：",
+     "en": "Monkey loves games more than anyone. He calls out,"
+    },
+    {
+     "who": "小猴",
+     "tag": "excited",
+     "text": "大家把眼睛蒙起來，摸一摸，猜一猜！",
+     "en": "Everybody, cover your eyes. Touch something and guess what it is!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片草地，大樹後面。",
+   "act": "四個朋友都綁上彩色布條蒙住眼睛（小凱藍色、小玲粉紅色、小兔綠色、小猴紅色），伸出雙手，一步一步往前走，笑嘻嘻的。他們身後，一隻灰色的大象從大樹後面慢慢走出來，耳朵很大，眼睛笑彎彎的，把鼻子舉到嘴巴前面，比出「噓」的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "四個人蒙上眼睛，伸出手，小心地往前走。",
+     "en": "The four friends tie on their blindfolds, stretch out their hands, and carefully walk forward."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，一隻大象走過來，停在草地中間。",
+     "en": "Just then, a big elephant wanders over and stops in the middle of the meadow."
+    },
+    {
+     "who": "大象",
+     "tag": "whispering",
+     "text": "噓，我也來玩。",
+     "en": "Shh. I want to play too."
+    },
+    {
+     "who": "旁白",
+     "text": "摸一摸，猜一猜，這是什麼呢？",
+     "en": "Touch it, guess it. What could it be?"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，大象站著不動。",
+   "act": "小凱蒙著藍色眼罩，兩手抱住大象粗粗的前腿，臉貼在上面，一臉有把握地笑。大象低頭看他，偷偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小凱摸到一個好粗、好硬的東西。",
+     "en": "Kai touches something thick and hard."
+    },
+    {
+     "who": "小凱",
+     "tag": "excited",
+     "text": "我知道！這是一根大柱子！",
+     "en": "I know! It's a big pillar!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間。",
+   "act": "小玲蒙著粉紅色眼罩，兩手摸著大象又大又薄的耳朵；大象耳朵輕輕一搧，小玲的辮子被風吹得飛起來，她咯咯笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小玲摸到一片好大、好薄的東西。",
+     "en": "Lena touches something big and flat."
+    },
+    {
+     "who": "旁白",
+     "text": "它動了一下，呼！有風吹過來。",
+     "en": "It flaps. Whoosh! A breeze blows by."
+    },
+    {
+     "who": "小玲",
+     "tag": "laughing",
+     "text": "不對，不對，這是一把大扇子！",
+     "en": "No, no! It's a big fan!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間。",
+   "act": "小兔蒙著綠色眼罩，兩手抱住大象的鼻子；鼻子彎來彎去，鼻孔對著小兔噴出一口氣，把小兔的長耳朵吹得往後飛，小兔嚇一跳，嘴巴張成圓形。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔摸到一條會彎來彎去的東西。",
+     "en": "Bunny touches something that bends and wiggles."
+    },
+    {
+     "who": "旁白",
+     "text": "噗！前面噴出一陣氣。",
+     "en": "Puff! A gust of air blows out of the end."
+    },
+    {
+     "who": "小兔",
+     "tag": "surprised",
+     "text": "是水管！會噴氣的水管！",
+     "en": "It's a hose! A hose that puffs air!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，大象身後。",
+   "act": "小猴蒙著紅色眼罩，站在大象後面，兩手抓著大象細細的尾巴，尾巴左右搖，小猴抬起下巴，一臉得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小猴抓到一條好細的東西，搖來搖去。",
+     "en": "Monkey grabs something thin that swings back and forth."
+    },
+    {
+     "who": "小猴",
+     "tag": "proud",
+     "text": "你們都錯了，這是一條繩子！",
+     "en": "You're all wrong. It's a rope!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，大象站在四個朋友中間。",
+   "act": "四個朋友還蒙著眼罩，各自站在大象身邊不同的地方，臉朝不同方向，張大嘴巴爭來爭去：小凱抱著腿、小猴抓著尾巴。小玲伸出雙手往下壓，請大家安靜。大象憋著笑，眼睛瞇成一條線。",
+   "lines": [
+    {
+     "who": "小凱",
+     "tag": "shouting",
+     "text": "是柱子！",
+     "en": "It's a pillar!"
+    },
+    {
+     "who": "小猴",
+     "tag": "shouting",
+     "text": "是繩子！",
+     "en": "It's a rope!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家你一句，我一句，吵起來了。",
+     "en": "Everyone talks at once, and they start to argue."
+    },
+    {
+     "who": "小玲",
+     "tag": "gentle",
+     "text": "別吵了，我們一起拿下眼罩看吧！",
+     "en": "Stop arguing! Let's take off our blindfolds and look together!"
+    }
+   ]
+  },
+  {
+   "scene": "草地中間，陽光燦爛。",
+   "act": "四個朋友把眼罩拿下來拿在手上，抬頭看著大象，嘴巴張得好大。大象舉起鼻子，笑得好開心。最後，大家一起坐在大象旁邊的草地上，手牽著手一起笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一、二、三！大家拿下眼罩。",
+     "en": "One, two, three! They take off their blindfolds."
+    },
+    {
+     "who": "小兔",
+     "tag": "surprised",
+     "text": "哇，是一隻大象！",
+     "en": "Wow! It's an elephant!"
+    },
+    {
+     "who": "大象",
+     "tag": "laughing",
+     "text": "柱子是腿，扇子是耳朵，水管是鼻子，繩子是尾巴！",
+     "en": "The pillar is my leg, the fan is my ear, the hose is my trunk, and the rope is my tail!"
+    },
+    {
+     "who": "小凱",
+     "text": "原來，每個人摸到的，都是大象的一部分。",
+     "en": "So each of us touched just one little part of the elephant."
+    },
+    {
+     "who": "小玲",
+     "tag": "happy",
+     "text": "大家一起看，就看到整隻大象啦！",
+     "en": "When we all look together, we can see the whole elephant!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "id": "ant-dove",
+ "title": "螞蟻和鴿子",
+ "title_en": "The Ant and the Dove",
+ "size": "短",
+ "roles": {
+  "螞蟻": "很小的螞蟻，五六歲小女生的聲音，勇敢又熱心，被風吹走時害怕，幫上忙時很驕傲。",
+  "鴿子": "白色的鴿子，溫柔的年輕女生聲音，親切又愛笑，說話輕輕的。",
+  "男孩": "拿網子的淘氣男孩，少年的聲音，一開始興奮好玩，被咬一下嚇一跳，後來安靜下來、放下網子。"
+ },
+ "cast": {
+  "螞蟻": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "鴿子": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "男孩": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "漂",
+   "where": "第1頁『漂走』",
+   "read": "piāo"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『沒看見』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晴天的小河邊，岸邊是綠色的草地和一棵大樹，河水慢慢流，閃著光。",
+   "act": "螞蟻第一次出場：很小的紅褐色螞蟻，兩根彎彎的觸角，頭上綁一個黃色小蝴蝶結。她坐在岸邊一片綠色葉子上休息；一陣風吹來，葉子連同螞蟻被吹到河面上，漂離岸邊；螞蟻抱緊葉子，舉起一隻手，一臉著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小河邊，住著一隻很小的螞蟻。",
+     "en": "A tiny ant lived by a little river."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，她在葉子上休息。",
+     "en": "One day, she was resting on a leaf."
+    },
+    {
+     "who": "旁白",
+     "text": "呼！一陣風吹來，把葉子吹到河上。",
+     "en": "Whoosh! A gust of wind blew the leaf onto the river."
+    },
+    {
+     "who": "螞蟻",
+     "tag": "scared",
+     "text": "哎呀，葉子漂走了！救命呀！",
+     "en": "Oh no, my leaf is floating away! Help!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條小河邊，大樹伸出的樹枝在河面上。",
+   "act": "鴿子第一次出場：全身雪白的鴿子，粉紅色的腳，脖子上有一圈淡紫色的羽毛。她原本停在樹枝上，聽到聲音低頭看；接著用嘴巴咬下一片很大的綠葉子，往河邊飛下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大樹上，一隻白鴿子聽到了。",
+     "en": "Up in the big tree, a white dove heard her."
+    },
+    {
+     "who": "鴿子",
+     "tag": "gentle",
+     "text": "小螞蟻，別怕，我來幫妳！",
+     "en": "Little ant, don't be afraid. I'll help you!"
+    },
+    {
+     "who": "旁白",
+     "text": "鴿子咬下一片大葉子，飛到河邊。",
+     "en": "The dove picked a big leaf and flew down to the river."
+    }
+   ]
+  },
+  {
+   "scene": "小河邊，水很淺、很平靜。",
+   "act": "鴿子站在岸邊，把大葉子放下來，一頭搭在草地上，一頭碰到螞蟻的小葉子，像一座綠色的小橋；螞蟻沿著大葉子一步一步走回草地，鴿子低頭笑著看她。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "她把大葉子放下來，像一座小橋。",
+     "en": "She laid the big leaf down like a little bridge."
+    },
+    {
+     "who": "鴿子",
+     "text": "快，走過來！",
+     "en": "Quick, walk across!"
+    },
+    {
+     "who": "旁白",
+     "text": "螞蟻一步、一步，走回草地上。",
+     "en": "Step by step, the ant walked back onto the grass."
+    },
+    {
+     "who": "螞蟻",
+     "tag": "happy",
+     "text": "謝謝妳，鴿子！",
+     "en": "Thank you, Dove!"
+    }
+   ]
+  },
+  {
+   "scene": "小河邊的草地，陽光很好。",
+   "act": "螞蟻站在草地上，挺起胸膛，舉起一隻小手；鴿子歪著頭，笑得瞇起眼睛，接著拍拍翅膀飛回樹上。",
+   "lines": [
+    {
+     "who": "螞蟻",
+     "tag": "proud",
+     "text": "以後，換我幫妳！",
+     "en": "Someday, I'll help you too!"
+    },
+    {
+     "who": "鴿子",
+     "tag": "laughing",
+     "text": "妳這麼小，要怎麼幫我呀？",
+     "en": "You are so tiny. How could you help me?"
+    },
+    {
+     "who": "螞蟻",
+     "tag": "proud",
+     "text": "我很小，可是我也能幫忙！",
+     "en": "I'm tiny, but I can help too!"
+    },
+    {
+     "who": "旁白",
+     "text": "鴿子笑一笑，飛回樹上。",
+     "en": "The dove smiled and flew back up into the tree."
+    }
+   ]
+  },
+  {
+   "scene": "幾天後的中午，同一棵大樹和小河邊。",
+   "act": "男孩第一次出場：短短的黑頭髮，穿橘色上衣、藍色短褲，戴一頂綠色帽子，手上拿著一支長柄的大網子。他躲在樹後面，咧嘴笑著看樹枝上的鴿子；鴿子在樹枝上閉著眼睛休息。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "過了幾天，來了一個淘氣的男孩。",
+     "en": "A few days later, a mischievous boy came along."
+    },
+    {
+     "who": "旁白",
+     "text": "他拿著一支大網子。",
+     "en": "He was carrying a big net."
+    },
+    {
+     "who": "男孩",
+     "tag": "excited",
+     "text": "嘻，有一隻鴿子！我要抓回家！",
+     "en": "Hee hee, a dove! I'll catch it and take it home!"
+    },
+    {
+     "who": "旁白",
+     "text": "鴿子在休息，沒看見他。",
+     "en": "The dove was resting. She did not see him."
+    }
+   ]
+  },
+  {
+   "scene": "大樹下的草地。",
+   "act": "螞蟻在草地上抬頭，看到男孩踮著腳慢慢走近大樹，網子舉得高高的；螞蟻兩手握拳，觸角豎起來，下定決心往男孩的腳跑過去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "草地上的螞蟻，看見了。",
+     "en": "The ant in the grass saw everything."
+    },
+    {
+     "who": "螞蟻",
+     "tag": "scared",
+     "text": "不好了，鴿子有危險！",
+     "en": "Oh no, Dove is in trouble!"
+    },
+    {
+     "who": "螞蟻",
+     "tag": "brave",
+     "text": "我很小，可是我也能幫忙！",
+     "en": "I'm tiny, but I can help too!"
+    },
+    {
+     "who": "旁白",
+     "text": "男孩走近，舉起網子。",
+     "en": "The boy crept closer and lifted his net."
+    }
+   ]
+  },
+  {
+   "scene": "大樹下。",
+   "act": "螞蟻在男孩的腳踝上輕輕咬一口；男孩抬起一隻腳單腳跳，張嘴喊，網子歪到一邊，什麼也沒網到；鴿子睜開眼睛，看見男孩腳上的螞蟻和歪掉的網子，拍拍翅膀飛上天空。畫面輕鬆好笑，男孩沒有受傷。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "螞蟻爬上男孩的腳，咬了一小口。",
+     "en": "The ant climbed onto the boy's foot and gave him a tiny bite."
+    },
+    {
+     "who": "男孩",
+     "tag": "surprised",
+     "text": "哎喲！",
+     "en": "Ouch!"
+    },
+    {
+     "who": "旁白",
+     "text": "鴿子醒過來，看見螞蟻和網子，趕快飛走了。",
+     "en": "The dove woke up, saw the ant and the net, and quickly flew away."
+    }
+   ]
+  },
+  {
+   "scene": "小河邊，藍色的天空，白雲。",
+   "act": "男孩把網子放在草地上，坐下來抬頭看鴿子在天上飛，臉上慢慢露出微笑；鴿子在空中繞一圈，飛下來停在螞蟻旁邊，兩個開心地互看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "男孩抬頭，看著鴿子在天上飛。",
+     "en": "The boy looked up and watched the dove fly across the sky."
+    },
+    {
+     "who": "男孩",
+     "tag": "gentle",
+     "text": "鴿子在天上飛，最開心。我不抓了。",
+     "en": "A dove is happiest up in the sky. I won't catch her."
+    },
+    {
+     "who": "旁白",
+     "text": "他放下網子，鴿子飛到螞蟻旁邊。",
+     "en": "He put down his net, and the dove flew down next to the ant."
+    },
+    {
+     "who": "鴿子",
+     "tag": "happy",
+     "text": "謝謝妳，小螞蟻！",
+     "en": "Thank you, little ant!"
+    },
+    {
+     "who": "螞蟻",
+     "tag": "proud",
+     "text": "我很小，可是我也能幫忙！",
+     "en": "I'm tiny, but I can help too!"
+    }
+   ]
+  }
+ ]
+}

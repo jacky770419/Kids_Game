@@ -1,0 +1,257 @@
+{
+ "id": "three-monks",
+ "title": "三個和尚",
+ "title_en": "Three Monks and the Water",
+ "size": "短",
+ "roles": {
+  "小和尚": "山上小廟的小和尚，像六七歲的小男孩，聲音清亮、勤快又認真，失火時大聲喊大家。",
+  "高和尚": "又高又瘦的年輕和尚，活潑的年輕男聲，說話快、愛討價還價，有點愛偷懶。",
+  "胖和尚": "圓滾滾的胖和尚，懶洋洋的胖叔叔聲音，說話慢吞吞，很會喝水，最後笑得最大聲。"
+ },
+ "cast": {
+  "小和尚": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "高和尚": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "胖和尚": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "挑",
+   "where": "第1頁『去挑水』『我去挑水囉』，第2頁『你去挑』，第5頁『誰去挑水』，第8頁『一起挑水』，重複句『挑水喝』",
+   "read": "tiāo"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰去挑』，第5頁『誰去挑水』『誰都不肯』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第1頁『沒有井』，第5頁『沒有水』，重複句『沒水喝』",
+   "read": "méi"
+  },
+  {
+   "char": "倒",
+   "where": "第6頁『碰倒了蠟燭』",
+   "read": "dǎo"
+  },
+  {
+   "char": "傳",
+   "where": "第7頁『一個傳水』",
+   "read": "chuán"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很高的綠色山上，一座小小的黃牆紅瓦廟，廟前有一個大水缸；一條彎彎的石階小路通到山腳下，山腳有一條清澈的小河。",
+   "act": "小和尚第一次出場：六七歲的小男孩，光頭、圓臉，穿淺灰色僧袍，脖子掛一串咖啡色木頭佛珠。他用一根木棍挑著兩個木頭水桶，從山下走上來，滿頭大汗卻笑咪咪的，把水倒進大水缸。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山上的小廟裡，住著一個小和尚。",
+     "en": "In a little temple high on a mountain, there lived a little monk."
+    },
+    {
+     "who": "旁白",
+     "text": "廟裡沒有井，要到山下的小河去挑水。",
+     "en": "There was no well, so he had to fetch water from the stream at the bottom of the mountain."
+    },
+    {
+     "who": "小和尚",
+     "tag": "happy",
+     "text": "一根木棍，兩個水桶，我去挑水囉！",
+     "en": "One pole, two buckets. Off I go for water!"
+    },
+    {
+     "who": "旁白",
+     "text": "一個和尚挑水喝。",
+     "en": "One monk carries water by himself."
+    }
+   ]
+  },
+  {
+   "scene": "小廟門口，大水缸旁邊。",
+   "act": "高和尚第一次出場：又高又瘦的年輕和尚，光頭，穿土黃色僧袍，手長腳長，背著一個小布包。他站在廟門口；小和尚把木棍遞給他，高和尚雙手抱胸、把頭轉開。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，來了一個又高又瘦的和尚。",
+     "en": "One day, a tall, skinny monk came along."
+    },
+    {
+     "who": "高和尚",
+     "tag": "happy",
+     "text": "嗨，我可以住這裡嗎？",
+     "en": "Hi there! Can I live here, too?"
+    },
+    {
+     "who": "小和尚",
+     "tag": "happy",
+     "text": "好啊。那今天，你去挑水！",
+     "en": "Sure. Then today, you go fetch the water!"
+    },
+    {
+     "who": "高和尚",
+     "tag": "angry",
+     "text": "怎麼是我？你去！",
+     "en": "Why me? You go!"
+    }
+   ]
+  },
+  {
+   "scene": "往山下的石階小路，兩旁是綠樹。",
+   "act": "小和尚和高和尚一前一後，肩上扛著同一根木棍，一個水桶掛在木棍正中間；高和尚在後面，小和尚在前面，兩人都皺著眉頭、一步一步走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最後，他們把水桶掛在木棍中間，一人抬一頭。",
+     "en": "In the end, they hung one bucket in the middle of the pole, and each of them carried one end."
+    },
+    {
+     "who": "高和尚",
+     "text": "嘿喲，嘿喲！",
+     "en": "Heave-ho, heave-ho!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個和尚抬水喝。",
+     "en": "Two monks carry water together."
+    }
+   ]
+  },
+  {
+   "scene": "小廟門口，大水缸旁邊。",
+   "act": "胖和尚第一次出場：圓滾滾的中年和尚，光頭，大肚子，穿深紅色僧袍，滿臉笑容。他拿著木瓢，從大水缸舀水，一瓢接一瓢大口喝；小和尚和高和尚站在旁邊，眼睛睜得好大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "又有一天，來了一個好胖的和尚。",
+     "en": "Then one day, a big, round monk arrived."
+    },
+    {
+     "who": "胖和尚",
+     "tag": "tired",
+     "text": "好渴，好渴，讓我喝一點水。",
+     "en": "So thirsty, so thirsty. Let me have a little water."
+    },
+    {
+     "who": "旁白",
+     "text": "咕嘟，咕嘟，他把水缸的水全喝光了。",
+     "en": "Glug, glug. He drank up every drop of water in the jar."
+    }
+   ]
+  },
+  {
+   "scene": "小廟院子，大水缸是空的，旁邊的花盆裡的花都垂下頭來。",
+   "act": "三個和尚各自坐在院子三個角落，小和尚嘟著嘴、高和尚雙手抱胸、胖和尚躺著搖扇子，三個人都互相指著對方。木棍和水桶丟在中間，沒有人去拿。",
+   "lines": [
+    {
+     "who": "小和尚",
+     "text": "水缸沒有水了，誰去挑水？",
+     "en": "The water jar is empty. Who's going to fetch water?"
+    },
+    {
+     "who": "高和尚",
+     "tag": "angry",
+     "text": "你去！",
+     "en": "You go!"
+    },
+    {
+     "who": "胖和尚",
+     "tag": "sleepy",
+     "text": "我不去，你們去。",
+     "en": "Not me. You two go."
+    },
+    {
+     "who": "旁白",
+     "text": "你看我，我看你，誰都不肯去。",
+     "en": "They looked at each other, and nobody would go."
+    },
+    {
+     "who": "旁白",
+     "text": "一個和尚挑水喝，兩個和尚抬水喝，三個和尚沒水喝！",
+     "en": "One monk carries water by himself. Two monks carry water together. Three monks have no water at all!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上的小廟裡，桌上點著一根蠟燭，旁邊掛著一片布簾子；窗外是星星和月亮。",
+   "act": "三個和尚躺在地鋪上睡覺。一隻灰色的小老鼠跑過桌子，尾巴碰倒了蠟燭；布簾子的下角冒出一朵小小的橘色火苗和一縷灰色的煙。小和尚坐起來，指著火苗大叫。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，一隻小老鼠跑過桌子，碰倒了蠟燭。",
+     "en": "That night, a little mouse scurried across the table and knocked over the candle."
+    },
+    {
+     "who": "旁白",
+     "text": "布簾子的角，冒出了小火苗。",
+     "en": "A tiny flame popped up on the corner of the curtain."
+    },
+    {
+     "who": "小和尚",
+     "tag": "shouting",
+     "text": "有火！大家快起來！",
+     "en": "Fire! Everybody, wake up!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，從小廟到小河邊的石階小路，月光很亮。",
+   "act": "三個和尚在石階小路上排成一排接力：胖和尚在河邊把水桶裝滿，小和尚站在中間的石階上，把水桶往上傳，高和尚站在廟門口，舉起長手臂把水潑向布簾子上的小火苗；火苗變成一縷白煙。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這一次，大家都不吵了。",
+     "en": "This time, nobody argued."
+    },
+    {
+     "who": "旁白",
+     "text": "一個裝水，一個傳水，一個潑水。",
+     "en": "One filled the bucket, one passed it along, and one splashed the water."
+    },
+    {
+     "who": "旁白",
+     "text": "滋！小火苗一下子就滅了。",
+     "en": "Sizzle! The little flame went out at once."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上的小廟院子，陽光照著大水缸，水缸裝滿了水，花盆裡的花又抬起頭來。",
+   "act": "三個和尚臉上都沾著黑黑的灰，互相指著對方哈哈大笑。最後一格：三個人一起走在石階上，小和尚挑兩桶水，高和尚和胖和尚一起抬一桶，大家都笑咪咪的。",
+   "lines": [
+    {
+     "who": "胖和尚",
+     "tag": "laughing",
+     "text": "哈！你們的臉都黑了！",
+     "en": "Ha! Your faces are all black!"
+    },
+    {
+     "who": "小和尚",
+     "tag": "happy",
+     "text": "大家一起做，一下子就做好了！",
+     "en": "When we all work together, it's done in no time!"
+    },
+    {
+     "who": "旁白",
+     "text": "從那天起，大家一起挑水，水缸一直是滿的。",
+     "en": "From that day on, they fetched water together, and the jar was always full."
+    },
+    {
+     "who": "旁白",
+     "text": "三個和尚，大家都有水喝！",
+     "en": "Three monks, and water for everyone!"
+    }
+   ]
+  }
+ ]
+}

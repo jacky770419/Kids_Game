@@ -1,0 +1,388 @@
+{
+ "id": "santa",
+ "title": "聖誕老公公的大禮物",
+ "title_en": "Santa's Busiest Night",
+ "size": "中",
+ "roles": {
+  "聖誕老公公": "聖誕老公公，爽朗的老公公聲音，愛笑、說話溫暖，「呵，呵，呵」笑得很開心，累的時候有一點睏（錄音前要試錄新聲音）。",
+  "小麋鹿": "最小的一隻麋鹿，女生，聲音又小又甜，第一次拉雪橇很緊張，迷路時快哭，最後很勇敢、很得意。",
+  "小女孩": "寫信給聖誕老公公的小女孩小芸，五六歲，聲音細細的、很溫柔，念信時慢慢的。",
+  "精靈": "北極幫忙裝禮物的小精靈，聲音尖細可愛、精神十足，說話又快又興奮。"
+ },
+ "cast": {
+  "聖誕老公公": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小麋鹿": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "精靈": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "橇",
+   "where": "第1頁『裝上雪橇』『拉雪橇』，第3頁『雪橇飛上天』",
+   "read": "qiāo"
+  },
+  {
+   "char": "欠",
+   "where": "第3頁『大哈欠』",
+   "read": "qiàn"
+  },
+  {
+   "char": "累",
+   "where": "第3頁『好累喔』",
+   "read": "lèi"
+  },
+  {
+   "char": "什",
+   "where": "第4頁『什麼都看不見』",
+   "read": "shén"
+  },
+  {
+   "char": "扇",
+   "where": "第6頁『一扇窗戶』",
+   "read": "shàn"
+  },
+  {
+   "char": "乾",
+   "where": "第7、9頁『餅乾』",
+   "read": "gān"
+  },
+  {
+   "char": "給",
+   "where": "第8頁『借給你蓋』",
+   "read": "gěi"
+  },
+  {
+   "char": "卡",
+   "where": "第12頁『卡片』",
+   "read": "kǎ"
+  },
+  {
+   "char": "鐺",
+   "where": "第12頁『鈴鐺』",
+   "read": "dāng"
+  },
+  {
+   "char": "處",
+   "where": "第4頁『到處』，第6頁『遠處』",
+   "read": "chù"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "北極的雪地，聖誕夜，天空是深藍色的，掛著綠色的極光。一間紅屋頂的小木屋前面停著一台紅色的大雪橇，雪橇上放著一個鼓鼓的紅色禮物袋。",
+   "act": "精靈第一次出場：小小的精靈，尖耳朵，穿綠色衣服、戴一頂尾端有白色毛球的綠色尖帽，穿紅色尖頭鞋，正踮著腳把一個綁著紅緞帶的禮物盒塞進禮物袋，開心地舉手宣布。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國曆十二月二十五日，是聖誕節。",
+     "en": "December twenty-fifth is Christmas Day."
+    },
+    {
+     "who": "旁白",
+     "text": "前一天晚上，就是聖誕夜。",
+     "en": "The night before is Christmas Eve."
+    },
+    {
+     "who": "旁白",
+     "text": "北極的小精靈，正在把禮物裝上雪橇。",
+     "en": "At the North Pole, a little elf was loading presents onto the sleigh."
+    },
+    {
+     "who": "精靈",
+     "tag": "excited",
+     "text": "禮物裝好了！今年第一次拉雪橇的，是小麋鹿！",
+     "en": "All packed! And pulling the sleigh for the first time this year is Little Reindeer!"
+    }
+   ]
+  },
+  {
+   "scene": "北極的雪地，紅色大雪橇前面。",
+   "act": "小麋鹿第一次出場：一隻比別的麋鹿小很多的淺咖啡色小麋鹿，小小的鹿角，脖子上掛著一個金色小鈴鐺，站在雪橇最前面，兩條前腿有點發抖。聖誕老公公第一次出場：白鬍子很長、圓圓的肚子，穿紅色衣服、紅帽子有白毛邊，繫黑色皮帶，戴圓眼鏡，笑著走過來拍拍小麋鹿的頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小麋鹿是最小的一隻麋鹿。",
+     "en": "Little Reindeer was the smallest reindeer of all."
+    },
+    {
+     "who": "小麋鹿",
+     "tag": "nervous",
+     "text": "我好緊張喔。可是，我可以的！",
+     "en": "I'm so nervous. But I can do it!"
+    },
+    {
+     "who": "旁白",
+     "text": "聖誕老公公笑著走過來。",
+     "en": "Santa came over, smiling."
+    },
+    {
+     "who": "聖誕老公公",
+     "tag": "laughing",
+     "text": "呵，呵，呵！小麋鹿，出發囉！",
+     "en": "Ho, ho, ho! Little Reindeer, let's go!"
+    }
+   ]
+  },
+  {
+   "scene": "聖誕夜的天空，雪橇飛過一個小鎮，下面是一排一排亮著燈、屋頂積雪的房子。",
+   "act": "小麋鹿在最前面拉著雪橇飛，聖誕老公公坐在雪橇上，一手抓著禮物袋，一手遮著嘴巴打一個大哈欠，眼睛快要閉起來了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雪橇飛上天，一家，一家，去送禮物。",
+     "en": "Up flew the sleigh, bringing presents to house after house."
+    },
+    {
+     "who": "旁白",
+     "text": "送到半夜，聖誕老公公打了一個大哈欠。",
+     "en": "By midnight, Santa let out a great big yawn."
+    },
+    {
+     "who": "聖誕老公公",
+     "tag": "sleepy",
+     "text": "好累喔。不過，小朋友在等我們呢！",
+     "en": "I'm so tired. But the children are waiting for us!"
+    }
+   ]
+  },
+  {
+   "scene": "雪地森林的上空，大風雪，四周一片白，看不見房子，只看得到下面一棵很大的松樹。",
+   "act": "雪花被風吹得斜斜地飛，小麋鹿瞇著眼睛，耳朵被吹得往後翻；聖誕老公公用手按住紅帽子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "呼！一陣大風吹來，下起了大雪。",
+     "en": "Whoosh! A strong wind blew, and heavy snow began to fall."
+    },
+    {
+     "who": "旁白",
+     "text": "到處都是雪，什麼都看不見。",
+     "en": "There was snow everywhere. They couldn't see a thing."
+    },
+    {
+     "who": "小麋鹿",
+     "tag": "scared",
+     "text": "糟糕，我們迷路了！",
+     "en": "Oh no, we're lost!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片大風雪，下面又是那棵很大的松樹。",
+   "act": "小麋鹿轉了一大圈，看到同一棵松樹，難過地低下頭，眼淚掉下來；聖誕老公公伸手輕輕摸摸她的背。",
+   "lines": [
+    {
+     "who": "小麋鹿",
+     "tag": "brave",
+     "text": "往這邊飛！",
+     "en": "This way!"
+    },
+    {
+     "who": "旁白",
+     "text": "飛呀飛，咦？又回到同一棵大松樹。",
+     "en": "They flew and flew. Huh? They were back at the same big pine tree."
+    },
+    {
+     "who": "小麋鹿",
+     "tag": "crying",
+     "text": "都是我不好。",
+     "en": "It's all my fault."
+    },
+    {
+     "who": "聖誕老公公",
+     "tag": "gentle",
+     "text": "別哭，我們一起找。",
+     "en": "Don't cry. We'll find the way together."
+    }
+   ]
+  },
+  {
+   "scene": "風雪裡，遠處一棟小房子，二樓的窗戶亮著黃色的燈光，窗邊掛著一盞黃色的星星燈。",
+   "act": "小麋鹿抬起頭，眼睛一亮，指著遠處的星星燈；下一格雪橇輕輕停在那棟小房子積雪的屋頂上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，遠處亮起一點光。",
+     "en": "Just then, a light glowed far away."
+    },
+    {
+     "who": "旁白",
+     "text": "是一扇窗戶，窗邊掛著一盞星星燈。",
+     "en": "It was a window with a star lamp hanging in it."
+    },
+    {
+     "who": "小麋鹿",
+     "tag": "brave",
+     "text": "跟著星星燈飛，我可以的！",
+     "en": "Follow the star lamp. I can do it!"
+    },
+    {
+     "who": "旁白",
+     "text": "小麋鹿小心地停在屋頂上。",
+     "en": "Little Reindeer landed carefully on the roof."
+    }
+   ]
+  },
+  {
+   "scene": "小房子的客廳，壁爐旁邊有一棵掛滿彩燈的聖誕樹，矮桌上放著一盤餅乾、一杯熱牛奶、一根紅蘿蔔、一條摺好的小毯子和一封信。",
+   "act": "聖誕老公公輕輕走進客廳，拿起信封，信封上用彩色筆寫著大大的字，畫了一個笑臉；他推推眼鏡，好奇地看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "聖誕老公公走進安靜的客廳。",
+     "en": "Santa stepped into the quiet living room."
+    },
+    {
+     "who": "旁白",
+     "text": "桌上有餅乾、熱牛奶和一根紅蘿蔔。",
+     "en": "On the table were cookies, warm milk, and a carrot."
+    },
+    {
+     "who": "旁白",
+     "text": "旁邊有一封信，是一個叫小芸的女孩寫的。",
+     "en": "Next to them was a letter from a girl named Mia."
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，信紙特寫。",
+   "act": "信紙上畫著聖誕老公公坐在椅子上睡覺的圖，旁邊有歪歪的字；畫面角落用小泡泡畫出小芸寫信的樣子：綁一條馬尾、繫紅色髮圈、穿粉紅色睡衣的小女孩，趴在桌上認真寫字。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "聖誕老公公，你每年都好辛苦。",
+     "en": "Dear Santa, you work so hard every year."
+    },
+    {
+     "who": "小女孩",
+     "text": "今年，我不要禮物。",
+     "en": "This year, I don't want a present."
+    },
+    {
+     "who": "小女孩",
+     "text": "我想請你坐下來，休息一下。",
+     "en": "I want you to sit down and take a little rest."
+    },
+    {
+     "who": "小女孩",
+     "text": "我的小毯子，借給你蓋。",
+     "en": "You can use my little blanket."
+    }
+   ]
+  },
+  {
+   "scene": "同一個客廳，壁爐的火暖暖地亮著。窗外，小麋鹿從窗戶探進頭來。",
+   "act": "聖誕老公公坐在沙發上，蓋著小毯子，一手拿餅乾、一手拿熱牛奶，眼眶有點濕，笑得好溫暖；窗外的小麋鹿咬著那根紅蘿蔔，開心地眨眼睛。",
+   "lines": [
+    {
+     "who": "聖誕老公公",
+     "tag": "surprised",
+     "text": "不要禮物？要我休息一下？",
+     "en": "No present? She wants me to rest?"
+    },
+    {
+     "who": "旁白",
+     "text": "聖誕老公公坐下來，吃了餅乾，喝了熱牛奶。",
+     "en": "Santa sat down, ate the cookies, and drank the warm milk."
+    },
+    {
+     "who": "旁白",
+     "text": "小麋鹿在窗外，吃著那根紅蘿蔔。",
+     "en": "Outside the window, Little Reindeer munched the carrot."
+    },
+    {
+     "who": "聖誕老公公",
+     "tag": "happy",
+     "text": "啊，真舒服。這是我收過最大的禮物！",
+     "en": "Ah, this feels wonderful. This is the biggest present I have ever gotten!"
+    }
+   ]
+  },
+  {
+   "scene": "小芸家的樓梯，二樓的走廊點著一盞小夜燈；從樓梯的欄杆中間看得到樓下客廳的沙發。",
+   "act": "小芸穿著粉紅色睡衣、綁著馬尾、抱著一隻白色小熊布偶，蹲在樓梯上，從欄杆中間偷看；樓下的聖誕老公公蓋著小毯子，靠在沙發上閉著眼睛休息。小芸用手遮著嘴偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "樓梯上，穿著睡衣的小芸，探出頭來偷看。",
+     "en": "On the stairs, Mia peeked out in her pajamas."
+    },
+    {
+     "who": "小女孩",
+     "tag": "whispering",
+     "text": "聖誕老公公，真的在休息耶！",
+     "en": "Santa is really taking a rest!"
+    },
+    {
+     "who": "旁白",
+     "text": "她笑了一下，輕手輕腳地回到床上。",
+     "en": "She smiled and tiptoed back to bed."
+    }
+   ]
+  },
+  {
+   "scene": "小房子外面，雪停了，深藍色的天空滿是星星；屋頂上停著紅色大雪橇。",
+   "act": "聖誕老公公精神很好地坐回雪橇上，揮著手；小麋鹿抬頭挺胸站在最前面，脖子上的金色小鈴鐺已經不見了，它被留在小芸家的桌上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "休息過後，外面的雪停了，星星好亮。",
+     "en": "After his rest, the snow had stopped, and the stars were shining."
+    },
+    {
+     "who": "聖誕老公公",
+     "tag": "laughing",
+     "text": "呵，呵，呵！小麋鹿，我們繼續送禮物！",
+     "en": "Ho, ho, ho! Little Reindeer, let's keep delivering presents!"
+    },
+    {
+     "who": "小麋鹿",
+     "tag": "proud",
+     "text": "我可以的！",
+     "en": "I can do it!"
+    }
+   ]
+  },
+  {
+   "scene": "聖誕節的早上，小芸家的客廳，陽光從窗戶照進來；桌上空空的盤子、空杯子，旁邊放著一張卡片和一個金色小鈴鐺。",
+   "act": "小芸穿著粉紅色睡衣，綁著馬尾，跑到桌邊，兩手捧著卡片和小鈴鐺，驚喜地張大嘴巴。卡片上畫著聖誕老公公和小麋鹿在笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "聖誕節的早上，小芸跑到桌邊。",
+     "en": "On Christmas morning, Mia ran to the table."
+    },
+    {
+     "who": "旁白",
+     "text": "桌上有一個小鈴鐺和一張卡片，卡片上寫著：",
+     "en": "There was a little bell and a card. The card said,"
+    },
+    {
+     "who": "聖誕老公公",
+     "tag": "gentle",
+     "text": "小芸，謝謝妳送我的大禮物。",
+     "en": "Thank you, Mia, for my big present."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "是聖誕老公公！這是小麋鹿的鈴鐺！",
+     "en": "It's from Santa! And this is Little Reindeer's bell!"
+    }
+   ]
+  }
+ ]
+}

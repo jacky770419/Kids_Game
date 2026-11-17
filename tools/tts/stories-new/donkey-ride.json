@@ -1,0 +1,275 @@
+{
+ "id": "donkey-ride",
+ "title": "父子騎驢",
+ "title_en": "The Farmer, His Son and the Donkey",
+ "size": "短",
+ "roles": {
+  "爸爸": "種田的爸爸，溫和的大叔聲音，好脾氣、別人說什麼都點頭，最後累得笑出來。",
+  "兒子": "五六歲的兒子，小男孩的聲音，天真愛問，最後自己想出辦法，說話很有禮貌。",
+  "阿姨": "戴大花帽的阿姨，誇張好笑的大嗓門，愛笑、愛給意見。",
+  "奶奶": "提菜籃的奶奶，慈祥的老奶奶聲音，有點擔心爸爸。",
+  "大叔": "路邊的胖大叔，懶洋洋的胖叔叔聲音，嗓門大，替驢子打抱不平。"
+ },
+ "cast": {
+  "爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "兒子": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "阿姨": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "大叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "嚇",
+   "where": "第5頁『嚇了一大跳』",
+   "read": "xià"
+  },
+  {
+   "char": "累",
+   "where": "第3頁『會累』，第5、6、7頁『好累』『累到』『累了』",
+   "read": "lèi"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『會累』",
+   "read": "huì"
+  },
+  {
+   "char": "誰",
+   "where": "第6頁『聽誰的』",
+   "read": "shéi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的泥土路，早上，兩旁是稻田和小花，路的盡頭遠遠看得到熱鬧的市場。",
+   "act": "爸爸第一次出場：高高的、留著短鬍子，戴草帽，穿藍色上衣和棕色長褲；兒子第一次出場：圓臉、短頭髮，穿黃色上衣和綠色短褲；驢子是灰色的小驢子，耳朵很大，脖子上掛一個小鈴鐺。爸爸牽著驢子，兒子走在旁邊，兩個人邊走邊唱歌。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸和兒子，牽著驢子去市場。",
+     "en": "A father and his son set off for the market with their donkey."
+    },
+    {
+     "who": "旁白",
+     "text": "他們一邊走，一邊唱歌。",
+     "en": "They sang as they walked along."
+    },
+    {
+     "who": "兒子",
+     "tag": "happy",
+     "text": "小驢子，我們去市場囉！",
+     "en": "Little donkey, we're off to the market!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條泥土路，路邊一棵大樹。",
+   "act": "阿姨第一次出場：戴一頂插著大紅花的帽子，穿紫色洋裝，手裡拿一把扇子，指著他們大笑；兒子抓抓頭，抬頭看爸爸；爸爸把兒子抱上驢子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個戴大花帽的阿姨大笑起來。",
+     "en": "A lady in a big flowery hat burst out laughing."
+    },
+    {
+     "who": "阿姨",
+     "tag": "laughing",
+     "text": "有驢子不騎，自己走路，真傻！",
+     "en": "You have a donkey, and you're walking? How silly!"
+    },
+    {
+     "who": "兒子",
+     "tag": "worried",
+     "text": "爸爸，怎麼辦？",
+     "en": "Dad, what should we do?"
+    },
+    {
+     "who": "爸爸",
+     "text": "那就換一換吧！你騎上去。",
+     "en": "Then let's switch! You ride."
+    }
+   ]
+  },
+  {
+   "scene": "泥土路經過一片菜園。",
+   "act": "兒子騎在驢子上，爸爸在旁邊走；奶奶第一次出場：白頭髮梳成小包包，戴眼鏡，提著一籃青菜，皺著眉頭看著兒子；爸爸也爬上驢子，坐在兒子後面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個提菜籃的奶奶，皺起眉頭。",
+     "en": "An old lady with a vegetable basket frowned."
+    },
+    {
+     "who": "奶奶",
+     "text": "小孩騎驢，爸爸走路，爸爸會累呀！",
+     "en": "The child rides while his father walks? His father will get tired!"
+    },
+    {
+     "who": "兒子",
+     "tag": "worried",
+     "text": "爸爸，怎麼辦？",
+     "en": "Dad, what should we do?"
+    },
+    {
+     "who": "爸爸",
+     "text": "那就換一換吧！我也騎上去。",
+     "en": "Then let's switch! I'll get on too."
+    }
+   ]
+  },
+  {
+   "scene": "泥土路經過一間小店，店門口有一張長板凳。",
+   "act": "爸爸和兒子一起擠在小驢子身上，驢子的腿微微發抖、吐著舌頭喘氣；大叔第一次出場：胖胖的、光頭、穿白色背心，坐在店門口的長板凳上搖扇子，指著驢子大聲說話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "爸爸和兒子一起騎上驢子。",
+     "en": "Father and son rode on the donkey together."
+    },
+    {
+     "who": "旁白",
+     "text": "驢子走一步，就喘一口氣。",
+     "en": "The donkey puffed with every step."
+    },
+    {
+     "who": "大叔",
+     "tag": "shouting",
+     "text": "兩個人騎一隻驢，驢子好可憐喔！",
+     "en": "Two people on one little donkey? That poor donkey!"
+    },
+    {
+     "who": "兒子",
+     "tag": "worried",
+     "text": "爸爸，怎麼辦？",
+     "en": "Dad, what should we do?"
+    }
+   ]
+  },
+  {
+   "scene": "泥土路上，往市場的方向。",
+   "act": "好笑的畫面：爸爸和兒子用一塊長木板抬著驢子，驢子穩穩地坐在木板中間，像坐轎子一樣，四隻腳縮著，眼睛瞪得好大、一臉驚訝；爸爸抬前面、兒子抬後面，兩個人滿頭大汗，腿彎彎的。",
+   "lines": [
+    {
+     "who": "爸爸",
+     "text": "那就換一換吧！我們抬著驢子走！",
+     "en": "Then let's switch! We'll carry the donkey!"
+    },
+    {
+     "who": "旁白",
+     "text": "爸爸抬前面，兒子抬後面。",
+     "en": "Dad took the front, and the boy took the back."
+    },
+    {
+     "who": "旁白",
+     "text": "嘿喲！嘿喲！驢子坐在木板上，嚇了一大跳。",
+     "en": "Heave ho! Heave ho! The donkey sat on a wooden board, looking very surprised."
+    },
+    {
+     "who": "兒子",
+     "tag": "tired",
+     "text": "好累喔！",
+     "en": "I'm so tired!"
+    }
+   ]
+  },
+  {
+   "scene": "市場門口，人很多，有賣水果和賣布的攤子。",
+   "act": "市場的人都指著他們笑彎了腰；驢子在木板上扭來扭去；爸爸和兒子趕快把驢子輕輕放到地上，兩個人坐在路邊喘氣，驢子站起來抖抖身體。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "市場的人看到了，都笑彎了腰。",
+     "en": "Everyone at the market saw them and laughed and laughed."
+    },
+    {
+     "who": "旁白",
+     "text": "驢子扭來扭去，好想下來。",
+     "en": "The donkey wiggled and squirmed. It wanted to get down."
+    },
+    {
+     "who": "旁白",
+     "text": "他們趕快放下驢子，累到坐在地上。",
+     "en": "They quickly set the donkey down and flopped onto the ground."
+    },
+    {
+     "who": "爸爸",
+     "tag": "tired",
+     "text": "大家說的都不一樣，要聽誰的呢？",
+     "en": "Everyone says something different. Who should we listen to?"
+    }
+   ]
+  },
+  {
+   "scene": "市場門口的大樹下。",
+   "act": "兒子摸著驢子的頭，歪頭想了想，接著眼睛一亮，舉起一根手指；爸爸看著兒子，笑著點頭；驢子用頭蹭兒子的手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兒子想了想。",
+     "en": "The boy thought for a moment."
+    },
+    {
+     "who": "兒子",
+     "text": "我們自己想一想，好不好？",
+     "en": "Let's think for ourselves, okay?"
+    },
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "驢子累了，我們就走路。我們累了，就輪流騎。",
+     "en": "When the donkey is tired, we walk. When we're tired, we take turns riding."
+    },
+    {
+     "who": "爸爸",
+     "tag": "happy",
+     "text": "好主意！",
+     "en": "Great idea!"
+    }
+   ]
+  },
+  {
+   "scene": "回家的泥土路，太陽要下山了，天空是橘色的。",
+   "act": "兒子騎著驢子，爸爸牽著驢子走在旁邊，三個都笑咪咪的；戴大花帽的阿姨又從路邊探出頭來，拿扇子指著爸爸；兒子有禮貌地對她揮手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "回家的路上，花帽阿姨又來了。",
+     "en": "On the way home, the lady in the flowery hat came by again."
+    },
+    {
+     "who": "阿姨",
+     "tag": "surprised",
+     "text": "咦？應該讓爸爸騎才對呀！",
+     "en": "Huh? Shouldn't the father be riding?"
+    },
+    {
+     "who": "兒子",
+     "tag": "gentle",
+     "text": "謝謝阿姨，我們自己想好就好！",
+     "en": "Thank you, ma'am, but we've decided for ourselves!"
+    },
+    {
+     "who": "爸爸",
+     "tag": "laughing",
+     "text": "對，自己想好就好！",
+     "en": "That's right. We decide for ourselves!"
+    }
+   ]
+  }
+ ]
+}

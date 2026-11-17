@@ -1,0 +1,268 @@
+{
+ "id": "monkey-croc",
+ "title": "猴子和鱷魚",
+ "title_en": "The Monkey and the Crocodile",
+ "size": "短",
+ "roles": {
+  "猴子": "住在河邊大樹上的猴子，活潑的年輕男生聲音，大方愛分享，遇到危險時腦筋動很快，說謊騙鱷魚時裝得很認真，好笑不緊張。",
+  "鱷魚": "河裡的胖鱷魚，懶洋洋的胖叔叔聲音，憨厚、貪吃又有點傻，最後真心道歉。",
+  "鱷魚太太": "鱷魚的太太，誇張好笑的中年女聲，也很貪吃，最後跟著一起道歉。"
+ },
+ "cast": {
+  "猴子": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "鱷魚": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "鱷魚太太": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "分",
+   "where": "第2頁『分給』",
+   "read": "fēn"
+  },
+  {
+   "char": "嚇",
+   "where": "第5頁『嚇了一跳』",
+   "read": "xià"
+  },
+  {
+   "char": "嚐",
+   "where": "第3頁『嚐一口』，第4頁『嚐一口』",
+   "read": "cháng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "熱帶的大河邊，岸上有一棵好高的大樹；河中間有一座小島，島上的芒果樹結滿黃色的芒果。",
+   "act": "猴子第一次出場：棕色的小猴子，米色的臉和肚子，長尾巴捲成一個圈，脖子上綁一條紅色領巾，坐在樹枝上；鱷魚第一次出場：胖胖的綠色鱷魚，肚子是淡黃色，頭上戴一頂小草帽，笑起來露出圓圓的牙齒，一點也不可怕，他浮在樹下的河面上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "河邊的大樹上，住著一隻猴子。",
+     "en": "A monkey lived in a big tree by the river."
+    },
+    {
+     "who": "旁白",
+     "text": "河裡住著一隻胖鱷魚，是猴子的好朋友。",
+     "en": "In the river lived a chubby crocodile, the monkey's good friend."
+    },
+    {
+     "who": "猴子",
+     "tag": "happy",
+     "text": "鱷魚大哥，帶我過河好嗎？",
+     "en": "Crocodile, will you take me across the river?"
+    },
+    {
+     "who": "鱷魚",
+     "tag": "happy",
+     "text": "好呀，坐上來！",
+     "en": "Sure, hop on!"
+    }
+   ]
+  },
+  {
+   "scene": "河中間的小島，芒果樹下。",
+   "act": "猴子坐在鱷魚身上，一起游到小島；猴子跳上芒果樹，抱著好多芒果，丟一顆給張大嘴巴等著的鱷魚，鱷魚的草帽上也放著兩顆芒果。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鱷魚常帶猴子去小島。",
+     "en": "The crocodile often took the monkey to the island."
+    },
+    {
+     "who": "旁白",
+     "text": "猴子摘了好多芒果，分給鱷魚吃。",
+     "en": "The monkey picked lots of mangoes and shared them with the crocodile."
+    },
+    {
+     "who": "鱷魚",
+     "tag": "excited",
+     "text": "好甜！我帶幾顆回家給太太！",
+     "en": "So sweet! I'll take some home for my wife!"
+    }
+   ]
+  },
+  {
+   "scene": "河邊泥土上鱷魚的家，旁邊有蘆葦。",
+   "act": "鱷魚太太第一次出場：綠色的鱷魚，戴一串粉紅色的花項鍊，眼睛圓圓的；她抱著芒果吃得滿臉都是汁，眼睛亮起來；鱷魚也在旁邊流口水，兩隻鱷魚頭靠頭，一起舔嘴巴，頭上冒出一個想像泡泡：泡泡裡是一顆亮晶晶、像糖果的愛心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "鱷魚太太吃了芒果。",
+     "en": "The crocodile's wife bit into a mango."
+    },
+    {
+     "who": "鱷魚太太",
+     "tag": "excited",
+     "text": "好甜！猴子每天吃甜芒果。",
+     "en": "So sweet! The monkey eats sweet mangoes every day."
+    },
+    {
+     "who": "鱷魚太太",
+     "text": "他的心，一定也很甜！",
+     "en": "His heart must be sweet too!"
+    },
+    {
+     "who": "鱷魚",
+     "tag": "excited",
+     "text": "對耶！我也想嚐一口！",
+     "en": "You're right! I want a taste too!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩隻貪吃的鱷魚，一起舔了舔嘴巴。",
+     "en": "The two greedy crocodiles licked their lips together."
+    }
+   ]
+  },
+  {
+   "scene": "大河中間，水面平靜，遠遠看得到小島。",
+   "act": "猴子坐在鱷魚身上開心地哼歌；游到河中間，鱷魚停下來，轉頭對猴子笑，有點不好意思地抓抓頭，嘴角流著口水。",
+   "lines": [
+    {
+     "who": "猴子",
+     "tag": "happy",
+     "text": "鱷魚大哥，帶我過河好嗎？",
+     "en": "Crocodile, will you take me across the river?"
+    },
+    {
+     "who": "鱷魚",
+     "text": "好呀，坐上來！",
+     "en": "Sure, hop on!"
+    },
+    {
+     "who": "旁白",
+     "text": "游到河中間，鱷魚停下來了。",
+     "en": "In the middle of the river, the crocodile stopped."
+    },
+    {
+     "who": "鱷魚",
+     "text": "猴子，我和太太想嚐一口你的心。",
+     "en": "Monkey, my wife and I would like a taste of your heart."
+    }
+   ]
+  },
+  {
+   "scene": "大河中間。",
+   "act": "猴子嚇得尾巴豎直，眼睛瞪大；下一格，猴子眨眨眼，一手拍額頭，裝出很可惜的樣子，另一手指著岸上的大樹。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "猴子嚇了一跳。",
+     "en": "The monkey jumped in surprise."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，他想到一個辦法。",
+     "en": "But then he thought of a plan."
+    },
+    {
+     "who": "猴子",
+     "text": "哎呀，你怎麼不早說？",
+     "en": "Oh dear, why didn't you tell me sooner?"
+    },
+    {
+     "who": "猴子",
+     "text": "我的心，放在大樹上啦！",
+     "en": "I left my heart up in my tree!"
+    }
+   ]
+  },
+  {
+   "scene": "大河靠近岸邊的地方，大樹就在旁邊。",
+   "act": "鱷魚開心地掉頭往岸邊游，水花往後噴；一靠岸，猴子一跳，抓住大樹的樹枝，三兩下爬回自己的樹枝上坐好，鬆了一口氣。",
+   "lines": [
+    {
+     "who": "猴子",
+     "text": "快帶我回去，我拿給你！",
+     "en": "Quick, take me back and I'll get it for you!"
+    },
+    {
+     "who": "鱷魚",
+     "tag": "happy",
+     "text": "好呀，我們回去拿！",
+     "en": "Okay, let's go back and get it!"
+    },
+    {
+     "who": "旁白",
+     "text": "鱷魚游回岸邊。",
+     "en": "The crocodile swam back to shore."
+    },
+    {
+     "who": "旁白",
+     "text": "猴子一跳，就跳回大樹上了。",
+     "en": "With one big leap, the monkey was back in his tree."
+    }
+   ]
+  },
+  {
+   "scene": "岸邊的大樹下。",
+   "act": "鱷魚在樹下仰著頭，張大嘴巴等著，一臉傻傻的；猴子坐在高高的樹枝上，一手拍著自己的胸口，笑得前仰後合。",
+   "lines": [
+    {
+     "who": "鱷魚",
+     "text": "猴子，你的心呢？",
+     "en": "Monkey, where is your heart?"
+    },
+    {
+     "who": "猴子",
+     "tag": "laughing",
+     "text": "傻鱷魚，心一直在我身體裡呀！",
+     "en": "Silly crocodile, my heart has been inside me all along!"
+    },
+    {
+     "who": "猴子",
+     "text": "哪有人把心放在樹上？",
+     "en": "Who leaves their heart in a tree?"
+    },
+    {
+     "who": "旁白",
+     "text": "鱷魚張大嘴巴，愣住了。",
+     "en": "The crocodile just stared with his mouth wide open."
+    }
+   ]
+  },
+  {
+   "scene": "岸邊的大樹下，太陽要下山了，河面是金色的。",
+   "act": "鱷魚和鱷魚太太並排浮在樹下，低著頭，一臉不好意思；猴子從樹上垂下一個小竹籃，裡面裝滿芒果；兩隻鱷魚開心地抬頭。",
+   "lines": [
+    {
+     "who": "鱷魚",
+     "tag": "sad",
+     "text": "對不起，猴子。我們太貪吃了。",
+     "en": "I'm sorry, Monkey. We were too greedy."
+    },
+    {
+     "who": "旁白",
+     "text": "鱷魚太太也游過來，低下頭。",
+     "en": "The crocodile's wife swam over and bowed her head too."
+    },
+    {
+     "who": "鱷魚太太",
+     "tag": "sad",
+     "text": "對不起，我們不該想吃你。",
+     "en": "We're sorry. We shouldn't have wanted to eat you."
+    },
+    {
+     "who": "猴子",
+     "tag": "laughing",
+     "text": "心不能吃，芒果可以！",
+     "en": "Hearts aren't for eating, but mangoes are!"
+    },
+    {
+     "who": "旁白",
+     "text": "猴子垂下一籃芒果，請他們一起吃。",
+     "en": "The monkey lowered a basket of mangoes for them to share."
+    }
+   ]
+  }
+ ]
+}

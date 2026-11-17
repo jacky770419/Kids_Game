@@ -1,0 +1,244 @@
+{
+ "id": "double-ninth",
+ "title": "跟爺爺去爬山",
+ "title_en": "Climbing with Grandpa",
+ "size": "短",
+ "roles": {
+  "小男孩": "小男孩小豪，五六歲，活潑好動、說話又快又大聲，一個人時有點害怕，後來學會等爺爺，說話變得溫柔。",
+  "爺爺": "小豪的爺爺，慈祥的老爺爺聲音，說話慢慢的、很和氣，常常笑。",
+  "奶奶": "小豪的奶奶，溫柔的奶奶聲音，說話輕輕的、帶著笑，愛講好玩的小知識。"
+ },
+ "cast": {
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "重",
+   "where": "第1頁『重陽節』『叫重陽』，第7頁『重陽節』『重陽糕』，第8頁『重陽節』",
+   "read": "chóng"
+  },
+  {
+   "char": "累",
+   "where": "第4頁『你累了嗎』",
+   "read": "lèi"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『都沒看到』",
+   "read": "méi"
+  },
+  {
+   "char": "處",
+   "where": "第7頁『遠處』",
+   "read": "chù"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "秋天的早上，小山腳下的步道入口。木頭牌子寫著「登山步道」，步道是平緩的石頭階梯，兩邊有木頭扶手，樹葉有黃有紅。",
+   "act": "小豪第一次出場：約六歲男孩，黑色短髮，穿橘色連帽外套、藍色牛仔褲、綠色運動鞋，背一個小水壺，跳起來指著山上。爺爺第一次出場：白頭髮、白眉毛，戴灰色鴨舌帽，穿咖啡色背心、灰褲子，拄著一根木頭拐杖。奶奶第一次出場：灰白短捲髮，戴圓眼鏡，穿紫色外套，提著一個小竹籃。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "農曆九月九日，是重陽節。",
+     "en": "The ninth day of the ninth lunar month is the Double Ninth Festival."
+    },
+    {
+     "who": "旁白",
+     "text": "九月和九日，有兩個九，所以叫重陽。",
+     "en": "There are two nines in the date, so it is called Double Ninth."
+    },
+    {
+     "who": "旁白",
+     "text": "這一天，小豪要陪爺爺奶奶去爬山。",
+     "en": "On this day, Noah is going hiking with Grandpa and Grandma."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "爺爺、奶奶，快出發吧！",
+     "en": "Grandpa, Grandma, let's go!"
+    }
+   ]
+  },
+  {
+   "scene": "山上的石頭階梯步道，兩邊有木頭扶手和高大的樹。",
+   "act": "小豪已經跑到前面好幾階，回頭揮手催大家；爺爺一手扶著扶手、一手拄著拐杖，一階一階慢慢往上；奶奶陪在爺爺旁邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小豪一下子就跑到前面。",
+     "en": "Noah runs ahead in no time."
+    },
+    {
+     "who": "小男孩",
+     "tag": "impatient",
+     "text": "爺爺，快一點啦！",
+     "en": "Grandpa, hurry up!"
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺拄著拐杖，一步、一步，往上走。",
+     "en": "Grandpa leans on his cane and climbs, step by step."
+    }
+   ]
+  },
+  {
+   "scene": "步道旁邊一塊大石頭，旁邊是一張木頭長椅；四周都是樹，看不到後面的路。",
+   "act": "小豪站在大石頭旁邊回頭看，後面的步道空空的，一個人也沒有；他抱著水壺，嘴巴扁扁的，有點害怕，然後轉身沿著步道走回去。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小豪跑到前面的大石頭旁邊。",
+     "en": "Noah runs all the way to a big rock."
+    },
+    {
+     "who": "旁白",
+     "text": "回頭一看，咦？爺爺奶奶都不見了。",
+     "en": "He looks back. Huh? Grandpa and Grandma are gone."
+    },
+    {
+     "who": "小男孩",
+     "tag": "sad",
+     "text": "一個人，一點也不好玩。",
+     "en": "Being all alone isn't fun at all."
+    },
+    {
+     "who": "旁白",
+     "text": "他想了想，轉身走回去找爺爺奶奶。",
+     "en": "He thinks for a moment, then turns and walks back to find them."
+    }
+   ]
+  },
+  {
+   "scene": "步道中間的一個小平台，有一張木頭椅子，旁邊有一棵紅葉樹。",
+   "act": "爺爺坐在木頭椅子上，拿手帕擦額頭的汗，笑咪咪的；奶奶坐在旁邊；小豪走回來，站在爺爺面前，歪著頭看他。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "worried",
+     "text": "爺爺，你累了嗎？",
+     "en": "Grandpa, are you tired?"
+    },
+    {
+     "who": "爺爺",
+     "tag": "gentle",
+     "text": "爺爺老了，腳走不快。",
+     "en": "Grandpa's legs are old. They can't go fast."
+    },
+    {
+     "who": "爺爺",
+     "text": "不急，不急，我們一起走。",
+     "en": "No rush, no rush. Let's walk together."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "走慢一點，可以看到好多東西喔。",
+     "en": "When you walk slowly, you can see so many things."
+    }
+   ]
+  },
+  {
+   "scene": "步道上，秋天的樹林，紅色和黃色的葉子在風中飄下來；一棵松樹上，有一隻咖啡色的松鼠抱著松果在吃。",
+   "act": "小豪牽著爺爺的手，一起慢慢走；小豪抬頭看見松鼠，睜大眼睛，用另一隻手指著；爺爺和奶奶也抬頭看，笑了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小豪牽著爺爺的手，陪他走。",
+     "en": "Noah holds Grandpa's hand and walks beside him."
+    },
+    {
+     "who": "旁白",
+     "text": "他看到松鼠在吃松果，紅葉在風裡飄。",
+     "en": "He sees a squirrel eating a pinecone and red leaves floating in the wind."
+    },
+    {
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "哇！剛才跑太快，都沒看到！",
+     "en": "Wow! I was running so fast, I missed all this!"
+    }
+   ]
+  },
+  {
+   "scene": "步道最後一段比較高的石頭階梯，旁邊有扶手。",
+   "act": "小豪和爺爺站在同一階，小豪牽著爺爺的手，低頭提醒他看腳下；爺爺一手拄著拐杖、一手牽著小豪，靠著扶手那一邊慢慢踏上階梯；奶奶在後面看著，笑得好開心。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "gentle",
+     "text": "爺爺，有階梯，小心喔。",
+     "en": "Grandpa, there are steps here. Be careful."
+    },
+    {
+     "who": "小男孩",
+     "text": "不急，不急，我們一起走。",
+     "en": "No rush, no rush. Let's walk together."
+    },
+    {
+     "who": "旁白",
+     "text": "爺爺笑了，奶奶也笑了。",
+     "en": "Grandpa smiles, and Grandma smiles too."
+    }
+   ]
+  },
+  {
+   "scene": "山頂的平台，有一座紅色屋頂的涼亭，四周有木頭欄杆；遠處是小小的房子、彎彎的河和藍天白雲。",
+   "act": "三個人坐在涼亭裡；奶奶打開小竹籃，拿出一盒四方形的重陽糕，糕是一層白、一層咖啡色，上面放著紅棗；小豪兩手捧著一塊，聞了一下，好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "到山頂了！遠處的房子，看起來好小。",
+     "en": "They reach the top! The houses far away look so tiny."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "重陽節，我們來吃重陽糕。",
+     "en": "It's the Double Ninth Festival. Let's eat Double Ninth cake."
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "好香，好甜！",
+     "en": "So yummy and sweet!"
+    }
+   ]
+  },
+  {
+   "scene": "山頂的涼亭，太陽暖暖地照著。",
+   "act": "奶奶伸手比一比「高」；小豪站起來踮著腳、把手舉得好高；爺爺哈哈大笑，摸摸小豪的頭；最後三個人手牽手，望著遠方。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "text": "糕和高，聲音一樣。吃了糕，一年比一年高。",
+     "en": "\"Cake\" in Chinese sounds like \"tall.\" Eat cake, and you grow taller every year."
+    },
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "那我明年，要比爺爺高！",
+     "en": "Then next year, I'll be taller than Grandpa!"
+    },
+    {
+     "who": "爺爺",
+     "tag": "laughing",
+     "text": "好啊！明年重陽節，我們再一起來爬山。",
+     "en": "All right! Next Double Ninth, we'll climb together again."
+    }
+   ]
+  }
+ ]
+}

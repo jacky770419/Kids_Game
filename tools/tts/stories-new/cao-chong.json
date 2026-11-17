@@ -1,0 +1,352 @@
+{
+ "id": "cao-chong",
+ "title": "曹沖稱大象",
+ "title_en": "How Do You Weigh an Elephant?",
+ "size": "中",
+ "roles": {
+  "曹沖": "很久以前中國的五歲小男孩，聲音稚嫩、好奇又聰明，想到辦法時興奮，指揮大家時認真有禮貌。",
+  "曹操": "曹沖的爸爸，管很多地方的大人物，年紀大的男聲，低沉、慈祥又有威嚴，遇到難題時嘆氣，誇兒子時很驕傲。",
+  "大臣": "白鬍子的老大臣，說話慢條斯理、有點愛面子，出的主意很好笑，笑小孩時有點得意，最後不好意思。",
+  "士兵": "年輕的士兵，聲音清亮、有精神，很老實，問大象問題時一本正經，看到紅線沉下去時大叫。"
+ },
+ "cast": {
+  "曹沖": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "曹操": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "大臣": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "士兵": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "稱",
+   "where": "書名『曹沖稱大象』，第3頁『怎麼稱』，第10頁『可以稱了』『稱好』",
+   "read": "chēng"
+  },
+  {
+   "char": "秤",
+   "where": "第3頁『大秤』『秤桿』，第10頁『放上秤』",
+   "read": "chèng"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰也不知道』",
+   "read": "shéi"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『從來沒看過』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『什麼辦法』，第8頁『做什麼』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，一座大宅院前的石板廣場：紅色大門、灰瓦屋頂，兩旁站著拿長槍的士兵；遠處是綠色的山和一條大河。",
+   "act": "曹沖第一次出場：五歲的小男孩，圓臉、大眼睛，黑頭髮在頭頂綁一個小圓髻，繫紅色髮帶，穿杏黃色古代小長袍。曹操第一次出場：曹沖的爸爸，年紀大的男人，灰白短鬍子，戴黑色高帽，穿深紫色繡金邊的長袍，不戴王冠。廣場門口，幾個人牽著一頭大灰象走進來，大象脖子上掛著紅色彩帶；曹沖拉著爸爸的袖子，踮腳往前看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，在中國，有一個五歲的小男孩，叫曹沖。",
+     "en": "Long ago in China, there lived a five-year-old boy named Cao Chong."
+    },
+    {
+     "who": "旁白",
+     "text": "他的爸爸叫曹操，是管很多地方的大人物。",
+     "en": "His father, Cao Cao, was a great lord who ruled over many lands."
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，有人從很遠的南方，送來一頭大象。",
+     "en": "One day, someone sent them a gift from far away in the south. It was an elephant!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個廣場，大象站在中間，旁邊圍了好多人。",
+   "act": "大象比屋簷還高，四條腿像樹幹，耳朵像兩把大扇子，慢慢搧動。大家仰著頭張大嘴巴。老大臣第一次出場：白色長鬍子垂到胸前，戴黑色官帽，穿藍色長袍，手拿一根毛筆，抓著頭。曹操摸著鬍子，皺眉看著大象。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家從來沒看過大象，全都跑來看。",
+     "en": "No one had ever seen an elephant before, so everyone came running to look."
+    },
+    {
+     "who": "旁白",
+     "text": "牠的腿像樹幹，耳朵像兩把大扇子。",
+     "en": "Its legs were like tree trunks, and its ears were like two giant fans."
+    },
+    {
+     "who": "曹操",
+     "tag": "surprised",
+     "text": "好大的大象！牠到底有幾斤呢？",
+     "en": "What a huge elephant! How heavy could it be?"
+    },
+    {
+     "who": "旁白",
+     "text": "大臣們你看我，我看你，誰也不知道。",
+     "en": "The officials looked at one another. Nobody knew."
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，大象旁邊。",
+   "act": "老大臣得意地舉起一根手指出主意。下一格：十個士兵一起抬一根像大樹那麼粗的木頭秤桿，臉漲得通紅，秤桿一動也不動，有兩個士兵一屁股坐在地上。大象低頭看著他們，一臉好奇。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一位白鬍子的老大臣，摸著鬍子說：",
+     "en": "An old official with a white beard stroked his beard and said,"
+    },
+    {
+     "who": "大臣",
+     "tag": "proud",
+     "text": "大人，我們做一個好大，好大的秤！",
+     "en": "My lord, let's build a giant scale!"
+    },
+    {
+     "who": "旁白",
+     "text": "士兵們做好了，可是秤桿太大，十個人也抬不起來。",
+     "en": "The soldiers built it, but the pole was so big that even ten men couldn't lift it."
+    },
+    {
+     "who": "曹操",
+     "tag": "sad",
+     "text": "唉，這樣怎麼稱呢？大象到底有幾斤呢？",
+     "en": "Oh dear, how can we weigh it like this? How heavy could that elephant be?"
+    }
+   ]
+  },
+  {
+   "scene": "廣場上，大象腳邊放著一個大水盆。",
+   "act": "士兵第一次出場：年輕的士兵，穿紅色短衣、戴皮頭盔，一本正經地站在大象面前，雙手放在嘴邊大聲問。下一格：大象從水盆抬起鼻子，對著士兵噴出一陣水花，士兵全身濕答答，頭盔歪掉，眨著眼睛；旁邊的人都哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一個年輕的士兵，跑到大象面前。",
+     "en": "A young soldier ran up to the elephant."
+    },
+    {
+     "who": "士兵",
+     "tag": "serious",
+     "text": "大象，大象，你有幾斤？",
+     "en": "Elephant, elephant, how heavy are you?"
+    },
+    {
+     "who": "旁白",
+     "text": "大象剛喝了水，牠抬起鼻子。噗！噴了士兵一身水。",
+     "en": "The elephant had just been drinking. It lifted its trunk and, splash! It sprayed the soldier with water."
+    },
+    {
+     "who": "旁白",
+     "text": "大家都笑了。可是，大象到底有幾斤呢？",
+     "en": "Everyone laughed. But how heavy was that elephant?"
+    }
+   ]
+  },
+  {
+   "scene": "廣場上。",
+   "act": "曹沖站在人群前面，高高舉起小手，眼睛閃閃發亮。老大臣低頭看他，摸著鬍子笑；曹操彎下腰，溫和地看著兒子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小曹沖舉起手來。",
+     "en": "Just then, little Cao Chong raised his hand."
+    },
+    {
+     "who": "曹沖",
+     "tag": "excited",
+     "text": "爸爸，我有辦法！",
+     "en": "Father, I have an idea!"
+    },
+    {
+     "who": "大臣",
+     "tag": "laughing",
+     "text": "哈！小孩子能有什麼辦法？",
+     "en": "Ha! What idea could a little boy have?"
+    },
+    {
+     "who": "曹操",
+     "tag": "gentle",
+     "text": "沖兒，你說吧。",
+     "en": "Go ahead, Chong. Tell us."
+    }
+   ]
+  },
+  {
+   "scene": "大河邊的木頭碼頭，河水平靜，一條大木船用粗繩子綁在碼頭的木樁上。",
+   "act": "曹沖站在碼頭上，指著大船。兩個士兵牽著大象，走上一塊寬木板，慢慢上船；大船往下沉，水面升到船身很高的地方。曹操和大臣們站在岸上看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家來到河邊，那裡綁著一條大船。",
+     "en": "Everyone went down to the river, where a big boat was tied to the dock."
+    },
+    {
+     "who": "曹沖",
+     "tag": "gentle",
+     "text": "請把大象牽到船上。",
+     "en": "Please lead the elephant onto the boat."
+    },
+    {
+     "who": "旁白",
+     "text": "大象一走上去，船就往下沉。",
+     "en": "As soon as the elephant stepped on, the boat sank lower."
+    },
+    {
+     "who": "旁白",
+     "text": "大象有好多斤，把船壓下去了。",
+     "en": "The elephant was so heavy that it pushed the boat down into the water."
+    }
+   ]
+  },
+  {
+   "scene": "河邊碼頭，大船停在水裡。",
+   "act": "曹沖在碼頭上用手指著船身碰到水的地方；士兵趴在碼頭邊，用毛筆在船身上沿著水面畫一條紅線。下一格：大象被牽回岸上，大船浮起來，紅線跑到水面上面好高。",
+   "lines": [
+    {
+     "who": "曹沖",
+     "tag": "excited",
+     "text": "水碰到哪裡，就在那裡畫一條線！",
+     "en": "Wherever the water reaches, draw a line right there!"
+    },
+    {
+     "who": "旁白",
+     "text": "士兵拿起毛筆，在船邊畫了一條紅線。",
+     "en": "A soldier took a brush and painted a red line on the side of the boat."
+    },
+    {
+     "who": "旁白",
+     "text": "然後，大家把大象牽下船。",
+     "en": "Then they led the elephant off the boat."
+    },
+    {
+     "who": "旁白",
+     "text": "船浮起來了，紅線也跑到水面上了。",
+     "en": "The boat floated back up, and the red line rose above the water."
+    }
+   ]
+  },
+  {
+   "scene": "河邊碼頭，岸上堆著一大堆灰色的石頭，每顆大約西瓜那麼大。",
+   "act": "曹沖指著石頭堆；老大臣歪著頭、皺著眉，一臉想不通。士兵們排成一排，每個人抱著一顆石頭，一顆接一顆搬上船，大船慢慢往下沉。",
+   "lines": [
+    {
+     "who": "曹沖",
+     "tag": "excited",
+     "text": "現在，請把石頭搬上船！",
+     "en": "Now, please carry the stones onto the boat!"
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "搬石頭？這是要做什麼呀？",
+     "en": "Stones? What are those for?"
+    },
+    {
+     "who": "旁白",
+     "text": "士兵們把石頭一顆，一顆，搬上船。",
+     "en": "The soldiers carried the stones onto the boat, one by one."
+    },
+    {
+     "who": "旁白",
+     "text": "船又開始往下沉了。",
+     "en": "And the boat began to sink lower again."
+    }
+   ]
+  },
+  {
+   "scene": "河邊碼頭，大船上堆滿石頭。",
+   "act": "紅線已經沉到水面下面一點點；士兵指著水面大叫，一臉著急。下一格：一個士兵抱下一顆石頭，紅線剛好貼在水面上；曹沖拍手跳起來。",
+   "lines": [
+    {
+     "who": "士兵",
+     "tag": "shouting",
+     "text": "哎呀，紅線跑到水下面去了！",
+     "en": "Uh-oh! The red line went under the water!"
+    },
+    {
+     "who": "曹沖",
+     "tag": "gentle",
+     "text": "石頭太多了，搬下來一顆。",
+     "en": "That's too many stones. Take one off."
+    },
+    {
+     "who": "旁白",
+     "text": "搬走一顆，水剛好碰到紅線。",
+     "en": "They took one off, and the water came right up to the red line."
+    },
+    {
+     "who": "曹沖",
+     "tag": "happy",
+     "text": "就是這樣！",
+     "en": "That's it!"
+    }
+   ]
+  },
+  {
+   "scene": "河邊碼頭，岸上放著一個普通大小的木頭秤，秤桿上掛著秤錘。",
+   "act": "曹沖站在岸上，認真地跟爸爸說明；曹操彎腰聽，眼睛一亮。下一格：士兵把石頭一顆一顆放上秤，老大臣拿毛筆在竹片上記數字。",
+   "lines": [
+    {
+     "who": "曹沖",
+     "tag": "excited",
+     "text": "水又碰到紅線，所以，石頭有幾斤，大象就有幾斤！",
+     "en": "The water is at the red line again. So the stones are just as heavy as the elephant!"
+    },
+    {
+     "who": "曹沖",
+     "text": "每顆石頭都不大，放上秤就可以稱了。",
+     "en": "Each stone is small enough to put on the scale and weigh."
+    },
+    {
+     "who": "旁白",
+     "text": "大家把石頭一顆，一顆，稱好，再全部加起來。",
+     "en": "So everyone weighed the stones one by one, and then they added them all up."
+    }
+   ]
+  },
+  {
+   "scene": "河邊碼頭，太陽要下山了，河面金色。",
+   "act": "曹操把曹沖抱起來，笑得好驕傲；老大臣不好意思地抓抓頭，臉紅紅的。大象抬起鼻子，對著老大臣噴出一陣水花，老大臣的鬍子滴著水；曹沖和大家都哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大象有幾斤，終於知道了！",
+     "en": "At last, they knew how heavy the elephant was!"
+    },
+    {
+     "who": "曹操",
+     "tag": "proud",
+     "text": "沖兒，你真聰明！",
+     "en": "Chong, you're so clever!"
+    },
+    {
+     "who": "大臣",
+     "tag": "embarrassed",
+     "text": "原來，小孩子也有好辦法。",
+     "en": "Well, well. A little boy can have a great idea after all."
+    },
+    {
+     "who": "旁白",
+     "text": "大象抬起鼻子。噗！這次，牠噴了大臣一身水！",
+     "en": "The elephant lifted its trunk. Splash! This time, it sprayed the old official!"
+    }
+   ]
+  }
+ ]
+}
