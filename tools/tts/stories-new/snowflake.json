@@ -1,0 +1,366 @@
+{
+ "id": "snowflake",
+ "title": "小水滴變雪花",
+ "title_en": "The Water Drop Who Became a Snowflake",
+ "size": "中",
+ "roles": {
+  "小水滴": "愛冒險的小水滴，大約五六歲的男孩，好奇、活潑，說話又快又開心，變成雪花時又驚訝又得意。",
+  "水滴妹妹": "小水滴的好朋友，比他小一點的小女生，聲音清脆甜甜的，愛笑、有點調皮。",
+  "北風": "高山上的北風，宏亮又有點驕傲的大嗓門，其實很熱心，像一個愛幫忙的大哥哥。",
+  "小女孩": "五歲左右的小女孩，第一次在高山上看到雪，興奮又好奇，對雪花說話很溫柔。"
+ },
+ "cast": {
+  "小水滴": {
+   "find": "Xiaobao",
+   "en": "Ryan Quin"
+  },
+  "水滴妹妹": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "北風": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "角",
+   "where": "第4頁『一個角，又一個角』，第5頁、第8頁『六個角』，第10頁『六個角不見了』",
+   "read": "jiǎo"
+  },
+  {
+   "char": "結",
+   "where": "第4頁、第5頁『結成』",
+   "read": "jié"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "冬天，台灣中部的高山上面。天上飄著一朵又大又厚的灰白色雲，下面是深綠色的山和山谷，遠遠的山頂有一點白色。",
+   "act": "小水滴（淡藍色、水滴形的小男孩，身上有白色反光點、紅臉頰、短短的小手小腳）和水滴妹妹（比小水滴小一點、顏色更淺，頭頂有一個粉紅色小蝴蝶結、長睫毛）坐在雲朵邊上，晃著小腳往下看；小水滴興奮地舉起手，水滴妹妹歪著頭好奇。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天到了，天上飄著一朵大雲。",
+     "en": "Winter had come, and a big cloud was floating in the sky."
+    },
+    {
+     "who": "旁白",
+     "text": "雲裡住著小水滴和水滴妹妹。",
+     "en": "Little Drop and Sister Drop lived inside the cloud."
+    },
+    {
+     "who": "小水滴",
+     "tag": "excited",
+     "text": "我們又要出發囉！",
+     "en": "We're off on another adventure!"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "curious",
+     "text": "這一次，我們會去哪裡呢？",
+     "en": "Where will we go this time?"
+    },
+    {
+     "who": "旁白",
+     "text": "這一次，小水滴會變成一個新的樣子喔！",
+     "en": "This time, Little Drop was going to turn into something brand new!"
+    }
+   ]
+  },
+  {
+   "scene": "高高的天上，大雲被風吹著往高山飄過去，雲的邊邊被吹成一條一條的。",
+   "act": "北風（灰藍色、蓬蓬的雲朵臉，濃眉毛、鼓著臉頰，沒有手）從畫面左邊鼓起臉頰用力吹，吹出一道一道彎彎的風；大雲往右邊的高山飄；小水滴和水滴妹妹緊緊抓著雲朵，張大嘴巴笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "呼！呼！北風來了。",
+     "en": "Whoosh! Whoosh! Here came the North Wind."
+    },
+    {
+     "who": "北風",
+     "tag": "proud",
+     "text": "我是北風！我帶你們去最高的山上！",
+     "en": "I'm the North Wind! I'll take you to the highest mountain!"
+    },
+    {
+     "who": "旁白",
+     "text": "北風用力一吹，大雲飛到了高山上。",
+     "en": "He blew hard, and the big cloud flew over the tall mountains."
+    },
+    {
+     "who": "小水滴",
+     "tag": "excited",
+     "text": "哇！好高喔！",
+     "en": "Wow! We're so high!"
+    }
+   ]
+  },
+  {
+   "scene": "高山頂上方的雲裡，四周是灰白色的霧，飄著細小的白色冰粒，看起來好冷。",
+   "act": "小水滴抱著自己發抖，紅臉頰更紅了，身上開始結出一點白色的霜；水滴妹妹縮成一團，指著他驚訝地張大嘴；北風在旁邊鼓著臉頰，眨眨眼笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "山上的雲，冷極了。",
+     "en": "The cloud over the mountain was freezing cold."
+    },
+    {
+     "who": "小水滴",
+     "tag": "scared",
+     "text": "好冷，好冷！我的手腳都不能動了！",
+     "en": "So cold, so cold! I can't move my hands and feet!"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "surprised",
+     "text": "小水滴，你的身上冒出冰了！",
+     "en": "Little Drop, you're turning into ice!"
+    },
+    {
+     "who": "北風",
+     "tag": "happy",
+     "text": "別怕！你在變魔術呢！",
+     "en": "Don't be scared! You're doing a magic trick!"
+    }
+   ]
+  },
+  {
+   "scene": "同一朵很冷的雲裡，四周閃著一點一點的白光。",
+   "act": "小水滴變成一顆透明、淡藍色的小冰晶，身上冒出六個小小的尖角，臉和紅臉頰還在，他低頭看自己，一臉驚訝；水滴妹妹伸出小手指，一個一個地算他的角。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雲裡太冷了，小水滴結成了一顆小冰晶。",
+     "en": "It was so cold that Little Drop froze into a tiny ice crystal."
+    },
+    {
+     "who": "旁白",
+     "text": "他的身上，冒出了一個角，又一個角。",
+     "en": "One point popped out of him, and then another."
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "excited",
+     "text": "我來算！一個、兩個、三個、四個、五個、六個！",
+     "en": "Let me count! One, two, three, four, five, six!"
+    }
+   ]
+  },
+  {
+   "scene": "同一朵很冷的雲裡，好多小冰晶都變成了白色的雪花，在灰白色的雲霧裡閃著光。",
+   "act": "小水滴變成一片白色、六個角的雪花，臉在中間，兩手張開，開心地轉圈；水滴妹妹也變成一片小一點的雪花，頭上還是有粉紅色蝴蝶結；四周每一片雪花的花紋都不一樣。",
+   "lines": [
+    {
+     "who": "小水滴",
+     "tag": "excited",
+     "text": "六個角！我變成雪花了！",
+     "en": "Six points! I'm a snowflake!"
+    },
+    {
+     "who": "旁白",
+     "text": "在很冷的雲裡，小水滴會結成冰，變成雪花。",
+     "en": "In a very cold cloud, little water drops freeze into snowflakes."
+    },
+    {
+     "who": "旁白",
+     "text": "雪花多半有六個角，每一片都不一樣。",
+     "en": "Most snowflakes have six points, and no two are the same."
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "happy",
+     "text": "你看！我也有六個角！",
+     "en": "Look! I have six points too!"
+    }
+   ]
+  },
+  {
+   "scene": "雲的下面，灰白色的天上，好多雪花從雲裡飄出來；下面是合歡山的山頂，綠色的矮竹子和松樹。",
+   "act": "北風輕輕地吹，笑著送大家出發；小水滴和水滴妹妹兩片雪花手牽手，慢慢往下飄，像在跳舞；小水滴張開手，像一根羽毛一樣。",
+   "lines": [
+    {
+     "who": "北風",
+     "tag": "proud",
+     "text": "小雪花們，出發囉！",
+     "en": "Off you go, little snowflakes!"
+    },
+    {
+     "who": "旁白",
+     "text": "好多雪花，一起從雲裡飄下來。",
+     "en": "Lots of snowflakes floated down from the cloud."
+    },
+    {
+     "who": "旁白",
+     "text": "飄呀飄，飄呀飄，飄到了合歡山上。",
+     "en": "Down, down, they drifted, all the way to Hehuan Mountain."
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy",
+     "text": "我好輕喔，像一根小羽毛！",
+     "en": "I'm so light, like a little feather!"
+    }
+   ]
+  },
+  {
+   "scene": "合歡山上正在下雪：松樹、草地、大石頭都蓋著白雪，遠處有幾個穿厚外套的大人在看雪、拍照。",
+   "act": "小女孩（約五歲，黑色短髮，戴紅色毛線帽、帽子上有白色毛球，穿黃色厚外套、紅色手套、藍色雪靴）張開雙手在雪地裡跳，抬頭看著滿天的雪花，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "合歡山上，樹變白了，石頭也變白了。",
+     "en": "On Hehuan Mountain, the trees turned white, and so did the rocks."
+    },
+    {
+     "who": "旁白",
+     "text": "在台灣，冬天要在很高的山上，才會下雪。",
+     "en": "In Taiwan, snow only falls on very high mountains in winter."
+    },
+    {
+     "who": "小女孩",
+     "tag": "excited",
+     "text": "下雪了！下雪了！",
+     "en": "It's snowing! It's snowing!"
+    }
+   ]
+  },
+  {
+   "scene": "合歡山上的雪地，近看，背景是蓋著雪的松樹。",
+   "act": "小女孩伸出戴紅手套的手，手套上停著一片白色雪花，就是小水滴，他笑著揮手；小女孩睜大眼睛、張大嘴巴，又驚訝又開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小女孩伸出紅手套，接住了一片雪花。",
+     "en": "The girl held out her red mitten and caught a snowflake."
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "哇，你有六個角耶！",
+     "en": "Wow, you have six points!"
+    },
+    {
+     "who": "小水滴",
+     "tag": "happy",
+     "text": "你好！我本來是一顆小水滴喔！",
+     "en": "Hi! I used to be a little water drop!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "surprised",
+     "text": "水滴變成雪花？好神奇！",
+     "en": "A water drop turned into a snowflake? That's amazing!"
+    }
+   ]
+  },
+  {
+   "scene": "雪地上，一棵蓋滿雪的小松樹旁邊。",
+   "act": "小女孩踮起腳，把紅手套上的雪花小水滴輕輕放到白色的松樹枝上，笑著揮手說再見；小水滴也笑著揮手；樹枝上已經停著水滴妹妹變成的小雪花，頭上一樣有粉紅色蝴蝶結，開心地迎接他。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "小雪花，跟我回家好不好？",
+     "en": "Little snowflake, will you come home with me?"
+    },
+    {
+     "who": "小水滴",
+     "tag": "gentle",
+     "text": "我不能去喔。屋子裡太暖，我會變回水。",
+     "en": "I can't. It's too warm inside. I'd turn back into water."
+    },
+    {
+     "who": "旁白",
+     "text": "小女孩把雪花，放在白色的樹枝上。",
+     "en": "So the girl put the snowflake on a snowy branch."
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "小雪花，春天再見！",
+     "en": "Bye, little snowflake! See you in spring!"
+    }
+   ]
+  },
+  {
+   "scene": "合歡山，春天，太陽出來了，雪開始融化，露出綠色的草和小花，樹枝上滴著水珠。",
+   "act": "樹枝上的雪花變回淡藍色水滴的樣子，小水滴驚訝地摸摸頭，找不到自己的角；水滴妹妹也變回水滴，頭上的粉紅蝴蝶結還在，在旁邊開心地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "冬天過去，春天來了。",
+     "en": "Winter passed, and spring came."
+    },
+    {
+     "who": "旁白",
+     "text": "太陽一照，雪開始融化了。",
+     "en": "When the sun shone, the snow began to melt."
+    },
+    {
+     "who": "小水滴",
+     "tag": "surprised",
+     "text": "咦？我的六個角不見了！",
+     "en": "Huh? My six points are gone!"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "laughing",
+     "text": "我們變回小水滴了！",
+     "en": "We're little water drops again!"
+    }
+   ]
+  },
+  {
+   "scene": "合歡山下的小溪，春天，清清的溪水流過圓石頭，兩邊有綠草和小花。",
+   "act": "小水滴和水滴妹妹順著溪水往下滑，像在溜滑梯；小女孩（一樣戴紅色毛線帽、穿黃色外套）蹲在溪邊，把手伸進水裡，對著水裡的小水滴笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雪水流進小溪，往山下流。",
+     "en": "The melted snow ran into a stream and flowed down the mountain."
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "小雪花，是你嗎？",
+     "en": "Little snowflake, is that you?"
+    },
+    {
+     "who": "小水滴",
+     "tag": "laughing",
+     "text": "是我！我要回家囉！",
+     "en": "It's me! I'm going home!"
+    }
+   ]
+  },
+  {
+   "scene": "小溪流進大河，遠方是藍色的大海，天上又飄著白雲。",
+   "act": "小水滴和水滴妹妹在河水上跳起來，面對畫面外的小讀者張開雙手；天上的白雲旁邊，北風的雲朵臉笑著眨眼睛。",
+   "lines": [
+    {
+     "who": "小水滴",
+     "tag": "proud",
+     "text": "冬天，我是雪花；春天，我是小水滴！",
+     "en": "In winter, I'm a snowflake. In spring, I'm a water drop!"
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，下一次，北風會帶他去哪裡呢？",
+     "en": "Where will the North Wind take him next time?"
+    },
+    {
+     "who": "水滴妹妹",
+     "tag": "happy",
+     "text": "我們一起等北風吧！",
+     "en": "Let's wait for the North Wind together!"
+    }
+   ]
+  }
+ ]
+}

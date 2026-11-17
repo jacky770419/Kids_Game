@@ -1,0 +1,259 @@
+{
+ "id": "bear-veggies",
+ "title": "小熊不吃青菜",
+ "title_en": "Little Bear and the Green Beans",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊的抱抱》《小熊不想睡覺》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌，看到青菜就嘟嘴不要，在菜園玩得哈哈笑，說「是我摘的」時好得意，咬下第一口時又驚訝又開心。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，不催也不罵，笑咪咪地陪小熊。",
+  "小兔": "白色小兔子，就是《小熊上幼兒園》《小熊學分享》裡的同一隻；聲音又小又甜，活潑愛笑，愛吃青菜。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "乾",
+   "where": "第5頁『洗乾淨』",
+   "read": "gān"
+  },
+  {
+   "char": "折",
+   "where": "第5頁『折成小段』",
+   "read": "zhé"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "晚上，小熊家的餐桌：小熊的盤子裡有白飯、一塊煎魚，和一堆綠色的四季豆。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花。小熊用叉子把四季豆一根一根推到盤子邊上，皺著鼻子、嘟著嘴；熊媽媽坐在對面，笑著看他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "吃晚飯了。盤子裡有魚，有飯，也有四季豆。",
+     "en": "It's dinnertime. On the plate there's fish, rice, and green beans."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊把四季豆，推到盤子的最旁邊。",
+     "en": "Little Bear pushes the green beans to the edge of his plate."
+    },
+    {
+     "who": "小熊",
+     "tag": "grumpy",
+     "text": "綠色的，我不要吃！",
+     "en": "They're green. I don't want them!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "好，那今天先不吃。",
+     "en": "Okay. You don't have to eat them today."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，小熊家門口，陽光很好。",
+   "act": "小兔是白色的小兔子，長耳朵內側是粉紅色，穿黃色吊帶裙，頭上夾一個紅色小髮夾。小兔提著一個小竹籃，站在門口開心地揮手；小熊從門裡跑出來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天早上，小兔來找小熊。",
+     "en": "The next morning, Little Bunny comes to see Little Bear."
+    },
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "小熊，我們去菜園摘菜，好不好？",
+     "en": "Little Bear, do you want to pick vegetables in the garden?"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "摘菜？好啊，我要去！",
+     "en": "Pick vegetables? Okay, I want to go!"
+    }
+   ]
+  },
+  {
+   "scene": "小兔家的菜園：一排竹架上爬滿綠色的豆藤，掛滿細長的四季豆；旁邊一排紅蘿蔔露出綠葉子，還有幾顆圓圓的高麗菜。",
+   "act": "小熊踮著腳摘下一根四季豆，橫放在嘴巴上面當成綠色的鬍子，擠眉弄眼；小兔抱著肚子笑彎了腰。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "原來四季豆，是掛在藤上的！",
+     "en": "So green beans hang on vines!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊摘下一根，放在嘴巴上面。",
+     "en": "Little Bear picks one and holds it over his lip."
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "你看，我有綠色的鬍子！",
+     "en": "Look! I have a green mustache!"
+    },
+    {
+     "who": "小兔",
+     "tag": "laughing",
+     "text": "哈哈，小熊變成熊爺爺了！",
+     "en": "Ha ha! You look like Grandpa Bear!"
+    }
+   ]
+  },
+  {
+   "scene": "小兔家的菜園，竹架和豆藤。",
+   "act": "小熊和小兔一起摘四季豆，小竹籃裝得滿滿的；小熊額頭冒汗，抱著籃子，得意地抬起下巴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "摘一根，啪！再摘一根，啪！",
+     "en": "Pick one, snap! Pick another, snap!"
+    },
+    {
+     "who": "旁白",
+     "text": "小竹籃，一下子就裝滿了。",
+     "en": "Soon the little basket is full."
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "這些四季豆，是你摘的喔！",
+     "en": "You picked these green beans yourself!"
+    },
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "對！是我摘的！",
+     "en": "Yes! I picked them!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的廚房：水槽、爐子，鍋子冒著熱氣。",
+   "act": "小熊站在小板凳上，在水龍頭下洗四季豆，再把豆子折成小段；熊媽媽在爐子前拿著鍋鏟炒菜；小兔在旁邊捧著盤子等。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "媽媽，我也要一起煮！",
+     "en": "Mama, I want to cook too!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "好呀，你來洗，媽媽來炒。",
+     "en": "Sure! You wash, and I'll cook."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊把四季豆洗乾淨，折成小段。",
+     "en": "Little Bear washes the beans and snaps them into little pieces."
+    },
+    {
+     "who": "旁白",
+     "text": "鍋子熱了，廚房好香喔！",
+     "en": "The pan gets hot. The kitchen smells so good!"
+    }
+   ]
+  },
+  {
+   "scene": "晚上，小熊家的餐桌，中間放著一盤綠色發亮的炒四季豆。",
+   "act": "小兔用叉子叉起四季豆大口吃，吃得好開心；小熊用叉子叉起一根四季豆，盯著看，有點猶豫；熊媽媽坐在旁邊，不說話，只是微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "炒四季豆上桌了。",
+     "en": "The green beans are on the table."
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "嗯，好脆，好香！",
+     "en": "Mmm! So crunchy, so tasty!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊看著自己摘的四季豆。",
+     "en": "Little Bear looks at the beans he picked."
+    },
+    {
+     "who": "小熊",
+     "text": "我摘的，我洗的，那我吃一口。",
+     "en": "I picked them. I washed them. So I'll take one bite."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐桌。",
+   "act": "小熊咬下一口四季豆，眼睛睜得好大，頭上冒出幾顆小星星；接著他又用叉子叉起好幾根；小兔拍手，熊媽媽偷偷笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊咬了一口。",
+     "en": "Little Bear takes a bite."
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "咦？好脆，也有一點甜！",
+     "en": "Huh? It's crunchy, and a little sweet!"
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "我要再吃一口！",
+     "en": "I want another bite!"
+    },
+    {
+     "who": "旁白",
+     "text": "一口，又一口，四季豆全部吃光了。",
+     "en": "One bite, then another, until all the beans are gone."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的餐桌，盤子裡一根四季豆都不剩。",
+   "act": "小熊高高舉起盤子給媽媽看，嘴巴上面黏著一小段四季豆，像綠色的鬍子；熊媽媽和小兔指著他哈哈笑。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "媽媽妳看，我吃光了！",
+     "en": "Look, Mama! I ate them all!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "laughing",
+     "text": "你的綠色鬍子，又跑出來了！",
+     "en": "Your green mustache is back!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "明天，我想去摘別的菜！",
+     "en": "Tomorrow, I want to pick other vegetables!"
+    },
+    {
+     "who": "旁白",
+     "text": "自己摘的菜，最好吃。你也來試一次吧！",
+     "en": "Veggies you pick yourself taste the best. Why not give it a try?"
+    }
+   ]
+  }
+ ]
+}

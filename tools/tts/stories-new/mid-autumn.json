@@ -1,0 +1,259 @@
+{
+ "id": "mid-autumn",
+ "title": "小美的中秋節",
+ "title_en": "Mei's Mid-Autumn Night",
+ "size": "短",
+ "roles": {
+  "小美": "五歲左右的小女孩，聲音細細甜甜的，愛想像，看月亮時又好奇又興奮，說悄悄話時好溫柔。",
+  "阿福": "六歲左右的小男孩，聲音清亮、很有精神，愛吃又愛笑，看到小美戴柚子帽笑得最大聲。",
+  "奶奶": "村子裡的老奶奶，聲音慈祥溫和、笑咪咪的，講月亮的故事時慢慢地、帶點神祕。",
+  "玉兔": "月亮上的白色小兔子，只出現在小美的想像裡，聲音小小的、甜甜的，熱情又可愛。"
+ },
+ "cast": {
+  "小美": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "阿福": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "玉兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "柚",
+   "where": "第2頁『大柚子』『柚子皮』『柚子帽』『一顆柚子』『柚子公主』，第7頁『柚子帽』",
+   "read": "yòu"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "村子裡奶奶家的院子，中秋節晚上，天是深藍色的，有幾朵雲，還看不到月亮；院子中間有一個小烤肉架，冒著煙和紅紅的炭火；旁邊的木桌上擺著香腸、玉米、吐司、一盤月餅和一顆綠色的大柚子。",
+   "act": "小美（約五歲女孩，綁兩個包包頭、繫紅色髮圈，穿粉紅色長袖盤扣薄衫、紅褲紅鞋）拿著一串烤香腸，開心地舉高；阿福（約六歲男孩，黑色短髮，穿藍色長袖盤扣薄衫、黑褲、黑布鞋）站在烤肉架一步外，捧著盤子等烤玉米，聞得瞇起眼睛笑；奶奶（灰白頭髮梳成髮髻、不戴眼鏡，穿深綠色長袖盤扣薄衫、黑褲）用夾子翻玉米、刷烤肉醬。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "中秋節晚上，大家在院子裡烤肉。",
+     "en": "On the night of the Mid-Autumn Festival, everyone had a barbecue in the yard."
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "玉米烤好了！好香喔！",
+     "en": "The corn is ready! It smells so good!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "我要吃香腸！",
+     "en": "I want a sausage!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "中秋節，台灣很多人都會烤肉喔。",
+     "en": "In Taiwan, lots of families have a barbecue on Mid-Autumn night."
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，烤肉架旁邊的木桌。",
+   "act": "奶奶把大柚子剝開，把半個柚子皮像一頂帽子，戴在小美頭上，蓋住兩個包包頭；小美摸摸頭上的柚子帽，得意地笑；阿福笑得抱著肚子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "奶奶打開一顆大柚子。",
+     "en": "Grandma opened a big pomelo, a fruit like a giant orange."
+    },
+    {
+     "who": "旁白",
+     "text": "她把柚子皮，戴在小美頭上。",
+     "en": "She put the pomelo peel on Mei's head."
+    },
+    {
+     "who": "奶奶",
+     "tag": "laughing",
+     "text": "小美，送你一頂柚子帽！",
+     "en": "Mei, here's a pomelo hat for you!"
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "小美變成一顆柚子了！",
+     "en": "Mei turned into a pomelo!"
+    },
+    {
+     "who": "小美",
+     "tag": "proud",
+     "text": "我是柚子公主！",
+     "en": "I'm the Pomelo Princess!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，天上的雲還遮著月亮，只透出一點白光。",
+   "act": "奶奶端出一盤月餅放在桌上；阿福拿起一個月餅咬一口；小美戴著柚子帽，抬頭東看西看，在雲裡找月亮。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "吃月餅囉！",
+     "en": "Time for mooncakes!"
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "月餅真好吃！",
+     "en": "Mooncakes are so yummy!"
+    },
+    {
+     "who": "旁白",
+     "text": "月餅很圓，就像中秋節的月亮。",
+     "en": "Mooncakes are round, just like the Mid-Autumn moon."
+    },
+    {
+     "who": "小美",
+     "tag": "curious",
+     "text": "咦，月亮在哪裡呢？",
+     "en": "Hmm, where's the moon?"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，雲飄開了，天上露出一個又大又圓的金黃色月亮，月光照亮整個院子。",
+   "act": "阿福張大嘴巴，手上的月餅差點掉下去；小美戴著柚子帽，踮起腳尖，對月亮用力揮手；奶奶抬頭微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "雲飄走了，大月亮出來了！",
+     "en": "The clouds drifted away, and out came the big moon!"
+    },
+    {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "哇！好大，好亮！",
+     "en": "Wow! So big and bright!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "月亮，你好！",
+     "en": "Hello, moon!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大月亮下面，月亮上有淡淡的灰色影子。",
+   "act": "奶奶坐在竹椅上，指著月亮上的影子，慢慢地說；小美靠在奶奶腿邊，瞇著眼睛看月亮；阿福也湊過來。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "聽說，月亮上住著一隻玉兔喔。",
+     "en": "They say a little rabbit called the Jade Rabbit lives on the moon."
+    },
+    {
+     "who": "小美",
+     "tag": "curious",
+     "text": "玉兔？牠在做什麼呢？",
+     "en": "The Jade Rabbit? What is it doing?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "你閉上眼睛，想一想看。",
+     "en": "Close your eyes and imagine."
+    }
+   ]
+  },
+  {
+   "scene": "小美的想像泡泡：月亮上，一棵開著小黃花的桂花樹下面，地上是銀白色的。",
+   "act": "泡泡裡，玉兔（白色、紅眼睛、長耳朵）石碗放在腳邊，一手拿著木棒，另一手對著小美揮手，嘴邊沾著月餅屑；泡泡外，小美閉著眼睛，雙手合在胸前微笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小美閉上眼睛，好像看見玉兔在揮手。",
+     "en": "Mei closed her eyes, and she seemed to see the rabbit waving."
+    },
+    {
+     "who": "玉兔",
+     "tag": "happy",
+     "text": "小美，你好！我也在吃月餅喔！",
+     "en": "Hi, Mei! I'm eating mooncakes too!"
+    },
+    {
+     "who": "玉兔",
+     "text": "月亮上，也在過中秋喔！",
+     "en": "We're having Mid-Autumn up here too!"
+    },
+    {
+     "who": "小美",
+     "tag": "whispering",
+     "text": "玉兔，你好！",
+     "en": "Hi, Jade Rabbit!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，大月亮下面。",
+   "act": "小美睜開眼睛，興奮地拉著奶奶的袖子；阿福東張西望，踮腳對著月亮找玉兔；奶奶摸摸兩個孩子的頭，笑咪咪。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "奶奶，玉兔跟我揮手了！",
+     "en": "Grandma, the Jade Rabbit waved at me!"
+    },
+    {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "在哪裡？我也要看！",
+     "en": "Where? I want to see!"
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "玉兔是不是也戴柚子帽？",
+     "en": "Is the rabbit wearing a pomelo hat too?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "laughing",
+     "text": "月亮那麼亮，玉兔一定也看見你們了。",
+     "en": "The moon is so bright. I'm sure the rabbit can see you too."
+    }
+   ]
+  },
+  {
+   "scene": "院子全景，晚上，天上一個大大的金黃色月亮，院子裡的烤肉架還冒著一點煙，桌上有月餅和柚子。",
+   "act": "奶奶、阿福和小美坐在一起，一邊吃月餅一邊抬頭看月亮；小美戴著柚子帽，轉過頭對畫面外的小讀者揮手；遠遠的月亮上，好像有一隻小兔子的影子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天上的月亮很圓，院子裡的大家，也團圓在一起。",
+     "en": "The moon was full and round, and everyone in the yard was together."
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "明年中秋，我們再一起看月亮！",
+     "en": "Next Mid-Autumn, let's watch the moon together again!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "中秋節，大家在一起，真好！",
+     "en": "On Mid-Autumn night, being together is the best!"
+    }
+   ]
+  }
+ ]
+}

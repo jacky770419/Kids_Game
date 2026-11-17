@@ -1,0 +1,252 @@
+{
+ "id": "bear-lost",
+ "title": "小熊在市場走丟了",
+ "title_en": "Little Bear Gets Lost",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊的抱抱》《小熊不想睡覺》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌，在市場好奇又興奮，找不到媽媽時害怕、快哭了，想起媽媽的話後慢慢鎮定，說出媽媽名字時很勇敢、很得意。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，回想畫面裡的叮嚀穩穩的、很安心；找到小熊時又鬆一口氣又開心。",
+  "猴子阿姨": "市場玩具攤的猴子阿姨，年輕溫柔的女聲，說話親切輕快，蹲下來跟小熊說話，讓人一聽就安心。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "猴子阿姨": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "場",
+   "where": "第1頁『去市場』『市場好熱鬧』",
+   "read": "chǎng"
+  },
+  {
+   "char": "吐",
+   "where": "第4頁『吐一口氣』",
+   "read": "tǔ"
+  },
+  {
+   "char": "什",
+   "where": "第6頁『叫什麼名字』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "星期六早上，熱鬧的市場：一排排攤子搭著紅色和綠色的遮陽棚，賣水果、蔬菜、魚和玩具，好多動物提著菜籃走來走去。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花，手上提著菜籃。小熊牽著熊媽媽的手，東張西望，看什麼都新鮮。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "星期六早上，小熊跟媽媽去市場。",
+     "en": "On Saturday morning, Little Bear goes to the market with Mama."
+    },
+    {
+     "who": "旁白",
+     "text": "市場好熱鬧，好多人在買菜。",
+     "en": "The market is busy. Lots of people are shopping."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "人好多，要牽好媽媽的手喔。",
+     "en": "It's crowded. Hold Mama's hand tight."
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "好，我牽好了！",
+     "en": "Okay, I'm holding on!"
+    }
+   ]
+  },
+  {
+   "scene": "市場裡的水果攤，擺滿紅蘋果和黃香蕉；旁邊是一個賣泡泡水和彩色風車的玩具攤，飄出好多彩色泡泡。",
+   "act": "熊媽媽放開手，低頭從錢包拿錢買蘋果；小熊轉頭看見彩色泡泡，伸手去抓，一步一步往玩具攤那邊走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "媽媽放開手，拿錢買蘋果。",
+     "en": "Mama lets go of his hand to pay for some apples."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，好多泡泡飄過來。",
+     "en": "Just then, lots of bubbles float by."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "哇！一個，兩個，三個！",
+     "en": "Wow! One, two, three!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊追著泡泡，走呀走。",
+     "en": "Little Bear follows the bubbles, on and on."
+    }
+   ]
+  },
+  {
+   "scene": "市場走道中間，四周都是大動物的腳和菜籃，看不到水果攤。",
+   "act": "小熊站在一群高大的動物中間，回頭找媽媽，眼睛睜得好大，嘴巴扁扁的，快要哭了；畫面不要可怕，大家都是普通在買菜的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "泡泡破了，小熊回頭一看。",
+     "en": "Pop! The bubbles are gone. Little Bear looks back."
+    },
+    {
+     "who": "小熊",
+     "tag": "scared",
+     "text": "媽媽呢？媽媽不見了！",
+     "en": "Where's Mama? Mama's gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊的心，咚咚跳。他好想哭，好想跑。",
+     "en": "His heart goes thump, thump. He wants to cry. He wants to run."
+    }
+   ]
+  },
+  {
+   "scene": "市場走道中間，旁邊就是那個賣泡泡水和風車的玩具攤。",
+   "act": "小熊停下來，兩隻腳站穩，雙手放在肚子上深呼吸；頭上冒出一個想像泡泡，裡面是熊媽媽蹲著、溫柔叮嚀他的樣子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小熊想起媽媽說過的話。",
+     "en": "Then Little Bear remembers what Mama told him."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "第一，站在原地，不要跑。",
+     "en": "One. Stay where you are. Don't run."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊站好，吸一口氣，吐一口氣。",
+     "en": "Little Bear stands still. He breathes in, and breathes out."
+    },
+    {
+     "who": "小熊",
+     "text": "我不跑，我站在這裡等。",
+     "en": "I won't run. I'll wait right here."
+    }
+   ]
+  },
+  {
+   "scene": "玩具攤：攤子上掛滿彩色風車和一瓶瓶泡泡水，招牌畫著一個大泡泡；小熊就站在攤子旁邊。",
+   "act": "猴子阿姨是一隻淺棕色的猴子，米色的臉，長尾巴捲成一個圈，穿著綠色的制服背心，胸前別著一個白色名牌，她站在攤子後面吹泡泡。小熊頭上的想像泡泡裡，熊媽媽伸出兩根手指；小熊抬頭看著猴子阿姨，小小聲地開口。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "第二，找店員或穿制服的人幫忙。",
+     "en": "Two. Ask a shopkeeper or someone in a uniform for help."
+    },
+    {
+     "who": "旁白",
+     "text": "猴子阿姨是店員，穿著綠色制服。",
+     "en": "Monkey Lady is a shopkeeper in a green uniform."
+    },
+    {
+     "who": "小熊",
+     "text": "阿姨，我找不到媽媽了。",
+     "en": "Excuse me, I can't find my mama."
+    },
+    {
+     "who": "猴子阿姨",
+     "tag": "gentle",
+     "text": "別怕，阿姨陪你。",
+     "en": "Don't worry. I'll stay with you."
+    }
+   ]
+  },
+  {
+   "scene": "玩具攤，攤子邊上掛著一支市場廣播用的麥克風。",
+   "act": "左邊：猴子阿姨蹲下來，跟小熊一樣高，牽著他的手；小熊挺起胸，伸出三根手指。右邊：猴子阿姨拿著麥克風說話，市場的喇叭傳出聲音。",
+   "lines": [
+    {
+     "who": "猴子阿姨",
+     "tag": "gentle",
+     "text": "你媽媽叫什麼名字？",
+     "en": "What's your mama's name?"
+    },
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "第三，說出媽媽的名字！我媽媽叫熊小花！",
+     "en": "Three. Say Mama's name! My mama is Rosie Bear!"
+    },
+    {
+     "who": "猴子阿姨",
+     "text": "熊小花小姐，您的小熊在玩具攤等您。",
+     "en": "Calling Rosie Bear! Your little bear is waiting at the toy stall."
+    }
+   ]
+  },
+  {
+   "scene": "玩具攤前面，彩色泡泡在空中飄。",
+   "act": "熊媽媽提著菜籃快步跑過來，蹲下緊緊抱住小熊；小熊抱著媽媽笑了；猴子阿姨在旁邊笑著拍手。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "小熊！媽媽在這裡！",
+     "en": "Little Bear! Mama's here!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "媽媽！我站著不動，等妳來！",
+     "en": "Mama! I stayed still and waited for you!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "你好勇敢！謝謝猴子阿姨。",
+     "en": "You were so brave! Thank you, Monkey Lady."
+    },
+    {
+     "who": "猴子阿姨",
+     "tag": "happy",
+     "text": "不客氣！這個泡泡棒送你。",
+     "en": "You're welcome! Here's a bubble wand for you."
+    }
+   ]
+  },
+  {
+   "scene": "市場出口，陽光很好，遮陽棚在後面。",
+   "act": "小熊一手牽著熊媽媽，一手拿著猴子阿姨送的泡泡棒，一邊走一邊伸出手指，一根一根比；熊媽媽笑著聽。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "我們再說一次，好不好？",
+     "en": "Let's say it one more time, okay?"
+    },
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "站在原地，找店員或穿制服的人，說出媽媽的名字！",
+     "en": "Stay where you are. Ask a shopkeeper or someone in a uniform. Say Mama's name!"
+    },
+    {
+     "who": "旁白",
+     "text": "你也記住了嗎？跟小熊一起說一次吧！",
+     "en": "Do you remember too? Say it with Little Bear!"
+    }
+   ]
+  }
+ ]
+}

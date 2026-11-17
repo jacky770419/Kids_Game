@@ -1,0 +1,379 @@
+{
+ "id": "bear-winter",
+ "title": "小熊要冬眠",
+ "title_en": "Little Bear's Long Winter Sleep",
+ "size": "中",
+ "roles": {
+  "小熊": "就是《小熊的抱抱》《小熊不想睡覺》裡的小熊：三四歲的小男孩聲音，活潑、愛撒嬌，愛吃，秋天吃東西時開心大聲，跟朋友說再見時有點捨不得，快睡著時聲音又小又慢，春天醒來又驚喜又興奮。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，講冬眠的事像在說一個溫暖的祕密，說晚安時很輕很柔。",
+  "松鼠": "橘紅色的小松鼠，聲音又尖又細、說話很快，忙個不停，熱心又愛笑。",
+  "小鳥": "藍色的小鳥，像小妹妹的聲音，又甜又輕快，說再見時溫柔，回來時好興奮。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "松鼠": {
+   "find": "Stacy",
+   "en": "kids_Macy"
+  },
+  "小鳥": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "什",
+   "where": "第4頁『做什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "會",
+   "where": "第2頁『會冬眠』『會變成』、第4頁『會出來』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『沒關係』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "秋天的森林：樹葉變成紅色和黃色，一片一片往下飄，地上鋪滿落葉；旁邊有一叢掛滿紅色莓果的矮樹，遠處有一座大山。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花，手上提著一個籃子。小熊坐在莓果叢旁邊，兩手抓滿紅色莓果往嘴裡塞，嘴邊沾著紅色果汁；熊媽媽站在旁邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天到了，樹葉變紅了，也變黃了。",
+     "en": "Autumn is here. The leaves turn red and yellow."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊在森林裡，吃紅色的莓果。",
+     "en": "In the forest, Little Bear eats red berries."
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "好甜喔！我要再吃一把！",
+     "en": "So sweet! I want another handful!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "吃吧，秋天要多吃一點喔。",
+     "en": "Go ahead. In autumn, bears eat lots and lots."
+    }
+   ]
+  },
+  {
+   "scene": "秋天的森林，莓果叢旁邊，遠處大山的山腳下有一個黑色的山洞口。",
+   "act": "小熊嘴邊沾著果汁，歪著頭問媽媽；熊媽媽蹲下來，一手指著遠處的山洞，一手輕輕拍拍小熊的肚子。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "媽媽，秋天怎麼要吃這麼多？",
+     "en": "Mama, why do we eat so much in autumn?"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "冬天好冷，森林裡找不到東西吃。",
+     "en": "Winter is very cold. There is no food to find in the forest."
+    },
+    {
+     "who": "熊媽媽",
+     "text": "我們熊會冬眠，在山洞裡睡一整個冬天。",
+     "en": "So we bears hibernate. We sleep in a cave all winter long."
+    },
+    {
+     "who": "熊媽媽",
+     "text": "秋天吃的東西，會變成脂肪，陪我們過冬。",
+     "en": "The food we eat in autumn turns into fat. It keeps us going all winter."
+    }
+   ]
+  },
+  {
+   "scene": "秋天的森林：一棵掛滿紅蘋果的樹、樹幹上一個滴著蜂蜜的蜂窩，旁邊有一條清澈的小河。",
+   "act": "連續的小畫面：小熊抱著一顆紅蘋果啃、小熊舔著沾滿蜂蜜的手掌、小熊站在小河裡抓起一條銀色的魚；最後一格，小熊的肚子變得圓圓鼓鼓，他得意地拍著肚子，熊媽媽在河邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊吃蘋果，吃蜂蜜，也到小河裡抓魚。",
+     "en": "Little Bear eats apples and honey. He catches fish in the river, too."
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "吃一口，再吃一口！",
+     "en": "One bite, and another bite!"
+    },
+    {
+     "who": "旁白",
+     "text": "他的肚子，好像一顆大皮球！",
+     "en": "His tummy looks like a big ball!"
+    },
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "媽媽妳看，我變胖了！",
+     "en": "Look, Mama! I'm getting fat!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "laughing",
+     "text": "變胖沒關係，冬天就靠它了。",
+     "en": "That's okay! Your fat will help you all winter."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡一棵大橡樹，樹幹中間有一個圓形的樹洞，樹下的落葉堆裡有好多橡實和松果。",
+   "act": "松鼠是一隻橘紅色的小松鼠，白色的肚子，蓬鬆的大尾巴，脖子上圍一條綠色小圍巾。松鼠兩頰鼓起來，抱著一顆松果，在樹幹上跑上跑下，把果子塞進樹洞；小熊挺著圓肚子站在樹下，抬頭看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊遇到了松鼠。松鼠跑上跑下，好忙喔。",
+     "en": "Little Bear meets Squirrel. Squirrel runs up and down. She is so busy!"
+    },
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "松鼠，你在做什麼？",
+     "en": "Squirrel, what are you doing?"
+    },
+    {
+     "who": "松鼠",
+     "tag": "excited",
+     "text": "我在收果子！收進樹洞裡，冬天再拿出來吃。",
+     "en": "I'm gathering nuts! I put them in my tree hole, and in winter I take them out to eat."
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "你冬天不睡嗎？",
+     "en": "You don't sleep all winter?"
+    },
+    {
+     "who": "松鼠",
+     "tag": "happy",
+     "text": "不睡！冬天我會出來，吃我的果子。",
+     "en": "Nope! In winter I come out and eat my nuts."
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的大樹，天空是淡藍色的，遠方有一排小鳥往南邊飛。",
+   "act": "小鳥是一隻藍色的小鳥，白色的肚子，黃色的小嘴巴。小鳥站在低低的樹枝上，張開翅膀準備飛；小熊和松鼠站在樹下，抬頭看著小鳥，小熊的嘴巴扁扁的，有點捨不得。",
+   "lines": [
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "小熊，松鼠，我要飛走了！",
+     "en": "Little Bear, Squirrel, I'm flying away!"
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "你要去哪裡？",
+     "en": "Where are you going?"
+    },
+    {
+     "who": "小鳥",
+     "text": "天氣變冷了，我要飛去溫暖的南方。",
+     "en": "It's getting cold. I'm flying to the warm south."
+    },
+    {
+     "who": "小鳥",
+     "tag": "gentle",
+     "text": "春天的時候，我就回來。",
+     "en": "I'll come back in spring."
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的大樹下，地上都是落葉，天空飄著幾朵灰色的雲。",
+   "act": "小熊用力揮手；松鼠把一顆又大又漂亮的松果放進小熊手裡；小鳥飛到天空，回頭揮著翅膀。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "再見，小鳥！再見，松鼠！",
+     "en": "Bye-bye, Bird! Bye-bye, Squirrel!"
+    },
+    {
+     "who": "松鼠",
+     "tag": "gentle",
+     "text": "這顆松果送你。春天見！",
+     "en": "This pine cone is for you. See you in spring!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "春天見！",
+     "en": "See you in spring!"
+    },
+    {
+     "who": "小熊",
+     "text": "春天見！",
+     "en": "See you in spring!"
+    }
+   ]
+  },
+  {
+   "scene": "山腳下的山洞，洞口外開始飄下小雪；洞裡地上鋪著厚厚的樹葉和枯草，像一張大床。",
+   "act": "熊媽媽用手把樹葉和枯草鋪平；小熊抱著那顆松果，站在洞口看雪花，打了一個大大的呵欠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第一片雪花，飄下來了。",
+     "en": "The first snowflake floats down."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "小熊，我們進山洞吧。",
+     "en": "Little Bear, let's go into the cave."
+    },
+    {
+     "who": "旁白",
+     "text": "洞裡鋪滿樹葉和枯草，好溫暖。",
+     "en": "The cave is full of leaves and dry grass. It is warm and cozy."
+    },
+    {
+     "who": "小熊",
+     "tag": "sleepy",
+     "text": "媽媽，我要睡多久？",
+     "en": "Mama, how long will I sleep?"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "睡一整個冬天。醒來，春天就到了。",
+     "en": "All winter long. When you wake up, spring will be here."
+    }
+   ]
+  },
+  {
+   "scene": "山洞裡，樹葉和枯草鋪成的床；洞口外雪越下越大。",
+   "act": "小熊縮成一團，抱著松果閉上眼睛；熊媽媽側躺著，把小熊圈在懷裡，輕輕摸他的頭。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "sleepy",
+     "text": "晚安，媽媽。",
+     "en": "Good night, Mama."
+    },
+    {
+     "who": "小熊",
+     "tag": "sleepy",
+     "text": "晚安，松鼠。晚安，小鳥。",
+     "en": "Good night, Squirrel. Good night, Bird."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "whispering",
+     "text": "晚安，小熊。春天見。",
+     "en": "Good night, Little Bear. See you in spring."
+    }
+   ]
+  },
+  {
+   "scene": "冬天，整座山都是白色的雪，山洞口被雪蓋住一半；旁邊大橡樹的樹洞口也積著雪。",
+   "act": "畫面分兩邊：左邊是山洞裡，小熊和熊媽媽靠在一起睡，肚子慢慢一起一伏，小熊懷裡還抱著松果；右邊是大橡樹，松鼠從樹洞探出頭，抱著一顆橡實在吃。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "外面下著大雪，好冷，好冷。",
+     "en": "Outside, the snow falls. It's cold, so cold."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊和媽媽在洞裡睡，呼，呼。",
+     "en": "Inside the cave, Little Bear and Mama sleep. Snore, snore."
+    },
+    {
+     "who": "旁白",
+     "text": "他們不吃東西，靠身上的脂肪過冬。",
+     "en": "They don't eat anything. The fat on their bodies keeps them going."
+    },
+    {
+     "who": "旁白",
+     "text": "樹洞裡的松鼠，正在吃她收好的果子呢。",
+     "en": "In her tree hole, Squirrel is eating the nuts she saved."
+    }
+   ]
+  },
+  {
+   "scene": "春天，雪融化了，山洞口開滿黃色和白色的小花，陽光照進山洞。",
+   "act": "小熊坐起來伸一個大懶腰，低頭摸著變小、變扁的肚子，一臉驚訝；熊媽媽也醒了，坐在旁邊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，太陽照進山洞。雪融化了，花開了。",
+     "en": "One day, the sun shines into the cave. The snow melts. Flowers bloom."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊醒來了！",
+     "en": "Little Bear wakes up!"
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "咦？我的肚子，變小了！",
+     "en": "Huh? My tummy got smaller!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "你的脂肪，陪你過完冬天了。",
+     "en": "Your fat kept you going all winter long."
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "難怪我好餓喔！",
+     "en": "No wonder I'm so hungry!"
+    }
+   ]
+  },
+  {
+   "scene": "春天的森林：樹上冒出綠色的嫩葉，草地上開滿花，大橡樹下擺著一堆松果和橡實。",
+   "act": "小熊衝出山洞，張開雙手；小鳥從天上飛回來，停在低低的樹枝上；松鼠從大橡樹跳下來，兩手捧著一顆橡實；熊媽媽走在後面笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊跑出山洞，大家都在等他。",
+     "en": "Little Bear runs out of the cave. Everyone is waiting for him."
+    },
+    {
+     "who": "松鼠",
+     "tag": "excited",
+     "text": "小熊，你醒了！我請你吃果子！",
+     "en": "Little Bear, you're awake! Have some nuts!"
+    },
+    {
+     "who": "小鳥",
+     "tag": "happy",
+     "text": "我也從南方回來了！",
+     "en": "And I'm back from the south!"
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "春天到了，我們又見面了！",
+     "en": "Spring is here, and we're together again!"
+    }
+   ]
+  }
+ ]
+}

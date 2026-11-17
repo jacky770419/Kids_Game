@@ -1,0 +1,375 @@
+{
+ "id": "bear-school",
+ "title": "小熊上幼兒園",
+ "title_en": "Little Bear Goes to School",
+ "size": "中",
+ "roles": {
+  "小熊": "就是《小熊不想睡覺》《小熊看牙醫》裡的小熊：小男孩的聲音，活潑、愛撒嬌，第一天上學時捨不得媽媽、委屈小聲，交到朋友後越來越開心，最後大聲又興奮。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑。",
+  "兔子老師": "幼兒園的兔子老師，年輕女聲，溫柔又有精神，說話清楚、帶著笑。",
+  "小兔": "小熊在幼兒園的好朋友，聲音又小又甜、活潑熱情，說話輕快。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "兔子老師": {
+   "find": "Lee Ting Ting",
+   "en": "Hope - Vibrant"
+  },
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "教",
+   "where": "第4頁『教室』",
+   "read": "jiào"
+  },
+  {
+   "char": "會",
+   "where": "第7頁『會不會』",
+   "read": "huì"
+  },
+  {
+   "char": "什",
+   "where": "第2頁『什麼時候』",
+   "read": "shén"
+  },
+  {
+   "char": "鑽",
+   "where": "第8頁『鑽到傘下面』",
+   "read": "zuān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上，小熊家門口：木頭小屋、綠色的門，門前有一條小路通往遠方；天空晴朗，路邊開著小黃花。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服，背上背著一個黃色的小書包。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花。小熊兩手緊緊抱住熊媽媽的腿，嘴巴扁扁的快要哭了；熊媽媽低頭，溫柔地摸他的頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "今天，是小熊第一天上幼兒園。",
+     "en": "Today is Little Bear's first day of school."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊抱著媽媽的腿，像一隻小無尾熊，不肯放開。",
+     "en": "Little Bear hugs Mama's leg like a little koala and won't let go."
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "媽媽，我可以不要去嗎？",
+     "en": "Mama, can I please stay home?"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "去看一下嘛，幼兒園很好玩喔。",
+     "en": "Let's just go and see. School is lots of fun."
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園門口：彩色的木頭圍籬，紅屋頂的小房子，院子裡有溜滑梯和沙坑。",
+   "act": "兔子老師是灰色的大兔子，戴圓眼鏡，穿淡綠色長裙，站在門口彎腰揮手，笑得好親切。小熊躲在熊媽媽身後，只探出半張臉，小手拉著媽媽的圍裙。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "幼兒園門口，站著一位兔子老師。",
+     "en": "At the school gate stands Teacher Rabbit."
+    },
+    {
+     "who": "兔子老師",
+     "tag": "happy",
+     "text": "你好，小熊！歡迎你來。",
+     "en": "Hello, Little Bear! Welcome!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊躲到媽媽後面，小聲地問：",
+     "en": "Little Bear hides behind Mama and whispers,"
+    },
+    {
+     "who": "小熊",
+     "tag": "scared",
+     "text": "媽媽，妳什麼時候來接我？",
+     "en": "Mama, when will you come back for me?"
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園門口，同一個早上。",
+   "act": "熊媽媽蹲下來，伸出三根手指頭，一根一根比給小熊看；小熊也伸出手指跟著比，眼睛睜得好大。兔子老師在旁邊微笑。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "你先玩一玩，再吃點心，再睡午睡。",
+     "en": "First you play, then you have a snack, then you take a nap."
+    },
+    {
+     "who": "熊媽媽",
+     "text": "睡醒了，媽媽就來接你。",
+     "en": "When you wake up, Mama will come for you."
+    },
+    {
+     "who": "小熊",
+     "text": "玩一玩，吃點心，睡午睡。",
+     "en": "Play, snack, nap."
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽抱了小熊一下，揮手說再見。",
+     "en": "Mama gives Little Bear a hug and waves goodbye."
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園的教室：明亮的大窗戶，牆上貼著小朋友畫的圖，地上鋪著彩色地墊；小鴨、小豬、小狗在玩玩具。",
+   "act": "小熊一個人坐在教室角落，抱著黃色小書包，眼睛泛著淚光。小兔是白色的小兔，長耳朵內側是粉紅色，穿黃色吊帶裙，頭上夾著一個紅色小髮夾；她蹦蹦跳跳地走過來，歪著頭對小熊笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "教室裡好熱鬧，可是小熊一個人坐在牆邊。",
+     "en": "The classroom is busy and noisy, but Little Bear sits all alone by the wall."
+    },
+    {
+     "who": "旁白",
+     "text": "他好想媽媽，眼睛都紅了。",
+     "en": "He misses Mama so much. His eyes turn red."
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，一隻小兔跳了過來。",
+     "en": "Just then, a little bunny hops over."
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "你好，我叫小兔。你要不要一起玩沙？",
+     "en": "Hi, I'm Little Bunny. Do you want to play in the sand with me?"
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園院子裡的沙坑，陽光很亮，旁邊有小水桶和小鏟子。",
+   "act": "小熊和小兔蹲在沙坑裡，堆出一座有三個尖塔的大沙堡，最上面插著一面小紅旗；小兔拍手，小熊開心地笑了，偷偷比出一根手指頭。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "shy",
+     "text": "嗯，好。",
+     "en": "Um, okay."
+    },
+    {
+     "who": "旁白",
+     "text": "他們用沙子，堆了一座好大的城堡。",
+     "en": "Together they build a great big sand castle."
+    },
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "哇，我們的城堡最漂亮！",
+     "en": "Wow, our castle is the best!"
+    },
+    {
+     "who": "小熊",
+     "tag": "whispering",
+     "text": "玩一玩，做到了！",
+     "en": "Play time, done!"
+    }
+   ]
+  },
+  {
+   "scene": "教室裡的小桌子，桌上擺著一盤一盤的點心和小杯子的牛奶。",
+   "act": "兔子老師端著一大盤鬆餅；小熊的盤子上是淋著蜂蜜的鬆餅，小兔的盤子上也是蜂蜜鬆餅，旁邊多了幾根紅蘿蔔條；小熊舔舔嘴巴，兩眼發亮，比出第二根手指頭。",
+   "lines": [
+    {
+     "who": "兔子老師",
+     "tag": "happy",
+     "text": "小朋友，吃點心囉！",
+     "en": "Snack time, everyone!"
+    },
+    {
+     "who": "旁白",
+     "text": "今天的點心，是蜂蜜鬆餅。",
+     "en": "Today's snack is pancakes with honey."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "是蜂蜜！我最愛蜂蜜了！",
+     "en": "Honey! I love honey!"
+    },
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "吃點心，也做到了！",
+     "en": "Snack time, done too!"
+    }
+   ]
+  },
+  {
+   "scene": "教室裡，窗簾拉上了，光線暗暗的，地上鋪著一排小床墊和小被子。",
+   "act": "小熊躺在小被子裡，睜著眼睛看天花板，一臉擔心；隔壁床墊的小兔翻過身，伸出手牽住小熊的手，小小聲地說話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "午睡的時間到了。",
+     "en": "Now it's nap time."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊躺在小被子裡，又想起了媽媽。",
+     "en": "Little Bear lies under his blanket and thinks of Mama again."
+    },
+    {
+     "who": "小熊",
+     "tag": "whispering",
+     "text": "媽媽會不會忘了來接我？",
+     "en": "What if Mama forgets to come?"
+    },
+    {
+     "who": "小兔",
+     "tag": "whispering",
+     "text": "不會的。我們牽著手睡，好不好？",
+     "en": "She won't. Let's hold hands while we sleep, okay?"
+    },
+    {
+     "who": "旁白",
+     "text": "小兔的手好溫暖，小熊安心地睡著了。",
+     "en": "Little Bunny's hand is warm, and Little Bear drifts off to sleep."
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園的院子，下午，陽光暖暖的。一把好大的彩虹傘鋪在草地上。",
+   "act": "午睡醒來，小熊先得意地比出第三根手指頭。兔子老師和小朋友們圍成一圈，抓著彩虹傘的邊往上舉，彩虹傘像一朵大花一樣鼓起來；小熊和小兔鑽到傘下面，笑得好開心。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "proud",
+     "text": "睡午睡，也做到了！",
+     "en": "Nap time, done too!"
+    },
+    {
+     "who": "旁白",
+     "text": "接著，兔子老師拿出一把好大的彩虹傘。",
+     "en": "Then Teacher Rabbit brings out a giant rainbow parachute."
+    },
+    {
+     "who": "兔子老師",
+     "tag": "excited",
+     "text": "大家拉好，一、二、三，往上舉！",
+     "en": "Everyone hold on! One, two, three, lift!"
+    },
+    {
+     "who": "旁白",
+     "text": "彩虹傘飛起來了，大家鑽到傘下面。",
+     "en": "Up flies the parachute, and everyone runs underneath."
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "彩虹傘像一朵大花，真好玩！",
+     "en": "The parachute is like a giant flower. This is so much fun!"
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園的院子，彩虹傘還在飄；院子門口站著熊媽媽。",
+   "act": "熊媽媽站在門口揮手；小熊從彩虹傘下面鑽出頭，嚇了一跳，張大嘴巴；兔子老師在旁邊掩著嘴笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，門口有人在叫：",
+     "en": "Just then, someone calls from the gate."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "小熊，媽媽來接你囉！",
+     "en": "Little Bear, Mama's here!"
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "咦？媽媽，妳怎麼這麼快就來了？",
+     "en": "Huh? Mama, why are you here so soon?"
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽笑了，兔子老師也笑了。",
+     "en": "Mama laughs, and Teacher Rabbit laughs too."
+    }
+   ]
+  },
+  {
+   "scene": "幼兒園門口，太陽快要下山了，天空是橘色的。",
+   "act": "小熊牽著熊媽媽的手往外走，回頭對小兔用力揮手；小兔站在兔子老師旁邊，也跳起來揮手。",
+   "lines": [
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "小熊，明天見！",
+     "en": "See you tomorrow, Little Bear!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "小兔，明天見！",
+     "en": "See you tomorrow, Little Bunny!"
+    },
+    {
+     "who": "兔子老師",
+     "tag": "proud",
+     "text": "小熊，你今天好勇敢喔！",
+     "en": "Little Bear, you were so brave today!"
+    },
+    {
+     "who": "旁白",
+     "text": "回家的路上，小熊說個不停。",
+     "en": "All the way home, Little Bear can't stop talking."
+    }
+   ]
+  },
+  {
+   "scene": "回家的小路，橘色的夕陽，路邊的小黃花；遠遠看得到小熊家的綠色門。",
+   "act": "小熊一邊走一邊比手畫腳，興奮地比出三根手指頭；熊媽媽低頭聽，笑咪咪的。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "我玩了沙子，吃了蜂蜜鬆餅，也交到新朋友了！",
+     "en": "I played in the sand, I ate honey pancakes, and I made a new friend!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "那明天，你想去嗎？",
+     "en": "So, do you want to go again tomorrow?"
+    },
+    {
+     "who": "小熊",
+     "tag": "shouting",
+     "text": "想！我明天也要去！",
+     "en": "Yes! I want to go tomorrow too!"
+    },
+    {
+     "who": "旁白",
+     "text": "玩一玩，吃點心，睡午睡，幼兒園真好玩！",
+     "en": "Play, snack, nap. School is so much fun!"
+    }
+   ]
+  }
+ ]
+}

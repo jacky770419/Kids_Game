@@ -1,0 +1,399 @@
+{
+ "id": "dragon-boat",
+ "title": "阿福小美過端午",
+ "title_en": "Afu and Mei on Dragon Boat Day",
+ "size": "中",
+ "roles": {
+  "阿福": "六歲左右的小男孩，聲音清亮、很有精神，做事急急忙忙，出糗時自己也笑，加油時喊得最大聲。",
+  "小美": "五歲左右的小女孩，聲音細細甜甜的，做事細心慢慢來，立蛋時小聲屏氣，成功時開心大叫。",
+  "奶奶": "村子裡的老奶奶，聲音慈祥溫和、笑咪咪的，說故事時慢慢地、很溫柔。",
+  "村民叔叔": "村子裡划龍舟的叔叔，聲音低沉厚實、爽朗熱情，划完船喘著氣大笑。"
+ },
+ "cast": {
+  "阿福": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小美": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "村民叔叔": {
+   "find": "YCHuang",
+   "en": "Brian"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "划",
+   "where": "第3頁、第8頁、第12頁『划龍舟』，第9頁『用力划』『一起划』，第10頁『越划越快』",
+   "read": "huá"
+  },
+  {
+   "char": "捲",
+   "where": "第1頁『竹葉捲一捲』",
+   "read": "juǎn"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "村子裡奶奶家的院子，夏天早上，太陽很大，院子裡的大樹綠油油的；樹下的木桌上擺著一大盆泡好的白色糯米、一疊綠色的竹葉、一捆棉繩。",
+   "act": "奶奶（灰白頭髮梳成髮髻、不戴眼鏡，穿深綠色短袖盤扣薄衫、黑褲）把竹葉捲成一個尖尖的小漏斗，往裡面放米；阿福（約六歲男孩，黑色短髮，穿藍色短袖盤扣上衣、黑褲、黑布鞋）舉手搶著要幫忙，額頭冒汗；小美（約五歲女孩，綁兩個包包頭、繫紅色髮圈，穿粉紅色短袖盤扣上衣、紅褲紅鞋）坐在旁邊，認真地看奶奶的手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "夏天到了，天氣好熱。",
+     "en": "Summer had come, and it was very hot."
+    },
+    {
+     "who": "旁白",
+     "text": "今天是端午節，奶奶在包粽子。",
+     "en": "It was the Dragon Boat Festival, and Grandma was making zongzi, sticky rice wrapped in leaves."
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "奶奶，我也要包！",
+     "en": "Grandma, I want to make some too!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "我來幫忙拿竹葉！",
+     "en": "I'll hand you the leaves!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "竹葉捲一捲，放進米，再綁起來。",
+     "en": "Roll up the leaf, put in the rice, then tie it up."
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，木桌上已經排好一串一串綁好的三角形粽子。",
+   "act": "阿福得意地舉起自己包的粽子，可是它扁扁的、方方的，米從旁邊掉出來，像一個小枕頭；阿福看著它一臉疑惑；小美笑得彎下腰；奶奶也摀著嘴笑。",
+   "lines": [
+    {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "咦？我的粽子，怎麼像一個枕頭？",
+     "en": "Huh? Why does my zongzi look like a pillow?"
+    },
+    {
+     "who": "小美",
+     "tag": "laughing",
+     "text": "枕頭粽子！真好笑！",
+     "en": "A pillow zongzi! That's so funny!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "沒關係，這是最特別的粽子。",
+     "en": "That's okay. It's the most special zongzi of all."
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "那我要把它留給自己吃！",
+     "en": "Then I'll save it for myself!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，樹蔭下。旁邊畫一個想像的泡泡：很久很久以前，一條大河邊，一位穿古代長袍、戴高帽子的詩人，笑著和村民們說話，手上拿著一卷竹簡。",
+   "act": "小美托著下巴，好奇地問；奶奶一邊綁粽子，一邊溫柔地說故事；阿福坐在小板凳上，抱著膝蓋聽。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "curious",
+     "text": "奶奶，端午節怎麼要吃粽子？",
+     "en": "Grandma, why do we eat zongzi on the Dragon Boat Festival?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "很久以前，有一位愛大家的詩人。",
+     "en": "Long, long ago, there was a poet who loved everyone."
+    },
+    {
+     "who": "奶奶",
+     "text": "大家很想念他，就在這一天包粽子、划龍舟。",
+     "en": "People missed him, so every year on this day, we make zongzi and race dragon boats."
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，中午，太陽在頭頂正上方，地上的影子短短的。",
+   "act": "奶奶指著頭上的太陽；阿福和小美一人拿著一顆白色雞蛋，蹲在木桌旁邊，眼睛發亮。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "excited",
+     "text": "快中午十二點了，我們來立蛋！",
+     "en": "It's almost twelve noon. Let's make the eggs stand up!"
+    },
+    {
+     "who": "旁白",
+     "text": "端午節中午，大家都喜歡試著讓蛋站起來。",
+     "en": "At noon on the Dragon Boat Festival, people love to try standing eggs on end."
+    },
+    {
+     "who": "小美",
+     "tag": "curious",
+     "text": "蛋真的會站起來嗎？",
+     "en": "Can an egg really stand up?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "laughing",
+     "text": "試一試就知道！",
+     "en": "Try it and see!"
+    }
+   ]
+  },
+  {
+   "scene": "院子裡的木桌，中午。",
+   "act": "阿福的雞蛋從桌上滾走了，他慌張地伸長手去追；小美屏住呼吸，兩手輕輕扶著自己的蛋，眼睛盯著它，一動也不動。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿福一放手，蛋就滾走了。",
+     "en": "As soon as Afu let go, his egg rolled away."
+    },
+    {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "哎呀，回來！",
+     "en": "Oh no! Come back!"
+    },
+    {
+     "who": "小美",
+     "tag": "whispering",
+     "text": "慢一點，輕一點。",
+     "en": "Slowly. Gently."
+    },
+    {
+     "who": "小美",
+     "tag": "whispering",
+     "text": "小雞蛋，站好喔。",
+     "en": "Little egg, stand up nice and tall."
+    }
+   ]
+  },
+  {
+   "scene": "院子裡的木桌，中午，桌上有兩顆直直站著的白色雞蛋。",
+   "act": "兩顆雞蛋都直直站好了；小美開心地拍手；阿福趴在桌邊，兩手還合在一起，看著自己的蛋笑開了嘴。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "站起來了！我的蛋站起來了！",
+     "en": "It's standing! My egg is standing!"
+    },
+    {
+     "who": "阿福",
+     "tag": "whispering",
+     "text": "拜託，拜託，你也站好嘛！",
+     "en": "Please, please, you stand up too!"
+    },
+    {
+     "who": "旁白",
+     "text": "阿福的蛋，也站起來了！",
+     "en": "Afu's egg stood up too!"
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "我們都成功了！",
+     "en": "We both did it!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家門口，屋簷下掛著一把綠色的艾草。",
+   "act": "奶奶從口袋拿出兩個用紅布、黃布縫的小香包，一個是小老虎的樣子，一個是小粽子的樣子，掛著彩色繩子；奶奶把香包掛在阿福和小美的脖子上；小美低頭聞香包，阿福摸摸胸前的小老虎。",
+   "lines": [
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "來，一人一個香包。",
+     "en": "Here, a scented pouch for each of you."
+    },
+    {
+     "who": "旁白",
+     "text": "香包裡面，放著很香的草藥。",
+     "en": "Inside the pouches were sweet-smelling herbs."
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "好香喔！",
+     "en": "Mmm, it smells so good!"
+    },
+    {
+     "who": "阿福",
+     "tag": "proud",
+     "text": "我的是小老虎，好威風！",
+     "en": "Mine is a little tiger. So brave!"
+    },
+    {
+     "who": "奶奶",
+     "text": "戴上香包，小蟲子就不來咬你。",
+     "en": "Wear it, and the little bugs won't bite you."
+    }
+   ]
+  },
+  {
+   "scene": "村子旁邊的大河，下午，河邊擠滿了穿夏天衣服的人，岸上插著彩色旗子；河上停著一艘紅色和一艘藍色的龍舟，船很長，船頭是彩色的大龍頭，船尾是龍尾巴，船中間各有一面大鼓。",
+   "act": "村民叔叔（黑色短髮、沒有鬍子，穿咖啡色短袖盤扣薄衫、黑褲）坐在紅色龍舟上，拿著船槳向岸上揮手；阿福和小美胸前掛著香包，在岸邊跳起來揮手；奶奶拿著扇子站在後面笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "下午，大家到河邊看划龍舟。",
+     "en": "In the afternoon, everyone went to the river to watch the dragon boat race."
+    },
+    {
+     "who": "旁白",
+     "text": "龍舟的前面，有一個大龍頭。",
+     "en": "Each long boat had a big dragon head at the front."
+    },
+    {
+     "who": "村民叔叔",
+     "tag": "happy",
+     "text": "阿福、小美！要幫我們加油喔！",
+     "en": "Afu! Mei! Cheer for us, okay?"
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "叔叔，我們會用力喊！",
+     "en": "We'll cheer really loud, Uncle!"
+    },
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "紅色龍舟，加油！",
+     "en": "Go, red dragon boat!"
+    }
+   ]
+  },
+  {
+   "scene": "河面上，兩艘龍舟並排往前，船槳打起好多白色的水花。",
+   "act": "紅色龍舟上，打鼓的人舉起鼓棒用力敲，划船的人一起往後划，村民叔叔滿頭大汗；藍色龍舟的龍頭跑在前面一點點；岸上的阿福握著拳頭大喊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚！咚！咚！大鼓響了。",
+     "en": "Boom! Boom! Boom! went the big drum."
+    },
+    {
+     "who": "村民叔叔",
+     "tag": "shouting",
+     "text": "一、二！一、二！大家用力划！",
+     "en": "One, two! One, two! Paddle hard, everyone!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家一起划，龍舟飛快地往前。",
+     "en": "Everyone paddled together, and the boats sped forward."
+    },
+    {
+     "who": "旁白",
+     "text": "可是，藍色龍舟跑在前面！",
+     "en": "But the blue dragon boat was in the lead!"
+    },
+    {
+     "who": "阿福",
+     "tag": "shouting",
+     "text": "加油！加油！",
+     "en": "Go! Go!"
+    }
+   ]
+  },
+  {
+   "scene": "河面上，終點的大旗子就在前面。",
+   "act": "小美雙手圍在嘴邊大聲喊，奶奶也舉起扇子加油，岸上的人都在喊；紅色龍舟追上來，兩個龍頭並在一起，快要碰到終點的旗子。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "shouting",
+     "text": "紅色龍舟，快一點！",
+     "en": "Red dragon boat, go faster!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "excited",
+     "text": "快到了！加油！",
+     "en": "Almost there! Keep going!"
+    },
+    {
+     "who": "旁白",
+     "text": "岸上的人，也跟著一起喊。",
+     "en": "Everyone on the riverbank cheered along."
+    },
+    {
+     "who": "旁白",
+     "text": "紅色龍舟越划越快，追上去了！",
+     "en": "The red dragon boat went faster and faster and caught up!"
+    }
+   ]
+  },
+  {
+   "scene": "河面上的終點，紅色龍舟船頭的人伸長手，搶先拔下終點的大旗子。",
+   "act": "紅色龍舟上的人舉起船槳歡呼；藍色龍舟上的人也笑著拍手；村民叔叔站起來，對著岸上的阿福和小美豎起大拇指；阿福和小美抱在一起跳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "紅色龍舟，第一個到了！",
+     "en": "The red dragon boat got there first!"
+    },
+    {
+     "who": "村民叔叔",
+     "tag": "laughing",
+     "text": "謝謝你們！你們的加油聲最大！",
+     "en": "Thank you! Your cheering was the loudest!"
+    },
+    {
+     "who": "阿福",
+     "tag": "proud",
+     "text": "那我們也是第一名！",
+     "en": "Then we're number one too!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家的屋裡，晚上，木桌上一盤剛煮好、冒著熱氣的粽子，竹葉打開，露出香噴噴的糯米；窗外天黑了，掛著幾顆星星。",
+   "act": "阿福胸前掛著香包，拿起自己那顆扁扁的枕頭粽子大口咬，笑得好開心；小美也掛著香包，舉起手對畫面外的小讀者笑；奶奶在旁邊笑咪咪。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "晚上，粽子煮好了。",
+     "en": "That night, the zongzi were ready."
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "我的枕頭粽子，最好吃！",
+     "en": "My pillow zongzi is the yummiest!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "明年端午節，我們再一起過。",
+     "en": "Next Dragon Boat Festival, we'll celebrate together again."
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "包粽子、立蛋、划龍舟，端午節真好玩！",
+     "en": "Making zongzi, standing eggs, racing dragon boats. The Dragon Boat Festival is so much fun!"
+    }
+   ]
+  }
+ ]
+}

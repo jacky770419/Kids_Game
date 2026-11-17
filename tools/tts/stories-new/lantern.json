@@ -1,0 +1,385 @@
+{
+ "id": "lantern",
+ "title": "阿福小美鬧元宵",
+ "title_en": "Afu and Mei at the Lantern Festival",
+ "size": "中",
+ "roles": {
+  "阿福": "六歲左右的小男孩，聲音清亮、很有精神，愛現又有點不服輸，猜到燈謎時得意得跳起來。",
+  "小美": "五歲左右的小女孩，聲音細細甜甜的，愛笑，燈籠熄掉時快哭了，後來笑得最開心。",
+  "奶奶": "村子裡的老奶奶，聲音慈祥溫和、笑咪咪的。",
+  "老爺爺": "白鬍子的慈祥老爺爺，聲音穩重溫暖、慢慢說，出燈謎時帶著笑意，像在逗孫子。"
+ },
+ "cast": {
+  "阿福": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小美": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  },
+  "老爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "籠",
+   "where": "第1～5頁、第7～8頁、第12頁『燈籠』",
+   "read": "lóng"
+  },
+  {
+   "char": "鬧",
+   "where": "第11頁『湊熱鬧』",
+   "read": "nào"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "村子裡奶奶家的院子，晚上，太陽剛下山，天是深藍色的；灰瓦屋簷下掛著一盞紅燈籠，木桌上擺著剪刀、彩色紙、竹條和漿糊。",
+   "act": "阿福（約六歲男孩，黑色短髮，穿藍色盤扣棉襖、黑褲、黑布鞋）得意地舉起自己做的黃色老虎燈籠：老虎圓臉、歪歪的、額頭畫著一個「王」字，看起來很像一隻貓；小美（約五歲女孩，綁兩個包包頭、繫紅色髮圈，穿粉紅色盤扣棉襖、紅褲紅鞋）指著老虎燈籠摀嘴偷笑；奶奶（灰白頭髮梳成髮髻、不戴眼鏡，穿深綠色盤扣棉襖、黑褲）坐在旁邊笑咪咪。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "新年過後，第一個月亮很圓的晚上，就是元宵節。",
+     "en": "The first full-moon night after Lunar New Year is the Lantern Festival."
+    },
+    {
+     "who": "阿福",
+     "tag": "proud",
+     "text": "奶奶你看！我做的老虎燈籠！",
+     "en": "Grandma, look! I made a tiger lantern!"
+    },
+    {
+     "who": "小美",
+     "tag": "laughing",
+     "text": "阿福，這是貓吧？",
+     "en": "Afu, isn't that a cat?"
+    },
+    {
+     "who": "阿福",
+     "tag": "angry",
+     "text": "是老虎！你看，頭上有一個王字！",
+     "en": "It's a tiger! See the word for king on its head?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個院子，晚上，屋簷下的紅燈籠亮著。",
+   "act": "小美把自己做的小白兔燈籠舉高給奶奶看：白色、圓圓的兔子身體，兩隻大耳朵、紅眼睛，裡面的蠟燭發出黃光；奶奶笑著站起來，伸手要牽小美；阿福提著老虎燈籠，已經跳到院子門口回頭招手。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "我做的是小白兔燈籠！",
+     "en": "I made a white bunny lantern!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "兩個都很美。走，我們提燈籠去看燈會！",
+     "en": "They're both beautiful. Come on, let's take them to the lantern fair!"
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "出發囉！",
+     "en": "Let's go!"
+    }
+   ]
+  },
+  {
+   "scene": "村子的小路，晚上，路兩旁是灰瓦白牆的矮房子，好多小朋友提著各種燈籠走在路上，燈籠的光排成長長的一排。",
+   "act": "阿福和小美走在最前面，提著燈籠，一邊走一邊開心地唱歌；後面跟著幾個提燈籠的小朋友；奶奶慢慢跟在後面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小路上，好多小朋友都提著燈籠。",
+     "en": "Lots of children were carrying lanterns down the little road."
+    },
+    {
+     "who": "旁白",
+     "text": "燈籠的光排成一排，像天上的星星。",
+     "en": "The lantern lights made a long line, like stars in the sky."
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "提燈籠，走大街，我們去看燈會！",
+     "en": "Lanterns up, down the street, off to the lantern fair!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "提燈籠，走大街，我們去看燈會！",
+     "en": "Lanterns up, down the street, off to the lantern fair!"
+    }
+   ]
+  },
+  {
+   "scene": "村子的大街，晚上，兩邊屋簷下掛滿各種燈籠：紅色的圓燈籠、金色的大龍燈、橘紅色的金魚燈、粉紅色的荷花燈；街上好多穿棉襖的大人小孩提著燈籠走來走去。",
+   "act": "阿福和小美提著自己的燈籠，抬頭張大嘴巴看；小美指著大龍燈；奶奶走在後面笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大街上，掛滿了好多燈籠。",
+     "en": "The big street was full of lanterns."
+    },
+    {
+     "who": "旁白",
+     "text": "有大龍燈、金魚燈，也有荷花燈。",
+     "en": "There were dragon lanterns, goldfish lanterns, and lotus flower lanterns."
+    },
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "好亮喔！像白天一樣！",
+     "en": "So bright! It's like daytime!"
+    },
+    {
+     "who": "阿福",
+     "tag": "proud",
+     "text": "我的老虎燈籠也好亮！",
+     "en": "My tiger lantern is bright too!"
+    }
+   ]
+  },
+  {
+   "scene": "大街的轉角，晚上，一陣風吹過，街上的燈籠都晃起來。",
+   "act": "小美的小白兔燈籠暗掉了，冒出一縷細細的白煙；小美嘴巴扁扁、眼睛含著眼淚；阿福湊過來看，抓抓頭很著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，呼！一陣大風吹過來。",
+     "en": "Just then, whoosh! A big gust of wind blew by."
+    },
+    {
+     "who": "旁白",
+     "text": "小美的燈籠，一下子就暗了。",
+     "en": "Mei's lantern went dark all at once."
+    },
+    {
+     "who": "小美",
+     "tag": "sad",
+     "text": "我的小白兔不亮了！",
+     "en": "My bunny went out!"
+    },
+    {
+     "who": "阿福",
+     "tag": "worried",
+     "text": "怎麼辦？",
+     "en": "What do we do?"
+    }
+   ]
+  },
+  {
+   "scene": "大街旁邊的燈謎攤，竹竿上掛著一排紅燈籠，每一盞燈籠下面吊著一張寫字的紅紙條。",
+   "act": "老爺爺（光頭、後面有一點白髮、長長的白鬍子，穿灰色長袍、繫深灰色腰帶，拿著木拐杖）彎下腰，用一根小蠟燭幫小美把燈籠點亮，笑咪咪的；小美擦擦眼淚，笑了。奶奶站在孩子們後面，放心地笑。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "小美，別哭，我來幫你。",
+     "en": "Don't cry, Mei. Let me help."
+    },
+    {
+     "who": "旁白",
+     "text": "老爺爺拿出小蠟燭，把小白兔點亮了。",
+     "en": "Grandpa took out a little candle and lit the bunny again."
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "亮了！謝謝老爺爺！",
+     "en": "It's glowing! Thank you, Grandpa!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "laughing",
+     "text": "來，我們來猜動物燈謎吧！",
+     "en": "Now, let's guess some animal riddles on the lanterns!"
+    }
+   ]
+  },
+  {
+   "scene": "燈謎攤前面，紅紙條在燈籠下輕輕晃。",
+   "act": "老爺爺用拐杖指著第一張紅紙條念謎題；小美歪著頭想，手指點著下巴，手上提著小白兔燈籠；阿福在旁邊抓頭。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "白衣服，紅眼睛，兩個大耳朵，走路跳著走。",
+     "en": "White coat, red eyes, two big ears, and it hops when it walks."
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "是貓！",
+     "en": "A cat!"
+    },
+    {
+     "who": "小美",
+     "tag": "laughing",
+     "text": "貓的眼睛不是紅色的啦！是兔子！",
+     "en": "Cats don't have red eyes! It's a rabbit!"
+    },
+    {
+     "who": "老爺爺",
+     "tag": "laughing",
+     "text": "猜對了！就像你的燈籠！",
+     "en": "You got it! Just like your lantern!"
+    }
+   ]
+  },
+  {
+   "scene": "燈謎攤前面。",
+   "act": "老爺爺指著第二張紅紙條；阿福把老虎燈籠舉得高高的，跳起來大叫；小美摀著嘴笑。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "gentle",
+     "text": "阿福，這一題給你。",
+     "en": "Afu, this one is for you."
+    },
+    {
+     "who": "老爺爺",
+     "text": "頭上有個王，身上有花紋，是森林裡的大王。",
+     "en": "It has the word for king on its head and stripes on its body. It's the king of the forest."
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "是老虎！跟我的燈籠一樣！",
+     "en": "It's a tiger! Just like my lantern!"
+    },
+    {
+     "who": "小美",
+     "tag": "laughing",
+     "text": "原來你的燈籠，真的是老虎！",
+     "en": "So your lantern really is a tiger!"
+    }
+   ]
+  },
+  {
+   "scene": "燈謎攤前面，奶奶走上前來。",
+   "act": "老爺爺摸著鬍子笑；奶奶彎腰拍拍兩個孩子的頭；阿福開心地舉手歡呼；小美拉著老爺爺的袖子，邀他一起走。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兩個燈謎，都猜對了！",
+     "en": "They solved both riddles!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "猜累了吧？回家吃湯圓囉！",
+     "en": "All that guessing! Let's go home and eat tangyuan, sweet rice balls!"
+    },
+    {
+     "who": "阿福",
+     "tag": "excited",
+     "text": "好耶！吃湯圓！",
+     "en": "Yay! Tangyuan!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "老爺爺，一起來吃！",
+     "en": "Grandpa, come eat with us!"
+    }
+   ]
+  },
+  {
+   "scene": "奶奶家的屋裡，晚上，木頭圓桌上一鍋冒著熱氣的甜湯，每個碗裡都有白色和粉紅色的湯圓；老虎燈籠和小白兔燈籠放在桌邊。",
+   "act": "奶奶拿著大湯勺，笑咪咪地看大家吃；阿福湯匙上舀著一顆湯圓，被燙得吐舌頭；小美雙手捧著碗，好奇地問奶奶；老爺爺摸著鬍子笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "元宵節，大家都要吃湯圓。",
+     "en": "On the Lantern Festival, everyone eats tangyuan."
+    },
+    {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "好燙！好甜！",
+     "en": "Hot! And sweet!"
+    },
+    {
+     "who": "小美",
+     "tag": "curious",
+     "text": "奶奶，湯圓怎麼都是圓的？",
+     "en": "Grandma, why are tangyuan always round?"
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "湯圓很圓，就像大家團圓在一起。",
+     "en": "They're round, like everyone gathered together in a circle."
+    }
+   ]
+  },
+  {
+   "scene": "院子裡，晚上，天上掛著一個又大又圓的金黃色月亮，月光照亮了院子和灰瓦屋頂。",
+   "act": "大家端著碗走到院子裡；小美指著月亮；奶奶抬頭微笑；阿福把老虎燈籠舉高，對著月亮；老爺爺站在旁邊，拄著拐杖笑。",
+   "lines": [
+    {
+     "who": "小美",
+     "tag": "excited",
+     "text": "你們看！月亮好大，好圓！",
+     "en": "Look! The moon is so big and round!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "月亮也來湊熱鬧，陪我們過元宵呢！",
+     "en": "The moon came to join the fun and celebrate with us!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "月亮，你也來看燈會嗎？",
+     "en": "Moon, did you come to see the lanterns too?"
+    },
+    {
+     "who": "阿福",
+     "tag": "laughing",
+     "text": "月亮一定也想吃湯圓！",
+     "en": "I bet the moon wants some tangyuan too!"
+    }
+   ]
+  },
+  {
+   "scene": "整個村子的夜景，天上一個大月亮，每一家門口和大街上都是一點一點的燈籠光。",
+   "act": "阿福、小美、奶奶和老爺爺站在院子門口；阿福和小美把老虎燈籠和小白兔燈籠舉得高高的，面對畫面外的小讀者開心地笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "天上，有一個大月亮。",
+     "en": "Up in the sky, there was one big moon."
+    },
+    {
+     "who": "旁白",
+     "text": "地上，有好多小燈籠。",
+     "en": "Down on the ground, there were lots of little lanterns."
+    },
+    {
+     "who": "阿福",
+     "tag": "happy",
+     "text": "提燈籠，猜燈謎，吃湯圓！",
+     "en": "Carry lanterns, guess riddles, eat tangyuan!"
+    },
+    {
+     "who": "小美",
+     "tag": "happy",
+     "text": "元宵節，真好玩！",
+     "en": "The Lantern Festival is so much fun!"
+    }
+   ]
+  }
+ ]
+}

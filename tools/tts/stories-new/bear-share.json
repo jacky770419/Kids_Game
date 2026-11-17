@@ -1,0 +1,255 @@
+{
+ "id": "bear-share",
+ "title": "小熊學分享",
+ "title_en": "Little Bear Learns to Share",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊不想睡覺》《小熊看牙醫》裡的小熊：小男孩的聲音，活潑、愛撒嬌，有了新玩具時得意，不肯借人時大聲又倔強，一個人玩時無精打采，最後害羞地開口、玩得哈哈笑。",
+  "小兔": "小熊在幼兒園的好朋友，聲音又小又甜、活潑熱情，說話輕快。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "小兔": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "會",
+   "where": "第1頁『就會叫』",
+   "read": "huì"
+  },
+  {
+   "char": "給",
+   "where": "第2頁『不給』、第3頁『給妳玩』、第6頁『給你用』",
+   "read": "gěi"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『沒有人』",
+   "read": "méi"
+  },
+  {
+   "char": "鑽",
+   "where": "第5頁、第7頁『鑽山洞』",
+   "read": "zuān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "白天，小熊家的客廳：木頭地板、綠色地毯，窗外是晴天；地上放著拆開的禮物盒和包裝紙，一圈木頭軌道。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花，坐在沙發上微笑看著。小熊趴在地毯上，推著一列新的小火車：綠色的車頭、三節黃色車廂，車頭上有一根小煙囪；小熊笑得好得意。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊有一列新的小火車。",
+     "en": "Little Bear has a brand new toy train."
+    },
+    {
+     "who": "旁白",
+     "text": "綠色的車頭，黃色的車廂，按一下就會叫。",
+     "en": "It has a green engine and yellow cars, and it toots when you press a button."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "嘟，嘟！火車來了！",
+     "en": "Toot, toot! Here comes the train!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，門開著，綠色地毯上是木頭軌道。",
+   "act": "小兔是白色的小兔，長耳朵內側是粉紅色，穿黃色吊帶裙，頭上夾著一個紅色小髮夾。小兔站在門口，眼睛發亮地看著火車，伸出一隻手；小熊把火車緊緊抱在胸前，轉過身去，嘟著嘴。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "這時候，小兔來找小熊玩。",
+     "en": "Just then, Little Bunny comes over to play."
+    },
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "小熊，好漂亮的火車！我可以玩一下嗎？",
+     "en": "Little Bear, what a pretty train! Can I play with it?"
+    },
+    {
+     "who": "小熊",
+     "tag": "shouting",
+     "text": "不行！這是我的！",
+     "en": "No! It's mine!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊把火車抱在懷裡，不給小兔碰。",
+     "en": "Little Bear hugs the train and won't let Little Bunny touch it."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳角落，有幾個大紙箱和一盒蠟筆。",
+   "act": "小兔低著頭、耳朵垂下來，走到角落；熊媽媽蹲在紙箱旁邊，溫柔地拍拍小兔的肩膀，指著紙箱和蠟筆。小熊在遠處抱著火車偷看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小兔低著頭，耳朵垂下來了。",
+     "en": "Little Bunny looks down. Her ears droop."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "小兔，這裡有幾個大紙箱，給妳玩。",
+     "en": "Little Bunny, here are some big boxes you can play with."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔坐到旁邊，一個人玩紙箱。",
+     "en": "Little Bunny sits in the corner and plays with the boxes all by herself."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，綠色地毯上一圈木頭軌道。",
+   "act": "小熊一個人趴在軌道旁，下巴靠在手上，無聊地看著火車繞圈圈，打了一個呵欠。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊一個人玩火車。",
+     "en": "Little Bear plays with his train all alone."
+    },
+    {
+     "who": "旁白",
+     "text": "火車繞一圈，又繞一圈。",
+     "en": "Around and around goes the train."
+    },
+    {
+     "who": "旁白",
+     "text": "沒有人跟他說：哇，好棒的火車！",
+     "en": "No one is there to say, \"Wow, what a great train!\""
+    },
+    {
+     "who": "小熊",
+     "tag": "bored",
+     "text": "嘟，嘟。好無聊喔。",
+     "en": "Toot, toot. This is boring."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳角落，小兔用大紙箱做出一個塗成綠色的山洞，和一座屋頂塗成紅色的小車站。",
+   "act": "小熊從軌道旁抬起頭，偷偷往角落看，嘴巴張成一個圓圈；小兔正在用蠟筆幫山洞畫小花，開心地哼著歌。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊抬起頭，看了小兔一眼。",
+     "en": "Little Bear looks up and peeks at Little Bunny."
+    },
+    {
+     "who": "旁白",
+     "text": "小兔用紙箱，做了一個山洞和一座車站。",
+     "en": "She has made a tunnel and a train station out of boxes."
+    },
+    {
+     "who": "小熊",
+     "tag": "whispering",
+     "text": "哇，有山洞耶！",
+     "en": "Wow, a tunnel!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊心裡想：火車鑽山洞，一定很好玩。",
+     "en": "Little Bear thinks, a train going through a tunnel would be so much fun."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳角落，紙箱山洞和小車站旁邊。",
+   "act": "小熊抱著小火車，有點害羞地走到小兔面前說對不起，把火車遞出去；小兔笑開了，指著自己做的山洞。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "shy",
+     "text": "小兔，對不起。",
+     "en": "Little Bunny, I'm sorry."
+    },
+    {
+     "who": "小熊",
+     "text": "我們一起玩火車，好不好？",
+     "en": "Do you want to play trains together?"
+    },
+    {
+     "who": "小兔",
+     "tag": "happy",
+     "text": "好啊！我的山洞給你用！",
+     "en": "Yes! You can use my tunnel!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "那妳先開火車！",
+     "en": "Then you drive the train first!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，木頭軌道接到紙箱山洞和小車站，連成一大圈。",
+   "act": "小兔推著綠色小火車鑽進紙箱山洞；小熊戴著一頂紙做的站長帽，站在小車站旁邊揮手；兩個都笑得好開心。",
+   "lines": [
+    {
+     "who": "小兔",
+     "tag": "excited",
+     "text": "嘟，嘟！火車鑽山洞囉！",
+     "en": "Toot, toot! The train is going into the tunnel!"
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "火車到站了，請上車！",
+     "en": "The train is at the station. All aboard!"
+    },
+    {
+     "who": "旁白",
+     "text": "兩個好朋友輪流開火車，笑個不停。",
+     "en": "The two friends take turns driving the train, laughing and laughing."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，下午的陽光照進來；地上一圈軌道、山洞和車站。",
+   "act": "熊媽媽端著兩杯牛奶和一盤餅乾走過來；小熊和小兔並肩坐在車站旁，一起舉手歡呼。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "哇，好熱鬧的火車站！",
+     "en": "Wow, what a busy train station!"
+    },
+    {
+     "who": "小熊",
+     "text": "媽媽，一個人玩好無聊。",
+     "en": "Mama, playing alone is boring."
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "兩個人一起玩，真好玩！",
+     "en": "But playing together is so much fun!"
+    },
+    {
+     "who": "旁白",
+     "text": "嘟，嘟！你想跟誰一起玩呢？",
+     "en": "Toot, toot! Who would you like to play with?"
+    }
+   ]
+  }
+ ]
+}

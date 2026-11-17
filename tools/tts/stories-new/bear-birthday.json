@@ -1,0 +1,390 @@
+{
+ "id": "bear-birthday",
+ "title": "小熊的生日",
+ "title_en": "Little Bear's Birthday",
+ "size": "中",
+ "roles": {
+  "小熊": "就是《小熊不想睡覺》《小熊看牙醫》裡的小熊：小男孩的聲音，活潑、愛撒嬌，生日早上興奮期待，以為大家都忘了時失望、小聲，開門看到驚喜時又驚又喜。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑。",
+  "熊爸爸": "高大溫和的熊爸爸，中年男聲，低沉溫暖，愛裝傻逗小熊，藏不住笑意。",
+  "小青蛙": "就是《小熊生氣了》裡的小青蛙：小熊的好朋友，聲音又小又可愛、活潑，心裡有祕密時說話慌慌張張。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  },
+  "熊爸爸": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "小青蛙": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "樂",
+   "where": "第8頁『生日快樂』、第10頁『生日快樂』",
+   "read": "lè"
+  },
+  {
+   "char": "什",
+   "where": "第2、3、4頁『什麼日子』、第3頁『笑什麼』、第11頁『什麼願望』",
+   "read": "shén"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『沒有了』、第9頁『沒有忘記』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第1頁『給我驚喜』、第9頁『送給你』",
+   "read": "gěi"
+  },
+  {
+   "char": "會",
+   "where": "第1頁『一定會』",
+   "read": "huì"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "早上，小熊的房間：小床、軟枕頭、窗外太陽剛出來，陽光照進房間；牆上掛著一張月曆，今天那一格畫了一個紅色的圈和一個小蛋糕。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。小熊從床上跳起來，兩手舉高，笑得好開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "太陽出來了，小熊一下子跳下床。",
+     "en": "The sun is up, and Little Bear jumps out of bed."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "今天是我的生日！",
+     "en": "Today is my birthday!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "大家一定會給我驚喜！",
+     "en": "Everyone is going to surprise me!"
+    },
+    {
+     "who": "旁白",
+     "text": "咚，咚，咚！他跑去廚房。",
+     "en": "Thump, thump, thump! He runs to the kitchen."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的廚房：木頭餐桌、爐子上有平底鍋，流理台上放著麵粉袋、雞蛋和一大罐蜂蜜。",
+   "act": "熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花。熊媽媽背對流理台站著，兩手藏在身後，偷偷遮住一個裝著麵糊的大碗；小熊站在門口，眼睛亮亮地看著她。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "媽媽，妳知道今天是什麼日子嗎？",
+     "en": "Mama, do you know what day it is today?"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "calm",
+     "text": "今天？今天是星期六呀。要吃荷包蛋嗎？",
+     "en": "Today? Today is Saturday. Would you like a fried egg?"
+    },
+    {
+     "who": "旁白",
+     "text": "媽媽說完，就低頭忙著煎蛋。",
+     "en": "Then Mama goes right back to frying eggs."
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "喔。",
+     "en": "Oh."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳：大沙發、小茶几，沙發後面露出一角綁著紅色緞帶的禮物盒。",
+   "act": "熊爸爸是比熊媽媽還要高大的深棕色公熊，穿藍色格子襯衫。熊爸爸坐在沙發上，報紙舉得高高的遮住整張臉，只看得到他偷笑時抖動的耳朵；小熊站在沙發旁，仰頭看他。",
+   "lines": [
+    {
+     "who": "小熊",
+     "text": "爸爸，你知道今天是什麼日子嗎？",
+     "en": "Papa, do you know what day it is today?"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "playful",
+     "text": "嗯，今天是大晴天！",
+     "en": "Hmm, today is a nice sunny day!"
+    },
+    {
+     "who": "旁白",
+     "text": "爸爸躲在報紙後面，不知道在笑什麼。",
+     "en": "Papa hides behind his newspaper. What is he smiling about?"
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "爸爸也忘了。",
+     "en": "Papa forgot too."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的小池塘，有大荷葉和幾朵粉紅色的荷花，池塘邊有幾棵樹。",
+   "act": "小青蛙是嫩綠色的小青蛙，淡黃色肚子、圓圓的大眼睛、粉紅色臉頰。小青蛙懷裡抱著一個用葉子包起來的小包包，看到小熊就慌張地往後跳，眼睛轉來轉去；小熊伸出手，想跟他說話。",
+   "lines": [
+    {
+     "who": "小熊",
+     "text": "小青蛙，你知道今天是什麼日子嗎？",
+     "en": "Little Frog, do you know what day it is today?"
+    },
+    {
+     "who": "小青蛙",
+     "tag": "nervous",
+     "text": "今天？我，我好忙，等一下再找你！",
+     "en": "Today? I, um, I'm very busy. I'll see you later!"
+    },
+    {
+     "who": "旁白",
+     "text": "小青蛙抱著一包東西，一下子就跳走了。",
+     "en": "Little Frog hugs a little bundle and hops away fast."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊愣在池塘邊，眨了眨眼睛。",
+     "en": "Little Bear just stands by the pond and blinks."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的一棵大樹下，樹葉一片一片飄下來。",
+   "act": "小熊一個人坐在大樹下，抱著膝蓋、低著頭，耳朵垂下來，一片黃色的樹葉停在他的鼻子上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小熊坐在大樹下，低著頭。",
+     "en": "Little Bear sits under a big tree with his head down."
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "媽媽忘了，爸爸忘了，小青蛙也忘了。",
+     "en": "Mama forgot. Papa forgot. Little Frog forgot too."
+    },
+    {
+     "who": "小熊",
+     "text": "大家都忘了我的生日。",
+     "en": "Everyone forgot my birthday."
+    },
+    {
+     "who": "旁白",
+     "text": "一片樹葉，飄到他的鼻子上。",
+     "en": "A leaf floats down and lands on his nose."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊連撥開的力氣都沒有了。",
+     "en": "Little Bear is too sad to even brush it off."
+    }
+   ]
+  },
+  {
+   "scene": "森林裡的大樹下，下午。",
+   "act": "熊爸爸彎腰把手放在小熊肩上；小熊抬起頭，眼睛有點紅；熊爸爸轉頭對著畫面外偷偷眨一隻眼睛。",
+   "lines": [
+    {
+     "who": "熊爸爸",
+     "tag": "happy",
+     "text": "小熊，原來你在這裡！",
+     "en": "Little Bear, there you are!"
+    },
+    {
+     "who": "熊爸爸",
+     "text": "媽媽說，請你回家幫一個忙。",
+     "en": "Mama needs your help at home."
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "好吧。",
+     "en": "Okay."
+    },
+    {
+     "who": "旁白",
+     "text": "小熊跟在爸爸後面，慢慢走回家。",
+     "en": "Little Bear follows Papa slowly home."
+    },
+    {
+     "who": "旁白",
+     "text": "咦，爸爸好像在偷笑呢。",
+     "en": "Hmm, is Papa trying not to laugh?"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家門口，下午：綠色的門關著，窗簾都拉上了，裡面靜悄悄的。",
+   "act": "熊爸爸站在門邊，用手比了一個「請」的動作；小熊伸出手，推開大門，一臉疑惑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "家裡的門關著，裡面好安靜。",
+     "en": "The door is closed. The house is very quiet."
+    },
+    {
+     "who": "小熊",
+     "tag": "curious",
+     "text": "咦？媽媽去哪裡了？",
+     "en": "Huh? Where is Mama?"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "gentle",
+     "text": "小熊，你來開門吧。",
+     "en": "Little Bear, why don't you open the door?"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊伸出手，推開了門。",
+     "en": "Little Bear reaches out and pushes the door open."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，掛滿彩色的氣球和一串三角形的彩色小旗子，牆上貼著畫了小熊的大海報。",
+   "act": "熊媽媽和小青蛙從沙發後面跳出來，兩手張開；小青蛙頭上戴著尖尖的派對帽；熊爸爸站在門口哈哈笑；小熊嚇了一跳，張大嘴巴，眼睛瞪得好圓。",
+   "lines": [
+    {
+     "who": "小青蛙",
+     "tag": "excited",
+     "text": "驚喜！",
+     "en": "Surprise!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "happy",
+     "text": "小熊，生日快樂！",
+     "en": "Happy birthday, Little Bear!"
+    },
+    {
+     "who": "旁白",
+     "text": "客廳裡，掛滿了氣球和彩色的小旗子。",
+     "en": "The room is full of balloons and colorful flags."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "laughing",
+     "text": "我們準備了好久呢！",
+     "en": "We've been getting ready for ages!"
+    },
+    {
+     "who": "小熊",
+     "tag": "surprised",
+     "text": "哇！",
+     "en": "Wow!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，同一個下午，茶几上擺著一個蜂蜜蛋糕。",
+   "act": "小青蛙踮起腳，把一頂黃色的紙皇冠戴到小熊頭上，皇冠上貼著亮晶晶的星星；熊爸爸從沙發後面拿出綁紅色緞帶的禮物盒；熊媽媽指著蛋糕微笑。",
+   "lines": [
+    {
+     "who": "小青蛙",
+     "tag": "proud",
+     "text": "這是我做的紙皇冠，送給你！",
+     "en": "I made you a paper crown!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "媽媽一大早，就在烤蜂蜜蛋糕喔。",
+     "en": "Mama has been baking a honey cake since early this morning."
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "laughing",
+     "text": "爸爸的禮物，一直躲在沙發後面！",
+     "en": "And Papa's present was hiding behind the sofa all along!"
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "原來，大家都沒有忘記我的生日！",
+     "en": "So nobody forgot my birthday after all!"
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，窗簾拉上，燈關掉了，只有蛋糕上的燭光亮著。",
+   "act": "蜂蜜蛋糕上插著五根小蠟燭，火光照著大家的臉；熊爸爸、熊媽媽和小青蛙圍在旁邊拍手；小熊戴著紙皇冠，閉上眼睛、兩手合在一起許願。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "蛋糕上的小蠟燭，都點亮了。",
+     "en": "The little candles on the cake are all lit."
+    },
+    {
+     "who": "旁白",
+     "text": "大家一起拍手，祝小熊生日快樂！",
+     "en": "Everyone claps and wishes Little Bear a happy birthday!"
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "小熊，閉上眼睛，許一個願望吧。",
+     "en": "Close your eyes, Little Bear, and make a wish."
+    },
+    {
+     "who": "旁白",
+     "text": "呼！小熊一口氣，吹熄了蠟燭。",
+     "en": "Whoosh! Little Bear blows out all the candles in one breath."
+    }
+   ]
+  },
+  {
+   "scene": "小熊家的客廳，燈又打開了；地上有拆開的禮物紙，盒子裡是一個紅色的風箏。",
+   "act": "小熊戴著紙皇冠，抱著紅色風箏，嘴邊沾著蛋糕奶油，笑得好開心；小青蛙湊過來好奇地問；熊爸爸、熊媽媽坐在沙發上互看一眼，笑了。最後一句是對著聽故事的小孩說。",
+   "lines": [
+    {
+     "who": "小青蛙",
+     "tag": "curious",
+     "text": "小熊，你許了什麼願望？",
+     "en": "Little Bear, what did you wish for?"
+    },
+    {
+     "who": "小熊",
+     "tag": "laughing",
+     "text": "這是祕密！",
+     "en": "It's a secret!"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "happy",
+     "text": "明天，我們一起去放你的新風箏吧！",
+     "en": "Tomorrow, let's all go fly your new kite!"
+    },
+    {
+     "who": "旁白",
+     "text": "那天晚上，小熊戴著紙皇冠睡著了。",
+     "en": "That night, Little Bear falls asleep wearing his paper crown."
+    },
+    {
+     "who": "旁白",
+     "text": "小朋友，你猜，小熊許了什麼願望呢？",
+     "en": "What do you think Little Bear wished for?"
+    }
+   ]
+  }
+ ]
+}
