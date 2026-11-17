@@ -40,17 +40,17 @@
   },
   {
    "char": "得",
-   "where": "第5頁『沉得』，第6、9頁『拉得』，第9、10、12頁『綁得』",
+   "where": "第5、11頁『沉得』，第6、9頁『拉得』，第9、12頁『綁得』",
    "read": "de"
   },
   {
    "char": "為",
-   "where": "第8、10頁『因為』",
+   "where": "第8、10頁『因為』，第11頁『為什麼』",
    "read": "wèi"
   },
   {
    "char": "什",
-   "where": "第7頁『什麼』",
+   "where": "第7頁『什麼』，第11頁『為什麼』",
    "read": "shén"
   },
   {
@@ -60,7 +60,7 @@
   },
   {
    "char": "會",
-   "where": "第4頁『很會想辦法』，第7頁『船會往上浮』，第8頁『才會往下沉』，第9頁『鐵牛會怎麼樣』",
+   "where": "第1頁『才不會』，第2頁『橋會被沖走』，第4頁『很會想辦法』，第7頁『船會往上浮』，第9頁『鐵牛會怎麼樣』",
    "read": "huì"
   },
   {
@@ -80,7 +80,7 @@
   },
   {
    "char": "頭",
-   "where": "第1頁『一頭大鐵牛』",
+   "where": "第11頁『橋頭』",
    "read": "tóu"
   },
   {
@@ -101,13 +101,13 @@
     },
     {
      "who": "旁白",
-     "text": "河邊有一頭大鐵牛，用來綁住橋。",
-     "en": "On the bank stood a great iron ox. The bridge was tied to it to keep it in place."
+     "text": "橋用很粗的鐵鍊，綁在河邊的大鐵牛身上。",
+     "en": "The bridge was tied with thick iron chains to a great iron ox on the riverbank."
     },
     {
      "who": "旁白",
-     "text": "鐵牛很重，很重，好多人也抬不動。",
-     "en": "The iron ox was very, very heavy. Not even a crowd could lift it."
+     "text": "鐵牛很重，橋才不會被水沖走。",
+     "en": "The iron ox was so heavy that the river could not wash the bridge away."
     }
    ]
   },
@@ -128,8 +128,8 @@
     {
      "who": "大官",
      "tag": "worried",
-     "text": "糟糕！沒有鐵牛，橋就綁不住了！",
-     "en": "Oh no! Without the iron ox, we can't hold the bridge!"
+     "text": "糟糕！沒有鐵牛，橋會被沖走！",
+     "en": "Oh no! Without the iron ox, the bridge will wash away!"
     }
    ]
   },
@@ -139,8 +139,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "力氣很大的船夫潛下去，把粗繩子綁在鐵牛身上。",
-     "en": "A strong boatman dove down and tied a thick rope around the iron ox."
+     "text": "力氣很大的船夫潛下去，把繩子綁在鐵牛身上。",
+     "en": "A strong boatman dove down and tied a rope around the iron ox."
     },
     {
      "who": "船夫",
@@ -210,8 +210,8 @@
     },
     {
      "who": "旁白",
-     "text": "兩條船裝滿了，沉得好低。",
-     "en": "Now both boats were full, sitting very low in the water."
+     "text": "兩條船都裝滿了。",
+     "en": "Now both boats were full."
     }
    ]
   },
@@ -244,7 +244,7 @@
   },
   {
    "scene": "大河中間。兩條大木船並排停在河中間，中間隔開一小段，兩條船上橫架著一根很粗的大木頭；幾條粗繩子從大木頭直直往下伸進水裡，綁著河底的鐵牛。",
-   "act": "船上的大人們拿著鏟子，把船上的泥土一鏟一鏟鏟進河裡，泥土落進水裡濺起小水花；兩條船上的泥土山已經矮了一半。岸上，大官兩手一攤，眼睛瞪得好大，帽子兩邊的帽翅抖呀抖；懷丙師父笑著摸摸自己的光頭。小女孩在大柳樹下，盯著船邊看。",
+   "act": "船上的大人們拿著鏟子，把船上的泥土一鏟一鏟鏟進河裡，泥土落進水裡濺起小水花；兩條船上的泥土山已經矮了一半。岸上，大官兩手一攤，眼睛瞪得好大，帽子兩邊的帽翅抖呀抖；懷丙師父笑著摸摸自己的光頭。小女孩在大柳樹下，盯著船邊看，一隻手平平地往下比，比船剛才沉得很低的樣子。",
    "lines": [
     {
      "who": "懷丙師父",
@@ -263,6 +263,11 @@
      "en": "Scoop by scoop, there was less and less dirt in the boats."
     },
     {
+     "who": "小女孩",
+     "text": "剛才泥土越多，船越低！",
+     "en": "When the dirt went in, the boats sank lower and lower!"
+    },
+    {
      "who": "旁白",
      "text": "你猜，船會往上浮，或是往下沉呢？",
      "en": "Do you think the boats floated up, or sank down?"
@@ -277,11 +282,6 @@
      "who": "旁白",
      "text": "往上浮！因為泥土少了，船變輕了，所以往上浮。",
      "en": "They floated up! With less dirt, the boats were lighter, so they floated up."
-    },
-    {
-     "who": "旁白",
-     "text": "泥土變多，才會往下沉。",
-     "en": "They only sank down when more dirt went in."
     },
     {
      "who": "小女孩",
@@ -314,8 +314,13 @@
     },
     {
      "who": "旁白",
-     "text": "船想往上浮，繩子又綁得好緊。你猜，再鏟下去，鐵牛會怎麼樣呢？",
-     "en": "The boats wanted to float up, and the ropes were tied tight. Can you guess what would happen to the iron ox if they kept shoveling?"
+     "text": "船想往上浮，繩子又綁得好緊。",
+     "en": "The boats wanted to float up, and the ropes were tied tight."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，再鏟下去，鐵牛會怎麼樣呢？",
+     "en": "Can you guess what would happen to the iron ox if they kept shoveling?"
     }
    ]
   },
@@ -340,7 +345,7 @@
     },
     {
      "who": "旁白",
-     "text": "鐵牛離開河底的泥巴，吊在兩條船下面。",
+     "text": "鐵牛離開了泥巴，吊在兩條船下面。",
      "en": "The iron ox came free of the mud and hung beneath the two boats."
     },
     {
@@ -353,11 +358,11 @@
   },
   {
    "scene": "大河上，從河中間到橋頭旁邊的岸邊；太陽出來了，河水亮亮的。",
-   "act": "畫成左右兩格。左格：兩條大木船上的泥土都鏟光了，船邊離水面大約一個大人的小腿那麼高（比空船低一點，因為下面吊著鐵牛）。船夫和大人們划著槳，兩條船並排慢慢靠向橋頭旁邊的岸邊；水面下的剖面圖：鐵牛吊在兩條船下面的水裡，離河底一小段，跟著船一起移動，前面的河底越來越淺。小女孩在岸上的大柳樹下，高高舉起兩隻手，一手指著繩子，笑得好開心。右格：黑色的大鐵牛已經回到原來的地方：站在橋頭旁邊、緊靠水邊的岸上，四隻腳踩在淺淺的水裡，全身濕濕的、沾著泥巴；兩條空船停在旁邊的水裡，繩子已經解開。大官笑得眼睛瞇起來，兩手拱在胸前向懷丙師父道謝。懷丙師父笑著，一手平平地往下比、再往上比，像船沉下去又浮起來的樣子。旁邊的大人們在擦汗、歡呼。",
+   "act": "畫成左右兩格。左格：兩條大木船上的泥土都鏟光了，船邊離水面大約一個大人的小腿那麼高（比空船低一點，因為下面吊著鐵牛）。船夫和大人們划著槳，兩條船並排慢慢靠向橋頭旁邊的岸邊；水面下的剖面圖：鐵牛吊在兩條船下面的水裡，離河底一小段，跟著船一起移動，前面的河底越來越淺。小女孩在岸上的大柳樹下，高高舉起兩隻手，一手指著繩子，笑得好開心。右格：黑色的大鐵牛已經回到原來的地方：站在橋頭旁邊、緊靠水邊的岸上，四隻腳踩在淺淺的水裡，全身濕濕的、沾著泥巴；兩條空船停在旁邊的水裡，繩子已經解開。大官笑得眼睛瞇起來，兩手拱在胸前向懷丙師父請教。懷丙師父笑著，一手先平平地往下壓（船裝滿泥土、沉得很低），再往上抬（泥土鏟掉、船往上浮），向他說明。旁邊的大人們在擦汗、歡呼。",
    "lines": [
     {
      "who": "旁白",
-     "text": "兩條船帶著鐵牛，划到橋頭旁邊的淺水，把牠放下。",
+     "text": "兩條船帶著鐵牛，划到橋頭的淺水，把牠放下。",
      "en": "The two boats carried the iron ox to the shallow water by the bridge, and set it down."
     },
     {
@@ -369,13 +374,13 @@
     {
      "who": "大官",
      "tag": "happy",
-     "text": "師父，您怎麼想到的？",
-     "en": "Master, how did you think of that?"
+     "text": "師父，為什麼要先裝滿泥土？",
+     "en": "Master, why did we fill the boats with dirt first?"
     },
     {
      "who": "懷丙師父",
-     "text": "船裝了東西就往下沉，東西拿走就往上浮。",
-     "en": "Fill a boat, and it sinks lower. Empty it, and it floats up."
+     "text": "先讓船沉得很低。泥土鏟掉了，船才有力氣往上浮。",
+     "en": "To make the boats sit low. Then, when the dirt came out, they had the strength to float up."
     },
     {
      "who": "懷丙師父",

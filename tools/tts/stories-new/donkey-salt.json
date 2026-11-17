@@ -2,7 +2,7 @@
  "id": "donkey-salt",
  "title": "揹鹽的小驢子",
  "title_en": "The Donkey and the Salt",
- "size": "短",
+ "size": "中",
  "roles": {
   "小驢子": "愛偷懶但不壞的小驢子，聲音像五六歲的小男孩，覺得自己很聰明；喊重時拖長聲音，想到「好辦法」時很得意，站不起來時哇哇叫，道歉時小聲、很真心。",
   "叔叔": "賣鹽的叔叔，溫和的大叔聲音，好脾氣、不罵人，說話慢，笑的時候很溫暖。"
@@ -20,17 +20,17 @@
  "polyphones": [
   {
    "char": "揹",
-   "where": "書名『揹鹽』，第1頁『揹鹽』『不想揹』，第4頁『揹海綿』，第5頁『揹的』，第8頁『揹一袋』",
+   "where": "書名『揹鹽』，第1頁『揹鹽』『不想揹』，第4頁『揹海綿』，第5頁『揹的』，第9、10頁『揹一袋』",
    "read": "bēi"
   },
   {
    "char": "重",
-   "where": "第1、6頁『好重』，第5、6、7頁『變重』",
+   "where": "第1、6頁『好重』，第5、6、8、10、11頁『變重』，第11頁『那麼重』『一樣重』",
    "read": "zhòng"
   },
   {
    "char": "為",
-   "where": "第3、6頁『因為』",
+   "where": "第3、6、11頁『因為』",
    "read": "wèi"
   },
   {
@@ -40,12 +40,12 @@
   },
   {
    "char": "會",
-   "where": "第1、7頁『會化掉』，第2頁『會怎麼樣』，第3、5頁『就會變輕』，第4、5頁『很會吸水』，第3、5頁『會變輕』，第7頁『海綿會吸水』，第8頁『會直接說』",
+   "where": "第1、8、10、11頁『會化掉』，第2頁『會怎麼樣』，第3、5頁『就會變輕』，第4、5頁『很會吸水』，第5、10頁『會變輕』，第8、10、11頁『會吸水』，第9頁『會直接說』，第12頁『會先想一想』『會怎樣』",
    "read": "huì"
   },
   {
    "char": "累",
-   "where": "第8頁『累了』",
+   "where": "第9、10頁『累了』",
    "read": "lèi"
   },
   {
@@ -55,8 +55,13 @@
   },
   {
    "char": "啊",
-   "where": "第8頁『咿啊』",
+   "where": "第3、12頁『咿啊』",
    "read": "ā"
+  },
+  {
+   "char": "答",
+   "where": "第7頁『滴答』",
+   "read": "dā"
   }
  ],
  "pages": [
@@ -79,13 +84,13 @@
      "who": "叔叔",
      "tag": "gentle",
      "text": "過小溪要小心，鹽碰到水會化掉喔。",
-     "en": "Be careful crossing the stream. If salt gets wet, it dissolves and disappears into the water."
+     "en": "Be careful crossing the stream. If salt gets wet, it dissolves and washes away."
     }
    ]
   },
   {
    "scene": "一條很淺的小溪，溪水很清，看得到水底圓圓的石頭，水只到小驢子的膝蓋；兩邊是草地。",
-   "act": "小驢子走到小溪中間，一隻後腳踩在一顆長了青苔的綠色石頭上滑開，一屁股坐在水裡，前腳還撐著，頭和脖子都在水面上，眼睛睜得圓圓的，一點也沒有受傷。兩個白色鹽袋都泡在水裡，袋子旁邊的水變成白白霧霧的。叔叔踩著水，趕快走過來要扶他。",
+   "act": "小驢子走到小溪中間，一隻後腳踩在一顆長了青苔的綠色石頭上滑開，一屁股坐在水裡，前腳還撐著，頭和脖子都在水面上，眼睛睜得圓圓的，嚇了一跳、愣愣地坐著沒有動，一點也沒有受傷。兩個白色鹽袋都泡在水裡，袋子旁邊的水變成白白霧霧的，一直往下游流走。叔叔踩著水，趕快走過來要扶他。",
    "lines": [
     {
      "who": "旁白",
@@ -94,8 +99,8 @@
     },
     {
      "who": "旁白",
-     "text": "他踩到很滑的石頭，一屁股坐進水裡。",
-     "en": "He slipped on a stone and, plop, sat right down in the water."
+     "text": "他踩到很滑的石頭，一屁股坐進水裡，坐了好久。",
+     "en": "He slipped on a stone and, plop, sat right down in the water. He sat there for a long while."
     },
     {
      "who": "旁白",
@@ -106,7 +111,7 @@
   },
   {
    "scene": "同一條很淺的小溪，小驢子站在水裡，水到膝蓋。",
-   "act": "小驢子站起來了，身上兩個白色麻布袋扁扁地垂著、滴著水，裡面幾乎沒有東西；他的耳朵豎得直直的，腳步輕快，一隻前腳高高抬起來。叔叔一手拎起扁掉的袋角給他看，一手摸摸小驢子的頭，沒有生氣。小驢子頭上一個想像泡泡：自己坐在水裡，袋子上面畫一根羽毛；他瞇著眼睛偷笑。",
+   "act": "小驢子站起來了，身上兩個白色麻布袋扁扁地垂著、滴著水，裡面幾乎沒有東西；他的耳朵豎得直直的，腳步輕快，一隻前腳高高抬起來，仰起頭、張大嘴巴開心地叫，小銅鈴搖來搖去。叔叔一手拎起扁掉的袋角給他看，一手摸摸小驢子的頭，沒有生氣。小驢子頭上一個想像泡泡：自己坐在水裡，袋子上面畫一根羽毛。",
    "lines": [
     {
      "who": "旁白",
@@ -124,12 +129,17 @@
      "tag": "whispering",
      "text": "原來坐進水裡就會變輕！我真聰明！",
      "en": "So sitting in the water makes things lighter! I'm so clever!"
+    },
+    {
+     "who": "旁白",
+     "text": "咿啊！他開心地叫。",
+     "en": "Hee-haw! He brayed happily."
     }
    ]
   },
   {
    "scene": "第二天早上，叔叔家的小院子：白色的矮房子、紅屋頂，門口有一張木頭桌子；桌子旁邊的地上放著兩個大網袋，裡面裝滿黃色的海綿。",
-   "act": "左格：叔叔拿著一塊黃色、有很多小洞的海綿擦木頭桌子，桌上原本的一灘水被海綿吸得乾乾淨淨，海綿變得鼓鼓的、滴著水；小驢子站在旁邊看。右格：叔叔把兩個裝滿黃色海綿的大網袋掛到小驢子身上左右兩邊，網袋很大，可是小驢子站得直直的、抬著頭，很輕鬆。",
+   "act": "左格：叔叔拿著一塊黃色、有很多小洞的海綿擦木頭桌子，桌上原本的一灘水被海綿吸得乾乾淨淨，海綿變得鼓鼓的、滴著水；小驢子站在旁邊看。右格：叔叔把兩個裝滿黃色海綿的大網袋掛到小驢子身上左右兩邊，網袋很大，可是小驢子站得直直的、抬著頭，很輕鬆；他瞇著眼睛偷笑，頭上一個想像泡泡：自己坐在小溪裡，網袋上面畫一根羽毛。",
    "lines": [
     {
      "who": "旁白",
@@ -138,8 +148,13 @@
     },
     {
      "who": "叔叔",
-     "text": "海綿很輕，可是很會吸水。今天揹海綿去賣。",
-     "en": "Sponges are light, but they soak up lots of water. Today we'll sell sponges."
+     "text": "昨天的鹽都化掉了，今天揹海綿去賣。",
+     "en": "Yesterday's salt all washed away, so today we'll sell sponges."
+    },
+    {
+     "who": "叔叔",
+     "text": "海綿很輕，可是很會吸水。",
+     "en": "Sponges are light, but they soak up lots of water."
     }
    ]
   },
@@ -166,7 +181,7 @@
     {
      "who": "旁白",
      "text": "這次揹的是很會吸水的海綿。你猜，會變輕，或是變重呢？",
-     "en": "But this time he was carrying sponges, and sponges soak up water. Do you think his load got lighter, or heavier?"
+     "en": "This time he carried sponges, and sponges soak up water. Do you think his load got lighter, or heavier?"
     }
    ]
   },
@@ -177,29 +192,72 @@
     {
      "who": "旁白",
      "text": "變重了！因為海綿吸滿了水，所以變得好重。",
-     "en": "Heavier! Because the sponges filled up with water, they got very, very heavy."
+     "en": "Heavier! Because the sponges filled up with water, they got so heavy."
     },
     {
      "who": "小驢子",
      "tag": "surprised",
      "text": "哎呀，我站不起來！",
      "en": "Oh no! I can't get up!"
-    },
-    {
-     "who": "旁白",
-     "text": "他的腳抬不起來，屁股泡在水裡。",
-     "en": "He couldn't lift his legs. He just sat there with his bottom in the stream."
     }
    ]
   },
   {
-   "scene": "小溪邊的草地上，陽光很亮。",
-   "act": "叔叔已經把小驢子扶到岸上。他笑著蹲在草地上，兩手用力擠一塊黃色的海綿，水一滴一滴流到草地上；旁邊擠過的海綿變回小小的、排成一排。小驢子站在旁邊，耳朵垂下來，不好意思地低著頭看。",
+   "scene": "同一條很淺的小溪，水只到小驢子的膝蓋，陽光很亮。",
+   "act": "三格連續的好笑畫面（好笑、不可憐）。第一格：小驢子兩隻前腳撐直站起來了，屁股卻還坐在水裡，像小狗坐著的樣子，咬著牙、臉頰鼓鼓地用力。第二格：屁股抬離水面一點點，四隻腳抖個不停，尾巴翹得直直的。第三格：濺起一圈小水花，他又一屁股坐回水裡，兩隻大耳朵歪向兩邊，眼睛變成圈圈。三格裡，兩個網袋的黃色海綿都脹得好大，水一滴一滴從海綿往下滴。小驢子的頭和脖子一直在水面上，水只到膝蓋，沒有危險。叔叔踩著水從後面走過來，一手遮著嘴巴忍住笑，沒有生氣。",
    "lines": [
+    {
+     "who": "小驢子",
+     "tag": "shouting",
+     "text": "嘿喲，嘿喲！",
+     "en": "Heave-ho! Heave-ho!"
+    },
+    {
+     "who": "旁白",
+     "text": "前腳站起來了，屁股泡在水裡不動。",
+     "en": "His front legs stood up. His bottom stayed in the stream."
+    },
+    {
+     "who": "小驢子",
+     "text": "嘿喲，嘿喲！",
+     "en": "Heave-ho! Heave-ho!"
+    },
+    {
+     "who": "旁白",
+     "text": "屁股抬起來一點，撲通，又坐回去。",
+     "en": "His bottom came up just a little. Then plop, down it went again."
+    },
+    {
+     "who": "旁白",
+     "text": "水從海綿滴下來，滴答，滴答。",
+     "en": "Water dripped from the sponges. Drip, drop. Drip, drop."
+    }
+   ]
+  },
+  {
+   "scene": "左格是同一條很淺的小溪；右格是小溪邊的草地，陽光很亮。",
+   "act": "左格：小驢子坐在水裡，回頭對叔叔皺著臉喊，尾巴尖滴著水；叔叔笑著站在他旁邊，兩手把兩個吸滿水、脹得好大的海綿網袋從小驢子身上提起來，水從網袋往下流。網袋一拿開，小驢子四隻腳一下就站直了，耳朵也豎起來。右格：叔叔笑著蹲在草地上，兩手用力擠一塊黃色的海綿，水一滴一滴流到草地上；旁邊擠過的海綿變回小小的、排成一排。小驢子站在旁邊，屁股的毛濕濕的，耳朵垂下來，不好意思地低著頭看。",
+   "lines": [
+    {
+     "who": "小驢子",
+     "text": "叔叔，我的屁股好冰喔！",
+     "en": "My bottom is freezing!"
+    },
     {
      "who": "叔叔",
      "tag": "laughing",
-     "text": "鹽會化掉，所以袋子變輕。海綿會吸水，所以變重呀。",
+     "text": "哈！我來幫你。",
+     "en": "Ha! I'll help you."
+    },
+    {
+     "who": "旁白",
+     "text": "叔叔拿下海綿，小驢子一下就站起來了。",
+     "en": "The salt seller lifted off the sponges, and Little Donkey stood right up."
+    },
+    {
+     "who": "叔叔",
+     "tag": "gentle",
+     "text": "鹽會化掉，所以變輕。海綿會吸水，所以變重呀。",
      "en": "Salt dissolves, so the bags get lighter. Sponges soak up water, so they get heavier."
     },
     {
@@ -210,8 +268,8 @@
    ]
   },
   {
-   "scene": "過了小溪的黃土小路，前面就是小鎮的市場，看得到彩色的布棚子。",
-   "act": "叔叔把一個海綿網袋揹在自己肩膀上，小驢子身上只掛著另一個網袋，兩個並排走。小驢子抬頭看著叔叔，認真地說話；叔叔笑著摸他的頭。最後小驢子仰起頭、張大嘴巴開心地叫，小銅鈴搖來搖去。",
+   "scene": "左格是過了小溪的黃土小路；右格是小鎮的市場，彩色的布棚子下面擺著攤子。",
+   "act": "左格：叔叔把一個海綿網袋揹在自己肩膀上，小驢子身上只掛著另一個網袋，兩個並排走。小驢子抬頭看著叔叔，認真地說話；叔叔笑著摸他的頭。右格：市場的布棚子下面，叔叔把最後一塊黃色的海綿交給一位提著菜籃的客人，兩個網袋都扁扁的、空了；小驢子站在攤子旁邊，開心地看。",
    "lines": [
     {
      "who": "旁白",
@@ -229,11 +287,88 @@
      "tag": "gentle",
      "text": "好，累了就休息。",
      "en": "Good. When you're tired, we'll rest."
+    }
+   ]
+  },
+  {
+   "scene": "下午，回家的路上，同一條很淺的小溪邊的草地；溪水很清，看得到水底圓圓的石頭，太陽偏西，光線是暖暖的黃色。",
+   "act": "小驢子身上掛著一個大網袋，裡面裝滿灰色的圓石頭，每一顆像拳頭那麼大（叔叔要帶回家蓋院子矮牆的石頭）；他走到小溪邊就停下來，伸著舌頭喘氣，抬頭對叔叔說話。叔叔把草帽拿在手上，笑著點頭，幫他把裝石頭的網袋拿下來放在草地上，兩個一起坐在溪邊。小驢子歪著頭看著那袋石頭，頭上三個想像泡泡排成一排：扁掉的白色鹽袋、脹得好大的黃色海綿、一顆灰色石頭加一個問號。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "海綿賣光了。回家時，小驢子揹一袋蓋牆的石頭。",
+     "en": "The sponges sold out. On the way home, Little Donkey carried a bag of stones to build a wall."
+    },
+    {
+     "who": "小驢子",
+     "text": "叔叔，我累了。",
+     "en": "I'm tired."
+    },
+    {
+     "who": "叔叔",
+     "text": "好，在小溪邊休息。",
+     "en": "All right. Let's rest by the stream."
+    },
+    {
+     "who": "小驢子",
+     "text": "鹽會化掉，海綿會吸水。那石頭呢？",
+     "en": "Salt dissolves. Sponges soak up water. What about stones?"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，石頭泡了水，會變輕，變重，或是一樣呢？",
+     "en": "If stones get soaked, do you think they get lighter, heavier, or stay the same?"
+    }
+   ]
+  },
+  {
+   "scene": "同一條很淺的小溪邊的草地，下午暖暖的陽光。",
+   "act": "左格：叔叔蹲在溪邊，一手把一顆拳頭大的灰色圓石頭整顆泡進清清的溪水裡；小驢子把臉湊得很近，睜大眼睛看。右格：叔叔把同一顆石頭拿出水面甩一甩，幾滴水珠飛出去，石頭跟泡水以前一樣大、一樣圓，表面只有一點點濕；叔叔把石頭放在手掌上給小驢子看。小驢子的嘴巴張成圓形，很驚訝。裝石頭的網袋放在旁邊的草地上。",
+   "lines": [
+    {
+     "who": "小驢子",
+     "tag": "excited",
+     "text": "我猜變重！石頭那麼重！",
+     "en": "I say heavier! Stones are so heavy!"
+    },
+    {
+     "who": "旁白",
+     "text": "叔叔把石頭泡進水裡，再拿出來。",
+     "en": "The salt seller dipped one stone into the water and took it out again."
+    },
+    {
+     "who": "旁白",
+     "text": "石頭沒有變小，甩一甩，水就掉了。",
+     "en": "The stone was no smaller. One shake, and the water was gone."
+    },
+    {
+     "who": "叔叔",
+     "tag": "gentle",
+     "text": "因為石頭不會化掉，也不會吸水，所以一樣重。",
+     "en": "Because a stone doesn't dissolve, and it doesn't soak up water, it stays just as heavy."
+    }
+   ]
+  },
+  {
+   "scene": "同一條很淺的小溪，水只到小驢子的膝蓋；過了小溪的黃土小路通到叔叔家，遠處是白色的矮房子和紅屋頂，天空有一點橘色。",
+   "act": "小驢子揹著那一袋灰色的石頭（網袋掛在身上），走在小溪中間，水到膝蓋，四隻腳踩得很穩，看著腳下，沒有坐下去。叔叔戴著草帽走在旁邊，笑著對他比大拇指。最後小驢子站在對岸，仰起頭、張大嘴巴開心地叫，小銅鈴搖來搖去。",
+   "lines": [
+    {
+     "who": "小驢子",
+     "tag": "happy",
+     "text": "以後我會先想一想，東西碰到水會怎樣！",
+     "en": "From now on, I'll think first: what happens when things get wet?"
+    },
+    {
+     "who": "叔叔",
+     "tag": "laughing",
+     "text": "這才是真聰明！",
+     "en": "Now that's really clever!"
     },
     {
      "who": "旁白",
      "text": "咿啊，咿啊！小驢子笑了。",
-     "en": "Hee-haw, hee-haw! laughed Little Donkey."
+     "en": "Hee-haw, hee-haw! Little Donkey laughed."
     }
    ]
   }

@@ -47,11 +47,6 @@
    "char": "乾",
    "where": "第10頁『餅乾』兩次",
    "read": "gān"
-  },
-  {
-   "char": "圃",
-   "where": "第2頁『花圃』，第4頁『花圃』兩次",
-   "read": "pǔ"
   }
  ],
  "pages": [
@@ -73,7 +68,7 @@
     {
      "who": "旁白",
      "text": "媽媽在小熊的左手，綁了一條紅帶子。",
-     "en": "Mama Bear ties a red ribbon on Little Bear's left hand."
+     "en": "Mama Bear ties a red ribbon around Little Bear's left wrist."
     },
     {
      "who": "熊媽媽",
@@ -85,27 +80,22 @@
   },
   {
    "scene": "小熊家的院子，晴天的白天。院子的配置全書固定（左、右一律以小熊背對大門、面向前方、沿著小路往信箱看的時候為準）：木頭小屋的綠色大門在最後面；大門前面是一條筆直的石板小路，一共十步長，通到院子最前面的矮木籬笆；小路走到一半（第五步）的地方，左邊是一棵樹幹很粗的大樹，右邊是一個長方形的花圃，開著紅色和黃色的花；大樹的後面（從小路看過去，樹的另一邊、離小路比較遠的那一邊）有一顆扁圓形的灰色大石頭，高度大約到小熊的胸口；小路走到底，籬笆旁邊立著一個紅色的木頭信箱，有一扇可以掀開的小門。建議用從上面斜斜往下看的角度畫：大門在畫面下方，小路往畫面上方延伸，所以小熊的左邊就是畫面的左邊（大樹、大石頭在畫面左邊，花圃在畫面右邊，信箱在畫面最上面）。",
-   "act": "小熊和小兔並肩站在綠色大門口，背對大門、面向院子（背對讀者）。小熊自己的左手腕上綁著一條紅帶子（小熊背對讀者時，紅帶子在畫面左邊；小熊面對讀者時，紅帶子在畫面右邊，不要畫反）。小熊舉起綁紅帶子的左手，指著左邊的大樹；小兔指著右邊的花圃。畫面要一眼看得出整個院子：中間一條小路，小路的左邊是大樹（樹後面露出半顆大石頭），小路的右邊是花圃，小路走到底是紅色信箱。",
+   "act": "小熊和小兔並肩站在綠色大門口，背對大門、面向院子（背對讀者）。小熊自己的左手腕上綁著一條紅帶子（小熊背對讀者時，紅帶子在畫面左邊；小熊面對讀者時，紅帶子在畫面右邊，不要畫反）。小熊高高舉起綁紅帶子的左手，指著左邊的大樹；小兔用另一邊的手（右手）指著右邊開滿花的花圃，笑得很開心。畫面要一眼看得出整個院子：中間一條小路，小路的左邊是大樹（樹後面露出半顆大石頭），小路的右邊是花圃，小路走到底是紅色信箱。",
    "lines": [
     {
      "who": "旁白",
-     "text": "他們站在大門口。大門的前面，有一條小路。",
+     "text": "他們站在大門口，前面有一條小路。",
      "en": "They stand at the front door. A little path runs straight ahead."
     },
     {
      "who": "小熊",
-     "text": "小路的左邊，有一棵大樹。",
-     "en": "On the left of the path is a big tree."
+     "text": "紅帶子這一邊，有一棵大樹！",
+     "en": "On my ribbon side, there's a big tree!"
     },
     {
      "who": "小兔",
-     "text": "小路的右邊，有一個花圃。",
-     "en": "On the right of the path is a flower bed."
-    },
-    {
-     "who": "旁白",
-     "text": "小路走到底，有一個信箱。",
-     "en": "At the very end of the path is a mailbox."
+     "text": "另外一邊，有好多花！",
+     "en": "And on the other side, lots of flowers!"
     }
    ]
   },
@@ -131,31 +121,36 @@
     },
     {
      "who": "旁白",
-     "text": "左邊，是綁紅帶子的那一邊。你猜，他們會看到什麼呢？",
-     "en": "Left is the side with the red ribbon. Can you guess what they'll see?"
+     "text": "紅帶子那一邊有大樹，另一邊有花。",
+     "en": "On the ribbon side is the big tree. On the other side are the flowers."
+    },
+    {
+     "who": "旁白",
+     "text": "左邊是紅帶子那一邊。你猜，他們會看到什麼呢？",
+     "en": "Left is the ribbon side. Can you guess what they'll see?"
     }
    ]
   },
   {
    "scene": "小熊家的院子，晴天的白天。院子的配置全書固定（左、右一律以小熊背對大門、面向前方、沿著小路往信箱看的時候為準）：木頭小屋的綠色大門在最後面；大門前面是一條筆直的石板小路，一共十步長，通到院子最前面的矮木籬笆；小路走到一半（第五步）的地方，左邊是一棵樹幹很粗的大樹，右邊是一個長方形的花圃，開著紅色和黃色的花；大樹的後面（從小路看過去，樹的另一邊、離小路比較遠的那一邊）有一顆扁圓形的灰色大石頭，高度大約到小熊的胸口；小路走到底，籬笆旁邊立著一個紅色的木頭信箱，有一扇可以掀開的小門。建議用從上面斜斜往下看的角度畫：大門在畫面下方，小路往畫面上方延伸，所以小熊的左邊就是畫面的左邊（大樹、大石頭在畫面左邊，花圃在畫面右邊，信箱在畫面最上面）。",
-   "act": "小兔跑錯邊了：她跑到小路右邊（畫面右邊）的花圃，彎腰在花中間找，什麼紙條都沒有；一隻黃色的蝴蝶停在她的鼻子上，她兩隻眼睛往中間看著蝴蝶，耳朵豎得直直的，樣子很好笑。小熊還站在小路的正中間，笑著高高舉起綁紅帶子的左手（畫面左邊那隻手），另一隻手指著左邊的大樹。小熊自己的左手腕上綁著一條紅帶子（小熊背對讀者時，紅帶子在畫面左邊；小熊面對讀者時，紅帶子在畫面右邊，不要畫反）。下一格：小兔跑回小路的正中間、站在小熊旁邊，背對讀者，和小熊一起往左邊（畫面左邊）看。大樹面向小路的樹幹上，在小熊伸手摸得到的高度，貼著一張小紙條。",
+   "act": "小兔跑錯邊了：她跑到小路右邊（畫面右邊）的花圃，彎腰在花中間找，什麼紙條都沒有；一隻黃色的蝴蝶停在她的鼻子上，她兩隻眼睛往中間看著蝴蝶，耳朵豎得直直的，樣子很好笑。小熊還站在小路的正中間，笑著高高舉起綁紅帶子的左手（畫面左邊那隻手），另一隻手指著左邊的大樹。小熊自己的左手腕上綁著一條紅帶子（小熊背對讀者時，紅帶子在畫面左邊；小熊面對讀者時，紅帶子在畫面右邊，不要畫反）。下一格：小兔笑著跑回小路的正中間、站在小熊旁邊，背對讀者，和小熊一起往左邊（畫面左邊）看。大樹面向小路的樹幹上，在小熊伸手摸得到的高度，貼著一張小紙條。",
    "lines": [
     {
      "who": "小兔",
      "tag": "excited",
-     "text": "我看到花圃！",
-     "en": "I see the flower bed!"
+     "text": "我看到好多花！",
+     "en": "I see lots of flowers!"
     },
     {
      "who": "旁白",
-     "text": "花圃裡沒有紙條。一隻蝴蝶停在小兔的鼻子上。",
-     "en": "The flower bed has no note. A butterfly lands on Little Bunny's nose."
+     "text": "花裡面沒有紙條。一隻蝴蝶停在小兔的鼻子上。",
+     "en": "There's no note in the flowers. A butterfly lands on Little Bunny's nose."
     },
     {
      "who": "小熊",
      "tag": "laughing",
      "text": "那邊沒有帶子，是右邊啦！",
-     "en": "No ribbon on that side. That's the right side!"
+     "en": "No ribbon on that side. That's your right, not your left!"
     },
     {
      "who": "小熊",
@@ -164,8 +159,8 @@
     },
     {
      "who": "旁白",
-     "text": "小兔跑回來，往左邊看。",
-     "en": "Little Bunny runs back and looks left."
+     "text": "小兔笑著跑回來，往左邊看。",
+     "en": "Little Bunny giggles, runs back, and looks left."
     }
    ]
   },
@@ -185,8 +180,8 @@
     },
     {
      "who": "旁白",
-     "text": "現在，他們站在大樹的後面。這裡有一顆大石頭。",
-     "en": "Now they are behind the big tree. There is a great big rock."
+     "text": "大樹的後面，有一顆大石頭。",
+     "en": "Behind the big tree, there is a great big rock."
     },
     {
      "who": "小兔",
@@ -208,8 +203,13 @@
     {
      "who": "小熊",
      "tag": "excited",
-     "text": "因為大石頭搬不動，所以紙條在小石頭的下面！",
-     "en": "Because the big rock can't be moved, the note is under the little rock!"
+     "text": "因為媽媽搬不動大石頭，紙條放不到它下面。",
+     "en": "Mama can't move the big rock, so she couldn't put a note under it."
+    },
+    {
+     "who": "小熊",
+     "text": "所以紙條在小石頭的下面！",
+     "en": "So the note must be under the little rock!"
     },
     {
      "who": "旁白",
@@ -241,8 +241,8 @@
     },
     {
      "who": "旁白",
-     "text": "小路走到底了，他們站在信箱旁邊。",
-     "en": "That's the end of the path. Now they are beside the mailbox."
+     "text": "小路走到底了，這裡有一個信箱。",
+     "en": "That's the end of the path. And here is a mailbox."
     },
     {
      "who": "小兔",
@@ -269,8 +269,13 @@
     },
     {
      "who": "旁白",
-     "text": "他們一路往前走到信箱。你猜，大門在前面，或是後面呢？",
-     "en": "They walked ahead all the way to the mailbox. Can you guess? Is the front door ahead of them, or behind them?"
+     "text": "他們一路往前走到信箱。",
+     "en": "They have walked ahead all the way to the mailbox."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，大門在前面，或是後面呢？",
+     "en": "Can you guess? Is the front door ahead of them, or behind them?"
     }
    ]
   },
@@ -303,8 +308,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "打開大門。門的裡面，有一張桌子。",
-     "en": "They open the door. Just inside the door is a table."
+     "text": "門的裡面，有一張桌子。",
+     "en": "Just inside the door is a table."
     },
     {
      "who": "旁白",
@@ -332,7 +337,7 @@
     {
      "who": "旁白",
      "text": "小熊把紅帶子，綁在小兔的左手上。",
-     "en": "Little Bear ties the red ribbon on Little Bunny's left hand."
+     "en": "Little Bear ties the red ribbon around Little Bunny's left wrist."
     },
     {
      "who": "小兔",

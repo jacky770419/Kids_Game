@@ -25,17 +25,17 @@
  "polyphones": [
   {
    "char": "分",
-   "where": "書名『三隻熊分草莓』，第1頁『我來分』，第5頁『怎麼分』",
+   "where": "書名『三隻熊分草莓』，第1頁『我來分』，第6頁『怎麼分』",
    "read": "fēn"
   },
   {
    "char": "為",
-   "where": "第4、6、8頁『因為』",
+   "where": "第5、8頁『因為』",
    "read": "wèi"
   },
   {
    "char": "沒",
-   "where": "第8頁『也沒有』",
+   "where": "第5頁『都沒有』，第8頁『也沒有』",
    "read": "méi"
   },
   {
@@ -44,29 +44,24 @@
    "read": "qiē"
   },
   {
-   "char": "還",
-   "where": "第7頁『還是一樣多』",
-   "read": "hái"
-  },
-  {
    "char": "給",
-   "where": "第2頁『一把給爸爸』『一把給媽媽』『給自己』，第3、8頁『一顆給爸爸，一顆給媽媽，一顆給小熊』，第6頁『給我』，第8頁『送給小鳥』『一顆給小鳥』",
+   "where": "第2頁『一把給爸爸』『一把給媽媽』『給自己』，第3頁『一顆給爸爸，一顆給媽媽，一顆給小熊』，第5頁『一顆給爸爸』，第7頁『給我』『送給小鳥』，第8頁『送給小鳥』『一顆給爸爸，一顆給媽媽，一顆給小熊，一顆給小鳥』",
    "read": "gěi"
   },
   {
-   "char": "幾",
-   "where": "第3頁『有幾顆』",
-   "read": "jǐ"
-  },
-  {
    "char": "圈",
-   "where": "第3頁『第一圈』『三圈』，第4頁『第二圈』『第三圈』『每一圈』『三圈』",
+   "where": "第3頁『第一圈』，第4頁『第二圈』『第三圈』『第四圈』，第5頁『第四圈』",
    "read": "quān"
   },
   {
    "char": "把",
-   "where": "第2頁『一把給爸爸』『一把給媽媽』『把草莓』",
+   "where": "第2頁『一把給爸爸』『一把給媽媽』『把草莓』，第5頁『把那一顆』",
    "read": "bǎ"
+  },
+  {
+   "char": "只",
+   "where": "第4頁『只剩一顆』，第5頁『只剩一顆』",
+   "read": "zhǐ"
   }
  ],
  "pages": [
@@ -83,11 +78,11 @@
      "who": "小熊",
      "tag": "excited",
      "text": "我來分！",
-     "en": "I'll share them out!"
+     "en": "I'll hand them out!"
     },
     {
      "who": "旁白",
-     "text": "爸爸，媽媽，小熊，一人一個盤子。",
+     "text": "三隻熊，一人一個盤子。",
      "en": "Papa, Mama, and Little Bear each have a plate."
     }
    ]
@@ -131,14 +126,14 @@
     },
     {
      "who": "旁白",
-     "text": "這是第一圈。你猜，輪完三圈，每個人有幾顆？",
-     "en": "That is round one. After three rounds, how many will each of them have? Can you guess?"
+     "text": "這是第一圈，每人一顆。",
+     "en": "That is round one. Each of them has one."
     }
    ]
   },
   {
    "scene": "白天，小熊家的餐廳：木頭餐桌靠著一扇打開的窗戶，窗外是院子裡的草莓園和藍天，窗台是木頭的。",
-   "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。輪完三圈：藍色盤子三顆、粉紅色盤子三顆、黃色盤子三顆，三盤排得一樣整齊，籃子裡只剩一顆草莓。熊媽媽用手指一盤一盤點過去，笑得很開心；小熊兩手叉腰，很得意；熊爸爸豎起大拇指。",
+   "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。輪完三圈：藍色盤子三顆、粉紅色盤子三顆、黃色盤子三顆（三盤一共九顆），三盤排得一樣整齊，籃子裡只剩一顆草莓。熊媽媽用手指一盤一盤點過去，笑得很開心；熊爸爸豎起大拇指；小熊一手叉腰、很得意，另一隻手已經伸向籃子裡剩下的那一顆。",
    "lines": [
     {
      "who": "旁白",
@@ -146,15 +141,43 @@
      "en": "After round two, each has two. After round three, each has three."
     },
     {
-     "who": "旁白",
-     "text": "因為每一圈，每人拿一顆，輪了三圈，所以每人三顆。",
-     "en": "Because everyone gets one in each round, and there are three rounds, everyone gets three."
-    },
-    {
      "who": "熊媽媽",
      "tag": "happy",
      "text": "三顆，三顆，三顆，一樣多！",
      "en": "Three, three, and three. All the same!"
+    },
+    {
+     "who": "旁白",
+     "text": "籃子裡只剩一顆。",
+     "en": "Now only one strawberry is left in the basket."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，可以再輪第四圈嗎？",
+     "en": "Can you guess? Can they go around a fourth time?"
+    }
+   ]
+  },
+  {
+   "scene": "白天，小熊家的餐廳：木頭餐桌靠著一扇打開的窗戶，窗外是院子裡的草莓園和藍天，窗台是木頭的。",
+   "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。小熊想輪第四圈：他已經把籃子裡最後一顆草莓放進熊爸爸的藍色盤子（這一刻藍色盤子四顆、粉紅色盤子三顆、黃色盤子三顆），再把手伸進籃子要拿給媽媽，可是籃子裡什麼也沒有了，媽媽和小熊這一圈都拿不到；小熊的手停在籃子裡，嘴巴張成圓形。熊媽媽指指自己只有三顆的盤子，笑著搖頭。熊爸爸用兩根手指捏起盤子裡多出來的那一顆，要放回籃子（放回去以後：三個盤子又是各三顆，籃子裡一顆）。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "第四圈！一顆給爸爸。咦？媽媽和我都沒有！",
+     "en": "Round four! One for Papa. Huh? There's none for Mama or me!"
+    },
+    {
+     "who": "熊爸爸",
+     "tag": "gentle",
+     "text": "因為只剩一顆，不夠一人一顆，所以不能再輪。",
+     "en": "There's only one left. That's not enough for one each, so we can't go around again."
+    },
+    {
+     "who": "旁白",
+     "text": "爸爸把那一顆放回籃子。",
+     "en": "Papa puts that strawberry back in the basket."
     }
    ]
   },
@@ -163,25 +186,20 @@
    "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。三個盤子各有三顆草莓（一共九顆），籃子裡只剩一顆。熊爸爸把小竹籃斜過來給大家看裡面那一顆。小熊趴在桌上，下巴靠著桌面，盯著那一顆草莓。窗台上停著一隻圓圓胖胖的藍色小鳥（白色肚子、黃色小嘴），歪著頭看桌上的草莓。",
    "lines": [
     {
-     "who": "熊爸爸",
-     "text": "三個人拿了九顆。十顆拿走九顆，剩下一顆。",
-     "en": "The three of us took nine. Ten take away nine leaves one."
-    },
-    {
      "who": "旁白",
      "text": "窗邊的小鳥歪著頭看。",
      "en": "A little bird on the windowsill tilts its head and watches."
     },
     {
      "who": "旁白",
-     "text": "剩下的這一顆，怎麼分才公平呢？",
-     "en": "What is the fair thing to do with this last strawberry?"
+     "text": "每人三顆，剩下的這一顆，怎麼分才公平呢？",
+     "en": "Everyone has three. What is the fair thing to do with this last strawberry?"
     }
    ]
   },
   {
    "scene": "白天，小熊家的餐廳：木頭餐桌靠著一扇打開的窗戶，窗外是院子裡的草莓園和藍天，窗台是木頭的。",
-   "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。三個盤子各有三顆草莓，籃子裡一顆。小熊先是兩手高高舉起來搶著要，接著停住，一根手指點著自己的下巴想；他頭上有一個想像泡泡：黃色盤子裡四顆草莓，藍色盤子和粉紅色盤子各三顆，泡泡裡的小熊皺著眉頭。熊爸爸和熊媽媽互看一眼，偷偷笑。藍色小鳥還在窗台上。",
+   "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。三個盤子各有三顆草莓；最後一顆草莓放在桌子中間的小砧板上。小熊坐在中間，先是兩手高高舉起來搶著要，接著停住，一根手指點著自己的下巴想；他頭上有一個想像泡泡：黃色盤子裡四顆草莓，藍色盤子和粉紅色盤子各三顆，泡泡裡的小熊皺著眉頭。熊爸爸手裡拿著一把圓頭的小餐刀（刀在爸爸手上，小熊沒有碰），刀還沒切下去，他頭上的想像泡泡是一顆草莓切成一樣大的三小塊。熊媽媽一手指著窗台上的藍色小鳥，她頭上的想像泡泡是小鳥吃草莓、三個盤子還是各三顆。",
    "lines": [
     {
      "who": "小熊",
@@ -191,31 +209,25 @@
     },
     {
      "who": "旁白",
-     "text": "可是，小熊想了想。",
-     "en": "But then Little Bear stops to think."
+     "text": "小熊想了想。",
+     "en": "Then Little Bear stops to think."
     },
     {
      "who": "小熊",
-     "text": "因為這樣我有四顆，爸爸媽媽三顆，所以不公平。",
-     "en": "Because then I'd have four, and Papa and Mama would have three, that's not fair."
-    }
-   ]
-  },
-  {
-   "scene": "白天，小熊家的餐廳：木頭餐桌靠著一扇打開的窗戶，窗外是院子裡的草莓園和藍天，窗台是木頭的。",
-   "act": "桌上有三個盤子：熊爸爸面前是藍色的盤子，熊媽媽面前是粉紅色的盤子，小熊面前是黃色的盤子；桌子中間是一個小竹籃。三個盤子各有三顆草莓；最後一顆草莓放在桌子中間的小砧板上。熊爸爸手裡拿著一把圓頭的小餐刀（刀在爸爸手上，小熊沒有碰），刀還沒切下去，他頭上的想像泡泡是一顆草莓分成三小塊、三小塊一樣大。熊媽媽一手指著窗台上的藍色小鳥，她頭上的想像泡泡是小鳥吃草莓、三個盤子還是各三顆。小熊坐在中間，左看看、右看看。",
-   "lines": [
+     "text": "這樣我四顆，爸爸媽媽三顆，不公平！",
+     "en": "Then I'd have four, and Papa and Mama would only have three. That's not fair!"
+    },
     {
      "who": "熊爸爸",
      "tag": "gentle",
-     "text": "爸爸用刀切成三塊，一人一塊，一樣多，所以公平。",
-     "en": "Papa can cut it into three pieces with a knife, one each. All the same, so it's fair."
+     "text": "爸爸用刀切成一樣大的三塊，所以公平。",
+     "en": "Papa can cut it with a knife into three pieces, all the same size. So that's fair."
     },
     {
      "who": "熊媽媽",
      "tag": "gentle",
-     "text": "或是送給小鳥，我們三個還是一樣多，所以也公平。",
-     "en": "Or we give it to the little bird. The three of us still have the same, so that's fair too."
+     "text": "送給小鳥，我們三個一樣多，也公平。",
+     "en": "Or we could give it to the little bird. Then we'd all still have the same amount, so that's fair too."
     }
    ]
   },

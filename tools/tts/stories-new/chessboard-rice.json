@@ -75,7 +75,7 @@
   },
   {
    "char": "倍",
-   "where": "第3、7、10、12頁『加倍』",
+   "where": "第3、4、10、12頁『加倍』",
    "read": "bèi"
   }
  ],
@@ -92,7 +92,7 @@
     {
      "who": "旁白",
      "text": "有位老爺爺帶來一個新遊戲，叫做棋。",
-     "en": "One day, a wise old man brought him a brand-new board game."
+     "en": "One day, a wise old man brought him a brand-new game called chess."
     },
     {
      "who": "旁白",
@@ -232,18 +232,18 @@
    ]
   },
   {
-   "scene": "王宮大廳，矮桌旁邊。棋盤的第一排和第二排都放了米：第二排的每一格是一堆比一堆高的米堆，最後一格的米堆已經比格子大，滿到旁邊的桌面上。",
+   "scene": "王宮大廳，矮桌旁邊。棋盤的第一排和第二排都放了米：第二排的每一格是一堆比一堆高的米堆，最後一格的米堆已經比格子大，滿到旁邊的桌面上（這一堆大約就是半袋米）。",
    "act": "大臣把小布米袋整個倒過來，用力抖，只掉出最後兩三粒米，袋子扁扁的；他瞪大眼睛，嘴巴張成圓形。國王一點也不在意，笑著把手往門外一揮。老爺爺安靜地微笑。棋盤後面還有六排是空的。",
    "lines": [
     {
      "who": "旁白",
-     "text": "不夠！因為每一格都加倍，越後面，米越多。",
-     "en": "No, it wasn't! Because every square doubled, the piles got bigger and bigger."
+     "text": "不夠！第二排才放完，一整袋就用光了。",
+     "en": "No, it wasn't! By the end of the second row, the whole bag was used up."
     },
     {
      "who": "旁白",
-     "text": "第二排才放完，一整袋就用光了。",
-     "en": "By the end of the second row, the whole bag was used up."
+     "text": "因為第二排最後一格，就放了半袋米！",
+     "en": "Because the last square in that row took half the bag all by itself!"
     },
     {
      "who": "大臣",

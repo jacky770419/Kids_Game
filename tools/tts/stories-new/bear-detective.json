@@ -40,7 +40,7 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『沒有腳』，第11頁『沒關係』",
+   "where": "第3頁『沒有腳』，第5頁『沒有吃蛋糕』，第11頁『沒關係』",
    "read": "méi"
   },
   {
@@ -50,7 +50,7 @@
   },
   {
    "char": "劃",
-   "where": "第6頁『從名單上劃掉』，第8頁『把妳也劃掉』，第9頁『都劃掉了』",
+   "where": "第6頁『從名單上劃掉』，第8頁『把妳也劃掉』，第10頁『都劃掉了』",
    "read": "huà"
   },
   {
@@ -65,7 +65,7 @@
   },
   {
    "char": "哪",
-   "where": "第1頁『走到哪裡，滴到哪裡』，第5頁『跳到哪裡』『滴到哪裡』，第6頁『走到哪裡』",
+   "where": "第1頁『走到哪裡，水就滴到哪裡』，第5頁『跳到哪裡』『滴到哪裡』，第6頁『走到哪裡』",
    "read": "nǎ"
   },
   {
@@ -75,8 +75,13 @@
   },
   {
    "char": "誰",
-   "where": "書名『誰吃了』，第5、7頁『不是誰』，第9頁『剩下誰』『是誰吃的』，第12頁『是誰吃的』",
+   "where": "書名『誰吃了』，第5頁『誰一定沒有吃』，第7頁『不是誰』，第12頁『是誰吃的』",
    "read": "shéi"
+  },
+  {
+   "char": "還",
+   "where": "第9頁『還是書房』",
+   "read": "hái"
   }
  ],
  "pages": [
@@ -96,8 +101,8 @@
     },
     {
      "who": "旁白",
-     "text": "小青蛙剛從池塘上來，全身是水，走到哪裡，滴到哪裡。",
-     "en": "Little Frog is fresh out of the pond. He is wet all over, and he drips wherever he goes."
+     "text": "小青蛙剛從池塘上來，走到哪裡，水就滴到哪裡。",
+     "en": "Little Frog is fresh out of the pond, and he drips water wherever he goes."
     },
     {
      "who": "小青蛙",
@@ -119,7 +124,7 @@
     {
      "who": "旁白",
      "text": "小熊和媽媽一直在院子晾衣服，回來一看。",
-     "en": "Little Bear and Mama are out in the yard hanging laundry the whole time. Then they come back in."
+     "en": "Little Bear and Mama spend the whole time out in the yard, hanging laundry. Then they come back in."
     },
     {
      "who": "小熊",
@@ -190,8 +195,8 @@
     },
     {
      "who": "旁白",
-     "text": "這樣，可以先知道不是誰呢？",
-     "en": "So, who do we know didn't do it?"
+     "text": "這樣，誰一定沒有吃蛋糕呢？",
+     "en": "So, who do we know did not eat the cake?"
     }
    ]
   },
@@ -230,7 +235,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小青蛙在餐桌下找到一個蜂蜜腳印。",
+     "text": "小青蛙在餐桌下找到蜂蜜腳印。",
      "en": "Under the table, Little Frog finds a footprint with honey on it."
     },
     {
@@ -269,12 +274,17 @@
      "who": "小熊",
      "text": "謝謝小兔！把妳也劃掉，妳也是小幫手！",
      "en": "Thank you, Little Bunny! I'll cross you off too. You're my helper too!"
+    },
+    {
+     "who": "旁白",
+     "text": "剩下爸爸。",
+     "en": "That leaves Papa."
     }
    ]
   },
   {
-   "scene": "小熊家的餐廳和走廊：木頭地板，從餐桌旁邊到走廊底書房的咖啡色木門。書房的門關著。",
-   "act": "木頭地板上有一排金黃色的蜂蜜小圓點，從餐桌下面的腳印旁邊開始，一滴、一滴，沿著走廊一直排到書房的門口，最後一滴就在門縫前面。小兔跑在最前面，彎著腰、一手指著地上的蜂蜜，回頭叫大家。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），拿著小本子跟在後面，眼睛順著蜂蜜看向書房的門。小青蛙跟在最後面，沒有說話。小本子上只剩熊爸爸的頭像沒被劃掉。",
+   "scene": "小熊家的餐廳：木頭地板，一張木頭餐桌和四張椅子，窗外是晴天。這一頁畫餐桌旁邊的地板近景，畫面上方看得到餐廳的兩個出口：左邊通到客廳（綠色地毯，地上有彩色積木），右邊是短短的走廊口（走廊底書房的門這一頁先不畫出來）。",
+   "act": "木頭地板上有一排金黃色的蜂蜜小圓點，從餐桌下面的腳印旁邊開始，一滴、一滴往餐廳外面排過去，排到畫面下方的邊上就被切掉（這一頁不要畫出蜂蜜最後往客廳或往走廊）。小兔跑在最前面，彎著腰、一手指著地上的蜂蜜，回頭叫大家。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），拿著小本子跟在後面，一根手指點著下巴想；他頭上有一個想像泡泡：左邊是客廳的綠色地毯和積木，右邊是書房的咖啡色木門，中間一個問號。小青蛙跟在最後面，沒有說話。小本子上只剩熊爸爸的頭像沒被劃掉。",
    "lines": [
     {
      "who": "旁白",
@@ -289,35 +299,35 @@
     },
     {
      "who": "旁白",
-     "text": "蜂蜜一滴，一滴，滴到書房門口。",
-     "en": "Drip, drip, drip. The honey goes all the way to the study door."
+     "text": "剛才，朋友在客廳，爸爸在書房。",
+     "en": "Earlier, the friends were in the living room, and Papa was in his study."
     },
     {
      "who": "旁白",
-     "text": "小青蛙和小兔都劃掉了，名單上剩下誰？你猜，是誰吃的？",
-     "en": "Little Frog and Little Bunny are both crossed off. Who is left on the list? Can you guess who ate it?"
+     "text": "你猜，蜂蜜一滴，一滴，滴到客廳，還是書房呢？",
+     "en": "Drip, drip, drip. Can you guess? Does the honey go to the living room, or to the study?"
     }
    ]
   },
   {
    "scene": "走廊底，書房的咖啡色木門打開了；門裡看得到書房的一角：一張木頭書桌，桌上有一些木屑、一張砂紙，和一個只剩幾粒蛋糕屑、沾著蜂蜜的小盤子。",
-   "act": "熊爸爸是比熊媽媽還要高大的深棕色公熊，穿藍色格子襯衫。熊爸爸站在打開的門口，嘴巴旁邊沾著金黃色的蜂蜜，一隻腳的腳底也沾著蜂蜜；他一手抓著後腦勺，耳朵垂下來，很不好意思地笑，另一隻手放在身體後面（手裡的東西還看不到）。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），站在門前，一手舉著小本子（只剩熊爸爸的頭像沒劃掉），一手指著地上滴到門口的蜂蜜。小兔和小青蛙站在小熊後面探頭看，都沒有說話。",
+   "act": "熊爸爸是比熊媽媽還要高大的深棕色公熊，穿藍色格子襯衫。熊爸爸站在打開的門口，嘴巴旁邊沾著金黃色的蜂蜜，一隻腳的腳底也沾著蜂蜜；他一手抓著後腦勺，耳朵垂下來，很不好意思地笑，另一隻手放在身體後面（手裡的東西還看不到）。小熊戴著偵探帽（咖啡色格子、前後都有帽簷的獵鹿帽），站在門前，一手舉著小本子（只剩熊爸爸的頭像沒劃掉），一手指著地上的蜂蜜：金黃色的蜂蜜小圓點沿著走廊的木頭地板，一滴、一滴排到書房門口，最後一滴就在門檻前面。小兔和小青蛙站在小熊後面探頭看，都沒有說話。",
    "lines": [
     {
      "who": "小熊",
      "tag": "excited",
-     "text": "因為名單上剩下爸爸，蜂蜜又滴到書房，所以是爸爸！",
-     "en": "Because Papa is the one left on my list, and the honey goes to the study, it's Papa!"
+     "text": "因為朋友都劃掉了，剩下爸爸在書房，所以滴到書房！",
+     "en": "My friends are crossed off, and Papa is the one left, in his study. So the honey goes to the study!"
     },
     {
      "who": "旁白",
-     "text": "叩，叩，叩！書房的門開了。",
-     "en": "Knock, knock, knock! The study door opens."
+     "text": "真的滴到書房！叩，叩，叩！",
+     "en": "It really does go to the study! Knock, knock, knock!"
     },
     {
      "who": "旁白",
-     "text": "熊爸爸的嘴邊有蜂蜜。",
-     "en": "There is honey around Papa Bear's mouth."
+     "text": "門開了，熊爸爸的嘴邊有蜂蜜。",
+     "en": "The door opens. There is honey around Papa Bear's mouth."
     },
     {
      "who": "熊爸爸",
@@ -334,7 +344,7 @@
     {
      "who": "熊爸爸",
      "tag": "shy",
-     "text": "蛋糕太香，我忍不住吃了一塊。應該先問的，對不起。",
+     "text": "蛋糕太香，我忍不住吃了。應該先問的，對不起。",
      "en": "The cake smelled so good, I just had to eat a piece. I should have asked first. I'm sorry."
     },
     {
