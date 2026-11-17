@@ -1,0 +1,402 @@
+{
+ "id": "bao-stone",
+ "title": "包公審石頭",
+ "title_en": "Judge Bao Questions a Stone",
+ "size": "中",
+ "roles": {
+  "包公": "很久以前中國很會查事情的大官，黑臉、額頭有月牙，聲音低沉有威嚴，對孩子說話很和氣，問石頭的時候一本正經。",
+  "阿泰": "賣油條的小男孩，七八歲，聲音清亮、很勤快，錢不見的時候著急得快哭了。",
+  "衛兵大哥": "跟在包公身邊的年輕衛兵，活潑的年輕男聲，老實、有點愣，喊口令很有精神。",
+  "阿姨": "來看熱鬧的阿姨，大嗓門、愛湊熱鬧，笑聲很大，心地很好。",
+  "大叔": "戴草帽的大叔，說話慢、聲音低，一時貪心拿了錢，後來很不好意思，老實認錯。"
+ },
+ "cast": {
+  "包公": {
+   "find": "Yao Yuan Wu",
+   "en": "Arthur - Deep and Powerful"
+  },
+  "阿泰": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "衛兵大哥": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "阿姨": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "大叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "炸",
+   "where": "第1頁『炸油條』『剛炸好』，第12頁『炸油條』",
+   "read": "zhá"
+  },
+  {
+   "char": "為",
+   "where": "第4頁『為什麼』，第5頁『因為』，第9頁『為什麼』，第10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "第4頁『為什麼』，第8頁『等什麼』，第9頁『為什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第6頁『是誰拿了錢』",
+   "read": "shéi"
+  },
+  {
+   "char": "圈",
+   "where": "第9頁『一圈油花』",
+   "read": "quān"
+  },
+  {
+   "char": "會",
+   "where": "第4頁『不會說話』，第5頁『也會來』，第6頁『怎麼會說話』",
+   "read": "huì"
+  },
+  {
+   "char": "沾",
+   "where": "第1頁『沾滿了油』，第2頁『沾了油』，第9頁『沾著油』",
+   "read": "zhān"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國小城，早上的街角：灰瓦白牆的房子、石板路。一個小油條攤：一個小火爐、一口冒著熱氣的油鍋、一個裝油條的竹籮。攤子旁邊的路邊，有一塊跟矮桌一樣大、上面平平的灰色大石頭。",
+   "act": "阿泰第一次出場：八歲左右的男孩，圓臉，頭頂一個小髮髻、用藍布包著，穿淺灰色短衣、深藍色褲子，圍一條有油漬的白色圍裙。他用長竹筷從油鍋裡夾起一根金黃色的油條，兩隻手和手指都沾著油、亮亮地反光，笑著大聲叫賣。竹籮裡堆著油條，熱氣往上飄。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，城裡有個賣油條的男孩，叫阿泰。",
+     "en": "Long ago in China, there was a boy named Tai who sold fried dough sticks in town."
+    },
+    {
+     "who": "旁白",
+     "text": "他每天炸油條，兩隻手沾滿了油。",
+     "en": "He fried them every day, so his hands were always covered in oil."
+    },
+    {
+     "who": "阿泰",
+     "tag": "happy",
+     "text": "油條，剛炸好的油條！",
+     "en": "Dough sticks! Fresh, hot dough sticks!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個街角的油條攤，大石頭就在攤子旁邊；攤子另一邊停著一輛木頭小推車。",
+   "act": "上半：一位客人把一個銅板放進阿泰沾著油的手心，銅板也沾上了油、閃著光，阿泰笑著收下。下半：竹籮空了，阿泰把一小堆沾著油、發亮的銅板直接放在大石頭平平的頂上（沒有袋子），接著背對石頭，彎腰把小火爐、油鍋和竹籮搬到小推車上，看不到石頭；他的手還是油油亮亮的。最後一小格：阿泰回到石頭前，石頭上什麼都沒有，他兩手張開、嘴巴張大。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他收的銅板，每一個都沾了油。",
+     "en": "Every coin he took got oily too."
+    },
+    {
+     "who": "旁白",
+     "text": "油條賣完了。阿泰把銅板放在大石頭上，去收攤子。",
+     "en": "When the dough sticks were sold out, Tai put his coins on a big stone and went to pack up his stall."
+    },
+    {
+     "who": "旁白",
+     "text": "回來一看，銅板全不見了！",
+     "en": "When he came back, the coins were gone!"
+    }
+   ]
+  },
+  {
+   "scene": "街角的大石頭旁，油條攤在後面。",
+   "act": "阿泰站在什麼都沒有的大石頭前，眼淚在眼眶裡打轉，一手指著石頭。包公第一次出場：高大的中年男人，臉是黑色的，額頭正中間有一個白色的月牙，黑色長鬍子，戴黑色官帽（兩邊有長長的帽翅），穿深紅色官袍、繫黑色腰帶；他彎下腰，溫和地看著阿泰。衛兵大哥第一次出場：年輕的衛兵，瘦瘦高高，戴黑色圓帽，穿紅色短衣、黑色褲子、繫黑腰帶，兩手空空（沒有拿棍子），跟在包公身後。",
+   "lines": [
+    {
+     "who": "阿泰",
+     "tag": "crying",
+     "text": "我放在石頭上的錢，不見了！",
+     "en": "The money I left on the stone! It's gone!"
+    },
+    {
+     "who": "旁白",
+     "text": "這時候，包公走過來。",
+     "en": "Just then, Judge Bao came walking by."
+    },
+    {
+     "who": "旁白",
+     "text": "他是黑臉的大官，最會查事情。",
+     "en": "He was a great judge with a dark face, and he was very good at finding out the truth."
+    },
+    {
+     "who": "包公",
+     "tag": "gentle",
+     "text": "孩子別哭，我來幫你。",
+     "en": "Don't cry, child. I will help you."
+    }
+   ]
+  },
+  {
+   "scene": "同一個地方，大石頭前。",
+   "act": "包公一手摸著長鬍子，眼睛先看著阿泰沾滿油、發亮的雙手（畫出手上的反光），再看大石頭；接著他伸手指著石頭下命令，表情很認真。衛兵大哥張大嘴巴，一手指著石頭，一手抓頭，一臉不敢相信。阿泰擦著眼淚，也愣住了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "包公看了看阿泰油亮的手。",
+     "en": "Judge Bao looked at Tai's shiny, oily hands."
+    },
+    {
+     "who": "包公",
+     "text": "衛兵大哥，搬桌子來。我要問石頭話！",
+     "en": "Guard, bring me a table. I am going to question this stone!"
+    },
+    {
+     "who": "衛兵大哥",
+     "tag": "surprised",
+     "text": "啊？問石頭？",
+     "en": "What? Question a stone?"
+    },
+    {
+     "who": "旁白",
+     "text": "石頭又不會說話，包公為什麼要問它呢？",
+     "en": "A stone can't talk. So why would Judge Bao want to question it?"
+    }
+   ]
+  },
+  {
+   "scene": "街角。大石頭前面擺了一張木頭桌子，包公坐在桌子後面的椅子上，阿泰站在他旁邊。四面八方的街道上，男女老少都往這裡跑，圍成一個大圈。",
+   "act": "阿姨第一次出場：中年婦人，圓臉，頭髮盤成髮髻、插一朵紅花，穿桃紅色上衣、綠色長裙，一手提著菜籃，一手放在嘴邊，邊跑邊大喊。大家伸長脖子看石頭。大叔第一次出場（擠在圍觀的人中間）：中年男人，戴寬邊草帽，下巴有短短的鬍渣，穿土黃色粗布衣，腰上掛著一個鼓鼓的灰色布口袋；他也探頭往前看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大嗓門的阿姨邊跑邊喊：",
+     "en": "A woman with a very loud voice ran through the streets, shouting,"
+    },
+    {
+     "who": "阿姨",
+     "tag": "shouting",
+     "text": "快來看！包公要問石頭話！",
+     "en": "Come and see! Judge Bao is going to question a stone!"
+    },
+    {
+     "who": "旁白",
+     "text": "全城的人都來了。包公就是要大家來。",
+     "en": "Soon the whole town came running. And that was just what Judge Bao wanted."
+    },
+    {
+     "who": "旁白",
+     "text": "因為拿錢的人，說不定也會來。",
+     "en": "Because the person who took the money might come to watch too."
+    }
+   ]
+  },
+  {
+   "scene": "街角，圍觀的人圍成一大圈，中間是木桌和大石頭。",
+   "act": "包公坐在桌子後面，一隻手掌拍在桌面上（只拍桌子，沒有人打石頭），一臉認真地對著石頭問話；大石頭安安靜靜地在那裡。阿姨指著石頭，笑得彎腰；圍觀的人都抱著肚子笑；阿泰也擦掉眼淚笑了；衛兵大哥忍著不敢笑，臉頰鼓起來。大叔在人群裡跟著大家一起笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "包公一拍桌子，問石頭：",
+     "en": "Judge Bao slapped the table and asked the stone,"
+    },
+    {
+     "who": "包公",
+     "text": "石頭，石頭，是誰拿了錢？",
+     "en": "Stone, stone, who took the money?"
+    },
+    {
+     "who": "旁白",
+     "text": "石頭一動也不動。",
+     "en": "The stone didn't move at all."
+    },
+    {
+     "who": "阿姨",
+     "tag": "laughing",
+     "text": "哈！石頭怎麼會說話！",
+     "en": "Ha! A stone can't talk!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家笑成一團。",
+     "en": "Everyone burst out laughing."
+    }
+   ]
+  },
+  {
+   "scene": "街角。木桌旁邊的矮凳上，放著一個大木盆，裡面的水很清，看得到盆底。",
+   "act": "包公站起來，舉起一根手指對大家說話。衛兵大哥把大木盆端到矮凳上放好，再伸手指揮大家排成一排。每個人手裡拿著一個銅板，排成一條長隊：阿姨排在第三個，戴草帽的大叔排在第四個。包公站在水盆旁邊，低頭盯著水面。",
+   "lines": [
+    {
+     "who": "包公",
+     "text": "看熱鬧的人，每人借我一個銅板。",
+     "en": "Everyone who came to watch, please lend me one coin."
+    },
+    {
+     "who": "旁白",
+     "text": "衛兵大哥端來一盆清水。",
+     "en": "The guard carried out a big bowl of clear water."
+    },
+    {
+     "who": "衛兵大哥",
+     "tag": "shouting",
+     "text": "排好隊，一個接一個丟進水盆！",
+     "en": "Line up! Drop your coins into the water, one at a time!"
+    },
+    {
+     "who": "旁白",
+     "text": "包公站在旁邊，盯著水面。",
+     "en": "Judge Bao stood beside the bowl and watched the water."
+    }
+   ]
+  },
+  {
+   "scene": "街角，大木盆的特寫：水很清，盆底躺著三個銅板，水面上什麼都沒有。",
+   "act": "排隊的人一個接一個把銅板丟進水盆，濺起小水花。阿姨剛丟完銅板，探頭看著水面，一臉好奇。包公的眼睛一直盯著水面，動也不動。阿姨後面，下一個就是戴草帽的大叔，他手裡捏著一個發亮的銅板。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "咚！第一個銅板，水很清。",
+     "en": "Plop! The first coin went in. The water stayed clear."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！第二個銅板，水也很清。",
+     "en": "Plop! The second coin went in. The water stayed clear."
+    },
+    {
+     "who": "旁白",
+     "text": "阿姨也丟了一個，水一樣很清。",
+     "en": "The loud woman dropped hers in. The water stayed clear."
+    },
+    {
+     "who": "旁白",
+     "text": "包公一直盯著水面。你猜，他在等什麼？",
+     "en": "Judge Bao kept watching the water. Can you guess what he was waiting for?"
+    }
+   ]
+  },
+  {
+   "scene": "街角，大木盆旁邊。",
+   "act": "上半：大叔把銅板丟進水盆，水面上浮起一圈發亮、帶一點彩色的油花；包公眼睛一亮，伸出手請他再丟一個；圍觀的人張大嘴巴。下半：大叔從腰上的布口袋又拿出一個銅板丟進去，水面浮起第二圈油花；他打開的布口袋裡，看得到一堆沾著油、發亮的銅板，他的手指也沾到油。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "輪到一位戴草帽的大叔。咚！",
+     "en": "Next came a man in a straw hat. Plop!"
+    },
+    {
+     "who": "旁白",
+     "text": "水面浮起一圈油花！原來，包公在等它。",
+     "en": "A shiny ring of oil floated up on the water! That was what Judge Bao was waiting for."
+    },
+    {
+     "who": "包公",
+     "text": "請你再丟一個。",
+     "en": "Please drop in one more."
+    },
+    {
+     "who": "旁白",
+     "text": "咚！又是油花。他口袋裡的銅板全沾著油。",
+     "en": "Plop! More oil. Every coin in his pocket was oily."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，他的銅板為什麼有油呢？",
+     "en": "Can you guess why his coins were oily?"
+    }
+   ]
+  },
+  {
+   "scene": "街角，大木盆旁邊，水面上漂著兩圈油花。",
+   "act": "包公一手指著水面的油花，一手指著阿泰沾著油的手，對大家說明，表情嚴肅但不兇。大叔摘下草帽抱在胸前，臉紅紅的，低著頭。阿泰睜大眼睛看著水面；阿姨恍然大悟，一手拍在自己額頭上。",
+   "lines": [
+    {
+     "who": "包公",
+     "text": "因為阿泰的手有油，收的錢每一個都有油。",
+     "en": "Because Tai's hands are oily, every coin he takes gets oily."
+    },
+    {
+     "who": "包公",
+     "text": "大叔的銅板也一樣，所以是阿泰的錢。",
+     "en": "This man's coins are all oily too. So they must be Tai's money."
+    },
+    {
+     "who": "旁白",
+     "text": "大叔的臉紅了，低下頭。",
+     "en": "The man's face turned red, and he hung his head."
+    },
+    {
+     "who": "大叔",
+     "tag": "sad",
+     "text": "石頭上的錢，是我拿的。對不起。",
+     "en": "I took the money on the stone. I'm sorry."
+    }
+   ]
+  },
+  {
+   "scene": "街角，大石頭前。",
+   "act": "大叔兩手捧著一把沾著油的銅板，交到阿泰手上，彎腰道歉；衛兵大哥從水盆裡撈出大叔丟的那兩個有油的銅板，也交給阿泰；阿泰把銅板收進自己腰上的藍色小布袋。包公摸著鬍子點頭，表情溫和。後面，衛兵大哥把水盆裡其他沒有油的銅板，一個一個發回給排隊的人，阿姨笑著接過自己的銅板。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔把錢全拿出來，交給阿泰。",
+     "en": "The man took out all the money and gave it back to Tai."
+    },
+    {
+     "who": "包公",
+     "tag": "gentle",
+     "text": "知道錯就好。明天，你幫阿泰賣一天油條。",
+     "en": "I'm glad you know it was wrong. Tomorrow, you will help Tai sell dough sticks all day."
+    },
+    {
+     "who": "阿泰",
+     "text": "以後，我的錢不亂放了。",
+     "en": "And from now on, I won't leave my money lying around."
+    },
+    {
+     "who": "旁白",
+     "text": "別人借的銅板，都發回去了。",
+     "en": "And everyone else got their coins back."
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，同一個街角的油條攤，大石頭在攤子旁邊，陽光很亮。",
+   "act": "大叔圍著白色圍裙，站在油鍋前用長竹筷夾油條，兩隻手也沾著油、發亮，滿頭大汗卻笑著。阿泰在旁邊收錢，把銅板放進腰上的藍色小布袋（不再放在石頭上）。阿姨提著菜籃，舉起手大聲點油條。包公一手拿著一根油條，另一手輕輕拍在大石頭上，笑得眼睛瞇起來；衛兵大哥在他後面咬著油條笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，大叔來幫忙炸油條。",
+     "en": "The next day, the man came to help fry the dough sticks."
+    },
+    {
+     "who": "阿姨",
+     "tag": "happy",
+     "text": "我要十根油條！",
+     "en": "Ten dough sticks for me, please!"
+    },
+    {
+     "who": "旁白",
+     "text": "包公也來了，拍了拍大石頭。",
+     "en": "Judge Bao came too, and he patted the big stone."
+    },
+    {
+     "who": "包公",
+     "tag": "laughing",
+     "text": "石頭，謝謝你幫了大忙！",
+     "en": "Thank you, stone. You were a big help!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家又笑成一團。",
+     "en": "And everyone burst out laughing again."
+    }
+   ]
+  }
+ ]
+}

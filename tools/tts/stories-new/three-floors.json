@@ -1,0 +1,286 @@
+{
+ "id": "three-floors",
+ "title": "只要第三樓",
+ "title_en": "Just the Top Floor",
+ "size": "短",
+ "roles": {
+  "大叔": "有錢的大叔，大嗓門、急性子，什麼都想馬上要，好笑不兇；看懂以後哈哈笑自己太急。",
+  "木匠師傅": "蓋房子的木匠師傅，溫和的大叔聲音，說話慢、很有耐心。",
+  "小徒弟": "木匠的小徒弟，六七歲的小女孩，聲音清脆、腦筋快，愛玩積木，愛笑。"
+ },
+ "cast": {
+  "大叔": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "木匠師傅": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "小徒弟": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "只",
+   "where": "書名『只要第三樓』，第3頁『我只要三樓』『只要三樓』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "什",
+   "where": "第1頁『做什麼事』",
+   "read": "shén"
+  },
+  {
+   "char": "漂",
+   "where": "第1頁『好漂亮』",
+   "read": "piào"
+  },
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第3頁『沒有一樓』，第6頁『沒有東西』",
+   "read": "méi"
+  },
+  {
+   "char": "哪",
+   "where": "第3頁『放在哪裡』，第4頁『哪裡都不能放』",
+   "read": "nǎ"
+  },
+  {
+   "char": "間",
+   "where": "第5頁『中間』",
+   "read": "jiān"
+  },
+  {
+   "char": "會",
+   "where": "第5頁『會怎麼樣』",
+   "read": "huì"
+  },
+  {
+   "char": "行",
+   "where": "第7頁『不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "得",
+   "where": "第8頁『撐得好穩』",
+   "read": "de"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的小村子，晴朗的早上。路邊一棟漂亮的三層樓木頭房子：白牆、紅柱子、灰瓦屋頂，一樓、二樓、三樓分得很清楚，三樓有一排雕花的大窗戶，窗邊有木頭欄杆。",
+   "act": "大叔第一次出場：四十多歲、胖胖的、圓肚子，兩撇翹起來的八字鬍，戴黑色小圓帽，穿金黃色繡花長袍，手裡拿一把摺扇。他站在路上，仰著頭、張大嘴巴，用摺扇指著別人家三樓的漂亮窗戶，眼睛發亮，急得直跺腳。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一位有錢的大叔，做什麼事都很急。",
+     "en": "Once there was a rich man who was always in a hurry."
+    },
+    {
+     "who": "旁白",
+     "text": "他看到別人家三樓的窗戶好漂亮。",
+     "en": "One day he saw the third floor of a neighbor's house. It had the prettiest windows."
+    },
+    {
+     "who": "大叔",
+     "tag": "excited",
+     "text": "我也要三樓！快來幫我蓋！",
+     "en": "I want a third floor too! Come and build it, quick!"
+    }
+   ]
+  },
+  {
+   "scene": "大叔家的空地，四周用繩子圍起來，旁邊堆著木頭和磚塊。地上已經挖平、鋪好一大片方形的石頭地基，地基上面剛立起一樓的幾根柱子和半面牆。",
+   "act": "木匠師傅第一次出場：五十歲左右，瘦瘦高高，灰色短髮、短鬍子，穿灰藍色粗布短衣、捲起袖子，圍一條咖啡色圍裙，手拿木槌。小徒弟第一次出場：六七歲的小女孩，兩條短辮子綁黃色頭繩，穿橘色短衣、深藍色褲子，腰上掛一個小布袋，布袋口露出紅、黃、藍三塊方形積木。木匠師傅在釘一樓的柱子，小徒弟幫忙遞木板。大叔站在旁邊，兩手放在嘴邊大喊，摺扇夾在手臂下。木匠師傅轉頭，笑著比出「一」的手勢。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "木匠師傅和愛玩積木的小徒弟來了。",
+     "en": "A carpenter came with his little helper, a girl who loved building blocks."
+    },
+    {
+     "who": "旁白",
+     "text": "他們從最下面的一樓開始蓋。",
+     "en": "They started at the very bottom, with the first floor."
+    },
+    {
+     "who": "大叔",
+     "tag": "shouting",
+     "text": "可以蓋三樓了嗎？",
+     "en": "Can you build the third floor now?"
+    },
+    {
+     "who": "木匠師傅",
+     "tag": "gentle",
+     "text": "等一等，現在蓋的是一樓。",
+     "en": "Not yet. We're building the first floor now."
+    }
+   ]
+  },
+  {
+   "scene": "同一塊空地，一樓才蓋到一半。",
+   "act": "大叔急得跳起來，兩手在胸前交叉又揮開，摺扇掉在地上；他頭上一個想像泡泡：一間漂亮的三樓孤零零地飄在半空中，下面什麼都沒有。木匠師傅手裡的木槌停在半空，眼睛睜得好大；小徒弟抱著木板，歪著頭看大叔。",
+   "lines": [
+    {
+     "who": "大叔",
+     "tag": "shouting",
+     "text": "我不要一樓，不要二樓，我只要三樓！",
+     "en": "No first floor! No second floor! I just want the third floor!"
+    },
+    {
+     "who": "木匠師傅",
+     "tag": "surprised",
+     "text": "咦？只要三樓？",
+     "en": "What? Just the third floor?"
+    },
+    {
+     "who": "旁白",
+     "text": "沒有一樓和二樓，三樓要放在哪裡呢？",
+     "en": "With no first floor and no second floor, where could the third floor go?"
+    }
+   ]
+  },
+  {
+   "scene": "空地上，一樓的柱子旁邊。",
+   "act": "木匠師傅蹲下來，一手在下面、一手疊在上面，比出「一層撐著一層」的樣子，耐心地笑著說明。大叔兩手抓著帽子，滿頭問號，一手指著地面。小徒弟從腰上的小布袋掏出紅、黃、藍三塊積木，高高舉起來，笑得很開心。",
+   "lines": [
+    {
+     "who": "木匠師傅",
+     "tag": "gentle",
+     "text": "哪裡都不能放呀。",
+     "en": "Nowhere at all, I'm afraid."
+    },
+    {
+     "who": "木匠師傅",
+     "text": "因為三樓靠二樓撐著，二樓靠一樓撐著。",
+     "en": "Because the second floor holds up the third, and the first floor holds up the second."
+    },
+    {
+     "who": "大叔",
+     "tag": "confused",
+     "text": "那放在地上呢？",
+     "en": "Then what if it sits on the ground?"
+    },
+    {
+     "who": "小徒弟",
+     "tag": "laughing",
+     "text": "就變成一樓啦！看我的積木！",
+     "en": "Then it would be the first floor! Watch my blocks!"
+    }
+   ]
+  },
+  {
+   "scene": "空地上一塊平平的大木板，當作小桌子。",
+   "act": "木板上疊著三塊積木：最下面紅色、中間黃色、最上面藍色，疊得整整齊齊。小徒弟蹲在旁邊，用手指從下往上一塊一塊指：紅色是一樓、黃色是二樓、藍色是三樓。大叔蹲下來，鼻子快貼到積木上，看得很認真；木匠師傅站在後面微笑。小徒弟的另一隻手準備去抽下面的紅色和黃色積木，還沒抽。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小徒弟疊了三塊積木。",
+     "en": "The little helper stacked up three blocks."
+    },
+    {
+     "who": "小徒弟",
+     "text": "下面是一樓，中間是二樓，上面是三樓。",
+     "en": "The bottom one is the first floor, the middle is the second, and the top is the third."
+    },
+    {
+     "who": "旁白",
+     "text": "如果把下面兩塊抽走，上面那塊會怎麼樣呢？",
+     "en": "If she pulls out the two blocks underneath, what will happen to the top one?"
+    }
+   ]
+  },
+  {
+   "scene": "同一塊大木板。",
+   "act": "小徒弟兩手各拿著抽出來的紅色和黃色積木；藍色積木掉在木板上，歪倒在一邊，旁邊畫「咚」的小星星。大叔先是嚇一跳，接著一手從下往上比出一層、一層的樣子，一手拍著自己的圓肚子哈哈大笑，八字鬍翹得高高的；木匠師傅也笑了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "小徒弟一抽。咚！上面那塊掉下來了。",
+     "en": "She pulled them out. Thump! The top block fell right down."
+    },
+    {
+     "who": "小徒弟",
+     "tag": "gentle",
+     "text": "因為下面沒有東西撐著，所以掉下來了。",
+     "en": "Because nothing was holding it up, it fell down."
+    },
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "哈！我懂了，要從下面一層，一層蓋！",
+     "en": "Ha! Now I get it. You have to build from the bottom, one floor at a time!"
+    },
+    {
+     "who": "大叔",
+     "text": "是我太急啦！",
+     "en": "I was in too much of a hurry!"
+    }
+   ]
+  },
+  {
+   "scene": "大叔家的空地，房子一層一層蓋起來。畫面分兩格：左格一樓蓋好了（白牆、紅柱子），右格二樓也蓋好了。",
+   "act": "左格：大叔指著蓋好的一樓，急著發問；小徒弟坐在一樓的門檻上，笑著搖手，另一手比「二」。右格：一樓、二樓都蓋好了，大叔自己伸出手指，從下往上點一樓、點二樓，然後開心地指著上面還空著的地方；木匠師傅扛著木頭，笑著點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一樓蓋好了。",
+     "en": "The first floor was done."
+    },
+    {
+     "who": "大叔",
+     "tag": "excited",
+     "text": "可以蓋三樓了嗎？",
+     "en": "Can you build the third floor now?"
+    },
+    {
+     "who": "小徒弟",
+     "tag": "laughing",
+     "text": "不行，先蓋二樓！",
+     "en": "No, the second floor comes first!"
+    },
+    {
+     "who": "旁白",
+     "text": "二樓也蓋好了。",
+     "en": "Then the second floor was done too."
+    },
+    {
+     "who": "大叔",
+     "tag": "happy",
+     "text": "一樓，二樓，可以蓋三樓了！",
+     "en": "First floor, second floor. Now we can build the third floor!"
+    }
+   ]
+  },
+  {
+   "scene": "完工的三層樓新房子：白牆、紅柱子、灰瓦屋頂，屋子裡有木頭樓梯通到三樓。三樓有一排大窗戶，窗邊有到大人胸口那麼高的木頭欄杆。窗外是綠色的田、小河和遠遠的藍色高山。",
+   "act": "大叔從屋子裡的樓梯走上三樓，站在窗戶裡面、欄杆後面，兩腳穩穩站在地板上，一手扶著欄杆、一手搖摺扇，笑得好滿足，沒有把身體伸出去。木匠師傅和小徒弟站在他旁邊，小徒弟手裡拿著那塊藍色積木，三個人一起看遠遠的山。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "三樓蓋好了！大叔走樓梯，一樓，二樓，三樓。",
+     "en": "The third floor was done! He walked up the stairs. First floor, second floor, third floor."
+    },
+    {
+     "who": "旁白",
+     "text": "他站在窗邊，看到好遠的山。",
+     "en": "He stood by the window and saw mountains far, far away."
+    },
+    {
+     "who": "大叔",
+     "tag": "happy",
+     "text": "謝謝一樓，謝謝二樓，把三樓撐得好穩！",
+     "en": "Thank you, first floor. Thank you, second floor. You hold my third floor up so well!"
+    }
+   ]
+  }
+ ]
+}

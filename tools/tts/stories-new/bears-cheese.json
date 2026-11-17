@@ -1,0 +1,276 @@
+{
+ "id": "bears-cheese",
+ "title": "兩隻小熊分餅",
+ "title_en": "Two Little Bears Share a Honey Cake",
+ "size": "短",
+ "roles": {
+  "小熊": "就是《小熊不想睡覺》《小熊學分享》裡的小熊：小男孩的聲音，活潑、愛撒嬌，搶著要大塊時很大聲，餅快沒了時難過，想通怎麼切的時候很認真、很得意。",
+  "熊妹妹": "來小熊家玩的表妹（英文名 Hazel），比小熊小一點的小女生，聲音細細甜甜的，不服輸，發現哪一塊比較大時很驚訝，最後開心地笑。",
+  "狐狸": "就是《狐狸和鶴》裡的狐狸，住在附近的鄰居：聲音輕快油滑、貪吃、愛占小便宜，好笑不可怕；每咬一口都假裝不小心，最後真心不好意思地道歉。",
+  "熊媽媽": "溫柔有耐心的熊媽媽，三十多歲的女聲，說話輕輕慢慢、帶著笑，教孩子方法時簡單清楚。"
+ },
+ "cast": {
+  "小熊": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "熊妹妹": {
+   "find": "童_女",
+   "en": "Tilly"
+  },
+  "狐狸": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  },
+  "熊媽媽": {
+   "find": "Nydia",
+   "en": "Linda – Gentle Mom"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "分",
+   "where": "書名『兩隻小熊分餅』，第1頁『我來分』『用手一分』，第2頁『分成』",
+   "read": "fēn"
+  },
+  {
+   "char": "切",
+   "where": "第6頁『一個人切』『小熊切』『怎麼切』，第7頁『要切一樣大』，第8頁『我來切』『切成』『切的人』『切一樣大』",
+   "read": "qiē"
+  },
+  {
+   "char": "挑",
+   "where": "第6頁『先挑』，第7頁『先挑』『被她挑走』，第8頁『先挑』『最後挑』",
+   "read": "tiāo"
+  },
+  {
+   "char": "為",
+   "where": "第4頁『因為』，第7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『沒有』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。遠處看得到小熊家的小木屋。",
+   "act": "小熊是咖啡色的小熊，米色的肚子和嘴巴，粉紅色臉頰，不穿衣服。熊妹妹是小熊的表妹：比小熊矮半個頭的淺咖啡色小熊，米色的肚子和嘴巴，粉紅色臉頰，頭上綁一個黃色蝴蝶結，不穿衣服。熊媽媽是比小熊大很多的咖啡色母熊，米色的肚子，繫著粉紅色圍裙，頭上戴一朵粉紅色小花；她站在遠處小木屋門口揮手。兩隻小熊坐在野餐墊上；小熊雙手剛把一塊金黃色的圓形蜂蜜餅分成兩塊：他左手那一塊很大（大約是整塊餅的三分之二），右手那一塊很小（大約三分之一）。熊妹妹睜大眼睛看著兩塊餅。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "今天，表妹熊妹妹來找小熊玩。",
+     "en": "Today, Little Bear's little cousin, Hazel, comes over to play."
+    },
+    {
+     "who": "旁白",
+     "text": "熊媽媽烤了蜂蜜餅，讓他們去草地野餐。",
+     "en": "Mama Bear bakes a honey cake for them to take on a picnic in the meadow."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "我來分！",
+     "en": "I'll split it!"
+    },
+    {
+     "who": "旁白",
+     "text": "小熊用手一分，一塊大，一塊小。",
+     "en": "Little Bear breaks it in two with his paws. One piece is big, and one piece is small."
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "大塊和小塊的蜂蜜餅並排放在野餐墊中間的盤子上；小熊和熊妹妹都伸手指著大的那一塊，鼓著臉頰、互相瞪著，但沒有推人。狐狸就是《狐狸和鶴》裡的狐狸：橘紅色的毛，白色胸口，穿一件藍色背心，尖鼻子、嘴巴很寬；他提著一個小布袋（裡面露出一顆紅蘋果）從草地小路走過來，眼睛盯著蜂蜜餅，舔了一下嘴巴，笑咪咪地舉起一隻手。",
+   "lines": [
+    {
+     "who": "小熊",
+     "tag": "shouting",
+     "text": "我要大的！",
+     "en": "I want the big one!"
+    },
+    {
+     "who": "熊妹妹",
+     "tag": "shouting",
+     "text": "我也要大的！",
+     "en": "I want the big one too!"
+    },
+    {
+     "who": "旁白",
+     "text": "鄰居狐狸走過來。",
+     "en": "Just then, their neighbor Fox comes strolling by."
+    },
+    {
+     "who": "狐狸",
+     "tag": "happy",
+     "text": "別吵，我幫你們分成一樣大！",
+     "en": "Don't fight! I'll make them the same size for you!"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "狐狸坐在野餐墊上，雙手拿著原本大的那一塊，已經咬下好大一口，臉頰鼓鼓的；他手上那一塊只剩下一小口那麼大（大約一顆核桃大）。盤子上原本小的那一塊完全沒被咬過，現在明顯比狐狸手上那一塊大很多。小熊和熊妹妹張大嘴巴看著。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸拿起大的那塊，咬了一大口。",
+     "en": "Fox picks up the big piece and takes a great big bite."
+    },
+    {
+     "who": "狐狸",
+     "tag": "surprised",
+     "text": "哎呀，咬太多了！",
+     "en": "Oops! I bit off too much!"
+    },
+    {
+     "who": "旁白",
+     "text": "大的那塊，剩下一小口了。",
+     "en": "Now there is only one little mouthful left of the big piece."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，現在哪一塊比較大？",
+     "en": "Can you guess which piece is bigger now?"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "熊妹妹指著盤子上原本小的那一塊（沒被咬過，現在比較大），再指狐狸剛放回盤子、只剩核桃大的那一塊。下一格：狐狸拿起原本小的那一塊也咬一大口，咬完只剩一顆鈕扣那麼大，比核桃大的那一塊還小；狐狸嘴邊都是餅屑，假裝很驚訝。小熊著急地伸出手。",
+   "lines": [
+    {
+     "who": "熊妹妹",
+     "tag": "surprised",
+     "text": "原本小的那塊比較大了！",
+     "en": "The piece that was small is the bigger one now!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為狐狸咬太多，所以大的變成小的了。",
+     "en": "Because Fox bit off too much, the big piece has turned into the small one."
+    },
+    {
+     "who": "狐狸",
+     "text": "那我咬另一塊。哎呀，又咬太多了！",
+     "en": "Then I'll fix the other one. Oops! Too much again!"
+    },
+    {
+     "who": "小熊",
+     "tag": "sad",
+     "text": "餅越來越小了！",
+     "en": "Our cake keeps getting smaller!"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "狐狸再把核桃大的那一塊咬了一口，現在盤子上只剩兩塊一樣大的小小塊，每一塊都只有一顆鈕扣那麼大。狐狸拍著圓圓的肚子，得意地用手比著兩小塊；小熊和熊妹妹並肩坐著，低頭看著盤子，嘴巴扁扁的，耳朵垂下來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "狐狸又咬一口，最後剩下兩小塊。",
+     "en": "Fox takes one more bite, and in the end only two tiny pieces are left."
+    },
+    {
+     "who": "狐狸",
+     "tag": "proud",
+     "text": "你們看，一樣大了！",
+     "en": "Look! Now they're the same size!"
+    },
+    {
+     "who": "熊妹妹",
+     "tag": "sad",
+     "text": "可是，餅快沒有了。",
+     "en": "But our cake is almost gone."
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "熊媽媽提著一個蓋著布的竹籃走到野餐墊旁邊，掀開布，裡面是第二塊完整的金黃色圓形蜂蜜餅，和一把圓頭、不利的小餐刀。她蹲下來，一手指小熊、一手指熊妹妹。兩隻小熊抬起頭，眼睛亮起來；狐狸坐在野餐墊邊邊，縮著脖子，耳朵垂下來，有一點不好意思。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "熊媽媽來了，帶來第二塊蜂蜜餅。",
+     "en": "Mama Bear comes along with a second honey cake."
+    },
+    {
+     "who": "熊媽媽",
+     "tag": "gentle",
+     "text": "一個人切，另一個人先挑。",
+     "en": "One cuts, and the other picks first."
+    },
+    {
+     "who": "熊媽媽",
+     "text": "小熊切，媽媽扶著刀。熊妹妹先挑。",
+     "en": "Little Bear, you cut, and I'll help hold the knife. Hazel, you pick first."
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，小熊會怎麼切呢？",
+     "en": "Can you guess how Little Bear will cut it?"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "左邊：蜂蜜餅放在小砧板上，小熊拿著圓頭、不利的小餐刀，熊媽媽在他後面握著他的手一起切；小熊吐著舌頭、瞇著一隻眼睛，對準餅的正中間，切得很慢很小心。右邊：餅切成兩塊一模一樣大的半圓形；熊妹妹先拿了一塊，小熊拿另一塊，兩隻小熊把餅併在一起比，一樣大，兩個都笑了。",
+   "lines": [
+    {
+     "who": "小熊",
+     "text": "因為妹妹先挑，大的會被她挑走。",
+     "en": "Because Hazel picks first, she would take the bigger piece."
+    },
+    {
+     "who": "小熊",
+     "tag": "excited",
+     "text": "所以，我要切一樣大！",
+     "en": "So I have to cut them just the same!"
+    },
+    {
+     "who": "旁白",
+     "text": "熊妹妹先挑，小熊拿另一塊。",
+     "en": "Hazel picks first, and Little Bear takes the other piece."
+    },
+    {
+     "who": "熊妹妹",
+     "tag": "happy",
+     "text": "一樣大，不用吵了！",
+     "en": "Same size! Nothing to fight about!"
+    }
+   ]
+  },
+  {
+   "scene": "森林邊的草地，晴天，草地上開著小白花；地上鋪著一塊紅白格子的野餐墊，旁邊放著一個小竹籃。",
+   "act": "狐狸從小布袋拿出那顆紅蘋果放在小砧板上，不好意思地抓著後腦勺。熊媽媽在旁邊扶著，狐狸用圓頭小餐刀把蘋果切成三塊一樣大的；小熊和熊妹妹先各挑一塊，狐狸拿最後剩下的那一塊（三塊放在一起比，一樣大）。大家坐在野餐墊上，小熊和熊妹妹一手蘋果、一手蜂蜜餅，還把自己的餅各分一小口給狐狸；熊媽媽在旁邊笑。",
+   "lines": [
+    {
+     "who": "狐狸",
+     "tag": "shy",
+     "text": "對不起，我太貪吃了。蘋果請你們吃。",
+     "en": "I'm sorry. I was too greedy. Please share my apple."
+    },
+    {
+     "who": "狐狸",
+     "text": "我來切，你們先挑！",
+     "en": "I'll cut, and you pick first!"
+    },
+    {
+     "who": "旁白",
+     "text": "狐狸切成三塊，三塊一樣大。",
+     "en": "Fox cuts it into three pieces, and all three are the same size."
+    },
+    {
+     "who": "小熊",
+     "tag": "happy",
+     "text": "切的人最後挑，就會切一樣大！",
+     "en": "When the one who cuts picks last, the pieces come out the same!"
+    }
+   ]
+  }
+ ]
+}

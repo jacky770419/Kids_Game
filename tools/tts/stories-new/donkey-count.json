@@ -1,0 +1,257 @@
+{
+ "id": "donkey-count",
+ "title": "阿凡提的五隻驢子",
+ "title_en": "Hodja Counts His Donkeys",
+ "size": "短",
+ "roles": {
+  "阿凡提": "騎驢子的幽默大叔，戴頭巾、留大鬍子，憨憨的很好笑，說話慢、嗓門大，找不到驢子時越來越慌，被說破後自己哈哈大笑。",
+  "小女孩": "路過的小女孩，六歲左右，聲音清脆、愛笑，看得很清楚，說話有禮貌。"
+ },
+ "cast": {
+  "阿凡提": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "少",
+   "where": "第2頁『少了一隻』，第4頁『少的那一隻』，第5頁『少算一隻』，第7頁『少算』",
+   "read": "shǎo"
+  },
+  {
+   "char": "肚",
+   "where": "第3頁『肚子下面』",
+   "read": "dù"
+  },
+  {
+   "char": "哪",
+   "where": "第4頁『在哪裡』，第6頁『站在哪裡』",
+   "read": "nǎ"
+  },
+  {
+   "char": "為",
+   "where": "第5、7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "得",
+   "where": "第6、7頁『看得到』",
+   "read": "de"
+  },
+  {
+   "char": "會",
+   "where": "第7頁『不會』",
+   "read": "huì"
+  },
+  {
+   "char": "啊",
+   "where": "第4、8頁驢子叫『咿啊，咿啊！』（同不來梅的記法）",
+   "read": "ā"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，很遠的地方，一個沙土色的小鎮外面：一條黃土路，路邊有幾棵綠色的樹和矮矮的土牆，遠處是圓屋頂的房子，天氣晴朗。",
+   "act": "阿凡提第一次出場：四十多歲的大叔，圓肚子，戴一頂好大的白色頭巾，黑色的大鬍子，穿藍色長袍、繫紅色腰帶、穿尖頭鞋，笑起來憨憨的。五隻驢子在路上排成一排，頭都朝右邊：都是灰色的小驢子，大耳朵、白色的嘴巴和肚子，每隻身上披一條不同顏色的小毯子，從最前面到最後面是紅色、黃色、綠色、藍色、紫色。阿凡提站在驢子旁邊的地上，伸出手指，一隻一隻點，五隻都看得到。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿凡提是一位好笑的大叔。",
+     "en": "There was once a funny man called Hodja."
+    },
+    {
+     "who": "旁白",
+     "text": "他牽著五隻驢子，站在地上點一點。",
+     "en": "He had five donkeys with him. Standing on the ground, he counted them."
+    },
+    {
+     "who": "阿凡提",
+     "text": "這是第一隻，這是第二隻，這是第三隻。",
+     "en": "This is donkey number one. This is number two. This is number three."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "happy",
+     "text": "這是第四隻，這是第五隻。五隻，都在！",
+     "en": "This is number four. This is number five. Five donkeys, all here!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土路，驢子排成一排往前走。",
+   "act": "阿凡提騎在最後面那隻披紫色毯子的驢子上，兩腳垂在兩邊；前面依序是紅色、黃色、綠色、藍色四隻驢子。他伸出手指往前點，眼睛只看著前面，完全沒有低頭看自己坐的那一隻。點完四隻，他的手指停在半空中，眼睛瞪得圓圓的，鬍子翹起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他騎上最後一隻驢子，伸手點前面的。",
+     "en": "He climbed onto the last donkey and pointed at the ones in front."
+    },
+    {
+     "who": "阿凡提",
+     "text": "這是第一隻，這是第二隻。",
+     "en": "This is number one. This is number two."
+    },
+    {
+     "who": "阿凡提",
+     "text": "這是第三隻，這是第四隻。",
+     "en": "This is number three. This is number four."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "surprised",
+     "text": "咦？怎麼少了一隻？",
+     "en": "Huh? Why is one missing?"
+    }
+   ]
+  },
+  {
+   "scene": "黃土路邊，一棵大樹旁，五隻驢子停下來吃草。",
+   "act": "左格：阿凡提從紫色毯子的驢子上下來，站在地上，慌慌張張地探頭看大樹後面，又趴下來看一隻驢子的肚子下面，頭巾歪了。右格：他站在地上，五隻驢子（紅、黃、綠、藍、紫）都在他面前，他開心地張開雙手，鬆了一口氣，一腳已經抬起來，準備再騎上紫色毯子的驢子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他跳下來，看樹後面，看驢子肚子下面。",
+     "en": "He hopped down. He looked behind a tree. He looked under a donkey's belly."
+    },
+    {
+     "who": "旁白",
+     "text": "再站在地上點一次。",
+     "en": "Then he stood on the ground and counted again."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "happy",
+     "text": "第五隻回來了！五隻，都在！",
+     "en": "Number five is back! Five donkeys, all here!"
+    },
+    {
+     "who": "旁白",
+     "text": "他又騎上驢子。",
+     "en": "Then he climbed back onto his donkey."
+    }
+   ]
+  },
+  {
+   "scene": "黃土路上，路邊有一道矮土牆。",
+   "act": "阿凡提又騎在紫色毯子的驢子上，前面是紅、黃、綠、藍四隻。他急得滿頭汗，彎下身體，對著自己騎的那隻驢子的大耳朵問話；那隻驢子仰頭張嘴叫。小女孩第一次出場：六歲左右，兩條長辮子，戴一頂繡花小圓帽，穿紅色洋裝，手提一籃杏桃，站在矮土牆旁邊，一手遮著嘴巴笑，一手指著阿凡提坐的那隻驢子。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "騎上去再點，又是四隻！",
+     "en": "He counted again from up there. Four donkeys again!"
+    },
+    {
+     "who": "阿凡提",
+     "tag": "worried",
+     "text": "驢子，驢子，你的朋友呢？",
+     "en": "Donkey, donkey, where is your friend?"
+    },
+    {
+     "who": "旁白",
+     "text": "咿啊，咿啊！路邊的小女孩笑了。",
+     "en": "Hee-haw, hee-haw! A little girl by the road began to laugh."
+    },
+    {
+     "who": "旁白",
+     "text": "在地上是五隻，騎上去是四隻。",
+     "en": "On the ground, five donkeys. Up on a donkey, four."
+    },
+    {
+     "who": "旁白",
+     "text": "猜一猜，少的那一隻在哪裡呢？",
+     "en": "Can you guess where the missing donkey is?"
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土路，矮土牆旁邊。",
+   "act": "小女孩走到阿凡提旁邊，笑著伸手指著他屁股下面那隻披紫色毯子的驢子。阿凡提還騎在上面，低下頭，第一次看到自己坐的這一隻，眼睛和嘴巴都張得圓圓的。前面四隻驢子回頭看。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "大叔，牠在你的屁股下面！",
+     "en": "Mister, it's right under your bottom!"
+    },
+    {
+     "who": "小女孩",
+     "text": "因為你坐在牠上面，眼睛看不到牠。",
+     "en": "Because you're sitting on it, your eyes can't see it."
+    },
+    {
+     "who": "小女孩",
+     "text": "所以，你每次都少算一隻。",
+     "en": "So every time, you count one too few."
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土路。",
+   "act": "阿凡提騎在紫色毯子的驢子上，一手拍著自己的大頭巾，仰頭哈哈大笑，鬍子都在抖，另一手摸著這隻驢子的脖子。小女孩在旁邊跟著笑。",
+   "lines": [
+    {
+     "who": "阿凡提",
+     "tag": "laughing",
+     "text": "哈！我忘了算我騎的這一隻！",
+     "en": "Ha! I forgot to count the one I'm riding!"
+    },
+    {
+     "who": "旁白",
+     "text": "那麼，他要站在哪裡，才看得到五隻呢？",
+     "en": "So where should he stand to see all five?"
+    }
+   ]
+  },
+  {
+   "scene": "黃土路上，遠處看得到小鎮的圓屋頂。",
+   "act": "阿凡提從驢子上下來，走在地上，一手牽著最前面那隻紅色毯子驢子的繩子，回頭就看得到排成一排的五隻驢子（紅、黃、綠、藍、紫），沒有人騎。他得意地翹起鬍子。小女孩提著籃子走在他旁邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "阿凡提跳下來，牽著驢子走。",
+     "en": "Hodja hopped down and led his donkeys on foot."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "happy",
+     "text": "因為站在地上，五隻都看得到，所以不會少算。",
+     "en": "Because down here I can see all five, I won't miss any."
+    },
+    {
+     "who": "阿凡提",
+     "tag": "laughing",
+     "text": "走路就不會弄丟驢子了！",
+     "en": "If I walk, I'll never lose a donkey!"
+    }
+   ]
+  },
+  {
+   "scene": "太陽快下山的黃土路，天空橘色，小鎮就在前面。",
+   "act": "阿凡提一邊走一邊回頭，伸出手指點五隻驢子，最後手指點著自己的胸口，得意地挺起圓肚子；小女孩提著籃子走在旁邊，笑得彎下腰，一手指著阿凡提搖頭。五隻驢子一起仰頭張嘴叫，像在大笑。",
+   "lines": [
+    {
+     "who": "阿凡提",
+     "tag": "happy",
+     "text": "五隻驢子，加上我，六隻！",
+     "en": "Five donkeys, plus me. That makes six!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "laughing",
+     "text": "大叔，你不是驢子啦！",
+     "en": "Mister, you're not a donkey!"
+    },
+    {
+     "who": "旁白",
+     "text": "咿啊，咿啊！驢子也笑了。",
+     "en": "Hee-haw, hee-haw! The donkeys laughed too."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,407 @@
+{
+ "id": "tian-ji",
+ "title": "田忌賽馬",
+ "title_en": "The Three-Horse Race",
+ "size": "中",
+ "roles": {
+  "田忌": "很久以前中國愛馬的大將軍，中年男聲，個性豪爽，輸了很洩氣、唉聲嘆氣，贏了笑得很大聲。",
+  "孫先生": "田忌的聰明朋友，說話不急不慢、很沉穩，愛觀察，講辦法的時候帶著笑。",
+  "國王": "齊國的國王，年紀大的男聲，最愛賽馬，笑聲很大，輸了也不生氣，很有風度。"
+ },
+ "cast": {
+  "田忌": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "孫先生": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "將",
+   "where": "第1頁『大將軍』",
+   "read": "jiāng"
+  },
+  {
+   "char": "冠",
+   "where": "第1頁、第12頁『冠軍旗』，第10頁『冠軍』",
+   "read": "guàn"
+  },
+  {
+   "char": "匹",
+   "where": "第1頁『三匹馬』，第4頁『每匹』",
+   "read": "pī"
+  },
+  {
+   "char": "場",
+   "where": "第1頁『比三場』『贏兩場』，第3頁『三場』，第5頁到第10頁『第一場』『這一場』等",
+   "read": "chǎng"
+  },
+  {
+   "char": "號",
+   "where": "全書『一號馬』『二號馬』『三號馬』，第2頁『號碼』",
+   "read": "hào"
+  },
+  {
+   "char": "仔",
+   "where": "第4頁『仔細看』",
+   "read": "zǐ"
+  },
+  {
+   "char": "為",
+   "where": "第5頁『因為』『為什麼』，第6頁、第7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『為什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第6頁『派誰去』",
+   "read": "shéi"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『都會輸』，第7頁『都會贏』，第9頁『怎麼會』，第12頁『真會想』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第11頁『馬沒換』，第12頁『沒說不行』",
+   "read": "méi"
+  },
+  {
+   "char": "行",
+   "where": "第12頁『沒說不行』",
+   "read": "xíng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，城外的賽馬場：平平的黃土跑道，用白線分成兩條，終點立著兩根綁紅布條的木竿；旁邊是木頭搭的看台，插著彩色旗子。看台前的桌子上，放著一面金黃色的三角形冠軍旗和一籃粉紅色的大桃子。",
+   "act": "田忌第一次出場：高大的中年將軍，黑色短鬍子，頭髮在頭頂綁成髮髻、戴一個小銅冠，穿深藍色戰袍、咖啡色皮甲、紅色披風；他笑著摸一匹白馬的脖子。國王第一次出場：年紀大的國王，白色長鬍子、圓肚子，戴金色小王冠，穿大紅色繡金邊的長袍；他坐在看台正中間的大椅子上，笑著向田忌招手。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，大將軍田忌最愛馬。",
+     "en": "Long ago in China, a great general named Tian Ji loved horses."
+    },
+    {
+     "who": "旁白",
+     "text": "國王也愛馬，最愛找他賽馬。",
+     "en": "The King loved horses too, and he loved racing against Tian Ji."
+    },
+    {
+     "who": "旁白",
+     "text": "兩邊各出三匹馬，比三場。",
+     "en": "Each side brought three horses for three races."
+    },
+    {
+     "who": "旁白",
+     "text": "每次贏兩場的，拿走冠軍旗和一籃桃子。",
+     "en": "Each time, whoever won two races got the winner's flag and a basket of peaches."
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場的起跑線前。左邊站著田忌的三匹馬，右邊站著國王的三匹馬，兩邊各排成一排，由快到慢。",
+   "act": "左邊，田忌的三匹馬，騎馬的人都穿藍色衣服：白馬（全身白色、最高大，紅色馬鞍墊）、棕馬（咖啡色的毛、黑色鬃毛，中等大小，綠色馬鞍墊）、小黑馬（全身黑色、個子最小，額頭有一顆白色星星，黃色馬鞍墊）。田忌站在白馬旁邊，挺著胸介紹。右邊，國王的三匹馬都是灰色的大馬，騎馬的人都穿紅色衣服；三匹馬的背上各披一塊紅布，布上用白色寫著「一」「二」「三」：一號馬最高大，二號馬中等，三號馬最小。國王站在一號馬旁邊，摸著鬍子笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "田忌的馬用顏色叫。",
+     "en": "Tian Ji named his horses by color."
+    },
+    {
+     "who": "田忌",
+     "tag": "proud",
+     "text": "白馬最快，棕馬第二，小黑馬最慢。",
+     "en": "White is my fastest. Brown is second. Little Black is my slowest."
+    },
+    {
+     "who": "旁白",
+     "text": "國王的馬用號碼叫。",
+     "en": "The King named his horses by number."
+    },
+    {
+     "who": "國王",
+     "tag": "proud",
+     "text": "一號馬最快，二號馬第二，三號馬最慢！",
+     "en": "Number One is my fastest. Number Two is second. Number Three is my slowest!"
+    }
+   ]
+  },
+  {
+   "scene": "城外的賽馬場：平平的黃土跑道，用白線分成兩條，終點立著兩根綁紅布條的木竿；旁邊是木頭搭的看台，插著彩色旗子。",
+   "act": "畫面分成三小格，每一格都是終點前的兩匹馬，國王的馬只快一個馬頭：第一格，白馬對一號馬，一號馬快一點；第二格，棕馬對二號馬，二號馬快一點；第三格，小黑馬對三號馬，三號馬快一點。畫面下方：田忌兩手抱著頭，垂著肩膀嘆氣；看台上的國王開心地拍手，身旁的人把金黃色的冠軍旗和一籃桃子交給他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "國王每次都照一號、二號、三號的順序派馬。",
+     "en": "The King always sent his horses in the same order. Number One, then Number Two, then Number Three."
+    },
+    {
+     "who": "旁白",
+     "text": "白馬對一號馬，輸一小步。",
+     "en": "White raced Number One and lost by one little step."
+    },
+    {
+     "who": "旁白",
+     "text": "棕馬對二號馬，輸一小步。",
+     "en": "Brown raced Number Two and lost by one little step."
+    },
+    {
+     "who": "旁白",
+     "text": "小黑馬對三號馬，也輸一小步。",
+     "en": "Little Black raced Number Three and lost by one little step too."
+    },
+    {
+     "who": "田忌",
+     "tag": "sad",
+     "text": "唉，三場全輸了！",
+     "en": "Oh no. I lost all three!"
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場旁邊的大樹下，六匹馬在後面休息、喝水。",
+   "act": "孫先生第一次出場：瘦瘦的中年人，黑色的短鬍子，頭上包著青色布頭巾，穿灰白色長袍，手裡拿著一卷竹片做的書；他站在樹下，瞇著眼睛看著那六匹馬。他頭上有一個想像泡泡，裡面由快到慢排成一排：一號馬、白馬、二號馬、棕馬、三號馬、小黑馬。田忌坐在旁邊的石頭上，垂著頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "田忌的朋友孫先生，在旁邊仔細看。",
+     "en": "Tian Ji's friend, Sun Bin, was watching very closely."
+    },
+    {
+     "who": "旁白",
+     "text": "他發現，白馬輸給一號馬，卻比二號馬快。",
+     "en": "He noticed that White lost to Number One, but was faster than Number Two."
+    },
+    {
+     "who": "旁白",
+     "text": "棕馬輸給二號馬，卻比三號馬快。",
+     "en": "And Brown lost to Number Two, but was faster than Number Three."
+    },
+    {
+     "who": "旁白",
+     "text": "每匹都慢一點，田忌有辦法贏嗎？",
+     "en": "Every one of his horses was a little slower. Could Tian Ji still find a way to win?"
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場旁邊的大樹下。",
+   "act": "孫先生笑著蹲下來，用一根樹枝在泥土地上畫了兩排圓圈：上面一排三個圈是國王的馬，圈裡寫「一」「二」「三」；下面一排三個圈是田忌的馬，塗成白色、咖啡色、黑色。他把黑色的圈畫在「一」的正下方，用一條線連起來。田忌從石頭上跳起來，瞪大眼睛，兩手攤開。",
+   "lines": [
+    {
+     "who": "孫先生",
+     "text": "有辦法！因為順序可以換。",
+     "en": "There is a way! Because you can change the order."
+    },
+    {
+     "who": "孫先生",
+     "text": "馬不用換。第一場，派小黑馬去比一號馬。",
+     "en": "Keep your horses. In the first race, send Little Black against Number One."
+    },
+    {
+     "who": "田忌",
+     "tag": "surprised",
+     "text": "最慢的比最快的？一定輸呀！",
+     "en": "My slowest against his fastest? We'll lose for sure!"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，孫先生為什麼要這樣排？",
+     "en": "Can you guess why Sun Bin wanted to do that?"
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場旁邊的大樹下，地上是孫先生畫的圖。",
+   "act": "孫先生用樹枝指著地上的圖：黑色的圈和「一」連在一起，旁邊畫一個小叉；白色的圈和咖啡色的圈畫在旁邊，外面圈起來，表示留下來。田忌蹲在旁邊，一手摸著下巴，皺著眉頭想。",
+   "lines": [
+    {
+     "who": "孫先生",
+     "text": "因為一號馬最快，派誰去都會輸。",
+     "en": "Because Number One is the fastest. Any horse we send will lose."
+    },
+    {
+     "who": "孫先生",
+     "text": "所以讓小黑馬去輸，把白馬和棕馬留下來。",
+     "en": "So let Little Black lose that race, and save White and Brown."
+    },
+    {
+     "who": "旁白",
+     "text": "剩下二號和三號，白馬和棕馬要怎麼排呢？",
+     "en": "Number Two and Number Three were left. How should White and Brown line up?"
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場旁邊的大樹下，地上的圖畫完了。",
+   "act": "地上的圖：黑色的圈連到「一」（旁邊一個小叉），白色的圈連到「二」（旁邊一個小勾），咖啡色的圈連到「三」（旁邊一個小勾）。孫先生笑著伸出兩根手指；田忌眼睛發亮，用力拍一下手，開心地跳起來。",
+   "lines": [
+    {
+     "who": "孫先生",
+     "text": "白馬去比二號馬，棕馬去比三號馬。",
+     "en": "White will race Number Two, and Brown will race Number Three."
+    },
+    {
+     "who": "孫先生",
+     "text": "因為白馬比二號馬快，棕馬比三號馬快。",
+     "en": "Because White is faster than Number Two, and Brown is faster than Number Three."
+    },
+    {
+     "who": "孫先生",
+     "text": "所以，這兩場都會贏！",
+     "en": "So we will win both races!"
+    },
+    {
+     "who": "田忌",
+     "tag": "excited",
+     "text": "輸一場，贏兩場！好辦法！",
+     "en": "Lose one, win two! What a plan!"
+    }
+   ]
+  },
+  {
+   "scene": "城外的賽馬場：平平的黃土跑道，用白線分成兩條，終點立著兩根綁紅布條的木竿；旁邊是木頭搭的看台，插著彩色旗子。看台上坐滿了人；看台前的桌子上，又放著一面新的金黃色冠軍旗和一籃粉紅色的大桃子。",
+   "act": "第一場：小黑馬對一號馬。高大的灰色一號馬已經衝過終點的木竿，小黑馬才跑到跑道的一半，四隻小短腿很努力地跑。看台上的國王拍著肚子大笑；場邊的田忌緊張地偷看身旁的孫先生，孫先生笑著輕輕點頭。場邊的木板上記著：田忌那一邊沒有圓圈，國王那一邊一個圓圈。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "又比賽了。第一場，小黑馬對一號馬。",
+     "en": "Soon they raced again. First race: Little Black against Number One."
+    },
+    {
+     "who": "旁白",
+     "text": "一號馬先到終點，國王贏了這一場。",
+     "en": "Number One crossed the line first. The King won that race."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "田忌，你的馬怎麼變慢啦？",
+     "en": "Tian Ji, why is your horse so slow today?"
+    },
+    {
+     "who": "旁白",
+     "text": "田忌零場，國王一場。",
+     "en": "Tian Ji, no wins. The King, one win."
+    }
+   ]
+  },
+  {
+   "scene": "城外的賽馬場：平平的黃土跑道，用白線分成兩條，終點立著兩根綁紅布條的木竿；旁邊是木頭搭的看台，插著彩色旗子。看台上坐滿了人。",
+   "act": "第二場：白馬對二號馬。白馬的頭先碰到終點的紅布條，灰色的二號馬落後一個馬頭。看台上的國王從椅子上站起來，張大嘴巴；田忌握緊拳頭，開心地揮了一下。場邊的木板上記著：田忌那一邊一個圓圈，國王那一邊一個圓圈。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二場，白馬對二號馬。",
+     "en": "Second race: White against Number Two."
+    },
+    {
+     "who": "旁白",
+     "text": "白馬先到終點，田忌贏了這一場！",
+     "en": "White crossed the line first. Tian Ji won that race!"
+    },
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "咦？怎麼會？",
+     "en": "Huh? How can that be?"
+    },
+    {
+     "who": "旁白",
+     "text": "田忌一場，國王一場，平手。",
+     "en": "Tian Ji, one win. The King, one win. A tie!"
+    }
+   ]
+  },
+  {
+   "scene": "城外的賽馬場：平平的黃土跑道，用白線分成兩條，終點立著兩根綁紅布條的木竿；旁邊是木頭搭的看台，插著彩色旗子。看台上的人都站起來了。",
+   "act": "第三場：棕馬對三號馬。兩匹馬一起衝向終點，棕馬的頭先碰到紅布條，灰色的三號馬落後一個馬頭。田忌在場邊兩手放在嘴邊大聲加油，接著高高跳起來；孫先生在他旁邊笑著拍手。場邊的木板上記著：田忌那一邊兩個圓圈，國王那一邊一個圓圈。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第三場，棕馬對三號馬。",
+     "en": "Third race: Brown against Number Three."
+    },
+    {
+     "who": "田忌",
+     "tag": "shouting",
+     "text": "棕馬，加油！",
+     "en": "Go, Brown, go!"
+    },
+    {
+     "who": "旁白",
+     "text": "棕馬先到終點，田忌贏了這一場！",
+     "en": "Brown crossed the line first. Tian Ji won that race!"
+    },
+    {
+     "who": "旁白",
+     "text": "田忌兩場，國王一場。田忌是冠軍！",
+     "en": "Tian Ji, two wins. The King, one win. Tian Ji was the champion!"
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場的看台前，六匹馬站在後面。",
+   "act": "國王走下看台，一手摸著白鬍子，歪著頭，一臉想不通，另一手指著田忌的三匹馬。田忌笑著把手伸向身旁的孫先生。孫先生有禮貌地向國王彎腰，一手指著小黑馬，一手指著高大的一號馬。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "surprised",
+     "text": "你的馬比較慢，怎麼贏的？",
+     "en": "Your horses are slower than mine. How did you win?"
+    },
+    {
+     "who": "田忌",
+     "text": "馬沒換，孫先生幫我換了順序。",
+     "en": "I kept the same horses. Sun Bin changed the order."
+    },
+    {
+     "who": "孫先生",
+     "text": "我們用最慢的馬，去比您最快的馬。",
+     "en": "We sent our slowest horse against your fastest."
+    }
+   ]
+  },
+  {
+   "scene": "賽馬場的看台前，太陽要下山了，天空是橘色的。",
+   "act": "國王仰頭大笑，一手拍著田忌的肩膀，一手把金黃色的冠軍旗交給他，一點也不生氣。田忌一手拿著冠軍旗，一手摟著小黑馬的脖子，臉貼著牠；小黑馬抬起頭，很神氣。孫先生提著那一籃桃子，把桃子分給國王和騎馬的人，大家一人拿著一顆桃子在笑。白馬、棕馬和國王的三匹灰馬站在後面。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "規則沒說不行，你們真會想！",
+     "en": "Ha! The rules never said you couldn't. How clever!"
+    },
+    {
+     "who": "國王",
+     "text": "下次，換我動腦排一排！",
+     "en": "Next time, I'll think hard about my order too!"
+    },
+    {
+     "who": "旁白",
+     "text": "田忌拿到冠軍旗，桃子分給大家吃。",
+     "en": "Tian Ji got the winner's flag and shared the peaches with everyone."
+    },
+    {
+     "who": "田忌",
+     "tag": "happy",
+     "text": "小黑馬，今天你功勞最大！",
+     "en": "Little Black, you were the biggest help of all today!"
+    }
+   ]
+  }
+ ]
+}

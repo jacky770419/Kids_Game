@@ -1,0 +1,389 @@
+{
+ "id": "birbal-puzzles",
+ "title": "比爾巴的兩個難題",
+ "title_en": "Birbal's Two Puzzles",
+ "size": "中",
+ "roles": {
+  "國王": "很久以前印度的阿克巴國王，慈祥的老國王聲音，愛出難題、愛笑，笑聲很大。",
+  "比爾巴": "國王身邊最聰明的人，說話不急不忙、帶著笑，像個溫和的智者。",
+  "大臣": "愛搶著回答的大臣，愛炫耀、說話快又得意，常常答錯，好笑不可怕，最後跟著大家一起笑。"
+ },
+ "cast": {
+  "國王": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "比爾巴": {
+   "find": "Neil Chuang",
+   "en": "Myrrdin"
+  },
+  "大臣": {
+   "find": "Long - Podcast",
+   "en": "Callum"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "難",
+   "where": "書名『兩個難題』，第1頁『出難題』，第5頁『第二個難題』",
+   "read": "nán"
+  },
+  {
+   "char": "長",
+   "where": "第4頁『好長的線』『長和短』『比它長』",
+   "read": "cháng"
+  },
+  {
+   "char": "為",
+   "where": "第4、10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "誰",
+   "where": "第2頁『誰能』",
+   "read": "shéi"
+  },
+  {
+   "char": "行",
+   "where": "第3頁『不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "沒",
+   "where": "第5頁『沒想到』，第7頁『沒有摘下來』",
+   "read": "méi"
+  },
+  {
+   "char": "給",
+   "where": "第6頁『請給我』，第12頁『留著給客人猜』",
+   "read": "gěi"
+  },
+  {
+   "char": "塞",
+   "where": "第9頁『塞進去』『塞不進去』",
+   "read": "sāi"
+  },
+  {
+   "char": "得",
+   "where": "第12頁『喝得好開心』",
+   "read": "de"
+  },
+  {
+   "char": "喝",
+   "where": "第12頁『一起喝』",
+   "read": "hē"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的印度王宮：白色大理石宮殿，圓圓的洋蔥形屋頂，一排拱門，院子裡有水池和棕櫚樹，天空很藍。",
+   "act": "三個角色第一次出場，站在宮殿的拱門下。國王（阿克巴國王）：六十多歲，圓臉、灰白色的大鬍子，戴金色頭巾、頭巾中間一顆紅寶石，穿白色長袍、外面罩紅色金邊長背心，坐在有軟墊的矮椅子上，笑咪咪地摸鬍子。比爾巴：四十歲左右，瘦瘦的，黑色短鬍子，戴橘色頭巾，穿淡綠色長袍、白色褲子，眼睛笑得彎彎的，安靜地站在國王旁邊。大臣：胖胖的，一撇往上翹的黑色小鬍子，戴很大的紫色頭巾、上面插一根孔雀羽毛，穿紫色金邊長袍，手上好多戒指，高高舉著手，搶著要說話。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，在很遠的印度，有一位阿克巴國王。",
+     "en": "Long ago, in faraway India, there lived a king named Akbar."
+    },
+    {
+     "who": "旁白",
+     "text": "國王最愛出難題。他身邊最聰明的人，叫比爾巴。",
+     "en": "King Akbar loved tricky puzzles. The cleverest man at his side was called Birbal."
+    },
+    {
+     "who": "旁白",
+     "text": "另外有一位大臣，最愛搶著回答。",
+     "en": "There was also a minister who always wanted to answer first."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的院子，一片平平的黃色沙地，旁邊有棕櫚樹和水池。",
+   "act": "國王彎著腰，手拿一根樹枝，在沙地上畫出一條直直的橫線，大約跟他的手臂一樣長。畫完他舉起一根手指左右搖，表示不能擦、不能碰。比爾巴和大臣站在線的另一邊看；大臣已經捲起袖子，等不及了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "有一天，國王拿樹枝，在沙地上畫了一條線。",
+     "en": "One day, the king took a stick and drew a line in the sand."
+    },
+    {
+     "who": "國王",
+     "tag": "playful",
+     "text": "誰能讓這條線變短？",
+     "en": "Who can make this line shorter?"
+    },
+    {
+     "who": "國王",
+     "text": "可是，不能擦，也不能碰它喔！",
+     "en": "But you can't rub it out, and you can't touch it!"
+    }
+   ]
+  },
+  {
+   "scene": "同一片沙地，沙地上只有國王畫的那一條線。",
+   "act": "大臣挺著胸往前衝，羽毛晃來晃去；他伸出一隻尖頭鞋，腳尖懸在線的一頭上面，正想擦，還沒碰到。國王笑著伸出手掌擋住他，搖搖頭。大臣的腳停在半空中，單腳站著搖搖晃晃，一臉尷尬。比爾巴在旁邊摸著鬍子，看著那條線想事情。",
+   "lines": [
+    {
+     "who": "大臣",
+     "tag": "proud",
+     "text": "我來，我來！這個最簡單！",
+     "en": "Me, me! That's the easiest thing ever!"
+    },
+    {
+     "who": "旁白",
+     "text": "大臣伸出腳，想把線擦掉一小段。",
+     "en": "The minister stuck out his foot to rub away a little bit of the line."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "不行，不行，不能擦！",
+     "en": "No, no! No rubbing!"
+    },
+    {
+     "who": "旁白",
+     "text": "不能擦，也不能碰，線要怎麼變短呢？",
+     "en": "No rubbing and no touching. So how can the line get shorter?"
+    }
+   ]
+  },
+  {
+   "scene": "同一片沙地，現在有兩條線。",
+   "act": "比爾巴彎著腰，拿樹枝在國王那條線的旁邊（下方，平行，隔著一個手掌寬）畫了一條新的線，新的線大約是原來那條的兩倍長，兩條線左邊對齊。原來那條線完全沒有被碰到。比爾巴畫完，一手指著上面的短線、一手指著下面的長線，笑著說明。國王和大臣彎腰看，大臣的嘴巴張成圓形。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "比爾巴笑了笑，拿起樹枝。",
+     "en": "Birbal smiled and picked up the stick."
+    },
+    {
+     "who": "旁白",
+     "text": "他在旁邊，畫了一條好長的線。",
+     "en": "Right beside it, he drew a really long line."
+    },
+    {
+     "who": "比爾巴",
+     "tag": "gentle",
+     "text": "國王請看，長和短是比出來的。",
+     "en": "Look, Your Majesty. A line is long or short only next to another line."
+    },
+    {
+     "who": "比爾巴",
+     "text": "因為旁邊有一條比它長的線。",
+     "en": "Because there is a longer line next to it."
+    },
+    {
+     "who": "比爾巴",
+     "text": "所以，原來那條就變成比較短的了。",
+     "en": "So now your line is the shorter one."
+    }
+   ]
+  },
+  {
+   "scene": "沙地旁邊的涼亭，有柱子和紅色的布簾。",
+   "act": "國王拍著手大笑，鬍子一抖一抖。大臣一手拍自己的額頭，紫色頭巾歪到一邊。下一格：國王舉起一根手指，出第二個難題，頭上一個想像泡泡：一個罐子，罐子上面一個大問號。大臣兩手攤開，眉毛皺成八字。比爾巴在旁邊微笑。",
+   "lines": [
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈，真的變短了！",
+     "en": "Ha! It really is shorter!"
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "哎呀，我怎麼沒想到！",
+     "en": "Oh my, why didn't I think of that!"
+    },
+    {
+     "who": "旁白",
+     "text": "國王又出了第二個難題。",
+     "en": "Then the king had a second puzzle."
+    },
+    {
+     "who": "國王",
+     "tag": "playful",
+     "text": "我想要一罐聰明！",
+     "en": "I want a jar of cleverness!"
+    },
+    {
+     "who": "大臣",
+     "tag": "confused",
+     "text": "聰明看不到，也摸不到，怎麼裝進罐子呢？",
+     "en": "You can't see cleverness or touch it. How can it go in a jar?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮後面的花園，一片南瓜田：綠色的藤爬在地上，大片的葉子，開著幾朵黃色的花，田裡已經有三四顆橘色的大南瓜。",
+   "act": "左格：比爾巴向國王彎腰行禮，伸出三根手指。右格：比爾巴蹲在南瓜田裡，撥開大葉子，藤上有一顆剛冒出來的小南瓜，淡綠色，跟一顆葡萄一樣小，還連在藤上；他用兩根手指輕輕托著它，眼睛發亮。",
+   "lines": [
+    {
+     "who": "比爾巴",
+     "tag": "calm",
+     "text": "國王，請給我三個月。",
+     "en": "Your Majesty, please give me three months."
+    },
+    {
+     "who": "旁白",
+     "text": "比爾巴走到花園，找到一顆剛冒出來的小南瓜。",
+     "en": "Birbal went to the garden and found a baby pumpkin that had just begun to grow."
+    },
+    {
+     "who": "旁白",
+     "text": "它跟葡萄一樣小，連在藤上。",
+     "en": "It was as small as a grape, and it was still on its vine."
+    }
+   ]
+  },
+  {
+   "scene": "同一片南瓜田，小南瓜旁邊的地上。",
+   "act": "比爾巴把一個土黃色的陶罐側放在地上：罐口很小，只比葡萄大一點；罐身圓圓大大的，像一顆大西瓜。他小心地把那顆葡萄大的小南瓜，連著藤一起從罐口放進罐子裡，藤從罐口伸出來，還連著田裡的根和葉子，沒有摘斷。請把罐子畫成看得到裡面的樣子（像切開一半的剖面）：小南瓜在大罐子裡小小一顆。下一格：比爾巴拿著水壺，在藤的根旁邊澆水。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他拿來一個罐子。罐口很小，罐身很大。",
+     "en": "He brought a jar. Its mouth was very small, but its body was very big."
+    },
+    {
+     "who": "旁白",
+     "text": "他把小南瓜連著藤，小心地放進罐子裡。",
+     "en": "Gently, he slipped the baby pumpkin into the jar, still on its vine."
+    },
+    {
+     "who": "比爾巴",
+     "tag": "whispering",
+     "text": "小南瓜，一天，一天變大吧。",
+     "en": "Little pumpkin, grow bigger day by day."
+    },
+    {
+     "who": "旁白",
+     "text": "小南瓜沒有摘下來，他每天都來澆水。",
+     "en": "The pumpkin was never picked, and he came to water the vine every day."
+    }
+   ]
+  },
+  {
+   "scene": "左格：南瓜田，太陽和月亮輪流出現，表示過了很多天。右格：王宮的大廳，紅色地毯，國王坐在矮椅子上。",
+   "act": "左格：用剖面畫出罐子裡的南瓜一次比一次大（三個小圖：像葡萄、像蘋果、最後變成橘色的大南瓜，塞滿整個罐身），藤一直從罐口伸出來連著田裡。右格：比爾巴兩手抱著陶罐，放在國王面前的矮桌上；罐口還留著一小段剪下來的綠色藤。國王身體往前傾，大臣伸長脖子看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一天，一天，南瓜在罐子裡越來越大。",
+     "en": "Day by day, the pumpkin grew bigger and bigger inside the jar."
+    },
+    {
+     "who": "旁白",
+     "text": "三個月到了。比爾巴把罐子送到國王面前。",
+     "en": "Three months went by. Birbal carried the jar to the king."
+    },
+    {
+     "who": "比爾巴",
+     "tag": "calm",
+     "text": "國王，這就是一罐聰明。",
+     "en": "Your Majesty, here is your jar of cleverness."
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，矮桌上放著陶罐。",
+   "act": "國王一隻眼睛貼近小小的罐口往裡面看，另一隻眼睛閉著，嚇了一跳。旁邊畫一個剖面小圖：罐子裡塞著一顆橘色大南瓜，南瓜比罐口大好多。大臣很有把握地舉手搶答；下一格他用兩根手指比一比罐口的大小，再張開雙手比一比南瓜的大小，發現差太多，抓著頭。沒有人把手伸進罐子裡。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "罐口很小，裡面卻有一顆大南瓜。",
+     "en": "The mouth of the jar was tiny, but inside sat a great big pumpkin."
+    },
+    {
+     "who": "大臣",
+     "tag": "excited",
+     "text": "我知道，是用力塞進去的！",
+     "en": "I know! Somebody pushed it in really hard!"
+    },
+    {
+     "who": "旁白",
+     "text": "可是，南瓜比罐口大好多，塞不進去。",
+     "en": "But the pumpkin was far too big to be pushed through."
+    },
+    {
+     "who": "旁白",
+     "text": "這麼大的南瓜，是怎麼進去的呢？",
+     "en": "So how did such a big pumpkin get in there?"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，陶罐旁邊。",
+   "act": "比爾巴一手用兩根手指比出葡萄那麼小，一手指著罐口，微笑著說明；他頭上一個回憶泡泡：葡萄大的小南瓜連著藤，正從罐口放進去。大臣兩手拍在臉頰上，眼睛瞪得好大；國王摸著鬍子，慢慢點頭。",
+   "lines": [
+    {
+     "who": "比爾巴",
+     "tag": "gentle",
+     "text": "因為南瓜是小時候放進去的。",
+     "en": "Because the pumpkin went in when it was tiny."
+    },
+    {
+     "who": "比爾巴",
+     "text": "它在罐子裡，一天，一天變大，所以現在出不來了。",
+     "en": "It grew bigger day by day inside the jar, so now it can't come out."
+    },
+    {
+     "who": "大臣",
+     "tag": "surprised",
+     "text": "原來是這樣！",
+     "en": "So that is how!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的大廳，陽光從拱形窗戶照進來。",
+   "act": "比爾巴一手輕輕拍著陶罐，笑得眼睛彎彎。國王抱著肚子哈哈大笑，頭巾上的紅寶石閃閃發亮。大臣也跟著大笑，一手指著自己的頭，孔雀羽毛晃來晃去；三個人笑成一團，沒有人不開心。",
+   "lines": [
+    {
+     "who": "比爾巴",
+     "tag": "happy",
+     "text": "能想出它怎麼進去的，就是聰明。",
+     "en": "Anyone who can work out how it got in is clever."
+    },
+    {
+     "who": "國王",
+     "tag": "laughing",
+     "text": "哈！這真的是一罐聰明！",
+     "en": "Ha! It really is a jar of cleverness!"
+    },
+    {
+     "who": "大臣",
+     "tag": "laughing",
+     "text": "下次，我一定第一個想到！",
+     "en": "Next time, I'll be the first to work it out!"
+    }
+   ]
+  },
+  {
+   "scene": "王宮的花園涼亭，太陽快下山，天空橘紅色；涼亭旁邊就是南瓜田。",
+   "act": "涼亭的矮桌上一大鍋冒著熱氣的橘色南瓜湯，旁邊放著從田裡摘來、切開的另外幾顆南瓜。國王、比爾巴和大臣圍著矮桌坐在軟墊上，一人捧一碗湯，笑得很開心；大臣的小鬍子上沾了一點湯。那個裝著大南瓜的陶罐完好地擺在涼亭的架子上，沒有打破；國王一手指著罐子，對著畫面外眨一隻眼睛，像在邀請下一位客人來猜。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "比爾巴用花園裡別的南瓜，煮了一大鍋南瓜湯。",
+     "en": "Birbal picked other pumpkins from the garden and cooked a big pot of pumpkin soup."
+    },
+    {
+     "who": "旁白",
+     "text": "國王、比爾巴和大臣，一起喝得好開心。",
+     "en": "The king, Birbal, and the minister all enjoyed it together."
+    },
+    {
+     "who": "旁白",
+     "text": "罐子裡那顆南瓜，就留著給客人猜。",
+     "en": "And the pumpkin in the jar? They kept it for visitors to puzzle over."
+    },
+    {
+     "who": "國王",
+     "tag": "happy",
+     "text": "下一位客人，換你來猜！",
+     "en": "Next visitor, it is your turn to guess!"
+    }
+   ]
+  }
+ ]
+}

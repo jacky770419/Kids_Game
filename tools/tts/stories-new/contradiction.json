@@ -1,0 +1,257 @@
+{
+ "id": "contradiction",
+ "title": "賣矛和盾的叔叔",
+ "title_en": "The Spear and the Shield",
+ "size": "短",
+ "roles": {
+  "叔叔": "市場上賣東西的年輕叔叔，活潑的年輕男聲，嗓門大、愛吹牛，好笑不討厭；被問倒時說不出話，後來自己笑出來，改說實話。",
+  "小男孩": "五六歲的小男孩，聲音清亮，愛問問題、很有禮貌，一邊想一邊慢慢說。",
+  "奶奶": "停下來看熱鬧的老奶奶，慈祥、笑咪咪的，跟著小男孩一起動腦筋。"
+ },
+ "cast": {
+  "叔叔": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  },
+  "奶奶": {
+   "find": "冰璃_Jui",
+   "en": "Clara"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "擋",
+   "where": "第1頁『擋在身體前面』",
+   "read": "dǎng"
+  },
+  {
+   "char": "什",
+   "where": "第1、2、3頁『什麼都刺不穿』『什麼都刺得穿』",
+   "read": "shén"
+  },
+  {
+   "char": "得",
+   "where": "第2、3頁『刺得穿』",
+   "read": "de"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『會怎麼樣』『矛會刺穿盾嗎』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第6頁『沒說錯』",
+   "read": "méi"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國小鎮，早上熱鬧的市場：石板路兩旁是木頭攤子，掛著紅燈籠，攤子上有青菜、布、陶罐。中間一個鋪著紅布的攤子，上面擺著鍋子、竹籃、掃把等雜貨。",
+   "act": "叔叔第一次出場：二十多歲的年輕叔叔，圓臉、濃眉、笑起來露出牙齒，頭上綁藍色頭巾，穿土黃色短上衣、深咖啡色長褲，腰上繫紅色腰帶。他站在攤子後面，兩手高高舉起一面盾：圓形的咖啡色木頭板子，邊緣包一圈銅色的邊，中間一顆銅色圓釘，大小可以擋住他的上半身。他張大嘴巴叫賣，很得意。攤子旁邊立著一支矛（下一頁才介紹），矛尖朝上靠在柱子上，沒有人拿。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "市場上，一位叔叔大聲叫賣。",
+     "en": "At the market, a man was shouting at the top of his voice."
+    },
+    {
+     "who": "叔叔",
+     "tag": "shouting",
+     "text": "來看！盾，就是擋在身體前面的大板子。",
+     "en": "Come and see! A shield is a big board you hold in front of your body."
+    },
+    {
+     "who": "叔叔",
+     "tag": "proud",
+     "text": "我的盾最堅固，什麼都刺不穿！",
+     "en": "My shield is the strongest of all. Nothing can poke through it!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個攤子前面，路過的人圍過來看。",
+   "act": "奶奶第一次出場：白頭髮在腦後梳成小包包、插一支木簪，穿深紫色上衣、黑色長裙，手臂上掛一個竹籃。小男孩第一次出場：五六歲，圓臉，頭頂綁一個小圓髻、繫綠色髮帶，穿淺藍色古代短衣和灰色褲子。兩個人站在攤子前面抬頭看。叔叔把盾靠在攤子邊，一手握著矛立在地上：矛是一根比他高一點的木頭棍子，前端一個銀色的尖頭，尖頭下面綁著紅色流蘇；矛尖朝天，不對著任何人。他另一手指著矛尖，挺著胸。奶奶張大嘴巴，一手摸著臉頰。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "一位奶奶和一個小男孩，都停下來看。",
+     "en": "An old woman and a little boy stopped to look."
+    },
+    {
+     "who": "叔叔",
+     "tag": "excited",
+     "text": "再看！矛，就是前面很尖的棍子。",
+     "en": "Now look at this! A spear is a long stick with a sharp point."
+    },
+    {
+     "who": "叔叔",
+     "tag": "proud",
+     "text": "我的矛最尖，什麼都刺得穿！",
+     "en": "My spear is the sharpest of all. It can poke through anything!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "surprised",
+     "text": "哇，真厲害！",
+     "en": "My, how amazing!"
+    }
+   ]
+  },
+  {
+   "scene": "攤子前面，左邊靠著盾，右邊立著矛。",
+   "act": "畫面上方畫兩個想像泡泡：左邊泡泡是盾，旁邊一個大大的叉叉，表示什麼都刺不穿；右邊泡泡是矛，旁邊一個大大的勾勾，表示什麼都刺得穿。小男孩站在兩個泡泡下面，一根手指點著自己的下巴在想；下一格他舉起手發問，眼睛看著叔叔。叔叔還笑得很得意。沒有人碰矛和盾。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "最堅固的盾，什麼都刺不穿。",
+     "en": "The strongest shield: nothing can poke through it."
+    },
+    {
+     "who": "旁白",
+     "text": "最尖的矛，什麼都刺得穿。",
+     "en": "The sharpest spear: it can poke through anything."
+    },
+    {
+     "who": "旁白",
+     "text": "小男孩想了又想。",
+     "en": "The little boy thought and thought."
+    },
+    {
+     "who": "小男孩",
+     "tag": "curious",
+     "text": "叔叔，用你的矛，刺你的盾，會怎麼樣呢？",
+     "en": "Mister, what would happen if your spear poked your shield?"
+    },
+    {
+     "who": "旁白",
+     "text": "猜一猜，矛會刺穿盾嗎？",
+     "en": "What do you think? Will the spear go through the shield?"
+    }
+   ]
+  },
+  {
+   "scene": "攤子前面，圍觀的人都安靜下來。",
+   "act": "叔叔張大嘴巴、瞪大眼睛，說不出話，額頭冒出一滴汗，矛和盾都放在攤子邊，沒有人拿。小男孩一手指著自己的頭，表示用想的；他的頭上有兩個想像泡泡：第一個泡泡裡，盾上破了一個洞，盾在哭；第二個泡泡裡，矛尖碰到盾就彎掉，矛在哭。奶奶彎著腰站在小男孩旁邊，伸出一根手指，跟他一起想。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "叔叔張大嘴巴，說不出話。",
+     "en": "The man's mouth fell open, but no words came out."
+    },
+    {
+     "who": "小男孩",
+     "tag": "gentle",
+     "text": "不用真的刺，我們用想的。",
+     "en": "We don't have to really try it. Let's just think."
+    },
+    {
+     "who": "小男孩",
+     "text": "如果刺穿了，盾破了，盾的那句話就錯了。",
+     "en": "If it goes through, the shield breaks. Then what you said about the shield is wrong."
+    },
+    {
+     "who": "奶奶",
+     "tag": "gentle",
+     "text": "如果刺不穿，矛彎了，矛的那句話就錯了。",
+     "en": "And if it doesn't go through, the spear bends. Then what you said about the spear is wrong."
+    },
+    {
+     "who": "旁白",
+     "text": "所以，兩句話不可能都是真的。",
+     "en": "So the two things he said can't both be true."
+    }
+   ]
+  },
+  {
+   "scene": "攤子前面，陽光照在紅布上。",
+   "act": "叔叔一手抓著頭上的藍色頭巾，臉紅紅的，自己哈哈大笑；小男孩和奶奶也跟著笑，圍觀的人笑成一片。矛和盾安安穩穩地靠在攤子邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "叔叔抓了抓頭，自己也笑了。",
+     "en": "The man scratched his head, and then he laughed too."
+    },
+    {
+     "who": "叔叔",
+     "tag": "laughing",
+     "text": "哎呀，我吹牛吹過頭啦！",
+     "en": "Oh dear, I bragged way too much!"
+    },
+    {
+     "who": "旁白",
+     "text": "那麼，叔叔要怎麼說才對呢？",
+     "en": "So, what should he say instead?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個攤子前面。",
+   "act": "叔叔一手扶著盾、一手握著朝天的矛，站得直直的，笑得很老實，不再挺胸吹牛。小男孩開心地拍手，頭上一個想像泡泡：盾和矛手牽手一起笑，沒有打架。奶奶在旁邊笑著點頭、豎起大拇指。",
+   "lines": [
+    {
+     "who": "叔叔",
+     "tag": "happy",
+     "text": "我的盾很堅固，我的矛很尖，都很好用！",
+     "en": "My shield is very strong, and my spear is very sharp. They are both good to use!"
+    },
+    {
+     "who": "小男孩",
+     "tag": "happy",
+     "text": "這樣，刺穿了，沒說錯；刺不穿，也沒說錯。",
+     "en": "Now if it goes through, you're still right. If it doesn't, you're still right!"
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "所以，兩句話都是真的！",
+     "en": "So both things are true!"
+    }
+   ]
+  },
+  {
+   "scene": "攤子前面擠滿了人，好熱鬧。",
+   "act": "大家笑著圍在攤子前面買東西：有人拿鍋子，有人拿竹籃。奶奶把一支掃把放進自己的竹籃旁邊，笑咪咪地付錢；叔叔兩手合起來向大家道謝，笑得眼睛瞇成一條線；小男孩站在奶奶旁邊，幫忙扶著掃把。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大家都笑了，圍過來買東西。",
+     "en": "Everyone laughed and crowded around to buy things."
+    },
+    {
+     "who": "奶奶",
+     "tag": "happy",
+     "text": "這樣說，我就想買了。",
+     "en": "Now that's something I'd like to buy."
+    },
+    {
+     "who": "叔叔",
+     "tag": "happy",
+     "text": "謝謝，謝謝！",
+     "en": "Thank you, thank you!"
+    }
+   ]
+  },
+  {
+   "scene": "太陽快下山的市場，攤子上的東西快賣完了，天空是橘色的。",
+   "act": "畫面上方一個大泡泡：一支卡通矛和一面卡通盾面對面，嘟著嘴互相瞪，像在吵架，表示「矛盾」。泡泡下面，叔叔一手指著泡泡，一手拍著自己的頭大笑；小男孩和奶奶揮手跟他說再見。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "說的話，自己跟自己打架，就叫做矛盾。",
+     "en": "When your own words fight each other, that is called a contradiction."
+    },
+    {
+     "who": "叔叔",
+     "tag": "laughing",
+     "text": "矛盾，矛盾，我記住啦！",
+     "en": "A contradiction! I'll remember that!"
+    }
+   ]
+  }
+ ]
+}
