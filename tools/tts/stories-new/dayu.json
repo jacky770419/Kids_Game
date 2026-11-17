@@ -29,11 +29,6 @@
  },
  "polyphones": [
   {
-   "char": "給",
-   "where": "第5頁『交給兒子大禹』",
-   "read": "gěi"
-  },
-  {
    "char": "會",
    "where": "第5頁『一定會想到辦法』",
    "read": "huì"
@@ -144,7 +139,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "大禹的爸爸老了，把治水交給兒子大禹。",
+     "text": "大禹的爸爸老了，換兒子大禹來對付大水。",
      "en": "Great Yu's father grew old, so he asked his son to take care of the flood."
     },
     {
@@ -167,13 +162,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "大禹回到家，看到兒子在門口玩水。",
-     "en": "When Great Yu came home, he saw his son playing with water by the door."
+     "text": "出發前，大禹看到兒子在門口玩水。",
+     "en": "Before setting off, Great Yu saw his son playing with water by the door."
     },
     {
      "who": "旁白",
      "text": "兒子用樹枝畫一條小溝，水就流走了。",
-     "en": "His son drew a little ditch with a stick, and the puddle water ran away."
+     "en": "His son drew a little ditch with a stick, and the water in the puddle ran off along it."
     },
     {
      "who": "兒子",
@@ -196,12 +191,12 @@
    ]
   },
   {
-   "scene": "大平原上，大家挖出一條長長的河道，河道彎彎地一直通到遠方藍色的大海。",
-   "act": "大禹捲起褲管站在泥巴裡，跟村民一起揮鏟子挖河道，臉上、手上都是泥巴，還是笑著；村民排成長長一排傳竹籃。河道裡的水開始慢慢往大海流。",
+   "scene": "大平原上，大家挖出一條長長的大水溝，大水溝彎彎地一直通到遠方藍色的大海。",
+   "act": "大禹捲起褲管站在泥巴裡，跟村民一起揮鏟子挖大水溝，臉上、手上都是泥巴，還是笑著；村民排成長長一排傳竹籃。大水溝裡的水開始慢慢往大海流。",
    "lines": [
     {
      "who": "旁白",
-     "text": "大禹帶著大家，挖了一條又一條河道。",
+     "text": "大禹帶著大家，挖了一條又一條大水溝。",
      "en": "Great Yu led everyone, and together they dug path after path for the water."
     },
     {
@@ -223,8 +218,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "有一天，大禹經過自己的家門口。",
-     "en": "One day, Great Yu passed by his own house."
+     "text": "有一天，大禹第一次經過自己的家門口。",
+     "en": "One day, Great Yu passed by his own house for the first time."
     },
     {
      "who": "旁白",
@@ -280,18 +275,18 @@
    ]
   },
   {
-   "scene": "河道的盡頭，一座灰色的石頭山擋在前面；水在山前面停住，慢慢往旁邊的村子漫過去。",
+   "scene": "大水溝的盡頭，一座灰色的石頭山擋在前面；水在山前面停住，慢慢往旁邊的村子漫過去。",
    "act": "大禹站在石頭山前面，皺著眉頭看；村民們著急地指著往村子流的水。下一格：大禹舉起鏟子，大家拿著石鏟和木鏟，一起在山上挖一個缺口，碎石頭一塊一塊滾到旁邊，大家都站在安全的地方。",
    "lines": [
     {
      "who": "旁白",
-     "text": "可是，河道前面，擋著一座石頭山。",
+     "text": "可是，大水溝前面，擋著一座石頭山。",
      "en": "But there was a rocky mountain in the way."
     },
     {
      "who": "旁白",
-     "text": "水過不去，又往村子流回去了。",
-     "en": "The water couldn't get through, and it started flowing back toward the village."
+     "text": "水過不去，就往旁邊的村子漫過去了。",
+     "en": "The water couldn't get through, so it started spreading toward a village nearby."
     },
     {
      "who": "大禹",

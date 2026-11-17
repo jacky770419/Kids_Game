@@ -25,7 +25,7 @@
  "polyphones": [
   {
    "char": "種",
-   "where": "第4頁『葫蘆種子』『好可愛的種子』，第8頁『這顆種子』",
+   "where": "第4頁『葫蘆種子』『好漂亮的種子』，第8頁『這顆種子』",
    "read": "zhǒng"
   },
   {
@@ -35,7 +35,7 @@
   },
   {
    "char": "分",
-   "where": "第1頁『不分給別人』，第6頁『一起分』，第11頁『不分米給你』",
+   "where": "第1頁『不分給別人』，第6頁『一起分』，第11頁『不分米給你』，第12頁『學會分享』『一起分』",
    "read": "fēn"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "char": "會",
-   "where": "第8頁『它會給你』，第12頁『會學著分享』",
+   "where": "第8頁『它會給你』，第12頁『學會分享』",
    "read": "huì"
   }
  ],
@@ -101,12 +101,12 @@
   },
   {
    "scene": "茅草屋裡，簡單的木頭地板，窗邊放著一個鋪了稻草的小籃子。",
-   "act": "弟弟用白色布條包住燕子的翅膀，用小湯匙餵她吃小米；小燕子在籃子裡張開嘴巴。下一個小畫面：秋天，小燕子跟家人排成一排往南飛，弟弟在地上揮手。",
+   "act": "弟弟用白色布條包住燕子的翅膀，用細細的竹夾子夾著小蟲餵她；小燕子在籃子裡張開嘴巴。下一個小畫面：秋天，小燕子跟家人排成一排往南飛，弟弟在地上揮手。",
    "lines": [
     {
      "who": "旁白",
-     "text": "弟弟用布條，包好她的翅膀，每天餵她吃小米。",
-     "en": "Heungbu wrapped her wing in a strip of cloth and fed her millet every day."
+     "text": "弟弟用布條，包好她的翅膀，每天抓小蟲餵她。",
+     "en": "Heungbu wrapped her wing in a strip of cloth and caught little bugs to feed her every day."
     },
     {
      "who": "燕子",
@@ -139,14 +139,14 @@
     {
      "who": "弟弟",
      "tag": "happy",
-     "text": "好可愛的種子！我們一起把它埋進土裡吧！",
-     "en": "What a cute seed! Let's plant it together!"
+     "text": "好漂亮的種子！我們一起把它埋進土裡！",
+     "en": "What a shiny little seed! Let's plant it together!"
     }
    ]
   },
   {
    "scene": "夏天快結束的時候，茅草屋，屋頂上爬滿綠色的葫蘆藤。",
-   "act": "屋頂上掛著三個比人還大的金黃色葫蘆。弟弟和一位鄰居大叔一人拉一邊大鋸子，鋸著第一個葫蘆；小燕子在旁邊飛，一起喊口號。",
+   "act": "屋頂上掛著三個比人還大的金黃色葫蘆。弟弟和一位鄰居大叔一人拉一邊大鋸子，鋸著第一個葫蘆；小燕子在旁邊飛，帶頭喊口號。",
    "lines": [
     {
      "who": "旁白",
@@ -160,15 +160,16 @@
      "en": "Let's saw them open!"
     },
     {
-     "who": "弟弟",
+     "who": "燕子",
      "text": "嘿喲，嘿喲，鋸葫蘆！",
-     "en": "Heave-ho, heave-ho, saw the gourd!"
+     "en": "Heave-ho, heave-ho, saw the gourd!",
+     "tag": "excited"
     }
    ]
   },
   {
    "scene": "同一個茅草屋門口，村子裡的人都圍過來。",
-   "act": "第一個葫蘆裡湧出白米，第二個葫蘆裡跑出一疊一疊暖和的棉衣，第三個葫蘆裡亮著金子。弟弟把米和衣服分給村裡的老奶奶、小孩和鄰居，大家都在笑。",
+   "act": "第一個葫蘆裡湧出白米，第二個葫蘆裡跑出一疊一疊溫暖的棉衣，第三個葫蘆裡亮著金子。弟弟把米和衣服分給村裡的老奶奶、小孩和鄰居，大家都在笑。",
    "lines": [
     {
      "who": "旁白",
@@ -177,7 +178,7 @@
     },
     {
      "who": "旁白",
-     "text": "第二個跑出暖和的衣服，第三個跑出金子！",
+     "text": "第二個跑出溫暖的衣服，第三個跑出金子！",
      "en": "The second was full of warm clothes, and the third was full of gold!"
     },
     {
@@ -195,7 +196,7 @@
     {
      "who": "旁白",
      "text": "哥哥聽說了，馬上跑來找燕子。",
-     "en": "When Heungbu's big brother, Nolbu, heard about it, he came running to find the swallow."
+     "en": "When Nolbu heard about it, he came running to find the swallow."
     },
     {
      "who": "哥哥",
@@ -326,13 +327,13 @@
   },
   {
    "scene": "第二年夏天快結束的時候，弟弟的茅草屋門口，村子裡的人都圍過來；哥哥的大瓦房屋簷下，多了一個樸素的泥土燕子窩。",
-   "act": "哥哥戴回高帽子，跟弟弟一人拉一邊大鋸子，一起鋸一個金黃色的大葫蘆，兩個人都在笑；小燕子在他們頭上飛，村裡的小孩一起拍手喊。",
+   "act": "哥哥戴回高帽子，跟弟弟一人拉一邊大鋸子，一起鋸一個金黃色的大葫蘆，兩個人都在笑；葫蘆裂開，白米流出來，村裡的小孩拿著碗排隊、拍手；小燕子在他們頭上飛。",
    "lines": [
     {
      "who": "哥哥",
      "tag": "sad",
-     "text": "小燕子，對不起。我以後會學著分享。",
-     "en": "Little swallow, I'm sorry. From now on, I'll learn to share."
+     "text": "小燕子，對不起。原來我最需要的，是學會分享。",
+     "en": "Little swallow, I'm sorry. What I needed most was to learn to share."
     },
     {
      "who": "燕子",
@@ -348,8 +349,8 @@
     },
     {
      "who": "旁白",
-     "text": "這是韓國的老故事喔。",
-     "en": "This is an old, old story from Korea."
+     "text": "這次，跑出好多白米，大家一起分！",
+     "en": "This time, out poured heaps of rice, and everyone shared it!"
     }
    ]
   }

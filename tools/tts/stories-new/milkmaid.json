@@ -1,6 +1,6 @@
 {
  "id": "milkmaid",
- "title": "提牛奶的小姑娘",
+ "title": "頂牛奶的小姑娘",
  "title_en": "The Milkmaid and Her Pail",
  "size": "短",
  "roles": {
@@ -113,7 +113,7 @@
     },
     {
      "who": "旁白",
-     "text": "她越想越開心，腳步也越來越快。",
+     "text": "她越想越開心，越走越快。",
      "en": "The more she thought about it, the happier she got, and the faster she walked."
     }
    ]
@@ -230,8 +230,8 @@
     {
      "who": "小姑娘",
      "tag": "laughing",
-     "text": "不對，不對！先看路，一步，一步走。",
-     "en": "Oops, no, no! Eyes on the path. One step at a time."
+     "text": "等一下！先看路，一步，一步走。賣完再來想！",
+     "en": "Wait! Eyes on the path first. One step at a time. I'll dream after I sell the milk!"
     },
     {
      "who": "旁白",

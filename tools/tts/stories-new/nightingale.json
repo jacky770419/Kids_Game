@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "沒",
-   "where": "第1頁『沒聽過』，第6頁『沒有人看見』",
+   "where": "第1頁『沒聽過』",
    "read": "méi"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "char": "給",
-   "where": "第4頁『我給妳』，第5頁『唱歌給你聽』，第8頁『唱首歌給我聽』",
+   "where": "第4頁『我給妳』，第5頁『唱歌給你聽』，第8頁『唱首歌給我聽』，第9頁『唱歌給他聽』",
    "read": "gěi"
   },
   {
@@ -104,8 +104,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "誰都不知道，最後廚房的小女孩舉起了手。",
-     "en": "Nobody knew, until at last the little kitchen girl raised her hand."
+     "text": "誰都不知道。最後，廚房的小女孩舉起了手。",
+     "en": "Nobody knew. At last, the little kitchen girl raised her hand."
     },
     {
      "who": "廚房小女孩",
@@ -171,7 +171,7 @@
     },
     {
      "who": "旁白",
-     "text": "國王聽了，流下開心的眼淚。",
+     "text": "國王流下開心的眼淚。",
      "en": "The Emperor was so moved that happy tears rolled down his cheeks."
     },
     {
@@ -211,19 +211,9 @@
    ]
   },
   {
-   "scene": "同一個大殿，窗戶開著，窗外是藍天和遠處的森林。",
-   "act": "國王和宮裡的人圍成一圈，看著桌上閃亮的機器鳥，國王拍手。沒有人注意到，夜鶯正從打開的窗戶飛向遠處的森林；空的金籠子放在角落。",
+   "scene": "同一個大殿。上格是白天，窗外是藍天和遠處的森林；下格是晚上，宮殿的木格子窗關得緊緊的，窗外有月亮。",
+   "act": "上格：國王和宮裡的人圍成一圈，看著桌上閃亮的機器鳥，國王拍手；空的金籠子放在角落。下格：夜鶯停在關著的窗戶外面，窗紙上映著大家圍著機器鳥的影子；夜鶯低著頭，接著輕輕飛向遠處的森林。",
    "lines": [
-    {
-     "who": "旁白",
-     "text": "大家都圍著機器鳥。",
-     "en": "Everyone crowded around the wind-up bird."
-    },
-    {
-     "who": "旁白",
-     "text": "沒有人發現，夜鶯從窗邊飛回了森林。",
-     "en": "No one noticed the nightingale fly from the window back to the forest."
-    },
     {
      "who": "國王",
      "tag": "happy",
@@ -234,6 +224,22 @@
      "who": "旁白",
      "text": "一遍，又一遍，機器鳥唱了好幾百遍。",
      "en": "Again and again, the wind-up bird sang, hundreds of times."
+    },
+    {
+     "who": "旁白",
+     "text": "每天晚上，夜鶯飛來，窗戶都關著。",
+     "en": "Every night, the nightingale came, but the window was always shut."
+    },
+    {
+     "who": "夜鶯",
+     "tag": "sad",
+     "text": "國王有機器鳥，不需要我了。",
+     "en": "The Emperor has his wind-up bird. He doesn't need me anymore."
+    },
+    {
+     "who": "旁白",
+     "text": "她就飛回了森林。",
+     "en": "So she flew back to the forest."
     }
    ]
   },
@@ -243,7 +249,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "有一天晚上，機器鳥肚子裡喀啦一聲，不動了。",
+     "text": "有一天晚上，機器鳥喀啦一聲，不動了。",
      "en": "One night, something inside the wind-up bird went clunk, and it stopped."
     },
     {
@@ -281,30 +287,36 @@
     },
     {
      "who": "旁白",
-     "text": "小女孩聽說了，趕快跑進森林。",
+     "text": "廚房小女孩聽說了，趕快跑進森林。",
      "en": "When the kitchen girl heard, she ran straight to the forest."
     }
    ]
   },
   {
    "scene": "森林裡，下午，陽光從樹葉間照下來；大樹的樹枝上停著夜鶯。",
-   "act": "廚房小女孩站在樹下，雙手合在胸前，抬頭望著夜鶯；夜鶯歪著頭想一想，接著張開翅膀，往遠處的宮殿飛去。下一格，夜鶯停在國王寢宮的窗邊。",
+   "act": "廚房小女孩站在樹下，雙手合在胸前，抬頭望著夜鶯；夜鶯歪著頭想一想，接著點點頭，張開翅膀往遠處的宮殿飛去。下一格，夜鶯停在國王寢宮的窗邊唱歌。",
    "lines": [
     {
      "who": "廚房小女孩",
      "tag": "worried",
-     "text": "夜鶯，國王生病了，妳願意去看他嗎？",
-     "en": "Nightingale, the Emperor is sick. Will you go and see him?"
+     "text": "夜鶯，國王生病了。妳願意去唱歌給他聽嗎？",
+     "en": "Nightingale, the Emperor is sick. Will you go and sing for him?"
     },
     {
      "who": "旁白",
-     "text": "夜鶯想了一下，張開翅膀，往宮殿飛去。",
-     "en": "The nightingale thought for a moment. Then she spread her wings and flew to the palace."
+     "text": "夜鶯想了一下。",
+     "en": "The nightingale thought for a moment."
+    },
+    {
+     "who": "夜鶯",
+     "tag": "gentle",
+     "text": "國王需要我，我去！",
+     "en": "The Emperor needs me. I'll go!"
     },
     {
      "who": "旁白",
-     "text": "她停在國王的窗邊，唱起歌來。",
-     "en": "She landed on the Emperor's windowsill and began to sing."
+     "text": "她飛到國王的窗邊，唱起歌來。",
+     "en": "She flew to the Emperor's windowsill and began to sing."
     }
    ]
   },

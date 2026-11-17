@@ -4,8 +4,8 @@
  "title_en": "The Grateful Crane",
  "size": "中",
  "roles": {
-  "老爺爺": "住在日本小村子的老爺爺，慈祥的老爺爺聲音，說話慢慢的、很溫和，救白鶴時很輕柔，擔心時有點著急。",
-  "老奶奶": "老爺爺的太太，溫柔的奶奶聲音，愛笑、很會照顧人，提醒老爺爺時小小聲，說再見時有點想哭。",
+  "老爺爺": "住在日本池塘邊的老爺爺，慈祥的老爺爺聲音，是個急性子，說話快、口頭禪是「馬上」，救白鶴時卻很輕柔，擔心時很著急。",
+  "老奶奶": "老爺爺的太太，溫柔的奶奶聲音，做什麼都不急，口頭禪是「別急，別急」，愛笑、很會照顧人，說再見時有點想哭。",
   "鶴姑娘": "白鶴變成的年輕姑娘，聲音清亮溫柔、有禮貌，說「不能偷看」時很認真，說再見時有一點不捨但很溫暖。"
  },
  "cast": {
@@ -25,7 +25,7 @@
  "polyphones": [
   {
    "char": "擔",
-   "where": "第8頁『擔心』，第11頁『擔心妳』",
+   "where": "第11頁『擔心妳』",
    "read": "dān"
   },
   {
@@ -35,7 +35,7 @@
   },
   {
    "char": "累",
-   "where": "第8頁『比一天累』『好累』",
+   "where": "第8頁『一天比一天累』",
    "read": "lèi"
   },
   {
@@ -45,47 +45,62 @@
   },
   {
    "char": "沒",
-   "where": "第5頁『很久沒用』，第8頁『沒事』，第11頁『沒關係』",
+   "where": "第11頁『沒關係』",
    "read": "méi"
   },
   {
    "char": "會",
-   "where": "第5頁『我會織布』，第11頁『都會飛來』『會一直想妳』，第12頁『都會飛來』",
+   "where": "第5頁『我會織布』，第11頁『會一直想妳』",
    "read": "huì"
+  },
+  {
+   "char": "熟",
+   "where": "第11頁、第12頁『柿子熟了』",
+   "read": "shú"
+  },
+  {
+   "char": "落",
+   "where": "第5頁『角落』",
+   "read": "luò"
+  },
+  {
+   "char": "給",
+   "where": "第11頁『送給你們』",
+   "read": "gěi"
   }
  ],
  "pages": [
   {
-   "scene": "日本的鄉下小村子，晚秋的早上。收完稻子的田裡堆著稻草，遠處有一片金黃色的蘆葦池塘；一間小小的木頭房子，屋頂鋪著稻草，屋簷下掛著一串串橘色的柿子。",
-   "act": "老爺爺第一次出場：白頭髮、短短的白鬍子，穿灰綠色的舊和服，腰上繫草繩，肩上扛著一捆木柴。老奶奶第一次出場：白頭髮梳成小髮髻、插一根木頭髮簪，穿紫色和服、繫白色圍裙。老奶奶站在門口揮手，老爺爺笑著回頭。",
+   "scene": "日本的鄉下小村子，晚秋的早上。村子旁邊有一個大池塘，池塘邊長滿金黃色的蘆葦；收完稻子的田裡堆著稻草；一間小小的木頭房子，屋頂鋪著稻草，屋簷下掛著一串串橘色的柿子。",
+   "act": "老爺爺第一次出場：頭頂光光的，只有兩邊剩一點白頭髮，短短的白鬍子，穿灰綠色的舊和服，腰上繫草繩，空著手急急忙忙衝出門。老奶奶第一次出場：白頭髮梳成小髮髻、插一根木頭髮簪，穿藍灰色條紋的舊和服、繫白色圍裙，站在門口，笑著舉起忘在門邊的一捆木柴。",
    "lines": [
     {
      "who": "旁白",
-     "text": "很久以前，日本的小村子裡，住著老爺爺和老奶奶。",
-     "en": "Long, long ago, in a little village in Japan, there lived an old man and an old woman."
-    },
-    {
-     "who": "老奶奶",
-     "tag": "gentle",
-     "text": "天氣變冷了，早點回來喔。",
-     "en": "It's getting cold, dear. Come home early."
+     "text": "很久以前，日本的池塘邊，住著老爺爺和老奶奶。",
+     "en": "Long, long ago, beside a pond in Japan, there lived an old man and an old woman."
     },
     {
      "who": "老爺爺",
-     "tag": "happy",
-     "text": "好，賣完木柴，我就回來！",
-     "en": "I will. As soon as I sell this firewood, I'll be back!"
+     "tag": "excited",
+     "text": "我去賣木柴，馬上回來！",
+     "en": "I'm off to sell firewood. I'll be right back!"
+    },
+    {
+     "who": "老奶奶",
+     "tag": "laughing",
+     "text": "別急，別急，木柴忘了拿啦！",
+     "en": "No rush, no rush! You forgot the firewood!"
     }
    ]
   },
   {
    "scene": "池塘邊的蘆葦叢，風吹著金黃色的蘆葦，天空是淡灰色的。",
-   "act": "一隻白鶴（白色身體、黑色尾羽、頭頂一點紅）的一隻腳被草繩做的陷阱套住，翅膀張開拍著，飛不起來，看起來很害怕但沒有受傷流血。老爺爺放下木柴，蹲下來，慢慢伸出手。",
+   "act": "一隻白鶴（白色身體、黑色尾羽、頭頂一點紅）的一隻腳被草繩做的陷阱套住，翅膀張開拍著，飛不起來，看起來很害怕但沒有受傷流血。老爺爺把木柴丟在一旁，急忙蹲下來，伸出手。",
    "lines": [
     {
      "who": "旁白",
-     "text": "走到池塘邊，老爺爺聽到叫聲。",
-     "en": "At the pond, the old man heard a cry."
+     "text": "路上，老爺爺聽到叫聲。",
+     "en": "On the way, the old man heard a cry."
     },
     {
      "who": "旁白",
@@ -95,19 +110,19 @@
     {
      "who": "老爺爺",
      "tag": "gentle",
-     "text": "別怕，別怕，我來幫你。",
-     "en": "Don't be scared, little one. I'm here to help you."
+     "text": "別怕，我馬上幫你！",
+     "en": "Don't be scared. I'll help you right away!"
     }
    ]
   },
   {
    "scene": "同一個池塘邊，雲散開了，露出一點陽光。",
-   "act": "老爺爺小心解開繩子，白鶴張開大翅膀飛上天，在老爺爺頭上繞圈；老爺爺抬頭揮手，笑咪咪的。",
+   "act": "老爺爺這次一點也不急，慢慢地、小心地解開繩子；白鶴張開大翅膀飛上天，在老爺爺頭上繞圈；老爺爺抬頭揮手，笑咪咪的。",
    "lines": [
     {
      "who": "旁白",
-     "text": "老爺爺很小心，把繩子解開了。",
-     "en": "Very carefully, the old man untied the rope."
+     "text": "這次老爺爺一點也不急，小心解開繩子。",
+     "en": "This time, the old man did not hurry at all. He carefully untied the rope."
     },
     {
      "who": "旁白",
@@ -123,13 +138,13 @@
    ]
   },
   {
-   "scene": "幾天後的晚上，外面下著小雪，木頭房子的窗戶透出橘色的燈光。",
-   "act": "鶴姑娘第一次出場：黑色長頭髮用紅色緞帶綁起來，穿雪白的和服，臉頰紅紅的，肩上有一點雪。老奶奶拉開木門，老爺爺在後面拿著小燈籠，兩個人都很驚訝。",
+   "scene": "幾天後的晚上，外面颳著冷風，池塘邊的蘆葦被吹得彎彎的；木頭房子的窗戶透出橘色的燈光。",
+   "act": "鶴姑娘第一次出場：黑色長頭髮披在背後，頭頂別著一個小小的紅色圓髮飾（像白鶴頭頂的一點紅），穿純白的和服，臉頰紅紅的，頭髮被風吹亂了。老爺爺搶先一步拉開木門，老奶奶在後面拿著小燈籠，兩個人都很驚訝。",
    "lines": [
     {
      "who": "旁白",
-     "text": "幾天後的晚上，外面下起小雪。",
-     "en": "A few nights later, snow began to fall."
+     "text": "幾天後的晚上，外面颳著冷風。",
+     "en": "A few nights later, a cold wind was blowing."
     },
     {
      "who": "旁白",
@@ -156,8 +171,8 @@
    ]
   },
   {
-   "scene": "屋子裡，地爐的火燒得很旺，鍋子冒著熱氣；屋子角落有一台舊的木頭織布機，上面有一點灰塵。",
-   "act": "三個人圍著地爐吃熱粥，鶴姑娘幫老奶奶添柴火，大家都在笑。鶴姑娘轉頭指著角落的織布機，眼睛發亮。",
+   "scene": "屋子裡，地爐的火燒得很旺，鍋子冒著熱氣；屋子角落有一台舊的木頭織布機，像一個大木架，上面繃著一排細線，有一點灰塵。",
+   "act": "三個人圍著地爐吃熱粥，鶴姑娘幫老奶奶添柴火，大家都在笑。鶴姑娘轉頭指著角落的木頭織布機，眼睛發亮。",
    "lines": [
     {
      "who": "旁白",
@@ -166,8 +181,8 @@
     },
     {
      "who": "旁白",
-     "text": "屋子裡，有一台很久沒用的織布機。",
-     "en": "In the house sat an old loom no one had used in years."
+     "text": "角落有一個舊木架，能把細線織成布。",
+     "en": "In the corner stood an old loom, a wooden frame for weaving thread into cloth."
     },
     {
      "who": "鶴姑娘",
@@ -213,17 +228,17 @@
   },
   {
    "scene": "早上，屋子裡，陽光從窗戶照進來。",
-   "act": "鶴姑娘從紙門後走出來，看起來有點累，雙手捧著一匹閃著銀光的白布。老奶奶摸著布，嘴巴張成小圓圈；下一個小畫面：老爺爺從市場回來，扛著一袋白米和一床厚被子。",
+   "act": "鶴姑娘從紙門後走出來，看起來有點累，雙手捧著一大塊捲起來、閃著銀光的白布。老奶奶摸著布，嘴巴張成小圓圈；下一個小畫面：老爺爺從市場回來，扛著一袋白米和一床厚被子。",
    "lines": [
     {
      "who": "旁白",
-     "text": "天亮了，姑娘捧著一匹白布走出來。",
-     "en": "In the morning, she came out holding a roll of white cloth."
+     "text": "天亮了，姑娘捧著一大塊白布出來。",
+     "en": "In the morning, she came out holding a big piece of white cloth."
     },
     {
      "who": "旁白",
-     "text": "那匹布又軟又亮，像雪一樣。",
-     "en": "It was soft and shiny, like fresh snow."
+     "text": "那塊布又軟又亮，像白鶴的羽毛。",
+     "en": "It was soft and shiny, like a white crane's feathers."
     },
     {
      "who": "老奶奶",
@@ -240,12 +255,12 @@
   },
   {
    "scene": "幾天後的晚上，屋子裡，紙門後透出燈光，傳出織布聲。",
-   "act": "老爺爺和老奶奶坐在地爐旁，一起皺著眉頭往紙門看，兩個人都很擔心。牆角放著已經織好的兩匹白布。",
+   "act": "老奶奶站在紙門前，輕輕拍拍鶴姑娘的手，一臉擔心；鶴姑娘臉色有點白，還是笑著搖頭，又走進紙門。老爺爺坐在地爐旁，皺著眉頭往紙門看。牆角放著已經織好的兩大塊白布。",
    "lines": [
     {
      "who": "旁白",
-     "text": "姑娘又織了第二匹、第三匹。",
-     "en": "She wove a second roll, and then a third."
+     "text": "姑娘又織了第二塊、第三塊。",
+     "en": "She wove a second piece, and then a third."
     },
     {
      "who": "旁白",
@@ -255,20 +270,20 @@
     {
      "who": "老奶奶",
      "tag": "worried",
-     "text": "她看起來好累，我好擔心。",
-     "en": "She looks so tired. I'm worried about her."
+     "text": "別急，別急，別再織了！",
+     "en": "No rush, no rush. Please stop weaving!"
     },
     {
-     "who": "老爺爺",
-     "tag": "worried",
-     "text": "我也是。她在裡面，真的沒事嗎？",
-     "en": "Me too. Is she really all right in there?"
+     "who": "鶴姑娘",
+     "tag": "gentle",
+     "text": "再一塊就好，讓你們天冷也不怕。",
+     "en": "Just one more, so you'll stay warm when it gets cold."
     }
    ]
   },
   {
    "scene": "同一個晚上，紙門前。",
-   "act": "老爺爺站在紙門前，手指拉開一條小縫，著急地往裡看；老奶奶在後面伸手拉他的袖子，小小聲提醒。",
+   "act": "老爺爺站在紙門前，先著急地對著門喊，接著手指拉開一條小縫，往裡看；老奶奶在後面伸手拉他的袖子，小小聲提醒。",
    "lines": [
     {
      "who": "旁白",
@@ -278,8 +293,8 @@
     {
      "who": "老爺爺",
      "tag": "scared",
-     "text": "不好了！我看一下就好！",
-     "en": "Oh no! I'll just take one quick look!"
+     "text": "姑娘？姑娘！不好了，我馬上看一下！",
+     "en": "Dear? Dear! Oh no, I'll take a quick look right now!"
     },
     {
      "who": "老奶奶",
@@ -324,14 +339,14 @@
    ]
   },
   {
-   "scene": "屋子外面，雪停了，月光照在白色的雪地上。",
+   "scene": "屋子外面，風停了，月光照在池塘和金黃色的蘆葦上。",
    "act": "鶴姑娘把一根白色的長羽毛放在老奶奶手心，溫柔地笑；老奶奶眼眶紅紅的，老爺爺低著頭，很不好意思。",
    "lines": [
     {
      "who": "老爺爺",
      "tag": "sad",
-     "text": "對不起，我們太擔心妳了。",
-     "en": "I'm sorry. We were just so worried about you."
+     "text": "對不起，我太擔心妳了。",
+     "en": "I'm sorry. I was just so worried about you."
     },
     {
      "who": "鶴姑娘",
@@ -341,8 +356,8 @@
     },
     {
      "who": "鶴姑娘",
-     "text": "這根羽毛送給你們。每年冬天，我都會飛來看你們。",
-     "en": "This feather is for you. Every winter, I'll fly back to see you."
+     "text": "這根羽毛送給你們。每年柿子熟了，我就飛來看你們。",
+     "en": "This feather is for you. Every year, when the persimmons are ripe, I'll fly back to see you."
     },
     {
      "who": "老奶奶",
@@ -353,8 +368,8 @@
    ]
   },
   {
-   "scene": "木頭房子的上空，月亮很亮；下一個畫面是很多年後的冬天，同一間房子，屋頂有雪。",
-   "act": "鶴姑娘變回白鶴，在屋頂上空繞了三圈；老爺爺和老奶奶在門口抬頭揮手。下一個小畫面：冬天，一隻白鶴又飛來繞圈，老爺爺和老奶奶開心揮手，屋裡牆上掛著那根白羽毛。",
+   "scene": "木頭房子的上空，月亮很亮，下面是池塘和蘆葦；下一個畫面是很多年後的秋天，同一間房子，屋簷下又掛滿橘色的柿子。",
+   "act": "鶴姑娘變回白鶴，在屋頂上空繞了三圈；老爺爺和老奶奶在門口抬頭揮手。下一個小畫面：秋天，一隻白鶴又飛來繞圈，老爺爺跑在前面興奮地揮手，老奶奶慢慢走出來，手上拿著那根白羽毛對天空揮一揮。",
    "lines": [
     {
      "who": "旁白",
@@ -363,19 +378,19 @@
     },
     {
      "who": "旁白",
-     "text": "從此，每年冬天，白鶴都會飛來繞三圈。",
-     "en": "And every winter after that, a white crane came and circled three times."
+     "text": "從此，每年柿子熟了，白鶴就飛來繞三圈。",
+     "en": "And every year after that, when the persimmons were ripe, a white crane came and circled three times."
     },
     {
      "who": "老爺爺",
-     "tag": "happy",
-     "text": "白鶴，妳好！我們都好想妳！",
-     "en": "Hello, dear crane! We missed you so much!"
+     "tag": "excited",
+     "text": "來了！來了！白鶴，妳好！",
+     "en": "Here she comes! Here she comes! Hello, dear crane!"
     },
     {
      "who": "旁白",
-     "text": "這是日本的老故事喔。",
-     "en": "This is an old, old story from Japan."
+     "text": "老奶奶拿著白羽毛，對天空揮一揮。",
+     "en": "The old woman waved the white feather up at the sky."
     }
    ]
   }

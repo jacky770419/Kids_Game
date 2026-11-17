@@ -27,6 +27,11 @@
    "char": "喝",
    "where": "第7頁『要不要喝杯茶』",
    "read": "hē"
+  },
+  {
+   "char": "露",
+   "where": "第4頁『屁股露在外面』",
+   "read": "lù"
   }
  ],
  "pages": [
@@ -37,7 +42,7 @@
     {
      "who": "旁白",
      "text": "從前，有位張先生，最愛龍了。",
-     "en": "Once upon a time, there was a man named Mr. Zhang, who loved dragons."
+     "en": "Once upon a time, there was a man named Mr. Zhang who loved dragons more than anything."
     },
     {
      "who": "旁白",
@@ -76,7 +81,7 @@
      "who": "龍",
      "tag": "happy",
      "text": "有人這麼愛我？我去找他玩！",
-     "en": "Someone loves me that much? I will go and visit him!"
+     "en": "Someone loves me that much? I'll go and visit him!"
     }
    ]
   },
@@ -98,7 +103,7 @@
      "who": "龍",
      "tag": "gentle",
      "text": "張先生，你好！我是龍。",
-     "en": "Hello, Mr. Zhang! I am a dragon."
+     "en": "Hello, Mr. Zhang! I'm a dragon."
     }
    ]
   },
@@ -147,8 +152,8 @@
     },
     {
      "who": "旁白",
-     "text": "龍的大鬍子垂了下來。",
-     "en": "The dragon's big beard drooped."
+     "text": "龍好難過，大鬍子都垂下來了。",
+     "en": "The dragon was so sad that his big beard drooped."
     },
     {
      "who": "龍",
@@ -160,11 +165,11 @@
   },
   {
    "scene": "張先生的屋子裡，床底下揚起一團灰塵。",
-   "act": "張先生從床底下慢慢爬出來，滿頭灰塵，鼻子上沾著灰。龍皺起鼻子，眼睛閉起來，打了一個大噴嚏；一陣大風把牆上的龍畫全吹得滿屋子飛，張先生的小布帽又飛走了。下一格：張先生又一頭躲回床底下，屁股又卡在外面。",
+   "act": "張先生從床底下慢慢爬出來，滿頭灰塵，鼻子上沾著灰。龍皺起鼻子，眼睛閉起來，打了一個大噴嚏；一陣大風把牆上的龍畫全吹得滿屋子飛，張先生的小布帽又飛走了。下一格：張先生被噴嚏的風吹得翻了一圈，又滾回床底下，屁股又卡在外面。",
    "lines": [
     {
      "who": "旁白",
-     "text": "他往外一看，龍的眼睛好溫柔。",
+     "text": "張先生往外一看，龍的眼睛好溫柔。",
      "en": "Mr. Zhang peeked out. The dragon's eyes looked so kind."
     },
     {
@@ -179,14 +184,14 @@
     },
     {
      "who": "旁白",
-     "text": "颳起一陣大風，張先生又躲回床底下了！",
-     "en": "Whoosh! Wind blew all around, and Mr. Zhang dove right back under the bed!"
+     "text": "呼！張先生又被吹回床底下了！",
+     "en": "Whoosh! Mr. Zhang was blown right back under the bed!"
     }
    ]
   },
   {
    "scene": "張先生的屋子裡，滿地都是被吹亂的龍畫。",
-   "act": "龍用尾巴把飛走的龍畫一張一張接住，不好意思地抓抓頭。張先生第二次從床底下爬出來，雙腳還在發抖，雙手捧著那個畫著龍的茶杯，小心地遞給龍；龍彎下頭，鬍子輕輕碰到張先生的頭，兩個都笑了。",
+   "act": "龍用尾巴把飛走的龍畫一張一張接住，不好意思地抓抓頭。張先生第二次從床底下爬出來，雙腳還在發抖，雙手捧著那個畫著龍的茶杯，小心地遞給龍。龍笑得眼睛彎彎的，用尾巴尖指指床底下，再彎下頭，用白色長鬍子輕輕碰碰張先生的頭；張先生臉紅紅的，抓抓頭也笑了。",
    "lines": [
     {
      "who": "龍",
@@ -206,9 +211,10 @@
      "en": "Hello, Dragon. Would you like a cup of tea?"
     },
     {
-     "who": "旁白",
-     "text": "龍笑了，用大鬍子摸了摸他的頭。",
-     "en": "The dragon smiled and patted his head with its big beard."
+     "who": "龍",
+     "tag": "laughing",
+     "text": "好啊！你說最愛龍，龍來了卻躲床底下！",
+     "en": "I'd love some! You say you love dragons most of all, but when one comes, you hide under the bed!"
     }
    ]
   },

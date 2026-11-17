@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "伯",
-   "where": "第4頁『一位伯伯』，第4、6、11頁角色『聰明伯伯』",
+   "where": "第4頁『一位伯伯』，第6頁『伯伯，你的扇子』，第4、6、11頁角色『聰明伯伯』",
    "read": "bó"
   },
   {
@@ -40,7 +40,7 @@
   },
   {
    "char": "會",
-   "where": "第6頁『不會再變高』『總有一天會挖平』",
+   "where": "第6頁『不會再變高』",
    "read": "huì"
   },
   {
@@ -155,12 +155,12 @@
      "who": "聰明伯伯",
      "tag": "laughing",
      "text": "你真傻，真是個愚公爺爺！",
-     "en": "How silly! You're a real Old Yugong!"
+     "en": "How silly! You're a real Yugong, a silly old man!"
     },
     {
      "who": "旁白",
      "text": "愚公，就是傻爺爺的意思。大家都笑他傻。",
-     "en": "In Chinese, Yugong means silly old man. Everyone laughed and said he was silly."
+     "en": "That's what Yugong means in Chinese. Everyone laughed and called him silly."
     }
    ]
   },
@@ -195,24 +195,30 @@
   },
   {
    "scene": "大山的山腳下。",
-   "act": "愚公爺爺用拐杖指指大山，一臉篤定；聰明伯伯張大嘴巴，扇子掉在地上，說不出話來。孫子在旁邊偷笑。",
+   "act": "愚公爺爺用拐杖指指大山，一臉篤定；聰明伯伯張大嘴巴，扇子掉在地上，說不出話來。孫子在旁邊用手遮著嘴偷笑，指著地上的扇子。",
    "lines": [
     {
      "who": "愚公爺爺",
      "tag": "gentle",
-     "text": "山不會再變高，我們一直挖，總有一天會挖平！",
-     "en": "The mountains won't grow any taller. If we keep digging, one day they'll be gone!"
+     "text": "山不會再變高，我們每天挖一點，山就每天小一點！",
+     "en": "The mountains won't grow any taller. If we dig a little every day, they'll get a little smaller every day!"
     },
     {
      "who": "旁白",
      "text": "聰明伯伯張大嘴巴，說不出話來。",
      "en": "Mr. Clever's mouth fell open. He didn't know what to say."
+    },
+    {
+     "who": "孫子",
+     "tag": "laughing",
+     "text": "伯伯，你的扇子掉了！",
+     "en": "Mr. Clever, you dropped your fan!"
     }
    ]
   },
   {
    "scene": "大山的山腳下，左邊一半是夏天的大太陽，右邊一半是冬天飄雪。",
-   "act": "左半邊：大熱天，全家人滿頭大汗地挖土。右半邊：下著小雪，孫子戴著毛帽，坐在石頭上，甩著發痠的小手，噘著嘴看著還是好大的山；愚公爺爺蹲在他身邊，指著旁邊一堆他們挖出來、已經跟小屋一樣高的土堆。",
+   "act": "左半邊：大熱天，全家人滿頭大汗地挖土。右半邊：下著小雪，孫子戴著毛帽，坐在石頭上，甩著發痠的小手，噘著嘴看著還是好大的山；愚公爺爺蹲在他身邊，指著山腳下被他們挖掉的一大塊：山腳凹進去一個跟小屋一樣大的缺口，旁邊沒有土堆。",
    "lines": [
     {
      "who": "旁白",
@@ -228,8 +234,8 @@
     {
      "who": "愚公爺爺",
      "tag": "gentle",
-     "text": "你看，我們挖出來的土，堆成小山了。",
-     "en": "Look! All the dirt we dug out has made a little hill."
+     "text": "你看，山腳已經被我們挖掉一大塊了！",
+     "en": "Look! We've already dug a big chunk out of the bottom of the mountain."
     },
     {
      "who": "旁白",
@@ -279,7 +285,7 @@
      "who": "山神",
      "tag": "surprised",
      "text": "老爺爺，你們真的要把山挖平嗎？",
-     "en": "Old man, are you really going to dig away the mountain?"
+     "en": "Kind sir, are you really going to dig away the mountain?"
     },
     {
      "who": "愚公爺爺",
@@ -308,7 +314,7 @@
     {
      "who": "旁白",
      "text": "山神抱起兩座大山，好像抱起兩顆大饅頭。",
-     "en": "The Mountain Spirit picked up both mountains, as easily as two big steamed buns."
+     "en": "The Mountain Spirit picked up both mountains as easily as if they were two big steamed buns."
     },
     {
      "who": "旁白",

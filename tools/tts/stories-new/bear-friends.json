@@ -6,7 +6,8 @@
  "roles": {
   "小明": "十歲左右的男孩，個性溫和老實，說話清楚，被丟下時委屈難過，最後願意原諒朋友。",
   "小華": "小明的好朋友，活潑愛說大話的男孩，聲音輕快，跑掉後很不好意思，真心道歉。",
-  "大熊": "山裡的大熊，低沉沙啞的大嗓門，可是一點也不兇，說話慢吞吞、好笑又有點睿智。"
+  "大熊": "山裡的大熊，低沉沙啞的大嗓門，可是一點也不兇，說話慢吞吞、好笑又有點睿智。",
+  "爺爺": "村口的老爺爺，慈祥的長者聲音，說話慢慢的、很認真，先稱讚孩子回來找大人，再教他們遇到熊要怎麼做。"
  },
  "cast": {
   "小明": {
@@ -20,6 +21,10 @@
   "大熊": {
    "find": "WangSong",
    "en": "Austin - Deep, Raspy"
+  },
+  "爺爺": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
   }
  },
  "polyphones": [
@@ -80,12 +85,18 @@
   },
   {
    "scene": "同一條山路，路邊的草叢在搖晃，大石頭就在旁邊。",
-   "act": "大熊第一次出場：一隻胖胖的大黑熊，胸口有一塊白色的V字形毛，圓圓的耳朵，圓圓的肚子，表情呆呆的、一點也不兇，從草叢裡探出頭來。小華已經跑到大石頭後面，只露出半個頭偷看；小明嚇得趴在地上，雙手抱著頭，眼睛緊緊閉著。",
+   "act": "大熊第一次出場：一隻胖胖的大黑熊，胸口有一塊白色的V字形毛，圓圓的耳朵，圓圓的肚子，表情呆呆的、一點也不兇，從草叢裡探出頭來。小華大叫一聲「哇」，轉身就跑，躲到大石頭後面，只露出半個頭偷看；小明嚇得趴在地上，雙手抱著頭，眼睛緊緊閉著。",
    "lines": [
     {
      "who": "旁白",
-     "text": "忽然，草叢裡沙沙響，走出一隻大熊！",
-     "en": "Suddenly, the bushes rustled, and out came a big bear!"
+     "text": "忽然，草叢晃呀晃，走出一隻大熊！",
+     "en": "Suddenly, the bushes shook, and out came a big bear!"
+    },
+    {
+     "who": "小華",
+     "tag": "scared",
+     "text": "哇，大熊！",
+     "en": "Whoa, a bear!"
     },
     {
      "who": "旁白",
@@ -101,7 +112,7 @@
   },
   {
    "scene": "同一條山路。",
-   "act": "大熊彎下身子，用大鼻子湊近小明的球鞋，鼻子皺成一團；下一格大熊仰起頭打一個好大的噴嚏，全身的毛都抖起來。小明趴著不動，眼睛閉緊，額頭冒汗。大石頭後面，小華遮著眼睛偷看。",
+   "act": "大熊彎下身子，用大鼻子湊近小明的球鞋，鼻子皺成一團；下一格大熊仰起頭打一個好大的噴嚏，全身的毛都抖起來。小明嚇得趴著發抖，眼睛閉緊，額頭冒汗，小聲叫媽媽。大石頭後面，小華遮著眼睛偷看。",
    "lines": [
     {
      "who": "旁白",
@@ -110,9 +121,9 @@
     },
     {
      "who": "小明",
-     "tag": "whispering",
-     "text": "不要動，不要動。",
-     "en": "Don't move. Don't move."
+     "tag": "scared, whispering",
+     "text": "媽媽，我好怕。",
+     "en": "Mommy, I'm so scared."
     },
     {
      "who": "大熊",
@@ -151,7 +162,7 @@
   },
   {
    "scene": "同一條山路，大熊已經不見了。",
-   "act": "小華從大石頭後面跑出來，蹲在小明旁邊，好奇地睜大眼睛；小明坐在地上，低著頭，拍掉衣服上的草。",
+   "act": "小華從大石頭後面跑出來，蹲在小明旁邊，好奇地睜大眼睛；小明坐在地上，拍掉衣服上的草，抬起頭看著小華。",
    "lines": [
     {
      "who": "旁白",
@@ -166,8 +177,8 @@
     },
     {
      "who": "旁白",
-     "text": "小明低著頭說：",
-     "en": "Milo looked down and said,"
+     "text": "小明看著小華，小聲說：",
+     "en": "Milo looked at Hugo and said quietly,"
     },
     {
      "who": "小明",
@@ -212,8 +223,8 @@
     {
      "who": "小華",
      "tag": "gentle",
-     "text": "下次，我們手牽手，一起走開，一起找大人。",
-     "en": "Next time, let's hold hands, get away together, and find a grown-up together."
+     "text": "下次，我們手牽手，一起去找大人。",
+     "en": "Next time, let's hold hands and go find a grown-up together."
     },
     {
      "who": "旁白",
@@ -229,18 +240,25 @@
    ]
   },
   {
-   "scene": "山腳下的小村子，紅屋頂的房子，一位戴斗笠的爺爺和一位穿圍裙的阿姨站在村口。",
-   "act": "小明和小華手牽手走下山，指著山上，跟村口的大人說話；大人點頭，彎腰摸摸他們的頭，豎起大拇指。",
+   "scene": "山腳下的小村子，紅屋頂的房子；村口有一棵大榕樹，一位戴斗笠、白鬍子的老爺爺站在樹下。",
+   "act": "爺爺第一次出場：白鬍子的老爺爺，戴斗笠，穿灰色長衫，拄著竹拐杖。小明和小華手牽手走下山，指著山上跟爺爺說話；爺爺彎腰摸摸他們的頭、豎起大拇指；下一格，爺爺面對著山，示範慢慢往後退、不轉身跑的樣子，兩個男孩認真學。",
    "lines": [
     {
      "who": "旁白",
-     "text": "他們手牽手下山，去告訴村子裡的大人。",
-     "en": "They walked down the mountain hand in hand and told the grown-ups in the village."
+     "text": "他們手牽手下山，去找村口的爺爺。",
+     "en": "They walked down the mountain hand in hand to find the old man at the village gate."
     },
     {
-     "who": "旁白",
-     "text": "大人說：「看到野生動物，要離遠一點，你們做對了！」",
-     "en": "The grown-ups said, \"When you see a wild animal, stay far away. You did the right thing!\""
+     "who": "爺爺",
+     "tag": "gentle",
+     "text": "你們回來找大人，真棒！",
+     "en": "You came back to find a grown-up. Good job!"
+    },
+    {
+     "who": "爺爺",
+     "tag": "serious",
+     "text": "看到熊，不要跑，要慢慢退開，再去找大人。",
+     "en": "If you ever see a bear, don't run. Back away slowly, then go find a grown-up."
     },
     {
      "who": "小華",
