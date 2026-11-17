@@ -1,0 +1,239 @@
+{
+ "id": "pull-sprouts",
+ "title": "拔一拔禾苗",
+ "title_en": "The Farmer Who Pulled the Sprouts",
+ "size": "短",
+ "roles": {
+  "農夫": "急性子的農夫爸爸，溫和大叔的聲音，說話快、什麼都想快一點，口頭禪是「快一點，快一點」；發現自己做錯時又急又不好意思，最後學會等，說「不急，不急」時慢吞吞的，笑得很開心。",
+  "兒子": "農夫的兒子，六七歲的小男孩，細心、說話清楚不急，愛幫忙澆水，不笑爸爸；最後肚子餓了，反過來催爸爸「快一點」，很好笑。"
+ },
+ "cast": {
+  "農夫": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "兒子": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "種",
+   "where": "第1頁『種稻子』",
+   "read": "zhòng"
+  },
+  {
+   "char": "倒",
+   "where": "第4頁『垂著頭倒了』",
+   "read": "dǎo"
+  },
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "少",
+   "where": "第6頁『少做了一樣』",
+   "read": "shǎo"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國鄉下，春天的早上。一小塊田，田裡是濕潤的深咖啡色泥土，表面沒有積水，一排一排整齊地立著嫩綠色的禾苗，每一棵大約一個手掌高；田邊有一條小土路和一棵柳樹，遠處有茅草屋頂的小屋和綠色的山。",
+   "act": "農夫第一次出場：三十多歲，瘦瘦高高，臉偏長、濃眉毛、沒有鬍子，黑頭髮在頭頂綁一個髻、包灰色頭巾，穿土黃色古代短上衣、深綠色褲子，褲管捲到膝蓋，赤腳。他蹲在田邊，把手掌橫放在一棵禾苗的頂端比高度，皺著眉、嘟著嘴，一臉著急；腳邊的泥土上有一根插著的小樹枝，樹枝上刻了一道線，剛好跟禾苗一樣高。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "從前，有個農夫，在田裡種稻子。",
+     "en": "Once upon a time, a farmer grew rice in his field."
+    },
+    {
+     "who": "旁白",
+     "text": "稻子小時候，叫做禾苗。",
+     "en": "When rice plants are still little, they're called sprouts."
+    },
+    {
+     "who": "農夫",
+     "tag": "excited",
+     "text": "禾苗快變高！快一點，快一點！",
+     "en": "Get taller, sprouts! Hurry up, hurry up!"
+    }
+   ]
+  },
+  {
+   "scene": "同一塊田，太陽很亮。",
+   "act": "兒子第一次出場：六七歲的男孩，圓臉、大眼睛，黑頭髮在頭頂綁一個小圓髻、繫藍色髮帶，穿淺藍色短上衣、咖啡色短褲，赤腳。他一手提著小木桶，一手拿木頭水瓢，把水澆在禾苗腳邊的泥土上，水滲進土裡；他抬頭對爸爸說話，另一隻手指著泥土。畫面下方畫出泥土的剖面：每一棵禾苗下面有一把白色的細根，緊緊抓在濕濕的泥土裡。農夫蹲在旁邊，一手指著那根刻了線的小樹枝，禾苗跟昨天一樣高；他兩手一攤，很不耐煩。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "兒子提著水桶來澆水。",
+     "en": "His son came with a bucket to water them."
+    },
+    {
+     "who": "兒子",
+     "tag": "gentle",
+     "text": "禾苗用土裡的根喝水。喝了水，才會慢慢變高。",
+     "en": "Sprouts drink with their roots, down in the soil. When they drink, they slowly get taller."
+    },
+    {
+     "who": "農夫",
+     "tag": "impatient",
+     "text": "太慢了！快一點，快一點！",
+     "en": "Too slow! Hurry up, hurry up!"
+    }
+   ]
+  },
+  {
+   "scene": "同一塊田，下午，兒子不在。",
+   "act": "農夫彎著腰站在田裡，兩手捏住一棵禾苗的葉子，輕輕往上提高一小截；他身後已經拔過的那幾排禾苗，都比前面沒拔過的高出一小截（這一頁的禾苗都直直站著，葉子是綠的）。下一格：農夫站在田邊，兩手插腰、挺著胸，滿頭大汗，笑得很得意；整塊田的禾苗都高了一小截。（這一頁不要畫出泥土下面的根。）",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "農夫把禾苗一棵，一棵，往上拔高一點。",
+     "en": "So the farmer pulled each sprout up a little higher, one by one."
+    },
+    {
+     "who": "農夫",
+     "tag": "proud",
+     "text": "哈！我幫禾苗變高了！",
+     "en": "Ha! I made the sprouts taller!"
+    },
+    {
+     "who": "旁白",
+     "text": "禾苗用根喝水。你猜，明天的禾苗會怎麼樣？",
+     "en": "Sprouts drink with their roots. Can you guess how the sprouts looked the next day?"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，同一塊田。",
+   "act": "整塊田的禾苗都垂下頭、歪歪地倒在泥土上，葉子沒有力氣，可是都是綠色的（沒有枯黃）。兒子蹲在田裡，用手撥開一棵禾苗腳邊的土，指給爸爸看：白色的細根露在泥土外面，鬆鬆的，沒有抓著土。農夫站在旁邊，兩手抱著頭、張大嘴巴，眉毛變成八字形，又急又不好意思。兒子沒有笑他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，禾苗全都垂著頭倒了。",
+     "en": "The next day, every sprout hung its head and flopped over."
+    },
+    {
+     "who": "兒子",
+     "tag": "surprised",
+     "text": "爸爸，根被拔鬆，離開泥土了！",
+     "en": "Dad, the roots got pulled loose. They're out of the soil!"
+    },
+    {
+     "who": "旁白",
+     "text": "因為根喝不到水，所以禾苗站不起來。",
+     "en": "Because the roots couldn't drink any water, the sprouts couldn't stand up."
+    },
+    {
+     "who": "農夫",
+     "tag": "sad",
+     "text": "哎呀，是我太急了！",
+     "en": "Oh no! I was in too much of a hurry!"
+    }
+   ]
+  },
+  {
+   "scene": "同一塊田，早上。",
+   "act": "農夫和兒子都蹲在田裡。農夫用兩隻手把一棵禾苗的根壓回泥土裡，再把旁邊的土按緊，眉毛垂下來，表情很抱歉；兒子跟在後面，用水瓢一棵一棵澆水。他們身後已經壓好的幾排禾苗還歪歪的、垂著頭，前面的還倒在土上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "父子趕快把根壓回土裡，再澆水。",
+     "en": "Quickly, father and son pressed the roots back into the soil and watered them."
+    },
+    {
+     "who": "旁白",
+     "text": "要讓禾苗變高，應該怎麼做呢？",
+     "en": "What should you do to help sprouts get taller?"
+    }
+   ]
+  },
+  {
+   "scene": "田邊的柳樹下，太陽在天上，田裡的禾苗還垂著頭。",
+   "act": "兒子站著，高高舉起手裡的水瓢搶著回答；農夫蹲在旁邊，一手指著天上的太陽，一手捏著一根剛拔起來的雜草（雜草的葉子是細細尖尖的深綠色，跟嫩綠色的禾苗不一樣）。下一格：兒子把一根手指放在嘴巴前面，另一手拉著爸爸的袖子，認真地說「要等」；農夫睜大眼睛、抓抓頭，恍然大悟。",
+   "lines": [
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "要澆水！",
+     "en": "Water them!"
+    },
+    {
+     "who": "農夫",
+     "tag": "excited",
+     "text": "要曬太陽，也要拔雜草！",
+     "en": "Give them sunshine, and pull out the weeds!"
+    },
+    {
+     "who": "旁白",
+     "text": "都對。可是，農夫少做了一樣。",
+     "en": "Those were all good answers. But there was one thing the farmer had left out."
+    },
+    {
+     "who": "兒子",
+     "tag": "gentle",
+     "text": "要等一等！因為禾苗自己會慢慢變高。",
+     "en": "You have to wait! Because sprouts get taller slowly, all by themselves."
+    }
+   ]
+  },
+  {
+   "scene": "同一塊田，過了幾天的早上。",
+   "act": "農夫坐在田邊的土路上，把兩隻手壓在自己的屁股下面，身體往前傾，眼睛盯著禾苗，嘴巴抿得緊緊的，忍得很辛苦，樣子很好笑；身邊放著空的小木桶和水瓢，禾苗腳邊的泥土是濕的。兒子站在旁邊，遮著嘴偷笑。田裡大部分的禾苗都直直站起來了，葉子挺挺的、綠綠的，根都在土裡（不畫出根）；只有田角落兩三棵還歪著，葉子有一點黃。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "農夫每天澆完水，就坐在田邊等。",
+     "en": "So every day the farmer watered the sprouts, then sat by the field and waited."
+    },
+    {
+     "who": "旁白",
+     "text": "手好想去拔，他就坐在自己的手上。",
+     "en": "His hands were itching to pull, so he sat on them."
+    },
+    {
+     "who": "農夫",
+     "tag": "whispering",
+     "text": "不急，不急，等一等。",
+     "en": "No rush, no rush. Just wait."
+    },
+    {
+     "who": "旁白",
+     "text": "過了幾天，好多禾苗又站起來了。",
+     "en": "A few days later, most of the sprouts stood up again."
+    }
+   ]
+  },
+  {
+   "scene": "秋天，同一塊田：稻子變得跟兒子的肩膀一樣高，一大片金黃色，稻穗沉沉地彎下來；柳樹的葉子有一點黃，天空很藍。",
+   "act": "農夫站在田邊，一手摸著彎下來的金黃色稻穗，笑得眼睛瞇起來；遠處茅草小屋的屋頂上飄著煮飯的白煙。兒子兩手摸著肚子，仰頭催爸爸，嘴巴張得好大。下一格：農夫學兒子把一根手指放在嘴巴前面，慢吞吞地說話；兒子愣了一下，父子兩個一起哈哈大笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "秋天，田裡一大片金黃色的稻子。",
+     "en": "When autumn came, the field was full of golden rice."
+    },
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "爸爸，飯煮好了嗎？快一點，快一點！",
+     "en": "Dad, is dinner ready yet? Hurry up, hurry up!"
+    },
+    {
+     "who": "農夫",
+     "tag": "laughing",
+     "text": "不急，不急，等一等！",
+     "en": "No rush, no rush. Just wait!"
+    },
+    {
+     "who": "旁白",
+     "text": "父子兩個都笑了。",
+     "en": "And they both laughed."
+    }
+   ]
+  }
+ ]
+}

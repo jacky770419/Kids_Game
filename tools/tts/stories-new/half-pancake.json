@@ -1,0 +1,277 @@
+{
+ "id": "half-pancake",
+ "title": "吃到第七個餅才飽",
+ "title_en": "The Seventh Pancake",
+ "size": "短",
+ "roles": {
+  "大叔": "肚子很餓的大叔，憨憨的、慢半拍的鄉下大叔聲音，想到什麼就拍一下腦袋說「哎呀」；懂了以後笑得很開心。",
+  "阿姨": "賣餅的阿姨，爽朗、愛笑，嗓門大，講話很乾脆。",
+  "小女孩": "阿姨的女兒，六歲左右，愛動腦，聲音清脆，說話有條理。"
+ },
+ "cast": {
+  "大叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "阿姨": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "小女孩": {
+   "find": "童_女",
+   "en": "Tilly"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "還",
+   "where": "第2頁『還餓』，第4頁『還沒滿』，第5頁『還是』，第6頁『還少』",
+   "read": "hái"
+  },
+  {
+   "char": "只",
+   "where": "第3、4頁『只吃』，第4頁『只要』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "為",
+   "where": "第4、6、7頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "空",
+   "where": "第6頁『空水桶』",
+   "read": "kōng"
+  },
+  {
+   "char": "倒",
+   "where": "第6頁『倒水』，第7頁『倒到』",
+   "read": "dào"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『會不會』，第3、4頁『不會』，第7頁『會滿』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第4頁『還沒滿』，第7頁『沒滿』，第7頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "少",
+   "where": "第6頁『還少』，第8頁『不能少』",
+   "read": "shǎo"
+  },
+  {
+   "char": "幾",
+   "where": "第5頁『幾個』",
+   "read": "jǐ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，太陽快下山的時候，山腳下的小村子口。後面是一座高高的綠色大山，一條彎彎的山路從山上通下來。路邊有一個賣餅的小攤子：一塊冒著熱氣的大鐵板，旁邊一個大竹盤，竹盤上排著很多金黃色、圓形、只有手掌大的小蔥油餅，上面有綠色的蔥花；攤子旁邊一張小木桌、一張長板凳，還有一個大水缸和一個空的小木桶。",
+   "act": "大叔第一次出場：四十歲左右，圓圓胖胖、圓臉、小眼睛，頭頂禿、兩邊留短頭髮，沒有鬍子，穿土黃色短上衣、咖啡色褲子、草鞋，背一個竹簍，拿一根木頭拐杖。他滿頭大汗，剛從山路走下來，一手摸著扁扁的肚子，眼睛盯著竹盤上的餅。阿姨第一次出場：三十多歲，高高壯壯，頭上包藍色花布頭巾，穿白色上衣、藍色圍裙，袖子捲起來，拿著鍋鏟，笑得很爽朗。小女孩第一次出場：六歲左右，短頭髮、齊瀏海，耳朵旁邊別一朵黃色小花，穿綠色短上衣、紅色長褲，站在攤子旁邊幫忙排餅。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔走了一整天山路，肚子好餓。",
+     "en": "A man had walked a mountain road all day, and he was very hungry."
+    },
+    {
+     "who": "旁白",
+     "text": "山腳下，阿姨和女兒在賣手掌大的小蔥油餅。",
+     "en": "At the foot of the mountain, a woman and her daughter were selling scallion pancakes, each as small as your hand."
+    },
+    {
+     "who": "大叔",
+     "tag": "excited",
+     "text": "阿姨，我要吃餅！",
+     "en": "Ma'am, pancakes, please!"
+    }
+   ]
+  },
+  {
+   "scene": "賣餅的小攤子旁邊，小木桌和長板凳。",
+   "act": "畫面分兩格。左格：大叔坐在長板凳上，兩手拿著第一個小蔥油餅咬一大口，桌上的盤子是空的；他一邊吃一邊摸肚子，肚子還是扁扁的。右格：大叔把第七個餅的最後一口放進嘴裡，肚子變得圓圓鼓鼓的，他滿足地閉上眼睛；桌邊小女孩用小石頭排了一排記錄，一共七顆。阿姨的大竹盤上少了七個餅。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "他吃了第一個。",
+     "en": "He ate the first one."
+    },
+    {
+     "who": "大叔",
+     "text": "還餓，再一個！",
+     "en": "Still hungry. One more!"
+    },
+    {
+     "who": "旁白",
+     "text": "吃了第二個。",
+     "en": "He ate the second one."
+    },
+    {
+     "who": "大叔",
+     "text": "還餓，再一個！",
+     "en": "Still hungry. One more!"
+    },
+    {
+     "who": "旁白",
+     "text": "一個接一個，吃到第七個，飽了。",
+     "en": "One after another he ate, and after the seventh one, he was full."
+    }
+   ]
+  },
+  {
+   "scene": "同一張小木桌旁邊，天色變暗，攤子上點了一盞燈籠。",
+   "act": "大叔坐在長板凳上，肚子圓圓鼓鼓的，一手「啪」地拍在自己光光的腦門上，眼睛睜大、嘴巴張成圓形，一臉「虧大了」的表情。他頭上一個想像泡泡：七個小蔥油餅排成一排，前面六個都打了叉，只有第七個在發亮。阿姨和小女孩在攤子後面互相看一眼，忍著笑。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔一拍腦袋。",
+     "en": "The man slapped his forehead."
+    },
+    {
+     "who": "大叔",
+     "tag": "surprised",
+     "text": "哎呀！早知道直接吃第七個，前面六個都白吃了！",
+     "en": "Oh no! I should have just eaten the seventh one. The first six were a waste!"
+    },
+    {
+     "who": "旁白",
+     "text": "明天他只吃第七個那一個，你猜，會不會飽？",
+     "en": "If he ate only that seventh pancake tomorrow, do you think he would be full?"
+    }
+   ]
+  },
+  {
+   "scene": "畫面分上下兩格。上格是說明圖：兩個並排的肚子剖面，畫成兩個一樣大的袋子。下格：第二天，太陽快下山的時候，同一個賣餅的小攤子，後面是大山和山路。",
+   "act": "上格：左邊的袋子裡疊著七個小蔥油餅，剛好裝滿到袋口；右邊的袋子裡只有一個餅躺在最下面，上面全是空的。下格：大叔又背著竹簍、拿著拐杖從山路走下來，滿頭大汗、摸著扁扁的肚子，走到攤子前面，很有把握地伸出一根手指。阿姨拿著鍋鏟，睜大眼睛；小女孩歪著頭看他。竹盤上的餅排成整齊的一排。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "不會。因為肚子是七個餅一起裝滿的。",
+     "en": "No, he would not. Because it took all seven pancakes together to fill his tummy."
+    },
+    {
+     "who": "旁白",
+     "text": "只吃一個，它就是第一個，肚子還沒滿。",
+     "en": "If he ate just one, that one would be the first pancake, and his tummy would not be full yet."
+    },
+    {
+     "who": "旁白",
+     "text": "第二天，大叔又走山路，又好餓。",
+     "en": "The next day, the man walked the mountain road again, and he was just as hungry."
+    },
+    {
+     "who": "大叔",
+     "tag": "proud",
+     "text": "阿姨，我只要第七個！",
+     "en": "Ma'am, I only want the seventh one!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個賣餅的小攤子，小木桌和長板凳。",
+   "act": "左格：阿姨哈哈笑著，用鍋鏟從竹盤上那一排餅裡，鏟起從左邊算過來的第七個，放到大叔的盤子上。右格：大叔坐在長板凳上，盤子空了，他只吃了這一個餅；肚子還是扁扁的，他一手摸著肚子、一手又拍在腦門上，滿臉想不通。小女孩站在桌邊看著他，桌上只放了一顆小石頭。",
+   "lines": [
+    {
+     "who": "阿姨",
+     "tag": "laughing",
+     "text": "第七個？好，給你！",
+     "en": "The seventh one? Sure, here you go!"
+    },
+    {
+     "who": "旁白",
+     "text": "大叔吃完了。",
+     "en": "The man ate it all up."
+    },
+    {
+     "who": "大叔",
+     "tag": "surprised",
+     "text": "咦？還是好餓！",
+     "en": "Huh? I'm still so hungry!"
+    },
+    {
+     "who": "旁白",
+     "text": "昨天七個才飽。今天吃了一個，要再吃幾個才飽呢？",
+     "en": "Yesterday it took seven to fill him up. Today he had eaten one. How many more did he need?"
+    }
+   ]
+  },
+  {
+   "scene": "賣餅的小攤子旁邊，大水缸和那個空的小木桶。小木桶不大，剛好裝得下七碗水。",
+   "act": "小女孩先舉起兩隻手，比出「六」（一手五根手指、另一手一根手指），認真地對大叔說話。接著她拿一個白色的碗，從大水缸裡舀了一碗水，蹲在空的小木桶旁邊準備倒進去。大叔拄著拐杖彎下腰來看，一臉好奇；阿姨在攤子後面笑著看。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "text": "大叔，再吃六個！",
+     "en": "Mister, you need six more!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "gentle",
+     "text": "因為七個才飽，吃了一個，還少六個。",
+     "en": "Because it takes seven to be full, and you've had one. So you still need six more."
+    },
+    {
+     "who": "旁白",
+     "text": "阿姨的女兒拿碗，往空水桶倒水。",
+     "en": "Then the woman's daughter took a bowl and poured water into an empty bucket."
+    }
+   ]
+  },
+  {
+   "scene": "同一個地方，大水缸和小木桶旁邊。",
+   "act": "畫面分三小格，都是小木桶的樣子：第一格倒了一碗，水只蓋住桶底；第二格倒了兩碗，水高了一點點，離桶口很遠；第三格倒了第七碗，水剛好滿到桶口，桶邊的地上排著七顆小石頭記錄碗的數目。小女孩拿著空碗，一手指著滿滿的水桶。大叔蹲在水桶旁邊，眼睛發亮，又拍了一下腦門，這次是笑著拍的。",
+   "lines": [
+    {
+     "who": "小女孩",
+     "text": "第一碗，沒滿。第二碗，沒滿。",
+     "en": "The first bowl. Not full. The second bowl. Not full."
+    },
+    {
+     "who": "旁白",
+     "text": "倒到第七碗，滿了！",
+     "en": "With the seventh bowl, the bucket was full!"
+    },
+    {
+     "who": "小女孩",
+     "tag": "happy",
+     "text": "最後一碗會滿，是因為前面有六碗。",
+     "en": "The last bowl filled it up because six bowls went in before it."
+    },
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "我懂了！前面六個沒有白吃！",
+     "en": "Now I get it! The first six weren't a waste at all!"
+    }
+   ]
+  },
+  {
+   "scene": "賣餅的小攤子，小木桌和長板凳，攤子上的燈籠亮了。",
+   "act": "大叔坐在長板凳上，盤子空了，肚子又變得圓圓鼓鼓的；桌上排著七顆小石頭（原來的一顆，加上後來的六顆）。他一手拍著圓肚子、一手舉高，笑得眼睛瞇起來。阿姨一手叉腰、一手拿鍋鏟，笑著對他說話；小女孩在旁邊拍手，竹盤上少了七個餅。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔又吃了六個，一共七個，飽了！",
+     "en": "The man ate six more. That made seven in all, and he was full!"
+    },
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "七個餅，一個都不能少！",
+     "en": "Seven pancakes, and every single one counts!"
+    },
+    {
+     "who": "阿姨",
+     "tag": "laughing",
+     "text": "明天從第一個吃喔！",
+     "en": "Tomorrow, start with the first one!"
+    }
+   ]
+  }
+ ]
+}

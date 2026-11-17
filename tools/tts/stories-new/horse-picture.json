@@ -1,0 +1,244 @@
+{
+ "id": "horse-picture",
+ "title": "照著圖找好馬",
+ "title_en": "Finding a Horse from a Picture",
+ "size": "短",
+ "roles": {
+  "伯樂": "很久以前中國最會看馬的人，是個溫和、愛笑的爸爸，溫和大叔的聲音，說話不急；看到兒子找錯不罵人，先笑，再一起想辦法。",
+  "兒子": "伯樂的兒子，六七歲的小男孩，很認真、有一點太老實，只照著圖對，不看別的，對到了就大聲說「對」；找錯時不服氣，最後自己也笑了。"
+ },
+ "cast": {
+  "伯樂": {
+   "find": "YCHuang",
+   "en": "Brian"
+  },
+  "兒子": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "樂",
+   "where": "全書『伯樂』（第1、2、5頁）",
+   "read": "lè"
+  },
+  {
+   "char": "匹",
+   "where": "第1頁『一匹好馬』，第5頁『這匹馬』，第8頁『一匹馬』",
+   "read": "pī"
+  },
+  {
+   "char": "為",
+   "where": "第6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "什",
+   "where": "第3、5頁『什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "只",
+   "where": "第3頁『只看圖上的三樣』",
+   "read": "zhǐ"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前的中國，晴朗的早上。一間灰瓦屋頂的房子，前面是用木頭欄杆圍起來的馬場，裡面有三匹馬：一匹白色、一匹黑色、一匹棕色，在吃草；遠處是綠色的草地和小山。",
+   "act": "伯樂第一次出場：四十歲左右，高高瘦瘦，臉上常常帶著笑，黑頭髮在頭頂綁一個髻、插一根木頭髮簪，下巴有短短的黑鬍子，穿深綠色古代長袍、咖啡色腰帶、黑布鞋。他站在欄杆旁邊，一手摸著棕色馬的脖子，笑瞇瞇地看馬；欄杆外面有兩個牽著馬的人排隊等他看馬。兒子第一次出場：六七歲的男孩，圓臉、粗眉毛，黑頭髮在頭頂綁一個小圓髻、繫橘色髮帶，穿鵝黃色古代短上衣、深藍色褲子、黑布鞋。他拉著爸爸的袖子，踮著腳，另一隻手高高舉起來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "很久以前，有個人叫伯樂，最會找好馬。",
+     "en": "Long ago in China, there lived a man named Bo Le. Nobody was better at finding fine horses."
+    },
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "爸爸，我也要找一匹好馬！",
+     "en": "Father, I want to find a fine horse too!"
+    }
+   ]
+  },
+  {
+   "scene": "伯樂家的屋子裡，木頭桌子上有毛筆、硯台和一張米黃色的紙；窗外看得到馬場。",
+   "act": "伯樂坐在桌子前面，拿毛筆在紙上畫圖，畫得很簡單：紙上只有一個馬頭的側面和一條馬腿，旁邊有三個記號和三行字，馬的額頭旁邊一個往上的箭頭、眼睛旁邊一顆小星星、腿旁邊一個小拳頭（圖上沒有畫出整匹馬、沒有尾巴）。伯樂一邊指著三個記號，一邊說給兒子聽。下一格：兒子兩手把圖舉在胸前，大步走出家門，走在草地中間的小路上，很有精神。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "伯樂畫了一張好馬圖，圖上寫了三樣。",
+     "en": "So Bo Le drew a picture of a fine horse and wrote three things on it."
+    },
+    {
+     "who": "伯樂",
+     "tag": "gentle",
+     "text": "好馬的額頭高，眼睛亮，腿有力。",
+     "en": "A fine horse has a high forehead, bright eyes, and strong legs."
+    },
+    {
+     "who": "旁白",
+     "text": "兒子拿著圖出門了。",
+     "en": "His son set off with the picture."
+    }
+   ]
+  },
+  {
+   "scene": "草地邊的一個小池塘，水面上有幾片圓圓的大荷葉和一朵粉紅色的荷花，池塘邊有蘆葦。",
+   "act": "（這一頁先不讓讀者看清楚他找到的是什麼。）兒子蹲在池塘邊，一手拿著圖，一手的手指在圖上的三個記號一個一個點過去，眼睛睜得好大、很興奮。他前面的一片大荷葉上，蘆葦後面有一個蹲著的綠色影子，只看得到圓圓鼓起來的頭頂和兩顆很亮的大眼睛；旁邊的水面上有一圈一圈的水波，另一片荷葉在搖，表示牠剛剛從那裡跳過來。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "池塘邊有一個，蹲在荷葉上，一跳就跳好遠。",
+     "en": "By the pond, he found one. It sat on a lotus leaf, and it could jump a long, long way."
+    },
+    {
+     "who": "旁白",
+     "text": "兒子不看別的，只看圖上的三樣。",
+     "en": "He didn't look at anything else, just the three things on the picture."
+    },
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "額頭高，對！眼睛亮，對！後腿有力，對！",
+     "en": "High forehead, yes! Bright eyes, yes! Strong back legs, yes!"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，他找到的是什麼呢？",
+     "en": "Can you guess what he had found?"
+    }
+   ]
+  },
+  {
+   "scene": "左格是池塘邊；右格是伯樂家門口，旁邊是馬場的木頭欄杆。",
+   "act": "左格：荷葉上蹲著一隻大青蛙，翠綠色、肚子是淡黃色，頭頂鼓鼓的、兩顆大眼睛又圓又亮、兩條後腿又粗又壯，樣子很神氣；旁邊畫著那張圖，圖上的三個記號各有一條線連到青蛙的額頭、眼睛、後腿。右格：兒子兩手平平地端著一片大荷葉，大青蛙好好地蹲在荷葉上面（兒子沒有抓牠、沒有捏牠），他跑到家門口，抬著下巴，很得意。伯樂站在門口，彎腰看。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "是一隻大青蛙！",
+     "en": "It was a big frog!"
+    },
+    {
+     "who": "旁白",
+     "text": "青蛙頭頂鼓起來，額頭很高。",
+     "en": "The top of a frog's head bulges up, so its forehead is high."
+    },
+    {
+     "who": "旁白",
+     "text": "眼睛亮，後腿有力，所以三樣全對。",
+     "en": "Its eyes are bright and its back legs are strong. So all three things matched."
+    },
+    {
+     "who": "兒子",
+     "tag": "proud",
+     "text": "爸爸，我找到好馬了！",
+     "en": "Father, I found a fine horse!"
+    }
+   ]
+  },
+  {
+   "scene": "伯樂家門口，馬場的欄杆旁邊，欄杆裡的三匹馬都探頭過來看。",
+   "act": "伯樂笑得彎下腰，一手摸著肚子，沒有生氣。大青蛙從荷葉上跳起來，剛好蹲在伯樂的頭頂、髮髻的旁邊，伯樂兩顆眼珠往上看，笑得更開心。兒子一手拿著空的荷葉，一手舉著那張圖，指著圖上的三個記號，皺著眉、嘟著嘴，很不服氣。",
+   "lines": [
+    {
+     "who": "伯樂",
+     "tag": "laughing",
+     "text": "這匹馬太會跳了，我騎不上去！",
+     "en": "This horse jumps far too much. I can't even get on!"
+    },
+    {
+     "who": "旁白",
+     "text": "青蛙一跳，跳到伯樂的頭上。",
+     "en": "Hop! The frog jumped right onto Bo Le's head."
+    },
+    {
+     "who": "兒子",
+     "tag": "surprised",
+     "text": "可是，三樣全對呀！",
+     "en": "But all three things match!"
+    },
+    {
+     "who": "旁白",
+     "text": "圖上要再加什麼，才不會找錯呢？",
+     "en": "What else should they add to the picture, so he wouldn't pick the wrong animal again?"
+    }
+   ]
+  },
+  {
+   "scene": "馬場的木頭欄杆旁邊，棕色的馬站在欄杆裡面吃草。",
+   "act": "父子兩個並排蹲在欄杆前面，一起看棕色的馬。大青蛙蹲在欄杆最下面的橫木上，就在馬的腳邊，看起來好小。兒子指著馬的四條高高的腿，再用兩隻手指比出跑步的樣子；伯樂一手指著馬的大尾巴，一手指著馬嘴邊的草，笑著點頭。下一格：伯樂拿著那張圖，指指圖上的三個記號，再指指青蛙，最後指指馬，慢慢說明；兒子拍一下自己的額頭，笑了。",
+   "lines": [
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "四條很高的腿！跑很快！",
+     "en": "Four tall legs! Runs fast!"
+    },
+    {
+     "who": "伯樂",
+     "tag": "happy",
+     "text": "大尾巴，愛吃草，都可以。",
+     "en": "A big tail. Eats grass. Those all work."
+    },
+    {
+     "who": "伯樂",
+     "tag": "gentle",
+     "text": "因為圖上才三樣，青蛙也都有。",
+     "en": "Because my picture has only three things, and a frog has them all."
+    },
+    {
+     "who": "伯樂",
+     "text": "所以，要多寫幾樣馬才有的。",
+     "en": "So we need to add more things that only a horse has."
+    }
+   ]
+  },
+  {
+   "scene": "左格是池塘邊；右格是草地中間的小路。",
+   "act": "左格：兒子蹲在池塘邊，把荷葉放低到水面，大青蛙自己從荷葉上跳進池塘，濺起小小的水花；伯樂站在旁邊揮手。右格：兒子舉著補好的圖，大步走在小路最前面，嘴巴張開在念；伯樂背著手，笑著跟在後面。圖上現在畫了一整匹馬：四條很高的腿、一條大尾巴、腳邊有幾條表示跑很快的線、嘴邊有一把草，原來的三個記號也在。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "父子把青蛙放回池塘，補好圖，一起出門。",
+     "en": "Together they put the frog back in the pond, fixed the picture, and set off."
+    },
+    {
+     "who": "兒子",
+     "tag": "happy",
+     "text": "四條腿很高，尾巴很大，跑很快，愛吃草！",
+     "en": "Four tall legs, a big tail, runs fast, eats grass!"
+    }
+   ]
+  },
+  {
+   "scene": "一大片綠色的草地，遠處看得到那個小池塘；天空很藍。",
+   "act": "一匹棕色的馬（額頭高、眼睛亮、四條腿又高又壯、黑色的大尾巴）跑過草地，停下來低頭吃草，尾巴甩起來。兒子舉著圖，指著馬，開心地跳起來，回頭叫站在旁邊的伯樂。下一格：馬很溫馴，伯樂騎在棕色的馬上，慢慢地走，一手拉著韁繩，一手向兒子比大拇指；兒子站在草地上拍手。遠處的池塘裡，大青蛙從一片荷葉跳到另一片荷葉，在空中張開四條腿，好像也在歡呼。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "草地上，一匹馬跑過來吃草。",
+     "en": "In the meadow, a horse came running up and stopped to eat grass."
+    },
+    {
+     "who": "兒子",
+     "tag": "excited",
+     "text": "爸爸，全都對！",
+     "en": "Father, everything matches!"
+    },
+    {
+     "who": "伯樂",
+     "tag": "happy",
+     "text": "是好馬！我騎上去了！",
+     "en": "A fine horse! And this time, I can get on!"
+    },
+    {
+     "who": "旁白",
+     "text": "池塘裡的青蛙，也開心地跳了一下。",
+     "en": "Back in the pond, the frog gave a happy hop."
+    }
+   ]
+  }
+ ]
+}

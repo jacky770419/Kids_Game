@@ -1,0 +1,253 @@
+{
+ "id": "south-north",
+ "title": "往北走的馬車",
+ "title_en": "Heading the Wrong Way",
+ "size": "短",
+ "roles": {
+  "大叔": "坐馬車的大叔，大嗓門、很樂觀，什麼都說「沒關係」，聲音又粗又響，好笑不兇；懂了以後哈哈大笑。",
+  "路人": "路過的年輕叔叔，熱心、活潑的年輕男生聲音，著急的時候講話變快。",
+  "車夫": "趕車的車夫，老實、聽話的鄉下大叔聲音，說話慢慢的、小聲。"
+ },
+ "cast": {
+  "大叔": {
+   "find": "WangSong",
+   "en": "Austin - Deep, Raspy"
+  },
+  "路人": {
+   "find": "夏侯儀_Yu",
+   "en": "Valf - Young, Playful"
+  },
+  "車夫": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "得",
+   "where": "第2、8頁『跑得快』，第3頁『跑得越快』，第5頁『小得像』",
+   "read": "de"
+  },
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "會",
+   "where": "第3頁『會怎麼樣』，第5頁『最會』，第6頁『不會』",
+   "read": "huì"
+  },
+  {
+   "char": "沒",
+   "where": "第2、4、5、7頁『沒關係』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第5頁『做什麼』",
+   "read": "shén"
+  },
+  {
+   "char": "應",
+   "where": "第5頁『應該』",
+   "read": "yīng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，晴朗的早上，一條筆直的黃土大路，橫過整個畫面。畫面左邊是南邊：一座很高的綠色大山，山頂有一點白雪，山腳下有一座小城（灰色城牆、紅色屋頂）。畫面右邊是北邊：一大片平平的草原，什麼都沒有。全書都照這個方位畫。",
+   "act": "大叔第一次出場：四十多歲，高大、寬肩膀、紅臉，一臉濃黑的大鬍子，頭頂梳髮髻、戴一個小玉冠，穿紫紅色長袍、黑色寬腰帶。車夫第一次出場：三十多歲，瘦瘦小小，戴草帽，穿土黃色短上衣、灰色褲子，兩手握著韁繩。馬車：一匹棕色的大馬拉著一輛兩輪的木頭馬車，車上有藍色布篷，車裡放著一個鼓鼓的大布袋（袋口露出很多白色的饅頭）。馬車停在大路上，車頭向著畫面右邊（北邊），大山在馬車的後面。大叔站在車上，一手叉腰、一手用力往前揮（指的是右邊、北邊），張大嘴巴喊。車夫回頭點頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔要去南邊的城。",
+     "en": "A man wanted to go to a town in the south."
+    },
+    {
+     "who": "旁白",
+     "text": "南邊有一座大山，城就在山腳下。",
+     "en": "In the south stood a big mountain, and the town sat right at its foot."
+    },
+    {
+     "who": "大叔",
+     "tag": "shouting",
+     "text": "車夫，出發！越快越好！",
+     "en": "Driver, let's go! As fast as you can!"
+    },
+    {
+     "who": "車夫",
+     "text": "是，大叔！",
+     "en": "Yes, sir!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路。馬車往畫面右邊（北邊）跑，後面（左邊）的大山已經小了一些，山腳下的城小得快看不清了。",
+   "act": "路人第一次出場：二十多歲，瘦瘦高高，頭髮在頭頂綁成一束，穿藍色短上衣、白色褲子，肩上斜掛一個小包袱，騎一匹白色的小馬。他從後面追上來，跟馬車並排跑，一手指著後面的大山，一臉驚訝。大叔坐在車上，拍著胸口大笑，一手指著前面跑得很快的棕色大馬。車夫專心握著韁繩。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "可是馬車往北邊跑。大山在馬車後面，越來越小。",
+     "en": "But the carriage was running north. The big mountain was behind it, getting smaller and smaller."
+    },
+    {
+     "who": "旁白",
+     "text": "路過的年輕叔叔騎馬追上來。",
+     "en": "A young man riding by caught up with them."
+    },
+    {
+     "who": "路人",
+     "tag": "surprised",
+     "text": "大叔，城在南邊，你卻往北邊跑呀！",
+     "en": "Sir, the town is in the south, but you're heading north!"
+    },
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "沒關係，我的馬跑得快！",
+     "en": "No problem! My horse is fast!"
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路。馬車往右邊（北邊）跑得更快，車輪後面揚起一長條塵土；後面（左邊）的大山又小了一點，城已經看不到了。",
+   "act": "棕色大馬四隻腳都離開地面，鬃毛往後飛。大叔得意地抱著手臂坐在車上，大鬍子被風吹得往後飄。路人騎著白色小馬努力跟在旁邊，著急地張著嘴、伸出一隻手。車夫握著韁繩看前面。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "馬越跑越快，大山又小了一點。",
+     "en": "The horse ran faster and faster, and the mountain got a little smaller."
+    },
+    {
+     "who": "旁白",
+     "text": "要去南邊，卻往北邊跑。馬跑得越快，會怎麼樣呢？",
+     "en": "He wanted to go south, but he was running north. The faster the horse ran, what do you think would happen?"
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路，馬車一直往右邊（北邊）跑，沒有停，後面（左邊）的大山又更小了。",
+   "act": "路人騎著白色小馬跟馬車並排，一手指著後面的大山（南邊）、一手指著前面（北邊），兩隻手越拉越開，表示越離越遠。大叔一點也不在意，笑著抱起車裡那個鼓鼓的大布袋，拍一拍，袋口露出很多白色的饅頭。",
+   "lines": [
+    {
+     "who": "路人",
+     "tag": "worried",
+     "text": "馬越快，離城越遠呀！",
+     "en": "The faster the horse, the farther you get from the town!"
+    },
+    {
+     "who": "路人",
+     "text": "因為方向反了，所以每跑一步，就離城遠一步。",
+     "en": "Because you're going the wrong way, every step takes you one step farther away."
+    },
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "沒關係，我的饅頭很多！",
+     "en": "No problem! My bag is full of steamed buns!"
+    },
+    {
+     "who": "旁白",
+     "text": "馬車又跑了好遠。",
+     "en": "And the carriage ran on, a long, long way."
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路。畫面最左邊很遠的地方，大山只剩下一顆小石頭那麼小。",
+   "act": "左格：大叔笑著用大手拍車夫的肩膀誇他；車夫回過頭，一手握韁繩、一手指著後面，眉毛皺起來，很擔心。右格：大叔回頭往後看，遠遠的地方，大山小得像一顆石頭；他的眼睛瞪得好大，嘴巴張開，笑不出來了。路人騎著白色小馬在旁邊看著他。",
+   "lines": [
+    {
+     "who": "大叔",
+     "tag": "proud",
+     "text": "沒關係，我的車夫最會趕車！",
+     "en": "No problem! My driver is the best there is!"
+    },
+    {
+     "who": "車夫",
+     "tag": "worried",
+     "text": "大叔，大山快看不到了。",
+     "en": "Sir, I can hardly see the mountain anymore."
+    },
+    {
+     "who": "旁白",
+     "text": "大叔回頭一看，大山小得像石頭。",
+     "en": "The man looked back. The big mountain was as small as a pebble."
+    },
+    {
+     "who": "旁白",
+     "text": "大叔應該先做什麼呢？",
+     "en": "So what should the man do first?"
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路，馬車慢了下來，還在往右邊（北邊）慢慢走；很遠的左邊是小石頭那麼小的大山。",
+   "act": "車夫一手拉著韁繩讓馬慢下來，回頭舉起另一隻手發問。路人騎在白色小馬上，笑著搖搖手，然後一手在空中畫一個大大的半圓，指向後面的大山，比「掉頭」的手勢。大叔坐在車上摸著大鬍子，歪著頭在想。",
+   "lines": [
+    {
+     "who": "車夫",
+     "text": "先停下來嗎？",
+     "en": "Should we stop first?"
+    },
+    {
+     "who": "路人",
+     "tag": "laughing",
+     "text": "停下來，城也不會自己走過來。要先掉頭！",
+     "en": "If you stop, the town won't walk over to you. First, turn around!"
+    },
+    {
+     "who": "路人",
+     "text": "因為方向對了，馬快、饅頭多、車夫厲害，才有用。",
+     "en": "Because a fast horse, lots of buns, and a good driver only help when you're going the right way."
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路。",
+   "act": "大叔拍著自己的大腿，仰頭大笑，一手指向後面的大山。車夫拉著韁繩，棕色大馬拉著馬車在大路上繞一個大彎掉頭，地上留下一道半圓形的車輪印；車頭改成向著畫面左邊（南邊），向著大山。路人在旁邊拍手。",
+   "lines": [
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "哈！原來我越跑越遠！",
+     "en": "Ha! So I was only getting farther away!"
+    },
+    {
+     "who": "大叔",
+     "tag": "shouting",
+     "text": "沒關係，車夫，掉頭！",
+     "en": "No problem! Driver, turn around!"
+    },
+    {
+     "who": "旁白",
+     "text": "馬車掉了頭，往南邊跑。",
+     "en": "The carriage turned around and ran south."
+    }
+   ]
+  },
+  {
+   "scene": "同一條黃土大路。馬車往畫面左邊（南邊）跑，前面的大山變得又高又大，山腳下的小城看得很清楚：灰色城牆、紅色屋頂，城門開著。",
+   "act": "路人騎著白色小馬跟在馬車旁邊，一手指著前面的大山。大叔站在車上張開兩隻手，大鬍子被風吹得往後飄，笑得好開心。車夫也笑了，棕色大馬跑得很快。",
+   "lines": [
+    {
+     "who": "路人",
+     "text": "看那座山。山在前面，越來越大，就走對了。",
+     "en": "Watch that mountain. If it's in front of you and getting bigger, you're going the right way."
+    },
+    {
+     "who": "大叔",
+     "tag": "happy",
+     "text": "山越來越大了！這次馬跑得快，真有用！",
+     "en": "It's getting bigger! This time, my fast horse really helps!"
+    },
+    {
+     "who": "旁白",
+     "text": "很快，他們到了山腳下的城。",
+     "en": "And soon they reached the town at the foot of the mountain."
+    }
+   ]
+  }
+ ]
+}

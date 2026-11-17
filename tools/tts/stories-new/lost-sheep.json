@@ -1,0 +1,265 @@
+{
+ "id": "lost-sheep",
+ "title": "趕快補籬笆",
+ "title_en": "Fixing the Fence",
+ "size": "短",
+ "roles": {
+  "大叔": "養羊的大叔，懶洋洋的胖叔叔聲音，說話慢、愛拖，口頭禪是「沒關係，明天再說」；發現羊跑掉兩隻時才著急，道歉很真心，最後說「不用等明天」時很有精神。",
+  "阿伯": "隔壁種菜的鄰居阿伯，慈祥的長者聲音，熱心、愛提醒人，不罵人；最後學大叔的口頭禪開玩笑，笑呵呵的。",
+  "小羊": "五隻羊裡最小、最愛往外跑的小羊，聲音細細可愛，好奇、貪吃，台詞很少。"
+ },
+ "cast": {
+  "大叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "阿伯": {
+   "find": "Hardy",
+   "en": "Grandfather Joe"
+  },
+  "小羊": {
+   "find": "Lulu",
+   "en": "Cherry Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "少",
+   "where": "第3頁『少了一隻』，第4頁『又少了一隻』",
+   "read": "shǎo"
+  },
+  {
+   "char": "種",
+   "where": "第2頁『種菜』，第7頁『種回去』，第8頁『種好菜』",
+   "read": "zhòng"
+  },
+  {
+   "char": "為",
+   "where": "第4、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "得",
+   "where": "第5頁『來不來得及』，第6頁『來得及』",
+   "read": "de"
+  },
+  {
+   "char": "鑽",
+   "where": "第2頁『鑽出去了』，第4頁『鑽出去』",
+   "read": "zuān"
+  },
+  {
+   "char": "沒",
+   "where": "第2、3頁『沒關係』，第3頁『沒有補』，第4頁『洞沒補』，第7頁『沒有這裡好吃』",
+   "read": "méi"
+  },
+  {
+   "char": "什",
+   "where": "第1頁『有什麼』",
+   "read": "shén"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "鄉下的小山坡下，晴朗的早上。一間茅草屋頂的小屋，屋子旁邊用木板圍了一圈半個大人高的籬笆，籬笆裡面是一塊草地和一個小草棚；籬笆外面是一條小土路，路的另一邊是鄰居的菜園，更遠是綠色的小山坡。",
+   "act": "大叔第一次出場：四十歲左右，胖胖的、圓肚子，圓臉、瞇瞇眼，嘴上兩撇小鬍子，戴一頂舊草帽，穿米白色短上衣、灰藍色寬褲子、草鞋。他躺在籬笆裡面的一張竹躺椅上搖扇子。籬笆裡面一共五隻白色的羊（毛捲捲的、臉是淺粉色）：三隻大羊在吃草；一隻左耳是黑色的中羊；還有一隻最小的小羊，脖子上綁一條紅色帶子、掛一個小鈴鐺。小羊站在籬笆邊，從木板的縫往外看。籬笆最下面有一塊木板斷掉了，破了一個剛好讓一隻羊鑽過去的洞。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔養了五隻羊，住在籬笆裡面。",
+     "en": "A shepherd kept five sheep inside a fence."
+    },
+    {
+     "who": "旁白",
+     "text": "最小的小羊，最愛往外跑。",
+     "en": "The littlest lamb loved to wander off."
+    },
+    {
+     "who": "小羊",
+     "tag": "excited",
+     "text": "外面有什麼？我想去看！",
+     "en": "What's out there? I want to see!"
+    },
+    {
+     "who": "旁白",
+     "text": "有一天，籬笆破了一個洞。",
+     "en": "One day, the fence got a hole in it."
+    }
+   ]
+  },
+  {
+   "scene": "同一圈籬笆。左格是第一天下午，右格是第二天早上。",
+   "act": "左格：阿伯第一次出場，六十多歲，瘦瘦的，白頭髮、白色短鬍子，皮膚曬得黑黑的，戴斗笠，穿深藍色短上衣、咖啡色褲子，褲管捲起來，肩上扛一把鋤頭、手上提一籃青菜；他站在籬笆外面，指著籬笆下面的破洞。大叔躺在竹躺椅上，眼睛半閉，揮揮扇子；籬笆裡面五隻羊，綁紅帶子的小羊正盯著破洞看。右格：第二天早上，籬笆裡面剩下四隻羊（三隻大羊、一隻黑耳朵的中羊），綁紅帶子的小羊不見了；破洞外面的泥土上有一排小小的羊腳印，遠遠的山坡上有一個小白點。大叔躺在竹躺椅上揉著眼睛，懶懶地看了一眼，打一個呵欠，還不著急。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "隔壁種菜的阿伯來了。",
+     "en": "The old neighbor, who grew vegetables next door, came by."
+    },
+    {
+     "who": "阿伯",
+     "tag": "gentle",
+     "text": "籬笆破洞了，趕快補吧！",
+     "en": "There's a hole in your fence. Better fix it quick!"
+    },
+    {
+     "who": "大叔",
+     "tag": "sleepy",
+     "text": "沒關係，明天再說。",
+     "en": "Never mind. I'll do it tomorrow."
+    },
+    {
+     "who": "旁白",
+     "text": "第二天，小羊從洞鑽出去了。五隻羊剩下四隻。",
+     "en": "The next day, the littlest lamb squeezed out through the hole. Now there were only four sheep."
+    }
+   ]
+  },
+  {
+   "scene": "同一圈籬笆，第二天的中午。",
+   "act": "阿伯站在籬笆外面，一手指著破洞，一手比出「四」，很著急。大叔又躺回竹躺椅上，把草帽蓋在臉上，一隻手懶懶地揮一揮。籬笆裡面是四隻羊；黑耳朵的中羊站在破洞前面，歪著頭往洞外看。破洞沒有補，洞外的小腳印還在。",
+   "lines": [
+    {
+     "who": "阿伯",
+     "tag": "surprised",
+     "text": "少了一隻？快補洞！",
+     "en": "One is missing? Fix that hole, quick!"
+    },
+    {
+     "who": "大叔",
+     "tag": "sleepy",
+     "text": "沒關係，明天再說。",
+     "en": "Never mind. I'll do it tomorrow."
+    },
+    {
+     "who": "旁白",
+     "text": "洞沒有補。你猜，明天早上會怎麼樣呢？",
+     "en": "So the hole didn't get fixed. Can you guess what happened the next morning?"
+    }
+   ]
+  },
+  {
+   "scene": "同一圈籬笆，第三天早上。",
+   "act": "籬笆裡面剩下三隻大羊，黑耳朵的中羊也不見了；破洞外面的泥土上多了一排比較大的羊腳印，跟前一天的小腳印並排往外走。大叔從竹躺椅上跳起來，草帽掉在地上，兩手抓著頭，眼睛睜得好大，第一次著急。三隻大羊抬頭看著他。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第三天，又少了一隻，剩下三隻。",
+     "en": "On the third day, another sheep was missing. Now there were only three."
+    },
+    {
+     "who": "旁白",
+     "text": "因為洞沒補，所以羊看到洞就鑽出去。",
+     "en": "Because the hole was still there, another sheep saw it and squeezed right out."
+    },
+    {
+     "who": "大叔",
+     "tag": "scared",
+     "text": "糟糕，已經跑掉兩隻了！",
+     "en": "Oh no! That's two sheep gone already!"
+    }
+   ]
+  },
+  {
+   "scene": "同一圈籬笆，第三天早上，破洞前面。",
+   "act": "大叔抱著兩塊木板，腰上插一把木槌，站在破洞前面，垂著肩膀、嘆一口氣，回頭看著站在籬笆外面的阿伯。剩下的三隻大羊擠在破洞旁邊，其中一隻已經把頭伸到洞口往外看。破洞還沒有補。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "剩下的三隻羊，也擠到洞口往外看。",
+     "en": "The three sheep that were left crowded around the hole, peeking out."
+    },
+    {
+     "who": "大叔",
+     "tag": "sad",
+     "text": "唉，現在才補，有用嗎？",
+     "en": "Oh dear. Is there any use fixing it now?"
+    },
+    {
+     "who": "旁白",
+     "text": "你說呢？現在才補，來不來得及？",
+     "en": "What do you think? Was it too late to fix the fence?"
+    }
+   ]
+  },
+  {
+   "scene": "同一圈籬笆，破洞前面。",
+   "act": "阿伯站在籬笆外面，用力點頭，一手指著籬笆裡面的三隻羊，一手指向遠處。下一格：大叔蹲在洞前面，捲起袖子，用木槌把兩塊新木板敲在破洞上，滿頭大汗、很認真；破洞被兩塊顏色比較淺的新木板補起來了。三隻大羊站在籬笆裡面，鼻子頂著新木板，出不去。",
+   "lines": [
+    {
+     "who": "阿伯",
+     "tag": "happy",
+     "text": "來得及！因為洞補好，剩下的三隻就不會跑。",
+     "en": "It's not too late! Because once the hole is fixed, your three sheep can't get out."
+    },
+    {
+     "who": "阿伯",
+     "text": "跑掉的兩隻，也可以去找回來。",
+     "en": "And the two that ran off, we can go and find."
+    },
+    {
+     "who": "旁白",
+     "text": "咚咚咚！洞補好了。",
+     "en": "Bang, bang, bang! The hole was fixed."
+    }
+   ]
+  },
+  {
+   "scene": "小土路對面，阿伯的菜園：一排一排綠色的小白菜和高麗菜，有一小塊被吃得只剩下短短的菜梗；菜園邊有一圈矮矮的竹籬笆。",
+   "act": "綁紅帶子的小羊（前一天在遠處山坡上玩，今天早上下山跑進菜園）和黑耳朵的中羊，一共兩隻，站在菜園中間；小羊身上沾著幾根山坡上的草，嘴裡各咬著一大片綠色的菜葉，肚子圓圓的，嘴邊沾著菜屑，一臉滿足，樣子很好笑。大叔跑過來，脫下草帽，不好意思地向阿伯彎腰道歉。阿伯一手插腰，一手指著大叔，笑得鬍子翹起來，沒有生氣。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "跑掉的兩隻羊，在阿伯的菜園吃菜葉！",
+     "en": "And the two runaways were in the old neighbor's garden, munching on his greens!"
+    },
+    {
+     "who": "小羊",
+     "tag": "happy",
+     "text": "山坡上的草，沒有這裡好吃！",
+     "en": "The grass on the hill isn't as yummy as this!"
+    },
+    {
+     "who": "大叔",
+     "tag": "embarrassed",
+     "text": "對不起！我幫你把菜種回去。",
+     "en": "I'm so sorry! I'll plant new ones for you."
+    },
+    {
+     "who": "阿伯",
+     "tag": "laughing",
+     "text": "好，可是不能明天再說喔！",
+     "en": "All right. But don't tell me you'll do it tomorrow!"
+    }
+   ]
+  },
+  {
+   "scene": "太陽要下山了，同一圈籬笆；籬笆下面的破洞已經用兩塊新木板補好。遠處阿伯的菜園裡，被吃掉的那一小塊已經種上一排新的小菜苗。",
+   "act": "籬笆裡面一共五隻羊：三隻大羊、黑耳朵的中羊、綁紅帶子的小羊。小羊站在補好的新木板前面，用頭頂了頂木板，歪著頭，一臉奇怪。大叔站在籬笆旁邊，手上還有泥土，一手拿木槌，一手摸著小羊的頭，哈哈大笑；阿伯在籬笆外面笑著揮手。竹躺椅收起來靠在牆邊。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔馬上種好菜，帶兩隻羊回家。",
+     "en": "The shepherd planted the greens right away and took his two sheep home."
+    },
+    {
+     "who": "旁白",
+     "text": "三隻加兩隻，五隻羊都在了。",
+     "en": "Three sheep and two sheep made five. They were all there."
+    },
+    {
+     "who": "小羊",
+     "tag": "surprised",
+     "text": "咦，洞呢？",
+     "en": "Hey, where did the hole go?"
+    },
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "有破洞就趕快補，不等明天啦！",
+     "en": "When you find a hole, fix it fast. No waiting for tomorrow!"
+    }
+   ]
+  }
+ ]
+}

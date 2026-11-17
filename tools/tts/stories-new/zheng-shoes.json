@@ -1,0 +1,266 @@
+{
+ "id": "zheng-shoes",
+ "title": "回家拿尺寸的人",
+ "title_en": "The Man Who Went Home for His Measurements",
+ "size": "短",
+ "roles": {
+  "大叔": "買鞋的大叔，做事一板一眼、很認真的鄉下大叔聲音，說話一個字一個字很用力，只相信自己的繩子；最後笑自己。",
+  "老闆娘": "賣鞋的老闆娘，嗓門大、愛笑、好心的阿姨聲音，講話很快很熱情。",
+  "小男孩": "老闆娘的兒子，六歲左右的小男孩，有話直說，聲音清亮。"
+ },
+ "cast": {
+  "大叔": {
+   "find": "YCHuang",
+   "en": "Spuds Oxley"
+  },
+  "老闆娘": {
+   "find": "Stella Gu",
+   "en": "Daria - Funny"
+  },
+  "小男孩": {
+   "find": "童_男",
+   "en": "Teddy Twinkle"
+  }
+ },
+ "polyphones": [
+  {
+   "char": "只",
+   "where": "第1、3、8頁『只相信』，第6頁『只比了』",
+   "read": "zhǐ"
+  },
+  {
+   "char": "相",
+   "where": "第1、3、8頁『相信』",
+   "read": "xiāng"
+  },
+  {
+   "char": "更",
+   "where": "第2頁『更快』",
+   "read": "gèng"
+  },
+  {
+   "char": "為",
+   "where": "第3、6頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "還",
+   "where": "第5頁『還是』",
+   "read": "hái"
+  },
+  {
+   "char": "沒",
+   "where": "第2頁『有沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "合",
+   "where": "第2頁『合不合腳』",
+   "read": "hé"
+  },
+  {
+   "char": "行",
+   "where": "第3頁『不行』",
+   "read": "xíng"
+  },
+  {
+   "char": "胖",
+   "where": "第1、6頁『很胖』",
+   "read": "pàng"
+  },
+  {
+   "char": "場",
+   "where": "第2、4頁『市場』",
+   "read": "chǎng"
+  }
+ ],
+ "pages": [
+  {
+   "scene": "很久以前，早上，大叔家門口的小院子：黃色土牆、茅草屋頂的小房子，門邊一張矮矮的小板凳。",
+   "act": "大叔第一次出場：四十多歲，矮矮壯壯、方臉、粗眉毛，沒有鬍子，頭上包一塊深藍色頭巾，穿灰色短上衣、深藍色寬褲，腰上綁一條白色布腰帶，腰帶上掛一個小口袋；他有一雙又寬又厚的大腳。他坐在小板凳上，一隻腳光著，旁邊放著脫下來的破黑布鞋，鞋頭破了一個大洞；另一隻腳還穿著破鞋，五根腳趾頭從破洞跑出來。他把一條米白色的麻繩拉直，貼在光腳的腳底，從腳跟比到腳尖，另一手拿剪刀把多出來的剪掉，表情非常認真，嘴巴抿成一條線。剪好的繩子跟他的腳一樣長。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔的腳很胖，鞋子破了，要買新鞋。",
+     "en": "A man had very chubby feet, and his shoes were worn out. He needed a new pair."
+    },
+    {
+     "who": "旁白",
+     "text": "他拿繩子，從腳跟比到腳尖，剪下來。",
+     "en": "He took a string, held it from his heel to his toes, and cut it."
+    },
+    {
+     "who": "大叔",
+     "tag": "proud",
+     "text": "買鞋就靠它！我只相信我的繩子！",
+     "en": "This is all I need to buy shoes! I only trust my string!"
+    }
+   ]
+  },
+  {
+   "scene": "熱鬧的市場，一個賣鞋的攤子：木頭桌子上排著大大小小的新黑布鞋，後面掛一塊畫著鞋子的布招牌，攤子前面有一張給客人坐的小凳子。",
+   "act": "老闆娘第一次出場：四十歲左右，圓臉、紅臉頰，頭髮盤成一個大髮髻、插一朵紅花，穿橘紅色上衣、綠色圍裙，袖子捲起來，笑得很大。小男孩第一次出場：六歲左右，光頭、額頭前面留一小撮頭髮，穿黃色短上衣、藍色短褲、草鞋，坐在攤子旁邊的木箱上。大叔站在攤子前面，腳上還穿著那雙破鞋、腳趾頭露在外面，一手拿起一雙新鞋，另一手把腰上的小口袋整個翻出來，口袋是空的；他的眼睛瞪得好大。他頭上一個想像泡泡：那條繩子躺在家裡的小板凳上。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "市場裡，老闆娘和兒子在賣鞋。",
+     "en": "At the market, a shopkeeper and her son were selling shoes."
+    },
+    {
+     "who": "旁白",
+     "text": "大叔一摸口袋。哎呀，繩子忘在家裡！",
+     "en": "The man reached into his pocket. Oh no! He had left his string at home!"
+    },
+    {
+     "who": "大叔",
+     "text": "我回家拿！",
+     "en": "I'll go home and get it!"
+    },
+    {
+     "who": "旁白",
+     "text": "不用回家，有沒有更快的辦法，知道鞋子合不合腳？",
+     "en": "Without going home, was there a faster way to find out if the shoes fit?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個賣鞋的攤子。",
+   "act": "小男孩從木箱上跳下來，一手指著大叔的腳、一手舉起一隻新鞋，眼睛睜得圓圓的。老闆娘哈哈笑著，從攤子下面拿出另一條繩子要借給大叔。大叔兩手在胸前交叉比「不行」，用力搖頭，一隻腳已經抬起來準備往外跑。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "surprised",
+     "text": "大叔，直接穿一下呀！",
+     "en": "Mister, just try them on!"
+    },
+    {
+     "who": "小男孩",
+     "text": "因為腳就在你身上，所以這樣最快！",
+     "en": "Because your feet are right here with you, that's the fastest way!"
+    },
+    {
+     "who": "老闆娘",
+     "tag": "laughing",
+     "text": "你要繩子？我借你一條，現在比！",
+     "en": "You want a string? I'll lend you one. Check right now!"
+    },
+    {
+     "who": "大叔",
+     "text": "不行，不行，我只相信我的繩子！",
+     "en": "No, no! I only trust my string!"
+    }
+   ]
+  },
+  {
+   "scene": "畫面分兩格。左格：回家的黃土小路，太陽已經很低。右格：太陽下山了，天空是橘紅色，市場空空的，賣鞋的攤子蓋上了一大塊布，一個人也沒有。",
+   "act": "左格：大叔手裡高高舉著那條繩子，在小路上跑，滿頭大汗，破鞋前面露出五根腳趾頭。右格：大叔喘著氣站在蓋著布的鞋攤前面，一手高舉繩子，左看右看，嘴巴張開，整個人呆住了。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔跑回家，抓了繩子，又跑回來。",
+     "en": "He ran home, grabbed his string, and ran all the way back."
+    },
+    {
+     "who": "旁白",
+     "text": "可是太陽下山了，市場收攤了。",
+     "en": "But the sun had set, and the market was closed."
+    },
+    {
+     "who": "大叔",
+     "tag": "surprised",
+     "text": "繩子來了！咦，人呢？",
+     "en": "Here's my string! Huh? Where is everybody?"
+    }
+   ]
+  },
+  {
+   "scene": "第二天早上，同一個賣鞋的攤子，桌上排著大大小小的新黑布鞋。",
+   "act": "大叔的左手腕上綁著那條繩子，打了一個蝴蝶結，怕再忘記。左格：他把繩子解下來拉直，貼在一雙新鞋的鞋底比，鞋子跟繩子一樣長，他得意地點頭。右格：他坐在攤子前的小凳子上，把右腳塞進那隻新鞋，腳太寬了，鞋子兩邊鼓起來，他的臉皺成一團、咬著牙。老闆娘和小男孩站在旁邊看，小男孩歪著頭。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，大叔把繩子綁在手上，又來了。",
+     "en": "The next day he came back, with the string tied around his wrist."
+    },
+    {
+     "who": "大叔",
+     "tag": "happy",
+     "text": "跟繩子一樣大，就是這雙！",
+     "en": "These are just as big as my string. I'll take this pair!"
+    },
+    {
+     "who": "旁白",
+     "text": "他一穿。哎呀，好緊！",
+     "en": "He put them on. Ouch, so tight!"
+    },
+    {
+     "who": "旁白",
+     "text": "繩子說剛好，腳說好緊。要聽繩子的，還是聽腳的？",
+     "en": "The string said they fit. His feet said they were too tight. Should he listen to the string, or to his feet?"
+    }
+   ]
+  },
+  {
+   "scene": "同一個賣鞋的攤子。",
+   "act": "小男孩指著大叔的腳，說得很大聲。老闆娘一手拿著繩子貼在大叔的腳底，從腳跟比到腳尖，另一手張開手掌比「這麼寬」，笑得很開心。大叔坐在小凳子上，低頭看自己又寬又厚的腳，嘴巴張得好大，終於懂了。",
+   "lines": [
+    {
+     "who": "小男孩",
+     "tag": "excited",
+     "text": "聽腳的！因為鞋子是穿在腳上的。",
+     "en": "Your feet! Because shoes go on your feet."
+    },
+    {
+     "who": "老闆娘",
+     "tag": "laughing",
+     "text": "繩子只比了腳跟到腳尖，不知道你的腳很胖呀！",
+     "en": "The string only went from heel to toe. It doesn't know how chubby your feet are!"
+    }
+   ]
+  },
+  {
+   "scene": "同一個賣鞋的攤子。",
+   "act": "大叔坐在小凳子上，把兩隻腳直接穿進一雙大一號的新黑布鞋，站起來在地上踩一踩，鞋子不緊也不鬆。他兩手舉高，笑得很開心。那條繩子被放在攤子的桌角，沒有人理它。老闆娘拍手，小男孩比大拇指。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "大叔換一雙大一點的，直接穿上去。",
+     "en": "The man picked a bigger pair and put them straight on."
+    },
+    {
+     "who": "大叔",
+     "tag": "happy",
+     "text": "不緊也不鬆，就是這一雙！",
+     "en": "Not too tight, not too loose. This is the pair!"
+    }
+   ]
+  },
+  {
+   "scene": "市場外面回家的黃土小路，天氣很好。後面遠遠看得到賣鞋的攤子。",
+   "act": "大叔腳上穿著新黑布鞋，大步往前走，仰著頭哈哈大笑；他用那條繩子把兩隻破舊鞋綁在一起，提在手上晃。那條繩子就是原來比腳的那一條。後面攤子前，老闆娘和小男孩笑著跟他揮手。",
+   "lines": [
+    {
+     "who": "大叔",
+     "tag": "laughing",
+     "text": "哈！以後我只相信我的腳！",
+     "en": "Ha! From now on, I only trust my feet!"
+    },
+    {
+     "who": "小男孩",
+     "text": "那繩子呢？",
+     "en": "What about the string?"
+    },
+    {
+     "who": "大叔",
+     "text": "拿來綁舊鞋，提回家！",
+     "en": "I'll tie up my old shoes with it and carry them home!"
+    },
+    {
+     "who": "旁白",
+     "text": "大叔穿著新鞋回家了。",
+     "en": "And the man walked home in his new shoes."
+    }
+   ]
+  }
+ ]
+}
