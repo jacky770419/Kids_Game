@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "為",
-   "where": "第3頁『為什麼』，第4頁『因為』，第5頁『為什麼』，第6頁『因為』",
+   "where": "第3頁『為什麼』，第4頁『因為』，第5頁『為什麼』",
    "read": "wèi"
   },
   {
@@ -40,13 +40,18 @@
   },
   {
    "char": "沒",
-   "where": "第2頁『沒有主人』『沒有人摘』，第4頁『沒吃』，第5頁『沒看到』『沒有果核』『沒有小鳥』",
+   "where": "第2頁『沒有主人』『沒有人摘』，第4頁『沒吃』，第5頁『沒看到』『沒有吃剩的籽』『沒有小鳥』",
    "read": "méi"
   },
   {
-   "char": "核",
-   "where": "第5頁『果核』",
-   "read": "hé"
+   "char": "得",
+   "where": "第5頁『看得到』",
+   "read": "de"
+  },
+  {
+   "char": "會",
+   "where": "第6頁『最會找』",
+   "read": "huì"
   },
   {
    "char": "吐",
@@ -55,7 +60,7 @@
   },
   {
    "char": "摘",
-   "where": "第2頁『就能摘』『沒有人摘』『快來摘』，第3頁『不去摘』，第4頁『摘光』，第8頁『剛摘的』",
+   "where": "第2頁『就能摘』『沒有人摘』『快來摘』，第3頁『不去摘』，第4頁『摘光』",
    "read": "zhāi"
   }
  ],
@@ -66,13 +71,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "很久以前，有個七歲的男孩，叫王戎。",
+     "text": "很久以前，有個七歲男孩叫王戎。",
      "en": "Long ago in China, there lived a seven-year-old boy named Wang Rong."
     },
     {
      "who": "旁白",
-     "text": "他和朋友阿力、小芬走在大路上。",
-     "en": "One day, he was walking down the big road with his friends, Li and Fen."
+     "text": "他和阿力、小芬走在大路上。",
+     "en": "One day, he was walking along a busy road with his friends, Li and Fen."
     },
     {
      "who": "旁白",
@@ -82,23 +87,23 @@
    ]
   },
   {
-   "scene": "大路邊。一棵野李樹就立在路旁的草地上，四周沒有圍牆也沒有籬笆；樹不高，樹枝被一串一串紫紅色的李子壓得彎下來，垂到孩子肩膀的高度；樹下的草地上什麼都沒有。大路上仍然有行人走過，沒有人停下來摘，也沒有人看那棵樹。",
+   "scene": "大路邊。一棵野李樹就立在路旁的草地上，四周沒有圍牆也沒有籬笆；樹不高，樹枝被一串一串紫紅色的李子壓得彎下來，垂到孩子肩膀的高度；樹下的草地上什麼都沒有。大路上有好幾個行人正從樹旁邊走過（挑擔子的人、牽牛的人），沒有人停下來摘，也沒有人看那棵樹。",
    "act": "阿力眼睛發亮，一手指著李樹，一手招呼朋友，已經跨出一大步；小芬開心地拍手；王戎站在後面，歪著頭看樹。",
    "lines": [
     {
      "who": "旁白",
-     "text": "路邊有一棵野李樹，沒有主人。",
+     "text": "路邊有一棵沒有主人的李樹。",
      "en": "By the side of the road stood a wild plum tree. It didn't belong to anyone."
     },
     {
      "who": "旁白",
-     "text": "李子多到把樹枝壓彎了，一伸手就能摘。",
+     "text": "李子把樹枝壓彎了，一伸手就能摘。",
      "en": "It had so many plums that the branches bent down low. You could just reach out and pick one."
     },
     {
      "who": "旁白",
-     "text": "可是，沒有人摘。",
-     "en": "But nobody had picked any."
+     "text": "好多人走過，卻沒有人摘。",
+     "en": "Lots of people walked by, but nobody picked any."
     },
     {
      "who": "旁白",
@@ -119,7 +124,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "阿力和小芬跑過去，王戎卻站著不動。",
+     "text": "阿力和小芬跑過去，王戎卻不動。",
      "en": "Li and Fen ran over to the tree, but Wang Rong stayed right where he was."
     },
     {
@@ -129,7 +134,7 @@
     },
     {
      "who": "旁白",
-     "text": "你猜一猜，王戎為什麼不去摘呢？",
+     "text": "你猜，王戎為什麼不去摘呢？",
      "en": "Can you guess why Wang Rong didn't go and pick any?"
     }
    ]
@@ -161,40 +166,45 @@
     },
     {
      "who": "王戎",
-     "text": "樹上這麼多，所以一定不好吃。",
-     "en": "But the tree is still full. So they must taste bad."
+     "text": "樹上這麼多，所以我猜不好吃。",
+     "en": "But the tree is still full. So I think they taste bad."
     }
    ]
   },
   {
-   "scene": "野李樹下。樹下的草地上一顆果核也沒有；李樹的樹枝上一隻小鳥也沒有，遠處另一棵綠樹上停著幾隻麻雀。",
-   "act": "小芬一手插腰，歪著頭說出自己的想法。王戎蹲下來，一手指著樹下什麼都沒有的草地，另一手往上指著沒有小鳥的樹枝。阿力手裡拿著一顆剛摘下來的紫紅色李子，湊過來看。",
+   "scene": "野李樹下，樹就緊貼著大路邊，背景看得到大路上走過的行人。樹下的草地上一顆吃剩的李子籽也沒有；李樹的樹枝上一隻小鳥也沒有，遠處另一棵綠樹上停著幾隻麻雀。",
+   "act": "小芬一手插腰，歪著頭說出自己的想法。王戎先伸手比一比身後緊貼著樹的大路和路上的行人，再蹲下來，一手指著樹下什麼都沒有的草地，另一手往上指著沒有小鳥的樹枝。阿力手裡拿著一顆剛摘下來的紫紅色李子，湊過來看。",
    "lines": [
     {
      "who": "小芬",
-     "text": "說不定，是大家沒看到呀。",
+     "text": "說不定是大家沒看到。",
      "en": "Maybe nobody saw them."
     },
     {
-     "who": "旁白",
-     "text": "王戎指著樹下：沒有果核，也沒有小鳥。",
-     "en": "Wang Rong pointed under the tree. There were no plum pits on the ground, and no birds either."
+     "who": "王戎",
+     "text": "樹就在大路邊，大家一定看得到。",
+     "en": "The tree is right by the road. Everyone can see it."
+    },
+    {
+     "who": "王戎",
+     "text": "樹下沒有吃剩的籽，也沒有小鳥。",
+     "en": "And look. There are no plum pits under the tree, and no birds either."
     },
     {
      "who": "旁白",
-     "text": "你猜，這又是為什麼呢？",
-     "en": "Can you guess why that was?"
+     "text": "你猜，小鳥為什麼不來呢？",
+     "en": "Can you guess why the birds stayed away?"
     }
    ]
   },
   {
    "scene": "野李樹下。",
-   "act": "上半：王戎站起來，攤開雙手說明。下半：阿力不服氣，把手上的李子舉到嘴邊咬了一小口，馬上整張臉皺成一團，眼睛瞇成一條線，舌頭伸出來，那一小口李子吐在手心裡（沒有吞下去）；小芬嚇一跳，兩手遮著嘴巴。",
+   "act": "上半：王戎站起來，一手指著遠處那棵停著麻雀的綠樹，一手指著沒有小鳥的李樹，認真地說明。下半：阿力不服氣，把手上的李子舉到嘴邊咬了一小口，馬上整張臉皺成一團，眼睛瞇成一條線，舌頭伸出來，那一小口李子吐在手心裡（沒有吞下去）；小芬嚇一跳，兩手遮著嘴巴。",
    "lines": [
     {
      "who": "王戎",
-     "text": "因為人不吃，連小鳥也不吃，所以一定很苦。",
-     "en": "Because people don't eat them, and even the birds don't eat them. So they must be very bitter."
+     "text": "小鳥最會找果子，連小鳥都不吃，所以一定很苦。",
+     "en": "Birds are great at finding fruit. But even the birds won't eat these. So they must be very bitter."
     },
     {
      "who": "阿力",
@@ -231,7 +241,7 @@
     },
     {
      "who": "旁白",
-     "text": "路口，有位阿婆在賣李子。",
+     "text": "路口，阿婆在賣李子。",
      "en": "At the corner, an old woman was selling plums."
     }
    ]
@@ -243,8 +253,8 @@
     {
      "who": "阿婆",
      "tag": "happy",
-     "text": "剛摘的甜李子，快賣光囉！",
-     "en": "Sweet plums, picked this morning! They're almost gone!"
+     "text": "甜李子，快賣光囉！",
+     "en": "Sweet plums! They're almost gone!"
     },
     {
      "who": "阿力",

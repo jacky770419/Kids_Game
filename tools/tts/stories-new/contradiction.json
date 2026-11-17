@@ -30,7 +30,7 @@
   },
   {
    "char": "什",
-   "where": "第1、2、3頁『什麼都刺不穿』『什麼都刺得穿』",
+   "where": "第1、2、3頁『什麼都刺不穿』『什麼都刺得穿』，第6頁『什麼都』三個字",
    "read": "shén"
   },
   {
@@ -40,13 +40,18 @@
   },
   {
    "char": "會",
-   "where": "第3頁『會怎麼樣』『矛會刺穿盾嗎』",
+   "where": "第3頁『會怎麼樣』『矛會刺穿盾嗎』，第6頁『不會打架』",
    "read": "huì"
   },
   {
    "char": "沒",
    "where": "第6頁『沒說錯』",
    "read": "méi"
+  },
+  {
+   "char": "只",
+   "where": "第6頁『只說一句』",
+   "read": "zhǐ"
   }
  ],
  "pages": [
@@ -56,7 +61,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "市場上，一位叔叔大聲叫賣。",
+     "text": "市場上，有位叔叔在叫賣。",
      "en": "At the market, a man was shouting at the top of his voice."
     },
     {
@@ -79,7 +84,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "一位奶奶和一個小男孩，都停下來看。",
+     "text": "奶奶和小男孩停下來看。",
      "en": "An old woman and a little boy stopped to look."
     },
     {
@@ -118,13 +123,13 @@
     },
     {
      "who": "旁白",
-     "text": "小男孩想了又想。",
+     "text": "小男孩想了想。",
      "en": "The little boy thought and thought."
     },
     {
      "who": "小男孩",
      "tag": "curious",
-     "text": "叔叔，用你的矛，刺你的盾，會怎麼樣呢？",
+     "text": "叔叔，用你的矛，刺你的盾，會怎麼樣？",
      "en": "Mister, what would happen if your spear poked your shield?"
     },
     {
@@ -162,8 +167,8 @@
     },
     {
      "who": "旁白",
-     "text": "所以，兩句話不可能都是真的。",
-     "en": "So the two things he said can't both be true."
+     "text": "所以，兩句話在打架，一定有一句錯！",
+     "en": "So the two things he said were fighting. One of them had to be wrong!"
     }
    ]
   },
@@ -173,7 +178,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "叔叔抓了抓頭，自己也笑了。",
+     "text": "叔叔抓著頭，也笑了。",
      "en": "The man scratched his head, and then he laughed too."
     },
     {
@@ -184,32 +189,42 @@
     },
     {
      "who": "旁白",
-     "text": "那麼，叔叔要怎麼說才對呢？",
+     "text": "叔叔要怎麼說才對呢？",
      "en": "So, what should he say instead?"
     }
    ]
   },
   {
    "scene": "同一個攤子前面。",
-   "act": "叔叔一手扶著盾、一手握著朝天的矛，站得直直的，笑得很老實，不再挺胸吹牛。小男孩開心地拍手，頭上一個想像泡泡：盾和矛手牽手一起笑，沒有打架。奶奶在旁邊笑著點頭、豎起大拇指。",
+   "act": "叔叔一手扶著盾、一手握著朝天的矛，站得直直的，笑得很老實，不再挺胸吹牛。小男孩開心地拍手，頭上一個想像泡泡：盾和矛手牽手一起笑，沒有打架。奶奶在旁邊笑著點頭、豎起大拇指。下一格：小男孩伸出一根手指，指著盾，表示只說其中一句也可以。",
    "lines": [
     {
      "who": "叔叔",
      "tag": "happy",
-     "text": "我的盾很堅固，我的矛很尖，都很好用！",
-     "en": "My shield is very strong, and my spear is very sharp. They are both good to use!"
+     "text": "我的盾很堅固，我的矛很尖！",
+     "en": "My shield is very strong, and my spear is very sharp!"
     },
     {
      "who": "小男孩",
      "tag": "happy",
-     "text": "這樣，刺穿了，沒說錯；刺不穿，也沒說錯。",
-     "en": "Now if it goes through, you're still right. If it doesn't, you're still right!"
+     "text": "「什麼都」三個字不見了！",
+     "en": "The words 'anything' and 'nothing' are gone!"
+    },
+    {
+     "who": "小男孩",
+     "text": "刺穿、刺不穿，都沒說錯。",
+     "en": "Now, if it goes through or not, you're still right."
     },
     {
      "who": "奶奶",
      "tag": "happy",
-     "text": "所以，兩句話都是真的！",
-     "en": "So both things are true!"
+     "text": "所以，兩句話可以都是真的，不會打架了！",
+     "en": "So now both things can be true. They don't fight anymore!"
+    },
+    {
+     "who": "小男孩",
+     "text": "只說一句，也不會打架！",
+     "en": "Or you could say just one of them. That works too!"
     }
    ]
   },
@@ -219,13 +234,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "大家都笑了，圍過來買東西。",
-     "en": "Everyone laughed and crowded around to buy things."
+     "text": "大家圍過來買東西。",
+     "en": "Everyone crowded around to buy things."
     },
     {
      "who": "奶奶",
      "tag": "happy",
-     "text": "這樣說，我就想買了。",
+     "text": "這樣說，我想買了。",
      "en": "Now that's something I'd like to buy."
     },
     {
@@ -242,14 +257,14 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "說的話，自己跟自己打架，就叫做矛盾。",
-     "en": "When your own words fight each other, that is called a contradiction."
+     "text": "說的話，自己跟自己打架，就叫矛盾。",
+     "en": "When your own words fight each other, that is called a contradiction. And in Chinese, the word for it is spear-shield!"
     },
     {
      "who": "叔叔",
      "tag": "laughing",
      "text": "矛盾，矛盾，我記住啦！",
-     "en": "A contradiction! I'll remember that!"
+     "en": "Spear-shield! I'll remember that!"
     }
    ]
   }

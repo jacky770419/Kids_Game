@@ -30,12 +30,12 @@
   },
   {
    "char": "倒",
-   "where": "第4頁『倒水』『倒進』『所以倒水』，第5頁『倒進去』，第6頁『倒一桶』，第7頁『倒水』",
+   "where": "第4頁『倒水進去』『倒水？』『所以倒水』，第5頁『倒進去』『一直倒水』，第6頁『倒一桶』兩次，第7頁『我們倒水』",
    "read": "dào"
   },
   {
    "char": "為",
-   "where": "第4頁『因為球會浮』，第5頁『因為』",
+   "where": "第4頁『因為球會浮』，第6頁『因為球浮在水上』",
    "read": "wèi"
   },
   {
@@ -50,7 +50,7 @@
   },
   {
    "char": "會",
-   "where": "第4頁『石頭會壓住』『球會浮』『會浮的球會怎麼樣』，第8頁『球會浮』",
+   "where": "第4頁『石頭會壓住』『球會浮』，第5頁『球會怎麼樣』，第8頁『球會浮』",
    "read": "huì"
   },
   {
@@ -159,11 +159,6 @@
      "who": "文彥博",
      "text": "石頭會壓住球。因為球會浮，所以倒水。",
      "en": "Stones would land on the ball and hold it down. The ball floats, so we'll use water."
-    },
-    {
-     "who": "旁白",
-     "text": "你猜，水倒進樹洞，會浮的球會怎麼樣呢？",
-     "en": "Remember, the ball floats. Can you guess what would happen when they poured water into the hole?"
     }
    ]
   },
@@ -173,30 +168,35 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "一桶水倒進去，球浮起來了！",
-     "en": "In went one bucket of water, and the ball floated up!"
-    },
-    {
-     "who": "文彥博",
-     "text": "因為球浮在水上，水變高，球就跟著變高。",
-     "en": "Because the ball floats on the water, when the water rises, the ball rises too."
+     "text": "一桶水倒進去，球浮起來一點。",
+     "en": "In went one bucket of water, and the ball floated up a little."
     },
     {
      "who": "阿勇",
      "tag": "worried",
      "text": "可是離洞口好遠！",
      "en": "But it's still far from the top!"
+    },
+    {
+     "who": "旁白",
+     "text": "你猜，再一直倒水，球會怎麼樣呢？",
+     "en": "Can you guess what would happen to the ball if they kept pouring in water?"
     }
    ]
   },
   {
    "scene": "院子裡，從牆邊的矮水缸到老槐樹之間。",
-   "act": "三個孩子輪流提水：阿勇提著小木桶跑向老槐樹，水灑出來一點；小蘭在矮水缸旁邊用長柄木勺舀水，等著下一趟；文彥博站在樹前，把水倒進樹洞。畫面上方三個並排的樹幹剖面小圖：水面一格比一格高，紅球也一格比一格高，第三格的紅球已經快到洞口。小蘭踮著腳，指著洞口笑。",
+   "act": "三個孩子輪流提水：阿勇提著小木桶跑向老槐樹，水灑出來一點；小蘭在矮水缸旁邊用長柄木勺舀水，等著下一趟；文彥博站在樹前，一邊把水倒進樹洞，一邊說明（一隻手平平地往上抬，比水面變高的樣子）。畫面上方三個並排的樹幹剖面小圖：水面一格比一格高，紅球也一格比一格高，第三格的紅球已經快到洞口。小蘭踮著腳，指著洞口笑。",
    "lines": [
     {
+     "who": "文彥博",
+     "text": "因為球浮在水上，水越高，球就越高！",
+     "en": "Because the ball floats on the water, the higher the water goes, the higher the ball goes!"
+    },
+    {
      "who": "旁白",
-     "text": "一桶不夠。三個人輪流去水缸提水。",
-     "en": "One bucket was not enough. So the three friends took turns fetching water from the big water jar."
+     "text": "三個人輪流去水缸提水。",
+     "en": "So the three friends took turns fetching water from the big water jar."
     },
     {
      "who": "旁白",

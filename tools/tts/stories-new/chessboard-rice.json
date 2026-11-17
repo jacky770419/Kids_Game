@@ -40,7 +40,7 @@
   },
   {
    "char": "會",
-   "where": "第9頁『怎麼會』，第12頁『會變成』",
+   "where": "第12頁『會變成』",
    "read": "huì"
   },
   {
@@ -50,7 +50,7 @@
   },
   {
    "char": "把",
-   "where": "第5、6頁『一小把』，第5、12頁『把米』",
+   "where": "第5、6頁『一小把』，第9頁『把全國』，第12頁『把米』",
    "read": "bǎ"
   },
   {
@@ -302,20 +302,20 @@
     },
     {
      "who": "旁白",
-     "text": "第一格才一粒米。你猜，怎麼會變這麼多呢？",
-     "en": "It all started with just one grain. Can you guess how it grew into so much?"
+     "text": "你猜，剩下的一半，把全國的米都搬來，夠不夠放呢？",
+     "en": "What about the other half? If they brought all the rice in the kingdom, would that be enough?"
     }
    ]
   },
   {
    "scene": "王宮大廳，米山前面。",
-   "act": "老爺爺站起來，笑著伸出兩隻手說明；他頭上三個並排的想像泡泡：第一個泡泡，一粒米變成兩粒米；第二個泡泡，一輛米車變成兩輛米車；第三個泡泡，一間倉庫變成兩間倉庫。國王和大臣並排坐在地上，仰頭看著泡泡，兩個人的嘴巴都張得圓圓的。",
+   "act": "老爺爺站起來，先笑著搖搖頭，再伸出兩隻手說明；他頭上三個並排的想像泡泡：第一個泡泡，一粒米變成兩粒米；第二個泡泡，一輛米車變成兩輛米車；第三個泡泡，一間倉庫變成兩間倉庫。國王和大臣並排坐在地上，仰頭看著泡泡，兩個人的嘴巴都張得圓圓的。",
    "lines": [
     {
      "who": "老爺爺",
      "tag": "gentle",
-     "text": "因為每一格都加倍呀。",
-     "en": "Because every square doubles."
+     "text": "不夠呀。因為每一格都加倍。",
+     "en": "No, it would not. Because every square doubles."
     },
     {
      "who": "老爺爺",
@@ -329,8 +329,8 @@
     },
     {
      "who": "旁白",
-     "text": "所以後面的格子，全國的米都不夠放。",
-     "en": "So for the squares that were left, all the rice in the kingdom would not be enough."
+     "text": "後面四排都要加倍，全國的米也不夠放。",
+     "en": "And the last four rows all double too. Even all the rice in the kingdom would not be enough."
     }
    ]
   },

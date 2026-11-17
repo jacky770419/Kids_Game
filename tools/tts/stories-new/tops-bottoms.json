@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "種",
-   "where": "第2頁『種菜』，第3頁『一起種』，第4頁『種紅蘿蔔』，第6頁『種什麼』，第7頁『種好吃的』『種稻子』，第10頁『一起種』，第11頁『種的是花生』『自己種的』",
+   "where": "第2頁『種菜』，第3頁『一起種』，第4頁『種紅蘿蔔』，第6頁『種紅蘿蔔』『種稻子』，第7頁『種稻子』『種紅蘿蔔』，第10頁『誰要種』『種好了』，第11頁『一起種』『種花生』，第12頁『自己種的』",
    "read": "zhòng"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "char": "埋",
-   "where": "第1頁『埋在土裡』，第5頁『埋在土裡』，第11頁『埋在土裡』",
+   "where": "第1頁『埋在土裡』，第5頁『埋在土裡』，第12頁『埋在土裡』",
    "read": "mái"
   },
   {
@@ -60,13 +60,18 @@
   },
   {
    "char": "分",
-   "where": "第2頁『分給我』，第9頁『照你選的分』，第10頁『不用分』",
+   "where": "第2頁『分給我』，第9頁『照你選的分』，第11頁『不用分』",
    "read": "fēn"
   },
   {
    "char": "什",
-   "where": "第4頁『什麼』，第6頁『什麼』，第8頁『什麼』",
+   "where": "第4頁『什麼』，第8頁『什麼』",
    "read": "shén"
+  },
+  {
+   "char": "誰",
+   "where": "第10頁『誰要種』",
+   "read": "shéi"
   }
  ],
  "pages": [
@@ -76,8 +81,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "奶奶有一塊小菜園，阿福和小美來幫忙。",
-     "en": "Grandma had a little vegetable garden, and Afu and Mei came to help."
+     "text": "奶奶的菜園很小，阿福和小美來幫忙。",
+     "en": "Grandma's vegetable garden was small, and Afu and Mei came to help."
     },
     {
      "who": "奶奶",
@@ -102,18 +107,18 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "菜園太小了。隔壁大野狼的田很大，都是雜草。",
-     "en": "But the garden was too small. Next door, the wolf had a big field, and it was full of weeds."
+     "text": "隔壁大野狼的田很大，都是雜草。",
+     "en": "Next door, the wolf had a big field, and it was full of weeds."
     },
     {
      "who": "阿福",
-     "text": "大野狼，你的田借我們種菜，好嗎？",
+     "text": "大野狼，田借我們種菜，好嗎？",
      "en": "Wolf, may we plant vegetables in your field?"
     },
     {
      "who": "大野狼",
      "tag": "sleepy",
-     "text": "可以呀。可是收的菜，要分給我。",
+     "text": "可以呀。收的菜要分給我。",
      "en": "Sure. But when the food is ready, I get a share."
     }
    ]
@@ -158,8 +163,8 @@
     },
     {
      "who": "旁白",
-     "text": "他們每天澆水、拔草。葉子冒出來了。",
-     "en": "Every day they watered and pulled weeds. Soon leaves popped up."
+     "text": "他們每天澆水。葉子冒出來了。",
+     "en": "Every day they watered the field. Soon leaves popped up."
     },
     {
      "who": "大野狼",
@@ -185,12 +190,12 @@
     },
     {
      "who": "旁白",
-     "text": "阿福和小美從土裡拔出好多紅蘿蔔。",
-     "en": "Afu and Mei pulled lots and lots of carrots out of the dirt."
+     "text": "阿福和小美拔出好多紅蘿蔔。",
+     "en": "Afu and Mei pulled up lots and lots of carrots."
     },
     {
      "who": "小美",
-     "text": "因為紅蘿蔔埋在土裡，所以選上面的，都是葉子。",
+     "text": "因為紅蘿蔔埋在土裡，所以上面都是葉子。",
      "en": "Because carrots hide down in the dirt, the tops are nothing but leaves."
     },
     {
@@ -203,7 +208,7 @@
   },
   {
    "scene": "大野狼的田：一大塊四方形的田，田邊有一棵大樹，樹下鋪著一張草蓆；隔著一道矮竹籬笆，旁邊就是奶奶的小菜園。田裡的紅蘿蔔都收完了，只剩翻過的土。",
-   "act": "大野狼把葉子丟在腳邊，兩隻腳輪流跳、雙手握拳，大尾巴直直翹起來，耳朵往後倒，樣子很好笑。接著他一手指著地（下面），一手拍自己的胸口。阿福再一次伸出手跟他擊掌約定；小美站在阿福旁邊，手指點著下巴，已經在想這次要種什麼。",
+   "act": "大野狼把葉子丟在腳邊，兩隻腳輪流跳、雙手握拳，大尾巴直直翹起來，耳朵往後倒，樣子很好笑。接著他一手指著地（下面），一手拍自己的胸口。阿福再一次伸出手跟他擊掌約定；小美站在阿福旁邊，手指點著下巴在想，頭上一個想像泡泡：左邊一根紅蘿蔔、右邊一棵稻子，中間一個大問號。",
    "lines": [
     {
      "who": "旁白",
@@ -223,26 +228,25 @@
     },
     {
      "who": "旁白",
-     "text": "這次，要種什麼才好呢？",
-     "en": "What should they plant this time?"
+     "text": "這次，要種紅蘿蔔，或是種稻子呢？",
+     "en": "What should they plant this time, carrots or rice?"
     }
    ]
   },
   {
    "scene": "大野狼的田：一大塊四方形的田，田邊有一棵大樹，樹下鋪著一張草蓆；隔著一道矮竹籬笆，旁邊就是奶奶的小菜園。田裡放了水，變成淺淺的水田，水面映著藍天。",
-   "act": "小美頭上一個想像泡泡：一顆高麗菜和一棵稻子並排，兩個都是土上面好吃的部分（高麗菜的菜球、稻子的米粒）旁邊畫一個笑臉，土裡的根旁邊畫一個問號；阿福指著稻子那一邊。阿福和小美捲起褲管、光著腳站在淺淺的水田裡，彎腰把綠色的小稻苗一棵一棵插進泥巴，已經插好整齊的三排；兩個人臉上沾到一點泥巴，笑得很開心。大野狼又躺回樹下的草蓆，草帽蓋著臉睡覺。",
+   "act": "小美頭上一個想像泡泡：一棵稻子，最上面的米粒旁邊畫一個笑臉，泥巴裡的根旁邊畫著大野狼的臉；阿福頭上一個想像泡泡：一根紅蘿蔔，土裡橘色的那一段旁邊畫著大野狼的臉，阿福搖搖頭。阿福和小美捲起褲管、光著腳站在淺淺的水田裡，彎腰把綠色的小稻苗一棵一棵插進泥巴，已經插好整齊的三排；兩個人臉上沾到一點泥巴，笑得很開心。大野狼又躺回樹下的草蓆，草帽蓋著臉睡覺。",
    "lines": [
     {
      "who": "小美",
      "tag": "excited",
-     "text": "因為他要下面的，所以種好吃的在上面的菜！",
-     "en": "Because he wants the bottoms, we should plant something that's yummy on top!"
+     "text": "因為他要下面的，所以種稻子！米在最上面！",
+     "en": "Because he wants the bottoms, let's plant rice! The rice is way up at the top!"
     },
     {
      "who": "阿福",
-     "tag": "excited",
-     "text": "高麗菜也可以，我們種稻子！米在最上面！",
-     "en": "Cabbage would work too. Let's plant rice! The rice is way up at the top!"
+     "text": "種紅蘿蔔的話，就都被他拿走了。",
+     "en": "If we planted carrots again, he would get them all."
     },
     {
      "who": "旁白",
@@ -267,7 +271,7 @@
     },
     {
      "who": "旁白",
-     "text": "大野狼拿到下面的，是一堆根。",
+     "text": "大野狼拿到下面的一堆根。",
      "en": "The wolf got the bottoms: a pile of muddy roots."
     },
     {
@@ -307,20 +311,48 @@
    ]
   },
   {
-   "scene": "奶奶的小菜園旁邊，竹籬笆邊擺著一張小木桌和幾張小板凳。",
-   "act": "奶奶端著托盤走過來，托盤上有幾碗白飯和一盤切塊的橘色紅蘿蔔，她笑咪咪地把一碗飯遞給大野狼。大野狼屁股和尾巴上有乾掉的泥巴，坐在小板凳上，低著頭、耳朵垂下來、抓著後腦勺，不好意思；阿福和小美坐在他兩邊，一起吃飯。",
+   "scene": "大野狼的田：一大塊四方形的田，田邊有一棵大樹，樹下鋪著一張草蓆；隔著一道矮竹籬笆，旁邊就是奶奶的小菜園。收完稻子的田，地上是濕濕的泥巴。",
+   "act": "大野狼從泥巴裡站起來（屁股和尾巴都是泥巴），一手指天、一手指地，表示上面下面都要；小美歪著頭，兩手一攤，指指空空的田，再指指他。大野狼又豎起一根手指，好像想到新點子；阿福撿起一把稻根，指著問他。最後大野狼低下頭、耳朵垂下來、抓著後腦勺，不好意思地笑。遠遠的竹籬笆邊，奶奶端著托盤走過來。",
    "lines": [
     {
      "who": "大野狼",
-     "tag": "shy",
-     "text": "因為我都在睡覺，所以不知道好吃的在哪裡。",
-     "en": "I was asleep the whole time, so I never learned where the yummy part was."
+     "tag": "excited",
+     "text": "下次，上面下面我都要！",
+     "en": "Next time, I want the tops and the bottoms too!"
     },
+    {
+     "who": "小美",
+     "tag": "gentle",
+     "text": "全部歸你，那誰要種呢？",
+     "en": "If you get everything, who is going to do the planting?"
+    },
+    {
+     "who": "大野狼",
+     "text": "那，等種好了我再選！",
+     "en": "Then I'll wait till it's all grown, and then I'll choose!"
+    },
+    {
+     "who": "阿福",
+     "text": "可是，你知道好吃的在哪裡嗎？",
+     "en": "But do you know where the yummy part is?"
+    },
+    {
+     "who": "大野狼",
+     "tag": "shy",
+     "text": "不知道。因為我都在睡覺呀。",
+     "en": "Nope. I was asleep the whole time!"
+    }
+   ]
+  },
+  {
+   "scene": "畫面分兩格。左格：奶奶的小菜園旁邊，竹籬笆邊擺著一張小木桌和幾張小板凳。右格：大野狼的田（田邊的大樹、樹下的草蓆、矮竹籬笆都跟前面一樣），田裡種了好幾排花生：土上面是矮矮的一叢一叢綠色圓葉子、開著小黃花，花生埋在土裡看不到。",
+   "act": "左格：奶奶端著托盤，托盤上有幾碗白飯和一盤切塊的橘色紅蘿蔔，她笑咪咪地把一碗飯遞給大野狼；大野狼屁股和尾巴上有乾掉的泥巴，坐在小板凳上，兩手接過碗，不好意思地笑；阿福和小美坐在他兩邊，一起吃飯。右格：大野狼第一次下田：戴著草帽、脖子上掛一條毛巾，提著澆水壺澆水，滿頭大汗、舌頭吐出來，可是笑得很開心；阿福和小美在旁邊拔草；奶奶站在竹籬笆邊笑咪咪地看。",
+   "lines": [
     {
      "who": "奶奶",
      "tag": "gentle",
-     "text": "下次不用選了。",
-     "en": "Next time, you don't have to choose."
+     "text": "來吃飯吧。下次不用選了。",
+     "en": "Come and eat. Next time, you don't have to choose."
     },
     {
      "who": "奶奶",
@@ -329,43 +361,27 @@
     },
     {
      "who": "旁白",
-     "text": "奶奶請大野狼吃白飯和紅蘿蔔。",
-     "en": "Grandma gave the wolf a bowl of rice with carrots."
-    }
-   ]
-  },
-  {
-   "scene": "大野狼的田：一大塊四方形的田，田邊有一棵大樹，樹下鋪著一張草蓆；隔著一道矮竹籬笆，旁邊就是奶奶的小菜園。田裡種了好幾排花生：土上面是矮矮的一叢一叢綠色圓葉子、開著小黃花，土裡面看不到的地方埋著花生。",
-   "act": "大野狼第一次下田：戴著草帽、脖子上掛一條毛巾，提著澆水壺澆水，滿頭大汗、舌頭吐出來，可是笑得很開心。阿福在旁邊拔草；小美指著花生的葉子問他，大野狼驕傲地用手指著地上的土，頭上一個想像泡泡：土裡的根上掛著一顆一顆淺咖啡色的帶殼花生。奶奶站在竹籬笆邊笑咪咪地看。",
-   "lines": [
-    {
-     "who": "旁白",
-     "text": "後來，大野狼第一次下田，種的是花生。",
-     "en": "After that, the wolf worked in the field for the very first time. They planted peanuts."
+     "text": "後來，大野狼也下田，一起種花生。",
+     "en": "After that, the wolf worked in the field too, and they all planted peanuts."
     },
     {
      "who": "大野狼",
      "tag": "happy",
-     "text": "澆水，拔草，好累呀！可是真好玩！",
-     "en": "Water, weed, water, weed. I'm so tired! But this is fun!"
-    },
-    {
-     "who": "小美",
-     "text": "大野狼，花生好吃的地方在哪裡？",
-     "en": "Wolf, where is the yummy part of a peanut plant?"
-    },
-    {
-     "who": "大野狼",
-     "tag": "proud",
-     "text": "埋在土裡！我自己種的，我知道！",
-     "en": "Down in the dirt! I planted them myself, so I know!"
+     "text": "澆水好累呀！可是真好玩！",
+     "en": "Watering is hard work! But this is fun!"
     }
    ]
   },
   {
-   "scene": "大野狼的田邊，大樹下，太陽快下山，天空是橘色的。田裡的花生都拔起來了，一株一株倒放在田邊，根上掛著一串帶殼的花生。草蓆上放著一大盆煮好的帶殼花生，冒著熱氣。",
-   "act": "左邊：大野狼和阿福一起抓著一株花生的葉子往上拔，拔出來的根上掛滿帶殼的花生，大野狼驚喜地張大嘴巴。右邊：奶奶、阿福、小美和大野狼圍坐在草蓆上剝花生吃，大野狼兩手都是花生，嘴邊黏著花生殼屑，笑得眼睛瞇起來；奶奶笑咪咪地看著大家。",
+   "scene": "大野狼的田邊，大樹下，太陽快下山，天空是橘色的。田裡的花生拔起來了，一株一株倒放在田邊，每一株下面都掛著一串帶殼的花生。草蓆上放著一大盆煮好的帶殼花生，冒著熱氣。",
+   "act": "左邊：大野狼驕傲地一手指著地上的土、一手拍胸口；接著他和阿福一起抓著一株花生的葉子往上拔，拔出來的花生株下面掛滿淺咖啡色的帶殼花生（花生是小黃花謝了以後，細細的梗鑽進土裡，在梗的尖端結出來的，不是長在根上；請畫成花生掛在一條一條細梗的尖端），大野狼驚喜地張大嘴巴，小美在旁邊拍手。右邊：奶奶、阿福、小美和大野狼圍坐在草蓆上剝花生吃，大野狼兩手都是花生，嘴邊黏著花生殼屑，笑得眼睛瞇起來；奶奶笑咪咪地看著大家。",
    "lines": [
+    {
+     "who": "大野狼",
+     "tag": "proud",
+     "text": "花生埋在土裡！我自己種的，我知道！",
+     "en": "Peanuts hide down in the dirt! I planted them myself, so I know!"
+    },
     {
      "who": "旁白",
      "text": "收花生那天，大家一起拔，一起吃。",
@@ -375,7 +391,7 @@
      "who": "大野狼",
      "tag": "happy",
      "text": "上面下面，都是大家的！",
-     "en": "Tops and bottoms, it all belongs to all of us!"
+     "en": "Tops and bottoms, we share it all!"
     }
    ]
   }

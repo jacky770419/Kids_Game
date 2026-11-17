@@ -25,7 +25,7 @@
  "polyphones": [
   {
    "char": "只",
-   "where": "書名『只要第三樓』，第3頁『我只要三樓』『只要三樓』",
+   "where": "書名『只要第三樓』，第3頁『我只要三樓』",
    "read": "zhǐ"
   },
   {
@@ -45,13 +45,18 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『沒有一樓』，第6頁『沒有東西』",
+   "where": "第3頁『沒有一樓』",
    "read": "méi"
   },
   {
    "char": "哪",
    "where": "第3頁『放在哪裡』，第4頁『哪裡都不能放』",
    "read": "nǎ"
+  },
+  {
+   "char": "空",
+   "where": "第4頁『放在空中』",
+   "read": "kōng"
   },
   {
    "char": "間",
@@ -81,13 +86,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "有一位有錢的大叔，做什麼事都很急。",
-     "en": "Once there was a rich man who was always in a hurry."
+     "text": "有一位大叔，做什麼事都很急。",
+     "en": "Once there was a man who was always in a hurry."
     },
     {
      "who": "旁白",
-     "text": "他看到別人家三樓的窗戶好漂亮。",
-     "en": "One day he saw the third floor of a neighbor's house. It had the prettiest windows."
+     "text": "他看到別人家的三樓好漂亮。",
+     "en": "One day he saw the third floor of a neighbor's house. It was so pretty."
     },
     {
      "who": "大叔",
@@ -120,8 +125,8 @@
     {
      "who": "木匠師傅",
      "tag": "gentle",
-     "text": "等一等，現在蓋的是一樓。",
-     "en": "Not yet. We're building the first floor now."
+     "text": "等一等，先蓋一樓。",
+     "en": "Not yet. First floor first."
     }
    ]
   },
@@ -136,12 +141,6 @@
      "en": "No first floor! No second floor! I just want the third floor!"
     },
     {
-     "who": "木匠師傅",
-     "tag": "surprised",
-     "text": "咦？只要三樓？",
-     "en": "What? Just the third floor?"
-    },
-    {
      "who": "旁白",
      "text": "沒有一樓和二樓，三樓要放在哪裡呢？",
      "en": "With no first floor and no second floor, where could the third floor go?"
@@ -150,18 +149,13 @@
   },
   {
    "scene": "空地上，一樓的柱子旁邊。",
-   "act": "木匠師傅蹲下來，一手在下面、一手疊在上面，比出「一層撐著一層」的樣子，耐心地笑著說明。大叔兩手抓著帽子，滿頭問號，一手指著地面。小徒弟從腰上的小布袋掏出紅、黃、藍三塊積木，高高舉起來，笑得很開心。",
+   "act": "木匠師傅蹲在一樓的柱子旁邊，笑著搖搖手。大叔兩手抓著帽子，滿頭問號，先一手指著地面，接著一手高高指著天空；他頭上的想像泡泡：一間三樓孤零零地飄在半空中，下面什麼都沒有。小徒弟一手指著地面笑，接著從腰上的小布袋掏出紅、黃、藍三塊積木，高高舉起來，笑得很開心。",
    "lines": [
     {
      "who": "木匠師傅",
      "tag": "gentle",
      "text": "哪裡都不能放呀。",
      "en": "Nowhere at all, I'm afraid."
-    },
-    {
-     "who": "木匠師傅",
-     "text": "因為三樓靠二樓撐著，二樓靠一樓撐著。",
-     "en": "Because the second floor holds up the third, and the first floor holds up the second."
     },
     {
      "who": "大叔",
@@ -172,8 +166,19 @@
     {
      "who": "小徒弟",
      "tag": "laughing",
-     "text": "就變成一樓啦！看我的積木！",
-     "en": "Then it would be the first floor! Watch my blocks!"
+     "text": "就變成一樓啦！因為它在最下面呀。",
+     "en": "Then it would be the first floor, because it's at the very bottom!"
+    },
+    {
+     "who": "大叔",
+     "tag": "shouting",
+     "text": "那就放在空中！",
+     "en": "Then put it up in the air!"
+    },
+    {
+     "who": "小徒弟",
+     "text": "看我的積木！",
+     "en": "Watch my blocks!"
     }
    ]
   },
@@ -193,14 +198,14 @@
     },
     {
      "who": "旁白",
-     "text": "如果把下面兩塊抽走，上面那塊會怎麼樣呢？",
+     "text": "把下面兩塊抽走，上面那塊會怎麼樣呢？",
      "en": "If she pulls out the two blocks underneath, what will happen to the top one?"
     }
    ]
   },
   {
    "scene": "同一塊大木板。",
-   "act": "小徒弟兩手各拿著抽出來的紅色和黃色積木；藍色積木掉在木板上，歪倒在一邊，旁邊畫「咚」的小星星。大叔先是嚇一跳，接著一手從下往上比出一層、一層的樣子，一手拍著自己的圓肚子哈哈大笑，八字鬍翹得高高的；木匠師傅也笑了。",
+   "act": "小徒弟一手拿著抽出來的紅色和黃色積木，另一手指著掉下來的藍色積木：藍色積木現在直接貼著木板，在最下面（變成一樓了），旁邊畫「咚」的小星星。木匠師傅蹲在旁邊，一手在下面、一手疊在上面，比出「一層撐著一層」的樣子。大叔先是嚇一跳，接著一手從下往上比出一層、一層的樣子，一手拍著自己的圓肚子哈哈大笑，八字鬍翹得高高的。",
    "lines": [
     {
      "who": "旁白",
@@ -209,15 +214,21 @@
     },
     {
      "who": "小徒弟",
+     "tag": "laughing",
+     "text": "你看，它掉到最下面，變成一樓啦！",
+     "en": "Look! Now it's at the bottom, so it's the first floor!"
+    },
+    {
+     "who": "木匠師傅",
      "tag": "gentle",
-     "text": "因為下面沒有東西撐著，所以掉下來了。",
-     "en": "Because nothing was holding it up, it fell down."
+     "text": "因為三樓靠二樓撐著，二樓靠一樓撐著。",
+     "en": "That's because the second floor holds up the third, and the first floor holds up the second."
     },
     {
      "who": "大叔",
      "tag": "laughing",
-     "text": "哈！我懂了，要從下面一層，一層蓋！",
-     "en": "Ha! Now I get it. You have to build from the bottom, one floor at a time!"
+     "text": "哈！所以要從下面一層，一層蓋！",
+     "en": "Ha! So you have to build from the bottom, one floor at a time!"
     },
     {
      "who": "大叔",

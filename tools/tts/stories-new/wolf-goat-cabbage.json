@@ -35,13 +35,18 @@
   },
   {
    "char": "載",
-   "where": "書名『一次只能載一個』，第2頁『載我』『只能載一個』，第4頁『先載』『載大野狼』『要先載誰』，第5頁『先載』『載小羊』『沒載客人』，第6頁『載大野狼』，第7頁『把小羊載回』『載小羊』，第8頁『只能載一個』『載小羊』『載白菜』，第9頁『載白菜』『載小羊』，第10頁『沒載客人』『載小羊』，第12頁『只能載一個』",
+   "where": "書名『一次只能載一個』，第2頁『載我』『只能載一個』，第4頁『先載』『要先載誰』，第5頁『先載』『載小羊』，第6頁『要載大野狼』『載小羊』，第7頁『載小羊』『載大野狼回去』，第8頁『只能載一個』『載小羊』『載白菜』，第9頁『載白菜』『載小羊』，第10頁『載小羊』，第12頁『只能載一個』",
    "read": "zài"
   },
   {
    "char": "划",
-   "where": "第1頁『划船』，第5頁『划回』，第6頁『划走』，第10頁『划回』，第11頁『才划了』",
+   "where": "第5頁『划回』，第7頁『白划一趟』，第10頁『划回』，第11頁『才划』",
    "read": "huá"
+  },
+  {
+   "char": "空",
+   "where": "第5頁『空船』，第10頁『空船』",
+   "read": "kōng"
   },
   {
    "char": "為",
@@ -50,7 +55,7 @@
   },
   {
    "char": "弄",
-   "where": "第3頁『捉弄』，第7頁『捉弄』，第11頁『捉弄』",
+   "where": "第3頁『捉弄』，第4頁『捉弄』，第5頁『捉弄』，第6頁『捉弄』，第11頁『捉弄』",
    "read": "nòng"
   },
   {
@@ -60,13 +65,8 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『沒有人』，第5頁『沒事』『沒載』，第7頁『沒有人』，第9頁『沒事』，第10頁『沒載』『沒有人』",
+   "where": "第3頁『沒有人』，第5頁『沒事』，第9頁『沒事』，第10頁『沒有人』",
    "read": "méi"
-  },
-  {
-   "char": "什",
-   "where": "第6頁『什麼』",
-   "read": "shén"
   }
  ],
  "pages": [
@@ -76,13 +76,13 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "河的這邊有一條小船，划船的是白鬍子老爺爺。",
+     "text": "河的這邊，白鬍子老爺爺有一條小船。",
      "en": "On this side of the river, an old boatman with a long white beard had a little boat."
     },
     {
      "who": "老爺爺",
-     "text": "阿福，我要去對岸的市集賣大白菜。",
-     "en": "Afu, I am taking this big cabbage to the market on the far side of the river."
+     "text": "阿福，我要去對岸賣大白菜。",
+     "en": "Afu, I'm going across the river to sell this big cabbage."
     },
     {
      "who": "阿福",
@@ -94,12 +94,12 @@
   },
   {
    "scene": "「這邊」的河岸，大柳樹下、小木頭碼頭旁；小船停在碼頭邊，遠遠看得到對岸的市集。",
-   "act": "大野狼就是《小紅帽》《大野狼和七隻小羊》裡那隻灰狼：灰色的毛、白色的肚子和嘴巴、粉紅色臉頰、圓圓的黑眼睛、尖耳朵裡面是粉紅色、一條蓬鬆的大尾巴，尾巴尖端是白色，樣子滑稽不可怕；他從草地上跑過來，高高舉著手跳。小羊是白色捲毛的小羊，奶油色的臉、粉紅色的耳朵內側、頭上一對黃色小彎角、咖啡色小蹄子，脖子上繫一條天藍色小領巾；他躲在柳樹後面，只探出半個身體，小小聲說話。老爺爺站在碼頭上，豎起一根手指；阿福坐在船頭，也跟著豎起一根手指。裝著大白菜的竹籃放在碼頭上。",
+   "act": "大野狼就是《小紅帽》《大野狼和七隻小羊》裡那隻灰狼：灰色的毛、白色的肚子和嘴巴、粉紅色臉頰、圓圓的黑眼睛、尖耳朵裡面是粉紅色、一條蓬鬆的大尾巴，尾巴尖端是白色，樣子滑稽不可怕；他從草地上跑過來，高高舉著手跳。小羊是白色捲毛的小羊，奶油色的臉、粉紅色的耳朵內側、頭上一對黃色小彎角、咖啡色小蹄子，脖子上繫一條天藍色小領巾；他躲在柳樹後面，只探出半個身體，小小聲說話。老爺爺站在碼頭上，一手豎起一根手指，另一手指著坐在船頭的阿福（阿福全書都坐在船頭看路，不下船）；阿福坐在船頭，也跟著豎起一根手指。裝著大白菜的竹籃放在碼頭上。",
    "lines": [
     {
      "who": "旁白",
-     "text": "大野狼和膽小的小羊也要去市集。",
-     "en": "The Big Bad Wolf and shy Little Goat wanted to go to the market too."
+     "text": "大野狼和膽小的小羊也要去對岸。",
+     "en": "The Big Bad Wolf and shy Little Goat wanted to cross the river too."
     },
     {
      "who": "大野狼",
@@ -115,8 +115,13 @@
     },
     {
      "who": "老爺爺",
-     "text": "船很小。除了我和阿福，一次只能載一個。",
-     "en": "My boat is small. Besides Afu and me, it can carry only one at a time."
+     "text": "船很小，一次只能載一個。",
+     "en": "My boat is small. It can carry only one of you at a time."
+    },
+    {
+     "who": "老爺爺",
+     "text": "阿福要幫我看路，不能下船。",
+     "en": "Afu has to stay up front as my lookout, so he can't get off."
     }
    ]
   },
@@ -126,8 +131,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "老爺爺一不注意，大野狼就拉小羊的毛，扮鬼臉。",
-     "en": "Whenever the old boatman looked away, the wolf tugged Little Goat's wool and made silly faces."
+     "text": "老爺爺一不注意，大野狼就拉小羊的毛。",
+     "en": "Whenever the old boatman looked away, the wolf tugged Little Goat's wool."
     },
     {
      "who": "旁白",
@@ -154,7 +159,7 @@
   },
   {
    "scene": "「這邊」的河岸，碼頭旁。",
-   "act": "阿福坐在船頭，高高舉手搶答，手指著大野狼；老爺爺摸著白鬍子，笑咪咪地用手比一比「這邊」的岸上。阿福頭上一個想像泡泡：小船載著大野狼划走了，「這邊」的岸上只剩小羊和竹籃，小羊正張大嘴巴要吃白菜。阿福看著泡泡，雙手抱頭、嘴巴張成圓形。真正的岸上，大野狼、小羊、白菜都還在「這邊」。",
+   "act": "阿福坐在船頭，高高舉手搶答，手指著大野狼；老爺爺摸著白鬍子，笑咪咪地用手比一比「這邊」的岸上，再伸出兩根手指，提醒兩件事。阿福頭上一個想像泡泡：小船載著大野狼划走了，「這邊」的岸上只剩小羊和竹籃，小羊正張大嘴巴要吃白菜。阿福看著泡泡，雙手抱頭、嘴巴張成圓形。真正的岸上，大野狼、小羊、白菜都還在「這邊」。",
    "lines": [
     {
      "who": "阿福",
@@ -174,25 +179,31 @@
      "en": "Little Goat and the cabbage. Oh no! Little Goat will gobble up the cabbage!"
     },
     {
+     "who": "老爺爺",
+     "text": "大野狼會捉弄小羊，小羊會吃白菜。",
+     "en": "Remember: the wolf teases Little Goat, and Little Goat eats cabbage."
+    },
+    {
      "who": "旁白",
-     "text": "那麼，第一趟要先載誰呢？",
+     "text": "第一趟要先載誰呢？",
      "en": "So, who should go on the first trip?"
     }
    ]
   },
   {
    "scene": "河面上。左邊是「這邊」的河岸（大柳樹、小木頭碼頭），右邊是「對岸」的河岸（市集的彩色布棚和小旗子）。",
-   "act": "小船上的座位固定：阿福坐船頭的小座位、雙手扶著船邊坐好，老爺爺坐在船尾划槳，中間只有一個位子。上半（第一趟，船往右邊划）：小羊坐在中間的位子，緊緊抓著船邊。「這邊」的岸上是大野狼和裝著白菜的竹籃，大野狼對白菜看都不看，坐在柳樹下打哈欠。下半（第二趟，船往左邊划）：小羊一個人站在「對岸」揮手，船上中間的位子沒有人，老爺爺和阿福划回「這邊」。",
+   "act": "最上面一小格：阿福坐在船頭，頭上一個想像泡泡：小船載走竹籃，「這邊」的岸上大野狼在拉小羊的毛；阿福搖搖頭。小船上的座位固定：阿福坐船頭的小座位、雙手扶著船邊坐好，老爺爺坐在船尾划槳，中間只有一個位子。上半（第一趟，船往右邊划）：小羊坐在中間的位子，緊緊抓著船邊。「這邊」的岸上是大野狼和裝著白菜的竹籃，大野狼對白菜看都不看，坐在柳樹下打哈欠。下半（第二趟，船往左邊划）：小羊一個人站在「對岸」揮手，船上中間的位子沒有人，老爺爺和阿福划回「這邊」。",
    "lines": [
     {
-     "who": "老爺爺",
-     "text": "先載小羊。",
-     "en": "Little Goat goes first."
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "先載白菜，大野狼會捉弄小羊！",
+     "en": "If the cabbage goes first, the wolf will tease Little Goat!"
     },
     {
      "who": "老爺爺",
-     "text": "因為大野狼不吃菜，所以白菜留在這邊沒事。",
-     "en": "Because the wolf doesn't eat vegetables, the cabbage will be safe on this side with him."
+     "text": "先載小羊。因為大野狼不吃菜，所以白菜沒事。",
+     "en": "So Little Goat goes first. Because the wolf doesn't eat vegetables, the cabbage will be safe."
     },
     {
      "who": "旁白",
@@ -206,14 +217,14 @@
     },
     {
      "who": "旁白",
-     "text": "第二趟，船上沒載客人，划回這邊。",
-     "en": "Trip two: the boat rowed back to this side with no passenger."
+     "text": "第二趟，空船划回這邊。",
+     "en": "Trip two: the empty boat rowed back to this side."
     }
    ]
   },
   {
    "scene": "河面上。左邊是「這邊」的河岸（大柳樹、小木頭碼頭），右邊是「對岸」的河岸（市集的彩色布棚和小旗子）。小船剛靠到「對岸」。",
-   "act": "小船上的座位固定：阿福坐船頭的小座位、雙手扶著船邊坐好，老爺爺坐在船尾划槳，中間只有一個位子。大野狼剛從中間的位子搶著第一個跳上「對岸」，對小羊咧嘴笑、兩隻手在頭上比出角的樣子，準備扮鬼臉；小羊站在「對岸」，往後退一步，耳朵垂下來。「這邊」的岸上只剩裝著白菜的竹籃。老爺爺和阿福還在船上，船還沒划走；阿福皺著眉頭看大野狼和小羊。",
+   "act": "小船上的座位固定：阿福坐船頭的小座位、雙手扶著船邊坐好，老爺爺坐在船尾划槳，中間只有一個位子。大野狼剛從中間的位子搶著第一個跳上「對岸」，對小羊咧嘴笑、兩隻手在頭上比出角的樣子，準備扮鬼臉；小羊站在「對岸」，往後退一步，耳朵垂下來。「這邊」的岸上只剩裝著白菜的竹籃。老爺爺和阿福還在船上，船還沒划走；阿福坐在船頭沒有下船，一手抓著船邊，一手指著大野狼和小羊，皺著眉頭。船上中間的位子沒有人。",
    "lines": [
     {
      "who": "大野狼",
@@ -232,26 +243,26 @@
      "en": "On this side was the cabbage. On the far side were the wolf and Little Goat."
     },
     {
+     "who": "阿福",
+     "tag": "surprised",
+     "text": "船一走，大野狼就會捉弄小羊！我又不能下船。",
+     "en": "If we row away, the wolf will tease Little Goat! And I can't get off."
+    },
+    {
      "who": "旁白",
-     "text": "小船如果划走，對岸會出什麼事？該怎麼辦？",
-     "en": "If the boat rowed away now, what would happen on the far side? What should they do?"
+     "text": "回去要載大野狼，或是載小羊呢？",
+     "en": "Who should ride back in the boat, the wolf or Little Goat?"
     }
    ]
   },
   {
    "scene": "河面上。左邊是「這邊」的河岸（大柳樹、小木頭碼頭），右邊是「對岸」的河岸（市集的彩色布棚和小旗子）。",
-   "act": "小船上的座位固定：阿福坐船頭的小座位、雙手扶著船邊坐好，老爺爺坐在船尾划槳，中間只有一個位子。上半：小船還停在「對岸」，阿福坐在船頭、一隻手指著大野狼和小羊喊；老爺爺點點頭，向小羊招手，小羊鬆一口氣跳上船。下半（第四趟，船往左邊划）：小羊坐在中間的位子，回頭看；大野狼一個人站在「對岸」，抓著頭，一臉問號。船到「這邊」時，岸上有小羊和裝著白菜的竹籃。",
+   "act": "小船上的座位固定：阿福坐船頭的小座位、雙手扶著船邊坐好，老爺爺坐在船尾划槳，中間只有一個位子。上半：小船還停在「對岸」，阿福坐在船頭沒有下船；畫面角落一個想像泡泡：如果載大野狼回去，大野狼又坐船回到「這邊」跟白菜在一起、「對岸」又只有小羊，等於白划一趟，泡泡上打一個叉；老爺爺向小羊招手，小羊鬆一口氣跳上船。下半（第四趟，船往左邊划）：小羊坐在中間的位子，回頭看；大野狼一個人站在「對岸」，抓著頭，一臉問號。船到「這邊」時，岸上有小羊和裝著白菜的竹籃。",
    "lines": [
     {
-     "who": "阿福",
-     "tag": "surprised",
-     "text": "小船一走，就沒有人看著了！",
-     "en": "Once we row away, nobody will be watching!"
-    },
-    {
      "who": "老爺爺",
-     "text": "因為大野狼會捉弄小羊，所以把小羊載回這邊。",
-     "en": "Because the wolf would tease Little Goat, we'll take Little Goat back to this side."
+     "text": "載小羊。因為載大野狼回去，就白划一趟了。",
+     "en": "Little Goat. Taking the wolf back would just be a wasted trip!"
     },
     {
      "who": "旁白",
@@ -273,11 +284,11 @@
   },
   {
    "scene": "「這邊」的河岸，碼頭旁；遠遠的「對岸」，大野狼一個人坐在岸邊等。",
-   "act": "小羊剛下船，站在裝著白菜的竹籃旁邊，眼睛盯著白菜，嘴角流下一滴口水；阿福坐在船頭，伸出一隻手掌比「停」，笑著提醒他。老爺爺坐在船尾，豎起一根手指，看看小羊，再看看白菜，在想這一趟要載誰。船上中間的位子沒有人。",
+   "act": "小羊剛下船，站在裝著白菜的竹籃旁邊，眼睛盯著白菜，嘴角流下一滴口水；阿福坐在船頭，伸出一隻手掌比「停」，笑著提醒他。老爺爺坐在船尾，一手豎起一根手指提醒「一次只能載一個」，看看小羊，再看看白菜，在想這一趟要載誰。船上中間的位子沒有人。",
    "lines": [
     {
      "who": "旁白",
-     "text": "小羊盯著白菜，流口水了。",
+     "text": "小羊看著白菜流口水。",
      "en": "Little Goat stared at the cabbage, and his mouth began to water."
     },
     {
@@ -288,8 +299,8 @@
     },
     {
      "who": "老爺爺",
-     "text": "一次只能載一個。",
-     "en": "Only one at a time."
+     "text": "一次只能載一個喔。",
+     "en": "Remember, only one at a time."
     },
     {
      "who": "旁白",
@@ -310,7 +321,7 @@
     },
     {
      "who": "老爺爺",
-     "text": "因為大野狼不吃菜，所以白菜在對岸沒事。",
+     "text": "因為大野狼不吃菜，所以白菜沒事。",
      "en": "Because the wolf doesn't eat vegetables, the cabbage will be safe over there."
     },
     {
@@ -331,8 +342,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "第六趟，船上沒載客人，划回這邊。",
-     "en": "Trip six: the boat rowed back to this side with no passenger."
+     "text": "第六趟，空船划回這邊。",
+     "en": "Trip six: the empty boat rowed back to this side."
     },
     {
      "who": "小羊",
@@ -365,7 +376,7 @@
     {
      "who": "老爺爺",
      "tag": "gentle",
-     "text": "因為你愛捉弄小羊，所以才划了這麼多趟。",
+     "text": "因為你愛捉弄小羊，才划這麼多趟。",
      "en": "We rowed all those trips because you love to tease Little Goat."
     },
     {
@@ -381,20 +392,20 @@
    "act": "老爺爺的大白菜擺在一個小攤子上；小羊和大野狼並肩站在攤子前，兩個都笑得很開心，大野狼沒有拉小羊的毛，小羊也沒有咬白菜。老爺爺彎腰對大家豎起一根手指；阿福站在最前面，也豎起一根手指，張大嘴巴喊；大野狼和小羊跟著各豎起一根手指。",
    "lines": [
     {
-     "who": "旁白",
-     "text": "小羊笑了，大野狼也笑了。",
-     "en": "Little Goat laughed, and the wolf laughed too."
-    },
-    {
      "who": "小羊",
      "tag": "happy",
      "text": "那我也不偷吃白菜了。",
      "en": "Then I won't sneak bites of cabbage either."
     },
     {
+     "who": "旁白",
+     "text": "大家都笑了。",
+     "en": "Everyone laughed."
+    },
+    {
      "who": "老爺爺",
-     "text": "回去也要記住喔。",
-     "en": "Remember it on the way home, too."
+     "text": "回去也要說到做到喔。",
+     "en": "Keep your promises on the way home, too."
     },
     {
      "who": "阿福",

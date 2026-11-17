@@ -2,7 +2,7 @@
  "id": "monkeys-acorns",
  "title": "猴子分栗子",
  "title_en": "Three in the Morning",
- "size": "短",
+ "size": "中",
  "roles": {
   "老爺爺": "養猴子的老爺爺，年紀大的男聲，說話慢、很溫和，愛笑，把猴子當自己的孩子。",
   "猴子老大": "猴子裡最大隻的一隻，大嗓門、急性子，一下子生氣、一下子高興，好笑不兇。",
@@ -30,7 +30,7 @@
   },
   {
    "char": "斗",
-   "where": "第5頁『翻跟斗』",
+   "where": "第5、9頁『翻跟斗』",
    "read": "dǒu"
   },
   {
@@ -40,13 +40,28 @@
   },
   {
    "char": "分",
-   "where": "書名『猴子分栗子』",
+   "where": "書名『猴子分栗子』，第11頁『怎麼分』",
    "read": "fēn"
   },
   {
    "char": "什",
    "where": "第7頁『吵什麼』",
    "read": "shén"
+  },
+  {
+   "char": "為",
+   "where": "第10頁『因為』",
+   "read": "wèi"
+  },
+  {
+   "char": "沒",
+   "where": "第10頁『沒有』",
+   "read": "méi"
+  },
+  {
+   "char": "肚",
+   "where": "第10頁『肚子會餓』",
+   "read": "dù"
   }
  ],
  "pages": [
@@ -67,13 +82,18 @@
    ]
   },
   {
-   "scene": "茅草屋門口。牆邊放著那個竹籃，裡面的栗子只剩下淺淺一層，看得到籃底。",
-   "act": "上半：老爺爺彎腰看著快要見底的竹籃，抓著頭，眉毛皺起來。下半：他蹲在院子裡，對圍過來的猴子們先伸出三根手指，再伸出四根手指，表情很溫和，像在跟孩子商量。",
+   "scene": "茅草屋門口，屋後有一條上山的小路。牆邊放著那個竹籃，裡面的栗子剩下淺淺一層，看得到籃底。",
+   "act": "上半：老爺爺一個人從屋後的山路慢慢走回來，一手扶著腰、一手提著竹籃，額頭有汗，籃子裡的栗子淺淺一層。下半：他蹲在院子裡，對圍過來的六隻猴子先伸出三根手指，再伸出四根手指，表情很溫和，像在跟孩子商量。",
    "lines": [
     {
      "who": "旁白",
-     "text": "可是，栗子快不夠了。",
-     "en": "But one day, the chestnut basket was almost empty."
+     "text": "可是，老爺爺年紀大了，一個人上山，撿不多。",
+     "en": "But he was getting old. All alone on the mountain, he could not gather many."
+    },
+    {
+     "who": "旁白",
+     "text": "籃子裡的栗子，快不夠了。",
+     "en": "Soon the chestnut basket was almost empty."
     },
     {
      "who": "老爺爺",
@@ -107,12 +127,12 @@
   },
   {
    "scene": "茅草屋前的院子。",
-   "act": "畫面上方一個大想像泡泡：左邊太陽圖案下面排著三顆栗子，右邊月亮圖案下面排著四顆栗子，七顆排成一排。下方：老爺爺摸著鬍子想了一下，換成先伸出四根手指、再伸出三根手指；猴子們歪著頭看他的手。",
+   "act": "畫面上方一個大想像泡泡：左邊太陽圖案下面排著三顆栗子，右邊月亮圖案下面排著四顆栗子，七顆排成一排。下方：老爺爺對猴子們眨一隻眼睛、笑著，換成先伸出四根手指、再伸出三根手指；猴子們歪著頭看他的手。",
    "lines": [
     {
      "who": "旁白",
-     "text": "我們一起算：一顆，兩顆，三顆。",
-     "en": "Let's count together. One, two, three chestnuts."
+     "text": "我們一起算，早上三顆：一顆，兩顆，三顆。",
+     "en": "Let's count together. Three in the morning: one, two, three chestnuts."
     },
     {
      "who": "旁白",
@@ -126,8 +146,8 @@
     },
     {
      "who": "旁白",
-     "text": "老爺爺想了想，換個說法。",
-     "en": "The old man thought for a moment. Then he said it another way."
+     "text": "老爺爺眨了眨眼，換個說法。",
+     "en": "The old man gave a little wink and said it another way."
     },
     {
      "who": "老爺爺",
@@ -185,14 +205,14 @@
     },
     {
      "who": "旁白",
-     "text": "三加四是七，四加三也是七，所以一樣多。",
-     "en": "Three and four make seven. Four and three make seven too. So it's just the same."
+     "text": "三顆加四顆，四顆加三顆，都是七顆，所以一樣多。",
+     "en": "Three and four make seven. Four and three make seven too. So it is just the same."
     }
    ]
   },
   {
    "scene": "茅草屋前的院子。",
-   "act": "小猴子舉著七根手指站在大家中間。猴子老大愣住了，一隻手抓著頭，嘴巴張開，一臉呆呆的；下一格：所有的猴子笑得在地上打滾，猴子老大自己也抱著肚子笑；老爺爺笑到鬍子翹起來，伸手摸小猴子的頭。",
+   "act": "左格：小猴子舉著七根手指站在大家中間；猴子老大愣住了，一隻手抓著頭，嘴巴張開，一臉呆呆的；其他猴子笑得在地上打滾，老爺爺笑到鬍子翹起來。右格：猴子老大不服氣，又跳起來，一隻手張開、高高舉起五根手指，紅色布巾飛起來。",
    "lines": [
     {
      "who": "猴子老大",
@@ -206,17 +226,104 @@
      "en": "All the monkeys burst out laughing, and the old man laughed too."
     },
     {
-     "who": "老爺爺",
-     "tag": "laughing",
-     "text": "栗子真的不夠，我是換個說法呀。",
-     "en": "We really are running low on chestnuts. I just said it another way."
+     "who": "猴子老大",
+     "tag": "shouting",
+     "text": "那我要早上五顆！",
+     "en": "Then I want five in the morning!"
     }
    ]
   },
   {
-   "scene": "上半：早上的院子。下半：屋後山坡上的栗子樹林，樹下的落葉上散著咖啡色的栗子。",
-   "act": "上半：早上，每隻猴子面前都放著四顆栗子，猴子老大吃得臉頰鼓鼓的。下半：老爺爺提著竹籃走在前面，六隻猴子跟在後面，彎腰撿樹下地上的栗子放進籃子（沒有猴子爬樹）；小猴子雙手捧著一顆栗子放進籃裡，猴子老大抱了一大把。竹籃裝得滿滿的。",
+   "scene": "茅草屋前的院子。",
+   "act": "小猴子坐在地上，一根一根彎著手指算。她頭上有兩個想像泡泡：上面的泡泡，太陽圖案下面排著五顆栗子、月亮圖案下面排著兩顆栗子（一共七顆）；下面的泡泡，太陽圖案下面排著六顆栗子、月亮圖案下面排著一顆栗子（一共七顆）。猴子老大站在她旁邊，兩手舉起六根手指（一隻手五根，另一隻手一根），嘴巴張得好大。老爺爺坐在矮凳上，笑咪咪地看。",
    "lines": [
+    {
+     "who": "小猴子",
+     "text": "早上五顆：一顆，兩顆，三顆，四顆，五顆。",
+     "en": "Five in the morning. One, two, three, four, five chestnuts."
+    },
+    {
+     "who": "小猴子",
+     "text": "再算下去：六顆，七顆。晚上就剩兩顆。",
+     "en": "Keep counting: six, seven. That leaves two for the night."
+    },
+    {
+     "who": "猴子老大",
+     "tag": "shouting",
+     "text": "那早上六顆！",
+     "en": "Then six in the morning!"
+    },
+    {
+     "who": "小猴子",
+     "text": "早上六顆，晚上就剩一顆。",
+     "en": "Six in the morning leaves one for the night."
+    }
+   ]
+  },
+  {
+   "scene": "茅草屋前的院子。",
+   "act": "猴子老大跳到矮凳上，兩手高高舉起七根手指（一隻手五根，另一隻手兩根），得意地挺著胸口；其他四隻猴子拍手、翻跟斗。小猴子一個人坐在旁邊，歪著頭，彎著手指在算，眉毛皺起來。老爺爺摸著鬍子偷偷地笑。這一頁不要畫想像泡泡，不要畫出晚上的栗子。",
+   "lines": [
+    {
+     "who": "猴子老大",
+     "tag": "excited",
+     "text": "那早上七顆！七顆最多！",
+     "en": "Then seven in the morning! Seven is the most!"
+    },
+    {
+     "who": "旁白",
+     "text": "猴子們又拍手，又翻跟斗。",
+     "en": "The monkeys clapped and turned somersaults again."
+    },
+    {
+     "who": "旁白",
+     "text": "小猴子又歪著頭，用手指算。",
+     "en": "Tiny Monkey tilted her head again and counted on her fingers."
+    },
+    {
+     "who": "旁白",
+     "text": "一天是七顆。早上七顆，晚上是幾顆呢？",
+     "en": "There are seven a day. With seven in the morning, how many are left for the night?"
+    }
+   ]
+  },
+  {
+   "scene": "茅草屋前的院子。",
+   "act": "小猴子舉起七根手指，再把兩隻手攤開，表示「沒有了」。她頭上的想像泡泡：太陽圖案下面排著七顆栗子，月亮圖案下面是一個空盤子，一顆也沒有。猴子老大從矮凳上跳下來，兩手抱著肚子，眉毛變成八字、嘴巴扁扁的；他頭上的小泡泡畫著晚上的月亮和他咕嚕叫的肚子。其他猴子笑得東倒西歪。",
+   "lines": [
+    {
+     "who": "小猴子",
+     "text": "因為早上吃掉七顆，所以晚上一顆也沒有！",
+     "en": "Because we eat all seven in the morning, there are none at all for the night!"
+    },
+    {
+     "who": "旁白",
+     "text": "早上七顆，晚上沒有，加起來也是七顆。",
+     "en": "Seven in the morning and none at night. That makes seven too."
+    },
+    {
+     "who": "猴子老大",
+     "tag": "shouting",
+     "text": "晚上沒有栗子？肚子會餓！不要，不要！",
+     "en": "No chestnuts at night? My tummy will be hungry! No, no, no!"
+    },
+    {
+     "who": "旁白",
+     "text": "大家又笑成一團。",
+     "en": "Everyone burst out laughing again."
+    }
+   ]
+  },
+  {
+   "scene": "茅草屋前的院子。",
+   "act": "老爺爺坐在矮凳上，一手捶著自己的腰，一手摸小猴子的頭，笑得眼睛彎彎的。猴子老大站在他面前，舉起四根手指，拍著自己的肚子。小猴子拉著老爺爺的袖子，另一隻手指著屋後長滿栗子樹的青山；其他四隻猴子已經抬起那個竹籃。",
+   "lines": [
+    {
+     "who": "老爺爺",
+     "tag": "laughing",
+     "text": "栗子真的不夠。不管怎麼分，一天都是七顆呀。",
+     "en": "We really are running low on chestnuts. However we share them, it's seven a day."
+    },
     {
      "who": "猴子老大",
      "tag": "happy",
@@ -226,13 +333,35 @@
     {
      "who": "小猴子",
      "tag": "happy",
-     "text": "陪爺爺上山，撿樹下的栗子！",
-     "en": "And we'll go up the mountain with you and pick up chestnuts under the trees!"
+     "text": "我們陪爺爺上山，一起撿栗子！",
+     "en": "And we'll go up the mountain with you and pick up chestnuts together!"
+    }
+   ]
+  },
+  {
+   "scene": "屋後山坡上的栗子樹林，早上的陽光從樹葉中間照下來，樹下的落葉上散著咖啡色的栗子。",
+   "act": "老爺爺提著竹籃走在前面，六隻猴子跟在後面，彎腰撿樹下地上的栗子放進籃子（沒有猴子爬樹）；小猴子雙手捧著一顆栗子放進籃裡。猴子老大抱了一大把栗子，一邊走一邊掉，他低頭想算有幾顆，眼睛都花了。竹籃裝得滿滿的，老爺爺不用彎腰，笑得很開心。",
+   "lines": [
+    {
+     "who": "旁白",
+     "text": "第二天，猴子們陪老爺爺上山。",
+     "en": "The next day, the monkeys went up the mountain with the old man."
     },
     {
      "who": "旁白",
-     "text": "大家撿了一大籃，明天就夠吃囉！",
-     "en": "Together they filled a big basket. Now there would be plenty for tomorrow!"
+     "text": "大家撿樹下的栗子，撿了一大籃。",
+     "en": "They all picked up chestnuts under the trees until the big basket was full."
+    },
+    {
+     "who": "猴子老大",
+     "tag": "happy",
+     "text": "一顆，兩顆，三顆，好多顆！算不完啦！",
+     "en": "One, two, three, so many chestnuts! I can't count them all!"
+    },
+    {
+     "who": "旁白",
+     "text": "明天，後天，都夠吃囉！",
+     "en": "Now there would be plenty for tomorrow, and the day after too!"
     }
    ]
   }
