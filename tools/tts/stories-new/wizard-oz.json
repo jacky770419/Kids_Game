@@ -396,7 +396,7 @@
    ]
   },
   {
-   "scene": "西邊的壞女巫城堡門口，黃色石頭城堡，天色有點暗；門邊有一口井，井旁放著一個裝滿水的木桶。",
+   "scene": "西邊的壞女巫城堡門口，黃色石頭城堡，天色有點暗，可是沒有下雨，地面是乾的；門邊有一口井，井旁放著一個裝滿水的木桶。",
    "act": "壞女巫出場：矮矮胖胖的老婆婆，穿一件打補丁的黑斗篷，戴歪掉的黑色尖帽，一雙圓滾滾的大眼睛，手上拿著一把收起來的黑雨傘；她用雨傘彎彎的把手勾走桃樂絲的一隻銀鞋子，咧嘴大笑，樣子好笑不可怕。獅子在旁邊張大嘴吼，可是四條腿在發抖。",
    "lines": [
     {
@@ -434,7 +434,7 @@
     {
      "who": "稻草人",
      "tag": "excited",
-     "text": "我想到了！沒下雨她也撐傘，一定是怕水！",
+     "text": "我想到了！沒下雨她也帶著傘，一定是怕水！",
      "en": "I've got it! She carries an umbrella when it isn't even raining. She must be afraid of water!"
     },
     {
@@ -519,7 +519,7 @@
     {
      "who": "奧茲",
      "text": "錫人，是誰看到小蟲受傷就哭了？",
-     "en": "Tin Man, who cried when he saw a little bug get hurt?"
+     "en": "Tin Man, who cried when he saw a little bug that was hurt?"
     },
     {
      "who": "錫人",

@@ -4,8 +4,8 @@
  "title_en": "The Fisherman and the Golden Fish",
  "size": "長",
  "roles": {
-  "漁夫爺爺": "住在海邊的老漁夫，慈祥溫和的老爺爺聲音，有點糊塗，很想讓老伴開心，許願時不好意思，害怕時聲音發抖，最後笑得很開懷。",
-  "老婆婆": "漁夫的老伴，誇張好笑的老奶奶聲音，說話又快又大聲、愛使喚人，可是心不壞，最後笑著承認還是小木屋好。",
+  "漁夫爺爺": "住在海邊的老漁夫，慈祥溫和的老爺爺聲音，有點糊塗，很想讓老婆婆開心，許願時不好意思，害怕時聲音發抖，最後笑得很開懷。",
+  "老婆婆": "漁夫的太太，誇張好笑的老奶奶聲音，說話又快又大聲、愛使喚人，可是心不壞，最後笑著承認還是小木屋好。",
   "金魚": "大海裡會說話的金魚，年輕女生的聲音，溫柔清亮，一開始親切，後來越來越安靜、嚴肅。"
  },
  "cast": {
@@ -35,7 +35,7 @@
   },
   {
    "char": "沒",
-   "where": "第3頁『沒想到』，第4頁『都沒要』『沒想到』，第10頁『沒有笑』，第11頁『沒有人』，第13頁『也沒說』，第15頁『城堡沒了』",
+   "where": "第3頁『沒想到』，第4頁『都沒要』『沒想到』，第13頁『也沒說』，第14頁『城堡沒了』『皇冠也沒了』",
    "read": "méi"
   },
   {
@@ -45,7 +45,7 @@
   },
   {
    "char": "冠",
-   "where": "第10頁、第15頁『皇冠』",
+   "where": "第10頁、第14頁『皇冠』",
    "read": "guān"
   },
   {
@@ -93,8 +93,8 @@
     {
      "who": "漁夫爺爺",
      "tag": "gentle",
-     "text": "老伴別生氣，我去抓魚，晚上煮魚湯給妳喝。",
-     "en": "Don't be cross, dear. I'll go catch some fish and make you fish soup tonight."
+     "text": "別生氣，我去抓魚，晚上煮魚湯給妳喝。",
+     "en": "Don't be upset. I'll go catch some fish and make you fish soup tonight."
     }
    ]
   },
@@ -125,7 +125,7 @@
     },
     {
      "who": "旁白",
-     "text": "第三次，漁網裡，有一條發著金光的小魚。",
+     "text": "第三次，網子裡有一條發著金光的小魚。",
      "en": "The third time, there was a little fish in the net, shining like gold."
     }
    ]
@@ -148,7 +148,7 @@
     {
      "who": "金魚",
      "text": "你想要什麼，我都可以幫你。",
-     "en": "Whatever you wish for, I can help you."
+     "en": "Tell me what you wish for, and I will grant it."
     },
     {
      "who": "漁夫爺爺",
@@ -215,7 +215,7 @@
     {
      "who": "漁夫爺爺",
      "tag": "shy",
-     "text": "我老伴，想要一個新木盆。",
+     "text": "老婆婆想要一個新木盆。",
      "en": "My wife would like a new washtub."
     },
     {
@@ -243,14 +243,14 @@
     },
     {
      "who": "旁白",
-     "text": "漁夫爺爺想讓老伴再開心一點。",
+     "text": "漁夫爺爺想讓老婆婆再開心一點。",
      "en": "The old fisherman wanted to make his wife even happier."
     },
     {
      "who": "漁夫爺爺",
      "tag": "excited",
-     "text": "老伴，我們跟金魚要一間新房子，好不好？",
-     "en": "Dear, why don't we ask the fish for a new house?"
+     "text": "我們跟金魚要一間新房子，好不好？",
+     "en": "Why don't we ask the fish for a new house?"
     },
     {
      "who": "老婆婆",
@@ -300,8 +300,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "小木屋不見了，變成一間紅屋頂的大房子。",
-     "en": "The little hut was gone. In its place stood a big house with a red roof."
+     "text": "小木屋變成了一間紅屋頂的大房子！",
+     "en": "The little hut had turned into a big house with a red roof!"
     },
     {
      "who": "老婆婆",
@@ -358,19 +358,19 @@
     {
      "who": "漁夫爺爺",
      "tag": "shy",
-     "text": "我老伴，想當女王。",
+     "text": "老婆婆想當女王。",
      "en": "My wife would like to be a queen."
     }
    ]
   },
   {
    "scene": "左半邊：灰色海面上，小金魚看著漁夫爺爺。右半邊：海邊山丘上一座白色城堡，有藍色尖屋頂和旗子，大廳裡鋪著紅地毯。",
-   "act": "小金魚安靜地看著漁夫爺爺，沒有笑。城堡大廳裡，老婆婆戴著金色皇冠、披著紅色斗篷，坐在金色大椅子上，旁邊站著好多僕人；漁夫爺爺穿著綠色的絲絨新衣服，得意地拉著衣角欣賞自己。",
+   "act": "小金魚安靜地看著漁夫爺爺，嘆了一口氣。城堡大廳裡，老婆婆戴著金色皇冠、披著紅色斗篷，坐在金色大椅子上，旁邊圍著好多幫她拿東西、梳頭髮的人；漁夫爺爺穿著綠色的絲絨新衣服，得意地拉著衣角欣賞自己。",
    "lines": [
     {
      "who": "旁白",
-     "text": "金魚看了他好久，沒有笑。",
-     "en": "The fish looked at him for a long time and did not smile."
+     "text": "金魚看了他好久，嘆了一口氣。",
+     "en": "The fish looked at him for a long time and sighed."
     },
     {
      "who": "金魚",
@@ -385,8 +385,8 @@
     },
     {
      "who": "旁白",
-     "text": "老婆婆戴著金皇冠，好多僕人圍著她。",
-     "en": "His wife wore a golden crown, and many servants gathered around her."
+     "text": "老婆婆戴著金皇冠，好多人圍著她，幫她拿東西。",
+     "en": "His wife wore a golden crown, and lots of helpers gathered around to fetch things for her."
     },
     {
      "who": "漁夫爺爺",
@@ -407,19 +407,19 @@
     },
     {
      "who": "旁白",
-     "text": "晚上，漁夫爺爺找不到老婆婆，在走廊上迷路了。",
-     "en": "One night, the old fisherman couldn't find his wife, and he got lost in the hallways."
+     "text": "晚上，漁夫爺爺找不到老婆婆，迷路了。",
+     "en": "One night, the old fisherman couldn't find his wife, and he got lost."
     },
     {
      "who": "漁夫爺爺",
      "tag": "sad",
-     "text": "老伴，妳在哪裡？",
+     "text": "老婆婆，妳在哪裡？",
      "en": "Dear, where are you?"
     },
     {
      "who": "旁白",
-     "text": "沒有人回答他。",
-     "en": "No one answered."
+     "text": "走廊裡傳來回音：在哪裡？在哪裡？",
+     "en": "Only an echo came back down the hallway: Where are you? Where are you?"
     }
    ]
   },
@@ -458,8 +458,8 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "這一次，大海暗下來了，像晚上一樣黑。",
-     "en": "This time, the sea had grown dark, as dark as night."
+     "text": "這一次，大海像晚上一樣黑。",
+     "en": "This time, the sea was as dark as night."
     },
     {
      "who": "旁白",
@@ -486,7 +486,7 @@
   },
   {
    "scene": "海邊，城堡不見了，又是那間破舊的小木屋，屋頂補著稻草；門口放著那個裂開的舊木盆。天空慢慢亮起來。",
-   "act": "漁夫爺爺穿回有補丁的灰色衣服，站在小木屋前，緊張地抓著帽子。老婆婆穿回咖啡色舊衣服和紅色舊圍裙，坐在門口的台階上，低著頭。",
+   "act": "漁夫爺爺穿回有補丁的灰色衣服，站在小木屋前，緊張地抓著帽子。老婆婆穿回咖啡色舊衣服和紅色舊圍裙，坐在門口的台階上，低著頭，嘟著嘴摸摸頭頂，皇冠沒有了。",
    "lines": [
     {
      "who": "旁白",
@@ -506,25 +506,25 @@
     {
      "who": "漁夫爺爺",
      "tag": "scared",
-     "text": "老伴，妳生氣了嗎？",
-     "en": "Dear, are you angry?"
-    }
-   ]
-  },
-  {
-   "scene": "小木屋門口的台階，太陽出來了，海面變回淡藍色。",
-   "act": "老婆婆先是嘟著嘴摸摸頭頂，沒有皇冠了；接著她抬頭看著漁夫爺爺，忍不住笑出來。兩個人坐在台階上，一起笑得前仰後合。",
-   "lines": [
+     "text": "妳生氣了嗎？",
+     "en": "Are you angry?"
+    },
     {
      "who": "老婆婆",
      "tag": "sad",
      "text": "我的城堡沒了，皇冠也沒了。",
      "en": "My castle is gone, and so is my crown."
-    },
+    }
+   ]
+  },
+  {
+   "scene": "小木屋門口的台階，太陽出來了，海面變回淡藍色。",
+   "act": "老婆婆抬頭看著漁夫爺爺，忍不住笑出來；漁夫爺爺握著她的手，溫柔地看著她。兩個人坐在台階上，一起笑得前仰後合。",
+   "lines": [
     {
      "who": "旁白",
-     "text": "她看著漁夫爺爺，看了好久，笑了出來。",
-     "en": "She looked at the old fisherman for a long time, and then she laughed."
+     "text": "她看著漁夫爺爺，笑了出來。",
+     "en": "She looked at the old fisherman, and then she laughed."
     },
     {
      "who": "老婆婆",
@@ -543,6 +543,12 @@
      "tag": "gentle",
      "text": "小木屋真好，一回頭就看到你。",
      "en": "This little hut is best. I turn around, and there you are."
+    },
+    {
+     "who": "漁夫爺爺",
+     "tag": "gentle",
+     "text": "原來妳要的不是城堡，是我在旁邊。",
+     "en": "So what you wanted wasn't a castle. It was me, right here."
     }
    ]
   },

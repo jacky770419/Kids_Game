@@ -62,6 +62,36 @@
    "char": "給",
    "where": "第15頁『送給你們』",
    "read": "gěi"
+  },
+  {
+   "char": "肚",
+   "where": "第1頁『肚子』",
+   "read": "dù"
+  },
+  {
+   "char": "嚕",
+   "where": "第1頁『咕嚕』",
+   "read": "lū"
+  },
+  {
+   "char": "分",
+   "where": "第2頁『分我們』",
+   "read": "fēn"
+  },
+  {
+   "char": "乾",
+   "where": "第6頁『乾淨』",
+   "read": "gān"
+  },
+  {
+   "char": "咳",
+   "where": "第11頁『咳，我家』（清喉嚨的聲音）",
+   "read": "ké"
+  },
+  {
+   "char": "誰",
+   "where": "第14頁『有誰的』",
+   "read": "shéi"
   }
  ],
  "pages": [
@@ -71,7 +101,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "山路上，走來兩個旅人。",
+     "text": "山路上，走來兩個旅行的人。",
      "en": "Two travelers came walking down a mountain road."
     },
     {
@@ -88,7 +118,7 @@
      "who": "旅人小弟",
      "tag": "tired",
      "text": "大叔，我的肚子一直叫，咕嚕，咕嚕！",
-     "en": "Uncle, my tummy keeps rumbling. Grumble, grumble!"
+     "en": "Hey, my tummy keeps rumbling. Grumble, grumble!"
     },
     {
      "who": "旅人大叔",
@@ -147,7 +177,7 @@
     {
      "who": "旁白",
      "text": "村長拿著拐杖走過來。",
-     "en": "The village chief came over, with his cane."
+     "en": "The village chief came over, leaning on his cane."
     },
     {
      "who": "村長",
@@ -224,7 +254,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "兩個旅人在廣場中間，架起大黑鍋。",
+     "text": "大叔和小弟在廣場中間，架起大黑鍋。",
      "en": "In the middle of the village square, the two travelers set up the big black pot."
     },
     {
@@ -235,7 +265,7 @@
     {
      "who": "旁白",
      "text": "柴火燒起來，村子裡的人，好奇地走出來看。",
-     "en": "The fire crackled, and the villagers came out to watch."
+     "en": "The fire crackled, and the curious villagers came out to watch."
     },
     {
      "who": "村長",
@@ -286,7 +316,7 @@
      "who": "旅人小弟",
      "tag": "excited",
      "text": "哇，有鹹味了！如果再加一點紅蘿蔔，就更好喝了。",
-     "en": "Wow, now it's salty! But if we added a few carrots, it would be even better."
+     "en": "Wow, now it has some flavor! But if we added a few carrots, it would be even better."
     },
     {
      "who": "小女孩",
@@ -387,7 +417,7 @@
   },
   {
    "scene": "太陽要下山了，廣場上的天空變成橘紅色；大黑鍋裡滿是五顏六色的菜。",
-   "act": "村民們從家裡跑出來：有人拿玉米、有人拿香菇、有人拿豆子，放進鍋裡；有人搬來長木桌，有人捧著一疊碗走來，有人在屋簷下掛起紅燈籠。小女孩幫忙擺碗。",
+   "act": "村民們從家裡跑出來：有人拿玉米、有人拿香菇、有人拿豆子，放進鍋裡；有人搬來長木桌，有人捧著一疊碗走來，有人在屋簷下掛起紅燈籠。小女孩幫忙擺碗。包綠色頭巾的村民阿姨抱著一包豆子，豆子袋上黏著一隻條紋襪子，旁邊的人指著襪子大笑，阿姨不好意思地笑。",
    "lines": [
     {
      "who": "旁白",
@@ -398,6 +428,11 @@
      "who": "旁白",
      "text": "玉米、香菇、豆子，全都放進鍋子裡。",
      "en": "Corn, mushrooms, and beans all went into the pot."
+    },
+    {
+     "who": "旁白",
+     "text": "有一包豆子，是從衣櫃裡拿出來的。上面黏著一隻襪子！",
+     "en": "One bag of beans came out of a closet. It had a sock stuck to it!"
     },
     {
      "who": "旁白",
@@ -430,8 +465,8 @@
     {
      "who": "村民奶奶",
      "tag": "happy",
-     "text": "我們村子，好久沒有一起吃飯了。",
-     "en": "Our village hasn't eaten together in such a long time."
+     "text": "我們村子，好久沒有這麼熱鬧了！",
+     "en": "Our village hasn't been this lively in such a long time!"
     }
    ]
   },
@@ -476,7 +511,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "第二天早上，旅人要出發了。",
+     "text": "第二天早上，大叔和小弟要出發了。",
      "en": "The next morning, the travelers were ready to go."
     },
     {

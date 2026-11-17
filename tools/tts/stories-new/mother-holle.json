@@ -67,6 +67,16 @@
    "char": "眨",
    "where": "第9頁『一眨眼』",
    "read": "zhǎ"
+  },
+  {
+   "char": "間",
+   "where": "第6頁『一間』，第7頁、第8頁、第12頁、第15頁『人間』",
+   "read": "jiān"
+  },
+  {
+   "char": "少",
+   "where": "第12頁『越少』",
+   "read": "shǎo"
   }
  ],
  "pages": [
@@ -416,8 +426,8 @@
     },
     {
      "who": "旁白",
-     "text": "人間一片雪也沒有，孩子們好失望。",
-     "en": "Not a single snowflake fell in the world below, and the children were so disappointed."
+     "text": "人間的雪越下越少，後來一片也沒有了。",
+     "en": "Down in the world below, the snow grew less and less, until not a single flake was left."
     }
    ]
   },
@@ -490,7 +500,7 @@
     {
      "who": "旁白",
      "text": "她們幫麵包爐拿麵包，幫蘋果樹搖蘋果。",
-     "en": "They took out the bread for the oven and shook the apples from the tree."
+     "en": "They took the bread out of the oven and shook the apples from the tree."
     },
     {
      "who": "姊姊",

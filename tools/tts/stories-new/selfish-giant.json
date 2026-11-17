@@ -30,7 +30,7 @@
  "polyphones": [
   {
    "char": "沒",
-   "where": "第4頁『沒有地方』，第5頁『沒有小孩』，第7頁『沒有來』，第8頁『沒有聽到』，第10頁『沒有走』，第13頁『沒有看到』",
+   "where": "第4頁『沒有地方』，第5頁『沒有小孩』，第7頁『沒有走進』『什麼也沒有』，第8頁『沒有聽到』，第10頁『沒有走』，第13頁『沒有看到』",
    "read": "méi"
   },
   {
@@ -175,17 +175,17 @@
   },
   {
    "scene": "春天的小村子：每家院子都開滿了花，小鳥在天上飛；只有巨人的花園被白雪蓋住，牆裡面的樹光禿禿的，樹枝掛著冰柱。",
-   "act": "春天仙子出場：年輕的仙女，長長的淡綠色頭髮上戴著花環，穿用花瓣做成的粉紅色長裙，光著腳，背上有一對透明的小翅膀，走過的地方會開出小花（全書一致）。她飛到巨人的牆頭，往裡面看，難過地搖搖頭，轉身飛走。",
+   "act": "春天仙子出場：年輕的仙女，長長的淡綠色頭髮上戴著花環，穿用花瓣做成的粉紅色長裙，光著腳，背上有一對透明的小翅膀，走過的地方會開出小花（全書一致）。她手提花籃飛過村子，每一家院子都開出花；她飛到巨人的牆頭，往裡面看，難過地搖搖頭，轉身飛走。",
    "lines": [
     {
      "who": "旁白",
-     "text": "春天來了，村子裡開滿了花。",
-     "en": "Spring came, and flowers bloomed all over the village."
+     "text": "春天來了，春天仙子飛到哪裡，哪裡就開滿了花。",
+     "en": "Spring came. Wherever the Spring Fairy flew, flowers bloomed."
     },
     {
      "who": "旁白",
-     "text": "春天仙子飛到巨人的牆邊，往裡面看了看。",
-     "en": "The Spring Fairy flew to the Giant's wall and peeked inside."
+     "text": "她飛到巨人的牆邊，往裡面看了看。",
+     "en": "She flew to the Giant's wall and peeked inside."
     },
     {
      "who": "春天仙子",
@@ -201,8 +201,8 @@
    ]
   },
   {
-   "scene": "巨人的花園，冬天，天空是灰色的。草地上蓋著厚厚的雪，樹枝上結滿銀白色的霜。",
-   "act": "北風畫成一團鼓著臉頰的灰白色大雲，披著灰色斗篷，繞著城堡吹，把煙囪的煙吹歪；白色的冰雹一顆一顆打在城堡屋頂上。北風沒有說話。",
+   "scene": "巨人的花園，冬天，天空是灰色的。草地上蓋著厚厚的雪，樹枝上包著一層亮晶晶的白色冰。",
+   "act": "北風畫成一團鼓著臉頰的灰白色大雲，披著灰色斗篷，繞著城堡吹，把煙囪的煙吹歪；白色的小冰珠一顆一顆打在城堡屋頂上。北風沒有說話。城堡的窗戶裡，巨人裹著紅格子毛毯、雙手遮著耳朵，皺著眉頭。",
    "lines": [
     {
      "who": "旁白",
@@ -211,7 +211,7 @@
     },
     {
      "who": "旁白",
-     "text": "霜把每一根樹枝，都塗成了銀色。",
+     "text": "冰把每一根樹枝，都塗成了銀色。",
      "en": "Frost painted every branch silver."
     },
     {
@@ -221,25 +221,25 @@
     },
     {
      "who": "旁白",
-     "text": "冰雹打在屋頂上，好吵，巨人都睡不著。",
+     "text": "冰珠子打在屋頂上，好吵，巨人都睡不著。",
      "en": "Hail pounded on the roof and kept the Giant awake."
+    },
+    {
+     "who": "巨人",
+     "tag": "grumpy",
+     "text": "好冷，好冷！春天在哪裡？",
+     "en": "So cold, so cold! Where is spring?"
     }
    ]
   },
   {
    "scene": "城堡裡巨人的房間，石頭牆、好大的木頭窗戶，窗外下著雪，白茫茫的花園。",
-   "act": "巨人裹著一條紅格子大毛毯，坐在窗邊發抖，鼻頭凍得紅通通的，看著窗外。窗外的遠方，別人家的果樹結滿黃色的梨子和紅色的蘋果，只有巨人的花園是白色的。",
+   "act": "巨人裹著一條紅格子大毛毯，坐在窗邊發抖，鼻頭凍得紅通通的，看著窗外。窗外的遠方，別人家的果樹結滿黃色的梨子和紅色的蘋果，只有巨人的花園是白色的；巨人把下巴靠在窗台上，一臉孤單。",
    "lines": [
     {
-     "who": "巨人",
-     "tag": "sad",
-     "text": "好冷，好冷！春天怎麼一直不來呢？",
-     "en": "So cold, so cold! Why won't spring come?"
-    },
-    {
      "who": "旁白",
-     "text": "夏天沒有來，秋天也沒有來。",
-     "en": "Summer never came, and autumn never came either."
+     "text": "夏天和秋天，都沒有走進巨人的花園。",
+     "en": "Summer and autumn never came into the Giant's garden either."
     },
     {
      "who": "旁白",
@@ -247,9 +247,16 @@
      "en": "Autumn brought golden fruit to all the other gardens."
     },
     {
-     "who": "旁白",
-     "text": "可是巨人的花園，什麼也沒有。",
-     "en": "But the Giant's garden got nothing at all."
+     "who": "巨人",
+     "text": "我的花園，什麼也沒有，好安靜喔。",
+     "en": "My garden has nothing at all. It's so quiet.",
+     "tag": "sad"
+    },
+    {
+     "who": "巨人",
+     "tag": "sad",
+     "text": "好冷，好冷！春天在哪裡？",
+     "en": "So cold, so cold! Where is spring?"
     }
    ]
   },
@@ -259,29 +266,25 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "有一天早上，巨人聽到一陣歌聲。",
-     "en": "One morning, the Giant heard someone singing."
+     "text": "有一天早上，巨人聽到窗外有歌聲。",
+     "en": "One morning, the Giant heard singing outside his window."
+    },
+    {
+     "who": "巨人",
+     "text": "咦？是小鳥！我好久，好久，沒有聽到小鳥唱歌了。",
+     "en": "Huh? A bird! I haven't heard a bird sing in such a long, long time.",
+     "tag": "surprised"
     },
     {
      "who": "旁白",
-     "text": "是一隻小鳥，在他的窗外唱歌。",
-     "en": "It was a little bird, singing outside his window."
-    },
-    {
-     "who": "旁白",
-     "text": "他好久，好久，沒有聽到小鳥唱歌了。",
-     "en": "He hadn't heard a bird sing in such a long, long time."
-    },
-    {
-     "who": "旁白",
-     "text": "冰雹停了，北風也不吹了。",
+     "text": "冰珠子停了，北風也不吹了。",
      "en": "The hail stopped, and the North Wind was quiet."
     },
     {
      "who": "巨人",
-     "tag": "surprised",
-     "text": "咦？是春天來了嗎？",
-     "en": "Huh? Has spring come at last?"
+     "tag": "hopeful",
+     "text": "春天，是你來了嗎？",
+     "en": "Spring, is that you?"
     }
    ]
   },

@@ -40,7 +40,7 @@
   },
   {
    "char": "給",
-   "where": "第2頁『半給她』『送給妳』",
+   "where": "第2頁『一半給她』『送給妳』，第11頁『送給農場』",
    "read": "gěi"
   },
   {
@@ -87,7 +87,7 @@
     {
      "who": "旁白",
      "text": "有一天，家裡一粒米也沒有了。",
-     "en": "One day, there wasn't a single grain of rice left in the house."
+     "en": "One day, there was nothing left to eat in the house."
     },
     {
      "who": "媽媽",
@@ -297,7 +297,7 @@
   },
   {
    "scene": "村子的石板街道，兩旁是紅屋頂的小房子，整條街都是黃色的粥，像一條慢慢流動的河。",
-   "act": "鄰居們打開窗戶探頭看，嘴巴張得好大；一隻白色小狗站在粥邊開心地舔；一個大叔的手推車輪子陷在粥裡，推不動；兩個小朋友拿著湯匙跑出來；畫面熱鬧好笑。",
+   "act": "鄰居們打開窗戶探頭看，嘴巴張得好大；一隻白色小狗的鼻子沾滿黃色的粥，歪著頭，樣子好笑；一個大叔的手推車輪子陷在粥裡，推不動；兩個小朋友站在門口的台階上，指著粥哈哈大笑；畫面熱鬧好笑。",
    "lines": [
     {
      "who": "旁白",
@@ -306,8 +306,8 @@
     },
     {
      "who": "旁白",
-     "text": "小狗開心地舔著粥，推車也推不動了。",
-     "en": "A puppy happily licked it up, and a cart got stuck."
+     "text": "小狗鼻子沾滿了粥，推車也推不動了。",
+     "en": "A puppy got porridge all over its nose, and a cart got stuck."
     },
     {
      "who": "旁白",
@@ -352,23 +352,28 @@
   },
   {
    "scene": "同一條街，粥不再流了；太陽快要下山，天空是橘紅色的。",
-   "act": "鄰居們拿著碗和湯匙，坐在粥的旁邊大口吃，一邊吃一邊往前走；小女孩和媽媽手牽手，也在吃粥；小狗的肚子吃得圓滾滾；大家笑成一團。",
+   "act": "鄰居們拿著木桶和鏟子，把街上的粥一桶一桶裝起來，清出一條路；小女孩捲起袖子，指揮大家；遠處的農場圍欄裡，三隻粉紅色小豬圍著一桶粥，開心地吃；大家笑成一團。",
    "lines": [
     {
      "who": "旁白",
-     "text": "可是，路上都是粥，怎麼回家呢？",
-     "en": "But the street was full of porridge. How could anyone get home?"
+     "text": "可是，路上都是粥，小女孩怎麼回家呢？",
+     "en": "But the street was full of porridge. How could the little girl get home?"
     },
     {
      "who": "小女孩",
-     "tag": "laughing",
-     "text": "一邊吃，一邊走回家吧！",
-     "en": "Let's eat our way home!"
+     "tag": "excited",
+     "text": "大家快拿桶子來，把粥裝起來！",
+     "en": "Everyone, bring your buckets! Let's scoop it up!"
     },
     {
      "who": "旁白",
-     "text": "鄰居們拿著碗和湯匙，一口接一口，吃出一條路。",
-     "en": "The neighbors brought bowls and spoons, and bite by bite, they ate a path home."
+     "text": "鄰居們一桶，又一桶，清出了一條路。",
+     "en": "Bucket by bucket, the neighbors cleared a path."
+    },
+    {
+     "who": "旁白",
+     "text": "這些粥，全都送給農場的小豬，小豬開心極了！",
+     "en": "All that porridge went to the pigs on the farm, and the pigs were delighted!"
     }
    ]
   },

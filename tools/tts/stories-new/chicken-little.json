@@ -50,13 +50,8 @@
   },
   {
    "char": "沒",
-   "where": "第9頁『沒有塌』，第11頁『沒吃到』",
+   "where": "第1頁『沒有抬頭』，第9頁『沒有塌』，第11頁『沒、沒有啦』『沒吃到』，第12頁『沒有掉下來』",
    "read": "méi"
-  },
-  {
-   "char": "嚇",
-   "where": "第4頁『嚇壞了』",
-   "read": "xià"
   },
   {
    "char": "冠",
@@ -182,9 +177,10 @@
      "en": "The sky is falling! We're going to tell the King!"
     },
     {
-     "who": "旁白",
-     "text": "鵝小姐嚇壞了，也跟著跑。",
-     "en": "Goosey Loosey got scared and ran along too."
+     "who": "鵝",
+     "text": "天哪！我也跟你們去！",
+     "en": "Oh my! I'll come with you!",
+     "tag": "scared"
     }
    ]
   },
@@ -217,7 +213,7 @@
   },
   {
    "scene": "山腳下一個好黑的山洞口，洞口旁邊長著一棵大橡樹，樹上結滿橡實。",
-   "act": "狐狸站在洞口，彎腰做出「請進」的手勢，背後偷偷舔嘴巴、流口水，樣子好笑不可怕；小雞、母雞、鴨子、鵝排成一排，鵝伸長脖子往洞裡看，縮著肩膀有點害怕。",
+   "act": "狐狸站在洞口，彎腰做出「請進」的手勢，背後偷偷舔嘴巴、流口水，樣子好笑不可怕；小雞、母雞、鴨子、鵝排成一排，鵝伸長脖子往洞裡看了一眼，馬上張開翅膀擋在大家前面，大家停下腳步。",
    "lines": [
     {
      "who": "狐狸",
@@ -227,26 +223,26 @@
     },
     {
      "who": "旁白",
-     "text": "狐狸帶大家來到一個好黑的山洞。",
-     "en": "The fox led them to a very dark cave."
-    },
-    {
-     "who": "鵝",
-     "tag": "scared",
-     "text": "國王住在這麼黑的山洞裡嗎？",
-     "en": "Does the King really live in such a dark cave?"
+     "text": "狐狸帶大家來到大橡樹旁邊的黑山洞。",
+     "en": "The fox led them to a dark cave beside a big oak tree."
     },
     {
      "who": "狐狸",
      "tag": "friendly",
-     "text": "對呀，國王怕天塌下來，躲在裡面呢。",
-     "en": "Oh yes. The King is scared of the sky falling, so he's hiding inside."
+     "text": "國王怕天塌下來，躲在裡面。快進來！",
+     "en": "The King is scared of the sky falling, so he's hiding inside. Come on in!"
+    },
+    {
+     "who": "鵝",
+     "tag": "scared",
+     "text": "等一下！媽媽說，不可以跟不認識的人走！",
+     "en": "Wait! My mom says never go with someone you don't know!"
     }
    ]
   },
   {
    "scene": "同一個山洞口，大橡樹下。",
-   "act": "國王出場：好大的老獅子，金色的鬃毛，頭上戴一頂小小的金皇冠，披紅色斗篷（全書一致），從橡樹後面走出來，歪著頭。狐狸嚇得跳起來，帽子歪到一邊；小雞的一隻腳已經踏到洞口。",
+   "act": "國王出場：好大的老獅子，金色的鬃毛，頭上戴一頂小小的金皇冠，披紅色斗篷（全書一致），從橡樹後面走出來，歪著頭。狐狸嚇得跳起來，帽子歪到一邊；鵝還張著翅膀擋在大家前面，小雞、母雞、鴨子站在洞口外面，沒有進去。",
    "lines": [
     {
      "who": "旁白",
@@ -255,7 +251,7 @@
     },
     {
      "who": "旁白",
-     "text": "他頭上戴著金皇冠，原來是國王！",
+     "text": "他戴著金皇冠，原來是國王！",
      "en": "He wore a golden crown. It was the King!"
     },
     {
@@ -311,7 +307,7 @@
     },
     {
      "who": "旁白",
-     "text": "大家抬頭一看，橡樹上掛滿了橡實。",
+     "text": "大家抬頭一看，樹上掛滿了橡實。",
      "en": "Everyone looked up. The oak tree was full of acorns."
     },
     {
@@ -383,7 +379,7 @@
    "lines": [
     {
      "who": "旁白",
-     "text": "從那天起，小雞被東西打到頭，都會先抬頭看一看。",
+     "text": "從那天起，小雞被打到頭，都會先抬頭看一看。",
      "en": "From that day on, whenever something bonked Chicken Little on the head, he looked up first."
     },
     {
