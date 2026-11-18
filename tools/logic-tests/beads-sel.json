@@ -13,6 +13,15 @@
   "tap": ".lg-card[data-house=beads]"
  },
  {
+  "wait": 500
+ },
+ {
+  "shot": "levels.png"
+ },
+ {
+  "tap": ".lg-lv[data-level='0']"
+ },
+ {
   "wait": 800
  },
  {

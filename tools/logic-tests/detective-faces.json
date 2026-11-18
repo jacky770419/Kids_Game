@@ -91,6 +91,12 @@
   "tap": ".lg-card[data-house=detective]"
  },
  {
+  "wait": 500
+ },
+ {
+  "tap": ".lg-lv[data-level='0']"
+ },
+ {
   "wait": 900
  },
  {

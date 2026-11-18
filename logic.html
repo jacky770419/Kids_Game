@@ -23,7 +23,7 @@
 <header class="top">
   <div class="nav">
     <a href="index.html" class="btn xl home-hold" aria-label="回首頁（按住）"><i data-ic="home"></i></a>
-    <button id="backBtn" type="button" class="btn xl" aria-label="回去選小屋" hidden><i data-ic="back"></i></button>
+    <button id="backBtn" type="button" class="btn xl" aria-label="回上一層" hidden><i data-ic="back"></i></button>
   </div>
   <div id="lgGuide" class="guide"></div>
 </header>
@@ -31,6 +31,11 @@
 <!-- 選小屋：一間小屋是一本邏輯故事的謎題；卡片下面的星星是過了幾小關 -->
 <main id="lgSelect">
   <div id="lgGrid" class="lg-grid"></div>
+</main>
+
+<!-- 選關：點小屋先到這裡。一關一塊大磚，積木疊越高越難；最後一關是筆（換她出題）。打勾＝玩過，會發光的是下一關 -->
+<main id="lgLevels" hidden>
+  <div id="lgLevelGrid" class="lg-levels"></div>
 </main>
 
 <!-- 玩：左邊是板面（每間小屋自己畫），右邊一排小關圓點 -->
@@ -46,7 +51,7 @@
   <img class="lg-win-bear" src="assets/stickers/bear.png" alt="">
   <div class="overlay-row">
     <button id="lgAgain" type="button" class="btn xl" aria-label="再玩一次"><i data-ic="replay"></i></button>
-    <button id="lgHouses" type="button" class="btn xl" aria-label="回去選小屋"><i data-ic="grid"></i></button>
+    <button id="lgHouses" type="button" class="btn xl" aria-label="回去選關"><i data-ic="grid"></i></button>
     <button id="lgNext" type="button" class="btn xl go" aria-label="下一關"><i data-ic="next"></i></button>
   </div>
 </div>

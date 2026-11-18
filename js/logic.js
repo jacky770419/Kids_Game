@@ -427,6 +427,7 @@
   function openLevel(h, level) {
     leaveLevel();
     $('lgSelect').hidden = true;
+    $('lgLevels').hidden = true;
     $('lgPlay').hidden = false;
     $('backBtn').hidden = false;
     document.body.dataset.house = h.id;
@@ -439,20 +440,55 @@
     UI.hydrate(stage);
   }
 
-  /* 右上角的小關圓點：過了的打勾、現在這關最大、還沒開的是灰的 */
+  /* 積木疊：第 i 關疊 i+1 塊（越高越難），最後一關（換她出題）是一支筆。選關磚和右邊的小圓點用同一套。
+     她常玩積木，「疊越高越難」比數字好懂（她還不太會用數字比大小）。 */
+  const BLOCK_COLORS = ['#FF7FB0', '#4AA8EE', '#FFC83D', '#9A7BF5', '#22C3B6'];
+  function levelArt(h, i) {
+    if (i === h.levels - 1) return '<span class="lg-lv-pen">' + UI.icon('pencil') + '</span>';
+    let s = '';
+    for (let k = 0; k <= i; k++) s += '<b style="background:' + BLOCK_COLORS[k % BLOCK_COLORS.length] + '"></b>';
+    return '<span class="lg-lv-stack">' + s + '</span>';
+  }
+
+  /* 右邊的小關圓點：每一關都能點（想換簡單一點、難一點都可以）；玩過的有綠勾、現在這關框起來 */
   function drawDots(h, level) {
     const box = $('lgDots');
     box.innerHTML = '';
     const done = houseSave(h.id).done;
     for (let i = 0; i < h.levels; i++) {
-      const open = i <= done || i === level || unlockAll;
-      const b = el('button', 'lg-dot' + (i === level ? ' now' : '') + (i < done ? ' ok' : '') + (open ? '' : ' shut'));
+      const b = el('button', 'lg-dot' + (i === level ? ' now' : '') + (i < done ? ' ok' : ''));
       b.type = 'button';
       b.setAttribute('aria-label', '第 ' + (i + 1) + ' 關');
-      b.innerHTML = i < done ? UI.icon('check') : '<span>' + (i + 1) + '</span>';
-      if (open && i !== level) b.addEventListener('click', () => { sfx('click'); openLevel(h, i); });
+      b.innerHTML = levelArt(h, i) + (i < done ? '<i class="lg-lv-ok">' + UI.icon('check') + '</i>' : '');
+      if (i !== level) b.addEventListener('click', () => { sfx('click'); openLevel(h, i); });
       box.appendChild(b);
     }
+  }
+
+  /* 選關：點小屋先到這裡，一關一塊大磚。下一關（還沒玩過的第一關）會發光，玩完全部就都不發光、隨她挑。 */
+  function showLevels(h) {
+    leaveLevel();
+    document.body.dataset.house = h.id;
+    $('lgSelect').hidden = true;
+    $('lgPlay').hidden = true;
+    $('lgLevels').hidden = false;
+    $('backBtn').hidden = false;
+    const grid = $('lgLevelGrid');
+    grid.innerHTML = '';
+    grid.style.setProperty('--n', h.levels);
+    const done = houseSave(h.id).done;
+    for (let i = 0; i < h.levels; i++) {
+      const b = el('button', 'lg-lv' + (i < done ? ' ok' : '') + (i === done ? ' next' : '') + (i === h.levels - 1 ? ' pen' : ''));
+      b.type = 'button';
+      b.dataset.level = i;
+      b.setAttribute('aria-label', i === h.levels - 1 ? '換你出題' : '第 ' + (i + 1) + ' 關');
+      b.innerHTML = levelArt(h, i) + (i < done ? '<i class="lg-lv-ok">' + UI.icon('check') + '</i>' : '');
+      b.addEventListener('click', () => { sfx('click'); openLevel(h, i); });
+      grid.appendChild(b);
+    }
+    promptId = 'sys.level';
+    show('sys.level');
+    speak('sys.level');
   }
 
   const PRAISE = ['sys.good1', 'sys.good2', 'sys.good3'];
@@ -465,22 +501,29 @@
     promptId = '';
     const praise = opts.line || PRAISE[Math.floor(Math.random() * PRAISE.length)];
     show(praise);
-    speak(praise);
     const mine = cur;
-    const t = setTimeout(() => {
-      if (cur !== mine) return;
+    /* 過關面板等「話念完」和「動畫演完（delay）」兩個都到了才出來。
+       以前只等固定秒數：錄音比預估長、或選「都念」（中文念完還要接英文）時，面板先跳出來，
+       她一按下一關，話就被切斷了。念不出聲（被擋、檔案壞掉）speak 也會結束，最多再等 15 秒保底。 */
+    let said = false, waited = false, shown = false;
+    const reveal = () => {
+      if (cur !== mine || !said || !waited || shown) return;
+      shown = true;
       const last = level + 1 >= h.levels;
       $('lgNext').hidden = last;
       $('lgHouses').classList.toggle('go', last);
       $('lgWin').hidden = false;
-    }, opts.delay === undefined ? 1300 : opts.delay);
-    mine.timers.push(t);
+    };
+    speak(praise).then(() => { said = true; reveal(); });
+    mine.timers.push(setTimeout(() => { waited = true; reveal(); }, opts.delay === undefined ? 1300 : opts.delay));
+    mine.timers.push(setTimeout(() => { said = true; waited = true; reveal(); }, 15000));
   }
 
   function showSelect() {
     leaveLevel();
     delete document.body.dataset.house;
     $('lgPlay').hidden = true;
+    $('lgLevels').hidden = true;
     $('lgSelect').hidden = false;
     $('backBtn').hidden = true;
     const grid = $('lgGrid');
@@ -499,10 +542,7 @@
       card.appendChild(pic);
       card.appendChild(name);
       card.appendChild(el('span', 'lg-card-stars', stars));
-      card.addEventListener('click', () => {
-        sfx('click');
-        openLevel(h, Math.min(done, h.levels - 1));
-      });
+      card.addEventListener('click', () => { sfx('click'); showLevels(h); });
       grid.appendChild(card);
     });
     promptId = 'sys.pick';
@@ -511,16 +551,18 @@
 
   /* ---------- 開機 ---------- */
 
-  let unlockAll = false;            // 測試用：logic.html?all=1 全部小關都能點
 
   function boot() {
     buildGuide();
-    $('backBtn').addEventListener('click', () => { sfx('click'); showSelect(); });
+    // 上一層：玩的時候回選關，選關回選小屋
+    $('backBtn').addEventListener('click', () => {
+      sfx('click');
+      if (cur) showLevels(cur.house); else showSelect();
+    });
     $('lgAgain').addEventListener('click', () => { sfx('click'); if (cur) openLevel(cur.house, cur.level); });
     $('lgNext').addEventListener('click', () => { sfx('click'); if (cur) openLevel(cur.house, cur.level + 1); });
-    $('lgHouses').addEventListener('click', () => { sfx('click'); showSelect(); });
+    $('lgHouses').addEventListener('click', () => { sfx('click'); if (cur) showLevels(cur.house); else showSelect(); });
     const q = new URLSearchParams(location.search);
-    unlockAll = q.get('all') === '1';
     // 測試用：logic.html?h=tidy&l=2 直接開那間小屋的第 3 小關
     const h = houses.find((x) => x.id === q.get('h'));
     if (h) {
@@ -546,7 +588,7 @@
   window.Logic.zy({
     chars: {
       '具': 'ㄐㄩˋ', '圖': 'ㄊㄨˊ', '分': 'ㄈㄣ', '題': 'ㄊㄧˊ', '同': 'ㄊㄨㄥˊ', '顏': 'ㄧㄢˊ',
-      '布': 'ㄅㄨˋ', '汽': 'ㄑㄧˋ', '黃': 'ㄏㄨㄤˊ', '鴨': 'ㄧㄚ', '喇': 'ㄌㄚˇ', '叭': '˙ㄅㄚ', '粉': 'ㄈㄣˇ'
+      '布': 'ㄅㄨˋ', '汽': 'ㄑㄧˋ', '黃': 'ㄏㄨㄤˊ', '鴨': 'ㄧㄚ', '喇': 'ㄌㄚˇ', '叭': '˙ㄅㄚ', '粉': 'ㄈㄣˇ', '積': 'ㄐㄧ'
     },
     phrases: {
       '滿地': ['ㄇㄢˇ', 'ㄉㄧˋ'],       // 注音表的「地」是「慢慢地」的輕聲
@@ -558,6 +600,7 @@
   /* 外殼自己的台詞 */
   window.Logic.lines({
     'sys.pick': { zh: '今天玩哪一個？', en: 'Which one do you want to play today?' },
+    'sys.level': { zh: '選一關。積木越高，越難喔！', en: 'Pick a level. The taller the blocks, the harder it gets!' },
     'sys.good1': { zh: '哇，你好棒！', en: 'Wow, great job!' },
     'sys.good2': { zh: '你想到了！', en: 'You figured it out!' },
     'sys.good3': { zh: '你做到了，好厲害！', en: 'You did it! Way to go!' }

@@ -101,7 +101,69 @@ body.logic {
   touch-action: none;
 }
 
-/* 小關圓點：過了的打勾（綠）、現在這關是房間色、還沒開的灰灰平平 */
+/* ===== 關卡的樣子：積木疊越高越難，最後一關（換她出題）是一支筆 ===== */
+.lg-lv-stack { display: flex; flex-direction: column-reverse; align-items: center; gap: var(--bg, 3px); }
+.lg-lv-stack b { display: block; width: var(--bw, 26px); height: var(--bh, 9px); border-radius: calc(var(--bh, 9px) * .3); border: 2px solid var(--ink); }
+.lg-lv-pen { display: inline-flex; color: var(--ink); }
+.lg-lv-pen .ic { width: var(--pw, 34px); height: var(--pw, 34px); }
+/* 玩過：右上角一個綠勾 */
+.lg-lv-ok {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--ow, 26px);
+  height: var(--ow, 26px);
+  border-radius: 50%;
+  background: var(--go);
+  color: #fff;
+  box-shadow: 0 0 0 3px #fff;
+}
+.lg-lv-ok .ic { width: 70%; height: 70%; }
+
+/* ===== 選關：一關一塊大磚，磚底對齊，積木排起來像樓梯 ===== */
+#lgLevels {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 calc(40px + var(--sr)) calc(36px + var(--sb)) calc(40px + var(--sl));
+  container-type: inline-size;
+}
+/* 一排放得下全部（最多六關）：磚最寬 150px，螢幕窄就一起縮；磚裡的積木跟著磚的大小走（cqw／cqh） */
+.lg-levels {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 26px;
+}
+.lg-lv {
+  --bw: 62cqw; --bh: 19.5cqw; --bg: 4cqw; --pw: 70cqw; --ow: 46px;
+  container-type: inline-size;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: min(150px, calc((100cqi - (var(--n) - 1) * 26px) / var(--n)));
+  aspect-ratio: 150 / 236;
+  border-radius: 34px;
+  background: #fff;
+  box-shadow: 0 10px 0 var(--lip);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.lg-lv:nth-child(odd) { background: #FFF0F6; }
+.lg-lv:nth-child(even) { background: #EAF5FF; }
+.lg-lv .lg-lv-stack { margin-bottom: 14cqw; }
+.lg-lv.pen { align-items: center; }
+.lg-lv:active { transform: translateY(7px); box-shadow: 0 3px 0 var(--lip); }
+/* 下一關（還沒玩過的第一關）：發光、輕輕跳，告訴她「從這裡接著玩」 */
+.lg-lv.next { box-shadow: 0 10px 0 var(--lip), 0 0 0 6px var(--room); animation: lgNext 1.1s ease-in-out infinite alternate; }
+@keyframes lgNext { to { translate: 0 -10px; } }
+
+/* 玩的時候右邊那排小關：跟選關磚同一套圖，縮小；每一關都能點 */
 .lg-dots {
   flex: none;
   display: flex;
@@ -109,30 +171,28 @@ body.logic {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: 76px;
+  width: 84px;
 }
 .lg-dot {
+  position: relative;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  padding-bottom: 8px;
+  border-radius: 22px;
   background: #fff;
-  color: var(--ink);
-  font-family: var(--num);
-  font-size: 30px;
   box-shadow: 0 6px 0 var(--lip);
 }
-.lg-dot .ic { width: 34px; height: 34px; }
-.lg-dot.ok { background: var(--go); color: #fff; box-shadow: 0 6px 0 var(--go-lip); }
+.lg-dot:has(.lg-lv-pen) { align-items: center; padding-bottom: 0; }
+.lg-dot .lg-lv-stack { --bw: 30px; --bh: 8px; --bg: 2px; }
+.lg-dot .lg-lv-stack b { border-width: 1.5px; }
 .lg-dot.now {
-  background: var(--room);
-  color: #fff;
+  background: var(--tint);
   transform: translateY(3px);
-  box-shadow: 0 0 0 4px var(--tint), 0 0 0 8px var(--ink);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--ink);
 }
-.lg-dot.shut { background: var(--flat); color: var(--flat-ink); box-shadow: none; transform: translateY(6px); pointer-events: none; }
 
 /* ===== 過關 ===== */
 .lg-win { gap: 20px; }
@@ -180,11 +240,13 @@ body.logic {
 @media (orientation: portrait) {
   .lg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 640px; }
   #lgPlay { flex-direction: column; }
-  .lg-dots { flex-direction: row; width: auto; height: 76px; }
+  .lg-dots { flex-direction: row; width: auto; height: 84px; }
+  .lg-levels { gap: 16px; }
+  .lg-lv { width: min(150px, calc((100cqi - (var(--n) - 1) * 16px) / var(--n))); }
   .logic .bubble { font-size: 26px; white-space: normal; }
   .logic .bubble.lg-long { font-size: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lg-win-bear, .lg-glow { animation: none; }
+  .lg-win-bear, .lg-glow, .lg-lv.next { animation: none; }
 }
