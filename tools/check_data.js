@@ -165,7 +165,7 @@ console.log(`檢查資料檔（root＝${root}）\n`);
 }
 
 // ===== 2. 五支線稿檔 =====
-const LINEART_CATS = new Set(['animal', 'fantasy', 'food', 'vehicle', 'scene', 'other']);
+const LINEART_CATS = new Set(['animal', 'fantasy', 'food', 'vehicle', 'scene', 'story', 'other']);
 
 // name 要跨五個檔案全域唯一（進度存檔用 name 當 key）
 const globalLineartNames = new Map(); // name -> '檔名 第N筆'
@@ -278,6 +278,7 @@ checkVectorLineartFile('js/lineart-animals.js', 'LINEART_ANIMALS');
 checkVectorLineartFile('js/lineart-fantasy.js', 'LINEART_FANTASY');
 checkVectorLineartFile('js/lineart-food.js', 'LINEART_FOOD');
 checkVectorLineartFile('js/lineart-vehicles.js', 'LINEART_VEHICLES');
+checkVectorLineartFile('js/lineart-stories.js', 'LINEART_STORIES');
 
 // 場景線稿（點陣 PNG stencil）
 {
@@ -556,7 +557,7 @@ if (errors.length > 0) {
 // （對齊 coloring.js 的規則：lineart-data.js 逐筆自帶 cat；animals 預設 animal、
 // fantasy 預設 fantasy、food 預設 food；scenes 檔全部算 scene）
 {
-  const catCount = { animal: 0, fantasy: 0, food: 0, vehicle: 0, scene: 0, other: 0 };
+  const catCount = { animal: 0, fantasy: 0, food: 0, vehicle: 0, scene: 0, story: 0, other: 0 };
   function addFromFile(fileRel, varName, defaultCat) {
     try {
       const list = loadScript(path.join(root, fileRel), varName);
@@ -575,6 +576,7 @@ if (errors.length > 0) {
   addFromFile('js/lineart-fantasy.js', 'LINEART_FANTASY', 'fantasy');
   addFromFile('js/lineart-food.js', 'LINEART_FOOD', 'food');
   addFromFile('js/lineart-vehicles.js', 'LINEART_VEHICLES', 'vehicle');
+  addFromFile('js/lineart-stories.js', 'LINEART_STORIES', 'story');
   try {
     const scenes = loadScript(path.join(root, 'js/lineart-scenes.js'), 'LINEART_SCENES');
     if (Array.isArray(scenes)) catCount.scene += scenes.length;

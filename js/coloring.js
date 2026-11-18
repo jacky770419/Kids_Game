@@ -127,6 +127,7 @@
     { id: 'food',    name: '水果甜點', pick: '甜心草莓' },
     { id: 'vehicle', name: '車車',     pick: '嘟嘟小汽車' },
     { id: 'scene',   name: '大張場景', pick: '熊貓吃竹子' },
+    { id: 'story',   name: '故事書',   pick: '小紅帽' },
     { id: 'other',   name: '其他',     pick: '太陽小花' },
     { id: 'photo',   name: '我的照片', ic: 'camera' }
   ];
@@ -208,7 +209,7 @@
   let changedSinceDone = true;             // 上次按「畫好了」之後有沒有再動過（沒動就不重複收一張一樣的）
   let doneBusy = false;                    // 正在合成完成圖，擋掉連點
 
-  /* 選圖畫面的順序：內建手繪 → 城堡公主 → 動物 → 水果甜點 → 場景 → 自己上傳的照片。
+  /* 選圖畫面的順序：內建手繪 → 城堡公主 → 動物 → 水果甜點 → 場景 → 故事書角色（逐筆 cat，公主／動物併進原頁籤）→ 自己上傳的照片。
      各系列的 js 檔都是 classic script，用 window.XXX 取值，缺檔時安全跳過。
      每一筆都帶 cat（分類頁籤用）：整個系列同一類的就給系列預設值，
      內建的 LINEART 是混合的，改在資料裡逐筆寫 cat，這裡只當作沒寫時的退路。
@@ -226,6 +227,7 @@
       ...series(window.LINEART_FOOD, 'food'),
       ...series(window.LINEART_VEHICLES, 'vehicle'),
       ...series(window.LINEART_SCENES, 'scene'),
+      ...series(window.LINEART_STORIES, 'story'),
       ...customPics.map(x => ({ ...x, cat: 'photo' }))
     ];
   }
